@@ -67,17 +67,57 @@ def from_html(pid):
     }
 
 
+PDF_HEAD_RE = re.compile(r"^\s*((?:\d+|[IVX]+)(?:\.\d+)?\.?)\s+([A-Z][A-Za-z0-9 ,:&\-\u2013()/]{2,70})\s*$")
+PDF_ABS_RE = re.compile(r"^\s*Abstract\s*$", re.I)
+
+
 def from_pdf(pid):
+    """PDF fallback: split pdftotext output into numbered top-level sections."""
     import urllib.request
     with tempfile.TemporaryDirectory() as td:
         pdf = Path(td) / "p.pdf"
         req = urllib.request.Request(f"https://arxiv.org/pdf/{pid}", headers={"User-Agent": "ai-updated-digest/0.1"})
         pdf.write_bytes(urllib.request.urlopen(req, timeout=90).read())
         txt = subprocess.run(["pdftotext", str(pdf), "-"], capture_output=True, text=True).stdout
-    main = re.split(r"\n\s*(References|REFERENCES|Bibliography)\s*\n", txt)[0]
-    main = " ".join(main.split())
-    return {"title": "", "authors": "", "abstract": "", "sections": [("Full text (PDF)", main)],
-            "captions": [], "source": f"https://arxiv.org/pdf/{pid}"}
+    txt = re.split(r"\n\s*(?:References|REFERENCES|Bibliography)\s*\n", txt)[0]
+    lines = txt.splitlines()
+    front, sections, cur, abstract = [], [], None, ""
+    expect, i = 1, 0
+    title_ok = lambda t: 2 < len(t) <= 70 and t[:1].isupper() and not t.endswith(".") and len(t.split()) <= 9
+    while i < len(lines):
+        ln = lines[i].strip()
+        head = None
+        m = PDF_HEAD_RE.match(ln)
+        if m and m.group(1).rstrip(".") == str(expect):          # "3 Method" on one line
+            head = f"{expect} {m.group(2).strip()}"
+        elif ln == str(expect) or ln == f"{expect}.":            # "3" then "Method" on a later line
+            j = i + 1
+            while j < len(lines) and not lines[j].strip() and j - i < 3:
+                j += 1
+            if j < len(lines) and title_ok(lines[j].strip()):
+                head, i = f"{expect} {lines[j].strip()}", j
+        if head:
+            cur = [head, []]
+            sections.append(cur)
+            expect += 1
+        elif cur is None:
+            front.append(ln)
+        else:
+            cur[1].append(ln)
+        i += 1
+    front_text = " ".join(" ".join(front).split())
+    am = re.search(r"\bAbstract\b[.:]?\s*(.*)", front_text, re.I)
+    if am:
+        abstract, authors = am.group(1)[:2500], front_text[:am.start()]
+    else:
+        authors = front_text[:800]
+    secs = [(h, " ".join(" ".join(b).split())) for h, b in sections]
+    secs = [(h, b) for h, b in secs if len(b.split()) > 20]
+    if len(secs) < 2:  # heading detection failed: fall back to one block
+        secs = [("Full text (PDF)", " ".join(txt.split()))]
+    return {"title": "", "authors": words(authors, 160), "abstract": abstract, "sections": secs,
+            "captions": re.findall(r"((?:Figure|Fig\.|Table) \d+[:.][^\n]{20,300})", txt)[:20],
+            "source": f"https://arxiv.org/pdf/{pid}"}
 
 
 def render(doc, mode, max_words):
@@ -101,13 +141,19 @@ def render(doc, mode, max_words):
         elif len(secs) > 1:
             out.append(f"\n## {secs[-1][0]}\n{words(secs[-1][1], 400)}")
     else:
-        budget = max_words
+        concl = [s for s in secs[1:] if CONCL_RE.search(s[0])]
+        tail = concl[-1] if concl else None
+        budget = max_words - (min(600, len(tail[1].split())) if tail else 0)
         for h, b in secs:
+            if tail and (h, b) == tail:
+                continue
             if budget <= 0:
                 out.append("\n[truncated: word budget reached]")
                 break
             out.append(f"\n## {h}\n{words(b, budget)}")
             budget -= len(b.split())
+        if tail:
+            out.append(f"\n## {tail[0]}\n{words(tail[1], 600)}")
         if doc["captions"]:
             out.append("\nCAPTIONS:\n" + "\n".join(f"- {words(c, 70)}" for c in doc["captions"][:20]))
     return "\n".join(out)
@@ -117,7 +163,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("ids", nargs="+")
     ap.add_argument("--mode", choices=["brief", "full"], default="brief")
-    ap.add_argument("--max-words", type=int, default=6000)
+    ap.add_argument("--max-words", type=int, default=5500)
     a = ap.parse_args()
     cache = WORK / "papers"
     cache.mkdir(parents=True, exist_ok=True)

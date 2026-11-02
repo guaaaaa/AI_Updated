@@ -41,14 +41,15 @@ python3 pipeline/fetch_papers.py --date $D > /dev/null   # ~1-3 min; writes work
 
 Read `work/shortlist_$D.md` (~40 candidates with signals and abstracts). Then:
 
-1. **Screen**: pick ~10 promising candidates and read them briefly (abstract, intro, outline, captions,
-   conclusion — about 1.7k words each):
+1. **Screen**: pick ~8 promising candidates and read them briefly in ONE call (abstract, intro, outline,
+   captions, conclusion — about 1.5k words each):
    `python3 pipeline/read_paper.py ID1 ID2 ... --mode brief`
 2. **Select** up to 5 using the rubric below.
 3. **Read the finalists in full** before writing: `python3 pipeline/read_paper.py ID --mode full`.
    (Cached under `work/papers/ID.full.txt` for the accuracy pass.)
 
-Budget: ≤12 brief reads, ≤5 full reads. Do not read other papers in full.
+Budget: ≤10 brief reads, ≤5 full reads. Do not read other papers in full. A shortlist shorter than 40 is
+normal on light days (e.g. Mondays); don't go looking for more.
 
 ### Paper importance rubric (in priority order)
 1. **Substance** — How large or surprising is the result? How new and general is the idea (new paradigm or
@@ -80,10 +81,17 @@ python3 pipeline/fetch_news.py --date $D > /dev/null     # ~30 s; writes work/ne
 Read `work/news_$D.md` (primary-source posts, reputable press headlines, Hacker News; plus stories already
 covered in the last 7 days). Group headlines into stories yourself and shortlist ≤5.
 
-Budget: **≤8 WebSearch queries and ≤10 page fetches** for the whole news step. Use them to confirm facts,
+Budget: **≤8 WebSearch queries and ≤8 page fetches** for the whole news step. Use them to confirm facts,
 find the primary source and canonical article URLs (Google News links are omitted on purpose), and get
-numbers right. Paywalled pages (Bloomberg, FT, WSJ, The Information): rely on the primary source and
-accessible reports; never cite what you could not read.
+numbers right.
+
+- Fetch pages with WebFetch; if it errors (e.g. DNS failure), use
+  `python3 pipeline/fetch_page.py URL [URL ...]` (readable text, ≤1500 words per page).
+- Some sites answer automated requests with a bot check (e.g. openai.com returns 403). **Never try to get
+  around a bot check** (no fake browsers or headless-browser tricks). Use the site's RSS entry (title,
+  timestamp, description are in `work/news_$D.json`) plus reputable coverage that reports the details.
+- Paywalled pages (Bloomberg, FT, WSJ, The Information): rely on the primary source and accessible
+  reports; never cite what you could not read.
 
 ### News importance rubric
 - **Rank by type**: frontier or major open-weight model releases > major product/capability launches >
@@ -102,7 +110,8 @@ accessible reports; never cite what you could not read.
 ## 3. Writing
 
 Each item is **300–400 words** across its sections (validator: error outside 270–430). Plain text only: no
-Markdown, no HTML, no bullet lists; separate paragraphs with a blank line. Also write a `tldr`
+Markdown, no HTML, no bullet or numbered lists (validator rejects them); separate paragraphs with a blank
+line. Also write a `tldr`
 (one sentence, ≤35 words) and a one-line `why_selected` (what made it make the cut).
 
 **Paper sections** (exact headings, rough word budget):

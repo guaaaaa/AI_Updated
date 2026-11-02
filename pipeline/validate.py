@@ -68,8 +68,11 @@ def check_day(path, tax):
         elif not SOFT_MIN <= n <= SOFT_MAX:
             W(f"{label}: {n} words (target {SOFT_MIN}-{SOFT_MAX})")
         tl = item.get("tldr", "")
-        if not tl or word_count(tl) > 40:
-            E(f"{label}: tldr missing or over 40 words")
+        if not tl or word_count(tl) > 35:
+            E(f"{label}: tldr missing or over 35 words")
+        for sec in item.get("sections", []):
+            if re.search(r"(?m)^\s*([-*\u2022]|\d+[.)])\s+", sec.get("body", "")):
+                E(f"{label}: section {sec.get('heading')!r} contains a list; write prose paragraphs")
         for f in ("title",):
             if not item.get(f):
                 E(f"{label}: missing {f}")

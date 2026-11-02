@@ -9,6 +9,7 @@ Writes work/news_<date>.json and work/news_<date>.md (what Claude reads).
 import argparse
 import datetime as dt
 import email.utils
+import html
 import json
 import re
 import sys
@@ -45,8 +46,12 @@ def parse_time(s):
     return t if t.tzinfo else t.replace(tzinfo=UTC)
 
 
+def strip_html(x):
+    return " ".join(re.sub(r"<[^>]+>", " ", html.unescape(x or "")).split())
+
+
 def parse_feed(xml_text):
-    """RSS 2.0 or Atom -> [{title, url, time, source_hint}]"""
+    """RSS 2.0 or Atom -> [{title, url, time, publisher, desc}]"""
     xml_text = re.sub(r"^[^<]+", "", xml_text)
     root = ET_XML.fromstring(xml_text)
     items = []
@@ -54,13 +59,15 @@ def parse_feed(xml_text):
         src = it.find("source")
         items.append({"title": (it.findtext("title") or "").strip(), "url": (it.findtext("link") or "").strip(),
                       "time": parse_time(it.findtext("pubDate")),
-                      "publisher": src.text.strip() if src is not None and src.text else None})
+                      "publisher": src.text.strip() if src is not None and src.text else None,
+                      "desc": strip_html(it.findtext("description"))[:600]})
     for e in root.iter(f"{ATOM}entry"):
         link = e.find(f"{ATOM}link")
         items.append({"title": " ".join((e.findtext(f"{ATOM}title") or "").split()),
                       "url": link.get("href") if link is not None else "",
                       "time": parse_time(e.findtext(f"{ATOM}published") or e.findtext(f"{ATOM}updated")),
-                      "publisher": None})
+                      "publisher": None,
+                      "desc": strip_html(e.findtext(f"{ATOM}summary") or e.findtext(f"{ATOM}content"))[:600]})
     return items
 
 
@@ -131,7 +138,7 @@ def main():
             if not inwin(it["time"]) or pub.lower() not in reputable:
                 continue
             title = re.sub(r"\s+-\s+[^-]+$", "", it["title"])
-            items.append({**it, "title": title, "publisher": pub, "tier": "press", "via": f"google:{q}"})
+            items.append({**it, "title": title, "publisher": pub, "tier": "press", "via": f"google:{q}", "desc": ""})
             n += 1
         log(f"  google news '{q}': {n} reputable in window")
         time.sleep(1)
@@ -176,7 +183,9 @@ def main():
     L.append("## A. Primary-source posts (official blogs; many are minor customer stories)")
     for it in heads:
         if it["tier"] == "primary":
-            L.append(f"- {it['time'].astimezone(tz):%a %H:%M} | {it['publisher']}: {it['title']}  <{it['url']}>")
+            desc = " ".join(it.get("desc", "").split()[:28])
+            L.append(f"- {it['time'].astimezone(tz):%a %H:%M} | {it['publisher']}: {it['title']}  <{it['url']}>"
+                     + (f"\n    {desc}…" if desc else ""))
     L += ["", "## B. Press & newsletter headlines (chronological; Google News links omitted, search by headline)"]
     for it in heads:
         if it["tier"] != "primary":

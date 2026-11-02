@@ -37,7 +37,8 @@ ACCEPT_RE = re.compile(r"accept|to appear|published|camera.ready|oral|spotlight"
 SURVEY_RE = re.compile(r"\b(survey|a review|systematic review|overview of)\b", re.I)
 POSITION_RE = re.compile(r"\bposition paper\b|\bposition:\s", re.I)
 CODE_RE = re.compile(r"github\.com|huggingface\.co/|code (is|will be) (publicly )?available|we (open[- ]source|release)", re.I)
-OLD_CROSSLIST_SLACK = dt.timedelta(days=5)  # v1 older than window start - slack => old paper, just cross-listed
+OLD_CROSSLIST_SLACK = dt.timedelta(days=5)
+LARGE_TEAM = 15  # v1 older than window start - slack => old paper, just cross-listed
 
 
 def log(*a):
@@ -181,7 +182,11 @@ def arxiv_by_ids(ids, workers=4):
 
 # ---------------------------------------------------------------- signals
 def hot_snapshots(d, start):
-    """alphaXiv Hot ranks -> ({id: best_rank}, {id: days_on_list}, hindsight)."""
+    """alphaXiv Hot ranks -> ({id: best_rank}, {id: days_on_list}, note).
+
+    The live run (d == today) saves/overwrites today's snapshot; backfills never write.
+    Ranks merge every snapshot inside the window, so multi-day presence is visible.
+    """
     snap_dir = STATE / "alphaxiv_hot"
     snap_dir.mkdir(parents=True, exist_ok=True)
     today = today_et()
@@ -189,25 +194,27 @@ def hot_snapshots(d, start):
     try:
         from alphaxiv import AlphaXiv
         live_ids = AlphaXiv().hot_feed(200)
-        snap = snap_dir / f"{today.isoformat()}.json"
-        if not snap.exists():
-            snap.write_text(json.dumps({"fetched_at": dt.datetime.now(UTC).isoformat(), "ids": live_ids}, indent=0))
+        if d == today:
+            (snap_dir / f"{today.isoformat()}.json").write_text(
+                json.dumps({"fetched_at": dt.datetime.now(UTC).isoformat(), "ids": live_ids}, indent=0))
     except Exception as e:  # never let one source kill the run
         log(f"  WARNING alphaXiv hot feed failed: {e}")
-    lists = []
-    for f in sorted(snap_dir.glob("*.json")):
-        if start.date() <= parse_date(f.stem) <= d:
-            lists.append(json.loads(f.read_text())["ids"])
-    hindsight = False
+    snaps = sorted((parse_date(f.stem), f) for f in snap_dir.glob("*.json"))
+    lists = [json.loads(f.read_text())["ids"] for sd, f in snaps if start.date() <= sd <= d]
+    note = ""
     if not lists and live_ids:
-        lists, hindsight = [live_ids], d < today
+        lists, note = [live_ids], ("alphaXiv ranks come from today's feed (hindsight; backfill only)" if d < today else "")
+    elif not lists:
+        older = [f for sd, f in snaps if sd <= d]
+        if older:
+            lists, note = [json.loads(older[-1].read_text())["ids"]], f"alphaXiv unavailable; using stale snapshot {older[-1].stem}"
     best, days = {}, {}
     for ids in lists:
         for rank, pid in enumerate(ids, 1):
             if ID_RE.match(pid):
                 best[pid] = min(best.get(pid, 10**9), rank)
                 days[pid] = days.get(pid, 0) + 1
-    return best, days, hindsight
+    return best, days, note
 
 
 def hf_daily(dates):
@@ -279,6 +286,8 @@ def score(p):
     if p.get("notable_authors"):
         s += 0.5
     s += {"frontier": 0.4, "academic": 0.2}.get(p.get("org_tier"), 0.0)
+    if len(p.get("authors", [])) >= LARGE_TEAM:
+        s += 0.15
     if p.get("has_code"):
         s += 0.1
     if p.get("venue"):
@@ -308,12 +317,13 @@ def main():
     in_window = {pid: p for pid, p in listing.items()
                  if start <= dt.datetime.fromisoformat(p["announced"]) <= end}
     log(f"  {len(in_window)} listed papers announced in window")
-    hot_best, hot_days, hindsight = hot_snapshots(d, start)
+    hot_best, hot_days, hot_note = hot_snapshots(d, start)
     hf_dates = sorted({(start + dt.timedelta(days=i)).date() for i in range((end - start).days + 1)} | {d})
     hf = hf_daily(hf_dates)
 
     names, orgs = build_matchers()
-    pre = {pid for pid, p in in_window.items() if pid in hot_best or pid in hf or notable(p["authors"], names)}
+    pre = {pid for pid, p in in_window.items() if pid in hot_best or pid in hf or notable(p["authors"], names)
+           or len(p["authors"]) >= LARGE_TEAM}  # big-team tech reports often come from major labs
     pre |= {pid for pid in set(hot_best) | set(hf) if pid not in listing}  # outside our categories / listing
     log(f"  looking up metadata for {len(pre)} papers with signals")
     meta = arxiv_by_ids(pre)
@@ -372,14 +382,14 @@ def main():
     info = {"date": d.isoformat(), "edition": edition(d), "window": [start.isoformat(), end.isoformat()],
             "n_listed_in_window": len(in_window), "n_with_signals": len(cand),
             "n_hot": sum(1 for p in cand if p["hot_rank"]), "n_hf": sum(1 for p in cand if p["hf_upvotes"]),
-            "hot_hindsight": hindsight, "excluded_already_featured": sorted(already & {p["id"] for p in cand})}
+            "hot_note": hot_note, "excluded_already_featured": sorted(already & {p["id"] for p in cand})}
     (WORK / f"papers_{d}.json").write_text(json.dumps({"meta": info, "candidates": cand}, indent=1, default=str))
 
     lines = [f"# Paper shortlist for {d} ({edition(d)})",
              f"Window (arXiv announcement time): {start:%Y-%m-%d %H:%M} -> {end:%Y-%m-%d %H:%M} ET",
              f"Announced in window: {info['n_listed_in_window']} | with any signal: {info['n_with_signals']} | "
              f"on alphaXiv Hot: {info['n_hot']} | on HF Daily: {info['n_hf']}"
-             + (" | NOTE: alphaXiv ranks come from today's feed (hindsight; demo/backfill only)" if hindsight else ""),
+             + (f" | NOTE: {hot_note}" if hot_note else ""),
              f"Already featured in last 7 days (excluded): {', '.join(info['excluded_already_featured']) or 'none'}", ""]
     for i, p in enumerate(pick, 1):
         sig = [f"score {p['score']}", f"announced {p['announced'][:10]}", p["primary_category"]]
@@ -391,6 +401,8 @@ def main():
             sig.append(f"org: {p.get('hf_org') or p['org_match']}")
         if p["notable_authors"]:
             sig.append("notable: " + ", ".join(p["notable_authors"][:3]))
+        if len(au := p["authors"]) >= LARGE_TEAM:
+            sig.append(f"large team ({len(au)} authors)")
         if p["has_code"]:
             sig.append("code")
         if p["venue"]:
