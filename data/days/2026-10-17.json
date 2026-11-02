@@ -1,0 +1,423 @@
+{
+ "date": "2026-10-17",
+ "edition": "weekend",
+ "generated_at": "2026-11-02T17:42:38+00:00",
+ "backfill": true,
+ "summary": "Saturday edition. Reflection releases the weights of its 501B open model Beam, Anthropic says Claude solved a decades-old cryptography riddle, and a week of papers on compact decision models, open computer-use agents, behavior-log supervision and image generation.",
+ "news": [
+  {
+   "id": "2026-10-17-n1",
+   "story_key": "reflection-beam-open-weights-release",
+   "title": "Reflection releases Beam, a 501B-parameter open-weight model, under Apache 2.0",
+   "category": "Model Release",
+   "published": "2026-10-16T12:00:00-04:00",
+   "tldr": "Reflection published the weights of Beam, a text-only mixture-of-experts model with 501B total and 23B active parameters, a 1M-token context and an Apache 2.0 license, aimed at coding and agentic work.",
+   "why_selected": "A new US lab's frontier-scale open-weight model, with weights now actually downloadable after the October 5 announcement; day-0 support in the main inference libraries.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Reflection is a Brooklyn-based lab founded in 2024 by two former Google DeepMind researchers. TechCrunch, citing PitchBook, says it has raised about 4.7 billion dollars and signed compute deals worth more than 7 billion dollars with SpaceX and Nebius for Nvidia GB300 chips. On October 5 it unveiled Beam, positioned against Chinese open models such as Z.ai's GLM-5.2 and Alibaba's Qwen3.8-Max, and promised the weights later in the month."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 16 Hugging Face published its launch post: the weights are out, with day-0 support in transformers, vLLM and SGLang. Beam is text-only, with 501 billion parameters of which 23 billion are active per token, and a 1-million-token context window. The decoder has 52 layers and 256 experts per mixture-of-experts layer, with 8 routed per token. Most layers use sliding-window attention over 512 tokens, and nine layers attend to the full context. Checkpoints come in BF16 (about 1 terabyte), FP8 and NVFP4, with an open-source Rust-based harness. Reflection says it pretrained on 23.8 trillion tokens, then ran four weeks of reinforcement learning on 10,500 GB300 GPUs."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Open weights at this scale let enterprises and governments run and fine-tune a frontier-class model on their own hardware, which is Reflection's stated pitch. Only 23 billion parameters compute each token, so serving speed resembles a much smaller model, although all 501 billion must sit in memory. The headline claim, parity with Z.ai's GLM-5.2 on advanced reasoning at three to four times less inference compute, is Reflection's own and has not been independently verified; the company acknowledges Kimi K3 is still stronger. It reports beating Thinking Machines' Inkling on four coding tests, but Inkling is multimodal and Beam is not."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent evaluations of the coding and agentic claims, and real serving costs on commodity hardware. Also how the reported Nvidia talks about buying or deepening its stake, covered October 12, would affect future open releases."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Hugging Face Blog",
+     "url": "https://huggingface.co/blog/reflection-beam"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/?p=3173994"
+    },
+    {
+     "name": "ForkLog",
+     "url": "https://forklog.com/en/reflection-ai-launches-open-ai-model-to-compete-with-chinese-products/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-17-n2",
+   "story_key": "anthropic-claude-ecdsa-curve-seeds",
+   "title": "Anthropic says Claude traced the NIST curve seeds to a 1990s random number generator",
+   "category": "Research",
+   "published": "2026-10-16T12:00:00-04:00",
+   "tldr": "Anthropic reports that an internal research model found, in under half an hour, that the seeds behind NIST's standard elliptic curves came from a clock-seeded lrand48 generator rather than a hash.",
+   "why_selected": "A long-open cryptography question reportedly settled by an AI model, with a claim anyone can check.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In 2000 NIST standardized elliptic curves for the ECDSA signature standard. For the prime and binary curves, the specification publishes a seed whose hash defines the curve coefficient b. The NSA supplied the seeds without explanation, which fueled decades of suspicion that the curves hid a backdoor. Neal Koblitz and Alfred Menezes wrote a summary of the controversy, and amateurs ran a bounty-backed hunt. The popular story, that NSA's Jerry Solinas hashed a humorous passphrase, never panned out; Solinas died in 2023."
+    },
+    {
+     "heading": "What happened",
+     "body": "Anthropic's post says that in October 2026 an employee asked an internal research model to work out how the seeds were made, without the passphrase clue. In under half an hour Claude concluded that the seeds for P-192, P-224, P-256, P-384 and P-521 were not hash outputs at all. They are output of the C library's lrand48 generator, seeded with a Unix timestamp; each iteration draws 20 bytes as a candidate, and P-256 needed 1,842 iterations. Claude guessed that 1990s software would use a weak library generator, scanned the seeds for 34 generator and slice combinations, and noticed that four of ten seeds had a zero top bit in all 20 words, a 1-in-5,810 chance that fits lrand48."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Anthropic stresses this is not a cryptographic break and that nobody needs to change anything. It argues the result makes a backdoor much less plausible, because the seeds came from a simple clock-seeded generator that anyone can now reproduce. For AI researchers the interest is the method: the model reasoned about how the original software must have worked, formed a testable hypothesis and wrote a scan that either matches or fails. Unlike many AI-for-science claims, this one is cheap to verify. It is still a single-lab account of one case, so it shows what is possible, not how often."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent reproduction by cryptographers, which should be quick; any response from NIST or former NSA staff; and whether labs publish more open-problem results with enough detail to check."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Anthropic",
+     "url": "https://www.anthropic.com/research/ecdsa-curve-origins"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.18773",
+   "title": "Jeva: System One Models from First Principles",
+   "authors": [
+    "Qi Li",
+    "Xinchao Wang"
+   ],
+   "affiliations": [
+    "National University of Singapore"
+   ],
+   "announced": "2026-10-13T20:00:00-04:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency",
+    "Agents"
+   ],
+   "tldr": "Jeva encodes a request and each candidate option separately, then refines only the request against cached option vectors, giving order-invariant choices, a built-in \"none of these\" answer and large speedups from caching.",
+   "why_selected": "The most Hugging Face upvotes on this week's shortlist (165), in a cluster of \"System One\" decision-model papers, with a principled design and strong stability results.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Many language-model requests are small decisions: pick a tool, find a document, test a condition. \"System One\" models answer these directly with typed outputs rather than a generated rationale. But a decision over options has structure that text prediction ignores: reordering options should not change the answer, the option count should vary freely, \"none of them\" must be allowed, and recurring options should not be recomputed."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most open System One models concatenate the request and all candidates into one text sequence and read the answer from token logits or a prediction head. Candidate order then matters, the number of answer symbols is fixed, and the joint context is reprocessed whenever anything changes. A softmax over candidates only ranks them; it cannot say none is acceptable."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Jeva encodes the request and each option separately with a shared language-model backbone, A small decision module then updates only the request vector by attending over the option vectors, which act as an immutable memory. Think of the options as a pre-indexed catalogue that the question consults. Because attention sums over the set, probabilities are permutation-equivariant by construction, and one shared scoring rule handles any number of options. A separate coverage gate estimates whether any acceptable option exists, and the remaining probability goes to null. A proof shows even one block can reverse an A-versus-B preference when a third option changes, which independent scoring cannot. Option vectors never see the request, so they can be cached across requests."
+    },
+    {
+     "heading": "Results",
+     "body": "Jeva leads seven of eight accuracy slices. Across tested candidate orders it records zero decision flips, while Jev-1.13.0, InternDecision-4B and JevK5 flip 17.00%, 22.67% and 26.17% of decisions. Null detection on BANKING77 reaches 98.66% AUROC, versus 93.61% for KEV-BF16. Reusing cached options cuts median latency on new long-document candidate sets from 2,102 ms to 75.1 ms without changing decisions."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For agents that route among tools, documents or intents, the design makes order-invariance, a \"none\" answer and cache reuse structural rather than trained in. Caveats: it is tested on one 4B backbone with a single decision block, and narrowly trails InternDecision-4B on Typed Decisions (78.30% versus 78.70%)."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.18773",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.18773",
+    "code": "https://github.com/LiQiiiii/Jeva"
+   },
+   "signals": {
+    "hf_upvotes": 165,
+    "org": "National University of Singapore"
+   }
+  },
+  {
+   "id": "2610.22200",
+   "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+   "authors": [
+    "Hanzhang Zhou",
+    "Long Li",
+    "Quyu Kong",
+    "Lei Wang",
+    "Panrong Tong",
+    "Long Chen",
+    "Tianyu Xia",
+    "Gongjie Zhang",
+    "Xu Zhang",
+    "Chen Liu",
+    "Jianan Zhang",
+    "Chenglin Cai",
+    "Zhengwen Zeng",
+    "Steven Hoi",
+    "Yue Wang"
+   ],
+   "affiliations": [
+    "Alibaba Group"
+   ],
+   "announced": "2026-10-15T20:00:00-04:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "OpenGCUA shows that letting a model write one program per step that mixes GUI actions, shell commands and checks improves all eight tested frontier models on OSWorld-v2 while roughly halving steps per task.",
+   "why_selected": "An open, reproducible look at how closed frontier computer-use systems work, with released trajectories and a consistent gain across eight models.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Computer-use agents are shifting from clicking screenshots to finishing work on a user's machine by any route: GUI, shell, accessibility tree or APIs. Frontier systems such as GPT-6 Astra's do this, but their weights, prompts, harnesses and trajectories are closed, so researchers cannot study which design choices matter."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most research treats computer use as GUI-only: screenshot in, one mouse or keyboard action out, with harness rules deciding what the model sees and remembers. Hybrids such as the authors' earlier Qwen-UI-Agent add shell commands and batch actions, but still take a screenshot every step under fixed rules."
+    },
+    {
+     "heading": "Key idea",
+     "body": "OpenGCUA defines a generalist computer-use agent by three decisions the model makes at every step: what to observe, how to act, and how to organize its work. It studies two mechanisms with existing models and no new training. First, code execution: each step the model writes one Python program that mixes GUI calls, shell commands and checks, with loops and conditionals, so intermediate results steer later operations without another model call. Think of it as handing the model a macro editor instead of a single click. Second, harness-to-model decision transfer: choices a harness would hard-code, such as whether to take a new screenshot or how to keep a to-do list, move to the model. It releases code, prompts, trajectories from eight models and a preliminary real-device harness."
+    },
+    {
+     "heading": "Results",
+     "body": "On the offline set of OSWorld-v2, the full configuration improves all eight models over a batched GUI baseline, raising mean partial score by 19.6 points and cutting steps per task by 53.0% on average. GPT-6 Astra goes from 67.1 to 75.7 with steps falling from 102.1 to 33.5. Against a batched GUI plus shell baseline gains are smaller: Qwen3.8-Max rises from 57.2 to 64.0. On four real macOS tasks, selected Qwen3.8-Max runs used 19.4 times as many reasoning tokens as GPT-6 Astra."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The same harness change helps every model tested, so how a model acts matters alongside which model it is. Caveats: it trains no model, the headline numbers come from the authors' own harness on an offline subset, and the real-device study covers four macOS tasks."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.22200",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.22200",
+    "code": "https://github.com/Tongyi-MAI/OpenGCUA"
+   },
+   "signals": {
+    "hf_upvotes": 77,
+    "org": "Tongyi-MAI"
+   }
+  },
+  {
+   "id": "2610.14709",
+   "title": "Vela: User Behavior as Supervision Sparks LLM Intelligence",
+   "authors": [
+    "Yang Xiao",
+    "Yusong Sun",
+    "Haoyi Wu",
+    "Wenyang Hui",
+    "Weiqiang Hang",
+    "Luqing Wang",
+    "Zejian Wang",
+    "Zirui Tu",
+    "Jingsheng Mao",
+    "Shaobo Hu",
+    "Yang Luo",
+    "Jiale Guo",
+    "Jin Zhang",
+    "Yudan Liu",
+    "Zhaokai Luo",
+    "Ren Huan",
+    "Yao Hu",
+    "Chengyue Jiang",
+    "Wenjie Li",
+    "Chuan Mu"
+   ],
+   "affiliations": [
+    "AllSpark Research"
+   ],
+   "announced": "2026-10-13T20:00:00-04:00",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Post-training"
+   ],
+   "tldr": "Vela turns anonymized behavior logs of 100,000 users into training tasks by hiding each user's future and asking models to predict or explain it, lifting a 35B model on user-centered and general benchmarks.",
+   "why_selected": "A new supervision source for LLMs, with consistent gains on out-of-distribution and general benchmarks and sustained attention (85 Hugging Face upvotes).",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "LLM assistants and recommenders increasingly act on a person's long behavior history: weeks to years of views, searches, purchases and posts. Inferring individual preferences and likely next actions from it is a distinct skill, and models trained on web text, code and synthetic data see little of how one person's behavior unfolds."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work turns behavior logs into training signal for specific applications: P5 casts recommendation tasks as language modeling, and RLPF uses prediction feedback to train user summaries. Whether such data improves broader user-related abilities, or general ones, was left open, even as public text may become a scaling bottleneck."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Vela treats the future as the label. Each user's history is cut into segments of 72K to 120K tokens; roughly the first two thirds stay visible and the rest is hidden. From 91 question templates it builds tasks that ask the model to predict the hidden behavior, summarize the user, or explain a behavior from the visible history. Predictive questions are graded against what the user actually did; the others against rubrics produced by an LLM. A task is kept only if a base model's mean score falls between 0.2 and 0.8, and a teacher trajectory is accepted only if it beats that mean. From 100,000 users about 75,000 tasks survive and are used to fine-tune Qwen3.6-35B-A3B."
+    },
+    {
+     "heading": "Results",
+     "body": "Vela-35B-A3B scores 63.0 on VelaBench, 982 held-out tasks, up 11.5 points over the base model and above the larger DeepSeek-V4-Flash and Qwen3.8-2.4T-A95B. It improves all four out-of-distribution user benchmarks, by 6.2 points on average, and all five general benchmarks, by 4.0 points on average, including AIME 2026, GPQA-Diamond and IFBench. Reinforcement learning (GSPO) started from a Vela checkpoint reaches 66.2 on VelaBench versus 58.5 from the base model."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It reframes interaction logs as a scalable supervision source as public text becomes scarce, and the general-benchmark gains suggest the data teaches more than personalization. Caveats: the logs come from one unnamed platform, the data itself is not promised (only templates, prompts and code), grading leans on LLM scorers, and anonymization is described as only intended to reduce privacy risk."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.14709",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.14709",
+    "code": "https://github.com/AllSpark-Research/Vela"
+   },
+   "signals": {
+    "hf_upvotes": 85,
+    "org": "AllSpark Research"
+   }
+  },
+  {
+   "id": "2610.20818",
+   "title": "Intern Lumina U2: A Multi-Codebook Diffusion Large Language Model for Omni-Visual Understanding and Image Generation",
+   "authors": [
+    "Qian Yu",
+    "Zongyang Qiu",
+    "Juncheng Yan",
+    "Hongliang Li",
+    "Qi Qin",
+    "Keqi Wang",
+    "Siqi Luo",
+    "Junkui Ju",
+    "Yapeng Mi",
+    "Tiantian Lu",
+    "Tian Liu",
+    "Pengyu Xie",
+    "Chenhao Ji",
+    "Minghui Zhang",
+    "Yiang Zhao",
+    "Siyu Yan",
+    "Haiying Xu",
+    "Yanbo Wang",
+    "Jianghan Shen",
+    "Yuandong Pu",
+    "Jiayi Lei",
+    "Borui Zhang",
+    "Jinxin Shi",
+    "Bo Zhang",
+    "Yuhang Zang",
+    "Shenglong Ye",
+    "Lixin Gu",
+    "Hongjie Zhang",
+    "Linghan Liu",
+    "Xinyuan Chen",
+    "Yuewen Cao",
+    "Lihe Zhang",
+    "Xiaohong Liu",
+    "Junjun He",
+    "Qiangwei Liu",
+    "Qi Zhang",
+    "Yu Cheng",
+    "Tianfan Xue",
+    "Hui Xiong",
+    "Chang Xu",
+    "Yu Qiao",
+    "Yihao Liu",
+    "Bin Fu"
+   ],
+   "affiliations": [
+    "Shanghai AI Laboratory",
+    "Shanghai Jiao Tong University",
+    "Huawei Technologies",
+    "Tsinghua University",
+    "Dalian University of Technology"
+   ],
+   "announced": "2026-10-15T20:00:00-04:00",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Generative Models",
+    "Architectures"
+   ],
+   "tldr": "Intern Lumina U2 is a diffusion language model that represents each image position with eight discrete codes, handling image, video and 3D understanding plus image generation and editing in one network trained on Ascend NPUs.",
+   "why_selected": "A new route to unified understanding and generation (fully discrete diffusion with multi-codebook tokens), trained at scale on non-Nvidia hardware, with broad benchmark results and 50 upvotes.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Unified multimodal models understand and generate images in one network. Doing this cleanly means text and images should share one representation and one training objective, but images have no natural left-to-right order and hold more detail than one token per patch can carry."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Chameleon and Emu3 predict discrete visual tokens next-token style, and single-codebook tokenizers squeeze each position into one code, limiting fidelity. Hybrid models keep continuous visual states and hand synthesis to a separate decoder, so text and images are optimized with different objectives."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Intern Lumina U2 is a masked diffusion language model, built on the LLaDA2.0-mini mixture-of-experts backbone, in which every modality is a discrete token. Instead of one code per image position, a frozen tokenizer called AToken gives each position eight codes from complementary codebooks, like describing a patch with eight descriptors rather than one label. On input, each codebook has its own embedding table and the eight embeddings are concatenated and projected into one backbone token. On output, the diffusion backbone fills in all positions in parallel while a lightweight autoregressive head predicts the eight codes within a position one after another. A sampler stops refining positions once confidence plateaus and refreshes caches only when hidden states drift."
+    },
+    {
+     "heading": "Results",
+     "body": "With 1.4B activated parameters, the primary model, trained on 1,024 Huawei Ascend 910B NPUs, is best on six of ten image-understanding benchmarks and beats LLaDA2.0-Uni, which shares its backbone but uses semantic-only visual inputs, on eight of ten; on CharXiv descriptive questions it scores 85.9 versus 68.4. The new sampler cuts 1024-pixel generation latency 4.45 times, from 159.9 to 35.9 seconds, with GenEval at 89.3. The unified baselines it compares against do not handle video and 3D understanding alongside image generation in one checkpoint."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It is evidence that diffusion language models can carry understanding and generation in one fully discrete space, and that such a system can be trained at scale on non-Nvidia hardware. Caveats: the autoregressive head adds decoding overhead, high-resolution images create long sequences, and generation covers images and editing but not video or 3D."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.20818",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.20818",
+    "code": "https://github.com/InternLM/InternLumina-U2"
+   },
+   "signals": {
+    "hf_upvotes": 50,
+    "org": "Shanghai AI Laboratory"
+   }
+  },
+  {
+   "id": "2610.12978",
+   "title": "Learning Representations to Guide Pixel Diffusion Transformers",
+   "authors": [
+    "Zihao Pan",
+    "Mengting Chen",
+    "Cheng Shi",
+    "Taihang Hu",
+    "Zhengrong Yue",
+    "Zikang Wang",
+    "Yuan Wang",
+    "Wei Li",
+    "Sibei Yang"
+   ],
+   "affiliations": [
+    "Sun Yat-sen University",
+    "Alibaba Group",
+    "The University of Hong Kong",
+    "Shanghai Jiao Tong University"
+   ],
+   "announced": "2026-10-11T20:00:00-04:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Architectures"
+   ],
+   "tldr": "Representation Guidance trains pixel-space diffusion transformers to use a compact internal representation by adding its induced prediction offset to the training target, reaching FID 1.55 on ImageNet 256 with a plain Transformer.",
+   "why_selected": "A clear diagnosis of why borrowed semantics fail to help pixel diffusion, plus a simple fix that beats larger pixel-space models.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Image generators increasingly lean on good internal representations of what is in a picture, usually borrowed from vision encoders built for recognition. The open question is what makes a representation useful for generation, where every pixel must eventually be produced. This matters most for pixel-space diffusion, which skips an autoencoder's latent space and must learn semantics and pixels together."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "REPA aligns an intermediate layer of the generator with features from a pretrained encoder such as DINOv2. Other designs add a specialized pixel decoder, as in PixelDiT, DiP and DeCo, to separate semantics from synthesis. The authors find that alignment gains fade in later layers (REPA at layer 4 ends at FID 4.80 against a 4.56 baseline) and that PixelDiT matches a vanilla decoder (4.26 versus 4.17) with 55% more parameters."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Representation Guidance keeps a plain Transformer, split into an encoder and a small decoder joined by a narrow linear bottleneck. The encoder must compress what the decoder needs into a compact \"implicit latent\", trained end to end for generation. Training then borrows from classifier-free guidance. With probability 0.1 the representation is zeroed, so the same decoder also predicts what it would output without it. The difference between the two predictions, the offset the representation induces, is added to the flow-matching target with scale 1.4, amplifying the representation's role. Guidance is baked into training, so sampling needs no external encoder, though training still uses REPA-style alignment."
+    },
+    {
+     "heading": "Results",
+     "body": "On ImageNet 256x256, RG-XL/16 with 725M parameters reaches FID 1.55, the lowest among pixel-space methods, ahead of PixelDiT-XL (1.61) and DeCo-XL/16 (1.69). RG-L/16 with 459M parameters (1.79) beats the 2B-parameter JiT-G/16 (1.82). At 512x512 it reaches 1.74. A text-to-image version scores 0.89 on GenEval and 87.1 on DPG-Bench, above SD3 (0.68, 84.1) and FLUX.1-dev (0.67, 83.8)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The paper offers a concrete diagnosis, that aligned semantics decay unless the generator is forced to use them, and a cheap recipe that narrows the gap between pixel-space and latent-space diffusion without an autoencoder. Caveats: the best latent models still lead on ImageNet FID (RAE-XL reports 1.13) and experiments cover images only."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.12978",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.12978",
+    "code": "https://github.com/Pan-Zihao/Representation-Guidance"
+   },
+   "signals": {
+    "hf_upvotes": 23,
+    "org": "alibaba"
+   }
+  }
+ ]
+}

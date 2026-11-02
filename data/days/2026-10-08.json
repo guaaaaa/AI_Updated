@@ -1,0 +1,400 @@
+{
+ "date": "2026-10-08",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T17:29:42+00:00",
+ "backfill": true,
+ "summary": "Cheaper small models and a wider GPT-6 rollout in the news; papers on history-aware robot control, scaling laws for robot world models, learning from failed RL rollouts, 8x cheaper video diffusion, and a recurrent transformer.",
+ "news": [
+  {
+   "id": "2026-10-08-n1",
+   "story_key": "anthropic-claude-haiku-5-5-launch",
+   "title": "Anthropic releases Claude Haiku 5.5, a small model it says costs about 75% less to run than its predecessor",
+   "category": "Model Release",
+   "published": "2026-10-07T11:22:00-04:00",
+   "tldr": "Anthropic launched Claude Haiku 5.5, its cheapest and fastest small model, with an adjustable effort setting, roughly 75% lower running cost than Haiku 4.5, and a cut to Sonnet 5.5 cache-read prices.",
+   "why_selected": "A new model release from a frontier lab that also reprices the cost-sensitive tier most production traffic runs on.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Anthropic sells Claude in tiers: Opus and Sonnet for harder work, and Haiku, the small, cheap and fast tier. The Claude 5.5 generation already included Opus 5.5 and Sonnet 5.5, while the previous small model was Haiku 4.5. Much production traffic, such as classification and summarization, does not need a frontier model, so price and latency per call often matter more than peak capability."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 7, 2026 Anthropic introduced Claude Haiku 5.5, which it calls its cheapest, fastest and most capable small model. It targets high-volume work such as summaries, classification and database queries, and speed-sensitive uses like live customer support. Anthropic says it costs around 75% less to run than Haiku 4.5 on average. One secondary report lists prices of $0.10 per million input tokens and $0.50 per million output tokens for prompts up to 100,000 tokens. Haiku 5.5 is the first Haiku-class model with an adjustable effort setting. Anthropic also halved the price of Sonnet 5.5 cache reads, making that model around 20% cheaper on most agentic work, and added a monthly API credit for Max, Ultra and Team subscribers. Customer tests quoted by Anthropic include Box, which saw scores 11 points higher than Haiku 4.5 at about half the latency."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Small models carry most of the volume in deployed AI, so a 75% price cut on that tier changes the economics of agents that call a model dozens of times per task. Anthropic positions Haiku 5.5 as a subagent beside Opus 5.5 and Sonnet 5.5: a large model plans, and a cheap one handles lookups, summaries and extraction. The effort setting lets developers trade cost against intelligence per request. On safeguards, cybersecurity restrictions are tighter than on Haiku 4.5 but looser than on Sonnet 5.5, allowing more defensive tasks while still blocking penetration testing. The benchmark charts and customer results come from Anthropic and its customers, not from independent tests."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent evaluations of Haiku 5.5 at each effort setting, for example on OSWorld 2.1 and GDPval-AA, will show whether the quoted gains hold. Watch whether rivals answer with cheaper small models."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Anthropic",
+     "url": "https://www.anthropic.com/claude-haiku-5-5"
+    },
+    {
+     "name": "AI For Developing Countries Forum",
+     "url": "https://af.net/realtime/anthropic-launches-claude-haiku-5-5-with-75-price-cut-for-high-volume-ai-tasks/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-n2",
+   "story_key": "openai-gpt-6-chatgpt-rollout",
+   "title": "OpenAI rolls out GPT-6 and Intelligent UI across ChatGPT, with a lighter model for free users",
+   "category": "Product & Features",
+   "published": "2026-10-07T12:00:00-04:00",
+   "tldr": "OpenAI began rolling out GPT-6 in ChatGPT: GPT-6 Sol for paid plans, GPT-6 Luna for Free and Go users from October 8, and an optional Intelligent UI with interactive answers.",
+   "why_selected": "A new model family reaching ChatGPT's default experience, including the free tier, with a visible product change in how answers are presented.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "ChatGPT is OpenAI's main consumer product, sold in Free, Go, Plus, Pro, Business and Enterprise plans, and its model picker has a Latest entry that points to the newest default. Until this rollout that entry was the GPT-5.6 generation. Earlier GPT-6 products were narrower, such as the dots agents OpenAI launched on October 2."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 7, 2026, OpenAI began rolling GPT-6 out globally in ChatGPT together with a feature called Intelligent UI. According to Android Headlines, Plus, Pro, Business and Enterprise users get GPT-6 Sol straight away, with enterprise timing depending on administrator settings, while Free and Go users are due to receive a lighter model, GPT-6 Luna, from October 8. GPT-6 replaces the Latest option in the model picker, and GPT-5.6 Sol remains selectable. The report says the new engine streams an answer while it is still reasoning, and that OpenAI claims GPT-6 Instant shows live web search answers 44% faster on average than GPT-5.6 Instant. Intelligent UI lets ChatGPT add interactive elements, such as clickable diagrams or a bill-splitter widget, to its replies. It is rolling out gradually on the web and updated mobile apps and can be switched off in web settings."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Reach is the main story. Moving a new model family into the default experience of a product with a very large user base, including a free tier, sets the baseline many people will judge AI by. Intelligent UI points to a design shift in which the model produces interface components, not just text, so the answer to an explanation request can be a small working tool. Streaming while reasoning targets a perceived-latency problem that reasoning models have had since they appeared. Caveats: the speed figure is OpenAI's own, Free and Go users get a smaller model, and these details rest on one secondary report plus OpenAI's summary line."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the Free and Go rollout of GPT-6 Luna on October 8 proceeds as scheduled, how independent tests compare Luna with Sol, and whether API access and benchmark details follow. Also watch whether Intelligent UI stays optional and how often users switch it off."
+    }
+   ],
+   "sources": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/index/gpt-6-for-everyone"
+    },
+    {
+     "name": "Android Headlines",
+     "url": "https://www.androidheadlines.com/2026/10/openai-bringing-gpt-6-ai-models-chatgpt-everyone.html"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.10528",
+   "title": "Long-WAM: Scaling the Context of World-Action Models",
+   "authors": [
+    "Wei Huang",
+    "Bohan Zhang",
+    "Chenzhi Liu",
+    "Isabella Liu",
+    "Shuai Yang",
+    "Weian Mao",
+    "Luozhou Wang",
+    "Yicheng Xiao",
+    "Weifeng Lin",
+    "Qixin Hu",
+    "Bryan Chu",
+    "Sifei Liu",
+    "Linxi Fan",
+    "Xiaojuan Qi",
+    "Song Han",
+    "Yukang Chen"
+   ],
+   "affiliations": [
+    "NVIDIA",
+    "MIT",
+    "HKU",
+    "UCSD"
+   ],
+   "announced": "2026-10-07T20:00:00-04:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models",
+    "Efficiency"
+   ],
+   "tldr": "Long-WAM shows that robot policies only benefit from long visual history when their video backbone was pretrained autoregressively, and makes this fast enough for real-time control on edge GPUs.",
+   "why_selected": "Strong attention (97 Hugging Face upvotes) plus a clear, transferable finding about when long context helps, backed by real-robot tests and a deployment recipe.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A robot catching a moving cup needs to know how the scene is changing. A single frame shows position but not speed or task progress, so more history should help. But processing history takes compute, and slow inference delays the very action the history was meant to improve. The question is how much history a policy can actually use under real-time limits."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "World-action models (WAMs) predict future video and actions together. DreamZero and LingBot-VA adapt video generators that were pretrained bidirectionally, meaning they could look at frames both before and after a point, into causal video-action models. The authors argue that having access to history is not the same as having learned to use it."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Teach the model to continue the movie before teaching it to act. First, pretrain a video generator autoregressively, predicting each chunk only from earlier ones, on action-free robot and egocentric video, roughly 10,000 window-equivalent hours. Then add action prediction while keeping the same causal ordering, so the learned history-to-future dependencies are reused. A video expert predicts a few future latent frames, and an action expert reads that cache plus the history to produce an action chunk. For speed, a streaming video autoencoder (VAE) encodes frames during motion, inference overlaps with execution, and 4-bit NVFP4 quantization accelerates the video expert."
+    },
+    {
+     "heading": "Results",
+     "body": "On RoboCasa GR-1, extending context from 0 to 19.2 seconds raises success from 63.3% to 78.7%, while a bidirectionally initialized variant stays flat, at 61.7% with 2.4 seconds and 61.6% with 19.2. Each action chunk takes 107.4 ms on an RTX 5090, 2.3 times faster than Fast-WAM at 244.1 ms. On a Unitree G1 humanoid, stacking a moving cup succeeded in 19 of 20 trials, versus none for pi0.5 and Fast-WAM."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The finding that the pretraining objective decides whether memory is usable carries over to any long-context agent: access is not use. Costs remain. Eight times more history raised latency 3.2 times, success fell to 75.2% at 38.4 seconds, which the authors attribute to limited training coverage, and pretraining took about 30,720 H100 GPU-hours. Real-robot evidence rests on 20 trials per condition."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.10528",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.10528",
+    "code": "https://github.com/NVlabs/LongLive"
+   },
+   "signals": {
+    "hf_upvotes": 97,
+    "notable_authors": [
+     "Linxi Fan",
+     "Song Han"
+    ],
+    "org": "NVIDIA"
+   }
+  },
+  {
+   "id": "2610.10515",
+   "title": "RoboJEPA: Scaling Robotic Latent World Models",
+   "authors": [
+    "Artem Zholus",
+    "Nicolas Beltran-Velez",
+    "Jianhao Yuan",
+    "Sarath Chandar",
+    "Tushar Nagarajan",
+    "Daniel Severo",
+    "Koustuv Sinha",
+    "Michal Drozdzal",
+    "Adriana Romero Soriano",
+    "Jeannette Bohg",
+    "Nicolas Ballas",
+    "Mahmoud Assran"
+   ],
+   "affiliations": [
+    "FAIR at Meta",
+    "Chandar Research Lab",
+    "Mila - Quebec AI Institute",
+    "Polytechnique Montreal"
+   ],
+   "announced": "2026-10-07T20:00:00-04:00",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Pre-training & Data",
+    "Robotics"
+   ],
+   "tldr": "RoboJEPA scales a latent robot world model from 22 million to 8 billion parameters and finds a predictable compute scaling law whose offline error tracks robot planning success.",
+   "why_selected": "First scaling-law study for robot world models on real data, with released checkpoints and code and a practical offline proxy for expensive robot evaluation.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A world model is a learned simulator: it predicts how a scene changes under a robot's actions so the robot can plan by imagining. Language models have scaling laws that forecast the payoff of extra compute. For world models trained on real robot data nobody knew how quality scales, so choices about model size, data and compute were guesswork, in a field where robot data is scarce and costly."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier latent world models, such as V-JEPA 2-AC, were typically trained at a single scale. Other scaling studies either targeted generative video models outside robot control or scaled policies rather than world models."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Keep the recipe deliberately plain, then sweep scale. RoboJEPA works in the feature space of a frozen V-JEPA 2.1 image encoder. A transformer receives interleaved tokens for camera-view features, actions and robot state, and predicts the next frame's features in one forward pass with a simple L1 loss. Feeding predictions back gives imagined rollouts. To plan, the robot encodes a goal image and searches, with the cross-entropy method, for the action sequence whose imagined outcome lands closest to the goal's features. Training used 23 public datasets covering 12 embodiments, with predictors from 22M to 8B parameters."
+    },
+    {
+     "heading": "Results",
+     "body": "Fitting only the 22M to 2B models, a second-order power law in compute extrapolated best to the held-out 4B and 8B models, with error of 0.6 and 1.4 thousandths on DROID and RoboCasa, about 2 to 3 times lower than a standard power law. Only models trained with more than 10^22 FLOPs solved object-interaction tasks in RoboCasa. On real-robot grasping, RoboJEPA-8B succeeded 67% of the time versus 22% for pi0-FAST and 5% for pi0.5, though pi0.5 won pick-and-place, 53% versus 27%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If prediction error reliably forecasts planning ability, labs can judge world models offline instead of running costly robot trials. The fitted curves already sit near saturation, so progress likely needs more diverse interaction data, not just parameters. The encoder is frozen, planning uses a single goal image and no text, and the laws describe the predictor on top of a fixed representation."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.10515",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.10515"
+   },
+   "signals": {
+    "hf_upvotes": 6,
+    "notable_authors": [
+     "Jeannette Bohg",
+     "Nicolas Ballas",
+     "Mahmoud Assran"
+    ],
+    "org": "Meta"
+   }
+  },
+  {
+   "id": "2610.08077",
+   "title": "Self-Retrospection Distillation: Turning Post-hoc Experiences into Prior Foresight",
+   "authors": [
+    "Haoxiang Zhang",
+    "Qinglin Chen",
+    "Hiroaki Hayashi",
+    "Zhuofeng Li",
+    "Siming Zhang",
+    "Jiaxin Zhang",
+    "Jixuan Chen",
+    "Fang Wu",
+    "Pan Lu",
+    "Silvio Savarese",
+    "Julian McAuley",
+    "Chien-Sheng Wu"
+   ],
+   "affiliations": [
+    "Salesforce AI Research",
+    "UC San Diego",
+    "Texas A&M University",
+    "Stanford University"
+   ],
+   "announced": "2026-10-06T20:00:00-04:00",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Agents",
+    "Post-training"
+   ],
+   "tldr": "Self-Retrospection Distillation trains an agent to anticipate its own likely pitfalls using hindsight from completed rollouts, recovering learning signal where outcome rewards vanish and lifting results across ten benchmarks.",
+   "why_selected": "Very high attention (171 Hugging Face upvotes) and a new way to use failed rollouts, with large gains where standard RL with verifiable rewards stalls.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reinforcement learning with verifiable rewards (RLVR) trains agents from pass-or-fail checks. Group-relative methods such as GRPO compare each rollout with its group's average, so when every rollout for a task gets the same reward, the learning signal is exactly zero. On hard, long-horizon tasks this is common: 37 to 98% of rollout groups were reward-uniform across model scales."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Standard practice discards uniform groups and resamples. A newer line, on-policy self-distillation, makes the same model act as teacher while it sees privileged information such as a verified solution, and trains the student to match the teacher's token distributions. Variants change what the teacher sees, but the target is always the same: what action to take next."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Change what hindsight supervises. Think of a chess player who, after a loss, asks not which move to play but what to have been wary of before move one. Given only the task, the model writes the pitfalls it expects. A copy of the model that has also seen the finished trajectory, the gold answer and an error annotation writes the same thing with hindsight. The student's token distribution is pulled toward the hindsight copy's, as an auxiliary loss with weight 0.01 beside the usual objective. Because every rollout, even in an all-fail group, yields such a target, no sample is wasted. Foresight is only a training signal and is not generated at inference."
+    },
+    {
+     "heading": "Results",
+     "body": "On Qwen3.5-4B, adding SRD to GRPO raised the math average from 46.22 to 56.25, the code average from 36.85 to 45.18 and the search average from 48.29 to 56.34, over ten benchmarks, with gains up to 24.2 points. In a 2B setting where 98% of groups were all-failure, RLVR ended at 0.0% success while adding SRD reached 60.6%. There was one regression, WebShop under 9B self-distillation, at minus 3.61 points."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Failed attempts carry information that scalar rewards discard, and this extracts it cheaply. Caveats: models are small, 2B to 9B, and the hindsight copy needs gold answers or error annotations, so tasks without verifiers fit less easily."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.08077",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.08077",
+    "code": "https://github.com/SalesforceAIResearch/SRD"
+   },
+   "signals": {
+    "hf_upvotes": 171,
+    "org": "Salesforce AI Research"
+   }
+  },
+  {
+   "id": "2610.10524",
+   "title": "GRACE: Generation-aware latent compression for efficient video generation",
+   "authors": [
+    "Jiyoung Kim",
+    "Paul Hyunbin Cho",
+    "Jisu Nam",
+    "Donghoon Lee",
+    "Hyunsung Go",
+    "Yeonkyeong Lee",
+    "Hansaem Kim",
+    "Seungryong Kim"
+   ],
+   "affiliations": [
+    "KAIST AI",
+    "Kakao Corp."
+   ],
+   "announced": "2026-10-07T20:00:00-04:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency"
+   ],
+   "tldr": "GRACE shrinks the token count of a pretrained video diffusion model nearly eightfold by compressing its autoencoder in a way the diffusion model still understands, cutting latency 11.1 times with no VBench loss.",
+   "why_selected": "A large, concrete speedup for a widely used 14B video model, with a clear insight that reconstruction quality and generation quality diverge.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Video diffusion transformers (DiTs) are expensive because attention cost grows quadratically with the number of latent tokens, which an autoencoder sets by compressing space and time. Compressing harder gives fewer tokens but blurs reconstruction, and the usual remedy, adding channels per token, slows DiT training and alters what the DiT must learn."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "One route trains a high-compression autoencoder from scratch and then retrains or adapts the pretrained DiT, which is costly. The cheaper alternative inserts compression blocks into the pretrained autoencoder and fine-tunes it for reconstruction alone. That reconstructs well, but the latent drifts away from the distribution the DiT learned, so generation quality drops."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Let the pretrained pipeline guide its own compression. Keep the original encoder frozen and feed it a downsampled video to get a base latent in a space the DiT already knows. Think of it as a thumbnail plus a correction layer: a trainable residual encoder sees the full-resolution video and learns only what the base misses. An alignment loss matches the compressed latent to the original in the feature space of the frozen DiT's first 10 blocks, so the autoencoder is tuned for generation, not just reconstruction. Then the DiT is lightly fine-tuned with asymmetric denoising, where the base latent is denoised ahead of the residual."
+    },
+    {
+     "heading": "Results",
+     "body": "On Wan2.1-I2V-14B at 480x832 resolution and 81 frames, tokens fell from 32.8k to 4.3k and latency 11.1 times, reaching 15.5 times at 736x1280. VBench-I2V total was 87.90 versus 87.92 for the uncompressed model. A single-latent baseline with equal tokens scored 86.44, and LTX-VAE adapted under the same budget scored 87.06. GRACE's reconstruction is worse than that baseline, 32.63 versus 33.76 PSNR."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Existing video models can be made far cheaper without full retraining, and the evidence that better reconstruction does not mean better generation applies to any latent-space generator. Limits: small objects such as distant faces and sign text often break, and each new pipeline needs its own autoencoder run, 8.5 H200 GPU-days here."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.10524",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.10524",
+    "code": "https://github.com/cvlab-kaist/GRACE"
+   },
+   "signals": {
+    "hf_upvotes": 73,
+    "org": "KAIST AI"
+   }
+  },
+  {
+   "id": "2610.07591",
+   "title": "Recurrent Looped Transformer",
+   "authors": [
+    "Yifan Zhang",
+    "Jichen Feng",
+    "Shihan Qin",
+    "Sun-Yuan Kung",
+    "Mengdi Wang"
+   ],
+   "affiliations": [
+    "Princeton University",
+    "University of Pennsylvania"
+   ],
+   "announced": "2026-10-06T20:00:00-04:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Theory"
+   ],
+   "tldr": "The Recurrent Looped Transformer feeds each token's final decoder state into the next token, letting a transformer's computation depth grow with sequence length and solve state-tracking tasks that a standard transformer fails.",
+   "why_selected": "A simple architectural change that addresses a known theoretical limit of fixed-depth transformers, with sharp length-generalization results, though only on synthetic tasks.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Some tasks require updating a state at every input: parity keeps a running XOR of bits, and permutation tracking composes shuffles. A transformer applies a fixed number of layers to each token, and unless a standard complexity conjecture fails, fixed-depth transformers cannot track compositions of permutations of five items (the group called S5) over arbitrarily long inputs."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Recurrent networks pass each update's result forward, so computation grows with input length, but they cannot be trained in parallel over tokens. Transformers parallelize well but have fixed depth. Feedback Transformer and related models pass information across tokens; state-space models such as Mamba use affine state updates."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of a transformer that hands itself a note after every token. The layers are split between a causal encoder, which processes known tokens in parallel and builds key-value memory, and a recurrent decoder. At each token, a gated merge combines the encoder output with the previous token's final decoder output, and the decoder attends to the encoder memory and its own recent activations. After t tokens the recurrent path passes through t times the decoder depth in blocks, while each token still evaluates only its own layers. A feedback interval controls how often the note is updated: every token, every chunk of tokens, or never."
+    },
+    {
+     "heading": "Results",
+     "body": "Using eight layers and three seeds, models trained on at most 40 bits reached 100% parity accuracy at 256 bits for the 5+3 and 7+1 layer splits, versus 50.07% for an eight-layer transformer. On swap-based S5 at 256 operations, the 4+4 split reached 97.30% versus 0.85%. On modular arithmetic of length 63, the 6+2 split reached 93.36% versus 33.20%. Removing feedback dropped parity and S5 to chance. Four-token chunks kept 64-bit parity at 98.99% but cut S5 at 64 operations from 100% to 19.60%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It gives a controllable trade between parallel training speed and recurrent depth: four-token chunks ran 2.27 times faster per training step in CPU timing. The evidence is limited to small synthetic algorithmic tasks at eight layers, with no language-modeling test, and per-token feedback keeps decoder updates sequential."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.07591",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.07591",
+    "code": "https://github.com/yifanzhang-pro/recurrent-looped-tranformer"
+   },
+   "signals": {
+    "hf_upvotes": 25,
+    "org": "Princeton University"
+   }
+  }
+ ]
+}

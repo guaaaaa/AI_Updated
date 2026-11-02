@@ -1,0 +1,382 @@
+{
+ "date": "2026-10-13",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T17:15:21+00:00",
+ "backfill": true,
+ "summary": "Meta ships its first frontier-class models and Character.ai files for Chapter 11, plus papers on long-horizon terminal-agent data, multi-head depth attention, a spatial workspace inside multimodal models, cheaper SSM decoding and label-free reward models.",
+ "news": [
+  {
+   "id": "2026-10-13-n1",
+   "story_key": "meta-muse-wonder-launch",
+   "title": "Meta releases Muse Wonder, its first frontier-class model family",
+   "category": "Model Release",
+   "published": "2026-10-12T13:56:56-04:00",
+   "tldr": "Meta Superintelligence Labs released Muse Wonder and Muse Wonder Full, priced like Claude Opus 5.5, claiming parity with top rivals, though the independent Artificial Analysis index still ranks both below Opus 5.5.",
+   "why_selected": "A new frontier-class model family from a major lab that had not shipped one, with benchmark claims that outside evaluation only partly supports.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Meta's open Llama 4 models arrived in April 2025 with big promises and then stumbled in independent tests. Meta responded with a roughly $14 billion deal for Scale AI and put its founder, Alexandr Wang, in charge of Meta Superintelligence Labs. The unit's first model, Muse Spark, launched in April as a small, fast, closed model. Meanwhile OpenAI shipped GPT-6 Astra on September 3 and Anthropic released Claude Opus 5.5 on September 22, so the frontier had moved on."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, October 12, Meta released Muse Wonder and Muse Wonder Full. Both have a one-million-token context window and power Meta's Muse agent. Wonder is sold through the Meta Model API at $4 per million input tokens and $20 per million output tokens, the same as Opus 5.5 and below Astra's $10 and $50. Wonder Full is limited to paying Muse Code subscribers and will not be served through the API. Meta says the models were trained at its Prometheus data center in Ohio and highlights \"active memory\" and \"active focus\". On Meta's own charts Wonder Full scores 57.5 on SWE-Marathon against 46.3 for Opus 5.5 and 42.5 for Astra, though Meta concedes that row is not a controlled comparison. Meta's MemoryBench gives both models about 85.5 versus 81.5 for Opus 5.5."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Meta is now publicly competing at the top end after avoiding state-of-the-art releases, and it is doing so with closed, priced models rather than open weights. The evidence is mixed. Several headline benchmarks are Meta's own creations, while the independent Artificial Analysis index, a weighted average of 10 evaluations, puts Opus 5.5 first at 58, Wonder Full at 56 and the API-available Wonder at 52, a point below Astra and Claude Fable 5.1. For builders, the practical question is whether the memory-centered design is worth a switch at Opus-level pricing, and for researchers it adds another lab pushing long-horizon agents and persistent memory."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent evaluations of Wonder beyond the single index, any move to put Wonder Full on the API, and how the memory feature fares given scrutiny of how Meta handles private data."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder"
+    },
+    {
+     "name": "Decrypt",
+     "url": "https://decrypt.co/380768/meta-muse-wonder-zuckerberg-frontier-ai-race"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-n2",
+   "story_key": "character-ai-chapter-11-disney",
+   "title": "Character.ai files for Chapter 11 as Disney lines up as lead bidder",
+   "category": "Business & Funding",
+   "published": "2026-10-12T23:52:33-04:00",
+   "tldr": "Character.ai entered voluntary Chapter 11 to run a court-supervised sale, with Disney as the baseline bidder at $20 million for certain assets, while the app keeps running.",
+   "why_selected": "One of the first breakout consumer AI companies is going through bankruptcy, a rare sign of how legal and safety pressure can break a chatbot business.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Character.ai built a platform where users chat and role-play with custom bots, and became one of the first breakout startups of the generative AI boom. It faced mounting lawsuits and scrutiny over the safety of its chatbots. In 2024 Google spent over $2 billion to hire away much of its talent, including co-founders Noam Shazeer and Daniel De Freitas. Disney had separately complained that the platform damaged its brand by hosting unauthorized chatbots of its characters and had sent cease and desist letters."
+    },
+    {
+     "heading": "What happened",
+     "body": "In a press release and blog post published Monday, October 12, Character.ai said it had started a voluntary Chapter 11 process to facilitate a court-supervised sale, citing significant legal, regulatory and operational headwinds. The company expects the sale to finish by the end of November or early December 2026. If no actionable bid appears, the platform will be wound down. For now the service stays up and paid subscriptions remain active. According to The Verge, the filing lists estimated liabilities of $50 million to $100 million. Disney would be the lead bidder, paying $20 million for certain undisclosed assets, offering transition support using former Character employees it has hired, and receiving a nonexclusive license to unspecified intellectual property. Disney also hired former Character CEO Karandeep Anand as chief technology officer."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The case shows how heavy legal, regulatory and safety pressure can become for a consumer chatbot company, even one with a large user base. The Verge compares Disney's hiring of staff plus a small asset purchase to an acquihire, a pattern in which talent leaves and the remaining company struggles, as happened after Google's 2024 deal. For other chatbot makers, it is a data point on the cost of safety and moderation obligations, and on how an entertainment company with intellectual-property complaints can end up buying assets and hiring staff."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether rival bids challenge Disney's baseline before the sale concludes, how the court treats safety-related claims, and whether the platform survives or winds down."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Character.ai",
+     "url": "https://blog.character.ai/an-update-on-character-ai/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.13166",
+   "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+   "authors": [
+    "Shun Zou",
+    "Ziyu Ma",
+    "Yi Zou",
+    "Yong Wang",
+    "Lin Chen",
+    "Zehui Chen",
+    "Guanhua Chen",
+    "Xiangxiang Chu",
+    "Feng Zhao"
+   ],
+   "affiliations": [
+    "University of Science and Technology of China",
+    "AMAP (Alibaba Group)",
+    "Southern University of Science and Technology"
+   ],
+   "announced": "2026-10-11T20:00:00-04:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Post-training",
+    "Pre-training & Data"
+   ],
+   "tldr": "TerminalHorizon synthesizes long terminal-agent tasks by letting an independent agent expose shortcuts, then rebuilding and extending the tasks; 2,852 trajectories lift Qwen3.5-27B by about 14 points on Terminal-Bench 2.x.",
+   "why_selected": "Strong attention (139 Hugging Face upvotes) and a data-quality idea for agent training that other labs can reuse, with large gains from only about 3K trajectories.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Terminal agents work in a shell on software, system administration and scientific tasks. Doing this well takes sustained work: gathering evidence, revising plans and verifying results. Training data that shows this is scarce."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Recent pipelines synthesize executable, verifiable terminal tasks at scale through skill composition, evidence-grounded task generation and recursive expansion. Their trajectories stay short. Worse, construction can quietly do the key work in advance: if the environment already supplies the function the agent was meant to implement, the task shrinks to editing one constant."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of playtesting a game level and removing the shortcuts. In stage one, an agent that took no part in building a task attempts it using only the public instruction and environment. Comparing its trajectory with the intended work reveals \"horizon gaps\", where construction already supplied the analysis, implementation or verification. A construction agent rebuilds the environment so that work is needed again, and the loop repeats. In stage two, accepted tasks are extended under the same goal with new requirements that depend on earlier results and tool feedback, such as broader roles, deeper mechanisms, richer evidence or method upgrades. The result is 1,535 environments across 25 professional domains. DeepSeek-V4-Pro, as teacher, produced two trajectories per task, and filtering kept 2,852 averaging 52.8 turns."
+    },
+    {
+     "heading": "Results",
+     "body": "Supervised fine-tuning of Qwen3.5-27B on these trajectories gives TerminalHorizon-27B. It scores 55.0%, 55.8% and 60.67% on Terminal-Bench 1.0, 2.0 and 2.1, gains of 8.7, 14.2 and 13.85 points over the base model. It beats Terminal-Universe-27B by 3.0 points with the same base and harness while using fewer than one-tenth as many trajectories. On AutomationBench the pass rate rises from 5.5 to 17.2 and on VitaBench from 20.5 to 31.8. All 12 benchmarks improve, including tau2-bench Airline (79.0 to 84.5)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result supports the view that, for agent training, what a trajectory demands matters more than how many there are, and the challenge-then-rebuild loop is reusable for any synthetic environment. Caveats: trajectories come from one teacher, only one base model is fine-tuned, and the 12-hour self-improvement case studies are anecdotal."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.13166",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.13166"
+   },
+   "signals": {
+    "hf_upvotes": 139,
+    "org": "alibaba"
+   }
+  },
+  {
+   "id": "2610.13630",
+   "title": "Multi-Stream Attention Residuals",
+   "authors": [
+    "Xiaohan Qin",
+    "Xiangdong Zhang",
+    "Tuo Dai",
+    "Sunan Zou",
+    "Huaijin Wu",
+    "Yebin Yang",
+    "Zhuo Xia",
+    "Lin Yao",
+    "Yuliang Liu",
+    "Junchi Yan"
+   ],
+   "affiliations": [
+    "Shanghai Jiao Tong University",
+    "Shanghai Innovation Institute",
+    "Xiaohongshu Inc.",
+    "Peking University"
+   ],
+   "announced": "2026-10-11T20:00:00-04:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Pre-training & Data",
+    "Efficiency"
+   ],
+   "tldr": "Multi-Stream Attention Residuals gives each layer several learned views of earlier layers' outputs and attends over depth per view, yielding a 1.58x iso-loss compute speedup at about 0.5% extra FLOPs.",
+   "why_selected": "A cheap change to the least-touched part of the transformer, tested at 18B and 28B MoE scale with a fitted compute-efficiency gain over two recent residual designs.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "In a deep transformer every layer adds its output into one running hidden state. As depth grows, features from early layers get diluted and later layers cannot retrieve them separately, so extra layers deliver less than their capacity suggests."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Hyper-Connections and their manifold-constrained version (mHC) keep several parallel residual streams mixed by learned matrices. Attention Residuals (AttnRes) let each layer take a softmax-weighted mixture of all earlier layer outputs, effectively single-head attention over depth. Splitting the hidden state into channel slices to get multiple heads hurt performance, and deriving heads by rescaling the same vector gave near-identical keys."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Treat layers like a sequence and ask for multi-head attention over depth. Each head needs a different but intact view of every layer's output. The authors get views from the token axis: lightweight causal depthwise convolutions with kernel sizes 4, 8 and 12 blend each layer's output with preceding tokens, which with the original gives four streams. Each stream has its own learned query and attends over all earlier layers independently. A small gate then mixes the four retrieved vectors into one layer input. A block version summarizes layers into about eight blocks so storage and pipeline communication match AttnRes. In the 28B setting this adds 0.3% activated parameters and 0.5% training FLOPs."
+    },
+    {
+     "heading": "Results",
+     "body": "On 18B and 28B mixture-of-experts models, MSAR beats the standard residual, mHC and AttnRes on all 12 benchmarks. Average scores are 45.7 versus 37.5, 41.7 and 41.8 at 18B, and 52.4 versus 44.6, 47.4 and 49.4 at 28B. Fitting scaling laws over four model sizes gives an iso-loss compute speedup of 1.58x over the standard residual, against 1.35x for AttnRes and 1.30x for mHC. In a 10B ablation, replacing the convolutions with identical copies raises loss from 1.847 to 1.862."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests that cross-layer retrieval and multi-stream state are complementary, and that depth can borrow tricks from sequence modeling. Caveats: the models are small with low absolute scores, only mixture-of-experts pre-training is tested, and all comparisons come from the authors' own runs."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.13630",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.13630",
+    "code": "https://github.com/jianke0604/MSAR"
+   },
+   "signals": {
+    "hf_upvotes": 51,
+    "org": "Shanghai Jiao Tong University"
+   }
+  },
+  {
+   "id": "2610.13527",
+   "title": "S-Space: Exploring Spatial Workspace in Multimodal Language Models",
+   "authors": [
+    "Zhiyuan Shi",
+    "Xiang Li",
+    "Xingzhuo Guo",
+    "Shangchen Miao",
+    "Weiliang Chen",
+    "Qiyu Dai",
+    "Jinshan Ren",
+    "Jiangran Lyu",
+    "Fangfu Liu",
+    "Mingsheng Long",
+    "Jialong Wu"
+   ],
+   "affiliations": [
+    "MirroS",
+    "Tsinghua University",
+    "Peking University"
+   ],
+   "announced": "2026-10-11T20:00:00-04:00",
+   "primary_tag": "Interpretability",
+   "tags": [
+    "Interpretability",
+    "Multimodal",
+    "Reasoning"
+   ],
+   "tldr": "S-Space is a three-dimensional linear subspace in multimodal LLMs where object tokens encode horizontal, vertical and distance coordinates, revealing that perspective-taking failures come from spatial computation rather than perception.",
+   "why_selected": "Rare mechanistic evidence that separates perceiving from transforming spatial information, with a causal test and a large diagnostic payoff, backed by 58 Hugging Face upvotes.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Multimodal language models answer spatial questions such as left or right, above or below and near or far, yet remain unreliable, especially when they must imagine a different viewpoint. From the outside it is unclear whether they fail to perceive the layout or fail to reason about it."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Spatial reasoning is mostly judged from answers and actions, which say little about where an error arises. Internal mechanisms for space in these models remain poorly understood."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Assume an object's position is stored linearly in the hidden state of its name token. The authors find three directions in a middle layer by differentiating the logit difference for right versus left, above versus below and close versus far with respect to the object token's activation. They subtract the reference object's gradient from the queried object's gradient and average over templates and examples. Projecting any object token onto these directions then gives coordinates with one forward pass and no training. Think of it as a scratchpad the model draws on. Editing the coordinates and resuming generation changes spatial answers but largely leaves color answers alone, so the model uses the space causally."
+    },
+    {
+     "heading": "Results",
+     "body": "Tested on Molmo2-ER, Qwen3.5-4B and Qwen3.6-27B, the coordinates correlate with true positions and answer spatial questions about as accurately as the model's own words, including on CV-Bench, EmbSpatial and SpatialTunnel. On SpinBench perspective-taking, direct answers score about 61% for all three models, and reasoning mode reaches 83.56% for Qwen3.6-27B. Reading S-Space and applying an explicit rotation scores 94.52 for Molmo2-ER, 91.10 for Qwen3.5-4B and 95.21 for Qwen3.6-27B. With the source-view relation supplied, accuracy is 97.9 to 99.3. Word readouts also show \"socialist\" projecting toward the left end and \"east\" aligning with \"right\"."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Representations are adequate, but the transformation step is the bottleneck, which suggests handing viewpoint changes to external tools. Caveats: coordinates are image-plane, only three models are studied, and the language-origin account is a hypothesis."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.13527",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.13527",
+    "code": "https://github.com/mirros-lab/s-space"
+   },
+   "signals": {
+    "hf_upvotes": 58,
+    "org": "MirroS"
+   }
+  },
+  {
+   "id": "2610.13778",
+   "title": "ReplaySSM: Cache SSM Inputs, Not State",
+   "authors": [
+    "Ze-Wei Liou",
+    "Harris Nover",
+    "Amey Naik",
+    "Andrii Skliar",
+    "Igor Shovkun",
+    "Ido Shahaf",
+    "Tri Dao"
+   ],
+   "affiliations": [
+    "Princeton University",
+    "NVIDIA"
+   ],
+   "announced": "2026-10-11T20:00:00-04:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Architectures"
+   ],
+   "tldr": "ReplaySSM stores a checkpoint plus recent SSM inputs instead of rewriting the recurrent state every token, speeding hybrid-model decoding by 1.20-1.47x and speculative serving by about 1.8x.",
+   "why_selected": "A serving-systems insight from Tri Dao and NVIDIA that fixes three SSM decoding problems at once, implemented in vLLM and said to be in production use.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Hybrid language models interleave state-space layers such as Mamba-2 and Gated DeltaNet with attention. SSM layers keep a fixed-size recurrent state, which sounds cheap, but at serving batch sizes decoding spends much of its time reading and writing that state. For Nemotron-3-Super-120B at batch size 256, SSM updates stay the largest latency component up to 100K tokens."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Standard decoding loads the state, updates it, computes the output and stores it again at every token. That has low arithmetic intensity and no cheap rollback, so speculative decoding in vLLM stores a state snapshot per draft token, which limits concurrency. Quantizing the state feeds rounding error back into every later update."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of a database write-ahead log. Instead of rewriting the state each token, ReplaySSM keeps an older checkpoint plus a small buffer of the last 16 steps of inputs and computes outputs from both. The checkpoint is rewritten once per window. This roughly halves the dominant state traffic. Rolling back rejected draft tokens becomes moving a buffer pointer. The output-only trick avoids building intermediate states at all. A low-precision copy can serve non-update steps while a high-precision checkpoint drives the recurrence, so rounding error never accumulates."
+    },
+    {
+     "heading": "Results",
+     "body": "In vLLM across four hybrid models, two of them 120B-class, the SSM kernel is 1.46 to 1.80x faster and the full decode step 1.20 to 1.47x faster at batch size 256 versus a tuned baseline. On the two large models, speculative serving reaches about 1.8x the throughput of vLLM's version. With a 4-bit NVFP4 state, separate precisions cut output KL divergence by 13 to 36x at the longest length. On GPQA-Diamond, the average accuracy drop from the full-precision state shrinks from 13.05 points with a shared NVFP4 state to 2.36 with separate precisions."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Efficient hybrids matter for long-chain reasoning and agent workloads. The authors say it is already used in production models. Caveat: at batch size 1 the gain is within a few percent, and each step still reads the checkpoint."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.13778",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.13778",
+    "code": "https://github.com/Johnny-Liou/ReplaySSM"
+   },
+   "signals": {
+    "notable_authors": [
+     "Tri Dao"
+    ]
+   }
+  },
+  {
+   "id": "2610.12707",
+   "title": "Unsupervised Multimodal Reward Modeling",
+   "authors": [
+    "Yueying Li",
+    "Jingxuan Fan",
+    "Kianté Brantley",
+    "Sham M. Kakade",
+    "Hanlin Zhang"
+   ],
+   "affiliations": [
+    "Massachusetts Institute of Technology",
+    "Cornell University",
+    "Scale AI",
+    "Harvard University"
+   ],
+   "announced": "2026-10-11T20:00:00-04:00",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Multimodal",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "A linear head on a frozen vision-language model's middle layer, trained to prefer a caption over a one-fact edit of it, rivals GPT-4o as a reward model without human labels.",
+   "why_selected": "Cheap label-free recipe with a pointed warning that equal benchmark scores can hide a 6.4-point difference in hallucination judging.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reward models for vision-language models are trained on human-annotated preference pairs, which are expensive and which annotators often disagree on. Models are then ranked by benchmark accuracy, and it is unclear whether that rank predicts what happens when the model chooses among a policy's samples."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Curated sets such as RLAIF-V and large human comparison sets supply preferences. Label-free pipelines usually ask another model to write the rejected answer, but that answer differs in author, length and style as well as fact, and the reward learns those shortcuts. In the authors' test, a head trained on human against policy captions scored .36 on Multimodal RewardBench, below chance."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Use a web caption as the chosen response and edit one fact in it, for example turning \"red fence\" into \"blue fence\", with plain string operations and no model. Because author and style are shared and length is mostly unchanged, the main learnable difference is a fact about the image. The reward is a bias-free linear head over mean-pooled hidden states of an intermediate layer of a frozen Qwen3-VL, so the 2B version trains 2,048 parameters. The layer matters: the best is never the last, and it is worth 5.8 points over the last layer. A 22k-pair bank builds in 10 seconds on one CPU core."
+    },
+    {
+     "heading": "Results",
+     "body": "The 32B probe matches or beats GPT-4o on three benchmarks and is 6.6 points ahead on VL-RewardBench. At 15k pairs it is 3 to 4 points ahead of curated RLAIF-V pairs on Multimodal RewardBench. Two heads trained on disjoint halves of the perturbations tie on the benchmark (.597 versus .603) but score 72.0 versus 78.4 on hallucination judging. Retraining on a policy's own verifier-labelled candidates cuts caption hallucination by 5.1 CHAIR points while scoring lower on every reward benchmark."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Test a reward model on best-of-N selection from your own policy, not its leaderboard rank. Caveats: the backbone used as a generative judge still beats the probe by 4.7 points on one benchmark, and the margin over GPT-4o is unresolved on two of three."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.12707",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.12707"
+   },
+   "signals": {
+    "notable_authors": [
+     "Sham M. Kakade"
+    ]
+   }
+  }
+ ]
+}

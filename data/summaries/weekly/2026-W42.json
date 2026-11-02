@@ -1,0 +1,259 @@
+{
+ "kind": "weekly",
+ "id": "2026-W42",
+ "period": {
+  "start": "2026-10-12",
+  "end": "2026-10-17"
+ },
+ "published": "2026-10-18",
+ "generated_at": "2026-11-02T17:55:40+00:00",
+ "headline": "Self-improvement moves out to environments and scaffolds and post-training turns to better learning signals, while open weights ship and courts, prosecutors and independent indexes, not lab disclosures, increasingly judge AI labs and their claims.",
+ "research": {
+  "heating": [
+   {
+    "label": "Agent-built training environments and harnesses",
+    "refs": [
+     "2610.14163",
+     "2610.12611",
+     "2610.14224"
+    ]
+   },
+   {
+    "label": "Reward and credit-signal design",
+    "refs": [
+     "2610.16794",
+     "arXiv stats"
+    ]
+   },
+   {
+    "label": "Single-pass decision models",
+    "refs": [
+     "2610.18773",
+     "arXiv stats"
+    ]
+   },
+   {
+    "label": "Joint world-action robot models",
+    "refs": [
+     "2610.12818",
+     "2610.18774"
+    ]
+   }
+  ],
+  "cooling": [
+   {
+    "label": "Object detection and retrieval-augmented generation titles",
+    "refs": [
+     "arXiv stats"
+    ]
+   },
+   {
+    "label": "AI-for-science and health title share",
+    "refs": [
+     "arXiv stats"
+    ]
+   },
+   {
+    "label": "Efficiency title share",
+    "refs": [
+     "arXiv stats"
+    ]
+   }
+  ],
+  "themes": [
+   {
+    "title": "Self-improvement moves from the model to its environments and harness",
+    "body": "Titles on self-improving systems numbered 13 against 5.4 expected, and co-evolution 9 against 2.5 [arXiv stats]. Last week measured learning from experience; this week agents build the training setup itself. An agent writing environments from a solver's failures produced up to 25 times more valid ones than prompting [2610.14163]; 182 synthesized desktop applications lifted a 9B model's OSWorld Pass@3 from 41.39% to 56.97% [2610.12611]; editing scaffolds without touching weights lifted frozen models by up to 11.5 points [2610.14224]; one harness mixing GUI actions with shell commands helped all eight tested frontier models [2610.22200]. Limits: the proposer writes both solutions and tests, so shared mistakes slip through, and API agents still score 71.31% and 79.10% on OSWorld [2610.12611]. Other base models and independent checkers would confirm it."
+   },
+   {
+    "title": "Post-training spend moves from cheaper rollouts to better learning signals",
+    "body": "Titles mentioning rewards numbered 27 against 13.3 expected and verifiable 32 against 12.1, while reinforcement learning rose to 4.8% of titles from 4.2% [arXiv stats]. After last week's cost cuts, the work targets the signal. Tracking-value PPO (proximal policy optimization) rebuilds the critic as a running sum of per-token log-odds and gains 7.0 to 8.4 math points with no extra rollouts [2610.16794]; a linear probe on a frozen vision-language model rivals GPT-4o as a reward model without human labels [2610.12707]. Yet the value-change sign is right only about 53% of the time [2610.16794]. Held-out judges and human studies would confirm the shift."
+   },
+   {
+    "title": "Choices get their own model class: single-pass decision models",
+    "body": "Titles on decision models numbered 16 against 4.2 expected [arXiv stats]. Jeva, the highest Hugging Face count among our picks (165), encodes a request and each option separately, then refines only the request against cached option vectors, so choices are order-invariant and 'none of these' is a built-in answer [2610.18773]. Three high-attention papers we did not feature share the Jev name, two with System One in the title [2610.18615, 2610.22276, 2610.18272], and distilling decisions rather than tokens lifted four out-of-domain tool-use benchmarks by 3.3 to 6.9 points [2610.19820]. Caveat: Jeva trails InternDecision-4B narrowly (78.30% against 78.70%), and the cluster may be one group's naming family."
+   },
+   {
+    "title": "Robot policy and world model merge into one checkpoint",
+    "body": "This continues last week's world-action trend, but the question shifts from how little foresight a policy needs to whether one model can predict and act. LeWAM reaches 93.5% goal success against 50.9% for the prior planner, planning 32 times faster [2610.12818]; GreenWAM maps 20 robot families into one action space so a single video-action model is both world model and policy [2610.18774]. Titles with action-conditioned numbered 8 against 1.7 expected, while sim-to-real fell to 4 from 8.6 [arXiv stats]. Real-robot evidence stays thin: LeWAM only matches baselines there, and GreenWAM tests one humanoid and one packing task."
+   }
+  ]
+ },
+ "industry": {
+  "heating": [
+   {
+    "label": "Open-weight checkpoints shipping, memory-bound",
+    "refs": [
+     "2026-10-17-n1",
+     "2026-10-16-n1"
+    ]
+   },
+   {
+    "label": "Outside enforcement of AI labs",
+    "refs": [
+     "2026-10-15-n1",
+     "2026-10-14-n2"
+    ]
+   },
+   {
+    "label": "Independent and checkable evidence",
+    "refs": [
+     "2026-10-13-n1",
+     "2026-10-17-n2"
+    ]
+   }
+  ],
+  "cooling": [
+   {
+    "label": "Weights promised but unreleased",
+    "refs": [
+     "2026-10-17-n1"
+    ]
+   },
+   {
+    "label": "Vendor-only benchmark claims",
+    "refs": [
+     "2026-10-13-n1"
+    ]
+   },
+   {
+    "label": "Standalone companion-chatbot businesses",
+    "refs": [
+     "2026-10-13-n2"
+    ]
+   }
+  ],
+  "themes": [
+   {
+    "title": "Open-weight promises become shipped checkpoints, and memory becomes the constraint",
+    "body": "Last week Reflection promised weights; on October 17 it published Beam, 501B parameters with 23B active, under Apache 2.0 [2026-10-17-n1]. A day earlier Meta released the 816B Muse Spark Open [2026-10-16-n1], while selling closed Muse Wonder at Claude Opus 5.5 prices [2026-10-13-n1]. Nvidia, which supplied Beam's 10,500 GB300 GPUs, is reportedly in early talks to acquire Reflection or deepen its stake [2026-10-12-n1], so hardware vendors are moving toward owning models. Sparse designs cut compute per token but not memory: Spark Open needs the memory of 816B parameters for the compute of roughly 42B [2026-10-16-n1], the trade research explores by moving scaling to cheap host memory [2610.20456]. Tension: performance claims are the vendors' own and Kimi K3 still leads Beam; independent tests against GLM-5.2 would settle it."
+   },
+   {
+    "title": "Scrutiny of labs shifts from self-disclosure to outside enforcement",
+    "body": "Last week's risk evidence came from labs' own disclosures; this week the actors are external. Eight bipartisan state attorneys general sued OpenAI in separate courts, asking among other relief that self-improving models be barred unless alignment can be ensured [2026-10-15-n1]. The FBI charged an OpenAI engineer with planting a recorder in an executive conference room, citing his queries to an AI agent [2026-10-14-n2]. Character.ai entered Chapter 11 with Disney as a $20 million baseline bidder, a data point on safety and legal costs for consumer chatbots [2026-10-13-n2]. Research is not following: Society and Policy titles fell to 3.3% from 3.7% and Security to 2.6% from 2.9% [arXiv stats], while self-improving titles rose. The suits are allegations and the remedy is untested."
+   },
+   {
+    "title": "Launch claims are arbitrated by independent or checkable evidence",
+    "body": "Meta claimed parity with top rivals for Muse Wonder, but the independent Artificial Analysis index, a weighted average of 10 evaluations, ranks Opus 5.5 first at 58, Wonder Full at 56 and Wonder at 52 [2026-10-13-n1]. Google released Gemini 4 Argon at launch prices of $2 and $10 per million tokens that double after November 30, and its performance claims also await independent comparison [2026-10-14-n1]. The contrast is Anthropic's report that a model traced NIST's elliptic-curve seeds to a clock-seeded random number generator: a scan either matches or fails, though it is one lab's account of one case [2026-10-17-n2]. Last week's complaint was that checking lags producing; independent runs of Argon and Beam would show whether that gap is closing."
+   }
+  ]
+ },
+ "sources": [],
+ "refs": {
+  "2026-10-12-n1": {
+   "type": "news",
+   "title": "Nvidia reportedly in talks to buy or deepen its stake in Reflection AI",
+   "date": "2026-10-12"
+  },
+  "2026-10-13-n1": {
+   "type": "news",
+   "title": "Meta releases Muse Wonder, its first frontier-class model family",
+   "date": "2026-10-13"
+  },
+  "2026-10-13-n2": {
+   "type": "news",
+   "title": "Character.ai files for Chapter 11 as Disney lines up as lead bidder",
+   "date": "2026-10-13"
+  },
+  "2026-10-14-n1": {
+   "type": "news",
+   "title": "Google releases Gemini 4 Argon to developers and subscribers worldwide",
+   "date": "2026-10-14"
+  },
+  "2026-10-14-n2": {
+   "type": "news",
+   "title": "FBI arrests OpenAI engineer over hidden recording device in executive conference room",
+   "date": "2026-10-14"
+  },
+  "2026-10-15-n1": {
+   "type": "news",
+   "title": "Eight US states sue OpenAI over ChatGPT harms to young users",
+   "date": "2026-10-15"
+  },
+  "2026-10-16-n1": {
+   "type": "news",
+   "title": "Meta releases Muse Spark Open, an 816B open-weight model built to run on Macs",
+   "date": "2026-10-16"
+  },
+  "2026-10-17-n1": {
+   "type": "news",
+   "title": "Reflection releases Beam, a 501B-parameter open-weight model, under Apache 2.0",
+   "date": "2026-10-17"
+  },
+  "2026-10-17-n2": {
+   "type": "news",
+   "title": "Anthropic says Claude traced the NIST curve seeds to a 1990s random number generator",
+   "date": "2026-10-17"
+  },
+  "2610.12611": {
+   "type": "paper",
+   "title": "SoftwareGym: Scaling Computer-Use Agent Training with Diverse Synthesized Software Environments",
+   "date": "2026-10-12"
+  },
+  "2610.12707": {
+   "type": "paper",
+   "title": "Unsupervised Multimodal Reward Modeling",
+   "date": "2026-10-13"
+  },
+  "2610.12818": {
+   "type": "paper",
+   "title": "LeWAM: End-to-End World and Action Modeling with JEPAs",
+   "date": "2026-10-14"
+  },
+  "2610.14163": {
+   "type": "paper",
+   "title": "AutoEnvScaling: Automating the Data Flywheel with Terminal Agents",
+   "date": "2026-10-14"
+  },
+  "2610.14224": {
+   "type": "paper",
+   "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+   "date": "2026-10-15"
+  },
+  "2610.16794": {
+   "type": "paper",
+   "title": "TPPO: Tracking-Value PPO For Language Model Reasoning",
+   "date": "2026-10-14"
+  },
+  "2610.18272": {
+   "type": "paper",
+   "title": "JevGPT: Thinking Fast and Slow in Autonomous Research",
+   "date": null
+  },
+  "2610.18615": {
+   "type": "paper",
+   "title": "VideoJev: System One Model for Video Understanding and Interaction",
+   "date": null
+  },
+  "2610.18773": {
+   "type": "paper",
+   "title": "Jeva: System One Models from First Principles",
+   "date": "2026-10-17"
+  },
+  "2610.18774": {
+   "type": "paper",
+   "title": "GreenWAM: A World Foundation Model for Robotics",
+   "date": "2026-10-15"
+  },
+  "2610.19820": {
+   "type": "paper",
+   "title": "ActionOPD: Distilling Decisions, Not Tokens",
+   "date": "2026-10-16"
+  },
+  "2610.20456": {
+   "type": "paper",
+   "title": "The COUNT: Counting N-grams Unlocks Scaling on Host Memory and Training-Free Adaptation",
+   "date": "2026-10-15"
+  },
+  "2610.22200": {
+   "type": "paper",
+   "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+   "date": "2026-10-17"
+  },
+  "2610.22276": {
+   "type": "paper",
+   "title": "MJev-Spatial: System One Spatial Intelligence via Native Attention Matching",
+   "date": null
+  }
+ }
+}

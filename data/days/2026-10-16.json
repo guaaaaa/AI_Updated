@@ -1,0 +1,350 @@
+{
+ "date": "2026-10-16",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T17:35:22+00:00",
+ "backfill": true,
+ "summary": "Meta releases an 816B-parameter open-weight model; papers cover memory for linear attention, consolidating context into weights, action-level agent distillation, LLM-guided science generators and faster video generation.",
+ "news": [
+  {
+   "id": "2026-10-16-n1",
+   "story_key": "meta-muse-spark-open-release",
+   "title": "Meta releases Muse Spark Open, an 816B open-weight model built to run on Macs",
+   "category": "Model Release",
+   "published": "2026-10-15T12:00:00-04:00",
+   "tldr": "Meta released Muse Spark Open, a multimodal mixture-of-experts model with about 816 billion parameters and a one-million-token context, billed as the most capable US open-weight model and designed to run locally on Apple hardware.",
+   "why_selected": "A frontier-scale open-weight release with multimodal input and a novel local-deployment angle, covered by the launch partners and independent press.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Meta's Muse family now spans several sizes. Muse Glimmer, released in August, is a small dense model meant for local use. Muse Spark Open is the full-size model of the series and shares Glimmer's tokenizer and vocabulary. Open-weight releases matter because developers can download, host, fine-tune and inspect the model instead of renting it through a closed API."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday, October 15, Meta released Muse Spark Open, a mixture-of-experts model with about 816 billion parameters in total and about 42 billion active per token, using 256 experts per layer with 8 selected per token. The context window reaches one million tokens. The model accepts text, images, audio and video, and outputs text. Meta trained it for agentic coding and tool calling. TechCrunch reports that Meta's own evaluations show it ahead of other popular open-weight models. Weights ship as a BF16 checkpoint of about 1.5 terabytes and a 4-bit NVFP4 checkpoint for NVIDIA Blackwell GPUs, and several API platforms host the model."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "All experts must sit in memory, so deployment needs the memory of an 816 billion parameter model while each token costs the compute of roughly a 42 billion parameter one, according to Hugging Face. Hugging Face runs the NVFP4 checkpoint on a single B200 node and tested 2-bit and roughly 3-bit quantizations on an Apple M3 Ultra with 512 GB of memory, generating about 18 and 21 tokens per second. TechCrunch adds that Meta designed the model for Apple computers, citing Engadget for a requirement of at least 1 TB of RAM. For researchers, a frontier-scale open multimodal model is a rare object to fine-tune and probe; Hugging Face shows a LoRA recipe on 64 H100 GPUs. Caveats: reasoning cannot be switched off, and performance claims so far come from Meta's own evaluations."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent benchmarks will test the claim of leadership among open-weight models. Also watch the license terms, which the coverage so far does not detail, how well heavily quantized versions keep quality, and whether hosts make the model practical beyond high-memory Macs and Blackwell servers."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Hugging Face",
+     "url": "https://huggingface.co/blog/meta-muse-spark-open"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/?p=3178309"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.15715",
+   "title": "History Replays Itself: Unleashing Long-Context Capability in Linear Attention",
+   "authors": [
+    "Li Nanbo",
+    "Firas Laakom",
+    "Yilan Zhang",
+    "Piotr Piękos",
+    "Yimeng Chen",
+    "Liangyu Wang",
+    "Yifan Xu",
+    "Mateusz Ostaszewski",
+    "Dandan Guo",
+    "Wenyi Wang",
+    "Yanning Dai",
+    "Yuhui Wang",
+    "Jürgen Schmidhuber"
+   ],
+   "affiliations": [
+    "King Abdullah University of Science and Technology (KAUST)"
+   ],
+   "announced": "2026-10-13T20:00:00-04:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Retrieval & Memory",
+    "Efficiency"
+   ],
+   "tldr": "NoteBank adds a training-free sparse memory to pretrained linear-attention models, lifting Gated DeltaNet's million-token retrieval accuracy from 1.7% to 70.3% at almost no extra compute.",
+   "why_selected": "Challenges the assumption that a recurrent model's fixed state caps its long-context ability, with a plug-in fix and large measured gains.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Linear-attention and state-space models such as Gated DeltaNet and Mamba-2 read text in constant memory by compressing history into one fixed-size state. That makes them cheap at long context, but the state must both compute and remember, so evidence is lost before anyone knows what a question needs. At one million tokens, a 1.3B Gated DeltaNet averages 1.7% on six RULER retrieval tasks."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Better state-update rules manage the limited capacity more cleverly but keep the same ceiling. Hybrid models add some full-attention layers. Repeating the whole prompt, a trick called JRT, yields little at long lengths in the paper's tests."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of sticky notes. While reading, before any question exists, NoteBank saves a few short text spans per chunk, choosing spans whose key vectors are most distinctive relative to their chunk. It stores the original tokens plus an address built from the model's own query vectors. When a question arrives, each layer and head matches the question's queries against the addresses and votes for one note. The top-voted notes are put back in document order and replayed through the model itself, then the question is answered. There is no external embedding model, retriever or reader, and no training. An optional LoRA adapter, trained on under 9.3M tokens, improves the reading step."
+    },
+    {
+     "heading": "Results",
+     "body": "At one million tokens, training-free NoteBank beats the plain model by 68.6, 66.6 and 37.8 points on Gated DeltaNet, GDN-2 and Mamba-2, reaching 70.3% on Gated DeltaNet. It adds at most 0.025% to analytical compute, and storage is 74.5 MiB, about 1/2,600 of a full attention KV cache. Measured latency rises 10.6% to 13.2%. On LongBench, Gated DeltaNet improves from 15.49 to 16.07 without training and 23.03 with LoRA, against 16.05 for a Transformer reference. Qwen3.5-9B gains 46.1 to 49.3 on LongBench-v2."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For anyone tracking efficient architectures, the fixed state looks less of a ceiling than assumed. Caveats: this is retrieval of stored text, closer to built-in retrieval-augmented generation than to a larger memory, models are 1.3B to 9B, and most of the LongBench gain on Gated DeltaNet comes from LoRA adaptation rather than the notes."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.15715",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.15715"
+   },
+   "signals": {
+    "hf_upvotes": 17,
+    "notable_authors": [
+     "Jürgen Schmidhuber"
+    ],
+    "org": "KAUST Center of Excellence in Generative AI"
+   }
+  },
+  {
+   "id": "2610.20399",
+   "title": "Cortex: Consolidating Context into Parametric Memory",
+   "authors": [
+    "Jintian Zhang",
+    "Feng He",
+    "Xinnian Liang",
+    "Ziwen Xu",
+    "Haoming Xu",
+    "Haojing Huang",
+    "Shuangzhi Wu",
+    "Ningyu Zhang"
+   ],
+   "affiliations": [
+    "Zhejiang University",
+    "ByteDance Seed",
+    "Tsinghua University"
+   ],
+   "announced": "2026-10-14T20:00:00-04:00",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "Post-training"
+   ],
+   "tldr": "Cortex writes the benefit of a context into a model's feed-forward layers by having the model rehearse questions about it, so the gains persist without the context while other abilities stay nearly untouched.",
+   "why_selected": "Frames editing, skill learning and steering as one memory-consolidation problem and shows a mergeable, sequential solution across 4B to 120B models.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A language model that is given the right context, such as documentation or a fact, can perform much better, but the gain vanishes when the context is removed. Agents that should accumulate experience need that gain to persist. The authors call this memory consolidation: produce an updated model that behaves as if it had the context, without it, while keeping everything else unchanged."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "External memory and retrieval keep experience outside the model, so they work only if the right item is retrieved at inference time, and indirectly relevant experience can be missed. Knowledge-editing methods, context distillation, hypernetworks and test-time training each address a slice of it."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The design borrows from neuroscience: fast episodic encoding followed by slow integration. First, the frozen model reads the context and invents prospective queries about how it might be used, then answers them with the context in view. Second, it adds new capacity only in feed-forward layers, either low-rank updates to existing projections or extra neuron channels placed alongside the originals. Third, the model without the context is trained on those queries to match the model with the context, using a divergence loss on output distributions plus a squared-error loss on hidden states. In sequential use, earlier additions are frozen and each new one is mergeable."
+    },
+    {
+     "heading": "Results",
+     "body": "Across five task families, including editing, skill learning on agent tasks, steering and suppression, with models from 4B to 120B parameters, a Cortex variant sits on the Pareto frontier of consolidation versus retention in all 15 panels of the main figure among context-free methods. In steering it recovers about 95 to 100% of the contextual gain with 99 to 100% retention. In batch editing it recovers about 80 to 91% on three Qwen models. After 50 sequential factual edits on a 14B model, the structural variant recovers 88.9% of the gain and retains 99.8% of original performance."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Cortex points toward agents that learn from experience without a retrieval layer, using small mergeable updates. Caveats: it needs a context that demonstrably helps, each write requires generating data and training, and cross-task continual learning and large batches remain open."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.20399",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.20399"
+   },
+   "signals": {
+    "hf_upvotes": 71,
+    "org": "ByteDance Seed"
+   }
+  },
+  {
+   "id": "2610.19820",
+   "title": "ActionOPD: Distilling Decisions, Not Tokens",
+   "authors": [
+    "Huining Yuan",
+    "Xiangmin Yi",
+    "Zelai Xu",
+    "Zixu Wang",
+    "Xinlei Chen",
+    "Xiao-Ping Zhang",
+    "Yu Wang",
+    "Chao Yu"
+   ],
+   "affiliations": [
+    "Tsinghua University"
+   ],
+   "announced": "2026-10-14T20:00:00-04:00",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Agents",
+    "Reinforcement Learning"
+   ],
+   "tldr": "ActionOPD distills a black-box teacher agent into a small student by rewarding agreement on the decision, not the tokens, lifting four out-of-domain tool-use benchmarks by 3.3 to 6.9 points.",
+   "why_selected": "A practical way to distill API-only teachers across model families, with clear ablations and transfer to unseen agent benchmarks.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Small agent models are cheaper to run, so labs distill capable agents into them. The open question is where the teacher should supervise the student and at what granularity."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Offline distillation fine-tunes on teacher trajectories, but the student later faces states the teacher never showed it. Token-level on-policy distillation fixes this by supervising the student's own rollouts, yet it needs the teacher's token probabilities and a compatible tokenizer. Both supervise wording even though one decision can be phrased many ways."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Grade the move, not the handwriting. At each state the student visits, it samples four candidate responses and a black-box teacher supplies three. A matcher decides whether a candidate makes the same decision as each teacher sample: tool names and canonical arguments are checked programmatically, and a frozen language model judges the remaining differences or message intent. A candidate scores minus 1 if invalid, 0 if no match, and 1 plus a small bonus per extra match otherwise. The best candidate is executed to continue the episode, and all candidates train the student with group-relative advantages and a clipped policy-gradient loss, so its own reasoning is never forced to copy the teacher's."
+    },
+    {
+     "heading": "Results",
+     "body": "Training on 6,697 tasks for 100 steps, Qwen3-4B rises from an average of 30.8 to 35.9 or 37.7 with two different teachers on four held-out benchmarks, and Qwen3-8B from 35.6 to 39.0 or 40.0. On tau2-bench with a Qwen3-32B teacher, test pass-1 is 40.0 against 39.6 for token-level distillation and 37.5 for offline distillation, but pass-4 reliability is lower at 14.2 against 17.5 and 19.2. Swapping the semantic reward for a validity reward drops test pass-1 to 30.8."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It enables distillation from API-only teachers across model families, so the teacher can be chosen for decision quality rather than tokenizer compatibility. Caveats: agreement is not correctness, so teacher errors become targets, the language-model matcher can misjudge, and students still trail teachers: the stronger teacher averages 71.2 on the same benchmarks against 37.7 for its 4B student."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.19820",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.19820",
+    "code": "https://github.com/thu-nics/ActionOPD"
+   },
+   "signals": {
+    "hf_upvotes": 59,
+    "notable_authors": [
+     "Xinlei Chen"
+    ],
+    "org": "Tsinghua-NICS-EFC"
+   }
+  },
+  {
+   "id": "2610.17246",
+   "title": "LLM-to-Flow Distillation: Teaching Natural Language Goals to Scientific Generators",
+   "authors": [
+    "Riccardo De Santi",
+    "Federico Di Gennaro",
+    "Angelo Gnazzo",
+    "Sophia Tang",
+    "Pranam Chatterjee",
+    "Fanny Yang",
+    "İsmail İlkan Ceylan",
+    "Michael M. Bronstein",
+    "Andreas Krause"
+   ],
+   "affiliations": [
+    "ETH Zurich",
+    "ETH AI Center",
+    "TU Wien",
+    "AITHYRA",
+    "University of Pennsylvania",
+    "University of Oxford"
+   ],
+   "announced": "2026-10-13T20:00:00-04:00",
+   "primary_tag": "AI for Science & Health",
+   "tags": [
+    "AI for Science & Health",
+    "Generative Models",
+    "Post-training"
+   ],
+   "tldr": "LLM-to-Flow Distillation lets a frozen LLM steer a peptide or molecule generator toward a natural-language goal using preference judgments, beating reward-guided baselines without any proxy reward.",
+   "why_selected": "Couples LLM scientific knowledge with specialized generators without proxy rewards, and shows less reward hacking on held-out evaluators.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Scientists want to say \"generate peptides with promising anticancer activity\" and get candidates. Specialized flow and diffusion generators know which sequences or structures are valid but not what a goal means, while LLMs know the science but cannot reliably produce valid designs."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Reward-based fine-tuning of generators, such as Flow-GRPO, Adjoint Matching and DiffusionNFT, needs a scalar reward. In chemistry and biology that is usually a learned predictor, least reliable in the unexplored regions discovery targets, and prone to reward hacking. Also, the base generator may give the goal region almost no probability, so feedback is uninformative."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Use the LLM as a coach with an adaptive curriculum. The generator samples designs, and computable properties such as sequence, charge or molecular descriptors are shown to a frozen LLM reached only through an API. The LLM proposes a broad sub-goal the generator can currently partly meet, accepted only if the batch contains enough positive and negative examples. It labels each design positive, negative or abstain in one pass, and the pairs train the generator with distilled DPO (direct preference optimization). The sub-goal then tightens toward the real goal. This relies on LLMs being better at relative judgments than at absolute scores, which the authors test with three LLMs on three tasks."
+    },
+    {
+     "heading": "Results",
+     "body": "On anticancer peptides, the held-out predictor score is 53.5%, against 26.4% for the pretrained model, 35.9% for guidance and 33.3% for DiffusionNFT, with hemolysis (a toxicity proxy) at 42.5% against 40.9% before tuning. Guidance reached 100% on its training proxy but only 35.9% held out. Cell-penetrating peptides reach 69.1% versus 57.0% for DiffusionNFT. LFD also leads on docking scores for two protein targets."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Scientists could steer specialized generators with plain-language goals, and the sub-goals and LLM rationales are inspectable, which helps human oversight. Reward hacking against a single proxy is less of a risk because LFD never optimizes one. Caveat: everything is in silico, judged by other predictors, and wet-lab validation is left as the next step."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.17246",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.17246",
+    "code": "https://github.com/FedericoDiGennaro/LLM-to-Flow-Distillation"
+   },
+   "signals": {
+    "hf_upvotes": 10,
+    "notable_authors": [
+     "Michael M. Bronstein",
+     "Andreas Krause"
+    ],
+    "org": "ETH Zurich"
+   }
+  },
+  {
+   "id": "2610.22347",
+   "title": "Speculative Forcing for Efficient Autoregressive Video Generation",
+   "authors": [
+    "Hyunwook Choi",
+    "Seungryong Kim",
+    "Dongyoon Han",
+    "Sangdoo Yun"
+   ],
+   "affiliations": [
+    "KAIST AI",
+    "NAVER AI Lab"
+   ],
+   "announced": "2026-10-15T20:00:00-04:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency",
+    "World Models"
+   ],
+   "tldr": "Speculative Forcing freezes video tokens as soon as a verifier predicts their denoising has converged, matching four-step quality in about 1.7 steps and running over 1.5 times faster.",
+   "why_selected": "A simple, training-light speedup for real-time video and world-model generation, with quality and drift measured on long rollouts.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Streaming video generators and interactive world models must produce frames in real time. Distilled autoregressive models already cut denoising to four steps, but the cost still limits frame rate."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Current few-step generators send every token through every step, whether it is static background that matches earlier frames or newly revealed content. Using fewer steps for everything hurts quality: in the paper's tests, one-step generation scores 79.06 on VBench against 83.08 for four steps."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Borrow speculative decoding from language models. Each intermediate clean estimate is a draft of the final output. A verifier predicts whether a token's draft is already close to what the full four steps would produce. Accepted tokens are frozen and skip further denoising, but their cached keys and values stay available so remaining tokens can attend to them. Two verifiers are offered. The training-free one compares a first-step draft with the closest clean token in earlier frames, then watches how much consecutive drafts change. The learned one is a three-layer 3D convolutional head reading the frozen generator's features. Scores from both are smoothed across neighboring tokens, and the tolerance can be changed at inference."
+    },
+    {
+     "heading": "Results",
+     "body": "On LongLive, a 1.3B model, five-second videos need about 1.65 to 1.68 steps per token and score 83.12 and 83.21 on VBench, against 83.08 for four steps, at 43.6 and 41.7 frames per second versus 26.4. For 30-second videos, drift is 1.685 to 1.707 versus 1.722. On Lingbot-World 2.0, quality is 82.58 to 82.65 versus 82.62 using about 2.5 steps, 1.35 times faster, with comparable camera-pose error."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result shows that uniform denoising depth wastes compute in few-step video generators, which matters for anyone building real-time interactive world models. Caveats: speedups are modest, tests cover two 1.3B generators, and the tolerance needs calibration."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.22347",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.22347",
+    "code": "https://github.com/naver-ai/speculative-forcing"
+   },
+   "signals": {
+    "hf_upvotes": 80,
+    "org": "NAVER AI Lab"
+   }
+  }
+ ]
+}

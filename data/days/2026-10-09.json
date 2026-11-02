@@ -1,0 +1,478 @@
+{
+ "date": "2026-10-09",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T17:36:43+00:00",
+ "backfill": true,
+ "summary": "Google Cloud launches a universal Gemini agent for work and OpenAI resets its revenue run-rate; papers cover measuring agent self-improvement, bit-exact weight sync for trillion-parameter RL, provable latent recovery in JEPAs, Xiaomi's scaled-RL MiMo-V2.6, and learned memory tokens for context compaction.",
+ "news": [
+  {
+   "id": "2026-10-09-n1",
+   "story_key": "google-cloud-gemini-agent-launch",
+   "title": "Google Cloud introduces the Gemini agent, a universal agent for enterprise work",
+   "category": "Product & Features",
+   "published": "2026-10-08T12:00:00-04:00",
+   "tldr": "At Gemini at Work 2026, Google Cloud unveiled one agent that plans, uses tools, runs for days in the cloud, and can route work across Gemini and Anthropic's Claude models.",
+   "why_selected": "A major enterprise agent launch from a leading cloud provider, covered by Google's own post and by Reuters, The Verge, VentureBeat, TechCrunch and Bloomberg headlines the same day.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Enterprise AI vendors are moving from chat assistants that answer questions to agents that carry out multi-step work inside company systems. Google Cloud sells these capabilities through Gemini Enterprise, and the company says nearly 80 percent of its cloud customers now use its AI products and nearly 90 percent of Fortune 100 companies use Gemini Enterprise."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 8 at its Gemini at Work 2026 event, Google Cloud announced the Gemini agent, which it calls a universal agent for work. Google's post says work now starts in the prompt window: the agent plans the task, uses skills and tools, connects to a customer's business systems, and returns finished output inside the documents, inbox and developer environments people already use. It picks the best model for each job and has built-in cost controls. Coverage of the announcement adds that it can run scheduled tasks and keep working in the cloud for hours or days when a user's device is offline, spawn temporary sub-agents, and host persistent coworker agents with their own identities and storage. It connects to Gmail, Drive and Docs as well as Microsoft Office, Slack, Salesforce and ServiceNow, and can route jobs across Gemini and Anthropic's Claude models."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The notable choice is separating the agent from the underlying model. If one product can send a job to a rival lab's model, value shifts toward the layers around the model: memory, identity, permissions and audit trails. Persistent agents that hold their own accounts and run unattended for days also create a new kind of security principal, so enterprise adoption will hinge on governance as much as capability. For researchers, long-running agents with session, semantic, procedural and episodic memory become a default product setting, which raises practical questions about reliability over multi-day tasks that today's short benchmarks do not cover."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Neither Google's post nor the coverage cited here states pricing or an availability schedule, so watch for both. Also watch for independent evaluations of multi-day task reliability, how Microsoft and OpenAI respond with comparable agents, and whether customers accept agents holding their own identities."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google",
+     "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/"
+    },
+    {
+     "name": "Pulse 2.0",
+     "url": "https://pulse2.com/google-cloud-introduces-gemini-agent-as-universal-ai-agent-for-work/amp/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-n2",
+   "story_key": "openai-annualized-revenue-near-50b",
+   "title": "OpenAI tells investors its September run-rate was nearly $50 billion, about $20 billion below earlier signals",
+   "category": "Business & Funding",
+   "published": "2026-10-08T12:00:00-04:00",
+   "tldr": "OpenAI told investors its September annualized revenue was almost $50 billion rather than the roughly $70 billion it had signaled, a gap a source attributes mainly to an attempt to compare directly with Anthropic.",
+   "why_selected": "Big money at the center of the AI industry, first reported by the Financial Times, confirmed by Reuters, and widely covered by Axios, CNBC, TechCrunch and others within hours.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Annualized revenue, or run rate, usually means one month's revenue multiplied by 12, and analysts call it a sometimes misleading metric. It is a popular metric among fast-growing startups. According to Reuters, OpenAI started this year at $20 billion annualized, up from $6 billion in 2024, while Anthropic overtook it in quarterly revenue for the first time in the second quarter, $11.5 billion against $6.7 billion. Both companies are preparing to go public."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday, October 8, the Financial Times reported that OpenAI had told investors its annualized revenue for September was almost $50 billion. Reuters confirmed the figure through a person familiar with the matter. At a separate event the company had previously indicated a run rate approaching $70 billion. The source said the discrepancy mainly arose from an attempt to produce a direct comparison with rival Anthropic's figures. Unlike Anthropic, OpenAI does not count revenue from sales through cloud partners such as Amazon's AWS and Google Cloud. Reuters reported that Anthropic pays those partners about 16 percent of every dollar earned through them, and that such sales made up half of its revenue last year. OpenAI did not respond to a request for comment. A CNBC headline the same day said Nvidia, Oracle, CoreWeave and other AI stocks fell on the report."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The Reuters report does not say OpenAI's sales fell; the change is in how the number was built. That is the point. Whether cloud-partner sales are counted gross or net can move a headline figure by tens of billions of dollars, so comparisons between the two leaders depend on accounting choices that outsiders cannot see. The stock reaction suggests investors treat OpenAI's growth as a proxy for AI demand and for the spending that depends on it. As both labs approach public listings, analysts are likely to push for audited, comparable definitions, and informal run-rate claims at investor events will carry more market risk."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch for OpenAI to publish a precise definition of its revenue metric and for how each company's eventual listing documents treat cloud-partner revenue."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Reuters",
+     "url": "https://www.ksl.com/article/51634189/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.08902",
+   "title": "Agent Plasticity: Measuring Self-Improvement Through Experience",
+   "authors": [
+    "Harman Singh",
+    "Anton Bakhtin",
+    "Rulin Shao",
+    "Gabriel Synnaeve",
+    "Ilia Kulikov",
+    "Rob Fergus",
+    "Sanjeev Arora",
+    "Kurt Keutzer",
+    "Jason Weston",
+    "Anuj Mahajan",
+    "Anirudh Goyal"
+   ],
+   "affiliations": [
+    "UC Berkeley",
+    "Meta Superintelligence Labs",
+    "University of Washington",
+    "Princeton University"
+   ],
+   "announced": "2026-10-07T20:00:00-04:00",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "Evaluation & Benchmarks",
+    "Agents"
+   ],
+   "tldr": "Agent Plasticity measures how efficiently a frozen-weight agent turns experience into held-out gains, showing that the model with the best final score is not the one that improves most efficiently.",
+   "why_selected": "A concrete, cost-aware way to measure self-improvement across eight frontier models, with an unexpected split between endpoint capability and learning efficiency.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agent benchmarks mostly score what an agent can do at one moment. Yet deployed agents increasingly write down tools, skills and notes after failures, so what matters is how fast they get better and whether those gains hold on situations they have not seen."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Recent work builds mechanisms for improvement, such as reflection, memory and executable skills. These papers mostly report an endpoint score. An endpoint can be high simply because the agent started strong, and it hides how much experience or compute the gain cost and whether it transfers."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors freeze the model weights and allow improvement only through a persistent inventory of Python tools, written strategies and textual memory. Every episode starts in a fresh context. Between rounds the agent reflects on its training games and proposes edits to the inventory; edits must pass structural and executable checks, and rejected attempts still count toward cost. After each checkpoint the inventory plays held-out games, in-distribution and against stronger opponents, hidden from reflection. Agent plasticity is the held-out score gain per unit of learning cost, with cost measured as token spend in dollars, summarized up to the point where a fitted saturating curve reaches 90 percent of its total rise. Think of it as measuring a student's improvement per hour of study rather than the final grade."
+    },
+    {
+     "heading": "Results",
+     "body": "In Hard chess, Claude Fable 5 and Claude Opus 5 rose from 37.5 and 25.0 percent held-out score to 73.3 and 66.4 percent. GPT-5.6 Sol started near 0 and reached 36.9 percent. Pooled over chess, Go and Hex, GPT-5.6 Sol had the highest plasticity at 298 points per $1,000, ahead of Claude Opus 5 at 233, Claude Fable 5 at 57 and Claude Opus 4.8 at 14, although Fable 5 reached the highest fitted performance."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result suggests post-training could target the ability to improve after deployment, not only deployment-time capability, which bears on recursive self-improvement research. The tests use chess, Go, Hex and NetHack, plasticity depends on provider pricing and curve-fit assumptions, and the artifact-use analysis is observational. The authors say plasticity is a protocol-dependent measure, not a universal model ranking."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.08902",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.08902"
+   },
+   "signals": {
+    "hf_upvotes": 6,
+    "notable_authors": [
+     "Rob Fergus",
+     "Sanjeev Arora",
+     "Jason Weston"
+    ],
+    "org": "Meta"
+   }
+  },
+  {
+   "id": "2610.08430",
+   "title": "NeMo-DCR: Bit-Exact Delta-Compressed Refit for Scalable Agentic RL at Trillion-Parameter Scale",
+   "authors": [
+    "Songlin Jiang",
+    "Zhiyu Li",
+    "Terry Kong",
+    "Yu Yao",
+    "Youngeun Kwon",
+    "Bernard Nguyen",
+    "Ashwath Aithal",
+    "Mario Di Francesco"
+   ],
+   "affiliations": [
+    "Aalto University",
+    "NVIDIA"
+   ],
+   "announced": "2026-10-06T20:00:00-04:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Reinforcement Learning",
+    "Agents"
+   ],
+   "tldr": "NeMo-DCR syncs updated weights to remote rollout clusters by sending only the changed bits yet reproducing a dense refit exactly, cutting a 1T-parameter refit from 87.5 minutes to 150 seconds.",
+   "why_selected": "Removes a concrete bottleneck for trillion-parameter agentic RL with a bit-exact design, measured at scale and released in NeMo RL.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agentic reinforcement learning trains in one cluster and generates rollouts on separate serving clusters, sometimes in another datacenter. After every optimizer step the new weights must reach the rollout side before the next batch starts. Copying a full 1T-parameter checkpoint between two AWS regions takes 87.5 minutes."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Systems either send every weight or exploit the fact that only about 1 percent of BF16 values change per step. Earlier delta systems reimplement the serving engine's weight-layout rules, assemble full tensors, rebuild values with arithmetic that can add rounding error, or need a cross-cluster collective, and none fully recovers from mid-transfer failures."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of it as tracked changes for model weights. Each shard owner compares its weights with a stored baseline and maps changes into the checkpoint's canonical layout through fixed index mappings, which cover about 96 to 97 percent of weight bytes in two MoE checkpoints; a residual path handles the rest. Each change is sent as an XOR mask of old and new stored bits when safe, which compresses well because small updates leave high-order bits unchanged, and as an absolute overwrite otherwise. Receivers apply changes in place through the inference engine's own weight loader, so the result is bit-identical to a dense refit. Retries overwrite partial writes, and payloads stream while deltas are still being built."
+    },
+    {
+     "heading": "Results",
+     "body": "Between two AWS regions, a 120B-parameter refit at a 3 percent change rate took 22.6 seconds with the relay tree versus 750 seconds for a transport-only full-checkpoint reference. At 1T parameters it took 150 seconds versus 87.5 minutes. Across 30B to 1T models at 3 and 5 percent change rates, refits were 12 to 40 times faster. Training with killed receivers followed dense NCCL's reward and KL curves."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fast, exact refits make it practical to run rollouts on idle or remote GPUs for very large agentic RL, and exactness matters because rollout-training mismatch can destabilize RL. Caveats: latency tests used synthetic changes at 3 and 5 percent, above the measured 0.6 to 1.2 percent, and the baseline is a full copy, not other delta systems."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.08430",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.08430",
+    "code": "https://github.com/NVIDIA-NeMo/RL"
+   },
+   "signals": {
+    "hf_upvotes": 28,
+    "org": "NVIDIA"
+   }
+  },
+  {
+   "id": "2610.09457",
+   "title": "DSReg: Provably Recovering Individual World Latents without Reconstruction",
+   "authors": [
+    "Yujia Zheng",
+    "David Klindt",
+    "Randall Balestriero",
+    "Bernhard Schölkopf"
+   ],
+   "affiliations": [
+    "University of Illinois Urbana-Champaign",
+    "Cold Spring Harbor Laboratory",
+    "Brown University",
+    "Max Planck Institute for Intelligent Systems",
+    "ELLIS Institute Tübingen"
+   ],
+   "announced": "2026-10-07T20:00:00-04:00",
+   "primary_tag": "Theory",
+   "tags": [
+    "Theory",
+    "World Models",
+    "Interpretability"
+   ],
+   "tldr": "DSReg proves that individual world latents can be recovered from a JEPA representation without a decoder or labels, by rotating it to make the dependence of observations on latents as sparse as possible.",
+   "why_selected": "A clean identifiability result that closes a known gap in reconstruction-free world models and ties together JEPAs and nonlinear ICA, backed by experiments that match the theory.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A world model is useful only if its variables behave like variables of the world. If one learned latent mixes a cup's position with a knife's, asking a controller to slide the cup also moves the knife. Joint-embedding predictive architectures, or JEPAs, learn by predicting in representation space with no decoder, which avoids reconstruction but removes the anchor that identifiability theory normally uses to tie learned variables to true factors."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Nonlinear ICA, dictionary learning and causal representation learning recover individual latents using reconstruction, auxiliary labels, non-Gaussianity or interventions. LeJEPA, a JEPA with a Gaussian regularizer, provably identifies the latent state only up to a linear transformation, so each learned variable can still be a blend of several true factors."
+    },
+    {
+     "heading": "Key idea",
+     "body": "A Gaussian is rotation invariant, so no criterion on the latents' distribution can detect a rotation that mixes them. The identifying signal must come from elsewhere, namely how observations depend on the latents. Each true latent affects a particular set of observed variables, its dependency footprint. Rotating two latents together makes each rotated latent act on the union of both footprints, which adds nonzero entries to the Jacobian of observations with respect to latents. The paper assumes Structural Diversity, meaning no two latents have exactly the same footprint. DSReg then takes a trained LeJEPA encoder and searches for the rotation that minimizes the count of nonzero Jacobian entries, and the authors prove minimizers recover each latent up to sign and permutation."
+    },
+    {
+     "heading": "Results",
+     "body": "On a synthetic benchmark with nested footprints, a case earlier conditions exclude, DSReg reaches near-ceiling recovery at every dimension tested while LeJEPA stays mixed. It improves all six sparse-use probes, while dense readouts stay unchanged. On encoders trained from pixels it reaches the level of a supervised oracle that sees labels. Recovery fails only when footprints are identical, as the theory predicts."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It offers world-model latents that can be inspected and intervened on one at a time, without reconstruction. The caveats are that all benchmarks are simulated or rendered, and the guarantee rests on LeJEPA's Gaussian-world premise and on real factors having distinct footprints."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.09457",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.09457",
+    "code": "https://github.com/kunwuz/dsreg"
+   },
+   "signals": {
+    "hf_upvotes": 3,
+    "notable_authors": [
+     "Randall Balestriero",
+     "Bernhard Schölkopf"
+    ],
+    "org": "Causal Intelligence"
+   }
+  },
+  {
+   "id": "2610.11959",
+   "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+   "authors": [
+    "Xiaomi LLM-Core Team",
+    "Zongming Qiao",
+    "Ziyue Hua",
+    "Zirui Ou",
+    "Zihao Yue",
+    "Zihan Jiang",
+    "Zhuo Huang",
+    "Zhiyang Chen",
+    "Zhixian Zheng",
+    "Zhipeng Xu",
+    "Zhengrui Ma",
+    "Yuyang Hu",
+    "Yuhang Dong",
+    "Yuechen Zhang",
+    "Yudong Wang",
+    "Yuanxin Liu",
+    "Yixin Yang",
+    "Yishuo Cai",
+    "Yikai Zhao",
+    "Yihan Yan",
+    "Yifan Zhang",
+    "Yifan Song",
+    "Xiyu Wei",
+    "Xing Zhang",
+    "Xin Zhang",
+    "Xiaoqian Liu",
+    "Xiaodong Ji",
+    "Xiangwei Deng",
+    "Xueyu Guo",
+    "Wenhan Ma",
+    "Weimin Xiong",
+    "Weikun Wang",
+    "Weiji Zhuang",
+    "Shuo Liu",
+    "Shuhuai Ren",
+    "Shuhao Gu",
+    "Shimao Chen",
+    "Shijie Cao",
+    "Shihua Yu",
+    "Shicheng Li",
+    "Shengjie Zhou",
+    "Shaolei Zhang",
+    "Rang Li",
+    "Qiying Wang",
+    "Qingkai Fang",
+    "Qianli Chen",
+    "Minzheng Wang",
+    "Liwen Wang",
+    "Linli Yao",
+    "Linghao Zhang",
+    "Liangyu Cheng",
+    "Liang Zhao",
+    "Lei Li",
+    "Jinhao Dong",
+    "Jinyu Xiang",
+    "Jianyu Wei",
+    "Jiangshan Duo",
+    "Huaqiu Liu",
+    "Huanjie Fan",
+    "Hongyi Guan",
+    "Hongshen Xu",
+    "Hao Tian",
+    "Hanyu Li",
+    "Hailin Zhang",
+    "Gang Wang",
+    "Fuli Luo",
+    "Feng Wei",
+    "Dong Zhang",
+    "Dawei Zhu",
+    "Chiheng Lou",
+    "Chenhong He",
+    "Chenhao He",
+    "Chenghua Liu",
+    "Bowen Ye",
+    "Bowen Shen",
+    "Boshen Xu",
+    "Bo Yang",
+    "Bingquan Xia",
+    "Bangjun Xiao",
+    "Baixuan Xu",
+    "Zhouxiang Mao",
+    "Zhiyang Zhang",
+    "Zhixiang Xu",
+    "Zhenru Lin",
+    "Zhengju Tang",
+    "Zhaojun Huang",
+    "Yuzhe Weng",
+    "Yuxing Xiang",
+    "Yuxiao Li",
+    "Yuheng Yang",
+    "Yuhang Wang",
+    "Yuchen Liu",
+    "Yuanyuan Tian",
+    "Yuanliang Dong",
+    "Yu Cheng",
+    "Yongzhe He",
+    "Yongshun Liang",
+    "Yong Wang",
+    "Yiyan Wang",
+    "Yitian Gong"
+   ],
+   "affiliations": [
+    "Xiaomi"
+   ],
+   "announced": "2026-10-08T20:00:00-04:00",
+   "primary_tag": "LLMs",
+   "tags": [
+    "LLMs",
+    "Reinforcement Learning",
+    "Agents"
+   ],
+   "tldr": "Xiaomi's MiMo-V2.6 report details a 1.02T-parameter MoE trained with heavily scaled agentic RL, including costs, environments, grading and reward-hacking defenses, and releases its training dynamics, environments and RL framework.",
+   "why_selected": "A rare detailed account of what scaled agentic RL costs and which ingredients it uses, from an omni-modal MoE family whose agent benchmark scores are close to Claude Opus 5 and GPT-5.6 Sol on several tasks.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Much recent progress comes from reinforcement learning on long-horizon agentic tasks, but labs rarely disclose how such runs are scaled and kept stable. The report asks how to turn more RL compute into capability, framed as a step toward models that improve themselves."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Common code-agent RL gives the same binary reward to every solution that passes the tests, trains on a narrow set of environments with a single agent harness, and struggles at scale with unstable mixture-of-experts routing, reward hacking and mismatch between training and inference engines."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Xiaomi scales RL along three axes. First, throughput: asynchronous GRPO on 1,568 prompts with 16 rollouts each, about 25K trajectories and 2.7 to 3.7 billion tokens per step, at contexts up to 1M, with the MoE router frozen for stable expert loads. Second, environments: coding is 68 percent of tasks, with general tool use, design and cyber tasks under several harnesses, plus defenses against agents fetching upstream fixes instead of repairing code. Third, grader compute: groupwise agentic grading compares solutions within a group, like a judge ranking essays that earned the same pass mark, then converts those distinctions into rewards that also favor shorter solutions. The models are MiMo-V2.6-Pro, 1.02T parameters with 42B active, and MiMo-V2.6-Flash, 310B with 15B active."
+    },
+    {
+     "heading": "Results",
+     "body": "RL cost $2.6M for Pro and $0.9M for Flash; for Pro, rollout took 43.8 percent of compute, training 43.5 percent and grading 12.7 percent. Average@3 on DeepSWE rose from 58.4 to 72.6 for Pro and from 48.7 to 65.7 for Flash. In the authors' comparison, Pro scores 89.9 on Terminal Bench 2.1 against 89.1 for Claude Opus 5 and 53.1 on AutomationBench against 50.3, but trails on Terminal Bench 4.0 at 34.9 versus 49.0 and ProgramBench at 26.5 versus 37.0."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Published costs, environments and training dynamics help others reproduce scaled agentic RL. Caveats are that the comparisons are the authors' own, partly on internal benchmarks, and gaps remain on the hardest agent tasks."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.11959",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.11959"
+   },
+   "signals": {
+    "hf_upvotes": 87,
+    "org": "Xiaomi MiMo"
+   }
+  },
+  {
+   "id": "2610.11287",
+   "title": "REMORY: Learning Residual Memory for Context Compaction",
+   "authors": [
+    "Hanchen Xia",
+    "Baoyou Chen",
+    "Yutang Ge",
+    "Naihao Deng",
+    "Senqiao Yang",
+    "Zilong Dong",
+    "Weihao Yuan",
+    "Siyu Zhu"
+   ],
+   "affiliations": [
+    "Fudan University",
+    "Shanghai Jiao Tong University",
+    "University of Michigan",
+    "The Chinese University of Hong Kong",
+    "Alibaba Group",
+    "Nanjing University",
+    "Shanghai Academy of AI for Science",
+    "Shanghai Innovation Institute"
+   ],
+   "announced": "2026-10-08T20:00:00-04:00",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "Agents"
+   ],
+   "tldr": "Remory adds a bounded set of learned soft tokens after a text summary so a frozen agent keeps more of its history after context compaction, improving agent benchmarks and cutting tool errors.",
+   "why_selected": "Targets a daily pain point of coding and research agents, context compaction, with a simple trainable add-on and consistent gains across two actors and four benchmarks.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Long-running agents fill their context window and must compact it, usually by replacing history with a text summary, as the /compact commands in Claude Code and Codex CLI do. A summary cannot anticipate what later decisions will need, so details that mattered quietly disappear."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Systems pair summaries with retrieval of archived records, as in ReadAgent, MemGPT and ReSum, or learn continuous compressed representations of long text, as in AutoCompressors and Gist Tokens. Retrieval only helps if the agent knows what to look up, and a summary has already lost the details nobody knew would matter."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Keep the summary and append learned soft memory tokens, vectors in the frozen actor's input space. The summary is the main path and the tokens are a correction added alongside it, which the authors liken to a residual connection along the sequence. A memory network of 1.94B trainable parameters for Qwen3.8-27B reads the history conditioned on the summary and emits up to 4,096 slots, 64 per block of 1,024 positions. Training has two stages. First, reconstruction teaches it to preserve a passage. Second, a teacher model sees the full history, a student sees summary plus memory, and the network is trained to match the teacher's next-response distribution with reverse KL while the actor stays unchanged."
+    },
+    {
+     "heading": "Results",
+     "body": "On SummHay, summary plus Remory scores 43.39 joint versus 39.84 for the summary alone, near raw context at 43.41, using 5,024 input positions instead of 96,872. A text supplement of equal size gains nothing. With Qwen3.8-27B, AutomationBench rises from 35.5 to 45.3, JobBench from 33.4 to 41.0, Terminal-Bench 2.1 from 71.9 to 76.4 and BrowseComp from 74.0 to 77.0. GLM-5.3-Flash gains 3.3 and 4.1 points on the last two. Tool errors fall 25.3 to 49.7 percent."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests compaction need not be text-only and can be learned cheaply. The caveats are that the network is trained against a specific actor and needs its gradients, Terminal-Bench and BrowseComp are single runs, and the live trading comparison uses just two accounts."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.11287",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.11287",
+    "code": "https://github.com/1ring2rta/Remory"
+   },
+   "signals": {
+    "hf_upvotes": 54,
+    "org": "Fusion Lab: Generative Vision Lab of Fudan University and SII"
+   }
+  }
+ ]
+}

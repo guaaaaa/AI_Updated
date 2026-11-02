@@ -1,0 +1,477 @@
+{
+ "date": "2026-10-20",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T17:18:40+00:00",
+ "backfill": true,
+ "summary": "Amazon opens TorchNeuron so PyTorch runs natively on Trainium, the US bars DeepSeek from federal civilian systems, and papers cover robot fleet learning, text-to-image without language pretraining, learned token pruning, self-evolving coding agents and native model memory.",
+ "news": [
+  {
+   "id": "2026-10-20-n1",
+   "story_key": "amazon-torchneuron-pytorch-trainium",
+   "title": "Amazon opens TorchNeuron so PyTorch code can run natively on its Trainium chips",
+   "category": "Compute & Infrastructure",
+   "published": "2026-10-19T09:25:33-04:00",
+   "tldr": "Amazon released TorchNeuron, a PyTorch backend for its Trainium AI chips, in public beta; Hugging Face libraries already run on it, lowering the software cost of leaving Nvidia GPUs.",
+   "why_selected": "A major tooling launch aimed at Nvidia's CUDA software moat, with a primary Hugging Face write-up and independent reporting, and direct relevance to researchers choosing hardware.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Most AI software was built around Nvidia's CUDA platform, and adapting code to other chips can take months of engineering, which has kept many companies on Nvidia hardware even as Amazon and Google build their own accelerators. Until now, running PyTorch on Amazon's Trainium chips meant changing code to call Amazon-specific interfaces. Hugging Face support went through a separate library, Optimum Neuron, built on PyTorch XLA, which meant lazy tensors, static shapes and a recompilation at every graph break."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, October 19, Amazon said it is opening TorchNeuron, a PyTorch plugin that makes Trainium a native PyTorch device, to all developers as a public beta. It supports eager execution, torch.compile and distributed APIs such as FSDP, and Amazon says the same code runs after a basic configuration change. Hugging Face says the beta starts October 20 and that 89% of the top 100 text-generation architectures run out of the box, against 46% with Optimum Neuron. More than 30 companies and Amazon teams used the private beta; speech-AI company Deepgram reports about 60% more audio processed per dollar than on its GPU setup. Amazon plans to open-source the code on Tuesday at the PyTorch Conference."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The practical barrier to alternative accelerators has been software rather than silicon. If researchers can keep their PyTorch scripts and Hugging Face classes and change only the device, trying Trainium becomes a configuration experiment instead of a porting project, which weakens CUDA lock-in. It is part of a wider push: Google is working on TorchTPU for the same purpose, and Microsoft said last week it plans to run most of its AI services on its own Maia chips. Trainium's biggest users so far are AI labs with close financial ties to Amazon, so uptake by outside developers is the real test. Gaps remain: asynchronous weight loading is unsupported and static shapes are strongly recommended."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent benchmarks from developers outside Amazon's circle, how much of PyTorch's feature set the beta covers, the open-source release this week, and Amazon's reported talks to acquire Decart, a startup that helps move models off Nvidia chips."
+    }
+   ],
+   "sources": [
+    {
+     "name": "GeekWire",
+     "url": "https://geekwire.com/2026/amazon-challenges-nvidias-software-advantage-with-new-tool-for-its-ai-chips"
+    },
+    {
+     "name": "Hugging Face",
+     "url": "https://huggingface.co/blog/hf-torchneuron"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-n2",
+   "story_key": "dhs-deepseek-federal-civilian-ban",
+   "title": "US orders federal civilian agencies to remove DeepSeek products, including tools built on it",
+   "category": "Policy & Legal",
+   "published": "2026-10-19T12:16:46-04:00",
+   "tldr": "The Department of Homeland Security ordered civilian federal agencies to stop buying and remove DeepSeek products, including third-party tools built on DeepSeek technology; private and consumer use is not restricted.",
+   "why_selected": "A government action against a leading open-weight lab, widely reported (Reuters, BBC, Engadget), whose reach into third-party products matters to anyone building on DeepSeek weights.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "DeepSeek is a Chinese AI lab that publishes open model weights; on Saturday it posted an updated V4.1-Flash under an MIT license. Its tools became extremely popular early on, then drew reports of security risks and concerns that Chinese authorities could access users' conversations. A February 2025 report by NowSecure on DeepSeek's iOS app found unencrypted data transmissions, weak encryption, insecure local storage, user fingerprinting risks and data sharing with ByteDance."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, October 19, Reuters reported that the US Department of Homeland Security (DHS) is banning DeepSeek from federal civilian agency IT systems. The notice of order was then published in the Federal Register. Agencies must exclude covered products from procurement, including approved-product lists and purchasing marketplaces, and remove them from their systems or seek an exception. Exception requests are due within 60 days of the order's issuance; the Cybersecurity and Infrastructure Security Agency (CISA) will approve or deny them in writing and help agencies that cannot comply. The order covers DeepSeek's affiliates and third-party products and services built using DeepSeek technology. DHS cites concerns about Chinese government access to DeepSeek infrastructure, collection of personal data and tracking of users, transfer of sensitive government data, and possible malware in the models."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The notable feature is the reach into third-party products. Because DeepSeek publishes open weights, other tools can embed or host its models without DeepSeek's involvement, so an order covering products built using DeepSeek technology puts the burden on software vendors that sell to federal agencies to know which models sit inside their stack. It is unclear how far that phrase extends, for example to fine-tuned derivatives of the open weights. For researchers, the order shows model provenance becoming a procurement criterion, and that open weights do not exempt a model from supply-chain rules. It is not a general ban on private or consumer use."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Which agencies request exceptions within the 60-day window and how CISA rules on them, whether DHS clarifies what counts as a product built on DeepSeek technology, and whether vendors or other Chinese open-weight models face similar action."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.25736",
+   "title": "Learning from Fleet Experience: Collective Experience Learning Across 96 Robots",
+   "authors": [
+    "Chao Yu",
+    "Shu'ang Yu",
+    "Hao Lin",
+    "Hongzhi Zang",
+    "Yuxiang Yan",
+    "Chenxi Jiang",
+    "Zhen Guo",
+    "Chuankang Li",
+    "Yihao Chen",
+    "Xin Xu",
+    "Xu Fu",
+    "Jiakai Zhou",
+    "Liangzhi Shi",
+    "Hongyi Ren",
+    "Yiwei Liu",
+    "Jing Wu",
+    "Yuanqing Wang",
+    "Chen Wu",
+    "Bo Dai",
+    "Chunyu Yang",
+    "Hongliang Huang",
+    "Shuoyu Yue",
+    "Weiqi Yin",
+    "Yinuo Chen",
+    "Ruihua Chen",
+    "Chunyang Zhu",
+    "Han Xiao",
+    "Yanghao Li",
+    "Ruipu Wu",
+    "Zhikai Cai",
+    "Xiu Chen",
+    "Xu Tan",
+    "Si Liu",
+    "Yuchen Yan",
+    "Jialin Zhang",
+    "Wen Zeng",
+    "Yiming Zhou",
+    "Zixiao Huang",
+    "Xinlei Chen",
+    "Guanghui Ren",
+    "Quanlu Zhang",
+    "Boxun Li",
+    "Maoqing Yao",
+    "Yu Wang"
+   ],
+   "affiliations": [
+    "Tsinghua University",
+    "AgiBot",
+    "Infinigence AI"
+   ],
+   "announced": "2026-10-19T20:00:00-04:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Post-training"
+   ],
+   "tldr": "Robots pool their own successful runs into a shared policy, using failures to choose which successes to imitate; 96 robots lifted phone-packaging success from 79.2% to 98.3% with no new expert actions.",
+   "why_selected": "Strong Hugging Face attention (127 upvotes) and a rare real-world fleet-scale experiment, with 96 robots and evaluation on held-out robots.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Robot foundation models start with broad skills but are not reliable enough for real work: variations in objects, contact and individual robots expose weaknesses, and errors compound over multi-stage tasks. Improving them usually needs humans to demonstrate or correct actions, and teleoperator time does not grow as fast as a fleet of deployed robots does."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Interactive imitation learning, such as human-gated DAgger, lets experts take over when the robot errs and records their corrections. Reinforcement learning methods mix demonstrations, interventions and autonomous rollouts. Both still depend on a steady supply of new expert action supervision, so human effort grows with the number of robots."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors propose Collective Experience Learning (CEL): robots pool what they did, and a shared policy returns to the fleet. Their method, failure-guided experience retrieval fine-tuning (FERT), starts from an expert-trained policy. Each episode gets only a binary success or failure label. Successful trajectories go into a shared buffer and supply the actions to imitate. Failed episodes are never imitated; instead, their visual and joint-state features act as queries that retrieve similar segments from successful runs, and those segments are sampled more often in supervised updates. Think of each mistake as a search term for finding the most relevant worked example. A fault-tolerant asynchronous system, FATS, keeps data flowing when individual robots pause or crash."
+    },
+    {
+     "heading": "Results",
+     "body": "On five real-world tasks with AgiBot G2 robots, policies reached 93.3 to 99.2% success, measured over 120 trials per task on two robots excluded from data collection. Average failure rate fell from 19.0% for the expert-initialized policy to 2.7%, and phone packaging rose from 79.2% to 98.3% with 96 robots. Fault events occurred about every 22 minutes, yet downtime was only 1.3% of robot time."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests deployed fleets can supply their own training signal, so improvement scales with robots in the field rather than with operators. The caveats are real: one robot platform, task-specific policies, and humans still label outcomes and reset scenes."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.25736",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.25736"
+   },
+   "signals": {
+    "hf_upvotes": 127,
+    "notable_authors": [
+     "Xinlei Chen"
+    ]
+   }
+  },
+  {
+   "id": "2610.26863",
+   "title": "Text-to-Image Generative Modeling Without Language Pretraining",
+   "authors": [
+    "Keshigeyan Chandrasegaran",
+    "Yue Zhao",
+    "Armin W. Thomas",
+    "Ehsan Adeli",
+    "Jiajun Wu",
+    "Juan Carlos Niebles",
+    "Li Fei-Fei",
+    "Michael Poli"
+   ],
+   "affiliations": [
+    "Stanford University",
+    "Radical Numerics"
+   ],
+   "announced": "2026-10-19T20:00:00-04:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Pre-training & Data",
+    "Multimodal"
+   ],
+   "tldr": "Halcyon, a text-to-image autoregressive model trained from scratch on 100M image-text pairs with no text-only pretraining, beats baselines built on pretrained language models while using 18 to 275 times less pretraining compute.",
+   "why_selected": "Challenges the assumption that language pretraining is needed for text-to-image generation, with controlled comparisons and public checkpoints; attention is modest (5 upvotes) but the insight is substantial.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Modern text-to-image systems lean on language models pretrained on web-scale text, which can account for over 80% of total pretraining compute in representative systems. How much that text knowledge actually helps image generation has not been measured systematically, and its cost is often left out when systems are compared."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Late-fusion systems pair a separate pretrained text encoder, such as T5 or Qwen3, with an image generator. Early-fusion systems drop the separate encoder but still train on text-only data or start from a pretrained language model inside one multimodal model. Both designs treat language pretraining as a default component."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Halcyon is a decoder-only Transformer that treats captions and images as one token sequence and learns by next-token prediction. Everything is trained from scratch, including the text tokenizer, a discrete image tokenizer and the generator, on GPIC, a dataset of 100M image-text pairs. Text conditioning is learned only from captions paired with images. To test whether language pretraining helps, the authors fix the budget and spend part of it on text-only data first. The intuition is that fluency in English prose does not guarantee skill at mapping a caption to image tokens, which is a different conditional distribution. They also replace caption dropout, normally used for classifier-free guidance, with image-to-text examples, which adds captioning at little cost."
+    },
+    {
+     "heading": "Results",
+     "body": "Halcyon-0.52B reaches 48.0 generation Fréchet distance (gFD, lower is better) versus 63.3 for LlamaGen-XL/8, with 18.2 times less pretraining compute. Halcyon-1.6B reaches 35.3 versus 41.0 for JiT-T2I-XXL/8++, with 275 times less. Giving 10% to 50% of the budget to text-only pretraining worsened Halcyon-0.52B from 48.0 to between 51.6 and 65.1. A randomly initialized Qwen3-0.6B scored 46.6 gFD, ahead of its language-pretrained counterpart at 47.8."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For multimodal generation, a large share of compute may go to a component that adds little, pointing to cheaper from-scratch recipes. The limits are 256-pixel images, a single dataset, and ablations at 0.52B parameters, so generality at larger scale is untested."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.26863",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.26863"
+   },
+   "signals": {
+    "hf_upvotes": 5,
+    "notable_authors": [
+     "Jiajun Wu"
+    ],
+    "org": "Stanford University"
+   }
+  },
+  {
+   "id": "2610.26754",
+   "title": "TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning",
+   "authors": [
+    "Liana Patel",
+    "Rishabh Ranjan",
+    "Ion Stoica",
+    "Matei Zaharia",
+    "Carlos Guestrin"
+   ],
+   "affiliations": [
+    "Stanford University",
+    "UC Berkeley"
+   ],
+   "announced": "2026-10-19T20:00:00-04:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Architectures"
+   ],
+   "tldr": "TokenGate adds a learned gate that prunes long inputs early in a pretrained transformer, cutting time-to-first-token by up to 11.3 times and peak prefill memory by up to 3.4 times with no accuracy loss.",
+   "why_selected": "A drop-in fix for a serving bottleneck, long-context prefill, from a strong systems group with released code and large gains over prior pruning methods.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Long inputs such as code repositories, documents and retrieved evidence are central to agents and deep research, yet transformers push every token through every layer. Attention compute grows quadratically with length and key-value (KV) cache memory grows linearly, so prefill, the pass that processes the prompt before generation starts, dominates latency and limits how many requests a server can handle."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Training-free token pruning ranks tokens with attention-score heuristics at a middle layer and forwards only the top ones, but speedups are limited before accuracy drops. Architectural changes such as new attention designs can help more, but they usually require pretraining from scratch and different software and hardware stacks."
+    },
+    {
+     "heading": "Key idea",
+     "body": "TokenGate asks whether an existing trained model can learn to skim. At one early layer, a small MLP scores each prunable token, and only the top K continue through the remaining layers, so pruned tokens never produce KV entries there. The obstacle is that top-K selection is not differentiable, so the scorer would receive no gradient. The fix, token-gated attention, borrows from mixture-of-experts: in the layers above the gate, each kept token's attention logit is shifted by its importance score, so the loss flows back to the scorer, much as an MoE router learns from expert weights. Per-head gains and a temperature tied to how many tokens survive keep attention calibrated. Training is LoRA fine-tuning with plain next-token loss, taking time comparable to ordinary fine-tuning."
+    },
+    {
+     "heading": "Results",
+     "body": "On Qwen3-1.7B across code completion, multi-hop question answering, summarization, biomedical extraction and needle-in-a-haystack tasks, TokenGate cuts time-to-first-token by 1.4 to 11.3 times and peak prefill memory by 1.5 to 3.4 times at no accuracy loss versus full-context prefill. Against the best prior pruning baseline it is up to 6.4 times faster and uses up to 2 times less memory. On the hybrid Qwen3.5-2B it gives 3.8 times lower time-to-first-token."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Anyone serving long-context workloads could adapt an existing base model cheaply instead of retraining it. The tests use small models, 1.7B and 2B parameters trained on four A100 GPUs, so gains at frontier scale are an open question."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.26754",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.26754",
+    "code": "https://github.com/tokengate-models/TokenGate"
+   },
+   "signals": {
+    "hf_upvotes": 11,
+    "notable_authors": [
+     "Ion Stoica",
+     "Matei Zaharia"
+    ]
+   }
+  },
+  {
+   "id": "2610.22791",
+   "title": "Self-Evolving Coding Agents via Harness-Policy Optimization",
+   "authors": [
+    "Zhepei Wei",
+    "Wenlin Yao",
+    "Baolin Peng",
+    "Danqing Wang",
+    "Qianhui Wu",
+    "Hao Cheng",
+    "Yu Meng",
+    "Jianfeng Gao"
+   ],
+   "affiliations": [
+    "Microsoft Research",
+    "University of Virginia",
+    "Carnegie Mellon University"
+   ],
+   "announced": "2026-10-18T20:00:00-04:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning",
+    "RSI"
+   ],
+   "tldr": "Self-HPO alternates between letting a coding agent rewrite its own harness and training it with reinforcement learning, lifting Qwen3.5-35B-A3B's average resolve rate across three SWE-Bench variants from 57.8% to 64.8%.",
+   "why_selected": "Shows that scaffold and model improvements compound, which matters to anyone building coding agents; Microsoft Research, 53 Hugging Face upvotes, ablations and out-of-distribution tests.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A coding agent's results depend on two things: the policy, meaning the language model, and the harness, the scaffold that decides what the model sees, how its actions run, what feedback it gets and when an episode ends. The same model can succeed or fail on a problem depending on its harness, so improving only one side leaves gains unused."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Harness optimization searches over prompts, workflows or agent code while the model stays fixed. Policy optimization trains the model, usually with reinforcement learning (RL) from verifiable rewards, while the harness stays fixed. Recent work optimizes both but relies on an external model to propose harness changes, and the target keeps moving as the policy's failures evolve."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Self-HPO alternates two steps. In the harness step, the current model reads its own failed trajectories and proposes revisions to prompts or runtime logic, and the best-scoring candidate on a search set is kept. In the policy step, the model is trained with RL under that harness. Tasks never solved during the policy step become the search set for the next harness step, so the search keeps targeting current weaknesses. Think of a student who rewrites an exam checklist from past mistakes, studies with it, then rewrites it for the questions still missed. The evolved harness added a warning before the step budget runs out, an empty-patch guard, and a fallback to the sandbox's Git diff."
+    },
+    {
+     "heading": "Results",
+     "body": "With Qwen3.5-35B-A3B and mini-SWE-agent as the seed harness, trained on 2,484 tasks, Self-HPO reaches 69.5% on SWE-Bench Verified versus 61.0% for the base, 67.5% for RL alone and 65.2% for harness search alone. Training used Python tasks, yet SWE-Bench Multilingual rose from 54.2% to 59.7% and SWE-Bench Pro from 58.3% to 65.2%. Pass@8 rose from 80.0% to 84.8%. With Opus 4.8 proposing harnesses, Verified reached 71.6%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It is a concrete case of a model and its scaffold improving each other: the joint gain of 8.5 points on Verified exceeds the sum of the separate gains, 6.9. Caveats are one base model, two optimization rounds, and harness changes that mainly target how edits become valid submissions rather than reasoning."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.22791",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.22791",
+    "code": "https://github.com/MSR-Orchard/Self-HPO"
+   },
+   "signals": {
+    "hf_upvotes": 53,
+    "notable_authors": [
+     "Jianfeng Gao"
+    ],
+    "org": "Microsoft Research"
+   }
+  },
+  {
+   "id": "2610.26825",
+   "title": "MemT-1.0: Towards Memory-Native Evolution",
+   "authors": [
+    "Zhiyu Li",
+    "Zeyu Zhang",
+    "Linyun Liu",
+    "Yiwei Bu",
+    "Chenyang Xi",
+    "Xichong Zhang",
+    "Yi Yu",
+    "Yu Yu",
+    "Zhichen Liu",
+    "Yuxiao Yi",
+    "Chunyu Li",
+    "Haoran Liu",
+    "Zhenkai Ding",
+    "Le Zhou",
+    "Juncheng Zhang",
+    "Boyu Chen",
+    "Zehao Lin",
+    "Guorui Li",
+    "Renyu Fu",
+    "Ji Li",
+    "Youyang Xia",
+    "Jiajun Shen",
+    "Harvey Li",
+    "Jingsong Zhou",
+    "Helan Hu",
+    "Tong Shen",
+    "Tianxiao Xu",
+    "Chenye Han",
+    "Weijie Li",
+    "Zhongquan Zhou",
+    "Hongming Xu",
+    "Yuekeng Li",
+    "Erenkai Zhu",
+    "Peng Yu",
+    "Wenhao Li",
+    "Jingyi Kang",
+    "Xixuan Hao",
+    "Xuzhou Zhu",
+    "Can Chen",
+    "Jiawei Liu",
+    "Chen Jiang",
+    "Tao Jiang",
+    "Fangwei Xiang",
+    "Zepeng Yao",
+    "Kai Chen",
+    "Guang Yang",
+    "Mingfei Lu",
+    "Chunhui Li",
+    "Zhengxuan Jiang",
+    "Bo Tang",
+    "Shiyu Zhan",
+    "Yihang Sun",
+    "Jie Chu",
+    "Wenjun Xiong",
+    "Zhenxiang Hua",
+    "Chen Lin",
+    "Detong Su",
+    "Dongyu Deng",
+    "Qiuping Ding",
+    "Guofeng Ding",
+    "Si Chen",
+    "Guohua Wen",
+    "Xu Chen",
+    "Zhi-Qin John Xu",
+    "Ying-Cong Chen",
+    "Ningyu Zhang",
+    "Haofen Wang",
+    "Muning Wen",
+    "Haotian Chen",
+    "Wentao Zhang",
+    "Xuanhe Zhou",
+    "Rita Zhang",
+    "Junchi Yan",
+    "Feiyu Xiong"
+   ],
+   "affiliations": [
+    "MemTensor"
+   ],
+   "announced": "2026-10-19T20:00:00-04:00",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "Architectures"
+   ],
+   "tldr": "MemT-1.0 builds persistent memory into the model using Gated DeltaNet-2 blocks, cutting storage 66 times and speeding inference 1.86 times versus a full-context KV cache at 128K tokens of history.",
+   "why_selected": "Most-upvoted memory paper of the weekend (143 Hugging Face upvotes), and a released model family that treats memory as a native model capability rather than an external add-on.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents and assistants need to remember across long interactions, but the usual answers are costly or lossy. Keeping all history in context makes the key-value cache grow with every turn. The question is whether memory can become part of the model's own computation rather than a store attached to it."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Retrieval-augmented systems keep memories in an external store and fetch relevant pieces into the prompt, which adds a separate pipeline and still spends context on retrieved text. Parametric memory methods keep information in the model's state or weights; MemT-1.0 is compared against these and against retrieval. The authors' earlier work, Metis, first introduced memory foundation models."
+    },
+    {
+     "heading": "Key idea",
+     "body": "MemT-1.0 augments selected Transformer blocks with a native memory block that runs alongside ordinary attention. Information from earlier steps lives in a fixed-size matrix state per layer, updated token by token with a Gated DeltaNet-2 rule, and the block's output is added to the normal attention output. Because the state has constant size, storage does not grow as interactions accumulate. A Mixture-of-Storage design splits each memory block into several memory experts with separate routing for storing and reading, to scale capacity. Nano has 36B parameters (3B active) on a Qwen3.6-35B-A3B backbone; Flash has 288B (17B active) on a post-trained DeepSeek-V4-Flash. Training uses continued pre-training and post-training on 34B tokens."
+    },
+    {
+     "heading": "Results",
+     "body": "Across 11 memory benchmarks the models outperform parametric-memory baselines on average and remain competitive with retrieval-augmented methods, while largely preserving general capabilities. At a 128K-token history, MemT-1.0-Nano gives about 1.86 times end-to-end inference speedup and 66 times smaller persistent storage than a full-context KV cache. Internalizing retrieved procedural experience improved task success for coding agents on SWE-bench Verified and Multilingual."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If memory can live in model state, long-running agents could carry experience without growing context or running a retrieval stack. This is a technical report with the authors' own evaluation, and being competitive with retrieval is not a clear win; tasks that need new facts still depend on supplying information."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.26825",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.26825",
+    "code": "https://github.com/MemTensor/MemT-1.0"
+   },
+   "signals": {
+    "hf_upvotes": 143,
+    "org": "MemTensor"
+   }
+  }
+ ]
+}

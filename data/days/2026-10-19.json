@@ -1,0 +1,431 @@
+{
+ "date": "2026-10-19",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T17:11:45+00:00",
+ "backfill": true,
+ "summary": "DeepSeek ships an open-weight V4.1-Flash update and Anthropic commits 5% of its shares to a public benefit fund, plus papers on general models as robot controllers, AI-found Busy Beaver rules, looped architectures, tree-based agent RL and language-informed image-generation loss.",
+ "news": [
+  {
+   "id": "2026-10-19-n1",
+   "story_key": "deepseek-v41-flash-1017-release",
+   "title": "DeepSeek releases V4.1-Flash-1017, an MIT-licensed open-weight update aimed at agent tasks",
+   "category": "Model Release",
+   "published": "2026-10-17T04:21:00-04:00",
+   "tldr": "DeepSeek published a minor update to its budget V4.1-Flash model with open weights under an MIT license, claiming gains on all eleven benchmarks it reports, led by agentic coding tasks.",
+   "why_selected": "The most capable open-weight release in the window, from the lab whose cheap models set the price pressure on closed frontier APIs.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "DeepSeek is a Chinese lab that publishes its model weights. Flash is the budget tier of its V4.1 family, first released in September. Chinese labs have recently led open-weight models: the Interconnects newsletter wrote on Saturday that without this week's releases from Meta and Reflection, more than 20 Chinese open-weight models would be better than the best Western ones."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Saturday, October 17, DeepSeek posted DeepSeek-V4.1-Flash-1017 on Hugging Face under an MIT license. The model card calls it a minor update that improves reasoning, coding, agentic tasks and image understanding while cutting task time and output length. It keeps a 1-million-token context window and is reported at about 763 billion parameters. In DeepSeek's own table it beats the September version on all eleven benchmarks, for example Terminal-Bench 4.0, a command-line agent test, from 31.2 to 42.3, and Humanity's Last Exam (HLE) without tools from 36.8 to 42.6. Against Anthropic's Opus 5 it is ahead on DeepSWE v1.1 (77.0 vs 74.0) and Agents' Last Exam (35.4 vs 28.6) but behind on Terminal-Bench 4.0 (42.3 vs 51.8) and HLE (42.6 vs 56.3). Artificial Analysis scores the max-reasoning variant 32 on its Intelligence Index v5.0, against a median of 23 for comparable models, at $0.30 and $1.20 per million input and output tokens."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "An open model priced this low now sits close to a leading closed model on agent-style work, which is where developers spend most tokens. The MIT license lets anyone host, fine-tune or distill it, so providers and enterprises can run it themselves. The remaining gap is hard reasoning without tools. The claim of shorter outputs is also relative to DeepSeek's own previous version: Artificial Analysis calls the model very verbose, with 170 million tokens used to run its index against a median of 100 million, so cost per task matters more than price per token."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent evaluations beyond the vendor table, whether Western open models such as Meta's Muse Spark Open close the gap, and November 1, when DeepSeek begins per-request billing for its new Search and Fetch APIs called through coding harnesses."
+    }
+   ],
+   "sources": [
+    {
+     "name": "DeepSeek (Hugging Face)",
+     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+    },
+    {
+     "name": "Artificial Analysis",
+     "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017"
+    },
+    {
+     "name": "Interconnects",
+     "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open"
+    },
+    {
+     "name": "Pasquale Pillitteri",
+     "url": "https://pasqualepillitteri.it/en/news/24844/deepseek-releases-41-flash-1017-mit-weights-shorter-outputs"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-n2",
+   "story_key": "anthropic-public-benefit-fund-5pct",
+   "title": "Anthropic commits 5% of its shares to a new public benefit fund",
+   "category": "Business & Funding",
+   "published": "2026-10-18T12:00:00-04:00",
+   "tldr": "Anthropic said it will put 5% of its shares into a company-owned Public Benefit Fund, which can grow with the company's value, bringing the share set aside for public good to roughly 20%.",
+   "why_selected": "A large, widely covered governance commitment by a leading lab weeks before its expected IPO, and a signal about how labs plan to handle the wealth AI creates.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Anthropic is a public benefit corporation, a legal form that requires a company to weigh the public interest alongside profit. Its co-founders have pledged to give away 80% of their equity, and an equity donation-matching program, in which about half of employees take part, lets staff pledge shares that the company matches. The Associated Press reports it is planning a large initial public offering as soon as November."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Sunday, October 18, Anthropic said it will commit 5% of its shares to a new Anthropic Public Benefit Fund, subject to stockholder approval. The fund is a limited liability company wholly owned by Anthropic rather than a charity, so it can make large gifts to nonprofits or direct payments to particular groups. The stake is built to grow: the board can add 2% of shares each time Anthropic's value rises 50% above an undisclosed baseline. None of the fund's shares may pay for lobbying or political donations. Counting the founder pledge and employee matching, Anthropic says about 20% of its shares are now set aside for the public good, before any additions. Labor-market effects of AI are the example use; the company has already pledged $200 million to study them."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fixing a large block of equity to a public purpose before outside shareholders arrive is a precedent for how frontier labs might share the wealth their technology produces. The company's own wording, that bolder approaches may be needed given the pace of AI progress, treats labor-market disruption as a problem large enough to need funding at scale. The structure also raises questions. A fund owned by the company is flexible, but who governs it, who qualifies for distributions and how independent it will be are not yet published. Prospective IPO investors will have to price the commitment."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Stockholder approval, the governance, eligibility and valuation-milestone details Anthropic says it will share in the coming months, the first public benefit report, and how the commitment appears in IPO disclosures as the listing approaches."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Associated Press (via ABC News)",
+     "url": "https://abcnews.com/Business/wireStory/anthropic-commits-5-stock-new-public-benefit-fund-137368439"
+    },
+    {
+     "name": "The Next Web",
+     "url": "https://thenextweb.com/news/anthropic-public-benefit-fund-5-percent-shares"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.22471",
+   "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+   "authors": [
+    "SenseNova",
+    "Joint Research Team",
+    "Zhongang Cai",
+    "Ziang Cao",
+    "Tailai Chen",
+    "Han Chong Chua",
+    "Linjun Dai",
+    "Hanming Deng",
+    "Hokin Deng",
+    "Haiwen Diao",
+    "Chenjing Ding",
+    "Weichen Fan",
+    "Xiao Fu",
+    "Zerui Gong",
+    "Chenyang Gu",
+    "Zexin He",
+    "Zhi Hou",
+    "Bo Li",
+    "Qinyue Li",
+    "Quanzhou Li",
+    "Xiaowan Li",
+    "Zhichao Liao",
+    "Dahua Lin",
+    "Zilong Lin",
+    "Bo Liu",
+    "Chunxiao Liu",
+    "Pengfei Liu",
+    "Tianqi Liu",
+    "Ziwei Liu",
+    "Chen Change Loy",
+    "Lewei Lu",
+    "Jiapeng Luo",
+    "Yuexiao Ma",
+    "Liang Pan",
+    "Xingang Pan",
+    "Oscar Qian",
+    "Ziyi Shang",
+    "Yuyao Shao",
+    "Dawei Su",
+    "Dacheng Tao",
+    "Qingyi Tao",
+    "Quan Wang",
+    "Ruisi Wang",
+    "Xiaogang Wang",
+    "Ziyi Wang",
+    "Beichen Wen",
+    "Donghao Wu",
+    "Jiaxu Wu",
+    "Silei Wu",
+    "Xiaoming Wu",
+    "Zhonghua Wu",
+    "Hongcan Xiao",
+    "Weiye Xu",
+    "Atsushi Yamashita",
+    "Lei Yang",
+    "Zhe Yang",
+    "Baiqiao Yin",
+    "Wanqi Yin",
+    "Hanfei Zhao",
+    "Tianbo Zhong",
+    "Long Zhuo",
+    "Jing Zuo"
+   ],
+   "affiliations": [
+    "SenseNova"
+   ],
+   "announced": "2026-10-18T20:00:00-04:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "A large study finds a general-purpose model, given training demonstrations as context and many more attempts, nearly saturates robot benchmarks, but real-robot tests show gaps in cost, physical verification and recovery.",
+   "why_selected": "A frontier-model-as-robot-controller study with the week's highest attention in robotics, and a careful look at what benchmark success does and does not show.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Robot learning has long built one specialist model per task and robot body, usually by imitating demonstrations. This report asks whether a general-purpose frontier model, GPT-6-Astra, can instead operate robots directly, which conditions produce its scores, and what that implies for how progress is measured."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier systems such as SayCan and Code as Policies used language models for high-level decisions, while a skill library, planner or separate controller decided how to move. Specialist policies are trained on each benchmark's demonstrations. Whether a frontier model can be the controller itself was unclear."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors give the model what a conventional policy gets, then more time. GPT-6-Astra first studies a benchmark's training demonstrations and writes a frozen knowledge package of task guidance, motion references, executable helpers and recovery procedures. At test time it adapts that package and controls the robot directly. Failed episodes may continue up to 10 times the official step limit, allowing retries. A second study pairs it as a slow \"System 2\" reviewer with a fast \"System 1\" vision-language-action (VLA) policy, whose proposed motions it accepts, modifies or rejects. Real-robot tests remove both luxuries: no demonstrations, human-written context such as joint limits, and a wall-clock budget, normally 60 minutes."
+    },
+    {
+     "heading": "Results",
+     "body": "Across 12 benchmarks the model beats published results by wide margins. On RoboLab it reaches 57.1% at the standard budget and 69.2% at 10 times, against 42.9% for the best specialist. In the harness study, a standalone VLA solves 6.91% of RoboDojo tasks, and closed-loop review improves on open-loop collaboration by up to 20.00 points. On real robots, a dual-arm platform finished all 14 trials across 12 tasks, but plug insertion failed in every attempt on three single-arm platforms."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Saturation by a general agent partly reflects what benchmarks grant: demonstrations and free retries. Real robots charge for time, tokens and irreversible mistakes, and the authors find gaps in verifying physical success and recovering from irreversible failures. They propose benchmarks with tasks drawn from real needs, no in-domain demonstrations, and a clock that keeps running while the agent deliberates. Caveats: one model, costly closed-loop control, and few real-robot trials."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.22471",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.22471",
+    "code": "https://github.com/OpenSenseNova/SenseNova-RoboRSI"
+   },
+   "signals": {
+    "hf_upvotes": 164,
+    "notable_authors": [
+     "Dahua Lin"
+    ],
+    "org": "SenseNova"
+   }
+  },
+  {
+   "id": "2610.22603",
+   "title": "At the Limits of Computability: Steps Towards Autonomous AI Discovery on the Busy Beaver Frontier",
+   "authors": [
+    "Marco Dos Santos",
+    "Vivek Veeriah",
+    "Alex Havrilla",
+    "Andrew Bolt",
+    "Goran Zuzic",
+    "Satinder Singh",
+    "Tom Zahavy"
+   ],
+   "affiliations": [
+    "Google DeepMind",
+    "University of Cambridge"
+   ],
+   "announced": "2026-10-18T20:00:00-04:00",
+   "primary_tag": "AI for Math",
+   "tags": [
+    "AI for Math",
+    "Agents"
+   ],
+   "tldr": "A Gemini-based pipeline watches Turing machines run, conjectures compact rules for their behavior and proves them in Lean, finding formally verified new Collatz-like accelerations for eleven six-state Busy Beaver holdouts.",
+   "why_selected": "A concrete case of an AI system doing conjecture-and-proof discovery on an open problem, with every result machine-checked.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "BB(n), the Busy Beaver number, is the longest a halting n-state, two-symbol Turing machine can run from a blank tape. For six states, 1,094 holdouts remain whose halting status is unknown. Some are Cryptids: machines whose executions have an exact, compact mathematical description yet whose halting behavior stays unresolved, often governed by Collatz-like systems."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "AI mathematics has won Olympiad medals and attacked open problems, but mostly on human-posed questions rather than discovering structure. Busy Beaver analysis today relies on human-written deciders and on community conjectures, some shared informally on Discord, that were never formally verified."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of the pipeline as a mathematician watching a machine run. First, simulate the machine for 5 million steps, compress each tape into blocks with exponents, and keep the 100 most frequent shapes. Second, show Gemini 3.1 Pro the observed transitions between successive occurrences of a shape and ask it to write a Python function mapping one set of exponents to the next. As code, the conjecture is testable: it must predict 100% of recorded transitions. Third, a generator-evaluator loop of up to four iterations produces an informal proof. Fourth, an agent translates the proof into Lean 4, so the correctness of every acceleration is machine-checked rather than trusted."
+    },
+    {
+     "heading": "Results",
+     "body": "Run on 1,094 BB(6) holdouts, 65 in BB(2,5) and 4 in BB(3,3), a first pass found 52 promising machines. After more conjecturing attempts and the proof stages, the system formally verified accelerations that the authors split into two groups: new discoveries for 11 BB(6) machines with no comparable analysis previously documented, and higher-level or alternative accelerations for 15 machines the community had only conjectured. The authors manually checked the final Lean statements. Subject to community acceptance, they classify the 11 as Cryptids."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This is AI doing theory-building rather than answering a given question: observe dynamics, conjecture a rule, prove it, with Lean removing the need to trust the model. Caveats: the method targets Collatz-like accelerations, structures mathematicians already study, so it is not fully open-ended. Any insight into the Collatz conjecture itself is speculative, and the Cryptid classifications await acceptance by the community."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.22603",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.22603"
+   },
+   "signals": {
+    "notable_authors": [
+     "Satinder Singh"
+    ]
+   }
+  },
+  {
+   "id": "2610.23036",
+   "title": "Towards Looped Models Done Right, Part I: Topology, Input Injection, Recurrent-State Design",
+   "authors": [
+    "Benhao Huang",
+    "Chufan Shi",
+    "Junlin Chen",
+    "Shicheng Wen",
+    "Zhengzhong Liu",
+    "Eric Xing",
+    "Xuezhe Ma"
+   ],
+   "affiliations": [
+    "Institute of Foundation Models"
+   ],
+   "announced": "2026-10-18T20:00:00-04:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency"
+   ],
+   "tldr": "A matched-budget study of looped language models finds that looping a middle block between untied input and output layers works best, and that the advantage carries over to mixture-of-experts models.",
+   "why_selected": "A rare controlled comparison in a crowded design space, with matched parameters, depth and tokens, and a result that transfers to MoE.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Looped language models reuse the same Transformer blocks several times in one forward pass, trading extra compute for a smaller memory footprint. But published looped models differ in many ways at once, so it is unclear which design choices actually help."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Two families dominate. Ouro ties a full 28-block stack and runs it four times. Huginn loops only a 12-layer middle core between an untied 8-layer prelude and an untied 8-layer coda, re-injects the prelude's output at each iteration, and starts from a random state. Nobody had compared them with parameters, depth and training tokens matched."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors turn Ouro into Huginn step by step, isolating three choices: where recurrence sits, whether the input is re-injected, and how the loop state is initialized. Every variant stores 730M parameters and unrolls to 112 layers. Think of the prelude as reading the prompt, the looped core as repeatedly thinking about it, and the coda as writing the answer; untied ends let the core spend its capacity on refinement. At 336B training tokens, the sandwich layout alone adds 12.00 points on MATH500 and 2.61 on DROP. Re-injecting the input helps context use, adding 6.63 on BBH-CoT and 5.49 on HumanEval+, but lowers MATH500 by 3.60."
+    },
+    {
+     "heading": "Results",
+     "body": "At 730M parameters the full Huginn design beats Ouro on all ten benchmarks. In mixture-of-experts (MoE) models with 8.0B stored and 0.8B active parameters, trained on 500B tokens, Huginn wins eight of ten, including GSM8K by 4.70 and MATH500 by 3.60. Against a 112-layer feedforward MoE storing 32.0B parameters, it uses 75% fewer, wins on DROP and GSM8K (83.62 vs 80.82), ties MATH500 at 53.40, and trails elsewhere, for example TriviaQA at 51.04 vs 59.02."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Looping offers a way to add effective depth without adding stored parameters. This paper supplies design guidance and shows the gains survive sparsity: forcing later iterations to reuse the first iteration's experts lowered accuracy on all six evaluated tasks, so iterations specialize. Caveats: one scale for each setting, no multi-seed replication, an MoE comparison that changes three design axes together, and knowledge-heavy tasks still favor stored parameters."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.23036",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.23036",
+    "code": "https://github.com/ifm-ai/xllm-loop"
+   },
+   "signals": {
+    "hf_upvotes": 19,
+    "org": "Institute of Foundation Models"
+   }
+  },
+  {
+   "id": "2610.23181",
+   "title": "Tree-Aware Posterior Distillation for Long-Horizon Agentic Reinforcement Learning",
+   "authors": [
+    "Heming Zou",
+    "Qi Wang",
+    "Yixiu Mao",
+    "Yun Qu",
+    "Yuyi Guo",
+    "Zeyuan Liu",
+    "Chenglin Li",
+    "Weijie Liu",
+    "Saiyong Yang",
+    "Xiangyang Ji"
+   ],
+   "affiliations": [
+    "Tencent Hunyuan"
+   ],
+   "announced": "2026-10-18T20:00:00-04:00",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Agents",
+    "Post-training"
+   ],
+   "tldr": "TreeOPSD branches rollouts from shared prefixes to give each agent turn credit without a critic, then trains toward a bounded target, improving deep-research accuracy of Qwen3 agents by up to 4.97 points over GRPO.",
+   "why_selected": "A simple critic-free fix for credit assignment in long agent runs, with gains that grow with horizon length.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "In long-horizon agent tasks such as deep research, with many search-and-read turns and one reward at the end, it is hard to say which turn deserved credit. A second problem appears when one batch of rollouts is used for several mini-batch updates: the policy drifts from the one that generated the data."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Learned critics, process reward models and distillation from a stronger teacher give denser credit, but need a value network, step-level labels or an external teacher. Importance-sampling ratios and clipping limit drift, yet they define only an ascent direction, not a finite target where updates should stop."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Treat the rollouts as a tree. Branch fresh continuations from random mid-trajectory prefixes; with 4 initial rollouts and 2 branches each, the cost matches GRPO's 8 trajectories. Because branches share a prefix, differences in final reward isolate the effect of later decisions. Rewards are standardized and backed up through the tree, weighted by the old policy's likelihoods, giving each turn a credit score with no critic. Each credit then sets a bounded target probability for that turn, and the model is trained to match the target using a KL divergence. At the start the gradient equals the tree policy gradient, but it shrinks to zero as the policy reaches the target and reverses if it overshoots, like a spring toward a destination rather than a push in a direction."
+    },
+    {
+     "heading": "Results",
+     "body": "With Qwen3-30B-A3B-Thinking, the Deep Research average over BrowseComp-Plus, BrowseComp, GAIA and xbench-DeepSearch rises from 16.23 for GRPO to 21.20. With Qwen3-4B-Thinking it rises from 12.18 to 15.45. On multi-hop question answering the gains are about one point, and on Bamboogle the 4B model is below GRPO (53.60 vs 56.00). Spending the budget on prefix branches beats flat sampling: 15.45 vs 11.28 on Deep Research."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It offers a critic-free alternative for anyone training search or tool-using agents with sparse rewards, and gains that grow with horizon length suggest credit assignment matters more on longer tasks. Caveats: absolute Deep Research scores remain low, results come from two Qwen3 models and one 6,102-question training set, and gains on short multi-hop tasks are modest."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.23181",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.23181"
+   },
+   "signals": {
+    "hf_upvotes": 54,
+    "org": "Tencent Hunyuan"
+   }
+  },
+  {
+   "id": "2610.23653",
+   "title": "A Language-Informed Loss for Visual Generation",
+   "authors": [
+    "Suchir Agarwal",
+    "Keshigeyan Chandrasegaran",
+    "Ziyu Chen",
+    "Kyle Sargent",
+    "Juan Carlos Niebles",
+    "Li Fei-Fei",
+    "Jiajun Wu"
+   ],
+   "affiliations": [
+    "Stanford University"
+   ],
+   "announced": "2026-10-18T20:00:00-04:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Multimodal"
+   ],
+   "tldr": "LILIE trains an invertible image encoder so a vision-language model can caption its noised output, then uses distance in that feature space as an extra loss, cutting image-generation gFD from 66.84 to 53.01.",
+   "why_selected": "A small, original idea for the training signal of tokenizer-free image generators, with a clean control showing real captions are what matters.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Pixel-space image generators train a transformer directly on raw pixels, skipping the learned tokenizer that limits quality in latent diffusion. But the training signal is squared error on pixels, which scores two errors of equal size identically, whether one wrecks the subject and the other just changes a cloud."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Perceptual losses compare images in the feature space of a pretrained network such as LPIPS, DINOv2 or SigLIP 2. They depend on large encoders with their own training data, and DINOv2 and SigLIP 2 losses produce degenerate images when the pixel loss is removed."
+    },
+    {
+     "heading": "Key idea",
+     "body": "LILIE, the Language-Informed and Lossless Image Encoder, is an invertible transform mapping an image to a feature map of the same shape, built on a transformer normalizing flow but trained with a captioning objective rather than a density one. Its output is rescaled, corrupted with Gaussian noise, and a small LoRA-fine-tuned vision-language model must write the image's caption from the noisy features. To survive the noise, the encoder must make caption-relevant information stand out, while invertibility guarantees nothing is discarded. The generator then adds squared error measured in LILIE space to its usual pixel loss. Think of it as a ruler that stretches differences that matter for describing the image: near real data it amplifies residual deviations about 4.9 times relative to pixels."
+    },
+    {
+     "heading": "Results",
+     "body": "On the GPIC text-to-image dataset at 256 by 256 resolution, the 1.1B-parameter generator's gFD, a Fréchet distance in DINOv2 feature space where lower is better, falls from 66.84 with pixel loss to 53.01 with pixel plus LILIE loss, and to 55.78 with LILIE alone. The 700M model improves from 80.24 to 65.86. An encoder trained on random-token captions scores 82.06, no better than pixels, so the language signal does the work. The encoder has just 32M parameters."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests the training signal, not only the architecture, is a lever for tokenizer-free generation, and that a small encoder trained on 100 million image-caption pairs can supply it. Caveats: one dataset, 256 by 256 resolution, one training epoch, and the authors leave combining LILIE with perceptual losses to future work."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.23653",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.23653"
+   },
+   "signals": {
+    "notable_authors": [
+     "Jiajun Wu"
+    ]
+   }
+  }
+ ]
+}

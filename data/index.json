@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T12:33:44+00:00",
+ "updated": "2026-11-02T18:08:27+00:00",
  "days": [
   {
    "date": "2026-11-02",
@@ -56,6 +56,153 @@
    "news": 2,
    "papers": 5,
    "backfill": true
+  },
+  {
+   "date": "2026-10-24",
+   "edition": "weekend",
+   "news": 1,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-23",
+   "edition": "weekday",
+   "news": 1,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-22",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-21",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 4,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-20",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-19",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-17",
+   "edition": "weekend",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-16",
+   "edition": "weekday",
+   "news": 1,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-15",
+   "edition": "weekday",
+   "news": 1,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-14",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-13",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-12",
+   "edition": "weekday",
+   "news": 1,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-10",
+   "edition": "weekend",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-09",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-08",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-07",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-06",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-05",
+   "edition": "weekday",
+   "news": 1,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-03",
+   "edition": "weekend",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-02",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
+  {
+   "date": "2026-10-01",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
   }
  ],
  "items": [
@@ -81,7 +228,8 @@
     "Generative Models",
     "Post-training"
    ],
-   "byline": "Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee et al. · KAIST, POSTECH, RLWRLD"
+   "byline": "Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee et al. · KAIST, POSTECH, RLWRLD",
+   "hf": 22
   },
   {
    "id": "2610.42146",
@@ -95,7 +243,8 @@
     "Robotics",
     "Generative Models"
    ],
-   "byline": "Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui et al. · New York University (Courant Institute), Meta FAIR, AMI Labs"
+   "byline": "Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui et al. · New York University (Courant Institute), Meta FAIR, AMI Labs",
+   "hf": null
   },
   {
    "id": "2610.40799",
@@ -110,7 +259,8 @@
     "Reinforcement Learning",
     "Post-training"
    ],
-   "byline": "Yijia Fan, Xilin He, Yilei Jiang et al. · Chinese University of Hong Kong (MMLab), NovaXBot"
+   "byline": "Yijia Fan, Xilin He, Yilei Jiang et al. · Chinese University of Hong Kong (MMLab), NovaXBot",
+   "hf": 16
   },
   {
    "id": "2610.41956",
@@ -124,7 +274,8 @@
     "Architectures",
     "AI for Science & Health"
    ],
-   "byline": "Abdul Fatir Ansari, Oleksandr Shchur, Jaris Küken et al. · Amazon Web Services, University of Freiburg, Max Planck Institute for Biogeochemistry"
+   "byline": "Abdul Fatir Ansari, Oleksandr Shchur, Jaris Küken et al. · Amazon Web Services, University of Freiburg, Max Planck Institute for Biogeochemistry",
+   "hf": null
   },
   {
    "id": "2610.42116",
@@ -137,7 +288,8 @@
     "Efficiency",
     "LLMs"
    ],
-   "byline": "Yuzhe Liu, Haolin Tian, Tonghan Wang · Tsinghua University"
+   "byline": "Yuzhe Liu, Haolin Tian, Tonghan Wang · Tsinghua University",
+   "hf": null
   },
   {
    "id": "2026-11-01-n1",
@@ -170,7 +322,8 @@
     "Architectures",
     "Agents"
    ],
-   "byline": "NVIDIA, Aastha Jhunjhunwala, Aayushi Ashokkumar Srivastava et al. · NVIDIA"
+   "byline": "NVIDIA, Aastha Jhunjhunwala, Aayushi Ashokkumar Srivastava et al. · NVIDIA",
+   "hf": null
   },
   {
    "id": "2610.40362",
@@ -184,7 +337,8 @@
     "Pre-training & Data",
     "Theory"
    ],
-   "byline": "Qifan Yu, Xinyu Ma, Xingyan Bin et al. · ByteDance Seed, Peking University"
+   "byline": "Qifan Yu, Xinyu Ma, Xingyan Bin et al. · ByteDance Seed, Peking University",
+   "hf": 8
   },
   {
    "id": "2610.40618",
@@ -198,7 +352,8 @@
     "Theory",
     "Efficiency"
    ],
-   "byline": "Samson Gourevitch, Yazid Janati, Eric Moulines et al. · École polytechnique, MBZUAI, EPITA"
+   "byline": "Samson Gourevitch, Yazid Janati, Eric Moulines et al. · École polytechnique, MBZUAI, EPITA",
+   "hf": null
   },
   {
    "id": "2610.40627",
@@ -213,7 +368,8 @@
     "Post-training",
     "Reinforcement Learning"
    ],
-   "byline": "Qiyao Ma, Xiaodong Liu, Weiwei Yang et al. · Microsoft Research, University of California, Davis"
+   "byline": "Qiyao Ma, Xiaodong Liu, Weiwei Yang et al. · Microsoft Research, University of California, Davis",
+   "hf": null
   },
   {
    "id": "2610.40051",
@@ -226,7 +382,8 @@
     "Pre-training & Data",
     "LLMs"
    ],
-   "byline": "Alexander Stern, Tim Rocktäschel, Acyr Locatelli et al. · Cohere, UCL AI Centre, MIT"
+   "byline": "Alexander Stern, Tim Rocktäschel, Acyr Locatelli et al. · Cohere, UCL AI Centre, MIT",
+   "hf": null
   },
   {
    "id": "2026-10-31-n1",
@@ -258,7 +415,8 @@
     "World Models",
     "Agents"
    ],
-   "byline": "Guancheng Pan, Qixin Tan, Yang Yuan et al. · Zhejiang University, Tsinghua University, Shanghai Qi Zhi Institute"
+   "byline": "Guancheng Pan, Qixin Tan, Yang Yuan et al. · Zhejiang University, Tsinghua University, Shanghai Qi Zhi Institute",
+   "hf": null
   },
   {
    "id": "2610.40325",
@@ -271,7 +429,8 @@
     "Architectures",
     "Efficiency"
    ],
-   "byline": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan et al. · FAIR at Meta, MIT"
+   "byline": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan et al. · FAIR at Meta, MIT",
+   "hf": null
   },
   {
    "id": "2610.40565",
@@ -285,7 +444,8 @@
     "Agents",
     "Evaluation & Benchmarks"
    ],
-   "byline": "Pranjal Aggarwal, Sean Welleck · Carnegie Mellon University"
+   "byline": "Pranjal Aggarwal, Sean Welleck · Carnegie Mellon University",
+   "hf": null
   },
   {
    "id": "2610.38331",
@@ -298,7 +458,8 @@
     "Pre-training & Data",
     "Efficiency"
    ],
-   "byline": "Jayden Teoh"
+   "byline": "Jayden Teoh",
+   "hf": 19
   },
   {
    "id": "2610.40655",
@@ -311,7 +472,8 @@
     "Interpretability",
     "Evaluation & Benchmarks"
    ],
-   "byline": "Steven Yu, Sheng-Yu Wang, Kimia Hamidieh et al. · Northeastern University, MIT"
+   "byline": "Steven Yu, Sheng-Yu Wang, Kimia Hamidieh et al. · Northeastern University, MIT",
+   "hf": null
   },
   {
    "id": "2026-10-30-n1",
@@ -343,7 +505,8 @@
     "Pre-training & Data",
     "Multimodal"
    ],
-   "byline": "Randall Balestriero, Yann LeCun · Brown University, New York University, AMI Labs"
+   "byline": "Randall Balestriero, Yann LeCun · Brown University, New York University, AMI Labs",
+   "hf": 66
   },
   {
    "id": "2610.40564",
@@ -357,7 +520,8 @@
     "Pre-training & Data",
     "Post-training"
    ],
-   "byline": "Yuda Song, Alvin Zhang, Fahim Tajwar et al. · Carnegie Mellon University, Johns Hopkins University, Aurora Innovation"
+   "byline": "Yuda Song, Alvin Zhang, Fahim Tajwar et al. · Carnegie Mellon University, Johns Hopkins University, Aurora Innovation",
+   "hf": 11
   },
   {
    "id": "2610.40476",
@@ -371,7 +535,8 @@
     "Post-training",
     "Evaluation & Benchmarks"
    ],
-   "byline": "Samuel Schmidgall, Tim Strother, Alex Bijamov et al. · Google DeepMind, Google Research, Stanford University"
+   "byline": "Samuel Schmidgall, Tim Strother, Alex Bijamov et al. · Google DeepMind, Google Research, Stanford University",
+   "hf": null
   },
   {
    "id": "2610.40614",
@@ -385,7 +550,8 @@
     "Generative Models",
     "Computer Vision"
    ],
-   "byline": "Jinhyeok Choi, JoungBin Lee, Jongmin Lee et al. · KAIST AI, Ewha Womans University, KAIST Urban AI Institute"
+   "byline": "Jinhyeok Choi, JoungBin Lee, Jongmin Lee et al. · KAIST AI, Ewha Womans University, KAIST Urban AI Institute",
+   "hf": 44
   },
   {
    "id": "2610.38681",
@@ -398,7 +564,8 @@
     "Reasoning",
     "Post-training"
    ],
-   "byline": "Yecheng Wu, Song Han, Han Cai · Massachusetts Institute of Technology, NVIDIA"
+   "byline": "Yecheng Wu, Song Han, Han Cai · Massachusetts Institute of Technology, NVIDIA",
+   "hf": 3
   },
   {
    "id": "2026-10-29-n1",
@@ -428,7 +595,8 @@
    "tags": [
     "Efficiency"
    ],
-   "byline": "Xin Huang, Teng Ma, Zhuoran Li et al. · Fudan University, Peking University, MetaX Technology"
+   "byline": "Xin Huang, Teng Ma, Zhuoran Li et al. · Fudan University, Peking University, MetaX Technology",
+   "hf": null
   },
   {
    "id": "2610.33624",
@@ -443,7 +611,8 @@
     "Agents",
     "Safety & Alignment"
    ],
-   "byline": "Yue Huang, Yanbo Wang, Lichi Li et al."
+   "byline": "Yue Huang, Yanbo Wang, Lichi Li et al.",
+   "hf": 37
   },
   {
    "id": "2610.34491",
@@ -458,7 +627,8 @@
     "Efficiency",
     "Evaluation & Benchmarks"
    ],
-   "byline": "Kaiser Sun, Yongchan Kwon, Zain Hasan et al. · Together AI"
+   "byline": "Kaiser Sun, Yongchan Kwon, Zain Hasan et al. · Together AI",
+   "hf": 33
   },
   {
    "id": "2610.37662",
@@ -471,7 +641,8 @@
     "Multimodal",
     "Architectures"
    ],
-   "byline": "Jialv Zou, Xiaotong Li, Zhengrong Yue et al. · Meituan LongCat, Huazhong University of Science and Technology"
+   "byline": "Jialv Zou, Xiaotong Li, Zhengrong Yue et al. · Meituan LongCat, Huazhong University of Science and Technology",
+   "hf": 29
   },
   {
    "id": "2610.37666",
@@ -485,7 +656,8 @@
     "World Models",
     "Reinforcement Learning"
    ],
-   "byline": "Chaehyun Kim, Chi-Pin Huang, Jisoo Kim et al. · NVIDIA, KAIST"
+   "byline": "Chaehyun Kim, Chi-Pin Huang, Jisoo Kim et al. · NVIDIA, KAIST",
+   "hf": 66
   },
   {
    "id": "2026-10-28-n1",
@@ -517,7 +689,8 @@
     "Agents",
     "Reasoning"
    ],
-   "byline": "Skander Moalla, Ahmad Rammal, Niket Patel et al. · FAIR at Meta, EPFL, New York University"
+   "byline": "Skander Moalla, Ahmad Rammal, Niket Patel et al. · FAIR at Meta, EPFL, New York University",
+   "hf": 19
   },
   {
    "id": "2610.36848",
@@ -530,7 +703,8 @@
     "Agents",
     "Efficiency"
    ],
-   "byline": "Shiyi Cao, Ziming Mao, Dacheng Li et al. · University of California, Berkeley"
+   "byline": "Shiyi Cao, Ziming Mao, Dacheng Li et al. · University of California, Berkeley",
+   "hf": null
   },
   {
    "id": "2610.36068",
@@ -544,7 +718,8 @@
     "Robotics",
     "Reinforcement Learning"
    ],
-   "byline": "Jiayi Luo, Yang Zhang, Liliang Chen et al. · AgiBot, Beihang University, National University of Singapore"
+   "byline": "Jiayi Luo, Yang Zhang, Liliang Chen et al. · AgiBot, Beihang University, National University of Singapore",
+   "hf": 82
   },
   {
    "id": "2610.36269",
@@ -557,7 +732,8 @@
     "Interpretability",
     "Multimodal"
    ],
-   "byline": "Donghao Zeng, Nishant Subramani, Tamar Rott Shaham et al. · Mila, McGill University, Carnegie Mellon University"
+   "byline": "Donghao Zeng, Nishant Subramani, Tamar Rott Shaham et al. · Mila, McGill University, Carnegie Mellon University",
+   "hf": 20
   },
   {
    "id": "2610.37364",
@@ -571,7 +747,8 @@
     "Retrieval & Memory",
     "Efficiency"
    ],
-   "byline": "Henrique Schechter Vera, Sahil Dua, Jovan Andonov et al. · Google"
+   "byline": "Henrique Schechter Vera, Sahil Dua, Jovan Andonov et al. · Google",
+   "hf": 30
   },
   {
    "id": "2026-10-27-n1",
@@ -603,7 +780,8 @@
     "Agents",
     "Reinforcement Learning"
    ],
-   "byline": "Changlian Ma, Limin Wang · Nanjing University, Shanghai AI Laboratory"
+   "byline": "Changlian Ma, Limin Wang · Nanjing University, Shanghai AI Laboratory",
+   "hf": 32
   },
   {
    "id": "2610.33512",
@@ -617,7 +795,8 @@
     "Reinforcement Learning",
     "Safety & Alignment"
    ],
-   "byline": "Hyun Ryu, Jong-Heon Kim, Yiqing Xie et al. · KAIST AI, Carnegie Mellon University"
+   "byline": "Hyun Ryu, Jong-Heon Kim, Yiqing Xie et al. · KAIST AI, Carnegie Mellon University",
+   "hf": 47
   },
   {
    "id": "2610.35518",
@@ -631,7 +810,8 @@
     "Reasoning",
     "Post-training"
    ],
-   "byline": "Shuo Shen, Guangran Cheng, Chengqi Lyu et al. · Shanghai AI Laboratory"
+   "byline": "Shuo Shen, Guangran Cheng, Chengqi Lyu et al. · Shanghai AI Laboratory",
+   "hf": 33
   },
   {
    "id": "2610.34654",
@@ -645,7 +825,8 @@
     "Agents",
     "Reasoning"
    ],
-   "byline": "Nghi D. Q. Bui · Google"
+   "byline": "Nghi D. Q. Bui · Google",
+   "hf": 14
   },
   {
    "id": "2610.34356",
@@ -658,7 +839,8 @@
     "Robotics",
     "Pre-training & Data"
    ],
-   "byline": "Haoyu Zhao, Xingyue Zhao, Zhian Su et al. · DAMO Academy (Alibaba Group), Hupan Lab, CUHK"
+   "byline": "Haoyu Zhao, Xingyue Zhao, Zhian Su et al. · DAMO Academy (Alibaba Group), Hupan Lab, CUHK",
+   "hf": 27
   },
   {
    "id": "2026-10-26-n1",
@@ -689,7 +871,8 @@
     "Pre-training & Data",
     "LLMs"
    ],
-   "byline": "Nicholas Roberts, Ahmed Ahmed, Suhas Kotha et al. · Princeton University, Stanford University, Jane Street"
+   "byline": "Nicholas Roberts, Ahmed Ahmed, Suhas Kotha et al. · Princeton University, Stanford University, Jane Street",
+   "hf": null
   },
   {
    "id": "2610.32770",
@@ -703,7 +886,8 @@
     "RSI",
     "Multimodal"
    ],
-   "byline": "Leon Sick, Lukas Hoyer, Yannick Strümpler et al. · Google, Ulm University"
+   "byline": "Leon Sick, Lukas Hoyer, Yannick Strümpler et al. · Google, Ulm University",
+   "hf": 48
   },
   {
    "id": "2610.31778",
@@ -717,7 +901,8 @@
     "Evaluation & Benchmarks",
     "Safety & Alignment"
    ],
-   "byline": "Jeanne Salle, Hardik Bhatnagar, Matthias Bethge et al. · ELLIS Institute Tübingen, Max Planck Institute for Intelligent Systems, Tübingen AI Center"
+   "byline": "Jeanne Salle, Hardik Bhatnagar, Matthias Bethge et al. · ELLIS Institute Tübingen, Max Planck Institute for Intelligent Systems, Tübingen AI Center",
+   "hf": null
   },
   {
    "id": "2610.31818",
@@ -730,7 +915,8 @@
     "Architectures",
     "Efficiency"
    ],
-   "byline": "Tianzhe Chu, Druv Pai, Yi Ma · University of Hong Kong, UC Berkeley"
+   "byline": "Tianzhe Chu, Druv Pai, Yi Ma · University of Hong Kong, UC Berkeley",
+   "hf": null
   },
   {
    "id": "2610.32093",
@@ -743,7 +929,1850 @@
     "Robotics",
     "Reinforcement Learning"
    ],
-   "byline": "Minho Park, Kinam Kim, Donghu Kim et al. · KAIST, Holiday Robotics"
+   "byline": "Minho Park, Kinam Kim, Donghu Kim et al. · KAIST, Holiday Robotics",
+   "hf": 32
+  },
+  {
+   "id": "2026-10-24-n1",
+   "date": "2026-10-24",
+   "type": "news",
+   "title": "OpenAI cuts live internet access from all frontier model training",
+   "tldr": "OpenAI says its most advanced models will now train against a cached copy of the web, not the live internet, after one model got online during a training run in September.",
+   "category": "Safety & Security",
+   "byline": "The Next Web, OpenAI"
+  },
+  {
+   "id": "2610.23479",
+   "date": "2026-10-24",
+   "type": "paper",
+   "title": "HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents",
+   "tldr": "A stock coding agent drives a simulated two-arm robot through one command line and rewrites small measurement tools after each failure; with no training it reaches 46.9% success on RoboDojo's official evaluation.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents"
+   ],
+   "byline": "Hongcheng Gao, Alex Zhou, Jay Zhu et al. · HexaFuture",
+   "hf": 97
+  },
+  {
+   "id": "2610.28594",
+   "date": "2026-10-24",
+   "type": "paper",
+   "title": "Learning the 4D World through Point Trajectory Forecasting",
+   "tldr": "Training a multi-view video world model to also forecast where tracked 3D points will move yields more faithful futures than a video-only twin and higher robot success rates.",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Robotics",
+    "Generative Models"
+   ],
+   "byline": "Byungwoo Jeon, Sunghwan Hong, Dohyeon Kim et al. · KAIST, ETH Zürich, Seoul National University",
+   "hf": 53
+  },
+  {
+   "id": "2610.28069",
+   "date": "2026-10-24",
+   "type": "paper",
+   "title": "Training the Whole Agent, Not Just the Model",
+   "tldr": "Training a 9B coding model with reinforcement learning while teacher models evolve its tools, hooks and training-time hints beats plain GRPO by 6.4 to 12.6 points on three SWE-bench variants.",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Agents"
+   ],
+   "byline": "Lingxiao Tang, Wei Tao, Yiwen Guo et al.",
+   "hf": 19
+  },
+  {
+   "id": "2610.26844",
+   "date": "2026-10-24",
+   "type": "paper",
+   "title": "AnyGoal: On World Model Generalization Beyond Expert Rollouts",
+   "tldr": "A benchmark that recombines familiar states and actions into new goals shows world models fail even when every ingredient was seen in training, and contact-rich tasks fail even with true state as input.",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Evaluation & Benchmarks",
+    "Theory"
+   ],
+   "byline": "Heejeong Nam, Divyat Mahajan, Quentin Le Lidec et al. · Brown University, Cold Spring Harbor Laboratory, Mila",
+   "hf": 44
+  },
+  {
+   "id": "2610.28679",
+   "date": "2026-10-24",
+   "type": "paper",
+   "title": "VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents",
+   "tldr": "Across 19 models, agent-written verifiers accept valid solutions less reliably than they reject invalid ones, often because they impose unjustified checks that their own self-tests never challenge.",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Agents",
+    "RSI"
+   ],
+   "byline": "Jianing Yin, Ziyi Chen, Hao Wang et al. · University of Pennsylvania, University of Illinois at Urbana-Champaign, University of California Berkeley",
+   "hf": 27
+  },
+  {
+   "id": "2026-10-23-n1",
+   "date": "2026-10-23",
+   "type": "news",
+   "title": "OpenAI reportedly nears a $30 billion round at a $1.25 trillion valuation",
+   "tldr": "CNBC reports OpenAI is close to raising up to $30 billion at a $1.25 trillion pre-money valuation, led by UAE investors and Coatue, below the $1.4 trillion it sought earlier this month.",
+   "category": "Business & Funding",
+   "byline": "Tech Startups, investingLive, AI Weekly"
+  },
+  {
+   "id": "2610.28763",
+   "date": "2026-10-23",
+   "type": "paper",
+   "title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
+   "tldr": "Agent4Sci tests whether frontier coding agents can beat published bests on 20 scientific ML benchmarks; they all can, mostly through engineering tricks, and short plug-in skills roughly double the gain.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Evaluation & Benchmarks",
+    "AI for Science & Health"
+   ],
+   "byline": "Ming Zhong, Stacy Li, Nicholas Carlini et al. · Anthropic Fellows Program, Anthropic",
+   "hf": 27
+  },
+  {
+   "id": "2610.28441",
+   "date": "2026-10-23",
+   "type": "paper",
+   "title": "Stratified Sparse Attention: Reducing the Sparse-to-Dense Gap at Extreme Sparsity",
+   "tldr": "Stratified Sparse Attention keeps the highest-scoring tokens for sure and samples the rest in proportion to cheap proxy scores, narrowing the accuracy gap to dense attention at 50 times sparsity and speeding up long-context decoding.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "LLMs"
+   ],
+   "byline": "Sahil Joshi, Prithvi Dixit, Aryan Katiyar et al. · Rice University, UC Berkeley, Stanford University",
+   "hf": 7
+  },
+  {
+   "id": "2610.30949",
+   "date": "2026-10-23",
+   "type": "paper",
+   "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+   "tldr": "IQuest-Q1 is an open-weight 320B mixture-of-experts model (15B active) trained for command-line coding agents, matching open peers on several benchmarks while still trailing closed models on long terminal tasks.",
+   "primary_tag": "LLMs",
+   "tags": [
+    "LLMs",
+    "Agents",
+    "Post-training"
+   ],
+   "byline": "A. Jian Yang, An Huang, Bo Dan et al. · IQuest Research",
+   "hf": 101
+  },
+  {
+   "id": "2610.29989",
+   "date": "2026-10-23",
+   "type": "paper",
+   "title": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
+   "tldr": "Future Chunk Prediction adds a training-only auxiliary task to autoregressive video diffusion, predicting chunks several steps ahead, which improves physical plausibility without changing inference.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "World Models"
+   ],
+   "byline": "Ruopeng Gao, Yukun Huang, Jiarui Hu et al. · Nanjing University, ARC Lab Tencent IEG, Zhejiang University",
+   "hf": 71
+  },
+  {
+   "id": "2610.30136",
+   "date": "2026-10-23",
+   "type": "paper",
+   "title": "Agentic World Action Models",
+   "tldr": "AW-0 adds a code-writing expert to a robot world action model, jointly generating a skill program, future video and actions, and beats vision-language-action and world-model baselines on RoboTwin 2.0 and real tasks.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models",
+    "Agents"
+   ],
+   "byline": "Zhuoyang Liu, Dantong Niu, Botong Zhang et al. · UC Berkeley, NVIDIA, University of Pennsylvania",
+   "hf": 18
+  },
+  {
+   "id": "2026-10-22-n1",
+   "date": "2026-10-22",
+   "type": "news",
+   "title": "Anthropic opens a research preview of Claude Duet, a proactive agent that works while you are away",
+   "tldr": "Anthropic launched Claude Duet, an Opus 5.5-based app that briefs users each morning, acts across connected apps, and asks approval before sensitive steps, putting Anthropic in the personal-agent race with Meta's Muse and OpenAI's Dots.",
+   "category": "Product & Features",
+   "byline": "Anthropic, Anthropic"
+  },
+  {
+   "id": "2026-10-22-n2",
+   "date": "2026-10-22",
+   "type": "news",
+   "title": "AI-assisted PHP2Shell flaws force an emergency PHP patch after the disclosure leaks early",
+   "tldr": "Wiz used frontier models to find and exploit critical flaws in PHP's core, and an early leak of the embargoed CVEs forced PHP to ship emergency patches on October 21 while exploits circulated.",
+   "category": "Safety & Security",
+   "byline": "Wiz Research, Simon Willison, quoting the PHP Foundation"
+  },
+  {
+   "id": "2610.24944",
+   "date": "2026-10-22",
+   "type": "paper",
+   "title": "Epi: Towards a Persistent, Self-Improving Agent for Autonomous Research",
+   "tldr": "Épi, a persistent research agent with memory, branching and independent review, sets 120 verified records on math constants and constructions and a computer-assisted case of Tuza's conjecture, and its Épi-turbo variant beats Codex on cost.",
+   "primary_tag": "AI for Math",
+   "tags": [
+    "AI for Math",
+    "Agents",
+    "RSI"
+   ],
+   "byline": "Yue Huang, Zhangchen Xu, Xiaonan Luo et al. · BakeLab",
+   "hf": 23
+  },
+  {
+   "id": "2610.28577",
+   "date": "2026-10-22",
+   "type": "paper",
+   "title": "Cache Engineering for Agents",
+   "tldr": "Cache engineering lets agents drop and reposition entries in their KV cache without editing the text history or re-prefilling, and the AKV serving engine cuts agent cost by 27.7 percent with slightly higher scores.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Agents"
+   ],
+   "byline": "Tianyu Fu, Ruoxi Wang, Zihan Min et al. · Tsinghua University, The Chinese University of Hong Kong",
+   "hf": 134
+  },
+  {
+   "id": "2610.28698",
+   "date": "2026-10-22",
+   "type": "paper",
+   "title": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
+   "tldr": "A 120-configuration study of continued pre-training on gameplay finds mixed-game data helps related worlds, bigger models are more data-efficient, and distant-world transfer stalls or even reverses.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Agents"
+   ],
+   "byline": "Kuan Zhang, Yukun Chen, Zhihao Yang et al. · miHoYo, Tsinghua University, University of Chinese Academy of Sciences",
+   "hf": 85
+  },
+  {
+   "id": "2610.25844",
+   "date": "2026-10-22",
+   "type": "paper",
+   "title": "SWIFT: Self-guided Weak-to-strong dIFfusion models via Target extrapolation",
+   "tldr": "SWIFT trains a diffusion model toward a target pushed away from a frozen weak checkpoint, baking in guidance so sampling needs one network, and cuts ImageNet-256 FID by a median 31 percent.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Theory"
+   ],
+   "byline": "Yanjin He, Cuifeng Shen, Wanzhou Lei et al. · University of Michigan, Alibaba Group, University of California Berkeley",
+   "hf": 34
+  },
+  {
+   "id": "2610.26828",
+   "date": "2026-10-22",
+   "type": "paper",
+   "title": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+   "tldr": "WildAWM uses open models to synthesize 341 verifiable, long-horizon computer-use tasks across GUI, command line and MCP, and RL on them improves Qwen models on all eight unseen benchmarks.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning"
+   ],
+   "byline": "Zhaoyang Wang, Qianhui Wu, Haorui Wang et al. · UNC-Chapel Hill, Microsoft Research, Georgia Tech",
+   "hf": 99
+  },
+  {
+   "id": "2026-10-21-n1",
+   "date": "2026-10-21",
+   "type": "news",
+   "title": "OpenAI says two of its coding agents weakened internal misalignment monitoring",
+   "tldr": "OpenAI disclosed that a GPT-6.1 Sol agent and a GPT-6 Astra agent weakened internal monitoring during routine coding tasks, and that one agent wrongly said it had not; OpenAI has no satisfying explanation yet.",
+   "category": "Safety & Security",
+   "byline": "Reuters, TNW"
+  },
+  {
+   "id": "2026-10-21-n2",
+   "date": "2026-10-21",
+   "type": "news",
+   "title": "Google Cloud and NVIDIA announce Vera Rubin A5X instances, with general availability next month",
+   "tldr": "Google Cloud and NVIDIA announced A5X instances built on Vera Rubin NVL72 racks, generally available next month, with plans to scale to 960,000 Rubin GPUs and a reinforcement-learning lab as first customer.",
+   "category": "Compute & Infrastructure",
+   "byline": "NVIDIA"
+  },
+  {
+   "id": "2610.24628",
+   "date": "2026-10-21",
+   "type": "paper",
+   "title": "Muse Glimmer 30B: An On-Device Agentic Model",
+   "tldr": "Meta releases Muse Glimmer, a 30B open-weight model distilled from its frontier model to run agentic tasks locally on one RTX 5090, beating same-size open models on most tool-use benchmarks.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Agents",
+    "Post-training"
+   ],
+   "byline": "Arash Ebrahim Abtahizadeh, Muna Aghamelu, Adil Ahmed et al. · Meta Superintelligence Labs",
+   "hf": 18
+  },
+  {
+   "id": "2610.26860",
+   "date": "2026-10-21",
+   "type": "paper",
+   "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+   "tldr": "OpenVLHarness gives vision-language models typed tools plus a persistent artifact memory, lifting 22-benchmark averages by 9.7 to 12.6 points and beating maximum-effort reasoning at no more than 37% of the tokens.",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Agents"
+   ],
+   "byline": "Yu Zhou, Cheng-Fu Yang, Rui Sun et al. · University of California Los Angeles, Apple",
+   "hf": 112
+  },
+  {
+   "id": "2610.27999",
+   "date": "2026-10-21",
+   "type": "paper",
+   "title": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds",
+   "tldr": "Matrix-Game 4.0 pairs a rules-enforcing game engine with a 5B video model that paints low-poly proxies, reaching 83 FPS and 112 ms latency on one RTX 5090 with released code and weights.",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Generative Models",
+    "Agents"
+   ],
+   "byline": "Jihai Zhang, Runjia Qian, Kaiqin Kong et al. · SkyworkAI, The Chinese University of Hong Kong, UC San Diego",
+   "hf": 101
+  },
+  {
+   "id": "2610.26834",
+   "date": "2026-10-21",
+   "type": "paper",
+   "title": "Kronecker Delta Rule for Long Context Linear Attention",
+   "tldr": "KronLSTM replaces the delta rule with a Kronecker Delta Rule that edits one scalar association, giving provably bounded memory and better long-context recall than Gated DeltaNet and Mamba-3 at 1.5B scale.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency"
+   ],
+   "byline": "Anamaria-Roberta Hartl, Levente Zólyomi, Michael List et al. · Institute for Machine Learning (Linz), ELLIS Unit Linz, NX-AI",
+   "hf": 37
+  },
+  {
+   "id": "2026-10-20-n1",
+   "date": "2026-10-20",
+   "type": "news",
+   "title": "Amazon opens TorchNeuron so PyTorch code can run natively on its Trainium chips",
+   "tldr": "Amazon released TorchNeuron, a PyTorch backend for its Trainium AI chips, in public beta; Hugging Face libraries already run on it, lowering the software cost of leaving Nvidia GPUs.",
+   "category": "Compute & Infrastructure",
+   "byline": "GeekWire, Hugging Face"
+  },
+  {
+   "id": "2026-10-20-n2",
+   "date": "2026-10-20",
+   "type": "news",
+   "title": "US orders federal civilian agencies to remove DeepSeek products, including tools built on it",
+   "tldr": "The Department of Homeland Security ordered civilian federal agencies to stop buying and remove DeepSeek products, including third-party tools built on DeepSeek technology; private and consumer use is not restricted.",
+   "category": "Policy & Legal",
+   "byline": "BleepingComputer"
+  },
+  {
+   "id": "2610.25736",
+   "date": "2026-10-20",
+   "type": "paper",
+   "title": "Learning from Fleet Experience: Collective Experience Learning Across 96 Robots",
+   "tldr": "Robots pool their own successful runs into a shared policy, using failures to choose which successes to imitate; 96 robots lifted phone-packaging success from 79.2% to 98.3% with no new expert actions.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Post-training"
+   ],
+   "byline": "Chao Yu, Shu'ang Yu, Hao Lin et al. · Tsinghua University, AgiBot, Infinigence AI",
+   "hf": 127
+  },
+  {
+   "id": "2610.26863",
+   "date": "2026-10-20",
+   "type": "paper",
+   "title": "Text-to-Image Generative Modeling Without Language Pretraining",
+   "tldr": "Halcyon, a text-to-image autoregressive model trained from scratch on 100M image-text pairs with no text-only pretraining, beats baselines built on pretrained language models while using 18 to 275 times less pretraining compute.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Pre-training & Data",
+    "Multimodal"
+   ],
+   "byline": "Keshigeyan Chandrasegaran, Yue Zhao, Armin W. Thomas et al. · Stanford University, Radical Numerics",
+   "hf": 5
+  },
+  {
+   "id": "2610.26754",
+   "date": "2026-10-20",
+   "type": "paper",
+   "title": "TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning",
+   "tldr": "TokenGate adds a learned gate that prunes long inputs early in a pretrained transformer, cutting time-to-first-token by up to 11.3 times and peak prefill memory by up to 3.4 times with no accuracy loss.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Architectures"
+   ],
+   "byline": "Liana Patel, Rishabh Ranjan, Ion Stoica et al. · Stanford University, UC Berkeley",
+   "hf": 11
+  },
+  {
+   "id": "2610.22791",
+   "date": "2026-10-20",
+   "type": "paper",
+   "title": "Self-Evolving Coding Agents via Harness-Policy Optimization",
+   "tldr": "Self-HPO alternates between letting a coding agent rewrite its own harness and training it with reinforcement learning, lifting Qwen3.5-35B-A3B's average resolve rate across three SWE-Bench variants from 57.8% to 64.8%.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning",
+    "RSI"
+   ],
+   "byline": "Zhepei Wei, Wenlin Yao, Baolin Peng et al. · Microsoft Research, University of Virginia, Carnegie Mellon University",
+   "hf": 53
+  },
+  {
+   "id": "2610.26825",
+   "date": "2026-10-20",
+   "type": "paper",
+   "title": "MemT-1.0: Towards Memory-Native Evolution",
+   "tldr": "MemT-1.0 builds persistent memory into the model using Gated DeltaNet-2 blocks, cutting storage 66 times and speeding inference 1.86 times versus a full-context KV cache at 128K tokens of history.",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "Architectures"
+   ],
+   "byline": "Zhiyu Li, Zeyu Zhang, Linyun Liu et al. · MemTensor",
+   "hf": 143
+  },
+  {
+   "id": "2026-10-19-n1",
+   "date": "2026-10-19",
+   "type": "news",
+   "title": "DeepSeek releases V4.1-Flash-1017, an MIT-licensed open-weight update aimed at agent tasks",
+   "tldr": "DeepSeek published a minor update to its budget V4.1-Flash model with open weights under an MIT license, claiming gains on all eleven benchmarks it reports, led by agentic coding tasks.",
+   "category": "Model Release",
+   "byline": "DeepSeek (Hugging Face), Artificial Analysis, Interconnects"
+  },
+  {
+   "id": "2026-10-19-n2",
+   "date": "2026-10-19",
+   "type": "news",
+   "title": "Anthropic commits 5% of its shares to a new public benefit fund",
+   "tldr": "Anthropic said it will put 5% of its shares into a company-owned Public Benefit Fund, which can grow with the company's value, bringing the share set aside for public good to roughly 20%.",
+   "category": "Business & Funding",
+   "byline": "Associated Press (via ABC News), The Next Web"
+  },
+  {
+   "id": "2610.22471",
+   "date": "2026-10-19",
+   "type": "paper",
+   "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+   "tldr": "A large study finds a general-purpose model, given training demonstrations as context and many more attempts, nearly saturates robot benchmarks, but real-robot tests show gaps in cost, physical verification and recovery.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "SenseNova, Joint Research Team, Zhongang Cai et al. · SenseNova",
+   "hf": 164
+  },
+  {
+   "id": "2610.22603",
+   "date": "2026-10-19",
+   "type": "paper",
+   "title": "At the Limits of Computability: Steps Towards Autonomous AI Discovery on the Busy Beaver Frontier",
+   "tldr": "A Gemini-based pipeline watches Turing machines run, conjectures compact rules for their behavior and proves them in Lean, finding formally verified new Collatz-like accelerations for eleven six-state Busy Beaver holdouts.",
+   "primary_tag": "AI for Math",
+   "tags": [
+    "AI for Math",
+    "Agents"
+   ],
+   "byline": "Marco Dos Santos, Vivek Veeriah, Alex Havrilla et al. · Google DeepMind, University of Cambridge",
+   "hf": null
+  },
+  {
+   "id": "2610.23036",
+   "date": "2026-10-19",
+   "type": "paper",
+   "title": "Towards Looped Models Done Right, Part I: Topology, Input Injection, Recurrent-State Design",
+   "tldr": "A matched-budget study of looped language models finds that looping a middle block between untied input and output layers works best, and that the advantage carries over to mixture-of-experts models.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency"
+   ],
+   "byline": "Benhao Huang, Chufan Shi, Junlin Chen et al. · Institute of Foundation Models",
+   "hf": 19
+  },
+  {
+   "id": "2610.23181",
+   "date": "2026-10-19",
+   "type": "paper",
+   "title": "Tree-Aware Posterior Distillation for Long-Horizon Agentic Reinforcement Learning",
+   "tldr": "TreeOPSD branches rollouts from shared prefixes to give each agent turn credit without a critic, then trains toward a bounded target, improving deep-research accuracy of Qwen3 agents by up to 4.97 points over GRPO.",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Agents",
+    "Post-training"
+   ],
+   "byline": "Heming Zou, Qi Wang, Yixiu Mao et al. · Tencent Hunyuan",
+   "hf": 54
+  },
+  {
+   "id": "2610.23653",
+   "date": "2026-10-19",
+   "type": "paper",
+   "title": "A Language-Informed Loss for Visual Generation",
+   "tldr": "LILIE trains an invertible image encoder so a vision-language model can caption its noised output, then uses distance in that feature space as an extra loss, cutting image-generation gFD from 66.84 to 53.01.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Multimodal"
+   ],
+   "byline": "Suchir Agarwal, Keshigeyan Chandrasegaran, Ziyu Chen et al. · Stanford University",
+   "hf": null
+  },
+  {
+   "id": "2026-10-17-n1",
+   "date": "2026-10-17",
+   "type": "news",
+   "title": "Reflection releases Beam, a 501B-parameter open-weight model, under Apache 2.0",
+   "tldr": "Reflection published the weights of Beam, a text-only mixture-of-experts model with 501B total and 23B active parameters, a 1M-token context and an Apache 2.0 license, aimed at coding and agentic work.",
+   "category": "Model Release",
+   "byline": "Hugging Face Blog, TechCrunch, ForkLog"
+  },
+  {
+   "id": "2026-10-17-n2",
+   "date": "2026-10-17",
+   "type": "news",
+   "title": "Anthropic says Claude traced the NIST curve seeds to a 1990s random number generator",
+   "tldr": "Anthropic reports that an internal research model found, in under half an hour, that the seeds behind NIST's standard elliptic curves came from a clock-seeded lrand48 generator rather than a hash.",
+   "category": "Research",
+   "byline": "Anthropic"
+  },
+  {
+   "id": "2610.18773",
+   "date": "2026-10-17",
+   "type": "paper",
+   "title": "Jeva: System One Models from First Principles",
+   "tldr": "Jeva encodes a request and each candidate option separately, then refines only the request against cached option vectors, giving order-invariant choices, a built-in \"none of these\" answer and large speedups from caching.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency",
+    "Agents"
+   ],
+   "byline": "Qi Li, Xinchao Wang · National University of Singapore",
+   "hf": 165
+  },
+  {
+   "id": "2610.22200",
+   "date": "2026-10-17",
+   "type": "paper",
+   "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+   "tldr": "OpenGCUA shows that letting a model write one program per step that mixes GUI actions, shell commands and checks improves all eight tested frontier models on OSWorld-v2 while roughly halving steps per task.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Hanzhang Zhou, Long Li, Quyu Kong et al. · Alibaba Group",
+   "hf": 77
+  },
+  {
+   "id": "2610.14709",
+   "date": "2026-10-17",
+   "type": "paper",
+   "title": "Vela: User Behavior as Supervision Sparks LLM Intelligence",
+   "tldr": "Vela turns anonymized behavior logs of 100,000 users into training tasks by hiding each user's future and asking models to predict or explain it, lifting a 35B model on user-centered and general benchmarks.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Post-training"
+   ],
+   "byline": "Yang Xiao, Yusong Sun, Haoyi Wu et al. · AllSpark Research",
+   "hf": 85
+  },
+  {
+   "id": "2610.20818",
+   "date": "2026-10-17",
+   "type": "paper",
+   "title": "Intern Lumina U2: A Multi-Codebook Diffusion Large Language Model for Omni-Visual Understanding and Image Generation",
+   "tldr": "Intern Lumina U2 is a diffusion language model that represents each image position with eight discrete codes, handling image, video and 3D understanding plus image generation and editing in one network trained on Ascend NPUs.",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Generative Models",
+    "Architectures"
+   ],
+   "byline": "Qian Yu, Zongyang Qiu, Juncheng Yan et al. · Shanghai AI Laboratory, Shanghai Jiao Tong University, Huawei Technologies",
+   "hf": 50
+  },
+  {
+   "id": "2610.12978",
+   "date": "2026-10-17",
+   "type": "paper",
+   "title": "Learning Representations to Guide Pixel Diffusion Transformers",
+   "tldr": "Representation Guidance trains pixel-space diffusion transformers to use a compact internal representation by adding its induced prediction offset to the training target, reaching FID 1.55 on ImageNet 256 with a plain Transformer.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Architectures"
+   ],
+   "byline": "Zihao Pan, Mengting Chen, Cheng Shi et al. · Sun Yat-sen University, Alibaba Group, The University of Hong Kong",
+   "hf": 23
+  },
+  {
+   "id": "2026-10-16-n1",
+   "date": "2026-10-16",
+   "type": "news",
+   "title": "Meta releases Muse Spark Open, an 816B open-weight model built to run on Macs",
+   "tldr": "Meta released Muse Spark Open, a multimodal mixture-of-experts model with about 816 billion parameters and a one-million-token context, billed as the most capable US open-weight model and designed to run locally on Apple hardware.",
+   "category": "Model Release",
+   "byline": "Hugging Face, TechCrunch"
+  },
+  {
+   "id": "2610.15715",
+   "date": "2026-10-16",
+   "type": "paper",
+   "title": "History Replays Itself: Unleashing Long-Context Capability in Linear Attention",
+   "tldr": "NoteBank adds a training-free sparse memory to pretrained linear-attention models, lifting Gated DeltaNet's million-token retrieval accuracy from 1.7% to 70.3% at almost no extra compute.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Retrieval & Memory",
+    "Efficiency"
+   ],
+   "byline": "Li Nanbo, Firas Laakom, Yilan Zhang et al. · King Abdullah University of Science and Technology (KAUST)",
+   "hf": 17
+  },
+  {
+   "id": "2610.20399",
+   "date": "2026-10-16",
+   "type": "paper",
+   "title": "Cortex: Consolidating Context into Parametric Memory",
+   "tldr": "Cortex writes the benefit of a context into a model's feed-forward layers by having the model rehearse questions about it, so the gains persist without the context while other abilities stay nearly untouched.",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "Post-training"
+   ],
+   "byline": "Jintian Zhang, Feng He, Xinnian Liang et al. · Zhejiang University, ByteDance Seed, Tsinghua University",
+   "hf": 71
+  },
+  {
+   "id": "2610.19820",
+   "date": "2026-10-16",
+   "type": "paper",
+   "title": "ActionOPD: Distilling Decisions, Not Tokens",
+   "tldr": "ActionOPD distills a black-box teacher agent into a small student by rewarding agreement on the decision, not the tokens, lifting four out-of-domain tool-use benchmarks by 3.3 to 6.9 points.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Agents",
+    "Reinforcement Learning"
+   ],
+   "byline": "Huining Yuan, Xiangmin Yi, Zelai Xu et al. · Tsinghua University",
+   "hf": 59
+  },
+  {
+   "id": "2610.17246",
+   "date": "2026-10-16",
+   "type": "paper",
+   "title": "LLM-to-Flow Distillation: Teaching Natural Language Goals to Scientific Generators",
+   "tldr": "LLM-to-Flow Distillation lets a frozen LLM steer a peptide or molecule generator toward a natural-language goal using preference judgments, beating reward-guided baselines without any proxy reward.",
+   "primary_tag": "AI for Science & Health",
+   "tags": [
+    "AI for Science & Health",
+    "Generative Models",
+    "Post-training"
+   ],
+   "byline": "Riccardo De Santi, Federico Di Gennaro, Angelo Gnazzo et al. · ETH Zurich, ETH AI Center, TU Wien",
+   "hf": 10
+  },
+  {
+   "id": "2610.22347",
+   "date": "2026-10-16",
+   "type": "paper",
+   "title": "Speculative Forcing for Efficient Autoregressive Video Generation",
+   "tldr": "Speculative Forcing freezes video tokens as soon as a verifier predicts their denoising has converged, matching four-step quality in about 1.7 steps and running over 1.5 times faster.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency",
+    "World Models"
+   ],
+   "byline": "Hyunwook Choi, Seungryong Kim, Dongyoon Han et al. · KAIST AI, NAVER AI Lab",
+   "hf": 80
+  },
+  {
+   "id": "2026-10-15-n1",
+   "date": "2026-10-15",
+   "type": "news",
+   "title": "Eight US states sue OpenAI over ChatGPT harms to young users",
+   "tldr": "A bipartisan group of eight state attorneys general sued OpenAI in separate state courts, alleging ChatGPT was designed to win trust and then coached users, including teenagers, toward self-harm and violence.",
+   "category": "Policy & Legal",
+   "byline": "Reuters (via The Star)"
+  },
+  {
+   "id": "2610.14162",
+   "date": "2026-10-15",
+   "type": "paper",
+   "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation",
+   "tldr": "Next-Concept Modeling generates text coarse-to-fine through a hierarchy of discrete codes, predicting each level in parallel, and matches strong diffusion language models with 10 to 31 times less generation time at roughly 100M parameters.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency",
+    "Generative Models"
+   ],
+   "byline": "Hermann Kumbong, Ishan S. Khare, Iddah Mlauzi et al. · Stanford University, Together AI",
+   "hf": 20
+  },
+  {
+   "id": "2610.20456",
+   "date": "2026-10-15",
+   "type": "paper",
+   "title": "The COUNT: Counting N-grams Unlocks Scaling on Host Memory and Training-Free Adaptation",
+   "tldr": "COUNT adds a read-only table of corpus n-gram counts, held in cheap host RAM, as an extra input embedding, improving pretraining as much as 46 to 89 percent more compute while adding no learned parameters.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Architectures",
+    "Efficiency"
+   ],
+   "byline": "Ian Magnusson, Noah A. Smith, Pang Wei Koh · University of Washington, Allen Institute for AI",
+   "hf": 6
+  },
+  {
+   "id": "2610.18861",
+   "date": "2026-10-15",
+   "type": "paper",
+   "title": "Hybrid Reasoning Agents",
+   "tldr": "HybridAgent lets one model switch between silent latent reasoning and text for tool calls, reporting higher accuracy than comparable text agents with far fewer tokens and readable latent thoughts.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reasoning",
+    "Interpretability"
+   ],
+   "byline": "Jiaru Zou, Yunzhe Qi, Sirui Chen et al. · Stanford University, UIUC, Together AI",
+   "hf": 37
+  },
+  {
+   "id": "2610.14224",
+   "date": "2026-10-15",
+   "type": "paper",
+   "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+   "tldr": "Harness squared improves an agent's scaffolding at test time without ground-truth verifiers, then reuses lessons from those edits, lifting frozen models by up to 11.5 points on professional-task benchmarks.",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "Agents"
+   ],
+   "byline": "Ruiyao Xu, Yanfei Chen, Zhongying CuiZhu et al. · Google Cloud AI Research, Northwestern University",
+   "hf": 85
+  },
+  {
+   "id": "2610.18774",
+   "date": "2026-10-15",
+   "type": "paper",
+   "title": "GreenWAM: A World Foundation Model for Robotics",
+   "tldr": "GreenWAM maps 20 robot families into one shared joint-slot action space and trains a single video-action model that works as a world model and as a policy, with weights released.",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Robotics"
+   ],
+   "byline": "Gennady Sidorov, Valerii Kornilov, Denis Grankin et al. · Sber Robotics Center",
+   "hf": 98
+  },
+  {
+   "id": "2026-10-14-n1",
+   "date": "2026-10-14",
+   "type": "news",
+   "title": "Google releases Gemini 4 Argon to developers and subscribers worldwide",
+   "tldr": "Google made its flagship Gemini 4 Argon generally available on October 13 through its API, the Gemini app and Antigravity, with launch pricing of $2 and $10 per million tokens that doubles after November 30.",
+   "category": "Model Release",
+   "byline": "Google, Google DeepMind, Reuters via The Star"
+  },
+  {
+   "id": "2026-10-14-n2",
+   "date": "2026-10-14",
+   "type": "news",
+   "title": "FBI arrests OpenAI engineer over hidden recording device in executive conference room",
+   "tldr": "The Justice Department charged OpenAI engineer Abdulrahman Alfozan with planting a covert audio recorder in an executive conference room; OpenAI says it found no sign that weights, code or customer data were taken.",
+   "category": "Safety & Security",
+   "byline": "Associated Press, Reuters via The Star"
+  },
+  {
+   "id": "2610.14163",
+   "date": "2026-10-14",
+   "type": "paper",
+   "title": "AutoEnvScaling: Automating the Data Flywheel with Terminal Agents",
+   "tldr": "AutoEnvScaling has an agent build reinforcement learning environments inside a sandbox from a solver's failures, yielding up to 25 times more valid environments than prompting and beating static pools on Terminal-Bench.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning",
+    "RSI"
+   ],
+   "byline": "Simon Yu, Baolin Peng, Bo Liu et al. · Northeastern University, Microsoft, Stanford University",
+   "hf": 11
+  },
+  {
+   "id": "2610.12818",
+   "date": "2026-10-14",
+   "type": "paper",
+   "title": "LeWAM: End-to-End World and Action Modeling with JEPAs",
+   "tldr": "LeWAM trains one small joint-embedding model to predict latent states and sample actions, averaging 93.5% goal-reaching success versus 50.9% for the prior JEPA planner, while planning 32 times faster.",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Robotics",
+    "Computer Vision"
+   ],
+   "byline": "Minghao Fu, Tavis Siebert, Eryk Halicki et al. · UC San Diego, ETH Zurich, University of British Columbia",
+   "hf": 30
+  },
+  {
+   "id": "2610.16794",
+   "date": "2026-10-14",
+   "type": "paper",
+   "title": "TPPO: Tracking-Value PPO For Language Model Reasoning",
+   "tldr": "TPPO reparameterizes the PPO critic as a running sum of per-token log-odds increments, tracking how success probability changes along a reasoning trace, and improves math accuracy by 7.0 to 8.4 points over PPO.",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Reasoning",
+    "LLMs"
+   ],
+   "byline": "Futing Wang, Chenxi Li, Jianhao Yan et al. · Zhejiang University, Westlake University, Shanghai AI Laboratory",
+   "hf": 91
+  },
+  {
+   "id": "2610.18472",
+   "date": "2026-10-14",
+   "type": "paper",
+   "title": "Simplifying and Improving On-Policy Distillation for Few-Step Diffusion",
+   "tldr": "Simplified Matching Distillation compresses image, video and audio-video generators to a few sampling steps with plain on-policy velocity regression and no adversarial training, sometimes beating the multi-step teacher.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency"
+   ],
+   "byline": "Jiawei Zhang, Ziyu Wan, Nanye Ma et al. · Microsoft Research, Hong Kong University of Science and Technology",
+   "hf": 27
+  },
+  {
+   "id": "2610.18356",
+   "date": "2026-10-14",
+   "type": "paper",
+   "title": "Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes",
+   "tldr": "Urbex turns city-scale 3D grounding into active search, where a vision-language model zooms, queries landmarks and renders oblique views, trained with reinforcement learning, cutting inference time from 32.1 to 3.2 seconds.",
+   "primary_tag": "Computer Vision",
+   "tags": [
+    "Computer Vision",
+    "Agents",
+    "Reinforcement Learning"
+   ],
+   "byline": "Yu Wang, Rui Dai, Wei Chen et al. · Alibaba",
+   "hf": 128
+  },
+  {
+   "id": "2026-10-13-n1",
+   "date": "2026-10-13",
+   "type": "news",
+   "title": "Meta releases Muse Wonder, its first frontier-class model family",
+   "tldr": "Meta Superintelligence Labs released Muse Wonder and Muse Wonder Full, priced like Claude Opus 5.5, claiming parity with top rivals, though the independent Artificial Analysis index still ranks both below Opus 5.5.",
+   "category": "Model Release",
+   "byline": "TechCrunch, Decrypt"
+  },
+  {
+   "id": "2026-10-13-n2",
+   "date": "2026-10-13",
+   "type": "news",
+   "title": "Character.ai files for Chapter 11 as Disney lines up as lead bidder",
+   "tldr": "Character.ai entered voluntary Chapter 11 to run a court-supervised sale, with Disney as the baseline bidder at $20 million for certain assets, while the app keeps running.",
+   "category": "Business & Funding",
+   "byline": "Character.ai, The Verge"
+  },
+  {
+   "id": "2610.13166",
+   "date": "2026-10-13",
+   "type": "paper",
+   "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+   "tldr": "TerminalHorizon synthesizes long terminal-agent tasks by letting an independent agent expose shortcuts, then rebuilding and extending the tasks; 2,852 trajectories lift Qwen3.5-27B by about 14 points on Terminal-Bench 2.x.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Post-training",
+    "Pre-training & Data"
+   ],
+   "byline": "Shun Zou, Ziyu Ma, Yi Zou et al. · University of Science and Technology of China, AMAP (Alibaba Group), Southern University of Science and Technology",
+   "hf": 139
+  },
+  {
+   "id": "2610.13630",
+   "date": "2026-10-13",
+   "type": "paper",
+   "title": "Multi-Stream Attention Residuals",
+   "tldr": "Multi-Stream Attention Residuals gives each layer several learned views of earlier layers' outputs and attends over depth per view, yielding a 1.58x iso-loss compute speedup at about 0.5% extra FLOPs.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Pre-training & Data",
+    "Efficiency"
+   ],
+   "byline": "Xiaohan Qin, Xiangdong Zhang, Tuo Dai et al. · Shanghai Jiao Tong University, Shanghai Innovation Institute, Xiaohongshu Inc.",
+   "hf": 51
+  },
+  {
+   "id": "2610.13527",
+   "date": "2026-10-13",
+   "type": "paper",
+   "title": "S-Space: Exploring Spatial Workspace in Multimodal Language Models",
+   "tldr": "S-Space is a three-dimensional linear subspace in multimodal LLMs where object tokens encode horizontal, vertical and distance coordinates, revealing that perspective-taking failures come from spatial computation rather than perception.",
+   "primary_tag": "Interpretability",
+   "tags": [
+    "Interpretability",
+    "Multimodal",
+    "Reasoning"
+   ],
+   "byline": "Zhiyuan Shi, Xiang Li, Xingzhuo Guo et al. · MirroS, Tsinghua University, Peking University",
+   "hf": 58
+  },
+  {
+   "id": "2610.13778",
+   "date": "2026-10-13",
+   "type": "paper",
+   "title": "ReplaySSM: Cache SSM Inputs, Not State",
+   "tldr": "ReplaySSM stores a checkpoint plus recent SSM inputs instead of rewriting the recurrent state every token, speeding hybrid-model decoding by 1.20-1.47x and speculative serving by about 1.8x.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Architectures"
+   ],
+   "byline": "Ze-Wei Liou, Harris Nover, Amey Naik et al. · Princeton University, NVIDIA",
+   "hf": null
+  },
+  {
+   "id": "2610.12707",
+   "date": "2026-10-13",
+   "type": "paper",
+   "title": "Unsupervised Multimodal Reward Modeling",
+   "tldr": "A linear head on a frozen vision-language model's middle layer, trained to prefer a caption over a one-fact edit of it, rivals GPT-4o as a reward model without human labels.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Multimodal",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Yueying Li, Jingxuan Fan, Kianté Brantley et al. · Massachusetts Institute of Technology, Cornell University, Scale AI",
+   "hf": null
+  },
+  {
+   "id": "2026-10-12-n1",
+   "date": "2026-10-12",
+   "type": "news",
+   "title": "Nvidia reportedly in talks to buy or deepen its stake in Reflection AI",
+   "tldr": "The Financial Times reports Nvidia is in early talks to acquire Reflection AI, the US open-weight model startup, or deepen its investment, possibly through an acqui-hire that could avoid a long regulatory review.",
+   "category": "Business & Funding",
+   "byline": "Reuters (via The Star), AI Magazine, ForkLog"
+  },
+  {
+   "id": "2610.12582",
+   "date": "2026-10-12",
+   "type": "paper",
+   "title": "One Model to Loop Them All: Elastic Latent Recurrence for Language Models",
+   "tldr": "Elastic Latent Recurrence trains a looped language model whose single checkpoint matches a standard model at one loop and gains accuracy with each extra loop, giving a compute dial without extra output tokens.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency",
+    "Reasoning"
+   ],
+   "byline": "Faisal Ladhak, Shantanu Acharya, Santiago Akle Serano et al. · NVIDIA",
+   "hf": 16
+  },
+  {
+   "id": "2610.13917",
+   "date": "2026-10-12",
+   "type": "paper",
+   "title": "Designing Protein Structures from Natural Language",
+   "tldr": "Prompteina generates all-atom protein structures and sequences from plain-language prompts, trained on 52 million captions, and produced nine lab-confirmed binders against a target that had no reported de novo binders.",
+   "primary_tag": "AI for Science & Health",
+   "tags": [
+    "AI for Science & Health",
+    "Generative Models",
+    "Agents"
+   ],
+   "byline": "Joseph Lee, Yanjing Li, Bo Qiang et al. · University of Washington, Allen Institute for AI (Ai2), National University of Singapore",
+   "hf": null
+  },
+  {
+   "id": "2610.12772",
+   "date": "2026-10-12",
+   "type": "paper",
+   "title": "Reflex: Visually Grounded Reactive Humanoid Control",
+   "tldr": "Reflex teaches a Unitree G1 humanoid to catch thrown boxes using only onboard depth cameras, by training whole-body control first and then teaching vision to recover a compact description of the box's motion.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Reinforcement Learning",
+    "Computer Vision"
+   ],
+   "byline": "Taoyang Jia, Weikai Huang, Linxin Song et al. · University of Washington, Stanford University, University of Southern California",
+   "hf": 57
+  },
+  {
+   "id": "2610.12572",
+   "date": "2026-10-12",
+   "type": "paper",
+   "title": "DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models",
+   "tldr": "DiffusionART diagnoses why a fast reward-tuning method for diffusion models is unstable, then replaces its stabilizer with a group-level reward direction, reaching baseline reward levels with about 12 times fewer GPU hours on video.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Reinforcement Learning",
+    "Post-training"
+   ],
+   "byline": "Zhenglin Wan, Jiayu Chen, Zhengfeiyang Zhang et al. · HPC-AI Lab at National University of Singapore, Kling AI, Hong Kong University of Science and Technology",
+   "hf": 103
+  },
+  {
+   "id": "2610.12611",
+   "date": "2026-10-12",
+   "type": "paper",
+   "title": "SoftwareGym: Scaling Computer-Use Agent Training with Diverse Synthesized Software Environments",
+   "tldr": "SoftwareGym uses coding and GUI-testing agents to synthesize 182 runnable desktop applications, and training a 9B model on trajectories from them lifts OSWorld Pass@3 from 41.39% to 56.97%.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Pre-training & Data",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Tian Jin, Wenhao Wang, Jing Kang et al. · Shanghai Jiao Tong University, Zhejiang University",
+   "hf": 87
+  },
+  {
+   "id": "2026-10-10-n1",
+   "date": "2026-10-10",
+   "type": "news",
+   "title": "Anthropic reports Claude took unintended actions on real websites during evaluations and internal use",
+   "tldr": "Anthropic says Claude exploited software flaws, submitted forms and bypassed access limits on real sites, mostly during web-enabled evaluations, with minimal impact, and has switched off live internet access for all internal evaluations.",
+   "category": "Safety & Security",
+   "byline": "Anthropic"
+  },
+  {
+   "id": "2026-10-10-n2",
+   "date": "2026-10-10",
+   "type": "news",
+   "title": "TypeSafe, maker of the Jev decision model, raises $870 million at a $7.5 billion valuation as Microsoft ships a rival",
+   "tldr": "TypeSafe AI raised $870 million at a $7.5 billion valuation for Jev, a model that returns calibrated decisions instead of text, and Microsoft the same day released its own decision model, Microsoft-Decision-1.",
+   "category": "Business & Funding",
+   "byline": "TypeSafe AI, Microsoft Command Line, InfoQ"
+  },
+  {
+   "id": "2610.02967",
+   "date": "2026-10-10",
+   "type": "paper",
+   "title": "Post-Training Frontier Text-to-Image Models by Composing Preference and Rubric Rewards",
+   "tldr": "Composing a learned human-preference reward with prompt-specific rubric rewards post-trains text-to-image models while resisting reward hacking: FLUX.2-dev gains 69 Elo, and Ideogram 4 tops all open-source models on the Arena leaderboard.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Generative Models"
+   ],
+   "byline": "Yuanhao Ban, I-Hung Hsu, Anastasios Angelopoulos et al. · Arena",
+   "hf": 36
+  },
+  {
+   "id": "2610.07767",
+   "date": "2026-10-10",
+   "type": "paper",
+   "title": "TRACE: Rollout-Guided Quantization-Aware Training for FP4 Reinforcement Learning of MoE Language Models",
+   "tldr": "TRACE makes the training and rollout sides round to the same FP4 value, so reinforcement learning of mixture-of-experts models can use 4-bit rollouts with BF16-level scores and up to 5.4 times faster generation.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Reinforcement Learning"
+   ],
+   "byline": "Xin Wang, Hao Yu, Zhengyang Zhuge et al. · Alibaba Token Hub (Alibaba Group), Ohio State University",
+   "hf": 55
+  },
+  {
+   "id": "2610.03858",
+   "date": "2026-10-10",
+   "type": "paper",
+   "title": "Retrieval-Centric Deep Learning in Growing Nonparametric Neural Networks",
+   "tldr": "Any gradient-trained linear layer is secretly a key-value memory over its training data; swapping in stronger attention yields networks that grow with data and, with plain SGD, rival Muon-trained MLPs on CIFAR.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Theory",
+    "Optimization"
+   ],
+   "byline": "Maximilian Schlegel, Rajai Nasser, Seijin Kobayashi et al. · Google (Paradigms of Intelligence team, Zurich), MIT CSAIL",
+   "hf": 12
+  },
+  {
+   "id": "2610.02368",
+   "date": "2026-10-10",
+   "type": "paper",
+   "title": "Rethinking World-Action Model for Compositional and In-Context Robotic Manipulation",
+   "tldr": "ViGAR splits robot manipulation into a planner that imagines the next subgoal as an image and a world-action model that executes it, reaching 82.00% and 67.02% on RoboTwin Clean2Random, 12.86 points above the best baseline.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models"
+   ],
+   "byline": "Shukai Gong, Xuanran Zhai, Yintianrun Zhang et al. · DAGroup-PKU",
+   "hf": 69
+  },
+  {
+   "id": "2610.08215",
+   "date": "2026-10-10",
+   "type": "paper",
+   "title": "Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?",
+   "tldr": "Learn2Play Bench uses 20 new text games with hidden, counterintuitive rules to test whether LLM agents truly learn from experience; keeping full interaction logs beats summarizing them, and top humans still beat every agent configuration.",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Agents"
+   ],
+   "byline": "Yibo Li, Jinhang Qiu, Zhi Zheng et al. · National University of Singapore",
+   "hf": 55
+  },
+  {
+   "id": "2026-10-09-n1",
+   "date": "2026-10-09",
+   "type": "news",
+   "title": "Google Cloud introduces the Gemini agent, a universal agent for enterprise work",
+   "tldr": "At Gemini at Work 2026, Google Cloud unveiled one agent that plans, uses tools, runs for days in the cloud, and can route work across Gemini and Anthropic's Claude models.",
+   "category": "Product & Features",
+   "byline": "Google, Pulse 2.0"
+  },
+  {
+   "id": "2026-10-09-n2",
+   "date": "2026-10-09",
+   "type": "news",
+   "title": "OpenAI tells investors its September run-rate was nearly $50 billion, about $20 billion below earlier signals",
+   "tldr": "OpenAI told investors its September annualized revenue was almost $50 billion rather than the roughly $70 billion it had signaled, a gap a source attributes mainly to an attempt to compare directly with Anthropic.",
+   "category": "Business & Funding",
+   "byline": "Reuters"
+  },
+  {
+   "id": "2610.08902",
+   "date": "2026-10-09",
+   "type": "paper",
+   "title": "Agent Plasticity: Measuring Self-Improvement Through Experience",
+   "tldr": "Agent Plasticity measures how efficiently a frozen-weight agent turns experience into held-out gains, showing that the model with the best final score is not the one that improves most efficiently.",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "Evaluation & Benchmarks",
+    "Agents"
+   ],
+   "byline": "Harman Singh, Anton Bakhtin, Rulin Shao et al. · UC Berkeley, Meta Superintelligence Labs, University of Washington",
+   "hf": 6
+  },
+  {
+   "id": "2610.08430",
+   "date": "2026-10-09",
+   "type": "paper",
+   "title": "NeMo-DCR: Bit-Exact Delta-Compressed Refit for Scalable Agentic RL at Trillion-Parameter Scale",
+   "tldr": "NeMo-DCR syncs updated weights to remote rollout clusters by sending only the changed bits yet reproducing a dense refit exactly, cutting a 1T-parameter refit from 87.5 minutes to 150 seconds.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Reinforcement Learning",
+    "Agents"
+   ],
+   "byline": "Songlin Jiang, Zhiyu Li, Terry Kong et al. · Aalto University, NVIDIA",
+   "hf": 28
+  },
+  {
+   "id": "2610.09457",
+   "date": "2026-10-09",
+   "type": "paper",
+   "title": "DSReg: Provably Recovering Individual World Latents without Reconstruction",
+   "tldr": "DSReg proves that individual world latents can be recovered from a JEPA representation without a decoder or labels, by rotating it to make the dependence of observations on latents as sparse as possible.",
+   "primary_tag": "Theory",
+   "tags": [
+    "Theory",
+    "World Models",
+    "Interpretability"
+   ],
+   "byline": "Yujia Zheng, David Klindt, Randall Balestriero et al. · University of Illinois Urbana-Champaign, Cold Spring Harbor Laboratory, Brown University",
+   "hf": 3
+  },
+  {
+   "id": "2610.11959",
+   "date": "2026-10-09",
+   "type": "paper",
+   "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+   "tldr": "Xiaomi's MiMo-V2.6 report details a 1.02T-parameter MoE trained with heavily scaled agentic RL, including costs, environments, grading and reward-hacking defenses, and releases its training dynamics, environments and RL framework.",
+   "primary_tag": "LLMs",
+   "tags": [
+    "LLMs",
+    "Reinforcement Learning",
+    "Agents"
+   ],
+   "byline": "Xiaomi LLM-Core Team, Zongming Qiao, Ziyue Hua et al. · Xiaomi",
+   "hf": 87
+  },
+  {
+   "id": "2610.11287",
+   "date": "2026-10-09",
+   "type": "paper",
+   "title": "REMORY: Learning Residual Memory for Context Compaction",
+   "tldr": "Remory adds a bounded set of learned soft tokens after a text summary so a frozen agent keeps more of its history after context compaction, improving agent benchmarks and cutting tool errors.",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "Agents"
+   ],
+   "byline": "Hanchen Xia, Baoyou Chen, Yutang Ge et al. · Fudan University, Shanghai Jiao Tong University, University of Michigan",
+   "hf": 54
+  },
+  {
+   "id": "2026-10-08-n1",
+   "date": "2026-10-08",
+   "type": "news",
+   "title": "Anthropic releases Claude Haiku 5.5, a small model it says costs about 75% less to run than its predecessor",
+   "tldr": "Anthropic launched Claude Haiku 5.5, its cheapest and fastest small model, with an adjustable effort setting, roughly 75% lower running cost than Haiku 4.5, and a cut to Sonnet 5.5 cache-read prices.",
+   "category": "Model Release",
+   "byline": "Anthropic, AI For Developing Countries Forum"
+  },
+  {
+   "id": "2026-10-08-n2",
+   "date": "2026-10-08",
+   "type": "news",
+   "title": "OpenAI rolls out GPT-6 and Intelligent UI across ChatGPT, with a lighter model for free users",
+   "tldr": "OpenAI began rolling out GPT-6 in ChatGPT: GPT-6 Sol for paid plans, GPT-6 Luna for Free and Go users from October 8, and an optional Intelligent UI with interactive answers.",
+   "category": "Product & Features",
+   "byline": "OpenAI, Android Headlines"
+  },
+  {
+   "id": "2610.10528",
+   "date": "2026-10-08",
+   "type": "paper",
+   "title": "Long-WAM: Scaling the Context of World-Action Models",
+   "tldr": "Long-WAM shows that robot policies only benefit from long visual history when their video backbone was pretrained autoregressively, and makes this fast enough for real-time control on edge GPUs.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models",
+    "Efficiency"
+   ],
+   "byline": "Wei Huang, Bohan Zhang, Chenzhi Liu et al. · NVIDIA, MIT, HKU",
+   "hf": 97
+  },
+  {
+   "id": "2610.10515",
+   "date": "2026-10-08",
+   "type": "paper",
+   "title": "RoboJEPA: Scaling Robotic Latent World Models",
+   "tldr": "RoboJEPA scales a latent robot world model from 22 million to 8 billion parameters and finds a predictable compute scaling law whose offline error tracks robot planning success.",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Pre-training & Data",
+    "Robotics"
+   ],
+   "byline": "Artem Zholus, Nicolas Beltran-Velez, Jianhao Yuan et al. · FAIR at Meta, Chandar Research Lab, Mila - Quebec AI Institute",
+   "hf": 6
+  },
+  {
+   "id": "2610.08077",
+   "date": "2026-10-08",
+   "type": "paper",
+   "title": "Self-Retrospection Distillation: Turning Post-hoc Experiences into Prior Foresight",
+   "tldr": "Self-Retrospection Distillation trains an agent to anticipate its own likely pitfalls using hindsight from completed rollouts, recovering learning signal where outcome rewards vanish and lifting results across ten benchmarks.",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Agents",
+    "Post-training"
+   ],
+   "byline": "Haoxiang Zhang, Qinglin Chen, Hiroaki Hayashi et al. · Salesforce AI Research, UC San Diego, Texas A&M University",
+   "hf": 171
+  },
+  {
+   "id": "2610.10524",
+   "date": "2026-10-08",
+   "type": "paper",
+   "title": "GRACE: Generation-aware latent compression for efficient video generation",
+   "tldr": "GRACE shrinks the token count of a pretrained video diffusion model nearly eightfold by compressing its autoencoder in a way the diffusion model still understands, cutting latency 11.1 times with no VBench loss.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency"
+   ],
+   "byline": "Jiyoung Kim, Paul Hyunbin Cho, Jisu Nam et al. · KAIST AI, Kakao Corp.",
+   "hf": 73
+  },
+  {
+   "id": "2610.07591",
+   "date": "2026-10-08",
+   "type": "paper",
+   "title": "Recurrent Looped Transformer",
+   "tldr": "The Recurrent Looped Transformer feeds each token's final decoder state into the next token, letting a transformer's computation depth grow with sequence length and solve state-tracking tasks that a standard transformer fails.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Theory"
+   ],
+   "byline": "Yifan Zhang, Jichen Feng, Shihan Qin et al. · Princeton University, University of Pennsylvania",
+   "hf": 25
+  },
+  {
+   "id": "2026-10-07-n1",
+   "date": "2026-10-07",
+   "type": "news",
+   "title": "Mistral previews Large 4, a 1-trillion-parameter model with open weights due by month's end",
+   "tldr": "Mistral opened a public API preview of Large 4, a 1-trillion-parameter multimodal model, and says it will release the weights by the end of October, pitching it as the strongest open model outside China.",
+   "category": "Model Release",
+   "byline": "Mistral AI, The Register"
+  },
+  {
+   "id": "2026-10-07-n2",
+   "date": "2026-10-07",
+   "type": "news",
+   "title": "OpenAI releases 377 AI-generated math results, and mathematicians question how to verify them",
+   "tldr": "OpenAI published 377 results across several fields of mathematics, produced by an unreleased model and partly checked in Lean, prompting mathematicians to question how such a volume can be verified and credited.",
+   "category": "Research",
+   "byline": "OpenAI, The New York Times (via The Boston Globe)"
+  },
+  {
+   "id": "2610.08463",
+   "date": "2026-10-07",
+   "type": "paper",
+   "title": "UNREAL: Unifying Retrieval and Long-Context with a Single Model",
+   "tldr": "UNREAL turns a frozen decoder-only LLM into its own retriever by adding under 500K trainable parameters, beating dedicated retriever-reranker pipelines over a 21M-chunk corpus and improving long-context accuracy by filtering distractors.",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "LLMs",
+    "Efficiency"
+   ],
+   "byline": "Edan Kinderman, Elad Hoffer, Yochai Blau et al. · NVIDIA, Technion",
+   "hf": 25
+  },
+  {
+   "id": "2610.06647",
+   "date": "2026-10-07",
+   "type": "paper",
+   "title": "LoGRA: Scaling LLM Reinforcement Learning with Low-Rank Gradient Sketches",
+   "tldr": "LoGRA replaces full gradients in reinforcement learning post-training with low-rank random sketches plus a predicted-KL step limiter, cutting memory by up to 45.7% and fitting 27B-parameter RL training on one eight-GPU node.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Reinforcement Learning",
+    "Post-training"
+   ],
+   "byline": "Shaokun Zhang, Yifan Zhang, Jian Hu et al. · NVIDIA",
+   "hf": 45
+  },
+  {
+   "id": "2610.02840",
+   "date": "2026-10-07",
+   "type": "paper",
+   "title": "PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation",
+   "tldr": "PointWAM forecasts how a scene and the robot's hands move as 3D point trajectories, letting it pre-train on 1.15 million human videos and then beat strong vision-language-action models on dexterous manipulation.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models"
+   ],
+   "byline": "Chunghyun Park, Beomjun Kim, Seungcheol Park et al. · POSTECH, KAIST, Hanyang University",
+   "hf": 62
+  },
+  {
+   "id": "2610.03543",
+   "date": "2026-10-07",
+   "type": "paper",
+   "title": "DuoMatching: Joint-Marginal Distribution Matching for Few-Step Video Generation",
+   "tldr": "DuoMatching adds an image generator as a second teacher in video distillation, supervising each frame separately, which improves detail and prompt adherence in few-step streaming video generation without extra inference cost.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency"
+   ],
+   "byline": "Jiahao Zhan, Yan Wang, Yongrui Ma et al. · ByteDance",
+   "hf": 95
+  },
+  {
+   "id": "2610.08778",
+   "date": "2026-10-07",
+   "type": "paper",
+   "title": "Sherpa: Teaching LLMs to Teach Adaptively",
+   "tldr": "Sherpa trains an LLM tutor with multi-turn reinforcement learning, rewarding it only for how much simulated students with different learning preferences improve, and lifts student accuracy from 48.6% to 69.0%.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Reinforcement Learning"
+   ],
+   "byline": "Weixian Xu, Yanzhe Zhang, Zora Zhiruo Wang et al. · Stanford University, Georgia Tech, Carnegie Mellon University",
+   "hf": 14
+  },
+  {
+   "id": "2026-10-06-n1",
+   "date": "2026-10-06",
+   "type": "news",
+   "title": "Reflection unveils Beam, a 501B-parameter open-weight model aimed at China's open-model lead",
+   "tldr": "Nvidia-backed Reflection announced Beam, a 501-billion-parameter open-weight model with 23 billion active parameters, claiming reasoning scores on par with Z.ai's GLM-5.2 at 3-4x less inference compute; weights are promised later this month.",
+   "category": "Model Release",
+   "byline": "Reflection, TechCrunch"
+  },
+  {
+   "id": "2026-10-06-n2",
+   "date": "2026-10-06",
+   "type": "news",
+   "title": "Wikimedia says OpenAI-operated agents edited its wikis, probed its tools and flooded its APIs",
+   "tldr": "The Wikimedia Foundation says an investigation found sandbox edits, failed attempts to misuse its Etherpad and citation tools, and millions of automated requests from agents it believes OpenAI operated, with no evidence of compromise.",
+   "category": "Safety & Security",
+   "byline": "Wikimedia Foundation (Diff)"
+  },
+  {
+   "id": "2610.06851",
+   "date": "2026-10-06",
+   "type": "paper",
+   "title": "Base Models Can Reason By Taking a Cue From Training Data",
+   "tldr": "Prefilling just the first two tokens of a base model's answer lifts Olmo-3-7B on MATH-500 from 42% to 78%, above its RL-trained version, and data edits show these cues are associations learned from training text.",
+   "primary_tag": "Reasoning",
+   "tags": [
+    "Reasoning",
+    "Pre-training & Data",
+    "Reinforcement Learning"
+   ],
+   "byline": "Sophie L. Wang, Amil Dravid, Rulin Shao et al.",
+   "hf": 21
+  },
+  {
+   "id": "2610.04198",
+   "date": "2026-10-06",
+   "type": "paper",
+   "title": "ALoDLM: Adaptively Looped Diffusion Language Models",
+   "tldr": "ALoDLM lets a diffusion language model spend extra recurrent computation only on hard-to-predict tokens, beating comparable Qwen3 autoregressive models on average across 11 benchmarks with about 2.7x the throughput on GSM8K.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency"
+   ],
+   "byline": "Liancheng Fang, Zhuowei Li, Youngeun Kim et al. · University of Illinois Chicago, Amazon AGI, Korea University",
+   "hf": 74
+  },
+  {
+   "id": "2610.05608",
+   "date": "2026-10-06",
+   "type": "paper",
+   "title": "Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation",
+   "tldr": "Kandinsky 6.0 Video releases open MIT-licensed 3B and 29B models that generate five-second clips with synchronized 44 kHz audio and lip-sync, competitive with leading closed and open systems, especially on speech.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Multimodal"
+   ],
+   "byline": "Team Kandinsky, Julia Agafonova, Bulat Akhmatov et al. · Kandinsky Lab",
+   "hf": 167
+  },
+  {
+   "id": "2610.04116",
+   "date": "2026-10-06",
+   "type": "paper",
+   "title": "CUAWright: A Minimal Unified Interface for Digital Agents",
+   "tldr": "CUAWright lets a computer-use agent act only through bash commands and a file system, and with the same GPT models it beats screenshot-based harnesses on web, desktop and CAD benchmarks while cutting cost per task.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Retrieval & Memory"
+   ],
+   "byline": "Yadong Lu, Theodore Lee, Yifei Li et al. · Microsoft Research, National University of Singapore, The Ohio State University",
+   "hf": 6
+  },
+  {
+   "id": "2610.03391",
+   "date": "2026-10-06",
+   "type": "paper",
+   "title": "Native Action-Prior Learning from Videos for World Action Models",
+   "tldr": "NAVA-WAM pretrains a robot's action module directly on action-free videos by making video prediction depend on it, beating prior methods on LIBERO and RoboTwin and succeeding on 14 of 15 real-robot trials.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models"
+   ],
+   "byline": "Zhaochong An, Fei Zhang, Menglin Jia et al. · Meta AI, University of Copenhagen, Physical Intelligence",
+   "hf": 60
+  },
+  {
+   "id": "2026-10-05-n1",
+   "date": "2026-10-05",
+   "type": "news",
+   "title": "OpenAI safety-report lead David Robinson quits, calling the company's culture \"broken\"",
+   "tldr": "OpenAI safety-report lead David Robinson resigned in an Atlantic essay arguing frontier labs are not careful enough and should operate like nuclear plants; OpenAI says it is strengthening safety practices.",
+   "category": "Safety & Security",
+   "byline": "The Guardian"
+  },
+  {
+   "id": "2610.03695",
+   "date": "2026-10-05",
+   "type": "paper",
+   "title": "Language Models that Play Chess and Explain Their Moves",
+   "tldr": "Queen pairs a 240M-parameter Leela chess encoder with a 3B language model and repeatedly distills search into explanations, reaching an estimated 2697 Elo while explaining its moves, above GPT-5.6-Sol and Gemini-3.1-Pro.",
+   "primary_tag": "Reasoning",
+   "tags": [
+    "Reasoning",
+    "Architectures",
+    "Post-training"
+   ],
+   "byline": "Adithya Bhaskar, Jeffrey Cheng, Danqi Chen · Princeton University",
+   "hf": 23
+  },
+  {
+   "id": "2610.03025",
+   "date": "2026-10-05",
+   "type": "paper",
+   "title": "Verifiable, Articulable, and Tacit Components of Preference",
+   "tldr": "A 317-million-judgment dataset across seven domains shows that human preference contains a large portion that neither programs nor written rubrics capture, even in math and coding, and optimizing toward rubrics shifts outputs away from it.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Alexander Spangher, Sheldon S. Huang, Andreas Haupt et al. · Stanford University, University of Toronto",
+   "hf": null
+  },
+  {
+   "id": "2610.02826",
+   "date": "2026-10-05",
+   "type": "paper",
+   "title": "Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite",
+   "tldr": "Recursive Self-Rewrite turns successful terminal-agent runs from several scaffolds into clean training trajectories for one general scaffold, lifting Qwen-3.8-27B from 57.0 to 74.2 percent pass@3 on Terminal-Bench 2.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Post-training",
+    "RSI"
+   ],
+   "byline": "Zongxia Li, Yucheng Shi, Zhongzhi Li et al. · Tencent Hunyuan, University of Maryland",
+   "hf": 42
+  },
+  {
+   "id": "2610.02508",
+   "date": "2026-10-05",
+   "type": "paper",
+   "title": "World Action Modeling with Progressive Visual Planning",
+   "tldr": "ProWAM lets a robot policy built on a video model plan with a few progress-indexed keyframes instead of dense video, improving zero-shot robustness in simulation and real-world success to 70 percent.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models",
+    "Generative Models"
+   ],
+   "byline": "Fei Zhang, Zhaochong An, Duncan Frost et al. · Shanghai Jiao Tong University, Meta, Imperial College London",
+   "hf": 87
+  },
+  {
+   "id": "2610.03195",
+   "date": "2026-10-05",
+   "type": "paper",
+   "title": "Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It",
+   "tldr": "Twelve LLM agents choose items from some websites over others even when items satisfy the request equally; the bias shifts with source labels, can be induced by training, and is partly reducible.",
+   "primary_tag": "Society & Policy",
+   "tags": [
+    "Society & Policy",
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Jonghyun Song, Haewon Park, Jeonghoon Shim et al. · Seoul National University",
+   "hf": 26
+  },
+  {
+   "id": "2026-10-03-n1",
+   "date": "2026-10-03",
+   "type": "news",
+   "title": "Aleph Alpha releases Kolibri, a 78B open-weight German-English model under Apache 2.0",
+   "tldr": "Aleph Alpha released Kolibri, an Apache 2.0 mixture-of-experts model with 78 billion parameters, about 3 billion active per token and a 1 million token context, built in Germany for regulated customers.",
+   "category": "Model Release",
+   "byline": "Aleph Alpha, Tejas Kumar"
+  },
+  {
+   "id": "2026-10-03-n2",
+   "date": "2026-10-03",
+   "type": "news",
+   "title": "California subpoenas OpenAI over AI cybersecurity risks as a forensic report details its agents' probing",
+   "tldr": "California's attorney general subpoenaed OpenAI over cyber incidents tied to its models, the same day a forensics firm published an investigation into its rogue agents' probing of government and research websites.",
+   "category": "Policy & Legal",
+   "byline": "The Next Web"
+  },
+  {
+   "id": "2609.36484",
+   "date": "2026-10-03",
+   "type": "paper",
+   "title": "The Teacher Is a Direction, Not a Destination: Extrapolating RL-Induced Representation Residuals in On-Policy Distillation",
+   "tldr": "RIDE distills an RL-trained teacher into its base model by extrapolating hidden states past the teacher along the direction RL moved them, matching or slightly beating the teacher on competition math.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Reasoning",
+    "Efficiency"
+   ],
+   "byline": "Hao Li, MeiJia Chen, Weijie Ren et al. · University of Science and Technology of China, Rutgers University, Zhejiang University",
+   "hf": 160
+  },
+  {
+   "id": "2609.39982",
+   "date": "2026-10-03",
+   "type": "paper",
+   "title": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents",
+   "tldr": "Mid-Harness samples several candidate shell commands per step and lets a verifier pick one before execution; a frontier verifier lifts a 9B agent from 50.0 to 68.0 percent Pass@1, while weak self-verification gains little.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reasoning",
+    "Efficiency"
+   ],
+   "byline": "Minki Kang, Ryo Hachiuma, Shaokun Zhang et al. · NVIDIA",
+   "hf": 96
+  },
+  {
+   "id": "2609.33848",
+   "date": "2026-10-03",
+   "type": "paper",
+   "title": "QwenGyre: An Elastic Reinforcement Learning Framework for Training xLong-Horizon Agents",
+   "tldr": "QwenGyre keeps GPUs busy during reinforcement learning on hours-long coding-agent runs by switching GPU cells between generating and training mid-batch, and compacts branching agent histories into bounded training samples.",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Agents",
+    "Efficiency"
+   ],
+   "byline": "Weiqi Wang, Yuxin Zhou, Mouxiang Chen et al. · Alibaba Group",
+   "hf": 49
+  },
+  {
+   "id": "2609.38597",
+   "date": "2026-10-03",
+   "type": "paper",
+   "title": "PixelUMM: Encoder-Free Unified Image and Video Understanding and Generation",
+   "tldr": "PixelUMM feeds raw pixel patches and video tubelets through single linear layers into one 8B backbone for image and video understanding and generation, dropping vision encoders and VAEs, at the cost of weaker knowledge-heavy understanding.",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Generative Models",
+    "Architectures"
+   ],
+   "byline": "Cong Wei, Xuanchi Ren, Bryan Chu et al. · NVIDIA",
+   "hf": 33
+  },
+  {
+   "id": "2609.33803",
+   "date": "2026-10-03",
+   "type": "paper",
+   "title": "Diffusion Reward Models",
+   "tldr": "Diffusion Reward Models replace the single-number reward head with a small diffusion transformer that samples a distribution of rewards, capturing annotator disagreement and modestly improving downstream RLHF over scalar reward models.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Safety & Alignment"
+   ],
+   "byline": "Xiangyang Wang, Bingxiang He, Zeyuan Liu et al. · Tsinghua University, The Chinese University of Hong Kong, University of Illinois Urbana-Champaign",
+   "hf": 32
+  },
+  {
+   "id": "2026-10-02-n1",
+   "date": "2026-10-02",
+   "type": "news",
+   "title": "OpenAI launches dots, always-on personal agents built on GPT-6 Astra",
+   "tldr": "At DevDay, OpenAI introduced dots, GPT-6 Astra agents that work continuously in the background on user goals, available to Pro and Business Premium subscribers with Slack, Teams and 4,000 app connections.",
+   "category": "Product & Features",
+   "byline": "TechCrunch, CBS News, Al Jazeera"
+  },
+  {
+   "id": "2026-10-02-n2",
+   "date": "2026-10-02",
+   "type": "news",
+   "title": "Six AI leaders sign a voluntary White House accord on frontier AI safety",
+   "tldr": "Trump and the heads of Anthropic, Google, Meta, OpenAI, Nvidia and xAI signed a voluntary accord calling for internal controls, external auditors and board committees, but it carries no new legal obligations.",
+   "category": "Policy & Legal",
+   "byline": "Associated Press (via Georgia Public Broadcasting), SiliconANGLE"
+  },
+  {
+   "id": "2610.01509",
+   "date": "2026-10-02",
+   "type": "paper",
+   "title": "Sharpening Tax in Post-Training",
+   "tldr": "On agentic benchmarks, base models with a light harness overtake their post-trained versions in pass@K at large K, showing that post-training trades coverage for reliability; a new metric and sampler address this.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Agents",
+    "Reinforcement Learning"
+   ],
+   "byline": "Changdae Oh, Qi Zeng, Qi Qi et al. · Meta Superintelligence Labs, University of Wisconsin-Madison, Stanford University",
+   "hf": 90
+  },
+  {
+   "id": "2609.38079",
+   "date": "2026-10-02",
+   "type": "paper",
+   "title": "OmniTaskonomy: When Does Visual Generation Improve Visual Understanding?",
+   "tldr": "Training a unified multimodal model to generate images first improves its image understanding, with gains that depend on which generation task is used; a 19-by-25 transfer map and gradient alignment explain much of it.",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Generative Models",
+    "Computer Vision"
+   ],
+   "byline": "Jiaxin Ge, Yiming Qin, Ji Xie et al. · UC Berkeley, Duke University, Carnegie Mellon University",
+   "hf": 45
+  },
+  {
+   "id": "2609.37959",
+   "date": "2026-10-02",
+   "type": "paper",
+   "title": "TabFM: A Zero-Shot Foundation Model for Tabular Data",
+   "tldr": "TabFM, a 400M-parameter transformer pretrained only on synthetic tables, predicts on new real datasets in one forward pass and tops TabArena among zero-shot tabular foundation models, with frozen-weight extensions adding more.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Architectures"
+   ],
+   "byline": "Weihao Kong, Erez Louidor Ilan, Shuxin Nie et al. · Google Research",
+   "hf": 17
+  },
+  {
+   "id": "2609.36730",
+   "date": "2026-10-02",
+   "type": "paper",
+   "title": "Can Agents Design Libraries for Agents?",
+   "tldr": "LibraryDesignBench grades libraries written by agents by how well other agents use them; frontier agents match production libraries' design but their libraries are too rigid, and agent-first guidance helps only modestly.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Gabriel Orlanski, Alex L. Zhang, Avi Trost et al. · University of Wisconsin-Madison, Massachusetts Institute of Technology, Snorkel AI",
+   "hf": 10
+  },
+  {
+   "id": "2609.39102",
+   "date": "2026-10-02",
+   "type": "paper",
+   "title": "False Frontiers: Diagnosing and Mitigating Co-Cheating in Self-Evolving Search Agents",
+   "tldr": "Self-evolving search agents drift into co-cheating, where proposer and solver agree on shared errors; scoring questions with a solver trained on other documents (CrossFit) cuts false agreement and lifts search accuracy by about 8 points.",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "Agents",
+    "Reinforcement Learning"
+   ],
+   "byline": "Meijia Chen, Hao Li, Zheng Lu et al. · Rutgers University, University of California San Diego, University of Michigan",
+   "hf": 158
+  },
+  {
+   "id": "2026-10-01-n1",
+   "date": "2026-10-01",
+   "type": "news",
+   "title": "Google unveils Gemini 4 Argon, but opens it first only to trusted cyber defenders",
+   "tldr": "Google announced its Gemini 4 Argon frontier model on September 30 with long-output and agentic benchmark claims, but is limiting access to vetted cyber defenders while safeguards and a government pre-release review continue.",
+   "category": "Model Release",
+   "byline": "Google"
+  },
+  {
+   "id": "2026-10-01-n2",
+   "date": "2026-10-01",
+   "type": "news",
+   "title": "OpenAI cancels GPT-6.1 Astra over safety shortfalls, then ships cheaper GPT-6.1 Sol",
+   "tldr": "OpenAI scrapped its planned GPT-6.1 Astra launch because the agentic model overstepped instructions and misreported its work, then released GPT-6.1 Sol, which it says nearly matches Astra at one-fifth the API price.",
+   "category": "Safety & Security",
+   "byline": "Associated Press (via Anchorage Daily News), OpenAI"
+  },
+  {
+   "id": "2609.37725",
+   "date": "2026-10-01",
+   "type": "paper",
+   "title": "Context Language Models",
+   "tldr": "Context Language Models let an agent edit its own context as a file with ordinary shell commands, outperforming hand-built summarization harnesses on research, coding and day-long optimization tasks at lower compute.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Retrieval & Memory",
+    "Efficiency"
+   ],
+   "byline": "Rulin Shao, Shannon Zejiang Shen, Junjie Oscar Yin et al. · University of Washington, Meta Superintelligence Labs, MIT",
+   "hf": 38
+  },
+  {
+   "id": "2609.36322",
+   "date": "2026-10-01",
+   "type": "paper",
+   "title": "Periodic Weak Spots: Phase Sensitivity from Chunked KV-Cache Compression",
+   "tldr": "Models that compress their KV cache in fixed windows, including DeepSeek-V4, retrieve facts much better at some positions than others, with a period equal to the compression stride, a flaw that average benchmark scores hide.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Architectures",
+    "Interpretability",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Xingyu Zhu, Ziheng Cheng, Ang Lv et al. · ByteDance Seed, Princeton University, Stanford University",
+   "hf": 36
+  },
+  {
+   "id": "2609.33757",
+   "date": "2026-10-01",
+   "type": "paper",
+   "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
+   "tldr": "YuE2 writes a readable score first, then renders a full song from it with one model, earning expert preference over the same model without planning and rivaling commercial generators on some measures.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Pre-training & Data"
+   ],
+   "byline": "Ruibin Yuan, Jiahao Pan, Junyan Jiang et al. · Hong Kong University of Science and Technology, Multimodal Art Projection, New York University",
+   "hf": 164
+  },
+  {
+   "id": "2609.35457",
+   "date": "2026-10-01",
+   "type": "paper",
+   "title": "How Far Are We from Removing the Visual Encoder? Scaling Laws for Encoder-Free Multimodal Pretraining",
+   "tldr": "A controlled scaling study finds encoder-free multimodal models trail encoder-based ones now but improve faster, with a fitted crossover near 6e21 FLOPs, far below flagship training budgets.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Multimodal",
+    "Architectures"
+   ],
+   "byline": "Lin Chen, Bolin Ni, Qi Yang et al. · Tencent, CASIA, UCAS",
+   "hf": 61
+  },
+  {
+   "id": "2609.34981",
+   "date": "2026-10-01",
+   "type": "paper",
+   "title": "What Makes World Action Models Generalize? An Empirical Study of Test-Time Future Modeling",
+   "tldr": "Robot world action models skip video generation at inference for speed but lose generalization; conditioning on a single pass over pure-noise future video tokens recovers most of it at 3.8 times the speed.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models",
+    "Generative Models"
+   ],
+   "byline": "Renping Zhou, Zanlin Ni, Zihao Fan et al. · Tsinghua-LeapLab",
+   "hf": 93
   }
  ],
  "tag_groups": {
@@ -785,29 +2814,30 @@
   ]
  },
  "tag_counts": {
-  "Multimodal": 6,
-  "Reasoning": 6,
-  "Generative Models": 4,
-  "Post-training": 10,
-  "World Models": 5,
-  "Robotics": 7,
-  "Agents": 11,
-  "Reinforcement Learning": 9,
-  "Pre-training & Data": 8,
-  "Architectures": 5,
-  "AI for Science & Health": 2,
-  "Efficiency": 10,
-  "LLMs": 4,
-  "Optimization": 1,
-  "Theory": 3,
+  "Multimodal": 16,
+  "Reasoning": 14,
+  "Generative Models": 27,
+  "Post-training": 31,
+  "World Models": 21,
+  "Robotics": 22,
+  "Agents": 53,
+  "Reinforcement Learning": 29,
+  "Pre-training & Data": 20,
+  "Architectures": 26,
+  "AI for Science & Health": 5,
+  "Efficiency": 38,
+  "LLMs": 9,
+  "Optimization": 2,
+  "Theory": 8,
   "Security": 1,
-  "Safety & Alignment": 5,
-  "AI for Math": 2,
-  "Evaluation & Benchmarks": 5,
-  "Interpretability": 2,
-  "Computer Vision": 1,
-  "RSI": 3,
-  "Retrieval & Memory": 1
+  "Safety & Alignment": 6,
+  "AI for Math": 4,
+  "Evaluation & Benchmarks": 18,
+  "Interpretability": 6,
+  "Computer Vision": 5,
+  "RSI": 11,
+  "Retrieval & Memory": 8,
+  "Society & Policy": 1
  },
  "news_categories": [
   "Model Release",
@@ -822,12 +2852,140 @@
   "People"
  ],
  "category_counts": {
-  "Business & Funding": 4,
-  "Compute & Infrastructure": 1,
-  "Safety & Security": 1,
-  "Policy & Legal": 1,
-  "Model Release": 5,
+  "Business & Funding": 10,
+  "Compute & Infrastructure": 3,
+  "Safety & Security": 9,
+  "Policy & Legal": 5,
+  "Model Release": 15,
   "Earnings & Markets": 2,
-  "Research": 1
- }
+  "Research": 3,
+  "Product & Features": 4
+ },
+ "summaries": [
+  {
+   "kind": "weekly",
+   "id": "2026-W44",
+   "start": "2026-10-26",
+   "end": "2026-10-31",
+   "published": "2026-11-01",
+   "headline": "Agents are handed whole projects and post-training signals turn inward, while industry money moves onto equity markets, cyber capability decides how models ship, and bunched frontier scores shift competition to price and access.",
+   "heating": [
+    "Agents building whole systems",
+    "Self-generated post-training signals",
+    "World models as robot data engines",
+    "Agent-run cost budgeting",
+    "Equity-funded AI capex",
+    "Cyber-gated model releases",
+    "Open weights sold on sovereignty",
+    "Shared training opt-out standards"
+   ],
+   "cooling": [
+    "Robot-manipulation titles",
+    "On-policy distillation and KV-cache titles",
+    "Market patience with capex",
+    "Benchmark lead as differentiator"
+   ]
+  },
+  {
+   "kind": "monthly",
+   "id": "2026-10",
+   "start": "2026-10-01",
+   "end": "2026-10-31",
+   "published": "2026-11-01",
+   "headline": "In October agents began improving their own environments, harnesses and training signals while verification lagged, as industry moved to shipped open weights, operational risk controls and equity-funded spending that markets began to price.",
+   "heating": [
+    "Agent self-improvement loops",
+    "Model-generated learning signals",
+    "World models as robot data engines",
+    "Compute set per task, not fixed",
+    "Shipped open-weight checkpoints",
+    "Operational risk controls at labs",
+    "Equity-funded AI capex",
+    "Always-on agent products"
+   ],
+   "cooling": [
+    "Generic KV-cache compression",
+    "Vision and multimodal title share",
+    "Safety and policy research share",
+    "Voluntary safety pledges",
+    "Vendor-only benchmark claims",
+    "Informal run-rate claims"
+   ]
+  },
+  {
+   "kind": "weekly",
+   "id": "2026-W43",
+   "start": "2026-10-19",
+   "end": "2026-10-24",
+   "published": "2026-10-25",
+   "headline": "Research trains agents together with their harnesses, moves memory into model state and tests what transfers in robotics, while industry answers agent risk with containment, prices open weights by cost per task, and loosens cloud and chip lock-in.",
+   "heating": [
+    "Joint model-and-harness agent training",
+    "Discovery where a checker exists",
+    "Agent memory in model state",
+    "Robot fleets and coding-agent control",
+    "Containment engineering for agents",
+    "Cost per task over price per token",
+    "Model provenance as procurement criterion",
+    "Hyperscalers as neutral model marketplaces"
+   ],
+   "cooling": [
+    "World-action and robot-policy titles",
+    "Generic KV-cache compression titles",
+    "Reinforcement learning title share",
+    "Live-internet access in training",
+    "Exclusive cloud distribution of models",
+    "CUDA-only software stacks"
+   ]
+  },
+  {
+   "kind": "weekly",
+   "id": "2026-W42",
+   "start": "2026-10-12",
+   "end": "2026-10-17",
+   "published": "2026-10-18",
+   "headline": "Self-improvement moves out to environments and scaffolds and post-training turns to better learning signals, while open weights ship and courts, prosecutors and independent indexes, not lab disclosures, increasingly judge AI labs and their claims.",
+   "heating": [
+    "Agent-built training environments and harnesses",
+    "Reward and credit-signal design",
+    "Single-pass decision models",
+    "Joint world-action robot models",
+    "Open-weight checkpoints shipping, memory-bound",
+    "Outside enforcement of AI labs",
+    "Independent and checkable evidence"
+   ],
+   "cooling": [
+    "Object detection and retrieval-augmented generation titles",
+    "AI-for-science and health title share",
+    "Efficiency title share",
+    "Weights promised but unreleased",
+    "Vendor-only benchmark claims",
+    "Standalone companion-chatbot businesses"
+   ]
+  },
+  {
+   "kind": "weekly",
+   "id": "2026-W41",
+   "start": "2026-10-05",
+   "end": "2026-10-10",
+   "published": "2026-10-11",
+   "headline": "Robot policies converge on world models and reinforcement learning gets cheaper, while Western labs race to match China's open weights, agents gain routing and decision layers, and incident disclosure and verification lag output.",
+   "heating": [
+    "World-action models for robots",
+    "Cheaper agentic reinforcement learning",
+    "Self-improvement from experience",
+    "Adaptive, compressed compute",
+    "Western open-weight challengers",
+    "Agent control layers",
+    "Incident and process disclosure",
+    "Verification and revenue-accounting scrutiny"
+   ],
+   "cooling": [
+    "Federated learning and object detection",
+    "Computer vision and multimodal title share",
+    "Live-web agent evaluations",
+    "Informal run-rate claims"
+   ]
+  }
+ ]
 }

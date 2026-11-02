@@ -1,0 +1,271 @@
+{
+ "kind": "weekly",
+ "id": "2026-W44",
+ "period": {
+  "start": "2026-10-26",
+  "end": "2026-10-31"
+ },
+ "published": "2026-11-01",
+ "generated_at": "2026-11-02T18:02:53+00:00",
+ "headline": "Agents are handed whole projects and post-training signals turn inward, while industry money moves onto equity markets, cyber capability decides how models ship, and bunched frontier scores shift competition to price and access.",
+ "research": {
+  "heating": [
+   {
+    "label": "Agents building whole systems",
+    "refs": [
+     "2610.33845",
+     "2610.36848",
+     "2610.35962"
+    ]
+   },
+   {
+    "label": "Self-generated post-training signals",
+    "refs": [
+     "2610.32770",
+     "2610.38681"
+    ]
+   },
+   {
+    "label": "World models as robot data engines",
+    "refs": [
+     "2610.36068",
+     "2610.37666"
+    ]
+   },
+   {
+    "label": "Agent-run cost budgeting",
+    "refs": [
+     "2610.34491",
+     "2610.38355"
+    ]
+   }
+  ],
+  "cooling": [
+   {
+    "label": "Robot-manipulation titles",
+    "refs": [
+     "arXiv stats"
+    ]
+   },
+   {
+    "label": "On-policy distillation and KV-cache titles",
+    "refs": [
+     "arXiv stats"
+    ]
+   }
+  ],
+  "themes": [
+   {
+    "title": "Agents are handed whole projects scored by an external check",
+    "body": "Last week agents were trained together with their harnesses; this week they are given complete projects. Research agents built a Hearthstone Battlegrounds simulator and player in 20 days that outperformed the server's top-10 recent results, where frontier models playing directly fell far short [2610.33845]. A supervisor redesigning a stalled agent team wrote a CUDA kernel 1.21 times faster than FlashInfer's [2610.36848], and a bare Lean loop beat elaborate proving pipelines, 69 problems against 18 [2610.35962]. Agent titles rose to 15.4% from 14.5% [arXiv stats]. The warning is measurement: ten frontier models post-training one 30B base produced benchmark changes uncorrelated with human ratings (rho -0.19) [2610.33624]."
+   },
+   {
+    "title": "Post-training signals turn inward, away from teachers and labels",
+    "body": "The search for better learning signals now looks inside the model. A model given only topic names wrote its own problems and distilled from a copy that saw answer hints, gaining 10 MMLU points [2610.32770]; training toward tokens preferred over a quantized copy of itself added 4 to 5.5 points [2610.38681]; a value critic trained on one rollout per prompt beat GRPO (group relative policy optimization) from 1.5B to 397B parameters [2610.35518]. On-policy distillation titles nonetheless fell to 9 against 23.5 expected [arXiv stats]. Self-signals reward consistency, not truth: MATH-500 fell 4.9 points in one run [2610.32770], and rubric rewards taught padding until a precision term lifted win rate from 10.6% to 68.0% [2610.33512]."
+   },
+   {
+    "title": "World models become robot data engines while robotics titles shrink",
+    "body": "After last week's question of what transfers, notable robot papers use world models to manufacture experience. Rollback rewinds a learned video model to key moments of real attempts and tries alternatives, beating the average human player at ball tossing [2610.36068]; ThinkWorld rewards thoughts whose imagined outcome matches reality, so action-free human video helps [2610.37666]; diverse simulated demonstrators doubled real-robot success [2610.32093]. Unfeatured papers on dynamics-aware action models (HF 154) and interactive world generation (HF 123) show the attention is real [2610.37381, 2610.36729]. Yet world-model titles fell to 1.4% from 1.8% and 'robotic manipulation' to 3 against 9.6 expected, continuing last week's cooling [arXiv stats], and tests are small: three tasks, one robot [2610.36068]."
+   },
+   {
+    "title": "Efficiency work shifts from shrinking models to budgeting agent runs",
+    "body": "In this week's notable papers, cost control targets how agents run. Across eight models, maximum reasoning effort cost up to 42 times more on easy tasks and often lost tasks lower effort solved; starting low and escalating on failure did better [2610.34491]. FlatCake stores key-value caches on DRAM and SSD as peers, holding a 94% hit rate on a Claude Code trace where Mooncake falls to 64% [2610.38355]. Field-wide the signal runs the other way: efficiency titles slid to 8.9% from 10.2% and 'kv cache' to 0 against 9.3 expected [arXiv stats]. Both results rest on thin runs, one trace on one server and one run per effort level."
+   }
+  ]
+ },
+ "industry": {
+  "heating": [
+   {
+    "label": "Equity-funded AI capex",
+    "refs": [
+     "2026-10-27-n2",
+     "2026-10-27-n1"
+    ]
+   },
+   {
+    "label": "Cyber-gated model releases",
+    "refs": [
+     "2026-10-29-n1",
+     "2026-10-26-n1"
+    ]
+   },
+   {
+    "label": "Open weights sold on sovereignty",
+    "refs": [
+     "2026-10-30-n1"
+    ]
+   },
+   {
+    "label": "Shared training opt-out standards",
+    "refs": [
+     "2026-10-31-n2"
+    ]
+   }
+  ],
+  "cooling": [
+   {
+    "label": "Market patience with capex",
+    "refs": [
+     "2026-10-30-n2"
+    ]
+   },
+   {
+    "label": "Benchmark lead as differentiator",
+    "refs": [
+     "2026-10-29-n1"
+    ]
+   }
+  ],
+  "themes": [
+   {
+    "title": "AI spending moves onto equity markets and investors price the gap",
+    "body": "Last week valuations were repriced ahead of listings; this week the numbers became binding or were punished. Anthropic's S-1 shows first-half revenue up 14-fold to $16.3 billion against compute commitments of at least $114.5 billion to Google alone [2026-10-27-n1]. Meta launched about $35 billion of stock plus a planned $60 billion at-the-market program, with Nvidia investing $3 billion, so a chip supplier helps fund a customer's chip purchases [2026-10-27-n2]. Alphabet's cloud revenue doubled to $30.7 billion, yet $51.4 billion of capital spending turned free cash flow negative and shares fell 12.6% [2026-10-30-n2]. OpenAI supplied $10 billion, about 11%, of Microsoft's quarter [2026-10-29-n2]. Demand is real; whether investors tolerate the fixed obligations is the open test."
+   },
+   {
+    "title": "Cyber capability sets how models ship, with a different control at each lab",
+    "body": "Moonshot filtered cyber content from training for Kimi K3.1 Pro, cutting its exploit-benchmark score from 90.5% to 81.0% [2026-10-26-n1]. Google announced Gemini 4 Carbon first to cyber defenders while guardrails are refined [2026-10-29-n1]. OpenAI shipped GPT-6.1 Terra, rated Critical for cyber, at its cheapest tier and relies on safeguards [2026-10-26-n2]. Mistral released weights of a trillion-parameter model it says leads open models in defensive security [2026-10-30-n1]. This extends last week's containment engineering from agent monitoring to release policy. Research is not following: security titles slipped to 2.6% from 3.0% [arXiv stats]. A tampered Claude Code extension reached up to 5,000 Cursor users in about 11 hours [2026-10-31-n1], and each control is described only by its vendor."
+   },
+   {
+    "title": "Frontier scores bunch, so price and access terms decide",
+    "body": "Top-end gaps are narrow: Carbon leads GPT-6 Astra and Claude Opus 5.5 by only a few points and may be a post-training upgrade of Argon, per Ars Technica [2026-10-29-n1]; Kimi K3.1 Pro sits within a few points of Opus 5.5 at half the cost [2026-10-26-n1]. Competition moves to price: OpenAI says Terra matches its flagship on a professional-task benchmark at a tenth of the price [2026-10-26-n2]. Mistral's Large 4 weights, promised earlier this month, shipped October 30 [2026-10-30-n1]. Price per token is not cost per task, since maximum reasoning effort cost up to 42 times more on easy tasks [2610.34491]. Most figures are vendor-reported."
+   },
+   {
+    "title": "Contested claims move to outside review and shared rules",
+    "body": "Two weeks ago scrutiny came from attorneys general; now labs themselves route disputed claims outward. OpenAI's claimed refutation of the Exponential Time Hypothesis, followed hours later by an Anthropic claim, awaits independent review organised by the conjecture's authors [2026-10-28-n2]. OpenAI, Google, Microsoft and Anthropic will honor one robots.txt token for opting out of AI training, though it is a voluntary Internet-Draft that leaves already-collected data untouched [2026-10-31-n2]. Anthropic's S-1 risk factors put shutdown-resistance and evaluation-error disclosures under securities law [2026-10-27-n1]."
+   }
+  ]
+ },
+ "sources": [],
+ "refs": {
+  "2026-10-26-n1": {
+   "type": "news",
+   "title": "Moonshot launches Kimi K3.1 Pro, a near-frontier model with open weights promised by Nov 4",
+   "date": "2026-10-26"
+  },
+  "2026-10-26-n2": {
+   "type": "news",
+   "title": "OpenAI launches GPT-6.1 Terra, a cheaper and faster computer-use model",
+   "date": "2026-10-26"
+  },
+  "2026-10-27-n1": {
+   "type": "news",
+   "title": "Anthropic files to go public, disclosing $16.3 billion in first-half revenue",
+   "date": "2026-10-27"
+  },
+  "2026-10-27-n2": {
+   "type": "news",
+   "title": "Meta plans up to $95 billion in new stock to fund AI, with Nvidia investing $3 billion",
+   "date": "2026-10-27"
+  },
+  "2026-10-28-n2": {
+   "type": "news",
+   "title": "OpenAI says its models refuted the Exponential Time Hypothesis; Anthropic posts its own claim hours later",
+   "date": "2026-10-28"
+  },
+  "2026-10-29-n1": {
+   "type": "news",
+   "title": "Google DeepMind announces Gemini 4 Carbon, a frontier model going first to cyber defenders",
+   "date": "2026-10-29"
+  },
+  "2026-10-29-n2": {
+   "type": "news",
+   "title": "Microsoft's quarter shows OpenAI now supplies nearly 11% of its revenue as Azure grows 48%",
+   "date": "2026-10-29"
+  },
+  "2026-10-30-n1": {
+   "type": "news",
+   "title": "Mistral releases the weights of Mistral Large 4, a trillion-parameter model aimed at coding and cyber defense",
+   "date": "2026-10-30"
+  },
+  "2026-10-30-n2": {
+   "type": "news",
+   "title": "Alphabet loses about $500 billion in market value as AI spending turns its cash flow negative",
+   "date": "2026-10-30"
+  },
+  "2026-10-31-n1": {
+   "type": "news",
+   "title": "Backdoored Claude Code extension on Cursor's marketplace exposed up to 5,000 developers",
+   "date": "2026-10-31"
+  },
+  "2026-10-31-n2": {
+   "type": "news",
+   "title": "OpenAI, Google, Microsoft and Anthropic back one robots.txt signal for opting out of AI training",
+   "date": "2026-10-31"
+  },
+  "2610.32093": {
+   "type": "paper",
+   "title": "DiscoDemo: Discovering Efficient and Diverse Robot Demonstrations for Imitation Learning",
+   "date": "2026-10-26"
+  },
+  "2610.32770": {
+   "type": "paper",
+   "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models",
+   "date": "2026-10-26"
+  },
+  "2610.33512": {
+   "type": "paper",
+   "title": "Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL",
+   "date": "2026-10-27"
+  },
+  "2610.33624": {
+   "type": "paper",
+   "title": "RSI Arena: Towards Recursive Self-Improvement with Human Feedback",
+   "date": "2026-10-29"
+  },
+  "2610.33845": {
+   "type": "paper",
+   "title": "Build, Don't Play: Self-Improving LLM Research Agents Develop a Hearthstone Battlegrounds AI That Rivals Top Players",
+   "date": "2026-10-27"
+  },
+  "2610.34491": {
+   "type": "paper",
+   "title": "What Effort Level Should I Choose? On the Economics of Reasoning Effort in LLM Agents",
+   "date": "2026-10-29"
+  },
+  "2610.35518": {
+   "type": "paper",
+   "title": "S3AC: Stabilized, Selective, and Scalable Actor-Critic for LLM Reasoning",
+   "date": "2026-10-27"
+  },
+  "2610.35962": {
+   "type": "paper",
+   "title": "h1: A Taste of the Bitter Lesson in Automated Theorem Proving",
+   "date": "2026-10-28"
+  },
+  "2610.36068": {
+   "type": "paper",
+   "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+   "date": "2026-10-28"
+  },
+  "2610.36729": {
+   "type": "paper",
+   "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
+   "date": null
+  },
+  "2610.36848": {
+   "type": "paper",
+   "title": "Evolving Agent Teams",
+   "date": "2026-10-28"
+  },
+  "2610.37381": {
+   "type": "paper",
+   "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+   "date": null
+  },
+  "2610.37666": {
+   "type": "paper",
+   "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+   "date": "2026-10-29"
+  },
+  "2610.38355": {
+   "type": "paper",
+   "title": "FlatCake: A Flat KVCache Storage Architecture for LLM Serving",
+   "date": "2026-10-29"
+  },
+  "2610.38681": {
+   "type": "paper",
+   "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
+   "date": "2026-10-30"
+  }
+ }
+}

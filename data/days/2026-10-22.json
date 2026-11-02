@@ -1,0 +1,402 @@
+{
+ "date": "2026-10-22",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T17:35:04+00:00",
+ "backfill": true,
+ "summary": "Anthropic previews Claude Duet, a proactive agent app; AI-assisted PHP flaws force an emergency patch; papers on autonomous math research, agent KV caches, game-agent scaling, diffusion training and synthetic computer-use worlds.",
+ "news": [
+  {
+   "id": "2026-10-22-n1",
+   "story_key": "anthropic-claude-duet-research-preview",
+   "title": "Anthropic opens a research preview of Claude Duet, a proactive agent that works while you are away",
+   "category": "Product & Features",
+   "published": "2026-10-21T12:00:00-04:00",
+   "tldr": "Anthropic launched Claude Duet, an Opus 5.5-based app that briefs users each morning, acts across connected apps, and asks approval before sensitive steps, putting Anthropic in the personal-agent race with Meta's Muse and OpenAI's Dots.",
+   "why_selected": "Major product launch from a frontier lab, widely covered, with a concrete safety design worth understanding.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Chat assistants wait for a prompt. The next product battleground is agents that act without being asked, and Meta's Muse and OpenAI's Dots already compete there; press coverage of this launch framed it as Anthropic's answer to both. Anthropic's earlier agents, such as Claude Code, Claude in Chrome and Claude Managed Agents, targeted developers and browsers; it says Duet reuses their safety work."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 21 Anthropic opened a research preview of Claude Duet, a standalone app for iOS and Android and on claude.ai, built around Claude Opus 5.5. It is included in the Pro, Max and Ultra plans with the same usage limits as the rest of Claude, and access is through a waitlist; the product page says the US only. Each morning Duet sends a brief on what matters across connected apps, watches those apps during the day, and messages the user only when something needs attention. It also takes on larger jobs such as scheduling meetings or building dashboards and forecasts. It runs on its own cloud computer, works with more than 6,000 connectors and plugins, and asks before sensitive steps such as sending messages or paying."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The interface here is a brief and a notification rather than a prompt box, so the agent's judgment about what to surface, what can wait and when to ask becomes the core capability. That shifts risk from single answers to long-running behavior inside inboxes and payment systems, which is why the safety description is as notable as the features. Anthropic says Duet never directly sees passwords or sign-in tokens, routes actions through its auto mode classifier, was penetration tested by an external firm, and uses a new classifier that blocks sharing the strictest tier of data, such as card numbers and government IDs, while health or finance details go out only on explicit instruction."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Anthropic says it will publish more detail on Duet's safety design in the coming days. Also open: how access expands beyond the US waitlist, whether the sensitive-data classifier and prompt-injection defenses hold up on real inboxes, and how Meta and OpenAI respond."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Anthropic",
+     "url": "https://claude.com/resources/articles/claude-duet"
+    },
+    {
+     "name": "Anthropic",
+     "url": "https://claude.com/product/claude-duet"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-n2",
+   "story_key": "php2shell-ai-found-php-rce-patch",
+   "title": "AI-assisted PHP2Shell flaws force an emergency PHP patch after the disclosure leaks early",
+   "category": "Safety & Security",
+   "published": "2026-10-20T15:30:00-04:00",
+   "tldr": "Wiz used frontier models to find and exploit critical flaws in PHP's core, and an early leak of the embargoed CVEs forced PHP to ship emergency patches on October 21 while exploits circulated.",
+   "why_selected": "A concrete case of frontier AI changing exploit economics in software that much of the web runs on, with broad patching urgency.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "PHP is the language behind WordPress, Drupal and MediaWiki, and Wiz says it powers about 70 percent of websites. Bugs in its C core matter more than application bugs because they affect every site on top, however carefully written. The standard way to handle such flaws is coordinated disclosure: researchers report privately, maintainers prepare a fix, and details go public only once patches are ready."
+    },
+    {
+     "heading": "What happened",
+     "body": "Wiz Research reported critical flaws in PHP's core engine to the PHP security team on August 24, five days after the first discovery, which it made using Wiz Atlas together with Gemini 4 Argon and GPT-5.6 Sol. The issues, grouped under two CVEs with severity up to CVSS 9.2, allow unauthenticated remote code execution and memory disclosure, and every release back to PHP 5.4 is affected by at least one. Wiz confirmed working exploits against Drupal and WordPress within two days of the first find. The fix was due October 22, but on October 20 the CVE IDs leaked with a wrong severity of 10.0. PHP moved its announcement forward and shipped patches across the 8.x line on October 21. Calif, one of the reporting firms, then accidentally published a proof-of-concept video, and exploits were circulating by that night."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Wiz argues the flaws survived for decades because exploiting them took an exceptionally long chain of steps, at the edge of what human researchers could practically do, and that frontier models let it build and adapt working exploits across several applications in hours. It compares the episode with Heartbleed and Log4Shell, which is its own framing. The practical point holds either way: the cost of turning an obscure memory bug into a working exploit is falling, which narrows the gap between patch and attack and strains embargo processes, as this leak showed. For AI researchers it is a real-world data point for cyber-capability evaluations."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch patch uptake among hosts running WordPress and Drupal, whether in-the-wild attacks are reported, how the PHP Foundation changes its disclosure handling after the leak, and whether other AI-assisted finds in core internet software follow."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Wiz Research",
+     "url": "https://www.wiz.io/blog/php2shell-php-rce"
+    },
+    {
+     "name": "Simon Willison, quoting the PHP Foundation",
+     "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.24944",
+   "title": "Epi: Towards a Persistent, Self-Improving Agent for Autonomous Research",
+   "authors": [
+    "Yue Huang",
+    "Zhangchen Xu",
+    "Xiaonan Luo",
+    "Zheyuan Liu",
+    "Lichi Li",
+    "Yiping Wang",
+    "Peiyang Song",
+    "Eric Gabriel Ramos",
+    "Enze Xie",
+    "Olexandr Isayev",
+    "Paul Liang",
+    "Nouha Dziri",
+    "Huan Sun",
+    "Jianfeng Gao",
+    "Ying Liu",
+    "Misha Sra",
+    "Xiangliang Zhang",
+    "Alex Pentland",
+    "Zichen Chen"
+   ],
+   "affiliations": [
+    "BakeLab"
+   ],
+   "announced": "2026-10-19T20:00:00-04:00",
+   "primary_tag": "AI for Math",
+   "tags": [
+    "AI for Math",
+    "Agents",
+    "RSI"
+   ],
+   "tldr": "Épi, a persistent research agent with memory, branching and independent review, sets 120 verified records on math constants and constructions and a computer-assisted case of Tuza's conjecture, and its Épi-turbo variant beats Codex on cost.",
+   "why_selected": "Verifiable, surprising math results from an autonomous agent, relevant to anyone tracking AI-driven research.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Much mathematical and algorithmic research is a long search for better constructions or tighter bounds, where each candidate can be checked mechanically. Doing it well takes weeks of experiments, dead ends and accumulated intuition, far more than one model session can hold. Can an agent sustain such an investigation and improve its own methods along the way?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "FunSearch and AlphaEvolve pair code generation with executable evaluation, and the AI Scientist-v2 adds tree search over experiments. Other systems keep shared research state or archive executable states. These preserve information but do not decide what a bounded context should see, or tie each lesson to the evidence and conditions behind it."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Épi wraps a frozen frontier model (here GPT-5.6 Sol and GPT-6-Astra) in something like a lab notebook with version control. Each campaign fixes a verifier and a measuring rule in advance, including the minimum gain that counts as a record. Methods live on versioned branches, so the agent can return to an earlier commit and try another continuation, recording why a branch was abandoned. Hierarchical memory separates what the current session needs from lessons reusable across problems, and an independent model reviews the evidence before the next experiment. Claims require certificates, such as exact dual vectors or interval proofs. Épi-turbo adds budget discipline for algorithm design."
+    },
+    {
+     "heading": "Results",
+     "body": "Épi reports 120 record-setting results, 20 numerical bounds and 100 constructions, judged against literature as of September 16, 2026. The n-queens constant's interval width falls from 3.3e-7 to 3.9e-9, and the quartic Feigenbaum dimension's from 7.8e-3 to 2.1e-9. New Cohn-Elkies lower bounds in dimensions 10 and 11 exceed known packing upper bounds, so that method cannot be sharp there. On 30 FrontierOR tasks, Épi-turbo scores 53.96 against Codex's 51.21 at $7.30 versus $11.35 per task."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fixed verifiers plus certificates are what make the claims trustworthy, and they suggest where autonomous research works first: problems with checkable outputs. Caveats: most records are small gains on niche constants, and Épi-turbo's edge comes from speed and cost, since solution quality is about equal (1.030 versus 1.032) and Codex had the better solution on more instances (61 versus 18)."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.24944",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.24944",
+    "code": "https://github.com/BakeLab/Epi-results"
+   },
+   "signals": {
+    "hf_upvotes": 23,
+    "notable_authors": [
+     "Jianfeng Gao"
+    ],
+    "org": "BakeLab"
+   }
+  },
+  {
+   "id": "2610.28577",
+   "title": "Cache Engineering for Agents",
+   "authors": [
+    "Tianyu Fu",
+    "Ruoxi Wang",
+    "Zihan Min",
+    "Zhongqi Ren",
+    "Zhihao Li",
+    "Tengxuan Liu",
+    "Shengxu Mu",
+    "Hanling Zhang",
+    "Yu Wang"
+   ],
+   "affiliations": [
+    "Tsinghua University",
+    "The Chinese University of Hong Kong"
+   ],
+   "announced": "2026-10-20T20:00:00-04:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Agents"
+   ],
+   "tldr": "Cache engineering lets agents drop and reposition entries in their KV cache without editing the text history or re-prefilling, and the AKV serving engine cuts agent cost by 27.7 percent with slightly higher scores.",
+   "why_selected": "Strong attention on Hugging Face and a clean systems idea for long-horizon agents that changes what context management means.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents that browse or write code run for hundreds of rounds, and every round re-reads the key-value (KV) cache, the stored attention state of earlier tokens. The paper measures cache reads at 82.4 percent of API cost, and accuracy also degrades when models attend to too many states or too wide a position range."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Harnesses shrink context by trimming or summarizing old messages. But editing text early in the history changes the prefix, so every later cached state is invalid and must be recomputed (re-prefilled). To keep that cheap, harnesses wait for a token threshold and then cut aggressively. On GPT-OSS-120B, keeping only the latest 12 tool responses cost 1.85 times the full-context baseline, and summarizing at 48K tokens saved about 7 percent but lost 5 accuracy points."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Cache engineering edits the cache instead of the text. The history stays identical, but a drop operation removes chosen entries, such as old tool outputs, from future attention, and a repos operation re-rotates the positions of retained keys so indices stay in range, with no re-prefill. The serving catch is that identical token sequences can now have different cache states depending on when drops happened, so ordinary prefix matching would reuse wrong states. The AKV engine adds drop nodes to the radix tree, evicts dropped entries early, and rebuilds missing states in one prefill pass with segment-batch attention."
+    },
+    {
+     "heading": "Results",
+     "body": "A rolling-drop policy for old tool responses raised average score by 1.7 points and cut cost by 27.7 percent versus threshold summarization, averaged over MiniMax-M2.7, GPT-OSS-120B and MiroThinker-1.7-Mini on four agent benchmarks. For GPT-OSS-120B, average cost fell from 11.2 to 7.3 cents per task. In serving, P95 latency improved 1.51 times and input throughput 1.53 times at peak settings. Letting an agent refine the policy cut cost another 7.1 percent."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It reframes context management as a primitive the serving layer must support, which matters to anyone running long-horizon agents on self-hosted models. Caveats: score gains are small and uneven (MiniMax on SWE-Verified dipped from 75.2 to 74.4), the policy is hand-designed rather than learned, and support for linear-attention models is future work."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.28577",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.28577",
+    "code": "https://github.com/thu-nics/AKV"
+   },
+   "signals": {
+    "hf_upvotes": 134,
+    "org": "Tsinghua-NICS-EFC"
+   }
+  },
+  {
+   "id": "2610.28698",
+   "title": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
+   "authors": [
+    "Kuan Zhang",
+    "Yukun Chen",
+    "Zhihao Yang",
+    "Yue Su",
+    "Xiangnan Wu",
+    "Zirong Chen",
+    "Run Luo",
+    "Jinkun Hou",
+    "Tao Tan",
+    "Yinhe Zheng",
+    "Yiming Li"
+   ],
+   "affiliations": [
+    "miHoYo",
+    "Tsinghua University",
+    "University of Chinese Academy of Sciences",
+    "The University of Hong Kong",
+    "National University of Singapore",
+    "Peking University"
+   ],
+   "announced": "2026-10-21T20:00:00-04:00",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Agents"
+   ],
+   "tldr": "A 120-configuration study of continued pre-training on gameplay finds mixed-game data helps related worlds, bigger models are more data-efficient, and distant-world transfer stalls or even reverses.",
+   "why_selected": "A rare controlled scaling study for embodied agents with clear, actionable findings and a useful negative result.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Scaling data and models has made robot learning more general, partly because the physical world follows shared laws. Video games break that assumption: each has its own visuals, physics, controls and goals. It is unclear whether training one model on many games helps it generalize or just causes interference."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Generalist game agents are usually built by continued pre-training (CPT) of a vision-language backbone on recorded gameplay, with keyboard and mouse actions written as text tokens. But published recipes change data volume, diversity and model size together, so the effect of each factor stays unresolved."
+    },
+    {
+     "heading": "Key idea",
+     "body": "This is a controlled grid rather than a new algorithm: 120 configurations crossing four Qwen3.5 backbones (0.8B to 27B), six data budgets (50 to 1,600 hours) and five mixtures from Minecraft-only to broad multi-game. Evaluation has three tiers: games in the corpus, unseen but related 3D worlds, and unseen distant worlds, mostly 2D. The authors see two phases. In an early interface phase, a model learns keyboard-and-mouse formats and basic action primitives that help every game. In a later world phase, gains stay with the games and genres seen in training. A Chinchilla-style law with a diversity term fits in-corpus loss with R-squared of 0.995."
+    },
+    {
+     "heading": "Results",
+     "body": "At 1,600 hours, mixed training scored about 2.8 times higher than Minecraft-only on related 3D worlds. Larger models matched smaller ones with up to 32 times less data, yet the 27B Minecraft-only model fell below its base model on all three non-Minecraft benchmarks, losing about 17 points on the distant one. Distant-world loss followed no scaling law. In real-time play the 9B model averaged 25.3 against 19.2 for the best frontier model."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The lesson for embodied pretraining is to match the training mixture to the target worlds, and that imitating recorded play does not buy distant-world generality; the authors point to online feedback and richer training stages. Caveats: the models ran on local servers while frontier models used provider APIs, so latency inflates the real-time gap, and with time paused frontier models scored twice as high on the distant benchmark."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.28698",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.28698",
+    "code": "https://github.com/THUSI-Lab/GameScaling"
+   },
+   "signals": {
+    "hf_upvotes": 85,
+    "org": "Tsinghua Spatial Intelligence Lab"
+   }
+  },
+  {
+   "id": "2610.25844",
+   "title": "SWIFT: Self-guided Weak-to-strong dIFfusion models via Target extrapolation",
+   "authors": [
+    "Yanjin He",
+    "Cuifeng Shen",
+    "Wanzhou Lei",
+    "Maohua Li",
+    "Tao Lan",
+    "Kan Liu",
+    "Hanlin Tang",
+    "Qing Qu"
+   ],
+   "affiliations": [
+    "University of Michigan",
+    "Alibaba Group",
+    "University of California Berkeley",
+    "Nanjing University"
+   ],
+   "announced": "2026-10-19T20:00:00-04:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Theory"
+   ],
+   "tldr": "SWIFT trains a diffusion model toward a target pushed away from a frozen weak checkpoint, baking in guidance so sampling needs one network, and cuts ImageNet-256 FID by a median 31 percent.",
+   "why_selected": "A simple, theoretically motivated training change with consistent gains across 18 configurations and near-record FID.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Diffusion models are expensive to train, and their best image quality usually needs guidance at sampling time, which adds extra network evaluations for every image. It would be useful to bake the benefit of guidance into the trained model itself."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Classifier-free guidance combines conditional and unconditional predictions during sampling. Autoguidance instead extrapolates away from a deliberately weaker model of the same task, improving quality but still needing both models at inference. Training-time alternatives such as model guidance and guidance-free training fold guidance in but need unconditional branches, extra heads or label dropout."
+    },
+    {
+     "heading": "Key idea",
+     "body": "SWIFT moves autoguidance's weak-to-strong extrapolation from sampling into the training target. A normal denoiser regresses toward the clean image. SWIFT regresses toward (1 + alpha) times the clean image minus alpha times the prediction of a frozen weak denoiser, such as an early checkpoint, which is discarded afterwards; alpha is 0.4 by default. Think of pushing the student away from a rough first draft as well as toward the right answer: components the main model has not yet fitted get amplified. The target is deliberately biased, yet a finite-time kernel analysis shows a range of alpha gives lower error than standard training. Inference is unchanged, with about 9 percent more training FLOPs."
+    },
+    {
+     "heading": "Results",
+     "body": "Across 18 DiffusionBench ImageNet-256 configurations (615M parameters, 80 epochs), SWIFT lowers FID by 16.3 to 49.4 percent, median 31.3 percent, with one default alpha. On RAE with DINOv2-B features, unguided FID falls from 2.09 to 1.75. On the 875M RAEv2 model it falls from 1.56 to 1.15 unguided and from 1.04 to 0.99 with guidance. On DINOv2-B, SWIFT beat the baseline's best FID through 320 epochs with roughly half the total training compute, including the guide."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The regression target is a design knob many pipelines leave untouched, and this one is cheap and compatible with existing samplers. Caveats: experiments cover class-conditional ImageNet-256 and CIFAR-10 only, the theory analyzes a single noise level in a kernel setting, and the authors promise code only upon publication."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.25844",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.25844"
+   },
+   "signals": {
+    "hf_upvotes": 34,
+    "org": "alibaba"
+   }
+  },
+  {
+   "id": "2610.26828",
+   "title": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+   "authors": [
+    "Zhaoyang Wang",
+    "Qianhui Wu",
+    "Haorui Wang",
+    "Simon Yu",
+    "Baolin Peng",
+    "Canwen Xu",
+    "Hao Cheng",
+    "Wenlin Yao",
+    "Boyi Liu",
+    "Yite Wang",
+    "Jianfeng Gao",
+    "Huaxiu Yao"
+   ],
+   "affiliations": [
+    "UNC-Chapel Hill",
+    "Microsoft Research",
+    "Georgia Tech",
+    "Northeastern University"
+   ],
+   "announced": "2026-10-19T20:00:00-04:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning"
+   ],
+   "tldr": "WildAWM uses open models to synthesize 341 verifiable, long-horizon computer-use tasks across GUI, command line and MCP, and RL on them improves Qwen models on all eight unseen benchmarks.",
+   "why_selected": "Environment supply is the bottleneck for agent RL; this offers a fully open pipeline with quality gates and strong HF attention.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Computer-use agents improve most through reinforcement learning in executable environments, but real systems are risky and hard to reset, and hand-built environments do not scale. Each training task also needs to be solvable, hard enough to teach something, and checkable by a reliable verifier."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Synthetic-environment pipelines usually target one interface, such as browsers, tool calls or terminals, and build each app as an isolated mock. Many rely on proprietary frontier models to write the environment and to judge success, which limits reproducibility."
+    },
+    {
+     "heading": "Key idea",
+     "body": "WildAWM builds a fake but coherent personal computer. A coding agent invents a persona, plans their days one at a time, and writes replayable programs that update websites, MCP services (tool servers) and local files, so each world accumulates history, with a median state of 52.4K tokens versus 1.1K in CUA-Gym. Each task must use GUI, command line and MCP in sequence. Five execution-based gates then filter tasks: solvability and difficulty judged from many heterogeneous agent rollouts, judge consistency, a check that the verifier fails on the untouched world, and a counterfactual probe that feeds the judge wrong outcomes to catch sycophancy. Generation uses open models, mainly GLM-5.2."
+    },
+    {
+     "heading": "Results",
+     "body": "The 341 tasks are hard: GPT-6-Astra solves about 60 percent at pass@1 and still fails 27.3 percent after eight attempts. After supervised fine-tuning on 100 GLM-5.2 trajectories and RL on 208 tasks, Qwen3.6-35B-A3B gains 10.58 points on average across eight out-of-distribution benchmarks (42.84 to 53.42), and Qwen3.5-4B gains 8.21, improving on all eight. Removing any gate costs 2.60 to 9.30 points in the 4B ablation. The verifier agrees with the judge majority 95 percent of the time."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It shows open models can manufacture usable, verifiable training worlds, which lowers the barrier to agent RL outside the big labs. Caveats: the in-domain split is only 33 tasks, RL ran for at most 64 steps, and the 35B model narrows but does not close the gap to frontier systems."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.26828",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.26828",
+    "code": "https://github.com/MSR-Orchard/WildAWM"
+   },
+   "signals": {
+    "hf_upvotes": 99,
+    "notable_authors": [
+     "Jianfeng Gao"
+    ],
+    "org": "Microsoft Research"
+   }
+  }
+ ]
+}

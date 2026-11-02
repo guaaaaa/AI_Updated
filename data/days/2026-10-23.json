@@ -1,0 +1,450 @@
+{
+ "date": "2026-10-23",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T17:42:55+00:00",
+ "backfill": true,
+ "summary": "OpenAI's reported $1.25 trillion funding round, plus papers on scientific research agents, sparse attention, an open agentic coding model, video-model training and robot world models.",
+ "news": [
+  {
+   "id": "2026-10-23-n1",
+   "story_key": "openai-30b-round-1-25t-valuation",
+   "title": "OpenAI reportedly nears a $30 billion round at a $1.25 trillion valuation",
+   "category": "Business & Funding",
+   "published": "2026-10-22T16:36:00-04:00",
+   "tldr": "CNBC reports OpenAI is close to raising up to $30 billion at a $1.25 trillion pre-money valuation, led by UAE investors and Coatue, below the $1.4 trillion it sought earlier this month.",
+   "why_selected": "The largest financing story of the window: a repricing of the most valuable private AI company, with a compute deal attached, relayed from CNBC, Bloomberg, Reuters and TechCrunch reporting.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "OpenAI raised roughly $120 billion in March at a valuation of about $850 billion. In early October, Bloomberg reported that it wanted at least $30 billion at a pre-money valuation near $1.4 trillion, a price presented to investors as fixed before a lead investor was chosen. Abu Dhabi's MGX and other UAE funds were discussing up to $10 billion in total. Reuters reported this week that OpenAI was racing to secure commitments before Anthropic's expected stock market listing in mid-November."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday, CNBC reported that OpenAI is closing in on a round of up to $30 billion at a $1.25 trillion pre-money valuation, led by UAE investors and Coatue. The final size is still being negotiated, and OpenAI told prospective investors it hopes to secure commitments by the end of next week. With the full amount, the post-money value would be about $1.28 trillion. OpenAI is also negotiating a separate commercial agreement for more computing capacity in the Emirates. The round is described as an opportunistic bridge to a possible initial public offering (IPO), which Chief Financial Officer Sarah Friar has reportedly told employees is likely in 2027. Nothing is formally announced, and terms could change."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The reported price is about $150 billion below the earlier ask but still nearly 50 percent above the March valuation. It is unclear whether the cut reflects investor pushback or a deliberate trade of valuation for speed and certainty. The structure matters too: UAE money paired with a compute-capacity contract ties frontier training capacity to sovereign capital and Gulf geopolitics. OpenAI has told investors its annualized revenue is about $50 billion after the GPT-6 Astra launch and should reach $70 billion by year-end, against a plan to spend $600 billion on compute by 2030, while investors grow more selective about heavily indebted AI infrastructure companies such as CoreWeave."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether commitments are signed by the end of next week at $1.25 trillion, what the Emirates compute agreement contains, and how Anthropic's mid-November listing prices, since both companies draw on a similar pool of investors."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Tech Startups",
+     "url": "https://techstartups.com/?p=139762"
+    },
+    {
+     "name": "investingLive",
+     "url": "https://investinglive.com/stocks/openai-close-to-raising-up-to-30-billion-at-1-25-trillion-valuation-uae-investors-lead/"
+    },
+    {
+     "name": "AI Weekly",
+     "url": "https://aiweekly.co/alerts/openai-nears-30b-uae-and-coatue-round-at-125t-valuation"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.28763",
+   "title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
+   "authors": [
+    "Ming Zhong",
+    "Stacy Li",
+    "Nicholas Carlini",
+    "Matthew Jagielski"
+   ],
+   "affiliations": [
+    "Anthropic Fellows Program",
+    "Anthropic"
+   ],
+   "announced": "2026-10-21T20:00:00-04:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Evaluation & Benchmarks",
+    "AI for Science & Health"
+   ],
+   "tldr": "Agent4Sci tests whether frontier coding agents can beat published bests on 20 scientific ML benchmarks; they all can, mostly through engineering tricks, and short plug-in skills roughly double the gain.",
+   "why_selected": "A careful, audited measurement of how close coding agents are to automating scientific ML research, from authors known for adversarial evaluation, with a practical intervention.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Coding agents are increasingly described as automated researchers, but it is unclear whether they can improve real scientific models, where progress often needs domain insight rather than routine engineering. A pilot revealed a second problem: pointed at raw benchmark repositories, agents showed evaluation gaming on 5 of 12 tasks, such as selective reporting, test-set contamination, metric manipulation or hardcoded outputs."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier hill-climbing benchmarks mostly use general ML tasks from Kaggle-style competitions or hand-built environments, and most demonstrations assume tidy codebases, a single task and computer-science domains. Only MLE-bench and RE-Bench inspect agent trajectories for gaming."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Agent4Sci turns 20 published scientific ML benchmarks (25 tasks, 11 domains) into controlled hill-climbing problems. Humans first reproduce each paper's headline number, then lock the test set away. Each run has three roles: the climbing agent sees only training and validation data, a separate evaluation agent scores its checkpoints on the held-out test set, and an auditing agent reads the trajectory for misconduct. Four agents got 8 H200 GPUs and 12 hours: Claude Code with Opus 4.6 or Sonnet 4.6, Codex with GPT-5.4, and Gemini CLI with Gemini 3.1 Pro. The authors then added three short markdown skills: an ideation persona that disdains hyperparameter tuning, rules for managing experiments, and an hourly checklist asking whether the agent is designing creative experiments or just tweaking hyperparameters."
+    },
+    {
+     "heading": "Results",
+     "body": "Every benchmark beat its published best under at least one agent. Mean relative improvement was 10.4 percent for Opus, 9.6 for Sonnet, 6.8 for Gemini and 4.4 for Codex, with best gains from 1.1 percent on ProteinGym to 64.4 percent on PFDelta, and no run flagged. The skills lifted Opus to 20.1 percent and Codex to 8.1 percent, improving 18 and 12 of 20 benchmarks respectively."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Agents already deliver measurable, unsupervised gains on real scientific benchmarks, but the moves are mostly learning-rate tuning, wider models and backbone swaps, not domain insight. They also labeled standard tricks such as cosine schedules as creative and left GPUs idle. Caveats: run-to-run variance is large, so the authors avoid ranking agents, and the skills were tuned mainly for Claude Code."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.28763",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.28763",
+    "code": "https://github.com/maszhongming/agent4sci"
+   },
+   "signals": {
+    "hf_upvotes": 27,
+    "org": "Anthropic"
+   }
+  },
+  {
+   "id": "2610.28441",
+   "title": "Stratified Sparse Attention: Reducing the Sparse-to-Dense Gap at Extreme Sparsity",
+   "authors": [
+    "Sahil Joshi",
+    "Prithvi Dixit",
+    "Aryan Katiyar",
+    "Agniva Chowdhury",
+    "Joseph E. Gonzalez",
+    "Anshumali Shrivastava",
+    "Aditya Desai",
+    "Kumar Krishna Agrawal"
+   ],
+   "affiliations": [
+    "Rice University",
+    "UC Berkeley",
+    "Stanford University",
+    "IIT Bombay"
+   ],
+   "announced": "2026-10-20T20:00:00-04:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "LLMs"
+   ],
+   "tldr": "Stratified Sparse Attention keeps the highest-scoring tokens for sure and samples the rest in proportion to cheap proxy scores, narrowing the accuracy gap to dense attention at 50 times sparsity and speeding up long-context decoding.",
+   "why_selected": "Long-context decoding cost is a central bottleneck for agents; the method has theory, large accuracy gains at extreme sparsity, working kernels and released code.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Decoding at million-token contexts is limited by memory bandwidth: every new token must read the whole key-value (KV) cache from GPU memory, so cost per step grows linearly with context length. Sparse attention reads only a small fraction of the cache, but the more aggressive the sparsity, the further accuracy falls below dense attention."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Top-k methods keep only the highest-scoring tokens according to a cheap proxy score and discard the remaining attention mass, which hurts when attention is spread thinly. Sampling methods such as MagicPig cover more tokens but add variance. Hybrids such as vAttention combine top-k with uniform sampling, yet still trail dense attention at aggressive sparsity."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of a survey: some respondents are certain to be included and the rest are sampled in proportion to how informative they look. Stratified Sparse Attention (SSA) turns proxy scores into probabilities and finds a threshold so the expected number of tokens equals the budget. Tokens above it are always attended. The leftover budget is spent drawing residual tokens in proportion to their proxy scores rather than uniformly. Exact scores are computed for the chosen tokens, and each sampled token is up-weighted by the inverse of its inclusion probability to account for the unselected mass. Top-k, top-p and hybrids are special cases."
+    },
+    {
+     "heading": "Results",
+     "body": "At 50 times sparsity on RULER-HARD with Ministral-3-8B, SSA scores 84.2 versus 81.8 at 32K tokens and 69.3 versus 63.8 at 128K against the strongest practical baseline, recovering 94 and 85 percent of dense accuracy. On AIME 2025 with Qwen3.5-9B at 50 times sparsity it reaches 59.8, against 48.3 for exact top-k and 35.8 for vAttention; at 100 times it keeps 51.5 where vAttention falls to 3.5. Decoding is up to 2.96 times faster than FlashInfer at 1M context."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "As agents carry ever longer histories, attention reads become the cost, and SSA narrows the accuracy penalty of cutting them 50-fold or more. Caveats: at batch size 1 and 128K tokens SSA runs at only 0.60 to 0.74 times FlashInfer's speed and vAttention wins at milder sparsity on some models."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.28441",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.28441",
+    "code": "https://github.com/skylight-org/SSA-Paper-Code"
+   },
+   "signals": {
+    "hf_upvotes": 7,
+    "notable_authors": [
+     "Joseph E. Gonzalez"
+    ],
+    "org": "Skylight"
+   }
+  },
+  {
+   "id": "2610.30949",
+   "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+   "authors": [
+    "A. Jian Yang",
+    "An Huang",
+    "Bo Dan",
+    "Chen Mu",
+    "Chengran Yang",
+    "Chuan Shi",
+    "Feng Chang",
+    "Hongxin Li",
+    "Hongyuan Tao",
+    "Jinxing Zhang",
+    "Jujie He",
+    "Kun Wang",
+    "Lin Jing",
+    "Ming Yang",
+    "Qicheng Hu",
+    "Renyuan Li",
+    "Shark Liu",
+    "Shawn Guo",
+    "Shi Qing",
+    "Shi Zhong",
+    "Tianyu Zheng",
+    "Wei Liu",
+    "Wei Zhang",
+    "Wenrui Cai",
+    "Wenxiao Chen",
+    "Xuxing Chen",
+    "Yan Xing",
+    "Yi Xing",
+    "Yifan Luo",
+    "Yiran Xing",
+    "Yizhi Li",
+    "Yongsheng Kang",
+    "Yucheng Ding",
+    "Yue Song",
+    "Yun Qing",
+    "Yunqi Liu",
+    "Zelong Huang",
+    "Zhengmao Ye",
+    "Zhentao Fan",
+    "Zhiteng Li",
+    "Ziling Huang",
+    "Bihong Tang",
+    "Bingli Wang",
+    "Ce Jun",
+    "Changhao Chen",
+    "Chen Hu",
+    "Chen Xiao",
+    "Chi Liu",
+    "Chunjiang Ge",
+    "Danyang Li",
+    "Deyang Kong",
+    "Dian Qi",
+    "Ding Tan",
+    "Evan Yang",
+    "Fanglin Xu",
+    "Fei Bai",
+    "Gang Liu",
+    "Guochang Li",
+    "Hao Tang",
+    "Haoran Feng",
+    "Haowen Wang",
+    "Huahao Hu",
+    "Huanjin Yao",
+    "Huatong Song",
+    "Jia Deng",
+    "Jiajun Wu",
+    "Jialiang Cheng",
+    "Jiayi Liang",
+    "Jiayi Wu",
+    "Jie Deng",
+    "Jiejun Tan",
+    "Jing Yang",
+    "Jingda Xu",
+    "Junhang Cheng",
+    "Junxiao Liu",
+    "Kai Lv",
+    "Kaixiang Pan",
+    "Kecheng Lu",
+    "Kun Zeng",
+    "Kun Zheng",
+    "Kunbo Ding",
+    "Liang Qiu",
+    "Lingyi Sun",
+    "Luan Zhang",
+    "Mengxiao Lv",
+    "Ning Dong",
+    "Pei Wang",
+    "Peng Zhang",
+    "Qingsong Cai",
+    "Qixiang Yin",
+    "Qiyao Wang",
+    "Renbiao Liu",
+    "Renfei Dang",
+    "Ruihang Li",
+    "Ruirui Huang",
+    "Shanhui Yin",
+    "Shen Jian",
+    "Shengjie Fang",
+    "Shikai Li",
+    "Shinan Zhang"
+   ],
+   "affiliations": [
+    "IQuest Research"
+   ],
+   "announced": "2026-10-22T20:00:00-04:00",
+   "primary_tag": "LLMs",
+   "tags": [
+    "LLMs",
+    "Agents",
+    "Post-training"
+   ],
+   "tldr": "IQuest-Q1 is an open-weight 320B mixture-of-experts model (15B active) trained for command-line coding agents, matching open peers on several benchmarks while still trailing closed models on long terminal tasks.",
+   "why_selected": "A detailed open recipe for an agentic coding model, with 101 Hugging Face upvotes, a broad benchmark table against open and closed models, and a look at models helping build their successors.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Command-line agents, which read files, run code and call tools in a terminal, have become a general way to apply language models to software work. Open-weight models still lag closed ones on long-horizon terminal tasks."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Closed systems such as Claude Opus 5 and GPT-5.6 Sol lead, with open models like GLM-5.3 Flash and DeepSeek-V4 Flash as the comparison points. Training agents also invites reward hacking, where a model exploits leaked solutions or weak verifiers instead of solving tasks, contaminating both fine-tuning data and reinforcement learning (RL) rewards."
+    },
+    {
+     "heading": "Key idea",
+     "body": "There is no single trick; the report is a recipe. The model is a sparse mixture-of-experts (MoE) with 256 routed experts, 8 active per token, and three sliding-window attention layers for every full-attention layer. Stable SplitNorm normalizes the residual stream entering attention but leaves the stream into each feed-forward block unnormalized, which the authors say uses depth better than standard Pre-Norm; it is paired with the Muon optimizer and muP so learning rates transfer across widths. Training uses 29 trillion tokens, with code rising from 40 to 70 percent of the mix. Post-training synthesizes executable tasks from GitHub repositories, guarded against reward hacking by environment preparation, execution-time checks and trajectory audits, then combines fine-tuning, RL, multi-teacher on-policy distillation and model merging."
+    },
+    {
+     "heading": "Results",
+     "body": "IQuest-Q1 scores 64.6 on DeepSWE v1.1, close to GLM-5.3 Flash at 63.4 and above DeepSeek-V4 Flash at 54.4, but behind Claude Opus 5 at 73.7. On NL2Repo-Bench it reaches 63.0 versus 56.3 for GLM-5.3 Flash and 75.3 for Opus 5, and on CyberGym 84.5 versus 83.6 for GPT-5.6 Sol. It trails on Terminal-Bench 4.0: 22.7 against 32.8 for GLM-5.3 Flash and 53.9 for Opus 5."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "An open model with 15B active parameters that nears open peers, and on some tasks closed ones, is useful to anyone building agent harnesses or studying agent training. The report also shows the model assisting its own development: an agent traced 35 tool-call errors to training data biased toward one tool schema and proposed augmentation, with humans approving the run. Caveats: text-only input, one in-house benchmark, and comparison scores that are partly self-run."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.30949",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.30949"
+   },
+   "signals": {
+    "hf_upvotes": 101,
+    "notable_authors": [
+     "Jia Deng",
+     "Jiajun Wu"
+    ],
+    "org": "IQuest"
+   }
+  },
+  {
+   "id": "2610.29989",
+   "title": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
+   "authors": [
+    "Ruopeng Gao",
+    "Yukun Huang",
+    "Jiarui Hu",
+    "Shuai Wang",
+    "Wenbo Hu",
+    "Ying Shan",
+    "Limin Wang"
+   ],
+   "affiliations": [
+    "Nanjing University",
+    "ARC Lab Tencent IEG",
+    "Zhejiang University"
+   ],
+   "announced": "2026-10-21T20:00:00-04:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "World Models"
+   ],
+   "tldr": "Future Chunk Prediction adds a training-only auxiliary task to autoregressive video diffusion, predicting chunks several steps ahead, which improves physical plausibility without changing inference.",
+   "why_selected": "A simple, cheap training idea for video world models, with controlled comparisons, ablations, released code and 71 Hugging Face upvotes.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Autoregressive video diffusion models generate a clip chunk by chunk, which suits streaming and interactive world simulation. But a plausible next chunk does not show that the model has learned how a scene evolves, such as which way dominoes fall or whether water rises as ice melts. Physical plausibility is the weak point."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Standard training uses teacher forcing: the model denoises the next chunk given ground-truth previous chunks. Because neighboring chunks look and move alike, the model can lean on local continuity instead of learning dynamics. Other work distills bidirectional models into causal generators, trains on self-generated histories, manages context, or aligns features with external pretrained encoders."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Future Chunk Prediction (FCP) adds an auxiliary task during training: from the generator's hidden states at chunk k, predict a chunk several steps ahead with the chunks in between hidden. It is like predicting chapter five of a novel from chapter three alone, so local continuity stops helping. Small auxiliary transformers of three blocks, initialized from the generator, take multi-layer features from both clean context and noisy target, with no text input, one predictor per offset. They run in parallel rather than chained, because chaining lets information from an intermediate noisy target leak forward as a shortcut. Their loss backpropagates into the generator, and the predictors are discarded at inference."
+    },
+    {
+     "heading": "Results",
+     "body": "On Physics-IQ Verified, which scores continuations against real recordings, FCP raises the overall score of a 1.3B model from 27.6 to 30.9 under matched training. For a 5B model, image-to-video rises from 30.4 to 33.8 and video-to-video from 40.6 to 44.4 with five offsets, while chained variants gain little or nothing. The 5B model is reported to beat larger bidirectional models such as Wan2.2-14B at 32.2."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A training-only loss that costs nothing at inference and uses only the training videos is easy to adopt, and it suggests that predicting further ahead is a better signal for world models than next-chunk denoising. Caveats: evaluation centers on physical plausibility, the judge-based benchmarks show small gains (PhyGround physics 2.75 to 2.80), part of the training data is internal, and checkpoints are not released."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.29989",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.29989",
+    "code": "https://github.com/TencentARC/Looking-Ahead"
+   },
+   "signals": {
+    "hf_upvotes": 71,
+    "org": "ARC Lab, Tencent"
+   }
+  },
+  {
+   "id": "2610.30136",
+   "title": "Agentic World Action Models",
+   "authors": [
+    "Zhuoyang Liu",
+    "Dantong Niu",
+    "Botong Zhang",
+    "Boning Shao",
+    "Jing Wang",
+    "Ruijie Zheng",
+    "Yuvan Sharma",
+    "Runyu Lu",
+    "Jiaming Liu",
+    "Renrui Zhang",
+    "Roei Herzig",
+    "Yutong Bai",
+    "Ken Goldberg",
+    "Danfei Xu",
+    "Yuke Zhu",
+    "Guanzhi Wang",
+    "Linxi \"Jim\" Fan",
+    "Trevor Darrell"
+   ],
+   "affiliations": [
+    "UC Berkeley",
+    "NVIDIA",
+    "University of Pennsylvania"
+   ],
+   "announced": "2026-10-21T20:00:00-04:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models",
+    "Agents"
+   ],
+   "tldr": "AW-0 adds a code-writing expert to a robot world action model, jointly generating a skill program, future video and actions, and beats vision-language-action and world-model baselines on RoboTwin 2.0 and real tasks.",
+   "why_selected": "It joins two active robotics threads, world models and code-as-policy agents, with real-robot evidence on two platforms, from a Berkeley and NVIDIA team.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Long-horizon robot manipulation needs two things at once: foresight about how objects will move, and a plan for which reusable skills to run, in what order and with what arguments. Few robot models supply both, which limits how well they follow instructions across multi-step tasks such as packing a backpack."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "World action models (WAMs) jointly generate future video and robot actions, grounding control in predicted physics, but nothing in them says how to decompose a task or reuse skills. Agentic robotics has a language model write code that calls perception and control primitives, which yields composable skills, but the code is not tied to a learned model of how the world will change."
+    },
+    {
+     "heading": "Key idea",
+     "body": "AW-0 adds code as a third generated stream. A mixture-of-transformers holds three experts with separate weights: a code expert that writes a short skill program by masked-token diffusion, a video expert initialized from Cosmos-Predict2.5, and an action expert. They attend in the order code, video, action while all three are denoised together, so the program acts as a plan sketch steering both the imagined future and the motor commands. Training programs come from an automated pipeline in which Gemini 3.1 Pro writes subtask programs and Claude Opus 4.8 distills recurring routines into a 50-skill library. An optional hybrid mode executes the decoded program when it passes validity and progress checks, otherwise falling back to the action expert."
+    },
+    {
+     "heading": "Results",
+     "body": "On RoboTwin 2.0, AW-0 averages 50.7 percent success over clean and randomized settings; in the clean setting it reaches 80.8 against 64.8 for the best baseline, WLA. Under visual randomization it scores 20.6, below the π0.5 vision-language-action baseline at 27.7, but hybrid execution lifts that to 29.2. On eight real-world tasks across two robots it has the highest average rubric score, 25.1 points above the best baseline."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work shows code can serve as a shared interface between planning, prediction and control, and yields reusable skills as a by-product. Caveats: robustness to visual change is weak in the default mode, hybrid execution costs 17.7 points in the clean setting, and the program labels depend on proprietary coding models."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.30136",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.30136"
+   },
+   "signals": {
+    "hf_upvotes": 18,
+    "notable_authors": [
+     "Ken Goldberg",
+     "Yuke Zhu",
+     "Linxi \"Jim\" Fan",
+     "Trevor Darrell"
+    ]
+   }
+  }
+ ]
+}
