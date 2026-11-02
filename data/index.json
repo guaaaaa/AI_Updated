@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-02T04:09:09+00:00",
+ "updated": "2026-11-02T04:18:45+00:00",
  "days": [
+  {
+   "date": "2026-10-27",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
   {
    "date": "2026-10-26",
    "edition": "weekday",
@@ -10,6 +17,93 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-10-27-n1",
+   "date": "2026-10-27",
+   "type": "news",
+   "title": "Anthropic files to go public, disclosing $16.3 billion in first-half revenue",
+   "tldr": "Anthropic's S-1 shows revenue jumping 14-fold to $16.3 billion in the first half of 2026, a first operating profit in Q2, and an unusual governance structure that keeps control away from public shareholders.",
+   "category": "Business & Funding",
+   "byline": "The Next Web, MIT Technology Review"
+  },
+  {
+   "id": "2026-10-27-n2",
+   "date": "2026-10-27",
+   "type": "news",
+   "title": "Meta plans up to $95 billion in new stock to fund AI, with Nvidia investing $3 billion",
+   "tldr": "Meta launched about $35 billion of stock offerings plus a planned $60 billion at-the-market program to pay for AI infrastructure, and Nvidia committed $3 billion while expanding a chip and Muse partnership.",
+   "category": "Business & Funding",
+   "byline": "Meta Investor Relations, NVIDIA Newsroom"
+  },
+  {
+   "id": "2610.33845",
+   "date": "2026-10-27",
+   "type": "paper",
+   "title": "Build, Don't Play: Self-Improving LLM Research Agents Develop a Hearthstone Battlegrounds AI That Rivals Top Players",
+   "tldr": "LLM research agents built a faithful Hearthstone Battlegrounds simulator and an RL agent in 20 days; the agent outperformed the server's top-10 players' recent results, while frontier LLMs playing directly fell far short.",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "Agents",
+    "Reinforcement Learning"
+   ],
+   "byline": "Changlian Ma, Limin Wang · Nanjing University, Shanghai AI Laboratory"
+  },
+  {
+   "id": "2610.33512",
+   "date": "2026-10-27",
+   "type": "paper",
+   "title": "Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL",
+   "tldr": "Rubric rewards for open-ended RL only measure coverage, so models learn to pad; adding a precision term for necessary, factually correct sentences raises win rate over the base model from 10.6% to 68.0%.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Reinforcement Learning",
+    "Safety & Alignment"
+   ],
+   "byline": "Hyun Ryu, Jong-Heon Kim, Yiqing Xie et al. · KAIST AI, Carnegie Mellon University"
+  },
+  {
+   "id": "2610.35518",
+   "date": "2026-10-27",
+   "type": "paper",
+   "title": "S3AC: Stabilized, Selective, and Scalable Actor-Critic for LLM Reasoning",
+   "tldr": "A recipe for training a value critic on long chain-of-thought lets actor-critic RL beat a modern GRPO variant from 1.5B to 397B parameters and train stably with a single rollout per prompt.",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Reasoning",
+    "Post-training"
+   ],
+   "byline": "Shuo Shen, Guangran Cheng, Chengqi Lyu et al. · Shanghai AI Laboratory"
+  },
+  {
+   "id": "2610.34654",
+   "date": "2026-10-27",
+   "type": "paper",
+   "title": "Thinking-in-Bets at Test Time Reduces Sycophantic Revisions in LLM Agents",
+   "tldr": "Having an agent privately record its claims, evidence and confidence before reading user feedback sharply cuts sycophantic reversals of correct work while still letting it fix real bugs, without any training.",
+   "primary_tag": "Safety & Alignment",
+   "tags": [
+    "Safety & Alignment",
+    "Agents",
+    "Reasoning"
+   ],
+   "byline": "Nghi D. Q. Bui · Google"
+  },
+  {
+   "id": "2610.34356",
+   "date": "2026-10-27",
+   "type": "paper",
+   "title": "RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions",
+   "tldr": "Alibaba's RynnVLA-Latent pretrains a robot policy on 30,100 hours of human, robot and simulation video using 3D-grounded latent actions, then adapts it to real robots, matching or edging out leading policies.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Pre-training & Data"
+   ],
+   "byline": "Haoyu Zhao, Xingyue Zhao, Zhian Su et al. · DAMO Academy (Alibaba Group), Hupan Lab, CUHK"
+  },
   {
    "id": "2026-10-26-n1",
    "date": "2026-10-26",
@@ -135,18 +229,19 @@
   ]
  },
  "tag_counts": {
-  "Pre-training & Data": 1,
+  "RSI": 2,
+  "Agents": 3,
+  "Reinforcement Learning": 4,
+  "Post-training": 3,
+  "Safety & Alignment": 3,
+  "Reasoning": 2,
+  "Robotics": 2,
+  "Pre-training & Data": 2,
   "LLMs": 1,
-  "Post-training": 1,
-  "RSI": 1,
   "Multimodal": 1,
-  "Agents": 1,
   "Evaluation & Benchmarks": 1,
-  "Safety & Alignment": 1,
   "Architectures": 1,
-  "Efficiency": 1,
-  "Robotics": 1,
-  "Reinforcement Learning": 1
+  "Efficiency": 1
  },
  "news_categories": [
   "Model Release",
@@ -161,6 +256,7 @@
   "People"
  ],
  "category_counts": {
+  "Business & Funding": 2,
   "Model Release": 2
  }
 }
