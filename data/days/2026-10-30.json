@@ -1,7 +1,7 @@
 {
  "date": "2026-10-30",
  "edition": "weekday",
- "generated_at": "2026-11-02T04:56:25+00:00",
+ "generated_at": "2026-11-02T04:57:19+00:00",
  "backfill": true,
  "summary": "Mistral opens the weights of its trillion-parameter Large 4 and Alphabet's AI spending meets a record sell-off; papers prove when separately trained encoders converge, fold reinforcement learning into maximum likelihood, train a psychiatric intake agent in simulation, give world models a compact 3D memory and improve reasoning models by contrasting them with damaged copies.",
  "news": [
@@ -12,7 +12,7 @@
    "category": "Model Release",
    "published": "2026-10-29T10:00:00-04:00",
    "tldr": "Mistral released the weights of an improved Mistral Large 4 (\"Le Chonk\"), a 1-trillion-parameter mixture-of-experts model that it says now leads open-weight models in agentic coding and defensive cybersecurity.",
-   "why_selected": "The week's largest open-weight release, from the leading open-model lab outside China, with day-one support in common inference tools and 1,716 points on Hacker News.",
+   "why_selected": "The week's largest open-weight release, pitched as the strongest open model outside China, with day-one support in common inference tools and 1,716 points on Hacker News.",
    "sections": [
     {
      "heading": "Context",
@@ -24,7 +24,7 @@
     },
     {
      "heading": "Why it matters",
-     "body": "Mistral frames the release as a sovereignty argument. Pierre Stock, its vice president of science, told reporters it gives enterprises and governments frontier defensive tools they control, and said Chinese models offer no guarantee they won't behave maliciously. The practical point is that defenders usually must reproduce a vulnerability before fixing it, work that hosted models may refuse and that a provider can cut off mid-incident. With open weights, the usage policy and deployment sit with the user, and researchers can measure refusal behavior directly. The cost is dual use, which Sophos's Rafe Pilling stressed to Wired: anything downloadable can also be abused. Architecturally, Large 4 stacks two kinds of sparsity: each token activates 4 of 128 experts plus one shared expert, and a DeepSeek-style attention indexer picks at most 2,048 earlier positions to attend to, a design GLM-5.3 also uses."
+     "body": "Mistral frames the release as a sovereignty argument. Pierre Stock, its vice president of science, told reporters it offers enterprises and governments frontier capabilities for cyber defense, and said Chinese models offer no guarantee they won't behave maliciously. The practical point is that defenders usually must reproduce a vulnerability before fixing it, work that hosted models may refuse and that a provider can cut off mid-incident. With open weights, the usage policy and deployment sit with the user, and researchers can measure refusal behavior directly. The cost is dual use, which Sophos's Rafe Pilling stressed to Wired: anything downloadable can also be abused. Architecturally, Large 4 stacks two kinds of sparsity: each token activates 4 of 128 experts plus one shared expert, and a DeepSeek-style attention indexer picks at most 2,048 earlier positions to attend to, a design GLM-5.3 also uses."
     },
     {
      "heading": "What to watch",
@@ -61,7 +61,7 @@
     },
     {
      "heading": "What happened",
-     "body": "After the market closed on October 28, Alphabet reported third-quarter revenue of $127.6 billion, up 25%. Google Cloud revenue rose 103% to $30.7 billion, ahead of the $29.2 billion analysts expected, and Cloud operating income roughly tripled to $11.1 billion; Alphabet named TPU system sales as a meaningful contributor. Search and other revenue grew 12%, down from 17% the prior quarter. Earnings per share of $2.12 missed the $3.02 consensus, as other income swung from a $12.8 billion gain a year earlier to an $8.2 billion loss. Capital expenditure reached $51.4 billion, leaving free cash flow at negative $9.1 billion. During the quarter Alphabet also raised $12.4 billion by selling new shares and $28.7 billion in bonds. On October 29 its Class A shares closed down 12.64% at $283.82, erasing about $500 billion."
+     "body": "After the market closed on October 28, Alphabet reported third-quarter revenue of $127.6 billion, up 25%. Google Cloud revenue rose 103% to $30.7 billion, ahead of the $29.2 billion analysts expected, and Cloud operating income roughly tripled to $11.1 billion; Alphabet named TPU system sales as a meaningful contributor. Search and other revenue grew 12%, down from 17% the prior quarter. Earnings per share of $2.12 missed the $3.02 consensus; operating income rose 30%, but other income swung from a $12.8 billion gain a year earlier to an $8.2 billion loss. Capital expenditure reached $51.4 billion, leaving free cash flow at negative $9.1 billion. During the quarter Alphabet also raised $12.4 billion by selling new shares and $28.7 billion in bonds. On October 29 its Class A shares closed down 12.64% at $283.82, erasing about $500 billion."
     },
     {
      "heading": "Why it matters",
@@ -294,7 +294,7 @@
    "sections": [
     {
      "heading": "Problem",
-     "body": "In psychiatry, the intake interview is itself the main diagnostic instrument. Key facts, such as an earlier treatment failure, a medical condition that mimics depression or concealed suicidal thoughts, often surface only after the clinician builds trust and asks the right follow-ups. That makes intake a hard test for conversational AI: a model must balance probing and rapport over many turns, and its worst mistakes are omissions rather than wrong statements."
+     "body": "In psychiatry, the intake interview is itself the main diagnostic instrument. Key facts, such as an earlier treatment failure, a medical condition that mimics depression or a concealed safety risk, often surface only after the clinician builds trust and asks the right follow-ups. That makes intake a hard test for conversational AI: a model must balance probing and rapport over many turns, and its worst mistakes are omissions rather than wrong statements."
     },
     {
      "heading": "Existing approaches",
@@ -310,7 +310,7 @@
     },
     {
      "heading": "Why it matters",
-     "body": "Simulation plus RL taught conversational strategy, not just knowledge: the trained agent took a median of 60 turns versus 8, and gains concentrated in history-taking. The authors say plainly this does not support deployment: only 46.7% of encounters got comprehensive, appropriate treatment plans, and residual failures are omissions that output filters cannot catch. Automated judges ranked the models correctly but overstated the gap (standardized effect size 2.11 versus 0.71 with psychiatrists)."
+     "body": "Simulation plus RL taught conversational strategy, not just knowledge: the trained agent took a median of 60 turns versus 8, and gains concentrated in history-taking. The authors say plainly this does not support deployment: only 46.7% of encounters got comprehensive, appropriate treatment plans, and residual failures are omissions that output filters cannot catch. Fully simulated evaluation got the direction right but overstated the gap (standardized effect size 2.11 versus 0.71 with psychiatrists)."
     }
    ],
    "links": {
