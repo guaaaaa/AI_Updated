@@ -304,40 +304,98 @@
       H.el("b", { "aria-hidden": "true", text: up ? "↑" : "↓" }), H.el("span", { class: "sr-only", text: up ? "Heating up: " : "Cooling down: " }), h.label));
   }
 
-  function summaryCard(s, big) {
+  // A small segmented switch; calls onPick(key) and marks the chosen button.
+  function segmented(options, current, onPick, label) {
+    const seg = H.el("div", { class: "seg", role: "tablist", "aria-label": label });
+    for (const [key, text] of options) {
+      const b = H.el("button", { role: "tab", class: key === current ? "on" : null, "aria-selected": String(key === current), text });
+      b.addEventListener("click", () => {
+        for (const x of seg.children) { x.classList.toggle("on", x === b); x.setAttribute("aria-selected", String(x === b)); }
+        onPick(key);
+      });
+      seg.append(b);
+    }
+    return seg;
+  }
+
+  function summaryCard(s) {
     const L = refLinker(s);
-    const part = (key, title) => {
+    const part = (key) => {
       L.reset();
       const p = s[key];
       const themes = p.themes.map((t) => H.el("div", { class: "theme" }, H.el("h4", { text: t.title }),
         t.body.split(/\n\s*\n/).map((para) => H.el("p", {}, L.rich(para.trim())))));
       const ev = L.evidence();
       return H.el("section", { class: `sum-part ${key}` },
-        H.el("h3", { text: title }),
         H.el("div", { class: "trend-chips" }, trendChips(p.heating, true), trendChips(p.cooling, false)),
         themes,
         ev.length ? H.el("details", { class: "evidence" }, H.el("summary", { text: `Evidence (${ev.length})` }), H.el("ol", {}, ev)) : null);
     };
-    const kindLabel = s.kind === "weekly" ? `Week of ${fmtRange(s.period.start, s.period.end)}` : monthLabel(s.id);
-    return H.el("article", { class: "card summary" + (big ? " big" : ""), id: `sum-${s.kind}-${s.id}` },
+    const holder = H.el("div", {}, part("research"));
+    const period = s.kind === "weekly" ? `Week of ${fmtRange(s.period.start, s.period.end)}` : monthLabel(s.id);
+    return H.el("article", { class: "card summary", id: `sum-${s.kind}-${s.id}` },
       H.el("div", { class: "card-top" },
-        H.el("span", { class: `kind ${s.kind}`, text: s.kind === "weekly" ? "Weekly summary" : "Monthly summary" }),
-        H.el("a", { class: "card-date", href: `#/trends/${s.kind === "weekly" ? "week" : "month"}/${s.id}`, text: kindLabel })),
+        H.el("span", { class: "kind", text: s.kind === "weekly" ? "Weekly summary" : "Monthly summary" }),
+        H.el("a", { class: "card-date", href: `#/trends/${s.kind === "weekly" ? "week" : "month"}/${s.id}`, text: period })),
       H.el("h2", { class: "sum-headline", text: s.headline }),
-      H.el("div", { class: "sum-grid" }, part("research", "Where research is going"), part("industry", "Where the industry is going")));
+      segmented([["research", "Research"], ["industry", "Industry"]], "research", (k) => holder.replaceChildren(part(k)), "Summary part"),
+      holder);
   }
 
   // ---------------------------------------------------------------- page
-  function lastWidth() { const m = document.querySelector("#main"); return Math.min(1180, (m && m.clientWidth) || 900) - 56; }
+  function lastWidth() { const m = document.querySelector("#main"); return Math.min(1180, (m && m.clientWidth) || 900) - 48; }
 
   async function glance(S) {
     const date = S.dates[0];
     if (!date) return null;
     const j = await H.getDay(date);
-    const list = H.glanceList(j, date);
     return H.el("section", { class: "card glance-card" },
-      H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Day at a glance" }),
-        H.el("a", { class: "card-date", href: `#/day/${date}`, text: H.fmtLong(date) })), list);
+      H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Latest digest" }),
+        H.el("a", { class: "card-date", href: `#/day/${date}`, text: H.fmtLong(date) })), H.glanceList(j, date));
+  }
+
+  function chartsCard(trends, idx, S, focus, weekly) {
+    const weeks = trends.weeks.slice(-16);
+    const focusWeek = focus && focus.kind === "weekly" ? focus.id : (weekly[0] && weekly[0].id);
+    const periods = [...trends.weeks.slice().reverse().map((w) => ({ key: `w:${w.week}`, label: `Week of ${weekLabel(w)}`, data: w })),
+      ...trends.months.slice().reverse().map((m) => ({ key: `m:${m.month}`, label: monthLabel(m.month), data: m }))]
+      .filter((p) => (p.data.rising || []).length);
+    const want = focus ? (focus.kind === "weekly" ? `w:${focus.id}` : `m:${focus.id}`) : (periods[0] && periods[0].key);
+    let cur = periods.find((p) => p.key === want) || periods[0];
+    const sub = H.el("p", { class: "viz-sub" }), body = H.el("div"), extra = H.el("div", { class: "viz-extra" });
+    const views = {
+      topics: () => {
+        sub.textContent = `Share of all new arXiv papers in our categories whose titles touch each topic group, by week (${weeks[weeks.length - 1].n_papers.toLocaleString()} papers in the latest week). Keyword matching, so read the movement, not the level; each panel has its own scale.`;
+        body.replaceChildren(groupPanels(weeks, focusWeek),
+          table("Share of new paper titles per topic group", ["Week", ...GROUPS], weeks.map((w) => [weekLabel(w), ...GROUPS.map((x) => pct(w.groups[x] || 0))])));
+        extra.replaceChildren();
+      },
+      heat: () => {
+        sub.textContent = "Each tag's weekly share of new paper titles against its own average over these weeks: warm cells ran hot, cool cells cooled off.";
+        body.replaceChildren(...heatmap(weeks, idx.tag_groups, focusWeek),
+          table("Weekly share of new paper titles per tag", ["Tag", ...weeks.map(weekLabel)],
+            GROUPS.flatMap((x) => idx.tag_groups[x] || []).map((t) => [t, ...weeks.map((w) => pct(w.tags[t] || 0))])));
+        extra.replaceChildren();
+      },
+      terms: () => {
+        sub.textContent = "Title words and phrases whose use changed most against the previous four weeks (or the previous month).";
+        const draw = () => body.replaceChildren(cur ? movers(cur.data) : H.el("p", { class: "note", text: "Not enough data yet." }));
+        extra.replaceChildren(periods.length ? H.el("select", { class: "period-select", "aria-label": "Period",
+          onchange: (e) => { cur = periods.find((p) => p.key === e.target.value); draw(); } },
+          periods.map((p) => H.el("option", { value: p.key, selected: cur && p.key === cur.key, text: p.label }))) : "");
+        draw();
+      },
+      featured: () => {
+        sub.textContent = "Every paper and news story from the daily digests by date and topic group; bigger dots had more Hugging Face upvotes. Select one to open it.";
+        body.replaceChildren(constellation(idx.items, S.groupOf));
+        extra.replaceChildren();
+      },
+    };
+    views.topics();
+    return H.el("section", { class: "card viz-card", id: "field-charts" },
+      H.el("div", { class: "viz-head" }, H.el("h3", { text: "The field in numbers" }),
+        segmented([["topics", "Topics"], ["heat", "Heat map"], ["terms", "Terms"], ["featured", "Featured"]], "topics", (k) => views[k](), "Chart")),
+      H.el("div", { class: "viz-head sub" }, sub, extra), body);
   }
 
   async function render(main, route, S) {
@@ -348,75 +406,33 @@
     try { trends = cache.trends || (cache.trends = await H.getJSON("data/trends.json")); } catch (e) { trends = null; }
     const out = [H.el("div", { class: "day-head" }, H.el("div", {},
       H.el("h1", { text: "Trends" }),
-      H.el("div", { class: "day-meta", text: "Where AI research and the industry are heading: weekly and monthly syntheses of the digest, checked against every new arXiv paper." })))];
+      H.el("div", { class: "day-meta", text: "Where AI research and the industry are heading, week by week and month by month." })))];
 
-    // the summary in focus
     let focus = null;
     if (route.kind) focus = sums.find((x) => x.kind === route.kind && x.id === route.id);
     if (route.kind && !focus) out.push(H.el("p", { class: "note", text: "That summary does not exist (yet). Showing the latest." }));
+    const box = H.el("div");
+    const show = async (kind, id) => box.replaceChildren(summaryCard(await getSummary(kind, id)));
+    const first = focus || weekly[0] || monthly[0];
+    if (first) {
+      if (!focus && weekly[0] && monthly[0])
+        out.push(H.el("div", { class: "switch-row" }, segmented([["weekly", "This week"], ["monthly", "This month"]], "weekly",
+          (k) => show(k, (k === "weekly" ? weekly : monthly)[0].id), "Summary period")));
+      await show(first.kind, first.id);
+      out.push(box);
+    } else {
+      out.push(H.el("p", { class: "note", text: "The first weekly summary is published on Sunday." }));
+    }
     const g = await glance(S).catch(() => null);
-    if (focus) {
-      out.push(summaryCard(await getSummary(focus.kind, focus.id), true));
-      if (g) out.push(g);
-    } else {
-      if (g) out.push(g);
-      if (weekly[0]) out.push(H.el("h2", { class: "section-title", text: "This week" }), summaryCard(await getSummary("weekly", weekly[0].id), true));
-      if (monthly[0]) out.push(H.el("h2", { class: "section-title", text: "This month" }), summaryCard(await getSummary("monthly", monthly[0].id), true));
-      if (!weekly.length && !monthly.length) out.push(H.el("p", { class: "note", text: "The first weekly summary is published on Sunday." }));
-    }
-
-    // field-wide charts
-    const weeks = trends ? trends.weeks.slice(-16) : [];
-    const focusWeek = focus && focus.kind === "weekly" ? focus.id : (weekly[0] && weekly[0].id);
-    const charts = H.el("section", { id: "field-charts" });
-    out.push(H.el("h2", { class: "section-title", text: "The field in numbers" }), charts);
-    if (weeks.length) {
-      const periods = [...trends.weeks.slice().reverse().map((w) => ({ key: `w:${w.week}`, label: `Week of ${weekLabel(w)}`, data: w })),
-        ...trends.months.slice().reverse().map((m) => ({ key: `m:${m.month}`, label: monthLabel(m.month), data: m }))]
-        .filter((p) => (p.data.rising || []).length);
-      const want = focus ? (focus.kind === "weekly" ? `w:${focus.id}` : `m:${focus.id}`) : (periods[0] && periods[0].key);
-      let cur = periods.find((p) => p.key === want) || periods[0];
-      const moverBox = H.el("div");
-      const drawMovers = () => moverBox.replaceChildren(cur ? movers(cur.data) : H.el("p", { class: "note", text: "Not enough data yet." }));
-      const sel = H.el("select", { class: "period-select", "aria-label": "Period for rising and fading terms",
-        onchange: (e) => { cur = periods.find((p) => p.key === e.target.value); drawMovers(); } },
-        periods.map((p) => H.el("option", { value: p.key, selected: cur && p.key === cur.key, text: p.label })));
-      charts.append(
-        H.el("div", { class: "card viz-card" },
-          H.el("h3", { text: "What new papers are about" }),
-          H.el("p", { class: "viz-sub", text: `Share of all new arXiv papers in our categories whose titles touch each topic group, by week (${weeks[weeks.length - 1].n_papers.toLocaleString()} papers in the latest week). Titles are matched by keywords and can count toward several groups, so read the movement, not the exact level. Each panel has its own scale.` }),
-          groupPanels(weeks, focusWeek),
-          table("Share of new paper titles per topic group", ["Week", ...GROUPS], weeks.map((w) => [weekLabel(w), ...GROUPS.map((x) => pct(w.groups[x] || 0))]))),
-        H.el("div", { class: "card viz-card" },
-          H.el("h3", { text: "Topic heat" }),
-          H.el("p", { class: "viz-sub", text: "Each tag's weekly share of new paper titles compared with its own average over these weeks: warm cells are weeks it ran hot, cool cells weeks it cooled off." }),
-          heatmap(weeks, idx.tag_groups, focusWeek),
-          table("Weekly share of new paper titles per tag", ["Tag", ...weeks.map(weekLabel)],
-            GROUPS.flatMap((x) => idx.tag_groups[x] || []).map((t) => [t, ...weeks.map((w) => pct(w.tags[t] || 0))]))),
-        H.el("div", { class: "card viz-card" },
-          H.el("div", { class: "viz-head" }, H.el("h3", { text: "Rising and fading terms" }), periods.length ? sel : null),
-          H.el("p", { class: "viz-sub", text: "Title words and phrases whose use changed most against the previous four weeks (or the previous month), with the number of papers using them." }),
-          moverBox));
-      drawMovers();
-    } else {
-      charts.append(H.el("p", { class: "note", text: "Field statistics appear after the first weekly run." }));
-    }
-    charts.append(H.el("div", { class: "card viz-card" },
-      H.el("h3", { text: "Everything we featured" }),
-      H.el("p", { class: "viz-sub", text: "Each dot is a paper or news story from the daily digests, placed by date and topic group; bigger dots had more Hugging Face upvotes. Select one to open it." }),
-      constellation(idx.items, S.groupOf)));
-
-    // archive
+    if (g) out.push(g);
+    if (trends && trends.weeks.length) out.push(chartsCard(trends, idx, S, focus, weekly));
     if (sums.length) {
-      const row = (x) => H.el("a", { class: "arch-row" + (focus && focus.id === x.id && focus.kind === x.kind ? " on" : ""),
+      const row = (x) => H.el("a", { class: "arch-row" + (first && first.id === x.id && first.kind === x.kind ? " on" : ""),
         href: `#/trends/${x.kind === "weekly" ? "week" : "month"}/${x.id}` },
         H.el("span", { class: "arch-when", text: x.kind === "weekly" ? fmtRange(x.start, x.end) : monthLabel(x.id) }),
-        H.el("span", { class: "arch-head", text: x.headline }),
-        H.el("span", { class: "trend-chips" }, trendChips(x.heating.map((l) => ({ label: l })), true), trendChips(x.cooling.map((l) => ({ label: l })), false)));
-      out.push(H.el("h2", { class: "section-title", text: "All summaries" }),
-        H.el("div", { class: "card archive" },
-          monthly.length ? [H.el("h3", { text: "Monthly" }), monthly.map(row)] : null,
-          weekly.length ? [H.el("h3", { text: "Weekly" }), weekly.map(row)] : null));
+        H.el("span", { class: "arch-head", text: x.headline }));
+      out.push(H.el("section", { class: "card archive" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "All summaries" })),
+        monthly.map(row), weekly.map(row)));
     }
     main.replaceChildren(...out);
     window.scrollTo({ top: 0 });

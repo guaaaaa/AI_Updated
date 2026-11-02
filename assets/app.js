@@ -93,7 +93,8 @@
     } catch (e) {
       main.replaceChildren(el("div", { class: "empty", text: `Could not load this view (${e.message}).` }));
     }
-    if (window.innerWidth <= 900) $("#sidebar").classList.remove("open");
+    if (window.innerWidth <= 900) { $("#sidebar").classList.remove("open"); $(".layout").classList.remove("filters-open"); }
+    $("#filtersToggle").classList.toggle("active", Boolean(filtersActive()));
   }
 
   // ---------- sidebar
@@ -188,73 +189,77 @@
     return s;
   }
 
-  function fullCard(item, isNews, date) {
-    const href = isNews ? safeUrl((item.sources || [])[0] && item.sources[0].url) : safeUrl(item.links && item.links.arxiv);
-    const kindText = isNews ? `News · ${item.category}` : `Paper · ${item.primary_tag}`;
-    const when = isNews && item.published ? fmtShort(item.published.slice(0, 10))
-      : (!isNews && item.announced ? `arXiv ${fmtShort(item.announced.slice(0, 10))}` : fmtShort(date));
-    const body = el("div", { class: "body" }, (item.sections || []).map((s) => [
-      el("h4", { text: s.heading }),
-      ...String(s.body || "").split(/\n\s*\n/).map((p) => el("p", { text: p.trim() })),
-    ]));
-    const foot = el("div", { class: "card-foot" });
+  // Cards open collapsed: label, title and the one-sentence summary. "Read summary" reveals the rest.
+  function cardLinks(item, isNews) {
+    const box = el("div", { class: "card-links" });
     if (isNews) {
-      foot.append(el("strong", { text: "Sources:" }));
-      for (const s of item.sources || []) { const u = safeUrl(s.url); if (u) foot.append(el("a", { href: u, target: "_blank", rel: "noopener", text: s.name })); }
+      for (const s of item.sources || []) { const u = safeUrl(s.url); if (u) box.append(el("a", { href: u, target: "_blank", rel: "noopener", text: s.name })); }
     } else {
       const L = item.links || {};
-      const links = [["arXiv", L.arxiv], ["alphaXiv", L.alphaxiv], ["PDF", L.arxiv && L.arxiv.replace("/abs/", "/pdf/")], ["Code", L.code], ["Project", L.project]];
-      for (const [n, u] of links) if (safeUrl(u)) foot.append(el("a", { href: u, target: "_blank", rel: "noopener", text: n }));
+      for (const [n, u] of [["arXiv", L.arxiv], ["PDF", L.arxiv && L.arxiv.replace("/abs/", "/pdf/")], ["Code", L.code]])
+        if (safeUrl(u)) box.append(el("a", { href: u, target: "_blank", rel: "noopener", text: n }));
     }
-    if (item.why_selected) foot.append(el("span", { class: "why", text: "Why it's here: " + item.why_selected }));
-    const toggle = el("button", { class: "toggle", text: "Collapse" });
-    toggle.addEventListener("click", () => {
-      const hidden = body.hidden = !body.hidden;
-      toggle.textContent = hidden ? "Read summary" : "Collapse";
-    });
-    foot.append(toggle);
-    return el("article", { class: `card ${isNews ? "news" : "paper"}`, id: `item-${item.id}`, dataset: { g: isNews ? "news" : S.groupOf[item.primary_tag] || "" } },
-      el("div", { class: "card-top" }, el("span", { class: `kind ${isNews ? "news" : "paper"}`, text: kindText }), el("span", { class: "card-date", text: when })),
-      el("h3", {}, href ? el("a", { href, target: "_blank", rel: "noopener", text: item.title }) : item.title),
+    return box;
+  }
+
+  function fullCard(item, isNews, date, open = false) {
+    const href = isNews ? safeUrl((item.sources || [])[0] && item.sources[0].url) : safeUrl(item.links && item.links.arxiv);
+    const when = isNews && item.published ? fmtShort(item.published.slice(0, 10))
+      : (!isNews && item.announced ? `arXiv ${fmtShort(item.announced.slice(0, 10))}` : fmtShort(date));
+    const L = item.links || {};
+    const more = isNews ? [] : [["alphaXiv", L.alphaxiv], ["Project", L.project]].filter(([, u]) => safeUrl(u));
+    const body = el("div", { class: "body" },
       el("p", { class: "byline", text: byline(item, isNews) }),
       tagChips(item, isNews),
+      (item.sections || []).map((s) => [
+        el("h4", { text: s.heading }),
+        ...String(s.body || "").split(/\n\s*\n/).map((p) => el("p", { text: p.trim() })),
+      ]),
+      item.why_selected || more.length ? el("p", { class: "why" }, item.why_selected ? "Why it's here: " + item.why_selected + " " : "",
+        more.map(([n, u]) => el("a", { href: u, target: "_blank", rel: "noopener", text: n }))) : null);
+    body.hidden = !open;
+    const toggle = el("button", { class: "toggle", "aria-expanded": String(open), text: open ? "Show less" : "Read summary" });
+    toggle.addEventListener("click", () => {
+      const hidden = body.hidden = !body.hidden;
+      toggle.textContent = hidden ? "Read summary" : "Show less";
+      toggle.setAttribute("aria-expanded", String(!hidden));
+    });
+    return el("article", { class: `card ${isNews ? "news" : "paper"}`, id: `item-${item.id}`, dataset: { g: isNews ? "news" : S.groupOf[item.primary_tag] || "" } },
+      el("div", { class: "card-top" }, el("span", { class: "kind", text: isNews ? item.category : item.primary_tag }), el("span", { class: "card-date", text: when })),
+      el("h3", {}, href ? el("a", { href, target: "_blank", rel: "noopener", text: item.title }) : item.title),
       el("p", { class: "tldr", text: item.tldr }),
-      body, foot);
+      body,
+      el("div", { class: "card-foot" }, toggle, cardLinks(item, isNews)));
   }
 
   function compactCard(it) {
     const isNews = it.type === "news";
-    const card = el("article", { class: `card compact ${isNews ? "news" : "paper"}`, dataset: { g: isNews ? "news" : S.groupOf[it.primary_tag] || "" } });
+    const card = el("article", { class: `card ${isNews ? "news" : "paper"}`, dataset: { g: isNews ? "news" : S.groupOf[it.primary_tag] || "" } });
     const open = async () => {
       try {
         const day = await getDay(it.date);
         const full = (isNews ? day.news : day.papers).find((x) => x.id === it.id);
-        if (full) card.replaceWith(fullCard(full, isNews, it.date));
+        if (full) card.replaceWith(fullCard(full, isNews, it.date, true));
       } catch (e) { btn.textContent = "Could not load"; }
     };
-    const btn = el("button", { class: "toggle", text: "Read full summary", onclick: open });
+    const btn = el("button", { class: "toggle", text: "Read summary", onclick: open });
     card.append(
-      el("div", { class: "card-top" }, el("span", { class: `kind ${isNews ? "news" : "paper"}`, text: isNews ? `News · ${it.category}` : `Paper · ${it.primary_tag}` }),
+      el("div", { class: "card-top" }, el("span", { class: "kind", text: isNews ? it.category : it.primary_tag }),
         el("a", { class: "card-date", href: `#/day/${it.date}`, text: fmtShort(it.date) })),
       el("h3", {}, el("a", { href: "javascript:void 0", onclick: (e) => { e.preventDefault(); open(); }, text: it.title })),
-      el("p", { class: "byline", text: it.byline }),
-      tagChips(it, isNews),
       el("p", { class: "tldr", text: it.tldr }),
       el("div", { class: "card-foot" }, btn));
     return card;
   }
 
   // ---------- views
-  function glanceList(j, date, onDayPage) {
+  function glanceList(j, date) {
     const rows = [...(j.news || []).map((n) => ({ it: n, news: true })), ...(j.papers || []).map((p) => ({ it: p, news: false }))];
-    return el("ol", { class: "glance" }, rows.map(({ it, news }) => {
-      const go = onDayPage ? (e) => { e.preventDefault(); const c = document.getElementById(`item-${it.id}`); if (c) c.scrollIntoView({ behavior: "smooth", block: "start" }); } : null;
-      return el("li", { dataset: { g: news ? "news" : S.groupOf[it.primary_tag] || "" } },
+    return el("ol", { class: "glance" }, rows.map(({ it, news }) =>
+      el("li", { dataset: { g: news ? "news" : S.groupOf[it.primary_tag] || "" } },
         el("span", { class: "g-dot", "aria-hidden": "true" }),
-        el("div", {}, el("a", { href: `#/day/${date}/${it.id}`, onclick: go, text: it.title }),
-          el("span", { class: "g-kind", text: news ? ` · ${it.category}` : ` · ${it.primary_tag}` }),
-          el("p", { text: it.tldr })));
-    }));
+        el("a", { href: `#/day/${date}/${it.id}`, text: it.title }),
+        el("span", { class: "g-kind", text: news ? it.category : it.primary_tag }))));
   }
 
   async function renderDay(date, itemId) {
@@ -268,25 +273,20 @@
     const nav = el("div", { class: "day-nav" },
       older ? el("a", { href: `#/day/${older}`, title: "Previous day (←)", text: "← " + fmtShort(older) }) : el("span", { text: "←" }),
       newer ? el("a", { href: `#/day/${newer}`, title: "Next day (→)", text: fmtShort(newer) + " →" }) : el("span", { text: "→" }));
+    const meta = [weekend ? "Weekend edition" : null, `${(j.news || []).length} news · ${(j.papers || []).length} papers`,
+      j.backfill ? "backfilled" : null].filter(Boolean).join(" · ");
     const head = el("div", { class: "day-head" },
       el("div", {}, el("h1", { text: fmtLong(date) }),
-        el("div", { class: "day-meta" },
-          el("span", { class: "badge" + (weekend ? " weekend" : ""), text: weekend ? "Weekend edition · best of the week" : "Daily edition" }),
-          j.backfill ? el("span", { class: "badge demo", text: "Demo (backfilled)" }) : null,
-          `${(j.news || []).length} news · ${(j.papers || []).length} papers`)),
+        el("div", { class: "day-meta" }, meta,
+          S.weekOf[date] ? el("a", { href: `#/trends/week/${S.weekOf[date].id}`, text: "This week's trends →" }) : null)),
       nav);
     const out = [head];
-    if (j.summary) out.push(el("p", { class: "note", text: j.summary }));
-    const nItems = (j.news || []).length + (j.papers || []).length;
-    if (nItems > 1) out.push(el("section", { class: "card glance-card" },
-      el("div", { class: "card-top" }, el("span", { class: "kind", text: "At a glance" }),
-        S.weekOf[date] ? el("a", { class: "card-date", href: `#/trends/week/${S.weekOf[date].id}`, text: "This week's trend summary →" }) : null),
-      glanceList(j, date, true)));
+    if (j.summary) out.push(el("p", { class: "day-summary", text: j.summary }));
     out.push(el("h2", { class: "section-title", text: "News" }));
-    if ((j.news || []).length) out.push(...j.news.map((n) => fullCard(n, true, date)));
+    if ((j.news || []).length) out.push(...j.news.map((n) => fullCard(n, true, date, n.id === itemId)));
     else out.push(el("p", { class: "note", text: "No news story cleared the bar for this window." }));
     out.push(el("h2", { class: "section-title", text: weekend ? "Best papers of the week" : "Papers" }));
-    if ((j.papers || []).length) out.push(...j.papers.map((p) => fullCard(p, false, date)));
+    if ((j.papers || []).length) out.push(...j.papers.map((p) => fullCard(p, false, date, p.id === itemId)));
     else out.push(el("p", { class: "note", text: "No papers this time." }));
     main.replaceChildren(...out);
     main.focus({ preventScroll: true });
@@ -337,10 +337,16 @@
       if (S.calMode === "day" && S.f.from) { S.f.from = S.f.to = null; applyFilters(); } else renderCalendar();
     });
     $("#clearAll").addEventListener("click", () => { S.f = blankFilters(); S.rangeStart = null; location.hash = "#/"; });
-    $("#filtersToggle").addEventListener("click", () => {
-      const open = $("#sidebar").classList.toggle("open");
+    const setFilters = (open, remember) => {
+      $("#sidebar").classList.toggle("open", open);
+      $(".layout").classList.toggle("filters-open", open);
       $("#filtersToggle").setAttribute("aria-expanded", String(open));
-    });
+      if (remember) try { localStorage.setItem("filters", open ? "open" : "closed"); } catch (e) { /* storage unavailable */ }
+    };
+    $("#filtersToggle").addEventListener("click", () => setFilters(!$("#sidebar").classList.contains("open"), true));
+    let remembered = null;
+    try { remembered = localStorage.getItem("filters"); } catch (e) { /* storage unavailable */ }
+    if (remembered === "open" && window.innerWidth > 900) setFilters(true, false);
     $("#themeToggle").addEventListener("click", () => {
       const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
       const next = cur === "dark" ? "light" : "dark";
@@ -372,7 +378,7 @@
       if (x.kind === "weekly") for (let d = dObj(x.start); isoOf(d) <= x.end; d.setDate(d.getDate() + 1)) S.weekOf[isoOf(d)] = x;
     }
     if (window.AIUTrends) window.AIUTrends.init({ el, getJSON, getDay, dObj, fmtShort, fmtLong, isoOf, safeUrl,
-      glanceList: (j, date) => glanceList(j, date, false) });
+      glanceList });
     const latest = S.dates[0] ? dObj(S.dates[0]) : new Date();
     S.calMonth = new Date(latest.getFullYear(), latest.getMonth(), 1);
     wire();
