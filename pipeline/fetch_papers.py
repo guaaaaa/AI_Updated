@@ -149,8 +149,15 @@ def abs_page(pid):
             sub = dt.datetime.strptime(v1.group(1).strip(), "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=UTC).isoformat()
         except ValueError:
             pass
+    gh = None
+    for block in (ab.group(1) if ab else "", com.group(1) if com else ""):
+        m = re.search(r'href="(https?://github\.com/[^"#?]+)"', block)
+        if m:
+            gh = m.group(1).rstrip("/.")
+            break
     return {
         "id": pid,
+        "github": gh,
         "title": html.unescape(title.group(1)) if title else "",
         "abstract": re.sub(r"^Abstract:\s*", "", clean(ab.group(1))) if ab else "",
         "authors": authors,
@@ -353,7 +360,7 @@ def main():
         p["hot_days"] = hot_days.get(pid, 0)
         p["hf_upvotes"] = h.get("upvotes")
         p["hf_org"] = h.get("org")
-        p["github"] = h.get("github")
+        p["github"] = h.get("github") or p.get("github")
         p["notable_authors"] = notable(p["authors"], names)
         p["org_tier"], p["org_match"] = org_tier([p.get("hf_org")] + p.get("affiliations", []), orgs)
         p["has_code"] = bool(p.get("github") or CODE_RE.search(p["abstract"] + " " + p.get("comment", "")))

@@ -98,7 +98,8 @@ numbers right.
   investor-relations sites) or refuse automated clients (sec.gov): rely on the primary source's other pages
   and accessible reports. Cite only pages you actually read; facts seen only in search-result snippets need
   a second source you did read.
-- Don't pass `allowed_domains` to WebSearch with theguardian.com or apnews.com: the tool rejects them.
+- Don't pass `allowed_domains` to WebSearch (several news domains, e.g. theverge.com, theguardian.com,
+  apnews.com, are rejected). Put the outlet name in the query instead.
 
 ### News importance rubric
 - **Rank by type**: frontier or major open-weight model releases > major product/capability launches >

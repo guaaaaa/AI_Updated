@@ -21,6 +21,7 @@ BeautifulSoup = ensure_bs4()
 
 
 CONCL_RE = re.compile(r"conclu|discussion|limitation|future work|summary", re.I)
+RELATED_RE = re.compile(r"related work|prior work|background|literature", re.I)
 
 
 def words(t, n):
@@ -143,19 +144,24 @@ def render(doc, mode, max_words):
         elif len(secs) > 1:
             out.append(f"\n## {secs[-1][0]}\n{words(secs[-1][1], 400)}")
     else:
-        concl = [s for s in secs[1:] if CONCL_RE.search(s[0])]
-        tail = concl[-1] if concl else None
-        budget = max_words - (min(600, len(tail[1].split())) if tail else 0) - 550  # room for captions
-        for h, b in secs:
-            if tail and (h, b) == tail:
-                continue
-            if budget <= 0:
-                out.append("\n[truncated: word budget reached]")
-                break
-            out.append(f"\n## {h}\n{words(b, budget)}")
-            budget -= len(b.split())
-        if tail:
-            out.append(f"\n## {tail[0]}\n{words(tail[1], 600)}")
+        # Water-fill the word budget: every section gets an equal share (short sections keep all their
+        # words, long intros/related work get trimmed), so results and conclusions are never cut off.
+        budget = max_words - 550  # room for captions
+        lens = [len(b.split()) for _, b in secs]
+        if sum(lens) <= budget:
+            cap = max(lens or [0])
+        else:
+            lo, hi = 0, max(lens)
+            while lo < hi:
+                mid = (lo + hi + 1) // 2
+                if sum(min(n, mid) for n in lens) <= budget:
+                    lo = mid
+                else:
+                    hi = mid - 1
+            cap = lo
+        for (h, b), n in zip(secs, lens):
+            cut = RELATED_RE.search(h) and n > 150
+            out.append(f"\n## {h}\n{words(b, min(cap, 150) if cut else cap)}")
         if doc["captions"]:
             out.append("\nCAPTIONS:\n" + "\n".join(f"- {words(c, 45)}" for c in doc["captions"][:12]))
     return "\n".join(out)
