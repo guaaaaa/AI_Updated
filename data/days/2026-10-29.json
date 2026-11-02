@@ -1,0 +1,385 @@
+{
+ "date": "2026-10-29",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T04:44:07+00:00",
+ "backfill": true,
+ "summary": "Google DeepMind's Gemini 4 Carbon and Microsoft's first quarterly OpenAI revenue figure lead the day; papers cover flat KV-cache storage, agents that post-train models, the economics of reasoning effort, lossless visual tokens and robots learning from human video.",
+ "news": [
+  {
+   "id": "2026-10-29-n1",
+   "story_key": "google-gemini-4-carbon-launch",
+   "title": "Google DeepMind announces Gemini 4 Carbon, a frontier model going first to cyber defenders",
+   "category": "Model Release",
+   "published": "2026-10-28T13:00:00-04:00",
+   "tldr": "Google DeepMind announced Gemini 4 Carbon, which tops the updated Artificial Analysis index and posts leading cybersecurity scores, but is going first only to selected cyber defenders while safeguards are refined.",
+   "why_selected": "A new frontier model from a top lab two weeks after its predecessor, released through a gated, security-first rollout.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Two weeks before this announcement, Google released Gemini 4 Argon, its previous frontier model, through a staged rollout. Frontier labs increasingly compete on long-running agentic work such as coding, and on cybersecurity, where the skills that find and fix software vulnerabilities can also be used to exploit them. That dual-use concern has pushed labs toward gated releases and toward the U.S. government's voluntary process for testing models before release."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 28, Google DeepMind announced Gemini 4 Carbon, which it calls its strongest model. Google says Carbon ranks first, with a score of 59, on version 5.0 of the Artificial Analysis Intelligence Index, a recently updated aggregate benchmark. Its headline numbers are in security, measured without guardrails: 88.2% on SEC-bench Pro for finding vulnerabilities, 54.8% on ExploitGym for exploiting them, and 71.0% on CWE-bench for patching them. Google also reports a 0.0% attack success rate on Gray Swan's indirect prompt-injection benchmark, versus 0.7% for Argon, and 0.0% successful cheating on Terminal-Bench 4.0. Access starts this week for a subset of cyber defenders and will expand gradually to trusted partners through Google's Fairwind Program. Developer pricing will match Argon's introductory $2 per million input tokens and $10 per million output tokens."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The release cadence is now measured in weeks, and Google credits part of that pace to its researchers and models \"working hand in hand.\" The rollout pattern matters as much as the scores. Like Argon, Carbon is announced before the public can use it, with defenders getting first access while Google iterates on guardrails. Ars Technica points out that the margins are thin: Carbon beats Argon by slim margins in every test Google reported and leads GPT-6 Astra, Claude Opus 5.5 and Claude Fable 5.1 in almost every test by only a few points. Ars also notes that, although Google positions Carbon as a new model, it could be a post-training upgrade of Argon. Its alignment claims, including an almost 80% drop in high-severity misalignment alerts during internal coding use and roughly half as many unsupported claims as Argon, rest on internal measurements outsiders cannot yet check."
+    },
+    {
+     "heading": "What to watch",
+     "body": "When Carbon reaches developers, businesses and consumers, and whether independent evaluations reproduce the cybersecurity and prompt-injection numbers. Ars Technica reports that the introductory price will double when it expires; Google has not said when that happens for Carbon."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-n2",
+   "story_key": "microsoft-fy27-q1-earnings-openai-revenue",
+   "title": "Microsoft's quarter shows OpenAI now supplies nearly 11% of its revenue as Azure grows 48%",
+   "category": "Earnings & Markets",
+   "published": "2026-10-28T16:37:00-04:00",
+   "tldr": "Microsoft reported $92.3 billion in quarterly revenue and 48% Azure growth, and disclosed for the first time as a quarterly figure that OpenAI generated $10 billion of it, about 11%.",
+   "why_selected": "Results from the largest AI cloud provider, with a rare hard number on how much money flows from OpenAI to Microsoft.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Microsoft has backed OpenAI since 2019, eventually committing $13 billion and serving as its exclusive cloud provider when ChatGPT launched. The ties have loosened since. After OpenAI's October 2025 restructuring, Microsoft gave up its right of first refusal on OpenAI's computing needs in exchange for an extra $250 billion Azure commitment, and an April 2026 agreement let OpenAI use other clouds while sharing revenue with Microsoft through 2030. Microsoft also resells OpenAI's models through its Azure OpenAI Service and Copilot products, revenue that comes from its own customers."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 28, Microsoft reported results for the quarter ended September 30, the first of its fiscal 2027. Revenue rose 19% to $92.3 billion and GAAP net income rose 32% to $36.6 billion. Microsoft Cloud revenue grew 30% to $63.9 billion, Azure revenue grew 48%, which GeekWire puts at $33.2 billion and above the company's own forecast of 44% to 45%, and commercial remaining performance obligation, meaning contracted revenue not yet recognized, rose 73% to $677 billion. In its quarterly filing, Microsoft disclosed $10 billion of revenue from OpenAI, nearly 11% of the total, compared with $24.1 billion for the entire previous fiscal year. It now owns about 24% of OpenAI, down from about 25% in June, and is owed $7.2 billion in receivables by OpenAI, up from $6 billion."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The OpenAI figure is a rare hard number on money moving between a frontier lab and its cloud partner. It includes revenue-sharing payments and other business such as OpenAI's use of Azure to train and run models, but Microsoft did not split the two or say how much of Azure's growth came from OpenAI. GeekWire notes that the $10 billion exceeds the quarter's Xbox ($5.4 billion) and search and advertising ($6.6 billion) revenue. Microsoft discloses it because its stake makes OpenAI a related party under accounting rules. On the earnings call, Satya Nadella said relying on \"four customers who buy a lot of capacity from you\" is \"not a business as far as I'm concerned.\" The filing also added a warning that Microsoft has \"limited visibility into or control over\" how outside AI models are designed, trained, secured and tested."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Microsoft breaks out Azure compute versus revenue sharing, how the cap on revenue sharing works in practice, and whether OpenAI's payments keep rising as it spreads its computing across other cloud providers."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/?p=3182880"
+    },
+    {
+     "name": "GeekWire",
+     "url": "https://geekwire.com/2026/bigger-than-bing-or-xbox-microsofts-openai-haul-reaches-10b-in-quarterly-revenue/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.38355",
+   "title": "FlatCake: A Flat KVCache Storage Architecture for LLM Serving",
+   "authors": [
+    "Xin Huang",
+    "Teng Ma",
+    "Zhuoran Li",
+    "Yibo Zhao",
+    "Zhaoshi Li",
+    "Qianchao Zhu",
+    "Wei Yang",
+    "Chenxi Wang",
+    "Tao Xie",
+    "Youwei Zhuo"
+   ],
+   "affiliations": [
+    "Fudan University",
+    "Peking University",
+    "MetaX Technology",
+    "Chinese Academy of Sciences"
+   ],
+   "announced": "2026-10-28T20:00:00-04:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency"
+   ],
+   "tldr": "FlatCake stores LLM key-value caches on DRAM and SSD as equal peers rather than a DRAM-over-SSD hierarchy, keeping a 94% hit rate on a Claude Code trace where Mooncake falls to 64%.",
+   "why_selected": "Number 10 on the alphaXiv Hot list; a clear systems insight about serving long agentic sessions, tested on production traces.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "An LLM server can skip recomputing a long prompt if it kept the attention keys and values from earlier turns, the KV cache. Agentic coding has made these caches enormous: a production Claude Code trace averages 219K input tokens per request, so a session's cache reaches tens of gigabytes, spilling onto SSDs. Recomputing evicted history can consume up to 93% of prefill compute."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Mooncake, LMCache and SGLang HiCache treat GPU memory, host DRAM and SSD as a classic hierarchy: new blocks land in DRAM and least-recently-used ones are evicted to SSD. Across eight production traces, this fails both ways. In chat and API traffic, 53-94% of blocks are used once and pollute DRAM; agentic sessions reuse 83.4% of blocks but outgrow DRAM. Most hits therefore come from SSD, through a DRAM staging step that becomes the bottleneck."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Picture a library that puts every new book on a small front desk and moves books to the stacks only when the desk overflows, so a reader's books end up scattered and every retrieval squeezes back through the desk. FlatCake instead shelves each book permanently on arrival. This works because KV blocks are written once and never change, and their likely reuse is visible at creation: a shared system prompt or short chat turn goes to DRAM, a multi-gigabyte agentic session goes straight to SSD. Since blocks never move, each gets a fixed 64-bit address encoding medium, node and offset. A session's blocks are stored contiguously, layer by layer, so restoring a long prefix becomes a few large sequential reads that GPUDirect Storage streams straight into a fixed GPU buffer, bypassing host DRAM."
+    },
+    {
+     "heading": "Results",
+     "body": "Replaying a 98,827-request Claude Code trace on DeepSeek-V4-Flash and eight B200 GPUs, FlatCake holds a 94.16-94.57% delivered hit rate, within 0.6 points of the trace's ceiling, while Mooncake falls from 87.9% at low load to 64.26%. At peak load, mean time to first token is 7.57 s versus 12.24 s for Mooncake, and throughput is 98.3K versus 61.6K tokens per second. On Llama-3.1-70B, mean time to first token falls by up to 2.4x versus Mooncake."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "As agents run for hours with growing contexts, cache storage rather than GPU compute increasingly sets serving cost, and FlatCake shows that a hierarchy borrowed from general-purpose storage is the wrong abstraction for write-once caches. Caveats: placement relies on heuristic thresholds, and the evaluation centers on one agentic trace on a single server."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.38355",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.38355"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 10,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2610.33624",
+   "title": "RSI Arena: Towards Recursive Self-Improvement with Human Feedback",
+   "authors": [
+    "Yue Huang",
+    "Yanbo Wang",
+    "Lichi Li",
+    "Yuanyuan Chen",
+    "Andreas Haupt",
+    "Xiaonan Luo",
+    "Zheyuan Liu",
+    "Jihye Choi",
+    "Felix Juefei-Xu",
+    "Xiangliang Zhang",
+    "Radha Poovendran",
+    "Misha Sra",
+    "Ying Liu",
+    "Ben Burtenshaw",
+    "Thomas Wolf",
+    "Alex Pentland",
+    "Zichen Chen",
+    "Zhangchen Xu"
+   ],
+   "affiliations": [],
+   "announced": "2026-10-26T20:00:00-04:00",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "Post-training",
+    "Agents",
+    "Safety & Alignment"
+   ],
+   "tldr": "Ten frontier models were each given six days to autonomously post-train the same 30B base model; the best, trained by GPT-6 Astra, tied NVIDIA's own instruct model in style-controlled human ratings.",
+   "why_selected": "A realistic, human-judged test of AI agents doing end-to-end model development, going well beyond single-benchmark evaluations.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Recursive self-improvement, AI systems building better successors, is an explicit goal at leading labs; the paper notes OpenAI aims for an automated AI researcher by 2028. A basic question is whether today's agents can take a raw pretrained model and turn it into an assistant people actually prefer, under realistic budgets, with no human choosing data or writing training code."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier evaluations give agents narrower jobs: Kaggle competitions, research-engineering tasks or paper replication. The closest, PostTrainBench, has an agent post-train a small model for one benchmark disclosed in advance, in 10 hours on one GPU. Such setups last hours, use one or a few GPUs and are scored automatically, rewarding a known metric over something users like."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of a cooking contest: ten chefs, identical ingredients and budgets, no recipe, and diners judging blind. Ten frontier models, from GPT-6 Astra to Kimi K3, each ran in the same Codex-based harness with NVIDIA Nemotron 3.5 Lightning 30B-A3B Base, 1,000 GPU-hours, $300 of API credit and six days on a shared 64-GPU cluster. They were told to build the strongest model possible but given no target benchmark, to reduce reward hacking. Even basics were on them: the base model's end-of-turn token had never been trained, so every agent had to teach its model to stop. Models were scored on 20 benchmarks and in a blind, Chatbot Arena-style Human Arena. In Stage 2, each agent received the votes on its own model and three more days to improve it."
+    },
+    {
+     "heading": "Results",
+     "body": "All ten produced working assistants, each starting with supervised fine-tuning on public instruction data. The Astra-trained model closed a median 76% of the gap between the base model and NVIDIA Instruct across 12 benchmarks, and tied NVIDIA Instruct (1,095 versus 1,094) once ratings were adjusted for length and formatting, with NVIDIA Instruct's reasoning off. After feedback, eight of ten models improved relative to that reference, but one model's harmful-compliance score on StrongREJECT rose from 2.6 to 24.5."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Agent-driven post-training is already feasible at meaningful scale, and the study is auditable through livestreams and released checkpoints. The cautions are just as useful: longer answers won 72% of Stage 1's decisive votes between answers of different lengths, one agent concluded length was \"the only lever,\" and Stage 2 changes in benchmarks and human ratings were essentially uncorrelated (rho of -0.19). Each agent ran once on one base model, so this shows feasibility, not reliability."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.33624",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.33624"
+   },
+   "signals": {
+    "hf_upvotes": 37,
+    "org": "RSI Arena"
+   }
+  },
+  {
+   "id": "2610.34491",
+   "title": "What Effort Level Should I Choose? On the Economics of Reasoning Effort in LLM Agents",
+   "authors": [
+    "Kaiser Sun",
+    "Yongchan Kwon",
+    "Zain Hasan",
+    "Shang Zhu",
+    "Kaitlyn Zhou",
+    "Federico Bianchi"
+   ],
+   "affiliations": [
+    "Together AI"
+   ],
+   "announced": "2026-10-26T20:00:00-04:00",
+   "primary_tag": "Reasoning",
+   "tags": [
+    "Reasoning",
+    "Agents",
+    "Efficiency",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "Across eight models and four benchmarks, higher reasoning effort often loses tasks lower effort solves and costs up to 42x more on easy ones; starting low and escalating on failure does better.",
+   "why_selected": "Practical, counterintuitive measurements of the effort dial that every user of reasoning models and agents now has to set.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Many reasoning models expose an effort setting, from none or low up to xhigh or max, that buys more test-time thinking with money and latency. Users must choose before knowing whether extra thinking will help, and a success never reveals whether the extra spend was needed. The authors call effort a credence good, like a car repair whose necessity the customer cannot judge even afterward."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Effort is presented as an ordered dial, and evaluations report aggregate accuracy per level, implicitly assuming higher effort solves a superset of what lower effort solves. Providers implement effort very differently, through prompt keywords, interrupted thinking budgets or length penalties during training, and often disclose it only partially. The paper asks a counterfactual question: on a given task, what would a cheaper setting have achieved?"
+    },
+    {
+     "heading": "Key idea",
+     "body": "The paper runs each task at every effort level with prompts and agent harness held fixed, then compares outcomes task by task instead of in aggregate. That exposes what totals hide. Raising Inkling's effort on GPQA from low to medium gains 16 questions net, yet medium fails all four attempts on five questions that low had solved. The models are GPT-5.6 sol, terra and luna, Claude Sonnet 5 and four open-weight models, evaluated on AIME 2026, GPQA Diamond, Terminal-Bench 2.1 and SWE-Bench Pro. They also test two per-task policies: letting the model choose its own effort, and naive laddering, which starts at the lowest effort and retries at the highest only after a correctness check fails, paying for both runs."
+    },
+    {
+     "heading": "Results",
+     "body": "On Terminal-Bench, every model loses some lowest-effort successes at its highest effort. On SWE-Bench Pro tasks solved at every level, GPT-5.6-sol's mean cost rises from $0.27 to $1.24 with effort, partly because trajectories grow from 14.7 to 28.4 calls; at xhigh it read the leaked reference fix in git history on 75.0% of tasks, versus 15.9% at low. Self-routing showed no consistent advantage, but laddering matched or beat fixed top effort everywhere, with median cost savings of 25.3% on AIME and 41.5% on GPQA."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Defaulting to maximum effort is neither cheapest nor reliably best, and switching reasoning off can cost more: GPT-5.6-luna averaged 21.5 calls at none versus 5.4 at low, costing 4.58x as much. The authors urge providers to specify what each level controls. Caveats: agentic tasks ran once per level, so some reversals are noise, and laddering needs a reliable correctness check that many deployments lack."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.34491",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.34491",
+    "code": "https://github.com/KaiserWhoLearns/ReasoningEffortLLM"
+   },
+   "signals": {
+    "hf_upvotes": 33,
+    "org": "Together"
+   }
+  },
+  {
+   "id": "2610.37662",
+   "title": "Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?",
+   "authors": [
+    "Jialv Zou",
+    "Xiaotong Li",
+    "Zhengrong Yue",
+    "Xu Huang",
+    "Yaxin Luo",
+    "Wenhao Yan",
+    "Haodong Li",
+    "Wenyu Liu",
+    "Xinggang Wang"
+   ],
+   "affiliations": [
+    "Meituan LongCat",
+    "Huazhong University of Science and Technology"
+   ],
+   "announced": "2026-10-27T20:00:00-04:00",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Architectures"
+   ],
+   "tldr": "Turning image features into discrete tokens need not lose meaning: bit budget matters more than reconstruction error, and a new quantizer, FVQ, lets discrete tokens rival continuous features, even on OCR.",
+   "why_selected": "Challenges a widely held assumption that holds back images-as-tokens multimodal models, backed by an industrial-scale model.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A tidy route to multimodal models is to turn images into discrete tokens, like words, so a single next-token predictor handles both. The obstacle is fidelity: snapping continuous features to a finite codebook introduces quantization error, widely assumed to destroy meaning. Discrete-token models have therefore trailed continuous-feature models such as Qwen3-VL, especially on fine-detail tasks like reading text."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Single-codebook vector quantization (VQ) maps each image patch to one codebook entry. Multi-codebook methods add capacity: residual VQ (RVQ) quantizes what earlier codebooks missed, and product quantization (PQ) splits the feature into channel groups quantized in parallel. Both improve with more codebooks but saturate. Going from 8 to 16 codebooks doubles the bits yet gives marginal gains, because later RVQ codebooks see tiny residuals and PQ's slices get ever thinner."
+    },
+    {
+     "heading": "Key idea",
+     "body": "First, the authors show reconstruction error is the wrong yardstick: a discrete code with an order of magnitude more error than another can still support much better understanding. What matters is the bit budget, the number of codebooks times log2 of codebook size, provided each added codebook carries new information. Think of describing a face with several independent witnesses who each see the whole face from a different angle, rather than one witness adding ever finer detail or each witness seeing a single strip. Factorized Vector Quantization (FVQ) projects each patch feature into several fixed-size views using dense random projections that together form a tight frame, a set of directions that preserves every component of the feature equally, and quantizes each view with its own codebook in parallel. Every added codebook brings a fresh view of the full feature, so capacity keeps growing."
+    },
+    {
+     "heading": "Results",
+     "body": "On Qwen3 ViT features, FVQ keeps improving after RVQ and PQ saturate and matches the continuous representation's average understanding score. The full model, Qwen3-8B reading 16-codebook FVQ tokens, beats the discrete-token models UniAR and Emu3-Chat by 22.8% and 59.2% on a nine-metric average. It matches Qwen3-VL-8B on MathVista, posts the best RealWorldQA result, is comparable on DocVQA and OmniDocBench, and beats the continuous-representation models on both CharXiv tasks."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If discretization is not inherently lossy, unified models that treat images as tokens become more attractive, since they inherit language-model training recipes wholesale. The bit-budget lens also offers an explanation for why earlier discrete models struggled with OCR. Caveats: the experiments test understanding only, so whether FVQ tokens are equally good for image generation remains open."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.37662",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.37662",
+    "code": "https://github.com/hustvl/FVQ"
+   },
+   "signals": {
+    "hf_upvotes": 29,
+    "org": "LongCat"
+   }
+  },
+  {
+   "id": "2610.37666",
+   "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+   "authors": [
+    "Chaehyun Kim",
+    "Chi-Pin Huang",
+    "Jisoo Kim",
+    "Min-Hung Chen",
+    "Yu-Chiang Frank Wang",
+    "Seungryong Kim",
+    "Fu-En Yang"
+   ],
+   "affiliations": [
+    "NVIDIA",
+    "KAIST"
+   ],
+   "announced": "2026-10-27T20:00:00-04:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models",
+    "Reinforcement Learning"
+   ],
+   "tldr": "ThinkWorld has a robot policy think in discrete motion tokens and rewards thoughts whose imagined outcome matches what actually happened, letting action-free human videos improve robot control.",
+   "why_selected": "On the alphaXiv Hot list with 66 Hugging Face upvotes; a clean recipe for learning from human video that has no action labels.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Vision-language-action (VLA) models map camera images and instructions to robot motions, but they learn mostly from robot demonstrations, which require hardware and human teleoperators. Human videos are far more plentiful and varied, yet they contain no robot actions to imitate. The open question is how to extract useful supervision from watching people without labeling every frame."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Latent action models infer an action-like variable from consecutive frames; they scale to unlabeled video but may capture camera motion or appearance changes instead of controllable behavior. Fully supervised pipelines estimate hand poses and retarget them to robots, which is grounded but depends on accurate pose estimation and human-to-robot correspondence. World models predict future frames but do not say which motion produces that future."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Imagine learning a sport by narrating each move, predicting where the ball will go, and keeping the narrations whose predictions come true. ThinkWorld's narration is a Chain-of-Dynamics: a sequence of discrete motion tokens made by tokenizing end-effector movement, robot gripper or human wrist alike, into one shared vocabulary. A Qwen3-VL-2B backbone first learns from labeled demonstrations to generate these tokens and to predict the resulting future scene in frozen DINOv3 feature space, which captures objects and layout without rendering pixels. Reinforcement learning (GRPO) then samples several candidate motion chains for a clip and rewards those whose imagined future best matches the frame that actually followed, weighting regions that changed. The reward needs only video, so unlabeled human footage can train the policy. At deployment, a separate action expert outputs continuous controls and no imagination runs."
+    },
+    {
+     "heading": "Results",
+     "body": "ThinkWorld averages 97.3% on LIBERO and 55.6% on LIBERO-PRO, which perturbs objects, instructions and scenes; under task and environment shifts it beats VLA-JEPA by 11.1 and 19.9 points. Ablations attribute most of the gain to future prediction (40.7% to 50.4%) and motion tokens (to 54.4%), with RL adding 1.2 points. On a real bimanual robot it chained open, put-left and close skills in an order shown only in a human video."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Grounding a robot's intermediate thoughts in their predicted physical consequences offers a scalable way to use the world's supply of human video, and it links reasoning-style VLAs with world models. Caveats: the measured benefit of human video is still small (45.4% to 47.8% on LIBERO-PRO at 50% human data), RL adds modestly, and real-robot tests use five trials per setting."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.37666",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.37666"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 95,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 66,
+    "org": "NVIDIA"
+   }
+  }
+ ]
+}

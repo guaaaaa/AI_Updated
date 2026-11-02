@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-02T04:31:09+00:00",
+ "updated": "2026-11-02T04:44:55+00:00",
  "days": [
+  {
+   "date": "2026-10-29",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
   {
    "date": "2026-10-28",
    "edition": "weekday",
@@ -24,6 +31,93 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-10-29-n1",
+   "date": "2026-10-29",
+   "type": "news",
+   "title": "Google DeepMind announces Gemini 4 Carbon, a frontier model going first to cyber defenders",
+   "tldr": "Google DeepMind announced Gemini 4 Carbon, which tops the updated Artificial Analysis index and posts leading cybersecurity scores, but is going first only to selected cyber defenders while safeguards are refined.",
+   "category": "Model Release",
+   "byline": "Google DeepMind, Ars Technica"
+  },
+  {
+   "id": "2026-10-29-n2",
+   "date": "2026-10-29",
+   "type": "news",
+   "title": "Microsoft's quarter shows OpenAI now supplies nearly 11% of its revenue as Azure grows 48%",
+   "tldr": "Microsoft reported $92.3 billion in quarterly revenue and 48% Azure growth, and disclosed for the first time as a quarterly figure that OpenAI generated $10 billion of it, about 11%.",
+   "category": "Earnings & Markets",
+   "byline": "Microsoft, TechCrunch, GeekWire"
+  },
+  {
+   "id": "2610.38355",
+   "date": "2026-10-29",
+   "type": "paper",
+   "title": "FlatCake: A Flat KVCache Storage Architecture for LLM Serving",
+   "tldr": "FlatCake stores LLM key-value caches on DRAM and SSD as equal peers rather than a DRAM-over-SSD hierarchy, keeping a 94% hit rate on a Claude Code trace where Mooncake falls to 64%.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency"
+   ],
+   "byline": "Xin Huang, Teng Ma, Zhuoran Li et al. · Fudan University, Peking University, MetaX Technology"
+  },
+  {
+   "id": "2610.33624",
+   "date": "2026-10-29",
+   "type": "paper",
+   "title": "RSI Arena: Towards Recursive Self-Improvement with Human Feedback",
+   "tldr": "Ten frontier models were each given six days to autonomously post-train the same 30B base model; the best, trained by GPT-6 Astra, tied NVIDIA's own instruct model in style-controlled human ratings.",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "Post-training",
+    "Agents",
+    "Safety & Alignment"
+   ],
+   "byline": "Yue Huang, Yanbo Wang, Lichi Li et al."
+  },
+  {
+   "id": "2610.34491",
+   "date": "2026-10-29",
+   "type": "paper",
+   "title": "What Effort Level Should I Choose? On the Economics of Reasoning Effort in LLM Agents",
+   "tldr": "Across eight models and four benchmarks, higher reasoning effort often loses tasks lower effort solves and costs up to 42x more on easy ones; starting low and escalating on failure does better.",
+   "primary_tag": "Reasoning",
+   "tags": [
+    "Reasoning",
+    "Agents",
+    "Efficiency",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Kaiser Sun, Yongchan Kwon, Zain Hasan et al. · Together AI"
+  },
+  {
+   "id": "2610.37662",
+   "date": "2026-10-29",
+   "type": "paper",
+   "title": "Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?",
+   "tldr": "Turning image features into discrete tokens need not lose meaning: bit budget matters more than reconstruction error, and a new quantizer, FVQ, lets discrete tokens rival continuous features, even on OCR.",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Architectures"
+   ],
+   "byline": "Jialv Zou, Xiaotong Li, Zhengrong Yue et al. · Meituan LongCat, Huazhong University of Science and Technology"
+  },
+  {
+   "id": "2610.37666",
+   "date": "2026-10-29",
+   "type": "paper",
+   "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+   "tldr": "ThinkWorld has a robot policy think in discrete motion tokens and rewards thoughts whose imagined outcome matches what actually happened, letting action-free human videos improve robot control.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models",
+    "Reinforcement Learning"
+   ],
+   "byline": "Chaehyun Kim, Chi-Pin Huang, Jisoo Kim et al. · NVIDIA, KAIST"
+  },
   {
    "id": "2026-10-28-n1",
    "date": "2026-10-28",
@@ -322,23 +416,23 @@
   ]
  },
  "tag_counts": {
+  "Efficiency": 5,
+  "RSI": 3,
+  "Post-training": 4,
+  "Agents": 7,
+  "Safety & Alignment": 4,
+  "Reasoning": 4,
+  "Evaluation & Benchmarks": 2,
+  "Multimodal": 4,
+  "Architectures": 2,
+  "Robotics": 4,
+  "World Models": 2,
+  "Reinforcement Learning": 6,
   "AI for Math": 1,
-  "Agents": 5,
-  "Reasoning": 3,
-  "Efficiency": 3,
-  "World Models": 1,
-  "Robotics": 3,
-  "Reinforcement Learning": 5,
   "Interpretability": 1,
-  "Multimodal": 3,
   "Retrieval & Memory": 1,
-  "RSI": 2,
-  "Post-training": 3,
-  "Safety & Alignment": 3,
   "Pre-training & Data": 2,
-  "LLMs": 1,
-  "Evaluation & Benchmarks": 1,
-  "Architectures": 1
+  "LLMs": 1
  },
  "news_categories": [
   "Model Release",
@@ -353,7 +447,8 @@
   "People"
  ],
  "category_counts": {
-  "Model Release": 3,
+  "Model Release": 4,
+  "Earnings & Markets": 1,
   "Research": 1,
   "Business & Funding": 2
  }
