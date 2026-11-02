@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-02T05:07:32+00:00",
+ "updated": "2026-11-02T05:23:00+00:00",
  "days": [
+  {
+   "date": "2026-10-31",
+   "edition": "weekend",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
   {
    "date": "2026-10-30",
    "edition": "weekday",
@@ -38,6 +45,91 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-10-31-n1",
+   "date": "2026-10-31",
+   "type": "news",
+   "title": "Backdoored Claude Code extension on Cursor's marketplace exposed up to 5,000 developers",
+   "tldr": "For about 11 hours on October 29, Cursor's marketplace served a tampered Claude Code extension that planted an SSH backdoor and phoned home with host details; Cursor says at most 5,000 users were affected.",
+   "category": "Safety & Security",
+   "byline": "Phorion, Ars Technica, The Register"
+  },
+  {
+   "id": "2026-10-31-n2",
+   "date": "2026-10-31",
+   "type": "news",
+   "title": "OpenAI, Google, Microsoft and Anthropic back one robots.txt signal for opting out of AI training",
+   "tldr": "OpenAI, Google, Microsoft and Anthropic say they will honor one robots.txt token, proposed at the IETF by an Anthropic standards lead, that lets websites opt out of generative-AI training for all of them at once.",
+   "category": "Policy & Legal",
+   "byline": "OpenAI, IETF, The Verge"
+  },
+  {
+   "id": "2610.40503",
+   "date": "2026-10-31",
+   "type": "paper",
+   "title": "Algebraic World Model: From Exploration to Proofs",
+   "tldr": "An agent that learns an unfamiliar game's rules, compresses them into an explicit algebraic model and formalizes it in Lean can prove levels unwinnable; it also clears all 183 public ARC-AGI-3 levels.",
+   "primary_tag": "AI for Math",
+   "tags": [
+    "AI for Math",
+    "World Models",
+    "Agents"
+   ],
+   "byline": "Guancheng Pan, Qixin Tan, Yang Yuan et al. · Zhejiang University, Tsinghua University, Shanghai Qi Zhi Institute"
+  },
+  {
+   "id": "2610.40325",
+   "date": "2026-10-31",
+   "type": "paper",
+   "title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
+   "tldr": "A controlled study of looped transformers up to 1B parameters shows which layers to loop under which budget, and how small fixes let loops run in parallel during decoding while keeping much of the gain.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency"
+   ],
+   "byline": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan et al. · FAIR at Meta, MIT"
+  },
+  {
+   "id": "2610.40565",
+   "date": "2026-10-31",
+   "type": "paper",
+   "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+   "tldr": "Coding agents, checked by adversarial auditor agents, build 25 realistic robotics simulations of economically valuable work; frontier models fail every test task, but simulator access helps them learn and teach small policies.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Pranjal Aggarwal, Sean Welleck · Carnegie Mellon University"
+  },
+  {
+   "id": "2610.38331",
+   "date": "2026-10-31",
+   "type": "paper",
+   "title": "Multi-Token Prediction Done Right",
+   "tldr": "The usual multi-token prediction loss hides a useful self-distillation gradient under a noisy residual; a one-line change removes the residual and improves perplexity, speculative decoding and fine-tuned math and code.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Efficiency"
+   ],
+   "byline": "Jayden Teoh"
+  },
+  {
+   "id": "2610.40655",
+   "date": "2026-10-31",
+   "type": "paper",
+   "title": "Elucidating the Design Space of LM Data Attribution",
+   "tldr": "A benchmark built on invented facts shows that data attribution fails because evidence in a few tokens gets averaged away; scoring with log-odds gradients and only top tokens boosts recall by 35 to 72 points.",
+   "primary_tag": "Interpretability",
+   "tags": [
+    "Interpretability",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Steven Yu, Sheng-Yu Wang, Kimia Hamidieh et al. · Northeastern University, MIT"
+  },
   {
    "id": "2026-10-30-n1",
    "date": "2026-10-30",
@@ -510,25 +602,25 @@
   ]
  },
  "tag_counts": {
+  "AI for Math": 2,
+  "World Models": 4,
+  "Agents": 9,
+  "Architectures": 3,
+  "Efficiency": 7,
+  "Robotics": 5,
+  "Evaluation & Benchmarks": 5,
+  "Pre-training & Data": 5,
+  "Interpretability": 2,
   "Theory": 1,
-  "Pre-training & Data": 4,
   "Multimodal": 5,
   "Reinforcement Learning": 7,
   "Post-training": 7,
   "AI for Science & Health": 1,
-  "Evaluation & Benchmarks": 3,
-  "World Models": 3,
   "Generative Models": 1,
   "Computer Vision": 1,
   "Reasoning": 5,
-  "Efficiency": 5,
   "RSI": 3,
-  "Agents": 7,
   "Safety & Alignment": 4,
-  "Architectures": 2,
-  "Robotics": 4,
-  "AI for Math": 1,
-  "Interpretability": 1,
   "Retrieval & Memory": 1,
   "LLMs": 1
  },
@@ -545,6 +637,8 @@
   "People"
  ],
  "category_counts": {
+  "Safety & Security": 1,
+  "Policy & Legal": 1,
   "Model Release": 5,
   "Earnings & Markets": 2,
   "Research": 1,

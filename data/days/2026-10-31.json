@@ -1,0 +1,366 @@
+{
+ "date": "2026-10-31",
+ "edition": "weekend",
+ "generated_at": "2026-11-02T05:22:21+00:00",
+ "backfill": true,
+ "summary": "Weekend edition: a backdoored Claude Code extension hits Cursor users, the big AI labs back one robots.txt opt-out for training, and the week's best unfeatured papers on provable world models, looped transformers, agent-built robot simulators, multi-token prediction and data attribution.",
+ "news": [
+  {
+   "id": "2026-10-31-n1",
+   "story_key": "cursor-claude-code-extension-backdoor",
+   "title": "Backdoored Claude Code extension on Cursor's marketplace exposed up to 5,000 developers",
+   "category": "Safety & Security",
+   "published": "2026-10-30T01:30:00-04:00",
+   "tldr": "For about 11 hours on October 29, Cursor's marketplace served a tampered Claude Code extension that planted an SSH backdoor and phoned home with host details; Cursor says at most 5,000 users were affected.",
+   "why_selected": "A supply-chain attack on a mainstream AI coding tool with broad, independent security coverage and lessons for every team running agentic IDEs.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "AI coding assistants are usually installed as editor extensions, and an extension runs with the permissions of the editor and the developer using it: it can read source code, SSH keys and credential files. Cursor, an AI code editor built on Microsoft's open-source VS Code, runs its own extension marketplace, which carries Anthropic's Claude Code extension. Extensions in Cursor update automatically by default, so whatever is published under a trusted listing reaches users quickly."
+    },
+    {
+     "heading": "What happened",
+     "body": "According to Cursor's advisory, a maliciously modified version 2.1.313 of the extension was available on its marketplace between about 2:27 a.m. and 1:35 p.m. Pacific time on Thursday, October 29, reaching at most 5,000 users; Phorion later noted Cursor's updated notice also lists 2.1.312. Phorion, an endpoint-security firm that first spotted it, published an analysis early Friday: code prepended to the extension's main file runs on load, adds an attacker's SSH key, tries to enable SSH, opens a reverse SSH tunnel, installs persistence that retries every 60 seconds, and reports hostname, username, Git email, public IP and the names of credential-like environment variables. Bugs meant SSH usually could not be switched on unless already running. Cursor pulled the version, shut its marketplace to rotate keys and audit other extensions, and had the attacker's server cut off. Anthropic's Felix Rieseberg said Anthropic's systems were not compromised and it did not build or publish the copy; researchers said it shipped under Anthropic's official account."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The incident shows why AI developer tools are prime targets. One upload to a trusted listing plus auto-update reached up to 5,000 machines within hours, and the payload sat inside the process that already sees a company's code and secrets. Collecting the names of variables such as API keys and cloud tokens, rather than their values, looks like triage, Phorion notes: an inventory telling the operator which machines deserve a follow-up visit. The dispute over responsibility exposes a gap in third-party marketplaces that redistribute a vendor's extension: a verified badge says little if whoever controls the listing can be impersonated or the marketplace itself abused. Updating does not remove the persistence, so affected teams have to hunt for the planted key, rotate secrets and possibly rebuild machines."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How the attacker obtained publishing access, which neither Cursor nor Anthropic had explained; whether marketplaces start verifying extensions against the vendor's own signed builds; and whether any follow-on intrusions use the collected host inventories."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Phorion",
+     "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/a/5306682"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-31-n2",
+   "story_key": "shared-robots-txt-ai-training-opt-out-token",
+   "title": "OpenAI, Google, Microsoft and Anthropic back one robots.txt signal for opting out of AI training",
+   "category": "Policy & Legal",
+   "published": "2026-10-30T05:30:00-04:00",
+   "tldr": "OpenAI, Google, Microsoft and Anthropic say they will honor one robots.txt token, proposed at the IETF by an Anthropic standards lead, that lets websites opt out of generative-AI training for all of them at once.",
+   "why_selected": "A rare cross-industry commitment on training-data consent that affects every website operator and the makeup of future web-scale training corpora.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Websites tell crawlers what they may fetch through robots.txt, a plain-text file of rules addressed to named crawlers. For AI training there has been no common name: a publisher wanting out has to signal each company separately. Publishers are meanwhile coping with a surge of AI crawlers; some have turned to the Really Simple Licensing (RSL) standard to charge them, and Cloudflare now blocks AI crawlers by default. An Internet Engineering Task Force (IETF) working group, aipref, is drafting shared vocabulary for such preferences."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 30, OpenAI said it will honor a shared robots.txt signal for AI training preferences, and The Verge reported that Google, Microsoft and Anthropic will adopt the same signal. It is defined in an IETF Internet-Draft proposed by Kevin Kelley, Anthropic's technical lead for standards. Sites write an ordinary rule group addressed to a pseudo-crawler named __usage_ai-training: a Disallow on a path means \"do not train on this\", an Allow means training is welcome, and a site can, for example, refuse training everywhere except a press-kit folder. The draft adds no new syntax, says wildcard rules do not count as a preference, and keeps crawl permissions separate. Training here means updating the parameters of a generative model, following aipref's definitions. Anthropic already honors the token; Google and Microsoft plan support next year and OpenAI in the coming months. Microsoft will also let sites opt out of AI grounding separately, while still appearing in Bing search. Meta voiced support but did not commit to honoring it."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A single line replaces a growing list of company-specific signals, which lowers the effort of saying no. More important, it makes one distinction standard across the major labs: whether a crawler may fetch a page is a separate question from whether that page may be used to train a model, so a news site can stay in search results while declining training. For researchers, the token will shape what the largest labs' future web corpora contain. The limits are real: it is an Internet-Draft, a work in progress rather than a ratified standard; compliance is voluntary; and the draft ties preferences to the robots.txt in force when a page was fetched, so data already collected is unaffected."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Actual implementation dates, whether Meta and other crawler operators commit, whether the aipref working group adopts the draft, and how many large publishers add the token."
+    }
+   ],
+   "sources": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+    },
+    {
+     "name": "IETF",
+     "url": "https://www.ietf.org/archive/id/draft-kelley-aipref-training-preference-signal-00.html"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.40503",
+   "title": "Algebraic World Model: From Exploration to Proofs",
+   "authors": [
+    "Guancheng Pan",
+    "Qixin Tan",
+    "Yang Yuan",
+    "Andrew Chi-Chih Yao"
+   ],
+   "affiliations": [
+    "Zhejiang University",
+    "Tsinghua University",
+    "Shanghai Qi Zhi Institute"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "AI for Math",
+   "tags": [
+    "AI for Math",
+    "World Models",
+    "Agents"
+   ],
+   "tldr": "An agent that learns an unfamiliar game's rules, compresses them into an explicit algebraic model and formalizes it in Lean can prove levels unwinnable; it also clears all 183 public ARC-AGI-3 levels.",
+   "why_selected": "A new capability, machine-checked impossibility proofs about environments whose rules were never given, with strong ARC-AGI-3 results and fully released models and proofs.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Lean-based AI systems now prove hard theorems, but only after someone writes down the definitions. An agent in an unfamiliar environment must first discover the objects and rules. Showing a goal is reachable only needs one winning run; showing it is unreachable means ruling out every action sequence, including untried ones, which trial and error cannot do."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Code world models have agents write simulators that reproduce observed transitions. But a simulator can match every sampled transition and still miss a key rule, and searching it only finds routes: an upper bound on cost, not proof that nothing cheaper exists."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of Euler and the Königsberg bridges: once land masses become vertices and bridges edges, a parity argument rules out every walk without enumerating any. The Algebraic World Model (AWM) looks for such structure automatically. First, the agent plays while keeping a book of Python hypotheses, each with a checker, and may continue only while none contradicts a recorded transition. Second, it rewrites hypotheses as typed objects and rules, then merges or splits them with four category-theory-guided transformations checked in Lean; merged rules must still reject every corrupted transition the originals rejected. In one game, eleven concepts about four button types collapse into one rule: a press permutes tiles. Third, it formalizes the model in Lean 4, where a winning witness proves reachability and an invariant, such as a color count, or a lower bound on remaining cost proves impossibility."
+    },
+    {
+     "heading": "Results",
+     "body": "With Claude Opus 5, AWM clears all 25 public ARC-AGI-3 games (183 levels), scoring 99.9 versus 40.7 for Opus 5 in the official harness without code execution, with certified wins using 43% of the human baseline's actions. On two levels sealed one unit below their minimum winning cost, all six AWM runs produced kernel-checked impossibility proofs; Claude Opus 5.5 and GPT-6 Astra with coding tools produced none in twelve runs. AWM's initial cost bounds were correct in four of six runs, versus one and zero, and six of six after feedback."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This joins empirical learning and formal proof: an agent can certify facts about a world whose rules it was never told, and explicit rules make mistakes traceable. Showing Claude the rules a proof relied on raised its success at exposing a planted faulty rule from 16 to 29 of 42 runs. Caveats: proofs hold under the learned model, and tests cover only discrete, deterministic games."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40503",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40503"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 16,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2610.40325",
+   "title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
+   "authors": [
+    "Chanakya Ekbote",
+    "Artidoro Pagnoni",
+    "Devendra Singh Sachan",
+    "Shruti Bhosale",
+    "Mike Lewis",
+    "Maryam Fazel-Zarandi",
+    "Shashank Rajput",
+    "Sujan Kumar Gonugondla"
+   ],
+   "affiliations": [
+    "FAIR at Meta",
+    "MIT"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency"
+   ],
+   "tldr": "A controlled study of looped transformers up to 1B parameters shows which layers to loop under which budget, and how small fixes let loops run in parallel during decoding while keeping much of the gain.",
+   "why_selected": "The most systematic look yet at recurrent depth, a trending way to buy capability with compute instead of parameters, with practical recipes from Meta FAIR.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Looping a transformer means running the same layers several times, making the network effectively deeper without storing more weights. Whether that pays off depends on which constraint binds: memory for parameters, training compute, or decoding speed. Prior studies used different designs and budgets, so it was unclear which conclusions generalize."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work showed shared, repeated layers recover part of the benefit of real depth, and that small per-loop adapters help when converting pretrained models. Parallel Loop Transformers (PLT) attack decoding latency by changing which state each loop reads, so loops can run at the same time, but reported gains shrink as loops are added."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Picture decoding a looped model as an assembly line where each station waits for the previous one to finish the same token. PLT staggers the line: loop k at the current token reads loop k-1's output from the previous token, which already exists, so all loops can work at once. The authors found this loses much of looping's benefit. Part of the loss comes from the shift itself, but a second cause is fixable: the current token's embedding and the carried state differ greatly in magnitude, so adding them lets one drown out the other. Normalizing each separately and mixing them with a small learned gate recovers much of the quality. The embedding is essential: without it, each loop must infer which token occurred from a prediction made a step earlier, and quality falls below an unlooped model. Separately, small per-loop low-rank adapters let repeated passes specialize."
+    },
+    {
+     "heading": "Results",
+     "body": "Experiments span 70M to 1B parameters, up to 155B tokens, 1.07×10^21 FLOPs and 32 loops, scored by validation bits per byte. Looping the whole stack is best at a fixed parameter count, looping a middle block is best when training FLOPs are tight, and gains saturate or reverse at high loop counts. Per-loop adapters add 1.1 to 4.3% of non-embedding parameters, versus 51.4% for doubling depth, and help most at four to eight loops. At 1B with two loops, the fixed parallel variant beats full-stack looping at every training budget shown."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For memory-bound deployment such as on-device models, looping trades stored weights for compute, and the parallel fix removes much of the latency penalty. Caveats: models are dense, at most 1B parameters and judged mainly by language-modeling loss, and a genuinely deeper model still beats adapter-equipped loops at matched FLOPs."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40325",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40325"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 7,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Mike Lewis"
+    ]
+   }
+  },
+  {
+   "id": "2610.40565",
+   "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+   "authors": [
+    "Pranjal Aggarwal",
+    "Sean Welleck"
+   ],
+   "affiliations": [
+    "Carnegie Mellon University"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "Coding agents, checked by adversarial auditor agents, build 25 realistic robotics simulations of economically valuable work; frontier models fail every test task, but simulator access helps them learn and teach small policies.",
+   "why_selected": "Turns simulator building, a long-standing bottleneck for embodied AI, into a coding-agent task that improves as agents improve, and releases a hard new benchmark.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Simulation is the cheap way for robots to practice: thousands of parallel episodes, instant resets, full ground-truth state and automatic rewards. But existing simulators cover a narrow slice of real physical work. Liquids that form drops, steel that melts under a welding arc or ink that leaves marks are poorly covered, because building each realistic simulator takes expert time."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Benchmarks are mostly hand-built and focus on rigid or articulated objects on tabletops, with a few covering a single material such as liquids or cloth. Asking a coding agent to build a simulator fails in telling ways: it replaces missing mechanics with animations, tunes parameters until things look right, or reports behavior it never checked, since a render can show an object with no physical effect."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Treat simulator building like construction with independent inspectors. Simulations are chosen from U.S. data on occupations, their economic value and time use: jobs are broken into atomic physical actions weighted by economic value, giving 120 candidates, of which 25 were built. A creation agent writes each simulation and must supply evidence such as renders, physical measurements and assisted demonstrations showing every needed interaction is physically possible. Four audit agents, one of which tries to break the physics with legal robot actions, check ten criteria over three rounds, sharing a memory of lessons. Tasks get the same treatment from six auditors, with verifiers computed from physical state rather than a vision-language judge; a welding task is graded against the AWS D1.1 welding code. All agents are Claude Opus 5.5."
+    },
+    {
+     "heading": "Results",
+     "body": "The resulting RoboWorld has 25 simulations and 200 environments (25 test, 175 training). GPT-6 Astra, GPT-6.1 Terra and Claude Opus 5.5 succeed on none of the test tasks, with average rewards of 0.002 to 0.06. On 25 easier training tasks, Opus reaches 32% success, Astra 24% and Terra 12%; on humanoids, the GPT models earn nothing. Privileged access to simulator state more than doubles first-attempt reward, and demonstrations from model-written code policies raise the π0.5 robot policy from 0% to 53% success on gift-box tasks."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If simulator quality now scales with coding-agent ability, embodied AI gets a flywheel that hand-built simulators never had. Caveats: realism is judged by agents' evidence and visual comparisons rather than real-robot transfer, the same model family builds the tasks and is evaluated on them, and frontier models often overstated their own success."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40565",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40565"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 14,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2610.38331",
+   "title": "Multi-Token Prediction Done Right",
+   "authors": [
+    "Jayden Teoh"
+   ],
+   "affiliations": [],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Efficiency"
+   ],
+   "tldr": "The usual multi-token prediction loss hides a useful self-distillation gradient under a noisy residual; a one-line change removes the residual and improves perplexity, speculative decoding and fine-tuned math and code.",
+   "why_selected": "An exact, nearly free fix to a training objective used by DeepSeek, Kimi, GLM and Nemotron models, plus a reusable trick for computing KL gradients cheaply.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Multi-token prediction (MTP) adds extra heads that guess two, three or four tokens ahead. It is widely adopted, in models such as DeepSeek-V3/4, Kimi K3 and GLM-5, because it improves downstream accuracy and the heads can draft tokens for speculative decoding. Drafts are accepted only if they match the model's own next-token prediction, yet how best to train these heads was poorly understood."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Frontier models train MTP heads with ordinary cross-entropy against the real future tokens. Training them instead to match the model's own next-token distribution, via a KL divergence, suits speculative decoding better but requires materializing vocabulary-sized logit matrices for teacher and student, which costs memory and breaks the fused cross-entropy kernels used in large-scale pre-training."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The paper shows the cross-entropy gradient of an MTP head splits exactly into two parts. One pulls the head toward what the model's own next-token head will predict at that future position, which is precisely the KL self-distillation signal. The other is the next-token head's own error against the single observed token. Think of a student graded both on matching the teacher's answer and on the teacher's mistakes against a noisy one-sample answer key. That second term has about four times lower signal-to-noise ratio, yet carries roughly 80% of the MTP gradient reaching the shared trunk, and pushing along it raises next-token loss. The fix adds a numerically zero term, a stop-gradient copy of the MTP hidden state minus the state itself, to the aligned next-token state. The forward pass is unchanged, but backpropagation now cancels the noisy residual, leaving the exact KL gradient with no extra logits."
+    },
+    {
+     "heading": "Results",
+     "body": "Models from 167M to 1.2B parameters were trained on about 31.5B FineWeb-Edu tokens with three MTP heads. Against standard MTP, Soft-MTP improves speculative-decoding acceptance length by 1.8 to 2.2% and speedup by 1.4 to 1.5% at every scale, and zero-shot accuracy by about 0.5 points at 689M and 1.2B, overtaking a next-token-only baseline. After fine-tuning the 1.2B model, it gains 1.1 points on GSM8K, 1.8 on MATH-500 and 3.1 on HumanEval pass@64."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Anyone training with MTP gets a free improvement, and the trick generalizes: whenever teacher and student share an output layer, a forward-KL gradient can be recovered from cross-entropy gradients, which could make self-distillation methods cheaper. Caveats: gains are modest and shown only up to 1.2B parameters, and DeepSeek's latest Flash model dropped MTP for a separately trained drafter."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.38331",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.38331",
+    "code": "https://github.com/JaydenTeoh/Soft-MTP"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 40,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 19,
+    "org": "Massachusetts Institute of Technology"
+   }
+  },
+  {
+   "id": "2610.40655",
+   "title": "Elucidating the Design Space of LM Data Attribution",
+   "authors": [
+    "Steven Yu",
+    "Sheng-Yu Wang",
+    "Kimia Hamidieh",
+    "Antonio Torralba",
+    "David Bau"
+   ],
+   "affiliations": [
+    "Northeastern University",
+    "MIT"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Interpretability",
+   "tags": [
+    "Interpretability",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "A benchmark built on invented facts shows that data attribution fails because evidence in a few tokens gets averaged away; scoring with log-odds gradients and only top tokens boosts recall by 35 to 72 points.",
+   "why_selected": "Simple, method-agnostic fixes with large gains for a tool that copyright, credit and misalignment tracing increasingly rely on, plus a controlled benchmark.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Data attribution asks which training documents caused a model to say something, a question behind copyright disputes, credit for data creators and tracing where bad behaviors came from. Checking an answer properly means retraining without those documents, which is too expensive at scale, so the field lacks reliable tests. Existing benchmarks change several things at once and reach conflicting verdicts, sometimes with simple keyword search beating influence functions."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most methods descend from influence functions: they compare the gradient of a query's loss with the gradient of each training document's loss, with approximations of the Hessian such as EK-FAC or TRAK, or along the training trajectory as in TracIn. A document's score uses the gradient of its average token loss, and most algorithmic work has focused on making these approximations faster."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors fine-tune Qwen3.5-4B on entirely fictitious facts, such as new function names that always return a fixed value, so the documents stating each fact are its only possible source. They then vary one property at a time: copies per fact, distracting look-alike documents, or number of facts. The diagnosis is dilution. The evidence sits in a handful of tokens, but the score averages every token, like judging a trial by averaging all bystanders' testimony instead of asking the one witness. Two fixes follow. Cross-entropy's gradient is the negative log-odds gradient multiplied by one minus the token's probability, so it silences exactly the tokens the model learned confidently, often the fact itself; switching to negative log-odds removes that damping. Then a document is scored by the average of its top-k token scores, for example the top 10."
+    },
+    {
+     "heading": "Results",
+     "body": "As copies per fact grow from 1 to 50, TRAK's recall collapses from about 0.9 to below 0.1. In one diagnostic, recall rises from 0.01 with cross-entropy over all tokens to 1.00 with both fixes. Across six methods, recall improves by 35 to 72 percentage points. On the external FTRACE-TREX benchmark, removing TRAK's top-ranked documents and retraining now cuts accuracy by 40% instead of 8%, a 4.9× improvement."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The fixes are cheap, apply to any gradient-based attribution method, and warn that document-level scores already used to trace behaviors can be unreliable. Caveats: tests use single-token answers and single-task fine-tuning, the top-k cutoff has no ground truth in practice, and keyword search remains strong on this benchmark."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40655",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40655"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 32,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Antonio Torralba",
+     "David Bau"
+    ]
+   }
+  }
+ ]
+}
