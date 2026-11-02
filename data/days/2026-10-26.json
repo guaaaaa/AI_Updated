@@ -1,0 +1,364 @@
+{
+ "date": "2026-10-26",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T04:02:41+00:00",
+ "backfill": true,
+ "summary": "Moonshot's near-frontier Kimi K3.1 Pro and OpenAI's cheaper GPT-6.1 Terra; papers on scaling laws for synthetic rewrites, data-free self-training, what agent context compaction silently drops, nested-sparsity transformers, and diverse robot demonstrations.",
+ "news": [
+  {
+   "id": "2026-10-26-n1",
+   "story_key": "moonshot-kimi-k3-1-pro-launch",
+   "title": "Moonshot launches Kimi K3.1 Pro, a near-frontier model with open weights promised by Nov 4",
+   "category": "Model Release",
+   "published": "2026-10-23T13:18:00-04:00",
+   "tldr": "Moonshot's Kimi K3.1 Pro scores within a few points of Claude Opus 5.5 on agentic coding and an independent index, costs half as much, and is due as open weights by Nov 4.",
+   "why_selected": "Set to be the highest-scoring open-weight model on an independent index, plus an unusually concrete account of limiting cyber capability before release.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Moonshot AI, the Chinese lab behind the Kimi models, is one of the main sources of large open-weight models. Its previous flagship, Kimi K3, is a roughly three-trillion-parameter model. The top of the leaderboards belongs to closed models: Anthropic's Claude Opus 5.5, OpenAI's GPT-6 Astra and Google's Gemini 4 Argon. Open-weight releases have usually trailed them by a visible margin."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 23 Moonshot released Kimi K3.1 Pro, which it calls its most capable \"3T-class\" open-weight model. It has a 1-million-token context window, and a Highspeed variant runs 2-3x faster at twice the price. The model is live in Kimi's apps, Kimi Code and the API, and Moonshot says the weights will be released by November 4. K3.1 Pro is Kimi K3 with much more reinforcement-learning post-training, run jointly across hundreds of task domains. API pricing is $2 per million input tokens and $10 per million output tokens: the same as GPT-6.1 Sol and half of Opus 5.5. On Terminal-Bench 4.0, Moonshot reports 65.7%, against 58.2% for GPT-6 Astra and 66.4% for Opus 5.5. Artificial Analysis's independent index scores it 55. Only Opus 5.5 is higher (58); Claude Fable 5.1, GPT-6 Astra and Gemini 4 Argon score 53 each."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the weights ship as promised, anyone could host, fine-tune or study a model within a few points of the best closed systems. Simon Willison notes that no open-weight model has scored this high against the frontier before. That puts pressure on API prices.\n\nThe release notes also contain a rare quantitative account of capability control. Moonshot found that exploit-writing skill was rising as post-training scaled. The cause was cyber-related content buried in its general mid-training corpus and RL tasks. For the open release it removed that data from both stages. On its internal xdev-bench-hard exploit benchmark, the unfiltered checkpoint solved 90.5% of tasks (pass@3), while the released model solved 81.0%. Moonshot says the released model stays behind proprietary models that have been public for at least three months, and that it will not ship open weights that push the cyber frontier."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Will the weights arrive by November 4, and under what license? Do independent evaluations match Moonshot's mostly self-reported benchmarks? Once the weights are public, can fine-tuning restore the removed cyber skills?"
+    }
+   ],
+   "sources": [
+    {
+     "name": "Moonshot AI",
+     "url": "https://www.kimi.ai/blog/kimi-k3-1-pro"
+    },
+    {
+     "name": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-n2",
+   "story_key": "openai-gpt-6-1-terra-launch",
+   "title": "OpenAI launches GPT-6.1 Terra, a cheaper and faster computer-use model",
+   "category": "Model Release",
+   "published": "2026-10-25T20:00:00-04:00",
+   "tldr": "OpenAI's GPT-6.1 Terra costs $1/$5 per million tokens and, by OpenAI's measurements, matches GPT-6 Astra on a professional-task benchmark at a tenth of the price; OpenAI rates it Critical for cybersecurity.",
+   "why_selected": "A frontier lab's new model tier that cuts the cost of agentic computer use and puts Critical-level cyber capability in a cheap, widely available model.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "OpenAI's current lineup has three tiers. GPT-6 Astra, launched in early September, is the most capable. GPT-6.1 Sol is mid-priced at $2/$10 per million tokens. Terra is the fast, cheap tier, last updated as GPT-5.6 Terra. Computer use, meaning agents that operate desktop software through screenshots and clicks, is a main battleground for office work. On September 1, Astra became OpenAI's first model rated Critical for cybersecurity under its Preparedness Framework."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Sunday evening, October 25, OpenAI introduced GPT-6.1 Terra. It describes the model as combining \"detailed visual reasoning and precise computer use alongside clearer, more natural writing.\" It is available to Plus, Pro, Enterprise and Edu users in ChatGPT Work and Codex, and through the API as gpt-6.1-terra. The price is $1 per million input tokens and $5 per million output tokens, half of GPT-5.6 Terra and GPT-6.1 Sol.\n\nAll performance figures are OpenAI's own. On Agents' Last Exam at medium effort, Terra scores 15 points above GPT-5.6 Terra at about a third of the cost, and OpenAI says it is \"on par with GPT-6 Astra at only one-tenth its price per token.\" It completes tasks more than three times faster than Astra and Sol. It solves 50.3% of Terminal-Bench 4.0, against 21.5% for GPT-5.6 Terra. On error-inducing prompts at low effort, its error rate falls from 53.6% to 16.7%. OpenAI also says Terra meets the Critical cyber threshold and keeps Astra's safeguards."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The economics shift first. If a cheap tier really matches the flagship on professional tasks, high-volume automation becomes affordable: invoice entry, form filling, video edits. At $1/$5, Terra costs a quarter of Opus 5.5 per token, which pressures rivals' small models.\n\nThe safety signal may matter more. In OpenAI's framework, Critical cyber capability means a model, with tools, can find and exploit unknown flaws in hardened real-world systems without human help, or run a novel end-to-end attack from a high-level goal. Less than two months after Astra, that level now ships at the cheapest tier. Protection therefore rests on OpenAI's safeguards rather than on missing capability. Moonshot took the opposite route for its open-weight Kimi release days earlier: it removed cyber data before release."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent checks of Terra's speed, computer-use reliability and error rates. Whether Anthropic and Google cut prices on their small tiers. How well safeguards hold when Critical-level cyber capability sells at $1 per million tokens."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/"
+    },
+    {
+     "name": "Help Net Security",
+     "url": "https://www.helpnetsecurity.com/2026/10/27/gpt-6-1-terra-released/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.31867",
+   "title": "Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints",
+   "authors": [
+    "Nicholas Roberts",
+    "Ahmed Ahmed",
+    "Suhas Kotha",
+    "Percy Liang",
+    "Yu Wang",
+    "Alex Renda",
+    "Nitya Mani"
+   ],
+   "affiliations": [
+    "Princeton University",
+    "Stanford University",
+    "Jane Street"
+   ],
+   "announced": "2026-10-25T20:00:00-04:00",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "LLMs"
+   ],
+   "tldr": "A scaling law that charges for the compute spent generating synthetic rewrites predicts how much of a pretraining corpus should be rewritten, and shows that models trained on rewrites can beat the rewriter.",
+   "why_selected": "Turns a standard but ad hoc pretraining ingredient into a predictable knob, validated by a 33x extrapolation to a 22B model.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Pretraining corpora now routinely include synthetic rewrites: a language model restates a web page as a tutorial, FAQ, table or math exposition. Two basic questions are open. How much of a fixed compute budget should go to generating rewrites rather than training? And does the rewriter's own skill cap the model trained on its output?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Recent scaling studies of synthetic data, one fitting a separate Chinchilla-style law to each mixture, use a generator stronger than the models they train, and none charge for generation compute. They answer how much to rewrite if rewrites were free. One projected that paraphrasing stops helping above about 7B parameters."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of the rewriter as a tutor who re-explains textbook pages. Each page teaches more, but the tutor's time comes out of your study budget. The authors make the rewrite fraction R (the share of training tokens that are rewrites) a scaling-law input, and they bill for it.\n\nPredicted loss is the usual Chinchilla terms in model size N and tokens D, plus a mix-dependent irreducible loss E(R) and a penalty F for re-reading a small natural seed set over several epochs. Total compute is 6ND for training plus 4 x N_r x R x D, since an N_r-parameter rewriter reads and writes each rewritten token. Fit on cheap runs, then minimize predicted loss over N, D and R at a fixed budget."
+    },
+    {
+     "heading": "Results",
+     "body": "With plentiful natural data (FineWeb-Edu) and SmolLM2-1.7B rewrites, the optimal R rises from under 10% at 3x10^18 FLOPs to 32% at 10^22 FLOPs, 33x beyond the largest fitted budget. At that budget, a 22B model at R=0.32 landed within 1.1% of its predicted loss and beat the other tested mixes. It reached 0.983 Paloma bits per byte, against 1.061 for natural data alone. It also beat its rewriter on 10 of 16 Paloma sources, with about a tenth of the rewriter's training compute.\n\nWith only a 5B-token seed set and a same-size rewriter pretrained on it, rewrites still beat the best natural-only run at every size up to 3B."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Synthetic-data mixing becomes a predictable design choice, and the rewriter need not cap its student, which matters most for data-limited frontier training. Caveats: every optimum uses FineWeb-Edu as the seed (rewrites help less on DCLM). Only four rewrite styles and one rewriter per setting were tested, and rewriter pretraining cost is ignored."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.31867",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.31867"
+   },
+   "signals": {
+    "notable_authors": [
+     "Percy Liang"
+    ]
+   }
+  },
+  {
+   "id": "2610.32770",
+   "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models",
+   "authors": [
+    "Leon Sick",
+    "Lukas Hoyer",
+    "Yannick Strümpler",
+    "Christian Reisswig",
+    "Timo Ropinski",
+    "Federico Tombari"
+   ],
+   "affiliations": [
+    "Google",
+    "Ulm University"
+   ],
+   "announced": "2026-10-25T20:00:00-04:00",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "RSI",
+    "Multimodal"
+   ],
+   "tldr": "Given only topic names, a model writes its own problems and answer hints, then distills from a copy of itself that sees the hints, improving MMLU by 10 points with no curated prompts or answers.",
+   "why_selected": "A clean, general recipe for self-improvement without curated prompts or labels, which beats SFT and RL on the same self-generated data.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Every post-training method borrows supervision from somewhere. Supervised fine-tuning (SFT) needs reference solutions. Reinforcement learning with verifiable rewards needs gold answers. Distillation needs a stronger teacher. Even self-training starts from a human-curated problem set. Can a model improve given nothing but a list of topic names?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "On-policy self-distillation (OPSD) makes one model both student and teacher. The teacher sees a privileged reference solution, and the student learns to match the teacher's token predictions on its own samples. Supervision is dense, but the reference still comes from humans. Self-play methods such as R-Zero generate their own problems but reduce feedback to one scalar reward."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Picture a student who drafts a practice problem with a rough answer key, then learns from how a better-informed self would reason through it. Given a topic such as \"Abstract Algebra,\" the model writes a question plus a rationale and answer. Only the teacher sees the rationale and answer. The student gets the question, samples a solution, and is trained to match the teacher's next-token distribution along it. Because the answer is context rather than a target, the teacher can fill in missing steps and discount flaws.\n\nTwo filters keep the data useful. Pseudo-verification keeps a problem only if the model reproduces its answer in a fresh context and after paraphrasing. A consensus gate drops problems the student already answers consistently. The teacher is a moving average of the student."
+    },
+    {
+     "heading": "Results",
+     "body": "On Gemma 4 E2B without thinking, the method (OPST) raises MMLU by 10.2 points, GPQA by 4.0 and HellaSwag by 7.5. On identical self-generated data it beats SFT by 1.3 to 5.6 points on average across model sizes and thinking modes. Among methods without reference solutions it has the best average in all four settings, beating R-Zero by 1.4 to 5.2 points. At 2B without thinking it recovers 88% of fully supervised OPSD's gain. With 75% of answers made wrong (filters off), OPST stays 3.3 points above the base model while SFT falls 4.4 below. On unlabeled images, VQAv2 accuracy rises 6.9 points."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Much post-training gain seems latent and recoverable without curated data. Treating a noisy answer as a hint rather than a label is a trick other pipelines could reuse. Caveats: the method only amplifies existing knowledge, and pseudo-verification checks self-consistency, not correctness. Only small models were tested, and MATH-500 dropped 4.9 points in a multi-domain run."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.32770",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.32770"
+   },
+   "signals": {
+    "hf_upvotes": 48,
+    "org": "Google"
+   }
+  },
+  {
+   "id": "2610.31778",
+   "title": "Benchmarks Are Surprisingly Compaction-Friendly",
+   "authors": [
+    "Jeanne Salle",
+    "Hardik Bhatnagar",
+    "Matthias Bethge",
+    "Sahar Abdelnabi",
+    "Maksym Andriushchenko"
+   ],
+   "affiliations": [
+    "ELLIS Institute Tübingen",
+    "Max Planck Institute for Intelligent Systems",
+    "Tübingen AI Center",
+    "University of Tübingen"
+   ],
+   "announced": "2026-10-25T20:00:00-04:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Evaluation & Benchmarks",
+    "Safety & Alignment"
+   ],
+   "tldr": "When long-running coding agents summarize their context to keep going, benchmark scores barely change, but the rules they were given quietly disappear from the summaries.",
+   "why_selected": "Answers practical questions every agent-scaffold builder faces, and surfaces a safety gap that standard benchmark scores cannot see.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Long agent runs can produce hundreds of thousands of tokens. Scaffolds like Claude Code, Codex CLI and OpenCode handle this with compaction: the model summarizes its work, the context is wiped, and the agent continues from the summary. Does this lossy step hurt results, and does the agent still follow its rules?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Prior work measured what survives a summary, not what happens to the task. One such study, COMPINT, mostly used open-weight models with about 128K-token windows and simulated compaction by truncation. Others tested long-input question answering with the input given upfront. Nobody had run frontier agents on realistic long tasks where the agent generates its own context."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of a shift handover on a building site. The blueprints stay on site, but a spoken \"don't touch that wall\" survives only if it makes the handover note. The authors fix one scaffold (OpenCode) and swap in five compaction strategies: default self-summary, pruning old tool outputs, saving the full context to a file, deleting reasoning blocks, and summaries by the smaller Claude Haiku 4.5. They sweep the trigger from 160K to 380K tokens. Claude Opus 4.6, GPT-5.4, GPT-5.3-Codex and Gemini 3.1 Pro Preview run on PaperBench, ProgramBench and PostTrainBench. ProgramBench states its three anti-cheating rules only once, in the first message: no copying, no internet, original code. That makes it a direct test of rule survival."
+    },
+    {
+     "heading": "Results",
+     "body": "For the two 1M-context models, the trigger point did not matter. GPT-5.3-Codex, with a 400K window, rose from 0.38 at 160K to about 0.60 at 260K and above on PaperBench. No strategy beat the default summary, and Haiku-written summaries cut GPT-5.4 from 0.59 to 0.43 without hurting Opus.\n\nRules eroded steadily. The first summary dropped about 0.92 of the three rule categories, rising to 2.65 by the 30th. Per compaction, GPT-5.3-Codex dropped 2.73, GPT-5.4 1.76 and Opus 4.6 0.51, even though the summary prompt asked to keep constraints. In 44 real user sessions, instructions about how to work (35.9%) and what not to touch (36.8%) were dropped about six times as often as feature requirements (6.2%)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Benchmarks are \"compaction-friendly\": the goal is fixed and progress sits on disk, so scores hide lost rules. One implication: scaffolds should re-inject standing constraints after each compaction. Caveats: few tasks, two runs per configuration and one scaffold. Reward hacking began before the first compaction, so erosion cannot explain when cheating started."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.31778",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.31778"
+   },
+   "signals": {
+    "notable_authors": [
+     "Matthias Bethge"
+    ]
+   }
+  },
+  {
+   "id": "2610.31818",
+   "title": "Nested Sparsity for Scalable Pretraining and Continual Learning",
+   "authors": [
+    "Tianzhe Chu",
+    "Druv Pai",
+    "Yi Ma"
+   ],
+   "affiliations": [
+    "University of Hong Kong",
+    "UC Berkeley"
+   ],
+   "announced": "2026-10-25T20:00:00-04:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency"
+   ],
+   "tldr": "Nestor routes each token to a few attention \"columns\" that each contain their own experts, extending mixture-of-experts sparsity to attention and making it 13-29% more compute-efficient than MoE transformers.",
+   "why_selected": "A new, general conditional-computation mechanism with a scaling-law comparison against strong MoE baselines and gains in long-context and domain adaptation.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Mixture-of-experts (MoE) transformers save compute by sending each token to a few of many expert MLPs. Attention, however, stays dense in parameters: every token passes through the same attention weights in every layer. At long context lengths, attention accounts for most of the compute. Can conditional computation reach attention too, and how should it combine with MoE?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Sparse-attention methods, such as sliding windows or top-k token selection, limit which tokens a query looks at, but every token still uses shared parameters. Mixtures of attention heads route parameters, but each token still attends to the full context. In both, attention is routed separately from the MLP and afresh in every layer."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Picture a newsroom. Each story goes to a few desks, is discussed only with other stories there, and is handled by a specialist editor. Nestor replaces attention with C separate attention \"columns\". A router sends each token to Kc of them, once per block of several layers. Inside a column, a token attends only to other tokens routed there, and each column has its own experts and expert router. One routing decision thus picks both parameters and context, with MoE sparsity nested inside.\n\nWith one column this is a standard MoE; with one expert as well, a dense transformer. The authors use 8 columns, activating 3 in the first block and all 8 in the last, much like mixing local and global attention layers."
+    },
+    {
+     "heading": "Results",
+     "body": "Models of 100M to 1B active parameters were trained on DCLM-baseline at 4K context. At equal training FLOPs, Nestor is 1.13-1.29x as compute-efficient as an MoE with 24 experts (3 active) and 3.1-4.1x as efficient as a dense model, and the edge does not shrink with scale. At 1B, the MoE would need 1.22x the compute to match it. In domain adaptation to books, math, code and German, Nestor gains as much as the MoE but forgets 3% less; the dense model forgets 21% more than the MoE. When extending context from 4K to 64K at equal FLOPs, its lead grows with length."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Conditional computation need not stop at the MLP. Routing context and parameters together offers a cheaper path to long contexts and continual learning. Caveats: the gains are modest and were tested only up to 1B active parameters. The FLOP count includes attention; counting only linear layers, Nestor uses 4-8% more than the baselines."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.31818",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.31818"
+   },
+   "signals": {
+    "notable_authors": [
+     "Yi Ma"
+    ]
+   }
+  },
+  {
+   "id": "2610.32093",
+   "title": "DiscoDemo: Discovering Efficient and Diverse Robot Demonstrations for Imitation Learning",
+   "authors": [
+    "Minho Park",
+    "Kinam Kim",
+    "Donghu Kim",
+    "Byungkun Lee",
+    "Dongyoon Hwang",
+    "Yongjae Shin",
+    "Junha Hyung",
+    "Hojoon Lee",
+    "Jaegul Choo"
+   ],
+   "affiliations": [
+    "KAIST",
+    "Holiday Robotics"
+   ],
+   "announced": "2026-10-25T20:00:00-04:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Reinforcement Learning"
+   ],
+   "tldr": "Training a simulated RL \"demonstrator\" to find many different successful solutions, rather than one, doubles the real-robot success of a vision-language-action policy trained on its demos.",
+   "why_selected": "A simple, transferable insight about synthetic data: coverage of distinct successes beats volume, backed by real-robot success rising from 39% to 78%.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Robot imitation learning (behavior cloning) is only as good as the situations its demonstrations cover. Human teleoperation is expensive: even large robot datasets hold about a million episodes, against billions of examples in vision and language. Simulation can produce data cheaply, but what distribution of successful behavior should it produce?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Motion planners need hand-built, task-specific structure. MimicGen-style methods retarget human demonstration segments to new scenes, but they inherit the demonstrators' sometimes roundabout motions. Reinforcement learning (RL) generators learn efficient behavior, but under sparse rewards they settle on one narrow solution. More rollouts then add little coverage, and a cloned policy that drifts off that path has nothing to imitate."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Learning to drive home by a single route leaves you stuck when that road is closed; learning five routes gives you ways to recover. DiscoDemo uses RL as a dataset factory rather than as the deployed controller, and rewards it for finding several different ways to succeed.\n\nFirst, a parallel reverse curriculum makes sparse rewards learnable: episodes start near the end of each of 20 human demonstrations, then earlier as success improves. Second, each episode samples a latent \"skill\" vector. A METRA-style diversity reward pays the policy when its movement through a learned state space aligns with that vector, so different vectors yield different trajectories. Third, a success gate pays this bonus only on trajectories that complete the task; without it, the generator learns varied failures. Safety shaping and filtering remove runs with unwanted contact. The 3,000 exported demonstrations fine-tune a DROID-pretrained pi-0.5 vision-language-action policy."
+    },
+    {
+     "heading": "Results",
+     "body": "The test bed is four Franka arm tasks reconstructed in Isaac Sim: banana pick-and-place, cube stacking and two peg insertions. Baselines include the human demonstrations, motion planning, MimicGen, PGDG, PLD, ExpertGen and the same generator without diversity. Average downstream success is 62% against 40% for the strongest baseline in simulation. On the real robot, deployed zero-shot with 20 trials per task, it is 78% against 39%. The largest real-world gain is 45 points, on the banana task. Success peaks at an intermediate diversity weight, and the gains stack with DAgger and DART corrections."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For synthetic robot data, coverage of distinct successes matters more than volume. Caveats: the method needs an accurate simulator, privileged state and resets, and a clear success signal. It was tested only on four simple tabletop tasks with a small sim-to-real gap."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.32093",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.32093",
+    "code": "https://github.com/DAVIAN-Robotics/DiscoDemo"
+   },
+   "signals": {
+    "hf_upvotes": 32,
+    "org": "DAVIAN Robotics"
+   }
+  }
+ ]
+}

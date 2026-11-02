@@ -1,0 +1,166 @@
+{
+ "updated": "2026-11-02T04:09:09+00:00",
+ "days": [
+  {
+   "date": "2026-10-26",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  }
+ ],
+ "items": [
+  {
+   "id": "2026-10-26-n1",
+   "date": "2026-10-26",
+   "type": "news",
+   "title": "Moonshot launches Kimi K3.1 Pro, a near-frontier model with open weights promised by Nov 4",
+   "tldr": "Moonshot's Kimi K3.1 Pro scores within a few points of Claude Opus 5.5 on agentic coding and an independent index, costs half as much, and is due as open weights by Nov 4.",
+   "category": "Model Release",
+   "byline": "Moonshot AI, Simon Willison"
+  },
+  {
+   "id": "2026-10-26-n2",
+   "date": "2026-10-26",
+   "type": "news",
+   "title": "OpenAI launches GPT-6.1 Terra, a cheaper and faster computer-use model",
+   "tldr": "OpenAI's GPT-6.1 Terra costs $1/$5 per million tokens and, by OpenAI's measurements, matches GPT-6 Astra on a professional-task benchmark at a tenth of the price; OpenAI rates it Critical for cybersecurity.",
+   "category": "Model Release",
+   "byline": "BleepingComputer, Help Net Security"
+  },
+  {
+   "id": "2610.31867",
+   "date": "2026-10-26",
+   "type": "paper",
+   "title": "Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints",
+   "tldr": "A scaling law that charges for the compute spent generating synthetic rewrites predicts how much of a pretraining corpus should be rewritten, and shows that models trained on rewrites can beat the rewriter.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "LLMs"
+   ],
+   "byline": "Nicholas Roberts, Ahmed Ahmed, Suhas Kotha et al. · Princeton University, Stanford University, Jane Street"
+  },
+  {
+   "id": "2610.32770",
+   "date": "2026-10-26",
+   "type": "paper",
+   "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models",
+   "tldr": "Given only topic names, a model writes its own problems and answer hints, then distills from a copy of itself that sees the hints, improving MMLU by 10 points with no curated prompts or answers.",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "RSI",
+    "Multimodal"
+   ],
+   "byline": "Leon Sick, Lukas Hoyer, Yannick Strümpler et al. · Google, Ulm University"
+  },
+  {
+   "id": "2610.31778",
+   "date": "2026-10-26",
+   "type": "paper",
+   "title": "Benchmarks Are Surprisingly Compaction-Friendly",
+   "tldr": "When long-running coding agents summarize their context to keep going, benchmark scores barely change, but the rules they were given quietly disappear from the summaries.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Evaluation & Benchmarks",
+    "Safety & Alignment"
+   ],
+   "byline": "Jeanne Salle, Hardik Bhatnagar, Matthias Bethge et al. · ELLIS Institute Tübingen, Max Planck Institute for Intelligent Systems, Tübingen AI Center"
+  },
+  {
+   "id": "2610.31818",
+   "date": "2026-10-26",
+   "type": "paper",
+   "title": "Nested Sparsity for Scalable Pretraining and Continual Learning",
+   "tldr": "Nestor routes each token to a few attention \"columns\" that each contain their own experts, extending mixture-of-experts sparsity to attention and making it 13-29% more compute-efficient than MoE transformers.",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency"
+   ],
+   "byline": "Tianzhe Chu, Druv Pai, Yi Ma · University of Hong Kong, UC Berkeley"
+  },
+  {
+   "id": "2610.32093",
+   "date": "2026-10-26",
+   "type": "paper",
+   "title": "DiscoDemo: Discovering Efficient and Diverse Robot Demonstrations for Imitation Learning",
+   "tldr": "Training a simulated RL \"demonstrator\" to find many different successful solutions, rather than one, doubles the real-robot success of a vision-language-action policy trained on its demos.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Reinforcement Learning"
+   ],
+   "byline": "Minho Park, Kinam Kim, Donghu Kim et al. · KAIST, Holiday Robotics"
+  }
+ ],
+ "tag_groups": {
+  "Foundation Models": [
+   "LLMs",
+   "Multimodal",
+   "Architectures",
+   "Efficiency"
+  ],
+  "Capabilities": [
+   "Reasoning",
+   "Agents",
+   "Retrieval & Memory"
+  ],
+  "Training": [
+   "Pre-training & Data",
+   "Post-training",
+   "Reinforcement Learning",
+   "Optimization"
+  ],
+  "Generation & Embodiment": [
+   "Generative Models",
+   "World Models",
+   "Robotics",
+   "Computer Vision"
+  ],
+  "Trust": [
+   "Safety & Alignment",
+   "Interpretability",
+   "Security",
+   "Evaluation & Benchmarks",
+   "Society & Policy"
+  ],
+  "Science & Theory": [
+   "AI for Science & Health",
+   "AI for Math",
+   "Theory",
+   "RSI"
+  ]
+ },
+ "tag_counts": {
+  "Pre-training & Data": 1,
+  "LLMs": 1,
+  "Post-training": 1,
+  "RSI": 1,
+  "Multimodal": 1,
+  "Agents": 1,
+  "Evaluation & Benchmarks": 1,
+  "Safety & Alignment": 1,
+  "Architectures": 1,
+  "Efficiency": 1,
+  "Robotics": 1,
+  "Reinforcement Learning": 1
+ },
+ "news_categories": [
+  "Model Release",
+  "Product & Features",
+  "Business & Funding",
+  "Earnings & Markets",
+  "Compute & Infrastructure",
+  "Policy & Legal",
+  "Safety & Security",
+  "Research",
+  "Open Source",
+  "People"
+ ],
+ "category_counts": {
+  "Model Release": 2
+ }
+}
