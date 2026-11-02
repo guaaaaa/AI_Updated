@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (UTC, WORK, config, http_get, news_window, parse_date,  # noqa: E402
-                    recent_digests, today_et)
+                    recent_digests, snapshot_update, today_et)
 
 ATOM = "{http://www.w3.org/2005/Atom}"
 STOP = set("the a an and or of to in on for with by at from as is are be its it this that new how why what who will can "
@@ -172,6 +172,11 @@ def main():
     dump = {"date": d.isoformat(), "window": [start.isoformat(), end.isoformat()], "hn": hn[:40],
             "headlines": [{**i, "time": i["time"].isoformat()} for i in heads]}
     (WORK / f"news_{d}.json").write_text(json.dumps(dump, indent=1))
+    snapshot_update(d, "news", {  # compact headline pool for weekly/monthly summaries (no Google News links)
+        "window": dump["window"],
+        "headlines": [{"t": i["title"], "p": i["publisher"], "tier": i["tier"], "ts": i["time"].isoformat()[:16]}
+                      for i in heads][-220:],
+        "hn": [{"t": h["title"], "pts": h["points"], "ts": h["time"][:16]} for h in hn[:15]]})
 
     tz = end.tzinfo
     L = [f"# News candidates for {d}", f"Window: {start:%Y-%m-%d %H:%M} -> {end:%Y-%m-%d %H:%M} ET",

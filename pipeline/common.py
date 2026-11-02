@@ -70,7 +70,49 @@ def is_weekend(d):
 
 
 def edition(d):
+    """Mon-Fri 'weekday' (72h papers); Saturday 'weekend' (best of the week, 7-day papers).
+    Sundays carry no digest (weekly-summary day); the one legacy Sunday digest keeps 'weekend'."""
     return "weekend" if is_weekend(d) else "weekday"
+
+
+LEGACY_SUNDAY_DIGESTS = {"2026-11-01"}  # published before Sundays became weekly-summary days
+
+
+def is_digest_day(d):
+    return d.weekday() != 6 or d.isoformat() in LEGACY_SUNDAY_DIGESTS
+
+
+# ---------------------------------------------------------------- weeks and months (summaries)
+SUMMARIES = DATA / "summaries"
+
+
+def week_id(d):
+    y, w, _ = d.isocalendar()
+    return f"{y}-W{w:02d}"
+
+
+def week_days(wid):
+    """'2026-W44' -> (monday, saturday, sunday). Digests Mon-Sat; the summary is published Sunday."""
+    y, w = wid.split("-W")
+    mon = dt.date.fromisocalendar(int(y), int(w), 1)
+    return mon, mon + dt.timedelta(days=5), mon + dt.timedelta(days=6)
+
+
+def month_days(mid):
+    """'2026-10' -> (first, last) day of that month."""
+    y, m = map(int, mid.split("-"))
+    first = dt.date(y, m, 1)
+    nxt = dt.date(y + (m == 12), m % 12 + 1, 1)
+    return first, nxt - dt.timedelta(days=1)
+
+
+def snapshot_update(d, key, value):
+    """Persist part of a day's broader evidence (shortlist, headline pool) for weekly/monthly summaries."""
+    path = STATE / "daily" / f"{d.isoformat()}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    j = load_json(path, {}) or {}
+    j["date"], j[key] = d.isoformat(), value
+    path.write_text(json.dumps(j, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
 
 
 def window_end(d):

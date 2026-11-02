@@ -16,6 +16,7 @@ import argparse
 import datetime as dt
 import html
 import json
+import os
 import math
 import re
 import sys
@@ -26,7 +27,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (ET, STATE, UTC, WORK, arxiv_announce_time, config, edition,  # noqa: E402
-                    featured_ids, http_get, paper_window, parse_date, today_et)
+                    featured_ids, http_get, paper_window, parse_date, snapshot_update, today_et)
 
 NS = {"a": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom",
       "os": "http://a9.com/-/spec/opensearch/1.1/"}
@@ -46,36 +47,88 @@ def log(*a):
 
 
 # ---------------------------------------------------------------- arXiv listing pages
+def _clean(x):
+    return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", x)).split()) if x else ""
+
+
+def parse_entries(block, ldate):
+    out = {}
+    for dt_block, dd_block in re.findall(r"<dt>(.*?)</dt>\s*<dd>(.*?)</dd>", block, re.S):
+        idm = re.search(r'/abs/(\d{4}\.\d{4,5})', dt_block)
+        if not idm:
+            continue
+        tm = re.search(r"list-title[^>]*>.*?</span>(.*?)</div>", dd_block, re.S)
+        am = re.search(r"list-authors'>(.*?)</div>", dd_block, re.S)
+        sm = re.search(r"list-subjects'>.*?</span>(.*?)</div>", dd_block, re.S)
+        out[idm.group(1)] = {
+            "title": _clean(tm.group(1)) if tm else "",
+            "authors": [_clean(a) for a in re.findall(r"<a [^>]*>(.*?)</a>", am.group(1))] if am else [],
+            "subjects": re.findall(r"\(([a-z\-]+(?:\.[A-Za-z\-]+)?)\)", _clean(sm.group(1)) if sm else ""),
+            "listing_date": ldate,
+        }
+    return out
+
+
 def parse_listing(page):
     """-> {id: {title, authors, subjects, listing_date}} from a /list/<cat>/pastweek page."""
     out = {}
     parts = re.split(r"<h3>(.*?)</h3>", page)
     for i in range(1, len(parts), 2):
         m = re.match(r"\w{3}, (\d{1,2} \w{3} \d{4})", parts[i].strip())
-        if not m:
-            continue
-        ldate = dt.datetime.strptime(m.group(1), "%d %b %Y").date()
-        for dt_block, dd_block in re.findall(r"<dt>(.*?)</dt>\s*<dd>(.*?)</dd>", parts[i + 1], re.S):
-            idm = re.search(r'/abs/(\d{4}\.\d{4,5})', dt_block)
-            if not idm:
-                continue
-            tm = re.search(r"list-title[^>]*>.*?</span>(.*?)</div>", dd_block, re.S)
-            am = re.search(r"list-authors'>(.*?)</div>", dd_block, re.S)
-            sm = re.search(r"list-subjects'>.*?</span>(.*?)</div>", dd_block, re.S)
-            clean = lambda x: " ".join(html.unescape(re.sub(r"<[^>]+>", " ", x)).split()) if x else ""
-            out[idm.group(1)] = {
-                "title": clean(tm.group(1)) if tm else "",
-                "authors": [clean(a) for a in re.findall(r"<a [^>]*>(.*?)</a>", am.group(1))] if am else [],
-                "subjects": re.findall(r"\(([a-z\-]+(?:\.[A-Za-z\-]+)?)\)", clean(sm.group(1)) if sm else ""),
-                "listing_date": ldate,
-            }
+        if m:
+            out.update(parse_entries(parts[i + 1], dt.datetime.strptime(m.group(1), "%d %b %Y").date()))
     return out
 
 
-def listing_sweep(cats):
-    """Union of pastweek listings. Announcement time = listing date - 1 day, 20:00 ET."""
+def catchup(cat, ldate):
+    """New submissions + cross-lists of one arXiv listing (mailing) date, from /catchup/<cat>/<date>.
+
+    Works for any past date (the pastweek page only covers the last five mailings). Cached in work/catchup/.
+    Returns {} for dates without a mailing (weekends, holidays).
+    """
+    cache = WORK / "catchup" / f"{cat}_{ldate.isoformat()}.json"
+    if cache.exists():
+        got = json.loads(cache.read_text())
+        for p in got.values():
+            p["listing_date"] = ldate
+        return got
+    page = http_get(f"https://arxiv.org/catchup/{cat}/{ldate.isoformat()}?abs=False", timeout=90)
+    hm = re.search(r"Catchup results for .*? on \w{3}, (\d{1,2} \w{3} \d{4})", page)
+    got = {}
+    if hm and dt.datetime.strptime(hm.group(1), "%d %b %Y").date() == ldate:
+        parts = re.split(r"<h3>(.*?)</h3>", page)
+        for i in range(1, len(parts), 2):
+            if parts[i].strip().startswith(("New submissions", "Cross submissions")):
+                got.update(parse_entries(parts[i + 1], ldate))
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    tmp = cache.with_suffix(f".{os.getpid()}.tmp")  # atomic: parallel runs may read the cache
+    tmp.write_text(json.dumps({k: {**v, "listing_date": None} for k, v in got.items()}))
+    os.replace(tmp, cache)
+    time.sleep(1)
+    return got
+
+
+def listing_dates(start, end):
+    """arXiv mailing dates whose announcement (previous day, 20:00 ET) falls inside [start, end]."""
+    out, day = [], start.date()
+    while day <= end.date():
+        ann = dt.datetime(day.year, day.month, day.day, 20, 0, tzinfo=ET)
+        ld = day + dt.timedelta(days=1)
+        if start <= ann <= end and ld.weekday() < 5:
+            out.append(ld)
+        day += dt.timedelta(days=1)
+    return out
+
+
+def listing_sweep(cats, start=None, end=None):
+    """Union of category listings. Announcement time = listing date - 1 day, 20:00 ET.
+
+    Recent windows use the pastweek pages; mailing dates older than those (backfills) come from catchup pages.
+    """
     allp = {}
-    for c in cats:
+    needed = listing_dates(start, end) if start and end else []
+    recent = not needed or (today_et() - needed[0]).days <= 6
+    for c in (cats if recent else []):
         got = {}
         for skip in (0, 2000, 4000):
             try:
@@ -94,6 +147,20 @@ def listing_sweep(cats):
                 allp[pid] = p
         log(f"  listing {c}: {len(got)} entries (union {len(allp)})")
         time.sleep(1)
+    seen = {p["listing_date"] for p in allp.values()}
+    missing = [ld for ld in needed if ld not in seen and (not seen or ld < min(seen))]
+    for c in cats:
+        for ld in missing:
+            try:
+                got = catchup(c, ld)
+            except Exception as e:
+                log(f"  WARNING catchup {c} {ld} failed: {e}")
+                continue
+            for pid, p in got.items():
+                if pid not in allp or ld < allp[pid]["listing_date"]:
+                    allp[pid] = p
+        if missing:
+            log(f"  catchup {c}: {len(missing)} mailing dates (union {len(allp)})")
     for p in allp.values():
         ld = p.pop("listing_date") - dt.timedelta(days=1)
         p["announced"] = dt.datetime(ld.year, ld.month, ld.day, 20, 0, tzinfo=ET).isoformat()
@@ -130,7 +197,23 @@ def parse_feed(xml_text):
 
 
 def abs_page(pid):
-    """Metadata from the arXiv abstract page (the search API rate-limits shared cloud IPs)."""
+    """Metadata from the arXiv abstract page (the search API rate-limits shared cloud IPs). Cached in work/abs/."""
+    cache = WORK / "abs" / f"{pid}.json"
+    if cache.exists():
+        try:
+            return json.loads(cache.read_text())
+        except ValueError:
+            pass
+    meta = _abs_page(pid)
+    if meta["title"]:
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        tmp = cache.with_suffix(f".{os.getpid()}.tmp")
+        tmp.write_text(json.dumps(meta))
+        os.replace(tmp, cache)
+    return meta
+
+
+def _abs_page(pid):
     s = http_get(f"https://arxiv.org/abs/{pid}", timeout=45, retries=3)
     clean = lambda x: " ".join(html.unescape(re.sub(r"<[^>]+>", " ", x)).split())
     title = re.search(r'<meta name="citation_title" content="([^"]+)"', s)
@@ -320,7 +403,7 @@ def main():
     cats = src["arxiv_categories"]
     log(f"Digest {d} ({edition(d)}): papers announced {start:%a %b %d %H:%M} -> {end:%a %b %d %H:%M} ET")
 
-    listing = listing_sweep(cats)
+    listing = listing_sweep(cats, start, end)
     in_window = {pid: p for pid, p in listing.items()
                  if start <= dt.datetime.fromisoformat(p["announced"]) <= end}
     log(f"  {len(in_window)} listed papers announced in window")
@@ -391,6 +474,12 @@ def main():
             "n_hot": sum(1 for p in cand if p["hot_rank"]), "n_hf": sum(1 for p in cand if p["hf_upvotes"]),
             "hot_note": hot_note, "excluded_already_featured": sorted(already & {p["id"] for p in cand})}
     (WORK / f"papers_{d}.json").write_text(json.dumps({"meta": info, "candidates": cand}, indent=1, default=str))
+    snapshot_update(d, "papers", {
+        "window": info["window"], "n_listed_in_window": info["n_listed_in_window"], "n_with_signals": info["n_with_signals"],
+        "shortlist": [{k: v for k, v in {"id": p["id"], "title": p["title"], "cat": p["primary_category"],
+                                          "hot": p["hot_rank"], "hot_days": p["hot_days"] or None, "hf": p["hf_upvotes"],
+                                          "org": p.get("hf_org") or p.get("org_match"), "score": p["score"]}.items() if v}
+                      for p in pick]})
 
     lines = [f"# Paper shortlist for {d} ({edition(d)})",
              f"Window (arXiv announcement time): {start:%Y-%m-%d %H:%M} -> {end:%Y-%m-%d %H:%M} ET",

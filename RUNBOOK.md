@@ -33,7 +33,8 @@ cd "$(git rev-parse --show-toplevel)" && git checkout -q master && git pull -q -
   this runbook says `$D`.
 - If the dry-run push fails (e.g. 403 "not in this session's authorized repository set"), stop immediately
   and report that the repository must be attached to the scheduled task.
-- Saturday/Sunday → **weekend edition**: papers are "best of the week" (7-day window); news stays 72h.
+- Saturday → **weekend edition**: papers are "best of the week" (7-day window); news stays 72h.
+- Sunday → **no digest**: Sunday is the weekly-summary day (separate task, `RUNBOOK_SUMMARY.md`). Stop.
 - If `data/days/$D.json` already exists and `python3 pipeline/validate.py $D` passes, the digest is done:
   run step 5's live check only and stop.
 
@@ -121,8 +122,8 @@ Do not read other papers in full. A shortlist shorter than 30 is normal on light
 clearly stronger than the best alternative from another area. Never more than 3 papers with the same
 primary tag (validator enforces). Spread across tag groups when quality is comparable.
 **Quality floor**: publishing fewer than 5 is fine; never pad with weak papers.
-**Weekend**: "best of the week": favor papers with sustained attention or clear importance that the
-weekday digests did not feature.
+**Saturday**: "best of the week": favor papers with sustained attention or clear importance that the
+weekday digests did not feature (arXiv announces nothing on Friday/Saturday nights, so there is no fresh batch).
 
 ## 4. Write (one Write call)
 

@@ -1,8 +1,10 @@
 """Validate -> rebuild index -> commit -> push to master -> wait for the GitHub Pages
-deploy of that commit -> confirm the live site serves the new digest.
+deploy of that commit -> confirm the live site serves the new digest or summary.
 
 Usage: python pipeline/publish.py --date 2026-11-02 [--message "..."] [--no-push]
-Exit code 0 only when the digest is verifiably live.
+       python pipeline/publish.py --summary weekly/2026-W45      (or monthly/2026-11)
+Exit code 0 only when the content is verifiably live. Two jobs publishing the same morning is fine:
+a push conflict on the generated files (data/index.json, data/trends.json) is resolved by regenerating them.
 """
 import argparse
 import json
@@ -13,7 +15,9 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import DAYS, ROOT, config  # noqa: E402
+from common import DAYS, ROOT, SUMMARIES, config  # noqa: E402
+
+GENERATED = {"data/index.json", "data/trends.json"}
 
 
 def sh(*cmd, check=True):
@@ -23,14 +27,34 @@ def sh(*cmd, check=True):
     return r.stdout.strip()
 
 
+def rebase_onto(branch):
+    """Rebase on the remote branch; regenerate index/trends if they are the only conflicts."""
+    sh("git", "fetch", "origin", branch, check=False)
+    r = subprocess.run(["git", "rebase", f"origin/{branch}"], cwd=ROOT, capture_output=True, text=True)
+    for _ in range(10):
+        if r.returncode == 0:
+            return True
+        conflicted = set(sh("git", "diff", "--name-only", "--diff-filter=U", check=False).split())
+        if not conflicted or not conflicted <= GENERATED:
+            sh("git", "rebase", "--abort", check=False)
+            print(f"rebase conflict outside generated files: {sorted(conflicted)}")
+            return False
+        for f in conflicted:
+            sh("git", "checkout", "--ours", f, check=False)
+        sh(sys.executable, "pipeline/build_index.py")
+        sh("git", "add", *GENERATED)
+        r = subprocess.run(["git", "-c", "core.editor=true", "rebase", "--continue"], cwd=ROOT,
+                           capture_output=True, text=True, env={**__import__("os").environ, "GIT_EDITOR": "true"})
+    return False
+
+
 def push(branch):
     for attempt in range(4):
         r = subprocess.run(["git", "push", "origin", f"HEAD:{branch}"], cwd=ROOT, capture_output=True, text=True)
         if r.returncode == 0:
             return
         print(f"push failed (attempt {attempt + 1}): {r.stderr.strip()[:300]}")
-        sh("git", "fetch", "origin", branch, check=False)
-        sh("git", "rebase", f"origin/{branch}", check=False)
+        rebase_onto(branch)
         time.sleep(2 ** (attempt + 1))
     raise SystemExit("FAILED: could not push")
 
@@ -68,13 +92,17 @@ def wait_live(url, expect, timeout=900):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--date", required=True)
+    ap.add_argument("--date")
+    ap.add_argument("--summary", help="weekly/<YYYY-Www> or monthly/<YYYY-MM>")
     ap.add_argument("--message")
     ap.add_argument("--no-push", action="store_true")
     a = ap.parse_args()
+    if bool(a.date) == bool(a.summary):
+        raise SystemExit("give exactly one of --date or --summary")
     site = config("site")
     py = sys.executable
-    v = subprocess.run([py, "pipeline/validate.py", a.date], cwd=ROOT, capture_output=True, text=True)
+    check = [py, "pipeline/validate.py", a.date] if a.date else [py, "pipeline/validate_summary.py", a.summary]
+    v = subprocess.run(check, cwd=ROOT, capture_output=True, text=True)
     print(v.stdout)
     if v.returncode:
         raise SystemExit("FAILED: validation errors — fix them and re-run publish.py")
@@ -83,7 +111,8 @@ def main():
         return
     sh("git", "add", "data")
     if sh("git", "status", "--porcelain", "data", check=False):
-        sh("git", "commit", "-m", a.message or f"Digest {a.date}")
+        kind, _, sid = (a.summary or "").partition("/")
+        sh("git", "commit", "-m", a.message or (f"Digest {a.date}" if a.date else f"{kind.capitalize()} summary {sid}"))
     push(site["branch"])
     sha = sh("git", "rev-parse", "HEAD")
     print(f"pushed {sha[:8]} to {site['branch']}; waiting for GitHub Pages deploy...")
@@ -91,11 +120,15 @@ def main():
     print(f"pages run: {concl} {run_url or ''}")
     if concl not in (None, "success"):
         raise SystemExit(f"FAILED: Pages deploy {concl}. Inspect: gh api repos/{site['repo']}/actions/runs?head_sha={sha}")
-    expect = json.loads((DAYS / f"{a.date}.json").read_text())["generated_at"]
-    live = f"{site['url']}data/days/{a.date}.json"
-    if not wait_live(live, expect):
-        raise SystemExit(f"FAILED: {live} does not serve the new digest after 15 min")
-    print(f"LIVE ✓ {site['url']}#/day/{a.date}")
+    if a.date:
+        rel, page = f"data/days/{a.date}.json", f"#/day/{a.date}"
+    else:
+        kind, _, sid = a.summary.partition("/")
+        rel, page = f"data/summaries/{kind}/{sid}.json", f"#/trends/{'week' if kind == 'weekly' else 'month'}/{sid}"
+    expect = json.loads((ROOT / rel).read_text())["generated_at"]
+    if not wait_live(f"{site['url']}{rel}", expect):
+        raise SystemExit(f"FAILED: {site['url']}{rel} does not serve the new content after 15 min")
+    print(f"LIVE ✓ {site['url']}{page}")
 
 
 if __name__ == "__main__":

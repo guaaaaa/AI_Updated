@@ -1,6 +1,6 @@
 """Validate digest files before publishing. Exit code 1 on any error.
 
-Checks: schema, section headings, 250-350 word bodies (300-400 before 2026-11-03), tags/categories from the fixed
+Checks: schema, section headings, 250-350 word bodies (300-400 for Oct 26 - Nov 2), no Sunday digests, tags/categories from the fixed
 taxonomy, item caps, time windows (72h weekday / 7d weekend papers; 72h news),
 duplicates against the previous 7 days, https links, and no HTML in text.
 
@@ -13,14 +13,14 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (DAYS, config, edition, featured_ids, news_window, paper_window,  # noqa: E402
+from common import (DAYS, config, edition, featured_ids, is_digest_day, news_window, paper_window,  # noqa: E402
                     parse_date, word_count)
 
 NEWS_SECTIONS = ["Context", "What happened", "Why it matters", "What to watch"]
 PAPER_SECTIONS = ["Problem", "Existing approaches", "Key idea", "Results", "Why it matters"]
 WORD_LIMITS = (225, 250, 350, 375)          # hard min, target min, target max, hard max
-OLD_WORD_LIMITS = (270, 300, 400, 430)      # digests dated before WORD_LIMITS_FROM
-WORD_LIMITS_FROM = dt.date(2026, 11, 3)
+OLD_WORD_LIMITS = (270, 300, 400, 430)      # the first digests (Oct 26 - Nov 2), written before the change
+OLD_LIMIT_DAYS = (dt.date(2026, 10, 26), dt.date(2026, 11, 2))
 MAX_NEWS, MAX_PAPERS = 2, 5
 HTML_RE = re.compile(r"<\s*[a-zA-Z/!]")
 ARXIV_RE = re.compile(r"^\d{4}\.\d{4,5}$")
@@ -38,6 +38,8 @@ def check_day(path, tax):
         E(f"date field {j.get('date')!r} != filename")
     if j.get("edition") != edition(d):
         E(f"edition should be {edition(d)!r}")
+    if not is_digest_day(d):
+        E("no digest on Sundays: Sunday is the weekly-summary day")
     news, papers = j.get("news", []), j.get("papers", [])
     if len(news) > MAX_NEWS:
         E(f"{len(news)} news items (max {MAX_NEWS})")
@@ -65,7 +67,8 @@ def check_day(path, tax):
         if heads != expected:
             E(f"{label}: sections must be {expected}, got {heads}")
         n = sum(word_count(s.get("body", "")) for s in item.get("sections", []))
-        HARD_MIN, SOFT_MIN, SOFT_MAX, HARD_MAX = WORD_LIMITS if d >= WORD_LIMITS_FROM else OLD_WORD_LIMITS
+        old = OLD_LIMIT_DAYS[0] <= d <= OLD_LIMIT_DAYS[1]
+        HARD_MIN, SOFT_MIN, SOFT_MAX, HARD_MAX = OLD_WORD_LIMITS if old else WORD_LIMITS
         if not HARD_MIN <= n <= HARD_MAX:
             E(f"{label}: {n} words (must be {SOFT_MIN}-{SOFT_MAX}; hard limits {HARD_MIN}-{HARD_MAX})")
         elif not SOFT_MIN <= n <= SOFT_MAX:

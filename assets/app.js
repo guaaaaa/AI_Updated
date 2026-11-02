@@ -1,11 +1,11 @@
-/* AI Updated — static front end. Data: data/index.json + data/days/<date>.json.
+/* AI Updated — static front end. Data: data/index.json + data/days/<date>.json (Trends view: assets/trends.js).
    All content is rendered with textContent (never innerHTML) so digest text can't inject markup. */
 (() => {
   "use strict";
   const $ = (s, r = document) => r.querySelector(s);
   const S = {
     index: null, dayFiles: new Map(), groupOf: {}, dates: [], dateSet: new Set(),
-    calMonth: null, calMode: "day", rangeStart: null,
+    calMonth: null, calMode: "day", rangeStart: null, sumByDate: {}, weekOf: {},
     f: { type: "all", tags: new Set(), cats: new Set(), q: "", from: null, to: null },
   };
 
@@ -58,8 +58,10 @@
 
   function parseRoute() {
     const h = location.hash.replace(/^#/, "");
-    const m = h.match(/^\/day\/(\d{4}-\d{2}-\d{2})/);
-    if (m) return { view: "day", date: m[1] };
+    const m = h.match(/^\/day\/(\d{4}-\d{2}-\d{2})(?:\/([\w.-]+))?/);
+    if (m) return { view: "day", date: m[1], item: m[2] || null };
+    const t = h.match(/^\/trends(?:\/(week|month)\/([\w-]+))?/);
+    if (t) return { view: "trends", kind: t[1] ? (t[1] === "week" ? "weekly" : "monthly") : null, id: t[2] || null };
     if (h.startsWith("/browse")) {
       const p = new URLSearchParams(h.split("?")[1] || "");
       S.f.type = ["paper", "news"].includes(p.get("type")) ? p.get("type") : "all";
@@ -78,11 +80,15 @@
       S.f = { type: "all", tags: new Set(), cats: new Set(), q: "", from: null, to: null };
       if (r.date) S.calMonth = new Date(dObj(r.date).getFullYear(), dObj(r.date).getMonth(), 1);
     }
-    syncSidebar(r);
+    const wide = r.view === "trends";
+    $(".layout").classList.toggle("wide", wide);
+    for (const a of document.querySelectorAll("#viewNav a")) a.classList.toggle("on", (a.dataset.view === "trends") === wide);
+    if (!wide) syncSidebar(r); else S.current = r;
     const main = $("#main");
     main.replaceChildren(el("div", { class: "loading", text: "Loading…" }));
     try {
-      if (r.view === "day") await renderDay(r.date);
+      if (r.view === "day") await renderDay(r.date, r.item);
+      else if (r.view === "trends") await window.AIUTrends.render(main, r, S);
       else renderBrowse();
     } catch (e) {
       main.replaceChildren(el("div", { class: "empty", text: `Could not load this view (${e.message}).` }));
@@ -116,13 +122,16 @@
     for (let d = 1; d <= nDays; d++) {
       const iso = isoOf(new Date(m.getFullYear(), m.getMonth(), d));
       const has = S.dateSet.has(iso);
+      const sum = !has && S.sumByDate[iso];
       const ranged = S.calMode === "range";
-      const cls = ["cal-day", has && "has", ranged && "pickable", iso === today && "today",
+      const cls = ["cal-day", has && "has", sum && "sum", ranged && "pickable", iso === today && "today",
         (iso === sel || iso === from || iso === to) && "sel",
         from && to && iso > from && iso < to && "inrange"].filter(Boolean).join(" ");
       grid.append(el("button", {
-        class: cls, text: String(d), disabled: !has && !ranged, "aria-label": fmtLong(iso) + (has ? " (digest available)" : ""),
-        onclick: () => pickDate(iso),
+        class: cls, text: String(d), disabled: !has && !sum && !ranged,
+        "aria-label": fmtLong(iso) + (has ? " (digest available)" : sum ? ` (${sum.kind} summary)` : ""),
+        title: sum ? `${sum.kind === "weekly" ? "Weekly" : "Monthly"} summary: ${sum.headline}` : null,
+        onclick: () => (sum && !ranged ? (location.hash = `#/trends/${sum.kind === "weekly" ? "week" : "month"}/${sum.id}`) : pickDate(iso)),
       }));
     }
     const head = el("div", { class: "cal-head" },
@@ -132,7 +141,7 @@
     box.replaceChildren(head, grid);
     $("#calHint").textContent = S.calMode === "range"
       ? (S.rangeStart ? "Now pick the end date." : (S.f.from ? `Showing ${fmtShort(S.f.from)} – ${fmtShort(S.f.to)}` : "Pick a start date."))
-      : "Dots mark days with a digest.";
+      : "Dots mark days with a digest; rings mark weekly and monthly summaries.";
   }
   function shiftMonth(k) { S.calMonth = new Date(S.calMonth.getFullYear(), S.calMonth.getMonth() + k, 1); renderCalendar(); }
 
@@ -236,7 +245,19 @@
   }
 
   // ---------- views
-  async function renderDay(date) {
+  function glanceList(j, date, onDayPage) {
+    const rows = [...(j.news || []).map((n) => ({ it: n, news: true })), ...(j.papers || []).map((p) => ({ it: p, news: false }))];
+    return el("ol", { class: "glance" }, rows.map(({ it, news }) => {
+      const go = onDayPage ? (e) => { e.preventDefault(); const c = document.getElementById(`item-${it.id}`); if (c) c.scrollIntoView({ behavior: "smooth", block: "start" }); } : null;
+      return el("li", { dataset: { g: news ? "news" : S.groupOf[it.primary_tag] || "" } },
+        el("span", { class: "g-dot", "aria-hidden": "true" }),
+        el("div", {}, el("a", { href: `#/day/${date}/${it.id}`, onclick: go, text: it.title }),
+          el("span", { class: "g-kind", text: news ? ` · ${it.category}` : ` · ${it.primary_tag}` }),
+          el("p", { text: it.tldr })));
+    }));
+  }
+
+  async function renderDay(date, itemId) {
     const main = $("#main");
     if (!date) { main.replaceChildren(el("div", { class: "empty", text: "No digests yet — the first one arrives at 7:30 ET." })); return; }
     if (!S.dateSet.has(date)) { main.replaceChildren(el("div", { class: "empty" }, `No digest for ${fmtLong(date)}. `, el("a", { href: "#/", text: "Go to the latest." }))); return; }
@@ -256,6 +277,11 @@
       nav);
     const out = [head];
     if (j.summary) out.push(el("p", { class: "note", text: j.summary }));
+    const nItems = (j.news || []).length + (j.papers || []).length;
+    if (nItems > 1) out.push(el("section", { class: "card glance-card" },
+      el("div", { class: "card-top" }, el("span", { class: "kind", text: "At a glance" }),
+        S.weekOf[date] ? el("a", { class: "card-date", href: `#/trends/week/${S.weekOf[date].id}`, text: "This week's trend summary →" }) : null),
+      glanceList(j, date, true)));
     out.push(el("h2", { class: "section-title", text: "News" }));
     if ((j.news || []).length) out.push(...j.news.map((n) => fullCard(n, true, date)));
     else out.push(el("p", { class: "note", text: "No news story cleared the bar for this window." }));
@@ -264,7 +290,8 @@
     else out.push(el("p", { class: "note", text: "No papers this time." }));
     main.replaceChildren(...out);
     main.focus({ preventScroll: true });
-    window.scrollTo({ top: 0 });
+    const target = itemId && document.getElementById(`item-${itemId}`);
+    if (target) target.scrollIntoView({ block: "start" }); else window.scrollTo({ top: 0 });
   }
 
   function renderBrowse() {
@@ -321,7 +348,7 @@
       try { localStorage.setItem("theme", next); } catch (e) { /* storage unavailable */ }
     });
     document.addEventListener("keydown", (e) => {
-      if (e.target.matches("input, textarea") || !S.current || S.current.view !== "day") return;
+      if (e.target.matches("input, textarea, select") || !S.current || S.current.view !== "day") return;
       const i = S.dates.indexOf(S.current.date);
       if (e.key === "ArrowLeft" && S.dates[i + 1]) location.hash = `#/day/${S.dates[i + 1]}`;
       if (e.key === "ArrowRight" && i > 0) location.hash = `#/day/${S.dates[i - 1]}`;
@@ -339,6 +366,13 @@
     S.dates = S.index.days.map((d) => d.date);
     S.dateSet = new Set(S.dates);
     for (const [g, tags] of Object.entries(S.index.tag_groups)) for (const t of tags) S.groupOf[t] = g;
+    S.sumByDate = {}; S.weekOf = {};
+    for (const x of S.index.summaries || []) {
+      if (!S.sumByDate[x.published] || x.kind === "weekly") S.sumByDate[x.published] = x;
+      if (x.kind === "weekly") for (let d = dObj(x.start); isoOf(d) <= x.end; d.setDate(d.getDate() + 1)) S.weekOf[isoOf(d)] = x;
+    }
+    if (window.AIUTrends) window.AIUTrends.init({ el, getJSON, getDay, dObj, fmtShort, fmtLong, isoOf, safeUrl,
+      glanceList: (j, date) => glanceList(j, date, false) });
     const latest = S.dates[0] ? dObj(S.dates[0]) : new Date();
     S.calMonth = new Date(latest.getFullYear(), latest.getMonth(), 1);
     wire();
