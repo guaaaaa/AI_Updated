@@ -110,7 +110,9 @@ numbers right.
   **durability** (will it still matter in 3 months?), and **breadth of independent coverage**.
 - **Verifiable**: needs a primary source or ≥2 independent reputable outlets. No rumors, single tweets,
   opinion pieces, "CEO says AI will…" quotes, minor partnerships or customer case studies.
-- **Window**: the event's first public report must be inside the last 72h.
+- **Window**: the event's first public report must be inside the last 72h. For `published`, use the
+  earliest timestamp you verified in a source you read; if a source gives only a date (e.g. "today"), use
+  12:00 ET on that date (it must still fall inside the window).
 - **Repeats**: skip stories in the "Already covered" list unless there is a materially new development
   (e.g. a leak on day 1, the official launch on day 2); a follow-up gets a new `story_key`.
 - Publishing 1 or 0 news items is fine when nothing clears the bar.
