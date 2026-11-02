@@ -1,0 +1,41 @@
+{
+  "_doc": "Fixed tag vocabulary. Each paper: exactly 1 primary_tag + up to 3 more tags, all from paper_tags. Each news item: exactly 1 category from news_categories. Do not invent tags; propose changes to the repo owner instead.",
+  "paper_tags": {
+    "LLMs": {"group": "Foundation Models", "desc": "Language-model behavior, capabilities and analysis that is not better captured by a more specific tag"},
+    "Multimodal": {"group": "Foundation Models", "desc": "Vision-language and other multi-modality understanding models (VLMs, omni models)"},
+    "Architectures": {"group": "Foundation Models", "desc": "New model architectures and components: attention variants, SSMs, MoE design, tokenization"},
+    "Efficiency": {"group": "Foundation Models", "desc": "Inference/training efficiency: quantization, distillation, sparsity, KV cache, long-context cost, serving systems"},
+    "Reasoning": {"group": "Capabilities", "desc": "Chain-of-thought, test-time compute, math/logic reasoning, planning"},
+    "Agents": {"group": "Capabilities", "desc": "Tool use, computer/web use, coding and software-engineering agents, multi-agent systems"},
+    "Retrieval & Memory": {"group": "Capabilities", "desc": "RAG, search, long-term memory, knowledge editing"},
+    "Pre-training & Data": {"group": "Training", "desc": "Pre-training recipes, scaling laws, data curation, synthetic data, representation learning"},
+    "Post-training": {"group": "Training", "desc": "SFT, RLHF/RLAIF, preference optimization, instruction tuning, reward models"},
+    "Reinforcement Learning": {"group": "Training", "desc": "RL algorithms and theory, RL for LLMs (e.g. RLVR) when the RL method itself is the contribution"},
+    "Optimization": {"group": "Training", "desc": "Optimizers, training dynamics, stability, learning-rate schedules"},
+    "Generative Models": {"group": "Generation & Embodiment", "desc": "Diffusion/flow/autoregressive generation of images, video, audio, speech, 3D"},
+    "World Models": {"group": "Generation & Embodiment", "desc": "Models that learn environment dynamics for prediction, planning or simulation"},
+    "Robotics": {"group": "Generation & Embodiment", "desc": "Robot learning, VLA models, manipulation, locomotion, navigation, autonomous driving"},
+    "Computer Vision": {"group": "Generation & Embodiment", "desc": "Perception: detection, segmentation, 3D reconstruction, video understanding"},
+    "Safety & Alignment": {"group": "Trust", "desc": "Alignment methods, deception, control, oversight, dangerous capabilities, honesty"},
+    "Interpretability": {"group": "Trust", "desc": "Mechanistic interpretability, probing, features/circuits, model internals"},
+    "Security": {"group": "Trust", "desc": "Jailbreaks, prompt injection, adversarial attacks, privacy, watermarking"},
+    "Evaluation & Benchmarks": {"group": "Trust", "desc": "New benchmarks, evaluation methodology, measurement of capabilities"},
+    "Society & Policy": {"group": "Trust", "desc": "Economic/social impact, governance, fairness, human-AI interaction studies"},
+    "AI for Science & Health": {"group": "Science & Theory", "desc": "Biology, chemistry, materials, physics, climate, medicine, healthcare"},
+    "AI for Math": {"group": "Science & Theory", "desc": "Theorem proving, formal math (Lean), mathematical discovery"},
+    "Theory": {"group": "Science & Theory", "desc": "Learning theory, generalization, expressivity, theoretical analysis of deep learning"},
+    "RSI": {"group": "Science & Theory", "desc": "Recursive self-improvement, automated AI research, self-improving agents/models"}
+  },
+  "news_categories": {
+    "Model Release": "A new or updated model (frontier, open-weight, specialized)",
+    "Product & Features": "New product, feature or capability launch",
+    "Business & Funding": "Funding rounds, valuations, M&A, partnerships, revenue",
+    "Earnings & Markets": "Earnings reports, financial results, market moves",
+    "Compute & Infrastructure": "Chips, data centers, compute deals, energy",
+    "Policy & Legal": "Regulation, government action, lawsuits, court rulings",
+    "Safety & Security": "Safety incidents, security breaches, safety frameworks",
+    "Research": "Research results reported as news (e.g. a lab's major paper or demo)",
+    "Open Source": "Major open-source releases of models, tools or datasets",
+    "People": "Major leadership/personnel moves"
+  }
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Updated</title>
+  <meta name="description" content="A daily digest of the most important AI news and papers: up to 2 news stories and 5 papers a day, each explained in 300-400 words.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Cpath d='M9 22l5-12h4l5 12h-3.4l-1-2.6h-5.2l-1 2.6zm5.4-5.3h3.2L16 12.6z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/" aria-label="AI Updated home">
+        <span class="logo" aria-hidden="true">AI</span>
+        <span class="brand-text"><strong>AI Updated</strong><span class="tagline">Daily AI news &amp; papers, explained</span></span>
+      </a>
+      <div class="top-actions">
+        <button class="icon-btn filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="sidebar">Filters</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Filters">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Calendar</h2>
+          <div class="seg" role="group" aria-label="Date selection mode">
+            <button data-mode="day" class="on">Day</button><button data-mode="range">Range</button>
+          </div>
+        </div>
+        <div id="calendar" class="calendar"></div>
+        <p class="hint" id="calHint"></p>
+      </section>
+
+      <section class="panel">
+        <label class="search">
+          <span class="sr-only">Search</span>
+          <input id="search" type="search" placeholder="Search titles & summaries" autocomplete="off">
+        </label>
+        <div class="seg seg-wide" role="group" aria-label="Item type" id="typeSeg">
+          <button data-type="all" class="on">All</button><button data-type="paper">Papers</button><button data-type="news">News</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Paper tags</h2><button class="link-btn" id="clearAll">Clear filters</button></div>
+        <div id="tags"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>News categories</h2></div>
+        <div id="cats" class="chips"></div>
+      </section>
+    </aside>
+
+    <main id="main" class="main" tabindex="-1">
+      <div class="loading">Loading…</div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>Curated every morning at 7:30 ET by Claude from arXiv, alphaXiv, Hugging Face Daily Papers, official lab blogs and reputable press.
+      Summaries are AI-written; follow the source links for details. <a href="https://github.com/guaaaaa/AI_Updated">Source on GitHub</a>.</p>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

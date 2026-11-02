@@ -1,0 +1,39 @@
+{
+  "_doc": "Sources the pipeline scripts pull from. Edit freely; scripts skip feeds that fail.",
+  "arxiv_categories": ["cs.AI", "cs.LG", "cs.CL", "cs.CV", "cs.RO", "cs.MA", "cs.NE", "stat.ML"],
+  "news_feeds": [
+    {"name": "OpenAI", "tier": "primary", "url": "https://openai.com/news/rss.xml"},
+    {"name": "Google DeepMind", "tier": "primary", "url": "https://deepmind.google/blog/rss.xml"},
+    {"name": "Google AI Blog", "tier": "primary", "url": "https://blog.google/technology/ai/rss/"},
+    {"name": "Google Research", "tier": "primary", "url": "https://research.google/blog/rss/"},
+    {"name": "NVIDIA Blog", "tier": "primary", "url": "https://blogs.nvidia.com/feed/"},
+    {"name": "Hugging Face Blog", "tier": "primary", "url": "https://huggingface.co/blog/feed.xml"},
+    {"name": "Qwen", "tier": "primary", "url": "https://qwenlm.github.io/blog/index.xml"},
+    {"name": "TechCrunch AI", "tier": "press", "url": "https://techcrunch.com/category/artificial-intelligence/feed/"},
+    {"name": "The Verge AI", "tier": "press", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"},
+    {"name": "Ars Technica AI", "tier": "press", "url": "https://arstechnica.com/ai/feed/"},
+    {"name": "MIT Technology Review AI", "tier": "press", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed"},
+    {"name": "Wired AI", "tier": "press", "url": "https://www.wired.com/feed/tag/ai/latest/rss"},
+    {"name": "Bloomberg Technology", "tier": "press", "url": "https://feeds.bloomberg.com/technology/news.rss"},
+    {"name": "Financial Times AI", "tier": "press", "url": "https://www.ft.com/artificial-intelligence?format=rss"},
+    {"name": "SemiAnalysis", "tier": "press", "url": "https://www.semianalysis.com/feed"},
+    {"name": "Simon Willison", "tier": "discovery", "url": "https://simonwillison.net/atom/everything/"},
+    {"name": "Import AI", "tier": "discovery", "url": "https://importai.substack.com/feed"},
+    {"name": "Interconnects", "tier": "discovery", "url": "https://www.interconnects.ai/feed"}
+  ],
+  "google_news_queries": [
+    "OpenAI", "Anthropic Claude", "Google Gemini OR DeepMind", "Meta AI OR Llama", "xAI OR Grok",
+    "Nvidia AI", "Microsoft AI OR Copilot", "DeepSeek OR Qwen OR Moonshot OR Mistral",
+    "AI model launch", "AI startup funding", "AI regulation OR AI law", "AI chips OR AI data center"
+  ],
+  "reputable_publishers": [
+    "Reuters", "Bloomberg", "Bloomberg.com", "Financial Times", "The Wall Street Journal", "WSJ", "CNBC", "The New York Times",
+    "The Washington Post", "Associated Press", "AP News", "BBC", "The Guardian", "Axios", "The Information",
+    "The Verge", "TechCrunch", "Ars Technica", "WIRED", "Wired", "MIT Technology Review", "VentureBeat", "Fortune",
+    "Business Insider", "Semafor", "The Register", "Engadget", "ZDNET", "IEEE Spectrum", "Nature", "Science",
+    "SemiAnalysis", "Platformer", "Tom's Hardware", "South China Morning Post", "Nikkei Asia", "CNN", "Forbes",
+    "OpenAI", "Anthropic", "Google", "Google DeepMind", "blog.google", "Meta", "Microsoft", "NVIDIA", "NVIDIA Blog"
+  ],
+  "hn_ai_keywords": ["ai", "llm", "gpt", "openai", "anthropic", "claude", "gemini", "deepmind", "llama", "mistral",
+    "deepseek", "qwen", "model", "agent", "nvidia", "transformer", "diffusion", "machine learning", "neural", "grok", "copilot"]
+}
