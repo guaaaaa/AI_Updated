@@ -20,7 +20,7 @@
       else if (k === "dataset") Object.assign(n.dataset, v);
       else n.setAttribute(k, v === true ? "" : v);
     }
-    for (const c of kids.flat()) if (c != null && c !== false) n.append(c instanceof Node ? c : document.createTextNode(c));
+    for (const c of kids.flat(Infinity)) if (c != null && c !== false) n.append(c instanceof Node ? c : document.createTextNode(c));
     return n;
   }
   const dObj = (iso) => new Date(iso + "T12:00:00");
