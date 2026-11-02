@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-02T05:38:56+00:00",
+ "updated": "2026-11-02T12:33:44+00:00",
  "days": [
+  {
+   "date": "2026-11-02",
+   "edition": "weekday",
+   "news": 1,
+   "papers": 5,
+   "backfill": false
+  },
   {
    "date": "2026-11-01",
    "edition": "weekend",
@@ -52,6 +59,86 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-02-n1",
+   "date": "2026-11-02",
+   "type": "news",
+   "title": "Marvell agrees to buy optical-chip maker Lumentum in a $115 billion all-stock deal",
+   "tldr": "Marvell will acquire laser and optical-module maker Lumentum in an all-stock deal valued at $115 billion, a bet that AI data centers are moving from copper to integrated optical connectivity.",
+   "category": "Business & Funding",
+   "byline": "Marvell Investor Relations"
+  },
+  {
+   "id": "2610.42149",
+   "date": "2026-11-02",
+   "type": "paper",
+   "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+   "tldr": "LARC lets a unified image model think in continuous hidden states instead of text before drawing, trained with a curriculum and a self-supervised information-gain reward, and it improves with more thinking.",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Reasoning",
+    "Generative Models",
+    "Post-training"
+   ],
+   "byline": "Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee et al. · KAIST, POSTECH, RLWRLD"
+  },
+  {
+   "id": "2610.42146",
+   "date": "2026-11-02",
+   "type": "paper",
+   "title": "Hierarchical World Models with Implicit Dynamics",
+   "tldr": "ID-WM plans long tasks by using diffusion noise as an abstract action that picks reachable subgoals, while a second model converts each hop into precise actions.",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Robotics",
+    "Generative Models"
+   ],
+   "byline": "Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui et al. · New York University (Courant Institute), Meta FAIR, AMI Labs"
+  },
+  {
+   "id": "2610.40799",
+   "date": "2026-11-02",
+   "type": "paper",
+   "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
+   "tldr": "CaPtain turns a 4B open vision-language model, which initially solves nothing, into a robot agent that writes code against low-level primitives, using synthetic supervision and reinforcement learning with a simulator-informed critic.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Robotics",
+    "Reinforcement Learning",
+    "Post-training"
+   ],
+   "byline": "Yijia Fan, Xilin He, Yilei Jiang et al. · Chinese University of Hong Kong (MMLab), NovaXBot"
+  },
+  {
+   "id": "2610.41956",
+   "date": "2026-11-02",
+   "type": "paper",
+   "title": "Chronos-2: A foundation model for multivariate time series forecasting",
+   "tldr": "Chronos-2 is a 120M-parameter zero-shot forecaster that uses group attention to learn relationships among related series and covariates in context, trained only on synthetic multivariate data.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Architectures",
+    "AI for Science & Health"
+   ],
+   "byline": "Abdul Fatir Ansari, Oleksandr Shchur, Jaris Küken et al. · Amazon Web Services, University of Freiburg, Max Planck Institute for Biogeochemistry"
+  },
+  {
+   "id": "2610.42116",
+   "date": "2026-11-02",
+   "type": "paper",
+   "title": "ACCT: Asymmetric Cross-LLM Context Transfer",
+   "tldr": "ACCT converts a small model's already-computed context cache into a compressed cache that a larger model in the same family can use directly, skipping the large model's expensive prefill.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "LLMs"
+   ],
+   "byline": "Yuzhe Liu, Haolin Tian, Tonghan Wang · Tsinghua University"
+  },
   {
    "id": "2026-11-01-n1",
    "date": "2026-11-01",
@@ -698,27 +785,27 @@
   ]
  },
  "tag_counts": {
-  "LLMs": 3,
-  "Efficiency": 9,
-  "Architectures": 4,
-  "Agents": 10,
+  "Multimodal": 6,
+  "Reasoning": 6,
+  "Generative Models": 4,
+  "Post-training": 10,
+  "World Models": 5,
+  "Robotics": 7,
+  "Agents": 11,
+  "Reinforcement Learning": 9,
+  "Pre-training & Data": 8,
+  "Architectures": 5,
+  "AI for Science & Health": 2,
+  "Efficiency": 10,
+  "LLMs": 4,
   "Optimization": 1,
-  "Pre-training & Data": 7,
   "Theory": 3,
-  "Generative Models": 2,
   "Security": 1,
   "Safety & Alignment": 5,
-  "Post-training": 8,
-  "Reinforcement Learning": 8,
   "AI for Math": 2,
-  "World Models": 4,
-  "Robotics": 5,
   "Evaluation & Benchmarks": 5,
   "Interpretability": 2,
-  "Multimodal": 5,
-  "AI for Science & Health": 1,
   "Computer Vision": 1,
-  "Reasoning": 5,
   "RSI": 3,
   "Retrieval & Memory": 1
  },
@@ -735,7 +822,7 @@
   "People"
  ],
  "category_counts": {
-  "Business & Funding": 3,
+  "Business & Funding": 4,
   "Compute & Infrastructure": 1,
   "Safety & Security": 1,
   "Policy & Legal": 1,
