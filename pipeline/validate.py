@@ -1,6 +1,6 @@
 """Validate digest files before publishing. Exit code 1 on any error.
 
-Checks: schema, section headings, 300-400 word bodies, tags/categories from the fixed
+Checks: schema, section headings, 250-350 word bodies (300-400 before 2026-11-03), tags/categories from the fixed
 taxonomy, item caps, time windows (72h weekday / 7d weekend papers; 72h news),
 duplicates against the previous 7 days, https links, and no HTML in text.
 
@@ -18,7 +18,9 @@ from common import (DAYS, config, edition, featured_ids, news_window, paper_wind
 
 NEWS_SECTIONS = ["Context", "What happened", "Why it matters", "What to watch"]
 PAPER_SECTIONS = ["Problem", "Existing approaches", "Key idea", "Results", "Why it matters"]
-HARD_MIN, SOFT_MIN, SOFT_MAX, HARD_MAX = 270, 300, 400, 430
+WORD_LIMITS = (225, 250, 350, 375)          # hard min, target min, target max, hard max
+OLD_WORD_LIMITS = (270, 300, 400, 430)      # digests dated before WORD_LIMITS_FROM
+WORD_LIMITS_FROM = dt.date(2026, 11, 3)
 MAX_NEWS, MAX_PAPERS = 2, 5
 HTML_RE = re.compile(r"<\s*[a-zA-Z/!]")
 ARXIV_RE = re.compile(r"^\d{4}\.\d{4,5}$")
@@ -63,6 +65,7 @@ def check_day(path, tax):
         if heads != expected:
             E(f"{label}: sections must be {expected}, got {heads}")
         n = sum(word_count(s.get("body", "")) for s in item.get("sections", []))
+        HARD_MIN, SOFT_MIN, SOFT_MAX, HARD_MAX = WORD_LIMITS if d >= WORD_LIMITS_FROM else OLD_WORD_LIMITS
         if not HARD_MIN <= n <= HARD_MAX:
             E(f"{label}: {n} words (must be {SOFT_MIN}-{SOFT_MAX}; hard limits {HARD_MIN}-{HARD_MAX})")
         elif not SOFT_MIN <= n <= SOFT_MAX:

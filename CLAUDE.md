@@ -1,7 +1,7 @@
 # AI Updated
 
 Static site (GitHub Pages, branch `master`, root) publishing a daily AI digest: ≤2 news + ≤5 papers,
-300–400 words each. Live: https://guaaaaa.github.io/AI_Updated/
+250–350 words each. Live: https://guaaaaa.github.io/AI_Updated/
 
 - **Daily scheduled run → follow `RUNBOOK.md` exactly.** It covers selection rubric, writing rules,
   budgets, and the publish/verify step.

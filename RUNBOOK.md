@@ -1,7 +1,7 @@
 # Daily digest runbook
 
 You are producing today's **AI Updated** digest: at most **2 news stories** and **5 papers**, each
-explained in **300–400 words**, published to https://guaaaaa.github.io/AI_Updated/.
+explained in **250–350 words**, published to https://guaaaaa.github.io/AI_Updated/.
 
 **Reader:** an AI researcher who wants to keep up with AI *in general*, especially important or trending
 work *outside their own specialty*. They know ML fundamentals (transformers, RL, fine-tuning, diffusion);
@@ -126,24 +126,24 @@ weekday digests did not feature.
 
 ## 4. Write (one Write call)
 
-Each item is **300–400 words** across its sections (validator: error outside 270–430). Plain text only: no
+Each item is **250–350 words** across its sections (validator: error outside 225–375). Plain text only: no
 Markdown, no HTML, no bullet or numbered lists (validator rejects them); separate paragraphs with a blank
 line. Also write a `tldr` (one sentence, ≤35 words) and a one-line `why_selected` (what made it make the cut).
 
 **Paper sections** (exact headings, rough word budget):
-- `Problem` (~60): what is hard or unknown, and why anyone should care.
-- `Existing approaches` (~60): what people do today and the specific limitation this paper attacks.
-- `Key idea` (~120): the one mechanism that makes it work, explained intuitively — an analogy, a concrete
+- `Problem` (~50): what is hard or unknown, and why anyone should care.
+- `Existing approaches` (~50): what people do today and the specific limitation this paper attacks.
+- `Key idea` (~100): the one mechanism that makes it work, explained intuitively — an analogy, a concrete
   example or a "think of it as…" sentence — then just enough technical detail to be precise. Explain
   the 1–2 key parts; skip the rest.
-- `Results` (~70): concrete numbers with their baselines and benchmarks ("62% vs 48% for X on Y").
-- `Why it matters` (~60): implications for the field, who should care, and the main caveat or limitation.
+- `Results` (~60): concrete numbers with their baselines and benchmarks ("62% vs 48% for X on Y").
+- `Why it matters` (~45): implications for the field, who should care, and the main caveat or limitation.
 
 **News sections**:
-- `Context` (~80): the background a reader needs (who, prior state of play).
-- `What happened` (~110): the facts — what, who, when, key numbers.
-- `Why it matters` (~120): significance for the industry and research; second-order effects.
-- `What to watch` (~40): the open questions or next milestones.
+- `Context` (~65): the background a reader needs (who, prior state of play).
+- `What happened` (~95): the facts — what, who, when, key numbers.
+- `Why it matters` (~100): significance for the industry and research; second-order effects.
+- `What to watch` (~35): the open questions or next milestones.
 
 **Style**: precise, calm and concrete. Define acronyms on first use. No hype words ("revolutionary",
 "game-changing"). Prefer specific numbers over adjectives. Don't restate the abstract; explain it.

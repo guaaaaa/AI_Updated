@@ -1,7 +1,7 @@
 # AI Updated
 
 A daily digest of the most important AI news and papers, curated and explained by Claude every morning at
-7:30 ET: **up to 2 news stories and 5 papers per day, ~300–400 words each**, with tag and calendar filters.
+7:30 ET: **up to 2 news stories and 5 papers per day, ~250–350 words each**, with tag and calendar filters.
 
 **Site:** https://guaaaaa.github.io/AI_Updated/
 
