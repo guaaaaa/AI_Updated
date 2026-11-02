@@ -151,6 +151,7 @@ def main():
         for h in json.loads(http_get(url, timeout=40))["hits"]:
             if ai_related(h.get("title", ""), kws):
                 hn.append({"title": h["title"], "url": h.get("url") or f"https://news.ycombinator.com/item?id={h['objectID']}",
+                           "time": dt.datetime.fromtimestamp(h.get("created_at_i", 0), UTC).isoformat(),
                            "points": h.get("points", 0), "comments": h.get("num_comments", 0),
                            "hn": f"https://news.ycombinator.com/item?id={h['objectID']}"})
         hn.sort(key=lambda x: -x["points"])
@@ -196,7 +197,8 @@ def main():
             u = "" if "news.google.com" in it["url"] else f"  <{it['url']}>"
             L.append(f"- {when(it['time'])} | {it['publisher']}: {it['title']}{u}")
     L += ["", "## C. Hacker News (AI, top by points)"]
-    L += [f"- {h['points']} pts / {h['comments']} comments: {h['title']}  <{h['url']}>" for h in hn[:15]]
+    L += [f"- {dt.datetime.fromisoformat(h['time']).astimezone(tz):%a %H:%M} | {h['points']} pts / {h['comments']} comments: "
+          f"{h['title']}  <{h['url']}>" for h in hn[:15]]
     md = "\n".join(L)
     (WORK / f"news_{d}.md").write_text(md)
     print(md)

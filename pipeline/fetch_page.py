@@ -44,6 +44,22 @@ def readable(page, max_words):
     return "\n".join(head) + "\n\n" + text
 
 
+def pdf_text(url, max_words):
+    import subprocess
+    import tempfile
+    import urllib.request
+    req = urllib.request.Request(url, headers={"User-Agent": "ai-updated-digest/0.1"})
+    data = urllib.request.urlopen(req, timeout=60).read()
+    if not data.startswith(b"%PDF"):
+        return None
+    with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+        f.write(data)
+        f.flush()
+        txt = subprocess.run(["pdftotext", "-layout", f.name, "-"], capture_output=True, text=True).stdout
+    w = " ".join(txt.split()).split(" ")
+    return "TITLE: (PDF document)\n\n" + " ".join(w[:max_words]) + (" [...]" if len(w) > max_words else "")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("urls", nargs="+")
@@ -52,7 +68,15 @@ def main():
     for url in a.urls:
         print(f"\n==================== {url} ====================")
         try:
-            print(readable(http_get(url, headers={"Accept": "text/html"}, timeout=40, retries=2), a.max_words))
+            if url.lower().split("?")[0].endswith(".pdf"):
+                print(pdf_text(url, a.max_words) or "UNAVAILABLE (not a PDF)")
+                continue
+            page = http_get(url, headers={"Accept": "text/html"}, timeout=40, retries=2)
+            if page.startswith("%PDF"):
+                page = pdf_text(url, a.max_words)
+                print(page or "UNAVAILABLE")
+                continue
+            print(readable(page, a.max_words))
         except Exception as e:
             msg = str(e)
             blocked = re.search(r"HTTP Error (403|429)", msg)
