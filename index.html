@@ -6,7 +6,12 @@
   <title>AI Updated</title>
   <meta name="description" content="A daily digest of the most important AI news and papers: up to 2 news stories and 5 papers a day, each explained in 300-400 words.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Cpath d='M9 22l5-12h4l5 12h-3.4l-1-2.6h-5.2l-1 2.6zm5.4-5.3h3.2L16 12.6z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="assets/style.css">
+  <meta name="theme-color" content="#eef1f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#06080e" media="(prefers-color-scheme: dark)">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 </head>
 <body>
@@ -17,8 +22,10 @@
         <span class="brand-text"><strong>AI Updated</strong><span class="tagline">Daily AI news &amp; papers, explained</span></span>
       </a>
       <div class="top-actions">
-        <button class="icon-btn filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="sidebar">Filters</button>
-        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">Theme</button>
+        <button class="icon-btn filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="sidebar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle light / dark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" stroke="none"/></svg></button>
       </div>
     </div>
   </header>
