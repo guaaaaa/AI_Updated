@@ -181,6 +181,15 @@ def main():
         except Exception as e:
             print(f"(HTML unavailable for {pid}: {e}; using PDF)", file=sys.stderr)
             doc = from_pdf(pid)
+        if not doc["abstract"] or not doc["title"]:  # some HTML renderings lack title/abstract markup
+            try:
+                from fetch_papers import abs_page
+                meta = abs_page(pid)
+                doc["title"] = doc["title"] or meta["title"]
+                doc["abstract"] = doc["abstract"] or meta["abstract"]
+                doc["authors"] = doc["authors"] or ", ".join(meta["authors"])
+            except Exception as e:
+                print(f"(abs page lookup failed for {pid}: {e})", file=sys.stderr)
         txt = render(doc, a.mode, a.max_words)
         (cache / f"{pid}.{a.mode}.txt").write_text(txt)
         print(f"\n==================== {pid} ({a.mode}, {len(txt.split())} words) ====================\n{txt}")

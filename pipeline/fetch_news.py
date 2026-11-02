@@ -181,16 +181,20 @@ def main():
         L += [f"- {dd}: {t} [story_key={k}]" for dd, t, k in recent_titles]
         L.append("")
     L.append("## A. Primary-source posts (official blogs; many are minor customer stories)")
+    def when(t):  # feeds with date-only stamps show as 00:00 UTC: flag them as approximate
+        u = t.astimezone(UTC)
+        return f"{u:%a %b %d} (date only — verify time)" if (u.hour, u.minute, u.second) == (0, 0, 0) else f"{t.astimezone(tz):%a %H:%M}"
+
     for it in heads:
         if it["tier"] == "primary":
             desc = " ".join(it.get("desc", "").split()[:28])
-            L.append(f"- {it['time'].astimezone(tz):%a %H:%M} | {it['publisher']}: {it['title']}  <{it['url']}>"
+            L.append(f"- {when(it['time'])} | {it['publisher']}: {it['title']}  <{it['url']}>"
                      + (f"\n    {desc}…" if desc else ""))
     L += ["", "## B. Press & newsletter headlines (chronological; Google News links omitted, search by headline)"]
     for it in heads:
         if it["tier"] != "primary":
             u = "" if "news.google.com" in it["url"] else f"  <{it['url']}>"
-            L.append(f"- {it['time'].astimezone(tz):%a %H:%M} | {it['publisher']}: {it['title']}{u}")
+            L.append(f"- {when(it['time'])} | {it['publisher']}: {it['title']}{u}")
     L += ["", "## C. Hacker News (AI, top by points)"]
     L += [f"- {h['points']} pts / {h['comments']} comments: {h['title']}  <{h['url']}>" for h in hn[:15]]
     md = "\n".join(L)
