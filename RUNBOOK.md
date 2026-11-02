@@ -84,7 +84,8 @@ python3 pipeline/fetch_news.py --date $D > /dev/null     # ~30 s; writes work/ne
 Read `work/news_$D.md` (primary-source posts, reputable press headlines, Hacker News; plus stories already
 covered in the last 7 days). Group headlines into stories yourself and shortlist ≤5.
 
-Budget: **≤8 WebSearch queries and ≤8 page fetches** for the whole news step. Use them to confirm facts,
+Budget: **≤8 WebSearch queries and ≤8 page fetches** for the whole news step (each URL counts as one fetch;
+a search the tool rejects before running doesn't count). Use them to confirm facts,
 find the primary source and canonical article URLs (Google News links are omitted on purpose), and get
 numbers right.
 
@@ -93,8 +94,11 @@ numbers right.
 - Some sites answer automated requests with a bot check (e.g. openai.com returns 403). **Never try to get
   around a bot check** (no fake browsers or headless-browser tricks). Use the site's RSS entry (title,
   timestamp, description are in `work/news_$D.json`) plus reputable coverage that reports the details.
-- Paywalled pages (Bloomberg, FT, WSJ, The Information): rely on the primary source and accessible
-  reports; never cite what you could not read.
+- Paywalled pages (Bloomberg, FT, WSJ, The Information) and pages that render only with JavaScript (many
+  investor-relations sites) or refuse automated clients (sec.gov): rely on the primary source's other pages
+  and accessible reports. Cite only pages you actually read; facts seen only in search-result snippets need
+  a second source you did read.
+- Don't pass `allowed_domains` to WebSearch with theguardian.com or apnews.com: the tool rejects them.
 
 ### News importance rubric
 - **Rank by type**: frontier or major open-weight model releases > major product/capability launches >

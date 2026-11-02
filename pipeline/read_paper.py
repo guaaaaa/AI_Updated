@@ -56,7 +56,8 @@ def from_html(pid):
         head = text_of(h) if h else ""
         if h:
             h.decompose()
-        body = " ".join(text_of(p) for p in sec.find_all(class_="ltx_para"))
+        paras = [p for p in sec.find_all(class_="ltx_para") if not p.find_parent(class_="ltx_para")]  # no nested dupes
+        body = " ".join(text_of(p) for p in paras)
         sections.append((head, body))
     return {
         "title": text_of(title) if title else "",
@@ -144,7 +145,7 @@ def render(doc, mode, max_words):
     else:
         concl = [s for s in secs[1:] if CONCL_RE.search(s[0])]
         tail = concl[-1] if concl else None
-        budget = max_words - (min(600, len(tail[1].split())) if tail else 0)
+        budget = max_words - (min(600, len(tail[1].split())) if tail else 0) - 550  # room for captions
         for h, b in secs:
             if tail and (h, b) == tail:
                 continue
@@ -156,7 +157,7 @@ def render(doc, mode, max_words):
         if tail:
             out.append(f"\n## {tail[0]}\n{words(tail[1], 600)}")
         if doc["captions"]:
-            out.append("\nCAPTIONS:\n" + "\n".join(f"- {words(c, 70)}" for c in doc["captions"][:20]))
+            out.append("\nCAPTIONS:\n" + "\n".join(f"- {words(c, 45)}" for c in doc["captions"][:12]))
     return "\n".join(out)
 
 

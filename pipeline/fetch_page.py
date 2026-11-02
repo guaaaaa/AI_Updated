@@ -35,6 +35,8 @@ def readable(page, max_words):
     if len(words) > max_words:
         text = " ".join(words[:max_words]) + " [...]"
     head = [f"TITLE: {title}"]
+    if len(text.split()) < 80:
+        head.append("NOTE: very little text extracted; the page probably renders with JavaScript. Use other sources.")
     if meta.get("article:published_time"):
         head.append(f"PUBLISHED: {meta['article:published_time']}")
     if meta.get("og:site_name"):
