@@ -1,0 +1,444 @@
+{
+ "date": "2026-10-30",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T04:56:25+00:00",
+ "backfill": true,
+ "summary": "Mistral opens the weights of its trillion-parameter Large 4 and Alphabet's AI spending meets a record sell-off; papers prove when separately trained encoders converge, fold reinforcement learning into maximum likelihood, train a psychiatric intake agent in simulation, give world models a compact 3D memory and improve reasoning models by contrasting them with damaged copies.",
+ "news": [
+  {
+   "id": "2026-10-30-n1",
+   "story_key": "mistral-large-4-open-weights-release",
+   "title": "Mistral releases the weights of Mistral Large 4, a trillion-parameter model aimed at coding and cyber defense",
+   "category": "Model Release",
+   "published": "2026-10-29T10:00:00-04:00",
+   "tldr": "Mistral released the weights of an improved Mistral Large 4 (\"Le Chonk\"), a 1-trillion-parameter mixture-of-experts model that it says now leads open-weight models in agentic coding and defensive cybersecurity.",
+   "why_selected": "The week's largest open-weight release, from the leading open-model lab outside China, with day-one support in common inference tools and 1,716 points on Hacker News.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Open-weight models, whose parameters anyone can download, run and modify, have recently been led by Chinese labs such as DeepSeek, Z.ai (maker of GLM) and Moonshot. Earlier in October, Paris-based Mistral put Mistral Large 4, nicknamed Le Chonk, into public preview without releasing its weights. Cybersecurity has meanwhile become a selling point for frontier models, and a reason to gate them: Google's Gemini 4 Carbon, announced a day earlier, is going first only to selected cyber defenders."
+    },
+    {
+     "heading": "What happened",
+     "body": "On October 29 Mistral published the weights of an improved Large 4, after what it describes as three more weeks of reinforcement learning on coding and defensive security. According to Hugging Face, the model is a mixture-of-experts (MoE) network with about 1 trillion total and 49 billion active parameters, a 1-million-token context window and a 1.6-billion-parameter vision encoder. It ships under the Mistral Ecosystem Open-Weight License, an MIT derivative that limits model-as-a-service offerings. Mistral reports 41% on Terminal-Bench 4.0, 13 points above the preview, and 48% on the Artificial Analysis Coding Agent Index, tied with GLM-5.3 while using 47% fewer tokens per task. It also reports 51% on the Artificial Analysis Cyber Index and a 96.6% refusal rate on malicious cyber requests."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Mistral frames the release as a sovereignty argument. Pierre Stock, its vice president of science, told reporters it gives enterprises and governments frontier defensive tools they control, and said Chinese models offer no guarantee they won't behave maliciously. The practical point is that defenders usually must reproduce a vulnerability before fixing it, work that hosted models may refuse and that a provider can cut off mid-incident. With open weights, the usage policy and deployment sit with the user, and researchers can measure refusal behavior directly. The cost is dual use, which Sophos's Rafe Pilling stressed to Wired: anything downloadable can also be abused. Architecturally, Large 4 stacks two kinds of sparsity: each token activates 4 of 128 experts plus one shared expert, and a DeepSeek-style attention indexer picks at most 2,048 earlier positions to attend to, a design GLM-5.3 also uses."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether independent testers reproduce Mistral's figures; Hugging Face's own write-up lists 28.3% on Terminal-Bench 4, not 41%. Also watch how the license's model-as-a-service limits affect cloud hosts, and whether the refusal behavior survives community fine-tuning."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Mistral",
+     "url": "https://mistral.ai/news/mistral-large-4-oss/"
+    },
+    {
+     "name": "Hugging Face",
+     "url": "https://huggingface.co/blog/mistral-large4"
+    },
+    {
+     "name": "Wired",
+     "url": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-n2",
+   "story_key": "alphabet-q3-2026-earnings-ai-capex-selloff",
+   "title": "Alphabet loses about $500 billion in market value as AI spending turns its cash flow negative",
+   "category": "Earnings & Markets",
+   "published": "2026-10-28T16:00:00-04:00",
+   "tldr": "Alphabet's quarter showed Google Cloud revenue doubling to $30.7 billion, but $51.4 billion of capital spending turned free cash flow negative, and its shares fell 12.6% on Thursday, erasing about $500 billion.",
+   "why_selected": "The clearest market verdict yet on hyperscaler AI spending, with new disclosures on how AI search monetizes and how much TPU sales now matter.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Alphabet, Google's parent, is among the largest spenders on AI infrastructure: data centers, its own TPU (tensor processing unit) chips, and the Gemini models behind Google's shift to AI search. The previous quarter had already brought negative free cash flow, the cash left after capital spending, of $5.9 billion. Its previous worst one-day loss in market value, about $275 billion, came in July."
+    },
+    {
+     "heading": "What happened",
+     "body": "After the market closed on October 28, Alphabet reported third-quarter revenue of $127.6 billion, up 25%. Google Cloud revenue rose 103% to $30.7 billion, ahead of the $29.2 billion analysts expected, and Cloud operating income roughly tripled to $11.1 billion; Alphabet named TPU system sales as a meaningful contributor. Search and other revenue grew 12%, down from 17% the prior quarter. Earnings per share of $2.12 missed the $3.02 consensus, as other income swung from a $12.8 billion gain a year earlier to an $8.2 billion loss. Capital expenditure reached $51.4 billion, leaving free cash flow at negative $9.1 billion. During the quarter Alphabet also raised $12.4 billion by selling new shares and $28.7 billion in bonds. On October 29 its Class A shares closed down 12.64% at $283.82, erasing about $500 billion."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The quarter shows both halves of the AI trade. Demand is real: a cloud business that doubled, first-party model APIs processing nearly 32 billion tokens per minute (more than four times a year ago, per CEO Sundar Pichai), and outside customers buying TPU systems, which puts Google in direct competition with Nvidia as a chip supplier. But spending now outruns the cash the business generates, and Alphabet is funding part of it with new stock and debt. Ars Technica highlights a subtler problem: on the earnings call, Chief Business Officer Philipp Schindler said each AI Mode query earns less than a comparable web search, with fewer and cheaper ads. Google's answer is more AI Mode ads, including US multi-turn ads that change as a conversation proceeds. For AI startups renting Google's compute, often with venture money, investors' patience with hyperscaler spending will shape how much capacity gets built."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Alphabet kept its 2026 capital-spending guidance at $195 billion to $205 billion, and Ars reports it is targeting more than $300 billion in 2027. Watch whether AI Mode revenue per query closes the gap with web search, and whether the near-term Cloud margin pressure CFO Anat Ashkenazi has warned of materializes."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Alphabet",
+     "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/"
+    },
+    {
+     "name": "Fox Business",
+     "url": "https://www.foxbusiness.com/markets/google-parent-alphabet-suffers-nearly-500b-wall-street-wipeout-amid-ai-spending-fears"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.39302",
+   "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+   "authors": [
+    "Randall Balestriero",
+    "Yann LeCun"
+   ],
+   "affiliations": [
+    "Brown University",
+    "New York University",
+    "AMI Labs"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Theory",
+   "tags": [
+    "Theory",
+    "Pre-training & Data",
+    "Multimodal"
+   ],
+   "tldr": "Balestriero and LeCun prove that encoders trained separately on different modalities converge to one representation, up to a rotation, if their positive pairs are two views of one scene, a condition next-token prediction fails.",
+   "why_selected": "Number 1 on the alphaXiv Hot list; turns a widely cited empirical hypothesis into a theorem with a practical recipe, tested from 145,000 captions up to the texts of 940 million web images.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Vision and language models trained separately end up with surprisingly similar internal geometry, more so as they scale. The Platonic Representation Hypothesis (PRH) says models converge toward a shared statistical model of reality. But it remained an observation, with no proof for practical self-supervised objectives, no prediction of when it holds and no recipe beyond scale."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The original argument rests on an idealized contrastive learner, and the closest proof covers deep linear networks. In practice, alignment comes from scale or from models like CLIP, trained directly on 400 million image-text pairs. Neither explains when a language model that never sees an image should line up with a vision encoder."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The answer is what counts as a positive pair. A joint-embedding predictive architecture (JEPA) pulls together embeddings of two inputs declared to be views of the same thing, while an anti-collapse term keeps embeddings spread out. Such a JEPA provably learns the top eigenvectors of the graph its positive pairs draw over world states. If an image JEPA and a text JEPA connect the same world states (say, captions of the same photo), they solve one problem in different coordinates, so their solutions match up to a single rotation. Think of two cartographers who never meet but survey the same city: their maps differ only in orientation. \"Bad views\", such as two masked spans of one caption, instead make the encoder spend dimensions on wording, which no rotation can align. Next-token prediction is shown to be a bad-view JEPA whose positives are a prefix and its continuation."
+    },
+    {
+     "heading": "Results",
+     "body": "Trained on the texts of 940 million web images, a 109-million-parameter text JEPA aligns with the DINOv2 vision encoder better (0.184 on the original PRH benchmark) than every language model tested, up to Qwen2.5-72B and Llama-3-70B, and than CLIP's text encoder. On the same corpus, good views reach next-token prediction's alignment with 42 times fewer samples. One linear map fitted on 30,000 pairs turns the separate encoders into a captioner scoring CIDEr 0.838 on COCO."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If it holds up, the lever for cross-modal alignment is the choice of positives, not scale alone, and next-token prediction, the objective behind today's largest models, is an inefficient route to world-grounded representations. The main caveat: at web scale, two of each image's three texts were written by an image captioner built on CLIP, so paired information leaks in; without them, alignment drops from 0.107 to 0.060."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.39302",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.39302",
+    "code": "https://github.com/galilai-group/prh-proof"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 1,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 66,
+    "notable_authors": [
+     "Randall Balestriero",
+     "Yann LeCun"
+    ],
+    "org": "galilai-group"
+   }
+  },
+  {
+   "id": "2610.40564",
+   "title": "Training Foundation Models with a Single Algorithm",
+   "authors": [
+    "Yuda Song",
+    "Alvin Zhang",
+    "Fahim Tajwar",
+    "Daman Arora",
+    "Jeff Schneider",
+    "Daniel Khashabi",
+    "Ruslan Salakhutdinov",
+    "J. Andrew Bagnell",
+    "Aarti Singh",
+    "Andrea Zanette"
+   ],
+   "affiliations": [
+    "Carnegie Mellon University",
+    "Johns Hopkins University",
+    "Aurora Innovation"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Pre-training & Data",
+    "Post-training"
+   ],
+   "tldr": "Researchers at CMU and Johns Hopkins recast reinforcement learning as maximum-likelihood fitting to a model's own successful outputs, so pretraining, fine-tuning and RL become one algorithm whose only knob is the data mixture.",
+   "why_selected": "Number 2 on the alphaXiv Hot list; a simple, general reframing of the whole training pipeline, with working infrastructure and controlled comparisons against staged training.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Foundation models are trained in stages: pretraining on web text, midtraining on curated data, supervised fine-tuning (SFT) on demonstrations, then reinforcement learning (RL) with rewards. Each stage has its own recipe, often its own infrastructure, and is studied separately. Little is known about how choices across the pipeline jointly shape the final model, and abrupt switches between stages can erase earlier skills."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Pretraining, midtraining and SFT already share one rule, maximum likelihood: make the training tokens more probable. RL looks different: it is written as policy optimization, with methods such as PPO or GRPO. So RL runs as a separate stage, and mixing earlier data into it means adding a separate loss whose coefficient needs tuning."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The paper builds on Maximum Likelihood RL (MaxRL): for pass/fail rewards, the gradient of a prompt's log success probability equals the average likelihood gradient on the model's own successful completions. Think of a student who attempts each exercise several times, discards the wrong answers and studies the right ones like textbook examples. Concretely, each correct completion gets a weight of one over the observed success rate for that prompt, and incorrect ones get zero. Once RL means fitting filtered samples, every stage is the same weighted likelihood loss on a different data source, and training becomes a choice of which sources to mix, in what proportions and when. Staged training is the special case where the mixture jumps from one source to the next. In their system, generators add fresh RL samples to a buffer that also holds static text, and one trainer samples from it."
+    },
+    {
+     "heading": "Results",
+     "body": "In a controlled study (a 124-million-parameter model, 20 billion pretraining tokens, a 510-million-token reasoning corpus, then RL on verifiable puzzles), the best unified mixtures beat the best staged pipeline in final accuracy, even on larger, unseen puzzles. At matched compute, staged training wins at intermediate budgets, unified at the smallest and largest. Unified models kept held-out pretraining loss near a pretrain-only model's; staged midtraining raised it. In a 0.76-billion-parameter math RL run, mixing in midtraining data improved retention but traded coding accuracy for coverage."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It recasts foundation-model training as data scheduling under one loss, which could simplify infrastructure and support a science of whole training trajectories. Caveats: experiments stay below one billion parameters, mostly optimize one RL task at a time, reveal trade-offs rather than a best schedule, and cover only RL objectives expressible as likelihood fitting."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40564",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40564",
+    "code": "https://github.com/yudasong/unified-training"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 2,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 11,
+    "notable_authors": [
+     "Ruslan Salakhutdinov"
+    ],
+    "org": "Carnegie Mellon University"
+   }
+  },
+  {
+   "id": "2610.40476",
+   "title": "Training language models in simulation for psychiatric intake",
+   "authors": [
+    "Samuel Schmidgall",
+    "Tim Strother",
+    "Alex Bijamov",
+    "Min Woo Sun",
+    "Anil Palepu",
+    "Akshay Goel",
+    "Ulysse Marteau-Ferey",
+    "Théo Moutakanni",
+    "Yubin Kim",
+    "Joseph Breda",
+    "Christina Chen",
+    "Justin Chen",
+    "Paul Jhun",
+    "Andrew Marshall",
+    "Sarah Montgomery-Taylor",
+    "Eun Kyoung Hong",
+    "Shashank Ravi",
+    "Kameron C. Black",
+    "David J. H. Wu",
+    "Austin Schoeffler",
+    "John Lyon Havlik",
+    "Elizabeth C. Stade",
+    "Jared Moore",
+    "Johannes C. Eichstaedt",
+    "Logan Pierce",
+    "Jeff Jopling",
+    "Johannes Thrul",
+    "Thomas H. McCoy",
+    "Neguine Rezaii",
+    "Mark S. Chen",
+    "Ellen E. Fitzsimmons-Craft",
+    "Shirley Wang",
+    "Desmond C. Ong",
+    "Katharina Schultebraucks",
+    "Torrey Creed",
+    "Bhavna Daryani",
+    "Aleksandra Faust",
+    "S. Sara Mahdavi",
+    "Caroline Figueroa",
+    "Eric Lin",
+    "Kate H. Bentley",
+    "Ernest Lim",
+    "Zhihan Jiang",
+    "Xuhai \"Orson\" Xu",
+    "Daniel McDuff",
+    "John Torous",
+    "Yun Liu",
+    "Po-Hsuan Cameron Chen",
+    "Mike Schaekermann",
+    "Joelle Barral",
+    "Alvin Rajkomar",
+    "Tao Tu",
+    "Lin Yang",
+    "Isaac Galatzer-Levy",
+    "David Racz",
+    "Valentin Liévin"
+   ],
+   "affiliations": [
+    "Google DeepMind",
+    "Google Research",
+    "Stanford University",
+    "University of California San Francisco",
+    "Johns Hopkins University"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "AI for Science & Health",
+   "tags": [
+    "AI for Science & Health",
+    "Post-training",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "Google DeepMind and collaborators trained Gemini 3.1 Flash-Lite with multi-turn RL against simulated psychiatric patients; in a double-blind study with psychiatrists playing patients, it beat its base model in 76.7% of matched cases.",
+   "why_selected": "Number 4 on the alphaXiv Hot list; an unusually rigorous evaluation for medical AI, with blinded psychiatrists, adversarial safety tests and frank reporting of remaining failures.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "In psychiatry, the intake interview is itself the main diagnostic instrument. Key facts, such as an earlier treatment failure, a medical condition that mimics depression or concealed suicidal thoughts, often surface only after the clinician builds trust and asks the right follow-ups. That makes intake a hard test for conversational AI: a model must balance probing and rapport over many turns, and its worst mistakes are omissions rather than wrong statements."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Medical language models are mostly evaluated on question answering or general-medicine consultations, where examination and lab tests can fill gaps in the history; psychiatric presentations have largely been excluded. Detailed clinical system prompts are the usual way to shape a model's interviewing. The open question is whether training in interactive environments can add what prompting alone does not."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Train the model the way medical students practice, with standardized patients, except simulated ones. A pipeline generated 48,243 synthetic intake scenarios across 15 clinical domains, sampled by real-world prevalence, each with demographics, personality traits and hidden facts. A patient simulator (Gemini 3 Flash) plays each case and tracks hidden mood and reliability states, so the patient discloses more only if the clinician earns it; ask about sensitive topics too early and the patient denies everything. The policy, Gemini 3.1 Flash-Lite, ran whole conversations and was trained with GRPO, a reinforcement learning method that compares several rollouts of the same case. A Gemini 3.1 Pro judge scored each finished encounter on a 28-item rubric covering diagnosis, management and communication, with large penalties for safety failures."
+    },
+    {
+     "heading": "Results",
+     "body": "In a randomized, double-blind crossover study, 32 board-certified psychiatrists role-played 60 scenarios with both the trained agent and its identically prompted base model, and 15 other psychiatrists graded the transcripts. The trained agent won 76.7% of pairs, scored 3.04 versus 2.32 out of 5 on a clinical-skills rubric, and was rated favorably on differential-diagnosis appropriateness in 68.3% versus 33.3% of encounters. On 256 adversarial cases, under-triage of acute risk fell from 30.5% to 12.9%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Simulation plus RL taught conversational strategy, not just knowledge: the trained agent took a median of 60 turns versus 8, and gains concentrated in history-taking. The authors say plainly this does not support deployment: only 46.7% of encounters got comprehensive, appropriate treatment plans, and residual failures are omissions that output filters cannot catch. Automated judges ranked the models correctly but overstated the gap (standardized effect size 2.11 versus 0.71 with psychiatrists)."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40476",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40476"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 4,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2610.40614",
+   "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory",
+   "authors": [
+    "Jinhyeok Choi",
+    "JoungBin Lee",
+    "Jongmin Lee",
+    "Minkyeong Jeon",
+    "Jiyoung Kim",
+    "Kaeun Han",
+    "Yoonjin Yoon",
+    "Seungryong Kim"
+   ],
+   "affiliations": [
+    "KAIST AI",
+    "Ewha Womans University",
+    "KAIST Urban AI Institute"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Generative Models",
+    "Computer Vision"
+   ],
+   "tldr": "L3G-World gives a video world model a compact 3D memory of Gaussians that store video-latent features, keeping explored scenes consistent on revisits while generating in real time at about 9 frames per second.",
+   "why_selected": "Number 11 on the alphaXiv Hot list with 44 Hugging Face upvotes; a clean fix for the memory problem that limits interactive world models, with large measured efficiency gains.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Interactive world models generate video in response to user actions, such as moving a camera through a scene created from a single image. The hard part is memory: if you walk out of a room and come back a minute later, the room should look the same. Keeping that consistency over long explorations, while generating frames fast enough to feel interactive, is still unsolved."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "One approach lets each new video chunk attend to past frames or cached attention states, but that memory grows with every generated frame and can run out of GPU memory. Another stores the scene explicitly as 3D points or Gaussians. Fast feed-forward versions add dense primitives for every pixel of every frame, piling up redundant copies, and conditioning the video generator requires rendering images and re-encoding them, which is slow."
+    },
+    {
+     "heading": "Key idea",
+     "body": "L3G-World keeps one persistent scene memory made of 3D Gaussians, small soft blobs that can be rendered from any camera, and treats it like a map that gets edited rather than a pile of snapshots. After each generated chunk, the memory updater renders the current memory into the new camera views. Pixels that are uncovered or badly reproduced get new Gaussians; visible existing Gaussians receive residual corrections, so geometric mistakes are fixed when a region is seen again. Memory thus grows with the area explored, not the video's length. Second, each Gaussian also stores a feature in the video model's compressed latent space (its VAE latent), so the memory renders straight into the diffusion transformer's input without decoding to pixels and re-encoding."
+    },
+    {
+     "heading": "Results",
+     "body": "On 481-frame loop-closure trajectories that head out and retrace their path (DL3DV and RealEstate10K datasets), L3G-World achieves the best self-consistency PSNR and LPIPS on both datasets and the best FID. Against the Gaussian-based NeoVerse it uses 266 to 417 times fewer primitives and renders latent conditioning 349 to 359 times faster; against the point-cloud method Lyra 2.0 it rebuilds memory about 9 times faster. A distilled few-step version runs at 9.02 frames per second on one H100 GPU."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "World models are pitched as simulators for games, robots and agents, all of which need persistent scenes at interactive speed. Storing memory directly in the generator's latent space is a general idea others can reuse. Caveats: the only actions evaluated are camera trajectories, scenes start from a single image, and on RealEstate10K some baselines score better on camera-pose accuracy and 3D consistency."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40614",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40614",
+    "code": "https://github.com/cvlab-kaist/L3G-World"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 11,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 44,
+    "org": "KAIST AI"
+   }
+  },
+  {
+   "id": "2610.38681",
+   "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
+   "authors": [
+    "Yecheng Wu",
+    "Song Han",
+    "Han Cai"
+   ],
+   "affiliations": [
+    "Massachusetts Institute of Technology",
+    "NVIDIA"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Reasoning",
+   "tags": [
+    "Reasoning",
+    "Post-training"
+   ],
+   "tldr": "WISD improves reasoning models with no labels or stronger teacher by training them toward tokens the original model prefers over a deliberately quantized or pruned copy of itself, adding 4 to 5.5 points on average.",
+   "why_selected": "A counterintuitive, cheap self-improvement signal from Song Han's group, with large gains on hard math and coding benchmarks across five models.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Improving a strong reasoning model usually needs something stronger: a better teacher model, reference solutions, or a verifier that checks answers. For the most capable models, or in domains where only unlabeled prompts exist, none of these may be available. The question is whether a model can improve itself through distillation using nothing but its own weights and a set of prompts."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "On-policy distillation, now used in post-training Qwen3 and DeepSeek-V4, trains a student on its own outputs with token-level feedback from a teacher. Self-distillation variants make the teacher the same model given privileged information, such as the reference solution or environment feedback, so it can judge the student's tokens better. That still requires solutions or feedback, and conditioning on them can shift the teacher's predictions away from the student's."
+    },
+    {
+     "heading": "Key idea",
+     "body": "WISD flips the construction: keep the original model as the stronger member of the pair and create a weaker one by damaging a copy of its weights, either rounding them to 3 bits or zeroing small-magnitude weights. Think of learning what makes an expert good by watching what changes when the expert is exhausted: the choices the rested expert makes far more often than the tired one are where the skill lives. For every token in the original model's own solutions, the signal is the log-probability difference between the original and the weakened copy. A student initialized from the original is distilled toward a target distribution tilted toward tokens with large positive differences. No calibration data, labels or verifier are needed, and the weak copy is used only for scoring."
+    },
+    {
+     "heading": "Results",
+     "body": "Across five models (Qwen3-4B, Qwen3.5-4B, OLMo-3-7B-Think, Qwen3.6-27B and Qwen3.6-35B-A3B) and five math and coding benchmarks, the quantized and pruned variants raise average accuracy by 4.0 and 5.5 points, improving 21 and 23 of 25 settings, from 3,200 prompts per domain. Pruning lifts Qwen3.5-4B on HMMT 2025 from 57.7% to 70.5% and on LiveCodeBench v6 from 39.1% to 56.7%. Simply rewarding the model's own confidence barely helps."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests a cheap, label-free training signal that comes from the model's own structure, and the analysis shows it puts extra weight on exploration and verification steps. Caveats: the paper is marked work in progress, the amount of damage must be tuned (2-bit quantization or heavy pruning hurts), and those settings were chosen on HMMT 2025, one of the reported test benchmarks."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.38681",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.38681",
+    "code": "https://github.com/jet-ai-projects/WISD"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 43,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 3,
+    "notable_authors": [
+     "Song Han"
+    ],
+    "org": "Jet-AI"
+   }
+  }
+ ]
+}

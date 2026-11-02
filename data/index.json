@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-02T04:44:55+00:00",
+ "updated": "2026-11-02T04:56:56+00:00",
  "days": [
+  {
+   "date": "2026-10-30",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
   {
    "date": "2026-10-29",
    "edition": "weekday",
@@ -31,6 +38,93 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-10-30-n1",
+   "date": "2026-10-30",
+   "type": "news",
+   "title": "Mistral releases the weights of Mistral Large 4, a trillion-parameter model aimed at coding and cyber defense",
+   "tldr": "Mistral released the weights of an improved Mistral Large 4 (\"Le Chonk\"), a 1-trillion-parameter mixture-of-experts model that it says now leads open-weight models in agentic coding and defensive cybersecurity.",
+   "category": "Model Release",
+   "byline": "Mistral, Hugging Face, Wired"
+  },
+  {
+   "id": "2026-10-30-n2",
+   "date": "2026-10-30",
+   "type": "news",
+   "title": "Alphabet loses about $500 billion in market value as AI spending turns its cash flow negative",
+   "tldr": "Alphabet's quarter showed Google Cloud revenue doubling to $30.7 billion, but $51.4 billion of capital spending turned free cash flow negative, and its shares fell 12.6% on Thursday, erasing about $500 billion.",
+   "category": "Earnings & Markets",
+   "byline": "Alphabet, Ars Technica, Fox Business"
+  },
+  {
+   "id": "2610.39302",
+   "date": "2026-10-30",
+   "type": "paper",
+   "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+   "tldr": "Balestriero and LeCun prove that encoders trained separately on different modalities converge to one representation, up to a rotation, if their positive pairs are two views of one scene, a condition next-token prediction fails.",
+   "primary_tag": "Theory",
+   "tags": [
+    "Theory",
+    "Pre-training & Data",
+    "Multimodal"
+   ],
+   "byline": "Randall Balestriero, Yann LeCun · Brown University, New York University, AMI Labs"
+  },
+  {
+   "id": "2610.40564",
+   "date": "2026-10-30",
+   "type": "paper",
+   "title": "Training Foundation Models with a Single Algorithm",
+   "tldr": "Researchers at CMU and Johns Hopkins recast reinforcement learning as maximum-likelihood fitting to a model's own successful outputs, so pretraining, fine-tuning and RL become one algorithm whose only knob is the data mixture.",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Pre-training & Data",
+    "Post-training"
+   ],
+   "byline": "Yuda Song, Alvin Zhang, Fahim Tajwar et al. · Carnegie Mellon University, Johns Hopkins University, Aurora Innovation"
+  },
+  {
+   "id": "2610.40476",
+   "date": "2026-10-30",
+   "type": "paper",
+   "title": "Training language models in simulation for psychiatric intake",
+   "tldr": "Google DeepMind and collaborators trained Gemini 3.1 Flash-Lite with multi-turn RL against simulated psychiatric patients; in a double-blind study with psychiatrists playing patients, it beat its base model in 76.7% of matched cases.",
+   "primary_tag": "AI for Science & Health",
+   "tags": [
+    "AI for Science & Health",
+    "Post-training",
+    "Evaluation & Benchmarks"
+   ],
+   "byline": "Samuel Schmidgall, Tim Strother, Alex Bijamov et al. · Google DeepMind, Google Research, Stanford University"
+  },
+  {
+   "id": "2610.40614",
+   "date": "2026-10-30",
+   "type": "paper",
+   "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory",
+   "tldr": "L3G-World gives a video world model a compact 3D memory of Gaussians that store video-latent features, keeping explored scenes consistent on revisits while generating in real time at about 9 frames per second.",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Generative Models",
+    "Computer Vision"
+   ],
+   "byline": "Jinhyeok Choi, JoungBin Lee, Jongmin Lee et al. · KAIST AI, Ewha Womans University, KAIST Urban AI Institute"
+  },
+  {
+   "id": "2610.38681",
+   "date": "2026-10-30",
+   "type": "paper",
+   "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
+   "tldr": "WISD improves reasoning models with no labels or stronger teacher by training them toward tokens the original model prefers over a deliberately quantized or pruned copy of itself, adding 4 to 5.5 points on average.",
+   "primary_tag": "Reasoning",
+   "tags": [
+    "Reasoning",
+    "Post-training"
+   ],
+   "byline": "Yecheng Wu, Song Han, Han Cai · Massachusetts Institute of Technology, NVIDIA"
+  },
   {
    "id": "2026-10-29-n1",
    "date": "2026-10-29",
@@ -416,22 +510,26 @@
   ]
  },
  "tag_counts": {
+  "Theory": 1,
+  "Pre-training & Data": 4,
+  "Multimodal": 5,
+  "Reinforcement Learning": 7,
+  "Post-training": 7,
+  "AI for Science & Health": 1,
+  "Evaluation & Benchmarks": 3,
+  "World Models": 3,
+  "Generative Models": 1,
+  "Computer Vision": 1,
+  "Reasoning": 5,
   "Efficiency": 5,
   "RSI": 3,
-  "Post-training": 4,
   "Agents": 7,
   "Safety & Alignment": 4,
-  "Reasoning": 4,
-  "Evaluation & Benchmarks": 2,
-  "Multimodal": 4,
   "Architectures": 2,
   "Robotics": 4,
-  "World Models": 2,
-  "Reinforcement Learning": 6,
   "AI for Math": 1,
   "Interpretability": 1,
   "Retrieval & Memory": 1,
-  "Pre-training & Data": 2,
   "LLMs": 1
  },
  "news_categories": [
@@ -447,8 +545,8 @@
   "People"
  ],
  "category_counts": {
-  "Model Release": 4,
-  "Earnings & Markets": 1,
+  "Model Release": 5,
+  "Earnings & Markets": 2,
   "Research": 1,
   "Business & Funding": 2
  }
