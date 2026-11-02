@@ -21,6 +21,9 @@ git checkout master && git pull --rebase origin master
 D=$(TZ=America/New_York date +%F); echo "$D $(TZ=America/New_York date +%A)"
 ```
 
+- Check push access before doing any work: `git push --dry-run origin HEAD:master`. If it fails (e.g. 403
+  "not in this session's authorized repository set"), stop immediately and report that the repository must
+  be attached to the scheduled task — don't spend effort on a digest that can't be published.
 - Saturday/Sunday → **weekend edition**: papers are "best of the week" (7-day window); news stays 72h.
 - If `data/days/$D.json` already exists and `python3 pipeline/validate.py $D` passes, the digest is done:
   run step 5's live check only and stop.
