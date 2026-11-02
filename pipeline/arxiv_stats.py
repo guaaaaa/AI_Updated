@@ -32,7 +32,7 @@ applications toward evaluation benchmark understanding recognition prediction de
 representations information knowledge time real world control dynamic dynamics graph graphs image images text video
 optimization machine ai learn learns learned reliable research online simple general better unified fast good free
 rethinking revisiting matter matters make makes need needs work works evidence case role power limits toward
-towards beyond across""".split())
+towards beyond across one two three single first all every any many much""".split())
 TOKEN_RE = re.compile(r"[a-z0-9][a-z0-9\-]*[a-z0-9]|[a-z]")
 
 
@@ -42,7 +42,7 @@ def lexicon():
 
 
 def title_terms(title):
-    toks = TOKEN_RE.findall(title.lower().replace("’", "'"))
+    toks = TOKEN_RE.findall(re.sub(r"['’]", "", title.lower()))  # "don't" -> "dont", "model's" -> "models"
     terms = set()
     for n in (1, 2, 3):
         for i in range(len(toks) - n + 1):
