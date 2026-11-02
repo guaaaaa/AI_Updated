@@ -11,9 +11,10 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import http_get  # noqa: E402
+from common import ensure_bs4, http_get  # noqa: E402
 
-from bs4 import BeautifulSoup  # noqa: E402
+BeautifulSoup = ensure_bs4()
+
 
 
 def readable(page, max_words):

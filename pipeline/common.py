@@ -26,6 +26,26 @@ NEWS_WINDOW_H = 72
 DEDUP_LOOKBACK_DAYS = 7
 
 
+def ensure_bs4():
+    """Fresh cloud sessions may lack BeautifulSoup: install it on first use."""
+    try:
+        import bs4  # noqa: F401
+    except ImportError:
+        import subprocess
+        import sys
+        for cmd in ([sys.executable, "-m", "pip", "install", "-q", "beautifulsoup4"],
+                    [sys.executable, "-m", "pip", "install", "-q", "--user", "--break-system-packages", "beautifulsoup4"]):
+            if subprocess.run(cmd, capture_output=True).returncode == 0:
+                break
+        import importlib
+        import site
+        importlib.invalidate_caches()
+        if hasattr(site, "getusersitepackages") and site.getusersitepackages() not in sys.path:
+            sys.path.append(site.getusersitepackages())
+    from bs4 import BeautifulSoup
+    return BeautifulSoup
+
+
 def load_json(path, default=None):
     p = Path(path)
     if not p.exists():

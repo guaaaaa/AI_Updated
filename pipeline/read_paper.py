@@ -15,9 +15,10 @@ import tempfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import WORK, http_get  # noqa: E402
+from common import WORK, ensure_bs4, http_get  # noqa: E402
 
-from bs4 import BeautifulSoup  # noqa: E402
+BeautifulSoup = ensure_bs4()
+
 
 CONCL_RE = re.compile(r"conclu|discussion|limitation|future work|summary", re.I)
 
