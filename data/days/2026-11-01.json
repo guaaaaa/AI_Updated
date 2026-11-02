@@ -1,0 +1,472 @@
+{
+ "date": "2026-11-01",
+ "edition": "weekend",
+ "generated_at": "2026-11-02T05:38:08+00:00",
+ "backfill": true,
+ "summary": "Weekend edition: OpenAI reportedly shrinks its funding round, Google runs Gemma 4 on a TPU in orbit, and the week's best unfeatured papers on NVIDIA's open Nemotron 3.5, effective learning-rate schedules, deterministic sampling for discrete diffusion, multi-turn jailbreak defense and a reality check on synthetic pre-pretraining.",
+ "news": [
+  {
+   "id": "2026-11-01-n1",
+   "story_key": "openai-funding-round-target-cut-20b",
+   "title": "OpenAI reportedly cuts its new funding round's target to $20 billion as investors cool",
+   "category": "Business & Funding",
+   "published": "2026-10-30T20:05:00-04:00",
+   "tldr": "The Financial Times reports OpenAI lowered its new round's target from $30 billion to $20 billion, and the Wall Street Journal says $11 billion is secured, during a tech-stock selloff over AI spending.",
+   "why_selected": "The most closely watched private financing in AI reportedly shrank by a third, a concrete signal of how investors now price frontier labs.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "OpenAI has been raising a private round pitched as a bridge to a possible IPO; it filed confidentially for a listing in June. It first sought a $1.4 trillion valuation, then cut that to $1.25 trillion, excluding the new money, after investor pushback, the Financial Times reported; CNBC reported a target of up to $30 billion, led by investors from the United Arab Emirates with Coatue (both summarized by The Next Web on October 25). OpenAI last raised $122 billion in March at an $852 billion valuation."
+    },
+    {
+     "heading": "What happened",
+     "body": "On the evening of Friday, October 30, the Financial Times reported that OpenAI had lowered the round's target to $20 billion, with a first close expected to come in below that. A group of UAE investors would lead, the FT said, and a later offering to wealthy individuals could bring the total up to the $20 billion target. A follow-up in The Wall Street Journal reported that OpenAI has secured $11 billion so far and that its fundraising had met a \"tepid\" response from some large investors, according to TechCrunch's summary of both reports. The cut came at the end of a week in which Wall Street's wariness of heavy AI infrastructure spending drove a major selloff in tech stocks."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "OpenAI's fundraising is a bellwether for the sector, and its spending plans underpin orders across the chip and data-center supply chain: it told investors in February that it is targeting about $600 billion in compute spending by 2030, according to The Next Web. A round a third smaller than planned, with $11 billion committed, suggests private investors are now applying some of the caution public markets showed this week. The timing is awkward. OpenAI had been trying to close before Anthropic, its main rival for the same investors, goes public, and TechCrunch notes Anthropic's listing may face challenges too. If even OpenAI leans on sovereign investors and offerings to wealthy individuals, smaller labs and data-center developers that depend on easy capital will likely face harder terms."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How large the first close is, whether the $1.25 trillion valuation holds or falls with the round's size, how the offering to wealthy individuals is structured, and whether OpenAI revisits its compute targets or IPO timing. Anthropic's listing is the next test of appetite."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/"
+    },
+    {
+     "name": "The Next Web",
+     "url": "https://thenextweb.com/news/openai-funding-round-1-25tn-uae-coatue"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-01-n2",
+   "story_key": "google-project-suncatcher-first-orbital-inference",
+   "title": "Google's Project Suncatcher satellite answers its first prompt, running Gemma 4 on a TPU in orbit",
+   "category": "Compute & Infrastructure",
+   "published": "2026-10-30T13:00:00-04:00",
+   "tldr": "Google's first Project Suncatcher prototype, carrying four TPUs, answered a prompt from orbit with Gemma 4, starting tests of whether data-center AI chips can survive heat and radiation in space.",
+   "why_selected": "Google's first in-orbit test of its own AI accelerator, an early step in a serious bet that large inference workloads could one day move to space.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Project Suncatcher is a Google moonshot aimed at infrastructure that would be economical in the 2030s: networks of close-flying satellites carrying Google's Tensor Processing Units (TPUs), linked by high-speed optical connections so they can share large inference workloads. Others are chasing orbital compute too. SpaceX's planned data centers are expected to use laser links but orbit too far apart to share processing effectively, and startups such as Starcloud and Cowboy Space plan inference on individual satellites. Google's first prototype launched earlier in October on a SpaceX Falcon 9 with more than 100 other spacecraft."
+    },
+    {
+     "heading": "What happened",
+     "body": "After about three weeks of commissioning, engineers sent the satellite its first prompt this week, and in a blog post on Friday, October 30, Google said it had booted the onboard TPUs and received a reply. The preloaded model, Google DeepMind's Gemma 4, wrote a haiku about being in space; engineers also tried other space-themed prompts and asked the spacecraft to report its orbital conditions. The satellite carries four TPUs and generates up to 1 kilowatt, and the chips' power demands mean it can run only one TPU at a time, for about 20 minutes, TechCrunch reported. A Google spokesperson said the satellite was operating nominally. Google said it will next evaluate how the TPUs perform under thermal stress and radiation exposure in orbit."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The haiku is a stunt; the real experiment is whether data-center AI chips can work reliably in space. Radiation causes bit flips, changed values in memory that can corrupt data without tripping normal monitoring. Ground tests in particle accelerators suggested the impact would be minimal for inference and a bigger problem for training, but only orbital data can confirm it. If the chips hold up, Google plans two more satellites in 2027 with more power and inter-satellite optical links, the piece needed for satellites to share distributed workloads. Launch cost is the larger obstacle. In a peer-reviewed analysis this month, Suncatcher researchers estimated SpaceX would need about 1,800 Starship flights to achieve cost reductions like those it saw with earlier rockets, and both Google's and SpaceX's plans require Starship to become fully and rapidly reusable."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Thermal and radiation results from the test campaign, whether the 2027 twin satellites show optical links fast enough for distributed workloads, and Starship's progress toward rapid reuse, which sets the cost floor for every orbital compute plan."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.38095",
+   "title": "Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI",
+   "authors": [
+    "NVIDIA",
+    "Aastha Jhunjhunwala",
+    "Aayushi Ashokkumar Srivastava",
+    "Abhibha Gupta",
+    "Abhinav Garg",
+    "Abhinav Khattar",
+    "Achsah Wildish",
+    "Adam Rajfer",
+    "Adi Renduchintala",
+    "Adil Asif",
+    "Adriana Flores Miranda",
+    "Aileen Zaman",
+    "Aishwarya Chhabra",
+    "Akanksha Shukla",
+    "Akhiad Bercovich",
+    "Alejandra Rico",
+    "Aleksa Gordic",
+    "Aleksander Ficek",
+    "Alex Gronskiy",
+    "Alex Steiner",
+    "Alexander Bukharin",
+    "Alexandre Milesi",
+    "Ali Roshan Ghias",
+    "Ali Shehper",
+    "Ali Taghibakhshi",
+    "Alice Gatti",
+    "Alisa Liu",
+    "Alok Kumar",
+    "Alok Tripathy",
+    "Amala Sanjay Deshmukh",
+    "Aman Miryala",
+    "Aman Shanbhag",
+    "Ameya Sunil Mahabaleshwarkar",
+    "Ameya Velingker",
+    "Amir Klein",
+    "Amir Samani",
+    "Amit Zuker",
+    "Amnon Geifman",
+    "Anahita Bhiwandiwalla",
+    "Ananth Subramaniam",
+    "Andre Manoel",
+    "Andrea Santilli",
+    "Andrew Tao",
+    "Andrii Skliar",
+    "Anil Thomas",
+    "Anish Mahishi",
+    "Anna Shors",
+    "Anna Warno",
+    "Anuj Doshi",
+    "Anusha Kamath",
+    "Anwith Kiran",
+    "Ao Tang",
+    "Arham Mehta",
+    "Arnab Dhara",
+    "Arnav Komaragiri",
+    "Arnav Kundu",
+    "Arti Jain",
+    "Arun Rao",
+    "Arun Venkatesan",
+    "Arushi Goel",
+    "Asha Anoosheh",
+    "Ashish Vaswani",
+    "Ashwath Aithal",
+    "Asif Ahamed",
+    "Asma Kuriparambil Thekkumpate",
+    "Aswin Visva",
+    "Atefeh Sohrabizadeh",
+    "Avinash Vem",
+    "Ayush Dattagupta",
+    "Benedikt Schifferer",
+    "Benjamin Chislett",
+    "Bernard Nguyen",
+    "Besmira Nushi",
+    "Bilal Kartal",
+    "Bita Darvish Rouhani",
+    "Bobby Chen",
+    "Boris Ginsburg",
+    "Boxin Wang",
+    "Brandon Norick",
+    "Branislav Kisacanin",
+    "Brendan Johnson",
+    "Brian Dang",
+    "Brian Yu",
+    "Bryan Catanzaro",
+    "Byung-Kwan Lee",
+    "Carlo del Mundo",
+    "Chankyu Lee",
+    "Chantal Hwang",
+    "Charles Wang",
+    "Charlie Truong",
+    "Chen Cui",
+    "Cheng Wang",
+    "Cheng-Ping Hsieh",
+    "Chenhan Yu",
+    "Chenjie Luo",
+    "Chintan Patel",
+    "Chris Alexiuk",
+    "Chris Johnson",
+    "Chris Wing",
+    "Christian Munley"
+   ],
+   "affiliations": [
+    "NVIDIA"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "LLMs",
+   "tags": [
+    "LLMs",
+    "Efficiency",
+    "Architectures",
+    "Agents"
+   ],
+   "tldr": "NVIDIA's open Nemotron 3.5 Super, a 120B-parameter hybrid Mamba-Transformer mixture-of-experts with 12B active, adds a built-in drafter and 4-bit weights, reaching 51.78% on SWE-bench Pro.",
+   "why_selected": "The week's most complete open recipe for an agentic model designed around serving cost, with base, post-trained and 4-bit checkpoints, datasets and training recipes released.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents read long contexts and generate many tokens over many turns, so cost per user, not just benchmark score, decides whether a model is usable. Open models must approach frontier coding and tool use while serving cheaply. NVIDIA's report documents how it built two such models, Super and the smaller text-only Lightning (30B total, 3B active)."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most open models are dense or mixture-of-experts (MoE) Transformers whose key-value (KV) cache grows linearly with context, so long agent sessions become memory-bound. Speculative decoding helps, but usually needs a separate draft model, and a drafter trained only on clean inputs loses accuracy at deeper draft steps."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Super's backbone interleaves Mamba layers, whose recurrent state stays the same size however long the context grows, with attention layers, and places most parameters in 512 routed experts per MoE layer, so only 12B of Super's 120B parameters run per token. A multi-token prediction (MTP) head acts as a built-in drafter: think of a junior writer proposing the next several words while the senior editor approves them in one pass. At inference, though, the drafter conditions on its own earlier guesses rather than clean hidden states, so NVIDIA trains it on mixtures of states from earlier draft steps. Much of the capability comes from distillation: 1 trillion tokens from the next-larger Nemotron 3 model, then specialized teachers for video, vision tool use and alignment, merged into one student by multi-teacher on-policy distillation (MOPD)."
+    },
+    {
+     "heading": "Results",
+     "body": "Super scores 51.78% on SWE-bench Pro, ahead of the earlier Nemotron 3 Ultra with about 4.6 times fewer active parameters. In a controlled test, 65.4B tokens of agentic mid-training on repositories, issues and CI logs lifted SWE-bench Verified (Codex harness) from 48.4% to 61.8%. Post-training the MTP head lengthens accepted drafts from 3.787 to 4.612 tokens under probabilistic sampling. The 4-bit NVFP4 checkpoint keeps 99.62% median accuracy relative to BF16 across 36 benchmarks, one GB200 GPU serves up to 4,856 output tokens per second while sustaining at least 50 per user; on the evaluated agentic workload its throughput is 1.90 times Qwen3.8 Flash-Next's."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Hybrid state-space layers, native drafting and 4-bit inference now ship together in one documented open model. Caveats: it is a vendor report whose throughput numbers come from NVIDIA hardware and workloads, and much of its reasoning and agent training data was generated by other labs' models such as Kimi K3, DeepSeek V4 Pro and GLM-5.2."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.38095",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.38095"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 67,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Ashish Vaswani",
+     "Bryan Catanzaro"
+    ]
+   }
+  },
+  {
+   "id": "2610.40362",
+   "title": "Your LR Schedule May Not Be Principled: Effective Learning Rate Scheduling in Weight-Normalized Training",
+   "authors": [
+    "Qifan Yu",
+    "Xinyu Ma",
+    "Xingyan Bin",
+    "Di He"
+   ],
+   "affiliations": [
+    "ByteDance Seed",
+    "Peking University"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Optimization",
+   "tags": [
+    "Optimization",
+    "Pre-training & Data",
+    "Theory"
+   ],
+   "tldr": "Weight normalization's pretraining gains over weight decay come mostly from its effective learning-rate trajectory; scheduling that quantity with a theory-derived inverse-square-root shape (AIR) cuts MoE loss about 0.01 below cosine.",
+   "why_selected": "A transferable insight into what learning-rate schedules actually control, backed by theory and mixture-of-experts runs on 128B and 500B tokens.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Learning-rate schedules are heavily tuned but poorly understood. Weight normalization (WN), which rescales each weight block back to a fixed norm after every step, is emerging as an alternative to weight decay (WD) with reportedly lower loss. But under cosine decay WN finishes ahead, while under warmup-stable-decay (WSD) it finishes well behind. Why?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Schedules such as cosine, WSD, linear and power decays, and the theories explaining them, are framed in terms of the nominal learning rate (LR). That ignores the parameter norm, which keeps growing during WD training, so the same nominal LR produces ever smaller relative updates."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of a weight block as an arrow whose direction is what matters: a step of fixed length swings a short arrow a lot and a long arrow slightly. The effective learning rate (ELR), the nominal LR divided by the block's norm, measures that swing. Under WD the norm grows, so even WSD's flat phase decays the ELR; under WN the norm is fixed, so the ELR stays at peak through the stable phase. Forcing both methods onto the same ELR trajectory, by replaying WD's norms or rescaling per-block LRs, makes their loss curves nearly coincide: WN's advantage was the schedule it implied.\n\nFor a better ELR schedule, they model alignment with an ideal direction: a larger step adds alignment linearly but erodes existing alignment quadratically, and maximizing alignment at every step gives a decay proportional to one over the square root of time. AIR (Affine Inverse-square-Root) rescales that curve to hit a chosen peak and final LR."
+    },
+    {
+     "heading": "Results",
+     "body": "On a mixture-of-experts (MoE) model with 110M active and 4.7B total parameters, trained on 128B tokens with Muon under WN, AIR reaches a final training loss of 1.7303 versus 1.7399 for cosine at matched total and final LR, the lowest of a dozen shapes, with the best downstream average and least peak-LR sensitivity. A 790M-active, 35.7B-total model on 500B tokens shows the same gain of about 0.01. Swapping only the late stage between AIR and a cycloid schedule closes about 90% of their 0.0045 loss gap."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The lesson travels beyond WN, since applying AIR's ELR trajectory to WD reproduced its dynamics: compare training setups by the ELR they induce, and spend tuning effort on the end of training. Caveats: a 0.01 loss gain is modest, the theory assumes constant update statistics, and all tests use MoE models trained with Muon."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40362",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40362"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 22,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 8,
+    "org": "ByteDance Seed"
+   }
+  },
+  {
+   "id": "2610.40618",
+   "title": "An ODE-based Sampler for Discrete Diffusion Models",
+   "authors": [
+    "Samson Gourevitch",
+    "Yazid Janati",
+    "Eric Moulines",
+    "Eric P. Xing",
+    "Alain Durmus",
+    "Giacomo Zanella"
+   ],
+   "affiliations": [
+    "École polytechnique",
+    "MBZUAI",
+    "EPITA",
+    "Bocconi University"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Theory",
+    "Efficiency"
+   ],
+   "tldr": "Exponential residual flows give discrete diffusion language models an analogue of the probability-flow ODE: after one random draw, sampling is deterministic yet provably keeps the right distributions, enabling consistency distillation.",
+   "why_selected": "Fills a theoretical gap often cited against trajectory-based distillation of discrete diffusion, with a practical sampler checked on a 26B-parameter model.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Discrete diffusion language models generate text by repeatedly changing tokens in parallel, a promising alternative to left-to-right decoding. In continuous diffusion for images, a deterministic probability-flow ordinary differential equation (ODE) reproduces the model's distributions, which is what makes few-step samplers and consistency distillation work. For tokens no such ODE existed, because a deterministic map on a finite set of sequences cannot split probability mass."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Discrete diffusion samplers inject fresh randomness throughout: Gillespie-style simulation draws new random clocks after each token change, and ancestral sampling samples each transition, so distillation must match distributions or follow stochastic trajectories. Earlier deterministic attempts reuse Gumbel noise, which can drift from the target, or Gaussian projections that reparameterize rather than define a flow."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The trick is to move all the randomness into continuous clocks, one for every position and candidate token. Picture each possible token change as an hourglass filled with a random, exponentially distributed amount of sand. The sand drains at a speed set by the model's reverse transition rates; when an hourglass empties, that position switches to that token. Gillespie simulation refills hourglasses with fresh random sand after each jump; exponential residual flow (ERF) never draws again: the clocks belonging to the tokens currently in place are refilled deterministically, at rates set by the forward noising process, so after the initial draw the whole trajectory follows an ODE. The authors prove the process keeps exactly the original chain's distribution at every time. For learned models, each step freezes only the leave-one-out denoiser."
+    },
+    {
+     "heading": "Results",
+     "body": "At matched numbers of network evaluations (NFEs), ERF matches ancestral sampling for masked and uniform diffusion on TinyGSM math and OpenWebText. On Google DeepMind's DiffusionGemma (26B total, about 4B active parameters), ERF's net-flux variant scores 57.1% on 140 MMLU-Pro questions versus 57.4% for ancestral sampling. That variant averages about one jump per position instead of seven for plain uniform ERF, running 2.83 times faster on TinyGSM at 8 NFEs. Deterministic trajectories enable consistency distillation, which the authors report improves on reimplemented SDTT, DCD, D-MMD and iDLM at equal GPU-hour budgets."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Deterministic transport is what let image diffusion become fast; ERF opens the same toolbox, consistency models and trajectory distillation, to diffusion language models. Caveats: sampling quality matches rather than beats existing samplers, the process is not Markovian, and distillation is shown on teachers the authors trained, not yet on production-scale models."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40618",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40618"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 15,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2610.40627",
+   "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
+   "authors": [
+    "Qiyao Ma",
+    "Xiaodong Liu",
+    "Weiwei Yang",
+    "Mingqian Feng",
+    "Chengquan Guo",
+    "Jialin Song",
+    "Carolyn Buractaon",
+    "Zhe Zhao",
+    "Junshan Zhang",
+    "Sandeep Atluri",
+    "Christopher White",
+    "Jianfeng Gao"
+   ],
+   "affiliations": [
+    "Microsoft Research",
+    "University of California",
+    "Davis"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Security",
+   "tags": [
+    "Security",
+    "Safety & Alignment",
+    "Post-training",
+    "Reinforcement Learning"
+   ],
+   "tldr": "Training a chatbot to write an explicit, rule-checkable safety decision before it replies turns the shallowness of safety alignment into a defense against multi-turn jailbreaks, without a judge model in the reward.",
+   "why_selected": "A simple, mechanistically motivated recipe that inverts a known weakness of alignment, tested on two model families, 14 benchmarks and six judges.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Aligned chatbots now reliably refuse a harmful request asked outright, but attackers who spread the same request across several innocent-looking turns still succeed far too often, and human red-teamers beat defenses that look near-perfect on single-turn tests. As assistants run longer conversations and agent sessions, multi-turn robustness is the gap that matters."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Defenses fine-tune on adversarial dialogues, optimize preferences between safe and unsafe replies, run reinforcement learning (RL) with a harmfulness classifier as reward, or edit internal representations. Training-based ones need an oracle to say what a safe reply looks like, inheriting its errors, and supervise the reply's surface without giving the model an explicit decision to learn."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Safety alignment is known to be shallow: an aligned model differs from its base model mostly in the first few output tokens, which is why prefilling an affirmative opening, or steering a conversation gradually, defeats refusal. The authors treat this as a map of where to intervene. Like a pilot calling \"go\" or \"abort\" before acting, the defender must first write an Assessment of the user's real intent, then a Decision line, and only then a Response generated conditioned on that decision. Because the decision is a parseable token span, the reward can be a rule: on training dialogues whose harmful or benign nature is known, the model scores 1 if its comply-or-refuse label is correct and it actually replies. A judge-scored variant adds a safe-redirect option. Training uses GRPO on the final payload turn only, with a per-turn token cap that blocks a reward-hacking shortcut."
+    },
+    {
+     "heading": "Results",
+     "body": "On Llama-3.1-8B-Instruct and Qwen3-8B, trained on the same data as six baselines (SFT, DPO, SDGO, MTSA, MUSE-D and X-Boundary), the defenders have the highest average safe rate and lead on every safety suite: AdvBench, HarmBench and three multi-turn sets unseen in training, MultiBreak, CoSafe and the human-written MHJ. The lead holds under six judges and utility across six benchmarks matches the baselines; the cost is somewhat more over-refusal. Removing the Decision line is the most damaging ablation, pushing safety under human red-teaming below the undefended base model."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Per-token analysis shows training moves the safety-relevant change from a fragile opening refusal to the assessment-decision span, and overwriting the decision moves reply safety in both directions. Rule-based rewards also take the judge out of the training loop. Caveats: attacks are scripted and replayed rather than adaptive, and the models tested have 8B parameters."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40627",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40627"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 27,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Jianfeng Gao"
+    ]
+   }
+  },
+  {
+   "id": "2610.40051",
+   "title": "Rethinking Pre-pretraining",
+   "authors": [
+    "Alexander Stern",
+    "Tim Rocktäschel",
+    "Acyr Locatelli",
+    "Laura Ruis"
+   ],
+   "affiliations": [
+    "Cohere",
+    "UCL AI Centre",
+    "MIT"
+   ],
+   "announced": "2026-10-29T20:00:00-04:00",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "LLMs"
+   ],
+   "tldr": "In compute-matched experiments, spending part of a pretraining budget on synthetic pre-pretraining never beats spending it on natural text, and an earlier reported gain disappears once the baseline's initialization is improved.",
+   "why_selected": "A careful negative result with a methodological lesson, tune the baseline as hard as the method, on a popular idea for stretching scarce text.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "High-quality text is scarce relative to available compute, while humans learn language from far less of it. One proposed fix is pre-pretraining (PPT): first train on cheap synthetic data with useful structure, such as nested brackets or cellular automata, so the model starts language pretraining with better priors. Prior work reported up to 8.6% lower perplexity. Does that survive careful accounting?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier studies prepended synthetic stages, typically k-Dyck languages (bracket strings like ([()][]) in which every opener must close), neural cellular automata (NCA) rollouts or procedural tasks. They held weight initialization fixed while varying the curriculum, leaving open how robust the gains are across regimes, including data-scarce ones where the alternative is re-reading the same text."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The study is a set of controlled races. Think of a fixed tuition budget: is a semester of abstract puzzles worth more than another semester of reading? The authors train NanoChat-based Transformers on FineWeb with total FLOPs fixed and 0, 1, 5 or 10% spent first on one of four curricula: k-Dyck, NCA, DeclRef (a new synthetic corpus targeting retrieval from context) and code. Three regimes cover scarce text (100M tokens, repeated over epochs), abundant text at compute-optimal model sizes from 10^18 to 9x10^18 FLOPs, and an 881M-parameter model trained on 50B tokens, far beyond Chinchilla-optimal. An \"additive\" setting instead gives PPT extra compute. Crucially, they vary initialization for baseline and PPT runs alike, and track whether PPT skills survive language training."
+    },
+    {
+     "heading": "Results",
+     "body": "Under matched compute, no curriculum beats pure natural language in any regime; with only 100M text tokens, extra epochs over the same text win, and power-law fits across budgets show no PPT recipe scaling better. Reproducing a published NCA result recovers its 5.4% perplexity gain, but changing only the embedding initialization improves the baseline by 9.0%, more than that gain, and leaves NCA and baseline indistinguishable. With extra compute, NCA and k-Dyck help at 50M and 100M text tokens but not at 1B. Models forget their PPT skills once language training starts; mixing 5% of the same data into every batch prevents that."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The practical advice: tune baselines as hard as treatments, since an initialization tweak was worth more than the method, and mix synthetic data throughout training rather than front-loading it, though even that did not significantly improve language loss here. Caveats: models stay below 1B parameters, and narrow skills that aggregate benchmarks miss may still benefit."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40051",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40051"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 19,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Tim Rocktäschel"
+    ]
+   }
+  }
+ ]
+}

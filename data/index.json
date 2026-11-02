@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-02T05:23:00+00:00",
+ "updated": "2026-11-02T05:38:56+00:00",
  "days": [
+  {
+   "date": "2026-11-01",
+   "edition": "weekend",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
   {
    "date": "2026-10-31",
    "edition": "weekend",
@@ -45,6 +52,95 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-01-n1",
+   "date": "2026-11-01",
+   "type": "news",
+   "title": "OpenAI reportedly cuts its new funding round's target to $20 billion as investors cool",
+   "tldr": "The Financial Times reports OpenAI lowered its new round's target from $30 billion to $20 billion, and the Wall Street Journal says $11 billion is secured, during a tech-stock selloff over AI spending.",
+   "category": "Business & Funding",
+   "byline": "TechCrunch, The Next Web"
+  },
+  {
+   "id": "2026-11-01-n2",
+   "date": "2026-11-01",
+   "type": "news",
+   "title": "Google's Project Suncatcher satellite answers its first prompt, running Gemma 4 on a TPU in orbit",
+   "tldr": "Google's first Project Suncatcher prototype, carrying four TPUs, answered a prompt from orbit with Gemma 4, starting tests of whether data-center AI chips can survive heat and radiation in space.",
+   "category": "Compute & Infrastructure",
+   "byline": "TechCrunch, The Verge"
+  },
+  {
+   "id": "2610.38095",
+   "date": "2026-11-01",
+   "type": "paper",
+   "title": "Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI",
+   "tldr": "NVIDIA's open Nemotron 3.5 Super, a 120B-parameter hybrid Mamba-Transformer mixture-of-experts with 12B active, adds a built-in drafter and 4-bit weights, reaching 51.78% on SWE-bench Pro.",
+   "primary_tag": "LLMs",
+   "tags": [
+    "LLMs",
+    "Efficiency",
+    "Architectures",
+    "Agents"
+   ],
+   "byline": "NVIDIA, Aastha Jhunjhunwala, Aayushi Ashokkumar Srivastava et al. · NVIDIA"
+  },
+  {
+   "id": "2610.40362",
+   "date": "2026-11-01",
+   "type": "paper",
+   "title": "Your LR Schedule May Not Be Principled: Effective Learning Rate Scheduling in Weight-Normalized Training",
+   "tldr": "Weight normalization's pretraining gains over weight decay come mostly from its effective learning-rate trajectory; scheduling that quantity with a theory-derived inverse-square-root shape (AIR) cuts MoE loss about 0.01 below cosine.",
+   "primary_tag": "Optimization",
+   "tags": [
+    "Optimization",
+    "Pre-training & Data",
+    "Theory"
+   ],
+   "byline": "Qifan Yu, Xinyu Ma, Xingyan Bin et al. · ByteDance Seed, Peking University"
+  },
+  {
+   "id": "2610.40618",
+   "date": "2026-11-01",
+   "type": "paper",
+   "title": "An ODE-based Sampler for Discrete Diffusion Models",
+   "tldr": "Exponential residual flows give discrete diffusion language models an analogue of the probability-flow ODE: after one random draw, sampling is deterministic yet provably keeps the right distributions, enabling consistency distillation.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Theory",
+    "Efficiency"
+   ],
+   "byline": "Samson Gourevitch, Yazid Janati, Eric Moulines et al. · École polytechnique, MBZUAI, EPITA"
+  },
+  {
+   "id": "2610.40627",
+   "date": "2026-11-01",
+   "type": "paper",
+   "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
+   "tldr": "Training a chatbot to write an explicit, rule-checkable safety decision before it replies turns the shallowness of safety alignment into a defense against multi-turn jailbreaks, without a judge model in the reward.",
+   "primary_tag": "Security",
+   "tags": [
+    "Security",
+    "Safety & Alignment",
+    "Post-training",
+    "Reinforcement Learning"
+   ],
+   "byline": "Qiyao Ma, Xiaodong Liu, Weiwei Yang et al. · Microsoft Research, University of California, Davis"
+  },
+  {
+   "id": "2610.40051",
+   "date": "2026-11-01",
+   "type": "paper",
+   "title": "Rethinking Pre-pretraining",
+   "tldr": "In compute-matched experiments, spending part of a pretraining budget on synthetic pre-pretraining never beats spending it on natural text, and an earlier reported gain disappears once the baseline's initialization is improved.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "LLMs"
+   ],
+   "byline": "Alexander Stern, Tim Rocktäschel, Acyr Locatelli et al. · Cohere, UCL AI Centre, MIT"
+  },
   {
    "id": "2026-10-31-n1",
    "date": "2026-10-31",
@@ -602,27 +698,29 @@
   ]
  },
  "tag_counts": {
+  "LLMs": 3,
+  "Efficiency": 9,
+  "Architectures": 4,
+  "Agents": 10,
+  "Optimization": 1,
+  "Pre-training & Data": 7,
+  "Theory": 3,
+  "Generative Models": 2,
+  "Security": 1,
+  "Safety & Alignment": 5,
+  "Post-training": 8,
+  "Reinforcement Learning": 8,
   "AI for Math": 2,
   "World Models": 4,
-  "Agents": 9,
-  "Architectures": 3,
-  "Efficiency": 7,
   "Robotics": 5,
   "Evaluation & Benchmarks": 5,
-  "Pre-training & Data": 5,
   "Interpretability": 2,
-  "Theory": 1,
   "Multimodal": 5,
-  "Reinforcement Learning": 7,
-  "Post-training": 7,
   "AI for Science & Health": 1,
-  "Generative Models": 1,
   "Computer Vision": 1,
   "Reasoning": 5,
   "RSI": 3,
-  "Safety & Alignment": 4,
-  "Retrieval & Memory": 1,
-  "LLMs": 1
+  "Retrieval & Memory": 1
  },
  "news_categories": [
   "Model Release",
@@ -637,11 +735,12 @@
   "People"
  ],
  "category_counts": {
+  "Business & Funding": 3,
+  "Compute & Infrastructure": 1,
   "Safety & Security": 1,
   "Policy & Legal": 1,
   "Model Release": 5,
   "Earnings & Markets": 2,
-  "Research": 1,
-  "Business & Funding": 2
+  "Research": 1
  }
 }
