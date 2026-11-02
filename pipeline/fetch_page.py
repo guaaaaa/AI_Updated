@@ -3,7 +3,7 @@
 Honest User-Agent; if a site answers with a bot check (403/429), it reports that and moves on:
 do not try to get around it — use the site's RSS entry and other reputable coverage instead.
 
-Usage: python pipeline/fetch_page.py URL [URL ...] [--max-words 1500]
+Usage: python pipeline/fetch_page.py URL [URL ...] [--max-words 1000]
 """
 import argparse
 import re
@@ -63,7 +63,7 @@ def pdf_text(url, max_words):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("urls", nargs="+")
-    ap.add_argument("--max-words", type=int, default=1500)
+    ap.add_argument("--max-words", type=int, default=1000)
     a = ap.parse_args()
     for url in a.urls:
         print(f"\n==================== {url} ====================")

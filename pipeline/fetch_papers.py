@@ -312,7 +312,7 @@ def score(p):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=today_et().isoformat())
-    ap.add_argument("--size", type=int, default=40)
+    ap.add_argument("--size", type=int, default=30)
     a = ap.parse_args()
     d = parse_date(a.date)
     start, end = paper_window(d)
@@ -379,9 +379,9 @@ def main():
                 pick.append(p)
                 seen.add(p["id"])
 
-    take(sorted([p for p in pool if p["hot_rank"]], key=lambda p: p["hot_rank"]), 10)
-    take(sorted([p for p in pool if p["hf_upvotes"]], key=lambda p: -p["hf_upvotes"]), 10)
-    take([p for p in pool if p["notable_authors"] or p["org_tier"] == "frontier"], 8)
+    take(sorted([p for p in pool if p["hot_rank"]], key=lambda p: p["hot_rank"]), 8)
+    take(sorted([p for p in pool if p["hf_upvotes"]], key=lambda p: -p["hf_upvotes"]), 8)
+    take([p for p in pool if p["notable_authors"] or p["org_tier"] == "frontier"], 6)
     take(pool, a.size)
     pick.sort(key=lambda p: -p["score"])
 
@@ -419,8 +419,9 @@ def main():
         au_s = ", ".join(au[:3]) + (f", ... {au[-1]}" if len(au) > 3 else "") + f" (n={len(au)})"
         lines += [f"## [{i}] {p['id']} — {p['title']}", " | ".join(sig), f"Authors: {au_s}"]
         if p.get("comment"):
-            lines.append(f"Comment: {p['comment'][:200]}")
-        lines += [f"Abstract: {p['abstract'] or '(unavailable)'}", ""]
+            lines.append(f"Comment: {p['comment'][:120]}")
+        ab = (p["abstract"] or "(unavailable)").split()
+        lines += [f"Abstract: {' '.join(ab[:120])}{' …' if len(ab) > 120 else ''}", ""]
     md = "\n".join(lines)
     (WORK / f"shortlist_{d}.md").write_text(md)
     print(md)

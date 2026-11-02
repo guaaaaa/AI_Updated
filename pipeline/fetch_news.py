@@ -188,17 +188,18 @@ def main():
 
     for it in heads:
         if it["tier"] == "primary":
-            desc = " ".join(it.get("desc", "").split()[:28])
+            desc = " ".join(it.get("desc", "").split()[:20])
             L.append(f"- {when(it['time'])} | {it['publisher']}: {it['title']}  <{it['url']}>"
                      + (f"\n    {desc}…" if desc else ""))
     L += ["", "## B. Press & newsletter headlines (chronological; Google News links omitted, search by headline)"]
-    for it in heads:
-        if it["tier"] != "primary":
+    press = [it for it in heads if it["tier"] != "primary"][-140:]  # newest 140 headlines max
+    for it in press:
+        if True:
             u = "" if "news.google.com" in it["url"] else f"  <{it['url']}>"
             L.append(f"- {when(it['time'])} | {it['publisher']}: {it['title']}{u}")
     L += ["", "## C. Hacker News (AI, top by points)"]
     L += [f"- {dt.datetime.fromisoformat(h['time']).astimezone(tz):%a %H:%M} | {h['points']} pts / {h['comments']} comments: "
-          f"{h['title']}  <{h['url']}>" for h in hn[:15]]
+          f"{h['title']}  <{h['url']}>" for h in hn[:10]]
     md = "\n".join(L)
     (WORK / f"news_{d}.md").write_text(md)
     print(md)

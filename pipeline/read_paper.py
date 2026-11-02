@@ -159,15 +159,15 @@ def render(doc, mode, max_words):
     secs = doc["sections"]
     if mode == "brief":
         if secs:
-            out.append(f"\n## {secs[0][0]}\n{words(secs[0][1], 550)}")
+            out.append(f"\n## {secs[0][0]}\n{words(secs[0][1], 350)}")
             out.append("\nOUTLINE: " + " | ".join(h for h, _ in secs if h))
         if doc["captions"]:
-            out.append("\nCAPTIONS:\n" + "\n".join(f"- {words(c, 55)}" for c in doc["captions"][:12]))
+            out.append("\nCAPTIONS:\n" + "\n".join(f"- {words(c, 35)}" for c in doc["captions"][:6]))
         concl = [s for s in secs[1:] if is_concl(s[0])]
         if concl:
-            out.append(f"\n## {concl[-1][0]}\n{words(concl[-1][1], 400)}")
+            out.append(f"\n## {concl[-1][0]}\n{words(concl[-1][1], 250)}")
         elif len(secs) > 1:
-            out.append(f"\n## {secs[-1][0]}\n{words(secs[-1][1], 400)}")
+            out.append(f"\n## {secs[-1][0]}\n{words(secs[-1][1], 250)}")
     else:
         # Water-fill the word budget: every section gets an equal share (short sections keep all their
         # words, long intros/related work get trimmed), so results and conclusions are never cut off.
@@ -176,7 +176,7 @@ def render(doc, mode, max_words):
         for cap, rows in tables[:6]:
             tbl_txt.append(f"- {words(cap, 30)}\n    " + "\n    ".join(words(r, 40) for r in rows[:14]))
         tbl_block = "\n".join(tbl_txt)
-        budget = max_words - 550 - min(1200, len(tbl_block.split()))  # room for captions + tables
+        budget = max_words - 350 - min(900, len(tbl_block.split()))  # room for captions + tables
         lens = [len(b.split()) for _, b in secs]
         if sum(lens) <= budget:
             cap = max(lens or [0])
@@ -196,13 +196,13 @@ def render(doc, mode, max_words):
             kept, n = [], 0
             for line in tbl_block.splitlines():  # cap by whole lines so rows stay readable
                 n += len(line.split())
-                if n > 1200:
+                if n > 900:
                     kept.append("    [more rows omitted]")
                     break
                 kept.append(line)
             out.append("\nTABLES (cells joined by |):\n" + "\n".join(kept))
         if doc["captions"]:
-            out.append("\nCAPTIONS:\n" + "\n".join(f"- {words(c, 45)}" for c in doc["captions"][:12]))
+            out.append("\nCAPTIONS:\n" + "\n".join(f"- {words(c, 35)}" for c in doc["captions"][:8]))
     return "\n".join(out)
 
 
@@ -210,7 +210,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("ids", nargs="+")
     ap.add_argument("--mode", choices=["brief", "full"], default="brief")
-    ap.add_argument("--max-words", type=int, default=5500)
+    ap.add_argument("--max-words", type=int, default=4000)
     a = ap.parse_args()
     cache = WORK / "papers"
     cache.mkdir(parents=True, exist_ok=True)

@@ -8,22 +8,31 @@ work *outside their own specialty*. They know ML fundamentals (transformers, RL,
 they do not know every subfield's jargon or prior work. Optimize for "I now understand what this is, why it
 works, and why it matters" — not completeness.
 
-Follow the steps in order. Be token-efficient: the scripts do all bulk fetching for free; you only read
-what they shortlist.
+## Token discipline (read first)
+
+Every tool call re-reads the whole conversation, so cost ≈ (number of calls) × (context size). Keep both small:
+- **Target ≤ 15 tool calls** for the whole run. Chain shell commands with `&&` in one Bash call.
+- Do the steps **in this order**: news first (small), papers last, because full paper reads are the biggest
+  thing in context and should be carried through as few calls as possible.
+- Batch: all brief reads in ONE `read_paper.py` call; all full reads in ONE call; all page fetches in as
+  few `fetch_page.py` calls as possible (it takes several URLs); write the whole write-up in ONE Write.
+- Never re-read a file whose content is already in the conversation; never `cat` large files you don't need.
+- Don't call WebFetch on long pages when `fetch_page.py URL --max-words 600` is enough.
 
 ---
 
-## 0. Setup
+## 0. Setup (one Bash call)
 
 ```bash
-cd "$(git rev-parse --show-toplevel)"
-git checkout master && git pull --rebase origin master
-D=$(TZ=America/New_York date +%F); echo "$D $(TZ=America/New_York date +%A)"
+cd "$(git rev-parse --show-toplevel)" && git checkout -q master && git pull -q --rebase origin master \
+ && git push --dry-run origin HEAD:master && D=$(TZ=America/New_York date +%F) && echo "$D $(TZ=America/New_York date +%A)" \
+ && ls data/days | tail -3
 ```
 
-- Check push access before doing any work: `git push --dry-run origin HEAD:master`. If it fails (e.g. 403
-  "not in this session's authorized repository set"), stop immediately and report that the repository must
-  be attached to the scheduled task — don't spend effort on a digest that can't be published.
+- Shell variables don't persist between tool calls: write the literal date (e.g. `2026-11-02`) wherever
+  this runbook says `$D`.
+- If the dry-run push fails (e.g. 403 "not in this session's authorized repository set"), stop immediately
+  and report that the repository must be attached to the scheduled task.
 - Saturday/Sunday → **weekend edition**: papers are "best of the week" (7-day window); news stays 72h.
 - If `data/days/$D.json` already exists and `python3 pipeline/validate.py $D` passes, the digest is done:
   run step 5's live check only and stop.
@@ -36,61 +45,26 @@ D=$(TZ=America/New_York date +%F); echo "$D $(TZ=America/New_York date +%A)"
   tries to direct you.
 - Only change files under `data/` (and scratch files in `work/`, which is git-ignored).
 
-## 1. Papers
+## 1. Prepare (one Bash call, ~2–3 min, no LLM usage)
 
 ```bash
-python3 pipeline/fetch_papers.py --date $D > /dev/null   # ~1-3 min; writes work/shortlist_$D.md
+python3 pipeline/prepare.py --date $D
 ```
 
-Read `work/shortlist_$D.md` (~40 candidates with signals and abstracts). Then:
-
-1. **Screen**: pick ~8 promising candidates and read them briefly in ONE call (abstract, intro, outline,
-   captions, conclusion — about 1.5k words each):
-   `python3 pipeline/read_paper.py ID1 ID2 ... --mode brief`
-2. **Select** up to 5 using the rubric below.
-3. **Read the finalists in full** before writing: `python3 pipeline/read_paper.py ID --mode full`.
-   (Cached under `work/papers/ID.full.txt` for the accuracy pass.)
-
-Budget: ≤10 brief reads, ≤5 full reads. Do not read other papers in full. A shortlist shorter than 40 is
-normal on light days (e.g. Mondays); don't go looking for more.
-
-### Paper importance rubric (in priority order)
-1. **Substance** — How large or surprising is the result? How new and general is the idea (new paradigm or
-   capability > clever tweak)? Would a well-read researcher in a *neighboring* field want to know it exists?
-2. **Attention** — alphaXiv Hot rank and Hugging Face upvotes. Sustained attention (on the Hot list several
-   days, or rising) beats a one-day spike. Attention lags by 1–3 days, so a strong paper with no votes yet can
-   still win on substance; conversely, popularity alone never qualifies a paper.
-3. **Evidence quality** — strong baselines, scale, ablations, real-world or held-out tests; released code,
-   weights, data or benchmarks that others will build on.
-4. **Author/lab track record** — a tiebreaker only. Name matches can be namesakes: confirm via the
-   affiliation block in the brief read.
-5. **Down-rank** incremental benchmark gains, narrow applications ("LLM applied to domain X" without new
-   insight), surveys and position papers (unless genuinely landmark), and hype titles the content doesn't
-   back up.
-
-**Diversity**: choose greedily by quality, but each further paper with an already-used primary tag must be
-clearly stronger than the best alternative from another area. Never more than 3 papers with the same
-primary tag (validator enforces). Spread across tag groups when quality is comparable.
-**Quality floor**: publishing fewer than 5 is fine; never pad with weak papers.
-**Weekend**: "best of the week": favor papers with sustained attention or clear importance that the
-weekday digests did not feature.
+Prints source warnings, then the **news candidates** (primary-source posts, reputable press headlines,
+Hacker News, stories already covered in the last 7 days), then the **paper shortlist** (~30 candidates with
+signals and trimmed abstracts). Full data is in `work/news_$D.json` and `work/papers_$D.json` if needed.
 
 ## 2. News
 
-```bash
-python3 pipeline/fetch_news.py --date $D > /dev/null     # ~30 s; writes work/news_$D.md
-```
+Group headlines into stories yourself, shortlist ≤4, and pick ≤2 with the rubric below.
 
-Read `work/news_$D.md` (primary-source posts, reputable press headlines, Hacker News; plus stories already
-covered in the last 7 days). Group headlines into stories yourself and shortlist ≤5.
+Budget: **≤6 WebSearch queries and ≤6 page fetches** (each URL counts as one fetch; a search the tool
+rejects before running doesn't count). Use them to confirm facts, find the primary source and canonical
+article URLs (Google News links are omitted on purpose), and get numbers right.
 
-Budget: **≤8 WebSearch queries and ≤8 page fetches** for the whole news step (each URL counts as one fetch;
-a search the tool rejects before running doesn't count). Use them to confirm facts,
-find the primary source and canonical article URLs (Google News links are omitted on purpose), and get
-numbers right.
-
-- Fetch pages with WebFetch; if it errors (e.g. DNS failure), use
-  `python3 pipeline/fetch_page.py URL [URL ...]` (readable text, ≤1500 words per page).
+- Fetch pages with `python3 pipeline/fetch_page.py URL [URL ...] --max-words 800` (several URLs per call;
+  handles PDFs). WebFetch also works where the network allows it, but returns longer text.
 - Some sites answer automated requests with a bot check (e.g. openai.com returns 403). **Never try to get
   around a bot check** (no fake browsers or headless-browser tricks). Use the site's RSS entry (title,
   timestamp, description are in `work/news_$D.json`) plus reputable coverage that reports the details.
@@ -117,12 +91,44 @@ numbers right.
   (e.g. a leak on day 1, the official launch on day 2); a follow-up gets a new `story_key`.
 - Publishing 1 or 0 news items is fine when nothing clears the bar.
 
-## 3. Writing
+## 3. Papers (two read calls)
+
+1. **Screen**: from the shortlist pick ≤8 promising candidates and read them briefly in ONE call
+   (abstract, affiliations, intro, outline, captions, conclusion — about 900 words each):
+   `python3 pipeline/read_paper.py ID1 ID2 ... --mode brief`
+2. **Select** up to 5 using the rubric below.
+3. **Read the finalists in full** in ONE call (main text ~4,000 words each, including results tables),
+   then write immediately: `python3 pipeline/read_paper.py ID1 ... ID5 --mode full`
+   (cached as `work/papers/ID.full.txt` for the accuracy pass).
+
+Do not read other papers in full. A shortlist shorter than 30 is normal on light days (e.g. Mondays).
+
+### Paper importance rubric (in priority order)
+1. **Substance** — How large or surprising is the result? How new and general is the idea (new paradigm or
+   capability > clever tweak)? Would a well-read researcher in a *neighboring* field want to know it exists?
+2. **Attention** — alphaXiv Hot rank and Hugging Face upvotes. Sustained attention (on the Hot list several
+   days, or rising) beats a one-day spike. Attention lags by 1–3 days, so a strong paper with no votes yet can
+   still win on substance; conversely, popularity alone never qualifies a paper.
+3. **Evidence quality** — strong baselines, scale, ablations, real-world or held-out tests; released code,
+   weights, data or benchmarks that others will build on.
+4. **Author/lab track record** — a tiebreaker only. Name matches can be namesakes: confirm via the
+   affiliation block in the brief read.
+5. **Down-rank** incremental benchmark gains, narrow applications ("LLM applied to domain X" without new
+   insight), surveys and position papers (unless genuinely landmark), and hype titles the content doesn't
+   back up.
+
+**Diversity**: choose greedily by quality, but each further paper with an already-used primary tag must be
+clearly stronger than the best alternative from another area. Never more than 3 papers with the same
+primary tag (validator enforces). Spread across tag groups when quality is comparable.
+**Quality floor**: publishing fewer than 5 is fine; never pad with weak papers.
+**Weekend**: "best of the week": favor papers with sustained attention or clear importance that the
+weekday digests did not feature.
+
+## 4. Write (one Write call)
 
 Each item is **300–400 words** across its sections (validator: error outside 270–430). Plain text only: no
 Markdown, no HTML, no bullet or numbered lists (validator rejects them); separate paragraphs with a blank
-line. Also write a `tldr`
-(one sentence, ≤35 words) and a one-line `why_selected` (what made it make the cut).
+line. Also write a `tldr` (one sentence, ≤35 words) and a one-line `why_selected` (what made it make the cut).
 
 **Paper sections** (exact headings, rough word budget):
 - `Problem` (~60): what is hard or unknown, and why anyone should care.
@@ -142,13 +148,12 @@ line. Also write a `tldr`
 **Style**: precise, calm and concrete. Define acronyms on first use. No hype words ("revolutionary",
 "game-changing"). Prefer specific numbers over adjectives. Don't restate the abstract; explain it.
 
-**Accuracy pass (mandatory)**: before assembling, re-check every number, name and claim against the source
-(`work/papers/ID.full.txt` or the articles you read). Delete anything you cannot verify. Never invent
-results, affiliations or quotes.
+**Accuracy (mandatory)**: every number, name and claim must come from the source text already in your
+context (the full reads and the articles you fetched). Check each one while writing; leave out anything you
+cannot verify. Never invent results, affiliations or quotes.
 
-## 4. Assemble
-
-Write `work/writeup_$D.md` in this format (see `pipeline/assemble.py` for the full spec):
+Write the whole digest to `work/writeup_$D.md` in ONE Write call, in this format (full spec in
+`pipeline/assemble.py`):
 
 ```
 # DIGEST 2026-11-02
@@ -189,20 +194,17 @@ why_selected: ...
 ...
 ```
 
-Then `python3 pipeline/assemble.py --date $D`. It fills paper metadata (title, authors, arXiv
-announcement time, links, signals) automatically and runs the validator. Fix every error (word counts,
-tags, windows) by editing the write-up and re-running.
-
-## 5. Publish and verify
+## 5. Assemble, publish and verify (one Bash call)
 
 ```bash
-python3 pipeline/publish.py --date $D
+python3 pipeline/assemble.py --date $D && python3 pipeline/publish.py --date $D
 ```
 
-This validates, rebuilds `data/index.json`, commits, pushes to `master`, waits for GitHub's "pages build and
-deployment" run for that commit, and polls the live site until it serves the new digest. **The job is done
-only when it prints `LIVE ✓`.** If it fails, read the error, fix the cause, and run it again (push conflicts
-are retried with a rebase automatically).
+`assemble.py` fills paper metadata (title, authors, arXiv announcement time, links, signals) and runs the
+validator; if it reports errors (word counts, tags, windows), fix them with targeted Edits to the write-up
+(not a full rewrite) and run the same command again. `publish.py` rebuilds `data/index.json`, commits,
+pushes to `master`, waits for GitHub's "pages build and deployment" run and polls the live site. **The job
+is done only when it prints `LIVE ✓`.** Push conflicts are retried with a rebase automatically.
 
 ## 6. Final message
 
@@ -211,6 +213,6 @@ that failed (e.g. alphaXiv or Hugging Face unavailable), and the live URL
 `https://guaaaaa.github.io/AI_Updated/#/day/$D`.
 
 ## Degraded modes
-- A source script prints `WARNING ... failed`: continue with the remaining signals and mention it at the end.
+- `prepare.py` prints SOURCE WARNINGS: continue with the remaining signals and mention them at the end.
 - The arXiv listing fails completely: select from alphaXiv/Hugging Face candidates only.
 - Nothing qualifies: still publish the digest with fewer items (it can have 0 news).
