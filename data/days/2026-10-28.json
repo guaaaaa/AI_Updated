@@ -1,0 +1,461 @@
+{
+ "date": "2026-10-28",
+ "edition": "weekday",
+ "generated_at": "2026-11-02T04:30:12+00:00",
+ "backfill": true,
+ "summary": "DeepMind's Genie 4 and AI-claimed refutations of the Exponential Time Hypothesis lead the news; papers cover a minimalist Lean prover, self-reorganising kernel-writing agents, counterfactual world-model RL, cross-modal steering and EmbeddingGemma 2.",
+ "news": [
+  {
+   "id": "2026-10-28-n1",
+   "story_key": "google-deepmind-genie-4-world-model",
+   "title": "Google DeepMind previews Genie 4, a real-time world model with sound and mid-scene editing",
+   "category": "Model Release",
+   "published": "2026-10-27T12:01:00-04:00",
+   "tldr": "Genie 4 generates explorable worlds frame by frame with native audio and dialogue, accepts typed edits while running, stays consistent for up to two minutes, and uses Gemini as a planning director.",
+   "why_selected": "The top model release of the window, from the lab that defined interactive world models, with broad independent coverage.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A world model, in Google DeepMind's sense, renders a virtual environment frame by frame in real time as a user moves through it, with nothing pre-built or scripted. Genie 3 arrived as a research preview a little over a year ago and knocked video-game stocks, but public access never went beyond a limited Project Genie web experience. The field has since crowded: Runway shipped GWM Worlds 2, a playable world model with audio, a couple of months ago, and AMD is acquiring Fei-Fei Li's World Labs."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday, October 27, DeepMind released Genie 4 as a research preview for trusted testers. It is DeepMind's first world model with native audio: ambient sound, music and spoken dialogue generated to match the scene. Users can type free-form edits while the world runs, such as changing the weather or camera angle or adding people and objects. A scene now stays consistent for up to two minutes, double Genie 3's limit, with better collisions and more natural human motion. Gemini acts as a director that plans steps and checks output frames; Ars Technica reports Gemini 3.8 Flash in that role. In the coming weeks Genie 4 rolls out to Google AI Ultra subscribers (plans start at $100 a month) and early-access Gemini API and AI Studio partners."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Think of the split as a screenwriter and a camera crew: Gemini decides what should happen next and checks the result, while Genie renders it at interactive speed. Google research director Tejas Kulkarni described this hybrid, with Gemini writing code and text and Genie \"simulating reality at different levels of abstraction\", as where world models are heading. In a research experiment tied to Gemini Robotics, a Gemini 4 Argon model broke a task into steps that Genie 4 simulated live, one way to test robot scenarios before running them physically and the use most relevant to embodied AI. Audio and dialogue widen the other pitched uses, from interactive learning to film work; trusted testers already point to prototyping films. The limits are real: two minutes of consistency is short for long-horizon agent training, and objects still drift as a session runs."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the Gemini API release, still unpriced, makes large-scale uses such as generating robot-training environments affordable; whether audio accuracy and legible in-world text, which DeepMind says remain unsolved, improve; and how Runway and other rivals respond."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/?p=3182045"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-28-n2",
+   "story_key": "openai-anthropic-eth-refutation-claims",
+   "title": "OpenAI says its models refuted the Exponential Time Hypothesis; Anthropic posts its own claim hours later",
+   "category": "Research",
+   "published": "2026-10-26T10:30:00-04:00",
+   "tldr": "OpenAI claims an AI-found algorithm solves 3-SAT faster than a foundational 1999 conjecture allows, plus results in harmonic analysis and quantum field theory; the conjecture's authors are organising independent review.",
+   "why_selected": "If it holds, a machine-found result that overturns a pillar of complexity theory; widely covered, with the field's leading experts organising verification and a second lab making the same claim.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Exponential Time Hypothesis (ETH), proposed in 1999 by Russell Impagliazzo, Ramamohan Paturi and Francis Zane, says that 3-SAT, deciding whether a logical formula over n true-or-false variables can be satisfied, cannot be solved in time that grows slower than exponentially in n. It is a stronger assumption than P ≠ NP, and hundreds of papers prove other problems hard \"assuming ETH\". OpenAI has been releasing AI-generated mathematics at pace, including a claimed Navier–Stokes proof and 722 maths papers on October 6, which MIT's Ryan Williams called a \"DDOS attack on mathematicians\"."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, October 26, OpenAI announced three results from its internal models. In complexity theory, it says a model found a refutation of ETH, a sub-exponential-time algorithm for 3-SAT, on October 16 and checked it in the Lean proof assistant the next day; the write-up and Lean proof are on GitHub. In harmonic analysis, it claims the local smoothing conjecture in every dimension, which would settle the Kakeya and Stein restriction conjectures in all dimensions. In physics, it claims a rigorous proof that certain four-dimensional quantum field theories exist, including quantum chromodynamics and pure Yang–Mills theory. Impagliazzo, Paturi and Williams are organising an open review, stressing that their involvement \"should not be taken as certification\". Hours later, Anthropic released its own refutation of ETH."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Picture 3-SAT as a lock with n dials. ETH says any method of opening it must, past some size, multiply its effort by a fixed factor per extra dial; a sub-exponential algorithm's extra cost per dial keeps shrinking. That would not prove P = NP, and Williams expects no near-term practical applications and doubts OpenAI's algorithm is the best possible, but many hardness results built on ETH would need revisiting. Williams said the proof has \"two or three alien-looking parts\"; OpenAI told him it was reasonably confident the result implies no cryptographic breaks. The episode also shows two labs claiming the same landmark result within hours, while norms remain unsettled: who gets credit, and who sees results first. OpenAI says it seeks no academic credit and has given $5 million to the Simons Foundation for workshops."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The open review and the OpenAI-funded conference the three researchers requested; how Anthropic's refutation compares, after its mathematician Levent Alpöge suggested OpenAI built on existing work; and the physics group led by David Gross, which is withholding the AI material while writing up the result."
+    }
+   ],
+   "sources": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+    },
+    {
+     "name": "The Next Web",
+     "url": "https://thenextweb.com/news/openai-exponential-time-hypothesis-false-kakeya-yang-mills"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/?p=3182002"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://aljazeera.com/economy/2026/10/27/ai-makes-discoveries-in-mathematics-computer-science-physics-openai-says"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.35962",
+   "title": "h1: A Taste of the Bitter Lesson in Automated Theorem Proving",
+   "authors": [
+    "Skander Moalla",
+    "Ahmad Rammal",
+    "Niket Patel",
+    "Remi Munos",
+    "Julia Kempe"
+   ],
+   "affiliations": [
+    "FAIR at Meta",
+    "EPFL",
+    "New York University",
+    "CERMICS (ENPC",
+    "Institut Polytechnique de Paris)"
+   ],
+   "announced": "2026-10-27T20:00:00-04:00",
+   "primary_tag": "AI for Math",
+   "tags": [
+    "AI for Math",
+    "Agents",
+    "Reasoning"
+   ],
+   "tldr": "A bare-bones agent loop around the Lean proof checker, given enough budget, matches or beats elaborate theorem-proving pipelines at the same model and settles eight open Formal Conjectures problems.",
+   "why_selected": "A clean, cost-controlled bitter-lesson test with state-of-the-art results and new theorems, relevant to anyone designing agent harnesses, not just provers.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Frontier models increasingly produce research mathematics whose informal arguments are hard to check, so turning them into machine-verified proofs in Lean, a language whose proofs a computer checks step by step, has become essential. The open question is how to build the scaffolding, or harness, around a model: should it prescribe how to prove, or simply keep the model working?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Recent provers wrap models in hand-designed workflows: planning, decomposing a theorem into a graph of lemmas, and orchestrating specialist provers, as in Goedel-Architect, MerLean and AlphaProof Nexus. Their gains are usually reported alongside stronger models or more compute, and \"pass@1\" can hide very different budgets (one Goedel-Architect attempt allows up to 16 plan revisions), so it is unclear whether the workflow itself helps."
+    },
+    {
+     "heading": "Key idea",
+     "body": "h1 is deliberately simple, like giving a strong student a good desk, a compiler and permission to keep going instead of a worksheet. The model edits a single Lean file through tool calls, seeing compiler errors and open goals after every edit, with optional tools to search the Mathlib library and test proof fragments. When it submits, an external validator checks the proof against the original statement. If it is rejected, a reflection model compresses the transcript into verified progress, lessons from failures and useful lemma names, and the loop continues from the current file. Each extra iteration is the formal-proof analogue of appending \"Wait\" to a model's reasoning. Nothing tells the model how to prove; the harness only keeps it working. The authors compare cost-versus-success curves at matched models."
+    },
+    {
+     "heading": "Results",
+     "body": "With GPT-5.6 Sol, h1 sets records of 90/100 on FATE-X, 78/100 on FC100-solved, 14/23 on FormalQualBench and all six IMO 2026 problems; with GPT-5.5 it solves 670 of 672 PutnamBench problems. It settled eight of 236 open Formal Conjectures targets. At matched models, one h1 attempt beats Goedel-Architect's best of four (598 vs 597 PutnamBench solves, $1.08 vs $1.47 per problem) and, on five open Erdős problems, reaches 82.5% at $121 versus 76% at $317 for full AlphaProof Nexus."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The lesson extends to any agent working against a verifier: an efficient interface matters more than a prescribed workflow. With the same model and a $20 budget, AxProverBase, which regenerates whole proofs, solves 18 Putnam100 problems against h1's 69; native Claude Code with Opus 4.8 solves 63 FATE-X problems versus h1's 83. Caveats: training-data contamination cannot be ruled out, and h1 handles single files, not textbook-scale formalisation."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.35962",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.35962"
+   },
+   "signals": {
+    "hf_upvotes": 19,
+    "notable_authors": [
+     "Remi Munos"
+    ],
+    "org": "Meta Llama"
+   }
+  },
+  {
+   "id": "2610.36848",
+   "title": "Evolving Agent Teams",
+   "authors": [
+    "Shiyi Cao",
+    "Ziming Mao",
+    "Dacheng Li",
+    "Joseph E. Gonzalez",
+    "Ion Stoica"
+   ],
+   "affiliations": [
+    "University of California",
+    "Berkeley"
+   ],
+   "announced": "2026-10-27T20:00:00-04:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Efficiency"
+   ],
+   "tldr": "A supervisor agent that diagnoses why a coding-agent team has stalled and redesigns its roles lets Claude-based agents write a CUDA decode kernel 1.21x faster on average than FlashInfer's production kernel.",
+   "why_selected": "The window's highest alphaXiv Hot rank, from Berkeley's Sky Computing Lab, with results measured against production expert code rather than toy baselines.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Fast GPU kernels, the low-level code behind attention and other model operations, come from searching a huge hardware-specific design space where the biggest wins are architectural. Coding agents make quick early progress, then stall far below expert code: on the paged decode kernel for DeepSeek-V3's Multi-head Latent Attention (MLA), a single Claude Code agent plateaus at 0.44 to 0.51 times the speed of FlashInfer's production kernel."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Agents fail in a characteristic way: after repeated correctness failures they abandon hard but powerful designs, such as Hopper's WGMMA tensor-core instructions, for easier and slower ones, then spend their budget polishing those. Static multi-agent teams with fixed roles, and kernel-specific systems such as K-Search and CUDAForge, share the problem because their organisation is set before the run and cannot change when the bottleneck does."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Instead of a better engineer, add a manager who reorganises the team. A supervisor agent watches each team, reads its records, diagnoses the plateau (drifting to easy paths, losing earlier insights, getting stuck debugging) and designs the next team from scratch: inventing roles, choosing how agents coordinate, and deciding how knowledge is recorded. A persistent file system carries a learnings document, every team's artifacts and the evolution history across versions. In the MLA case study, the supervisor added a \"Disciplinarian\" that blocked non-WGMMA commits, producing the first correct WGMMA kernel. Later it split work into an isolated debugger and a main optimiser running in parallel, gaining 44%, and added a \"Knowledge Integrator\" after noticing that a key recommendation from the fourth team had been ignored by the next three."
+    },
+    {
+     "heading": "Results",
+     "body": "On MLA decode at a matched budget, the evolving team reaches 0.74x of FlashInfer's speed, against 0.31x for a fixed four-role Claude Code team and 0.28x for Codex with GPT-5.5. With more budget it reaches a 1.21x mean speedup over FlashInfer, winning 36 of 47 production workloads. With newer models it also wrote Kimi Delta Attention prefill kernels 3.01x faster than vLLM's on AMD MI350X and 3.44x faster than FlashKDA on NVIDIA B200."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For long, open-ended engineering searches, the organisation of agents is itself worth optimising, and a meta-level agent can do it with no predefined roles. Because kernels like these set inference costs, this is a concrete case of AI agents improving AI infrastructure. Caveats: settings were run twice at most, some once, and budgets reach hundreds of dollars per task."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.36848",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.36848",
+    "code": "https://github.com/caoshiyi/EAT"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 34,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Joseph E. Gonzalez",
+     "Ion Stoica"
+    ]
+   }
+  },
+  {
+   "id": "2610.36068",
+   "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+   "authors": [
+    "Jiayi Luo",
+    "Yang Zhang",
+    "Liliang Chen",
+    "Nan Wang",
+    "Chen Gao",
+    "Boxiang Qiu",
+    "Zhuoxuan Li",
+    "Baorui Peng",
+    "Chuankang Li",
+    "Yuxiang Yan",
+    "Si Liu",
+    "Qingyun Sun",
+    "Shuicheng Yan",
+    "Maoqing Yao",
+    "Jianxin Li",
+    "Guanghui Ren"
+   ],
+   "affiliations": [
+    "AgiBot",
+    "Beihang University",
+    "National University of Singapore"
+   ],
+   "announced": "2026-10-27T20:00:00-04:00",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Robotics",
+    "Reinforcement Learning"
+   ],
+   "tldr": "Rollback rewinds a learned video world model to key moments of real robot attempts, tries alternatives there, and trains on what worked, beating the average human player at ball tossing and curling within 8 hours.",
+   "why_selected": "A simple, general idea, using the one thing a simulator allows and reality does not, with strong real-robot results and a world model that keeps learning from the robot.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Improving a robot policy by trial and error in the real world is slow and expensive: one robot, one attempt at a time. Action-conditioned video world models, which predict what the cameras will see after an action, promise a cheaper training ground. But a policy trained in imagination tends to exploit the model's errors, and a success-or-failure signal for a whole episode does not say which decision mattered."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Current world-model methods use the model like a physical environment: roll forward from the start, record success or failure, repeat. That wastes compute regenerating shared beginnings and leaves credit assignment to a separately learned value model, which adds its own bias. The world model is also usually trained once and frozen, so it drifts out of its depth as the policy discovers new behaviours."
+    },
+    {
+     "heading": "Key idea",
+     "body": "A world model can do something reality cannot: rewind. Rollback treats it like a chess player reviewing a lost game, returning to the moves that decided it and trying alternatives. Starting from real successful and failed robot attempts, it restores cached world-model states at intermediate decision points, samples alternative action chunks from the policy, and simulates their consequences. Monte Carlo tree search concentrates this imagination budget on decisions whose alternatives lead to different outcomes. Because sibling branches share an identical history, comparing their success rates isolates the effect of a single action, giving action-level quality labels without a learned value model; the π0.5 policy is then trained conditioned on those labels. Meanwhile, real trajectories from the improving policy keep fine-tuning the world model through LoRA, which the authors call test-time physics grounding."
+    },
+    {
+     "heading": "Results",
+     "body": "On an AgiBot Genie-02 robot backed by 48 H200 GPUs, Rollback reaches 69.33% on Jenga-style block extraction, 40.00% on ball tossing and 64.44% on tabletop curling, 10.67, 11.11 and 11.85 points above RISE run on the same world model. Ball tossing rose from 25.56% to 40.00% in 8 hours, passing the human average of 31.48%; curling passed the human 58.39% after 4 hours. Freezing the world model left ball tossing at 26.67%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Counterfactual branching turns a world model from a passive simulator into a credit-assignment engine, an idea that should carry over to other learned simulators, from driving to games. The co-evolution result is a practical warning that learned simulators must be kept grounded as policies drift. Caveats: three tasks, one robot, task-specific success judges and heavy GPU use."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.36068",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.36068"
+   },
+   "signals": {
+    "hf_upvotes": 82,
+    "notable_authors": [
+     "Shuicheng Yan"
+    ],
+    "org": "AgiBot World"
+   }
+  },
+  {
+   "id": "2610.36269",
+   "title": "Cross-modal Steering Vectors Exist Across Both Image and Text Generation",
+   "authors": [
+    "Donghao Zeng",
+    "Nishant Subramani",
+    "Tamar Rott Shaham",
+    "Benno Krojer"
+   ],
+   "affiliations": [
+    "Mila",
+    "McGill University",
+    "Carnegie Mellon University",
+    "MIT CSAIL",
+    "Northeastern University"
+   ],
+   "announced": "2026-10-27T20:00:00-04:00",
+   "primary_tag": "Interpretability",
+   "tags": [
+    "Interpretability",
+    "Multimodal"
+   ],
+   "tldr": "In models that generate both text and images with shared weights, a steering vector found only from text, such as happy versus sad, also steers generated images, and image-derived vectors steer text.",
+   "why_selected": "A clean causal test of whether multimodal models share concepts across modalities, with a surprising positive answer and direct implications for model control.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Do multimodal models represent \"happy\" or \"old\" once, or separately for words and pixels? Prior evidence pointed to separation: text and image token representations stay nearly orthogonal across layers, knowledge edited on the text side mostly fails to appear in generated images, and circuits for the same task are often disjoint. Correlational measures such as representational similarity cannot show whether a shared direction actually controls behaviour."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Steering, adding a fixed vector to a model's hidden states to push its outputs toward a concept, has been studied separately in language models and image generators, with different methods in each. Earlier work on unified multimodal models reported a strong asymmetry: text-derived vectors could steer images, but image-derived vectors largely failed to steer text."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The test is simple: build a steering vector entirely from one modality and add it, unchanged, while the model generates the other. Think of it as asking whether a dial labelled in English also turns the picture. For text, 100 minimal pairs such as \"a person is happy\" and \"a person is sad\" give a vector as the average difference in hidden states. For images, an editing model makes the same picture happier and sadder. The authors test three unified models that generate text and image tokens autoregressively with shared weights: UniAR (8B), Emu3.5 (34B) and Liquid (7B). An LLM judge, blind to which output was steered, measures how often the concept shifts, and \"recovery\" compares a transferred vector's effect with that of the native one."
+    },
+    {
+     "heading": "Results",
+     "body": "Transfer works in both directions. In UniAR at middle layers, transferred vectors recover 84% of the native effect on images and 74% on text. In Emu3.5 and Liquid, text-derived vectors steer images better than image-derived ones (recovery 1.10 and 1.20). Emotion transfers most evenly, at 0.95 both ways, while left-right fails. Even purely linguistic directions carry over: a formal-versus-colloquial vector produces formal clothing in images."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The geometry is the intriguing part: text and image activations occupy separate regions (in UniAR an average happy image is over ten times closer to a sad image than to a happy sentence), yet concept directions within them align. That suggests a safety steer or knowledge edit found in text might carry over to images. Caveats: three models, eight main concepts, and an LLM judge with moderate human agreement (kappa 0.62)."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.36269",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.36269",
+    "code": "https://github.com/saintsauceee/cross-modal-steering"
+   },
+   "signals": {
+    "hf_upvotes": 20,
+    "org": "Mila – Quebec Artificial Intelligence Institute"
+   }
+  },
+  {
+   "id": "2610.37364",
+   "title": "EmbeddingGemma 2: Unified and Efficient Multimodal Representations",
+   "authors": [
+    "Henrique Schechter Vera",
+    "Sahil Dua",
+    "Jovan Andonov",
+    "Sara Smoot",
+    "Sebastian Russo",
+    "Ivan Llanos",
+    "Max Matveev",
+    "Jae Hyeon Yoo",
+    "Kat Black",
+    "Shih-Cheng Huang",
+    "Josiah Aklilu",
+    "Maarten Grootendorst",
+    "Omar Sanseviero",
+    "Chandramouli Amarnath",
+    "Ian Ballantyne",
+    "Zhe Li",
+    "Daniel Salz",
+    "Ibrahim Alabdulmohsin",
+    "Ilya Philippov",
+    "Kristen Quan",
+    "Glenn Cameron",
+    "Edouard Yvinec",
+    "Luciano Martins",
+    "Doug Reid",
+    "Sindhu Raghuram Panyam",
+    "Weiyi Wang",
+    "Hengxuan Ying",
+    "Madhuri Shanbhogue",
+    "Tanmaya Dabral",
+    "Shanfeng Zhang",
+    "Juyeong Ji",
+    "Renjie Wu",
+    "Joe Zou",
+    "Xu Chen",
+    "Yunan Zhang",
+    "Yu-Hui Chen",
+    "Matthew Soulanille",
+    "Vinod Mamillapalli",
+    "Yi-Chun Kuo",
+    "Wai Hon Law",
+    "Matt Kreileder",
+    "Alice Zheng",
+    "Suril Shah",
+    "Mogan Shieh",
+    "Pooja Consul",
+    "Alberto Montes",
+    "Andreas Hess",
+    "Andres Sevilla",
+    "Babak Samari",
+    "Brendan McCloskey",
+    "Brian Potetz",
+    "Daniel Cer",
+    "Georgios Kathareios",
+    "Gustavo Hernández Ábrego",
+    "Hesen Zhang",
+    "Ji Ma",
+    "Jiaxing Wu",
+    "Keegan Mosley",
+    "Paul Suganthan",
+    "Rui Meng",
+    "Shen Gao",
+    "Shengcao Cao",
+    "Yi-Ting Chen",
+    "Yichang Chen",
+    "Zhongli Ding",
+    "Kendra Byrne",
+    "Cormac Brick",
+    "Olivier Lacombe",
+    "Qin Yin",
+    "Tris Warkentin",
+    "Armand Joulin",
+    "Tom Duerig",
+    "Mojtaba Seyedhosseini"
+   ],
+   "affiliations": [
+    "Google"
+   ],
+   "announced": "2026-10-27T20:00:00-04:00",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Retrieval & Memory",
+    "Efficiency"
+   ],
+   "tldr": "Google's open 744M-parameter embedding model maps text, images, audio, video and mixtures into one vector space, beating much larger models and loading only the encoders a task needs.",
+   "why_selected": "A practical open release that many retrieval and RAG builders will use, with informative ablations on distilling and training small multimodal encoders.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Embedding models turn inputs into vectors so that similar things land close together; they power search, clustering and retrieval-augmented generation (RAG). Text-only embedders need speech recognition or captioning to handle audio and images, losing details such as non-verbal sounds. Multimodal embedders adapted from large multimodal LLMs handle mixed inputs but carry several billion parameters, too heavy for latency-sensitive or on-device use."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "CLIP-style models such as SigLIP align separate image and text towers well but cannot embed interleaved inputs, such as an image together with a question. Embedders adapted from multimodal LLMs can, and recent ones add video and audio, but they grow with their parent models. The original EmbeddingGemma was small but handled text only."
+    },
+    {
+     "heading": "Key idea",
+     "body": "EmbeddingGemma 2 is built like a modular kit. At the centre sits a 271M-parameter bidirectional transformer adapted from Gemma 4; a 167M vision encoder and a 305M audio encoder turn media into \"soft tokens\" interleaved with text. Users load only what they need: 271M parameters for text, 439M for vision-language, 577M for audio-language. Training covers about 2.9 trillion tokens in three stages: text pre-finetuning, multimodal pre-finetuning that distils the larger Gemini Embedding 2 by matching its vectors directly, then contrastive finetuning, which ablations show lifts image and video quality where continued distillation plateaus. Two choices help: dropping Gemma's dedicated per-layer embedding lookup table both saves memory and improves quality, and training the vision encoder instead of freezing it greatly improves multimodal results."
+    },
+    {
+     "heading": "Results",
+     "body": "On the MIEB(lite) image benchmark it beats the best sub-1B models by 7.9 and 12.2 points on the two aggregate scores, and even at 128 dimensions outperforms every other sub-1B model at full size. It is the smallest model on the MMEB-v2 leaderboard, trailing only models of around 2B parameters. On code retrieval it beats every sub-4B model and comes within 2 points of a model 28 times larger. English text quality regresses slightly versus its predecessor."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A single small, open model that embeds speech, music, screenshots, video and text into one searchable space simplifies multimodal RAG and on-device search, while truncatable vectors (768 down to 128 dimensions) and quantised checkpoints cut storage and memory. The ablations are reusable recipes for distilling encoders. Caveats: comparisons rely on public leaderboards, and the audio encoder stays frozen."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.37364",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.37364"
+   },
+   "signals": {
+    "hf_upvotes": 30,
+    "org": "Google"
+   }
+  }
+ ]
+}

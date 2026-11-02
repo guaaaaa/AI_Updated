@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-02T04:18:45+00:00",
+ "updated": "2026-11-02T04:31:09+00:00",
  "days": [
+  {
+   "date": "2026-10-28",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": true
+  },
   {
    "date": "2026-10-27",
    "edition": "weekday",
@@ -17,6 +24,92 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-10-28-n1",
+   "date": "2026-10-28",
+   "type": "news",
+   "title": "Google DeepMind previews Genie 4, a real-time world model with sound and mid-scene editing",
+   "tldr": "Genie 4 generates explorable worlds frame by frame with native audio and dialogue, accepts typed edits while running, stays consistent for up to two minutes, and uses Gemini as a planning director.",
+   "category": "Model Release",
+   "byline": "Google DeepMind, TechCrunch, Ars Technica"
+  },
+  {
+   "id": "2026-10-28-n2",
+   "date": "2026-10-28",
+   "type": "news",
+   "title": "OpenAI says its models refuted the Exponential Time Hypothesis; Anthropic posts its own claim hours later",
+   "tldr": "OpenAI claims an AI-found algorithm solves 3-SAT faster than a foundational 1999 conjecture allows, plus results in harmonic analysis and quantum field theory; the conjecture's authors are organising independent review.",
+   "category": "Research",
+   "byline": "OpenAI, The Next Web, TechCrunch"
+  },
+  {
+   "id": "2610.35962",
+   "date": "2026-10-28",
+   "type": "paper",
+   "title": "h1: A Taste of the Bitter Lesson in Automated Theorem Proving",
+   "tldr": "A bare-bones agent loop around the Lean proof checker, given enough budget, matches or beats elaborate theorem-proving pipelines at the same model and settles eight open Formal Conjectures problems.",
+   "primary_tag": "AI for Math",
+   "tags": [
+    "AI for Math",
+    "Agents",
+    "Reasoning"
+   ],
+   "byline": "Skander Moalla, Ahmad Rammal, Niket Patel et al. · FAIR at Meta, EPFL, New York University"
+  },
+  {
+   "id": "2610.36848",
+   "date": "2026-10-28",
+   "type": "paper",
+   "title": "Evolving Agent Teams",
+   "tldr": "A supervisor agent that diagnoses why a coding-agent team has stalled and redesigns its roles lets Claude-based agents write a CUDA decode kernel 1.21x faster on average than FlashInfer's production kernel.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Efficiency"
+   ],
+   "byline": "Shiyi Cao, Ziming Mao, Dacheng Li et al. · University of California, Berkeley"
+  },
+  {
+   "id": "2610.36068",
+   "date": "2026-10-28",
+   "type": "paper",
+   "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+   "tldr": "Rollback rewinds a learned video world model to key moments of real robot attempts, tries alternatives there, and trains on what worked, beating the average human player at ball tossing and curling within 8 hours.",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Robotics",
+    "Reinforcement Learning"
+   ],
+   "byline": "Jiayi Luo, Yang Zhang, Liliang Chen et al. · AgiBot, Beihang University, National University of Singapore"
+  },
+  {
+   "id": "2610.36269",
+   "date": "2026-10-28",
+   "type": "paper",
+   "title": "Cross-modal Steering Vectors Exist Across Both Image and Text Generation",
+   "tldr": "In models that generate both text and images with shared weights, a steering vector found only from text, such as happy versus sad, also steers generated images, and image-derived vectors steer text.",
+   "primary_tag": "Interpretability",
+   "tags": [
+    "Interpretability",
+    "Multimodal"
+   ],
+   "byline": "Donghao Zeng, Nishant Subramani, Tamar Rott Shaham et al. · Mila, McGill University, Carnegie Mellon University"
+  },
+  {
+   "id": "2610.37364",
+   "date": "2026-10-28",
+   "type": "paper",
+   "title": "EmbeddingGemma 2: Unified and Efficient Multimodal Representations",
+   "tldr": "Google's open 744M-parameter embedding model maps text, images, audio, video and mixtures into one vector space, beating much larger models and loading only the encoders a task needs.",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Retrieval & Memory",
+    "Efficiency"
+   ],
+   "byline": "Henrique Schechter Vera, Sahil Dua, Jovan Andonov et al. · Google"
+  },
   {
    "id": "2026-10-27-n1",
    "date": "2026-10-27",
@@ -229,19 +322,23 @@
   ]
  },
  "tag_counts": {
+  "AI for Math": 1,
+  "Agents": 5,
+  "Reasoning": 3,
+  "Efficiency": 3,
+  "World Models": 1,
+  "Robotics": 3,
+  "Reinforcement Learning": 5,
+  "Interpretability": 1,
+  "Multimodal": 3,
+  "Retrieval & Memory": 1,
   "RSI": 2,
-  "Agents": 3,
-  "Reinforcement Learning": 4,
   "Post-training": 3,
   "Safety & Alignment": 3,
-  "Reasoning": 2,
-  "Robotics": 2,
   "Pre-training & Data": 2,
   "LLMs": 1,
-  "Multimodal": 1,
   "Evaluation & Benchmarks": 1,
-  "Architectures": 1,
-  "Efficiency": 1
+  "Architectures": 1
  },
  "news_categories": [
   "Model Release",
@@ -256,7 +353,8 @@
   "People"
  ],
  "category_counts": {
-  "Business & Funding": 2,
-  "Model Release": 2
+  "Model Release": 3,
+  "Research": 1,
+  "Business & Funding": 2
  }
 }
