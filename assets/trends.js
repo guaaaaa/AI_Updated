@@ -490,7 +490,8 @@
     s.append(svg("circle", { cx: x(b), cy: y(vals[b]), r: 3.5, style: `fill: var(${color})` }));
     const long = (r.months || 0) >= 6;
     const fmtD = (iso) => H.dObj(iso).toLocaleDateString("en-US", long ? { month: "short", year: "numeric" } : { month: "short", day: "numeric" });
-    const ticks = n > 3 ? [0, Math.round((n - 1) / 3), Math.round((2 * (n - 1)) / 3), n - 1] : [0, n - 1];
+    const ticks = n <= 3 ? [0, n - 1] : W < 520 ? [0, Math.round((n - 1) / 2), n - 1]
+      : [0, Math.round((n - 1) / 3), Math.round((2 * (n - 1)) / 3), n - 1];
     ticks.forEach((i, j) => s.append(svg("text", { x: x(i), y: Hh - 5, class: "axis",
       "text-anchor": j === 0 ? "start" : j === ticks.length - 1 ? "end" : "middle" }, fmtD(S.days[cv.from + i]))));
     const cross = svg("line", { y1: padT - 6, y2: Hh - padB, class: "crosshair", visibility: "hidden" });
@@ -589,7 +590,7 @@
       ["Average a day", (wsum(S.Pc, L, 21) / Math.min(21, L + 1)).toFixed(1), "last 21 announcement days"],
       ["Share of new papers", pct(valueAt("share", S, L, 21), 2), "last 21 announcement days"],
       ["52-week range", `${pct(lo, 2)} – ${pct(hi, 2)}`, "21-day share"],
-      ["Papers, past year", (S.Pc[L + 1] - S.Pc[y1]).toLocaleString(), `since ${H.fmtShort(S.days[y1])}`],
+      ["Papers, past year", (S.Pc[L + 1] - S.Pc[y1]).toLocaleString(), `since ${longDate(S.days[y1])}`],
       ["Upvote share", att == null ? "–" : pct(att, 1), "last 63 days, Hugging Face"],
       ...extra];
     return H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Key statistics" })),
