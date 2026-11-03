@@ -85,17 +85,24 @@ def build_month(mid, force=False):
     papers = FD.arxiv_month(mid)
     agg = {"month": mid, "n_papers": len(papers), "teams": len({team(p["a"]) for p in papers} - {None})}
     dn, dteams = Counter(), defaultdict(set)
+    gn, gteams = Counter(), defaultdict(set)   # fields = taxonomy groups: papers matching ANY of their directions
     tn, tteams = Counter(), defaultdict(set)
     for p in papers:
         tk = team(p["a"]) or p["id"]
+        hit_groups = set()
         for d in D:
             if d["rx"].search(p["t"]):
                 dn[d["id"]] += 1
                 dteams[d["id"]].add(tk)
+                hit_groups.add(d["group"])
+        for g in hit_groups:
+            gn[g] += 1
+            gteams[g].add(tk)
         for t in title_terms(p["t"]):
             tn[t] += 1
             tteams[t].add(tk)
     agg["dirs"] = {d["id"]: [dn[d["id"]], len(dteams[d["id"]])] for d in D}
+    agg["groups"] = {g: [gn[g], len(gteams[g])] for g in sorted({d["group"] for d in D})}
     # phrases only (multi-word or hyphenated): single words are mostly generic and the directions cover topics
     kept = [(t, n) for t, n in tn.most_common() if n >= 5 and (" " in t or "-" in t)][:6000]
     agg["terms"] = {t: [n, len(tteams[t])] for t, n in kept}
@@ -197,8 +204,13 @@ def analyze(mid, series_months=24):
             "attention": round(att_W, 4) if att_W is not None else None,
             "attention_prev": round(att_P, 4) if att_P is not None else None,
             "series": [round(A[m]["dirs"].get(k, [0, 0])[0] / A[m]["n_papers"], 5) for m in series_m],
+            "counts": [A[m]["dirs"].get(k, [0, 0])[0] for m in series_m],
         })
     rep["series_months"] = series_m
+    groups = sorted({d["group"] for d in config("directions")["directions"]})
+    rep["groups"] = [{"name": g, "counts": [(A[m].get("groups") or {}).get(g, [0, 0])[0] for m in series_m],
+                      "series": [round((A[m].get("groups") or {}).get(g, [0, 0])[0] / A[m]["n_papers"], 5) for m in series_m]}
+                     for g in groups]
     rep["terms_up"], rep["terms_down"] = term_movers(aw, ap, ay, NW, NP, NY)
     rep["news"] = news_report(mid, A)
     return rep

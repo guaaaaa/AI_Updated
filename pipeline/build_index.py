@@ -65,11 +65,11 @@ def build_trends():
         return
     rep = FS.analyze(ok[-1])
     keep = ("id", "name", "group", "status", "n", "teams", "share", "share_prev", "share_year_ago", "rel_prev",
-            "rel_year", "z_prev", "months_above", "attention", "attention_prev", "series")
+            "rel_year", "z_prev", "months_above", "attention", "attention_prev", "series", "counts")
     out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "month": rep["month"], "window": rep["window"],
            "prev": rep["prev"], "year_ago": rep["year_ago"], "n_papers": rep["n_papers"], "n_prev": rep["n_prev"],
            "n_year_ago": rep["n_year_ago"], "volume": rep["volume"], "series_months": rep["series_months"],
-           "directions": [{k: d[k] for k in keep} for d in rep["directions"]],
+           "directions": [{k: d[k] for k in keep} for d in rep["directions"]], "groups": rep["groups"],
            "terms_up": rep["terms_up"], "terms_down": rep["terms_down"], "news": rep["news"]}
     (DATA / "trends.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     st = Counter(d["status"] for d in rep["directions"])

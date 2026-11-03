@@ -320,21 +320,21 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
   --viz-ge: #d99a0f; --viz-trust: #d65f6e; --viz-cap: #2c8ac9; --viz-sci: #7d9a17; --viz-fm: #8a5cc2; --viz-train: #179e76;
   --viz-news: #e26d5a;
   --div-warm: #d9603f; --div-cool: #2f7fc4; --div-mid: #ebe7e1;
-  --viz-grid: rgba(60, 50, 80, .10); --viz-surface: #f8f6f2; --viz-grid-strong: rgba(60, 50, 80, .22);
+  --viz-grid: rgba(60, 50, 80, .10); --viz-surface: #f8f6f2; --viz-grid-strong: rgba(60, 50, 80, .22); --viz-context: rgba(60, 50, 80, .26);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --viz-ge: #c28412; --viz-trust: #d4607a; --viz-cap: #3a8acb; --viz-sci: #82a020; --viz-fm: #9271d4; --viz-train: #1f9e7b;
     --viz-news: #e0785f;
     --div-warm: #e0704f; --div-cool: #4a8fd6; --div-mid: #2b2c38;
-    --viz-grid: rgba(255, 255, 255, .09); --viz-surface: #1b1c27; --viz-grid-strong: rgba(255, 255, 255, .22);
+    --viz-grid: rgba(255, 255, 255, .09); --viz-surface: #1b1c27; --viz-grid-strong: rgba(255, 255, 255, .22); --viz-context: rgba(255, 255, 255, .24);
   }
 }
 :root[data-theme="dark"] {
   --viz-ge: #c28412; --viz-trust: #d4607a; --viz-cap: #3a8acb; --viz-sci: #82a020; --viz-fm: #9271d4; --viz-train: #1f9e7b;
   --viz-news: #e0785f;
   --div-warm: #e0704f; --div-cool: #4a8fd6; --div-mid: #2b2c38;
-  --viz-grid: rgba(255, 255, 255, .09); --viz-surface: #1b1c27; --viz-grid-strong: rgba(255, 255, 255, .22);
+  --viz-grid: rgba(255, 255, 255, .09); --viz-surface: #1b1c27; --viz-grid-strong: rgba(255, 255, 255, .22); --viz-context: rgba(255, 255, 255, .24);
 }
 
 /* view switch in the top bar */
@@ -493,3 +493,16 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
 .viz-head .seg { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
 .viz-head .seg::-webkit-scrollbar { display: none; }
 .seg button { white-space: nowrap; }
+
+/* multi-line trend chart */
+.line-controls { display: flex; flex-wrap: wrap; gap: 8px 12px; margin: 2px 0 10px; }
+.line-legend { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+.line-legend .lg { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 10px 3px 8px; border-radius: 999px;
+  border: 1px solid var(--chip-border); background: var(--chip-bg); color: var(--muted); }
+.line-legend .lg.on { color: var(--text); font-weight: 600; border-color: var(--glass-border); background: var(--glass-strong); }
+.line-legend .lg i { width: 14px; height: 3px; border-radius: 2px; }
+.viz-plot .ln { fill: none; stroke: var(--viz-context); stroke-width: 1.4; stroke-linejoin: round; stroke-linecap: round; }
+.viz-plot .ln.hi { stroke-width: 2.2; }
+.viz-plot .end-label { font-size: 11.5px; fill: var(--faint); }
+.viz-plot .end-label.hi { fill: var(--text); font-weight: 600; }
+.viz-plot .leader { fill: none; stroke: var(--viz-grid-strong); stroke-width: 1; }

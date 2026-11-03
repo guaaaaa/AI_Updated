@@ -157,6 +157,131 @@
     return box;
   }
 
+  // ---------------------------------------------------------------- multi-line trend chart (fields or directions over time)
+  // Only these 3 series colours stay distinct for every pair (incl. colour-blind vision), so at most 3 curves are
+  // coloured; the rest stay as grey context lines. Every curve carries an end label, so identity never relies on colour.
+  const HI = ["--viz-cap", "--viz-ge", "--viz-trust"];
+  const roll3 = (a) => a.map((_, i) => { const w = a.slice(Math.max(0, i - 2), i + 1); return w.reduce((x, y) => x + y, 0) / w.length; });
+  const compact = (v) => (v >= 1000 ? `${(v / 1000).toFixed(v >= 10000 ? 0 : 1)}K` : String(Math.round(v)));
+  function niceTicks(max, n = 4) {
+    const raw = max / n, mag = 10 ** Math.floor(Math.log10(raw || 1));
+    const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((x) => x >= raw) || raw;
+    const out = [0];
+    while (out[out.length - 1] < max - step * 1e-6) out.push(out[out.length - 1] + step);   // top tick >= max
+    return out;
+  }
+
+  function lineChart(series, labels, yMode, colorOf, totals) {
+    const box = H.el("div", { class: "viz-plot" });
+    const W = Math.max(320, lastWidth()), Hh = 330, padL = 46, labW = Math.min(170, W * 0.27), padT = 12, padB = 28;
+    const n = labels.length, x1 = W - labW - 8;
+    const vals = series.map((s) => roll3(s[yMode]));
+    const max = Math.max(...vals.flat(), yMode === "share" ? 0.001 : 1) * 1.08;
+    const ticks = niceTicks(max);
+    const top = ticks[ticks.length - 1] || max;
+    const x = (i) => padL + (i * (x1 - padL)) / Math.max(1, n - 1);
+    const y = (v) => padT + (1 - v / top) * (Hh - padT - padB);
+    const fmt = (v) => (yMode === "share" ? pct(v, v < 0.01 ? 2 : 1) : compact(v));
+    const s = svg("svg", { viewBox: `0 0 ${W} ${Hh}`, width: "100%", height: Hh, role: "img",
+      "aria-label": `${yMode === "share" ? "Share of new papers" : "Papers per month"} by ${series.length} series, 3-month rolling average` });
+    for (const t of ticks) {
+      s.append(svg("line", { x1: padL, x2: x1, y1: y(t), y2: y(t), class: "zero" }));
+      s.append(svg("text", { x: padL - 6, y: y(t) + 4, class: "axis", "text-anchor": "end" }, fmt(t)));
+    }
+    labels.forEach((l, i) => {
+      if ((n - 1 - i) % 3) return;
+      s.append(svg("text", { x: x(i), y: Hh - 8, class: "axis", "text-anchor": "middle" }, l));
+    });
+    const path = (v) => v.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p).toFixed(1)}`).join(" ");
+    const order = series.map((_, i) => i).sort((a, b) => (colorOf(series[a].key) ? 1 : 0) - (colorOf(series[b].key) ? 1 : 0));
+    for (const i of order) {                       // grey context first, coloured highlights on top
+      const c = colorOf(series[i].key);
+      s.append(svg("path", { d: path(vals[i]), class: "ln" + (c ? " hi" : ""), style: c ? `stroke: var(${c})` : null }));
+      if (c) s.append(svg("circle", { cx: x(n - 1), cy: y(vals[i][n - 1]), r: 4, class: "sm-dot", style: `fill: var(${c})` }));
+    }
+    // end labels: keep 13px apart; a leader line connects a nudged label to its curve
+    const ends = series.map((sr, i) => ({ i, y0: y(vals[i][n - 1]), y: y(vals[i][n - 1]) })).sort((a, b) => a.y0 - b.y0);
+    for (let k = 1; k < ends.length; k++) ends[k].y = Math.max(ends[k].y, ends[k - 1].y + 13);
+    const over = ends.length ? ends[ends.length - 1].y - (Hh - padB) : 0;
+    if (over > 0) for (const e of ends) e.y -= over;
+    for (let k = ends.length - 2; k >= 0; k--) ends[k].y = Math.min(ends[k].y, ends[k + 1].y - 13);
+    for (const e of ends) {
+      const sr = series[e.i], c = colorOf(sr.key), lx = x1 + 10;
+      if (Math.abs(e.y - e.y0) > 2) s.append(svg("path", { d: `M${x1 + 3},${e.y0} L${lx - 3},${e.y}`, class: "leader" }));
+      s.append(svg("text", { x: lx, y: e.y + 4, class: "end-label" + (c ? " hi" : "") },
+        fit(sr.name, Math.floor((labW - 4) / 6.2)), svg("title", {}, sr.name)));
+    }
+    const cross = svg("line", { y1: padT, y2: Hh - padB, class: "crosshair", visibility: "hidden" });
+    s.append(cross);
+    box.append(s);
+    const tip = tooltip(box);
+    s.addEventListener("pointermove", (ev) => {
+      const r = s.getBoundingClientRect(), px = ((ev.clientX - r.left) / r.width) * W;
+      const i = Math.max(0, Math.min(n - 1, Math.round(((px - padL) / (x1 - padL)) * (n - 1))));
+      cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("visibility", "visible");
+      const rows = series.map((sr, k) => ({ sr, v: vals[k][i] })).sort((a, b) => b.v - a.v);
+      const b = box.getBoundingClientRect();
+      tip.show(ev.clientX - b.left, ev.clientY - b.top, [
+        H.el("div", { class: "tip-head", text: `${labels[i]} · 3-month average` }),
+        ...rows.map(({ sr, v }) => tipRow(fmt(v), sr.name, colorOf(sr.key) || "--viz-context")),
+        totals ? H.el("div", { class: "tip-foot", text: `${totals[i].toLocaleString()} new papers that month in all` }) : null]);
+    });
+    s.addEventListener("pointerleave", () => { tip.hide(); cross.setAttribute("visibility", "hidden"); });
+    return box;
+  }
+
+  function compareView(T) {
+    const labels = T.series_months.map(mLabel);
+    const totals = T.volume.slice(-labels.length).map((v) => v[1]);
+    const change = (a) => { const k = a.length; const now = (a[k - 1] + a[k - 2] + a[k - 3]) / 3;
+      const then = k >= 15 ? (a[k - 13] + a[k - 14] + a[k - 15]) / 3 : (a[0] + a[1] + a[2]) / 3; return then ? now / then - 1 : 0; };
+    const sets = {
+      fields: GROUPS.map((g) => T.groups.find((x) => x.name === g)).filter(Boolean)
+        .map((g) => ({ key: g.name, name: g.name, count: g.counts, share: g.series })),
+      directions: T.directions.filter((d) => d.status !== "steady").sort((a, b) => Math.abs(b.z_prev) - Math.abs(a.z_prev)).slice(0, 8)
+        .map((d) => ({ key: d.id, name: d.name, count: d.counts, share: d.series })),
+    };
+    if (!sets.directions.length) sets.directions = T.directions.slice(0, 8).map((d) => ({ key: d.id, name: d.name, count: d.counts, share: d.series }));
+    const state = { set: "fields", y: "count", hi: {} };
+    // a field keeps its usual dashboard colour when that colour is one of the 3 safe highlight colours
+    const own = (key) => (state.set === "fields" && HI.includes(GVAR[key]) ? GVAR[key] : null);
+    const assign = (m, key) => { const used = new Set(m.values()); const o = own(key);
+      m.set(key, o && !used.has(o) ? o : HI.find((c) => !used.has(c))); };
+    for (const [k, list] of Object.entries(sets)) {     // default highlights: the 3 biggest movers in share over a year
+      state.set = k;
+      state.hi[k] = new Map();
+      for (const sr of list.slice().sort((a, b) => Math.abs(change(b.share)) - Math.abs(change(a.share))).slice(0, 3)) assign(state.hi[k], sr.key);
+    }
+    state.set = "fields";
+    const root = H.el("div"), legendBox = H.el("div", { class: "line-legend" }), chartBox = H.el("div"), tableBox = H.el("div");
+    const colorOf = (key) => state.hi[state.set].get(key) || null;
+    const toggle = (key) => {
+      const m = state.hi[state.set];
+      if (m.has(key)) m.delete(key);
+      else {
+        if (m.size >= 3) m.delete(m.keys().next().value);     // replace the oldest highlight; colours stay with their curve
+        assign(m, key);
+      }
+      draw();
+    };
+    const draw = () => {
+      const list = sets[state.set];
+      legendBox.replaceChildren(...list.map((s) => H.el("button", { class: "lg" + (colorOf(s.key) ? " on" : ""),
+        "aria-pressed": String(Boolean(colorOf(s.key))), onclick: () => toggle(s.key) },
+        H.el("i", { style: `background: var(${colorOf(s.key) || "--viz-context"})` }), s.name)));
+      chartBox.replaceChildren(lineChart(list, labels, state.y, colorOf, totals));
+      tableBox.replaceChildren(table(`${state.y === "share" ? "Share of new papers" : "Papers per month"} by series`, ["Series", ...labels],
+        list.map((s) => [s.name, ...s[state.y].map((v) => (state.y === "share" ? pct(v, 2) : String(v)))])));
+    };
+    root.append(
+      H.el("div", { class: "line-controls" },
+        segmented([["fields", "Fields"], ["directions", "Moving directions"]], "fields", (k) => { state.set = k; draw(); }, "Series"),
+        segmented([["count", "Papers"], ["share", "Share of all papers"]], "count", (k) => { state.y = k; draw(); }, "Y axis")),
+      legendBox, chartBox, tableBox);
+    draw();
+    return root;
+  }
+
   // ---------------------------------------------------------------- direction movers (3 months vs previous 3)
   function directionBars(dirs, all) {
     const box = H.el("div", { class: "viz-plot" });
@@ -442,13 +567,10 @@
           (k) => { showAll = k === "all"; draw(); }, "Directions shown"));
         draw();
       },
-      lines: () => {
-        const pick = (flagged.length ? flagged : dirs.slice().sort((a, b) => Math.abs(b.rel_prev || 0) - Math.abs(a.rel_prev || 0))).slice(0, 9);
-        sub.textContent = `Monthly share of new papers for the directions that are moving, over ${months.length} months; each panel has its own scale.`;
-        body.replaceChildren(linePanels(pick.map((d) => ({ title: d.name, color: GVAR[d.group] || "--viz-news", values: d.series,
-          figure: pct(d.share, 2), delta: `${STATUS[d.status][0]} ${pp(d.rel_prev)} vs prev 3 mo · ${pp(d.rel_year)} vs year ago`,
-          up: (d.rel_prev || 0) >= 0 })), months),
-          table("Monthly share of new papers per direction", ["Direction", ...months], pick.map((d) => [d.name, ...d.series.map((v) => pct(v, 2))])));
+      trends: () => {
+        sub.textContent = "Papers per month for each field (papers whose titles match any of its directions) or for the directions " +
+          "that are moving, as a 3-month rolling average. Switch to Share to factor out arXiv's own growth. Click names to highlight up to 3.";
+        body.replaceChildren(compareView(T));
         extra.replaceChildren();
       },
       heat: () => {
@@ -484,11 +606,11 @@
         extra.replaceChildren();
       },
     };
-    views.directions();
+    views.trends();
     return H.el("section", { class: "card viz-card", id: "field-charts" },
       H.el("div", { class: "viz-head" }, H.el("h3", { text: "The field in numbers" }),
-        segmented([["directions", "Directions"], ["lines", "Over time"], ["heat", "Heat map"], ["terms", "Terms"],
-          ["industry", "Industry"], ["featured", "Our picks"]], "directions", (k) => views[k](), "Chart")),
+        segmented([["trends", "Trends"], ["directions", "Movers"], ["heat", "Heat map"], ["terms", "Terms"],
+          ["industry", "Industry"], ["featured", "Our picks"]], "trends", (k) => views[k](), "Chart")),
       H.el("div", { class: "viz-head sub" }, sub, extra), body);
   }
 
