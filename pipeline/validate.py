@@ -39,7 +39,7 @@ def check_day(path, tax):
     if j.get("edition") != edition(d):
         E(f"edition should be {edition(d)!r}")
     if not is_digest_day(d):
-        E("no digest on Sundays: Sunday is the weekly-summary day")
+        E("no digest on Sundays (the Week in review covers the week)")
     news, papers = j.get("news", []), j.get("papers", [])
     if len(news) > MAX_NEWS:
         E(f"{len(news)} news items (max {MAX_NEWS})")

@@ -1,0 +1,38 @@
+{
+ "_doc": "Industry layer of the trend model (pipeline/field_stats.py): every reputable-outlet AI headline of the month is grouped into stories, and each story is tagged with categories and companies by these headline patterns (case-insensitive regex). Counts are distinct stories, not headlines. The headline pool comes from the Google News queries in config/sources.json, so read shares and their movement, not absolute volumes.",
+ "categories": {
+  "Funding & valuations": ["\\braises?\\b", "\\braised\\b", "funding", "valuation", "\\bvalued\\b", "series [a-f]\\b", "investment round", "venture", "\\binvests?\\b", "\\binvestment\\b"],
+  "M&A": ["acquir", "acquisition", "\\bbuys?\\b", "merger", "takeover", "to buy\\b", "deal to"],
+  "Markets & earnings": ["\\bipo\\b", "\\bs-1\\b", "earnings", "revenue", "\\bprofit", "\\bshares\\b", "\\bstocks?\\b", "market cap", "guidance", "quarter", "investors?\\b", "bubble"],
+  "Model releases": ["\\b(?:launch|release|unveil|debut|introduce)(?:s|d|es)?\\b.*\\b(?:model|llm|gpt|gemini|claude|llama|grok|qwen|deepseek|mistral|kimi)", "new model", "open[- ]weights?", "open[- ]source model", "frontier model"],
+  "Products & agents": ["\\bagents?\\b", "agentic", "assistant", "chatbot", "\\bapp\\b", "feature", "copilot", "browser", "rolls? out", "subscribers?"],
+  "Chips & compute": ["\\bchips?\\b", "\\bgpus?\\b", "semiconductor", "\\btpus?\\b", "nvidia", "\\bamd\\b", "tsmc", "compute", "supercomputer"],
+  "Data centers & energy": ["data cent", "datacenter", "gigawatt", "\\bpower\\b", "energy", "electricity", "nuclear", "stargate"],
+  "Policy & regulation": ["regulat", "\\blaws?\\b", "\\bbill\\b", "senate", "congress", "\\bai act\\b", "executive order", "\\bban(?:s|ned)?\\b", "export control", "white house", "government", "policy", "lawmakers"],
+  "Legal & lawsuits": ["lawsuit", "\\bsues?\\b", "\\bsued\\b", "\\bcourt\\b", "\\bjudge\\b", "copyright", "settlement", "antitrust", "\\bftc\\b", "\\bdoj\\b", "subpoena", "attorneys? general"],
+  "Safety & security": ["safety", "security", "\\bhack", "breach", "vulnerab", "\\bcyber", "misuse", "deepfake", "jailbreak", "risk"],
+  "People & talent": ["\\bceo\\b", "\\bhires?\\b", "\\bhired\\b", "\\bjoins?\\b", "\\bleaves?\\b", "steps down", "resign", "poach", "layoffs?", "executive", "researchers? (?:leave|quit)"]
+ },
+ "entities": {
+  "OpenAI": ["openai", "chatgpt", "\\bgpt-?\\d", "sam altman", "altman"],
+  "Anthropic": ["anthropic", "\\bclaude\\b"],
+  "Google": ["google", "gemini", "deepmind", "alphabet"],
+  "Meta": ["\\bmeta\\b", "llama", "zuckerberg"],
+  "Microsoft": ["microsoft", "copilot", "nadella"],
+  "Nvidia": ["nvidia", "jensen huang"],
+  "Amazon": ["amazon", "\\baws\\b"],
+  "Apple": ["\\bapple\\b"],
+  "xAI": ["\\bxai\\b", "\\bgrok\\b", "musk"],
+  "DeepSeek": ["deepseek"],
+  "Alibaba": ["alibaba", "\\bqwen\\b"],
+  "Mistral": ["mistral"],
+  "Moonshot": ["moonshot", "\\bkimi\\b"],
+  "ByteDance": ["bytedance", "tiktok", "doubao"],
+  "Huawei": ["huawei", "ascend"],
+  "AMD": ["\\bamd\\b"],
+  "TSMC": ["tsmc"],
+  "Oracle": ["oracle"],
+  "SoftBank": ["softbank"],
+  "Perplexity": ["perplexity"]
+ }
+}

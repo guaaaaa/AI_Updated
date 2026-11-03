@@ -1,0 +1,734 @@
+{
+ "_doc": "Research directions tracked across ALL new arXiv papers in our categories (pipeline/field_stats.py). Each direction is matched on paper titles (case-insensitive Python regex; a paper can match several). Titles name a paper's main topic, so a share here means 'papers mainly about X'. Edit freely: field_stats.py --rebuild recomputes every month from the cached listings. 'group' reuses the taxonomy groups for colour.",
+ "directions": [
+  {
+   "id": "moe",
+   "name": "Mixture-of-experts",
+   "group": "Foundation Models",
+   "patterns": [
+    "mixture[- ]of[- ]experts",
+    "\\bmoes?\\b",
+    "expert routing",
+    "sparse experts"
+   ]
+  },
+  {
+   "id": "ssm-linear",
+   "name": "State-space & linear-attention models",
+   "group": "Foundation Models",
+   "patterns": [
+    "state[- ]space model",
+    "\\bssms?\\b",
+    "mamba",
+    "linear attention",
+    "\\brwkv\\b",
+    "linear recurren",
+    "gated delta"
+   ]
+  },
+  {
+   "id": "looped-depth",
+   "name": "Looped & adaptive-depth models",
+   "group": "Foundation Models",
+   "patterns": [
+    "looped",
+    "recurrent[- ]depth",
+    "adaptive computation",
+    "early[- ]exit",
+    "universal transformer",
+    "latent recurrence"
+   ]
+  },
+  {
+   "id": "diffusion-lm",
+   "name": "Diffusion language models",
+   "group": "Foundation Models",
+   "patterns": [
+    "diffusion language model",
+    "diffusion llm",
+    "\\bdllms?\\b",
+    "masked diffusion",
+    "discrete diffusion"
+   ]
+  },
+  {
+   "id": "long-context",
+   "name": "Long context",
+   "group": "Foundation Models",
+   "patterns": [
+    "long[- ]context",
+    "context length",
+    "length extrapolation",
+    "million[- ]token",
+    "context window"
+   ]
+  },
+  {
+   "id": "small-models",
+   "name": "Small & on-device models",
+   "group": "Foundation Models",
+   "patterns": [
+    "small language model",
+    "\\bslms?\\b",
+    "on[- ]device",
+    "edge devices?"
+   ]
+  },
+  {
+   "id": "quantization",
+   "name": "Quantization & low precision",
+   "group": "Foundation Models",
+   "patterns": [
+    "quantiz",
+    "low[- ]bit",
+    "\\bfp4\\b",
+    "\\bfp8\\b",
+    "\\bint4\\b",
+    "1[- ]bit",
+    "binari[sz]"
+   ]
+  },
+  {
+   "id": "inference-serving",
+   "name": "KV cache, decoding & serving",
+   "group": "Foundation Models",
+   "patterns": [
+    "kv[- ]cache",
+    "speculative decoding",
+    "llm serving",
+    "inference serving",
+    "prefill",
+    "decoding acceleration",
+    "token pruning",
+    "token merging"
+   ]
+  },
+  {
+   "id": "distillation",
+   "name": "Distillation",
+   "group": "Foundation Models",
+   "patterns": [
+    "distill"
+   ]
+  },
+  {
+   "id": "unified-multimodal",
+   "name": "Unified understanding + generation models",
+   "group": "Foundation Models",
+   "patterns": [
+    "unified multimodal",
+    "any[- ]to[- ]any",
+    "\\bomni\\b",
+    "omni[- ]?modal",
+    "understanding and generation",
+    "unified model"
+   ]
+  },
+  {
+   "id": "vlm",
+   "name": "Vision-language models",
+   "group": "Foundation Models",
+   "patterns": [
+    "vision[- ]language models?",
+    "\\bvlms?\\b",
+    "\\bmllms?\\b",
+    "\\blvlms?\\b",
+    "multimodal large language",
+    "multimodal llms?"
+   ]
+  },
+  {
+   "id": "speech-audio",
+   "name": "Speech & audio models",
+   "group": "Foundation Models",
+   "patterns": [
+    "speech",
+    "\\baudio",
+    "spoken",
+    "\\btts\\b",
+    "text[- ]to[- ]speech",
+    "\\bvoice"
+   ]
+  },
+  {
+   "id": "test-time-scaling",
+   "name": "Test-time compute & scaling",
+   "group": "Capabilities",
+   "patterns": [
+    "test[- ]time (?:compute|scaling)",
+    "inference[- ]time (?:compute|scaling)",
+    "thinking budget",
+    "overthinking",
+    "long chain[- ]of[- ]thought",
+    "reasoning effort",
+    "parallel thinking"
+   ]
+  },
+  {
+   "id": "cot-reasoning",
+   "name": "Chain-of-thought & reasoning models",
+   "group": "Capabilities",
+   "patterns": [
+    "chain[- ]of[- ]thought",
+    "\\bcot\\b",
+    "reasoning models?",
+    "reasoning traces?",
+    "large reasoning models?",
+    "reasoners?\\b"
+   ]
+  },
+  {
+   "id": "latent-reasoning",
+   "name": "Latent & continuous reasoning",
+   "group": "Capabilities",
+   "patterns": [
+    "latent reasoning",
+    "continuous thought",
+    "implicit reasoning",
+    "reasoning in (?:the )?latent",
+    "latent thought",
+    "latent chain"
+   ]
+  },
+  {
+   "id": "math-formal",
+   "name": "Math reasoning & formal proofs",
+   "group": "Science & Theory",
+   "patterns": [
+    "theorem prov",
+    "\\blean\\b",
+    "formal (?:proof|verification|math)",
+    "autoformali",
+    "olympiad",
+    "mathematical reasoning",
+    "math reasoning"
+   ]
+  },
+  {
+   "id": "coding-agents",
+   "name": "Coding & software-engineering agents",
+   "group": "Capabilities",
+   "patterns": [
+    "coding agents?",
+    "code agents?",
+    "software engineering agent",
+    "swe[- ]bench",
+    "repository[- ]level",
+    "program repair",
+    "agentic coding",
+    "terminal agent"
+   ]
+  },
+  {
+   "id": "code-generation",
+   "name": "Code generation",
+   "group": "Capabilities",
+   "patterns": [
+    "code generation",
+    "code llms?",
+    "code language model",
+    "text[- ]to[- ]sql",
+    "program synthesis"
+   ]
+  },
+  {
+   "id": "computer-use",
+   "name": "Computer-use, GUI & web agents",
+   "group": "Capabilities",
+   "patterns": [
+    "gui agents?",
+    "computer[- ]use",
+    "web agents?",
+    "web navigation",
+    "browser agents?",
+    "\\bos agents?",
+    "mobile agents?",
+    "\\bguis?\\b"
+   ]
+  },
+  {
+   "id": "tool-use",
+   "name": "Tool use & function calling",
+   "group": "Capabilities",
+   "patterns": [
+    "tool[- ](?:use|using|calling|learning|augmented|integrated)",
+    "function calling",
+    "\\bmcp\\b",
+    "model context protocol"
+   ]
+  },
+  {
+   "id": "multi-agent",
+   "name": "Multi-agent systems",
+   "group": "Capabilities",
+   "patterns": [
+    "multi[- ]agent"
+   ]
+  },
+  {
+   "id": "agent-memory",
+   "name": "Agent memory & context management",
+   "group": "Capabilities",
+   "patterns": [
+    "agent memory",
+    "memory (?:management|system|module|bank)",
+    "long[- ]term memory",
+    "context (?:management|engineering|compression)",
+    "compaction",
+    "episodic memory"
+   ]
+  },
+  {
+   "id": "deep-research",
+   "name": "Deep-research & search agents",
+   "group": "Capabilities",
+   "patterns": [
+    "deep research",
+    "search agents?",
+    "agentic search",
+    "research agents?",
+    "deep search",
+    "agentic retrieval"
+   ]
+  },
+  {
+   "id": "agentic-rl",
+   "name": "Agentic RL & training environments",
+   "group": "Training",
+   "patterns": [
+    "agentic (?:rl|reinforcement)",
+    "environment (?:synthesis|scaling|generation)",
+    "\\brl environments?",
+    "training environments?",
+    "multi[- ]turn (?:rl|reinforcement)",
+    "agent training",
+    "\\bharness(?:es)?\\b"
+   ]
+  },
+  {
+   "id": "rag",
+   "name": "Retrieval-augmented generation",
+   "group": "Capabilities",
+   "patterns": [
+    "retrieval[- ]augmented",
+    "\\brag\\b",
+    "graphrag",
+    "dense retrieval",
+    "retrievers?\\b"
+   ]
+  },
+  {
+   "id": "rlvr",
+   "name": "RL for reasoning (verifiable rewards, GRPO)",
+   "group": "Training",
+   "patterns": [
+    "verifiable rewards?",
+    "\\brlvr\\b",
+    "\\bgrpo\\b",
+    "\\bppo\\b",
+    "policy optimization",
+    "reinforcement learning (?:for|with|from) .*reason",
+    "reasoning .*reinforcement",
+    "\\brl\\b.*\\breason"
+   ]
+  },
+  {
+   "id": "reward-models",
+   "name": "Reward models, judges & rubrics",
+   "group": "Training",
+   "patterns": [
+    "reward models?",
+    "llm[- ]as[- ]a[- ]judge",
+    "judge models?",
+    "\\bjudges?\\b",
+    "process reward",
+    "\\bprms?\\b",
+    "rubric"
+   ]
+  },
+  {
+   "id": "preference",
+   "name": "Preference optimization & RLHF",
+   "group": "Training",
+   "patterns": [
+    "preference optimi",
+    "\\bdpo\\b",
+    "\\brlhf\\b",
+    "human feedback",
+    "preference learning",
+    "preference alignment"
+   ]
+  },
+  {
+   "id": "synthetic-data",
+   "name": "Synthetic data & data curation",
+   "group": "Training",
+   "patterns": [
+    "synthetic data",
+    "data synthesis",
+    "data curation",
+    "data selection",
+    "data mixture",
+    "data filtering",
+    "pretraining data",
+    "training data"
+   ]
+  },
+  {
+   "id": "scaling-laws",
+   "name": "Scaling laws",
+   "group": "Training",
+   "patterns": [
+    "scaling laws?",
+    "compute[- ]optimal"
+   ]
+  },
+  {
+   "id": "self-improvement",
+   "name": "Self-improvement & self-evolution",
+   "group": "Science & Theory",
+   "patterns": [
+    "self[- ]improv",
+    "self[- ]evolv",
+    "self[- ]play",
+    "self[- ]refin",
+    "self[- ]train",
+    "recursive self",
+    "self[- ]rewarding"
+   ]
+  },
+  {
+   "id": "continual-editing",
+   "name": "Continual learning, editing & unlearning",
+   "group": "Training",
+   "patterns": [
+    "continual learning",
+    "lifelong",
+    "catastrophic forgetting",
+    "model editing",
+    "knowledge editing",
+    "unlearning"
+   ]
+  },
+  {
+   "id": "optimizers",
+   "name": "Optimizers & training dynamics",
+   "group": "Training",
+   "patterns": [
+    "optimizers?\\b",
+    "\\bmuon\\b",
+    "\\badamw?\\b",
+    "learning[- ]rate",
+    "training dynamics",
+    "loss landscape",
+    "grokking",
+    "warmup"
+   ]
+  },
+  {
+   "id": "video-generation",
+   "name": "Video generation",
+   "group": "Generation & Embodiment",
+   "patterns": [
+    "video generation",
+    "text[- ]to[- ]video",
+    "video diffusion",
+    "video synthesis",
+    "image[- ]to[- ]video",
+    "video generative"
+   ]
+  },
+  {
+   "id": "image-generation",
+   "name": "Image generation & editing",
+   "group": "Generation & Embodiment",
+   "patterns": [
+    "image generation",
+    "text[- ]to[- ]image",
+    "image editing",
+    "image synthesis",
+    "\\bt2i\\b"
+   ]
+  },
+  {
+   "id": "3d-4d",
+   "name": "3D/4D generation & reconstruction",
+   "group": "Generation & Embodiment",
+   "patterns": [
+    "\\b3d\\b",
+    "\\b4d\\b",
+    "gaussian splatting",
+    "\\b3dgs\\b",
+    "\\bnerfs?\\b",
+    "novel view",
+    "point clouds?"
+   ]
+  },
+  {
+   "id": "diffusion-flow",
+   "name": "Diffusion & flow-matching methods",
+   "group": "Generation & Embodiment",
+   "patterns": [
+    "flow matching",
+    "rectified flow",
+    "diffusion models?",
+    "consistency models?",
+    "few[- ]step",
+    "score[- ]based",
+    "diffusion transformers?"
+   ]
+  },
+  {
+   "id": "world-models",
+   "name": "World models",
+   "group": "Generation & Embodiment",
+   "patterns": [
+    "world models?",
+    "world[- ]action"
+   ]
+  },
+  {
+   "id": "vla",
+   "name": "Vision-language-action & robot foundation models",
+   "group": "Generation & Embodiment",
+   "patterns": [
+    "vision[- ]language[- ]action",
+    "\\bvlas?\\b",
+    "robot foundation model",
+    "generalist (?:robot )?polic",
+    "world[- ]action model",
+    "\\bwams?\\b"
+   ]
+  },
+  {
+   "id": "robot-manipulation",
+   "name": "Robot manipulation & imitation",
+   "group": "Generation & Embodiment",
+   "patterns": [
+    "manipulation",
+    "dexterous",
+    "grasp",
+    "imitation learning",
+    "sim[- ]to[- ]real",
+    "teleoperation",
+    "bimanual"
+   ]
+  },
+  {
+   "id": "humanoid",
+   "name": "Humanoids & locomotion",
+   "group": "Generation & Embodiment",
+   "patterns": [
+    "humanoid",
+    "locomotion",
+    "legged",
+    "quadruped"
+   ]
+  },
+  {
+   "id": "driving",
+   "name": "Autonomous driving",
+   "group": "Generation & Embodiment",
+   "patterns": [
+    "autonomous driving",
+    "self[- ]driving",
+    "end[- ]to[- ]end driving",
+    "trajectory prediction",
+    "motion planning"
+   ]
+  },
+  {
+   "id": "jailbreak-redteam",
+   "name": "Jailbreaks, red-teaming & prompt injection",
+   "group": "Trust",
+   "patterns": [
+    "jailbreak",
+    "red[- ]team",
+    "adversarial prompt",
+    "prompt injection"
+   ]
+  },
+  {
+   "id": "alignment-oversight",
+   "name": "Alignment, deception & oversight",
+   "group": "Trust",
+   "patterns": [
+    "(?:llm|ai|value|human|preference|safety|model) alignment",
+    "align(?:ing)? (?:llms?|language models?|ai)",
+    "decepti",
+    "sycophan",
+    "scheming",
+    "reward hacking",
+    "oversight",
+    "monitorab",
+    "misalign",
+    "sandbagging",
+    "(?:ai|llm) safety",
+    "safety (?:alignment|evaluation|training)"
+   ]
+  },
+  {
+   "id": "interpretability",
+   "name": "Interpretability & steering",
+   "group": "Trust",
+   "patterns": [
+    "mechanistic",
+    "sparse autoencoder",
+    "\\bsaes?\\b",
+    "circuits?\\b",
+    "probing",
+    "steering",
+    "interpretab",
+    "explainab"
+   ]
+  },
+  {
+   "id": "hallucination",
+   "name": "Hallucination, factuality & uncertainty",
+   "group": "Trust",
+   "patterns": [
+    "hallucinat",
+    "factuality",
+    "faithful",
+    "uncertainty (?:estimation|quantification)",
+    "confidence estimation",
+    "calibrat\\w* (?:of )?(?:llms?|language models?|confidence)"
+   ]
+  },
+  {
+   "id": "privacy-security",
+   "name": "Privacy, watermarking & model security",
+   "group": "Trust",
+   "patterns": [
+    "privacy",
+    "watermark",
+    "membership inference",
+    "backdoor",
+    "poison",
+    "adversarial attack",
+    "adversarial robust"
+   ]
+  },
+  {
+   "id": "benchmarks",
+   "name": "Benchmarks & evaluation methods",
+   "group": "Trust",
+   "patterns": [
+    "benchmark",
+    "evaluat",
+    "leaderboard",
+    "contamination"
+   ]
+  },
+  {
+   "id": "society",
+   "name": "Fairness, bias & societal impact",
+   "group": "Trust",
+   "patterns": [
+    "fairness",
+    "(?:social|gender|racial|political|cultural|demographic) bias",
+    "bias(?:es)? in (?:llms?|language models?|ai)",
+    "societ",
+    "education",
+    "misinformation",
+    "labou?r market",
+    "ethic",
+    "governance",
+    "policy makers"
+   ]
+  },
+  {
+   "id": "ai-science",
+   "name": "AI for science (bio, chem, materials, physics)",
+   "group": "Science & Theory",
+   "patterns": [
+    "protein",
+    "molecul",
+    "\\bdrugs?\\b",
+    "materials",
+    "chemi",
+    "biolog",
+    "genom",
+    "single[- ]cell",
+    "physics",
+    "climate",
+    "weather"
+   ]
+  },
+  {
+   "id": "medical",
+   "name": "Medical & clinical AI",
+   "group": "Science & Theory",
+   "patterns": [
+    "medical",
+    "clinical",
+    "patients?",
+    "radiolog",
+    "health",
+    "diagnos",
+    "\\behrs?\\b",
+    "surgical"
+   ]
+  },
+  {
+   "id": "ai-scientist",
+   "name": "AI scientists & automated research",
+   "group": "Science & Theory",
+   "patterns": [
+    "ai scientists?",
+    "automated (?:scientific )?research",
+    "scientific discovery",
+    "research automation",
+    "hypothesis generation",
+    "autonomous research",
+    "automated discovery"
+   ]
+  },
+  {
+   "id": "time-series",
+   "name": "Time series & forecasting",
+   "group": "Science & Theory",
+   "patterns": [
+    "time[- ]series",
+    "forecast"
+   ]
+  },
+  {
+   "id": "learning-theory",
+   "name": "Learning theory",
+   "group": "Science & Theory",
+   "patterns": [
+    "generali[sz]ation bounds?",
+    "sample complexity",
+    "\\bpac\\b",
+    "regret bounds?",
+    "provabl",
+    "theoretical analysis",
+    "minimax",
+    "convergence (?:rate|analysis)"
+   ]
+  },
+  {
+   "id": "federated",
+   "name": "Federated & decentralized learning",
+   "group": "Training",
+   "patterns": [
+    "federated",
+    "decentrali[sz]ed (?:training|learning)",
+    "distributed training"
+   ]
+  },
+  {
+   "id": "graph-learning",
+   "name": "Graph learning",
+   "group": "Science & Theory",
+   "patterns": [
+    "graph neural",
+    "\\bgnns?\\b",
+    "graph learning",
+    "graph transformer",
+    "knowledge graphs?"
+   ]
+  }
+ ]
+}

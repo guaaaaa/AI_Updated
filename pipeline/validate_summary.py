@@ -1,11 +1,12 @@
-"""Validate weekly/monthly trend summaries (data/summaries/<kind>/<id>.json). Exit code 1 on any error.
+"""Validate monthly trend summaries (data/summaries/monthly/<id>.json). Exit code 1 on any error.
 
 Checks: schema and ids, publish date, headline length, 2-4 themes per part, 350-500 words per part
-(error above 500 or below 300; references are not counted), every paragraph cites evidence, every theme
-cites at least two distinct references including one item or source, heating/cooling lists with references,
-references resolve (our items, shortlisted papers, numbered sources with https URLs), no HTML or lists.
+(error above 500 or below 300; references are not counted), every paragraph cites evidence, every theme and
+every heating/cooling entry cites FIELD-LEVEL evidence ([field stats], [news stats] or an outside source [S1]) --
+our own digest items may illustrate a trend but never carry it alone -- references resolve (our items,
+the brief's papers, numbered sources with https URLs), no HTML or lists.
 
-Usage: python3 pipeline/validate_summary.py [weekly/2026-W44 monthly/2026-10 ...]   (default: all)
+Usage: python3 pipeline/validate_summary.py [monthly/2026-10 ...]   (default: all)
 """
 import datetime as dt
 import json
@@ -20,7 +21,8 @@ PART_WORDS = (300, 350, 500)   # hard min, target min, hard max (per part, refer
 HEADLINE_MAX = 40
 REF_RE = re.compile(r"\[([^\[\]]+)\]")
 TOKEN_RES = {"paper": re.compile(r"^\d{4}\.\d{4,5}$"), "news": re.compile(r"^\d{4}-\d{2}-\d{2}-n\d+$"),
-             "source": re.compile(r"^S\d+$"), "stats": re.compile(r"^arXiv stats$")}
+             "source": re.compile(r"^S\d+$"), "stats": re.compile(r"^(?:field stats|news stats|arXiv stats)$")}
+FIELD_LEVEL = ("stats", "source")
 HTML_RE = re.compile(r"<\s*[a-zA-Z/!]")
 LIST_RE = re.compile(r"^\s*(?:[-*•]|\d+[.)])\s+", re.M)
 
@@ -98,6 +100,8 @@ def check(path):
         for h in p.get("heating", []) + p.get("cooling", []):
             if not h.get("refs"):
                 E(f"{part}: heating/cooling entry '{h.get('label')}' needs a reference")
+            elif not any(TOKEN_RES["stats"].match(r) or TOKEN_RES["source"].match(r) for r in h["refs"]):
+                E(f"{part}: heating/cooling entry '{h.get('label')}' needs field-level evidence ([field stats], [news stats] or [S1])")
             if len(h.get("label", "").split()) > 8:
                 E(f"{part}: label '{h['label']}' is over 8 words")
             resolve([(next(k for k, rx in TOKEN_RES.items() if rx.match(r)), r) for r in h.get("refs", [])
@@ -108,15 +112,18 @@ def check(path):
                 E(f"{where}: plain prose only (no HTML, no lists)")
             toks, bad = ref_tokens(t["body"])
             if bad:
-                E(f"{where}: unknown bracket content {bad[:3]} (use [2610.12345], [2026-10-27-n1], [S1], [arXiv stats])")
+                E(f"{where}: unknown bracket content {bad[:3]} (use [2610.12345], [2026-10-27-n1], [S1], [field stats], [news stats])")
             resolve(toks, where)
             used_sources |= {x for k, x in toks if k == "source"}
             for i, para in enumerate(x for x in t["body"].split("\n\n") if x.strip()):
                 if not ref_tokens(para)[0]:
                     E(f"{where}: paragraph {i + 1} cites no evidence")
             distinct = {x for x in toks}
-            if len(distinct) < 2 or not any(k in ("paper", "news", "source") for k, _ in distinct):
-                E(f"{where}: needs at least two distinct references, including an item or a source")
+            if len(distinct) < 2:
+                E(f"{where}: needs at least two distinct references")
+            if not any(k in FIELD_LEVEL for k, _ in distinct):
+                E(f"{where}: needs field-level evidence ([field stats], [news stats] or an outside source [S1]); "
+                  "our digest items can only illustrate")
     for sid_ in set(srcs) - used_sources:
         W(f"source {sid_} is listed but never cited")
     return errs, warns

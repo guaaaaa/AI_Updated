@@ -71,7 +71,7 @@ def is_weekend(d):
 
 def edition(d):
     """Mon-Fri 'weekday' (72h papers); Saturday 'weekend' (best of the week, 7-day papers).
-    Sundays carry no digest (weekly-summary day); the one legacy Sunday digest keeps 'weekend'."""
+    Sundays carry no digest (the automatic Week in review covers the week); the one legacy Sunday digest keeps 'weekend'."""
     return "weekend" if is_weekend(d) else "weekday"
 
 
@@ -92,7 +92,7 @@ def week_id(d):
 
 
 def week_days(wid):
-    """'2026-W44' -> (monday, saturday, sunday). Digests Mon-Sat; the summary is published Sunday."""
+    """'2026-W44' -> (monday, saturday, sunday). Digests run Mon-Sat; the Week in review covers them."""
     y, w = wid.split("-W")
     mon = dt.date.fromisocalendar(int(y), int(w), 1)
     return mon, mon + dt.timedelta(days=5), mon + dt.timedelta(days=6)

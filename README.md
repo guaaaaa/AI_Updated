@@ -2,8 +2,8 @@
 
 A daily digest of the most important AI news and papers, curated and explained by Claude every morning
 (Monday–Saturday, 7:30 ET): **up to 2 news stories and 5 papers per day, ~250–350 words each**, with tag and
-calendar filters. On top of it, a **Trends dashboard** with weekly (Sunday) and monthly (1st of the month)
-syntheses of where research and the industry are heading, checked against statistics on every new arXiv paper.
+calendar filters. On top of it, a **Trends dashboard**: a monthly synthesis of where research and the industry are
+heading, grounded in statistics on every new arXiv paper and news story, plus an automatic Week in review.
 
 **Site:** https://guaaaaa.github.io/AI_Updated/
 
@@ -24,20 +24,20 @@ syntheses of where research and the industry are heading, checked against statis
 **Windows:** papers announced in the last 72 hours (Saturday: best of the past 7 days); news from the last
 72 hours. Nothing is repeated within 7 days.
 
-## Trend summaries
+## Trends
 
-Two more scheduled tasks follow [`RUNBOOK_SUMMARY.md`](RUNBOOK_SUMMARY.md): **weekly** on Sunday (that week's
-Monday–Saturday digests) and **monthly** on the 1st (the previous month).
-- `pipeline/prepare_summary.py` builds the evidence brief: previous summaries, our digest items,
-  high-attention papers we skipped, the most-covered news stories, and **field-wide arXiv statistics**
-  (`pipeline/arxiv_stats.py`: topic-group shares and rising/fading title terms across *all* new papers in our
-  categories, vs the previous four weeks or month).
-- Claude writes a Research part and an Industry part (350–500 words each), where every paragraph cites its
-  evidence. `pipeline/assemble_summary.py` and `pipeline/validate_summary.py` check the format, word counts and
-  references; `publish.py --summary weekly/<id>` publishes it.
-- The dashboard (`#/trends`, `assets/trends.js`) shows the day at a glance, the latest weekly and monthly
-  summaries, charts (topic-group trends, a topic heat map, rising and fading terms, everything featured), and
-  the archive.
+The Trends dashboard (`#/trends`) is about the **whole field**, not our picks:
+- **Field model** (`pipeline/field_data.py`, `pipeline/field_stats.py`, no AI usage): every new arXiv paper in our
+  categories (monthly listings, 24+ months of history), Hugging Face Daily Papers upvotes (attention) and
+  reputable-outlet AI news stories. 56 research directions (`config/directions.json`) and industry categories and
+  companies (`config/industry.json`) are tracked month by month. A direction counts as **rising** or **fading** only if
+  its 3-month share moved significantly against the previous 3 months, held for 2+ months, spans 15+ teams and is not
+  contradicted by the same period a year earlier.
+- **Monthly summary** (1st of the month, [`RUNBOOK_SUMMARY.md`](RUNBOOK_SUMMARY.md)): Claude interprets the field
+  report in a Research part and an Industry part (350–500 words each). Every trend claim must cite field-level
+  evidence; our digest items may only illustrate. Validated by `pipeline/validate_summary.py`.
+- **Week in review** (`pipeline/week_review.py`, automatic, no AI usage): the week's most-upvoted papers and
+  most-covered stories, with no trend claims. A week is too short to show a direction.
 
 ## Customize
 
@@ -45,7 +45,7 @@ Monday–Saturday digests) and **monthly** on the 1st (the previous month).
 - Feeds, search queries, arXiv categories: `config/sources.json`
 - Notable researchers/labs (a tiebreaker signal): `config/notable.json`
 - Selection and writing rules: `RUNBOOK.md` (digests), `RUNBOOK_SUMMARY.md` (trend summaries)
-- Topic keywords for the field statistics: `config/topic_lexicon.json`
+- Research directions and industry categories for the trend model: `config/directions.json`, `config/industry.json`
 
 ## Run locally
 

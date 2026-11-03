@@ -1,272 +1,161 @@
-"""Evidence brief for a weekly or monthly trend summary (no LLM usage; one tool call).
+"""Evidence brief for the monthly trend summary (no LLM usage; one tool call).
 
-Prints, compactly:
-  1. the previous summaries (continuity: what was rising, what is fading or being replaced),
-  2. field-wide arXiv statistics (all new papers in our categories: topic-group shares vs baseline, rising and
-     fading title terms) -- computed/updated here via arxiv_stats.py,
-  3. our digest items for the period (the main evidence; cite them by id),
-  4. attention outside our picks (high-signal shortlisted papers we did not feature),
-  5. the most-covered news stories (headline clusters across the period's headline pools).
+The brief is built around FIELD-WIDE evidence, so trends describe the field rather than our picks:
+  1. previous monthly summaries (continuity: what was rising, what has faded or been replaced)
+  2. research: every tracked direction across ALL new arXiv papers in our categories -- the 3-month window ending
+     this month vs the previous 3 months and vs a year earlier, with significance, persistence, team breadth and
+     Hugging Face attention (pipeline/field_stats.py), plus emerging and fading title terms
+  3. industry: reputable-outlet AI stories of the window grouped by category and company, vs the previous 3 months
+  4. the month's most-upvoted papers on Hugging Face (field-level attention examples)
+  5. our digest items (illustrations only: they may illustrate a trend, never establish one)
 Writes work/summary_input_<id>.json (the ids the write-up may cite) for assemble_summary.py.
 
-Usage: python3 pipeline/prepare_summary.py --kind weekly --id 2026-W44
-       python3 pipeline/prepare_summary.py --kind monthly --id 2026-10
-       (omit --id: weekly -> the week that ended yesterday; monthly -> the previous month)
+Usage: python3 pipeline/prepare_summary.py --id 2026-10      (omit --id: the previous month)
 """
 import argparse
 import datetime as dt
 import json
-import re
 import sys
-from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import arxiv_stats as AS  # noqa: E402
-from common import (DAYS, STATE, SUMMARIES, WORK, config, load_json, month_days, today_et,  # noqa: E402
-                    week_days, week_id)
+import field_data as FD  # noqa: E402
+import field_stats as FS  # noqa: E402
+from common import DAYS, SUMMARIES, WORK, load_json, month_days, today_et  # noqa: E402
 
-STOP = set("""the a an of for and or in on with to from by at as is are be its it this that after over into new says
-say said will could would can may might amid about than more most just up out how why what who when report reports
-ai artificial intelligence""".split())
-
-
-def period(kind, pid):
-    if kind == "weekly":
-        mon, sat, sun = week_days(pid)
-        return mon, sat, sun
-    first, last = month_days(pid)
-    return first, last, last + dt.timedelta(days=1)
+pct = lambda x: "-" if x is None else f"{x:.2%}"
+sgn = lambda x: "-" if x is None else f"{x:+.0%}"
 
 
-def default_id(kind, today):
-    if kind == "weekly":
-        return week_id(today - dt.timedelta(days=1))
-    prev = today.replace(day=1) - dt.timedelta(days=1)
-    return f"{prev:%Y-%m}"
-
-
-def stat_weeks(kind, pid):
-    """ISO weeks whose mailings define the period, plus the baseline weeks to compare against."""
-    if kind == "weekly":
-        return [pid], AS.weeks_back(pid, 4)
-    first, last = month_days(pid)
-
-    def weeks_of(f, l):
-        out, d = [], f
-        while d <= l:
-            w = week_id(d)
-            mon, _, _ = week_days(w)
-            in_month = sum(1 for i in range(5) if f <= mon + dt.timedelta(days=i) <= l)
-            if in_month >= 3 and w not in out:
-                out.append(w)
-            d += dt.timedelta(days=1)
-        return out
-    cur = weeks_of(first, last)
-    pf, pl = month_days(f"{first - dt.timedelta(days=1):%Y-%m}")
-    return cur, weeks_of(pf, pl)
-
-
-def digests(start, end):
-    out, d = [], start
-    while d <= end:
-        j = load_json(DAYS / f"{d.isoformat()}.json")
-        if j:
-            out.append(j)
-        d += dt.timedelta(days=1)
-    return out
-
-
-def sec(item, name):
-    for s in item.get("sections", []):
-        if s["heading"] == name:
-            return " ".join(s["body"].split())
-    return ""
-
-
-def previous(kind, pid, n):
-    folder = SUMMARIES / kind
-    files = sorted(f for f in folder.glob("*.json") if f.stem < pid) if folder.exists() else []
+def previous(mid, n=3):
+    folder = SUMMARIES / "monthly"
+    files = sorted(f for f in folder.glob("*.json") if f.stem < mid) if folder.exists() else []
     return [json.loads(f.read_text()) for f in files[-n:]]
 
 
-def render_summary(s, full=True):
-    L = [f"### {s['kind']} {s['id']} ({s['period']['start']} .. {s['period']['end']}): {s['headline']}"]
+def render_summary(s):
+    L = [f"### {s['id']}: {s['headline']}"]
     for part in ("research", "industry"):
         p = s[part]
-        hot = "; ".join(h["label"] for h in p["heating"])
-        cold = "; ".join(h["label"] for h in p["cooling"]) or "-"
-        L.append(f"{part.upper()} heating: {hot} | cooling: {cold}")
-        if full:
-            for t in p["themes"]:
-                L.append(f"- {t['title']}: {' '.join(t['body'].split())}")
+        L.append(f"{part.upper()} heating: {'; '.join(h['label'] for h in p['heating'])} | "
+                 f"cooling: {'; '.join(h['label'] for h in p['cooling']) or '-'}")
+        L += [f"- {t['title']}: {' '.join(t['body'].split())}" for t in p["themes"]]
     return "\n".join(L)
 
 
-def tokens(title):
-    return {w for w in re.findall(r"[a-z0-9$][a-z0-9$.\-']+", title.lower()) if w not in STOP and len(w) > 2}
-
-
-def cluster_headlines(heads):
-    """Greedy clustering by word overlap; returns clusters sorted by distinct-publisher count."""
-    clusters = []
-    for h in sorted(heads, key=lambda x: x["ts"]):
-        tk = tokens(h["t"])
-        if len(tk) < 3:
-            continue
-        best, score = None, 0.0
-        for c in clusters:
-            inter = len(tk & c["tokens"])
-            j = inter / max(1, min(len(tk), len(c["seed"])))
-            if inter >= 3 and j > score:
-                best, score = c, j
-        if best is not None and score >= 0.5:
-            best["items"].append(h)
-            best["pubs"].add(h["p"])
-            best["tokens"] |= tk
-        else:
-            clusters.append({"seed": tk, "tokens": set(tk), "items": [h], "pubs": {h["p"]}})
-    clusters.sort(key=lambda c: (-len(c["pubs"]), c["items"][0]["ts"]))
-    return clusters
+def dir_line(d, months):
+    spark = " ".join(f"{v * 100:.2f}" for v in d["series"][-12:])
+    att = f"; HF attention {pct(d['attention'])} of upvotes (was {pct(d['attention_prev'])})" if d["attention"] is not None else ""
+    return (f"- {d['name']} [{d['id']}]: {pct(d['share'])} of new papers ({d['n']} papers, {d['teams']} teams) vs "
+            f"{pct(d['share_prev'])} prev 3 mo ({sgn(d['rel_prev'])}, z {d['z_prev']}) and {pct(d['share_year_ago'])} a year "
+            f"earlier ({sgn(d['rel_year'])}); above prior level in {d['months_above']}/3 months{att}\n"
+            f"    monthly % of new papers, last 12 months: {spark}")
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--kind", choices=["weekly", "monthly"], required=True)
     ap.add_argument("--id")
-    ap.add_argument("--today", help="override 'today' (backfills)")
+    ap.add_argument("--kind", default="monthly", choices=["monthly"])  # kept for compatibility
     a = ap.parse_args()
-    today = dt.date.fromisoformat(a.today) if a.today else today_et()
-    pid = a.id or default_id(a.kind, today)
-    start, end, published = period(a.kind, pid)
-    weekly = a.kind == "weekly"
-    tax = config("taxonomy")["paper_tags"]
-    out = [f"# Evidence brief: {a.kind} summary {pid}",
-           f"Period: {start} .. {end} (digests Mon-Sat); published {published}. Write as of {published} 07:30 ET.", ""]
+    today = today_et()
+    mid = a.id or f"{today.replace(day=1) - dt.timedelta(days=1):%Y-%m}"
+    first, last = month_days(mid)
+    published = last + dt.timedelta(days=1)
+    # make sure the field aggregates exist for every month the analysis needs (fetches what is missing)
+    for m in sorted(set(FS.window(mid, 15))):
+        FS.build_month(m)
+    rep = FS.analyze(mid)
+    W, P, Y = rep["window"], rep["prev"], rep["year_ago"]
+    out = [f"# Evidence brief: monthly summary {mid}",
+           f"Month {first} .. {last}; published {published}. Write as of {published} 08:30 ET.",
+           f"Trend window: {W[0]}..{W[-1]} (3 months) vs previous {P[0]}..{P[-1]}"
+           + (f" and the year-earlier {Y[0]}..{Y[-1]}" if Y else " (no year-earlier data)") + ".",
+           "RULE: trend claims rest on sections 2-4 (field-wide). Our digest items (section 5) may only illustrate.",
+           "RULE: heating/cooling labels only for directions marked RISING/NEW/FADING or categories/companies marked SHIFT; "
+           "anything marked steady is noise and may appear only as context, explicitly called below the significance bar.", ""]
 
-    # 1) previous summaries -------------------------------------------------------------------
-    out.append("## 1. Previous summaries (continuity: what was heating up, what has cooled or been replaced)")
-    prev = previous(a.kind, pid, 3)
-    if weekly:
-        prev_m = previous("monthly", f"{published:%Y-%m}", 1)  # the latest monthly published before this week
-        prev = prev_m + prev
-    else:
-        prev += [s for s in previous("weekly", "9999", 99) if start.isoformat() <= s["period"]["end"]
-                 and s["period"]["start"] <= end.isoformat()]
-    out += [render_summary(s) for s in prev] or ["(none yet: this is the first summary of its kind)"]
+    out.append("## 1. Previous monthly summaries")
+    prev = previous(mid)
+    out += [render_summary(s) for s in prev] or ["(none: this is the first monthly summary)"]
     out.append("")
 
-    # 2) field-wide arXiv statistics --------------------------------------------------------------
-    cur_w, base_w = stat_weeks(a.kind, pid)
-    got = AS.ensure_weeks(cur_w + base_w)
-    cur = AS.combine([got[w] for w in cur_w])
-    base = AS.combine([got[w] for w in base_w])
-    nb = max(1, len(base_w))
-    out.append(f"## 2. Field-wide arXiv statistics (ALL new papers in {', '.join(config('sources')['arxiv_categories'])}; "
-               "title keyword matching, rough)")
-    out.append(f"This period: {cur['n_papers']} new papers ({', '.join(cur_w)}). Baseline: {base['n_papers']} papers over "
-               f"{', '.join(base_w)} (per-{'week' if weekly else 'month'} average {base['n_papers'] // (nb if weekly else 1)}). "
-               "Cite as [arXiv stats].")
-    if cur["n_papers"] and base["n_papers"]:
-        rows = []
-        for t in tax:
-            c, b = cur["topics"].get(t, 0) / cur["n_papers"], base["topics"].get(t, 0) / base["n_papers"]
-            rows.append((c - b, t, c, b))
-        groups = sorted({v["group"] for v in tax.values()})
-        out.append("Topic-group share of titles (now vs baseline): " + "; ".join(
-            f"{g} {cur['groups'].get(g, 0) / cur['n_papers']:.1%} vs {base['groups'].get(g, 0) / base['n_papers']:.1%}"
-            for g in groups))
-        rows.sort(reverse=True)
-        fmt = lambda r: f"{r[1]} {r[2]:.1%} (was {r[3]:.1%})"
-        out.append("Tags gaining share: " + "; ".join(fmt(r) for r in rows[:6] if r[0] > 0))
-        out.append("Tags losing share: " + "; ".join(fmt(r) for r in rows[::-1][:6] if r[0] < 0))
-        up, down = AS.movers(cur, base, min_count=8 if weekly else 20)
-        out.append("Rising title terms (count now vs expected from baseline): " +
-                   "; ".join(f"'{m['term']}' {m['now']} vs {m['base']}" for m in up))
-        out.append("Fading title terms: " + "; ".join(f"'{m['term']}' {m['now']} vs {m['base']}" for m in down))
-        if weekly:
-            series = [AS.load_week(w) for w in AS.weeks_back(pid, 7) + [pid]]
-            series = [w for w in series if w and w.get("n_papers")]
-            out.append("Weekly group shares, oldest -> newest (" + ", ".join(w["week"][-3:] for w in series) + "):")
-            for g in groups:
-                out.append(f"  {g}: " + " ".join(f"{w['groups'].get(g, 0) / w['n_papers']:.1%}" for w in series))
-    else:
-        out.append("(arXiv statistics unavailable for this period)")
+    vol = dict(rep["volume"])
+    yoy = ""
+    if rep["n_year_ago"]:
+        yoy = f"; a year earlier {rep['n_year_ago']} ({rep['n_papers'] / rep['n_year_ago'] - 1:+.0%})"
+    out += ["## 2. Research: the whole field (cite as [field stats])",
+            f"New arXiv papers in our categories: {rep['n_papers']} in the window vs {rep['n_prev']} in the previous 3 months{yoy}. "
+            "Monthly: " + ", ".join(f"{m} {n}" for m, n in list(vol.items())[-12:]),
+            "Status rules: rising/fading = z >= 3, >= 10% relative change, held in >= 2 of 3 months, >= 15 teams, and not "
+            "contradicted by the year-ago comparison. Everything else is steady (noise-level movement).", ""]
+    D = rep["directions"]
+    for st, title in (("new", "NEW (barely present a year ago)"), ("rising", "RISING"), ("fading", "FADING")):
+        rows = sorted([d for d in D if d["status"] == st], key=lambda d: -abs(d["z_prev"]))
+        out.append(f"### {title}: {len(rows)}")
+        out += [dir_line(d, rep["series_months"]) for d in rows] or ["(none)"]
+    steady = sorted([d for d in D if d["status"] == "steady"], key=lambda d: -d["share"])
+    out.append("### LARGEST STEADY DIRECTIONS (context)")
+    out += [f"- {d['name']}: {pct(d['share'])} ({sgn(d['rel_prev'])} vs prev, {sgn(d['rel_year'])} vs year ago)" for d in steady[:12]]
+    att = [d for d in D if d["attention"] is not None and d["attention_prev"]]
+    att.sort(key=lambda d: -(d["attention"] - d["attention_prev"]))
+    out.append("### ATTENTION SHIFTS (share of Hugging Face upvotes, window vs previous; compare with publication share)")
+    out += [f"- {d['name']}: {pct(d['attention'])} vs {pct(d['attention_prev'])}; publication share {sgn(d['rel_prev'])}"
+            for d in att[:5] + att[-5:]]
+    out.append("### EMERGING TITLE TERMS (outside or across directions; count in window vs expected from previous 3 months)")
+    le = lambda flag: "at most " if flag else ""
+    out += [f"- '{t['term']}': {t['now']} vs {le(t.get('prev_upper'))}{t['prev']}"
+            + (f" (year ago {le(t.get('year_ago_upper'))}{t['year_ago']})" if t.get("year_ago") is not None else "")
+            + f", {t['teams']} teams" for t in rep["terms_up"]] or ["(none)"]
+    out.append("### FADING TITLE TERMS")
+    out += [f"- '{t['term']}': {t['now']} vs {t['prev']}" for t in rep["terms_down"]] or ["(none)"]
     out.append("")
 
-    # 3) our digest items --------------------------------------------------------------------------
-    days = digests(start, end)
+    nr = rep["news"]
+    out.append("## 3. Industry: reputable-outlet AI stories (cite as [news stats])")
+    if nr:
+        out.append(f"Stories in the window: {nr['stories']} (previous 3 months: {nr['stories_prev'] or '-'}). Shares = share of "
+                   "stories touching each category or company; the pool comes from fixed news searches, so read movement, "
+                   "not absolute levels. z >= 3 marks a real shift.")
+        def mark(c):  # same bar as research: z >= 3 and >= 10% relative change, else noise
+            z, a, b = c["z_prev"], c["share"], c["share_prev"]
+            if z is None or not b:
+                return "no baseline"
+            return ("SHIFT UP" if z > 0 else "SHIFT DOWN") if abs(z) >= 3 and abs(a / b - 1) >= 0.10 else "steady (noise)"
+        out.append("### CATEGORIES")
+        out += [f"- {c['name']}: {pct(c['share'])} of stories ({c['n']}) vs {pct(c['share_prev'])} (z {c['z_prev']}) -> {mark(c)}"
+                for c in nr["categories"]]
+        out.append("### COMPANIES")
+        out += [f"- {c['name']}: {pct(c['share'])} ({c['n']}) vs {pct(c['share_prev'])} (z {c['z_prev']}) -> {mark(c)}"
+                for c in nr["entities"][:14]]
+        out.append(f"### MOST-COVERED STORIES OF {mid} (outlets)")
+        out += [f"- {n} outlets | {d} | {t}" for t, n, d in nr["top"]]
+    else:
+        out.append("(news statistics unavailable for this window)")
+    out.append("")
+
+    hf = sorted(FD.hf_month(mid), key=lambda p: -p["up"])[:15]
+    out.append("## 4. Most-upvoted papers on Hugging Face this month (field attention; cite as [paper id])")
+    out += [f"[{p['id']}] {p['t']} | {p['up']} upvotes | {p['d']}" for p in hf]
+    out.append("")
+
     featured_p, featured_n = {}, {}
-    out.append(f"## 3. Our digest items ({len(days)} digests) -- the main evidence; cite as [paper id] / [news id]")
-    for j in days:
-        for n in j.get("news", []):
+    out.append("## 5. Our digest items this month (ILLUSTRATIONS ONLY; cite as [paper id] / [news id])")
+    d = first
+    while d <= last:
+        j = load_json(DAYS / f"{d.isoformat()}.json")
+        for n in (j or {}).get("news", []):
             featured_n[n["id"]] = {"title": n["title"], "date": j["date"]}
-            if weekly:
-                out.append(f"[{n['id']}] NEWS {j['date']} | {n['category']} | {n['title']}\n  TL;DR: {n['tldr']}\n"
-                           f"  Why it matters: {sec(n, 'Why it matters')}")
-            else:
-                out.append(f"[{n['id']}] NEWS {j['date']} | {n['category']} | {n['title']} -- {n['tldr']}")
-        for p in j.get("papers", []):
+            out.append(f"[{n['id']}] NEWS {j['date']} | {n['category']} | {n['title']}")
+        for p in (j or {}).get("papers", []):
             featured_p[p["id"]] = {"title": p["title"], "date": j["date"]}
-            sig = p.get("signals", {})
-            s = ", ".join(x for x in [f"HF {sig['hf_upvotes']}" if sig.get("hf_upvotes") else "",
-                                      sig.get("org") or ""] if x)
-            if weekly:
-                out.append(f"[{p['id']}] PAPER {j['date']} | {', '.join(p['tags'])} | {p['title']}"
-                           + (f" ({s})" if s else "") + f"\n  TL;DR: {p['tldr']}\n  Why it matters: {sec(p, 'Why it matters')}")
-            else:
-                out.append(f"[{p['id']}] PAPER {j['date']} | {', '.join(p['tags'])} | {p['title']} -- {p['tldr']}")
-    out.append("")
-
-    # 4) attention outside our picks -----------------------------------------------------------------
-    snaps, d = [], start
-    while d <= end:
-        s = load_json(STATE / "daily" / f"{d.isoformat()}.json")
-        if s:
-            snaps.append(s)
+            out.append(f"[{p['id']}] PAPER {j['date']} | {p['primary_tag']} | {p['title']} -- {p['tldr']}")
         d += dt.timedelta(days=1)
-    seen = defaultdict(lambda: {"days": 0})
-    for s in snaps:
-        for p in (s.get("papers") or {}).get("shortlist", []):
-            r = seen[p["id"]]
-            r.update({"id": p["id"], "title": p["title"], "org": p.get("org") or r.get("org")})
-            r["days"] += 1
-            r["hf"] = max(r.get("hf") or 0, p.get("hf") or 0)
-            r["hot"] = min(r.get("hot") or 999, p.get("hot") or 999)
-    others = [r for r in seen.values() if r["id"] not in featured_p]
-    others.sort(key=lambda r: (-(r["hf"] or 0) - 15 * (r["hot"] < 999) - 5 * r["days"]))
-    k = 20 if weekly else 30
-    out.append(f"## 4. High-attention papers we did NOT feature (from {len(snaps)} daily shortlists; cite as [paper id])")
-    for r in others[:k]:
-        sig = [f"HF {r['hf']}" if r["hf"] else "", f"alphaXiv hot #{r['hot']}" if r["hot"] < 999 else "",
-               f"shortlisted {r['days']}d" if r["days"] > 1 else "", r.get("org") or ""]
-        out.append(f"[{r['id']}] {r['title']} | " + ", ".join(x for x in sig if x))
-    if not others:
-        out.append("(no shortlist snapshots for this period)")
-    out.append("")
 
-    # 5) most-covered news stories ----------------------------------------------------------------------
-    heads = [h for s in snaps for h in (s.get("news") or {}).get("headlines", []) if h.get("tier") != "primary"]
-    prim = [h for s in snaps for h in (s.get("news") or {}).get("headlines", []) if h.get("tier") == "primary"]
-    uniq = {(h["t"], h["p"]): h for h in heads}
-    clusters = cluster_headlines(list(uniq.values()))
-    out.append(f"## 5. Most-covered news stories ({len(uniq)} reputable headlines; outlets = distinct publishers). "
-               "Leads for context, not citable by themselves: cite a source you read [S1] or our news items.")
-    for c in clusters[:25 if weekly else 35]:
-        pubs = sorted(c["pubs"])
-        out.append(f"- {len(pubs)} outlets | {c['items'][0]['ts'][:10]} | {c['items'][0]['t']} "
-                   f"({', '.join(pubs[:5])}{', ...' if len(pubs) > 5 else ''})")
-    if prim:
-        out.append("Official posts in the period (labs and companies): " + "; ".join(
-            f"{h['p']}: {h['t']}" for h in sorted({(h['t'], h['p']): h for h in prim}.values(), key=lambda x: x["ts"])[-30:]))
-    out.append("")
-
-    allowed = {"kind": a.kind, "id": pid, "start": start.isoformat(), "end": end.isoformat(),
+    allowed = {"kind": "monthly", "id": mid, "start": first.isoformat(), "end": last.isoformat(),
                "published": published.isoformat(),
-               "papers": {**{r["id"]: {"title": r["title"], "date": None} for r in others}, **featured_p},
-               "news": featured_n}
+               "papers": {**{p["id"]: {"title": p["t"], "date": None} for p in hf}, **featured_p}, "news": featured_n}
     WORK.mkdir(exist_ok=True)
-    (WORK / f"summary_input_{pid}.json").write_text(json.dumps(allowed, ensure_ascii=False, indent=0))
+    (WORK / f"summary_input_{mid}.json").write_text(json.dumps(allowed, ensure_ascii=False, indent=0))
     print("\n".join(out))
 
 

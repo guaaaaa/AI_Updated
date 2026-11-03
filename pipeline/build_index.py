@@ -1,5 +1,6 @@
-"""Rebuild data/index.json (what the site loads first) from data/days/*.json and data/summaries/,
-and data/trends.json (dashboard charts) from data/state/arxiv_weekly/ (field-wide arXiv statistics)."""
+"""Rebuild data/index.json (what the site loads first) from data/days/*.json and data/summaries/, the Week in
+review files (data/weeks/, from the daily evidence snapshots) and data/trends.json (dashboard charts) from the
+field-wide monthly aggregates in data/state/field/ (pipeline/field_stats.py)."""
 import datetime as dt
 import json
 import sys
@@ -7,8 +8,9 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import arxiv_stats as AS  # noqa: E402
-from common import DATA, DAYS, STATE, SUMMARIES, UTC, config, week_days  # noqa: E402
+import field_stats as FS  # noqa: E402
+import week_review  # noqa: E402
+from common import DATA, DAYS, SUMMARIES, UTC, config, today_et  # noqa: E402
 
 
 def byline(p):
@@ -47,41 +49,31 @@ def main():
                           "cooling": [h["label"] for h in j["research"]["cooling"] + j["industry"]["cooling"]]})
     out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "days": days, "items": items,
            "tag_groups": groups, "tag_counts": dict(tag_counts), "news_categories": list(tax["news_categories"]),
-           "category_counts": dict(cat_counts), "summaries": summaries}
+           "category_counts": dict(cat_counts), "summaries": summaries, "weeks": week_review.build_all()}
     (DATA / "index.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"index.json: {len(days)} days, {len(items)} items, {len(summaries)} summaries")
-    build_trends(groups)
+    print(f"index.json: {len(days)} days, {len(items)} items, {len(summaries)} summaries, {len(out['weeks'])} weeks")
+    build_trends()
 
 
-def build_trends(groups):
-    """Weekly field-wide shares per tag group / tag, plus rising and fading terms for each week and month."""
-    weeks = [json.loads(f.read_text()) for f in (STATE / "arxiv_weekly").glob("*.json")]
-    weeks = [w for w in sorted(weeks, key=lambda w: w["week"]) if w.get("n_papers")]
-    by_id = {w["week"]: w for w in weeks}
-    series = []
-    for w in weeks:
-        n = w["n_papers"]
-        base = AS.combine([by_id.get(x) for x in AS.weeks_back(w["week"], 4)])
-        up, down = AS.movers(AS.combine([w]), base) if base["n_papers"] else ([], [])
-        series.append({"week": w["week"], "start": w["mailing_dates"][0] if w["mailing_dates"] else None,
-                       "n_papers": n,
-                       "groups": {g: round(w["groups"].get(g, 0) / n, 4) for g in groups},
-                       "tags": {t: round(w["topics"].get(t, 0) / n, 4) for ts in groups.values() for t in ts},
-                       "rising": up[:10], "fading": down[:8]})
-    months = {}
-    for w in weeks:  # a week belongs to the month holding most of its mailings (its Wednesday)
-        months.setdefault(f"{week_days(w['week'])[0] + dt.timedelta(days=2):%Y-%m}", []).append(w)
-    mrows, prev = [], None
-    for m in sorted(months):
-        cur = AS.combine(months[m])
-        up, down = AS.movers(cur, prev, min_count=20) if prev and prev["n_papers"] else ([], [])
-        mrows.append({"month": m, "n_papers": cur["n_papers"], "weeks": [w["week"] for w in months[m]],
-                      "rising": up[:12], "fading": down[:10]})
-        prev = cur
-    out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "groups": groups,
-           "weeks": series, "months": mrows}
+def build_trends():
+    """Dashboard data: the field-wide trend report for the latest complete month with a full 3-month window."""
+    have = sorted(f.stem for f in FS.OUT.glob("*.json")) if FS.OUT.exists() else []
+    cur = f"{today_et():%Y-%m}"
+    ok = [m for m in have if m < cur and all(w in have for w in FS.window(m))]
+    if not ok:
+        print("trends.json: no field aggregates yet")
+        return
+    rep = FS.analyze(ok[-1])
+    keep = ("id", "name", "group", "status", "n", "teams", "share", "share_prev", "share_year_ago", "rel_prev",
+            "rel_year", "z_prev", "months_above", "attention", "attention_prev", "series")
+    out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "month": rep["month"], "window": rep["window"],
+           "prev": rep["prev"], "year_ago": rep["year_ago"], "n_papers": rep["n_papers"], "n_prev": rep["n_prev"],
+           "n_year_ago": rep["n_year_ago"], "volume": rep["volume"], "series_months": rep["series_months"],
+           "directions": [{k: d[k] for k in keep} for d in rep["directions"]],
+           "terms_up": rep["terms_up"], "terms_down": rep["terms_down"], "news": rep["news"]}
     (DATA / "trends.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    print(f"trends.json: {len(series)} weeks, {len(mrows)} months of field statistics")
+    st = Counter(d["status"] for d in rep["directions"])
+    print(f"trends.json: {rep['month']} window, {len(rep['series_months'])} months; " + ", ".join(f"{k} {v}" for k, v in st.items()))
 
 
 if __name__ == "__main__":

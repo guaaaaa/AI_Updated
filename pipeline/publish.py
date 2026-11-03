@@ -4,7 +4,7 @@ deploy of that commit -> confirm the live site serves the new digest or summary.
 Usage: python pipeline/publish.py --date 2026-11-02 [--message "..."] [--no-push]
        python pipeline/publish.py --summary weekly/2026-W45      (or monthly/2026-11)
 Exit code 0 only when the content is verifiably live. Two jobs publishing the same morning is fine:
-a push conflict on the generated files (data/index.json, data/trends.json) is resolved by regenerating them.
+a push conflict on the generated files (data/index.json, data/trends.json, data/weeks/) is resolved by regenerating them.
 """
 import argparse
 import json
@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import DAYS, ROOT, SUMMARIES, config  # noqa: E402
 
 GENERATED = {"data/index.json", "data/trends.json"}
+is_generated = lambda f: f in GENERATED or f.startswith("data/weeks/")  # all rebuilt by build_index.py
 
 
 def sh(*cmd, check=True):
@@ -35,14 +36,14 @@ def rebase_onto(branch):
         if r.returncode == 0:
             return True
         conflicted = set(sh("git", "diff", "--name-only", "--diff-filter=U", check=False).split())
-        if not conflicted or not conflicted <= GENERATED:
+        if not conflicted or not all(is_generated(f) for f in conflicted):
             sh("git", "rebase", "--abort", check=False)
             print(f"rebase conflict outside generated files: {sorted(conflicted)}")
             return False
         for f in conflicted:
             sh("git", "checkout", "--ours", f, check=False)
         sh(sys.executable, "pipeline/build_index.py")
-        sh("git", "add", *GENERATED)
+        sh("git", "add", *GENERATED, "data/weeks")
         r = subprocess.run(["git", "-c", "core.editor=true", "rebase", "--continue"], cwd=ROOT,
                            capture_output=True, text=True, env={**__import__("os").environ, "GIT_EDITOR": "true"})
     return False

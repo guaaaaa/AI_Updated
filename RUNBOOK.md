@@ -34,7 +34,7 @@ cd "$(git rev-parse --show-toplevel)" && git checkout -q master && git pull -q -
 - If the dry-run push fails (e.g. 403 "not in this session's authorized repository set"), stop immediately
   and report that the repository must be attached to the scheduled task.
 - Saturday → **weekend edition**: papers are "best of the week" (7-day window); news stays 72h.
-- Sunday → **no digest**: Sunday is the weekly-summary day (separate task, `RUNBOOK_SUMMARY.md`). Stop.
+- Sunday → **no digest** (the dashboard's automatic Week in review covers the week). Stop.
 - If `data/days/$D.json` already exists and `python3 pipeline/validate.py $D` passes, the digest is done:
   run step 5's live check only and stop.
 

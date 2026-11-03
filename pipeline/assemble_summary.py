@@ -2,16 +2,16 @@
 
 Write-up format (plain text; references in square brackets, several separated by commas):
 
-    # SUMMARY weekly 2026-W44
-    headline: one sentence, <= 40 words: the period's big picture
+    # SUMMARY monthly 2026-10
+    headline: one sentence, <= 40 words: the month's big picture
 
     ## RESEARCH
-    heating: Short label [2610.12345, 2610.23456]; Another label [arXiv stats]
-    cooling: Short label [arXiv stats, 2610.34567]
+    heating: Short label [field stats, 2610.12345]; Another label [field stats]
+    cooling: Short label [field stats]
     ### Theme title
-    Paragraph citing evidence [2610.12345] and [2026-10-27-n1], or an outside source [S1].
+    Paragraph: the field-wide movement [field stats], illustrated by [2610.12345] or [2026-10-27-n1].
 
-    Another paragraph [arXiv stats].
+    Another paragraph [S1].
     ### Another theme
     ...
 
@@ -23,10 +23,11 @@ Write-up format (plain text; references in square brackets, several separated by
     ## SOURCES
     S1: Reuters | https://www.reuters.com/...
 
-Reference tokens: arXiv ids (our digest papers or the brief's shortlisted papers), our news item ids
-(e.g. 2026-10-27-n1), S1..Sn (outside sources listed under SOURCES), and "arXiv stats" (field statistics).
+Reference tokens: arXiv ids (our digest papers or the brief's most-upvoted papers), our news item ids
+(e.g. 2026-10-27-n1), S1..Sn (outside sources listed under SOURCES), "field stats" (research statistics across all
+new arXiv papers and Hugging Face attention) and "news stats" (industry story statistics).
 
-Usage: python3 pipeline/assemble_summary.py --kind weekly --id 2026-W44
+Usage: python3 pipeline/assemble_summary.py --kind monthly --id 2026-10
 """
 import argparse
 import datetime as dt

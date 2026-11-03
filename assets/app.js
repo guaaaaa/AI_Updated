@@ -130,8 +130,8 @@
         from && to && iso > from && iso < to && "inrange"].filter(Boolean).join(" ");
       grid.append(el("button", {
         class: cls, text: String(d), disabled: !has && !sum && !ranged,
-        "aria-label": fmtLong(iso) + (has ? " (digest available)" : sum ? ` (${sum.kind} summary)` : ""),
-        title: sum ? `${sum.kind === "weekly" ? "Weekly" : "Monthly"} summary: ${sum.headline}` : null,
+        "aria-label": fmtLong(iso) + (has ? " (digest available)" : sum ? (sum.kind === "weekly" ? " (week in review)" : " (monthly summary)") : ""),
+        title: sum ? (sum.kind === "weekly" ? "Week in review" : `Monthly summary: ${sum.headline}`) : null,
         onclick: () => (sum && !ranged ? (location.hash = `#/trends/${sum.kind === "weekly" ? "week" : "month"}/${sum.id}`) : pickDate(iso)),
       }));
     }
@@ -142,7 +142,7 @@
     box.replaceChildren(head, grid);
     $("#calHint").textContent = S.calMode === "range"
       ? (S.rangeStart ? "Now pick the end date." : (S.f.from ? `Showing ${fmtShort(S.f.from)} – ${fmtShort(S.f.to)}` : "Pick a start date."))
-      : "Dots mark days with a digest; rings mark weekly and monthly summaries.";
+      : "Dots mark days with a digest; ringed Sundays open the Week in review.";
   }
   function shiftMonth(k) { S.calMonth = new Date(S.calMonth.getFullYear(), S.calMonth.getMonth() + k, 1); renderCalendar(); }
 
@@ -278,7 +278,7 @@
     const head = el("div", { class: "day-head" },
       el("div", {}, el("h1", { text: fmtLong(date) }),
         el("div", { class: "day-meta" }, meta,
-          S.weekOf[date] ? el("a", { href: `#/trends/week/${S.weekOf[date].id}`, text: "This week's trends →" }) : null)),
+          S.weekOf[date] ? el("a", { href: `#/trends/week/${S.weekOf[date].id}`, text: "Week in review →" }) : null)),
       nav);
     const out = [head];
     if (j.summary) out.push(el("p", { class: "day-summary", text: j.summary }));
@@ -373,10 +373,13 @@
     S.dateSet = new Set(S.dates);
     for (const [g, tags] of Object.entries(S.index.tag_groups)) for (const t of tags) S.groupOf[t] = g;
     S.sumByDate = {}; S.weekOf = {};
-    for (const x of S.index.summaries || []) {
-      if (!S.sumByDate[x.published] || x.kind === "weekly") S.sumByDate[x.published] = x;
-      if (x.kind === "weekly") for (let d = dObj(x.start); isoOf(d) <= x.end; d.setDate(d.getDate() + 1)) S.weekOf[isoOf(d)] = x;
+    // Sundays (no digest) open that week's Week in review; the 1st opens the monthly summary if there is no digest.
+    for (const w of S.index.weeks || []) {
+      const sun = dObj(w.end); sun.setDate(sun.getDate() + 1);
+      S.sumByDate[isoOf(sun)] = { kind: "weekly", id: w.id, headline: "Week in review" };
+      for (let d = dObj(w.start); isoOf(d) <= w.end; d.setDate(d.getDate() + 1)) S.weekOf[isoOf(d)] = w;
     }
+    for (const x of S.index.summaries || []) if (x.kind === "monthly" && !S.sumByDate[x.published]) S.sumByDate[x.published] = x;
     if (window.AIUTrends) window.AIUTrends.init({ el, getJSON, getDay, dObj, fmtShort, fmtLong, isoOf, safeUrl,
       glanceList });
     const latest = S.dates[0] ? dObj(S.dates[0]) : new Date();
