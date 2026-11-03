@@ -1,0 +1,422 @@
+{
+ "date": "2026-11-03",
+ "edition": "weekday",
+ "generated_at": "2026-11-03T12:17:13+00:00",
+ "summary": "Anthropic's amended IPO filing warns it may imminently meet its own self-acceleration threshold and a lab shows an LLM editing a model's weights by hand, while papers cover hinted scaling laws, pipelined streaming video, video-to-action transfer for robots, 4-bit sparse attention and an agent harness for long-horizon work.",
+ "news": [
+  {
+   "id": "2026-11-03-n1",
+   "story_key": "anthropic-s1a-rsi-risk-disclosure",
+   "title": "Anthropic's amended IPO filing says it may imminently reach its own \"dramatically accelerated progress\" threshold",
+   "category": "Safety & Security",
+   "published": "2026-11-02T17:14:50-05:00",
+   "tldr": "In a revised S-1/A filed Monday, Anthropic wrote that its internal estimates suggest it may imminently meet the Responsible Scaling Policy's definition of AI-driven dramatically accelerated progress, while saying no current model crosses it.",
+   "why_selected": "A public-company-grade disclosure about recursive self-improvement from a frontier lab is a rare, concrete data point on how close AI-accelerated AI development is.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Anthropic filed to go public in late October, and the market has mostly discussed its financials. Recursive self-improvement (RSI) means AI systems become good enough at AI research that they speed up their own successors, compressing the time between capability jumps. Until this year many researchers treated the term as a buzzword. Anthropic's Responsible Scaling Policy (RSP), its framework for scaling safeguards with capability, already names \"dramatically accelerated progress attributable to AI\" as a risk area that triggers extra precautions."
+    },
+    {
+     "heading": "What happened",
+     "body": "According to TechCrunch, Anthropic's revised S-1/A, filed Monday, adds new risk-factor language. It says increasing use of AI in its own research and development may make capabilities advance faster than its ability to validate and implement safety, alignment and security measures. It states that the company has in the past not identified a significant acceleration until after it occurred. It adds that internal estimates, and expectations about future models rather than current ones, indicate Anthropic \"may imminently meet\" the RSP definition. The filing says no current model has been designated as exceeding the threshold, and that the company does not expect to safely use Claude to design successive frontier models without meaningful human supervision. Anthropic is considering RSP updates to keep humans in control of frontier model development."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Securities filings carry legal liability for misstatements, so this is a more constrained statement than a blog post or interview. It also shows how a lab's own measurement lagged its progress: the admission that an acceleration went unnoticed until afterward bears on whether threshold-based safety policies can trigger in time. TechCrunch notes the skeptical reading, that an S-1 is both disclosure and marketing, and that a claim of nearness to self-building AI could serve the latter purpose."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Anthropic publishes the RSP updates it says it is considering, whether it designates a model as crossing the threshold, and whether other labs make comparable statements in their own filings or policies."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-n2",
+   "story_key": "weight-space-programming-astra-qwen-edit",
+   "title": "Researchers show GPT-6 Astra can read and directly edit neural network weights, lifting a small Qwen model's math score",
+   "category": "Research",
+   "published": "2026-11-02T12:00:00-05:00",
+   "tldr": "A blog post reports that GPT-6 Astra, without writing training loops, identified a flaw in Qwen3.5-0.8B's weights and fixed it by editing 0.016% of them, raising MATH-500 from 7.9% to 48.1%.",
+   "why_selected": "A striking, widely discussed result suggesting frontier LLMs can act as optimizers over weights themselves, which would change how models are tuned and inspected.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Neural network weights are normally written by optimizers such as gradient descent, by networks trained to generate weights, or by compilers from formal programs. Large language models have recently been used to optimize text artifacts such as prompts, programs and training code. Weights were considered off limits for this style of optimization because humans cannot read or write them by hand."
+    },
+    {
+     "heading": "What happened",
+     "body": "A post titled \"Sparks of Weight-Space Programming\" reports early experiments in which a general-purpose LLM, GPT-6 Astra, reads and writes weights directly from natural-language goals, not through an optimizer. According to the authors, Astra could tell what a network was trained to do from its raw weights, and wrote small game-playing networks from scratch that outplay networks trained with PPO for 100 million steps. In the headline experiment, asked to improve Qwen3.5-0.8B at math without gradients, Astra identified a weight issue causing the reasoning loops that Qwen's model card warns about and edited 0.016% of the weights. With unchanged sampling settings, MATH-500 accuracy rose from 7.9% to 48.1%, and IFEval instruction following rose threefold. The post reached about 2,765 points on Hacker News."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the results hold, weight editing by reasoning models becomes a third route beside training and prompting, with obvious uses in debugging and interpretability, such as asking which of two models was trained to be sycophantic. It also bears on recursive self-improvement, since a model could in principle edit its own successors."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent replication on larger models and other tasks, whether the fix generalizes beyond a model with a documented flaw, and whether it comes with a paper."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Weight-Space Programming blog post",
+     "url": "https://rikiyat.github.io/blog/weight-space-programming/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.02270",
+   "title": "Hinted Scaling Laws",
+   "authors": [
+    "Suze van Adrichem",
+    "Luke Bailey",
+    "Rohith Kuditipudi",
+    "Christine Ye",
+    "Neil Band",
+    "Ahmed Ahmed",
+    "John Duchi",
+    "Percy Liang",
+    "Tatsunori Hashimoto"
+   ],
+   "affiliations": [
+    "Stanford University"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Evaluation & Benchmarks",
+    "Theory"
+   ],
+   "tldr": "Giving models partial reference solutions turns a hard benchmark into a smooth family of easier ones, letting scaling laws fit on small, near-zero-accuracy models forecast large-model benchmark accuracy with far lower error.",
+   "why_selected": "A simple, general trick that fixes a known failure of downstream scaling laws, from a strong Stanford group, with large error reductions.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Labs decide on expensive training runs by extrapolating from small ones. That works for pretraining loss, but benchmark accuracy is another matter: small models score near zero on hard tests, so the curve is flat and carries no information about where accuracy will take off. Developers and safety teams still want to forecast downstream capability before spending the compute."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work fits laws only on models already above chance, or replaces accuracy with smoother metrics such as the likelihood of the correct answer. These either discard the cheap runs or predict something other than accuracy."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of a hint as a difficulty dial. The authors build a continuum of benchmarks indexed by hint level H, where H=0 is the original. Truncation puts the first fraction H of a reference solution in the prompt, masking shows the solution with a random share of words replaced by [MASK], and logit mixing decodes jointly with a stronger teacher model. Accuracy rises smoothly with H even for models that score near zero unhinted, and raising H acts much like raising model scale. So they fit one joint sigmoid law over scale and hint level, then read off the H=0 slice for large models. Small models now contribute signal because they score above zero at H greater than 0. The same idea helps ranking: hinting widens accuracy gaps between near-identical models while roughly preserving their order."
+    },
+    {
+     "heading": "Results",
+     "body": "On the Delphi pretraining ladder, a hinted law fit on models trained with at most 10^20 FLOPs forecasts the GSM8K accuracy of a 10^23 FLOP model (25.9%) to within 3 points. A standard law under-forecasts by 13 points on the same fit, and by 12 even with models up to 10^22 FLOPs. Across the ladder and post-trained families, median forecasting error on GSM8K, AIME and HLE falls from 21 points to 4.3. One hinted rollout per problem ranks nearly indistinguishable models as accurately as five unhinted rollouts."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Earlier capability forecasts would help recipe tuning and anticipating dangerous capabilities. Caveats: only one of the five model families is a true scaling ladder, and the method needs benchmarks with verified, legible reference solutions."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.02270",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.02270"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 7,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Percy Liang",
+     "Tatsunori Hashimoto"
+    ]
+   }
+  },
+  {
+   "id": "2611.00859",
+   "title": "Wave Forcing: Towards Speed-of-Light Streaming Video Generation",
+   "authors": [
+    "Yijie Jin",
+    "Yuxuan Liu",
+    "Jiajun Xu",
+    "Ye Huang",
+    "Chuzhi Wang",
+    "Jiayang Li",
+    "Ruiyang Chen",
+    "Chenling Hong",
+    "Xu Wang",
+    "Zhijie Deng"
+   ],
+   "affiliations": [
+    "Shanghai Jiao Tong University",
+    "Xi'an Jiaotong University",
+    "Peking University",
+    "East China Normal University",
+    "National Tsing Hua University"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency"
+   ],
+   "tldr": "Wave Forcing lets several video chunks denoise at once on different GPUs, with earlier chunks serving as cleaner context for later ones, reaching about 135 end-to-end frames per second on eight H200 GPUs.",
+   "why_selected": "Co-designs the generation process, training and GPU scheduling to make real-time long-video diffusion practical, with measured gains in both speed and motion.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Real-time video generation must emit video continuously while keeping the subject and appearance consistent and motion natural. Doing so with diffusion models is slow, and quality decays as rollouts get longer, with the camera drifting or the subject leaving the frame."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Chunk-wise autoregressive methods such as Self Forcing and Rolling Forcing denoise each chunk of frames conditioned on previous ones. Denoising and a cache-refresh pass that stores clean history keys and values run in sequence, so even one-step denoising costs two forward passes per chunk. Rolling Forcing also lets cleaner chunks depend on noisier ones, which blocks overlapped execution."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Imagine an assembly line: while chunk 5 is on its first denoising step, chunk 4 is on its second and chunk 3 on its third. Wave Forcing assigns each stage its own full-model GPU replica, so after the pipeline fills it emits one chunk per concurrent forward round. For this to work, attention is made chunk-wise causal: a chunk sees earlier, cleaner chunks even before they finish denoising, never later ones. The model is adapted in three training stages using mixed noise levels, teacher-video motion supervision and self-generated history. A runtime then publishes keys and values early and overlaps communication with computation."
+    },
+    {
+     "heading": "Results",
+     "body": "On Wan2.1-T2V-1.3B, 5-step Wave Forcing scores 81.64 on VBench Total versus 81.15 for Rolling Forcing, and Dynamic Degree on 100-second videos rises from 36.63 to 91.45, with Subject Preservation 97.10 versus 92.75. Camera drift is 0.37 versus 0.17. The 4-step model reaches 134.8 end-to-end FPS on eight H200 GPUs, 7.07 times single-GPU throughput."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It shows a route to real-time streaming video for interactive uses. Limits: parallelism is capped by the denoising step count, the training recipe is complex, and the paper does not yet test prompt switching or interactive control."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.00859",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.00859",
+    "code": "https://github.com/SJTU-DENG-Lab/WaveForcing"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 61,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 85,
+    "org": "DENG Lab @ SJTU"
+   }
+  },
+  {
+   "id": "2610.40748",
+   "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+   "authors": [
+    "Jun Cen",
+    "Yubo Guo",
+    "Hao Li",
+    "Liangkai Li",
+    "Yaoxu Lyu",
+    "Meng Wei",
+    "Zeqi Xiao",
+    "Sizhe Yang",
+    "Yuqiang Yang",
+    "Yifan Ye",
+    "Shanghang Zhang",
+    "Duo Zheng"
+   ],
+   "affiliations": [
+    "Joy Future Academy"
+   ],
+   "announced": "2026-11-01T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models"
+   ],
+   "tldr": "In a video-plus-action world model, videos of new tasks without action labels lift out-of-distribution success on RoboTwin 2.0 from 25% to 56%, and one labeled demonstration per task lifts it to 71%.",
+   "why_selected": "A clean experiment on what supervision actually drives task generalization in robot world models, leading to a state-of-the-art system.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Robots trained on a set of tasks usually fail on new ones. Robot demonstrations with action labels are expensive, while video of people and robots doing tasks is abundant. The question is how much generalization to unseen tasks can come from video alone."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Vision-language-action models inherit semantic knowledge from vision-language pretraining, but understanding an instruction does not give the physical competence to execute it. World Action Models (WAMs) predict future video and actions together and use video priors, yet it was unclear which of the two supervision types matters for transfer."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors separate two abilities. Video generalization predicts how a new task should unfold visually; action generalization is a video-to-action bridge, in effect inverse dynamics, that turns predicted motion into commands. Because the bridge learned from in-distribution data may already work on new tasks, extra video of those tasks can be enough. WorldBridge implements this with separate video and action experts, each with its own parameters, joined through shared attention and trained with joint flow matching. It adds visual memory at two time scales, action forcing, and a pipeline that standardizes and filters heterogeneous robot and egocentric hand data."
+    },
+    {
+     "heading": "Results",
+     "body": "On RoboTwin 2.0, training on in-distribution video and actions gives 91.85% success on in-distribution tasks but 25.07% on out-of-distribution tasks. Adding videos of the new tasks, without actions, raises out-of-distribution success to 55.90%; one labeled demonstration per task raises it to 70.70%. WorldBridge reaches 96.23% on RoboTwin 2.0 full data, 82.8% on RoboCasa GR1 TableTop and 57.6% on DOMINO Level-1."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests prioritizing cheap video coverage and sparse action labels. Caveat: gains are mostly on simulation benchmarks, and the authors say reducing action supervision further remains open."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.40748",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2610.40748"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 13,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 13
+   }
+  },
+  {
+   "id": "2611.01022",
+   "title": "Jet-QSparse: Accelerating Agentic LLM Inference with 4-Bit Sparse Attention",
+   "authors": [
+    "Haozhan Tang",
+    "Hao Kang",
+    "Meng Lu",
+    "Yecheng Wu",
+    "Zerui Wang",
+    "Seokho Han",
+    "Haocheng Xi",
+    "Shuo Yang",
+    "Song Han",
+    "Han Cai"
+   ],
+   "affiliations": [
+    "Carnegie Mellon University",
+    "Virginia Tech",
+    "Massachusetts Institute of Technology",
+    "NVIDIA",
+    "Sungkyunkwan University",
+    "University of California Berkeley"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "LLMs",
+    "Agents"
+   ],
+   "tldr": "Jet-QSparse stores the KV cache in 4-bit NVFP4 and aggregates values from selected blocks only, giving 1.94 times faster decoding and 2.58 to 2.76 times cache capacity without training.",
+   "why_selected": "Long agentic contexts are bottlenecked by KV-cache memory and decode bandwidth, and this is a training-free fix evaluated on agentic benchmarks.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reasoning and agent workloads produce long histories of thoughts and tool outputs. The key-value (KV) cache that stores them grows with length, limits how many requests fit on a GPU, and every generated token must re-read it."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "KV quantization shrinks bytes per token, and sparse decoding fetches only parts of the history per query. They are usually studied separately, and their errors compound. Some sparse methods also degrade sharply on agentic tasks."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of a two-pass lookup. First, a cheap pass scores every key using compact 4-bit data and native FP4 tensor-core arithmetic on NVIDIA Blackwell, estimating how much attention each 128-token block deserves. Then only the top blocks are used for the value-aggregation step, which runs in higher precision (FP16 with FP32 accumulation) because that step forms the output. Grouping 128 consecutive tokens per page aligns selection with contiguous memory loads. Calibrated key centering and two BF16 pages per sequence and layer, the first and the current block, limit quantization error. The method needs no retraining."
+    },
+    {
+     "heading": "Results",
+     "body": "With 64 blocks per KV head, Qwen3.8-27B decodes 1.94 times faster than dense BF16 at 128K context and batch size 16 on one GB300. Measured Qwen cache pools hold 2.58 to 2.76 times as many tokens. A 128-block budget shows no detected accuracy loss across four models on GPQA-Diamond, AIME25, LiveCodeBench, Terminal-Bench 2.1 and SWE-bench Verified. Quest drops Terminal-Bench to 27.7% versus 70.0% for BF16."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It targets the cost that dominates long-running agents. Caveats: it needs Blackwell hardware, smaller budgets lose accuracy on some model and task pairs, and the speedup narrows at 2.4T parameters where expert computation dominates."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.01022",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.01022"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 69,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Song Han"
+    ]
+   }
+  },
+  {
+   "id": "2611.03178",
+   "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
+   "authors": [
+    "Jiajie Jin",
+    "Guanting Dong",
+    "Chengjun Pan",
+    "Xin Deng",
+    "Zhuohui Sheng",
+    "Guoqiang Wang",
+    "Tao Gui",
+    "Yutao Zhu",
+    "Yujia Chen",
+    "Shihong Yi",
+    "Binze Hu",
+    "Zhixiong Yang",
+    "Zhichao Sun",
+    "Rui Wang",
+    "Han Han",
+    "Mingyu Ma",
+    "Junhao Huang",
+    "Xiaotao Wang",
+    "Huicheng Jiang",
+    "Yuyang Hu",
+    "Xinyu Yang",
+    "Wanghan Xu",
+    "Yajie Yang",
+    "Zhecan Wang",
+    "Honglin Guo",
+    "Xiaoyu Xing",
+    "Xiaoqian Zhang",
+    "Yulun Zhu",
+    "Xiaoxi Li",
+    "Jiahang Lin",
+    "Shaofan Liu",
+    "Shihan Dou",
+    "Zhiheng Xi",
+    "Qi Zhang",
+    "Yu-Gang Jiang",
+    "See-Kiong Ng",
+    "Yang Zhang",
+    "Tat-Seng Chua",
+    "Ji-Rong Wen",
+    "Zhicheng Dou"
+   ],
+   "affiliations": [
+    "Renmin University of China",
+    "Fudan University",
+    "Peking University",
+    "Shanghai Jiao Tong University",
+    "National University of Singapore",
+    "East China Normal University"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "RSI"
+   ],
+   "tldr": "CoworkOS is an open agent harness that separates strategy from execution management, matches or beats Codex-style harnesses on 12 benchmarks, and drives five rounds of automated post-training that lifted a Qwen model by 9.76 points.",
+   "why_selected": "Strongest-attended agent-harness paper of the day, combining a competitive general system with a concrete self-improvement case study.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents are moving from short tool calls to professional work: producing software, documents, designs and slide decks over hours, with people editing the same files. That needs high-quality delivery on complex tasks and sustained monitoring across interruptions."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Coding and work agents such as Claude Code, Codex, OpenHands and DeepSeek Harness show strong productivity, but their designs differ on delegation, how humans edit shared artifacts, and how state survives across sessions."
+    },
+    {
+     "heading": "Key idea",
+     "body": "CoworkOS splits authority from execution. A main agent owns task-level decisions: acting, delegating and accepting results. Subagents get bounded assignments with isolated contexts, and a coordinator makes exchanges between them durable and observable. A shared application layer lets humans and agents revise the same documents, presentations, CAD models and Blender scenes. Hierarchical workspaces and persistent semantic memory keep working files, key decisions and long-running job logs resumable after interruption."
+    },
+    {
+     "heading": "Results",
+     "body": "With GLM-5.3 as the backbone, CoworkOS reaches the top-two harness average in every domain against OpenHands, Codex and DeepSeek Harness. It scores 59.88 on JobBench versus 56.15 for DeepSeek Harness and 1164 Elo on GDPVal versus 1157. On BrowseComp it trails OpenHands, 81.80 to 83.00. In a case study, GLM-5.3 ran automated post-training on Qwen3.6-35B-A3B, raising the average over eight benchmarks from 33.19 to 42.95 across five rounds."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It is a reference design for long-horizon, human-in-the-loop agents, and it ties harness engineering to model improvement: the same system that does the work also generates the training signal for a smaller model. Researchers building agents for office, design or research workflows should look at its delegation and memory structure. Caveats: differences between harnesses are often small, gains vary by task and benchmark, and the paper evaluates a single backbone model, so it is unclear how much of the result comes from the harness rather than from GLM-5.3."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.03178",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.03178",
+    "code": "https://github.com/RUC-NLPIR/CoworkOS"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 6,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 73,
+    "org": "Renmin University of China"
+   }
+  }
+ ]
+}

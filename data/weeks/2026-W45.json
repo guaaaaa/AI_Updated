@@ -3,8 +3,29 @@
  "start": "2026-11-02",
  "end": "2026-11-07",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [
+  {
+   "id": "2611.00859",
+   "title": "Wave Forcing: Towards Speed-of-Light Streaming Video Generation",
+   "hf": 85,
+   "org": "DENG Lab @ SJTU",
+   "featured": "2026-11-03"
+  },
+  {
+   "id": "2611.03178",
+   "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
+   "hf": 73,
+   "org": "Renmin University of China",
+   "featured": "2026-11-03"
+  },
+  {
+   "id": "2611.03126",
+   "title": "CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements",
+   "hf": 50,
+   "org": null,
+   "featured": null
+  },
   {
    "id": "2610.42053",
    "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
@@ -13,65 +34,44 @@
    "featured": null
   },
   {
+   "id": "2611.01860",
+   "title": "Advances in Agentic Computer Graphics",
+   "hf": 39,
+   "org": "University of Texas at Austin",
+   "featured": null
+  },
+  {
+   "id": "2611.01560",
+   "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+   "hf": 37,
+   "org": null,
+   "featured": null
+  },
+  {
    "id": "2610.40738",
    "title": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
-   "hf": 29,
+   "hf": 34,
    "org": "ServiceNow-AI",
    "featured": null
   },
   {
-   "id": "2610.42149",
-   "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
-   "hf": 24,
-   "org": "KAIST AI",
-   "featured": "2026-11-02"
-  },
-  {
    "id": "2610.42136",
    "title": "ReLift: Dense 3D Tracking as Lifted Trajectory Repair",
-   "hf": 21,
+   "hf": 25,
    "org": "Technion Israel institute of technology",
-   "featured": null
-  },
-  {
-   "id": "2610.40799",
-   "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
-   "hf": 18,
-   "org": "Chinese University of Hong Kong",
-   "featured": "2026-11-02"
-  },
-  {
-   "id": "2610.40748",
-   "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
-   "hf": 12,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2610.40945",
-   "title": "On the Origin and Evolution of Training-Inference Mismatch in LLM Reinforcement Learning",
-   "hf": 7,
-   "org": "George Washington University",
-   "featured": null
-  },
-  {
-   "id": "2610.42141",
-   "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
-   "hf": 5,
-   "org": null,
    "featured": null
   }
  ],
  "stories": [
   {
-   "title": "Meta’s Rating Outlook Cut to Negative by S&P on AI Spending",
+   "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
    "outlets": 5,
    "date": "2026-10-30",
    "covered": null
   },
   {
-   "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
-   "outlets": 4,
+   "title": "Meta’s Rating Outlook Cut to Negative by S&P on AI Spending",
+   "outlets": 5,
    "date": "2026-10-30",
    "covered": null
   },
@@ -82,14 +82,38 @@
    "covered": null
   },
   {
+   "title": "Marvell to buy Lumentum in $115 billion deal in AI data-center bet",
+   "outlets": 4,
+   "date": "2026-11-02",
+   "covered": "2026-11-02-n1"
+  },
+  {
+   "title": "OpenAI taps former US army secretary Dan Driscoll for national security role",
+   "outlets": 4,
+   "date": "2026-11-03",
+   "covered": null
+  },
+  {
    "title": "DeepSeek Drops Enhanced Coding Agent With Aim to Rival Anthropic",
    "outlets": 3,
    "date": "2026-11-01",
    "covered": null
+  },
+  {
+   "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+   "outlets": 3,
+   "date": "2026-11-01",
+   "covered": null
+  },
+  {
+   "title": "Elon Musk Says Grok Bot Costs Were ‘Unsustainably High’ Amid Complaints Over Usage Limits",
+   "outlets": 3,
+   "date": "2026-11-02",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 1,
-  "papers": 5
+  "news": 3,
+  "papers": 10
  }
 }

@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-03T05:27:26+00:00",
+ "updated": "2026-11-03T12:17:16+00:00",
  "days": [
+  {
+   "date": "2026-11-03",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": false
+  },
   {
    "date": "2026-11-02",
    "edition": "weekday",
@@ -206,6 +213,96 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-03-n1",
+   "date": "2026-11-03",
+   "type": "news",
+   "title": "Anthropic's amended IPO filing says it may imminently reach its own \"dramatically accelerated progress\" threshold",
+   "tldr": "In a revised S-1/A filed Monday, Anthropic wrote that its internal estimates suggest it may imminently meet the Responsible Scaling Policy's definition of AI-driven dramatically accelerated progress, while saying no current model crosses it.",
+   "category": "Safety & Security",
+   "byline": "TechCrunch"
+  },
+  {
+   "id": "2026-11-03-n2",
+   "date": "2026-11-03",
+   "type": "news",
+   "title": "Researchers show GPT-6 Astra can read and directly edit neural network weights, lifting a small Qwen model's math score",
+   "tldr": "A blog post reports that GPT-6 Astra, without writing training loops, identified a flaw in Qwen3.5-0.8B's weights and fixed it by editing 0.016% of them, raising MATH-500 from 7.9% to 48.1%.",
+   "category": "Research",
+   "byline": "Weight-Space Programming blog post"
+  },
+  {
+   "id": "2611.02270",
+   "date": "2026-11-03",
+   "type": "paper",
+   "title": "Hinted Scaling Laws",
+   "tldr": "Giving models partial reference solutions turns a hard benchmark into a smooth family of easier ones, letting scaling laws fit on small, near-zero-accuracy models forecast large-model benchmark accuracy with far lower error.",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Evaluation & Benchmarks",
+    "Theory"
+   ],
+   "byline": "Suze van Adrichem, Luke Bailey, Rohith Kuditipudi et al. · Stanford University",
+   "hf": null
+  },
+  {
+   "id": "2611.00859",
+   "date": "2026-11-03",
+   "type": "paper",
+   "title": "Wave Forcing: Towards Speed-of-Light Streaming Video Generation",
+   "tldr": "Wave Forcing lets several video chunks denoise at once on different GPUs, with earlier chunks serving as cleaner context for later ones, reaching about 135 end-to-end frames per second on eight H200 GPUs.",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency"
+   ],
+   "byline": "Yijie Jin, Yuxuan Liu, Jiajun Xu et al. · Shanghai Jiao Tong University, Xi'an Jiaotong University, Peking University",
+   "hf": 85
+  },
+  {
+   "id": "2610.40748",
+   "date": "2026-11-03",
+   "type": "paper",
+   "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+   "tldr": "In a video-plus-action world model, videos of new tasks without action labels lift out-of-distribution success on RoboTwin 2.0 from 25% to 56%, and one labeled demonstration per task lifts it to 71%.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models"
+   ],
+   "byline": "Jun Cen, Yubo Guo, Hao Li et al. · Joy Future Academy",
+   "hf": 13
+  },
+  {
+   "id": "2611.01022",
+   "date": "2026-11-03",
+   "type": "paper",
+   "title": "Jet-QSparse: Accelerating Agentic LLM Inference with 4-Bit Sparse Attention",
+   "tldr": "Jet-QSparse stores the KV cache in 4-bit NVFP4 and aggregates values from selected blocks only, giving 1.94 times faster decoding and 2.58 to 2.76 times cache capacity without training.",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "LLMs",
+    "Agents"
+   ],
+   "byline": "Haozhan Tang, Hao Kang, Meng Lu et al. · Carnegie Mellon University, Virginia Tech, Massachusetts Institute of Technology",
+   "hf": null
+  },
+  {
+   "id": "2611.03178",
+   "date": "2026-11-03",
+   "type": "paper",
+   "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
+   "tldr": "CoworkOS is an open agent harness that separates strategy from execution management, matches or beats Codex-style harnesses on 12 benchmarks, and drives five rounds of automated post-training that lifted a Qwen model by 9.76 points.",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "RSI"
+   ],
+   "byline": "Jiajie Jin, Guanting Dong, Chengjun Pan et al. · Renmin University of China, Fudan University, Peking University",
+   "hf": 73
+  },
   {
    "id": "2026-11-02-n1",
    "date": "2026-11-02",
@@ -2814,28 +2911,28 @@
   ]
  },
  "tag_counts": {
+  "Pre-training & Data": 21,
+  "Evaluation & Benchmarks": 19,
+  "Theory": 9,
+  "Generative Models": 28,
+  "Efficiency": 40,
+  "Robotics": 23,
+  "World Models": 22,
+  "LLMs": 10,
+  "Agents": 55,
+  "RSI": 12,
   "Multimodal": 16,
   "Reasoning": 14,
-  "Generative Models": 27,
   "Post-training": 31,
-  "World Models": 21,
-  "Robotics": 22,
-  "Agents": 53,
   "Reinforcement Learning": 29,
-  "Pre-training & Data": 20,
   "Architectures": 26,
   "AI for Science & Health": 5,
-  "Efficiency": 38,
-  "LLMs": 9,
   "Optimization": 2,
-  "Theory": 8,
   "Security": 1,
   "Safety & Alignment": 6,
   "AI for Math": 4,
-  "Evaluation & Benchmarks": 18,
   "Interpretability": 6,
   "Computer Vision": 5,
-  "RSI": 11,
   "Retrieval & Memory": 8,
   "Society & Policy": 1
  },
@@ -2852,13 +2949,13 @@
   "People"
  ],
  "category_counts": {
+  "Safety & Security": 10,
+  "Research": 4,
   "Business & Funding": 10,
   "Compute & Infrastructure": 3,
-  "Safety & Security": 9,
   "Policy & Legal": 5,
   "Model Release": 15,
   "Earnings & Markets": 2,
-  "Research": 3,
   "Product & Features": 4
  },
  "summaries": [
