@@ -17,8 +17,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import DAYS, ROOT, SUMMARIES, config  # noqa: E402
 
-GENERATED = {"data/index.json", "data/trends.json"}
-is_generated = lambda f: f in GENERATED or f.startswith(("data/weeks/", "data/directions/"))  # rebuilt by build_index.py
+GENERATED = {"data/index.json", "data/trends.json", "data/daily.json"}
+is_generated = lambda f: f in GENERATED or f.startswith(("data/weeks/", "data/directions/", "data/fields/"))  # rebuilt by build_index.py
 
 
 def sh(*cmd, check=True):
@@ -43,7 +43,7 @@ def rebase_onto(branch):
         for f in conflicted:
             sh("git", "checkout", "--ours", f, check=False)
         sh(sys.executable, "pipeline/build_index.py")
-        sh("git", "add", *GENERATED, "data/weeks", "data/directions")
+        sh("git", "add", *GENERATED, "data/weeks", "data/directions", "data/fields")
         r = subprocess.run(["git", "-c", "core.editor=true", "rebase", "--continue"], cwd=ROOT,
                            capture_output=True, text=True, env={**__import__("os").environ, "GIT_EDITOR": "true"})
     return False

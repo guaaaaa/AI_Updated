@@ -13,8 +13,8 @@
   const pct = (x, d = 1) => `${(x * 100).toFixed(d)}%`;
   const signed = (x) => `${x >= 0 ? "+" : "−"}${Math.abs(x * 100).toFixed(0)}%`;
   let H = null;            // helpers from app.js
-  let cache = { trends: null, sums: new Map() };
-  let resizeT = null, lastArgs = null;
+  let cache = { trends: null, sums: new Map(), files: new Map() };
+  let resizeT = null, lastArgs = null, lastHash = null;
 
   function svg(tag, attrs, ...kids) {
     const n = document.createElementNS(NS, tag);
@@ -245,7 +245,7 @@
         H.el("thead", {}, H.el("tr", {}, ["Direction", "24 months", "Share now", "3 months", "1 year", "Attention"].map((h, i) =>
           H.el("th", { class: ["", "c-spark", "num", "num c-3m", "num", "num c-att"][i], text: h })))),
         H.el("tbody", {}, rows.map((d) => H.el("tr", { class: d.status, onclick: (e) => { if (!e.target.closest("a")) location.hash = dirHref(d.id); } },
-          H.el("td", { class: "c-name" }, statusTag(d), H.el("a", { href: dirHref(d.id), text: d.name }), H.el("span", { class: "c-field", text: d.group })),
+          H.el("td", { class: "c-name" }, statusTag(d), H.el("a", { href: dirHref(d.id), text: d.name }), H.el("a", { class: "c-field", href: fieldHref(d.group), text: d.group })),
           H.el("td", { class: "c-spark" }, sparkline(d.series, STCOL[d.status])),
           H.el("td", { class: "num", text: pct(d.share, 2) }),
           H.el("td", { class: "num c-3m", text: pp(d.rel_prev) }),
@@ -389,84 +389,293 @@
   }
 
   // ---------------------------------------------------------------- direction page (#/trends/direction/<id>)
-  function trendLine(labels, monthly, fmt, color, extraTip) {
-    const W = Math.max(320, lastWidth()), Hh = 240, padL = 50, padR = 12, padT = 12, padB = 28, n = labels.length;
-    const smooth = roll3(monthly), top = niceTicks(Math.max(...monthly) * 1.08);
-    const max = top[top.length - 1] || 1;
-    const x = (i) => padL + (i * (W - padL - padR)) / Math.max(1, n - 1), y = (v) => padT + (1 - v / max) * (Hh - padT - padB);
-    const s = svg("svg", { viewBox: `0 0 ${W} ${Hh}`, width: "100%", height: Hh, role: "img", "aria-label": "Monthly values with a 3-month average" });
-    for (const t of top) {
-      s.append(svg("line", { x1: padL, x2: W - padR, y1: y(t), y2: y(t), class: "zero" }));
-      s.append(svg("text", { x: padL - 6, y: y(t) + 4, class: "axis", "text-anchor": "end" }, fmt(t)));
+  // ---------------------------------------------------------------- stock-style pages: one direction or one field
+  // Data: data/daily.json (every arXiv announcement day: all new papers, all upvotes, each field) and
+  // data/fields/<slug>.json (each direction of a field, day by day). A range picks how far back to look and how many
+  // announcement days each point averages (arXiv announces 5 days a week), so longer ranges draw smoother lines.
+  const RANGES = [
+    { key: "1W", days: 7, k: 1, words: "past week" }, { key: "1M", months: 1, k: 5, words: "past month" },
+    { key: "3M", months: 3, k: 10, words: "past 3 months" }, { key: "6M", months: 6, k: 21, words: "past 6 months" },
+    { key: "1Y", months: 12, k: 42, words: "past year" }, { key: "2Y", months: 24, k: 63, words: "past 2 years" }];
+  const METRICS = {
+    share: { label: "Share", unit: "of new papers", fmt: (v) => pct(v, 2), d: (x) => `${Math.abs(x * 100).toFixed(2)} pts`,
+      about: "share of all new arXiv papers in our categories" },
+    perday: { label: "Papers a day", unit: "papers a day", fmt: (v) => (v >= 100 ? v.toFixed(0) : v.toFixed(1)), d: (x) => Math.abs(x).toFixed(1),
+      about: "new arXiv papers per announcement day" },
+    att: { label: "Upvotes", unit: "of Hugging Face upvotes", fmt: (v) => pct(v, 1), d: (x) => `${Math.abs(x * 100).toFixed(1)} pts`,
+      about: "share of all Hugging Face Daily Papers upvotes" },
+  };
+  const view = { range: "1Y", metric: "share" };   // kept while moving between pages
+  const fieldSlug = (g) => g.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
+  const fieldHref = (g) => `#/trends/field/${fieldSlug(g)}`;
+  const memo = (key, url) => { if (!cache.files.has(key)) cache.files.set(key, H.getJSON(url).catch((e) => { cache.files.delete(key); throw e; })); return cache.files.get(key); };
+  const getDaily = () => memo("daily", "data/daily.json");
+  const getField = (slug) => memo(`field/${slug}`, `data/fields/${slug}.json`);
+  const cum = (a) => { const p = new Float64Array(a.length + 1); a.forEach((v, i) => { p[i + 1] = p[i] + (v || 0); }); return p; };
+  const wsum = (P, i, k) => P[i + 1] - P[Math.max(0, i - k + 1)];
+  const longDate = (iso) => H.dObj(iso).toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" });
+  const series = (daily, c, up) => ({ days: daily.days, n: daily.n, c, up, Pn: cum(daily.n), Pc: cum(c), Pa: cum(daily.hf_up), Pu: cum(up) });
+
+  function startIndex(days, r) {
+    const s = H.dObj(days[days.length - 1]);
+    if (r.days) s.setDate(s.getDate() - r.days); else s.setMonth(s.getMonth() - r.months);
+    const iso = H.isoOf(s), i = days.findIndex((d) => d >= iso);
+    return i < 0 ? 0 : i;
+  }
+  function valueAt(m, S, i, k) {
+    if (m === "share") { const t = wsum(S.Pn, i, k); return t ? wsum(S.Pc, i, k) / t : null; }
+    if (m === "perday") return wsum(S.Pc, i, k) / Math.min(k, i + 1);
+    const t = wsum(S.Pa, i, k); return t ? wsum(S.Pu, i, k) / t : null;
+  }
+  function curve(m, S, r) {
+    const from = startIndex(S.days, r), vals = [];
+    for (let i = from; i < S.days.length; i++) vals.push(valueAt(m, S, i, r.k));
+    return { from, vals };
+  }
+  // z of the change from the first point's window to the last one's (share: two proportions; papers: Poisson counts)
+  function changeZ(m, S, from, k) {
+    const L = S.days.length - 1, c1 = wsum(S.Pc, from, k), c2 = wsum(S.Pc, L, k);
+    if (m === "share") {
+      const n1 = wsum(S.Pn, from, k), n2 = wsum(S.Pn, L, k), p = (c1 + c2) / (n1 + n2);
+      const se = Math.sqrt(p * (1 - p) * (1 / n1 + 1 / n2));
+      return se ? (c2 / n2 - c1 / n1) / se : 0;
     }
-    labels.forEach((l, i) => { if (!((n - 1 - i) % 3)) s.append(svg("text", { x: x(i), y: Hh - 8, class: "axis", "text-anchor": "middle" }, l)); });
-    const path = (v) => v.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p).toFixed(1)}`).join(" ");
-    s.append(svg("path", { d: `${path(smooth)} L${x(n - 1)},${y(0)} L${x(0)},${y(0)} Z`, class: "sm-area", style: `fill: var(${color})` }));
-    s.append(svg("path", { d: path(monthly), class: "ln" }));
-    s.append(svg("path", { d: path(smooth), class: "ln hi", style: `stroke: var(${color})` }));
-    s.append(svg("circle", { cx: x(n - 1), cy: y(smooth[n - 1]), r: 4, class: "sm-dot", style: `fill: var(${color})` }));
-    const cross = svg("line", { y1: padT, y2: Hh - padB, class: "crosshair", visibility: "hidden" });
-    s.append(cross);
-    const box = H.el("div", { class: "viz-plot" }, s);
-    const tip = tooltip(box);
-    s.addEventListener("pointermove", (ev) => {
-      const r = s.getBoundingClientRect(), px = ((ev.clientX - r.left) / r.width) * W;
-      const i = Math.max(0, Math.min(n - 1, Math.round(((px - padL) / (W - padL - padR)) * (n - 1))));
-      cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("visibility", "visible");
-      const bb = box.getBoundingClientRect();
-      tip.show(ev.clientX - bb.left, ev.clientY - bb.top, [H.el("div", { class: "tip-head", text: labels[i] }),
-        tipRow(fmt(smooth[i]), "3-month average", color), tipRow(fmt(monthly[i]), "that month", "--viz-context"), extraTip ? extraTip(i) : null]);
-    });
-    s.addEventListener("pointerleave", () => { tip.hide(); cross.setAttribute("visibility", "hidden"); });
-    return box;
+    if (m === "perday") return c1 + c2 ? (c2 - c1) / Math.sqrt(c1 + c2) : 0;
+    return null;
+  }
+  const ends = (vals) => {
+    let a = 0, b = vals.length - 1;
+    while (a < b && vals[a] == null) a++;
+    while (b > a && vals[b] == null) b--;
+    return [a, b];
+  };
+
+  function miniLine(vals, color, w = 88, h = 26) {
+    const fin = vals.filter((v) => v != null), lo = Math.min(...fin), hi = Math.max(...fin), n = vals.length;
+    const x = (i) => 2 + (i * (w - 6)) / Math.max(1, n - 1), y = (v) => 2 + (1 - (v - lo) / ((hi - lo) || 1)) * (h - 4);
+    let d = "", pen = false;
+    vals.forEach((v, i) => { if (v == null) { pen = false; return; } d += `${pen ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`; pen = true; });
+    return svg("svg", { viewBox: `0 0 ${w} ${h}`, width: w, height: h, class: "spark", "aria-hidden": "true" },
+      svg("path", { d, style: `stroke: var(${color})` }));
   }
 
-  async function directionPage(main, id, T) {
-    let d;
-    try { d = await H.getJSON(`data/directions/${id}.json`); } catch (e) {
-      main.replaceChildren(H.el("p", { class: "note" }, "That direction does not exist. ", H.el("a", { href: "#/trends", text: "Back to Trends" })));
+  // The chart: no grid, a dotted line at the range's first value, the period's high and low on the right, and
+  // the raw daily counts as faint bars underneath. Hover or drag to read any day.
+  function stockChart(S, cv, bars, r, m, color, onScrub) {
+    const W = Math.max(300, lastWidth()), Hh = W < 520 ? 230 : 290;
+    const padL = 2, padR = 58, padT = 26, volH = 34, padB = 22, gap = 10, lineB = Hh - padB - volH - gap;
+    const vals = cv.vals, n = vals.length, [a, b] = ends(vals), base = vals[a];
+    const fin = vals.filter((v) => v != null);
+    let lo = Math.min(...fin), hi = Math.max(...fin);
+    const pad = (hi - lo) * 0.12 || Math.abs(hi) * 0.1 || 0.001;
+    lo = Math.max(0, lo - pad); hi += pad;
+    const x = (i) => padL + (n > 1 ? (i * (W - padL - padR)) / (n - 1) : (W - padL - padR) / 2);
+    const y = (v) => padT + (1 - (v - lo) / (hi - lo)) * (lineB - padT);
+    const M = METRICS[m];
+    const s = svg("svg", { viewBox: `0 0 ${W} ${Hh}`, width: "100%", height: Hh, class: "stock-svg", role: "img",
+      "aria-label": `${M.label}, ${r.words}: from ${M.fmt(base)} to ${M.fmt(vals[b])}` });
+    s.append(svg("line", { x1: padL, x2: W - padR, y1: y(base), y2: y(base), class: "base-line" }));
+    const iHi = vals.indexOf(Math.max(...fin)), iLo = vals.indexOf(Math.min(...fin));
+    const lab = [[iHi, "high"], [iLo, "low"]].filter(([i], j, arr) => !j || Math.abs(y(vals[i]) - y(vals[arr[0][0]])) >= 14);
+    for (const [i] of lab) s.append(svg("text", { x: W - padR + 8, y: y(vals[i]) + 4, class: "axis" }, M.fmt(vals[i])));
+    const bmax = Math.max(1, ...bars), bw = Math.max(1, Math.min(10, ((W - padL - padR) / Math.max(1, n)) * 0.7));
+    const barEls = bars.map((v, i) => {
+      const hgt = (v / bmax) * volH;
+      return v ? svg("rect", { x: x(i) - bw / 2, y: Hh - padB - hgt, width: bw, height: hgt, class: "vol" }) : null;
+    });
+    s.append(...barEls.filter(Boolean));
+    let d = "", pen = false;
+    vals.forEach((v, i) => { if (v == null) { pen = false; return; } d += `${pen ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`; pen = true; });
+    s.append(svg("path", { d, class: "stock-line", style: `stroke: var(${color})` }));
+    s.append(svg("circle", { cx: x(b), cy: y(vals[b]), r: 3.5, style: `fill: var(${color})` }));
+    const long = (r.months || 0) >= 6;
+    const fmtD = (iso) => H.dObj(iso).toLocaleDateString("en-US", long ? { month: "short", year: "numeric" } : { month: "short", day: "numeric" });
+    const ticks = n > 3 ? [0, Math.round((n - 1) / 3), Math.round((2 * (n - 1)) / 3), n - 1] : [0, n - 1];
+    ticks.forEach((i, j) => s.append(svg("text", { x: x(i), y: Hh - 5, class: "axis",
+      "text-anchor": j === 0 ? "start" : j === ticks.length - 1 ? "end" : "middle" }, fmtD(S.days[cv.from + i]))));
+    const cross = svg("line", { y1: padT - 6, y2: Hh - padB, class: "crosshair", visibility: "hidden" });
+    const dot = svg("circle", { r: 5, class: "stock-dot", style: `fill: var(${color})`, visibility: "hidden" });
+    const when = svg("text", { y: 12, class: "axis scrub-date", "text-anchor": "middle", visibility: "hidden" });
+    s.append(cross, dot, when);
+    let lit = null;
+    const show = (on) => [cross, dot, when].forEach((e) => e.setAttribute("visibility", on ? "visible" : "hidden"));
+    const move = (ev) => {
+      const rr = s.getBoundingClientRect(), px = ((ev.clientX - rr.left) / rr.width) * W;
+      let i = Math.max(a, Math.min(b, Math.round(((px - padL) / (W - padL - padR)) * (n - 1))));
+      while (i > a && vals[i] == null) i--;
+      cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i));
+      dot.setAttribute("cx", x(i)); dot.setAttribute("cy", y(vals[i]));
+      when.textContent = longDate(S.days[cv.from + i]);
+      when.setAttribute("x", Math.max(56, Math.min(W - padR - 56, x(i))));
+      if (lit) lit.classList.remove("on");
+      lit = barEls[i]; if (lit) lit.classList.add("on");
+      show(true);
+      onScrub(i);
+    };
+    s.addEventListener("pointermove", move);
+    s.addEventListener("pointerdown", move);
+    s.addEventListener("pointerleave", () => { show(false); if (lit) lit.classList.remove("on"); onScrub(null); });
+    return s;
+  }
+
+  // The quote block + chart + range and metric switches. onChange lets lists below follow the same range.
+  function stockCard(S, onChange) {
+    const big = H.el("strong", { class: "stock-big" }), unit = H.el("span", { class: "stock-unit" });
+    const chg = H.el("div", { class: "stock-change", "aria-live": "polite" }), note = H.el("div", { class: "stock-note" });
+    const plot = H.el("div", { class: "stock-plot" }), how = H.el("p", { class: "viz-sub stock-how" });
+    const draw = () => {
+      const r = RANGES.find((x) => x.key === view.range), m = view.metric, M = METRICS[m];
+      const cv = curve(m, S, r), vals = cv.vals, [a, b] = ends(vals), base = vals[a];
+      const z = changeZ(m, S, cv.from, r.k), up = vals[b] >= base, color = up ? "--div-warm" : "--div-cool";
+      const quote = (i) => {
+        const v = vals[i], dv = v - base, rel = base ? dv / base : null, atEnd = i === b;
+        big.textContent = M.fmt(v);
+        unit.textContent = M.unit;
+        chg.replaceChildren(...[
+          H.el("span", { class: dv >= 0 ? "up" : "down", text: `${dv >= 0 ? "▲" : "▼"} ${M.d(dv)}${rel == null ? "" : ` (${Math.abs(rel * 100).toFixed(rel && Math.abs(rel) < 0.1 ? 1 : 0)}%)`}` }),
+          H.el("span", { class: "when", text: atEnd ? r.words : `since ${longDate(S.days[cv.from + a])}` }),
+          atEnd && z != null && Math.abs(z) < 2 ? H.el("span", { class: "noise", title: `z = ${z.toFixed(1)}`, text: "within noise" }) : null].filter(Boolean));
+        note.textContent = `${r.k === 1 ? "Single announcement day" : `${r.k}-day average`} · ${longDate(S.days[cv.from + i])}`;
+      };
+      quote(b);
+      const bars = (m === "att" ? S.up : S.c).slice(cv.from);
+      plot.replaceChildren(stockChart(S, cv, bars, r, m, color, (i) => quote(i == null ? b : i)));
+      how.textContent = `Line: ${M.about}, ${r.k === 1 ? "one announcement day per point" : `each point averaging the ${r.k} announcement days up to it`}` +
+        ` (longer ranges average more days, so the line smooths out). Dotted line: the value at the start of the range. ` +
+        `Bars: ${m === "att" ? "upvotes" : "papers"} per day. "Within noise" means the change is smaller than chance variation would explain (|z| < 2).`;
+      if (onChange) onChange();
+    };
+    const card = H.el("section", { class: "card stock-card" },
+      H.el("div", { class: "stock-top" },
+        H.el("div", { class: "stock-quote" }, H.el("div", {}, big, unit), chg, note),
+        segmented(Object.entries(METRICS).map(([k, x]) => [k, x.label]), view.metric, (k) => { view.metric = k; draw(); }, "Measure")),
+      plot,
+      H.el("div", { class: "stock-ranges" },
+        segmented(RANGES.map((r) => [r.key, r.key]), view.range, (k) => { view.range = k; draw(); }, "Time range")),
+      how);
+    draw();
+    return card;
+  }
+
+  // Ticker-style rows (a field's directions) that follow the chosen range and measure.
+  function holdings(daily, members, selfId) {
+    const list = H.el("div", { class: "holdings" });
+    const draw = () => {
+      const r = RANGES.find((x) => x.key === view.range), m = view.metric, M = METRICS[m];
+      const rows = members.map((x) => {
+        const S = series(daily, x.n, x.up), cv = curve(m, S, r), [a, b] = ends(cv.vals);
+        return { x, cv, a: cv.vals[a], b: cv.vals[b], z: changeZ(m, S, cv.from, r.k) };
+      }).sort((p, q) => (q.b ?? -1) - (p.b ?? -1));
+      list.replaceChildren(...rows.map(({ x, cv, a, b, z }) => {
+        const up = b >= a, rel = a ? b / a - 1 : null, quiet = z != null && Math.abs(z) < 2;
+        return H.el("a", { class: "hold" + (x.id === selfId ? " self" : ""), href: dirHref(x.id), "aria-current": x.id === selfId ? "page" : null },
+          H.el("span", { class: `st ${x.status}`, title: STATUS[x.status][1], text: STATUS[x.status][0] }),
+          H.el("span", { class: "hold-name", text: x.name }),
+          miniLine(cv.vals, quiet ? "--viz-context" : up ? "--div-warm" : "--div-cool"),
+          H.el("span", { class: "hold-val", text: b == null ? "–" : M.fmt(b) }),
+          H.el("span", { class: `hold-chg ${up ? "up" : "down"}${quiet ? " quiet" : ""}`, title: quiet ? "within noise" : "", text: rel == null ? "–" : pp(rel) }));
+      }));
+    };
+    return { node: list, draw };
+  }
+
+  function keyStats(S, extra) {
+    const L = S.days.length - 1, y1 = startIndex(S.days, { months: 12 });
+    let lo = Infinity, hi = -Infinity;
+    for (let i = y1; i <= L; i++) { const v = valueAt("share", S, i, 21); if (v != null) { lo = Math.min(lo, v); hi = Math.max(hi, v); } }
+    const att = valueAt("att", S, L, 63);
+    const rows = [
+      ["Papers, latest day", S.c[L].toLocaleString(), `${H.fmtShort(S.days[L])}, of ${S.n[L].toLocaleString()} new`],
+      ["Average a day", (wsum(S.Pc, L, 21) / Math.min(21, L + 1)).toFixed(1), "last 21 announcement days"],
+      ["Share of new papers", pct(valueAt("share", S, L, 21), 2), "last 21 announcement days"],
+      ["52-week range", `${pct(lo, 2)} – ${pct(hi, 2)}`, "21-day share"],
+      ["Papers, past year", (S.Pc[L + 1] - S.Pc[y1]).toLocaleString(), `since ${H.fmtShort(S.days[y1])}`],
+      ["Upvote share", att == null ? "–" : pct(att, 1), "last 63 days, Hugging Face"],
+      ...extra];
+    return H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Key statistics" })),
+      H.el("dl", { class: "kstats" }, rows.map(([k, v, sub]) => H.el("div", {}, H.el("dt", { text: k }),
+        H.el("dd", {}, H.el("strong", { text: v }), sub ? H.el("span", { text: sub }) : null)))));
+  }
+
+  const paperList = (title, rows, empty) => H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: title })),
+    rows.length ? H.el("ol", { class: "rank" }, rows) : H.el("p", { class: "note", text: empty }));
+  const topPapers = (top, win) => paperList(`Most-upvoted papers, ${win}`, top.map(([pid, title, up, date]) => H.el("li", {},
+    H.el("a", { href: `https://arxiv.org/abs/${pid}`, target: "_blank", rel: "noopener", text: title }),
+    H.el("span", { class: "rank-meta", text: `${up} upvotes · ${H.fmtShort(date)}` }))), "No Hugging Face papers in this window.");
+  const ourPapers = (featured, empty) => paperList("In our digests", featured.map((f) => H.el("li", {},
+    H.el("a", { href: `#/day/${f.date}/${f.id}`, text: f.title }), H.el("span", { class: "rank-meta", text: H.fmtShort(f.date) }))), empty);
+
+  async function stockPage(main, kind, id, T) {
+    let daily, field, d = null;
+    try {
+      daily = await getDaily();
+      if (kind === "direction") { d = await H.getJSON(`data/directions/${id}.json`); field = await getField(fieldSlug(d.group)); }
+      else field = await getField(id);
+    } catch (e) {
+      main.replaceChildren(H.el("p", { class: "note" }, `That ${kind} does not exist. `, H.el("a", { href: "#/trends", text: "Back to Trends" })));
       return;
     }
-    const labels = d.series_months.map(mLabel), win = span3(d.window);
-    const verdict = { rising: "Rising", new: "New and rising", fading: "Fading", steady: "Steady (movement within noise)" }[d.status];
-    const sentence = `${verdict}: ${pct(d.share, 2)} of all new arXiv papers in ${win} (${d.n.toLocaleString()} papers from ${d.teams.toLocaleString()} teams), ` +
-      `${pp(d.rel_prev)} against the previous 3 months and ${times(d.rel_year)} its share a year earlier.`;
-    const tile = (label, value, sub) => H.el("div", { class: "tile" }, H.el("span", { class: "tile-label", text: label }),
-      H.el("strong", { text: value }), sub ? H.el("span", { class: "tile-sub", text: sub }) : null);
-    const color = GVAR[d.group] || "--viz-news";
-    const related = T ? T.directions.filter((x) => x.group === d.group && x.id !== d.id).sort((a, b) => b.share - a.share) : [];
-    const out = [
-      H.el("div", { class: "day-head" }, H.el("div", {},
-        H.el("a", { class: "back", href: "#/trends", text: "← Trends" }),
-        H.el("h1", { text: d.name }),
-        H.el("div", { class: "day-meta" }, H.el("span", { class: `st ${d.status}`, text: `${STATUS[d.status][0]} ${STATUS[d.status][1]}` }), ` · ${d.group}`))),
-      H.el("p", { class: "day-summary", text: sentence }),
-      H.el("div", { class: "tiles" },
-        tile("Share of new papers", pct(d.share, 2), `last 3 months (${win})`),
-        tile("vs previous 3 months", pp(d.rel_prev), `z ${d.z_prev}; above that level in ${d.months_above}/3 months`),
-        tile("vs a year earlier", times(d.rel_year), d.share_year_ago == null ? "" : `was ${pct(d.share_year_ago, 2)}`),
-        tile("Teams", d.teams.toLocaleString(), "distinct last authors, last 3 months"),
-        tile("Share of upvotes", d.attention == null ? "–" : pct(d.attention, 1), d.attention_prev == null ? "Hugging Face" : `was ${pct(d.attention_prev, 1)} (Hugging Face)`)),
-      H.el("section", { class: "card viz-card" },
-        H.el("h3", { text: "Share of all new arXiv papers, by month" }),
-        H.el("p", { class: "viz-sub", text: "Bold line: 3-month average; thin line: each month. Titles are matched to the direction by keywords." }),
-        trendLine(labels, d.series, (v) => pct(v, 2), color, (i) => tipRow(String(d.counts[i]), "papers that month")),
-        H.el("h3", { class: "sub-h", text: "Share of Hugging Face upvotes, by month" }),
-        H.el("p", { class: "viz-sub", text: "Community attention: the share of all Daily Papers upvotes that went to papers in this direction." }),
-        trendLine(labels, d.att_series, (v) => pct(v, 1), color)),
-      H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: `Most-upvoted papers, ${win}` })),
-        d.hf_top.length ? H.el("ol", { class: "rank" }, d.hf_top.map(([pid, title, up, date]) => H.el("li", {},
-          H.el("a", { href: `https://arxiv.org/abs/${pid}`, target: "_blank", rel: "noopener", text: title }),
-          H.el("span", { class: "rank-meta", text: `${up} upvotes · ${H.fmtShort(date)}` })))) : H.el("p", { class: "note", text: "No Hugging Face papers in this window." })),
-      H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "In our digests" })),
-        d.featured.length ? H.el("ol", { class: "rank" }, d.featured.map((f) => H.el("li", {},
-          H.el("a", { href: `#/day/${f.date}/${f.id}`, text: f.title }), H.el("span", { class: "rank-meta", text: H.fmtShort(f.date) })))) :
-          H.el("p", { class: "note", text: "We have not featured a paper in this direction yet." })),
-    ];
-    if (related.length) out.push(H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: `Other directions in ${d.group}` })),
-      H.el("div", { class: "chips" }, related.map((x) => H.el("a", { class: "chip", href: dirHref(x.id) }, `${STATUS[x.status][0]} ${x.name}`)))));
+    const win = span3(field.window), G = daily.groups[field.name];
+    const self = d ? field.members.find((x) => x.id === d.id) : null;
+    const S = self ? series(daily, self.n, self.up) : series(daily, G.n, G.up);
+    const hold = holdings(daily, field.members, d ? d.id : null);
+    const stock = stockCard(S, hold.draw);
+    hold.draw();
+    const out = [];
+    if (d) {
+      const verdict = { rising: "Rising", new: "New and rising", fading: "Fading", steady: "Steady (movement within noise)" }[d.status];
+      const rank = T ? T.directions.slice().sort((p, q) => q.share - p.share).findIndex((x) => x.id === d.id) + 1 : 0;
+      out.push(H.el("div", { class: "day-head" }, H.el("div", {},
+          H.el("a", { class: "back", href: "#/trends", text: "← Trends" }),
+          H.el("h1", { text: d.name }),
+          H.el("div", { class: "day-meta" }, H.el("span", { class: `st ${d.status}`, text: `${STATUS[d.status][0]} ${STATUS[d.status][1]}` }),
+            H.el("span", { text: "·" }), H.el("a", { href: fieldHref(d.group), text: d.group })))),
+        stock,
+        keyStats(S, [
+          ["Teams", d.teams.toLocaleString(), `distinct last authors, ${win}`],
+          ["vs a year earlier", times(d.rel_year), `share in ${win} vs the same months a year before`],
+          ["Rank by share", rank ? `#${rank} of ${T.directions.length}` : "–", `among research directions, ${win}`]]),
+        H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Trend signal" })),
+          H.el("p", { class: "signal", text: `${verdict}: ${pct(d.share, 2)} of all new arXiv papers in ${win} (${d.n.toLocaleString()} papers from ` +
+            `${d.teams.toLocaleString()} teams), ${pp(d.rel_prev)} against the previous 3 months (z ${d.z_prev}, above that level in ${d.months_above} of 3 months) ` +
+            `and ${times(d.rel_year)} its share a year earlier. This is the monthly model behind the leaderboard: a direction counts as rising or fading only ` +
+            "when the change is large, statistically clear, spread across many teams and consistent with the year before." })),
+        H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Directions in this field" }),
+          H.el("a", { class: "card-date", href: fieldHref(d.group), text: `${d.group} →` })), hold.node),
+        topPapers(d.hf_top, win),
+        ourPapers(d.featured, "We have not featured a paper in this direction yet."));
+    } else {
+      const shares = Object.entries(daily.groups).map(([g, x]) => [g, valueAt("share", series(daily, x.n, x.up), daily.days.length - 1, 63)]).sort((p, q) => q[1] - p[1]);
+      const nUp = field.members.filter((x) => x.status === "rising" || x.status === "new").length, nDown = field.members.filter((x) => x.status === "fading").length;
+      out.push(H.el("div", { class: "day-head" }, H.el("div", {},
+          H.el("a", { class: "back", href: "#/trends", text: "← Trends" }),
+          H.el("h1", { text: field.name }),
+          H.el("div", { class: "day-meta", text: `Field · ${field.members.length} research directions · papers matching any of them` }))),
+        stock,
+        keyStats(S, [
+          ["Directions", String(field.members.length), `${nUp} rising, ${nDown} fading in ${win}`],
+          ["Rank by share", `#${shares.findIndex(([g]) => g === field.name) + 1} of ${shares.length}`, "among fields, last 63 days"]]),
+        H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Directions in this field" })), hold.node),
+        topPapers(field.hf_top, win),
+        ourPapers(field.featured, "We have not featured a paper in this field yet."));
+    }
     main.replaceChildren(...out);
-    window.scrollTo({ top: 0 });
+  }
+
+  // Trends page: the six fields as index tiles (past year, 21-day average share).
+  function fieldTiles(daily) {
+    const r = { months: 12, k: 21 };
+    return H.el("section", { class: "card", id: "fields" },
+      H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Fields" }), H.el("span", { class: "card-date", text: "share of new papers · past year" })),
+      H.el("div", { class: "field-tiles" }, GROUPS.filter((g) => daily.groups[g]).map((g) => {
+        const x = daily.groups[g], S = series(daily, x.n, x.up), cv = curve("share", S, r), [a, b] = ends(cv.vals);
+        const v0 = cv.vals[a], v1 = cv.vals[b], up = v1 >= v0, z = changeZ("share", S, cv.from, r.k), quiet = Math.abs(z) < 2;
+        return H.el("a", { class: "field-tile", href: fieldHref(g) },
+          H.el("span", { class: "ft-name", text: g }),
+          H.el("span", { class: "ft-row" }, H.el("strong", { text: pct(v1, 1) }),
+            H.el("span", { class: `hold-chg ${up ? "up" : "down"}${quiet ? " quiet" : ""}`, text: `${up ? "▲" : "▼"} ${Math.abs((v1 / v0 - 1) * 100).toFixed(0)}%` })),
+          (() => { const l = miniLine(cv.vals, quiet ? "--viz-context" : up ? "--div-warm" : "--div-cool", 140, 30); l.setAttribute("preserveAspectRatio", "none"); return l; })());
+      })));
   }
 
   function termBars(up, down) {
@@ -742,7 +951,9 @@
     const idx = S.index, sums = (idx.summaries || []).filter((x) => x.kind === "monthly"), weeks = idx.weeks || [];
     let T = null;
     try { T = cache.trends || (cache.trends = await H.getJSON("data/trends.json")); } catch (e) { T = null; }
-    if (route.kind === "direction") return directionPage(main, route.id, T);
+    const fresh = lastHash !== location.hash;   // a resize re-render keeps the scroll position
+    lastHash = location.hash;
+    if (route.kind === "direction" || route.kind === "field") return stockPage(main, route.kind, route.id, T).then(() => { if (fresh) window.scrollTo({ top: 0 }); });
     const out = [H.el("div", { class: "day-head" }, H.el("div", {},
       H.el("h1", { text: "Trends" }),
       H.el("div", { class: "day-meta", text: "Where AI research and the industry are heading, measured across the whole field and summarized monthly." })))];
@@ -753,6 +964,8 @@
     else out.push(H.el("p", { class: "note", text: "The first monthly summary is published on the 1st." }));
     const wk = await weekCard(weeks, route.kind === "weekly" ? route.id : null).catch(() => null);
     if (wk) out.push(wk);
+    const daily = await getDaily().catch(() => null);
+    if (daily && daily.groups) out.push(fieldTiles(daily));
     if (T && T.directions) out.push(chartsCard(T, idx, S));
     const g = await glance(S).catch(() => null);
     if (g) out.push(g);
@@ -763,6 +976,7 @@
         sums.map(row)));
     }
     main.replaceChildren(...out);
+    if (!fresh) return;
     if (route.kind === "weekly" && wk) wk.scrollIntoView({ block: "start" }); else window.scrollTo({ top: 0 });
   }
 

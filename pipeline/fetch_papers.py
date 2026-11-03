@@ -404,6 +404,11 @@ def main():
     log(f"Digest {d} ({edition(d)}): papers announced {start:%a %b %d %H:%M} -> {end:%a %b %d %H:%M} ET")
 
     listing = listing_sweep(cats, start, end)
+    try:   # day-by-day field series for the dashboard's direction and field pages (exact announcement days)
+        import field_daily
+        field_daily.update_from_listing(listing)
+    except Exception as e:
+        log(f"  WARNING field_daily update failed: {e}")
     in_window = {pid: p for pid, p in listing.items()
                  if start <= dt.datetime.fromisoformat(p["announced"]) <= end}
     log(f"  {len(in_window)} listed papers announced in window")

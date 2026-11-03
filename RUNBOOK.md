@@ -55,6 +55,8 @@ python3 pipeline/prepare.py --date $D
 Prints source warnings, then the **news candidates** (primary-source posts, reputable press headlines,
 Hacker News, stories already covered in the last 7 days), then the **paper shortlist** (~30 candidates with
 signals and trimmed abstracts). Full data is in `work/news_$D.json` and `work/papers_$D.json` if needed.
+It also refreshes the dashboard's day-by-day field series (`data/state/field_daily/`) automatically; a
+`field_daily` warning there never blocks the digest.
 
 ## 2. News
 

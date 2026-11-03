@@ -64,6 +64,11 @@ def main():
     # make sure the field aggregates exist for every month the analysis needs (fetches what is missing)
     for m in sorted(set(FS.window(mid, 15))):
         FS.build_month(m)
+    try:   # fill any announcement days the daily runs missed in the month (exact days from daily runs are kept)
+        import field_daily
+        field_daily.backfill(mid, mid)
+    except Exception as e:
+        print(f"WARNING field_daily backfill failed: {e}", file=sys.stderr)
     rep = FS.analyze(mid)
     W, P, Y = rep["window"], rep["prev"], rep["year_ago"]
     out = [f"# Evidence brief: monthly summary {mid}",

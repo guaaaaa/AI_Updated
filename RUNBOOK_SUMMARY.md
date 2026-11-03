@@ -118,7 +118,7 @@ python3 pipeline/assemble_summary.py --kind monthly --id $ID && python3 pipeline
 ```
 Fix validator errors with targeted Edits to the write-up, then run the same command again. **The job is done only
 when it prints `LIVE ✓`.** Only files under `data/` change; the new month's field statistics in
-`data/state/field/` are committed too.
+`data/state/field/` (and any announcement days `data/state/field_daily/` was missing) are committed too.
 
 ## 5. Final message
 Reply with the month id, the headline, the heating and cooling labels, any source failures, and the live URL

@@ -38,10 +38,20 @@ The Trends dashboard (`#/trends`) is about the **whole field**, not our picks:
   evidence; our digest items may only illustrate. Validated by `pipeline/validate_summary.py`.
 - **Week in review** (`pipeline/week_review.py`, automatic, no AI usage): the week's most-upvoted papers and
   most-covered stories, with no trend claims. A week is too short to show a direction.
-- **Dashboard views:** a leaderboard of all directions (24-month sparklines, 3-month and 1-year change, attention),
+- **Dashboard views:** the six fields as index tiles (share of new papers over the past year), a leaderboard of all directions (24-month sparklines, 3-month and 1-year change, attention),
   growth since a year ago (indexed, log scale), a momentum map (size vs growth quadrants), a heat map, emerging
-  terms, industry categories, and a page per direction (`#/trends/direction/<id>`: curves, attention, most-upvoted
-  papers, our featured items). Each chart is titled with a finding computed from the numbers.
+  terms and industry categories. Each chart is titled with a finding computed from the numbers.
+- **Direction and field pages** (`#/trends/direction/<id>`, `#/trends/field/<slug>`), styled like a stock page: the
+  current value and its change, a chart with 1W / 1M / 3M / 6M / 1Y / 2Y ranges (each point averages 1, 5, 10, 21,
+  42 or 63 announcement days, so longer ranges are smoother; drag across it to read any day), measured as share of
+  new papers, papers per day or share of Hugging Face upvotes, with daily volume bars, key statistics, the field's
+  directions as ticker rows, the most-upvoted papers and our featured items. Changes smaller than chance variation
+  (|z| < 2) are marked "within noise".
+- **Daily field series** (`pipeline/field_daily.py`, `data/state/field_daily/`): new papers per arXiv announcement
+  day for every direction and field, plus Hugging Face upvotes. Each daily run rewrites the last five announcement
+  days from the arXiv pastweek listing (exact days); history comes from the monthly listings, with each paper's day
+  inferred from arXiv API submission times and the announcement schedule (99% on the right day when checked against
+  exact listings; holidays are not modelled, which leaves shares unchanged).
 
 ## Customize
 
@@ -57,5 +67,7 @@ The Trends dashboard (`#/trends`) is about the **whole field**, not our picks:
 pip install beautifulsoup4
 python3 pipeline/fetch_papers.py --date 2026-11-02   # needs ALPHAXIV_API_KEY for the Hot feed
 python3 pipeline/fetch_news.py --date 2026-11-02
+python3 pipeline/field_daily.py --update             # last five announcement days (fetch_papers.py does this too)
+python3 pipeline/build_index.py                      # regenerate index, trends and page data
 python3 -m http.server   # then open http://localhost:8000
 ```

@@ -1,13 +1,17 @@
 """Rebuild data/index.json (what the site loads first) from data/days/*.json and data/summaries/, the Week in
 review files (data/weeks/, from the daily evidence snapshots) and data/trends.json (dashboard charts) from the
-field-wide monthly aggregates in data/state/field/ (pipeline/field_stats.py)."""
+field-wide monthly aggregates in data/state/field/ (pipeline/field_stats.py), plus the stock-style page data:
+data/daily.json (every announcement day: all new papers, upvotes, each field) and data/fields/<slug>.json (a field's
+directions, day by day) from data/state/field_daily/ (pipeline/field_daily.py)."""
 import datetime as dt
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import field_daily as FY  # noqa: E402
 import field_stats as FS  # noqa: E402
 import week_review  # noqa: E402
 from common import DATA, DAYS, SUMMARIES, UTC, config, today_et  # noqa: E402
@@ -77,16 +81,26 @@ def build_trends():
     print(f"trends.json: {rep['month']} window, {len(rep['series_months'])} months; " + ", ".join(f"{k} {v}" for k, v in st.items()))
 
 
-def write_direction_pages(rep):
-    """data/directions/<id>.json: everything a direction's page shows (curves, attention, top papers, our items)."""
-    dirs = FS.directions()
-    featured = {d["id"]: [] for d in dirs}
+def slug(group):
+    return re.sub(r"[^a-z]+", "-", group.lower()).strip("-")
+
+
+def featured_by_direction(dirs):
+    out = {d["id"]: [] for d in dirs}
     for f in sorted(DAYS.glob("*.json"), reverse=True):
         j = json.loads(f.read_text(encoding="utf-8"))
         for p in j.get("papers", []):
             for d in dirs:
                 if d["rx"].search(p["title"]):
-                    featured[d["id"]].append({"id": p["id"], "date": j["date"], "title": p["title"], "tldr": p["tldr"]})
+                    out[d["id"]].append({"id": p["id"], "date": j["date"], "title": p["title"], "tldr": p["tldr"]})
+    return out
+
+
+def write_direction_pages(rep):
+    """data/directions/<id>.json: the model numbers, top papers and our items for a direction's page;
+    data/daily.json + data/fields/<slug>.json: the day-by-day series behind the stock-style charts."""
+    dirs = FS.directions()
+    featured = featured_by_direction(dirs)
     out_dir = DATA / "directions"
     out_dir.mkdir(parents=True, exist_ok=True)
     keep = {f"{d['id']}.json" for d in rep["directions"]}
@@ -97,6 +111,43 @@ def write_direction_pages(rep):
         page = {**d, "month": rep["month"], "window": rep["window"], "series_months": rep["series_months"],
                 "featured": featured.get(d["id"], [])[:12]}
         (out_dir / f"{d['id']}.json").write_text(json.dumps(page, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    write_daily(rep, featured)
+
+
+def write_daily(rep, featured):
+    days = FY.load_all()
+    if not days:
+        print("daily.json: no daily field series yet")
+        return
+    ks = sorted(days)
+    col = lambda f: [f(days[k]) for k in ks]
+    groups = sorted({d["group"] for d in rep["directions"]})
+    now = dt.datetime.now(UTC).isoformat(timespec="seconds")
+    daily = {"updated": now, "days": [k.isoformat() for k in ks], "n": col(lambda x: x["n"]), "hf_up": col(lambda x: x["hf_up"]),
+             "groups": {g: {"slug": slug(g), "n": col(lambda x: x["groups"].get(g, 0)), "up": col(lambda x: x["hf_groups"].get(g, 0))}
+                        for g in groups}}
+    (DATA / "daily.json").write_text(json.dumps(daily, separators=(",", ":")), encoding="utf-8")
+    out_dir = DATA / "fields"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    keep = {f"{slug(g)}.json" for g in groups}
+    for f in out_dir.glob("*.json"):
+        if f.name not in keep:
+            f.unlink()
+    for g in groups:
+        members = [d for d in rep["directions"] if d["group"] == g]
+        top, seen = [], set()
+        for row in sorted((r for d in members for r in d.get("hf_top", [])), key=lambda r: -r[2]):
+            if row[0] not in seen:
+                seen.add(row[0])
+                top.append(row)
+        feat = sorted({f["id"]: f for d in members for f in featured.get(d["id"], [])}.values(), key=lambda f: f["date"], reverse=True)
+        page = {"name": g, "slug": slug(g), "month": rep["month"], "window": rep["window"],
+                "members": [{"id": d["id"], "name": d["name"], "status": d["status"], "share": d["share"], "rel_year": d["rel_year"],
+                             "n": col(lambda x, i=d["id"]: x["dirs"].get(i, 0)), "up": col(lambda x, i=d["id"]: x["hf_dirs"].get(i, 0))}
+                            for d in members],
+                "hf_top": top[:8], "featured": feat[:12]}
+        (out_dir / f"{slug(g)}.json").write_text(json.dumps(page, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"daily.json: {len(ks)} announcement days {ks[0]} -> {ks[-1]}; {len(groups)} field pages")
 
 
 if __name__ == "__main__":
