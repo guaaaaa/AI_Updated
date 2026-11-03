@@ -38,6 +38,10 @@ The Trends dashboard (`#/trends`) is about the **whole field**, not our picks:
   evidence; our digest items may only illustrate. Validated by `pipeline/validate_summary.py`.
 - **Week in review** (`pipeline/week_review.py`, automatic, no AI usage): the week's most-upvoted papers and
   most-covered stories, with no trend claims. A week is too short to show a direction.
+- **Dashboard views:** a leaderboard of all directions (24-month sparklines, 3-month and 1-year change, attention),
+  growth since a year ago (indexed, log scale), a momentum map (size vs growth quadrants), a heat map, emerging
+  terms, industry categories, and a page per direction (`#/trends/direction/<id>`: curves, attention, most-upvoted
+  papers, our featured items). Each chart is titled with a finding computed from the numbers.
 
 ## Customize
 

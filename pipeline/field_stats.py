@@ -108,13 +108,15 @@ def build_month(mid, force=False):
     agg["terms"] = {t: [n, len(tteams[t])] for t, n in kept}
     agg["terms_floor"] = kept[-1][1] if len(kept) == 6000 else 4   # terms not stored had at most this many papers
     hf = FD.hf_month(mid)
-    hn, hup = Counter(), Counter()
+    hn, hup, htop = Counter(), Counter(), defaultdict(list)
     for p in hf:  # titles, like the publication share, so the two are comparable
         for d in D:
             if d["rx"].search(p["t"]):
                 hn[d["id"]] += 1
                 hup[d["id"]] += p["up"]
-    agg["hf"] = {"n": len(hf), "up": sum(p["up"] for p in hf), "dirs": {d["id"]: [hn[d["id"]], hup[d["id"]]] for d in D}}
+                htop[d["id"]].append([p["id"], p["t"], p["up"], p["d"]])
+    agg["hf"] = {"n": len(hf), "up": sum(p["up"] for p in hf), "dirs": {d["id"]: [hn[d["id"]], hup[d["id"]]] for d in D},
+                 "top": {k: sorted(v, key=lambda x: -x[2])[:5] for k, v in htop.items()}}   # most-upvoted per direction
     if mid >= NEWS_FROM:
         cats, ents = industry()
         heads = FD.news_month(mid)
@@ -205,6 +207,9 @@ def analyze(mid, series_months=24):
             "attention_prev": round(att_P, 4) if att_P is not None else None,
             "series": [round(A[m]["dirs"].get(k, [0, 0])[0] / A[m]["n_papers"], 5) for m in series_m],
             "counts": [A[m]["dirs"].get(k, [0, 0])[0] for m in series_m],
+            "att_series": [round(A[m]["hf"]["dirs"].get(k, [0, 0])[1] / A[m]["hf"]["up"], 4) if A[m]["hf"]["up"] else 0
+                           for m in series_m],
+            "hf_top": sorted({x[0]: x for a in aw for x in a["hf"].get("top", {}).get(k, [])}.values(), key=lambda x: -x[2])[:8],
         })
     rep["series_months"] = series_m
     groups = sorted({d["group"] for d in config("directions")["directions"]})

@@ -65,15 +65,38 @@ def build_trends():
         return
     rep = FS.analyze(ok[-1])
     keep = ("id", "name", "group", "status", "n", "teams", "share", "share_prev", "share_year_ago", "rel_prev",
-            "rel_year", "z_prev", "months_above", "attention", "attention_prev", "series", "counts")
+            "rel_year", "z_prev", "months_above", "attention", "attention_prev", "series", "counts")   # trends.json stays light
     out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "month": rep["month"], "window": rep["window"],
            "prev": rep["prev"], "year_ago": rep["year_ago"], "n_papers": rep["n_papers"], "n_prev": rep["n_prev"],
            "n_year_ago": rep["n_year_ago"], "volume": rep["volume"], "series_months": rep["series_months"],
            "directions": [{k: d[k] for k in keep} for d in rep["directions"]], "groups": rep["groups"],
            "terms_up": rep["terms_up"], "terms_down": rep["terms_down"], "news": rep["news"]}
     (DATA / "trends.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    write_direction_pages(rep)
     st = Counter(d["status"] for d in rep["directions"])
     print(f"trends.json: {rep['month']} window, {len(rep['series_months'])} months; " + ", ".join(f"{k} {v}" for k, v in st.items()))
+
+
+def write_direction_pages(rep):
+    """data/directions/<id>.json: everything a direction's page shows (curves, attention, top papers, our items)."""
+    dirs = FS.directions()
+    featured = {d["id"]: [] for d in dirs}
+    for f in sorted(DAYS.glob("*.json"), reverse=True):
+        j = json.loads(f.read_text(encoding="utf-8"))
+        for p in j.get("papers", []):
+            for d in dirs:
+                if d["rx"].search(p["title"]):
+                    featured[d["id"]].append({"id": p["id"], "date": j["date"], "title": p["title"], "tldr": p["tldr"]})
+    out_dir = DATA / "directions"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    keep = {f"{d['id']}.json" for d in rep["directions"]}
+    for f in out_dir.glob("*.json"):
+        if f.name not in keep:
+            f.unlink()
+    for d in rep["directions"]:
+        page = {**d, "month": rep["month"], "window": rep["window"], "series_months": rep["series_months"],
+                "featured": featured.get(d["id"], [])[:12]}
+        (out_dir / f"{d['id']}.json").write_text(json.dumps(page, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
 if __name__ == "__main__":

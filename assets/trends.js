@@ -132,8 +132,8 @@
       const yy = padT + ri * ch;
       const mean = r.values.reduce((a, b) => a + b, 0) / Math.max(1, n);
       s.append(svg("rect", { x: 0, y: yy + 4, width: 8, height: 8, rx: 2, style: `fill: var(${r.color})` }));
-      s.append(svg("text", { x: 14, y: yy + 12, class: "row-label" }, fit(r.label, Math.floor((labelW - 20) / 6.4)),
-        svg("title", {}, r.label)));
+      const lab = svg("text", { x: 14, y: yy + 12, class: "row-label" }, fit(r.label, Math.floor((labelW - 20) / 6.4)), svg("title", {}, r.label));
+      s.append(r.href ? svg("a", { href: r.href }, lab) : lab);
       r.values.forEach((v, i) => {
         const dev = mean ? v / mean - 1 : 0, k = Math.min(1, Math.abs(dev) / 0.6);
         const cell = svg("rect", { x: labelW + i * cw + gap / 2, y: yy + gap / 2, width: cw - gap, height: ch - gap, rx: 3,
@@ -157,12 +157,13 @@
     return box;
   }
 
-  // ---------------------------------------------------------------- multi-line trend chart (fields or directions over time)
-  // Only these 3 series colours stay distinct for every pair (incl. colour-blind vision), so at most 3 curves are
-  // coloured; the rest stay as grey context lines. Every curve carries an end label, so identity never relies on colour.
-  const HI = ["--viz-cap", "--viz-ge", "--viz-trust"];
+  // ---------------------------------------------------------------- shared helpers for the direction views
   const roll3 = (a) => a.map((_, i) => { const w = a.slice(Math.max(0, i - 2), i + 1); return w.reduce((x, y) => x + y, 0) / w.length; });
   const compact = (v) => (v >= 1000 ? `${(v / 1000).toFixed(v >= 10000 ? 0 : 1)}K` : String(Math.round(v)));
+  const times = (r) => (r == null ? "–" : `×${(1 + r) >= 10 ? (1 + r).toFixed(0) : (1 + r).toFixed(1)}`);
+  const short = (name) => name.replace(/\s*\(.*\)$/, "");
+  const STCOL = { new: "--div-warm", rising: "--div-warm", fading: "--div-cool", steady: "--viz-context" };
+  const dirHref = (id) => `#/trends/direction/${id}`;
   function niceTicks(max, n = 4) {
     const raw = max / n, mag = 10 ** Math.floor(Math.log10(raw || 1));
     const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((x) => x >= raw) || raw;
@@ -170,163 +171,302 @@
     while (out[out.length - 1] < max - step * 1e-6) out.push(out[out.length - 1] + step);   // top tick >= max
     return out;
   }
-
-  function lineChart(series, labels, yMode, colorOf, totals) {
-    const box = H.el("div", { class: "viz-plot" });
-    const W = Math.max(320, lastWidth()), Hh = 330, padL = 46, labW = Math.min(170, W * 0.27), padT = 12, padB = 28;
-    const n = labels.length, x1 = W - labW - 8;
-    const vals = series.map((s) => roll3(s[yMode]));
-    const max = Math.max(...vals.flat(), yMode === "share" ? 0.001 : 1) * 1.08;
-    const ticks = niceTicks(max);
-    const top = ticks[ticks.length - 1] || max;
-    const x = (i) => padL + (i * (x1 - padL)) / Math.max(1, n - 1);
-    const y = (v) => padT + (1 - v / top) * (Hh - padT - padB);
-    const fmt = (v) => (yMode === "share" ? pct(v, v < 0.01 ? 2 : 1) : compact(v));
-    const s = svg("svg", { viewBox: `0 0 ${W} ${Hh}`, width: "100%", height: Hh, role: "img",
-      "aria-label": `${yMode === "share" ? "Share of new papers" : "Papers per month"} by ${series.length} series, 3-month rolling average` });
-    for (const t of ticks) {
-      s.append(svg("line", { x1: padL, x2: x1, y1: y(t), y2: y(t), class: "zero" }));
-      s.append(svg("text", { x: padL - 6, y: y(t) + 4, class: "axis", "text-anchor": "end" }, fmt(t)));
-    }
-    labels.forEach((l, i) => {
-      if ((n - 1 - i) % 3) return;
-      s.append(svg("text", { x: x(i), y: Hh - 8, class: "axis", "text-anchor": "middle" }, l));
-    });
-    const path = (v) => v.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p).toFixed(1)}`).join(" ");
-    const order = series.map((_, i) => i).sort((a, b) => (colorOf(series[a].key) ? 1 : 0) - (colorOf(series[b].key) ? 1 : 0));
-    for (const i of order) {                       // grey context first, coloured highlights on top
-      const c = colorOf(series[i].key);
-      s.append(svg("path", { d: path(vals[i]), class: "ln" + (c ? " hi" : ""), style: c ? `stroke: var(${c})` : null }));
-      if (c) s.append(svg("circle", { cx: x(n - 1), cy: y(vals[i][n - 1]), r: 4, class: "sm-dot", style: `fill: var(${c})` }));
-    }
-    // end labels: keep 13px apart; a leader line connects a nudged label to its curve
-    const ends = series.map((sr, i) => ({ i, y0: y(vals[i][n - 1]), y: y(vals[i][n - 1]) })).sort((a, b) => a.y0 - b.y0);
-    for (let k = 1; k < ends.length; k++) ends[k].y = Math.max(ends[k].y, ends[k - 1].y + 13);
-    const over = ends.length ? ends[ends.length - 1].y - (Hh - padB) : 0;
+  // end labels kept >= 13px apart within [lo, hi]
+  function spread(ends, lo, hi, gap = 13) {
+    ends.sort((a, b) => a.y0 - b.y0);
+    ends.forEach((e, k) => { e.y = k ? Math.max(e.y0, ends[k - 1].y + gap) : Math.max(e.y0, lo); });
+    const over = ends.length ? ends[ends.length - 1].y - hi : 0;
     if (over > 0) for (const e of ends) e.y -= over;
-    for (let k = ends.length - 2; k >= 0; k--) ends[k].y = Math.min(ends[k].y, ends[k + 1].y - 13);
-    for (const e of ends) {
-      const sr = series[e.i], c = colorOf(sr.key), lx = x1 + 10;
-      if (Math.abs(e.y - e.y0) > 2) s.append(svg("path", { d: `M${x1 + 3},${e.y0} L${lx - 3},${e.y}`, class: "leader" }));
-      s.append(svg("text", { x: lx, y: e.y + 4, class: "end-label" + (c ? " hi" : "") },
-        fit(sr.name, Math.floor((labW - 4) / 6.2)), svg("title", {}, sr.name)));
-    }
-    const cross = svg("line", { y1: padT, y2: Hh - padB, class: "crosshair", visibility: "hidden" });
-    s.append(cross);
-    box.append(s);
-    const tip = tooltip(box);
-    s.addEventListener("pointermove", (ev) => {
-      const r = s.getBoundingClientRect(), px = ((ev.clientX - r.left) / r.width) * W;
-      const i = Math.max(0, Math.min(n - 1, Math.round(((px - padL) / (x1 - padL)) * (n - 1))));
-      cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("visibility", "visible");
-      const rows = series.map((sr, k) => ({ sr, v: vals[k][i] })).sort((a, b) => b.v - a.v);
-      const b = box.getBoundingClientRect();
-      tip.show(ev.clientX - b.left, ev.clientY - b.top, [
-        H.el("div", { class: "tip-head", text: `${labels[i]} · 3-month average` }),
-        ...rows.map(({ sr, v }) => tipRow(fmt(v), sr.name, colorOf(sr.key) || "--viz-context")),
-        totals ? H.el("div", { class: "tip-foot", text: `${totals[i].toLocaleString()} new papers that month in all` }) : null]);
-    });
-    s.addEventListener("pointerleave", () => { tip.hide(); cross.setAttribute("visibility", "hidden"); });
-    return box;
+    for (let k = ends.length - 2; k >= 0; k--) ends[k].y = Math.min(ends[k].y, ends[k + 1].y - gap);
+    return ends;
   }
 
-  function compareView(T) {
-    const labels = T.series_months.map(mLabel);
-    const totals = T.volume.slice(-labels.length).map((v) => v[1]);
-    const change = (a) => { const k = a.length; const now = (a[k - 1] + a[k - 2] + a[k - 3]) / 3;
-      const then = k >= 15 ? (a[k - 13] + a[k - 14] + a[k - 15]) / 3 : (a[0] + a[1] + a[2]) / 3; return then ? now / then - 1 : 0; };
-    const sets = {
-      fields: GROUPS.map((g) => T.groups.find((x) => x.name === g)).filter(Boolean)
-        .map((g) => ({ key: g.name, name: g.name, count: g.counts, share: g.series })),
-      directions: T.directions.filter((d) => d.status !== "steady").sort((a, b) => Math.abs(b.z_prev) - Math.abs(a.z_prev)).slice(0, 8)
-        .map((d) => ({ key: d.id, name: d.name, count: d.counts, share: d.series })),
+  // One-sentence findings, written from the numbers, that title each chart.
+  function findings(T) {
+    const D = T.directions;
+    const up = D.filter((d) => d.status === "rising" || d.status === "new").sort((a, b) => (b.rel_year ?? -9) - (a.rel_year ?? -9));
+    const down = D.filter((d) => d.status === "fading").sort((a, b) => (a.rel_prev ?? 9) - (b.rel_prev ?? 9));
+    const win = span3(T.window);
+    const list = (arr, k, f) => arr.slice(0, k).map((d) => `${short(d.name)} (${f(d)})`).join(", ");
+    const med = D.map((d) => d.share).sort((a, b) => a - b)[Math.floor(D.length / 2)];
+    const quad = (pred) => D.filter((d) => d.rel_year != null && pred(d)).sort((a, b) => Math.abs(b.rel_year) - Math.abs(a.rel_year));
+    const emerging = quad((d) => d.share < med && d.rel_year >= 0.5);
+    const mainstream = quad((d) => d.share >= med && d.rel_year >= 0.25);
+    const maturing = quad((d) => d.share >= med && d.rel_year <= -0.15);
+    const hot = D.map((d) => { const s = d.series, k = s.length, avg = s.reduce((a, b) => a + b, 0) / k;
+      return { d, r: avg ? (s[k - 1] + s[k - 2] + s[k - 3]) / 3 / avg - 1 : 0 }; }).sort((a, b) => b.r - a.r);
+    const t0 = (T.terms_up || [])[0];
+    const sigCats = T.news ? T.news.categories.filter((c) => significant(c.z_prev, c.share_prev ? c.share / c.share_prev - 1 : null)) : [];
+    return {
+      board: up.length || down.length
+        ? `${up.length} of ${D.length} directions are rising and ${down.length} fading in ${win}. Fastest growth over a year: ${list(up, 2, (d) => times(d.rel_year))}` +
+          (down.length ? `; fading: ${list(down, 2, (d) => pp(d.rel_prev) + " in 3 months")}.` : ".")
+        : `No direction moved beyond noise level in ${win}.`,
+      growth: up.length
+        ? `Relative to all new papers, ${list(up, 3, (d) => times(d.rel_year))} grew fastest over the past year` +
+          (down.length ? `, while ${short(down[0].name)} fell to ${times(down[0].rel_year)}.` : ".")
+        : "No direction grew beyond noise level over the past year.",
+      map: [emerging.length ? `Emerging: ${emerging.slice(0, 3).map((d) => short(d.name)).join(", ")}` : "",
+        mainstream.length ? `growing mainstream: ${mainstream.slice(0, 2).map((d) => short(d.name)).join(", ")}` : "",
+        maturing.length ? `maturing: ${maturing.slice(0, 2).map((d) => short(d.name)).join(", ")}` : ""].filter(Boolean).join("; ") + ".",
+      heat: `In the last 3 months ${short(hot[0].d.name)} and ${short(hot[1].d.name)} ran furthest above their usual level; ` +
+        `${short(hot[hot.length - 1].d.name)} ran furthest below.`,
+      terms: t0 ? `'${t0.term}' appeared in ${t0.now} titles in ${win}, ${((t0.now + 5) / (t0.prev + 5)).toFixed(1)}× the previous 3 months, from ${t0.teams} teams.`
+        : "No title phrase moved beyond noise level.",
+      industry: !T.news ? "" : sigCats.length
+        ? `${sigCats.map((c) => `${c.name} (${pp(c.share / c.share_prev - 1)})`).join(", ")} ${sigCats.length > 1 ? "are the only significant shifts" : "is the only significant shift"} in news coverage; every other category moved within noise.`
+        : "No news category moved beyond noise level.",
     };
-    if (!sets.directions.length) sets.directions = T.directions.slice(0, 8).map((d) => ({ key: d.id, name: d.name, count: d.counts, share: d.series }));
-    const state = { set: "fields", y: "count", hi: {} };
-    // a field keeps its usual dashboard colour when that colour is one of the 3 safe highlight colours
-    const own = (key) => (state.set === "fields" && HI.includes(GVAR[key]) ? GVAR[key] : null);
-    const assign = (m, key) => { const used = new Set(m.values()); const o = own(key);
-      m.set(key, o && !used.has(o) ? o : HI.find((c) => !used.has(c))); };
-    for (const [k, list] of Object.entries(sets)) {     // default highlights: the 3 biggest movers in share over a year
-      state.set = k;
-      state.hi[k] = new Map();
-      for (const sr of list.slice().sort((a, b) => Math.abs(change(b.share)) - Math.abs(change(a.share))).slice(0, 3)) assign(state.hi[k], sr.key);
-    }
-    state.set = "fields";
-    const root = H.el("div"), legendBox = H.el("div", { class: "line-legend" }), chartBox = H.el("div"), tableBox = H.el("div");
-    const colorOf = (key) => state.hi[state.set].get(key) || null;
-    const toggle = (key) => {
-      const m = state.hi[state.set];
-      if (m.has(key)) m.delete(key);
-      else {
-        if (m.size >= 3) m.delete(m.keys().next().value);     // replace the oldest highlight; colours stay with their curve
-        assign(m, key);
-      }
-      draw();
-    };
+  }
+
+  // ---------------------------------------------------------------- leaderboard: every direction, ticker-style
+  function sparkline(values, color, w = 96, h = 22) {
+    const v = roll3(values), lo = Math.min(...v), hi = Math.max(...v), n = v.length;
+    const x = (i) => 2 + (i * (w - 6)) / Math.max(1, n - 1), y = (p) => 2 + (1 - (p - lo) / ((hi - lo) || 1)) * (h - 4);
+    return svg("svg", { viewBox: `0 0 ${w} ${h}`, width: w, height: h, class: "spark", "aria-hidden": "true" },
+      svg("path", { d: v.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p).toFixed(1)}`).join(" "), style: `stroke: var(${color})` }),
+      svg("circle", { cx: x(n - 1), cy: y(v[n - 1]), r: 2.5, style: `fill: var(${color})` }));
+  }
+  function statusTag(d) {
+    return H.el("span", { class: `st ${d.status}`, title: STATUS[d.status][1] }, STATUS[d.status][0],
+      H.el("span", { class: "sr-only", text: STATUS[d.status][1] }));
+  }
+  function leaderboard(T) {
+    const root = H.el("div"), body = H.el("div");
+    const D = T.directions;
+    const n = (s) => D.filter((d) => (s === "rising" ? d.status === "rising" || d.status === "new" : d.status === s)).length;
+    const st = { show: "moving", sort: "momentum" };
+    const sorts = { momentum: (a, b) => b.z_prev - a.z_prev, year: (a, b) => (b.rel_year ?? -9) - (a.rel_year ?? -9), size: (a, b) => b.share - a.share };
     const draw = () => {
-      const list = sets[state.set];
-      legendBox.replaceChildren(...list.map((s) => H.el("button", { class: "lg" + (colorOf(s.key) ? " on" : ""),
-        "aria-pressed": String(Boolean(colorOf(s.key))), onclick: () => toggle(s.key) },
-        H.el("i", { style: `background: var(${colorOf(s.key) || "--viz-context"})` }), s.name)));
-      chartBox.replaceChildren(lineChart(list, labels, state.y, colorOf, totals));
-      tableBox.replaceChildren(table(`${state.y === "share" ? "Share of new papers" : "Papers per month"} by series`, ["Series", ...labels],
-        list.map((s) => [s.name, ...s[state.y].map((v) => (state.y === "share" ? pct(v, 2) : String(v)))])));
+      const rows = D.filter((d) => st.show === "all" || (st.show === "moving" ? d.status !== "steady"
+        : st.show === "rising" ? d.status === "rising" || d.status === "new" : d.status === st.show))
+        .sort(sorts[st.sort]);
+      body.replaceChildren(H.el("div", { class: "table-wrap" }, H.el("table", { class: "board" },
+        H.el("thead", {}, H.el("tr", {}, ["Direction", "24 months", "Share now", "3 months", "1 year", "Attention"].map((h, i) =>
+          H.el("th", { class: ["", "c-spark", "num", "num c-3m", "num", "num c-att"][i], text: h })))),
+        H.el("tbody", {}, rows.map((d) => H.el("tr", { class: d.status, onclick: (e) => { if (!e.target.closest("a")) location.hash = dirHref(d.id); } },
+          H.el("td", { class: "c-name" }, statusTag(d), H.el("a", { href: dirHref(d.id), text: d.name }), H.el("span", { class: "c-field", text: d.group })),
+          H.el("td", { class: "c-spark" }, sparkline(d.series, STCOL[d.status])),
+          H.el("td", { class: "num", text: pct(d.share, 2) }),
+          H.el("td", { class: "num c-3m", text: pp(d.rel_prev) }),
+          H.el("td", { class: "num", text: times(d.rel_year) }),
+          H.el("td", { class: "num c-att", text: d.attention == null ? "–" : `${pct(d.attention, 1)} ${d.attention_prev == null ? "" : d.attention > d.attention_prev * 1.15 ? "↑" : d.attention < d.attention_prev / 1.15 ? "↓" : "·"}` })))))));
     };
-    root.append(
-      H.el("div", { class: "line-controls" },
-        segmented([["fields", "Fields"], ["directions", "Moving directions"]], "fields", (k) => { state.set = k; draw(); }, "Series"),
-        segmented([["count", "Papers"], ["share", "Share of all papers"]], "count", (k) => { state.y = k; draw(); }, "Y axis")),
-      legendBox, chartBox, tableBox);
+    root.append(H.el("div", { class: "line-controls" },
+      segmented([["moving", `Moving ${n("rising") + n("fading")}`], ["rising", `Rising ${n("rising")}`], ["fading", `Fading ${n("fading")}`],
+        ["all", `All ${D.length}`]], "moving", (k) => { st.show = k; draw(); }, "Show"),
+      segmented([["momentum", "Momentum"], ["year", "1-year growth"], ["size", "Size"]], "momentum", (k) => { st.sort = k; draw(); }, "Sort by")),
+      body,
+      H.el("p", { class: "board-key", text: "Share now = share of all new papers in the last 3 months. 3 months = change against the 3 months before. " +
+        "1 year = share now as a multiple of a year earlier. Attention = share of Hugging Face upvotes (↑/↓ = moved over 15%). " +
+        "↑ rising, ↓ fading and ★ new passed the noise filters; · is noise-level movement. Select a row for its page." }));
     draw();
     return root;
   }
 
-  // ---------------------------------------------------------------- direction movers (3 months vs previous 3)
-  function directionBars(dirs, all) {
-    const box = H.el("div", { class: "viz-plot" });
-    const flagged = dirs.filter((d) => d.status !== "steady");
-    const rows = (all ? dirs : flagged).slice().sort((a, b) => (b.rel_prev || 0) - (a.rel_prev || 0));
-    if (!rows.length) { box.append(H.el("p", { class: "note", text: "No direction moved beyond noise level in this window." })); return box; }
-    const W = Math.max(320, lastWidth()), labelW = Math.min(270, W * 0.42), rh = 24, valW = Math.min(175, W * 0.3);
-    const maxAbs = Math.max(0.25, ...rows.map((d) => Math.abs(d.rel_prev || 0)));
-    const half = (W - labelW - valW) / 2, mid = labelW + half;
-    const Hh = rows.length * rh + 22;
+  // ---------------------------------------------------------------- growth since a year ago (indexed, log scale)
+  function growthChart(T) {
+    const root = H.el("div"), chartBox = H.el("div");
+    const D = T.directions, n = T.series_months.length, b = Math.max(0, n - 13);
+    const labels = T.series_months.slice(b).map(mLabel);
+    const up = D.filter((d) => (d.status === "rising" || d.status === "new") && d.rel_year != null).sort((a, c) => c.rel_year - a.rel_year).slice(0, 6);
+    const down = D.filter((d) => d.status === "fading" && d.rel_year != null).sort((a, c) => a.rel_year - c.rel_year).slice(0, 3);
+    const chosen = new Set([...up, ...down].map((d) => d.id));
+    const index = (d) => { const r = roll3(d.series).slice(b), base = r[0] || 1e-9; return r.map((v) => Math.min(16, Math.max(1 / 8, v / base))); };
+    const draw = () => {
+      const list = D.filter((d) => chosen.has(d.id));
+      const W = Math.max(320, lastWidth()), Hh = 340, padL = 44, labW = Math.min(190, W * 0.3), padT = 12, padB = 28, x1 = W - labW - 8;
+      const series = list.map((d) => ({ d, v: index(d) }));
+      const all = series.flatMap((s) => s.v);
+      const lo = Math.log2(Math.min(0.5, ...all)), hi = Math.log2(Math.max(2, ...all));
+      const x = (i) => padL + (i * (x1 - padL)) / Math.max(1, labels.length - 1);
+      const y = (v) => padT + (1 - (Math.log2(v) - lo) / (hi - lo)) * (Hh - padT - padB);
+      const s = svg("svg", { viewBox: `0 0 ${W} ${Hh}`, width: "100%", height: Hh, role: "img",
+        "aria-label": "Each direction's share of new papers as a multiple of its share a year earlier (log scale)" });
+      for (let e = Math.ceil(lo); e <= Math.floor(hi); e++) {
+        const v = 2 ** e;
+        s.append(svg("line", { x1: padL, x2: x1, y1: y(v), y2: y(v), class: e === 0 ? "base" : "zero" }));
+        s.append(svg("text", { x: padL - 6, y: y(v) + 4, class: "axis", "text-anchor": "end" }, v >= 1 ? `${v}×` : `${v}×`));
+      }
+      labels.forEach((l, i) => { if (!((labels.length - 1 - i) % 3)) s.append(svg("text", { x: x(i), y: Hh - 8, class: "axis", "text-anchor": "middle" }, l)); });
+      const col = (d) => ((d.rel_year || 0) >= 0 ? "--div-warm" : "--div-cool");
+      for (const { d, v } of series) {
+        s.append(svg("path", { d: v.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p).toFixed(1)}`).join(" "), class: "ln hi", style: `stroke: var(${col(d)})` }));
+        s.append(svg("circle", { cx: x(v.length - 1), cy: y(v[v.length - 1]), r: 4, class: "sm-dot", style: `fill: var(${col(d)})` }));
+      }
+      const ends = spread(series.map((sr, i) => ({ i, y0: y(sr.v[sr.v.length - 1]) })), padT + 4, Hh - padB);
+      for (const e of ends) {
+        const { d, v } = series[e.i], lx = x1 + 10;
+        if (Math.abs(e.y - e.y0) > 2) s.append(svg("path", { d: `M${x1 + 3},${e.y0} L${lx - 3},${e.y}`, class: "leader" }));
+        const a = svg("a", { href: dirHref(d.id) }, svg("text", { x: lx, y: e.y + 4, class: "end-label hi" },
+          `${fit(short(d.name), Math.floor((labW - 40) / 6.2))} ${times(v[v.length - 1] - 1)}`, svg("title", {}, d.name)));
+        s.append(a);
+      }
+      const cross = svg("line", { y1: padT, y2: Hh - padB, class: "crosshair", visibility: "hidden" });
+      s.append(cross);
+      const box = H.el("div", { class: "viz-plot" }, s);
+      const tip = tooltip(box);
+      s.addEventListener("pointermove", (ev) => {
+        const r = s.getBoundingClientRect(), px = ((ev.clientX - r.left) / r.width) * W;
+        const i = Math.max(0, Math.min(labels.length - 1, Math.round(((px - padL) / (x1 - padL)) * (labels.length - 1))));
+        cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("visibility", "visible");
+        const bb = box.getBoundingClientRect();
+        tip.show(ev.clientX - bb.left, ev.clientY - bb.top, [H.el("div", { class: "tip-head", text: `${labels[i]} · vs ${labels[0]}` }),
+          ...series.map((sr) => ({ sr, v: sr.v[i] })).sort((p, q) => q.v - p.v).map(({ sr, v }) => tipRow(times(v - 1), short(sr.d.name), col(sr.d)))]);
+      });
+      s.addEventListener("pointerleave", () => { tip.hide(); cross.setAttribute("visibility", "hidden"); });
+      chartBox.replaceChildren(box);
+    };
+    const pick = H.el("select", { class: "period-select", "aria-label": "Add or remove a direction",
+      onchange: (e) => { const id = e.target.value; if (id) { chosen.has(id) ? chosen.delete(id) : chosen.add(id); draw(); } e.target.value = ""; } },
+      H.el("option", { value: "", text: "Add or remove a direction…" }),
+      D.slice().sort((a, c) => a.name.localeCompare(c.name)).map((d) => H.el("option", { value: d.id, text: d.name })));
+    root.append(H.el("div", { class: "line-controls" }, pick), chartBox,
+      table("Share of new papers as a multiple of a year earlier", ["Direction", ...labels],
+        D.filter((d) => chosen.has(d.id)).map((d) => [d.name, ...index(d).map((v) => times(v - 1))])));
+    draw();
+    return root;
+  }
+
+  // ---------------------------------------------------------------- momentum map: size vs growth, four quadrants
+  function momentumMap(T) {
+    const D = T.directions.filter((d) => d.rel_year != null && d.share > 0);
+    const W = Math.max(320, lastWidth()), Hh = Math.min(460, Math.max(340, W * 0.55)), padL = 48, padR = 16, padT = 16, padB = 40;
+    const xs = D.map((d) => Math.log10(d.share)), ys = D.map((d) => Math.log2(Math.max(1 / 8, Math.min(16, 1 + d.rel_year))));
+    const x0 = Math.min(...xs) - 0.1, x1 = Math.max(...xs) + 0.1, y0 = Math.min(-1, ...ys) - 0.2, y1 = Math.max(2, ...ys) + 0.3;
+    const X = (v) => padL + ((v - x0) / (x1 - x0)) * (W - padL - padR), Y = (v) => padT + (1 - (v - y0) / (y1 - y0)) * (Hh - padT - padB);
+    const med = D.map((d) => d.share).sort((a, b) => a - b)[Math.floor(D.length / 2)];
     const s = svg("svg", { viewBox: `0 0 ${W} ${Hh}`, width: "100%", height: Hh, role: "img",
-      "aria-label": "Change in each direction's share of new papers, last 3 months vs the 3 before" });
-    s.append(svg("line", { x1: mid, x2: mid, y1: 0, y2: Hh - 18, class: "zero" }));
+      "aria-label": "Each direction's size (share of new papers) against its growth over a year" });
+    for (const t of [0.0005, 0.001, 0.003, 0.01, 0.03, 0.1]) {
+      const v = Math.log10(t);
+      if (v < x0 || v > x1) continue;
+      s.append(svg("line", { x1: X(v), x2: X(v), y1: padT, y2: Hh - padB, class: "zero" }));
+      s.append(svg("text", { x: X(v), y: Hh - padB + 16, class: "axis", "text-anchor": "middle" }, pct(t, t < 0.01 ? 1 : 0)));
+    }
+    for (let e = Math.ceil(y0); e <= Math.floor(y1); e++) {
+      s.append(svg("line", { x1: padL, x2: W - padR, y1: Y(e), y2: Y(e), class: e === 0 ? "base" : "zero" }));
+      s.append(svg("text", { x: padL - 6, y: Y(e) + 4, class: "axis", "text-anchor": "end" }, `${2 ** e}×`));
+    }
+    s.append(svg("line", { x1: X(Math.log10(med)), x2: X(Math.log10(med)), y1: padT, y2: Hh - padB, class: "base" }));
+    s.append(svg("text", { x: (padL + W - padR) / 2, y: Hh - 6, class: "axis", "text-anchor": "middle" }, "size: share of all new papers, last 3 months (log scale) →"));
+    const q = [["Emerging", padL + 6, padT + 14, "start"], ["Growing mainstream", W - padR - 6, padT + 14, "end"],
+      ["Fading niche", padL + 6, Hh - padB - 8, "start"], ["Maturing", W - padR - 6, Hh - padB - 8, "end"]];
+    for (const [t, qx, qy, anchor] of q) s.append(svg("text", { x: qx, y: qy, class: "quad", "text-anchor": anchor }, t));
+    const box = H.el("div", { class: "viz-plot" });
     const tip = tooltip(box);
-    rows.forEach((d, i) => {
-      const yy = 2 + i * rh, r = d.rel_prev || 0, len = Math.max(3, (Math.abs(r) / maxAbs) * (half - 6));
-      const col = d.status === "steady" ? "--viz-grid-strong" : r >= 0 ? "--div-warm" : "--div-cool";
-      const d0 = r >= 0 ? `M${mid},${yy + 4} h${len - 4} a4,4 0 0 1 4,4 v6 a4,4 0 0 1 -4,4 h${-(len - 4)} z`
-        : `M${mid},${yy + 4} h${-(len - 4)} a4,4 0 0 0 -4,4 v6 a4,4 0 0 0 4,4 h${len - 4} z`;
-      const g = svg("g", { class: "bar-row", tabindex: 0 },
-        svg("rect", { x: 0, y: yy, width: W, height: rh, class: "hit" }),
-        svg("circle", { cx: 5, cy: yy + 11, r: 4, style: `fill: var(${GVAR[d.group] || "--viz-news"})` }),
-        svg("text", { x: 14, y: yy + 15, class: "row-label" }, `${STATUS[d.status][0]} ${fit(d.name, Math.floor((labelW - 22) / 6.4))}`),
-        svg("path", { d: d0, style: `fill: var(${col})` }),
-        svg("text", { x: W - 2, y: yy + 15, class: "val", "text-anchor": "end" },
-          W < 560 ? pp(d.rel_prev) : `${pct(d.share, 2)} · ${pp(d.rel_prev)} · yr ${pp(d.rel_year)}`));
-      const show = (ev) => {
-        const b = box.getBoundingClientRect(), cr = g.getBoundingClientRect();
-        tip.show((ev && ev.clientX ? ev.clientX : cr.left + 40) - b.left, (ev && ev.clientY ? ev.clientY : cr.top) - b.top, [
+    const placed = [];
+    const order = D.slice().sort((a, b) => (a.status === "steady") - (b.status === "steady"));
+    for (const d of order.slice().reverse()) {    // flagged dots drawn last (on top)
+      const cx = X(Math.log10(d.share)), cy = Y(Math.log2(Math.max(1 / 8, Math.min(16, 1 + d.rel_year))));
+      const g = svg("a", { href: dirHref(d.id), class: "dot", "aria-label": `${d.name}: ${pct(d.share, 2)}, ${times(d.rel_year)} vs a year ago` },
+        svg("circle", { cx, cy, r: 11, class: "hit" }),
+        svg("circle", { cx, cy, r: d.status === "steady" ? 4 : 5.5, class: "mark", style: `fill: var(${STCOL[d.status]})` }));
+      const show = (ev) => { const bb = box.getBoundingClientRect(), cr = g.getBoundingClientRect();
+        tip.show((ev && ev.clientX ? ev.clientX : cr.right) - bb.left, (ev && ev.clientY ? ev.clientY : cr.top) - bb.top, [
           H.el("div", { class: "tip-head", text: `${d.name} · ${STATUS[d.status][1]}` }),
-          tipRow(pct(d.share, 2), `of new papers (${d.n.toLocaleString()} papers, ${d.teams.toLocaleString()} teams)`),
-          tipRow(pp(d.rel_prev), `vs previous 3 months (${pct(d.share_prev, 2)}; z ${d.z_prev})`),
-          tipRow(pp(d.rel_year), `vs a year earlier (${d.share_year_ago == null ? "–" : pct(d.share_year_ago, 2)})`),
-          tipRow(`${d.months_above}/3`, "months above the earlier level"),
-          d.attention != null ? tipRow(pct(d.attention, 1), `of Hugging Face upvotes (was ${d.attention_prev == null ? "–" : pct(d.attention_prev, 1)})`) : null]);
-      };
+          tipRow(pct(d.share, 2), "of new papers (last 3 months)"), tipRow(times(d.rel_year), "vs a year earlier"),
+          tipRow(pp(d.rel_prev), "vs the previous 3 months")]); };
       g.addEventListener("pointermove", show);
       g.addEventListener("focus", () => show(null));
       g.addEventListener("pointerleave", () => tip.hide());
       g.addEventListener("blur", () => tip.hide());
       s.append(g);
-    });
-    s.append(svg("text", { x: mid, y: Hh - 4, class: "axis", "text-anchor": "middle" }, "change in share of new papers, last 3 months vs the 3 before"));
-    box.append(s);
+    }
+    // labels: flagged directions and the largest ones, skipped when they would overlap
+    for (const d of order) {
+      if (d.status === "steady" && d.share < 0.025) continue;
+      const cx = X(Math.log10(d.share)), cy = Y(Math.log2(Math.max(1 / 8, Math.min(16, 1 + d.rel_year))));
+      const label = fit(short(d.name), 26), w = label.length * 6.1, right = cx + 8 + w < W - padR;
+      const bx = right ? cx + 8 : cx - 8 - w, by = cy - 6;
+      if (placed.some((p) => bx < p.x + p.w && bx + w > p.x && by < p.y + 13 && by + 13 > p.y)) continue;
+      placed.push({ x: bx, y: by, w });
+      s.append(svg("text", { x: right ? cx + 8 : cx - 8, y: cy + 4, class: "map-label" + (d.status === "steady" ? "" : " hi"),
+        "text-anchor": right ? "start" : "end" }, label));
+    }
+    box.prepend(s);
     return box;
+  }
+
+  // ---------------------------------------------------------------- direction page (#/trends/direction/<id>)
+  function trendLine(labels, monthly, fmt, color, extraTip) {
+    const W = Math.max(320, lastWidth()), Hh = 240, padL = 50, padR = 12, padT = 12, padB = 28, n = labels.length;
+    const smooth = roll3(monthly), top = niceTicks(Math.max(...monthly) * 1.08);
+    const max = top[top.length - 1] || 1;
+    const x = (i) => padL + (i * (W - padL - padR)) / Math.max(1, n - 1), y = (v) => padT + (1 - v / max) * (Hh - padT - padB);
+    const s = svg("svg", { viewBox: `0 0 ${W} ${Hh}`, width: "100%", height: Hh, role: "img", "aria-label": "Monthly values with a 3-month average" });
+    for (const t of top) {
+      s.append(svg("line", { x1: padL, x2: W - padR, y1: y(t), y2: y(t), class: "zero" }));
+      s.append(svg("text", { x: padL - 6, y: y(t) + 4, class: "axis", "text-anchor": "end" }, fmt(t)));
+    }
+    labels.forEach((l, i) => { if (!((n - 1 - i) % 3)) s.append(svg("text", { x: x(i), y: Hh - 8, class: "axis", "text-anchor": "middle" }, l)); });
+    const path = (v) => v.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p).toFixed(1)}`).join(" ");
+    s.append(svg("path", { d: `${path(smooth)} L${x(n - 1)},${y(0)} L${x(0)},${y(0)} Z`, class: "sm-area", style: `fill: var(${color})` }));
+    s.append(svg("path", { d: path(monthly), class: "ln" }));
+    s.append(svg("path", { d: path(smooth), class: "ln hi", style: `stroke: var(${color})` }));
+    s.append(svg("circle", { cx: x(n - 1), cy: y(smooth[n - 1]), r: 4, class: "sm-dot", style: `fill: var(${color})` }));
+    const cross = svg("line", { y1: padT, y2: Hh - padB, class: "crosshair", visibility: "hidden" });
+    s.append(cross);
+    const box = H.el("div", { class: "viz-plot" }, s);
+    const tip = tooltip(box);
+    s.addEventListener("pointermove", (ev) => {
+      const r = s.getBoundingClientRect(), px = ((ev.clientX - r.left) / r.width) * W;
+      const i = Math.max(0, Math.min(n - 1, Math.round(((px - padL) / (W - padL - padR)) * (n - 1))));
+      cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("visibility", "visible");
+      const bb = box.getBoundingClientRect();
+      tip.show(ev.clientX - bb.left, ev.clientY - bb.top, [H.el("div", { class: "tip-head", text: labels[i] }),
+        tipRow(fmt(smooth[i]), "3-month average", color), tipRow(fmt(monthly[i]), "that month", "--viz-context"), extraTip ? extraTip(i) : null]);
+    });
+    s.addEventListener("pointerleave", () => { tip.hide(); cross.setAttribute("visibility", "hidden"); });
+    return box;
+  }
+
+  async function directionPage(main, id, T) {
+    let d;
+    try { d = await H.getJSON(`data/directions/${id}.json`); } catch (e) {
+      main.replaceChildren(H.el("p", { class: "note" }, "That direction does not exist. ", H.el("a", { href: "#/trends", text: "Back to Trends" })));
+      return;
+    }
+    const labels = d.series_months.map(mLabel), win = span3(d.window);
+    const verdict = { rising: "Rising", new: "New and rising", fading: "Fading", steady: "Steady (movement within noise)" }[d.status];
+    const sentence = `${verdict}: ${pct(d.share, 2)} of all new arXiv papers in ${win} (${d.n.toLocaleString()} papers from ${d.teams.toLocaleString()} teams), ` +
+      `${pp(d.rel_prev)} against the previous 3 months and ${times(d.rel_year)} its share a year earlier.`;
+    const tile = (label, value, sub) => H.el("div", { class: "tile" }, H.el("span", { class: "tile-label", text: label }),
+      H.el("strong", { text: value }), sub ? H.el("span", { class: "tile-sub", text: sub }) : null);
+    const color = GVAR[d.group] || "--viz-news";
+    const related = T ? T.directions.filter((x) => x.group === d.group && x.id !== d.id).sort((a, b) => b.share - a.share) : [];
+    const out = [
+      H.el("div", { class: "day-head" }, H.el("div", {},
+        H.el("a", { class: "back", href: "#/trends", text: "← Trends" }),
+        H.el("h1", { text: d.name }),
+        H.el("div", { class: "day-meta" }, H.el("span", { class: `st ${d.status}`, text: `${STATUS[d.status][0]} ${STATUS[d.status][1]}` }), ` · ${d.group}`))),
+      H.el("p", { class: "day-summary", text: sentence }),
+      H.el("div", { class: "tiles" },
+        tile("Share of new papers", pct(d.share, 2), `last 3 months (${win})`),
+        tile("vs previous 3 months", pp(d.rel_prev), `z ${d.z_prev}; above that level in ${d.months_above}/3 months`),
+        tile("vs a year earlier", times(d.rel_year), d.share_year_ago == null ? "" : `was ${pct(d.share_year_ago, 2)}`),
+        tile("Teams", d.teams.toLocaleString(), "distinct last authors, last 3 months"),
+        tile("Share of upvotes", d.attention == null ? "–" : pct(d.attention, 1), d.attention_prev == null ? "Hugging Face" : `was ${pct(d.attention_prev, 1)} (Hugging Face)`)),
+      H.el("section", { class: "card viz-card" },
+        H.el("h3", { text: "Share of all new arXiv papers, by month" }),
+        H.el("p", { class: "viz-sub", text: "Bold line: 3-month average; thin line: each month. Titles are matched to the direction by keywords." }),
+        trendLine(labels, d.series, (v) => pct(v, 2), color, (i) => tipRow(String(d.counts[i]), "papers that month")),
+        H.el("h3", { class: "sub-h", text: "Share of Hugging Face upvotes, by month" }),
+        H.el("p", { class: "viz-sub", text: "Community attention: the share of all Daily Papers upvotes that went to papers in this direction." }),
+        trendLine(labels, d.att_series, (v) => pct(v, 1), color)),
+      H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: `Most-upvoted papers, ${win}` })),
+        d.hf_top.length ? H.el("ol", { class: "rank" }, d.hf_top.map(([pid, title, up, date]) => H.el("li", {},
+          H.el("a", { href: `https://arxiv.org/abs/${pid}`, target: "_blank", rel: "noopener", text: title }),
+          H.el("span", { class: "rank-meta", text: `${up} upvotes · ${H.fmtShort(date)}` })))) : H.el("p", { class: "note", text: "No Hugging Face papers in this window." })),
+      H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "In our digests" })),
+        d.featured.length ? H.el("ol", { class: "rank" }, d.featured.map((f) => H.el("li", {},
+          H.el("a", { href: `#/day/${f.date}/${f.id}`, text: f.title }), H.el("span", { class: "rank-meta", text: H.fmtShort(f.date) })))) :
+          H.el("p", { class: "note", text: "We have not featured a paper in this direction yet." })),
+    ];
+    if (related.length) out.push(H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: `Other directions in ${d.group}` })),
+      H.el("div", { class: "chips" }, related.map((x) => H.el("a", { class: "chip", href: dirHref(x.id) }, `${STATUS[x.status][0]} ${x.name}`)))));
+    main.replaceChildren(...out);
+    window.scrollTo({ top: 0 });
   }
 
   function termBars(up, down) {
@@ -552,66 +692,49 @@
 
   function chartsCard(T, idx, S) {
     const months = T.series_months.map(mLabel);
-    const dirs = T.directions;
-    const flagged = dirs.filter((d) => d.status !== "steady");
-    const sub = H.el("p", { class: "viz-sub" }), body = H.el("div"), extra = H.el("div", { class: "viz-extra" });
+    const dirs = T.directions, F = findings(T);
+    const lead = H.el("p", { class: "finding" }), sub = H.el("p", { class: "viz-sub" }), body = H.el("div");
     const winTxt = span3(T.window);
-    let showAll = false;
+    const set = (finding, how, ...nodes) => { lead.textContent = finding; sub.textContent = how; body.replaceChildren(...nodes); };
     const views = {
-      directions: () => {
-        sub.textContent = `${dirs.length} research directions across all ${T.n_papers.toLocaleString()} new arXiv papers of ${winTxt}, ` +
-          `compared with the 3 months before and a year earlier. Coloured bars passed the noise filters (significant, held for 2+ months, ` +
-          `15+ teams, not contradicted a year on); grey bars are noise-level movement.`;
-        const draw = () => body.replaceChildren(directionBars(dirs, showAll));
-        extra.replaceChildren(segmented([["flagged", `Moving (${flagged.length})`], ["all", `All ${dirs.length}`]], showAll ? "all" : "flagged",
-          (k) => { showAll = k === "all"; draw(); }, "Directions shown"));
-        draw();
-      },
-      trends: () => {
-        sub.textContent = "Papers per month for each field (papers whose titles match any of its directions) or for the directions " +
-          "that are moving, as a 3-month rolling average. Switch to Share to factor out arXiv's own growth. Click names to highlight up to 3.";
-        body.replaceChildren(compareView(T));
-        extra.replaceChildren();
-      },
+      board: () => set(F.board, `${dirs.length} research directions, measured over every new arXiv paper in our categories ` +
+        `(${T.n_papers.toLocaleString()} in ${winTxt}). Each row's line is its share of new papers over 24 months; "All" lists the steady ones too.`, leaderboard(T)),
+      growth: () => set(F.growth, "Each line is a direction's share of new papers divided by its share a year ago: above 1× it is gaining " +
+        "ground relative to the whole field, below 1× losing it. Log scale, so 2× and 0.5× are equally far from 1×. Warm lines are rising directions, cool lines fading ones.",
+        growthChart(T)),
+      map: () => set(F.map, "Each dot is a direction: further right = a bigger share of new papers, higher up = faster growth over a year. " +
+        "Coloured dots passed the noise filters (warm rising, cool fading). Select a dot for its page.", momentumMap(T)),
       heat: () => {
-        sub.textContent = "Every direction's monthly share of new papers against its own average: warm months ran above its usual level, cool months below.";
-        const rows = GROUPS.flatMap((g) => dirs.filter((d) => d.group === g)).map((d) => ({ label: d.name, color: GVAR[d.group], values: d.series }));
-        body.replaceChildren(heatGrid(rows, months, "Research directions by month"),
+        const rows = GROUPS.flatMap((g) => dirs.filter((d) => d.group === g)).map((d) => ({ label: d.name, color: GVAR[d.group], values: d.series, href: dirHref(d.id) }));
+        set(F.heat, "Every direction's monthly share of new papers against its own 24-month average: warm months ran above its usual level, cool months below.",
+          heatGrid(rows, months, "Research directions by month"),
           table("Monthly share of new papers per direction", ["Direction", ...months], rows.map((r) => [r.label, ...r.values.map((v) => pct(v, 2))])));
-        extra.replaceChildren();
       },
-      terms: () => {
-        sub.textContent = `Title words and phrases whose use changed most in ${winTxt} against the 3 months before, used by many separate teams.`;
-        body.replaceChildren(termBars(T.terms_up, T.terms_down));
-        extra.replaceChildren();
-      },
+      terms: () => set(F.terms, `Title phrases whose use changed most in ${winTxt} against the 3 months before, used by many separate teams.`,
+        termBars(T.terms_up, T.terms_down)),
       industry: () => {
         const N = T.news;
-        if (!N) { body.replaceChildren(H.el("p", { class: "note", text: "Industry statistics are not available yet." })); extra.replaceChildren(); return; }
-        const ml = N.series_months.map(mLabel);
-        sub.textContent = `Share of reputable-outlet AI stories by category, per month (${N.stories.toLocaleString()} stories in ${winTxt}). ` +
-          "The pool comes from fixed news searches, so read the movement, not the level.";
-        const cats = N.categories.slice().sort((a, b) => b.n - a.n);
-        body.replaceChildren(linePanels(cats.map((c) => {
-          const rel = c.share_prev ? c.share / c.share_prev - 1 : null, sig = significant(c.z_prev, rel);
-          return { title: c.name, color: "--viz-news", values: N.category_series[c.name] || [], figure: pct(c.share, 1), unit: "of stories",
-            delta: rel == null ? "" : `${pp(rel)} vs prev 3 mo · ${sig ? "significant" : "within noise"}`, up: (rel || 0) >= 0, quiet: !sig };
-        }).filter((p) => p.values.length), ml),
+        if (!N) return set("", "Industry statistics are not available yet.");
+        const ml = N.series_months.map(mLabel), cats = N.categories.slice().sort((a, b) => b.n - a.n);
+        set(F.industry, `Share of reputable-outlet AI stories by category, per month (${N.stories.toLocaleString()} stories in ${winTxt}). ` +
+          "The pool comes from fixed news searches, so read the movement, not the level.",
+          linePanels(cats.map((c) => {
+            const rel = c.share_prev ? c.share / c.share_prev - 1 : null, sig = significant(c.z_prev, rel);
+            return { title: c.name, color: "--viz-news", values: N.category_series[c.name] || [], figure: pct(c.share, 1), unit: "of stories",
+              delta: rel == null ? "" : `${pp(rel)} vs prev 3 mo · ${sig ? "significant" : "within noise"}`, up: (rel || 0) >= 0, quiet: !sig };
+          }).filter((p) => p.values.length), ml),
           table("Share of stories per category", ["Category", ...ml], cats.map((c) => [c.name, ...(N.category_series[c.name] || []).map((v) => pct(v, 1))])));
-        extra.replaceChildren();
       },
-      featured: () => {
-        sub.textContent = "What our daily digests featured, by date and topic group (our picks, not the field). Select a dot to open it.";
-        body.replaceChildren(constellation(idx.items, S.groupOf));
-        extra.replaceChildren();
-      },
+      featured: () => set("What our daily digests featured: a curated sample, not the field.",
+        "Each dot is a paper or news story from the digests, by date and topic group; bigger dots had more Hugging Face upvotes. Select one to open it.",
+        constellation(idx.items, S.groupOf)),
     };
-    views.trends();
+    views.board();
     return H.el("section", { class: "card viz-card", id: "field-charts" },
       H.el("div", { class: "viz-head" }, H.el("h3", { text: "The field in numbers" }),
-        segmented([["trends", "Trends"], ["directions", "Movers"], ["heat", "Heat map"], ["terms", "Terms"],
-          ["industry", "Industry"], ["featured", "Our picks"]], "trends", (k) => views[k](), "Chart")),
-      H.el("div", { class: "viz-head sub" }, sub, extra), body);
+        segmented([["board", "Leaderboard"], ["growth", "Growth"], ["map", "Momentum map"], ["heat", "Heat map"], ["terms", "Terms"],
+          ["industry", "Industry"], ["featured", "Our picks"]], "board", (k) => views[k](), "Chart")),
+      lead, sub, body);
   }
 
   async function render(main, route, S) {
@@ -619,6 +742,7 @@
     const idx = S.index, sums = (idx.summaries || []).filter((x) => x.kind === "monthly"), weeks = idx.weeks || [];
     let T = null;
     try { T = cache.trends || (cache.trends = await H.getJSON("data/trends.json")); } catch (e) { T = null; }
+    if (route.kind === "direction") return directionPage(main, route.id, T);
     const out = [H.el("div", { class: "day-head" }, H.el("div", {},
       H.el("h1", { text: "Trends" }),
       H.el("div", { class: "day-meta", text: "Where AI research and the industry are heading, measured across the whole field and summarized monthly." })))];
@@ -642,9 +766,15 @@
     if (route.kind === "weekly" && wk) wk.scrollIntoView({ block: "start" }); else window.scrollTo({ top: 0 });
   }
 
+  // Re-render charts only when the width really changes (a scrollbar appearing must not reset the open tab).
+  let lastW = window.innerWidth;
   window.addEventListener("resize", () => {
     clearTimeout(resizeT);
-    resizeT = setTimeout(() => { if (lastArgs && /^#\/trends/.test(location.hash)) render(...lastArgs); }, 250);
+    resizeT = setTimeout(() => {
+      if (Math.abs(window.innerWidth - lastW) < 40) return;
+      lastW = window.innerWidth;
+      if (lastArgs && /^#\/trends/.test(location.hash)) render(...lastArgs);
+    }, 250);
   });
 
   window.AIUTrends = { init(helpers) { H = helpers; }, render };

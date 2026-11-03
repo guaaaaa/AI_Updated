@@ -60,8 +60,8 @@
     const h = location.hash.replace(/^#/, "");
     const m = h.match(/^\/day\/(\d{4}-\d{2}-\d{2})(?:\/([\w.-]+))?/);
     if (m) return { view: "day", date: m[1], item: m[2] || null };
-    const t = h.match(/^\/trends(?:\/(week|month)\/([\w-]+))?/);
-    if (t) return { view: "trends", kind: t[1] ? (t[1] === "week" ? "weekly" : "monthly") : null, id: t[2] || null };
+    const t = h.match(/^\/trends(?:\/(week|month|direction)\/([\w.-]+))?/);
+    if (t) return { view: "trends", kind: t[1] ? { week: "weekly", month: "monthly", direction: "direction" }[t[1]] : null, id: t[2] || null };
     if (h.startsWith("/browse")) {
       const p = new URLSearchParams(h.split("?")[1] || "");
       S.f.type = ["paper", "news"].includes(p.get("type")) ? p.get("type") : "all";
