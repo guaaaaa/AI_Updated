@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T04:04:42+00:00",
+ "updated": "2026-11-03T04:05:44+00:00",
  "days": [
   {
    "date": "2026-11-02",
@@ -2868,7 +2868,7 @@
    "start": "2026-10-01",
    "end": "2026-10-31",
    "published": "2026-11-01",
-   "headline": "Research is shifting from training models to reason toward agents that act, learn from environments and improve themselves, while industry news turns toward safety incidents and the physical cost of compute.",
+   "headline": "Research is shifting from training models to reason toward agents that act, learn from environments and improve themselves, while industry coverage shifts toward safety and security incidents.",
    "heating": [
     "Agentic RL and environments",
     "Self-improvement",
