@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T18:08:27+00:00",
+ "updated": "2026-11-03T04:04:42+00:00",
  "days": [
   {
    "date": "2026-11-02",
@@ -2863,129 +2863,63 @@
  },
  "summaries": [
   {
-   "kind": "weekly",
-   "id": "2026-W44",
-   "start": "2026-10-26",
-   "end": "2026-10-31",
-   "published": "2026-11-01",
-   "headline": "Agents are handed whole projects and post-training signals turn inward, while industry money moves onto equity markets, cyber capability decides how models ship, and bunched frontier scores shift competition to price and access.",
-   "heating": [
-    "Agents building whole systems",
-    "Self-generated post-training signals",
-    "World models as robot data engines",
-    "Agent-run cost budgeting",
-    "Equity-funded AI capex",
-    "Cyber-gated model releases",
-    "Open weights sold on sovereignty",
-    "Shared training opt-out standards"
-   ],
-   "cooling": [
-    "Robot-manipulation titles",
-    "On-policy distillation and KV-cache titles",
-    "Market patience with capex",
-    "Benchmark lead as differentiator"
-   ]
-  },
-  {
    "kind": "monthly",
    "id": "2026-10",
    "start": "2026-10-01",
    "end": "2026-10-31",
    "published": "2026-11-01",
-   "headline": "In October agents began improving their own environments, harnesses and training signals while verification lagged, as industry moved to shipped open weights, operational risk controls and equity-funded spending that markets began to price.",
+   "headline": "Research is shifting from training models to reason toward agents that act, learn from environments and improve themselves, while industry news turns toward safety incidents and the physical cost of compute.",
    "heating": [
-    "Agent self-improvement loops",
-    "Model-generated learning signals",
-    "World models as robot data engines",
-    "Compute set per task, not fixed",
-    "Shipped open-weight checkpoints",
-    "Operational risk controls at labs",
-    "Equity-funded AI capex",
-    "Always-on agent products"
+    "Agentic RL and environments",
+    "Self-improvement",
+    "World models, VLA and humanoids",
+    "Looped depth",
+    "Safety and security stories"
    ],
    "cooling": [
-    "Generic KV-cache compression",
-    "Vision and multimodal title share",
-    "Safety and policy research share",
-    "Voluntary safety pledges",
-    "Vendor-only benchmark claims",
-    "Informal run-rate claims"
+    "RL for verifiable rewards and chain-of-thought",
+    "Diffusion and flow matching",
+    "Graph learning",
+    "xAI coverage"
    ]
+  }
+ ],
+ "weeks": [
+  {
+   "id": "2026-W45",
+   "start": "2026-11-02",
+   "end": "2026-11-07",
+   "complete": false
   },
   {
-   "kind": "weekly",
+   "id": "2026-W44",
+   "start": "2026-10-26",
+   "end": "2026-10-31",
+   "complete": true
+  },
+  {
    "id": "2026-W43",
    "start": "2026-10-19",
    "end": "2026-10-24",
-   "published": "2026-10-25",
-   "headline": "Research trains agents together with their harnesses, moves memory into model state and tests what transfers in robotics, while industry answers agent risk with containment, prices open weights by cost per task, and loosens cloud and chip lock-in.",
-   "heating": [
-    "Joint model-and-harness agent training",
-    "Discovery where a checker exists",
-    "Agent memory in model state",
-    "Robot fleets and coding-agent control",
-    "Containment engineering for agents",
-    "Cost per task over price per token",
-    "Model provenance as procurement criterion",
-    "Hyperscalers as neutral model marketplaces"
-   ],
-   "cooling": [
-    "World-action and robot-policy titles",
-    "Generic KV-cache compression titles",
-    "Reinforcement learning title share",
-    "Live-internet access in training",
-    "Exclusive cloud distribution of models",
-    "CUDA-only software stacks"
-   ]
+   "complete": true
   },
   {
-   "kind": "weekly",
    "id": "2026-W42",
    "start": "2026-10-12",
    "end": "2026-10-17",
-   "published": "2026-10-18",
-   "headline": "Self-improvement moves out to environments and scaffolds and post-training turns to better learning signals, while open weights ship and courts, prosecutors and independent indexes, not lab disclosures, increasingly judge AI labs and their claims.",
-   "heating": [
-    "Agent-built training environments and harnesses",
-    "Reward and credit-signal design",
-    "Single-pass decision models",
-    "Joint world-action robot models",
-    "Open-weight checkpoints shipping, memory-bound",
-    "Outside enforcement of AI labs",
-    "Independent and checkable evidence"
-   ],
-   "cooling": [
-    "Object detection and retrieval-augmented generation titles",
-    "AI-for-science and health title share",
-    "Efficiency title share",
-    "Weights promised but unreleased",
-    "Vendor-only benchmark claims",
-    "Standalone companion-chatbot businesses"
-   ]
+   "complete": true
   },
   {
-   "kind": "weekly",
    "id": "2026-W41",
    "start": "2026-10-05",
    "end": "2026-10-10",
-   "published": "2026-10-11",
-   "headline": "Robot policies converge on world models and reinforcement learning gets cheaper, while Western labs race to match China's open weights, agents gain routing and decision layers, and incident disclosure and verification lag output.",
-   "heating": [
-    "World-action models for robots",
-    "Cheaper agentic reinforcement learning",
-    "Self-improvement from experience",
-    "Adaptive, compressed compute",
-    "Western open-weight challengers",
-    "Agent control layers",
-    "Incident and process disclosure",
-    "Verification and revenue-accounting scrutiny"
-   ],
-   "cooling": [
-    "Federated learning and object detection",
-    "Computer vision and multimodal title share",
-    "Live-web agent evaluations",
-    "Informal run-rate claims"
-   ]
+   "complete": true
+  },
+  {
+   "id": "2026-W40",
+   "start": "2026-09-28",
+   "end": "2026-10-03",
+   "complete": true
   }
  ]
 }

@@ -1,0 +1,95 @@
+{
+ "week": "2026-W45",
+ "start": "2026-11-02",
+ "end": "2026-11-07",
+ "complete": false,
+ "digests": 1,
+ "papers": [
+  {
+   "id": "2610.42053",
+   "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
+   "hf": 42,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2610.40738",
+   "title": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
+   "hf": 29,
+   "org": "ServiceNow-AI",
+   "featured": null
+  },
+  {
+   "id": "2610.42149",
+   "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+   "hf": 24,
+   "org": "KAIST AI",
+   "featured": "2026-11-02"
+  },
+  {
+   "id": "2610.42136",
+   "title": "ReLift: Dense 3D Tracking as Lifted Trajectory Repair",
+   "hf": 21,
+   "org": "Technion Israel institute of technology",
+   "featured": null
+  },
+  {
+   "id": "2610.40799",
+   "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
+   "hf": 18,
+   "org": "Chinese University of Hong Kong",
+   "featured": "2026-11-02"
+  },
+  {
+   "id": "2610.40748",
+   "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+   "hf": 12,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2610.40945",
+   "title": "On the Origin and Evolution of Training-Inference Mismatch in LLM Reinforcement Learning",
+   "hf": 7,
+   "org": "George Washington University",
+   "featured": null
+  },
+  {
+   "id": "2610.42141",
+   "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+   "hf": 5,
+   "org": null,
+   "featured": null
+  }
+ ],
+ "stories": [
+  {
+   "title": "Meta’s Rating Outlook Cut to Negative by S&P on AI Spending",
+   "outlets": 5,
+   "date": "2026-10-30",
+   "covered": null
+  },
+  {
+   "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
+   "outlets": 4,
+   "date": "2026-10-30",
+   "covered": null
+  },
+  {
+   "title": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution",
+   "outlets": 4,
+   "date": "2026-10-31",
+   "covered": null
+  },
+  {
+   "title": "DeepSeek Drops Enhanced Coding Agent With Aim to Rival Anthropic",
+   "outlets": 3,
+   "date": "2026-11-01",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 1,
+  "papers": 5
+ }
+}

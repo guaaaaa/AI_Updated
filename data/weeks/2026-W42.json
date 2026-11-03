@@ -1,0 +1,119 @@
+{
+ "week": "2026-W42",
+ "start": "2026-10-12",
+ "end": "2026-10-17",
+ "complete": true,
+ "digests": 6,
+ "papers": [
+  {
+   "id": "2610.18773",
+   "title": "Jeva: System One Models from First Principles",
+   "hf": 165,
+   "org": "National University of Singapore",
+   "featured": "2026-10-17"
+  },
+  {
+   "id": "2610.13166",
+   "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+   "hf": 139,
+   "org": "alibaba",
+   "featured": "2026-10-13"
+  },
+  {
+   "id": "2610.18356",
+   "title": "Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes",
+   "hf": 128,
+   "org": "alibaba",
+   "featured": "2026-10-14"
+  },
+  {
+   "id": "2610.18615",
+   "title": "VideoJev: System One Model for Video Understanding and Interaction",
+   "hf": 105,
+   "org": "Multimedia Computing Group-Nanjing University",
+   "featured": null
+  },
+  {
+   "id": "2610.12572",
+   "title": "DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models",
+   "hf": 103,
+   "org": "KlingAI Research",
+   "featured": "2026-10-12"
+  },
+  {
+   "id": "2610.18774",
+   "title": "GreenWAM: A World Foundation Model for Robotics",
+   "hf": 98,
+   "org": "Sber Robotics Center",
+   "featured": "2026-10-15"
+  },
+  {
+   "id": "2610.16794",
+   "title": "TPPO: Tracking-Value PPO For Language Model Reasoning",
+   "hf": 91,
+   "org": null,
+   "featured": "2026-10-14"
+  },
+  {
+   "id": "2610.12611",
+   "title": "SoftwareGym: Scaling Computer-Use Agent Training with Diverse Synthesized Software Environments",
+   "hf": 87,
+   "org": "Shanghai Jiao Tong University",
+   "featured": "2026-10-12"
+  }
+ ],
+ "stories": [
+  {
+   "title": "Meta Unveils New Series of Advanced A.I. Models",
+   "outlets": 16,
+   "date": "2026-10-12",
+   "covered": "2026-10-13-n1"
+  },
+  {
+   "title": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
+   "outlets": 14,
+   "date": "2026-10-13",
+   "covered": "2026-10-14-n2"
+  },
+  {
+   "title": "Google finally releases Gemini 4 Argon",
+   "outlets": 5,
+   "date": "2026-10-13",
+   "covered": "2026-10-14-n1"
+  },
+  {
+   "title": "Meta debuts Muse Wonder AI model in latest test of users' willingness to pay",
+   "outlets": 4,
+   "date": "2026-10-12",
+   "covered": "2026-10-13-n1"
+  },
+  {
+   "title": "Anthropic’s Claude AI submits a false tip on a Philadelphia unsolved homicide case",
+   "outlets": 3,
+   "date": "2026-10-10",
+   "covered": null
+  },
+  {
+   "title": "AI less regulated than milk, Microsoft president says in warning over safety",
+   "outlets": 3,
+   "date": "2026-10-12",
+   "covered": null
+  },
+  {
+   "title": "OpenAI sued by 8 states over ChatGPT safety concerns",
+   "outlets": 3,
+   "date": "2026-10-14",
+   "covered": "2026-10-15-n1"
+  },
+  {
+   "title": "OpenAI employee who left for Apple took files about unreleased device, OpenAI alleges",
+   "outlets": 3,
+   "date": "2026-10-14",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 9,
+  "papers": 30
+ }
+}

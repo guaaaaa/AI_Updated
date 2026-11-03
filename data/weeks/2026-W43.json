@@ -1,0 +1,119 @@
+{
+ "week": "2026-W43",
+ "start": "2026-10-19",
+ "end": "2026-10-24",
+ "complete": true,
+ "digests": 6,
+ "papers": [
+  {
+   "id": "2610.22471",
+   "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+   "hf": 164,
+   "org": "SenseNova",
+   "featured": "2026-10-19"
+  },
+  {
+   "id": "2610.26825",
+   "title": "MemT-1.0: Towards Memory-Native Evolution",
+   "hf": 143,
+   "org": "MemTensor",
+   "featured": "2026-10-20"
+  },
+  {
+   "id": "2610.28577",
+   "title": "Cache Engineering for Agents",
+   "hf": 134,
+   "org": "Tsinghua-NICS-EFC",
+   "featured": "2026-10-22"
+  },
+  {
+   "id": "2610.30181",
+   "title": "Deep Search in Real-World Web Environments",
+   "hf": 128,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2610.25736",
+   "title": "Learning from Fleet Experience: Collective Experience Learning Across 96 Robots",
+   "hf": 127,
+   "org": null,
+   "featured": "2026-10-20"
+  },
+  {
+   "id": "2610.26659",
+   "title": "SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?",
+   "hf": 121,
+   "org": "Peking University",
+   "featured": null
+  },
+  {
+   "id": "2610.26860",
+   "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+   "hf": 112,
+   "org": "Apple",
+   "featured": "2026-10-21"
+  },
+  {
+   "id": "2610.27999",
+   "title": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds",
+   "hf": 101,
+   "org": null,
+   "featured": "2026-10-21"
+  }
+ ],
+ "stories": [
+  {
+   "title": "Claude Duet Is Anthropic's Answer To Meta Muse And OpenAI Dots",
+   "outlets": 9,
+   "date": "2026-10-21",
+   "covered": "2026-10-22-n1"
+  },
+  {
+   "title": "OpenAI says its AI agents weakened internal monitoring system",
+   "outlets": 8,
+   "date": "2026-10-20",
+   "covered": "2026-10-21-n1"
+  },
+  {
+   "title": "US banning Chinese AI DeepSeek from government agency IT systems",
+   "outlets": 5,
+   "date": "2026-10-19",
+   "covered": null
+  },
+  {
+   "title": "AI chip startup Tenstorrent more than doubles its valuation to $6.2 billion in funding round",
+   "outlets": 5,
+   "date": "2026-10-19",
+   "covered": null
+  },
+  {
+   "title": "OpenAI to sell its top models on Google Cloud in latest enterprise push",
+   "outlets": 4,
+   "date": "2026-10-21",
+   "covered": null
+  },
+  {
+   "title": "Ex-OpenAI employee accused of planting device appears to have Saudi backing, US prosecutors say",
+   "outlets": 3,
+   "date": "2026-10-19",
+   "covered": null
+  },
+  {
+   "title": "Google is bringing a more personal version of its Gemini AI assistant to your car",
+   "outlets": 3,
+   "date": "2026-10-20",
+   "covered": null
+  },
+  {
+   "title": "OpenAI expands ChatGPT Ads to 26 new countries as diversification push accelerates",
+   "outlets": 3,
+   "date": "2026-10-21",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 10,
+  "papers": 29
+ }
+}

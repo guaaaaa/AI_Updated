@@ -1,0 +1,95 @@
+{
+ "week": "2026-W40",
+ "start": "2026-09-28",
+ "end": "2026-10-03",
+ "complete": true,
+ "digests": 3,
+ "papers": [
+  {
+   "id": "2609.33757",
+   "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
+   "hf": 164,
+   "org": "Multimodal Art Projection",
+   "featured": "2026-10-01"
+  },
+  {
+   "id": "2609.36484",
+   "title": "The Teacher Is a Direction, Not a Destination: Extrapolating RL-Induced Representation Residuals in On-Policy Distillation",
+   "hf": 160,
+   "org": null,
+   "featured": "2026-10-03"
+  },
+  {
+   "id": "2609.39102",
+   "title": "False Frontiers: Diagnosing and Mitigating Co-Cheating in Self-Evolving Search Agents",
+   "hf": 158,
+   "org": "Rutgers University",
+   "featured": "2026-10-02"
+  },
+  {
+   "id": "2609.38721",
+   "title": "UniEvo-VL: An On-policy Self-Distillation Training Recipe for Multimodal Model Self-improvement",
+   "hf": 142,
+   "org": "Stanford NLP",
+   "featured": null
+  },
+  {
+   "id": "2609.33439",
+   "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence",
+   "hf": 119,
+   "org": "EverMind",
+   "featured": null
+  },
+  {
+   "id": "2609.36012",
+   "title": "In-Context Learning for Robots: Methods and Applications",
+   "hf": 105,
+   "org": "Knowin AI",
+   "featured": null
+  },
+  {
+   "id": "2609.34309",
+   "title": "MaLiang-Harness: A Programmable Path to Image and Video Generation",
+   "hf": 97,
+   "org": "National University of Singapore",
+   "featured": null
+  },
+  {
+   "id": "2609.39982",
+   "title": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents",
+   "hf": 96,
+   "org": "NVIDIA",
+   "featured": "2026-10-03"
+  }
+ ],
+ "stories": [
+  {
+   "title": "DeepSeek partners with Huawei to develop chip programming tools, reducing reliance on Nvidia",
+   "outlets": 6,
+   "date": "2026-09-29",
+   "covered": null
+  },
+  {
+   "title": "Google announces Gemini 4 Argon AI model, but you can’t use it yet",
+   "outlets": 6,
+   "date": "2026-09-30",
+   "covered": null
+  },
+  {
+   "title": "OpenAI shelves new AI model release over safety concerns",
+   "outlets": 5,
+   "date": "2026-09-29",
+   "covered": null
+  },
+  {
+   "title": "Google unveils Gemini 4 Argon, retaking benchmark lead over OpenAI and Anthropic — but in limited release",
+   "outlets": 4,
+   "date": "2026-09-30",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 6,
+  "papers": 15
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "week": "2026-W44",
+ "start": "2026-10-26",
+ "end": "2026-10-31",
+ "complete": true,
+ "digests": 6,
+ "papers": [
+  {
+   "id": "2610.37381",
+   "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+   "hf": 154,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2610.35684",
+   "title": "OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images",
+   "hf": 139,
+   "org": "KAIST AI",
+   "featured": null
+  },
+  {
+   "id": "2610.36729",
+   "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
+   "hf": 123,
+   "org": "Tencent Hunyuan",
+   "featured": null
+  },
+  {
+   "id": "2610.35845",
+   "title": "Work Agents: Systems, Capabilities, and Optimization",
+   "hf": 116,
+   "org": "Shanghai Jiao Tong University",
+   "featured": null
+  },
+  {
+   "id": "2610.36671",
+   "title": "Look Only When Needed: Certificate-Guided Visual Routing for Efficient Diffusion VLMs",
+   "hf": 107,
+   "org": "KAIST AI",
+   "featured": null
+  },
+  {
+   "id": "2610.34662",
+   "title": "StreamVibe: Proactive Video Agents for Evolving User Intent",
+   "hf": 95,
+   "org": "Google",
+   "featured": null
+  },
+  {
+   "id": "2610.37230",
+   "title": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
+   "hf": 95,
+   "org": "AIOR",
+   "featured": null
+  },
+  {
+   "id": "2610.36068",
+   "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+   "hf": 82,
+   "org": "AgiBot World",
+   "featured": "2026-10-28"
+  }
+ ],
+ "stories": [
+  {
+   "title": "Anthropic begins countdown to IPO with prospectus filing",
+   "outlets": 16,
+   "date": "2026-10-26",
+   "covered": null
+  },
+  {
+   "title": "Introducing Kimi K3.1 Pro",
+   "outlets": 5,
+   "date": "2026-10-23",
+   "covered": "2026-10-26-n1"
+  },
+  {
+   "title": "Meta plans $95bn stock offering to bankroll AI expansion",
+   "outlets": 5,
+   "date": "2026-10-26",
+   "covered": "2026-10-27-n2"
+  },
+  {
+   "title": "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot",
+   "outlets": 5,
+   "date": "2026-10-29",
+   "covered": null
+  },
+  {
+   "title": "The AI data center boom has a ghost problem",
+   "outlets": 4,
+   "date": "2026-10-24",
+   "covered": null
+  },
+  {
+   "title": "Claude Now Writes 90% Of Anthropic’s Code",
+   "outlets": 4,
+   "date": "2026-10-26",
+   "covered": "2026-10-31-n1"
+  },
+  {
+   "title": "Google launches Gemini 4 Carbon AI model with cybersecurity focus",
+   "outlets": 4,
+   "date": "2026-10-28",
+   "covered": "2026-10-29-n1"
+  },
+  {
+   "title": "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
+   "outlets": 4,
+   "date": "2026-10-28",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 12,
+  "papers": 30
+ }
+}

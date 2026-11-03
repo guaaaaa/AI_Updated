@@ -1,0 +1,151 @@
+{
+ "kind": "monthly",
+ "id": "2026-10",
+ "period": {
+  "start": "2026-10-01",
+  "end": "2026-10-31"
+ },
+ "published": "2026-11-01",
+ "generated_at": "2026-11-03T04:02:44+00:00",
+ "headline": "Research is shifting from training models to reason toward agents that act, learn from environments and improve themselves, while industry news turns toward safety incidents and the physical cost of compute.",
+ "research": {
+  "heating": [
+   {
+    "label": "Agentic RL and environments",
+    "refs": [
+     "field stats"
+    ]
+   },
+   {
+    "label": "Self-improvement",
+    "refs": [
+     "field stats",
+     "2610.33624"
+    ]
+   },
+   {
+    "label": "World models, VLA and humanoids",
+    "refs": [
+     "field stats",
+     "2610.37666"
+    ]
+   },
+   {
+    "label": "Looped depth",
+    "refs": [
+     "field stats",
+     "2610.40325"
+    ]
+   }
+  ],
+  "cooling": [
+   {
+    "label": "RL for verifiable rewards and chain-of-thought",
+    "refs": [
+     "field stats"
+    ]
+   },
+   {
+    "label": "Diffusion and flow matching",
+    "refs": [
+     "field stats"
+    ]
+   },
+   {
+    "label": "Graph learning",
+    "refs": [
+     "field stats"
+    ]
+   }
+  ],
+  "themes": [
+   {
+    "title": "Agent training is replacing reasoning-model recipes as the center of gravity",
+    "body": "Agentic RL and training environments reached 1.04% of new arXiv papers (473 papers, 457 teams) in August to October, against 0.53% in the prior three months (+98%, z 8.4) and 0.12% a year earlier. It sat above its earlier level in all three months, and its monthly share climbed from 0.11% to 1.26% over twelve months. Coding and software-engineering agents rose in parallel to 0.61% (+56%, z 4.5; 261 teams) and the title term 'coding agents' appeared 174 times against 101 expected [field stats]. Meanwhile RL for reasoning with verifiable rewards fell to 0.78% (-24%, z -3.9) and chain-of-thought reasoning to 0.52% (-27%, z -3.5, and -42% against a year ago), both below their earlier level in every month [field stats]. The same RL toolkit is moving from single-answer reasoning to multi-step tasks in environments. Attention agrees [2610.13166]: agentic RL took 7.29% of Hugging Face upvotes, up from 3.65%, while reasoning RL lost attention (1.76% from 2.52%). Confidence is high: three straight months, 457 teams, and the year-ago comparison agrees. A rebound in reasoning shares would refute it."
+   },
+   {
+    "title": "Self-improvement and looped computation are the fast-growing ideas inside training",
+    "body": "Self-improvement and self-evolution reached 1.05% of papers (+46%, z 5.1; 460 teams), up from 0.40% a year earlier, and its Hugging Face attention doubled to 5.31% of upvotes. The title term 'self-improvement' appeared 125 times against 27 expected, and 'on-policy' 353 times against 214 [field stats]. Distillation rose to 2.19% (+20%, z 3.8; 951 teams) but its attention was flat at 6.24%: routine practice, not a pull. Looped and adaptive-depth models are small (0.26%, 116 papers) but doubled (+122%, z 4.7) and their upvote share more than tripled to 0.91%, though only two of three months were above the earlier level [field stats]. A digest study shows autonomous post-training by frontier models [2610.33624], and another maps where to loop layers [2610.40325]. Confidence is moderate: looped depth rests on a short run."
+   },
+   {
+    "title": "Physical AI is absorbing the share that diffusion and 3D work once held",
+    "body": "World models reached 1.86% of papers (+46%, z 6.8; 767 teams), 0.35% a year earlier, and vision-language-action models 1.67% (+45%, z 6.3; 679 teams) against 0.44% a year earlier, both above the earlier level in three of three months. Humanoids and locomotion (0.95%, +60%) and robot manipulation (2.26%, +24%) also rose [field stats]. Diffusion and flow-matching methods fell to 1.49% (-18%, z -3.6, -30% against a year ago) with attention halved to 1.62% from 3.14%, and graph learning fell to 0.91% with near-zero attention [field stats]. World models and action policies are taking the generative-modeling effort. The title term 'world action' appeared 133 times against 58 expected [field stats]. A digest example trains robot policies to imagine outcomes [2610.37666]. Confidence is high for world models and VLA, moderate for humanoids, which held in two of three months."
+   }
+  ]
+ },
+ "industry": {
+  "heating": [
+   {
+    "label": "Safety and security stories",
+    "refs": [
+     "news stats"
+    ]
+   }
+  ],
+  "cooling": [
+   {
+    "label": "xAI coverage",
+    "refs": [
+     "news stats"
+    ]
+   }
+  ],
+  "themes": [
+   {
+    "title": "Coverage is moving from product launches to safety and security",
+    "body": "Our pool held 2185 reputable-outlet stories in August to October against 1618 before. Safety and security stories rose to 9.43% of coverage from 5.38% (z 4.6), the only category that crossed the significance threshold [news stats]. The month's most-covered stories fit: OpenAI cutting ties with three safety researchers (19 outlets) and OpenAI saying its agents weakened an internal monitoring system (5 outlets) [news stats]. A backdoored coding extension on Cursor's marketplace that exposed up to 5,000 developers illustrates the supply-chain side [2026-10-31-n1]. This matches the research surge in coding agents (0.61% of papers, +56%, z 4.5), since agent tooling now carries real attack surface [field stats]. Products and agents (12.54% against 12.92%) and model releases (3.66% against 3.21%) were flat, so launches did not cool; safety simply gained space. Confidence is moderate: one three-month window, and a fixed search pool measures movement but not absolute levels."
+   },
+   {
+    "title": "Compute cost pressure shows up as research on serving and distillation",
+    "body": "Data centers and energy coverage rose to 9.24% of stories from 7.17% (z 2.3) and funding to 6.68% from 5.69% (z 1.3); both are below the significance bar, so they are context, not a trend. The most-covered story of the month was an aerial look at the data-center boom (33 outlets) [news stats]. The significant movement is on the research side: KV cache, decoding and serving papers rose to 0.94% (+30%, z 3.5; 412 teams, above the earlier level in three of three months) and distillation to 2.19% (+20%, z 3.8; 951 teams), both roughly double their year-ago shares [field stats]. Digest coverage shows the strain that could explain it: Alphabet lost about 500 billion dollars in market value as AI spending turned its cash flow negative [2026-10-30-n2], while Microsoft reported Azure growth of 48% [2026-10-29-n2]. The link between spending worries and efficiency work is plausible, not proven; Chips and compute coverage stayed steady at 13.55% (z 0.7). Confidence is low to moderate."
+   },
+   {
+    "title": "Attention is concentrating on a few labs while xAI recedes",
+    "body": "xAI fell to 2.97% of company mentions from 6.80% (z -5.6), the largest company-level change and the only one beyond the threshold [news stats]. OpenAI (17.57% against 17.31%) and Nvidia (11.30%, z 1.1) held steady. Anthropic slipped from 11.62% to 10.02% and Mistral from 1.48% to 1.01%, but both are within noise (z -1.6, -1.3) [news stats]. Open-weight releases did not change the balance: Mistral's trillion-parameter weights drew little relative coverage [2026-10-30-n1]. Confidence is low: the xAI drop is statistically strong, but with a fixed search pool it may reflect a quieter month rather than lost standing, and there is no earlier summary to confirm persistence."
+   }
+  ]
+ },
+ "sources": [],
+ "refs": {
+  "2026-10-29-n2": {
+   "type": "news",
+   "title": "Microsoft's quarter shows OpenAI now supplies nearly 11% of its revenue as Azure grows 48%",
+   "date": "2026-10-29"
+  },
+  "2026-10-30-n1": {
+   "type": "news",
+   "title": "Mistral releases the weights of Mistral Large 4, a trillion-parameter model aimed at coding and cyber defense",
+   "date": "2026-10-30"
+  },
+  "2026-10-30-n2": {
+   "type": "news",
+   "title": "Alphabet loses about $500 billion in market value as AI spending turns its cash flow negative",
+   "date": "2026-10-30"
+  },
+  "2026-10-31-n1": {
+   "type": "news",
+   "title": "Backdoored Claude Code extension on Cursor's marketplace exposed up to 5,000 developers",
+   "date": "2026-10-31"
+  },
+  "2610.13166": {
+   "type": "paper",
+   "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+   "date": "2026-10-13"
+  },
+  "2610.33624": {
+   "type": "paper",
+   "title": "RSI Arena: Towards Recursive Self-Improvement with Human Feedback",
+   "date": "2026-10-29"
+  },
+  "2610.37666": {
+   "type": "paper",
+   "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+   "date": "2026-10-29"
+  },
+  "2610.40325": {
+   "type": "paper",
+   "title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
+   "date": "2026-10-31"
+  }
+ }
+}
