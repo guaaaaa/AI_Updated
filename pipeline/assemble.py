@@ -35,7 +35,7 @@ Write-up format (no JSON escaping needed):
     ### Problem
     ...  (then Existing approaches / Key idea / Results / Why it matters)
 
-Usage: python pipeline/assemble.py --date 2026-10-29 [--backfill]
+Usage: python pipeline/assemble.py --date 2026-10-29 [--backfill] [--domain business|science]
 """
 import argparse
 import datetime as dt
@@ -46,7 +46,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import DAYS, ROOT, UTC, WORK, arxiv_announce_time, edition, load_json, parse_date  # noqa: E402
+from common import DAYS, DOMAIN, ROOT, UTC, WORK, arxiv_announce_time, edition, load_json, parse_date  # noqa: E402
 
 
 def parse_writeup(text):
@@ -81,6 +81,11 @@ def parse_writeup(text):
 
 def paper_meta(pid, cands):
     c = cands.get(pid)
+    if DOMAIN != "ai":   # research candidates from fetch_research.py carry their own links and signals
+        if c is None:
+            raise SystemExit(f"PAPER {pid}: not in work/{DOMAIN}/papers_<date>.json (use an id from the shortlist)")
+        return {"title": c["title"], "authors": c["authors"], "announced": c["announced"], "categories": c.get("categories", []),
+                "links": dict(c["links"]), "signals": {k: v for k, v in c.get("signals", {}).items() if v}}
     if c is None:  # not in the shortlist file: look it up directly
         from fetch_papers import abs_page
         c = abs_page(pid)
@@ -143,7 +148,8 @@ def main():
     path = DAYS / f"{d}.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"wrote {path.relative_to(ROOT)}: {len(news)} news, {len(papers)} papers")
-    r = subprocess.run([sys.executable, str(ROOT / "pipeline" / "validate.py"), d.isoformat()], capture_output=True, text=True)
+    out_domain = ["--domain", DOMAIN]
+    r = subprocess.run([sys.executable, str(ROOT / "pipeline" / "validate.py"), d.isoformat(), *out_domain], capture_output=True, text=True)
     print(r.stdout, end="")
     sys.exit(r.returncode)
 

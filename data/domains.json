@@ -1,0 +1,41 @@
+{
+ "updated": "2026-11-04T22:03:57+00:00",
+ "domains": [
+  {
+   "id": "ai",
+   "name": "AI",
+   "tagline": "AI research and industry",
+   "trends": true,
+   "paper_label": "Papers",
+   "news": 2,
+   "papers": 5,
+   "index": "data/index.json",
+   "latest": "2026-11-04",
+   "days": 31
+  },
+  {
+   "id": "business",
+   "name": "Business",
+   "tagline": "Markets, companies and the economy",
+   "trends": false,
+   "paper_label": "Research",
+   "news": 5,
+   "papers": 1,
+   "index": "data/business/index.json",
+   "latest": "2026-11-04",
+   "days": 1
+  },
+  {
+   "id": "science",
+   "name": "Science",
+   "tagline": "Discoveries across physics, life sciences, space and climate",
+   "trends": false,
+   "paper_label": "Papers",
+   "news": 3,
+   "papers": 3,
+   "index": "data/science/index.json",
+   "latest": null,
+   "days": 0
+  }
+ ]
+}

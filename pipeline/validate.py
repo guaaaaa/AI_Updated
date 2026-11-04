@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (DAYS, config, edition, featured_ids, is_digest_day, news_window, paper_window,  # noqa: E402
+from common import (DAYS, DOM, DOMAIN, config, edition, featured_ids, is_digest_day, news_window, paper_window,  # noqa: E402
                     parse_date, word_count)
 
 NEWS_SECTIONS = ["Context", "What happened", "Why it matters", "What to watch"]
@@ -21,7 +21,9 @@ PAPER_SECTIONS = ["Problem", "Existing approaches", "Key idea", "Results", "Why 
 WORD_LIMITS = (225, 250, 350, 375)          # hard min, target min, target max, hard max
 OLD_WORD_LIMITS = (270, 300, 400, 430)      # the first digests (Oct 26 - Nov 2), written before the change
 OLD_LIMIT_DAYS = (dt.date(2026, 10, 26), dt.date(2026, 11, 2))
-MAX_NEWS, MAX_PAPERS = 2, 5
+MAX_NEWS, MAX_PAPERS = DOM["news"], DOM["papers"]
+RESEARCH_ID = re.compile(r"^[a-z0-9][a-z0-9.-]{3,100}$")
+RECENT_RESEARCH_DAYS = 45   # news-led domains: journal and working papers from the last 45 days (fetch_research.py)
 HTML_RE = re.compile(r"<\s*[a-zA-Z/!]")
 ARXIV_RE = re.compile(r"^\d{4}\.\d{4,5}$")
 
@@ -113,8 +115,10 @@ def check_day(path, tax):
     for i, p in enumerate(papers):
         label = f"paper[{i}] {p.get('id')}"
         body_check(p, label, PAPER_SECTIONS)
-        if not ARXIV_RE.match(str(p.get("id", ""))):
+        if DOMAIN == "ai" and not ARXIV_RE.match(str(p.get("id", ""))):
             E(f"{label}: id must be an arXiv id")
+        if DOMAIN != "ai" and not (ARXIV_RE.match(str(p.get("id", ""))) or RESEARCH_ID.match(str(p.get("id", "")))):
+            E(f"{label}: id must come from the research shortlist")
         if p.get("id") in ids:
             E(f"{label}: duplicate id in this digest")
         ids.add(p.get("id"))
@@ -133,15 +137,18 @@ def check_day(path, tax):
         if not p.get("authors"):
             E(f"{label}: missing authors")
         links = p.get("links", {})
-        if not str(links.get("arxiv", "")).startswith("https://arxiv.org/abs/"):
+        if DOMAIN == "ai" and not str(links.get("arxiv", "")).startswith("https://arxiv.org/abs/"):
             E(f"{label}: links.arxiv must be https://arxiv.org/abs/<id>")
+        if DOMAIN != "ai" and not any(str(links.get(k, "")).startswith("https://") for k in ("paper", "doi", "arxiv")):
+            E(f"{label}: needs a paper, doi or arxiv https link")
         for k, v in links.items():
             if v and not str(v).startswith("https://"):
                 E(f"{label}: link {k} must be https")
         try:
             t = dt.datetime.fromisoformat(p["announced"])
-            if not ps <= t <= pe:
-                E(f"{label}: announced {t} outside paper window {ps} -> {pe}")
+            lo = ps if DOMAIN == "ai" else pe - dt.timedelta(days=RECENT_RESEARCH_DAYS)
+            if not lo <= t <= pe:
+                E(f"{label}: announced {t} outside paper window {lo} -> {pe}")
         except (KeyError, ValueError, TypeError):
             E(f"{label}: missing/invalid announced timestamp")
     primaries = [p.get("primary_tag") for p in papers]

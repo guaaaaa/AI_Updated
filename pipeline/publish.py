@@ -8,6 +8,7 @@ a push conflict on the generated files (data/index.json, data/trends.json, data/
 """
 import argparse
 import json
+import re
 import subprocess
 import sys
 import time
@@ -15,10 +16,11 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import DAYS, ROOT, SUMMARIES, config  # noqa: E402
+from common import DAYS, DOM, DOMAIN, DOMAINS, ROOT, SUMMARIES, config  # noqa: E402
 
-GENERATED = {"data/index.json", "data/trends.json", "data/daily.json", "data/jobs.json"}
-is_generated = lambda f: f in GENERATED or f.startswith(("data/weeks/", "data/directions/", "data/fields/", "data/jobs/"))  # rebuilt by build_index.py
+GENERATED = {"data/index.json", "data/trends.json", "data/daily.json", "data/jobs.json", "data/domains.json"}
+is_generated = lambda f: (f in GENERATED or f.startswith(("data/weeks/", "data/directions/", "data/fields/", "data/jobs/"))
+                          or bool(re.match(r"data/[a-z]+/index\.json$", f)))  # rebuilt by build_index.py
 
 
 def sh(*cmd, check=True):
@@ -43,7 +45,8 @@ def rebase_onto(branch):
         for f in conflicted:
             sh("git", "checkout", "--ours", f, check=False)
         sh(sys.executable, "pipeline/build_index.py")
-        sh("git", "add", *GENERATED, "data/weeks", "data/directions", "data/fields", "data/jobs")
+        sh("git", "add", *GENERATED, "data/weeks", "data/directions", "data/fields", "data/jobs",
+           *[f"data/{d['id']}/index.json" for d in DOMAINS if d["id"] != "ai" and (ROOT / "data" / d["id"] / "index.json").exists()])
         r = subprocess.run(["git", "-c", "core.editor=true", "rebase", "--continue"], cwd=ROOT,
                            capture_output=True, text=True, env={**__import__("os").environ, "GIT_EDITOR": "true"})
     return False
@@ -113,7 +116,8 @@ def main():
     sh("git", "add", "data")
     if sh("git", "status", "--porcelain", "data", check=False):
         kind, _, sid = (a.summary or "").partition("/")
-        sh("git", "commit", "-m", a.message or (f"Digest {a.date}" if a.date else f"{kind.capitalize()} summary {sid}"))
+        name = "Digest" if DOMAIN == "ai" else f"{DOM['name']} digest"
+        sh("git", "commit", "-m", a.message or (f"{name} {a.date}" if a.date else f"{kind.capitalize()} summary {sid}"))
     push(site["branch"])
     sha = sh("git", "rev-parse", "HEAD")
     print(f"pushed {sha[:8]} to {site['branch']}; waiting for GitHub Pages deploy...")
@@ -122,7 +126,7 @@ def main():
     if concl not in (None, "success"):
         raise SystemExit(f"FAILED: Pages deploy {concl}. Inspect: gh api repos/{site['repo']}/actions/runs?head_sha={sha}")
     if a.date:
-        rel, page = f"data/days/{a.date}.json", f"#/day/{a.date}"
+        rel, page = f"{DAYS.relative_to(ROOT).as_posix()}/{a.date}.json", f"#/{DOMAIN}/day/{a.date}"
     else:
         kind, _, sid = a.summary.partition("/")
         rel, page = f"data/summaries/{kind}/{sid}.json", f"#/trends/{'week' if kind == 'weekly' else 'month'}/{sid}"

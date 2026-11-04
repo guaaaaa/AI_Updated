@@ -19,7 +19,7 @@ import xml.etree.ElementTree as ET_XML
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (UTC, WORK, config, http_get, news_window, parse_date,  # noqa: E402
+from common import (DOM, DOMAIN, UTC, WORK, config, http_get, news_window, parse_date,  # noqa: E402
                     recent_digests, snapshot_update, today_et)
 
 ATOM = "{http://www.w3.org/2005/Atom}"
@@ -98,7 +98,9 @@ def main():
     d = parse_date(a.date)
     start, end = news_window(d)
     src = config("sources")
-    kws = src["hn_ai_keywords"]
+    kws = src["topic_keywords"] if "topic_keywords" in src else src.get("hn_ai_keywords", [])   # AI's list predates domains
+    general = set(src.get("general_feeds", GENERAL_FEEDS if DOMAIN == "ai" else ()))
+    topic = DOM["name"]
     reputable = {p.lower() for p in src["reputable_publishers"]}
     log(f"News window: {start:%a %b %d %H:%M} -> {end:%a %b %d %H:%M} ET")
     inwin = lambda t: t is not None and start <= t <= end
@@ -115,7 +117,7 @@ def main():
         for it in got:
             if not inwin(it["time"]):
                 continue
-            if f["name"] in GENERAL_FEEDS and not ai_related(it["title"], kws):
+            if f["name"] in general and not ai_related(it["title"], kws):
                 continue
             items.append({**it, "publisher": f["name"], "tier": f["tier"], "via": "feed"})
             n += 1
@@ -146,6 +148,8 @@ def main():
     # 3) Hacker News
     hn = []
     try:
+        if src.get("hacker_news") is False:
+            raise LookupError("off for this domain")
         url = ("https://hn.algolia.com/api/v1/search?tags=story&hitsPerPage=300&numericFilters="
                f"created_at_i>{int(start.timestamp())},created_at_i<{int(end.timestamp())},points>60")
         for h in json.loads(http_get(url, timeout=40))["hits"]:
@@ -155,7 +159,9 @@ def main():
                            "points": h.get("points", 0), "comments": h.get("num_comments", 0),
                            "hn": f"https://news.ycombinator.com/item?id={h['objectID']}"})
         hn.sort(key=lambda x: -x["points"])
-        log(f"  hacker news: {len(hn)} AI stories with >60 points")
+        log(f"  hacker news: {len(hn)} {topic} stories with >60 points")
+    except LookupError:
+        pass
     except Exception as e:
         log(f"  WARNING hacker news failed: {e}")
 
@@ -168,7 +174,7 @@ def main():
 
     recent_titles = [(j["date"], n["title"], n["story_key"]) for j in recent_digests(d) for n in j.get("news", [])]
 
-    WORK.mkdir(exist_ok=True)
+    WORK.mkdir(parents=True, exist_ok=True)
     dump = {"date": d.isoformat(), "window": [start.isoformat(), end.isoformat()], "hn": hn[:40],
             "headlines": [{**i, "time": i["time"].isoformat()} for i in heads]}
     (WORK / f"news_{d}.json").write_text(json.dumps(dump, indent=1))
@@ -179,7 +185,7 @@ def main():
         "hn": [{"t": h["title"], "pts": h["points"], "ts": h["time"][:16]} for h in hn[:15]]})
 
     tz = end.tzinfo
-    L = [f"# News candidates for {d}", f"Window: {start:%Y-%m-%d %H:%M} -> {end:%Y-%m-%d %H:%M} ET",
+    L = [f"# {topic} news candidates for {d}", f"Window: {start:%Y-%m-%d %H:%M} -> {end:%Y-%m-%d %H:%M} ET",
          f"{len(heads)} headlines from primary sources and reputable outlets. Group them into stories yourself; "
          "breadth of independent coverage is a strong (not decisive) importance signal.", ""]
     if recent_titles:
@@ -202,7 +208,7 @@ def main():
         if True:
             u = "" if "news.google.com" in it["url"] else f"  <{it['url']}>"
             L.append(f"- {when(it['time'])} | {it['publisher']}: {it['title']}{u}")
-    L += ["", "## C. Hacker News (AI, top by points)"]
+    L += ["", f"## C. Hacker News ({topic}, top by points)"] if hn else []
     L += [f"- {dt.datetime.fromisoformat(h['time']).astimezone(tz):%a %H:%M} | {h['points']} pts / {h['comments']} comments: "
           f"{h['title']}  <{h['url']}>" for h in hn[:10]]
     md = "\n".join(L)

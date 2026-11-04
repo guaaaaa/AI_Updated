@@ -1,0 +1,92 @@
+{
+ "_doc": "Science domain taxonomy: news categories and paper tags by field.",
+ "news_categories": {
+  "Space & Astronomy": "Missions, telescopes, planets, cosmology",
+  "Physics": "Fundamental and applied physics, quantum, particle and condensed matter",
+  "Life Sciences": "Biology, genetics, evolution, ecology",
+  "Medicine & Health": "Clinical results, public health, drugs and devices",
+  "Climate & Earth": "Climate, weather, oceans, geology",
+  "Chemistry & Materials": "Chemistry, materials, energy storage",
+  "Neuroscience": "Brain and behavior",
+  "Energy": "Fusion, fission, renewables and storage science",
+  "Science Policy & Funding": "Agencies, budgets, institutions and research policy"
+ },
+ "paper_tags": {
+  "Astrophysics & cosmology": {
+   "group": "Physical Sciences",
+   "desc": "Stars, galaxies, cosmology, gravitational waves"
+  },
+  "Planetary science": {
+   "group": "Physical Sciences",
+   "desc": "Planets, moons, exoplanets, the solar system"
+  },
+  "Particle & nuclear physics": {
+   "group": "Physical Sciences",
+   "desc": "Fundamental particles, nuclei, accelerators"
+  },
+  "Quantum physics": {
+   "group": "Physical Sciences",
+   "desc": "Quantum systems, information and computing"
+  },
+  "Condensed matter & materials": {
+   "group": "Physical Sciences",
+   "desc": "Solids, superconductors, new materials"
+  },
+  "Chemistry": {
+   "group": "Physical Sciences",
+   "desc": "Synthesis, catalysis, molecules"
+  },
+  "Molecular & cell biology": {
+   "group": "Life Sciences",
+   "desc": "Cells, proteins, molecular mechanisms"
+  },
+  "Genetics & genomics": {
+   "group": "Life Sciences",
+   "desc": "Genes, genomes, gene editing"
+  },
+  "Neuroscience": {
+   "group": "Life Sciences",
+   "desc": "Brains, neurons, cognition"
+  },
+  "Evolution & ecology": {
+   "group": "Life Sciences",
+   "desc": "Evolution, species, ecosystems, paleontology"
+  },
+  "Microbiology & immunology": {
+   "group": "Life Sciences",
+   "desc": "Microbes, viruses, immune system"
+  },
+  "Clinical medicine": {
+   "group": "Health",
+   "desc": "Trials, treatments, diagnostics"
+  },
+  "Epidemiology & public health": {
+   "group": "Health",
+   "desc": "Populations, disease burden, prevention"
+  },
+  "Drug discovery": {
+   "group": "Health",
+   "desc": "New drugs, targets, therapeutics"
+  },
+  "Climate science": {
+   "group": "Earth & Climate",
+   "desc": "Climate change, extremes, carbon cycle"
+  },
+  "Earth science": {
+   "group": "Earth & Climate",
+   "desc": "Geology, oceans, atmosphere"
+  },
+  "Energy science": {
+   "group": "Earth & Climate",
+   "desc": "Fusion, batteries, solar and other energy science"
+  },
+  "Computational science & AI": {
+   "group": "Methods",
+   "desc": "Simulation, AI for science, data methods"
+  },
+  "Mathematics": {
+   "group": "Methods",
+   "desc": "Proofs and mathematical results"
+  }
+ }
+}

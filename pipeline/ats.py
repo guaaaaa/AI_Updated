@@ -16,6 +16,7 @@ import html
 import json
 import re
 import sys
+import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -102,7 +103,116 @@ def lever(token):
     return out
 
 
-CLIENTS = {"greenhouse": greenhouse, "ashby": ashby, "lever": lever}
+# ---------------------------------------------------------------- Workday (big tech careers sites) and Amazon
+TECH_FAMILY = re.compile(r"engineer|software|hardware|research|data|technolog|\bit\b|information|product|scien|machine|\bai\b|analytic|"
+                         r"security|cyber|develop|architect|silicon|cloud|digital|univ|intern|graduate", re.I)
+COUNTRY = {"United States of America": "US", "United States": "US", "USA": "US", "Canada": "CA"}
+
+
+def _wd(base, tenant, site, body):
+    return json.loads(http_get(f"{base}/wday/cxs/{tenant}/{site}/jobs", data=json.dumps(body).encode(),
+                               headers={"Content-Type": "application/json", "Accept": "application/json"}, timeout=45, retries=2))
+
+
+def _facets(fs):
+    out = []
+    for f in fs or []:
+        out.append(f)
+        out += _facets([v for v in f.get("values", []) if v.get("facetParameter")])
+    return out
+
+
+def _posted(txt, today):
+    t = (txt or "").lower()
+    n = 0 if "today" in t else 1 if "yesterday" in t else int(m.group(1)) if (m := re.search(r"(\d+)\+? days", t)) else None
+    return (today - dt.timedelta(days=n)).isoformat() if n is not None else None
+
+
+def workday(token):
+    """token 'tenant|wdN|site'. Tech job families only, one pass per country (US, Canada) when the site has a country
+    filter; 20 postings a page (Workday's limit), at most 2,000 per pass."""
+    tenant, wd, site = token.split("|")
+    base, today = f"https://{tenant}.{wd}.myworkdayjobs.com", dt.date.today()
+    first = _wd(base, tenant, site, {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": ""})
+    facets = _facets(first.get("facets"))
+    applied = {}
+    for f in facets:
+        if f.get("facetParameter") in ("jobFamilyGroup", "jobFamily"):
+            ids = [v["id"] for v in f.get("values", []) if v.get("id") and TECH_FAMILY.search(v.get("descriptor") or "")]
+            if ids:
+                applied[f["facetParameter"]] = ids
+                break
+    cf_ = next((f for f in facets if any((v.get("descriptor") or "") in COUNTRY for v in f.get("values", []))), None)
+    passes = [(cf_["facetParameter"], v["id"], COUNTRY[v["descriptor"]]) for v in cf_["values"] if v.get("descriptor") in COUNTRY] if cf_ else [(None, None, None)]
+    out = {}
+    for param, cid, ctag in passes:
+        body = {"appliedFacets": {**applied, **({param: [cid]} if param else {})}, "limit": 20, "offset": 0, "searchText": ""}
+        total = None
+        while True:
+            r = _wd(base, tenant, site, body)
+            total = r.get("total", 0) if total is None else total
+            posts = r.get("jobPostings") or []
+            for x in posts:
+                path = x.get("externalPath") or ""
+                jid = (x.get("bulletFields") or [path])[0]
+                prev = out.get(jid)
+                locs = (prev["locs"] if prev else [x.get("locationsText") or ""]) + ([f"country:{ctag}"] if ctag else [])
+                out[jid] = {"id": jid, "title": x.get("title") or "", "dept": "", "locs": locs, "remote": None,
+                            "published": _posted(x.get("postedOn"), today), "text": None, "pay": None,
+                            "url": f"{base}/en-US/{site}{path}", "_path": path}
+            body["offset"] += 20
+            if not posts or body["offset"] >= min(total, 2000):
+                break
+            time.sleep(0.2)
+    return list(out.values())
+
+
+def workday_job(token, path):
+    """Description, locations and posting date of one Workday posting."""
+    tenant, wd, site = token.split("|")
+    x = json.loads(http_get(f"https://{tenant}.{wd}.myworkdayjobs.com/wday/cxs/{tenant}/{site}{path}", timeout=40, retries=2))
+    j = x.get("jobPostingInfo") or {}
+    locs = [j.get("location") or ""] + list(j.get("additionalLocations") or [])
+    c = (j.get("country") or {}).get("descriptor")
+    if c in COUNTRY:
+        locs.append(f"country:{COUNTRY[c]}")
+    return {"text": _plain(j.get("jobDescription")), "pay": None, "locs": [l for l in locs if l], "published": _day(j.get("startDate"))}
+
+
+AMAZON_CATS = ("software-development", "machine-learning-science", "research-science", "data-science", "solutions-architect",
+               "hardware-development", "systems-quality-security-engineering", "project-program-product-management-technical",
+               "business-intelligence", "economics")
+
+
+def amazon(token="amazon"):
+    """amazon.jobs search feed: tech categories, US and Canada, 100 a page (descriptions included)."""
+    out = {}
+    cats = "".join(f"&category%5B%5D={c}" for c in AMAZON_CATS)
+    for country, tag in (("USA", "US"), ("CAN", "CA")):
+        off, hits = 0, None
+        while True:
+            r = json.loads(http_get(f"https://www.amazon.jobs/en/search.json?result_limit=100&offset={off}&country%5B%5D={country}&sort=recent{cats}",
+                                    timeout=60, retries=2))
+            hits = r.get("hits", 0) if hits is None else hits
+            jobs = r.get("jobs") or []
+            for x in jobs:
+                try:
+                    pub = dt.datetime.strptime(" ".join((x.get("posted_date") or "").split()), "%B %d, %Y").date().isoformat()
+                except ValueError:
+                    pub = None
+                text = " ".join(_plain(x.get(k)) for k in ("description", "basic_qualifications", "preferred_qualifications"))
+                out[str(x.get("id_icims") or x.get("id"))] = {
+                    "id": str(x.get("id_icims") or x.get("id")), "title": x.get("title") or "", "dept": x.get("job_category") or "",
+                    "locs": [x.get("location") or "", f"country:{tag}"], "remote": None, "published": pub, "text": text[:20000] or None,
+                    "pay": None, "url": "https://www.amazon.jobs" + (x.get("job_path") or "")}
+            off += 100
+            if not jobs or off >= min(hits, 6000):
+                break
+            time.sleep(0.5)
+    return list(out.values())
+
+
+CLIENTS = {"greenhouse": greenhouse, "ashby": ashby, "lever": lever, "workday": workday, "amazon": amazon}
 
 
 def fetch_board(emp):
@@ -143,6 +253,8 @@ def probe():
         for name, best in ex.map(one, cands):
             (found.append(best) if best else missing.append(name))
     seen, emps = set(), []
+    old = json.loads((CONFIG / "employers.json").read_text())["employers"] if (CONFIG / "employers.json").exists() else []
+    found += [e for e in old if e["ats"] in ("workday", "amazon")]   # added by hand: big-tech careers sites
     for e in sorted(found, key=lambda e: e["name"].lower()):
         if (e["ats"], e["token"]) not in seen:
             seen.add((e["ats"], e["token"]))

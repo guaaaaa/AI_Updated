@@ -3,7 +3,8 @@
 Runs fetch_news.py and fetch_papers.py (no LLM usage; ~2-3 min), prints any source WARNINGs,
 plus fetch_jobs.py (the job board's daily snapshot) in parallel -- its problems are warnings only;
 then the news candidates followed by the paper shortlist — so the run needs one tool call, not four.
-Usage: python3 pipeline/prepare.py --date 2026-11-02
+Usage: python3 pipeline/prepare.py --date 2026-11-02 [--domain business|science]   (other domains: fetch_research.py,
+       no job snapshot)
 """
 import argparse
 import subprocess
@@ -11,6 +12,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "pipeline"))
+from common import DOMAIN  # noqa: E402  (also exports AIU_DOMAIN to the child scripts)
 
 
 def run(script, date):
@@ -26,11 +29,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", required=True)
     d = ap.parse_args().date
+    ai = DOMAIN == "ai"
     jobs = subprocess.Popen([sys.executable, str(ROOT / "pipeline" / "fetch_jobs.py"), "--date", d],
-                            stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=ROOT)
+                            stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=ROOT) if ai else None
     news, w1 = run("fetch_news.py", d)
-    papers, w2 = run("fetch_papers.py", d)
+    papers, w2 = run("fetch_papers.py" if ai else "fetch_research.py", d)
     try:
+        if jobs is None:
+            raise LookupError
         _, jerr = jobs.communicate(timeout=900)
         w3 = [f"jobs: {l.strip()}" for l in jerr.splitlines() if "WARNING" in l or "Traceback" in l or "Error" in l]
         if jobs.returncode:
@@ -38,6 +44,8 @@ def main():
     except subprocess.TimeoutExpired:
         jobs.kill()
         w3 = ["fetch_jobs.py timed out (the job board keeps yesterday's data)"]
+    except LookupError:
+        w3 = []
     warns = w1 + w2 + w3
     print("SOURCE WARNINGS: " + ("none" if not warns else "\n  " + "\n  ".join(warns)))
     print("\n" + news.strip() + "\n\n" + "=" * 100 + "\n\n" + papers.strip())

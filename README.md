@@ -1,13 +1,23 @@
-# AI Updated
+# Updated
 
-A daily digest of the most important AI news and papers, curated and explained by Claude every morning
-(Monday–Saturday, 7:30 ET): **up to 2 news stories and 5 papers per day, ~250–350 words each**, with tag and
-calendar filters. On top of it, a **Trends dashboard**: a monthly synthesis of where research and the industry are
-heading, grounded in statistics on every new arXiv paper and news story, plus an automatic Week in review.
+Daily digests of the most important news and research, curated and explained by Claude every morning
+(Monday–Saturday): one tab per **domain**, each item explained in ~250–350 words, with tag and calendar filters.
 
-**Site:** https://guaaaaa.github.io/AI_Updated/
+| Domain | Daily items | Sources | Runbook |
+|---|---|---|---|
+| **AI** | ≤2 news + ≤5 papers | arXiv (alphaXiv Hot, Hugging Face), lab blogs, reputable press | [`RUNBOOK.md`](RUNBOOK.md) |
+| **Business** | ≤5 news + ≤1 research | Fed, Bank of Canada, BEA, ECB, business press, NBER working papers | [`RUNBOOK_BUSINESS.md`](RUNBOOK_BUSINESS.md) |
+| **Science** | ≤3 news + ≤3 papers | NASA, NIH, NSF, science press, Nature, Science, Cell, NEJM, The Lancet, PNAS and others | [`RUNBOOK_SCIENCE.md`](RUNBOOK_SCIENCE.md) |
 
-## How it works
+AI also has a **Trends** view (a monthly synthesis grounded in statistics on every new arXiv paper and news story,
+stock-style direction and field pages, an automatic Week in review), and there is a cross-domain **Jobs** board.
+Domains are listed in `config/domains.json`; each has its own sources and taxonomy in `config/domains/<id>/`
+(AI keeps `config/*.json`) and its own data in `data/<id>/` (AI keeps `data/days/`). Every pipeline script takes
+`--domain <id>` (default `ai`).
+
+**Site:** https://guaaaaa.github.io/AI_Updated/ (`#/ai`, `#/business`, `#/science`, `#/jobs`)
+
+## How it works (AI; the other domains follow the same steps with `fetch_research.py` for papers)
 
 1. A Claude Code **cloud scheduled task** starts a fresh session every Monday–Saturday at 7:30 ET (no laptop
    needed) and follows [`RUNBOOK.md`](RUNBOOK.md).
@@ -61,12 +71,16 @@ enters through a labelled heuristic. No AI usage: everything is fetched and coun
   LLM, applied-AI and NLP engineers and applied scientists are one role). Each maps to US SOC and Canadian NOC codes
   and an Indeed category. Rules in `pipeline/jobs_classify.py` read the title (and the team for generic titles like
   "Member of Technical Staff"), the location, seniority, posted pay, years asked, PhD, remote and equity.
-- **Daily snapshot** (`pipeline/fetch_jobs.py`, run by `prepare.py`): the public job boards (Greenhouse, Ashby,
-  Lever) of 218 employers (`config/employers.json`, found by `pipeline/ats.py --probe` from
+- **Daily snapshot** (`pipeline/fetch_jobs.py`, run by the AI `prepare.py`): the public job boards (Greenhouse,
+  Ashby, Lever, plus Workday and amazon.jobs for big tech: NVIDIA, Amazon, Salesforce, Intel, Cisco, Capital One,
+  RBC, TD and others) of 238 employers (`config/employers.json`, found by `pipeline/ats.py --probe` from
   `config/employer_candidates.txt`). Open postings live in `data/state/jobs/open.tsv`; each day adds a line of role
   metrics to `data/state/jobs/daily/`. New and closed postings are counted only on boards seen the day before, and
   openings are chain-linked over boards that answered both days, so outages and newly added employers never look
   like hiring swings. Snapshots started on Nov 4, 2026 and cannot be backfilled.
+- **Official statistics** (`pipeline/jobs_history.py --official`): BLS occupational employment and median wages
+  (US; set `BLS_API_KEY` for more than the keyless daily allowance) and Job Bank 3-year employment outlooks
+  (Canada, by economic region).
 - **History** (`pipeline/jobs_history.py`): Hacker News "Who is hiring?" ads since Dec 2012 and "Who wants to be
   hired?" posts since 2014 (role shares and seekers per ad), Indeed Hiring Lab's postings index by category since
   Feb 2020 (CC BY 4.0), and the Anthropic Economic Index's AI and robot exposure by occupation.

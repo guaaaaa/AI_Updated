@@ -1,0 +1,50 @@
+{
+"source": "U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics (national)",
+"soc": {
+"15-2041": {
+"year": "2025",
+"employment": 29030,
+"median_wage": 105650
+},
+"15-2051": {
+"year": "2025",
+"employment": 262440,
+"median_wage": 120230
+},
+"17-2061": {
+"year": "2025",
+"employment": 76660,
+"median_wage": 161740
+},
+"17-2072": {
+"year": "2025",
+"employment": 96900,
+"median_wage": 130220
+},
+"17-2141": {
+"year": "2025",
+"employment": 296810,
+"median_wage": 104110
+},
+"17-2199": {
+"year": "2025",
+"employment": 154070,
+"median_wage": 122930
+},
+"27-3043": {
+"year": "2025",
+"employment": 47940,
+"median_wage": 76910
+},
+"41-9031": {
+"year": "2025",
+"employment": 51790,
+"median_wage": 124900
+},
+"43-9021": {
+"year": "2025",
+"employment": 127080,
+"median_wage": 41340
+}
+}
+}

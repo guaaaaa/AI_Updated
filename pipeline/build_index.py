@@ -5,16 +5,19 @@ data/daily.json (every announcement day: all new papers, upvotes, each field) an
 directions, day by day) from data/state/field_daily/ (pipeline/field_daily.py)."""
 import datetime as dt
 import json
+import os
 import re
 import sys
 from collections import Counter
 from pathlib import Path
 
+os.environ["AIU_DOMAIN"] = "ai"   # this script builds every domain; the AI-only parts (trends, weeks) use AI's paths
+sys.argv = [a for i, a in enumerate(sys.argv) if a != "--domain" and (i == 0 or sys.argv[i - 1] != "--domain")]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import field_daily as FY  # noqa: E402
 import field_stats as FS  # noqa: E402
 import week_review  # noqa: E402
-from common import DATA, DAYS, SUMMARIES, UTC, config, today_et  # noqa: E402
+from common import DATA, DAYS, DOMAINS, UTC, domain_paths, load_json, today_et  # noqa: E402
 
 
 def byline(p):
@@ -24,11 +27,13 @@ def byline(p):
     return s + (f" · {', '.join(aff[:3])}" if aff else "")
 
 
-def main():
-    tax = config("taxonomy")
+def domain_index(did):
+    """data/index.json (AI) or data/<id>/index.json: the day list, every item, tag/category counts, summaries."""
+    P = domain_paths(did)
+    tax = load_json(P["config"] / "taxonomy.json")
     days, items = [], []
     tag_counts, cat_counts = Counter(), Counter()
-    for f in sorted(DAYS.glob("*.json"), reverse=True):
+    for f in sorted(P["days"].glob("*.json"), reverse=True) if P["days"].exists() else []:
         j = json.loads(f.read_text(encoding="utf-8"))
         days.append({"date": j["date"], "edition": j["edition"], "news": len(j.get("news", [])),
                      "papers": len(j.get("papers", [])), "backfill": bool(j.get("backfill"))})
@@ -40,22 +45,36 @@ def main():
             tag_counts.update(p["tags"])
             items.append({"id": p["id"], "date": j["date"], "type": "paper", "title": p["title"], "tldr": p["tldr"],
                           "primary_tag": p["primary_tag"], "tags": p["tags"], "byline": byline(p),
-                          "hf": (p.get("signals") or {}).get("hf_upvotes")})
+                          "hf": (p.get("signals") or {}).get("hf_upvotes"), "venue": (p.get("signals") or {}).get("venue")})
     groups = {}
     for t, v in tax["paper_tags"].items():
         groups.setdefault(v["group"], []).append(t)
     summaries = []
-    for f in sorted(SUMMARIES.glob("*/*.json"), key=lambda f: json.loads(f.read_text())["published"], reverse=True):
+    sdir = P["summaries"]
+    for f in sorted(sdir.glob("*/*.json"), key=lambda f: json.loads(f.read_text())["published"], reverse=True) if sdir.exists() else []:
         j = json.loads(f.read_text(encoding="utf-8"))
         summaries.append({"kind": j["kind"], "id": j["id"], "start": j["period"]["start"], "end": j["period"]["end"],
                           "published": j["published"], "headline": j["headline"],
                           "heating": [h["label"] for h in j["research"]["heating"] + j["industry"]["heating"]],
                           "cooling": [h["label"] for h in j["research"]["cooling"] + j["industry"]["cooling"]]})
-    out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "days": days, "items": items,
+    out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "domain": did, "days": days, "items": items,
            "tag_groups": groups, "tag_counts": dict(tag_counts), "news_categories": list(tax["news_categories"]),
-           "category_counts": dict(cat_counts), "summaries": summaries, "weeks": week_review.build_all()}
-    (DATA / "index.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"index.json: {len(days)} days, {len(items)} items, {len(summaries)} summaries, {len(out['weeks'])} weeks")
+           "category_counts": dict(cat_counts), "summaries": summaries, "weeks": week_review.build_all() if did == "ai" else []}
+    P["data"].mkdir(parents=True, exist_ok=True)
+    (P["data"] / "index.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"{did} index.json: {len(days)} days, {len(items)} items, {len(summaries)} summaries, {len(out['weeks'])} weeks")
+    return {"latest": days[0]["date"] if days else None, "days": len(days)}
+
+
+def main():
+    meta = []
+    for d in DOMAINS:
+        info = domain_index(d["id"])
+        meta.append({"id": d["id"], "name": d["name"], "tagline": d.get("tagline", ""), "trends": bool(d.get("trends")),
+                     "paper_label": d.get("paper_label", "Papers"), "news": d["news"], "papers": d["papers"],
+                     "index": "data/index.json" if d["id"] == "ai" else f"data/{d['id']}/index.json", **info})
+    (DATA / "domains.json").write_text(json.dumps({"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "domains": meta},
+                                                  ensure_ascii=False, indent=1), encoding="utf-8")
     build_trends()
     try:   # the job board (data/jobs.json, data/jobs/) -- never blocks a digest
         import build_jobs

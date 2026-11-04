@@ -1,7 +1,15 @@
-"""Shared helpers: paths, time windows, HTTP, digest history."""
+"""Shared helpers: paths, time windows, HTTP, digest history.
+
+Domains (config/domains.json): every script works on one domain, chosen with --domain <id> (any script; removed from
+sys.argv here) or the AIU_DOMAIN environment variable, default "ai". The choice is exported so child scripts inherit
+it. AI keeps the original layout (data/days, data/state, config/*.json, work/); another domain lives in data/<id>/,
+config/domains/<id>/ and work/<id>/. data/state/ (field model, jobs) is shared.
+"""
 import datetime as dt
 import gzip
 import json
+import os
+import sys
 import time
 import urllib.error
 import urllib.request
@@ -11,9 +19,40 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config"
 DATA = ROOT / "data"
-DAYS = DATA / "days"
-STATE = DATA / "state"
-WORK = ROOT / "work"  # scratch output, git-ignored
+STATE = DATA / "state"          # shared state: field model, jobs (and AI's per-day snapshots)
+
+
+def _argv_domain():
+    for i, a in enumerate(sys.argv[1:], 1):
+        if a == "--domain" and i + 1 < len(sys.argv):
+            v = sys.argv[i + 1]
+            del sys.argv[i:i + 2]
+            return v
+        if a.startswith("--domain="):
+            del sys.argv[i]
+            return a.split("=", 1)[1]
+    return None
+
+
+DOMAINS = json.loads((CONFIG / "domains.json").read_text(encoding="utf-8"))["domains"]
+DOMAIN = _argv_domain() or os.environ.get("AIU_DOMAIN") or "ai"
+if DOMAIN not in {d["id"] for d in DOMAINS}:
+    raise SystemExit(f"unknown domain {DOMAIN!r}; see config/domains.json")
+os.environ["AIU_DOMAIN"] = DOMAIN
+DOM = next(d for d in DOMAINS if d["id"] == DOMAIN)
+
+
+def domain_paths(did):
+    if did == "ai":
+        return {"data": DATA, "days": DATA / "days", "summaries": DATA / "summaries", "state": STATE,
+                "work": ROOT / "work", "config": CONFIG}
+    base = DATA / did
+    return {"data": base, "days": base / "days", "summaries": base / "summaries", "state": base / "state",
+            "work": ROOT / "work" / did, "config": CONFIG / "domains" / did}
+
+
+_P = domain_paths(DOMAIN)
+DDATA, DAYS, DSTATE, WORK, DCONFIG = _P["data"], _P["days"], _P["state"], _P["work"], _P["config"]   # WORK is git-ignored
 
 ET = ZoneInfo("America/New_York")
 UTC = dt.timezone.utc
@@ -53,7 +92,12 @@ def load_json(path, default=None):
     return json.loads(p.read_text(encoding="utf-8"))
 
 
+DOMAIN_CONFIGS = ("sources", "taxonomy", "notable")   # per domain; everything else in config/ is shared
+
+
 def config(name):
+    if DOMAIN != "ai" and name in DOMAIN_CONFIGS:
+        return load_json(DCONFIG / f"{name}.json", {} if name == "notable" else None)
     return load_json(CONFIG / f"{name}.json")
 
 
@@ -83,7 +127,7 @@ def is_digest_day(d):
 
 
 # ---------------------------------------------------------------- weeks and months (summaries)
-SUMMARIES = DATA / "summaries"
+SUMMARIES = _P["summaries"]
 
 
 def week_id(d):
@@ -108,7 +152,7 @@ def month_days(mid):
 
 def snapshot_update(d, key, value):
     """Persist part of a day's broader evidence (shortlist, headline pool) for weekly/monthly summaries."""
-    path = STATE / "daily" / f"{d.isoformat()}.json"
+    path = DSTATE / "daily" / f"{d.isoformat()}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     j = load_json(path, {}) or {}
     j["date"], j[key] = d.isoformat(), value
@@ -120,7 +164,7 @@ def window_end(d):
 
 
 def paper_window(d):
-    hours = WEEKEND_PAPER_WINDOW_H if is_weekend(d) else WEEKDAY_WINDOW_H
+    hours = DOM.get("paper_window_h") or (WEEKEND_PAPER_WINDOW_H if is_weekend(d) else WEEKDAY_WINDOW_H)
     end = window_end(d)
     return end - dt.timedelta(hours=hours), end
 

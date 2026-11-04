@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Updated</title>
-  <meta name="description" content="A daily digest of the most important AI news and papers: up to 2 news stories and 5 papers a day, each explained in 250-350 words.">
+  <title>Updated</title>
+  <meta name="description" content="Daily digests of the most important news and research in AI, business and science, each item explained in 250-350 words, plus field trends and a job board.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Cpath d='M9 22l5-12h4l5 12h-3.4l-1-2.6h-5.2l-1 2.6zm5.4-5.3h3.2L16 12.6z' fill='white'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +17,12 @@
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="#/" aria-label="AI Updated home">
-        <span class="logo" aria-hidden="true">AI</span>
-        <span class="brand-text"><strong>AI Updated</strong><span class="tagline">Daily AI news &amp; papers, explained</span></span>
+      <a class="brand" href="#/" aria-label="Updated home">
+        <span class="logo" aria-hidden="true">U</span>
+        <span class="brand-text"><strong>Updated</strong><span class="tagline">Daily news &amp; research, explained</span></span>
       </a>
       <nav class="seg view-nav" id="viewNav" aria-label="Views">
-        <a href="#/" data-view="digest" class="on">Digest</a><a href="#/trends" data-view="trends">Trends</a><a href="#/jobs" data-view="jobs">Jobs</a>
+        <a href="#/ai" data-view="ai" class="on">AI</a><a href="#/jobs" data-view="jobs">Jobs</a>
       </nav>
       <div class="top-actions">
         <button class="icon-btn filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="sidebar">
@@ -57,7 +57,7 @@
       </section>
 
       <section class="panel">
-        <div class="panel-head"><h2>Paper tags</h2><button class="link-btn" id="clearAll">Clear filters</button></div>
+        <div class="panel-head"><h2 id="tagsTitle">Paper tags</h2><button class="link-btn" id="clearAll">Clear filters</button></div>
         <div id="tags"></div>
       </section>
 
@@ -73,7 +73,7 @@
   </div>
 
   <footer class="footer">
-    <p>Curated Monday–Saturday at 7:30 ET, with a monthly trend summary, an automatic Week in review and a daily job board, by Claude from arXiv, alphaXiv, Hugging Face Daily Papers, official lab blogs, reputable press and public job boards.
+    <p>AI, business and science digests curated Monday–Saturday mornings (ET), with AI trends, a monthly trend summary and a daily job board, by Claude from arXiv, journals, working papers, official releases, reputable press and public job boards.
       Summaries are AI-written; follow the source links for details. <a href="https://github.com/guaaaaa/AI_Updated">Source on GitHub</a>.</p>
   </footer>
   <script src="assets/trends.js"></script>

@@ -209,6 +209,92 @@ def exposure():
     log(f"  exposure.json: {len(out) - 1} occupations")
 
 
+# ---------------------------------------------------------------- official statistics
+def bls():
+    """BLS Occupational Employment and Wage Statistics (US, national): employment and annual median wage for every
+    SOC code the roles use -> bls.json. Uses BLS_API_KEY (v2) when set, else the keyless v1 API (25 series a call)."""
+    import os
+    import jobs_classify as JC
+    socs = sorted({s for r in JC.roles() for s in r.get("soc", [])})
+    ids = [f"OEUN{'0' * 13}{soc.replace('-', '')}{dt_}" for soc in socs for dt_ in ("01", "13")]
+    key = os.environ.get("BLS_API_KEY")
+    url, size = ("https://api.bls.gov/publicAPI/v2/timeseries/data/", 50) if key else ("https://api.bls.gov/publicAPI/v1/timeseries/data/", 24)
+    prev = json.loads((OUT / "bls.json").read_text()) if (OUT / "bls.json").exists() else {}
+    out = {"source": "U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics (national)",
+           "soc": dict(prev.get("soc", {}))}   # keep earlier values when a call is refused (keyless daily limit)
+    for k in range(0, len(ids), size):
+        body = {"seriesid": ids[k:k + size], **({"registrationkey": key} if key else {})}
+        r = json.loads(http_get(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json"}, timeout=60))
+        if r.get("status") != "REQUEST_SUCCEEDED":
+            log(f"  WARNING BLS: {r.get('status')} {(r.get('message') or [''])[:1]}")
+        for srs in (r.get("Results") or {}).get("series", []):
+            sid, data = srs["seriesID"], srs.get("data") or []
+            if not data:
+                continue
+            soc = f"{sid[17:19]}-{sid[19:23]}"
+            v = data[0]["value"]
+            rec = out["soc"].setdefault(soc, {})
+            rec["year"] = data[0]["year"]
+            rec["employment" if sid.endswith("01") else "median_wage"] = int(float(v)) if v not in ("-", "*", "#") else None
+        time.sleep(1)
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "bls.json").write_text(json.dumps(out, indent=0))
+    log(f"  bls.json: {len(out['soc'])} occupations")
+
+
+JOBBANK = ("https://open.canada.ca/data/dataset/b0e112e9-cf53-4e79-8838-23cd98debe5b/resource/cb52e1d0-ab62-4357-91cc-d8f5a2114e02/"
+           "download/20252027_outlook_n21_en_251208.xlsx")
+OUTLOOK_SCALE = {"Very limited": 1, "Limited": 2, "Moderate": 3, "Good": 4, "Very good": 5}
+
+
+def jobbank(url=JOBBANK):
+    """Job Bank 3-year employment outlooks (Canada, by economic region, NOC 2021) -> jobbank.json: per NOC code, the
+    share of rated regions with a good or very good outlook and the average rating (1 very limited .. 5 very good)."""
+    import io
+    import zipfile
+    import xml.etree.ElementTree as ET
+    z = zipfile.ZipFile(io.BytesIO(http_get_bytes(url)))
+    M = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
+    rows = []
+    for _, el in ET.iterparse(z.open("xl/worksheets/sheet1.xml")):
+        if el.tag == M + "row":
+            vals = []
+            for c in el.findall(M + "c"):
+                if c.get("t") == "inlineStr":
+                    vals.append("".join(x.text or "" for x in c.iter(M + "t")))
+                else:
+                    v = c.find(M + "v")
+                    vals.append(v.text if v is not None else "")
+            rows.append(vals)
+            el.clear()
+    hdr = rows[0]
+    ci, ti, oi = hdr.index("NOC_Code"), hdr.index("NOC Title"), hdr.index("Outlook")
+    agg = {}
+    for r in rows[1:]:
+        if len(r) <= oi or r[ci] == "NOC_Code":
+            continue
+        noc = r[ci].replace("NOC_", "")
+        a = agg.setdefault(noc, {"title": r[ti], "ratings": []})
+        if r[oi] in OUTLOOK_SCALE:
+            a["ratings"].append(OUTLOOK_SCALE[r[oi]])
+    out = {"source": "Employment and Social Development Canada, Job Bank 3-year employment outlooks 2025-2027 (NOC 2021)", "noc": {}}
+    for noc, a in agg.items():
+        rs = a["ratings"]
+        out["noc"][noc] = {"title": a["title"], "regions": len(rs),
+                           "good_share": round(sum(1 for x in rs if x >= 4) / len(rs), 3) if rs else None,
+                           "avg": round(sum(rs) / len(rs), 2) if rs else None}
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "jobbank.json").write_text(json.dumps(out, separators=(",", ":")))
+    log(f"  jobbank.json: {len(out['noc'])} occupations")
+
+
+def http_get_bytes(url, timeout=180):
+    import urllib.request
+    from common import UA
+    with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=timeout) as r:
+        return r.read()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hn", action="store_true", help="fetch new threads and re-aggregate")
@@ -216,9 +302,13 @@ def main():
     ap.add_argument("--refresh-last", type=int, default=2)
     ap.add_argument("--indeed", action="store_true")
     ap.add_argument("--exposure", action="store_true")
+    ap.add_argument("--official", action="store_true", help="BLS wages/employment and Job Bank outlooks")
     a = ap.parse_args()
     if a.exposure:
         exposure()
+    if a.official:
+        bls()
+        jobbank()
     if a.hn:
         hn_fetch(a.refresh_last)
     if a.hn or a.hn_aggregate:

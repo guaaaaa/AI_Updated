@@ -1,0 +1,168 @@
+{
+ "_doc": "Business domain sources: official releases (Fed, Bank of Canada, BEA, ECB), reputable business press, Google News searches filtered to reputable publishers, and research (NBER working papers, arXiv economics and finance).",
+ "news_feeds": [
+  {
+   "name": "Federal Reserve",
+   "tier": "primary",
+   "url": "https://www.federalreserve.gov/feeds/press_all.xml"
+  },
+  {
+   "name": "Bank of Canada",
+   "tier": "primary",
+   "url": "https://www.bankofcanada.ca/content_type/press-releases/feed/"
+  },
+  {
+   "name": "BEA",
+   "tier": "primary",
+   "url": "https://apps.bea.gov/rss/rss.xml"
+  },
+  {
+   "name": "European Central Bank",
+   "tier": "primary",
+   "url": "https://www.ecb.europa.eu/rss/press.html"
+  },
+  {
+   "name": "CNBC",
+   "tier": "press",
+   "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"
+  },
+  {
+   "name": "CNBC Economy",
+   "tier": "press",
+   "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258"
+  },
+  {
+   "name": "MarketWatch",
+   "tier": "press",
+   "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories"
+  },
+  {
+   "name": "The New York Times",
+   "tier": "press",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+  },
+  {
+   "name": "NYT Economy",
+   "tier": "press",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml"
+  },
+  {
+   "name": "BBC",
+   "tier": "press",
+   "url": "https://feeds.bbci.co.uk/news/business/rss.xml"
+  },
+  {
+   "name": "The Guardian",
+   "tier": "press",
+   "url": "https://www.theguardian.com/business/rss"
+  },
+  {
+   "name": "The Economist",
+   "tier": "press",
+   "url": "https://www.economist.com/finance-and-economics/rss.xml"
+  },
+  {
+   "name": "Fortune",
+   "tier": "press",
+   "url": "https://fortune.com/feed/"
+  },
+  {
+   "name": "The Globe and Mail",
+   "tier": "press",
+   "url": "https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/business/"
+  },
+  {
+   "name": "The Wall Street Journal",
+   "tier": "press",
+   "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"
+  },
+  {
+   "name": "TechCrunch",
+   "tier": "press",
+   "url": "https://techcrunch.com/feed/"
+  }
+ ],
+ "google_news_queries": [
+  "stock market",
+  "Federal Reserve",
+  "inflation CPI",
+  "earnings results",
+  "acquisition deal billion",
+  "IPO",
+  "layoffs",
+  "tariffs trade",
+  "oil prices",
+  "bank regulators",
+  "funding round valuation",
+  "Bank of Canada",
+  "jobs report",
+  "Treasury yields",
+  "antitrust",
+  "bankruptcy",
+  "consumer spending",
+  "housing market"
+ ],
+ "reputable_publishers": [
+  "Reuters",
+  "Associated Press",
+  "AP News",
+  "Bloomberg",
+  "Bloomberg.com",
+  "The Wall Street Journal",
+  "WSJ",
+  "Financial Times",
+  "The New York Times",
+  "The Washington Post",
+  "CNBC",
+  "BBC",
+  "The Guardian",
+  "The Economist",
+  "Axios",
+  "Fortune",
+  "Forbes",
+  "Business Insider",
+  "CNN",
+  "NPR",
+  "Politico",
+  "Los Angeles Times",
+  "Semafor",
+  "Nikkei Asia",
+  "South China Morning Post",
+  "The Atlantic",
+  "The Globe and Mail",
+  "CBC",
+  "CBC News",
+  "MarketWatch",
+  "Barron's",
+  "Financial Post",
+  "Morningstar",
+  "TechCrunch",
+  "Bloomberg Law",
+  "Yahoo Finance",
+  "The Information",
+  "Federal Reserve",
+  "Bank of Canada",
+  "BEA",
+  "European Central Bank"
+ ],
+ "topic_keywords": [],
+ "general_feeds": [],
+ "hacker_news": false,
+ "research": {
+  "feeds": [
+   {
+    "name": "NBER",
+    "venue": "NBER Working Paper",
+    "tier": "major",
+    "url": "https://www.nber.org/rss/new.xml"
+   }
+  ],
+  "arxiv_categories": [
+   "econ.GN",
+   "econ.EM",
+   "q-fin.GN",
+   "q-fin.TR",
+   "q-fin.ST"
+  ]
+ }
+}

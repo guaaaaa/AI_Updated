@@ -1,0 +1,178 @@
+{
+ "date": "2026-11-04",
+ "edition": "weekday",
+ "generated_at": "2026-11-04T22:02:37+00:00",
+ "summary": "Tech stocks rebound from an AI-spending selloff on election day, while Canva cuts 22% of staff, a Canadian restaurant franchiser bids for MTY, Shopify slips despite 31.5% growth, and US factory orders surprise to the upside.",
+ "news": [
+  {
+   "id": "2026-11-04-n1",
+   "story_key": "tech-rebound-midterms-2026-11",
+   "title": "US tech stocks rebound as an AI-spending selloff ends on election day",
+   "category": "Markets",
+   "published": "2026-11-03T17:18:45-05:00",
+   "tldr": "US tech shares recovered on Tuesday after a week-long AI selloff, with oil easing from $117 to $103 a barrel, while investors largely looked past the midterm elections.",
+   "why_selected": "Large market move with a clear cause, on the day of a major US election; it shows how much equity returns now depend on AI spending.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Wall Street has been carried this year by enthusiasm for artificial intelligence, especially the chips and data-centre infrastructure behind it. The S&P 500, the broad index of large US companies, is up 10% for the year, the tech-heavy Nasdaq is up 9% and the Dow Jones Industrial Average is up 7%. Late last week that run was interrupted by a selloff, as investors questioned how much companies are spending on AI."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday, the end of the US trading day brought a recovery. The S&P 500 closed up 0.37% and the Nasdaq rose 0.83%. The Dow fell 0.38%, weighed down by a 1.9% drop in Apple, which issued a worse-than-expected profit margin forecast because memory chips have become more expensive. Nvidia gained 2.3% after four straight losing sessions, and chipmakers Advanced Micro Devices, Broadcom and Micron also rose. The Nasdaq had closed Monday in correction territory, meaning more than 10% below its 6 October record close, and October was its worst month since March 2025. Brent crude, the global oil benchmark, fell to $103 a barrel from $117 at the end of October on hopes of new negotiations involving Iran and Russia."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The episode shows how concentrated market gains have become. A handful of AI-linked companies have supported index returns, so doubts about their spending can move whole portfolios, including retirement savings. Lower oil also eases pressure on inflation and on companies and households that pay for fuel. The Guardian noted that the midterm elections did not appear to have a large effect on Tuesday, although investors expected Democrats to win at least a House majority, which could bring more scrutiny and regulation of AI. The Guardian also cited CNBC analysis of 1980 to 2024 showing markets tend to rise after elections, once uncertainty clears. That is a historical pattern, not a forecast, and a single day's rebound does not settle whether the selloff is over."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Nvidia and other chipmakers keep their gains, how oil responds to any talks, and how Apple's higher memory-chip costs spread to other hardware makers."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-n2",
+   "story_key": "canva-layoffs-2026-11",
+   "title": "Canva to cut or relocate 1,271 jobs as growth slows",
+   "category": "Labor & Workplace",
+   "published": "2026-11-03T19:09:00-05:00",
+   "tldr": "Design-software firm Canva is restructuring 22% of its workforce, 1,271 people, after growth slowed for the first time in a decade and AI costs rose.",
+   "why_selected": "A large layoff at a well-known, richly valued startup that illustrates how AI is squeezing software companies from two sides.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Canva, founded in 2013 by Melanie Perkins, makes web-based design tools that let people without design training produce graphics and presentations. It is one of Australia's best-known start-ups and has staff in 37 countries. Its backers have lowered the value they put on the company this year, as investors worry about what AI means for software businesses."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday, Perkins told staff that 1,271 people, or 22% of the workforce, would lose their jobs, be asked to relocate to central hubs, or change roles. She called it the hardest moment in the company's thirteen-year history and said growth had slowed for the first time in a decade. Canva will merge its product, growth and platform teams, reduce narrow specialisation, make Sydney the primary home for more product teams, and from next year expect hybrid workers in the office two to three days a week. TechCrunch reported that Canva cut its revenue growth forecast to 20% from 30% because of rising AI costs. The BBC reported that two backers, Blackbird Ventures and Airtree, reportedly cut their valuation of Canva from A$60 billion to about A$49 billion."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Canva is squeezed from two sides. Building and running its own AI features is costly, and general chatbots such as ChatGPT and Gemini can now generate posters and presentations, competing with its core product. That combination pressures margins and growth at once, and Canva is not alone among software firms. For workers, the cuts show that even fast-growing tech companies are flattening their structures and tightening office rules. The company has said it is shipping its own AI models to reduce reliance on third-party providers, which may lower costs over time but does not remove the competitive threat."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Canva's growth stabilises near the lower 20% forecast, and whether other software companies announce similar restructurings."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/cw77pg7neydmo"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/04/canva-lays-off-over-1200-people-amid-slowing-growth/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-n3",
+   "story_key": "foodtastic-mty-bid-2026-11",
+   "title": "Foodtastic bids $1 billion for MTY Food Group as MTY replaces its CEO",
+   "category": "Deals & M&A",
+   "published": "2026-11-03T11:56:13-05:00",
+   "tldr": "Foodtastic took a $43-a-share cash offer for MTY directly to shareholders after MTY's board refused talks, on the same day MTY abruptly replaced its CEO.",
+   "why_selected": "A roughly $1 billion Canadian takeover contest involving a hostile-style bid and a surprise leadership change.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "MTY Food Group, based in Montreal, owns more than 80 restaurant brands at about 7,000 locations in Canada, the United States and abroad, including Thai Express and Manchu Wok. Most of its profit comes from franchising fees and royalties. Its shares have fallen about 15% this year as inflation-weary consumers cut back on dining out and costs rise. On 9 October MTY ended a nearly year-long strategic review by deciding to stay independent, then raised its dividend 35% and said it would buy back more shares."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday, Foodtastic, the franchiser behind Milestones and Freshii, announced a $43-per-share cash offer for MTY, worth about $1 billion for the equity and $1.5 billion including debt. That is a 32% premium to MTY's 30 October close. Foodtastic, backed by funds managed by Oaktree Capital Management, said it first proposed the deal in writing on 15 October and was rebuffed. MTY disagreed, saying Foodtastic had long been a potential buyer, had received multiple extensions to secure financing, and that its non-binding, conditional proposals were not in shareholders' interest, so it ended discussions. The same day, MTY said CEO Eric Lefebvre was stepping down immediately after about eight years, replaced by director Victor Mandel, with no reason given."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Taking an offer straight to shareholders is a way to pressure a board that will not negotiate. The bid exceeds every major Canadian bank analyst's one-year price target, according to Foodtastic, and an RBC analyst called Foodtastic a logical buyer and a sale a sensible outcome. A combined company would be a large Canadian fast-food and casual-dining group. The offer also tests whether shareholders accept a premium over MTY's independence plan."
+    },
+    {
+     "heading": "What to watch",
+     "body": "MTY's formal response, any improved or rival offer, and how the largest holders, including founder Stanley Ma and Fidelity, react."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-foodtastic-hostile-takeover-offer-982-million-mty-november-3/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-n4",
+   "story_key": "shopify-q3-2026",
+   "title": "Shopify shares drop 12.8% at the open despite 31.5% revenue growth",
+   "category": "Earnings & Companies",
+   "published": "2026-11-03T14:55:37-05:00",
+   "tldr": "Shopify's third-quarter revenue of US$3.742 billion grew 31.5% but missed analyst expectations by a hair, and the stock fell as expectations were high.",
+   "why_selected": "Results from a bellwether Canadian tech company that also reveal early data on shopping by AI agents.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Shopify, based in Ottawa, provides the software that lets merchants run online and physical stores. A large share of its revenue depends on its clients' sales, because it earns fees on payment processing, shipping and lending. It has usually beaten analyst revenue projections, so the market had come to expect that."
+    },
+    {
+     "heading": "What happened",
+     "body": "For the three months through September, Shopify reported revenue of US$3.742 billion, up 31.5% from a year earlier but just under the consensus estimate of US$3.744 billion. Profit was US$584 million, including US$122 million of paper losses from falling values of its equity investments, and earnings were US$0.49 a share, slightly ahead of estimates. Merchants sold US$119.1 billion of goods on the platform, up 29.5%. The stock opened down 12.8% at US$136.21 on the Nasdaq and traded around US$142 in the evening. For the fourth quarter, the biggest because of Black Friday and holiday shopping, Shopify expects revenue to grow at a low-30s percentage rate, slightly above analyst consensus."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A miss of US$2 million on US$3.7 billion is tiny, so the drop reflects how much was priced in. Scotiabank's Kevin Krishnaratne said expectations were high, while calling payments usage and free cash flow positive signs. The more durable story is AI shopping: Shopify said traffic from AI assistants more than doubled and automated orders rose more than threefold, though volumes remain small. Unlike Amazon, which blocks AI agents citing privacy and security risks, Shopify built a shared product catalogue for them. The cost is that its Sidekick AI assistant has lowered margins on subscription sales, according to its CFO."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Holiday-season sales, whether AI-agent orders become meaningful, and subscription margins."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-shopify-sales-earnings-stock-november-3/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-n5",
+   "story_key": "us-factory-orders-2026-09",
+   "title": "US factory orders jump 1.8% in September on aircraft and AI build-out",
+   "category": "Economy & Data",
+   "published": "2026-11-03T10:50:51-05:00",
+   "tldr": "New orders for US factory goods rose 1.8% in September, beating the 1.2% forecast, helped by aircraft bookings and AI infrastructure, though economists warn of headwinds next year.",
+   "why_selected": "A major macro release showing where US manufacturing strength comes from and how narrow it is.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Factory orders measure new bookings placed with US manufacturers and are watched as an early signal of production and business investment. Manufacturing is about 9.4% of the US economy. This year it has faced tariffs, pricing volatility, longer lead times and the US-Israeli war with Iran, which manufacturers cite as drags in surveys."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Census Bureau, part of the Commerce Department, reported on Tuesday that factory orders rose 1.8% in September after an upwardly revised 0.3% gain in August. Economists polled by Reuters had forecast 1.2%. Orders were up 7.2% from a year earlier. A 28.3% jump in orders for civilian aircraft and parts, a volatile category, did much of the work. Machinery orders rose 1.5%, computers and electronic products 0.8% (and 14.9% year over year), and motor vehicle bodies, parts and trailers 0.1%, while electrical equipment and appliances fell 0.3%. Orders for core capital goods, which exclude defence and aircraft and are a gauge of business equipment spending plans, rose 0.6%, and shipments of them rose 1.2%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The headline is strong, but its drivers are narrow. Aircraft orders swing sharply from month to month, and computer orders reflect the AI infrastructure build-out. Economists quoted in the report cautioned that rising interest rates and falling inflation-adjusted household income will hurt manufacturing next year, especially segments outside the AI spending boom. An Institute for Supply Management survey on Monday showed factory production booming in October even as manufacturer sentiment kept deteriorating. Together, the data suggest strong current activity with a more worried outlook, a mix that matters for hiring, capital spending and the interest-rate path."
+    },
+    {
+     "heading": "What to watch",
+     "body": "October core capital goods orders, the next ISM survey, and whether non-AI manufacturers start cutting spending."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail (Reuters)",
+     "url": "https://www.theglobeandmail.com/business/article-us-factory-orders-september-2026/"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

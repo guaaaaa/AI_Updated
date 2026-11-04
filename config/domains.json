@@ -1,0 +1,11 @@
+{
+ "note": "Each domain gets its own tab: digest (and trends where built). AI keeps the original paths. news/papers = daily caps; paper_window_h = how far back papers may come from (journals and working papers are weekly).",
+ "domains": [
+  {"id": "ai", "name": "AI", "tagline": "AI research and industry", "news": 2, "papers": 5, "runbook": "RUNBOOK.md", "trends": true,
+   "paper_label": "Papers"},
+  {"id": "business", "name": "Business", "tagline": "Markets, companies and the economy", "news": 5, "papers": 1, "runbook": "RUNBOOK_BUSINESS.md",
+   "trends": false, "paper_window_h": 168, "paper_label": "Research"},
+  {"id": "science", "name": "Science", "tagline": "Discoveries across physics, life sciences, space and climate", "news": 3, "papers": 3,
+   "runbook": "RUNBOOK_SCIENCE.md", "trends": false, "paper_window_h": 168, "paper_label": "Papers"}
+ ]
+}

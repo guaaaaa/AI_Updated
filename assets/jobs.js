@@ -11,12 +11,14 @@
   const money = (v, cur = "USD") => (v == null ? "–" : `${cur === "CAD" ? "CA$" : "$"}${Math.round(v / 1000)}K`);
   const signedPct = (x) => (x == null ? "–" : `${x >= 0 ? "+" : "−"}${Math.abs(x * 100).toFixed(0)}%`);
   const jobHref = (id) => `#/jobs/${id}`;
+  const OUTLOOK = ["", "Very limited", "Limited", "Moderate", "Good", "Very good"];
 
   // ---------------------------------------------------------------- scoring: percentiles among roles, user weights
   const CRITERIA = [
-    { key: "demand", label: "Demand trend", parts: [["demand", 1]],
-      help: "Is hiring for the role growing? Hacker News hiring-ad share (last 6 months vs a year earlier), Indeed's category index (6 months) and, once 4 weeks of snapshots exist, openings at tracked employers." },
-    { key: "openings", label: "Openings", parts: [["open", 1]], help: "Open US and Canada postings at the tracked AI and tech employers." },
+    { key: "demand", label: "Demand trend", parts: [["demand", 1], ["ca_outlook", 1]],
+      help: "Is hiring for the role growing? Hacker News hiring-ad share (last 6 months vs a year earlier), Indeed's category index (6 months), openings at tracked employers once 4 weeks of snapshots exist, and Canada's official 3-year outlook (Job Bank)." },
+    { key: "openings", label: "Job volume", parts: [["open", 1], ["bls_emp", 1]],
+      help: "Open US and Canada postings at the tracked employers, and how many people hold the occupation in the US (BLS)." },
     { key: "pay", label: "Pay", parts: [["pay", 1]], help: "Median midpoint of posted salary ranges (US, in USD; Canadian ranges converted at 0.73 where a role has no US data)." },
     { key: "entry", label: "Ease of entry", parts: [["junior", 1], ["phd", -1], ["yrs", -1]],
       help: "Share of postings open to interns and juniors, how often a PhD is mentioned, and the median years of experience asked." },
@@ -237,7 +239,8 @@
     const stat = (k, v, sub) => H.el("div", {}, H.el("dt", { text: k }), H.el("dd", {}, H.el("strong", { text: v }), sub ? H.el("span", { text: sub }) : null));
     const kstats = H.el("section", { class: "card" }, H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Key statistics" })),
       H.el("dl", { class: "kstats" },
-        stat("Open postings", (P.open ?? 0).toLocaleString(), `US ${P.open_us ?? 0} · Canada ${P.open_ca ?? 0}`),
+        stat("Open postings", (P.open ?? 0).toLocaleString(), `US ${P.open_us ?? 0} · Canada ${P.open_ca ?? 0}` +
+          ((P.open_us || 0) + (P.open_ca || 0) > (P.open || 0) ? " (some list both)" : "")),
         stat("Employers hiring", String(P.companies ?? 0), P.top3 == null ? "" : `top three hold ${pct(P.top3)}`),
         stat("Pay (US)", money(P.pay_us), P.pay_us_p25 ? `middle half ${money(P.pay_us_p25)}–${money(P.pay_us_p75)} · ${P.pay_us_n} ranges` : "no posted ranges"),
         stat("Pay (Canada)", money(P.pay_ca, "CAD"), P.pay_ca_n ? `${P.pay_ca_n} posted ranges` : "few posted ranges"),
@@ -246,6 +249,10 @@
         stat("Remote", pct(P.remote), `equity offered ${pct(P.equity)}`),
         stat("Posting age", P.age == null ? "–" : `${Math.round(P.age)} days`, "median days open (longer = harder to fill)"),
         stat("Seekers per ad", P.seekers_per_ad == null ? "–" : P.seekers_per_ad.toFixed(2), "Hacker News, last 12 months"),
+        stat("US employment", P.bls_emp == null ? "–" : P.bls_emp.toLocaleString(),
+          P.bls_wage ? `median wage ${money(P.bls_wage)} across all employers (BLS ${P.bls_year})` : "BLS figures pending"),
+        stat("Canada outlook", P.ca_outlook == null ? "–" : OUTLOOK[Math.round(P.ca_outlook)],
+          P.ca_good == null ? "" : `${pct(P.ca_good)} of regions rated good or very good (Job Bank 2025–27)`),
         stat("AI exposure", pct(P.ai_exposure), "share of the occupation's work seen done with AI (Anthropic Economic Index)"),
         stat("Robot exposure", pct(P.robot_exposure), "physical tasks robots could do (same source)"),
         stat("Score", me.score == null ? "–" : `${me.score} · #${rank} of ${scored.length}`, "with your weights on the board")));
@@ -282,7 +289,8 @@
         H.el("div", { class: "day-meta", text: `${P.group} · ${P.about}` }))),
       measureCard(P), kstats, crit, moves, hiring, latest,
       H.el("p", { class: "note sources", text: "Sources: public job boards of the tracked employers (Greenhouse, Ashby, Lever), Hacker News 'Who is hiring?' and 'Who wants to be hired?' threads, " +
-        "Indeed Hiring Lab Job Postings Index (CC BY 4.0), Anthropic Economic Index (AI and robot exposure), and this site's research-direction model." }));
+        "Indeed Hiring Lab Job Postings Index (CC BY 4.0), U.S. Bureau of Labor Statistics (OEWS), Job Bank 3-year employment outlooks (Government of Canada), " +
+        "Anthropic Economic Index (AI and robot exposure), and this site's research-direction model." }));
   }
 
   async function render(main, route) {

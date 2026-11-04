@@ -65,6 +65,20 @@ def build():
     lines = tracker()
     hn, ind = _load("hn.json"), _load("indeed.json", {"series": {}})
     expo = _load("exposure.json", {})
+    bls = (_load("bls.json", {}) or {}).get("soc", {})
+    jb = (_load("jobbank.json", {}) or {}).get("noc", {})
+
+    def official(r):
+        """US: total employment and employment-weighted median wage over the role's SOC codes (BLS OEWS);
+        Canada: average Job Bank outlook (1 very limited .. 5 very good) and share of regions rated good."""
+        socs = [bls[c] for c in r.get("soc", []) if c in bls and bls[c].get("employment")]
+        emp = sum(x["employment"] for x in socs) or None
+        wage = round(sum(x["employment"] * x["median_wage"] for x in socs if x.get("median_wage")) /
+                     sum(x["employment"] for x in socs if x.get("median_wage"))) if any(x.get("median_wage") for x in socs) else None
+        nocs = [jb[c] for c in r.get("noc", []) if c in jb and jb[c].get("avg") is not None]
+        return {"bls_emp": emp, "bls_wage": wage, "bls_year": socs[0]["year"] if socs else None,
+                "ca_outlook": round(sum(x["avg"] for x in nocs) / len(nocs), 2) if nocs else None,
+                "ca_good": round(sum(x["good_share"] for x in nocs) / len(nocs), 3) if nocs else None}
     T = json.loads((DATA / "trends.json").read_text()) if (DATA / "trends.json").exists() else {"directions": []}
     dirs = {d["id"]: d for d in T.get("directions", [])}
     reg = []
@@ -147,7 +161,7 @@ def build():
                "hn_share": (h or {}).get("share_6m"), "hn_yoy": (h or {}).get("yoy"), "seekers_per_ad": (h or {}).get("seekers_per_ad"),
                "indeed_us_6m": idd.get("US_6m"), "indeed_us_1y": idd.get("US_1y"), "indeed_ca_1y": idd.get("CA_1y"), "tracker_30d": t30,
                "demand": round(sum(demand) / len(demand), 4) if demand else None,
-               "ai_exposure": ai, "robot_exposure": exposure(r, "robot"), "tailwind": tw,
+               "ai_exposure": ai, "robot_exposure": exposure(r, "robot"), "tailwind": tw, **official(r),
                "spark": [round(a / b, 4) if b else None for a, b in zip((h or {}).get("ads_role", [])[-36:], (h or {}).get("ads", [])[-36:])] if h else []}
         board.append(row)
         page = {**row, "soc": r.get("soc"), "noc": r.get("noc"), "tracker": tr, "hn": h, "indeed_series": {c: idd.get(c) for c in ("US", "CA")},

@@ -1,0 +1,84 @@
+{
+ "_doc": "Business domain taxonomy: news categories and research tags (NBER-style fields).",
+ "news_categories": {
+  "Markets": "Stocks, bonds, currencies and commodities moves with a clear cause",
+  "Central Banks & Rates": "Fed, Bank of Canada, ECB and other rate decisions and guidance",
+  "Economy & Data": "Inflation, jobs, GDP, spending and other macro releases",
+  "Deals & M&A": "Mergers, acquisitions, takeovers and large investments",
+  "Earnings & Companies": "Results, guidance, strategy and leadership at major companies",
+  "Trade & Policy": "Tariffs, sanctions, regulation, antitrust and fiscal policy",
+  "Labor & Workplace": "Layoffs, hiring, wages, unions and work arrangements",
+  "Banking & Finance": "Banks, credit, private markets, insurance and crypto",
+  "Energy & Commodities": "Oil, gas, power, metals and agricultural markets",
+  "Tech & AI Business": "Business side of technology: AI spending, chips, platforms",
+  "Consumer & Retail": "Consumer demand, retail, travel and brands",
+  "Startups & VC": "Funding rounds, IPOs and venture markets",
+  "Real Estate": "Housing and commercial property"
+ },
+ "paper_tags": {
+  "Monetary policy": {
+   "group": "Macro",
+   "desc": "Central banks, interest rates, transmission"
+  },
+  "Inflation": {
+   "group": "Macro",
+   "desc": "Prices and inflation dynamics"
+  },
+  "Labor markets": {
+   "group": "Macro",
+   "desc": "Employment, wages, labor supply and demand"
+  },
+  "Growth & productivity": {
+   "group": "Macro",
+   "desc": "Output, productivity, technology and growth"
+  },
+  "Asset pricing": {
+   "group": "Finance",
+   "desc": "Returns, risk, markets and investors"
+  },
+  "Banking & credit": {
+   "group": "Finance",
+   "desc": "Banks, lending, financial stability"
+  },
+  "Corporate finance": {
+   "group": "Finance",
+   "desc": "Firm financing, governance, M&A"
+  },
+  "Industrial organization": {
+   "group": "Firms & Industry",
+   "desc": "Competition, market power, platforms"
+  },
+  "Innovation & technology": {
+   "group": "Firms & Industry",
+   "desc": "R&D, patents, AI and automation in firms"
+  },
+  "Management & organizations": {
+   "group": "Firms & Industry",
+   "desc": "How firms are run"
+  },
+  "International trade": {
+   "group": "Trade & Policy",
+   "desc": "Trade flows, tariffs, global value chains"
+  },
+  "Public finance": {
+   "group": "Trade & Policy",
+   "desc": "Taxes, spending, debt"
+  },
+  "Regulation": {
+   "group": "Trade & Policy",
+   "desc": "Rules and their effects on markets"
+  },
+  "Households & housing": {
+   "group": "Households",
+   "desc": "Consumption, saving, housing"
+  },
+  "Inequality & mobility": {
+   "group": "Households",
+   "desc": "Distribution of income and wealth"
+  },
+  "Energy & environment": {
+   "group": "Trade & Policy",
+   "desc": "Energy markets and climate economics"
+  }
+ }
+}

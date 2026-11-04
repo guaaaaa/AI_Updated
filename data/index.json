@@ -1,5 +1,6 @@
 {
- "updated": "2026-11-04T21:11:47+00:00",
+ "updated": "2026-11-04T22:03:57+00:00",
+ "domain": "ai",
  "days": [
   {
    "date": "2026-11-04",
@@ -241,7 +242,8 @@
     "Agents"
    ],
    "byline": "Jiarui Yuan, Yuxin Zuo, Xiaoyu Huang et al. · Tsinghua University, UC Berkeley",
-   "hf": 43
+   "hf": 43,
+   "venue": null
   },
   {
    "id": "2611.02633",
@@ -255,7 +257,8 @@
     "Agents"
    ],
    "byline": "Sean Wu, Aneesh Pappu, Jiaru Zou et al. · Stanford University, University of Oxford, MIT",
-   "hf": 14
+   "hf": 14,
+   "venue": null
   },
   {
    "id": "2611.03633",
@@ -270,7 +273,8 @@
     "Theory"
    ],
    "byline": "Catherine Li, Jingchu Gai, Andrej Risteski et al.",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2611.03097",
@@ -285,7 +289,8 @@
     "Agents"
    ],
    "byline": "Tiansheng Hu, Yichuan Wang, James V. Talwar et al. · NYU Shanghai, UC Berkeley, Rational Dynamics",
-   "hf": 5
+   "hf": 5,
+   "venue": null
   },
   {
    "id": "2611.05266",
@@ -300,7 +305,8 @@
     "Agents"
    ],
    "byline": "Kevin Frans, Alexander M Rush, Sergey Levine et al. · Cursor Research, UC Berkeley",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2026-11-03-n1",
@@ -333,7 +339,8 @@
     "Theory"
    ],
    "byline": "Suze van Adrichem, Luke Bailey, Rohith Kuditipudi et al. · Stanford University",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2611.00859",
@@ -347,7 +354,8 @@
     "Efficiency"
    ],
    "byline": "Yijie Jin, Yuxuan Liu, Jiajun Xu et al. · Shanghai Jiao Tong University, Xi'an Jiaotong University, Peking University",
-   "hf": 85
+   "hf": 85,
+   "venue": null
   },
   {
    "id": "2610.40748",
@@ -361,7 +369,8 @@
     "World Models"
    ],
    "byline": "Jun Cen, Yubo Guo, Hao Li et al. · Joy Future Academy",
-   "hf": 13
+   "hf": 13,
+   "venue": null
   },
   {
    "id": "2611.01022",
@@ -376,7 +385,8 @@
     "Agents"
    ],
    "byline": "Haozhan Tang, Hao Kang, Meng Lu et al. · Carnegie Mellon University, Virginia Tech, Massachusetts Institute of Technology",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2611.03178",
@@ -390,7 +400,8 @@
     "RSI"
    ],
    "byline": "Jiajie Jin, Guanting Dong, Chengjun Pan et al. · Renmin University of China, Fudan University, Peking University",
-   "hf": 73
+   "hf": 73,
+   "venue": null
   },
   {
    "id": "2026-11-02-n1",
@@ -415,7 +426,8 @@
     "Post-training"
    ],
    "byline": "Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee et al. · KAIST, POSTECH, RLWRLD",
-   "hf": 22
+   "hf": 22,
+   "venue": null
   },
   {
    "id": "2610.42146",
@@ -430,7 +442,8 @@
     "Generative Models"
    ],
    "byline": "Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui et al. · New York University (Courant Institute), Meta FAIR, AMI Labs",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.40799",
@@ -446,7 +459,8 @@
     "Post-training"
    ],
    "byline": "Yijia Fan, Xilin He, Yilei Jiang et al. · Chinese University of Hong Kong (MMLab), NovaXBot",
-   "hf": 16
+   "hf": 16,
+   "venue": null
   },
   {
    "id": "2610.41956",
@@ -461,7 +475,8 @@
     "AI for Science & Health"
    ],
    "byline": "Abdul Fatir Ansari, Oleksandr Shchur, Jaris Küken et al. · Amazon Web Services, University of Freiburg, Max Planck Institute for Biogeochemistry",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.42116",
@@ -475,7 +490,8 @@
     "LLMs"
    ],
    "byline": "Yuzhe Liu, Haolin Tian, Tonghan Wang · Tsinghua University",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2026-11-01-n1",
@@ -509,7 +525,8 @@
     "Agents"
    ],
    "byline": "NVIDIA, Aastha Jhunjhunwala, Aayushi Ashokkumar Srivastava et al. · NVIDIA",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.40362",
@@ -524,7 +541,8 @@
     "Theory"
    ],
    "byline": "Qifan Yu, Xinyu Ma, Xingyan Bin et al. · ByteDance Seed, Peking University",
-   "hf": 8
+   "hf": 8,
+   "venue": null
   },
   {
    "id": "2610.40618",
@@ -539,7 +557,8 @@
     "Efficiency"
    ],
    "byline": "Samson Gourevitch, Yazid Janati, Eric Moulines et al. · École polytechnique, MBZUAI, EPITA",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.40627",
@@ -555,7 +574,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Qiyao Ma, Xiaodong Liu, Weiwei Yang et al. · Microsoft Research, University of California, Davis",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.40051",
@@ -569,7 +589,8 @@
     "LLMs"
    ],
    "byline": "Alexander Stern, Tim Rocktäschel, Acyr Locatelli et al. · Cohere, UCL AI Centre, MIT",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2026-10-31-n1",
@@ -602,7 +623,8 @@
     "Agents"
    ],
    "byline": "Guancheng Pan, Qixin Tan, Yang Yuan et al. · Zhejiang University, Tsinghua University, Shanghai Qi Zhi Institute",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.40325",
@@ -616,7 +638,8 @@
     "Efficiency"
    ],
    "byline": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan et al. · FAIR at Meta, MIT",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.40565",
@@ -631,7 +654,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Pranjal Aggarwal, Sean Welleck · Carnegie Mellon University",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.38331",
@@ -645,7 +669,8 @@
     "Efficiency"
    ],
    "byline": "Jayden Teoh",
-   "hf": 19
+   "hf": 19,
+   "venue": null
   },
   {
    "id": "2610.40655",
@@ -659,7 +684,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Steven Yu, Sheng-Yu Wang, Kimia Hamidieh et al. · Northeastern University, MIT",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2026-10-30-n1",
@@ -692,7 +718,8 @@
     "Multimodal"
    ],
    "byline": "Randall Balestriero, Yann LeCun · Brown University, New York University, AMI Labs",
-   "hf": 66
+   "hf": 66,
+   "venue": null
   },
   {
    "id": "2610.40564",
@@ -707,7 +734,8 @@
     "Post-training"
    ],
    "byline": "Yuda Song, Alvin Zhang, Fahim Tajwar et al. · Carnegie Mellon University, Johns Hopkins University, Aurora Innovation",
-   "hf": 11
+   "hf": 11,
+   "venue": null
   },
   {
    "id": "2610.40476",
@@ -722,7 +750,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Samuel Schmidgall, Tim Strother, Alex Bijamov et al. · Google DeepMind, Google Research, Stanford University",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.40614",
@@ -737,7 +766,8 @@
     "Computer Vision"
    ],
    "byline": "Jinhyeok Choi, JoungBin Lee, Jongmin Lee et al. · KAIST AI, Ewha Womans University, KAIST Urban AI Institute",
-   "hf": 44
+   "hf": 44,
+   "venue": null
   },
   {
    "id": "2610.38681",
@@ -751,7 +781,8 @@
     "Post-training"
    ],
    "byline": "Yecheng Wu, Song Han, Han Cai · Massachusetts Institute of Technology, NVIDIA",
-   "hf": 3
+   "hf": 3,
+   "venue": null
   },
   {
    "id": "2026-10-29-n1",
@@ -782,7 +813,8 @@
     "Efficiency"
    ],
    "byline": "Xin Huang, Teng Ma, Zhuoran Li et al. · Fudan University, Peking University, MetaX Technology",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.33624",
@@ -798,7 +830,8 @@
     "Safety & Alignment"
    ],
    "byline": "Yue Huang, Yanbo Wang, Lichi Li et al.",
-   "hf": 37
+   "hf": 37,
+   "venue": null
   },
   {
    "id": "2610.34491",
@@ -814,7 +847,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Kaiser Sun, Yongchan Kwon, Zain Hasan et al. · Together AI",
-   "hf": 33
+   "hf": 33,
+   "venue": null
   },
   {
    "id": "2610.37662",
@@ -828,7 +862,8 @@
     "Architectures"
    ],
    "byline": "Jialv Zou, Xiaotong Li, Zhengrong Yue et al. · Meituan LongCat, Huazhong University of Science and Technology",
-   "hf": 29
+   "hf": 29,
+   "venue": null
   },
   {
    "id": "2610.37666",
@@ -843,7 +878,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Chaehyun Kim, Chi-Pin Huang, Jisoo Kim et al. · NVIDIA, KAIST",
-   "hf": 66
+   "hf": 66,
+   "venue": null
   },
   {
    "id": "2026-10-28-n1",
@@ -876,7 +912,8 @@
     "Reasoning"
    ],
    "byline": "Skander Moalla, Ahmad Rammal, Niket Patel et al. · FAIR at Meta, EPFL, New York University",
-   "hf": 19
+   "hf": 19,
+   "venue": null
   },
   {
    "id": "2610.36848",
@@ -890,7 +927,8 @@
     "Efficiency"
    ],
    "byline": "Shiyi Cao, Ziming Mao, Dacheng Li et al. · University of California, Berkeley",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.36068",
@@ -905,7 +943,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Jiayi Luo, Yang Zhang, Liliang Chen et al. · AgiBot, Beihang University, National University of Singapore",
-   "hf": 82
+   "hf": 82,
+   "venue": null
   },
   {
    "id": "2610.36269",
@@ -919,7 +958,8 @@
     "Multimodal"
    ],
    "byline": "Donghao Zeng, Nishant Subramani, Tamar Rott Shaham et al. · Mila, McGill University, Carnegie Mellon University",
-   "hf": 20
+   "hf": 20,
+   "venue": null
   },
   {
    "id": "2610.37364",
@@ -934,7 +974,8 @@
     "Efficiency"
    ],
    "byline": "Henrique Schechter Vera, Sahil Dua, Jovan Andonov et al. · Google",
-   "hf": 30
+   "hf": 30,
+   "venue": null
   },
   {
    "id": "2026-10-27-n1",
@@ -967,7 +1008,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Changlian Ma, Limin Wang · Nanjing University, Shanghai AI Laboratory",
-   "hf": 32
+   "hf": 32,
+   "venue": null
   },
   {
    "id": "2610.33512",
@@ -982,7 +1024,8 @@
     "Safety & Alignment"
    ],
    "byline": "Hyun Ryu, Jong-Heon Kim, Yiqing Xie et al. · KAIST AI, Carnegie Mellon University",
-   "hf": 47
+   "hf": 47,
+   "venue": null
   },
   {
    "id": "2610.35518",
@@ -997,7 +1040,8 @@
     "Post-training"
    ],
    "byline": "Shuo Shen, Guangran Cheng, Chengqi Lyu et al. · Shanghai AI Laboratory",
-   "hf": 33
+   "hf": 33,
+   "venue": null
   },
   {
    "id": "2610.34654",
@@ -1012,7 +1056,8 @@
     "Reasoning"
    ],
    "byline": "Nghi D. Q. Bui · Google",
-   "hf": 14
+   "hf": 14,
+   "venue": null
   },
   {
    "id": "2610.34356",
@@ -1026,7 +1071,8 @@
     "Pre-training & Data"
    ],
    "byline": "Haoyu Zhao, Xingyue Zhao, Zhian Su et al. · DAMO Academy (Alibaba Group), Hupan Lab, CUHK",
-   "hf": 27
+   "hf": 27,
+   "venue": null
   },
   {
    "id": "2026-10-26-n1",
@@ -1058,7 +1104,8 @@
     "LLMs"
    ],
    "byline": "Nicholas Roberts, Ahmed Ahmed, Suhas Kotha et al. · Princeton University, Stanford University, Jane Street",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.32770",
@@ -1073,7 +1120,8 @@
     "Multimodal"
    ],
    "byline": "Leon Sick, Lukas Hoyer, Yannick Strümpler et al. · Google, Ulm University",
-   "hf": 48
+   "hf": 48,
+   "venue": null
   },
   {
    "id": "2610.31778",
@@ -1088,7 +1136,8 @@
     "Safety & Alignment"
    ],
    "byline": "Jeanne Salle, Hardik Bhatnagar, Matthias Bethge et al. · ELLIS Institute Tübingen, Max Planck Institute for Intelligent Systems, Tübingen AI Center",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.31818",
@@ -1102,7 +1151,8 @@
     "Efficiency"
    ],
    "byline": "Tianzhe Chu, Druv Pai, Yi Ma · University of Hong Kong, UC Berkeley",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.32093",
@@ -1116,7 +1166,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Minho Park, Kinam Kim, Donghu Kim et al. · KAIST, Holiday Robotics",
-   "hf": 32
+   "hf": 32,
+   "venue": null
   },
   {
    "id": "2026-10-24-n1",
@@ -1139,7 +1190,8 @@
     "Agents"
    ],
    "byline": "Hongcheng Gao, Alex Zhou, Jay Zhu et al. · HexaFuture",
-   "hf": 97
+   "hf": 97,
+   "venue": null
   },
   {
    "id": "2610.28594",
@@ -1154,7 +1206,8 @@
     "Generative Models"
    ],
    "byline": "Byungwoo Jeon, Sunghwan Hong, Dohyeon Kim et al. · KAIST, ETH Zürich, Seoul National University",
-   "hf": 53
+   "hf": 53,
+   "venue": null
   },
   {
    "id": "2610.28069",
@@ -1168,7 +1221,8 @@
     "Agents"
    ],
    "byline": "Lingxiao Tang, Wei Tao, Yiwen Guo et al.",
-   "hf": 19
+   "hf": 19,
+   "venue": null
   },
   {
    "id": "2610.26844",
@@ -1183,7 +1237,8 @@
     "Theory"
    ],
    "byline": "Heejeong Nam, Divyat Mahajan, Quentin Le Lidec et al. · Brown University, Cold Spring Harbor Laboratory, Mila",
-   "hf": 44
+   "hf": 44,
+   "venue": null
   },
   {
    "id": "2610.28679",
@@ -1198,7 +1253,8 @@
     "RSI"
    ],
    "byline": "Jianing Yin, Ziyi Chen, Hao Wang et al. · University of Pennsylvania, University of Illinois at Urbana-Champaign, University of California Berkeley",
-   "hf": 27
+   "hf": 27,
+   "venue": null
   },
   {
    "id": "2026-10-23-n1",
@@ -1222,7 +1278,8 @@
     "AI for Science & Health"
    ],
    "byline": "Ming Zhong, Stacy Li, Nicholas Carlini et al. · Anthropic Fellows Program, Anthropic",
-   "hf": 27
+   "hf": 27,
+   "venue": null
   },
   {
    "id": "2610.28441",
@@ -1236,7 +1293,8 @@
     "LLMs"
    ],
    "byline": "Sahil Joshi, Prithvi Dixit, Aryan Katiyar et al. · Rice University, UC Berkeley, Stanford University",
-   "hf": 7
+   "hf": 7,
+   "venue": null
   },
   {
    "id": "2610.30949",
@@ -1251,7 +1309,8 @@
     "Post-training"
    ],
    "byline": "A. Jian Yang, An Huang, Bo Dan et al. · IQuest Research",
-   "hf": 101
+   "hf": 101,
+   "venue": null
   },
   {
    "id": "2610.29989",
@@ -1265,7 +1324,8 @@
     "World Models"
    ],
    "byline": "Ruopeng Gao, Yukun Huang, Jiarui Hu et al. · Nanjing University, ARC Lab Tencent IEG, Zhejiang University",
-   "hf": 71
+   "hf": 71,
+   "venue": null
   },
   {
    "id": "2610.30136",
@@ -1280,7 +1340,8 @@
     "Agents"
    ],
    "byline": "Zhuoyang Liu, Dantong Niu, Botong Zhang et al. · UC Berkeley, NVIDIA, University of Pennsylvania",
-   "hf": 18
+   "hf": 18,
+   "venue": null
   },
   {
    "id": "2026-10-22-n1",
@@ -1313,7 +1374,8 @@
     "RSI"
    ],
    "byline": "Yue Huang, Zhangchen Xu, Xiaonan Luo et al. · BakeLab",
-   "hf": 23
+   "hf": 23,
+   "venue": null
   },
   {
    "id": "2610.28577",
@@ -1327,7 +1389,8 @@
     "Agents"
    ],
    "byline": "Tianyu Fu, Ruoxi Wang, Zihan Min et al. · Tsinghua University, The Chinese University of Hong Kong",
-   "hf": 134
+   "hf": 134,
+   "venue": null
   },
   {
    "id": "2610.28698",
@@ -1341,7 +1404,8 @@
     "Agents"
    ],
    "byline": "Kuan Zhang, Yukun Chen, Zhihao Yang et al. · miHoYo, Tsinghua University, University of Chinese Academy of Sciences",
-   "hf": 85
+   "hf": 85,
+   "venue": null
   },
   {
    "id": "2610.25844",
@@ -1355,7 +1419,8 @@
     "Theory"
    ],
    "byline": "Yanjin He, Cuifeng Shen, Wanzhou Lei et al. · University of Michigan, Alibaba Group, University of California Berkeley",
-   "hf": 34
+   "hf": 34,
+   "venue": null
   },
   {
    "id": "2610.26828",
@@ -1369,7 +1434,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Zhaoyang Wang, Qianhui Wu, Haorui Wang et al. · UNC-Chapel Hill, Microsoft Research, Georgia Tech",
-   "hf": 99
+   "hf": 99,
+   "venue": null
   },
   {
    "id": "2026-10-21-n1",
@@ -1402,7 +1468,8 @@
     "Post-training"
    ],
    "byline": "Arash Ebrahim Abtahizadeh, Muna Aghamelu, Adil Ahmed et al. · Meta Superintelligence Labs",
-   "hf": 18
+   "hf": 18,
+   "venue": null
   },
   {
    "id": "2610.26860",
@@ -1416,7 +1483,8 @@
     "Agents"
    ],
    "byline": "Yu Zhou, Cheng-Fu Yang, Rui Sun et al. · University of California Los Angeles, Apple",
-   "hf": 112
+   "hf": 112,
+   "venue": null
   },
   {
    "id": "2610.27999",
@@ -1431,7 +1499,8 @@
     "Agents"
    ],
    "byline": "Jihai Zhang, Runjia Qian, Kaiqin Kong et al. · SkyworkAI, The Chinese University of Hong Kong, UC San Diego",
-   "hf": 101
+   "hf": 101,
+   "venue": null
   },
   {
    "id": "2610.26834",
@@ -1445,7 +1514,8 @@
     "Efficiency"
    ],
    "byline": "Anamaria-Roberta Hartl, Levente Zólyomi, Michael List et al. · Institute for Machine Learning (Linz), ELLIS Unit Linz, NX-AI",
-   "hf": 37
+   "hf": 37,
+   "venue": null
   },
   {
    "id": "2026-10-20-n1",
@@ -1477,7 +1547,8 @@
     "Post-training"
    ],
    "byline": "Chao Yu, Shu'ang Yu, Hao Lin et al. · Tsinghua University, AgiBot, Infinigence AI",
-   "hf": 127
+   "hf": 127,
+   "venue": null
   },
   {
    "id": "2610.26863",
@@ -1492,7 +1563,8 @@
     "Multimodal"
    ],
    "byline": "Keshigeyan Chandrasegaran, Yue Zhao, Armin W. Thomas et al. · Stanford University, Radical Numerics",
-   "hf": 5
+   "hf": 5,
+   "venue": null
   },
   {
    "id": "2610.26754",
@@ -1506,7 +1578,8 @@
     "Architectures"
    ],
    "byline": "Liana Patel, Rishabh Ranjan, Ion Stoica et al. · Stanford University, UC Berkeley",
-   "hf": 11
+   "hf": 11,
+   "venue": null
   },
   {
    "id": "2610.22791",
@@ -1521,7 +1594,8 @@
     "RSI"
    ],
    "byline": "Zhepei Wei, Wenlin Yao, Baolin Peng et al. · Microsoft Research, University of Virginia, Carnegie Mellon University",
-   "hf": 53
+   "hf": 53,
+   "venue": null
   },
   {
    "id": "2610.26825",
@@ -1535,7 +1609,8 @@
     "Architectures"
    ],
    "byline": "Zhiyu Li, Zeyu Zhang, Linyun Liu et al. · MemTensor",
-   "hf": 143
+   "hf": 143,
+   "venue": null
   },
   {
    "id": "2026-10-19-n1",
@@ -1568,7 +1643,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "SenseNova, Joint Research Team, Zhongang Cai et al. · SenseNova",
-   "hf": 164
+   "hf": 164,
+   "venue": null
   },
   {
    "id": "2610.22603",
@@ -1582,7 +1658,8 @@
     "Agents"
    ],
    "byline": "Marco Dos Santos, Vivek Veeriah, Alex Havrilla et al. · Google DeepMind, University of Cambridge",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.23036",
@@ -1596,7 +1673,8 @@
     "Efficiency"
    ],
    "byline": "Benhao Huang, Chufan Shi, Junlin Chen et al. · Institute of Foundation Models",
-   "hf": 19
+   "hf": 19,
+   "venue": null
   },
   {
    "id": "2610.23181",
@@ -1611,7 +1689,8 @@
     "Post-training"
    ],
    "byline": "Heming Zou, Qi Wang, Yixiu Mao et al. · Tencent Hunyuan",
-   "hf": 54
+   "hf": 54,
+   "venue": null
   },
   {
    "id": "2610.23653",
@@ -1625,7 +1704,8 @@
     "Multimodal"
    ],
    "byline": "Suchir Agarwal, Keshigeyan Chandrasegaran, Ziyu Chen et al. · Stanford University",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2026-10-17-n1",
@@ -1658,7 +1738,8 @@
     "Agents"
    ],
    "byline": "Qi Li, Xinchao Wang · National University of Singapore",
-   "hf": 165
+   "hf": 165,
+   "venue": null
   },
   {
    "id": "2610.22200",
@@ -1672,7 +1753,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Hanzhang Zhou, Long Li, Quyu Kong et al. · Alibaba Group",
-   "hf": 77
+   "hf": 77,
+   "venue": null
   },
   {
    "id": "2610.14709",
@@ -1686,7 +1768,8 @@
     "Post-training"
    ],
    "byline": "Yang Xiao, Yusong Sun, Haoyi Wu et al. · AllSpark Research",
-   "hf": 85
+   "hf": 85,
+   "venue": null
   },
   {
    "id": "2610.20818",
@@ -1701,7 +1784,8 @@
     "Architectures"
    ],
    "byline": "Qian Yu, Zongyang Qiu, Juncheng Yan et al. · Shanghai AI Laboratory, Shanghai Jiao Tong University, Huawei Technologies",
-   "hf": 50
+   "hf": 50,
+   "venue": null
   },
   {
    "id": "2610.12978",
@@ -1715,7 +1799,8 @@
     "Architectures"
    ],
    "byline": "Zihao Pan, Mengting Chen, Cheng Shi et al. · Sun Yat-sen University, Alibaba Group, The University of Hong Kong",
-   "hf": 23
+   "hf": 23,
+   "venue": null
   },
   {
    "id": "2026-10-16-n1",
@@ -1739,7 +1824,8 @@
     "Efficiency"
    ],
    "byline": "Li Nanbo, Firas Laakom, Yilan Zhang et al. · King Abdullah University of Science and Technology (KAUST)",
-   "hf": 17
+   "hf": 17,
+   "venue": null
   },
   {
    "id": "2610.20399",
@@ -1753,7 +1839,8 @@
     "Post-training"
    ],
    "byline": "Jintian Zhang, Feng He, Xinnian Liang et al. · Zhejiang University, ByteDance Seed, Tsinghua University",
-   "hf": 71
+   "hf": 71,
+   "venue": null
   },
   {
    "id": "2610.19820",
@@ -1768,7 +1855,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Huining Yuan, Xiangmin Yi, Zelai Xu et al. · Tsinghua University",
-   "hf": 59
+   "hf": 59,
+   "venue": null
   },
   {
    "id": "2610.17246",
@@ -1783,7 +1871,8 @@
     "Post-training"
    ],
    "byline": "Riccardo De Santi, Federico Di Gennaro, Angelo Gnazzo et al. · ETH Zurich, ETH AI Center, TU Wien",
-   "hf": 10
+   "hf": 10,
+   "venue": null
   },
   {
    "id": "2610.22347",
@@ -1798,7 +1887,8 @@
     "World Models"
    ],
    "byline": "Hyunwook Choi, Seungryong Kim, Dongyoon Han et al. · KAIST AI, NAVER AI Lab",
-   "hf": 80
+   "hf": 80,
+   "venue": null
   },
   {
    "id": "2026-10-15-n1",
@@ -1822,7 +1912,8 @@
     "Generative Models"
    ],
    "byline": "Hermann Kumbong, Ishan S. Khare, Iddah Mlauzi et al. · Stanford University, Together AI",
-   "hf": 20
+   "hf": 20,
+   "venue": null
   },
   {
    "id": "2610.20456",
@@ -1837,7 +1928,8 @@
     "Efficiency"
    ],
    "byline": "Ian Magnusson, Noah A. Smith, Pang Wei Koh · University of Washington, Allen Institute for AI",
-   "hf": 6
+   "hf": 6,
+   "venue": null
   },
   {
    "id": "2610.18861",
@@ -1852,7 +1944,8 @@
     "Interpretability"
    ],
    "byline": "Jiaru Zou, Yunzhe Qi, Sirui Chen et al. · Stanford University, UIUC, Together AI",
-   "hf": 37
+   "hf": 37,
+   "venue": null
   },
   {
    "id": "2610.14224",
@@ -1866,7 +1959,8 @@
     "Agents"
    ],
    "byline": "Ruiyao Xu, Yanfei Chen, Zhongying CuiZhu et al. · Google Cloud AI Research, Northwestern University",
-   "hf": 85
+   "hf": 85,
+   "venue": null
   },
   {
    "id": "2610.18774",
@@ -1880,7 +1974,8 @@
     "Robotics"
    ],
    "byline": "Gennady Sidorov, Valerii Kornilov, Denis Grankin et al. · Sber Robotics Center",
-   "hf": 98
+   "hf": 98,
+   "venue": null
   },
   {
    "id": "2026-10-14-n1",
@@ -1913,7 +2008,8 @@
     "RSI"
    ],
    "byline": "Simon Yu, Baolin Peng, Bo Liu et al. · Northeastern University, Microsoft, Stanford University",
-   "hf": 11
+   "hf": 11,
+   "venue": null
   },
   {
    "id": "2610.12818",
@@ -1928,7 +2024,8 @@
     "Computer Vision"
    ],
    "byline": "Minghao Fu, Tavis Siebert, Eryk Halicki et al. · UC San Diego, ETH Zurich, University of British Columbia",
-   "hf": 30
+   "hf": 30,
+   "venue": null
   },
   {
    "id": "2610.16794",
@@ -1943,7 +2040,8 @@
     "LLMs"
    ],
    "byline": "Futing Wang, Chenxi Li, Jianhao Yan et al. · Zhejiang University, Westlake University, Shanghai AI Laboratory",
-   "hf": 91
+   "hf": 91,
+   "venue": null
   },
   {
    "id": "2610.18472",
@@ -1957,7 +2055,8 @@
     "Efficiency"
    ],
    "byline": "Jiawei Zhang, Ziyu Wan, Nanye Ma et al. · Microsoft Research, Hong Kong University of Science and Technology",
-   "hf": 27
+   "hf": 27,
+   "venue": null
   },
   {
    "id": "2610.18356",
@@ -1972,7 +2071,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Yu Wang, Rui Dai, Wei Chen et al. · Alibaba",
-   "hf": 128
+   "hf": 128,
+   "venue": null
   },
   {
    "id": "2026-10-13-n1",
@@ -2005,7 +2105,8 @@
     "Pre-training & Data"
    ],
    "byline": "Shun Zou, Ziyu Ma, Yi Zou et al. · University of Science and Technology of China, AMAP (Alibaba Group), Southern University of Science and Technology",
-   "hf": 139
+   "hf": 139,
+   "venue": null
   },
   {
    "id": "2610.13630",
@@ -2020,7 +2121,8 @@
     "Efficiency"
    ],
    "byline": "Xiaohan Qin, Xiangdong Zhang, Tuo Dai et al. · Shanghai Jiao Tong University, Shanghai Innovation Institute, Xiaohongshu Inc.",
-   "hf": 51
+   "hf": 51,
+   "venue": null
   },
   {
    "id": "2610.13527",
@@ -2035,7 +2137,8 @@
     "Reasoning"
    ],
    "byline": "Zhiyuan Shi, Xiang Li, Xingzhuo Guo et al. · MirroS, Tsinghua University, Peking University",
-   "hf": 58
+   "hf": 58,
+   "venue": null
   },
   {
    "id": "2610.13778",
@@ -2049,7 +2152,8 @@
     "Architectures"
    ],
    "byline": "Ze-Wei Liou, Harris Nover, Amey Naik et al. · Princeton University, NVIDIA",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.12707",
@@ -2064,7 +2168,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Yueying Li, Jingxuan Fan, Kianté Brantley et al. · Massachusetts Institute of Technology, Cornell University, Scale AI",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2026-10-12-n1",
@@ -2088,7 +2193,8 @@
     "Reasoning"
    ],
    "byline": "Faisal Ladhak, Shantanu Acharya, Santiago Akle Serano et al. · NVIDIA",
-   "hf": 16
+   "hf": 16,
+   "venue": null
   },
   {
    "id": "2610.13917",
@@ -2103,7 +2209,8 @@
     "Agents"
    ],
    "byline": "Joseph Lee, Yanjing Li, Bo Qiang et al. · University of Washington, Allen Institute for AI (Ai2), National University of Singapore",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.12772",
@@ -2118,7 +2225,8 @@
     "Computer Vision"
    ],
    "byline": "Taoyang Jia, Weikai Huang, Linxin Song et al. · University of Washington, Stanford University, University of Southern California",
-   "hf": 57
+   "hf": 57,
+   "venue": null
   },
   {
    "id": "2610.12572",
@@ -2133,7 +2241,8 @@
     "Post-training"
    ],
    "byline": "Zhenglin Wan, Jiayu Chen, Zhengfeiyang Zhang et al. · HPC-AI Lab at National University of Singapore, Kling AI, Hong Kong University of Science and Technology",
-   "hf": 103
+   "hf": 103,
+   "venue": null
   },
   {
    "id": "2610.12611",
@@ -2148,7 +2257,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Tian Jin, Wenhao Wang, Jing Kang et al. · Shanghai Jiao Tong University, Zhejiang University",
-   "hf": 87
+   "hf": 87,
+   "venue": null
   },
   {
    "id": "2026-10-10-n1",
@@ -2180,7 +2290,8 @@
     "Generative Models"
    ],
    "byline": "Yuanhao Ban, I-Hung Hsu, Anastasios Angelopoulos et al. · Arena",
-   "hf": 36
+   "hf": 36,
+   "venue": null
   },
   {
    "id": "2610.07767",
@@ -2194,7 +2305,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Xin Wang, Hao Yu, Zhengyang Zhuge et al. · Alibaba Token Hub (Alibaba Group), Ohio State University",
-   "hf": 55
+   "hf": 55,
+   "venue": null
   },
   {
    "id": "2610.03858",
@@ -2209,7 +2321,8 @@
     "Optimization"
    ],
    "byline": "Maximilian Schlegel, Rajai Nasser, Seijin Kobayashi et al. · Google (Paradigms of Intelligence team, Zurich), MIT CSAIL",
-   "hf": 12
+   "hf": 12,
+   "venue": null
   },
   {
    "id": "2610.02368",
@@ -2223,7 +2336,8 @@
     "World Models"
    ],
    "byline": "Shukai Gong, Xuanran Zhai, Yintianrun Zhang et al. · DAGroup-PKU",
-   "hf": 69
+   "hf": 69,
+   "venue": null
   },
   {
    "id": "2610.08215",
@@ -2237,7 +2351,8 @@
     "Agents"
    ],
    "byline": "Yibo Li, Jinhang Qiu, Zhi Zheng et al. · National University of Singapore",
-   "hf": 55
+   "hf": 55,
+   "venue": null
   },
   {
    "id": "2026-10-09-n1",
@@ -2270,7 +2385,8 @@
     "Agents"
    ],
    "byline": "Harman Singh, Anton Bakhtin, Rulin Shao et al. · UC Berkeley, Meta Superintelligence Labs, University of Washington",
-   "hf": 6
+   "hf": 6,
+   "venue": null
   },
   {
    "id": "2610.08430",
@@ -2285,7 +2401,8 @@
     "Agents"
    ],
    "byline": "Songlin Jiang, Zhiyu Li, Terry Kong et al. · Aalto University, NVIDIA",
-   "hf": 28
+   "hf": 28,
+   "venue": null
   },
   {
    "id": "2610.09457",
@@ -2300,7 +2417,8 @@
     "Interpretability"
    ],
    "byline": "Yujia Zheng, David Klindt, Randall Balestriero et al. · University of Illinois Urbana-Champaign, Cold Spring Harbor Laboratory, Brown University",
-   "hf": 3
+   "hf": 3,
+   "venue": null
   },
   {
    "id": "2610.11959",
@@ -2315,7 +2433,8 @@
     "Agents"
    ],
    "byline": "Xiaomi LLM-Core Team, Zongming Qiao, Ziyue Hua et al. · Xiaomi",
-   "hf": 87
+   "hf": 87,
+   "venue": null
   },
   {
    "id": "2610.11287",
@@ -2329,7 +2448,8 @@
     "Agents"
    ],
    "byline": "Hanchen Xia, Baoyou Chen, Yutang Ge et al. · Fudan University, Shanghai Jiao Tong University, University of Michigan",
-   "hf": 54
+   "hf": 54,
+   "venue": null
   },
   {
    "id": "2026-10-08-n1",
@@ -2362,7 +2482,8 @@
     "Efficiency"
    ],
    "byline": "Wei Huang, Bohan Zhang, Chenzhi Liu et al. · NVIDIA, MIT, HKU",
-   "hf": 97
+   "hf": 97,
+   "venue": null
   },
   {
    "id": "2610.10515",
@@ -2377,7 +2498,8 @@
     "Robotics"
    ],
    "byline": "Artem Zholus, Nicolas Beltran-Velez, Jianhao Yuan et al. · FAIR at Meta, Chandar Research Lab, Mila - Quebec AI Institute",
-   "hf": 6
+   "hf": 6,
+   "venue": null
   },
   {
    "id": "2610.08077",
@@ -2392,7 +2514,8 @@
     "Post-training"
    ],
    "byline": "Haoxiang Zhang, Qinglin Chen, Hiroaki Hayashi et al. · Salesforce AI Research, UC San Diego, Texas A&M University",
-   "hf": 171
+   "hf": 171,
+   "venue": null
   },
   {
    "id": "2610.10524",
@@ -2406,7 +2529,8 @@
     "Efficiency"
    ],
    "byline": "Jiyoung Kim, Paul Hyunbin Cho, Jisu Nam et al. · KAIST AI, Kakao Corp.",
-   "hf": 73
+   "hf": 73,
+   "venue": null
   },
   {
    "id": "2610.07591",
@@ -2420,7 +2544,8 @@
     "Theory"
    ],
    "byline": "Yifan Zhang, Jichen Feng, Shihan Qin et al. · Princeton University, University of Pennsylvania",
-   "hf": 25
+   "hf": 25,
+   "venue": null
   },
   {
    "id": "2026-10-07-n1",
@@ -2453,7 +2578,8 @@
     "Efficiency"
    ],
    "byline": "Edan Kinderman, Elad Hoffer, Yochai Blau et al. · NVIDIA, Technion",
-   "hf": 25
+   "hf": 25,
+   "venue": null
   },
   {
    "id": "2610.06647",
@@ -2468,7 +2594,8 @@
     "Post-training"
    ],
    "byline": "Shaokun Zhang, Yifan Zhang, Jian Hu et al. · NVIDIA",
-   "hf": 45
+   "hf": 45,
+   "venue": null
   },
   {
    "id": "2610.02840",
@@ -2482,7 +2609,8 @@
     "World Models"
    ],
    "byline": "Chunghyun Park, Beomjun Kim, Seungcheol Park et al. · POSTECH, KAIST, Hanyang University",
-   "hf": 62
+   "hf": 62,
+   "venue": null
   },
   {
    "id": "2610.03543",
@@ -2496,7 +2624,8 @@
     "Efficiency"
    ],
    "byline": "Jiahao Zhan, Yan Wang, Yongrui Ma et al. · ByteDance",
-   "hf": 95
+   "hf": 95,
+   "venue": null
   },
   {
    "id": "2610.08778",
@@ -2510,7 +2639,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Weixian Xu, Yanzhe Zhang, Zora Zhiruo Wang et al. · Stanford University, Georgia Tech, Carnegie Mellon University",
-   "hf": 14
+   "hf": 14,
+   "venue": null
   },
   {
    "id": "2026-10-06-n1",
@@ -2543,7 +2673,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Sophie L. Wang, Amil Dravid, Rulin Shao et al.",
-   "hf": 21
+   "hf": 21,
+   "venue": null
   },
   {
    "id": "2610.04198",
@@ -2557,7 +2688,8 @@
     "Efficiency"
    ],
    "byline": "Liancheng Fang, Zhuowei Li, Youngeun Kim et al. · University of Illinois Chicago, Amazon AGI, Korea University",
-   "hf": 74
+   "hf": 74,
+   "venue": null
   },
   {
    "id": "2610.05608",
@@ -2571,7 +2703,8 @@
     "Multimodal"
    ],
    "byline": "Team Kandinsky, Julia Agafonova, Bulat Akhmatov et al. · Kandinsky Lab",
-   "hf": 167
+   "hf": 167,
+   "venue": null
   },
   {
    "id": "2610.04116",
@@ -2585,7 +2718,8 @@
     "Retrieval & Memory"
    ],
    "byline": "Yadong Lu, Theodore Lee, Yifei Li et al. · Microsoft Research, National University of Singapore, The Ohio State University",
-   "hf": 6
+   "hf": 6,
+   "venue": null
   },
   {
    "id": "2610.03391",
@@ -2599,7 +2733,8 @@
     "World Models"
    ],
    "byline": "Zhaochong An, Fei Zhang, Menglin Jia et al. · Meta AI, University of Copenhagen, Physical Intelligence",
-   "hf": 60
+   "hf": 60,
+   "venue": null
   },
   {
    "id": "2026-10-05-n1",
@@ -2623,7 +2758,8 @@
     "Post-training"
    ],
    "byline": "Adithya Bhaskar, Jeffrey Cheng, Danqi Chen · Princeton University",
-   "hf": 23
+   "hf": 23,
+   "venue": null
   },
   {
    "id": "2610.03025",
@@ -2637,7 +2773,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Alexander Spangher, Sheldon S. Huang, Andreas Haupt et al. · Stanford University, University of Toronto",
-   "hf": null
+   "hf": null,
+   "venue": null
   },
   {
    "id": "2610.02826",
@@ -2652,7 +2789,8 @@
     "RSI"
    ],
    "byline": "Zongxia Li, Yucheng Shi, Zhongzhi Li et al. · Tencent Hunyuan, University of Maryland",
-   "hf": 42
+   "hf": 42,
+   "venue": null
   },
   {
    "id": "2610.02508",
@@ -2667,7 +2805,8 @@
     "Generative Models"
    ],
    "byline": "Fei Zhang, Zhaochong An, Duncan Frost et al. · Shanghai Jiao Tong University, Meta, Imperial College London",
-   "hf": 87
+   "hf": 87,
+   "venue": null
   },
   {
    "id": "2610.03195",
@@ -2682,7 +2821,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Jonghyun Song, Haewon Park, Jeonghoon Shim et al. · Seoul National University",
-   "hf": 26
+   "hf": 26,
+   "venue": null
   },
   {
    "id": "2026-10-03-n1",
@@ -2715,7 +2855,8 @@
     "Efficiency"
    ],
    "byline": "Hao Li, MeiJia Chen, Weijie Ren et al. · University of Science and Technology of China, Rutgers University, Zhejiang University",
-   "hf": 160
+   "hf": 160,
+   "venue": null
   },
   {
    "id": "2609.39982",
@@ -2730,7 +2871,8 @@
     "Efficiency"
    ],
    "byline": "Minki Kang, Ryo Hachiuma, Shaokun Zhang et al. · NVIDIA",
-   "hf": 96
+   "hf": 96,
+   "venue": null
   },
   {
    "id": "2609.33848",
@@ -2745,7 +2887,8 @@
     "Efficiency"
    ],
    "byline": "Weiqi Wang, Yuxin Zhou, Mouxiang Chen et al. · Alibaba Group",
-   "hf": 49
+   "hf": 49,
+   "venue": null
   },
   {
    "id": "2609.38597",
@@ -2760,7 +2903,8 @@
     "Architectures"
    ],
    "byline": "Cong Wei, Xuanchi Ren, Bryan Chu et al. · NVIDIA",
-   "hf": 33
+   "hf": 33,
+   "venue": null
   },
   {
    "id": "2609.33803",
@@ -2774,7 +2918,8 @@
     "Safety & Alignment"
    ],
    "byline": "Xiangyang Wang, Bingxiang He, Zeyuan Liu et al. · Tsinghua University, The Chinese University of Hong Kong, University of Illinois Urbana-Champaign",
-   "hf": 32
+   "hf": 32,
+   "venue": null
   },
   {
    "id": "2026-10-02-n1",
@@ -2807,7 +2952,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Changdae Oh, Qi Zeng, Qi Qi et al. · Meta Superintelligence Labs, University of Wisconsin-Madison, Stanford University",
-   "hf": 90
+   "hf": 90,
+   "venue": null
   },
   {
    "id": "2609.38079",
@@ -2822,7 +2968,8 @@
     "Computer Vision"
    ],
    "byline": "Jiaxin Ge, Yiming Qin, Ji Xie et al. · UC Berkeley, Duke University, Carnegie Mellon University",
-   "hf": 45
+   "hf": 45,
+   "venue": null
   },
   {
    "id": "2609.37959",
@@ -2836,7 +2983,8 @@
     "Architectures"
    ],
    "byline": "Weihao Kong, Erez Louidor Ilan, Shuxin Nie et al. · Google Research",
-   "hf": 17
+   "hf": 17,
+   "venue": null
   },
   {
    "id": "2609.36730",
@@ -2850,7 +2998,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Gabriel Orlanski, Alex L. Zhang, Avi Trost et al. · University of Wisconsin-Madison, Massachusetts Institute of Technology, Snorkel AI",
-   "hf": 10
+   "hf": 10,
+   "venue": null
   },
   {
    "id": "2609.39102",
@@ -2865,7 +3014,8 @@
     "Reinforcement Learning"
    ],
    "byline": "Meijia Chen, Hao Li, Zheng Lu et al. · Rutgers University, University of California San Diego, University of Michigan",
-   "hf": 158
+   "hf": 158,
+   "venue": null
   },
   {
    "id": "2026-10-01-n1",
@@ -2898,7 +3048,8 @@
     "Efficiency"
    ],
    "byline": "Rulin Shao, Shannon Zejiang Shen, Junjie Oscar Yin et al. · University of Washington, Meta Superintelligence Labs, MIT",
-   "hf": 38
+   "hf": 38,
+   "venue": null
   },
   {
    "id": "2609.36322",
@@ -2914,7 +3065,8 @@
     "Evaluation & Benchmarks"
    ],
    "byline": "Xingyu Zhu, Ziheng Cheng, Ang Lv et al. · ByteDance Seed, Princeton University, Stanford University",
-   "hf": 36
+   "hf": 36,
+   "venue": null
   },
   {
    "id": "2609.33757",
@@ -2928,7 +3080,8 @@
     "Pre-training & Data"
    ],
    "byline": "Ruibin Yuan, Jiahao Pan, Junyan Jiang et al. · Hong Kong University of Science and Technology, Multimodal Art Projection, New York University",
-   "hf": 164
+   "hf": 164,
+   "venue": null
   },
   {
    "id": "2609.35457",
@@ -2943,7 +3096,8 @@
     "Architectures"
    ],
    "byline": "Lin Chen, Bolin Ni, Qi Yang et al. · Tencent, CASIA, UCAS",
-   "hf": 61
+   "hf": 61,
+   "venue": null
   },
   {
    "id": "2609.34981",
@@ -2958,7 +3112,8 @@
     "Generative Models"
    ],
    "byline": "Renping Zhou, Zanlin Ni, Zihao Fan et al. · Tsinghua-LeapLab",
-   "hf": 93
+   "hf": 93,
+   "venue": null
   }
  ],
  "tag_groups": {

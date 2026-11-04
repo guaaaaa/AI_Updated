@@ -86,6 +86,21 @@ def snapshot(day, workers=8):
     ok, failed = [r for r in results if not isinstance(r[1], Exception)], [r[0]["name"] for r in results if isinstance(r[1], Exception)]
     log(f"  jobs: {len(ok)}/{len(emps)} boards answered" + (f"; failed: {', '.join(failed[:12])}" if failed else ""))
 
+    # Workday lists multi-site postings as "3 Locations": read those postings' pages for their countries (new ones only)
+    def wd_locs(item):
+        emp, p = item
+        try:
+            d = ats.workday_job(emp["token"], p["_path"])
+            p.update({"locs": d["locs"], "text": d["text"], "published": d["published"] or p.get("published")})
+        except Exception:
+            pass
+    multi = [(emp, p) for emp, posts, _ in ok if emp["ats"] == "workday" for p in posts
+             if not JC.countries(p["locs"]) and f"workday:{emp['token']}:{p['id']}" not in reg and JC.classify_title(p["title"])]
+    if multi:
+        with cf.ThreadPoolExecutor(workers) as ex:
+            list(ex.map(wd_locs, multi))
+        log(f"  jobs: read {len(multi)} multi-location Workday postings")
+
     by_board = defaultdict(dict)
     for k, r in reg.items():
         by_board[k.rsplit(":", 1)[0]][k] = r
@@ -99,6 +114,9 @@ def snapshot(day, workers=8):
             if JC.countries(p.get("locs")):
                 total_na += 1
             old = reg.get(key)
+            if old and not JC.countries(p.get("locs")):   # Workday multi-site posting already parsed: keep it
+                seen[key] = old
+                continue
             desc = JC.describe(p)
             if not desc:
                 continue
@@ -111,7 +129,7 @@ def snapshot(day, workers=8):
             if not old:
                 if tracked_before:
                     new_keys.add(key)
-                if emp["ats"] == "greenhouse":
+                if emp["ats"] == "greenhouse" or (emp["ats"] == "workday" and not p.get("text")):
                     need_detail.append((emp, p, key))
         for key, r in by_board.get(bkey, {}).items():
             if key not in seen:
@@ -125,6 +143,9 @@ def snapshot(day, workers=8):
     def detail(item):
         emp, p, key = item
         try:
+            if emp["ats"] == "workday":
+                d = ats.workday_job(emp["token"], p["_path"])
+                return key, {**p, "locs": d["locs"] or p["locs"]}, d
             return key, p, ats.greenhouse_job(emp["token"], p["id"])
         except Exception:
             return key, p, None
@@ -137,7 +158,7 @@ def snapshot(day, workers=8):
                         r = reg[key]
                         pay = desc["pay"] or [None, None, None]
                         r.update({"yrs": desc["yrs"], "phd": desc["phd"], "equity": desc["equity"], "cur": pay[2], "pmin": pay[0], "pmax": pay[1]})
-        log(f"  jobs: parsed {len(need_detail)} Greenhouse descriptions")
+        log(f"  jobs: parsed {len(need_detail)} Greenhouse/Workday descriptions")
 
     # ---- daily metrics
     prev_counts = {k: v.get("open", {}) for k, v in boards.items()}

@@ -1,0 +1,52 @@
+{
+ "updated": "2026-11-04T22:03:57+00:00",
+ "domain": "science",
+ "days": [],
+ "items": [],
+ "tag_groups": {
+  "Physical Sciences": [
+   "Astrophysics & cosmology",
+   "Planetary science",
+   "Particle & nuclear physics",
+   "Quantum physics",
+   "Condensed matter & materials",
+   "Chemistry"
+  ],
+  "Life Sciences": [
+   "Molecular & cell biology",
+   "Genetics & genomics",
+   "Neuroscience",
+   "Evolution & ecology",
+   "Microbiology & immunology"
+  ],
+  "Health": [
+   "Clinical medicine",
+   "Epidemiology & public health",
+   "Drug discovery"
+  ],
+  "Earth & Climate": [
+   "Climate science",
+   "Earth science",
+   "Energy science"
+  ],
+  "Methods": [
+   "Computational science & AI",
+   "Mathematics"
+  ]
+ },
+ "tag_counts": {},
+ "news_categories": [
+  "Space & Astronomy",
+  "Physics",
+  "Life Sciences",
+  "Medicine & Health",
+  "Climate & Earth",
+  "Chemistry & Materials",
+  "Neuroscience",
+  "Energy",
+  "Science Policy & Funding"
+ ],
+ "category_counts": {},
+ "summaries": [],
+ "weeks": []
+}
