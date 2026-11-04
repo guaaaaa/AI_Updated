@@ -147,7 +147,7 @@ def main():
             press = sum(1 for h in heads if len(tw & h) >= 2)
             abstract = "" if re.match(r"^[\w .&]+,\s*(Volume|Published online)", it["desc"]) else it["desc"]
             cands[cid] = {"id": cid, "title": title, "authors": authors, "abstract": abstract,
-                          "announced": dt.datetime(day.year, day.month, day.day, 12, 0, tzinfo=TZ).isoformat(),
+                          "announced": dt.datetime(day.year, day.month, day.day, 0, 0, tzinfo=TZ).isoformat(),   # date only
                           "categories": [f["venue"]], "links": {k: v for k, v in links.items() if v.startswith("https://")},
                           "signals": {"venue": f["venue"], "tier": f.get("tier", "major"), "press": press or None},
                           "score": (3 if f.get("tier") == "flagship" else 1) + 2 * min(press, 3) + (1 if day >= start.date() else 0)}
