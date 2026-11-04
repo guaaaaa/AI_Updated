@@ -1,0 +1,370 @@
+{
+ "date": "2026-11-04",
+ "edition": "weekday",
+ "generated_at": "2026-11-04T12:17:43+00:00",
+ "summary": "Google ties school Search to its AI tools; papers cover open-weight robot agents, teamwork benchmarks, the Muon versus AdamW fine-tuning reversal, page-image deep research and text-guided RL.",
+ "news": [
+  {
+   "id": "2026-11-04-n1",
+   "story_key": "google-schools-ai-off-by-default-search-bundle",
+   "title": "Google will switch off Search for schools that reject its AI tools",
+   "category": "Policy & Legal",
+   "published": "2026-11-03T11:30:00-05:00",
+   "tldr": "Google will turn its AI tools off by default for K-12 student accounts, but schools that keep them off also lose Google Search, because Google treats Search and AI as one product.",
+   "why_selected": "A major platform decision about AI in classrooms that drew immediate political reaction and sets a precedent for bundling AI with core services.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Google's education products are everywhere in schools, helped by the ubiquity of Chromebooks. Months ago Google turned its Gemini assistant on by default inside Google Classroom, an app used by more than 150 million teachers and students worldwide. Last month, lawmakers pressed Google on the potential harms of putting its AI products in schools."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday, Google announced that Gemini, NotebookLM, Gemini in Classroom and Google Search will be entirely off for K-12 student accounts unless administrators explicitly turn them on. The change rolls out over the coming months, and Google says it will share specifics with schools beforehand. Google education vice president Chris Phillips told The New York Times that Search and AI are deeply integrated, so schools that do not enable AI will not have access to Search, and students will see a message that it is unavailable. Google announced this alongside the school launch of Guided Learning, an AI tutoring mode meant to help students work through problems rather than get answers. Guided Learning is being embedded into AI Overviews in Search, with testing in select US schools this month. Google says the change gives schools more choice, not less."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The decision shows how far Google has folded generative AI into its core products: most searches now show an AI Overview, and Google executives have said that Search is AI search. For schools, the choice is no longer AI versus no AI but AI versus losing the main way students find sources. Critics responded quickly. Senator Bernie Sanders called the move extortion, New York City Mayor Zohran Mamdani said no corporation should dictate how children are taught, and California official Rohit Chopra said Big Tech should not strong-arm schools. Ars Technica notes that schools could move to alternatives such as DuckDuckGo, which lets users disable AI features. The case previews a wider fight over unbundling AI from essential products."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch whether any schools actually drop Search, whether Google offers an AI-free search for schools, and whether lawmakers move beyond statements to action."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.01560",
+   "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+   "authors": [
+    "Jiarui Yuan",
+    "Yuxin Zuo",
+    "Xiaoyu Huang",
+    "Wenbo Zhang",
+    "Kwanyoung Park",
+    "Junlin Yang",
+    "Tianxiang Zhang",
+    "Ruoqu Chen",
+    "Yutao Ouyang",
+    "Bingxiang He",
+    "Xingtai Lv",
+    "Hongjin Wu",
+    "Jiajun Liu",
+    "Jiahao Zhao",
+    "Tianwei Luo",
+    "Haozhan Li",
+    "Cheng Qian",
+    "Jiaxin Ge",
+    "Huan-ang Gao",
+    "Kaisen Yang",
+    "Jiaqi Deng",
+    "Qixin Xu",
+    "Siqiao Huang",
+    "Bowen Zhou",
+    "Mengdi Xu",
+    "Zhiyuan Liu",
+    "Pieter Abbeel",
+    "Ning Ding"
+   ],
+   "affiliations": [
+    "Tsinghua University",
+    "UC Berkeley"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents"
+   ],
+   "tldr": "An open-weight Qwen model, driven through a carefully designed tool harness and with no privileged inputs, beats the published GPT-6 Astra result on the RoboDojo robot benchmark.",
+   "why_selected": "Strong alphaXiv and Hugging Face attention, and a clear demonstration that harness design lets open models compete at robot use.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Frontier models such as GPT-6 Astra can manipulate objects by calling tools, an approach called robot-use agents. Because those models are proprietary, researchers cannot train them further, and API calls make large-scale experiments expensive."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Open-weight models have lagged on robot use, so earlier work leaned on shortcuts: ground-truth simulator depth, oracle success feedback from the benchmark, or hand-written task-specific skills. Those make results hard to transfer to real robots."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors argue the first step is a good harness, the software layer that exposes tools to the model. Their uni-robot-agent gives the model shared tools for motion, perception and episode control with common units and feedback, plus adapters so the same tools run in simulation and on real robots. Think of it as a universal remote that works the same on every robot. Reasoning also overlaps physical execution, so the model plans the next step while the arm is still moving. Inputs stay realistic: RGB images, camera calibration, robot description and instructions, with no simulator depth or verifier feedback. Models can still compute 3D positions by writing geometry code that triangulates points across camera views."
+    },
+    {
+     "heading": "Results",
+     "body": "On RoboDojo's 42 tasks, Qwen3.8-Flash-Next reaches a score of 31.39, above the published GPT-6 Astra result of 28.97 and above the VLA and world-action baselines listed. DeepSeek-V4.1-Flash scores 27.11. In the real world, across 19 tasks, Qwen scores 53.50 versus 47.75 for fine-tuned pi-0.5 and 80.50 for GPT-6 Astra. Removing depth costs Qwen only 4.5 points. An Astra episode costs $21.29 versus $1.09 for Qwen, though Astra scores 51.90 in the same harness."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result suggests that much of the robot-use gap came from harnesses, not model size, and it gives researchers an open base for training on robot experience. Caveats: the Qwen win is against Astra in a different harness, the closed model is far stronger in the authors' own harness, and precise, long-horizon manipulation remains unreliable."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.01560",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.01560",
+    "code": "https://github.com/Open-RUA/uni-robot-agent"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 4,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 43,
+    "notable_authors": [
+     "Pieter Abbeel"
+    ]
+   }
+  },
+  {
+   "id": "2611.02633",
+   "title": "Measuring AI Agents as Teammates with Collaborative Intelligence",
+   "authors": [
+    "Sean Wu",
+    "Aneesh Pappu",
+    "Jiaru Zou",
+    "Yubin Kim",
+    "Yuncong Mao",
+    "Hongjian Zhou",
+    "Junchi Yu",
+    "Jieneng Chen",
+    "James Zou"
+   ],
+   "affiliations": [
+    "Stanford University",
+    "University of Oxford",
+    "MIT"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Agents"
+   ],
+   "tldr": "A 240-task benchmark scores AI agents as teammates and finds that even the best model reaches only 82.2 out of 100, with strong models caving under social pressure and keeping inherited cheating.",
+   "why_selected": "It measures a capability that matters as agent teams spread, and shows that individual capability does not predict teamwork.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "AI is increasingly deployed in teams of agents and people, yet most benchmarks score a single model working alone. A model can finish its own task and still be a poor colleague, and nobody measures that."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Model cards and leaderboards report individual capability. Newer multi-agent benchmarks score the team's final outcome, which makes it hard to say which member failed or why."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The Collaborative Intelligence Benchmark borrows from decades of research on human teams. It has 240 tasks across eight dimensions, such as resisting unsafe pressure, reporting a teammate's misconduct, sharing hidden information, handling conflict, and taking over a task a weaker model cheated on. Each task comes from a real record or an existing benchmark, such as aviation accident reports, clinical cases, coding tasks and negotiations, and has a programmatically checkable outcome. To isolate teamwork from skill, a model is scored only on tasks it can solve alone with full information. A scripted teammate then creates the problem, and the score reflects whether the model does what a good colleague would."
+    },
+    {
+     "heading": "Results",
+     "body": "The authors evaluate 18 models over 24,851 runs. Gemini 4 Argon at high reasoning effort scores best at 82.2. Scores fall 20.2 to 46.6 points once a teammate causes trouble. Frontier models pass at least 93% of unsafe-pressure and misconduct tests, but reach the best deal in only 14% of conflicts, and their pass rate drops from 97% to 81% after taking over a task from a cheating weaker model. Models with nearly equal capability differ by up to 11 points as teammates."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Labs could report a teamwork score next to capability scores, and builders could use it to choose models for agent teams. Most failures come after the model has noticed the problem, so the gap is in acting, not perceiving. The caveat, which the authors state, is that they have not yet shown the score predicts value in other team tasks."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.02633",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.02633",
+    "code": "https://github.com/zou-group/collaborative-intelligence"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 49,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 14,
+    "notable_authors": [
+     "James Zou"
+    ],
+    "org": "Stanford University"
+   }
+  },
+  {
+   "id": "2611.03633",
+   "title": "Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap",
+   "authors": [
+    "Catherine Li",
+    "Jingchu Gai",
+    "Andrej Risteski",
+    "Jacob Mitchell Springer",
+    "Aditi Raghunathan"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Optimization",
+   "tags": [
+    "Optimization",
+    "Pre-training & Data",
+    "Theory"
+   ],
+   "tldr": "Muon beats AdamW at pretraining loss but, with enough pretraining data, AdamW models fine-tune better, and the crossover arrives sooner as models grow.",
+   "why_selected": "A surprising, well-tested result that questions using pretraining loss to choose optimizers, backed by a theoretical explanation.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Muon, a newer optimizer, reaches lower pretraining loss than AdamW, the long-time default. What practitioners care about is the model after fine-tuning, and it is unclear that a lower pretraining loss carries over."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Pretraining choices are typically picked to minimize pretraining loss. Earlier work noted that the lowest-loss model is not always best after fine-tuning, and one comparison found Muon ahead only in small-data regimes."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors judge each base model by its learning-forgetting frontier: how low fine-tuning loss gets, against how much pretraining knowledge is lost, across many fine-tuning learning rates. To explain what they find, they treat fine-tuning as a perturbation of the model's output logits and introduce the margin-to-spread ratio, which measures how far the correct logit sits above the wrong ones relative to the spread of the wrong ones. A larger ratio means the prediction survives perturbation. In a linear associative memory, a toy model that maps keys to values, they prove that after one update the ratio for gradient descent gains on Muon's as data grows. Measurements on real language models show the same crossover."
+    },
+    {
+     "heading": "Results",
+     "body": "They pretrain OLMo-style models from 30M to 600M parameters on 150M to 154B tokens, running nearly 600 pretraining and 29,000 fine-tuning runs. Muon wins at small budgets, such as 2.4B tokens for a 60M model, and AdamW wins beyond that, though Muon keeps lower pretraining loss throughout. On StackMathQA, the crossover is 320 tokens per parameter at 30M parameters but only 10 at 600M."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Optimizer choice by pretraining loss alone may mislead at scale, and the authors suggest objectives that target adaptability directly. Caveats: models are small, and fine-tuning on data close to the pretraining data would behave like continued pretraining."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.03633",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.03633"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 11,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2611.03097",
+   "title": "DR Pixel: Page-Native Deep Research with Vision-Language Models",
+   "authors": [
+    "Tiansheng Hu",
+    "Yichuan Wang",
+    "James V. Talwar",
+    "Nicholas Tomlin",
+    "Chen Zhao",
+    "Sewon Min"
+   ],
+   "affiliations": [
+    "NYU Shanghai",
+    "UC Berkeley",
+    "Rational Dynamics",
+    "Toyota Technological Institute at Chicago",
+    "New York University"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "Multimodal",
+    "Agents"
+   ],
+   "tldr": "DR Pixel does deep research directly on rendered page images instead of OCR text, and a step-weighted fine-tuning method lifts a 27B open model to GPT-5.4-level accuracy.",
+   "why_selected": "It challenges the standard OCR-then-retrieve pipeline with solid gains, a new benchmark and open code and data.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Deep research agents answer hard questions by searching and reading many documents. In science, finance and law, the evidence often sits in tables, figures and equations that text extraction handles poorly."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most agents convert PDFs to text with OCR or parsers and work in text space. That discards or garbles visual structure, and parsing errors carry through retrieval and reasoning. Some add a second image search tool, but figures are still separated from the text that explains them."
+    },
+    {
+     "heading": "Key idea",
+     "body": "DR Pixel makes the rendered page image the only unit of retrieval and reasoning. Each paper page is embedded by a vision-language embedding model, and a vision-language agent searches, looks at the returned pages and reasons over them. For training, the authors fine-tune on teacher trajectories from GPT-5.4, which mix useful steps with redundant or failed ones. Counterfactual credit reweighting removes each step and measures how much the gold answer's likelihood drops under the frozen base model, then weights steps by that contribution and masks those with none."
+    },
+    {
+     "heading": "Results",
+     "body": "On DRPixelBench, with 500 questions over 1.06M pages, page-native search beats OCR baselines by 5.1 to 8.4 points across GPT-5.4, Gemini-3.5-Flash and Qwen3.6-27B, with 20 to 30 percent fewer retrieval calls. For Qwen3.6-27B, accuracy rises from 40.1 to 52.1 after training, against 51.9 for GPT-5.4, and vanilla fine-tuning reaches 49.0 with 14.0 searches per question versus 8.9. On ViDoRe-V3 it comes within 1.8 points of an oracle given gold pages."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Page rendering replaces brittle format-specific parsing, which suits private, layout-heavy corpora. The caveat is that the benchmark questions were generated with LLM help, and the corpus is scientific papers."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.03097",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.03097",
+    "code": "https://github.com/StarTrail-org/DRPixel"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 40,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 5,
+    "notable_authors": [
+     "Sewon Min"
+    ],
+    "org": "Berkeley-NLP"
+   }
+  },
+  {
+   "id": "2611.05266",
+   "title": "Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning",
+   "authors": [
+    "Kevin Frans",
+    "Alexander M Rush",
+    "Sergey Levine",
+    "Pieter Abbeel",
+    "Ashvin Nair"
+   ],
+   "affiliations": [
+    "Cursor Research",
+    "UC Berkeley"
+   ],
+   "announced": "2026-11-03T20:00:00-05:00",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Post-training",
+    "Agents"
+   ],
+   "tldr": "Turning a judge's per-turn text feedback into a self-distillation signal, only on failing turns and alongside normal RL rewards, teaches coding agents behaviors that plain RL never discovers.",
+   "why_selected": "A practical post-training recipe from a lab that trains production coding agents, with a clear stability analysis.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reinforcement learning only reinforces behavior the policy already produces. If a model never tries a new tool format or writing style, a reward for it never fires, so no learning occurs."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Standard RL collapses rich judge feedback into a single scalar reward. On-policy self-distillation uses extra information to guide the model, but earlier methods can shorten reasoning or collapse diversity, which would damage main task performance."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Each reward criterion also carries a short text hint. When an agent turn fails a criterion, the hint is placed in context right before that turn. The same model with the hint acts as a teacher, and the loss pulls the unhinted policy toward that teacher with a KL penalty on that turn alone, a bit like a coach whispering one correction at the moment of the mistake. Two choices keep training stable: distillation is added to a normal per-criterion RL reward, and the loss is masked everywhere except failing turns. Including thinking tokens and keeping the distillation weight low avoid entropy spikes and oscillation."
+    },
+    {
+     "heading": "Results",
+     "body": "They train Qwen3-Coder-30B on multi-turn software engineering tasks. A policy learns a new semantic-search tool format without losing coding performance. On seven style criteria, targeted guidance gets Markdown to 0.85 where GRPO and baseline stay at 0.00, and gets command-ran to 0.64 versus 0.00 for all other methods, with the pass rate held at 0.33, equal to baseline. Naive on-policy distillation drops it to 0.30."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It offers a way to teach agents behaviors outside the base policy's reach without hurting core performance. Caveats: it needs hand-written feedback strings, and the study covers one software-engineering setting and mostly style and formatting targets."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.05266",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.05266"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 10,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Alexander M Rush",
+     "Sergey Levine",
+     "Pieter Abbeel"
+    ]
+   }
+  }
+ ]
+}

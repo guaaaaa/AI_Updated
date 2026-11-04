@@ -3,8 +3,29 @@
  "start": "2026-11-02",
  "end": "2026-11-07",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [
+  {
+   "id": "2611.01860",
+   "title": "Advances in Agentic Computer Graphics",
+   "hf": 127,
+   "org": "University of Texas at Austin",
+   "featured": null
+  },
+  {
+   "id": "2611.03126",
+   "title": "CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements",
+   "hf": 97,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.05275",
+   "title": "Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems",
+   "hf": 87,
+   "org": null,
+   "featured": null
+  },
   {
    "id": "2611.00859",
    "title": "Wave Forcing: Towards Speed-of-Light Streaming Video Generation",
@@ -20,58 +41,43 @@
    "featured": "2026-11-03"
   },
   {
-   "id": "2611.03126",
-   "title": "CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements",
-   "hf": 50,
-   "org": null,
+   "id": "2611.02737",
+   "title": "MoviEdit: Long-form Multi-Shot Video Editing Made Easy",
+   "hf": 53,
+   "org": "Adobe",
    "featured": null
   },
   {
-   "id": "2610.42053",
-   "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
-   "hf": 42,
-   "org": null,
+   "id": "2611.00617",
+   "title": "Words Caught in the Heart: Simulating Person-Specific Expression for Self-Opaque Clients in Psychotherapy",
+   "hf": 51,
+   "org": "CLAIN-WHU",
    "featured": null
   },
   {
-   "id": "2611.01860",
-   "title": "Advances in Agentic Computer Graphics",
-   "hf": 39,
-   "org": "University of Texas at Austin",
-   "featured": null
-  },
-  {
-   "id": "2611.01560",
-   "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
-   "hf": 37,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2610.40738",
-   "title": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
-   "hf": 34,
-   "org": "ServiceNow-AI",
-   "featured": null
-  },
-  {
-   "id": "2610.42136",
-   "title": "ReLift: Dense 3D Tracking as Lifted Trajectory Repair",
-   "hf": 25,
-   "org": "Technion Israel institute of technology",
+   "id": "2611.04916",
+   "title": "Behind Video Generation: Observations and Insights on Multimodal Understanding from Kling",
+   "hf": 47,
+   "org": "KlingAI Research",
    "featured": null
   }
  ],
  "stories": [
   {
+   "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+   "outlets": 9,
+   "date": "2026-11-01",
+   "covered": null
+  },
+  {
    "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
-   "outlets": 5,
+   "outlets": 6,
    "date": "2026-10-30",
    "covered": null
   },
   {
    "title": "Meta’s Rating Outlook Cut to Negative by S&P on AI Spending",
-   "outlets": 5,
+   "outlets": 6,
    "date": "2026-10-30",
    "covered": null
   },
@@ -79,6 +85,12 @@
    "title": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution",
    "outlets": 4,
    "date": "2026-10-31",
+   "covered": null
+  },
+  {
+   "title": "Elon Musk Says Grok Bot Costs Were ‘Unsustainably High’ Amid Complaints Over Usage Limits",
+   "outlets": 4,
+   "date": "2026-11-02",
    "covered": null
   },
   {
@@ -94,26 +106,14 @@
    "covered": null
   },
   {
-   "title": "DeepSeek Drops Enhanced Coding Agent With Aim to Rival Anthropic",
+   "title": "OpenAI slashes funding target by $10bn as tech anxieties mount",
    "outlets": 3,
-   "date": "2026-11-01",
-   "covered": null
-  },
-  {
-   "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
-   "outlets": 3,
-   "date": "2026-11-01",
-   "covered": null
-  },
-  {
-   "title": "Elon Musk Says Grok Bot Costs Were ‘Unsustainably High’ Amid Complaints Over Usage Limits",
-   "outlets": 3,
-   "date": "2026-11-02",
+   "date": "2026-10-31",
    "covered": null
   }
  ],
  "featured": {
-  "news": 3,
-  "papers": 10
+  "news": 4,
+  "papers": 15
  }
 }

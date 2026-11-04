@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-03T18:50:55+00:00",
+ "updated": "2026-11-04T12:17:44+00:00",
  "days": [
+  {
+   "date": "2026-11-04",
+   "edition": "weekday",
+   "news": 1,
+   "papers": 5,
+   "backfill": false
+  },
   {
    "date": "2026-11-03",
    "edition": "weekday",
@@ -213,6 +220,88 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-04-n1",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Google will switch off Search for schools that reject its AI tools",
+   "tldr": "Google will turn its AI tools off by default for K-12 student accounts, but schools that keep them off also lose Google Search, because Google treats Search and AI as one product.",
+   "category": "Policy & Legal",
+   "byline": "TechCrunch, The Verge, Ars Technica"
+  },
+  {
+   "id": "2611.01560",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+   "tldr": "An open-weight Qwen model, driven through a carefully designed tool harness and with no privileged inputs, beats the published GPT-6 Astra result on the RoboDojo robot benchmark.",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents"
+   ],
+   "byline": "Jiarui Yuan, Yuxin Zuo, Xiaoyu Huang et al. · Tsinghua University, UC Berkeley",
+   "hf": 43
+  },
+  {
+   "id": "2611.02633",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "Measuring AI Agents as Teammates with Collaborative Intelligence",
+   "tldr": "A 240-task benchmark scores AI agents as teammates and finds that even the best model reaches only 82.2 out of 100, with strong models caving under social pressure and keeping inherited cheating.",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Agents"
+   ],
+   "byline": "Sean Wu, Aneesh Pappu, Jiaru Zou et al. · Stanford University, University of Oxford, MIT",
+   "hf": 14
+  },
+  {
+   "id": "2611.03633",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap",
+   "tldr": "Muon beats AdamW at pretraining loss but, with enough pretraining data, AdamW models fine-tune better, and the crossover arrives sooner as models grow.",
+   "primary_tag": "Optimization",
+   "tags": [
+    "Optimization",
+    "Pre-training & Data",
+    "Theory"
+   ],
+   "byline": "Catherine Li, Jingchu Gai, Andrej Risteski et al.",
+   "hf": null
+  },
+  {
+   "id": "2611.03097",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "DR Pixel: Page-Native Deep Research with Vision-Language Models",
+   "tldr": "DR Pixel does deep research directly on rendered page images instead of OCR text, and a step-weighted fine-tuning method lifts a 27B open model to GPT-5.4-level accuracy.",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "Multimodal",
+    "Agents"
+   ],
+   "byline": "Tiansheng Hu, Yichuan Wang, James V. Talwar et al. · NYU Shanghai, UC Berkeley, Rational Dynamics",
+   "hf": 5
+  },
+  {
+   "id": "2611.05266",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning",
+   "tldr": "Turning a judge's per-turn text feedback into a self-distillation signal, only on failing turns and alongside normal RL rewards, teaches coding agents behaviors that plain RL never discovers.",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Post-training",
+    "Agents"
+   ],
+   "byline": "Kevin Frans, Alexander M Rush, Sergey Levine et al. · Cursor Research, UC Berkeley",
+   "hf": null
+  },
   {
    "id": "2026-11-03-n1",
    "date": "2026-11-03",
@@ -2911,29 +3000,29 @@
   ]
  },
  "tag_counts": {
-  "Pre-training & Data": 21,
-  "Evaluation & Benchmarks": 19,
-  "Theory": 9,
+  "Robotics": 24,
+  "Agents": 59,
+  "Evaluation & Benchmarks": 20,
+  "Optimization": 3,
+  "Pre-training & Data": 22,
+  "Theory": 10,
+  "Retrieval & Memory": 9,
+  "Multimodal": 17,
+  "Reinforcement Learning": 30,
+  "Post-training": 32,
   "Generative Models": 28,
   "Efficiency": 40,
-  "Robotics": 23,
   "World Models": 22,
   "LLMs": 10,
-  "Agents": 55,
   "RSI": 12,
-  "Multimodal": 16,
   "Reasoning": 14,
-  "Post-training": 31,
-  "Reinforcement Learning": 29,
   "Architectures": 26,
   "AI for Science & Health": 5,
-  "Optimization": 2,
   "Security": 1,
   "Safety & Alignment": 6,
   "AI for Math": 4,
   "Interpretability": 6,
   "Computer Vision": 5,
-  "Retrieval & Memory": 8,
   "Society & Policy": 1
  },
  "news_categories": [
@@ -2949,11 +3038,11 @@
   "People"
  ],
  "category_counts": {
+  "Policy & Legal": 6,
   "Safety & Security": 10,
   "Research": 4,
   "Business & Funding": 10,
   "Compute & Infrastructure": 3,
-  "Policy & Legal": 5,
   "Model Release": 15,
   "Earnings & Markets": 2,
   "Product & Features": 4
