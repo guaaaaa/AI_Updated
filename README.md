@@ -53,6 +53,31 @@ The Trends dashboard (`#/trends`) is about the **whole field**, not our picks:
   inferred from arXiv API submission times and the announcement schedule (99% on the right day when checked against
   exact listings; holidays are not modelled, which leaves shares unchanged).
 
+## Jobs
+
+The job board (`#/jobs`) rates AI and tech jobs in the **US and Canada** from the job market itself; research only
+enters through a labelled heuristic. No AI usage: everything is fetched and counted by `pipeline/`.
+- **Roles** (`config/jobs.json`): 21 roles, with titles that differ on paper but are the same work fused (e.g. ML,
+  LLM, applied-AI and NLP engineers and applied scientists are one role). Each maps to US SOC and Canadian NOC codes
+  and an Indeed category. Rules in `pipeline/jobs_classify.py` read the title (and the team for generic titles like
+  "Member of Technical Staff"), the location, seniority, posted pay, years asked, PhD, remote and equity.
+- **Daily snapshot** (`pipeline/fetch_jobs.py`, run by `prepare.py`): the public job boards (Greenhouse, Ashby,
+  Lever) of 218 employers (`config/employers.json`, found by `pipeline/ats.py --probe` from
+  `config/employer_candidates.txt`). Open postings live in `data/state/jobs/open.tsv`; each day adds a line of role
+  metrics to `data/state/jobs/daily/`. New and closed postings are counted only on boards seen the day before, and
+  openings are chain-linked over boards that answered both days, so outages and newly added employers never look
+  like hiring swings. Snapshots started on Nov 4, 2026 and cannot be backfilled.
+- **History** (`pipeline/jobs_history.py`): Hacker News "Who is hiring?" ads since Dec 2012 and "Who wants to be
+  hired?" posts since 2014 (role shares and seekers per ad), Indeed Hiring Lab's postings index by category since
+  Feb 2020 (CC BY 4.0), and the Anthropic Economic Index's AI and robot exposure by occupation.
+- **Role pages** (`#/jobs/<id>`) work like the field pages: openings, new postings, pay, startup demand (Hacker News)
+  and the Indeed market index, each with its own ranges (up to 5Y / all for the long series), a US / Canada switch,
+  key statistics, how the role scores, "what moves this job" (signed research weights x direction momentum),
+  who's hiring and the latest postings.
+- **Score**: each criterion ranks the roles against each other -- demand trend, openings, pay, ease of entry, low
+  competition, stability, AI outlook (research tailwind) and flexibility -- and visitors weight them with sliders.
+  Work-life balance has no reliable open data, so it is not scored.
+
 ## Customize
 
 - Tags and news categories: `config/taxonomy.json`
@@ -60,6 +85,8 @@ The Trends dashboard (`#/trends`) is about the **whole field**, not our picks:
 - Notable researchers/labs (a tiebreaker signal): `config/notable.json`
 - Selection and writing rules: `RUNBOOK.md` (digests), `RUNBOOK_SUMMARY.md` (trend summaries)
 - Research directions and industry categories for the trend model: `config/directions.json`, `config/industry.json`
+- Job board roles, title rules and research weights: `config/jobs.json`; employers: add lines to
+  `config/employer_candidates.txt`, then `python3 pipeline/ats.py --probe`
 
 ## Run locally
 

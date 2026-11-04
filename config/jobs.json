@@ -1,0 +1,855 @@
+{
+ "note": "Roles for the job board. Titles that differ on paper but are the same work are fused into one role. A posting takes the FIRST role whose title patterns match (case-insensitive) and whose exclude patterns do not; generic titles (e.g. 'Member of Technical Staff') fall back to the department patterns. soc = US SOC 2018 codes (BLS, O*NET, Anthropic Economic Index), noc = Canadian NOC 2021, indeed = Indeed Hiring Lab category used as the market-wide reference. exposures: signed weights on research directions (config/directions.json): + = progress there tends to create demand for the role, - = it automates the role's tasks. They are reviewed priors, to be calibrated against postings once months of data exist.",
+ "groups": [
+  "Research",
+  "ML & AI engineering",
+  "Data",
+  "Software & infrastructure",
+  "Hardware & robotics",
+  "Product & go-to-market",
+  "Specialist"
+ ],
+ "roles": [
+  {
+   "id": "ai-trainer",
+   "name": "AI trainer & human data",
+   "group": "Specialist",
+   "about": "Experts and generalists who write, rate and red-team model outputs (RLHF, evaluations, data annotation).",
+   "title": [
+    "\\bai (trainer|tutor|training)\\b",
+    "\\bdata (annotat|label)",
+    "\\bannotator\\b",
+    "\\blabell?er\\b",
+    "\\brlhf\\b",
+    "\\bhuman data\\b",
+    "\\bexpert (contributor|reviewer|evaluator|rater)\\b",
+    "\\bmodel evaluator\\b",
+    "\\b(prompt|response) (writer|evaluator|rater)\\b",
+    "\\bai (writer|rater|evaluator)\\b",
+    "\\bgeneralist\\b.*\\bai\\b"
+   ],
+   "exclude": [
+    "\\bengineer\\b",
+    "\\bmanager\\b"
+   ],
+   "soc": [
+    "43-9021",
+    "27-3043"
+   ],
+   "noc": [
+    "14111"
+   ],
+   "indeed": "Media & Communications",
+   "exposures": {
+    "alignment-oversight": 0.6,
+    "reward-models": 0.8,
+    "synthetic-data": -0.8,
+    "self-improvement": -0.5,
+    "benchmarks": 0.4
+   }
+  },
+  {
+   "id": "eng-manager",
+   "name": "Engineering manager",
+   "group": "Software & infrastructure",
+   "about": "People managers and directors of engineering and research teams.",
+   "title": [
+    "\\bengineering (manager|director|lead)\\b",
+    "\\bmanager,? (software |ml |machine learning )?engineering\\b",
+    "\\bdirector,? (of )?(software )?engineering\\b",
+    "\\bhead of (engineering|research|ml|ai|infrastructure|platform)\\b",
+    "\\bvp,? (of )?(engineering|research)\\b",
+    "\\bresearch (manager|director)\\b",
+    "\\bmanager,? research\\b",
+    "\\bcto\\b",
+    "\\bmanager,? software\\b"
+   ],
+   "exclude": [
+    "\\bproduct\\b",
+    "\\bprogram\\b",
+    "\\bsales\\b",
+    "\\bgeneral manager\\b",
+    "\\boperations\\b"
+   ],
+   "soc": [
+    "11-3021"
+   ],
+   "noc": [
+    "20012"
+   ],
+   "indeed": "Software Development",
+   "exposures": {
+    "coding-agents": -0.4,
+    "tool-use": 0.2,
+    "self-improvement": -0.3,
+    "multi-agent": 0.2
+   }
+  },
+  {
+   "id": "product",
+   "name": "Product & program manager",
+   "group": "Product & go-to-market",
+   "about": "Product managers, technical program managers and product leads, including AI and ML products.",
+   "title": [
+    "\\bproduct (manager|management|lead|owner|director)\\b",
+    "\\bhead of product\\b",
+    "\\bgroup product\\b",
+    "\\b(technical )?program manager\\b",
+    "\\btpm\\b",
+    "\\bproduct operations\\b"
+   ],
+   "exclude": [
+    "\\bproduct (marketing|designer|design|analyst|engineer|counsel|support|specialist)\\b"
+   ],
+   "soc": [
+    "15-1299",
+    "13-1082"
+   ],
+   "noc": [
+    "20012"
+   ],
+   "indeed": "Project Management",
+   "exposures": {
+    "tool-use": 0.4,
+    "coding-agents": 0.2,
+    "computer-use": 0.2
+   }
+  },
+  {
+   "id": "solutions",
+   "name": "Solutions & forward-deployed engineer",
+   "group": "Product & go-to-market",
+   "about": "Customer-facing engineers who deploy and integrate products: forward-deployed, solutions, sales, customer and partner engineers, developer relations.",
+   "title": [
+    "\\bforward[- ]deployed\\b",
+    "\\bsolutions? (engineer|architect|consultant|lead)\\b",
+    "\\bsales engineer\\b",
+    "\\bcustomer (success )?engineer\\b",
+    "\\bfield engineer\\b",
+    "\\bdeployment (engineer|strategist|lead)\\b",
+    "\\bimplementation (engineer|consultant)\\b",
+    "\\btechnical account manager\\b",
+    "\\bpartner engineer\\b",
+    "\\bdeveloper (advocate|relations|experience engineer)\\b",
+    "\\bdevrel\\b",
+    "\\btechnical solutions\\b",
+    "\\bpre-?sales\\b",
+    "\\bfield engineering\\b",
+    "\\bvalue engineer\\b",
+    "\\bapplied ai architect",
+    "\\bdeployment engineering\\b",
+    "\\btechnical success\\b",
+    "\\bintegration engineer\\b",
+    "\\btechnical account management\\b",
+    "\\bpre-?sales engineering\\b"
+   ],
+   "exclude": [],
+   "soc": [
+    "41-9031"
+   ],
+   "noc": [
+    "62100"
+   ],
+   "indeed": "IT Systems & Solutions",
+   "exposures": {
+    "tool-use": 0.8,
+    "computer-use": 0.4,
+    "rag": 0.4,
+    "coding-agents": 0.2,
+    "multi-agent": 0.3,
+    "deep-research": 0.2
+   }
+  },
+  {
+   "id": "ai-safety",
+   "name": "AI safety & alignment",
+   "group": "Research",
+   "about": "Research and engineering on alignment, interpretability, red-teaming, safeguards and model security.",
+   "title": [
+    "\\balignment\\b",
+    "\\binterpretab",
+    "\\bred[- ]?team",
+    "\\bai safety\\b",
+    "\\bmodel (safety|behavior|welfare)\\b",
+    "\\bsafeguards?\\b",
+    "\\bfrontier (red team|risk)",
+    "\\bresponsible ai\\b",
+    "\\bscalable oversight\\b",
+    "\\bai security\\b",
+    "\\bsafety\\b.*\\b(research|scientist|engineer|ml|model|ai)\\b",
+    "\\b(research|ml|ai)\\b.*\\bsafety\\b"
+   ],
+   "exclude": [
+    "\\b(functional|system|vehicle|flight|product|health|environmental|ehs|occupational|road|field|launch) safety\\b",
+    "\\btrust (and|&) safety (specialist|analyst|operations|associate)\\b",
+    "\\benforcement\\b",
+    "\\boperations\\b",
+    "\\bsystems? safety\\b",
+    "\\bpolicy\\b",
+    "\\banalyst\\b"
+   ],
+   "soc": [
+    "15-1221"
+   ],
+   "noc": [
+    "21211"
+   ],
+   "indeed": "Scientific Research & Development",
+   "exposures": {
+    "alignment-oversight": 1,
+    "jailbreak-redteam": 1,
+    "interpretability": 1,
+    "hallucination": 0.4,
+    "self-improvement": 0.6,
+    "tool-use": 0.4,
+    "privacy-security": 0.6,
+    "society": 0.3
+   }
+  },
+  {
+   "id": "quant",
+   "name": "Quant researcher & trader",
+   "group": "Specialist",
+   "about": "Quantitative researchers, developers and traders at trading firms and funds.",
+   "title": [
+    "\\bquant(itative)?\\b.*\\b(research|developer|analyst|trader|engineer|strateg|scientist)",
+    "\\btrader\\b",
+    "\\btrading (analyst|associate|strategist|intern|engineer)\\b",
+    "\\balgorithmic trading\\b"
+   ],
+   "exclude": [
+    "\\bai trainer\\b"
+   ],
+   "soc": [
+    "13-2099",
+    "15-2041"
+   ],
+   "noc": [
+    "21210",
+    "11101"
+   ],
+   "indeed": "Banking & Finance",
+   "exposures": {
+    "self-improvement": -0.2,
+    "math-formal": 0.2
+   }
+  },
+  {
+   "id": "research-engineer",
+   "name": "Research engineer",
+   "group": "Research",
+   "about": "Engineers on research teams who build and run training, experiments and evaluations.",
+   "title": [
+    "\\bresearch (software |ml |machine learning |ai )?engineer\\b",
+    "\\bengineer,? research\\b",
+    "\\bresearch (infrastructure|tooling) engineer\\b"
+   ],
+   "exclude": [
+    "\\buser research\\b",
+    "\\bux\\b"
+   ],
+   "dept": [
+    "\\bresearch\\b"
+   ],
+   "soc": [
+    "15-1221",
+    "15-1252"
+   ],
+   "noc": [
+    "21211",
+    "21231"
+   ],
+   "indeed": "Scientific Research & Development",
+   "exposures": {
+    "agentic-rl": 0.8,
+    "rlvr": 0.6,
+    "scaling-laws": 0.5,
+    "optimizers": 0.5,
+    "benchmarks": 0.4,
+    "distillation": 0.4,
+    "self-improvement": -0.6,
+    "coding-agents": -0.3,
+    "ai-scientist": -0.6,
+    "test-time-scaling": 0.3
+   }
+  },
+  {
+   "id": "research-scientist",
+   "name": "Research scientist",
+   "group": "Research",
+   "about": "Research scientists and researchers in ML and AI, at labs and industry research groups.",
+   "title": [
+    "\\bresearch scientist\\b",
+    "\\b(ai|ml|machine learning|deep learning|nlp|robotics|computer vision)? ?researcher\\b",
+    "\\bresearch (fellow|lead|staff)\\b",
+    "\\bscientist\\b",
+    "\\bai resident\\b",
+    "\\bresearch residen"
+   ],
+   "exclude": [
+    "\\bdata scien",
+    "\\bapplied scientist\\b",
+    "\\bdecision scien",
+    "\\buser research",
+    "\\bux research",
+    "\\bmarket research",
+    "\\bclinical\\b",
+    "\\b(lab|bench|staff) scientist\\b",
+    "\\bchemist\\b",
+    "\\bbiolog",
+    "\\bsecurity researcher\\b"
+   ],
+   "soc": [
+    "15-1221"
+   ],
+   "noc": [
+    "21211"
+   ],
+   "indeed": "Scientific Research & Development",
+   "exposures": {
+    "agentic-rl": 0.5,
+    "world-models": 0.4,
+    "rlvr": 0.4,
+    "interpretability": 0.3,
+    "scaling-laws": 0.3,
+    "unified-multimodal": 0.3,
+    "ai-scientist": -0.8,
+    "self-improvement": -0.6,
+    "coding-agents": -0.2,
+    "test-time-scaling": 0.3,
+    "latent-reasoning": 0.3,
+    "deep-research": -0.3
+   }
+  },
+  {
+   "id": "ml-performance",
+   "name": "ML performance & kernels",
+   "group": "ML & AI engineering",
+   "about": "GPU, kernel, compiler and performance engineers who make training and inference fast.",
+   "title": [
+    "\\bgpu\\b",
+    "\\bcuda\\b",
+    "\\bkernels?\\b",
+    "\\bcompilers?\\b",
+    "\\btriton\\b",
+    "\\bxla\\b",
+    "\\bmlir\\b",
+    "\\bperformance (engineer|optimization)\\b",
+    "\\bhpc\\b",
+    "\\baccelerator (software|engineer)\\b",
+    "\\bml systems\\b",
+    "\\blow[- ]level\\b",
+    "\\bperformance model"
+   ],
+   "exclude": [
+    "\\bsales\\b",
+    "\\brecruit"
+   ],
+   "soc": [
+    "15-1252",
+    "17-2061"
+   ],
+   "noc": [
+    "21231",
+    "21311"
+   ],
+   "indeed": "Software Development",
+   "exposures": {
+    "inference-serving": 1,
+    "moe": 0.8,
+    "quantization": 0.8,
+    "long-context": 0.4,
+    "distillation": 0.3,
+    "coding-agents": -0.3,
+    "ssm-linear": 0.4,
+    "small-models": 0.3,
+    "looped-depth": 0.2
+   }
+  },
+  {
+   "id": "ai-infra",
+   "name": "ML infrastructure & MLOps",
+   "group": "ML & AI engineering",
+   "about": "Infrastructure for training and serving models: ML platform, inference, distributed training, MLOps and GPU clusters.",
+   "title": [
+    "\\b(ml|machine learning|ai|llm|model|training|inference|serving)\\b.*\\b(infra\\w*|platform|ops|systems|reliability|scaling|cluster)\\b",
+    "\\b(infra\\w*|platform)\\b.*\\b(ml|machine learning|ai|llm|training|inference)\\b",
+    "\\bmlops\\b",
+    "\\bllmops\\b",
+    "\\binference\\b",
+    "\\bmodel serving\\b",
+    "\\bdistributed training\\b",
+    "\\bsupercomput",
+    "\\bgpu (cluster|fleet|infrastructure)\\b",
+    "\\bpretraining\\b"
+   ],
+   "exclude": [
+    "\\bsales\\b",
+    "\\bproduct manager\\b",
+    "\\bfront[- ]?end\\b",
+    "\\b(android|ios)\\b",
+    "\\bcontrols engineer\\b"
+   ],
+   "soc": [
+    "15-1252",
+    "15-1244"
+   ],
+   "noc": [
+    "21231",
+    "21222"
+   ],
+   "indeed": "IT Infrastructure, Operations & Support",
+   "exposures": {
+    "inference-serving": 0.8,
+    "moe": 0.4,
+    "long-context": 0.3,
+    "agentic-rl": 0.3,
+    "scaling-laws": 0.4,
+    "coding-agents": -0.3,
+    "small-models": 0.2
+   }
+  },
+  {
+   "id": "hardware",
+   "name": "Hardware, silicon & embedded",
+   "group": "Hardware & robotics",
+   "about": "Chip design and verification, electrical and hardware engineering, firmware and embedded systems.",
+   "title": [
+    "\\basic\\b",
+    "\\brtl\\b",
+    "\\bsoc\\b",
+    "\\bsilicon\\b",
+    "\\bchip\\b",
+    "\\bfpga\\b",
+    "\\b(design )?verification engineer\\b",
+    "\\bphysical design\\b",
+    "\\banalog\\b",
+    "\\bmixed[- ]signal\\b",
+    "\\bdft\\b",
+    "\\bhardware\\b",
+    "\\belectrical engineer",
+    "\\bpcba?\\b",
+    "\\bsignal integrity\\b",
+    "\\bpower (electronics|engineer)\\b",
+    "\\bphotonic",
+    "\\bpackaging engineer\\b",
+    "\\bfirmware\\b",
+    "\\bembedded\\b",
+    "\\belectronics\\b"
+   ],
+   "exclude": [
+    "\\bsales\\b",
+    "\\brecruit",
+    "\\bsourcing\\b",
+    "\\bbuyer\\b"
+   ],
+   "soc": [
+    "17-2061",
+    "17-2072"
+   ],
+   "noc": [
+    "21311",
+    "21310"
+   ],
+   "indeed": "Electrical Engineering",
+   "exposures": {
+    "moe": 0.5,
+    "quantization": 0.4,
+    "inference-serving": 0.4,
+    "humanoid": 0.3,
+    "robot-manipulation": 0.2
+   }
+  },
+  {
+   "id": "cv-perception",
+   "name": "Computer vision & perception",
+   "group": "ML & AI engineering",
+   "about": "Computer vision, perception, 3D, imaging and video-understanding engineers and scientists.",
+   "title": [
+    "\\bcomputer vision\\b",
+    "\\bperception\\b",
+    "\\bvision\\b.*\\b(engineer|scientist|researcher)\\b",
+    "\\bslam\\b",
+    "\\b3d\\b.*\\b(engineer|scientist|researcher|vision)\\b",
+    "\\blidar\\b",
+    "\\bcamera\\b.*\\b(engineer|scientist)\\b",
+    "\\bimaging\\b",
+    "\\bvideo understanding\\b"
+   ],
+   "exclude": [
+    "\\bsales\\b"
+   ],
+   "soc": [
+    "15-1252",
+    "15-1221"
+   ],
+   "noc": [
+    "21231",
+    "21211"
+   ],
+   "indeed": "Software Development",
+   "exposures": {
+    "3d-4d": 0.6,
+    "driving": 0.5,
+    "world-models": 0.4,
+    "vla": 0.3,
+    "robot-manipulation": 0.3,
+    "image-generation": 0.2,
+    "unified-multimodal": -0.4,
+    "ai-scientist": -0.2,
+    "vlm": -0.3,
+    "video-generation": 0.2
+   }
+  },
+  {
+   "id": "robotics",
+   "name": "Robotics & autonomy",
+   "group": "Hardware & robotics",
+   "about": "Robotics, autonomy, controls, motion planning, manipulation and robot-learning engineers.",
+   "title": [
+    "\\brobot",
+    "\\bautonomy\\b",
+    "\\bautonomous\\b",
+    "\\bmotion planning\\b",
+    "\\bcontrols? (engineer|systems)\\b",
+    "\\bmanipulation\\b",
+    "\\bmechatronic",
+    "\\bhumanoid\\b",
+    "\\bembodied\\b",
+    "\\bteleop",
+    "\\blocomotion\\b",
+    "\\b(path|behavior|motion) planning\\b",
+    "\\bself-driving\\b",
+    "\\bwhole[- ]body\\b",
+    "\\bcontrols?\\b.*\\b(engineer|scientist|researcher)\\b"
+   ],
+   "exclude": [
+    "\\bsales\\b",
+    "\\brecruit",
+    "\\bproduct manager\\b",
+    "\\boperator\\b",
+    "\\btechnician\\b",
+    "\\bdriver\\b",
+    "\\bspecialist\\b"
+   ],
+   "soc": [
+    "17-2199",
+    "17-2141"
+   ],
+   "noc": [
+    "21399",
+    "21301"
+   ],
+   "indeed": "Mechanical Engineering",
+   "exposures": {
+    "vla": 1,
+    "humanoid": 0.9,
+    "robot-manipulation": 1,
+    "world-models": 1,
+    "driving": 0.6,
+    "3d-4d": 0.2
+   }
+  },
+  {
+   "id": "data-scientist",
+   "name": "Data scientist",
+   "group": "Data",
+   "about": "Data, decision and product scientists and statisticians.",
+   "title": [
+    "\\bdata scien",
+    "\\bdecision scien",
+    "\\bstatistician\\b",
+    "\\beconomist\\b",
+    "\\bproduct scientist\\b"
+   ],
+   "exclude": [],
+   "soc": [
+    "15-2051",
+    "15-2041"
+   ],
+   "noc": [
+    "21211"
+   ],
+   "indeed": "Data & Analytics",
+   "exposures": {
+    "coding-agents": -0.4,
+    "tool-use": -0.3,
+    "learning-theory": 0.4,
+    "deep-research": -0.4
+   }
+  },
+  {
+   "id": "data-engineer",
+   "name": "Data engineer",
+   "group": "Data",
+   "about": "Data and analytics engineers who build pipelines, warehouses and data platforms.",
+   "title": [
+    "\\bdata engineer",
+    "\\banalytics engineer\\b",
+    "\\bdata (platform|infrastructure|warehouse|pipeline)",
+    "\\betl\\b",
+    "\\bbig data\\b",
+    "\\bdatabase (engineer|administrator|architect)\\b"
+   ],
+   "exclude": [],
+   "soc": [
+    "15-1243",
+    "15-1242"
+   ],
+   "noc": [
+    "21223"
+   ],
+   "indeed": "Data & Analytics",
+   "exposures": {
+    "synthetic-data": 0.3,
+    "rag": 0.3,
+    "coding-agents": -0.5,
+    "tool-use": -0.2,
+    "code-generation": -0.3
+   }
+  },
+  {
+   "id": "data-analyst",
+   "name": "Data & BI analyst",
+   "group": "Data",
+   "about": "Data, business-intelligence, analytics and product analysts.",
+   "title": [
+    "\\b(data|bi|business intelligence|analytics|product|insights|reporting|business)\\b.*\\banalyst\\b",
+    "\\banalyst\\b.*\\b(data|analytics|bi)\\b",
+    "\\banalytics (lead|manager|specialist)\\b"
+   ],
+   "exclude": [
+    "\\bfinancial\\b",
+    "\\bsecurity\\b",
+    "\\bthreat\\b",
+    "\\bcredit\\b",
+    "\\brisk\\b"
+   ],
+   "soc": [
+    "15-2051"
+   ],
+   "noc": [
+    "21223"
+   ],
+   "indeed": "Data & Analytics",
+   "exposures": {
+    "tool-use": -0.6,
+    "coding-agents": -0.4,
+    "computer-use": -0.4,
+    "time-series": -0.3,
+    "deep-research": -0.5
+   }
+  },
+  {
+   "id": "ml-engineer",
+   "name": "ML / AI engineer",
+   "group": "ML & AI engineering",
+   "about": "Engineers and applied scientists who build models and AI features: ML, LLM, applied AI, NLP, speech and recommendation engineers.",
+   "title": [
+    "\\b(machine learning|ml|ai|llm|genai|gen ai|generative ai|deep learning|nlp|natural language|speech|asr|tts|recommend\\w*|ranking|personali[sz]ation|search relevance|applied ai|agent\\w*)\\b.*\\b(engineer|scientist|developer|architect)\\b",
+    "\\b(engineer|developer|scientist)\\b.*\\b(machine learning|ml|ai|llm|genai|generative ai|nlp|agents?)\\b",
+    "\\bapplied scientist\\b",
+    "\\bprompt engineer\\b",
+    "\\bmachine learning\\b",
+    "\\breinforcement learning\\b"
+   ],
+   "exclude": [
+    "\\bsales\\b",
+    "\\brecruit",
+    "\\bmarketing\\b"
+   ],
+   "soc": [
+    "15-1252",
+    "15-2051"
+   ],
+   "noc": [
+    "21231",
+    "21211"
+   ],
+   "indeed": "Software Development",
+   "exposures": {
+    "tool-use": 0.9,
+    "rag": 0.6,
+    "agentic-rl": 0.4,
+    "distillation": 0.4,
+    "long-context": 0.3,
+    "unified-multimodal": 0.3,
+    "coding-agents": -0.4,
+    "self-improvement": -0.3,
+    "multi-agent": 0.5,
+    "agent-memory": 0.4,
+    "speech-audio": 0.3,
+    "vlm": 0.2
+   }
+  },
+  {
+   "id": "security",
+   "name": "Security engineer",
+   "group": "Software & infrastructure",
+   "about": "Security, application-security, detection, offensive-security and privacy engineers.",
+   "title": [
+    "\\bsecurity\\b.*\\b(engineer|researcher|architect|analyst|lead)\\b",
+    "\\bappsec\\b",
+    "\\binfosec\\b",
+    "\\boffensive\\b",
+    "\\bpenetration\\b",
+    "\\bpentest",
+    "\\bdetection (and response )?engineer\\b",
+    "\\bthreat (intel|hunt|detection|research)",
+    "\\bvulnerabilit",
+    "\\bcryptograph",
+    "\\bprivacy engineer\\b",
+    "\\bidentity (engineer|and access)\\b",
+    "\\bcyber"
+   ],
+   "exclude": [
+    "\\bsales\\b",
+    "\\bphysical security\\b",
+    "\\bsecurity (guard|officer)\\b",
+    "\\benforcement\\b",
+    "\\bharms?\\b"
+   ],
+   "soc": [
+    "15-1212"
+   ],
+   "noc": [
+    "21220"
+   ],
+   "indeed": "IT Infrastructure, Operations & Support",
+   "exposures": {
+    "jailbreak-redteam": 0.4,
+    "tool-use": 0.3,
+    "coding-agents": -0.3,
+    "privacy-security": 0.8
+   }
+  },
+  {
+   "id": "sre-devops",
+   "name": "Cloud, SRE & DevOps",
+   "group": "Software & infrastructure",
+   "about": "Site reliability, DevOps, cloud, platform, network and production engineers (outside ML infrastructure).",
+   "title": [
+    "\\bsite reliability\\b",
+    "\\bsre\\b",
+    "\\bdev ?ops\\b",
+    "\\binfrastructure\\b",
+    "\\bplatform engineer",
+    "\\bcloud\\b.*\\b(engineer|architect)\\b",
+    "\\bsystems engineer\\b",
+    "\\bproduction engineer\\b",
+    "\\bnetwork(ing)? engineer\\b",
+    "\\breliability engineer\\b",
+    "\\bkubernetes\\b",
+    "\\bstorage engineer\\b",
+    "\\bdatacenter\\b|\\bdata center\\b",
+    "\\bproductivity engineer\\b",
+    "\\binfra engineer\\b"
+   ],
+   "exclude": [
+    "\\bsales\\b",
+    "\\brecruit",
+    "\\bconstruction\\b",
+    "\\bfacilities\\b",
+    "\\belectrical\\b",
+    "\\bmechanical\\b",
+    "\\btechnician\\b"
+   ],
+   "soc": [
+    "15-1244",
+    "15-1241"
+   ],
+   "noc": [
+    "21222",
+    "22220"
+   ],
+   "indeed": "IT Infrastructure, Operations & Support",
+   "exposures": {
+    "inference-serving": 0.3,
+    "coding-agents": -0.5,
+    "tool-use": -0.3,
+    "computer-use": -0.3
+   }
+  },
+  {
+   "id": "frontend",
+   "name": "Frontend & mobile engineer",
+   "group": "Software & infrastructure",
+   "about": "Frontend, web, iOS, Android and design engineers.",
+   "title": [
+    "\\bfront[- ]?end\\b",
+    "\\bui engineer\\b",
+    "\\bweb (engineer|developer)\\b",
+    "\\bios\\b",
+    "\\bandroid\\b",
+    "\\bmobile\\b.*\\b(engineer|developer)\\b",
+    "\\breact\\b",
+    "\\bdesign engineer\\b"
+   ],
+   "exclude": [
+    "\\bsales\\b"
+   ],
+   "soc": [
+    "15-1254"
+   ],
+   "noc": [
+    "21234"
+   ],
+   "indeed": "Software Development",
+   "exposures": {
+    "coding-agents": -0.8,
+    "computer-use": -0.3,
+    "image-generation": -0.2,
+    "code-generation": -0.6
+   }
+  },
+  {
+   "id": "swe",
+   "name": "Software engineer",
+   "group": "Software & infrastructure",
+   "about": "Backend, full-stack and general software engineers, including generic 'member of technical staff' roles.",
+   "title": [
+    "\\bsoftware\\b.*\\b(engineer|developer|architect)\\b",
+    "\\bback[- ]?end\\b",
+    "\\bfull[- ]?stack\\b",
+    "\\bdeveloper\\b",
+    "\\bprogrammer\\b",
+    "\\bswe\\b",
+    "\\bmember of (the )?technical staff\\b",
+    "\\bproduct engineer\\b",
+    "\\b(staff|principal|senior|founding|lead) engineer\\b",
+    "\\bengineer (i|ii|iii|iv|1|2|3)\\b",
+    "\\btech(nical)? lead\\b",
+    "\\btools engineer\\b",
+    "\\bapplication engineer\\b",
+    "\\bengineer\\b$",
+    "\\bsoftware engineering\\b",
+    "\\b(java|python|golang|rust|c\\+\\+|scala|ruby|node(js)?|typescript|kotlin|\\.net)\\b.*\\b(engineer|developer)\\b"
+   ],
+   "exclude": [
+    "\\bsales\\b",
+    "\\bsupport engineer\\b",
+    "\\bmechanical\\b",
+    "\\bcivil\\b",
+    "\\bmanufacturing\\b",
+    "\\bquality\\b",
+    "\\btest technician\\b",
+    "\\bprocess engineer\\b"
+   ],
+   "soc": [
+    "15-1252"
+   ],
+   "noc": [
+    "21231",
+    "21232"
+   ],
+   "indeed": "Software Development",
+   "exposures": {
+    "coding-agents": -0.9,
+    "tool-use": 0.2,
+    "computer-use": -0.2,
+    "self-improvement": -0.2,
+    "code-generation": -0.6
+   }
+  }
+ ]
+}

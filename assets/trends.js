@@ -417,6 +417,7 @@
   const series = (daily, c, up) => ({ days: daily.days, n: daily.n, c, up, Pn: cum(daily.n), Pc: cum(c), Pa: cum(daily.hf_up), Pu: cum(up) });
 
   function startIndex(days, r) {
+    if (r.all) return 0;
     const s = H.dObj(days[days.length - 1]);
     if (r.days) s.setDate(s.getDate() - r.days); else s.setMonth(s.getMonth() - r.months);
     const iso = H.isoOf(s), i = days.findIndex((d) => d >= iso);
@@ -461,7 +462,7 @@
 
   // The chart: no grid, a dotted line at the range's first value, the period's high and low on the right, and
   // the raw daily counts as faint bars underneath. Hover or drag to read any day.
-  function stockChart(S, cv, bars, r, m, color, onScrub) {
+  function stockChart(days, cv, bars, r, M, color, onScrub) {
     const W = Math.max(300, lastWidth()), Hh = W < 520 ? 230 : 290;
     const padL = 2, padR = 58, padT = 26, volH = 34, padB = 22, gap = 10, lineB = Hh - padB - volH - gap;
     const vals = cv.vals, n = vals.length, [a, b] = ends(vals), base = vals[a];
@@ -471,7 +472,6 @@
     lo = Math.max(0, lo - pad); hi += pad;
     const x = (i) => padL + (n > 1 ? (i * (W - padL - padR)) / (n - 1) : (W - padL - padR) / 2);
     const y = (v) => padT + (1 - (v - lo) / (hi - lo)) * (lineB - padT);
-    const M = METRICS[m];
     const s = svg("svg", { viewBox: `0 0 ${W} ${Hh}`, width: "100%", height: Hh, class: "stock-svg", role: "img",
       "aria-label": `${M.label}, ${r.words}: from ${M.fmt(base)} to ${M.fmt(vals[b])}` });
     s.append(svg("line", { x1: padL, x2: W - padR, y1: y(base), y2: y(base), class: "base-line" }));
@@ -488,12 +488,12 @@
     vals.forEach((v, i) => { if (v == null) { pen = false; return; } d += `${pen ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`; pen = true; });
     s.append(svg("path", { d, class: "stock-line", style: `stroke: var(${color})` }));
     s.append(svg("circle", { cx: x(b), cy: y(vals[b]), r: 3.5, style: `fill: var(${color})` }));
-    const long = (r.months || 0) >= 6;
+    const long = (r.months || 0) >= 6 || r.all;
     const fmtD = (iso) => H.dObj(iso).toLocaleDateString("en-US", long ? { month: "short", year: "numeric" } : { month: "short", day: "numeric" });
     const ticks = n <= 3 ? [0, n - 1] : W < 520 ? [0, Math.round((n - 1) / 2), n - 1]
       : [0, Math.round((n - 1) / 3), Math.round((2 * (n - 1)) / 3), n - 1];
     ticks.forEach((i, j) => s.append(svg("text", { x: x(i), y: Hh - 5, class: "axis",
-      "text-anchor": j === 0 ? "start" : j === ticks.length - 1 ? "end" : "middle" }, fmtD(S.days[cv.from + i]))));
+      "text-anchor": j === 0 ? "start" : j === ticks.length - 1 ? "end" : "middle" }, fmtD(days[cv.from + i]))));
     const cross = svg("line", { y1: padT - 6, y2: Hh - padB, class: "crosshair", visibility: "hidden" });
     const dot = svg("circle", { r: 5, class: "stock-dot", style: `fill: var(${color})`, visibility: "hidden" });
     const when = svg("text", { y: 12, class: "axis scrub-date", "text-anchor": "middle", visibility: "hidden" });
@@ -506,7 +506,7 @@
       while (i > a && vals[i] == null) i--;
       cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i));
       dot.setAttribute("cx", x(i)); dot.setAttribute("cy", y(vals[i]));
-      when.textContent = longDate(S.days[cv.from + i]);
+      when.textContent = (M.dateFmt || longDate)(days[cv.from + i]);
       when.setAttribute("x", Math.max(56, Math.min(W - padR - 56, x(i))));
       if (lit) lit.classList.remove("on");
       lit = barEls[i]; if (lit) lit.classList.add("on");
@@ -540,7 +540,7 @@
       };
       quote(b);
       const bars = (m === "att" ? S.up : S.c).slice(cv.from);
-      plot.replaceChildren(stockChart(S, cv, bars, r, m, color, (i) => quote(i == null ? b : i)));
+      plot.replaceChildren(stockChart(S.days, cv, bars, r, M, color, (i) => quote(i == null ? b : i)));
       how.textContent = `Line: ${M.about}, ${r.k === 1 ? "one announcement day per point" : `each point averaging the ${r.k} announcement days up to it`}` +
         ` (longer ranges average more days, so the line smooths out). Dotted line: the value at the start of the range. ` +
         `Bars: ${m === "att" ? "upvotes" : "papers"} per day. "Within noise" means the change is smaller than chance variation would explain (|z| < 2).`;
@@ -992,5 +992,6 @@
     }, 250);
   });
 
-  window.AIUTrends = { init(helpers) { H = helpers; }, render };
+  window.AIUTrends = { init(helpers) { H = helpers; }, render,
+    kit: { svg, stockChart, segmented, miniLine, ends, longDate, startIndex, cum, wsum, pct, pp, times, STATUS, dirHref, fieldHref, lastWidth, table } };
 })();

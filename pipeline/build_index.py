@@ -57,6 +57,11 @@ def main():
     (DATA / "index.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"index.json: {len(days)} days, {len(items)} items, {len(summaries)} summaries, {len(out['weeks'])} weeks")
     build_trends()
+    try:   # the job board (data/jobs.json, data/jobs/) -- never blocks a digest
+        import build_jobs
+        build_jobs.build()
+    except Exception as e:
+        print(f"WARNING jobs build failed: {e}", file=sys.stderr)
 
 
 def build_trends():

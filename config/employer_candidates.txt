@@ -1,0 +1,323 @@
+# Candidate employers for the job tracker: "Name | sector | slug1,slug2" (slugs optional; guessed from the name).
+# pipeline/ats.py --probe checks each against the public Greenhouse, Ashby and Lever job-board APIs and writes the
+# boards that answer to config/employers.json. Add lines here to grow the board, then re-run the probe.
+# --- frontier and model labs
+Anthropic | ai-lab |
+OpenAI | ai-lab |
+xAI | ai-lab | xai
+Mistral AI | ai-lab | mistral
+Cohere | ai-lab |
+AI21 Labs | ai-lab | ai21,ai21labs
+Character.AI | ai-lab | character,characterai
+Perplexity | ai-lab | perplexity,perplexityai
+Reka | ai-lab | reka,rekaai
+Magic | ai-lab | magic,magicdev
+Poolside | ai-lab | poolside,poolsideai
+Inflection AI | ai-lab | inflection,inflectionai
+Adept | ai-lab | adept
+Thinking Machines Lab | ai-lab | thinkingmachines,thinkingmachineslab
+Safe Superintelligence | ai-lab | ssi
+Reflection AI | ai-lab | reflectionai,reflection
+Imbue | ai-lab | imbue
+Liquid AI | ai-lab | liquidai,liquid
+Essential AI | ai-lab | essentialai
+Nous Research | ai-lab | nousresearch
+Black Forest Labs | ai-lab | blackforestlabs
+Ideogram | ai-lab | ideogram
+Midjourney | ai-lab | midjourney
+Runway | ai-lab | runway,runwayml
+Stability AI | ai-lab | stabilityai,stability
+Pika | ai-lab | pika,pikalabs
+Luma AI | ai-lab | lumaai,luma,lumalabs
+ElevenLabs | ai-lab | elevenlabs
+Suno | ai-lab | suno
+Cartesia | ai-lab | cartesia
+Deepgram | ai-lab | deepgram
+AssemblyAI | ai-lab | assemblyai
+Hume AI | ai-lab | humeai,hume
+World Labs | ai-lab | worldlabs
+Allen Institute for AI | ai-lab | allenai,ai2
+# --- AI infrastructure, chips and cloud
+Databricks | ai-infra |
+Scale AI | ai-data | scaleai,scale
+Together AI | ai-infra | togetherai,together
+Fireworks AI | ai-infra | fireworksai,fireworks
+Anyscale | ai-infra |
+Modal | ai-infra | modal,modallabs
+Baseten | ai-infra |
+Replicate | ai-infra |
+Lambda | ai-infra | lambda,lambdalabs
+CoreWeave | ai-infra | coreweave
+Crusoe | ai-infra | crusoe,crusoeenergy
+Cerebras | ai-chips | cerebras,cerebrassystems
+Groq | ai-chips | groq,groqinc
+SambaNova | ai-chips | sambanova,sambanovasystems
+Etched | ai-chips | etched
+Tenstorrent | ai-chips | tenstorrent
+d-Matrix | ai-chips | dmatrix,d-matrix
+Lightmatter | ai-chips | lightmatter
+Ayar Labs | ai-chips | ayarlabs
+Celestial AI | ai-chips | celestialai
+SiFive | ai-chips | sifive
+Rivos | ai-chips | rivos
+Untether AI | ai-chips | untetherai
+Modular | ai-infra | modular,modularai
+Weights & Biases | ai-infra | wandb,weightsandbiases
+Pinecone | ai-infra | pinecone
+Weaviate | ai-infra | weaviate
+Qdrant | ai-infra | qdrant
+Chroma | ai-infra | chroma,trychroma
+LangChain | ai-infra | langchain
+LlamaIndex | ai-infra | llamaindex
+Arize AI | ai-infra | arizeai,arize
+Galileo | ai-infra | galileo,rungalileo
+Snorkel AI | ai-data | snorkelai,snorkel
+Labelbox | ai-data | labelbox
+fal | ai-infra | fal,falai
+RunPod | ai-infra | runpod
+Vast.ai | ai-infra | vastai
+Voltage Park | ai-infra | voltagepark
+OpenRouter | ai-infra | openrouter
+Hugging Face | ai-infra | huggingface
+Ollama | ai-infra | ollama
+Unstructured | ai-infra | unstructured,unstructuredio
+Vercel | devtools | vercel
+Supabase | devtools | supabase
+Neon | devtools | neon,neondatabase
+Temporal | devtools | temporal,temporaltechnologies
+Retool | devtools | retool
+# --- AI applications and agents
+Cursor (Anysphere) | ai-apps | anysphere,cursor
+Cognition | ai-apps | cognition,cognitionai
+Replit | ai-apps | replit
+Sourcegraph | ai-apps | sourcegraph,sourcegraph91
+Augment Code | ai-apps | augmentcode,augment
+Factory | ai-apps | factory,factoryai
+Windsurf | ai-apps | windsurf,codeium
+Tabnine | ai-apps | tabnine
+Harvey | ai-apps | harvey
+Glean | ai-apps | glean,gleanwork
+Writer | ai-apps | writer
+Jasper | ai-apps | jasper,jasperai
+Hebbia | ai-apps | hebbia
+Sierra | ai-apps | sierra
+Decagon | ai-apps | decagon
+Cresta | ai-apps | cresta
+Abridge | ai-apps | abridge
+Ambience Healthcare | ai-apps | ambience,ambiencehealthcare
+Hippocratic AI | ai-apps | hippocraticai
+Nabla | ai-apps | nabla
+Tempus | ai-apps | tempus
+Recursion | ai-bio | recursion,recursionpharmaceuticals
+Insitro | ai-bio | insitro
+Generate Biomedicines | ai-bio | generatebiomedicines
+Chai Discovery | ai-bio | chaidiscovery
+Xaira Therapeutics | ai-bio | xaira,xairatherapeutics
+EvolutionaryScale | ai-bio | evolutionaryscale
+Descript | ai-apps | descript
+Captions | ai-apps | captions
+Synthesia | ai-apps | synthesia
+HeyGen | ai-apps | heygen
+Gamma | ai-apps | gamma
+Notion | ai-apps | notion
+Grammarly | ai-apps | grammarly
+Duolingo | ai-apps | duolingo
+Quizlet | ai-apps | quizlet
+Speak | ai-apps | speak
+Inworld AI | ai-apps | inworldai,inworld
+Mercor | ai-data | mercor
+Surge AI | ai-data | surgeai,surge
+Turing | ai-data | turing
+Invisible Technologies | ai-data | invisible,invisibletech
+Handshake | ai-data | handshake
+micro1 | ai-data | micro1
+Sama | ai-data | sama
+Prolific | ai-data | prolific
+Clay | ai-apps | clay
+Hex | ai-apps | hex,hextechnologies
+Mem | ai-apps | mem
+Lindy | ai-apps | lindy
+Browserbase | ai-apps | browserbase
+Hightouch | ai-apps | hightouch
+Lovable | ai-apps | lovable
+Bolt (StackBlitz) | ai-apps | stackblitz
+Vapi | ai-apps | vapi
+Bland AI | ai-apps | bland,blandai
+Rippling | software | rippling
+# --- robotics and autonomy
+Physical Intelligence | robotics | physicalintelligence,pi
+Skild AI | robotics | skildai,skild
+Figure AI | robotics | figureai,figure
+1X | robotics | 1x,1xtechnologies
+Agility Robotics | robotics | agilityrobotics,agility
+Apptronik | robotics | apptronik
+Boston Dynamics | robotics | bostondynamics
+Covariant | robotics | covariant
+Dexterity | robotics | dexterity
+Sanctuary AI | robotics | sanctuary,sanctuaryai
+Kinova | robotics | kinova
+The Bot Company | robotics | thebotcompany,botcompany
+Collaborative Robotics | robotics | cobot,collaborativerobotics
+Standard Bots | robotics | standardbots
+Formic | robotics | formic
+Bright Machines | robotics | brightmachines
+Machina Labs | robotics | machinalabs
+Path Robotics | robotics | pathrobotics
+Gecko Robotics | robotics | geckorobotics
+Zipline | robotics | zipline,flyzipline
+Serve Robotics | robotics | serverobotics
+Locus Robotics | robotics | locusrobotics
+Berkshire Grey | robotics | berkshiregrey
+Simbe Robotics | robotics | simberobotics,simbe
+Bear Robotics | robotics | bearrobotics
+Field AI | robotics | fieldai
+Nuro | autonomy | nuro
+Aurora | autonomy | aurora,aurorainnovation
+Kodiak | autonomy | kodiak,kodiakrobotics
+Waabi | autonomy | waabi
+Applied Intuition | autonomy | appliedintuition
+Motional | autonomy | motional
+Plus | autonomy | plus,plusai
+Gatik | autonomy | gatik
+Torc Robotics | autonomy | torcrobotics,torc
+Stack AV | autonomy | stackav
+May Mobility | autonomy | maymobility
+Zoox | autonomy | zoox
+Waymo | autonomy | waymo
+Skydio | autonomy | skydio
+Shield AI | defense | shieldai
+Anduril | defense | anduril,andurilindustries
+Saronic | defense | saronic,saronictechnologies
+Palantir | defense | palantir
+Scale Defense | defense | scaledefense
+Vannevar Labs | defense | vannevarlabs
+Hadrian | defense | hadrian
+Castelion | defense | castelion
+SpaceX | aerospace | spacex
+Neuralink | ai-bio | neuralink
+# --- software and internet (AI adopters; market control)
+Stripe | software | stripe
+Plaid | software | plaid
+Brex | software | brex
+Ramp | software | ramp
+Mercury | software | mercury
+Chime | software | chime
+Robinhood | software | robinhood
+Coinbase | software | coinbase
+Affirm | software | affirm
+Gusto | software | gusto
+Deel | software | deel
+Faire | software | faire
+Instacart | software | instacart
+DoorDash | software | doordash,doordashusa
+Lyft | software | lyft
+Airbnb | software | airbnb
+Pinterest | software | pinterest
+Reddit | software | reddit
+Discord | software | discord
+Dropbox | software | dropbox
+Twilio | software | twilio
+Okta | software | okta
+Cloudflare | software | cloudflare
+Datadog | software | datadog
+MongoDB | software | mongodb
+Elastic | software | elastic
+GitLab | software | gitlab
+HashiCorp | software | hashicorp
+Confluent | software | confluent
+Figma | software | figma
+Airtable | software | airtable
+Asana | software | asana
+Linear | software | linear
+Zapier | software | zapier
+Canva | software | canva
+Roblox | software | roblox
+Unity | software | unity,unity3d
+Epic Games | software | epicgames
+Niantic | software | niantic
+Spotify | software | spotify
+Duolingo | software | duolingo
+Snowflake | software | snowflake
+Samsara | software | samsara
+Toast | software | toast
+Wiz | security | wiz,wizinc
+Snyk | security | snyk
+Abnormal Security | security | abnormalsecurity
+Chainguard | security | chainguard
+Tailscale | security | tailscale
+1Password | security | 1password,agilebits
+Vanta | security | vanta
+Drata | security | drata
+Anthropic Security | security |
+Lucid Motors | hardware | lucidmotors
+Rivian | hardware | rivian
+# --- quant and trading
+Jane Street | quant | janestreet
+Hudson River Trading | quant | hudsonrivertrading,wehrtyou
+Two Sigma | quant | twosigma
+Jump Trading | quant | jumptrading
+DRW | quant | drw
+IMC Trading | quant | imc,imctrading
+Optiver | quant | optiver
+Susquehanna | quant | sig,susquehanna
+Tower Research Capital | quant | towerresearchcapital,tower
+Five Rings | quant | fiverings
+Old Mission | quant | oldmission
+Akuna Capital | quant | akunacapital
+Virtu Financial | quant | virtu
+XTX Markets | quant | xtxmarkets
+Radix Trading | quant | radixtrading
+Citadel Securities | quant | citadelsecurities
+Point72 | quant | point72
+D. E. Shaw | quant | deshaw
+# --- Canada
+Wealthsimple | canada | wealthsimple
+Clio | canada | clio
+Ada | canada | ada,adasupport
+Faire Canada | canada |
+Benevity | canada | benevity
+Hopper | canada | hopper
+Lightspeed | canada | lightspeed,lightspeedhq
+Coveo | canada | coveo
+Xanadu | canada | xanadu,xanaduquantum
+D-Wave | canada | dwave,dwavesys
+Borealis AI | canada | borealisai
+Layer 6 | canada | layer6
+Vector Institute | canada | vectorinstitute
+Mila | canada | mila
+Dialpad | canada | dialpad
+Hootsuite | canada | hootsuite
+ApplyBoard | canada | applyboard
+Thinkific | canada | thinkific
+Top Hat | canada | tophat
+KOHO | canada | koho
+Neo Financial | canada | neofinancial,neo
+League | canada | league,leagueinc
+PointClickCare | canada | pointclickcare
+D2L | canada | d2l
+Wattpad | canada | wattpad
+Shakudo | canada | shakudo
+Cohere Health | canada | coherehealth
+Ecobee | canada | ecobee
+Geotab | canada | geotab
+Nuvei | canada | nuvei
+Plusgrade | canada | plusgrade
+Jobber | canada | jobber,getjobber
+Float | canada | float,floatcard
+Wave | canada | wave,waveapps
+Tealbook | canada | tealbook
+Klue | canada | klue
+Recursion Canada | canada |
+Shopify | canada | shopify
+Cohere Canada | canada |
+Questrade | canada | questrade
+FreshBooks | canada | freshbooks
+Ritual | canada | ritual
+BenchSci | canada | benchsci
+Absolute Software | canada | absolute
+Copperleaf | canada | copperleaf
+Trulioo | canada | trulioo
+Visier | canada | visier
+Clearco | canada | clearco
+Paystone | canada | paystone
+Swappable | canada |

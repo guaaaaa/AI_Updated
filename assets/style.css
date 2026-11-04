@@ -608,3 +608,63 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
   .stock-big { font-size: 34px; }
   .stock-card { padding: 16px 16px 14px; }
 }
+
+/* job board */
+.board.jobs td { vertical-align: middle; }
+.board.jobs td.num strong, .board.jobs td .sub { display: block; }
+.board.jobs .sub { font-size: 11px; color: var(--faint); font-weight: 400; margin-top: 1px; white-space: nowrap; }
+.board.jobs .rank-n { color: var(--faint); width: 28px; }
+.board.jobs .c-score { min-width: 120px; }
+.board.jobs .c-score strong { font-variant-numeric: tabular-nums; margin-left: 8px; }
+.score-bar { display: inline-block; width: 72px; height: 6px; border-radius: 999px; background: var(--glass-soft); vertical-align: middle; overflow: hidden; }
+.score-bar span { display: block; height: 100%; border-radius: 999px; background: var(--accent); }
+.board.jobs strong.up, .expo-w.up { color: var(--up-ink); }
+.board.jobs strong.down, .expo-w.down { color: var(--down-ink); }
+.few { display: inline-block; margin-left: 8px; font-size: 10.5px; font-weight: 600; color: var(--muted); padding: 0 7px; border-radius: 999px; background: var(--glass-soft); }
+.weights-card summary { cursor: pointer; list-style: none; }
+.weights-card summary::-webkit-details-marker { display: none; }
+.weights { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 28px; margin: 10px 0 8px; }
+.weight { display: grid; grid-template-columns: 120px 1fr 18px; align-items: center; gap: 4px 10px; font-size: 13px; }
+.weight input { width: 100%; accent-color: var(--accent); }
+.weight output { font-variant-numeric: tabular-nums; color: var(--muted); text-align: right; }
+.w-help { grid-column: 1 / -1; font-size: 11.5px; color: var(--faint); line-height: 1.4; margin-bottom: 6px; }
+.stock-switches { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.crit { display: grid; gap: 4px; }
+.crit-row { display: grid; grid-template-columns: 130px 1fr 34px; align-items: center; gap: 2px 12px; padding: 5px 0; }
+.crit-name { font-size: 13.5px; }
+.crit-bar { height: 7px; border-radius: 999px; background: var(--glass-soft); overflow: hidden; }
+.crit-bar span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+.crit-val { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; font-size: 13px; }
+.crit-help { grid-column: 1 / -1; font-size: 11.5px; color: var(--faint); line-height: 1.4; }
+.expo { display: grid; margin-top: 6px; }
+.expo-row { display: grid; grid-template-columns: minmax(0, 1fr) 44px 110px 160px; align-items: center; gap: 10px; padding: 7px 6px; border-bottom: 1px solid var(--glass-line);
+  color: var(--text); font-size: 13.5px; border-radius: 8px; }
+.expo-row:hover { background: var(--glass-soft); text-decoration: none; }
+.expo-row:last-child { border-bottom: 0; }
+.expo-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.expo-w { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.expo-m { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.expo-bar { position: relative; height: 8px; }
+.expo-bar::before { content: ""; position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--viz-grid-strong); }
+.expo-bar span { position: absolute; top: 0; height: 100%; border-radius: 3px; }
+.expo-bar span.pos { left: 50%; background: var(--div-warm); }
+.expo-bar span.neg { right: 50%; background: var(--div-cool); }
+.sources { font-size: 12.5px; }
+@media (max-width: 700px) {
+  .weights { grid-template-columns: 1fr; }
+  .board.jobs .c-entry, .board.jobs .c-ai, .board.jobs .c-spark { display: none; }
+  .board.jobs .c-score { min-width: 0; }
+  .board.jobs .score-bar { width: 40px; }
+  .expo-row { grid-template-columns: minmax(0, 1fr) 40px 90px; }
+  .expo-bar { grid-column: 1 / -1; }
+  .stock-switches { justify-content: flex-start; }
+}
+.line-controls .seg, .stock-switches .seg { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+.line-controls .seg button, .stock-switches .seg button { white-space: nowrap; flex: none; }
+.stock-switches { min-width: 0; max-width: 100%; }
+@media (max-width: 700px) { .stock-switches { width: 100%; } }
+@media (max-width: 700px) {
+  .board.jobs .rank-n, .board.jobs .score-bar { display: none; }
+  .board.jobs .c-field { margin-left: 0; }
+  .board.jobs td, .board.jobs th { padding: 7px 5px; }
+}

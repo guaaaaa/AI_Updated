@@ -62,6 +62,8 @@
     if (m) return { view: "day", date: m[1], item: m[2] || null };
     const t = h.match(/^\/trends(?:\/(week|month|direction|field)\/([\w.-]+))?/);
     if (t) return { view: "trends", kind: t[1] ? { week: "weekly", month: "monthly", direction: "direction", field: "field" }[t[1]] : null, id: t[2] || null };
+    const j = h.match(/^\/jobs(?:\/([\w-]+))?/);
+    if (j) return { view: "jobs", id: j[1] || null };
     if (h.startsWith("/browse")) {
       const p = new URLSearchParams(h.split("?")[1] || "");
       S.f.type = ["paper", "news"].includes(p.get("type")) ? p.get("type") : "all";
@@ -80,15 +82,16 @@
       S.f = { type: "all", tags: new Set(), cats: new Set(), q: "", from: null, to: null };
       if (r.date) S.calMonth = new Date(dObj(r.date).getFullYear(), dObj(r.date).getMonth(), 1);
     }
-    const wide = r.view === "trends";
+    const wide = r.view === "trends" || r.view === "jobs";
     $(".layout").classList.toggle("wide", wide);
-    for (const a of document.querySelectorAll("#viewNav a")) a.classList.toggle("on", (a.dataset.view === "trends") === wide);
+    for (const a of document.querySelectorAll("#viewNav a")) a.classList.toggle("on", a.dataset.view === (wide ? r.view : "digest"));
     if (!wide) syncSidebar(r); else S.current = r;
     const main = $("#main");
     main.replaceChildren(el("div", { class: "loading", text: "Loading…" }));
     try {
       if (r.view === "day") await renderDay(r.date, r.item);
       else if (r.view === "trends") await window.AIUTrends.render(main, r, S);
+      else if (r.view === "jobs") await window.AIUJobs.render(main, r, S);
       else renderBrowse();
     } catch (e) {
       main.replaceChildren(el("div", { class: "empty", text: `Could not load this view (${e.message}).` }));
@@ -380,8 +383,9 @@
       for (let d = dObj(w.start); isoOf(d) <= w.end; d.setDate(d.getDate() + 1)) S.weekOf[isoOf(d)] = w;
     }
     for (const x of S.index.summaries || []) if (x.kind === "monthly" && !S.sumByDate[x.published]) S.sumByDate[x.published] = x;
-    if (window.AIUTrends) window.AIUTrends.init({ el, getJSON, getDay, dObj, fmtShort, fmtLong, isoOf, safeUrl,
-      glanceList });
+    const helpers = { el, getJSON, getDay, dObj, fmtShort, fmtLong, isoOf, safeUrl, glanceList };
+    if (window.AIUTrends) window.AIUTrends.init(helpers);
+    if (window.AIUJobs) window.AIUJobs.init(helpers, window.AIUTrends && window.AIUTrends.kit);
     const latest = S.dates[0] ? dObj(S.dates[0]) : new Date();
     S.calMonth = new Date(latest.getFullYear(), latest.getMonth(), 1);
     wire();
