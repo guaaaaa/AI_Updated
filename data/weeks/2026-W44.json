@@ -65,21 +65,15 @@
  "stories": [
   {
    "title": "Anthropic begins countdown to IPO with prospectus filing",
-   "outlets": 16,
+   "outlets": 17,
    "date": "2026-10-26",
-   "covered": null
+   "covered": "2026-10-31-n2"
   },
   {
    "title": "Introducing Kimi K3.1 Pro",
    "outlets": 5,
    "date": "2026-10-23",
    "covered": "2026-10-26-n1"
-  },
-  {
-   "title": "The AI data center boom has a ghost problem",
-   "outlets": 5,
-   "date": "2026-10-24",
-   "covered": null
   },
   {
    "title": "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot",
@@ -109,6 +103,12 @@
    "title": "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
    "outlets": 4,
    "date": "2026-10-28",
+   "covered": null
+  },
+  {
+   "title": "What the US Movement Against Data Centers Can Learn From Abroad",
+   "outlets": 3,
+   "date": "2026-10-25",
    "covered": null
   }
  ],

@@ -1,0 +1,287 @@
+{
+ "date": "2026-11-04",
+ "edition": "weekday",
+ "generated_at": "2026-11-04T22:08:14+00:00",
+ "summary": "Dinosaur blood chemistry from Brazil and the rarest beauty-quark decay yet seen at CERN, plus a lung cancer immunotherapy trial, an autonomous DNA laboratory and light-driven copper chemistry.",
+ "news": [
+  {
+   "id": "2026-11-04-n1",
+   "story_key": "dinosaur-blood-heme-aratasaurus",
+   "title": "Chemical traces of blood found in a 115-million-year-old dinosaur bone",
+   "category": "Life Sciences",
+   "published": "2026-11-02T14:00:00-05:00",
+   "tldr": "A team led by Curtin University reports red blood cell-like structures and heme molecules inside the leg bone of a 115-million-year-old Brazilian dinosaur, the first chemical evidence of blood in a dinosaur.",
+   "why_selected": "A peer-reviewed PNAS study with several independent lines of evidence that changes what fossils may preserve, covered by multiple reputable outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Fossils are usually mineral copies of bone, shell or tissue. For decades, researchers assumed that fragile molecules such as hemoglobin, the iron-containing protein that carries oxygen in red blood cells, could not survive for millions of years. Earlier claims of fossil blood cells were disputed, because structures that look like cells can also form from minerals or microbes after burial."
+    },
+    {
+     "heading": "What happened",
+     "body": "An international team led by Kliti Grice of Curtin University in Australia reported in the Proceedings of the National Academy of Sciences that it found mineralized red blood cell-like structures in the leg bone of Aratasaurus museunacionali, a small theropod dinosaur from the Romualdo Formation in northeastern Brazil. The specimen is about 115 million years old. The structures sit only inside the bone's vascular canals, where red blood cells are found in living animals, and the surrounding sediment did not contain them. The team also detected heme, the oxygen-carrying component of hemoglobin, in a chemical signature that differed from the sediment, which mostly held plant and bacterial compounds. Amino acids associated with collagen were found too. The authors say the cells were not preserved unchanged: they turned into minerals, and a manganese mineral called hausmannite may have helped stabilize the molecules. They propose rapid burial in a low-oxygen, microbe-rich setting. The fossil cells look somewhat larger and rounder than those of modern birds and crocodilians, which could reflect deformation or a real difference."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If confirmed by other groups, the result suggests that museum fossils collected decades ago may still hold molecular information about physiology, metabolism and the evolution of blood. The authors say it also informs the search for traces of life elsewhere, since delicate molecules may last longer than expected."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent replication on other fossils and rock types, which the team itself calls for, and whether the heme signal can be separated from contamination or later chemical change in other labs. Earlier claims of fossil blood have been challenged on exactly those grounds."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-10-dinosaur-blood-oldest-discovery-rewrites.html"
+    },
+    {
+     "name": "The Conversation",
+     "url": "https://theconversation.com/traces-of-dinosaur-blood-found-in-world-first-discovery-286450"
+    },
+    {
+     "name": "Popular Science",
+     "url": "https://www.popsci.com/science/first-dinosaur-blood-fossil-discovery/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-n2",
+   "story_key": "lhcb-bd-to-mumu-evidence",
+   "title": "LHCb sees first evidence of the rarest beauty-particle decay yet observed",
+   "category": "Physics",
+   "published": "2026-11-03T01:01:00-05:00",
+   "tldr": "The upgraded LHCb experiment at CERN reports 3.2-sigma evidence for a beauty-particle decay into two muons that occurs about once per ten billion decays, consistent with the Standard Model.",
+   "why_selected": "A long-sought result in fundamental physics from a major collaboration, covered by the BBC and two university releases, with a funding angle for UK science.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Standard Model is the current theory of fundamental particles. Physicists hunt for physics beyond it by studying very rare processes. Beauty quarks are heavy relatives of the up and down quarks in ordinary matter, and particles containing them live only about one and a half trillionths of a second before decaying. The rarer a decay is, the more sensitive it can be to unseen particles, which could change how often it happens. Researchers nickname the tiny distances where such particles might hide the zeptoverse."
+    },
+    {
+     "heading": "What happened",
+     "body": "The LHCb collaboration, with analysis led from Cambridge by Harry Cliff, reported evidence for the decay of a particle called Bd into two muons, heavier relatives of the electron. It is expected in only about one in every ten billion beauty particles, and physicists have sought it since 1984. After a 2024 upgrade, LHCb collected a large new sample in 2024 and 2025 and used machine learning to suppress background. Combined with data from 2011 to 2018, the signal reached 3.2 sigma, enough to call it evidence but short of the five sigma needed to claim a discovery. The result has not yet been peer reviewed and was presented at CERN on 3 November. It agrees with the Standard Model prediction."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Agreement with the Standard Model narrows where new particles could be hiding. The measurement also shows the upgraded detector works at its intended sensitivity."
+    },
+    {
+     "heading": "What to watch",
+     "body": "More data through the early 2030s and a further LHCb upgrade planned for the mid-2030s. The BBC reports that UK funding for that upgrade has been withdrawn, and that LHCb leader Tim Gershon fears the UK's involvement is at risk."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c5pvgxkkv4dzo"
+    },
+    {
+     "name": "University of Cambridge",
+     "url": "https://www.cam.ac.uk/stories/zeptoverse"
+    },
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-11-physicists-closer-zeptoverse-year-particle.html"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41591-026-04745-4",
+   "title": "Perioperative ivonescimab with or without chemotherapy in resectable non-small cell lung cancer: a phase 2 trial",
+   "authors": [
+    "Xiaoliang Zhao",
+    "Bin Zhang",
+    "Chenguang Li",
+    "Lianmin Zhang",
+    "Meng Wang",
+    "Ziqiang Tian",
+    "Shengguang Wang",
+    "Qiang Zhang",
+    "Huilai Lv",
+    "Chong Pang",
+    "Shiwang Wen",
+    "Xiaofei Wang",
+    "Wei Wei",
+    "Yu Zhang",
+    "Wuhao Huang",
+    "Jianquan Zhu",
+    "Yue Li",
+    "Chen Chen",
+    "Yao Tang",
+    "Bin Jia",
+    "Hua Zhang",
+    "Hui Chen",
+    "Sha Wang",
+    "Jiangyan Zhang",
+    "Wenting Li",
+    "Zhongmin Maxwell Wang",
+    "Baiyong Li",
+    "Michelle Xia",
+    "Zhenfa Zhang",
+    "Dongsheng Yue"
+   ],
+   "affiliations": [
+    "Tianjin Medical University Cancer Institute and Hospital",
+    "The Fourth Hospital of Hebei Medical University"
+   ],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Clinical medicine",
+   "tags": [
+    "Clinical medicine",
+    "Drug discovery"
+   ],
+   "tldr": "In a 90-patient phase 2 trial, ivonescimab plus chemotherapy before and after surgery gave a 70.1% major pathological response in resectable lung cancer.",
+   "why_selected": "A strong early signal for a PD-1/VEGF bispecific antibody, published in Nature Medicine, with a clear caveat that the trial is small and uncontrolled.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Even when non-small cell lung cancer can be removed surgically, 30 to 70 percent of patients relapse, often with distant metastases. Doctors want treatments given before surgery that shrink tumors so more can be fully removed and fewer return."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The standard is now chemotherapy plus a PD-1 or PD-L1 immune checkpoint inhibitor before surgery, followed by the same immunotherapy afterward. Phase 3 trials such as CheckMate 816 and KEYNOTE-671 reported major pathological response, meaning at most 10 percent viable tumor remains at surgery, in 30.2 to 56 percent of patients."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Ivonescimab is a bispecific antibody with four binding arms that block both PD-1, a brake that cancer cells use to hide from T cells, and VEGF, a growth signal that makes tumor blood vessels. Blocking VEGF may normalize chaotic tumor vessels so immune cells can enter more easily, so combining the two could strengthen the immune attack. Patients received ivonescimab alone or with platinum-paclitaxel chemotherapy before surgery and ivonescimab afterward."
+    },
+    {
+     "heading": "Results",
+     "body": "This nonrandomized phase 2 trial enrolled 90 patients with stage II to IIIB disease at two Chinese hospitals, 11 in the monotherapy cohort and 79 in the combination cohort. Among 67 combination patients who reached surgery, 47 had a major pathological response, or 70.1 percent, beating the 41 percent historical benchmark. Pathological complete response was 50.7 percent. Of 10 monotherapy patients operated on, 6 responded. Grade 3 or higher treatment-related adverse events occurred in 30.4 percent of combination patients, with no grade 3 or higher hemorrhage and no treatment-related deaths."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The response rate compares favorably with the earlier phase 3 range, but without a control arm the comparison is indirect, follow-up is short, and survival results are not yet reported. Randomized trials are needed to show whether it beats current care."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41591-026-04745-4",
+    "doi": "https://doi.org/10.1038/s41591-026-04745-4"
+   },
+   "signals": {
+    "venue": "Nature Medicine",
+    "tier": "major",
+    "press": 2
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11228-6",
+   "title": "An AI-native experimental laboratory for autonomous biomolecular operations",
+   "authors": [
+    "Mingyu Wu",
+    "Zhaoguo Wang",
+    "Jiabin Wang",
+    "Zhiyuan Dong",
+    "Jingkai Yang",
+    "Qingting Li",
+    "Tianyu Huang",
+    "Chi Zhang",
+    "Ping Song",
+    "Lei Zhao",
+    "Mingqiang Li",
+    "Xiaolei Zuo",
+    "Fei Wang",
+    "Chunhai Fan",
+    "Haibo Chen"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Computational science & AI",
+   "tags": [
+    "Computational science & AI",
+    "Genetics & genomics"
+   ],
+   "tldr": "AutoDNA, an AI-run laboratory, coordinates over 20 instruments across more than 11,000 steps to carry out DNA synthesis, amplification and sequencing with minimal human intervention.",
+   "why_selected": "A Nature demonstration of an end-to-end autonomous biology lab, going beyond the single-purpose automation seen in chemistry; only the abstract was available, so the write-up stays within it.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Self-driving laboratories exist, but mostly in chemistry and materials science, where goals are single, workflows are well defined and instruments are simple. Biology experiments involve many instruments and several goals at once, which makes full automation harder."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier autonomous systems typically use AI as an add-on tool for a particular task, such as choosing the next experiment. The authors argue that this architecture lacks a global understanding of the experiment, especially under engineering-oriented conditions."
+    },
+    {
+     "heading": "Key idea",
+     "body": "AutoDNA is built as an AI-native laboratory, where models, experiments and instruments are co-designed so that the AI and the automation system improve together. Think of the difference between a driver who occasionally consults a map and a vehicle designed around its navigation system. It is an end-to-end, multi-user framework aimed at biomolecular engineering with several objectives at once, and it manages the core operations on nucleic acids: synthesis, transcription, amplification and sequencing."
+    },
+    {
+     "heading": "Results",
+     "body": "The system autonomously orchestrates over 20 types of instruments across more than 11,000 steps, and humans only handle maintenance such as replenishing reagents and labware. In four demonstrations, it matched expert-optimized yields of enzymatic DNA synthesis, ran concurrent protocols 3.2 times faster, completed a full DNA data storage cycle with exact recovery of the original digital content, and identified and validated a clinically detected KRAS G13D mutation."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It points toward laboratories offered as a service, where outside users submit experiments. I read only the abstract, so details such as error rates, cost and how much expert setup was needed are not covered here."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11228-6",
+    "doi": "https://doi.org/10.1038/s41586-026-11228-6"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11368-9",
+   "title": "Carbon radical generation by irreversible metal-to-ligand charge transfer",
+   "authors": [
+    "Zhiqiang Wei",
+    "Xiang Li",
+    "Lin Xiao",
+    "Yu He",
+    "Zhao Liu",
+    "Kaidi Zhu",
+    "Chuanfa Ni",
+    "Xiao-Song Xue",
+    "Jinbo Hu"
+   ],
+   "affiliations": [
+    "Shanghai Institute of Organic Chemistry",
+    "ShanghaiTech University"
+   ],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Chemistry",
+   "tags": [
+    "Chemistry"
+   ],
+   "tldr": "Copper complexes of heteroaryl sulfones split apart when hit by visible light, releasing carbon radicals that enable fluoroalkylation of arenes and alkynes.",
+   "why_selected": "A Nature chemistry paper introducing a new way to generate reactive radicals, including hard-to-access methyl and trifluoromethyl radicals; only the abstract was available.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Carbon radicals, carbon atoms carrying an unpaired electron, are reactive building blocks for making drug and materials molecules. Producing specific ones, especially fluorinated radicals, cleanly under mild conditions remains a challenge."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Light-driven chemistry often uses metal-to-ligand charge transfer, or MLCT: light pushes an electron from a metal to the molecule bound to it. Normally, if no reaction partner is nearby, the excited state simply falls back to its starting state, so the process is largely reversible and wastes the energy."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors made isolable copper complexes with heteroaryl sulfone ligands. When illuminated with visible light, the MLCT excited state does not relax back. Instead the sulfone ligand breaks a carbon-sulfur bond, an irreversible step that releases a carbon-centered radical. Spectroscopic and computational studies support an excited state of this kind and a low energy barrier for the bond cleavage. The reactivity does not depend much on how easily the free sulfone would accept an electron."
+    },
+    {
+     "heading": "Results",
+     "body": "The approach generated fluoroalkyl radicals and non-fluorinated tertiary, secondary and primary alkyl radicals, even methyl. It was used for copper-catalyzed C-H fluoroalkylation of arenes and terminal alkynes. Trifluoromethyl radicals produced this way also started halogen-atom transfer from perfluorocyclobutyl iodide, enabling perfluorocyclobutylation and iodination of alkenes, which the authors describe as a longstanding challenge."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It offers a general design principle: make the light-induced step irreversible, and the excited state becomes a radical source. I read only the abstract, so yields, scope and practical limits are not covered here."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11368-9",
+    "doi": "https://doi.org/10.1038/s41586-026-11368-9"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

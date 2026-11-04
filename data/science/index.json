@@ -1,8 +1,79 @@
 {
- "updated": "2026-11-04T22:03:57+00:00",
+ "updated": "2026-11-04T22:08:40+00:00",
  "domain": "science",
- "days": [],
- "items": [],
+ "days": [
+  {
+   "date": "2026-11-04",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 3,
+   "backfill": false
+  }
+ ],
+ "items": [
+  {
+   "id": "2026-11-04-n1",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Chemical traces of blood found in a 115-million-year-old dinosaur bone",
+   "tldr": "A team led by Curtin University reports red blood cell-like structures and heme molecules inside the leg bone of a 115-million-year-old Brazilian dinosaur, the first chemical evidence of blood in a dinosaur.",
+   "category": "Life Sciences",
+   "byline": "Phys.org, The Conversation, Popular Science"
+  },
+  {
+   "id": "2026-11-04-n2",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "LHCb sees first evidence of the rarest beauty-particle decay yet observed",
+   "tldr": "The upgraded LHCb experiment at CERN reports 3.2-sigma evidence for a beauty-particle decay into two muons that occurs about once per ten billion decays, consistent with the Standard Model.",
+   "category": "Physics",
+   "byline": "BBC, University of Cambridge, Phys.org"
+  },
+  {
+   "id": "doi-10-1038-s41591-026-04745-4",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "Perioperative ivonescimab with or without chemotherapy in resectable non-small cell lung cancer: a phase 2 trial",
+   "tldr": "In a 90-patient phase 2 trial, ivonescimab plus chemotherapy before and after surgery gave a 70.1% major pathological response in resectable lung cancer.",
+   "primary_tag": "Clinical medicine",
+   "tags": [
+    "Clinical medicine",
+    "Drug discovery"
+   ],
+   "byline": "Xiaoliang Zhao, Bin Zhang, Chenguang Li et al. · Tianjin Medical University Cancer Institute and Hospital, The Fourth Hospital of Hebei Medical University",
+   "hf": null,
+   "venue": "Nature Medicine"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11228-6",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "An AI-native experimental laboratory for autonomous biomolecular operations",
+   "tldr": "AutoDNA, an AI-run laboratory, coordinates over 20 instruments across more than 11,000 steps to carry out DNA synthesis, amplification and sequencing with minimal human intervention.",
+   "primary_tag": "Computational science & AI",
+   "tags": [
+    "Computational science & AI",
+    "Genetics & genomics"
+   ],
+   "byline": "Mingyu Wu, Zhaoguo Wang, Jiabin Wang et al.",
+   "hf": null,
+   "venue": "Nature"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11368-9",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "Carbon radical generation by irreversible metal-to-ligand charge transfer",
+   "tldr": "Copper complexes of heteroaryl sulfones split apart when hit by visible light, releasing carbon radicals that enable fluoroalkylation of arenes and alkynes.",
+   "primary_tag": "Chemistry",
+   "tags": [
+    "Chemistry"
+   ],
+   "byline": "Zhiqiang Wei, Xiang Li, Lin Xiao et al. · Shanghai Institute of Organic Chemistry, ShanghaiTech University",
+   "hf": null,
+   "venue": "Nature"
+  }
+ ],
  "tag_groups": {
   "Physical Sciences": [
    "Astrophysics & cosmology",
@@ -34,7 +105,13 @@
    "Mathematics"
   ]
  },
- "tag_counts": {},
+ "tag_counts": {
+  "Clinical medicine": 1,
+  "Drug discovery": 1,
+  "Computational science & AI": 1,
+  "Genetics & genomics": 1,
+  "Chemistry": 1
+ },
  "news_categories": [
   "Space & Astronomy",
   "Physics",
@@ -46,7 +123,10 @@
   "Energy",
   "Science Policy & Funding"
  ],
- "category_counts": {},
+ "category_counts": {
+  "Life Sciences": 1,
+  "Physics": 1
+ },
  "summaries": [],
  "weeks": []
 }
