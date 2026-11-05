@@ -22,12 +22,13 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import DOM, DOMAIN, ET as TZ, WORK, config, http_get, load_json, paper_window, parse_date, recent_digests, today_et  # noqa: E402
+from common import (DOM, DOMAIN, ET as TZ, WORK, config, http_get, load_json, other_tabs, paper_window, parse_date,
+                    recent_digests, subject_ok, today_et)  # noqa: E402
 
 RECENT_DAYS, DEDUP_DAYS = 45, 60
 KEEP_TYPE = re.compile(r"research|^article|original|report", re.I)
 DROP_TYPE = re.compile(r"comment|editorial|perspective|review|correspond|letter|news|book|career|obituar|retract|correction|erratum|"
-                       r"world view|feature|outlook|q&a|in brief|this week|policy forum|essay|clinical implications|image", re.I)
+                       r"world view|feature|outlook|q&a|in brief|this week|policy forum|essay|clinical implications|image|in this issue|in other journals|in science journals|profile of|reply to|response to|highlight|\(\d{4}[–-]\d{4}\)", re.I)
 STOP = set("""about after against among analysis approach based between from have human into large model models more most
 new over role study their these through using with without within across effect effects evidence data during under
 toward towards which while when where what does show shows reveals revealed""".split())
@@ -113,7 +114,8 @@ def main():
     a = ap.parse_args()
     d = parse_date(a.date)
     start, end = paper_window(d)
-    src = config("sources").get("research", {})
+    sources = config("sources")
+    src, default_subject = sources.get("research", {}), sources.get("subject")   # subject: domain-wide, feeds may override
     news = load_json(WORK / f"news_{d}.json", {}) or {}
     heads = [words(h["title"]) for h in news.get("headlines", [])]
     df = {}
@@ -123,6 +125,7 @@ def main():
     common = {w for w, n in df.items() if n > max(2, 0.02 * len(heads))}   # everyday words of the day's news
     heads = [h - common for h in heads]
     seen = {p["id"] for j in recent_digests(d, DEDUP_DAYS) for p in j.get("papers", [])}
+    seen |= {x["key"] for x in other_tabs(d, DEDUP_DAYS) if x["kind"] == "paper"}   # one paper, one tab
     cands, n_feed = {}, {}
     earlier = {c["id"]: c for c in (load_json(WORK / f"papers_{d}.json", {}) or {}).get("candidates", [])}
     for f in src.get("feeds", []):
@@ -134,8 +137,11 @@ def main():
             log(f"  WARNING research feed {f['name']} failed: {e}" + (f" (kept {len(kept)} earlier candidates)" if kept else ""))
             continue
         kept = 0
+        subject = f.get("subject", default_subject)   # multidisciplinary journals: biology vs the rest
         for it in items:
             if not it["title"] or not is_research(f, it):
+                continue
+            if not subject_ok(it["title"] + " " + (it.get("desc") or ""), subject):
                 continue
             title = re.sub(r"^\[[^\]]+\]\s*", "", it["title"])
             authors = it["authors"]
@@ -168,7 +174,7 @@ def main():
         from fetch_papers import listing_sweep
         for pid, p in listing_sweep(cats, start, end).items():
             press = sum(1 for h in heads if len((words(p["title"]) - common) & h) >= 2)
-            if press and pid not in seen:
+            if press and pid not in seen and subject_ok(p["title"], default_subject):
                 cands[pid] = {"id": pid, "title": p["title"], "authors": p["authors"], "abstract": "", "announced": p["announced"],
                               "categories": p["subjects"], "links": {"arxiv": f"https://arxiv.org/abs/{pid}"},
                               "signals": {"venue": "arXiv", "tier": "preprint", "press": press}, "score": 2 * min(press, 3)}

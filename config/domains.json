@@ -25,7 +25,7 @@
   {
    "id": "science",
    "name": "Science",
-   "tagline": "Discoveries across physics, life sciences, space and climate",
+   "tagline": "Physics, space, chemistry, materials and Earth science",
    "news": 3,
    "papers": 3,
    "runbook": "RUNBOOK_SCIENCE.md",
@@ -34,12 +34,12 @@
    "paper_label": "Papers"
   },
   {
-   "id": "health",
-   "name": "Health",
-   "tagline": "Medicine, public health and biotech",
+   "id": "biology",
+   "name": "Biology",
+   "tagline": "Life sciences: discoveries, medicine and biotech",
    "news": 3,
-   "papers": 2,
-   "runbook": "RUNBOOK_HEALTH.md",
+   "papers": 3,
+   "runbook": "RUNBOOK_BIOLOGY.md",
    "trends": false,
    "paper_window_h": 168,
    "paper_label": "Papers"

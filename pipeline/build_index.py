@@ -49,6 +49,10 @@ def domain_index(did):
     groups = {}
     for t, v in tax["paper_tags"].items():
         groups.setdefault(v["group"], []).append(t)
+    retired = sorted(t for t in tag_counts if t not in tax["paper_tags"])   # tags past items still use after a taxonomy change
+    if retired:
+        groups["Earlier tags"] = retired
+    cats = list(tax["news_categories"]) + sorted(c for c in cat_counts if c not in tax["news_categories"])
     summaries = []
     sdir = P["summaries"]
     for f in sorted(sdir.glob("*/*.json"), key=lambda f: json.loads(f.read_text())["published"], reverse=True) if sdir.exists() else []:
@@ -58,7 +62,7 @@ def domain_index(did):
                           "heating": [h["label"] for h in j["research"]["heating"] + j["industry"]["heating"]],
                           "cooling": [h["label"] for h in j["research"]["cooling"] + j["industry"]["cooling"]]})
     out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "domain": did, "days": days, "items": items,
-           "tag_groups": groups, "tag_counts": dict(tag_counts), "news_categories": list(tax["news_categories"]),
+           "tag_groups": groups, "tag_counts": dict(tag_counts), "news_categories": cats,
            "category_counts": dict(cat_counts), "summaries": summaries, "weeks": week_review.build_all() if did == "ai" else []}
     P["data"].mkdir(parents=True, exist_ok=True)
     (P["data"] / "index.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")

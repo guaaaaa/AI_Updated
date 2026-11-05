@@ -7,8 +7,8 @@ Daily digests of the most important news and research, curated and explained by 
 |---|---|---|---|
 | **AI** | ≤2 news + ≤5 papers | arXiv (alphaXiv Hot, Hugging Face), lab blogs, reputable press | [`RUNBOOK.md`](RUNBOOK.md) |
 | **Business** | ≤5 news + ≤1 research | Fed, Bank of Canada, BEA, ECB, business press, NBER working papers | [`RUNBOOK_BUSINESS.md`](RUNBOOK_BUSINESS.md) |
-| **Science** | ≤3 news + ≤3 papers | NASA, NSF, science press, Nature, Science, Cell, PNAS, Science Advances, Nature Physics/Astronomy | [`RUNBOOK_SCIENCE.md`](RUNBOOK_SCIENCE.md) |
-| **Health** | ≤3 news + ≤2 papers | FDA, WHO, NIH, STAT, KFF Health News, health press, NEJM, The Lancet, JAMA, Nature Medicine | [`RUNBOOK_HEALTH.md`](RUNBOOK_HEALTH.md) |
+| **Science** | ≤3 news + ≤3 papers | NASA, NSF, science press, Nature, Science, PNAS, Science Advances, Nature Physics/Astronomy (physical and Earth sciences only) | [`RUNBOOK_SCIENCE.md`](RUNBOOK_SCIENCE.md) |
+| **Biology** | ≤3 news + ≤3 papers | FDA, WHO, NIH, STAT, medical and science press, NEJM, The Lancet, JAMA, Cell, Nature Medicine/Neuroscience/Genetics/Ecology & Evolution, and the biology papers of Nature, Science, PNAS and Science Advances | [`RUNBOOK_BIOLOGY.md`](RUNBOOK_BIOLOGY.md) |
 | **Tech** (beyond AI) | ≤4 news + ≤1 research | Apple/Microsoft/Google newsrooms, The Verge, Ars Technica, The Register, IEEE Spectrum, security press, SpaceNews, press-covered arXiv systems/security papers | [`RUNBOOK_TECH.md`](RUNBOOK_TECH.md) |
 
 AI also has a **Trends** view (a monthly synthesis grounded in statistics on every new arXiv paper and news story,
@@ -17,10 +17,15 @@ Domains are listed in `config/domains.json`; each has its own sources and taxono
 (AI keeps `config/*.json`) and its own data in `data/<id>/` (AI keeps `data/days/`). Every pipeline script takes
 `--domain <id>` (default `ai`).
 
-**Site:** https://guaaaaa.github.io/AI_Updated/ (`#/ai`, `#/business`, `#/science`, `#/health`, `#/tech`, `#/jobs`)
+**Site:** https://guaaaaa.github.io/AI_Updated/ (`#/ai`, `#/business`, `#/science`, `#/biology`, `#/tech`, `#/jobs`)
 
 Each domain has its own Claude Code cloud scheduled task (Mon–Sat, ET): Tech 6:43, AI 7:09, Business 7:41,
-Science 8:17, Health 8:49, staggered so their news searches never overlap.
+Science 8:17, Biology 8:49, staggered so their news searches never overlap.
+
+Shared science outlets and multidisciplinary journals are split by subject (`common.life_science`): items about living
+things go to Biology, the rest to Science. Each story and paper appears on one tab only: the candidate lists show what
+other tabs ran in the last 3 days, and the validator flags repeats. News needs a primary source or two independent
+outlets, and every run checks its draft against its sources sentence by sentence before publishing.
 
 ## How it works (AI; the other domains follow the same steps with `fetch_research.py` for papers)
 

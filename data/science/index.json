@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T03:01:56+00:00",
+ "updated": "2026-11-05T03:54:26+00:00",
  "domain": "science",
  "days": [
   {
@@ -83,18 +83,6 @@
    "Condensed matter & materials",
    "Chemistry"
   ],
-  "Life Sciences": [
-   "Molecular & cell biology",
-   "Genetics & genomics",
-   "Neuroscience",
-   "Evolution & ecology",
-   "Microbiology & immunology"
-  ],
-  "Health": [
-   "Clinical medicine",
-   "Epidemiology & public health",
-   "Drug discovery"
-  ],
   "Earth & Climate": [
    "Climate science",
    "Earth science",
@@ -103,6 +91,11 @@
   "Methods": [
    "Computational science & AI",
    "Mathematics"
+  ],
+  "Earlier tags": [
+   "Clinical medicine",
+   "Drug discovery",
+   "Genetics & genomics"
   ]
  },
  "tag_counts": {
@@ -115,13 +108,11 @@
  "news_categories": [
   "Space & Astronomy",
   "Physics",
-  "Life Sciences",
-  "Medicine & Health",
   "Climate & Earth",
   "Chemistry & Materials",
-  "Neuroscience",
   "Energy",
-  "Science Policy & Funding"
+  "Science Policy & Funding",
+  "Life Sciences"
  ],
  "category_counts": {
   "Life Sciences": 1,

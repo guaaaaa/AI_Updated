@@ -262,6 +262,7 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
 .kind { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: var(--muted); }
 .kind::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ci, var(--accent)); flex: none; }
 .card-date { font-size: 12px; color: var(--faint); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.card-top .card-date { white-space: normal; text-align: right; min-width: 0; }   /* long venue names wrap on phones */
 .card h3 { font: 600 19px/1.32 var(--font-display); margin: 0 0 6px; letter-spacing: -.012em; }
 .card h3 a { color: var(--text); }
 .card h3 a:hover { color: var(--ci, var(--accent)); text-decoration: none; }

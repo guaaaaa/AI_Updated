@@ -87,6 +87,9 @@ article URLs (Google News links are omitted on purpose), and get numbers right.
   **durability** (will it still matter in 3 months?), and **breadth of independent coverage**.
 - **Verifiable**: needs a primary source or ≥2 independent reputable outlets. No rumors, single tweets,
   opinion pieces, "CEO says AI will…" quotes, minor partnerships or customer case studies.
+- **Cite what you read**: list every source you read for a story in `sources:`. The validator rejects a story with
+  one outlet and no primary source (official release, journal, or the company's or institution's own site).
+- **One story, one tab**: skip anything in the candidate list's "On other tabs" section.
 - **Window**: the event's first public report must be inside the last 72h. For `published`, use the
   earliest timestamp you verified in a source you read; if a source gives only a date (e.g. "today"), use
   12:00 ET on that date (it must still fall inside the window).
@@ -197,6 +200,13 @@ why_selected: ...
 ...
 ```
 
+## 4b. Source check (before assembling; no new reads)
+
+Go through the write-up sentence by sentence. For every specific detail (a number, name, place, date, cause or
+motive, study design or size, affiliation, or a "first", "largest" or "record"), find the sentence in a page you read
+in this run that states it. Delete or soften anything you cannot point to; never fill a gap from memory or inference.
+Fix with targeted Edits, then assemble.
+
 ## 5. Assemble, publish and verify (one Bash call)
 
 ```bash
@@ -207,11 +217,12 @@ python3 pipeline/assemble.py --date $D && python3 pipeline/publish.py --date $D
 validator; if it reports errors (word counts, tags, windows), fix them with targeted Edits to the write-up
 (not a full rewrite) and run the same command again. `publish.py` rebuilds `data/index.json`, commits,
 pushes to `master`, waits for GitHub's "pages build and deployment" run and polls the live site. **The job
-is done only when it prints `LIVE ✓`.** Push conflicts are retried with a rebase automatically.
+is done only when it prints `LIVE ✓`.** Push conflicts are retried with a rebase automatically. Treat a "looks like the story <tab> ran" warning as
+a repeat: replace the item unless it is clearly a different story.
 
 ## 6. Final message
 
-Reply with: the digest date, the selected news titles and paper titles (with primary tags), any source
+Reply with: the digest date, the selected news titles and paper titles (with primary tags), what the source check removed or softened (or "nothing"), any source
 that failed (e.g. alphaXiv or Hugging Face unavailable), and the live URL
 `https://guaaaaa.github.io/AI_Updated/#/day/$D`.
 

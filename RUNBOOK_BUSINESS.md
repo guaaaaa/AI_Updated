@@ -66,6 +66,9 @@ count. Keep 2 reads for the research slot.
   **durability** (will it matter in 3 months?) and **breadth of independent coverage**.
 - **Verifiable**: a primary source (central bank statement, statistics release, company press release) or ≥2
   independent reputable outlets. No rumors, opinion columns, single-analyst forecasts or market-tip content.
+- **Cite what you read**: list every source you read for a story in `sources:`. The validator rejects a story with
+  one outlet and no primary source (official release, journal, or the company's or institution's own site).
+- **One story, one tab**: skip anything in the candidate list's "On other tabs" section.
 - **Diversity**: at most 2 stories from one news category; cover the US and Canada where relevant.
 - **Sources**: Bloomberg, WSJ and FT are paywalled; cite pages you actually read (wire stories, CNBC, the Guardian,
   BBC, the Globe and Mail, official releases). Never try to get around a paywall or bot check. Facts seen only in
@@ -132,14 +135,22 @@ why_selected: ...
 ...  (then Existing approaches / Key idea / Results / Why it matters)
 ```
 
+## 4b. Source check (before assembling; no new reads)
+
+Go through the write-up sentence by sentence. For every specific detail (a number, name, place, date, cause or
+motive, study design or size, affiliation, or a "first", "largest" or "record"), find the sentence in a page you read
+in this run that states it. Delete or soften anything you cannot point to; never fill a gap from memory or inference.
+Fix with targeted Edits, then assemble.
+
 ## 5. Assemble, publish and verify (one Bash call)
 
 ```bash
 python3 pipeline/assemble.py --date $D --domain business && python3 pipeline/publish.py --date $D --domain business
 ```
 
-Fix validator errors with targeted Edits and re-run. **The job is done only when it prints `LIVE ✓`.**
+Fix validator errors with targeted Edits and re-run. Treat a "looks like the story <tab> ran" warning as
+a repeat: replace the item unless it is clearly a different story. **The job is done only when it prints `LIVE ✓`.**
 
 ## 6. Final message
-Reply with the date, the news titles and the research title, any source failures, and the live URL
+Reply with the date, the news titles and the research title, what the source check removed or softened (or "nothing"), any source failures, and the live URL
 `https://guaaaaa.github.io/AI_Updated/#/business/day/$D`.

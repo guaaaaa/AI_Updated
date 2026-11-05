@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05T03:01:56+00:00",
- "domain": "health",
+ "updated": "2026-11-05T03:54:26+00:00",
+ "domain": "biology",
  "days": [
   {
    "date": "2026-11-04",
@@ -55,14 +55,23 @@
   }
  ],
  "tag_groups": {
+  "Basic biology": [
+   "Molecular & cell biology",
+   "Genetics & genomics",
+   "Neuroscience",
+   "Evolution & ecology",
+   "Microbiology",
+   "Immunology",
+   "Plant biology",
+   "Development & aging"
+  ],
   "Clinical": [
    "Oncology",
    "Cardiovascular",
    "Infectious disease",
    "Neurology & mental health",
    "Metabolic & endocrine",
-   "Maternal & child health",
-   "Immunology"
+   "Maternal & child health"
   ],
   "Therapeutics": [
    "Drug development",
@@ -70,10 +79,9 @@
    "Gene & cell therapy",
    "Devices & diagnostics"
   ],
-  "Population": [
+  "Population & methods": [
    "Epidemiology",
-   "Health services & policy",
-   "AI in medicine"
+   "AI in biology & medicine"
   ]
  },
  "tag_counts": {
@@ -81,13 +89,16 @@
   "Devices & diagnostics": 1
  },
  "news_categories": [
-  "Drugs & Approvals",
+  "Genetics & Genomics",
+  "Cell & Molecular Biology",
+  "Neuroscience & Mental Health",
+  "Evolution & Ecology",
+  "Microbes & Infectious Disease",
   "Clinical Research",
+  "Drugs & Approvals",
   "Public Health",
-  "Health Policy & Coverage",
   "Biotech & Pharma",
-  "Mental Health",
-  "Health Tech & Devices",
+  "Devices & Diagnostics",
   "Global Health"
  ],
  "category_counts": {

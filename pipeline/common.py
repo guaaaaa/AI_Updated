@@ -9,6 +9,7 @@ import datetime as dt
 import gzip
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -248,6 +249,62 @@ def featured_ids(d, lookback=DEDUP_LOOKBACK_DAYS):
         papers.update(p["id"] for p in j.get("papers", []))
         stories.update(n["story_key"] for n in j.get("news", []))
     return papers, stories
+
+
+def other_tabs(d, lookback=3):
+    """News and papers the other domains published from `lookback` days before d up to d itself."""
+    out = []
+    for dm in DOMAINS:
+        if dm["id"] == DOMAIN:
+            continue
+        days = domain_paths(dm["id"])["days"]
+        for i in range(lookback + 1):
+            j = load_json(days / f"{(d - dt.timedelta(days=i)).isoformat()}.json")
+            for n in (j or {}).get("news", []):
+                out.append({"tab": dm["name"], "date": j["date"], "kind": "news", "title": n["title"], "key": n.get("story_key")})
+            for x in (j or {}).get("papers", []):
+                out.append({"tab": dm["name"], "date": j["date"], "kind": "paper", "title": x["title"], "key": x.get("id")})
+    return out
+
+
+# Subject routing for sources that cover every field (Nature, Science, PNAS, general science news): papers and
+# headlines about living things go to the Biology tab, the rest to Science. Each item lands on exactly one side.
+_NOT_LIFE = re.compile(r"\b(?:solar|fuel|battery|unit|electrochemical|photovoltaic|perovskite|memory|load)[ -]cells?\b|"
+                       r"\bneural (?:networks?|nets?|operators?)\b|\bcell ?phones?\b|\bevolution of (?:the )?(?:universe|galax\w*|stars?)\b", re.I)
+_LIFE = re.compile(r"\b(?:cells?|cellular|proteins?|proteom\w*|genes?|genetic\w*|genom\w*|dna|rna|mrna|crispr|enzym\w*|neuron\w*|"
+                   r"neural|brains?|cortex|cortical|synap\w*|species|evolution\w*|ecolog\w*|ecosystems?|biodiversity|fossil\w*|"
+                   r"dinosaur\w*|primates?|mammal\w*|birds?|insects?|fish|frogs?|plants?|crops?|bacteri\w*|microb\w*|virus\w*|viral|"
+                   r"pathogen\w*|infect\w*|immun\w*|antibod\w*|tumou?rs?|cancers?|patients?|clinical|diseases?|mice|mouse|murine|"
+                   r"rats?|zebrafish|drosophila|yeast|organoids?|embryo\w*|stem cells?|tissues?|metabol\w*|hormon\w*|microbiome\w*|"
+                   r"receptors?|antibiotic\w*|vaccin\w*|therap\w*|drugs?|hominins?|neanderthals?|animals?|organisms?|biolog\w*|"
+                   r"biomolec\w*|biomedic\w*|chromosom\w*|epigen\w*|transcription\w*|peptides?|pregnan\w*|sperm|placenta\w*|"
+                   r"obesity|diabet\w*|alzheimer\w*|dementia|heart|blood|liver|kidneys?|lungs?|gut|photosynth\w*|corals?|whales?|"
+                   r"bees?|ants|bats?|mosquito\w*|parasit\w*|fung\w*|algae|algal|medic\w*|health\w*|\w*cellular|\w+proteins?|glyco\w*|cytoplasm\w*|epitheli\w*|muscles?|myo\w+|tendons?|bones?|skeletal|teeth|tooth|dental|cerebell\w*|neuro\w+|gestation\w*|preterm|births?|organogenesis|urogenital|(?:multi|bi)?allel\w*|incompatib\w*|lysine|inflamm\w*|pyroptosis|allosteric|kinases?|reductases?|polymerases?|synthases?|proteases?|ligases?|oxidases?|phyto\w*|epidem\w*|cholera|malaria|tubercul\w*|covid\w*|sars|gwas|natural selection|carotid|arter\w*|cardi\w*|vascular|electroenceph\w*|eeg|biomarkers?|breastfe\w*|roots|root growth|leaf|leaves|nutrition\w*|antigen\w*|t cells?|leukemia|lymph\w*|pollinat\w*|taxa|fauna|flora|wildlife|conservation biology)\b", re.I)
+_PHYS = re.compile(r"\b(?:quantum|qubits?|photon\w*|lasers?|galax\w*|stars?|stellar|planet\w*|exoplanet\w*|black holes?|cosmic|"
+                   r"cosmolog\w*|universe|supernova\w*|telescopes?|particles?|neutrinos?|superconduct\w*|magnet\w*|electrons?|"
+                   r"electronic|semiconduct\w*|crystal\w*|lattices?|topolog\w*|cataly\w*|polymers?|batter(?:y|ies)|solar|"
+                   r"perovskites?|alloys?|graphene|climate|oceans?|ocean\w+|atmospher\w*|earthquakes?|seismic|volcan\w*|glacier\w*|"
+                   r"ice sheets?|sea ice|sea level|carbon dioxide|co2|aerosols?|weather|monsoons?|sediment\w*|minerals?|mantle|"
+                   r"tecton\w*|plasmas?|nuclear fusion|fusion (?:energy|power|reactors?)|nuclear|photovolta\w*|thermodynam\w*|fluids?|turbulen\w*|optic\w*|metamaterials?|mathemat\w*|"
+                   r"theorems?|phonons?|atoms?|atomic|gravit\w*|dark matter|dark energy|asteroids?|comets?|moons?|lunar|mars|"
+                   r"jupiter|saturn|spacecraft|satellites?|orbit\w*|hydrogen|metals?|metallic|oxides?|electrolytes?|wildfires?|"
+                   r"droughts?|floods?|hurricanes?|cyclones?|permafrost|rainfall|physic\w*|chemi\w*|molecules?|materials?)\b", re.I)
+
+
+def life_science(text):
+    """True when a title (+ abstract) is mainly about living things."""
+    t = _NOT_LIFE.sub(" ", text or "")
+    life, phys = len(_LIFE.findall(t)), len(_PHYS.findall(t))
+    return life >= max(1, phys)   # ties go to Biology: an organism studied in a physical setting is still biology
+
+
+def subject_ok(text, subject):
+    """subject: "life" keeps life-science items, "nonlife" drops them, anything else keeps all."""
+    if subject == "life":
+        return life_science(text)
+    if subject == "nonlife":
+        return not life_science(text)
+    return True
 
 
 def word_count(text):

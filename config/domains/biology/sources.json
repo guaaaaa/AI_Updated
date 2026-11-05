@@ -1,0 +1,277 @@
+{
+ "_doc": "Biology domain sources: all life sciences, from basic biology (genetics, cells, brains, evolution, ecology, microbes, fossils) to medicine (FDA, WHO and NIH releases, medical press, NEJM, The Lancet, JAMA, Nature Medicine). General science outlets and multidisciplinary journals (Nature, Science, PNAS, Science Advances) are shared with Science and carry \"subject\": \"life\": only items about living things come here (common.life_science), the rest go to Science, so each item lands on one tab. Health-policy and insurance news is out of scope.",
+ "news_feeds": [
+  {
+   "name": "FDA",
+   "tier": "primary",
+   "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"
+  },
+  {
+   "name": "WHO",
+   "tier": "primary",
+   "url": "https://www.who.int/rss-feeds/news-english.xml"
+  },
+  {
+   "name": "NIH",
+   "tier": "primary",
+   "url": "https://www.nih.gov/news-releases/feed.xml"
+  },
+  {
+   "name": "STAT",
+   "tier": "press",
+   "url": "https://www.statnews.com/feed/"
+  },
+  {
+   "name": "The New York Times",
+   "tier": "press",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml"
+  },
+  {
+   "name": "BBC",
+   "tier": "press",
+   "url": "https://feeds.bbci.co.uk/news/health/rss.xml"
+  },
+  {
+   "name": "The Guardian",
+   "tier": "press",
+   "url": "https://www.theguardian.com/society/health/rss"
+  },
+  {
+   "name": "MedPage Today",
+   "tier": "press",
+   "url": "https://www.medpagetoday.com/rss/headlines.xml"
+  },
+  {
+   "name": "Science",
+   "tier": "press",
+   "url": "https://www.science.org/rss/news_current.xml",
+   "subject": "life"
+  },
+  {
+   "name": "Quanta Magazine",
+   "tier": "press",
+   "url": "https://www.quantamagazine.org/feed/",
+   "subject": "life"
+  },
+  {
+   "name": "New Scientist",
+   "tier": "press",
+   "url": "https://www.newscientist.com/feed/home/",
+   "subject": "life"
+  },
+  {
+   "name": "ScienceDaily",
+   "tier": "press",
+   "url": "https://www.sciencedaily.com/rss/top/science.xml",
+   "subject": "life"
+  },
+  {
+   "name": "Phys.org",
+   "tier": "press",
+   "url": "https://phys.org/rss-feed/",
+   "subject": "life"
+  },
+  {
+   "name": "Ars Technica",
+   "tier": "press",
+   "url": "https://feeds.arstechnica.com/arstechnica/science",
+   "subject": "life"
+  },
+  {
+   "name": "The New York Times",
+   "tier": "press",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+   "subject": "life"
+  },
+  {
+   "name": "The Guardian",
+   "tier": "press",
+   "url": "https://www.theguardian.com/science/rss",
+   "subject": "life"
+  },
+  {
+   "name": "BBC",
+   "tier": "press",
+   "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+   "subject": "life"
+  }
+ ],
+ "google_news_queries": [
+  "FDA approves",
+  "clinical trial results",
+  "CDC",
+  "WHO outbreak",
+  "vaccine study",
+  "cancer study",
+  "Alzheimer's drug",
+  "GLP-1 obesity drug",
+  "Health Canada",
+  "biotech acquisition",
+  "CRISPR gene editing",
+  "evolution study",
+  "microbiome study",
+  "gene therapy",
+  "neuroscience study",
+  "new species",
+  "fossil discovery"
+ ],
+ "reputable_publishers": [
+  "ABC News",
+  "AP News",
+  "Ars Technica",
+  "Associated Press",
+  "Axios",
+  "BBC",
+  "BioPharma Dive",
+  "Bloomberg",
+  "Bloomberg.com",
+  "Business Insider",
+  "CBC",
+  "CBC News",
+  "CBS News",
+  "Chemistry World",
+  "CNBC",
+  "CNN",
+  "Cosmos",
+  "Endpoints News",
+  "FDA",
+  "Fierce Biotech",
+  "Fierce Pharma",
+  "Financial Times",
+  "Forbes",
+  "Fortune",
+  "Healthline",
+  "JAMA",
+  "KFF Health News",
+  "Live Science",
+  "Los Angeles Times",
+  "MedPage Today",
+  "Medscape",
+  "MIT Technology Review",
+  "NASA",
+  "National Geographic",
+  "Nature",
+  "Nautilus",
+  "NBC News",
+  "New Scientist",
+  "NIH",
+  "Nikkei Asia",
+  "NPR",
+  "NSF",
+  "PBS",
+  "Phys.org",
+  "Physics World",
+  "Politico",
+  "Popular Science",
+  "Quanta Magazine",
+  "Reuters",
+  "Science",
+  "Science News",
+  "ScienceAlert",
+  "ScienceDaily",
+  "Scientific American",
+  "Semafor",
+  "Smithsonian Magazine",
+  "South China Morning Post",
+  "Space.com",
+  "STAT",
+  "The Atlantic",
+  "The BMJ",
+  "The Conversation",
+  "The Economist",
+  "The Globe and Mail",
+  "The Guardian",
+  "The Lancet",
+  "The New York Times",
+  "The Wall Street Journal",
+  "The Washington Post",
+  "WHO",
+  "WIRED",
+  "Wired",
+  "WSJ"
+ ],
+ "topic_keywords": [],
+ "general_feeds": [],
+ "hacker_news": false,
+ "research": {
+  "feeds": [
+   {
+    "name": "NEJM",
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship",
+    "url": "https://www.nejm.org/action/showFeed?type=etoc&feed=rss&jc=nejm"
+   },
+   {
+    "name": "The Lancet",
+    "venue": "The Lancet",
+    "tier": "flagship",
+    "url": "https://www.thelancet.com/rssfeed/lancet_current.xml"
+   },
+   {
+    "name": "JAMA",
+    "venue": "JAMA",
+    "tier": "flagship",
+    "url": "https://jamanetwork.com/rss/site_3/67.xml"
+   },
+   {
+    "name": "Nature Medicine",
+    "venue": "Nature Medicine",
+    "tier": "major",
+    "url": "https://www.nature.com/nm.rss"
+   },
+   {
+    "name": "Nature",
+    "venue": "Nature",
+    "tier": "flagship",
+    "url": "https://www.nature.com/nature.rss",
+    "subject": "life"
+   },
+   {
+    "name": "Science",
+    "venue": "Science",
+    "tier": "flagship",
+    "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+    "subject": "life"
+   },
+   {
+    "name": "PNAS",
+    "venue": "PNAS",
+    "tier": "major",
+    "url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=pnas",
+    "subject": "life"
+   },
+   {
+    "name": "Science Advances",
+    "venue": "Science Advances",
+    "tier": "major",
+    "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
+    "subject": "life"
+   },
+   {
+    "name": "Cell",
+    "venue": "Cell",
+    "tier": "flagship",
+    "url": "https://www.cell.com/cell/current.rss"
+   },
+   {
+    "name": "Nature Neuroscience",
+    "venue": "Nature Neuroscience",
+    "tier": "major",
+    "url": "https://www.nature.com/neuro.rss"
+   },
+   {
+    "name": "Nature Genetics",
+    "venue": "Nature Genetics",
+    "tier": "major",
+    "url": "https://www.nature.com/ng.rss"
+   },
+   {
+    "name": "Nature Ecology & Evolution",
+    "venue": "Nature Ecology & Evolution",
+    "tier": "major",
+    "url": "https://www.nature.com/natecolevol.rss"
+   }
+  ],
+  "arxiv_categories": []
+ }
+}

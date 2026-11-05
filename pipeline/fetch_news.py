@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (DOM, DOMAIN, UTC, WORK, config, http_get, news_window, parse_date,  # noqa: E402
-                    recent_digests, snapshot_update, today_et)
+                    other_tabs, recent_digests, snapshot_update, subject_ok, today_et)
 
 ATOM = "{http://www.w3.org/2005/Atom}"
 STOP = set("the a an and or of to in on for with by at from as is are be its it this that new how why what who will can "
@@ -102,6 +102,7 @@ def main():
     general = set(src.get("general_feeds", GENERAL_FEEDS if DOMAIN == "ai" else ()))
     topic = DOM["name"]
     reputable = {p.lower() for p in src["reputable_publishers"]}
+    subject = src.get("subject")   # domain-wide subject filter (feeds may override)
     log(f"News window: {start:%a %b %d %H:%M} -> {end:%a %b %d %H:%M} ET")
     inwin = lambda t: t is not None and start <= t <= end
     items = []
@@ -119,6 +120,8 @@ def main():
                 continue
             if f["name"] in general and not ai_related(it["title"], kws):
                 continue
+            if not subject_ok(it["title"] + " " + (it.get("desc") or ""), f.get("subject", subject)):
+                continue   # shared science feeds: biology goes to the Biology tab, the rest to Science
             items.append({**it, "publisher": f["name"], "tier": f["tier"], "via": "feed"})
             n += 1
         log(f"  feed {f['name']}: {n} in window")
@@ -140,6 +143,8 @@ def main():
             if not inwin(it["time"]) or pub.lower() not in reputable:
                 continue
             title = re.sub(r"\s+-\s+[^-]+$", "", it["title"])
+            if not subject_ok(title, subject):
+                continue
             items.append({**it, "title": title, "publisher": pub, "tier": "press", "via": f"google:{q}", "desc": ""})
             n += 1
         log(f"  google news '{q}': {n} reputable in window")
@@ -173,6 +178,7 @@ def main():
     heads = list(uniq.values())
 
     recent_titles = [(j["date"], n["title"], n["story_key"]) for j in recent_digests(d) for n in j.get("news", [])]
+    elsewhere = [x for x in other_tabs(d) if x["kind"] == "news"]   # papers are excluded by fetch_research and the validator
 
     WORK.mkdir(parents=True, exist_ok=True)
     dump = {"date": d.isoformat(), "window": [start.isoformat(), end.isoformat()], "hn": hn[:40],
@@ -191,6 +197,10 @@ def main():
     if recent_titles:
         L.append("## Already covered in the last 7 days (do not repeat unless materially new)")
         L += [f"- {dd}: {t} [story_key={k}]" for dd, t, k in recent_titles]
+        L.append("")
+    if elsewhere:
+        L.append("## On other tabs in the last 3 days (skip these stories: each story appears on one tab only)")
+        L += [f"- {x['tab']} {x['date']} ({x['kind']}): {x['title']}" for x in elsewhere]
         L.append("")
     L.append("## A. Primary-source posts (official blogs; many are minor customer stories)")
     def when(t):  # feeds with date-only stamps show as 00:00 UTC: flag them as approximate

@@ -1,16 +1,17 @@
 # Updated (repo: AI_Updated)
 
 Static site (GitHub Pages, branch `master`, root) with one tab per **domain** (`config/domains.json`): AI (≤2 news
-+ ≤5 papers), Business (≤5 news + ≤1 research), Science (≤3 news + ≤3 papers), Health (≤3 news + ≤2 papers),
++ ≤5 papers), Business (≤5 news + ≤1 research), Science (≤3 news + ≤3 papers), Biology (≤3 news + ≤3 papers),
 Tech beyond AI (≤4 news + ≤1 research), each item 250–350 words, Mon–Sat.
 AI also has Trends (monthly summary on the 1st, field model, stock-style pages, Week in review); Jobs is a
 cross-domain board.
-Live: https://guaaaaa.github.io/AI_Updated/ (`#/ai`, `#/business`, `#/science`, `#/health`, `#/tech`, `#/jobs`)
+Live: https://guaaaaa.github.io/AI_Updated/ (`#/ai`, `#/business`, `#/science`, `#/biology`, `#/tech`, `#/jobs`)
 
 - **Daily AI run (Mon–Sat) → follow `RUNBOOK.md` exactly.** Saturday is "best of the week"; Sundays have no digest.
-- **Other daily runs → `RUNBOOK_<DOMAIN>.md`** (`RUNBOOK_BUSINESS.md`, `_SCIENCE`, `_HEALTH`, `_TECH`). Every command
+- **Other daily runs → `RUNBOOK_<DOMAIN>.md`** (`RUNBOOK_BUSINESS.md`, `_SCIENCE`, `_BIOLOGY`, `_TECH`). Every command
   takes `--domain <id>`; without it scripts work on AI. Tech skips stories that are mainly about AI (they belong to the
-  AI tab); Health never gives medical advice.
+  AI tab); Biology covers all life sciences incl. medicine (no health policy) and never gives medical advice; Science
+  has no biology (shared sources are split by `common.life_science`). One story or paper per tab (`other_tabs`).
 - **Monthly scheduled run (1st) → follow `RUNBOOK_SUMMARY.md` exactly** (AI). Every trend claim rests on
   field-level evidence, never on our own picks. There is no weekly summary: `pipeline/week_review.py` builds the
   Week in review.

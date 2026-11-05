@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T03:01:56+00:00",
+ "updated": "2026-11-05T03:54:26+00:00",
  "domains": [
   {
    "id": "ai",
@@ -28,7 +28,7 @@
   {
    "id": "science",
    "name": "Science",
-   "tagline": "Discoveries across physics, life sciences, space and climate",
+   "tagline": "Physics, space, chemistry, materials and Earth science",
    "trends": false,
    "paper_label": "Papers",
    "news": 3,
@@ -38,14 +38,14 @@
    "days": 1
   },
   {
-   "id": "health",
-   "name": "Health",
-   "tagline": "Medicine, public health and biotech",
+   "id": "biology",
+   "name": "Biology",
+   "tagline": "Life sciences: discoveries, medicine and biotech",
    "trends": false,
    "paper_label": "Papers",
    "news": 3,
-   "papers": 2,
-   "index": "data/health/index.json",
+   "papers": 3,
+   "index": "data/biology/index.json",
    "latest": "2026-11-04",
    "days": 1
   },

@@ -1,13 +1,10 @@
 {
- "_doc": "Science domain taxonomy: news categories and paper tags by field.",
+ "_doc": "Science taxonomy: physical and Earth sciences (biology and medicine are the Biology tab).",
  "news_categories": {
   "Space & Astronomy": "Missions, telescopes, planets, cosmology",
   "Physics": "Fundamental and applied physics, quantum, particle and condensed matter",
-  "Life Sciences": "Biology, genetics, evolution, ecology",
-  "Medicine & Health": "Clinical results, public health, drugs and devices",
   "Climate & Earth": "Climate, weather, oceans, geology",
   "Chemistry & Materials": "Chemistry, materials, energy storage",
-  "Neuroscience": "Brain and behavior",
   "Energy": "Fusion, fission, renewables and storage science",
   "Science Policy & Funding": "Agencies, budgets, institutions and research policy"
  },
@@ -36,38 +33,6 @@
    "group": "Physical Sciences",
    "desc": "Synthesis, catalysis, molecules"
   },
-  "Molecular & cell biology": {
-   "group": "Life Sciences",
-   "desc": "Cells, proteins, molecular mechanisms"
-  },
-  "Genetics & genomics": {
-   "group": "Life Sciences",
-   "desc": "Genes, genomes, gene editing"
-  },
-  "Neuroscience": {
-   "group": "Life Sciences",
-   "desc": "Brains, neurons, cognition"
-  },
-  "Evolution & ecology": {
-   "group": "Life Sciences",
-   "desc": "Evolution, species, ecosystems, paleontology"
-  },
-  "Microbiology & immunology": {
-   "group": "Life Sciences",
-   "desc": "Microbes, viruses, immune system"
-  },
-  "Clinical medicine": {
-   "group": "Health",
-   "desc": "Trials, treatments, diagnostics"
-  },
-  "Epidemiology & public health": {
-   "group": "Health",
-   "desc": "Populations, disease burden, prevention"
-  },
-  "Drug discovery": {
-   "group": "Health",
-   "desc": "New drugs, targets, therapeutics"
-  },
   "Climate science": {
    "group": "Earth & Climate",
    "desc": "Climate change, extremes, carbon cycle"
@@ -88,5 +53,24 @@
    "group": "Methods",
    "desc": "Proofs and mathematical results"
   }
+ },
+ "retired": {
+  "_doc": "Accepted only in digests dated on or before `until` (taxonomy changed when Health became Biology).",
+  "until": "2026-11-04",
+  "news_categories": [
+   "Life Sciences",
+   "Medicine & Health",
+   "Neuroscience"
+  ],
+  "paper_tags": [
+   "Molecular & cell biology",
+   "Genetics & genomics",
+   "Neuroscience",
+   "Evolution & ecology",
+   "Microbiology & immunology",
+   "Clinical medicine",
+   "Epidemiology & public health",
+   "Drug discovery"
+  ]
  }
 }

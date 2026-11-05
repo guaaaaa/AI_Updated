@@ -1,0 +1,111 @@
+{
+ "_doc": "Biology taxonomy: basic life sciences and medicine (no health policy).",
+ "news_categories": {
+  "Genetics & Genomics": "Genes, genomes, gene editing and heredity",
+  "Cell & Molecular Biology": "Cells, proteins and molecular mechanisms",
+  "Neuroscience & Mental Health": "Brains, behavior, cognition and mental health",
+  "Evolution & Ecology": "Species, ecosystems, fossils and animal behavior",
+  "Microbes & Infectious Disease": "Bacteria, viruses, outbreaks and antimicrobials",
+  "Clinical Research": "Trial results and major medical studies",
+  "Drugs & Approvals": "Regulatory decisions and new treatments",
+  "Public Health": "Vaccines, prevention and population health worldwide",
+  "Biotech & Pharma": "Industry deals, pipelines and company news",
+  "Devices & Diagnostics": "Medical devices, tests, imaging and digital health"
+ },
+ "paper_tags": {
+  "Molecular & cell biology": {
+   "group": "Basic biology",
+   "desc": "Cells, proteins, molecular mechanisms"
+  },
+  "Genetics & genomics": {
+   "group": "Basic biology",
+   "desc": "Genes, genomes, gene editing"
+  },
+  "Neuroscience": {
+   "group": "Basic biology",
+   "desc": "Brains, neurons, cognition, behavior"
+  },
+  "Evolution & ecology": {
+   "group": "Basic biology",
+   "desc": "Evolution, species, ecosystems, paleontology"
+  },
+  "Microbiology": {
+   "group": "Basic biology",
+   "desc": "Bacteria, viruses, fungi, microbiomes"
+  },
+  "Immunology": {
+   "group": "Basic biology",
+   "desc": "The immune system and autoimmune disease"
+  },
+  "Plant biology": {
+   "group": "Basic biology",
+   "desc": "Plants, crops, photosynthesis"
+  },
+  "Development & aging": {
+   "group": "Basic biology",
+   "desc": "Embryos, stem cells, regeneration, aging"
+  },
+  "Oncology": {
+   "group": "Clinical",
+   "desc": "Cancer"
+  },
+  "Cardiovascular": {
+   "group": "Clinical",
+   "desc": "Heart and blood vessels"
+  },
+  "Infectious disease": {
+   "group": "Clinical",
+   "desc": "Infections and antimicrobials"
+  },
+  "Neurology & mental health": {
+   "group": "Clinical",
+   "desc": "Brain, nerves and mental health"
+  },
+  "Metabolic & endocrine": {
+   "group": "Clinical",
+   "desc": "Diabetes, obesity, hormones"
+  },
+  "Maternal & child health": {
+   "group": "Clinical",
+   "desc": "Pregnancy, pediatrics"
+  },
+  "Drug development": {
+   "group": "Therapeutics",
+   "desc": "New drugs and indications"
+  },
+  "Vaccines": {
+   "group": "Therapeutics",
+   "desc": "Vaccines and immunization"
+  },
+  "Gene & cell therapy": {
+   "group": "Therapeutics",
+   "desc": "Genetic and cellular treatments"
+  },
+  "Devices & diagnostics": {
+   "group": "Therapeutics",
+   "desc": "Tests, imaging and devices"
+  },
+  "Epidemiology": {
+   "group": "Population & methods",
+   "desc": "Disease patterns in populations"
+  },
+  "AI in biology & medicine": {
+   "group": "Population & methods",
+   "desc": "Machine learning for biology, care and research"
+  }
+ },
+ "retired": {
+  "_doc": "Accepted only in digests dated on or before `until` (taxonomy changed when Health became Biology).",
+  "until": "2026-11-04",
+  "news_categories": [
+   "Health Policy & Coverage",
+   "Mental Health",
+   "Health Tech & Devices",
+   "Global Health"
+  ],
+  "paper_tags": [
+   "Health services & policy",
+   "AI in medicine"
+  ]
+ }
+}

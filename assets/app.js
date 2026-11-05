@@ -95,7 +95,7 @@
   function applyFilters() { location.hash = filtersActive() ? browseHash() : home(); }
 
   function parseRoute() {
-    const full = location.hash.replace(/^#/, "");
+    const full = location.hash.replace(/^#/, "").replace(/^\/health(?=\/|$)/, "/biology");   // Health became Biology
     const j = full.match(/^\/jobs(?:\/([\w-]+))?/);
     if (j) return { view: "jobs", id: j[1] || null, dom: S.dom || "ai" };
     const dm = full.match(/^\/([a-z]+)(\/.*)?$/);

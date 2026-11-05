@@ -3,12 +3,13 @@
 You are producing today's **Science** digest for the Updated site: at most **3 news stories** and **3 papers**,
 each explained in **250–350 words**, published to https://guaaaaa.github.io/AI_Updated/#/science.
 
-**Scope:** physics, space, chemistry, materials, basic life sciences, earth and climate science. Clinical medicine and
-public health belong to the Health tab; technology to the Tech tab.
+**Scope:** physics, space, chemistry, materials, Earth and climate science. All biology and medicine (genetics, cells,
+brains, evolution, ecology, fossils, microbes, clinical research) belongs to the Biology tab; technology to the Tech tab.
+The candidate lists already leave out biology from shared outlets and journals.
 
 **Reader:** a scientifically literate generalist (an engineer, a researcher in another field, a curious
-professional) who wants the most important discoveries across physics, space, life sciences, medicine, climate and
-energy. Explain field-specific ideas from scratch; optimize for "I now understand what was found, how we know, and
+professional) who wants the most important discoveries across physics, space, chemistry, materials, Earth, climate
+and energy. Explain field-specific ideas from scratch; optimize for "I now understand what was found, how we know, and
 why it matters".
 
 Every command takes `--domain science`; never omit it (without it the scripts work on the AI digest).
@@ -69,6 +70,9 @@ count. Papers have their own reads (step 3).
   replication), **reach** across fields, **breadth of independent coverage**.
 - **Verifiable**: the study itself, an agency release, or ≥2 reputable outlets. Down-rank press-release hype
   ("could cure", single mouse studies sold as human results), unpublished claims and opinion pieces.
+- **Cite what you read**: list every source you read for a story in `sources:`. The validator rejects a story with
+  one outlet and no primary source (official release, journal, or the company's or institution's own site).
+- **One story, one tab**: skip anything in the candidate list's "On other tabs" section.
 - **Diversity**: spread across fields; at most 2 stories from one news category.
 
 ## 3. Papers (≤3)
@@ -77,7 +81,7 @@ From the shortlist pick ≤6 promising papers and read them in ONE call:
 `python3 pipeline/fetch_page.py <paper link> <paper link> ... --max-words 1500`
 Many journal pages show only the abstract: then also read 1–2 reputable news articles or the authors' institution
 release about the paper (search by the title). Select up to 3 by:
-1. **Significance**: a new phenomenon, a long-standing question answered, a capability or treatment step-change.
+1. **Significance**: a new phenomenon, a long-standing question answered, a capability step-change.
 2. **Evidence**: peer review in a strong venue, effect sizes, sample sizes, independent confirmation.
 3. **Interest beyond the field**: would a scientist in a neighbouring field want to know?
 4. **Attention**: the shortlist's press count is a hint, not a requirement.
@@ -126,14 +130,22 @@ why_selected: ...
 ...  (then Existing approaches / Key idea / Results / Why it matters)
 ```
 
+## 4b. Source check (before assembling; no new reads)
+
+Go through the write-up sentence by sentence. For every specific detail (a number, name, place, date, cause or
+motive, study design or size, affiliation, or a "first", "largest" or "record"), find the sentence in a page you read
+in this run that states it. Delete or soften anything you cannot point to; never fill a gap from memory or inference.
+Fix with targeted Edits, then assemble.
+
 ## 5. Assemble, publish and verify (one Bash call)
 
 ```bash
 python3 pipeline/assemble.py --date $D --domain science && python3 pipeline/publish.py --date $D --domain science
 ```
 
-Fix validator errors with targeted Edits and re-run. **The job is done only when it prints `LIVE ✓`.**
+Fix validator errors with targeted Edits and re-run. Treat a "looks like the story <tab> ran" warning as
+a repeat: replace the item unless it is clearly a different story. **The job is done only when it prints `LIVE ✓`.**
 
 ## 6. Final message
-Reply with the date, the news and paper titles (with primary tags), any source failures, and the live URL
+Reply with the date, the news and paper titles (with primary tags), what the source check removed or softened (or "nothing"), any source failures, and the live URL
 `https://guaaaaa.github.io/AI_Updated/#/science/day/$D`.

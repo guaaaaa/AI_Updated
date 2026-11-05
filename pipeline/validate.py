@@ -10,11 +10,13 @@ import datetime as dt
 import json
 import re
 import sys
+import urllib.parse
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (DAYS, DOM, DOMAIN, config, edition, featured_ids, is_digest_day, news_window, paper_window,  # noqa: E402
-                    parse_date, word_count)
+from common import (DAYS, DOM, DOMAIN, config, edition, featured_ids, is_digest_day, news_window, other_tabs,  # noqa: E402
+                    paper_window, parse_date, word_count)
+from stories import tokens  # noqa: E402
 
 NEWS_SECTIONS = ["Context", "What happened", "Why it matters", "What to watch"]
 PAPER_SECTIONS = ["Problem", "Existing approaches", "Key idea", "Results", "Why it matters"]
@@ -26,6 +28,38 @@ RESEARCH_ID = re.compile(r"^[a-z0-9][a-z0-9.-]{3,100}$")
 RECENT_RESEARCH_DAYS = 45   # news-led domains: journal and working papers from the last 45 days (fetch_research.py)
 HTML_RE = re.compile(r"<\s*[a-zA-Z/!]")
 ARXIV_RE = re.compile(r"^\d{4}\.\d{4,5}$")
+SOURCE_RULES_FROM = dt.date(2026, 11, 5)   # two-source rule, placeholder affiliations, one story per tab: errors from here on
+OFFICIAL_HOST = re.compile(r"(?:\.gov|\.gov\.[a-z]{2}|\.gc\.ca|(?:^|\.)canada\.ca|\.europa\.eu|\.int|\.edu|\.ac\.[a-z]{2}|\.mil)$")
+PAPER_HOSTS = {"doi.org", "arxiv.org", "nature.com", "science.org", "cell.com", "nejm.org", "thelancet.com",
+               "jamanetwork.com", "pnas.org", "nber.org", "biorxiv.org", "medrxiv.org", "eurekalert.org"}
+PLACEHOLDER = re.compile(r"^\s*(?:n/?a|none|null|unknown|tbd|tba|various|multiple|\.{2,}|-+|\?+|not (?:listed|shown|stated|given|"
+                         r"available|provided|found)|see (?:the )?(?:paper|text|article))\s*\.?\s*$|placeholder|affiliations? "
+                         r"(?:not|unavailable|unknown)", re.I)
+
+
+def site(url):
+    """Registered site of a URL (news.example.co.uk -> example.co.uk), for counting independent sources."""
+    h = (urllib.parse.urlparse(url).hostname or "").lower().removeprefix("www.")
+    parts = h.split(".")
+    if len(parts) >= 3 and len(parts[-1]) == 2 and parts[-2] in {"co", "com", "gov", "gc", "ac", "org", "net", "edu", "nhs"}:
+        return ".".join(parts[-3:])
+    return ".".join(parts[-2:])
+
+
+def primary_sites():
+    src = config("sources")
+    feeds = [f for f in src.get("news_feeds", []) if f.get("tier") == "primary"] + src.get("research", {}).get("feeds", [])
+    return {site(f["url"]) for f in feeds if f.get("url")} | PAPER_HOSTS
+
+
+PRIMARY = primary_sites()
+
+
+def is_primary(url, title=""):
+    """Official, journal or listed primary site, or the subject's own site (anthropic.com for "Anthropic reports ...")."""
+    s = site(url)
+    own = len(s.split(".")[0]) >= 3 and re.search(rf"\b{re.escape(s.split('.')[0])}", title.lower()) is not None
+    return s in PRIMARY or own or bool(OFFICIAL_HOST.search((urllib.parse.urlparse(url).hostname or "").lower()))
 
 
 def check_day(path, tax):
@@ -48,6 +82,9 @@ def check_day(path, tax):
     if len(papers) > MAX_PAPERS:
         E(f"{len(papers)} papers (max {MAX_PAPERS})")
     seen_papers, seen_stories = featured_ids(d)
+    strict = d >= SOURCE_RULES_FROM
+    elsewhere = other_tabs(d)
+    elsewhere_papers = {x["key"]: x for x in other_tabs(d, 60) if x["kind"] == "paper"}
 
     def strings(o):
         if isinstance(o, str):
@@ -86,7 +123,8 @@ def check_day(path, tax):
                 E(f"{label}: missing {f}")
 
     ns, ne = news_window(d)
-    cats = set(tax["news_categories"])
+    retired = tax.get("retired", {}) if d.isoformat() <= tax.get("retired", {}).get("until", "") else {}
+    cats = set(tax["news_categories"]) | set(retired.get("news_categories", []))
     ids = set()
     for i, n in enumerate(news):
         label = f"news[{i}] {n.get('title', '')[:50]!r}"
@@ -103,6 +141,15 @@ def check_day(path, tax):
         srcs = n.get("sources", [])
         if not srcs or any(not str(s.get("url", "")).startswith("https://") or not s.get("name") for s in srcs):
             E(f"{label}: needs >=1 source with name and https url")
+        elif not any(is_primary(s["url"], n.get("title", "")) for s in srcs) and len({site(s["url"]) for s in srcs}) < 2:
+            (E if strict else W)(f"{label}: needs a primary source (official, journal or the company's own site) or >=2 "
+                                 f"independent outlets; got {sorted({site(s['url']) for s in srcs})}")
+        tk = tokens(n.get("title", ""))
+        for x in elsewhere:
+            xt = tokens(x["title"])
+            shared = len(tk & xt)
+            if (n.get("story_key") and n.get("story_key") == x["key"]) or (shared >= 3 and shared >= 0.5 * min(len(tk), len(xt))):
+                W(f"{label}: looks like the story {x['tab']} ran on {x['date']} ({x['title']!r}); each story goes on one tab")
         try:
             t = dt.datetime.fromisoformat(n["published"])
             if not ns <= t <= ne:
@@ -111,7 +158,7 @@ def check_day(path, tax):
             E(f"{label}: missing/invalid published timestamp")
 
     ps, pe = paper_window(d)
-    tags = set(tax["paper_tags"])
+    tags = set(tax["paper_tags"]) | set(retired.get("paper_tags", []))
     for i, p in enumerate(papers):
         label = f"paper[{i}] {p.get('id')}"
         body_check(p, label, PAPER_SECTIONS)
@@ -124,6 +171,12 @@ def check_day(path, tax):
         ids.add(p.get("id"))
         if p.get("id") in seen_papers:
             E(f"{label}: already featured in the last 7 days")
+        if p.get("id") in elsewhere_papers:
+            x = elsewhere_papers[p["id"]]
+            (E if strict else W)(f"{label}: already featured on the {x['tab']} tab ({x['date']}); one paper, one tab")
+        for a in p.get("affiliations") or []:
+            if PLACEHOLDER.search(str(a)):
+                (E if strict else W)(f"{label}: placeholder affiliation {a!r}; leave affiliations empty when no page shows them")
         ptags = p.get("tags", [])
         if p.get("primary_tag") not in tags:
             E(f"{label}: primary_tag {p.get('primary_tag')!r} not in taxonomy")

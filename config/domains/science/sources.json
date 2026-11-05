@@ -1,5 +1,5 @@
 {
- "_doc": "Science domain sources: agency releases (NASA, NSF), science press, Google News searches filtered to reputable publishers, and research from Nature, Science, Cell, PNAS, Science Advances and Nature's physics and astronomy journals. Clinical medicine and public health belong to the Health tab.",
+ "_doc": "Science domain sources: agency releases (NASA, NSF), science press, Google News searches filtered to reputable publishers, and research from Nature, Science, PNAS, Science Advances and Nature's physics and astronomy journals. \"subject\": \"nonlife\" drops items about living things (common.life_science): they belong to the Biology tab.",
  "news_feeds": [
   {
    "name": "NASA",
@@ -64,13 +64,12 @@
   "NASA mission",
   "physicists",
   "astronomers telescope",
-  "gene therapy",
   "climate scientists study",
-  "fossil discovery",
   "quantum physics experiment",
   "fusion energy",
-  "neuroscience study",
-  "new species"
+  "chemists develop",
+  "materials scientists",
+  "geologists"
  ],
  "reputable_publishers": [
   "Reuters",
@@ -148,12 +147,6 @@
     "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science"
    },
    {
-    "name": "Cell",
-    "venue": "Cell",
-    "tier": "flagship",
-    "url": "https://www.cell.com/cell/current.rss"
-   },
-   {
     "name": "PNAS",
     "venue": "PNAS",
     "tier": "major",
@@ -179,5 +172,6 @@
    }
   ],
   "arxiv_categories": []
- }
+ },
+ "subject": "nonlife"
 }

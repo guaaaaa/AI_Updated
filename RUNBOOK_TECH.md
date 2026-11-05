@@ -63,6 +63,9 @@ not count.
 - **Rank by type**: major security incidents and vulnerabilities with wide impact > significant chip or hardware news (manufacturing, export controls, new architectures) > launches of widely used devices or platforms > tech policy, antitrust and court rulings > major outages > space-industry milestones > big tech business moves.
 - Within a type: **how many users or companies it affects**, **novelty**, **durability** and **breadth of coverage**. Skip product rumors, leaks and minor updates.
 - **Verifiable**: a primary source or ≥2 independent reputable outlets. No rumors, opinion pieces or single-source claims.
+- **Cite what you read**: list every source you read for a story in `sources:`. The validator rejects a story with
+  one outlet and no primary source (official release, journal, or the company's or institution's own site).
+- **One story, one tab**: skip anything in the candidate list's "On other tabs" section.
 - Publishing fewer stories is fine when nothing clears the bar.
 
 ## 3. Research (≤1)
@@ -119,14 +122,22 @@ why_selected: ...
 ...  (then Existing approaches / Key idea / Results / Why it matters)
 ```
 
+## 4b. Source check (before assembling; no new reads)
+
+Go through the write-up sentence by sentence. For every specific detail (a number, name, place, date, cause or
+motive, study design or size, affiliation, or a "first", "largest" or "record"), find the sentence in a page you read
+in this run that states it. Delete or soften anything you cannot point to; never fill a gap from memory or inference.
+Fix with targeted Edits, then assemble.
+
 ## 5. Assemble, publish and verify (one Bash call)
 
 ```bash
 python3 pipeline/assemble.py --date $D --domain tech && python3 pipeline/publish.py --date $D --domain tech
 ```
 
-Fix validator errors with targeted Edits and re-run. **The job is done only when it prints `LIVE ✓`.**
+Fix validator errors with targeted Edits and re-run. Treat a "looks like the story <tab> ran" warning as
+a repeat: replace the item unless it is clearly a different story. **The job is done only when it prints `LIVE ✓`.**
 
 ## 6. Final message
-Reply with the date, the selected titles (with categories and primary tags), any source failures, and the live URL
+Reply with the date, the selected titles (with categories and primary tags), what the source check removed or softened (or "nothing"), any source failures, and the live URL
 `https://guaaaaa.github.io/AI_Updated/#/tech/day/$D`.
