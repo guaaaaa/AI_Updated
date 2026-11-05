@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Updated · Tech</title>
+  <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
+  <description>Chips, software, security, devices and space (beyond AI)</description>
+  <language>en</language>
+  <lastBuildDate>Thu, 05 Nov 2026 02:47:50 +0000</lastBuildDate>
+  <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Marvell agrees to buy Lumentum for $115 billion in an all-stock deal</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n1</guid>
+    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
+    <category>Tech / Tech Business</category>
+    <description>Chip designer Marvell will acquire optical component maker Lumentum in an all-stock deal valued at $115 billion including debt, expected to close in the first half of 2028. (TechCrunch, SiliconANGLE)</description>
+  </item>
+  <item>
+    <title>Google and partners dismantle XCPE botnet built into 1.3 million Android TV boxes</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n2</guid>
+    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Google's Threat Intelligence Group and partners disrupted XCPE, a backdoor that a Chinese manufacturer shipped in more than 1.3 million Android TV boxes to rent out owners' internet connections. (Krebs on Security, Ars Technica, The Register)</description>
+  </item>
+  <item>
+    <title>Binance says a fake job interview started its $6.3 billion theft</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n3</guid>
+    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Binance's incident report says a multi-stage attack beginning with a fake recruiter and malware led to the October 29 theft of about $6.34 billion, which the FBI attributed to North Korea's TraderTraitor group. (BleepingComputer, The Register, WIRED)</description>
+  </item>
+  <item>
+    <title>Apple warns memory costs are unprecedented as they squeeze margins and Mac supply</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n4</guid>
+    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>On its earnings call, Apple said memory pricing is unprecedented, forecast a December-quarter gross margin of 45 to 46 percent and expects Mac and iPad supply constraints. (TechCrunch, 9to5Mac, The Register)</description>
+  </item>
+</channel>
+</rss>

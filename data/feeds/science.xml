@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Updated · Science</title>
+  <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
+  <description>Physics, space, chemistry, materials and Earth science</description>
+  <language>en</language>
+  <lastBuildDate>Wed, 04 Nov 2026 22:08:14 +0000</lastBuildDate>
+  <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Chemical traces of blood found in a 115-million-year-old dinosaur bone</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n1</guid>
+    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
+    <category>Science / Life Sciences</category>
+    <description>A team led by Curtin University reports red blood cell-like structures and heme molecules inside the leg bone of a 115-million-year-old Brazilian dinosaur, the first chemical evidence of blood in a dinosaur. (Phys.org, The Conversation, Popular Science)</description>
+  </item>
+  <item>
+    <title>LHCb sees first evidence of the rarest beauty-particle decay yet observed</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n2</guid>
+    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
+    <category>Science / Physics</category>
+    <description>The upgraded LHCb experiment at CERN reports 3.2-sigma evidence for a beauty-particle decay into two muons that occurs about once per ten billion decays, consistent with the Standard Model. (BBC, University of Cambridge, Phys.org)</description>
+  </item>
+  <item>
+    <title>Perioperative ivonescimab with or without chemotherapy in resectable non-small cell lung cancer: a phase 2 trial</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41591-026-04745-4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41591-026-04745-4</guid>
+    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
+    <category>Science / Clinical medicine</category>
+    <description>In a 90-patient phase 2 trial, ivonescimab plus chemotherapy before and after surgery gave a 70.1% major pathological response in resectable lung cancer. (Xiaoliang Zhao, Bin Zhang, Chenguang Li et al. · Tianjin Medical University Cancer Institute and Hospital, The Fourth Hospital of Hebei Medical University)</description>
+  </item>
+  <item>
+    <title>An AI-native experimental laboratory for autonomous biomolecular operations</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11228-6</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11228-6</guid>
+    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
+    <category>Science / Computational science &amp; AI</category>
+    <description>AutoDNA, an AI-run laboratory, coordinates over 20 instruments across more than 11,000 steps to carry out DNA synthesis, amplification and sequencing with minimal human intervention. (Mingyu Wu, Zhaoguo Wang, Jiabin Wang et al.)</description>
+  </item>
+  <item>
+    <title>Carbon radical generation by irreversible metal-to-ligand charge transfer</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11368-9</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11368-9</guid>
+    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
+    <category>Science / Chemistry</category>
+    <description>Copper complexes of heteroaryl sulfones split apart when hit by visible light, releasing carbon radicals that enable fluoroalkylation of arenes and alkynes. (Zhiqiang Wei, Xiang Li, Lin Xiao et al. · Shanghai Institute of Organic Chemistry, ShanghaiTech University)</description>
+  </item>
+</channel>
+</rss>

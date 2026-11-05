@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T04:18:54+00:00",
+ "updated": "2026-11-05T05:04:15+00:00",
  "domains": [
   {
    "id": "ai",
@@ -11,7 +11,8 @@
    "papers": 5,
    "index": "data/index.json",
    "latest": "2026-11-04",
-   "days": 31
+   "days": 31,
+   "feed": "data/feeds/ai.xml"
   },
   {
    "id": "business",
@@ -23,7 +24,8 @@
    "papers": 1,
    "index": "data/business/index.json",
    "latest": "2026-11-04",
-   "days": 1
+   "days": 1,
+   "feed": "data/feeds/business.xml"
   },
   {
    "id": "science",
@@ -35,7 +37,8 @@
    "papers": 3,
    "index": "data/science/index.json",
    "latest": "2026-11-04",
-   "days": 1
+   "days": 1,
+   "feed": "data/feeds/science.xml"
   },
   {
    "id": "biology",
@@ -47,7 +50,8 @@
    "papers": 3,
    "index": "data/biology/index.json",
    "latest": "2026-11-04",
-   "days": 1
+   "days": 1,
+   "feed": "data/feeds/biology.xml"
   },
   {
    "id": "tech",
@@ -59,7 +63,8 @@
    "papers": 1,
    "index": "data/tech/index.json",
    "latest": "2026-11-04",
-   "days": 1
+   "days": 1,
+   "feed": "data/feeds/tech.xml"
   }
  ]
 }

@@ -13,6 +13,12 @@
   <meta name="theme-color" content="#fbf9f5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0c0d14" media="(prefers-color-scheme: dark)">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="alternate" type="application/rss+xml" title="Updated · all tabs" href="data/feeds/all.xml">
+  <link rel="alternate" type="application/rss+xml" title="Updated · AI" href="data/feeds/ai.xml">
+  <link rel="alternate" type="application/rss+xml" title="Updated · Business" href="data/feeds/business.xml">
+  <link rel="alternate" type="application/rss+xml" title="Updated · Science" href="data/feeds/science.xml">
+  <link rel="alternate" type="application/rss+xml" title="Updated · Biology" href="data/feeds/biology.xml">
+  <link rel="alternate" type="application/rss+xml" title="Updated · Tech" href="data/feeds/tech.xml">
 </head>
 <body>
   <header class="topbar">
@@ -75,6 +81,7 @@
   <footer class="footer">
     <p>Digests on AI, business, science, biology and tech, curated Monday–Saturday mornings (ET), with AI trends, a monthly trend summary and a daily job board, by Claude from arXiv, journals, working papers, official releases, reputable press and public job boards.
       Summaries are AI-written; follow the source links for details. <a href="https://github.com/guaaaaa/AI_Updated">Source on GitHub</a>.</p>
+    <p id="feeds" class="feeds"></p>
   </footer>
   <script src="assets/trends.js"></script>
   <script src="assets/jobs.js"></script>

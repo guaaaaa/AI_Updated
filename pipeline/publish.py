@@ -19,8 +19,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import DAYS, DOM, DOMAIN, DOMAINS, ROOT, SUMMARIES, config  # noqa: E402
 
 GENERATED = {"data/index.json", "data/trends.json", "data/daily.json", "data/jobs.json", "data/domains.json"}
-is_generated = lambda f: (f in GENERATED or f.startswith(("data/weeks/", "data/directions/", "data/fields/", "data/jobs/"))
-                          or bool(re.match(r"data/[a-z]+/index\.json$", f)))  # rebuilt by build_index.py
+is_generated = lambda f: (f in GENERATED or f.startswith(("data/weeks/", "data/directions/", "data/fields/", "data/jobs/",
+                                                           "data/items/", "data/feeds/"))
+                          or bool(re.match(r"data/[a-z]+/(index\.json$|items/|weeks/)", f)))  # rebuilt by build_index.py
 
 
 def sh(*cmd, check=True):
@@ -45,8 +46,9 @@ def rebase_onto(branch):
         for f in conflicted:
             sh("git", "checkout", "--ours", f, check=False)
         sh(sys.executable, "pipeline/build_index.py")
-        sh("git", "add", *GENERATED, "data/weeks", "data/directions", "data/fields", "data/jobs",
-           *[f"data/{d['id']}/index.json" for d in DOMAINS if d["id"] != "ai" and (ROOT / "data" / d["id"] / "index.json").exists()])
+        sh("git", "add", *GENERATED, "data/weeks", "data/directions", "data/fields", "data/jobs", "data/items", "data/feeds",
+           *[f"data/{d['id']}/{x}" for d in DOMAINS if d["id"] != "ai" for x in ("index.json", "items", "weeks")
+             if (ROOT / "data" / d["id"] / x).exists()])
         r = subprocess.run(["git", "-c", "core.editor=true", "rebase", "--continue"], cwd=ROOT,
                            capture_output=True, text=True, env={**__import__("os").environ, "GIT_EDITOR": "true"})
     return False

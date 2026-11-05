@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Updated · Biology</title>
+  <link>https://guaaaaa.github.io/AI_Updated/#/biology</link>
+  <description>Life sciences: discoveries, medicine and biotech</description>
+  <language>en</language>
+  <lastBuildDate>Thu, 05 Nov 2026 02:48:50 +0000</lastBuildDate>
+  <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/biology.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>First measles death in New York State in 30 years</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n1</guid>
+    <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
+    <category>Biology / Public Health</category>
+    <description>A child in Lewis County, New York, died of measles, the state's first measles death in 30 years, as US cases reach their highest level in about 35 years. (The Guardian, CIDRAP, Gothamist, WRGB (CBS6 Albany))</description>
+  </item>
+  <item>
+    <title>FDA finalizes potency guidance for cell and gene therapies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n2</guid>
+    <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
+    <category>Biology / Drugs &amp; Approvals</category>
+    <description>The FDA issued final guidance telling makers of cell and gene therapies to build a plan proving that every batch is potent before it reaches a patient. (FDA)</description>
+  </item>
+  <item>
+    <title>English A&amp;Es to use early warning scores for sick children</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n3</guid>
+    <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
+    <category>Biology / Global Health</category>
+    <description>NHS England is introducing a vital-signs scoring system for children in emergency departments this winter, with parents' concerns able to trigger urgent review regardless of score. (The Guardian, BBC News)</description>
+  </item>
+  <item>
+    <title>TAVR in Patients with Moderate Aortic Stenosis with At-Risk Features</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/doi-10-1056-nejmoa2607326</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/doi-10-1056-nejmoa2607326</guid>
+    <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
+    <category>Biology / Cardiovascular</category>
+    <description>In a randomized trial of 744 older adults with moderate aortic stenosis and risk features, early valve replacement cut two-year death or heart failure events from 23.9% to 16.7%. (Philippe Généreux Raj R. Makkar Philippe Pibarot Jeroen J. Bax Brian R. Lindman Kamran Muhammad J. Bradley Oldemeyer Mark Pirwitz Colin M. Barker Vinod H. Thourani Pradeep K. Yadav Roberto Rodriguez Justin Strote Rahul Sakhuja Ramzi Khalil Rahul Sharma Adnan Chhatriwalla Jacob M. Mishell Biswajit Kar Sameer Gafoor Joseph Walsh Daniel Spoon Andrew Frutkin Andrei Pop Nicolas M. Van Mieghem Ruby Satpathy Kenji Ando Joseph Montarello John Webb Sreekanth Vemulapalli David J. Cohen Aakriti Gupta Brandon Park Heather Prince Philipp Blanke Michael Mack and Martin B. Leonthe PROGRESS Trial Investigators* · Atlantic Health Morristown Medical Center, Cedars-Sinai Medical Center)</description>
+  </item>
+</channel>
+</rss>

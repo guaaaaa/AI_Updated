@@ -1,0 +1,47 @@
+[
+ {
+  "id": "2026-11-04-n1",
+  "date": "2026-11-04",
+  "type": "news",
+  "title": "US tech stocks rebound as an AI-spending selloff ends on election day",
+  "tldr": "US tech shares recovered on Tuesday after a week-long AI selloff, with oil easing from $117 to $103 a barrel, while investors largely looked past the midterm elections.",
+  "category": "Markets",
+  "byline": "The Guardian"
+ },
+ {
+  "id": "2026-11-04-n2",
+  "date": "2026-11-04",
+  "type": "news",
+  "title": "Canva to cut or relocate 1,271 jobs as growth slows",
+  "tldr": "Design-software firm Canva is restructuring 22% of its workforce, 1,271 people, after growth slowed for the first time in a decade and AI costs rose.",
+  "category": "Labor & Workplace",
+  "byline": "BBC News, TechCrunch"
+ },
+ {
+  "id": "2026-11-04-n3",
+  "date": "2026-11-04",
+  "type": "news",
+  "title": "Foodtastic bids $1 billion for MTY Food Group as MTY replaces its CEO",
+  "tldr": "Foodtastic took a $43-a-share cash offer for MTY directly to shareholders after MTY's board refused talks, on the same day MTY abruptly replaced its CEO.",
+  "category": "Deals & M&A",
+  "byline": "The Globe and Mail"
+ },
+ {
+  "id": "2026-11-04-n4",
+  "date": "2026-11-04",
+  "type": "news",
+  "title": "Shopify shares drop 12.8% at the open despite 31.5% revenue growth",
+  "tldr": "Shopify's third-quarter revenue of US$3.742 billion grew 31.5% but missed analyst expectations by a hair, and the stock fell as expectations were high.",
+  "category": "Earnings & Companies",
+  "byline": "The Globe and Mail"
+ },
+ {
+  "id": "2026-11-04-n5",
+  "date": "2026-11-04",
+  "type": "news",
+  "title": "US factory orders jump 1.8% in September on aircraft and AI build-out",
+  "tldr": "New orders for US factory goods rose 1.8% in September, beating the 1.2% forecast, helped by aircraft bookings and AI infrastructure, though economists warn of headwinds next year.",
+  "category": "Economy & Data",
+  "byline": "The Globe and Mail (Reuters)"
+ }
+]

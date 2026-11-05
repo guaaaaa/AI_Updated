@@ -27,7 +27,8 @@ things go to Biology, the rest to Science. Each story and paper appears on one t
 other tabs ran in the last 3 days, and the validator flags repeats. News needs a primary source or two independent
 outlets, and every run checks its draft against its sources sentence by sentence before publishing. Every tab has an
 automatic Week in review (most-covered stories and what the tab featured; AI's also lists the most-upvoted papers).
-`.claude/settings.json` turns off Claude Code features the runs never use, which cuts each run's starting context
+The site opens on a **Today** page with every tab's latest highlights, and each tab has an RSS feed
+(`data/feeds/<tab>.xml`, plus `all.xml`). `.claude/settings.json` turns off Claude Code features the runs never use, which cuts each run's starting context
 from about 40k to 22k tokens.
 
 ## How it works (AI; the other domains follow the same steps with `fetch_research.py` for papers)

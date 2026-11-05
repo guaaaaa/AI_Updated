@@ -43,6 +43,14 @@
   const paperWord = () => (S.D && S.D.paper_label) || "Papers";
   const paperNoun = (n) => (paperWord() === "Research" ? "research paper" : "paper") + (n === 1 ? "" : "s");
   const weekHref = (id) => (S.dom === "ai" ? `#/trends/week/${id}` : `#/${S.dom}/week/${id}`);   // AI's lives in Trends
+  // items live in monthly files (index.item_months); only browsing, search and AI's Trends need them
+  async function loadItems() {
+    if (S.index.items) return S.index.items;
+    const base = S.D.index.replace(/index\.json$/, "");
+    const parts = await Promise.all((S.index.item_months || []).map((m) => getJSON(`${base}items/${m.month}.json`).catch(() => [])));
+    return (S.index.items = parts.flat());
+  }
+
   async function getDay(date, dom = S.dom) {
     const k = `${dom}/${date}`;
     if (!S.dayFiles.has(k)) S.dayFiles.set(k, getJSON(`${dataBase(dom)}days/${date}.json`));
@@ -98,6 +106,7 @@
 
   function parseRoute() {
     const full = location.hash.replace(/^#/, "").replace(/^\/health(?=\/|$)/, "/biology");   // Health became Biology
+    if (full === "" || full === "/" || full === "/today") return { view: "today", dom: S.dom || "ai" };
     const j = full.match(/^\/jobs(?:\/([\w-]+))?/);
     if (j) return { view: "jobs", id: j[1] || null, dom: S.dom || "ai" };
     const dm = full.match(/^\/([a-z]+)(\/.*)?$/);
@@ -129,7 +138,7 @@
 
   async function route() {
     let r = parseRoute();
-    if (r.view !== "jobs" && r.dom !== S.dom) {
+    if (r.view !== "jobs" && r.view !== "today" && r.dom !== S.dom) {
       const keep = r.view === "browse" ? { ...S.f } : null;
       await useDomain(r.dom);
       if (keep) r = parseRoute();   // browse filters were parsed before the switch reset them
@@ -139,23 +148,25 @@
       r.date = r.date || S.dates[0];
       if (r.date) S.calMonth = new Date(dObj(r.date).getFullYear(), dObj(r.date).getMonth(), 1);
     }
-    const wide = r.view === "trends" || r.view === "jobs";
+    const wide = r.view === "trends" || r.view === "jobs" || r.view === "today";
     $(".layout").classList.toggle("wide", wide);
     for (const a of document.querySelectorAll("#viewNav a")) {
-      a.classList.toggle("on", a.dataset.view === (r.view === "jobs" ? "jobs" : r.dom));
+      a.classList.toggle("on", a.dataset.view === (r.view === "jobs" || r.view === "today" ? r.view : r.dom));
       if (a.classList.contains("on") && a.parentElement.scrollWidth > a.parentElement.clientWidth) a.scrollIntoView({ block: "nearest", inline: "nearest" });
     }
-    document.title = r.view === "jobs" ? "Jobs · Updated" : `${S.D.name} · Updated`;
+    document.title = r.view === "jobs" ? "Jobs · Updated" : r.view === "today" ? "Today · Updated" : `${S.D.name} · Updated`;
     if (!wide) syncSidebar(r); else S.current = r;
     const main = $("#main");
     main.replaceChildren(el("div", { class: "loading", text: "Loading…" }));
     try {
-      if (r.view === "day") await renderDay(r.date, r.item);
+      if (r.view === "browse" || r.view === "trends") await loadItems();
+      if (r.view === "today") await renderToday();
+      else if (r.view === "day") await renderDay(r.date, r.item);
       else if (r.view === "trends") await window.AIUTrends.render(main, r, S);
       else if (r.view === "jobs") await window.AIUJobs.render(main, r, S);
       else if (r.view === "week") await renderWeek(r.id);
       else renderBrowse();
-      if (r.view !== "jobs" && S.D.trends) $("#main").prepend(subNav(r.view === "trends" ? "trends" : "digest"));
+      if (r.view !== "jobs" && r.view !== "today" && S.D.trends) $("#main").prepend(subNav(r.view === "trends" ? "trends" : "digest"));
     } catch (e) {
       main.replaceChildren(el("div", { class: "empty", text: `Could not load this view (${e.message}).` }));
     }
@@ -327,6 +338,44 @@
   }
 
   // ---------- views
+  // Today: the latest digest of every tab, three highlights each (news first, at least one paper where a tab has them)
+  async function renderToday() {
+    const doms = S.domains.filter((d) => d.latest);
+    const [days, idxs] = await Promise.all([
+      Promise.all(doms.map((d) => getDay(d.latest, d.id).catch(() => null))),
+      Promise.all(doms.map((d) => (S.byDom.has(d.id) ? Promise.resolve(S.byDom.get(d.id).index) : getJSON(d.index)).catch(() => ({}))))]);
+    const latest = doms.map((d) => d.latest).sort().pop();
+    const sections = doms.map((d, i) => {
+      const j = days[i];
+      if (!j) return null;
+      const groupOf = {};
+      for (const [g, tags] of Object.entries(idxs[i].tag_groups || {})) for (const t of tags) groupOf[t] = g;
+      const news = j.news || [], papers = j.papers || [];
+      const nP = papers.length ? Math.min(papers.length, Math.max(1, 3 - Math.min(news.length, 2))) : 0;
+      const picks = [...news.slice(0, 3 - nP).map((x) => [x, true]), ...papers.slice(0, nP).map((x) => [x, false])];
+      const word = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+      return el("section", { class: "today-tab" },
+        el("div", { class: "today-tab-head" },
+          el("h2", {}, el("a", { href: `#/${d.id}`, text: d.name })),
+          el("span", { class: "day-meta", text: `${fmtShort(j.date)} · ${word(news.length, "news story").replace("storys", "stories")}` +
+            (d.papers ? ` · ${word(papers.length, d.paper_label === "Research" ? "research paper" : "paper")}` : "") }),
+          el("a", { class: "today-more", href: dayHref(j.date, null, d.id), text: "Full digest →" })),
+        el("div", { class: "today-grid" }, ...picks.map(([x, isNews]) =>
+          el("article", { class: `card compact ${isNews ? "news" : "paper"}`, dataset: { g: isNews ? "news" : groupOf[x.primary_tag] || "" } },
+            el("div", { class: "card-top" }, el("span", { class: "kind", text: isNews ? x.category : x.primary_tag }),
+              el("span", { class: "card-date", text: isNews ? (x.sources || []).slice(0, 2).map((s) => s.name).join(" · ")
+                : ((x.signals || {}).venue || (d.id === "ai" ? "arXiv" : "")) })),
+            el("h3", {}, el("a", { href: dayHref(j.date, x.id, d.id), text: x.title })),
+            el("p", { class: "tldr", text: x.tldr })))));
+    });
+    $("#main").replaceChildren(
+      el("div", { class: "day-head" }, el("div", {}, el("h1", { text: "Today" }),
+        el("div", { class: "day-meta" }, `The latest digest from every tab${latest ? ", " + fmtLong(latest) : ""} · `,
+          el("a", { href: "data/feeds/all.xml", text: "RSS" })))),
+      ...(sections.some(Boolean) ? sections.filter(Boolean) : [el("div", { class: "empty", text: "No digests yet." })]));
+    window.scrollTo({ top: 0 });
+  }
+
   function glanceList(j, date) {
     const rows = [...(j.news || []).map((n) => ({ it: n, news: true })), ...(j.papers || []).map((p) => ({ it: p, news: false }))];
     return el("ol", { class: "glance" }, rows.map(({ it, news }) =>
@@ -444,8 +493,12 @@
     } catch (e) {
       S.domains = [{ id: "ai", name: "AI", index: "data/index.json", trends: true, paper_label: "Papers", papers: 5 }];
     }
-    $("#viewNav").replaceChildren(...S.domains.map((d) => el("a", { href: `#/${d.id}`, dataset: { view: d.id }, text: d.name })),
+    $("#viewNav").replaceChildren(el("a", { href: "#/", dataset: { view: "today" }, text: "Today" }),
+      ...S.domains.map((d) => el("a", { href: `#/${d.id}`, dataset: { view: d.id }, text: d.name })),
       el("a", { href: "#/jobs", dataset: { view: "jobs" }, text: "Jobs" }));
+    const feeds = $("#feeds");
+    if (feeds) feeds.replaceChildren("RSS: ", el("a", { href: "data/feeds/all.xml", text: "all tabs" }),
+      ...S.domains.flatMap((d) => [" · ", el("a", { href: d.feed || `data/feeds/${d.id}.xml`, text: d.name })]));
     const helpers = { el, getJSON, getDay, dObj, fmtShort, fmtLong, isoOf, safeUrl, glanceList };
     if (window.AIUTrends) window.AIUTrends.init(helpers);
     if (window.AIUJobs) window.AIUJobs.init(helpers, window.AIUTrends && window.AIUTrends.kit);

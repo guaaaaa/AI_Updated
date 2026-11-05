@@ -2,14 +2,19 @@
 review files (data/weeks/, from the daily evidence snapshots) and data/trends.json (dashboard charts) from the
 field-wide monthly aggregates in data/state/field/ (pipeline/field_stats.py), plus the stock-style page data:
 data/daily.json (every announcement day: all new papers, upvotes, each field) and data/fields/<slug>.json (a field's
-directions, day by day) from data/state/field_daily/ (pipeline/field_daily.py)."""
+directions, day by day) from data/state/field_daily/ (pipeline/field_daily.py).
+
+Every tab's index.json is small (days, tags, counts, weeks); its items live in <tab data>/items/YYYY-MM.json, which
+the site loads only for browsing and search. RSS feeds: data/feeds/<tab>.xml and data/feeds/all.xml."""
 import datetime as dt
+import email.utils
 import json
 import os
 import re
 import sys
 from collections import Counter
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 os.environ["AIU_DOMAIN"] = "ai"   # this script builds every domain; the AI-only parts (trends, weeks) use AI's paths
 sys.argv = [a for i, a in enumerate(sys.argv) if a != "--domain" and (i == 0 or sys.argv[i - 1] != "--domain")]
@@ -17,7 +22,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import field_daily as FY  # noqa: E402
 import field_stats as FS  # noqa: E402
 import week_review  # noqa: E402
-from common import DATA, DAYS, DOMAINS, UTC, domain_paths, load_json, today_et  # noqa: E402
+from common import CONFIG, DATA, DAYS, DOMAINS, ET, UTC, domain_paths, load_json, today_et  # noqa: E402
+
+SITE = json.loads((CONFIG / "site.json").read_text())["url"]
+FEEDS = DATA / "feeds"
+FEED_ITEMS = 40
 
 
 def byline(p):
@@ -31,12 +40,14 @@ def domain_index(did):
     """data/index.json (AI) or data/<id>/index.json: the day list, every item, tag/category counts, summaries."""
     P = domain_paths(did)
     tax = load_json(P["config"] / "taxonomy.json")
-    days, items = [], []
+    days, items, feed = [], [], []
     tag_counts, cat_counts = Counter(), Counter()
     for f in sorted(P["days"].glob("*.json"), reverse=True) if P["days"].exists() else []:
         j = json.loads(f.read_text(encoding="utf-8"))
         days.append({"date": j["date"], "edition": j["edition"], "news": len(j.get("news", [])),
                      "papers": len(j.get("papers", [])), "backfill": bool(j.get("backfill"))})
+        if len(feed) < FEED_ITEMS:
+            feed += feed_entries(did, j)
         for n in j.get("news", []):
             cat_counts[n["category"]] += 1
             items.append({"id": n["id"], "date": j["date"], "type": "news", "title": n["title"], "tldr": n["tldr"],
@@ -61,24 +72,84 @@ def domain_index(did):
                           "published": j["published"], "headline": j["headline"],
                           "heating": [h["label"] for h in j["research"]["heating"] + j["industry"]["heating"]],
                           "cooling": [h["label"] for h in j["research"]["cooling"] + j["industry"]["cooling"]]})
-    out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "domain": did, "days": days, "items": items,
+    months = {}
+    for it in items:   # items are newest first; each month file keeps that order
+        months.setdefault(it["date"][:7], []).append(it)
+    idir = P["data"] / "items"
+    idir.mkdir(parents=True, exist_ok=True)
+    for f in idir.glob("*.json"):
+        if f.stem not in months:
+            f.unlink()
+    for m, its in months.items():
+        (idir / f"{m}.json").write_text(json.dumps(its, ensure_ascii=False, indent=1), encoding="utf-8")
+    out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "domain": did, "days": days,
+           "item_months": [{"month": m, "n": len(its)} for m, its in sorted(months.items(), reverse=True)],
            "tag_groups": groups, "tag_counts": dict(tag_counts), "news_categories": cats,
            "category_counts": dict(cat_counts), "summaries": summaries, "weeks": week_review.build_all(did)}
     P["data"].mkdir(parents=True, exist_ok=True)
     (P["data"] / "index.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    name = next(d["name"] for d in DOMAINS if d["id"] == did)
+    write_feed(FEEDS / f"{did}.xml", f"Updated · {name}", next(d.get("tagline", "") for d in DOMAINS if d["id"] == did),
+               f"{SITE}#/{did}", feed[:FEED_ITEMS])
     print(f"{did} index.json: {len(days)} days, {len(items)} items, {len(summaries)} summaries, {len(out['weeks'])} weeks")
-    return {"latest": days[0]["date"] if days else None, "days": len(days)}
+    return {"latest": days[0]["date"] if days else None, "days": len(days), "feed": f"data/feeds/{did}.xml", "_feed": feed}
+
+
+def feed_entries(did, j):
+    """RSS entries for one digest: each item links to its place on the site."""
+    out, name = [], next(d["name"] for d in DOMAINS if d["id"] == did)
+    pub = j.get("generated_at") or f"{j['date']}T08:00:00"
+    when = dt.datetime.fromisoformat(pub)
+    when = when if when.tzinfo else when.replace(tzinfo=ET)
+    for kind in ("news", "papers"):
+        for x in j.get(kind, []):
+            by = ", ".join(s["name"] for s in x.get("sources", [])[:4]) if kind == "news" else byline(x)
+            out.append({"title": x["title"], "link": f"{SITE}#/{did}/day/{j['date']}/{x['id']}", "when": when, "tab": name,
+                        "category": x.get("category") or x.get("primary_tag") or "",
+                        "text": f"{x.get('tldr', '')}" + (f" ({by})" if by else "")})
+    return out
+
+
+def write_feed(path, title, desc, link, entries):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    url = SITE + str(path.relative_to(DATA.parent)).replace("\\", "/")
+    rows = [f"""  <item>
+    <title>{escape(e['title'])}</title>
+    <link>{escape(e['link'])}</link>
+    <guid isPermaLink="true">{escape(e['link'])}</guid>
+    <pubDate>{email.utils.format_datetime(e['when'])}</pubDate>
+    <category>{escape(e['tab'] + (' / ' + e['category'] if e['category'] else ''))}</category>
+    <description>{escape(e['text'])}</description>
+  </item>""" for e in entries]
+    last = max((e["when"] for e in entries), default=dt.datetime.now(UTC))
+    path.write_text(f"""<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{escape(title)}</title>
+  <link>{escape(link)}</link>
+  <description>{escape(desc)}</description>
+  <language>en</language>
+  <lastBuildDate>{email.utils.format_datetime(last)}</lastBuildDate>
+  <atom:link href="{escape(url)}" rel="self" type="application/rss+xml"/>
+{chr(10).join(rows)}
+</channel>
+</rss>
+""", encoding="utf-8")
 
 
 def main():
-    meta = []
+    meta, allfeed = [], []
     for d in DOMAINS:
         info = domain_index(d["id"])
+        feed = info.pop("_feed")
+        allfeed.extend(feed)
         meta.append({"id": d["id"], "name": d["name"], "tagline": d.get("tagline", ""), "trends": bool(d.get("trends")),
                      "paper_label": d.get("paper_label", "Papers"), "news": d["news"], "papers": d["papers"],
                      "index": "data/index.json" if d["id"] == "ai" else f"data/{d['id']}/index.json", **info})
     (DATA / "domains.json").write_text(json.dumps({"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "domains": meta},
                                                   ensure_ascii=False, indent=1), encoding="utf-8")
+    allfeed.sort(key=lambda e: e["when"], reverse=True)
+    write_feed(FEEDS / "all.xml", "Updated · all tabs", "Daily news and research, explained: every tab", SITE, allfeed[:60])
     build_trends()
     try:   # the job board (data/jobs.json, data/jobs/) -- never blocks a digest
         import build_jobs

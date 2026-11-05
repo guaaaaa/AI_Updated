@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Updated · Business</title>
+  <link>https://guaaaaa.github.io/AI_Updated/#/business</link>
+  <description>Markets, companies and the economy</description>
+  <language>en</language>
+  <lastBuildDate>Wed, 04 Nov 2026 22:02:37 +0000</lastBuildDate>
+  <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/business.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>US tech stocks rebound as an AI-spending selloff ends on election day</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n1</guid>
+    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
+    <category>Business / Markets</category>
+    <description>US tech shares recovered on Tuesday after a week-long AI selloff, with oil easing from $117 to $103 a barrel, while investors largely looked past the midterm elections. (The Guardian)</description>
+  </item>
+  <item>
+    <title>Canva to cut or relocate 1,271 jobs as growth slows</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n2</guid>
+    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
+    <category>Business / Labor &amp; Workplace</category>
+    <description>Design-software firm Canva is restructuring 22% of its workforce, 1,271 people, after growth slowed for the first time in a decade and AI costs rose. (BBC News, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Foodtastic bids $1 billion for MTY Food Group as MTY replaces its CEO</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n3</guid>
+    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>Foodtastic took a $43-a-share cash offer for MTY directly to shareholders after MTY's board refused talks, on the same day MTY abruptly replaced its CEO. (The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Shopify shares drop 12.8% at the open despite 31.5% revenue growth</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n4</guid>
+    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>Shopify's third-quarter revenue of US$3.742 billion grew 31.5% but missed analyst expectations by a hair, and the stock fell as expectations were high. (The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>US factory orders jump 1.8% in September on aircraft and AI build-out</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n5</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n5</guid>
+    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>New orders for US factory goods rose 1.8% in September, beating the 1.2% forecast, helped by aircraft bookings and AI infrastructure, though economists warn of headwinds next year. (The Globe and Mail (Reuters))</description>
+  </item>
+</channel>
+</rss>
