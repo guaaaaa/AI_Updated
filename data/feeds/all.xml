@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Thu, 05 Nov 2026 02:48:50 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 12:03:08 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Second wave of attacks on refrigeration controllers hits supermarkets across Europe</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n1</guid>
+    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Remote tampering with refrigeration controllers raised temperatures in more than 115 stores in six European countries on November 2, and also reached a French blood-service supplier, following a larger French wave in October. (Al Jazeera, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>Zyxel patches a switch flaw that was exploited on nearly 1,000 devices after being mistaken for an older bug</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n2</guid>
+    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Zyxel fixed CVE-2026-107441 in ten GS1900 switch models after attackers used it to compromise 996 devices; the bug had been misattributed to an earlier, already-patched flaw. (BleepingComputer, Help Net Security)</description>
+  </item>
+  <item>
+    <title>Suspected Russian hackers use patched iPhone and Android flaws in watering-hole attacks</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n3</guid>
+    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Sekoia says a group it links to Russia's foreign intelligence service used websites to profile visitors and attack phones that had not installed existing security updates. (Ars Technica, Sekoia blog)</description>
+  </item>
+  <item>
+    <title>DreamHost confirms a two-month breach of its File Manager exposed FTP logins and webmail sessions</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n4</guid>
+    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Web host DreamHost says an attacker exploited a flaw in its File Manager from August to October 23, stealing FTP/SFTP credentials and some webmail session data. (BleepingComputer, TechCrunch)</description>
+  </item>
   <item>
     <title>First measles death in New York State in 30 years</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n1</link>
@@ -454,22 +486,6 @@
     <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
     <category>AI / AI for Science &amp; Health</category>
     <description>Google DeepMind and collaborators trained Gemini 3.1 Flash-Lite with multi-turn RL against simulated psychiatric patients; in a double-blind study with psychiatrists playing patients, it beat its base model in 76.7% of matched cases. (Samuel Schmidgall, Tim Strother, Alex Bijamov et al. · Google DeepMind, Google Research, Stanford University)</description>
-  </item>
-  <item>
-    <title>L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.40614</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.40614</guid>
-    <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
-    <category>AI / World Models</category>
-    <description>L3G-World gives a video world model a compact 3D memory of Gaussians that store video-latent features, keeping explored scenes consistent on revisits while generating in real time at about 9 frames per second. (Jinhyeok Choi, JoungBin Lee, Jongmin Lee et al. · KAIST AI, Ewha Womans University, KAIST Urban AI Institute)</description>
-  </item>
-  <item>
-    <title>Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.38681</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.38681</guid>
-    <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
-    <category>AI / Reasoning</category>
-    <description>WISD improves reasoning models with no labels or stronger teacher by training them toward tokens the original model prefers over a deliberately quantized or pruned copy of itself, adding 4 to 5.5 points on average. (Yecheng Wu, Song Han, Han Cai · Massachusetts Institute of Technology, NVIDIA)</description>
   </item>
 </channel>
 </rss>

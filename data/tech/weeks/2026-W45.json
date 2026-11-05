@@ -3,12 +3,12 @@
  "start": "2026-11-02",
  "end": "2026-11-07",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [
   {
    "title": "Shop fridges and freezers across Europe hit by fresh suspected cyber-attack",
-   "outlets": 7,
+   "outlets": 8,
    "date": "2026-11-02",
    "covered": null
   },
@@ -17,10 +17,16 @@
    "outlets": 3,
    "date": "2026-11-03",
    "covered": "2026-11-04-n3"
+  },
+  {
+   "title": "With iOS 27.3, Apple will start checking iCloud public links for ‘harmful content’",
+   "outlets": 3,
+   "date": "2026-11-04",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 4,
+  "news": 8,
   "papers": 0
  },
  "items": [
@@ -47,6 +53,30 @@
    "date": "2026-11-04",
    "type": "news",
    "title": "Apple warns memory costs are unprecedented as they squeeze margins and Mac supply"
+  },
+  {
+   "id": "2026-11-05-n1",
+   "date": "2026-11-05",
+   "type": "news",
+   "title": "Second wave of attacks on refrigeration controllers hits supermarkets across Europe"
+  },
+  {
+   "id": "2026-11-05-n2",
+   "date": "2026-11-05",
+   "type": "news",
+   "title": "Zyxel patches a switch flaw that was exploited on nearly 1,000 devices after being mistaken for an older bug"
+  },
+  {
+   "id": "2026-11-05-n3",
+   "date": "2026-11-05",
+   "type": "news",
+   "title": "Suspected Russian hackers use patched iPhone and Android flaws in watering-hole attacks"
+  },
+  {
+   "id": "2026-11-05-n4",
+   "date": "2026-11-05",
+   "type": "news",
+   "title": "DreamHost confirms a two-month breach of its File Manager exposed FTP logins and webmail sessions"
   }
  ]
 }

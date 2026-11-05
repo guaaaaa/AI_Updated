@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Thu, 05 Nov 2026 02:47:50 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 12:03:08 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Second wave of attacks on refrigeration controllers hits supermarkets across Europe</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n1</guid>
+    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Remote tampering with refrigeration controllers raised temperatures in more than 115 stores in six European countries on November 2, and also reached a French blood-service supplier, following a larger French wave in October. (Al Jazeera, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>Zyxel patches a switch flaw that was exploited on nearly 1,000 devices after being mistaken for an older bug</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n2</guid>
+    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Zyxel fixed CVE-2026-107441 in ten GS1900 switch models after attackers used it to compromise 996 devices; the bug had been misattributed to an earlier, already-patched flaw. (BleepingComputer, Help Net Security)</description>
+  </item>
+  <item>
+    <title>Suspected Russian hackers use patched iPhone and Android flaws in watering-hole attacks</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n3</guid>
+    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Sekoia says a group it links to Russia's foreign intelligence service used websites to profile visitors and attack phones that had not installed existing security updates. (Ars Technica, Sekoia blog)</description>
+  </item>
+  <item>
+    <title>DreamHost confirms a two-month breach of its File Manager exposed FTP logins and webmail sessions</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n4</guid>
+    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Web host DreamHost says an attacker exploited a flaw in its File Manager from August to October 23, stealing FTP/SFTP credentials and some webmail session data. (BleepingComputer, TechCrunch)</description>
+  </item>
   <item>
     <title>Marvell agrees to buy Lumentum for $115 billion in an all-stock deal</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n1</link>

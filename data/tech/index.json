@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-05T05:33:39+00:00",
+ "updated": "2026-11-05T12:03:08+00:00",
  "domain": "tech",
  "days": [
+  {
+   "date": "2026-11-05",
+   "edition": "weekday",
+   "news": 4,
+   "papers": 0,
+   "backfill": false
+  },
   {
    "date": "2026-11-04",
    "edition": "weekday",
@@ -13,7 +20,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 4
+   "n": 8
   }
  ],
  "tag_groups": {
@@ -48,8 +55,8 @@
   "Tech Business"
  ],
  "category_counts": {
+  "Cybersecurity": 6,
   "Tech Business": 1,
-  "Cybersecurity": 2,
   "Chips & Hardware": 1
  },
  "summaries": [],

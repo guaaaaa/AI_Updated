@@ -1,5 +1,41 @@
 [
  {
+  "id": "2026-11-05-n1",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "Second wave of attacks on refrigeration controllers hits supermarkets across Europe",
+  "tldr": "Remote tampering with refrigeration controllers raised temperatures in more than 115 stores in six European countries on November 2, and also reached a French blood-service supplier, following a larger French wave in October.",
+  "category": "Cybersecurity",
+  "byline": "Al Jazeera, BleepingComputer"
+ },
+ {
+  "id": "2026-11-05-n2",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "Zyxel patches a switch flaw that was exploited on nearly 1,000 devices after being mistaken for an older bug",
+  "tldr": "Zyxel fixed CVE-2026-107441 in ten GS1900 switch models after attackers used it to compromise 996 devices; the bug had been misattributed to an earlier, already-patched flaw.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Help Net Security"
+ },
+ {
+  "id": "2026-11-05-n3",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "Suspected Russian hackers use patched iPhone and Android flaws in watering-hole attacks",
+  "tldr": "Sekoia says a group it links to Russia's foreign intelligence service used websites to profile visitors and attack phones that had not installed existing security updates.",
+  "category": "Cybersecurity",
+  "byline": "Ars Technica, Sekoia blog"
+ },
+ {
+  "id": "2026-11-05-n4",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "DreamHost confirms a two-month breach of its File Manager exposed FTP logins and webmail sessions",
+  "tldr": "Web host DreamHost says an attacker exploited a flaw in its File Manager from August to October 23, stealing FTP/SFTP credentials and some webmail session data.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, TechCrunch"
+ },
+ {
   "id": "2026-11-04-n1",
   "date": "2026-11-04",
   "type": "news",

@@ -1,0 +1,157 @@
+{
+ "date": "2026-11-05",
+ "edition": "weekday",
+ "generated_at": "2026-11-05T12:03:08+00:00",
+ "summary": "A second wave of attacks on supermarket refrigeration across Europe, a Zyxel switch zero-day, a suspected Russian watering-hole campaign against phones, and the DreamHost breach.",
+ "news": [
+  {
+   "id": "2026-11-05-n1",
+   "story_key": "europe-refrigeration-cyberattacks",
+   "title": "Second wave of attacks on refrigeration controllers hits supermarkets across Europe",
+   "category": "Cybersecurity",
+   "published": "2026-11-02T09:29:00-05:00",
+   "tldr": "Remote tampering with refrigeration controllers raised temperatures in more than 115 stores in six European countries on November 2, and also reached a French blood-service supplier, following a larger French wave in October.",
+   "why_selected": "A cyberattack on everyday operational technology that spoiled food across several countries and touched blood storage, with a European Commission response.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Commercial refrigeration is now managed over the internet. Controllers sit on store networks, and monitoring software lets technicians change temperature and defrost settings remotely. That convenience means a controller reachable from the internet, running old software, can be reconfigured by a stranger. This kind of equipment is called operational technology: computers that run physical processes rather than office work."
+    },
+    {
+     "heading": "What happened",
+     "body": "BleepingComputer reports that in October, attacks disrupted refrigeration at an estimated 250 to 350 French supermarkets, with hackers reportedly compromising older Danfoss controllers and triggering automatic defrosting. A second wave on November 2 affected more than 115 stores across Belgium, the Netherlands, Sweden, Luxembourg, Ireland and Estonia. Al Jazeera reports that SuperValu in Ireland cited a cyber incident at 13 of its 223 stores, that Estonia's supplier Kitman said temperatures were set to 50 degrees Celsius, and that Belgian refrigeration firm Sabcobel said evaporators had been switched to defrost mode. France's blood service EFS said its refrigeration supplier was hit, raising temperature settings at three facilities; alarms caught it and no blood products were lost."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The attacks show how a flaw in a widely used controller can be repeated across retailers in many countries, since Sabcobel said the November attacks used the same vulnerability as October's. The harm is physical: spoiled food, and in France fires at several stores. A European Commission official called the incidents a deliberate attempt to disrupt food supplies. Sweden's national cybersecurity centre said many exposed operational technology devices in the country need updating or patching. No one has claimed responsibility."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether investigators confirm which vulnerability is being used, whether the vendors publish fixes, and whether anyone claims the attacks."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://aljazeera.com/news/2026/11/2/freezers-in-sweden-belgium-overheat-following-possible-cyberattacks"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-n2",
+   "story_key": "zyxel-gs1900-zero-day",
+   "title": "Zyxel patches a switch flaw that was exploited on nearly 1,000 devices after being mistaken for an older bug",
+   "category": "Cybersecurity",
+   "published": "2026-11-04T15:58:00-05:00",
+   "tldr": "Zyxel fixed CVE-2026-107441 in ten GS1900 switch models after attackers used it to compromise 996 devices; the bug had been misattributed to an earlier, already-patched flaw.",
+   "why_selected": "A zero-day in widely deployed network gear that bypassed an earlier fix and exposed credentials on devices in 48 countries.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Network switches connect the computers in an office or building, and many have a web page for administration. If that page has a memory-handling bug, an attacker may be able to run commands on the device itself. Because switches sit at the heart of a network and rarely run security software, compromises can go unnoticed. A zero-day is a flaw exploited before the vendor knows about it."
+    },
+    {
+     "heading": "What happened",
+     "body": "BleepingComputer reports that Zyxel released updates on October 22 and published an advisory on November 3 for CVE-2026-107441, an out-of-bounds write in the web interface of ten GS1900 models. An unauthenticated attacker with network access could run operating system commands with crafted HTTP requests. From around August 17, security firm GreyNoise saw a suspected Chinese-speaking actor, Kapibala, compromise 996 devices in 48 countries and collect configurations and hashed root credentials. GreyNoise tied the attacks to CVE-2026-7273, patched in June, and CISA added that flaw to its exploited-vulnerabilities catalog on September 21. Firmware security firm Binarly then found the exploit actually targeted a separate, unpatched flaw, and confirmed on September 28 that it worked on all ten firmware releases that carried the June fix. Binarly told Zyxel on September 29."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Administrators who installed the June patch believed they were protected, yet the switches stayed exploitable for months. The episode shows how a fix that adds checks can be bypassed, and how attributing attacks to the wrong flaw leaves a gap. It remains unclear whether the exploit was built to defeat the June update or abused a related weakness that update missed."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Install the October firmware, review stored credentials on exposed switches, and watch for further guidance from Zyxel or CISA."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/"
+    },
+    {
+     "name": "Help Net Security",
+     "url": "https://www.helpnetsecurity.com/2026/09/22/zyxel-switches-cve-2026-7273-vulnerability-exploited/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-n3",
+   "story_key": "apt29-mobile-watering-hole",
+   "title": "Suspected Russian hackers use patched iPhone and Android flaws in watering-hole attacks",
+   "category": "Cybersecurity",
+   "published": "2026-11-04T17:26:00-05:00",
+   "tldr": "Sekoia says a group it links to Russia's foreign intelligence service used websites to profile visitors and attack phones that had not installed existing security updates.",
+   "why_selected": "A state-linked campaign against iOS and Android users that shows unpatched phones remain a practical target.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A watering-hole attack plants malicious code on, or impersonates, websites that a chosen group is likely to visit, rather than contacting victims directly. An n-day exploit uses a vulnerability that has already been fixed, so it only works on devices that have not installed the update. Zero-click means the victim does not need to tap anything beyond loading the page."
+    },
+    {
+     "heading": "What happened",
+     "body": "Ars Technica reports that researchers at security firm Sekoia, with moderate to high confidence, tie the campaign to Russia's Foreign Intelligence Service, similar to a previous attack attributed to APT29. Visitors to potentially hundreds of sites were exposed. Attackers registered lookalike domains that proxied real sites, including the America250 site celebrating the 250th anniversary of American independence and a luxury London hotel near government offices. They also used compromised sites, including a Ukrainian gas production company, and a supply-chain compromise of a Ukrainian web analytics service. The same injected JavaScript profiled each visitor's device and then delivered one of three exploit chains, one of them DarkSword, an iOS exploit kit. The payloads tried to steal browser cookies and in some cases Wi-Fi passwords and full device data. Every vulnerability used was already patched."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The campaign works only against phones that are out of date, so installing current iOS and Android updates blocks it. It also shows that exploit tools first sold by commercial surveillance vendors spread to other actors. Attribution rests on victim profiles and similarity to earlier attacks, which is an assessment rather than proof."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Further indicators from Sekoia or Apple and Google, and whether other state-linked groups adopt the same chains."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/"
+    },
+    {
+     "name": "Sekoia blog",
+     "url": "https://blog.sekoia.io/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-n4",
+   "story_key": "dreamhost-file-manager-breach",
+   "title": "DreamHost confirms a two-month breach of its File Manager exposed FTP logins and webmail sessions",
+   "category": "Cybersecurity",
+   "published": "2026-11-04T14:05:00-05:00",
+   "tldr": "Web host DreamHost says an attacker exploited a flaw in its File Manager from August to October 23, stealing FTP/SFTP credentials and some webmail session data.",
+   "why_selected": "A months-long breach at a major web host that exposed credentials to customers' websites and email.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Web hosting companies store the files and email of many small websites. Customers often upload site content with FTP or SFTP, protocols for transferring files that need a username and password. A session token is a small credential that keeps a user logged in; if stolen, an attacker can act as that user without knowing the password. A host's File Manager is a browser tool for managing those files."
+    },
+    {
+     "heading": "What happened",
+     "body": "DreamHost said an unauthorized party exploited a vulnerability in the server running its web-based File Manager, at files.dreamhost.com, and could read the FTP/SFTP usernames and passwords of people who logged in between about August 2026 and October 23, the day it was discovered. The intruder may also have reached webmail systems, exposing session information including credentials for a limited number of users. DreamHost found no evidence that control-panel logins or billing and payment details were accessed. The company blocked the access, fixed the vulnerability, ended active sessions and invalidated passwords, which caused a multi-day outage, according to TechCrunch. A spokesperson said well under 10 percent of its roughly 400,000 paying customers were affected, and would not name the flaw or explain why detection took so long. Affected people are offered a year of credit monitoring through Equifax."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Stolen hosting credentials let an attacker alter a site's files, so DreamHost advises recipients to check for unauthorized changes, review webmail forwarding rules and filters, and change passwords reused elsewhere. The two-month gap before discovery shows how long an intruder can remain on shared infrastructure."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The exact number of affected accounts and the identity of the vulnerability, neither of which DreamHost has disclosed."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/04/hackers-stole-dreamhost-customer-files-and-inboxes-during-months-long-attack/"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}
