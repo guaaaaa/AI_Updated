@@ -3,12 +3,31 @@
  "start": "2026-11-02",
  "end": "2026-11-07",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
- "stories": [],
+ "stories": [
+  {
+   "title": "New York state reports first measles-linked child death in over 30 years amid outbreak",
+   "outlets": 4,
+   "date": "2026-11-02",
+   "covered": "2026-11-04-n1"
+  },
+  {
+   "title": "Dinosaur blood—oldest discovery rewrites what fossils can reveal about the past",
+   "outlets": 3,
+   "date": "2026-11-02",
+   "covered": null
+  },
+  {
+   "title": "Fossilised red blood cells found in 115m-year-old dinosaur’s bone, say scientists",
+   "outlets": 3,
+   "date": "2026-11-02",
+   "covered": null
+  }
+ ],
  "featured": {
-  "news": 3,
-  "papers": 1
+  "news": 4,
+  "papers": 4
  },
  "items": [
   {
@@ -34,6 +53,30 @@
    "date": "2026-11-04",
    "type": "paper",
    "title": "TAVR in Patients with Moderate Aortic Stenosis with At-Risk Features"
+  },
+  {
+   "id": "2026-11-05-n1",
+   "date": "2026-11-05",
+   "type": "news",
+   "title": "British health worker with Ebola flown home as the Congo outbreak passes 10,000 cases"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11212-0",
+   "date": "2026-11-05",
+   "type": "paper",
+   "title": "Comprehensive mapping of essential-gene interactions in M. tuberculosis"
+  },
+  {
+   "id": "doi-10-1126-science-aeb7910",
+   "date": "2026-11-05",
+   "type": "paper",
+   "title": "The global geography of threats to freshwater biodiversity"
+  },
+  {
+   "id": "doi-10-1016-s0140-6736-26-01949-5",
+   "date": "2026-11-05",
+   "type": "paper",
+   "title": "Prone positioning and high-frequency oscillatory ventilation in early paediatric acute respiratory distress syndrome (PROSpect): an international, two-by-two factorial, response-adaptive, phase 3, randomised controlled trial"
   }
  ]
 }

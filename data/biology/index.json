@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-05T13:24:42+00:00",
+ "updated": "2026-11-05T13:53:12+00:00",
  "domain": "biology",
  "days": [
+  {
+   "date": "2026-11-05",
+   "edition": "weekday",
+   "news": 1,
+   "papers": 3,
+   "backfill": false
+  },
   {
    "date": "2026-11-04",
    "edition": "weekday",
@@ -13,7 +20,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 4
+   "n": 8
   }
  ],
  "tag_groups": {
@@ -47,6 +54,11 @@
   ]
  },
  "tag_counts": {
+  "Microbiology": 1,
+  "Genetics & genomics": 1,
+  "Infectious disease": 2,
+  "Evolution & ecology": 1,
+  "Maternal & child health": 1,
   "Cardiovascular": 1,
   "Devices & diagnostics": 1
  },
@@ -64,6 +76,7 @@
   "Global Health"
  ],
  "category_counts": {
+  "Microbes & Infectious Disease": 1,
   "Public Health": 1,
   "Drugs & Approvals": 1,
   "Global Health": 1

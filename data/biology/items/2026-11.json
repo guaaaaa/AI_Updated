@@ -1,5 +1,59 @@
 [
  {
+  "id": "2026-11-05-n1",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "British health worker with Ebola flown home as the Congo outbreak passes 10,000 cases",
+  "tldr": "A British healthcare worker infected in DR Congo is being evacuated to the UK, the first British case of an outbreak that has passed 10,000 confirmed cases and has no approved treatment.",
+  "category": "Microbes & Infectious Disease",
+  "byline": "The Guardian, ECDC"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11212-0",
+  "date": "2026-11-05",
+  "type": "paper",
+  "title": "Comprehensive mapping of essential-gene interactions in M. tuberculosis",
+  "tldr": "Researchers built the largest map yet of how essential genes interact in the tuberculosis bacterium, finding nearly 6,500 interactions that could guide new drug targets and antibiotic combinations.",
+  "primary_tag": "Microbiology",
+  "tags": [
+   "Microbiology",
+   "Genetics & genomics",
+   "Infectious disease"
+  ],
+  "byline": "Isaac J. Kresse, Natalie Y. Sayegh, Vanisha Munsamy-Govender et al. · Rockefeller University",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1126-science-aeb7910",
+  "date": "2026-11-05",
+  "type": "paper",
+  "title": "The global geography of threats to freshwater biodiversity",
+  "tldr": "A global analysis of 45 threats to more than 21,000 freshwater species finds farming, dams and agricultural runoff dominate, and that freshwater species face higher threat on average than land species.",
+  "primary_tag": "Evolution & ecology",
+  "tags": [
+   "Evolution & ecology"
+  ],
+  "byline": "Christophe Brabant, Laura Pollock, Jonas Geldmann et al. · McGill University",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1016-s0140-6736-26-01949-5",
+  "date": "2026-11-05",
+  "type": "paper",
+  "title": "Prone positioning and high-frequency oscillatory ventilation in early paediatric acute respiratory distress syndrome (PROSpect): an international, two-by-two factorial, response-adaptive, phase 3, randomised controlled trial",
+  "tldr": "A large international randomized trial found no evidence that prone positioning or high-frequency oscillatory ventilation improves ventilator-free days in children with early, moderate-to-severe acute respiratory distress syndrome.",
+  "primary_tag": "Infectious disease",
+  "tags": [
+   "Infectious disease",
+   "Maternal & child health"
+  ],
+  "byline": "Martha A Q Curley, Martin C J Kneyber, Ira M Cheifetz et al.",
+  "hf": null,
+  "venue": "The Lancet"
+ },
+ {
   "id": "2026-11-04-n1",
   "date": "2026-11-04",
   "type": "news",

@@ -1,0 +1,243 @@
+{
+ "date": "2026-11-05",
+ "edition": "weekday",
+ "generated_at": "2026-11-05T13:53:12+00:00",
+ "summary": "A British aid worker with Ebola is flown home as the Congo outbreak passes 10,000 confirmed cases, a new gene-interaction map of the tuberculosis bacterium, a global map of threats to freshwater species, and a large trial finding that prone positioning and oscillating ventilation do not help children with severe lung failure.",
+ "news": [
+  {
+   "id": "2026-11-05-n1",
+   "story_key": "ebola-bundibugyo-british-worker-evacuated",
+   "title": "British health worker with Ebola flown home as the Congo outbreak passes 10,000 cases",
+   "category": "Microbes & Infectious Disease",
+   "published": "2026-11-04T13:18:37-05:00",
+   "tldr": "A British healthcare worker infected in DR Congo is being evacuated to the UK, the first British case of an outbreak that has passed 10,000 confirmed cases and has no approved treatment.",
+   "why_selected": "A new international spread event in the largest Ebola outbreak in DR Congo's history, confirmed by the UK government and tracked by the European Centre for Disease Prevention and Control.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Ebola disease is a severe and often fatal illness caused by a group of related viruses. It spreads through direct contact with the blood, vomit or other body fluids of infected people, or with their bodies after death. The current outbreak, declared by the health ministry of the Democratic Republic of the Congo on 15 May, is caused by Bundibugyo virus, a relative of the better-known Ebola virus. According to the Guardian, there is no approved treatment for Bundibugyo virus, although vaccine trials are under way."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday a UK government spokesperson said a British citizen in DR Congo had tested positive for Ebola and that established procedures had been activated. The patient is a healthcare worker sent by a humanitarian organisation to help with the response. They are in stable condition and were expected to arrive in the UK on Wednesday or Thursday, then travel by specialist ambulance to a high consequence infectious disease unit, according to an official document seen by Reuters. It is the first case in a British national in this outbreak. The European Centre for Disease Prevention and Control (ECDC) reported 10,532 confirmed cases in DR Congo, including 5,126 deaths, as of 2 November, across eight provinces. Kenya has reported nine confirmed cases, two of them fatal, and Nigeria one case, who was evacuated to Switzerland. Uganda's outbreak has ended."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The Guardian describes this as the largest and deadliest Ebola outbreak in DR Congo's history, and the second largest on record. Africa CDC's director general, Jean Kaseya, told the paper the geographic spread is unprecedented, with three African regions affected for the first time. Health and humanitarian workers are exposed because they care for patients, and ECDC notes that all four cases evacuated or imported into the European Union so far involved people working in health or humanitarian roles. The UK government and ECDC both judge the risk to the general public in their regions to be low or very low."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The patient's condition and any contact follow-up in the UK, further case counts from DR Congo, and results from the Bundibugyo vaccine trials."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows"
+    },
+    {
+     "name": "ECDC",
+     "url": "https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11212-0",
+   "title": "Comprehensive mapping of essential-gene interactions in M. tuberculosis",
+   "authors": [
+    "Isaac J. Kresse",
+    "Natalie Y. Sayegh",
+    "Vanisha Munsamy-Govender",
+    "Allen Na",
+    "Samuel Nitz",
+    "Yaprak Ozakman",
+    "Barbara Bosch",
+    "Sebastian Gonzalez Behn-Eschenburg",
+    "Nicholas C. Poulton",
+    "Abhijna K. Reddy",
+    "Joshua Wallach",
+    "Rodrigo Aguilera Olvera",
+    "Anthony Castro",
+    "Heather Kim",
+    "Andrew I. Wong",
+    "S. Nicolai Tornow",
+    "Stephanie A. Bueler",
+    "Wayne W. H. Law",
+    "Michael S. Glickman",
+    "John L. Rubinstein",
+    "Dirk Schnappinger",
+    "Michael A. DeJesus",
+    "Jeremy M. Rock"
+   ],
+   "affiliations": [
+    "Rockefeller University"
+   ],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Microbiology",
+   "tags": [
+    "Microbiology",
+    "Genetics & genomics",
+    "Infectious disease"
+   ],
+   "tldr": "Researchers built the largest map yet of how essential genes interact in the tuberculosis bacterium, finding nearly 6,500 interactions that could guide new drug targets and antibiotic combinations.",
+   "why_selected": "A foundational resource for a pathogen that kills over a million people a year, published in Nature and described in a university release.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Tuberculosis (TB) is caused by the bacterium Mycobacterium tuberculosis (Mtb) and claims more than a million lives each year. Treatment needs several antibiotics taken for months, and drug-resistant infections take longer still. Better regimens require understanding the bacterium, yet many of its essential genes have functions nobody knows."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Scientists have long known which Mtb genes are essential for survival, but not why they are essential. The usual tool, CRISPR gene editing, cuts a gene to switch it off. For an essential gene that simply kills the bacterium, leaving nothing to study. That makes it hard to ask how two essential genes work together."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team used CRISPR interference (CRISPRi), a version of the technology that does not cut DNA but turns a gene's activity down, like a dimmer instead of a light switch. Because the bacterium stays alive, essential genes can be studied. They modified the system to dim two genes at once. Then they ran genetic interaction mapping. First each gene is dimmed alone, and the growth effect is recorded. Then both are dimmed together. If the double effect is better or worse than the single effects predict, the two genes are functionally linked, much as two workers on the same task show their connection when removing both hurts more than removing either one. They tuned the method in Mycobacterium smegmatis, a related model bacterium, before moving to Mtb."
+    },
+    {
+     "heading": "Results",
+     "body": "In Mtb they examined interactions among 762 genes and identified nearly 6,500 genetic interactions, including thousands not seen before. The map offers clues to the roles of poorly understood genes and points to interactions between drug targets that could suggest more effective antibiotic combinations."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors describe it as the first comprehensive map of interactions among essential genes in a pathogen, a resource for choosing drug targets and pairings. The main caveat is that this is a laboratory map in bacteria. Whether the suggested combinations work in infected animals or patients has not yet been shown, and this summary rests on the university's release rather than the full paper."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11212-0",
+    "doi": "https://doi.org/10.1038/s41586-026-11212-0"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aeb7910",
+   "title": "The global geography of threats to freshwater biodiversity",
+   "authors": [
+    "Christophe Brabant",
+    "Laura Pollock",
+    "Jonas Geldmann",
+    "Mette Bendixen",
+    "Lise Comte",
+    "Harith Farooq",
+    "Katherine Hébert",
+    "Bernhard Lehner",
+    "Catherine A. Sayer",
+    "Lars Lønsmann Iversen"
+   ],
+   "affiliations": [
+    "McGill University"
+   ],
+   "announced": "2026-10-29T00:00:00-04:00",
+   "primary_tag": "Evolution & ecology",
+   "tags": [
+    "Evolution & ecology"
+   ],
+   "tldr": "A global analysis of 45 threats to more than 21,000 freshwater species finds farming, dams and agricultural runoff dominate, and that freshwater species face higher threat on average than land species.",
+   "why_selected": "A Science paper that gives conservationists the first freshwater-specific global threat maps, comparable with those for land vertebrates.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Freshwater habitats cover less than 4% of Earth's surface, yet nearly a third of vertebrate species live in them, according to coverage in Courthouse News. Despite that, global conservation planning often pays freshwater less attention than land. Managers lack a clear picture of where freshwater species are under pressure and which human activities are responsible."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Freshwater species have largely been left out of earlier large-scale threat research, or were included only through what they provide to people rather than their own conservation needs, the researchers say. A mapping method already existed for terrestrial vertebrates, which the team applied to freshwater life, allowing a direct comparison across land and water for the first time."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team took the International Union for Conservation of Nature (IUCN) Red List, which records which threats affect each assessed species. They used it for 45 threats and more than 21,000 species in five groups: mammals, reptiles, fish, amphibians and odonates, the dragonflies and damselflies. For each group and threat they produced a map, 225 in all, and combined them into one cumulative index. For any small sub-watershed, the maps give the probability that a species living there is affected by a particular threat, which turns scattered species records into a geographic picture of pressure."
+    },
+    {
+     "heading": "Results",
+     "body": "Farming, dams and agricultural runoff emerged as the biggest threats globally, and Europe and Northwest Africa as the hardest-hit regions. Europe is most affected by urban, agricultural and industrial pollution; Northwest Africa by pollution, damming and intensive water use. Siberia and northern Canada showed milder threat levels. Freshwater species on average face higher threat impacts than land-restricted species. Amphibians and dragonflies are mostly threatened by agriculture, reptiles and mammals by hunting."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The maps give conservation planners a freshwater baseline showing where different actions, such as limiting fertilizer runoff or changing dam operations, may matter most. A caveat is that the index rests on Red List threat records, which are only as complete as the assessments behind them, and this summary draws on press accounts rather than the paper itself."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aeb7910",
+    "doi": "https://doi.org/10.1126/science.aeb7910"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1016-s0140-6736-26-01949-5",
+   "title": "Prone positioning and high-frequency oscillatory ventilation in early paediatric acute respiratory distress syndrome (PROSpect): an international, two-by-two factorial, response-adaptive, phase 3, randomised controlled trial",
+   "authors": [
+    "Martha A Q Curley",
+    "Martin C J Kneyber",
+    "Ira M Cheifetz",
+    "Michele Kong",
+    "Sidharth Mahapatra",
+    "Adam J Schwarz",
+    "Suwannee Phumeetham",
+    "Katherine Irby",
+    "Natalie Napolitano",
+    "Onella S Dawkins-Henry",
+    "Emily E Birch",
+    "Corrine F Elliott",
+    "Lindsay R Berry",
+    "Kevin J Downes",
+    "Aruna Natarajan",
+    "Michelle A Detry",
+    "Kert Viele",
+    "Todd L Graves",
+    "Michael Matthay",
+    "Lisa A Asaro",
+    "David Wypij",
+    "PROSpect Study Investigators",
+    "Paediatric Acute Lung Injury and Sepsis Investigators Network"
+   ],
+   "affiliations": [],
+   "announced": "2026-10-31T00:00:00-04:00",
+   "primary_tag": "Infectious disease",
+   "tags": [
+    "Infectious disease",
+    "Maternal & child health"
+   ],
+   "tldr": "A large international randomized trial found no evidence that prone positioning or high-frequency oscillatory ventilation improves ventilator-free days in children with early, moderate-to-severe acute respiratory distress syndrome.",
+   "why_selected": "A definitive, NIH-funded pediatric intensive care trial in The Lancet that tests two widely used practices borrowed from adult care.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Paediatric acute respiratory distress syndrome (PARDS) is a form of severe lung failure in children that requires a ventilator. The goal of ventilation is to supply enough oxygen while limiting the lung injury that the ventilator itself can cause. Doctors have lacked trial evidence on which strategies help children most."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Two strategies were in use. Prone positioning, lying the patient face down, may spread ventilation more evenly across the lungs. High-frequency oscillatory ventilation (HFOV) delivers very small, rapid breaths. In adults, the PROSEVA trial found 28-day mortality of 16.0% with prolonged prone positioning versus 32.8% without. An earlier paediatric prone trial stopped for futility after 102 participants, with mean ventilator-free days of 15.6 prone and 15.8 supine. Observational data linked early HFOV to longer ventilation, and a guideline panel could not recommend for or against either method for lack of paediatric evidence."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The PROSpect trial tested both treatments at once in a two-by-two factorial design, so each child could be assigned to prone or supine positioning and to HFOV or conventional ventilation. Allocation was response-adaptive, meaning the odds of assignment shifted as results accumulated. The trial was open-label and funded by the US National Heart, Lung, and Blood Institute. Children from two weeks to under 21 years of age were enrolled within 96 hours of intubation. Fifty-four intensive care units in 15 countries enrolled participants between May 2019 and January 2026. The main outcome was ventilator-free days through day 28, with a benefit of two days considered meaningful."
+    },
+    {
+     "heading": "Results",
+     "body": "The authors report no evidence that prone positioning or HFOV improved ventilator-free days compared with supine positioning and conventional ventilation. They conclude that routine use of these strategies as first-line treatment in early moderate-to-severe PARDS is not recommended. I did not read the full paper, so effect sizes, confidence intervals and enrolment totals are not given here."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result suggests that two interventions adopted largely on physiological reasoning and adult data do not shorten ventilation in children, and it spares clinicians extra bedside work. A caveat is that the conclusion concerns these strategies as first-line treatments in early disease, and the full paper's effect sizes were not available to me."
+    }
+   ],
+   "links": {
+    "paper": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01949-5/fulltext?rss=yes",
+    "doi": "https://doi.org/10.1016/S0140-6736(26)01949-5"
+   },
+   "signals": {
+    "venue": "The Lancet",
+    "tier": "flagship"
+   }
+  }
+ ]
+}
