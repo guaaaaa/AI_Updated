@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Wed, 04 Nov 2026 12:17:43 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 12:18:27 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Midterm results make the data-center backlash a political force that could slow AI buildout</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2026-11-05-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2026-11-05-n1</guid>
+    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
+    <category>AI / Policy &amp; Legal</category>
+    <description>US voters backed candidates and ballot measures that restrict data centers, and with Democrats winning Congress, new limits on the buildout behind AI are now more likely. (The Verge, TechCrunch, Wired)</description>
+  </item>
+  <item>
+    <title>Moonshot AI releases the weights of Kimi K3.1 Pro, a 3T-class agentic model</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2026-11-05-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2026-11-05-n2</guid>
+    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
+    <category>AI / Open Source</category>
+    <description>Moonshot AI published open weights for Kimi K3.1 Pro, a natively multimodal agentic model with a one-million-token context window, post-trained from Kimi K3 with large-scale reinforcement learning. (Moonshot AI (Hugging Face model card))</description>
+  </item>
+  <item>
+    <title>IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.03424</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.03424</guid>
+    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
+    <category>AI / RSI</category>
+    <description>IdeaTaste scores LLM-written research proposals against what a field actually published later, finding models match only about 18% of the human level on ideas. (Shanshan Zhong, Chen Xu, Jingjie Ning et al. · Carnegie Mellon University, Mohamed bin Zayed University of Artificial Intelligence)</description>
+  </item>
+  <item>
+    <title>From Pixels to Actions - Towards Native Vision-Language-Action Policies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.06918</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.06918</guid>
+    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>NEO-VLA drops the separate vision encoder from a robot policy and lets its action module read visual features from many backbone layers, beating encoder-based baselines on LIBERO. (Weichen Fan, Haiwen Diao, Penghao Wu et al. · MMLab@NTU)</description>
+  </item>
+  <item>
+    <title>You don't need long context</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.05306</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.05306</guid>
+    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>NVIDIA researchers show frontier models keep most of their accuracy on long-horizon and long-input tasks when forced to work in short contexts through frequent compaction. (Peter Belcak, Saurav Muralidharan, Jindong Jiang et al. · NVIDIA)</description>
+  </item>
+  <item>
+    <title>FrontierPhysics: Evaluating Agents for End-to-End Physics Research</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.06910</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.06910</guid>
+    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>FrontierPhysics has 42 physicists turn their own research into 56 end-to-end tasks, and no AI agent configuration passes more than 46 of 168 attempts. (Bingran You, Wenjun Ke, Ria Rosenauer et al. · Multi-institution team of physicists (26 institutions))</description>
+  </item>
+  <item>
+    <title>SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.02846</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.02846</guid>
+    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>SpecOPD trains speculative-decoding draft models on their own sampled outputs in parallel branches, lifting accepted-token length by up to 41% and training throughput 16x. (Tianyu Liu, Jun Zhang, Wenjie Huang et al. · Qwen Business Unit of Alibaba, University of Science and Technology of China, Zhejiang University)</description>
+  </item>
   <item>
     <title>Google will switch off Search for schools that reject its AI tools</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2026-11-04-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Mon, 02 Nov 2026 05:22:21 +0000</pubDate>
     <category>AI / Interpretability</category>
     <description>A benchmark built on invented facts shows that data attribution fails because evidence in a few tokens gets averaged away; scoring with log-odds gradients and only top tokens boosts recall by 35 to 72 points. (Steven Yu, Sheng-Yu Wang, Kimia Hamidieh et al. · Northeastern University, MIT)</description>
-  </item>
-  <item>
-    <title>Mistral releases the weights of Mistral Large 4, a trillion-parameter model aimed at coding and cyber defense</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2026-10-30-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2026-10-30-n1</guid>
-    <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Mistral released the weights of an improved Mistral Large 4 ("Le Chonk"), a 1-trillion-parameter mixture-of-experts model that it says now leads open-weight models in agentic coding and defensive cybersecurity. (Mistral, Hugging Face, Wired)</description>
-  </item>
-  <item>
-    <title>Alphabet loses about $500 billion in market value as AI spending turns its cash flow negative</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2026-10-30-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2026-10-30-n2</guid>
-    <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
-    <category>AI / Earnings &amp; Markets</category>
-    <description>Alphabet's quarter showed Google Cloud revenue doubling to $30.7 billion, but $51.4 billion of capital spending turned free cash flow negative, and its shares fell 12.6% on Thursday, erasing about $500 billion. (Alphabet, Ars Technica, Fox Business)</description>
-  </item>
-  <item>
-    <title>Proving and Improving the Platonic Representation Hypothesis with JEPAs</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.39302</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.39302</guid>
-    <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
-    <category>AI / Theory</category>
-    <description>Balestriero and LeCun prove that encoders trained separately on different modalities converge to one representation, up to a rotation, if their positive pairs are two views of one scene, a condition next-token prediction fails. (Randall Balestriero, Yann LeCun · Brown University, New York University, AMI Labs)</description>
-  </item>
-  <item>
-    <title>Training Foundation Models with a Single Algorithm</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.40564</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.40564</guid>
-    <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Researchers at CMU and Johns Hopkins recast reinforcement learning as maximum-likelihood fitting to a model's own successful outputs, so pretraining, fine-tuning and RL become one algorithm whose only knob is the data mixture. (Yuda Song, Alvin Zhang, Fahim Tajwar et al. · Carnegie Mellon University, Johns Hopkins University, Aurora Innovation)</description>
-  </item>
-  <item>
-    <title>Training language models in simulation for psychiatric intake</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.40476</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.40476</guid>
-    <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
-    <category>AI / AI for Science &amp; Health</category>
-    <description>Google DeepMind and collaborators trained Gemini 3.1 Flash-Lite with multi-turn RL against simulated psychiatric patients; in a double-blind study with psychiatrists playing patients, it beat its base model in 76.7% of matched cases. (Samuel Schmidgall, Tim Strother, Alex Bijamov et al. · Google DeepMind, Google Research, Stanford University)</description>
-  </item>
-  <item>
-    <title>L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.40614</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.40614</guid>
-    <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
-    <category>AI / World Models</category>
-    <description>L3G-World gives a video world model a compact 3D memory of Gaussians that store video-latent features, keeping explored scenes consistent on revisits while generating in real time at about 9 frames per second. (Jinhyeok Choi, JoungBin Lee, Jongmin Lee et al. · KAIST AI, Ewha Womans University, KAIST Urban AI Institute)</description>
-  </item>
-  <item>
-    <title>Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.38681</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-30/2610.38681</guid>
-    <pubDate>Mon, 02 Nov 2026 04:57:19 +0000</pubDate>
-    <category>AI / Reasoning</category>
-    <description>WISD improves reasoning models with no labels or stronger teacher by training them toward tokens the original model prefers over a deliberately quantized or pruned copy of itself, adding 4 to 5.5 points on average. (Yecheng Wu, Song Han, Han Cai · Massachusetts Institute of Technology, NVIDIA)</description>
   </item>
 </channel>
 </rss>

@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-05T12:03:08+00:00",
+ "updated": "2026-11-05T12:18:32+00:00",
  "domain": "ai",
  "days": [
+  {
+   "date": "2026-11-05",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": false
+  },
   {
    "date": "2026-11-04",
    "edition": "weekday",
@@ -223,7 +230,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 26
+   "n": 33
   },
   {
    "month": "2026-10",
@@ -269,24 +276,24 @@
   ]
  },
  "tag_counts": {
-  "Robotics": 24,
-  "Agents": 59,
-  "Evaluation & Benchmarks": 20,
+  "RSI": 13,
+  "Evaluation & Benchmarks": 22,
+  "Robotics": 25,
+  "Multimodal": 18,
+  "Architectures": 28,
+  "Efficiency": 42,
+  "Agents": 61,
+  "AI for Science & Health": 6,
+  "Post-training": 33,
   "Optimization": 3,
   "Pre-training & Data": 22,
   "Theory": 10,
   "Retrieval & Memory": 9,
-  "Multimodal": 17,
   "Reinforcement Learning": 30,
-  "Post-training": 32,
   "Generative Models": 28,
-  "Efficiency": 40,
   "World Models": 22,
   "LLMs": 10,
-  "RSI": 12,
   "Reasoning": 14,
-  "Architectures": 26,
-  "AI for Science & Health": 5,
   "Security": 1,
   "Safety & Alignment": 6,
   "AI for Math": 4,
@@ -307,7 +314,8 @@
   "People"
  ],
  "category_counts": {
-  "Policy & Legal": 6,
+  "Policy & Legal": 7,
+  "Open Source": 1,
   "Safety & Security": 10,
   "Research": 4,
   "Business & Funding": 10,

@@ -3,12 +3,12 @@
  "start": "2026-11-02",
  "end": "2026-11-07",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [
   {
    "id": "2611.01860",
    "title": "Advances in Agentic Computer Graphics",
-   "hf": 127,
+   "hf": 138,
    "org": "University of Texas at Austin",
    "featured": null
   },
@@ -34,6 +34,13 @@
    "featured": "2026-11-03"
   },
   {
+   "id": "2611.00617",
+   "title": "Words Caught in the Heart: Simulating Person-Specific Expression for Self-Opaque Clients in Psychotherapy",
+   "hf": 74,
+   "org": "CLAIN-WHU",
+   "featured": null
+  },
+  {
    "id": "2611.03178",
    "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
    "hf": 73,
@@ -43,21 +50,14 @@
   {
    "id": "2611.02737",
    "title": "MoviEdit: Long-form Multi-Shot Video Editing Made Easy",
-   "hf": 53,
+   "hf": 71,
    "org": "Adobe",
-   "featured": null
-  },
-  {
-   "id": "2611.00617",
-   "title": "Words Caught in the Heart: Simulating Person-Specific Expression for Self-Opaque Clients in Psychotherapy",
-   "hf": 51,
-   "org": "CLAIN-WHU",
    "featured": null
   },
   {
    "id": "2611.04916",
    "title": "Behind Video Generation: Observations and Insights on Multimodal Understanding from Kling",
-   "hf": 47,
+   "hf": 63,
    "org": "KlingAI Research",
    "featured": null
   }
@@ -65,8 +65,14 @@
  "stories": [
   {
    "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
-   "outlets": 9,
+   "outlets": 14,
    "date": "2026-11-01",
+   "covered": "2026-11-05-n1"
+  },
+  {
+   "title": "Meta’s Rating Outlook Cut to Negative by S&P on AI Spending",
+   "outlets": 8,
+   "date": "2026-10-30",
    "covered": null
   },
   {
@@ -76,9 +82,9 @@
    "covered": null
   },
   {
-   "title": "Meta’s Rating Outlook Cut to Negative by S&P on AI Spending",
-   "outlets": 6,
-   "date": "2026-10-30",
+   "title": "OpenAI taps former US army secretary Dan Driscoll for national security role",
+   "outlets": 5,
+   "date": "2026-11-03",
    "covered": null
   },
   {
@@ -100,12 +106,6 @@
    "covered": "2026-11-02-n1"
   },
   {
-   "title": "OpenAI taps former US army secretary Dan Driscoll for national security role",
-   "outlets": 4,
-   "date": "2026-11-03",
-   "covered": null
-  },
-  {
    "title": "OpenAI slashes funding target by $10bn as tech anxieties mount",
    "outlets": 3,
    "date": "2026-10-31",
@@ -113,7 +113,7 @@
   }
  ],
  "featured": {
-  "news": 4,
-  "papers": 15
+  "news": 6,
+  "papers": 20
  }
 }

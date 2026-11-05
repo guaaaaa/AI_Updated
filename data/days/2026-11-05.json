@@ -1,0 +1,465 @@
+{
+ "date": "2026-11-05",
+ "edition": "weekday",
+ "generated_at": "2026-11-05T12:18:27+00:00",
+ "summary": "Voters turn data centers into an election issue, Moonshot opens Kimi K3.1 Pro, and papers question long context, robot vision encoders and AI research taste.",
+ "news": [
+  {
+   "id": "2026-11-05-n1",
+   "story_key": "midterms-data-center-backlash",
+   "title": "Midterm results make the data-center backlash a political force that could slow AI buildout",
+   "category": "Policy & Legal",
+   "published": "2026-11-04T11:05:00-05:00",
+   "tldr": "US voters backed candidates and ballot measures that restrict data centers, and with Democrats winning Congress, new limits on the buildout behind AI are now more likely.",
+   "why_selected": "Four-plus outlets reported it, and it changes the siting, cost and pace of AI compute in the United States.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Data centers, the large facilities that house the computers powering AI, have become a central pillar of the AI industry's growth plans. Over the past year, local fights over their electricity use, water use, noise and tax breaks spread across the country. Supporters argue they are essential for national security and for staying ahead of China, while critics point to costs passed on to ratepayers and pollution from on-site gas turbines."
+    },
+    {
+     "heading": "What happened",
+     "body": "In the November 3 midterms, data centers were on the ballot directly and indirectly. The Verge reports that 45 local ballot measures dealt with them, and by Wednesday morning 33 of the results restricted development. In NBC News exit polling, 76 percent of voters said they opposed data centers in their community. Democrats Gina Hinojosa in Texas and Keisha Lance Bottoms in Georgia, both of whom campaigned for moratoriums, won governorships, and Sherrod Brown won back an Ohio Senate seat after calling his opponent the face of data centers. TechCrunch reports that Democrats now control Congress."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Texas and Georgia are two of the largest hubs for planned projects, so a pause or the end of favorable tax breaks there could affect hundreds of projects. TechCrunch lists likely next steps: more construction moratoriums, rules requiring developers to pay for their own grid upgrades, and renewed attention to a proposed nationwide moratorium from Sen. Bernie Sanders and Rep. Alexandria Ocasio-Cortez, which would still face a possible veto. Goldman Sachs predicts construction delays in states such as Georgia and Texas. The Verge cautions that it is hard to draw a direct line from the backlash to any single result."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch whether new governors act on moratorium pledges, whether Congress takes up bills on grid costs, and how AI companies change their local siting and power-payment commitments."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/"
+    },
+    {
+     "name": "Wired",
+     "url": "https://www.wired.com/story/the-results-are-in-voters-hate-data-centers/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-n2",
+   "story_key": "moonshot-kimi-k3-1-pro-open-weights",
+   "title": "Moonshot AI releases the weights of Kimi K3.1 Pro, a 3T-class agentic model",
+   "category": "Open Source",
+   "published": "2026-11-04T10:30:00-05:00",
+   "tldr": "Moonshot AI published open weights for Kimi K3.1 Pro, a natively multimodal agentic model with a one-million-token context window, post-trained from Kimi K3 with large-scale reinforcement learning.",
+   "why_selected": "An open-weight frontier-scale release that drew 552 points on Hacker News and is benchmarked against the leading closed models.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Moonshot AI is the developer of the Kimi model family. Open-weight models, whose parameters anyone can download, have become the main way that labs outside the largest US companies compete on coding and agentic work. Kimi K3 was the previous generation, and K3.1 is a refinement of it rather than a new base model."
+    },
+    {
+     "heading": "What happened",
+     "body": "Moonshot AI published Kimi K3.1 Pro on Hugging Face. Its model card describes it as an open-weight, natively multimodal agentic model and its most capable 3T-class model to date, meaning on the order of three trillion parameters. It is the first model in the K3.1 series and was post-trained from Kimi K3 with large-scale joint reinforcement learning across hundreds of downstream domains. It has a one-million-token context window. One architectural change is stated: the full-attention Gated MLA layers of K3 were replaced with Gated DeepSeek Sparse Attention layers, aimed at more efficient long-context modeling. The model is released under the Kimi K3.1 Pro License, whose terms the card does not summarize. The card reports results on coding, terminal, computer-use, browsing, finance, legal and security benchmarks, comparing against GPT-6 Astra, Claude Opus 5.5, Claude Fable 5.1, DeepSeek-V4.1-Flash-1017 and GLM-5.3."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For teams that need to run a strong agentic model on their own infrastructure, a model that is claimed to compete with closed systems on agent benchmarks widens the options. The sparse-attention swap also signals that cheaper long-context serving is a priority for open models. These are the developer's own results, mostly obtained with its chosen agent harnesses, and independent reproduction has not yet been reported."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch for independent benchmark runs, the practical hardware needed to serve a model of this size, and whether the license terms limit commercial use."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Moonshot AI (Hugging Face model card)",
+     "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.03424",
+   "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
+   "authors": [
+    "Shanshan Zhong",
+    "Chen Xu",
+    "Jingjie Ning",
+    "Zhengzhong Liu",
+    "Aviral Kumar",
+    "Chenyan Xiong"
+   ],
+   "affiliations": [
+    "Carnegie Mellon University",
+    "Mohamed bin Zayed University of Artificial Intelligence"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "IdeaTaste scores LLM-written research proposals against what a field actually published later, finding models match only about 18% of the human level on ideas.",
+   "why_selected": "A clever, future-grounded test of AI research taste that locates the weakness in turning directions into concrete approaches.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "AI scientists increasingly decide what research gets done, yet their research taste, the judgment of what to read and which problems and methods to pursue, is poorly measured. Judging taste needs a reference for which choices were worth making."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work rates single ideas through expert scores, benchmarks with fixed targets, or model judges, and such judgments are not yet reliable. Population studies show generated ideas are similar to each other but not whether they resemble what human researchers choose."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of it as asking a model to predict a field's future. The authors freeze the literature through 2025, let LLM agents write proposals from that snapshot, and compare them with papers the same community published in 2026. The comparison runs at two levels: the prior work a document cites, and the idea it states, summarized as contribution type, problem, motivation, approach and research plan. At each level, matching measures overlap with the human papers and diversity measures variety. The benchmark covers four areas: machine learning systems, code generation, world models and automated research. Eleven reviewers also rated 192 documents without knowing the source."
+    },
+    {
+     "heading": "Results",
+     "body": "Across six models, agents reach about 26% of the human level on citation matching and 18% on idea matching, and no population reaches half the human level on either. They match the problems and motivations of human papers far more often than the approaches and research plans. Blinded reviewers rated AI proposals lower on expected success (50.39 versus 70.70) and judged 86% of AI reviews as AI-written versus 39% for human papers."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The bottleneck is less knowing what to work on than deciding how to pursue it. Richer context and larger populations did not close the gap. The caveat is that matching a community's later papers is a proxy for taste, and the benchmark currently ends in August 2026."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.03424",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.03424",
+    "code": "https://github.com/cxcscmu/IdeaTaste"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 18,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 47,
+    "notable_authors": [
+     "Aviral Kumar"
+    ],
+    "org": "Carnegie Mellon University School of Computer Science"
+   }
+  },
+  {
+   "id": "2611.06918",
+   "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
+   "authors": [
+    "Weichen Fan",
+    "Haiwen Diao",
+    "Penghao Wu",
+    "Siyuan Hu",
+    "Ziqi Huang",
+    "Tianqi Liu",
+    "Mingze Sun",
+    "Ziyi Wang",
+    "Zhongang Cai",
+    "Hanming Deng",
+    "Quan Wang",
+    "Lei Yang",
+    "Lewei Lu",
+    "Fangzhou Hong",
+    "Zhaoxi Chen",
+    "Dahua Lin",
+    "Ziwei Liu"
+   ],
+   "affiliations": [
+    "MMLab@NTU"
+   ],
+   "announced": "2026-11-04T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Multimodal",
+    "Architectures"
+   ],
+   "tldr": "NEO-VLA drops the separate vision encoder from a robot policy and lets its action module read visual features from many backbone layers, beating encoder-based baselines on LIBERO.",
+   "why_selected": "A simple architectural change with controlled comparisons and an interesting finding that action-critical signals peak in early layers.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Vision-language-action models turn camera images and an instruction into robot actions. Manipulation often depends on fine detail such as local geometry, edges and depth, which may be lost as images are compressed."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most VLAs pass images through a pretrained encoder such as CLIP, SigLIP or DINOv2 and hand only the final features to the language backbone and action model. That fixes a single visual endpoint and hides the intermediate computation that produced it."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Imagine reading a document only through a summary versus being able to look at the pages themselves. NEO-VLA has no separate vision encoder. A lightweight convolutional layer turns each 32 by 32 pixel patch into a token, and image and language tokens are processed together by a 2B-parameter, 40-layer backbone. A flow-matching action expert, a module that generates action chunks by iterative denoising, then reads cached keys and values from many backbone layers rather than only the last. Reading depth thus becomes a design choice that can be tested. The model is pretrained on nine public robot datasets with about 2.2 million episodes."
+    },
+    {
+     "heading": "Results",
+     "body": "With the backbone frozen, NEO-VLA averages 90.9% success on LIBERO versus 79.5% for Qwen3-VL-2B and 84.5% for Gemma-3-4B, and 95.3% after full fine-tuning. Layer maps that skip early layers do worse: 86.7% versus 90.9% when frozen. On LIBERO-plus perturbations it scores 89.7% overall, with 94.5% under camera shifts."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Robot policies may gain from keeping low-level visual information available instead of only semantic summaries. Simply routing encoder features into the Qwen3-VL expert did not help, lowering frozen accuracy from 79.5% to 64.9%. The authors note that model differences prevent attributing all gains to encoder removal, and the policy still struggles when spatial layout or task goals change."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.06918",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.06918",
+    "code": "https://github.com/EvolvingLMMs-Lab/NEO/tree/main/VLAKit"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 12,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 50,
+    "notable_authors": [
+     "Dahua Lin"
+    ],
+    "org": "MMLab@NTU"
+   }
+  },
+  {
+   "id": "2611.05306",
+   "title": "You don't need long context",
+   "authors": [
+    "Peter Belcak",
+    "Saurav Muralidharan",
+    "Jindong Jiang",
+    "Yonggan Fu",
+    "Wonmin Byeon",
+    "Hanrong Ye",
+    "Ryan Angilly",
+    "Ali Taghibakhshi",
+    "Shih-Yang Liu",
+    "Siru Ouyang",
+    "Greg Heinrich",
+    "Pavlo Molchanov"
+   ],
+   "affiliations": [
+    "NVIDIA"
+   ],
+   "announced": "2026-11-03T20:00:00-05:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Agents",
+    "Architectures"
+   ],
+   "tldr": "NVIDIA researchers show frontier models keep most of their accuracy on long-horizon and long-input tasks when forced to work in short contexts through frequent compaction.",
+   "why_selected": "A provocative, well-supported challenge to the race for ever-longer context windows, with large cost implications.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Generating a token costs more the deeper it sits in the context, yet retail prices are quoted per million tokens regardless of context length. Models keep growing context windows, so it matters whether long contexts are actually necessary."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Long context is justified by two workloads: long-horizon tasks, where an agent's history accumulates over many actions, and long-input tasks, where the source material itself is huge. The default is to put everything into the window."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Instead of remembering everything, keep a short working context. The authors test three regimes. End-of-conversation compaction summarizes the history whenever it reaches a threshold such as 16K to 48K tokens. For long inputs, the model reads selectively from files with Bash tools. The extreme case, single-action compaction, takes one action per context and carries only a written summary of state forward. From this they sketch semantic state space models, which keep an explainable language state between turns instead of a hidden neural state."
+    },
+    {
+     "heading": "Results",
+     "body": "For Claude Opus 4.5 and GPT 5.6 Sol on long-horizon benchmarks, accuracy changes range from minus 3.7 to plus 5.6 points and from minus 3.3 to plus 4.4, with estimated cost savings of 2.2x to 8.8x and 2.4x to 5.0x. On long-input tasks, selective reading changes accuracy by minus 0.4 to plus 40.0 points for Opus. Single-action compaction on SWE-bench Verified reaches 82.4% for GPT 5.6 Sol, 2.0 points below its baseline."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If these results hold, long-context capacity may matter less than good state management, cutting serving cost. The authors acknowledge tasks can be built where compaction must fail, and costs are estimates rather than billed prices."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.05306",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.05306"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 6,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 9,
+    "org": "NVIDIA"
+   }
+  },
+  {
+   "id": "2611.06910",
+   "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+   "authors": [
+    "Bingran You",
+    "Wenjun Ke",
+    "Ria Rosenauer",
+    "Bo Liu",
+    "Wenbo Chen",
+    "Min Chen",
+    "Shuqi Xu",
+    "Yue Ma",
+    "Jiechao Feng",
+    "Bo Chen",
+    "Xiangkai Sun",
+    "Jiarui Liu",
+    "Jinen Guo",
+    "Zeyu Zhou",
+    "Xu Huang",
+    "Zhuohan Li",
+    "Haoyu Li",
+    "Heguang Lin",
+    "Lijie Ding",
+    "Yadong Zeng",
+    "Kangqi Zhang",
+    "Xinge Liu",
+    "Hanwen Liu",
+    "Zhenghong Li",
+    "Alexander von Recum",
+    "Yuchen Zhu",
+    "Felix Schwarzfischer",
+    "Yizhou Zhao",
+    "Jicheng Wang",
+    "Binxu Li",
+    "Qian Yu",
+    "Chan Li",
+    "Cheng Dai",
+    "Di Wang",
+    "Haoyu Zhang",
+    "Jiankai Sun",
+    "Kaituo Feng",
+    "Mian Qin",
+    "Ruihong Yin",
+    "Yiqun Luo",
+    "Weiwei Wu",
+    "Shihong Pan",
+    "Tsung Yeh Hsieh",
+    "Xiao Huang",
+    "Yan Zhang",
+    "Sihan Li",
+    "Zirui Ren",
+    "Zengji Tu",
+    "Kyoung Whan Choe",
+    "Ke Sun",
+    "Vincenzo Galia",
+    "Vaisakhi Mishra",
+    "Jiashu He",
+    "Hongyang Wang",
+    "Zhiheng Yang",
+    "Shubham Gaur",
+    "Yifan Gu",
+    "Shuyi Wang",
+    "Zihao Zuo",
+    "Steven Dillmann",
+    "Yiyou Sun",
+    "Xinyang Han",
+    "Hanchung Lee",
+    "Molei Tao",
+    "Yue Zhao",
+    "Shilong Liu",
+    "Yuchen Wu",
+    "Xuandong Zhao",
+    "Xiangyi Li",
+    "Florian Brand",
+    "Gerbrand Ceder",
+    "Hartmut Haeffner"
+   ],
+   "affiliations": [
+    "Multi-institution team of physicists (26 institutions)"
+   ],
+   "announced": "2026-11-04T20:00:00-05:00",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Agents",
+    "AI for Science & Health"
+   ],
+   "tldr": "FrontierPhysics has 42 physicists turn their own research into 56 end-to-end tasks, and no AI agent configuration passes more than 46 of 168 attempts.",
+   "why_selected": "A rare benchmark that grades open-ended research quality, with a useful failure analysis showing reasoning rigor rather than physics knowledge is the main gap.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents are starting to do real scientific work, but physics benchmarks mostly test fixed questions, isolated subtasks, or reproductions of papers where the answer is already known."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Research-level benchmarks tend to saturate quickly because answers are closed-ended. Paper-reproduction benchmarks give agents the original publication, which largely specifies the question and solution in advance."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Imagine handing an agent the brief a principal investigator would give a new student. Each of 56 tasks, accepted from 182 submissions, comes from research a physicist personally conducted over at least two weeks. The agent must review literature, plan, run computations or experiments, and submit numerical outputs plus a manuscript. Grading combines a deterministic verifier that checks numbers with expert-written rubrics scored by a reviewer agent. Blocker criteria are pass or fail gates, so a task passes only if the verifier and every blocker succeed. Tasks passed domain-expert review and failure-mode analysis to reduce false failures."
+    },
+    {
+     "heading": "Results",
+     "body": "Across 22 models in 26 configurations, with three attempts per task, overall pass rates stay below 30%. The best, Claude Opus 5.5 in Claude Code, passes 46 of 168 rollouts, or 27.4%. Manual review of 168 GPT-6 Astra rollouts found failures came mostly from lack of rigorous reasoning (48%), missing physical intuition (34%) and weak literature synthesis (27%), not physics mistakes. Authors' own manuscripts score 96.2% on the rubrics."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It gives a measurable target for AI-for-science agents and points training at self-verification rather than domain facts. Caveats: the failure analysis covers only one model family, the rubrics involve subjective judgment, and the benchmark is version 0.1."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.06910",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.06910"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 4,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 27
+   }
+  },
+  {
+   "id": "2611.02846",
+   "title": "SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding",
+   "authors": [
+    "Tianyu Liu",
+    "Jun Zhang",
+    "Wenjie Huang",
+    "Yuhao Shen",
+    "Tianqi Xu",
+    "Xinyue Hao",
+    "Hongyaoxing Gu",
+    "Xuyang Liu",
+    "Baolin Zhang",
+    "Yating Zhu",
+    "Shuang Ge",
+    "Jun Dai",
+    "Lei Chen",
+    "Yue Li",
+    "Mingchen Wan"
+   ],
+   "affiliations": [
+    "Qwen Business Unit of Alibaba",
+    "University of Science and Technology of China",
+    "Zhejiang University"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Post-training"
+   ],
+   "tldr": "SpecOPD trains speculative-decoding draft models on their own sampled outputs in parallel branches, lifting accepted-token length by up to 41% and training throughput 16x.",
+   "why_selected": "Removes a real systems bottleneck in training faster draft models, with evidence across three target models and attention types.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Speculative decoding speeds up generation by letting a small drafter propose tokens that the large target model verifies in parallel. Speedup depends on acceptance length, the number of tokens accepted per verification round."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Drafters are usually trained by supervised fine-tuning on fixed target responses. On-policy distillation, which trains on the drafter's own samples, can do better, but it collects data through sequential draft-and-verify rounds, leaving GPUs mostly idle."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors observe that supervising a draft block needs only its reference prefix and the drafter's own sampled history, not a full verified response. So they pick anchor positions in a pre-collected response, have the current drafter sample a short continuation at each anchor, and arrange these as a tree hanging off a shared trunk. The target scores all branches in one pass, reusing the trunk's computation. Tree attention masks handle full attention, with matching mechanisms for sparse and linear attention layers. The drafter is trained with a loss that directly targets acceptance length."
+    },
+    {
+     "heading": "Results",
+     "body": "Tested on 8B, 27B and 125B targets with dialogue, coding, math and agentic tasks, mean acceptance length improves by up to 41.45% over the original drafters, with gains of 3.48% on 27B and 5.01% on 125B. Against sequential on-policy training, supervised-token throughput rises 16.09x, and GPU activity rises from 26.37% to 77.23%. Measured generation speedup reaches 3.56x over autoregressive decoding."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Cheaper on-policy training makes better drafters practical for production serving. Caveats: gains were modest on the hybrid targets, one 27B agentic result was nearly unchanged, and one workload was slower than the original drafter at concurrency 32."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.02846",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.02846",
+    "code": "https://github.com/QwenApp/SpecOPD"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 21,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 7,
+    "org": "Qwen"
+   }
+  }
+ ]
+}
