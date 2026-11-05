@@ -1,5 +1,78 @@
 [
  {
+  "id": "2026-11-05-n1",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "NASA's Swift gamma-ray observatory ends its 22-year mission with a fiery re-entry",
+  "tldr": "NASA's Neil Gehrels Swift Observatory, which tracked more than 2,000 gamma-ray bursts, was predicted to fall out of orbit on 4 November after a failed rescue attempt, and NASA now lists it as having re-entered.",
+  "category": "Space & Astronomy",
+  "byline": "The Guardian, NASA"
+ },
+ {
+  "id": "2026-11-05-n2",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "A hidden companion star may be stirring Betelgeuse's atmosphere",
+  "tldr": "Radio observations from the VLA and ALMA suggest a close companion star, Siwarha, distorts the atmosphere of the red supergiant Betelgeuse, which has otherwise recovered from its Great Dimming.",
+  "category": "Space & Astronomy",
+  "byline": "ScienceDaily (ALMA release), The Astronomical Journal"
+ },
+ {
+  "id": "2026-11-05-n3",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "Uranium cubes show Germany's last wartime reactor was far short of what it needed",
+  "tldr": "A PNAS Nexus analysis of surviving uranium cubes and archives finds the B8 reactor would have needed 1,292 to 1,775 cubes, far more than the 664 used, contradicting Heisenberg's claim that it was nearly critical.",
+  "category": "Physics",
+  "byline": "Ars Technica, PNAS Nexus"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11238-4",
+  "date": "2026-11-05",
+  "type": "paper",
+  "title": "Towards observing interstitial hydrogen in solution in metal lattices",
+  "tldr": "Cryogenic atom probe tomography with deuterium tracers gives the first direct observation of hydrogen dissolved in the gaps between metal atoms, and shows the metal's makeup decides where it sits.",
+  "primary_tag": "Condensed matter & materials",
+  "tags": [
+   "Condensed matter & materials",
+   "Chemistry",
+   "Energy science"
+  ],
+  "byline": "Chao Huang, Saiyu Liu, Wenting Lv et al. · University of Sydney",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aeb9422",
+  "date": "2026-11-05",
+  "type": "paper",
+  "title": "Enigmatic HCl detections as a potential signature of igneous activity on Mars",
+  "tldr": "Seasonal hydrogen chloride spikes above fresh fissures on Mars's Alba Mons suggest gas seeping from hot magma, a possible sign that Mars is dormant rather than dead.",
+  "primary_tag": "Planetary science",
+  "tags": [
+   "Planetary science",
+   "Earth science"
+  ],
+  "byline": "Alexander Trokhimovskiy, Daniel Mège, Oleg Korablev et al. · Space Research Centre of the Polish Academy of Sciences",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
+  "id": "doi-10-1126-science-adv3196",
+  "date": "2026-11-05",
+  "type": "paper",
+  "title": "Chiral altermagnon in MnTe",
+  "tldr": "Evidence of chirality in manganese telluride supports altermagnetism as a real third class of magnetism that sits between ferromagnets and antiferromagnets.",
+  "primary_tag": "Condensed matter & materials",
+  "tags": [
+   "Condensed matter & materials",
+   "Quantum physics"
+  ],
+  "byline": "Daniel Jost, Resham Babu Regmi, Eder G. Lomeli et al. · SLAC National Accelerator Laboratory",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
   "id": "2026-11-04-n1",
   "date": "2026-11-04",
   "type": "news",

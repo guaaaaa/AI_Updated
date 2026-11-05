@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-05T12:46:56+00:00",
+ "updated": "2026-11-05T13:24:42+00:00",
  "domain": "science",
  "days": [
+  {
+   "date": "2026-11-05",
+   "edition": "weekday",
+   "news": 3,
+   "papers": 3,
+   "backfill": false
+  },
   {
    "date": "2026-11-04",
    "edition": "weekday",
@@ -13,7 +20,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 5
+   "n": 11
   }
  ],
  "tag_groups": {
@@ -41,11 +48,16 @@
   ]
  },
  "tag_counts": {
+  "Condensed matter & materials": 2,
+  "Chemistry": 2,
+  "Energy science": 1,
+  "Planetary science": 1,
+  "Earth science": 1,
+  "Quantum physics": 1,
   "Clinical medicine": 1,
   "Drug discovery": 1,
   "Computational science & AI": 1,
-  "Genetics & genomics": 1,
-  "Chemistry": 1
+  "Genetics & genomics": 1
  },
  "news_categories": [
   "Space & Astronomy",
@@ -57,8 +69,9 @@
   "Life Sciences"
  ],
  "category_counts": {
-  "Life Sciences": 1,
-  "Physics": 1
+  "Space & Astronomy": 2,
+  "Physics": 2,
+  "Life Sciences": 1
  },
  "summaries": [],
  "weeks": [

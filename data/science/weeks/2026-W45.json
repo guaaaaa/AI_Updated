@@ -3,7 +3,7 @@
  "start": "2026-11-02",
  "end": "2026-11-07",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [
   {
@@ -14,8 +14,8 @@
   }
  ],
  "featured": {
-  "news": 2,
-  "papers": 3
+  "news": 5,
+  "papers": 6
  },
  "items": [
   {
@@ -47,6 +47,42 @@
    "date": "2026-11-04",
    "type": "paper",
    "title": "Carbon radical generation by irreversible metal-to-ligand charge transfer"
+  },
+  {
+   "id": "2026-11-05-n1",
+   "date": "2026-11-05",
+   "type": "news",
+   "title": "NASA's Swift gamma-ray observatory ends its 22-year mission with a fiery re-entry"
+  },
+  {
+   "id": "2026-11-05-n2",
+   "date": "2026-11-05",
+   "type": "news",
+   "title": "A hidden companion star may be stirring Betelgeuse's atmosphere"
+  },
+  {
+   "id": "2026-11-05-n3",
+   "date": "2026-11-05",
+   "type": "news",
+   "title": "Uranium cubes show Germany's last wartime reactor was far short of what it needed"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11238-4",
+   "date": "2026-11-05",
+   "type": "paper",
+   "title": "Towards observing interstitial hydrogen in solution in metal lattices"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeb9422",
+   "date": "2026-11-05",
+   "type": "paper",
+   "title": "Enigmatic HCl detections as a potential signature of igneous activity on Mars"
+  },
+  {
+   "id": "doi-10-1126-science-adv3196",
+   "date": "2026-11-05",
+   "type": "paper",
+   "title": "Chiral altermagnon in MnTe"
   }
  ]
 }

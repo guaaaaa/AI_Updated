@@ -1,0 +1,320 @@
+{
+ "date": "2026-11-05",
+ "edition": "weekday",
+ "generated_at": "2026-11-05T13:24:41+00:00",
+ "summary": "NASA's Swift observatory ends its mission in the atmosphere, a hidden companion may be stirring Betelgeuse, new uranium-cube analysis of Germany's wartime reactor, plus hydrogen seen inside metals, volcanic hints on Mars and a confirmed third kind of magnetism.",
+ "news": [
+  {
+   "id": "2026-11-05-n1",
+   "story_key": "swift-observatory-reentry",
+   "title": "NASA's Swift gamma-ray observatory ends its 22-year mission with a fiery re-entry",
+   "category": "Space & Astronomy",
+   "published": "2026-11-03T14:50:00-05:00",
+   "tldr": "NASA's Neil Gehrels Swift Observatory, which tracked more than 2,000 gamma-ray bursts, was predicted to fall out of orbit on 4 November after a failed rescue attempt, and NASA now lists it as having re-entered.",
+   "why_selected": "The end of a long-lived workhorse telescope, and a test case for rescuing aging satellites.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Swift was launched in 2004 to study cosmic gamma-ray bursts, brief and intense flashes of gamma radiation that arrive from all directions roughly once per day and last from milliseconds to a few hundred seconds. It was built to react quickly: spot a burst, work out where it is and how strong it is, and send that back to Earth so other telescopes can follow up. It was designed to operate for just two years."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Guardian reported that the 3,200 lb spacecraft could no longer steer or observe, and that its re-entry was uncontrolled. The US Space Force predicted it would hit the atmosphere at about 3:30am ET on 4 November, and NASA said most of it would burn up while some components might survive. NASA put the risk of harm to anyone at about 1 in 2,100, with any surviving fragments confined to latitudes between 20.6 degrees south and 20.6 degrees north. Last year NASA tried to push Swift into a higher orbit with a private contractor, but the mission failed after the contractor failed to rendezvous with the satellite. Last month Swift was about 171 miles up and was commanded to end operations. NASA's Swift page now lists a post titled \"NASA's Swift Observatory Re-Entered Atmosphere\"."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Over its life Swift detected and tracked more than 2,000 gamma-ray bursts. NASA says it also contributed to studies of active galaxies, stellar X-ray flares, supernovae, comets and asteroids. In July it observed a wandering supermassive black hole tearing apart a star, a tidal disruption event that outshone its host galaxy in ultraviolet light."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Scientists still do not know exactly what causes gamma-ray bursts; candidates include the birth of a black hole in a massive stellar explosion and the collision of two neutron stars. The failed boost attempt will also shape how agencies think about servicing satellites that are drifting toward re-entry. Watch for NASA's final account of where any fragments landed and for what lessons it publishes from the rescue attempt."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/science/2026/nov/03/nasa-telescope-neil-gehrels-swift-observatory"
+    },
+    {
+     "name": "NASA",
+     "url": "https://www.nasa.gov/missions/swift/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-n2",
+   "story_key": "betelgeuse-siwarha-atmosphere",
+   "title": "A hidden companion star may be stirring Betelgeuse's atmosphere",
+   "category": "Space & Astronomy",
+   "published": "2026-11-03T21:52:00-05:00",
+   "tldr": "Radio observations from the VLA and ALMA suggest a close companion star, Siwarha, distorts the atmosphere of the red supergiant Betelgeuse, which has otherwise recovered from its Great Dimming.",
+   "why_selected": "Fresh evidence on one of the sky's best-known stars and on how close companions shape giant stars.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Betelgeuse is a red supergiant in Orion. In late 2019 and early 2020 its brightness fell to the lowest level recorded in more than 100 years, an episode called the Great Dimming. Astronomers proposed in 2024 that a smaller companion, named Siwarha, orbits extremely close to it and explains a roughly 2,100-day brightness cycle."
+    },
+    {
+     "heading": "What happened",
+     "body": "A team led by Lynn Matthews of MIT Haystack Observatory analysed observations from 2021 to 2026 at seven radio frequencies, from 22 to 485 GHz, taken with the NSF's Very Large Array and ALMA. Different frequencies probe different depths, so together they map the atmosphere from just above the visible surface outward to several times the star's radius. The atmosphere has largely returned to normal: at about 2.7 stellar radii the gas has a brightness temperature near 3,500 kelvin. The team also confirmed a layer of unusually cool gas, near 2,200 kelvin, more than 1,000 degrees below the surface temperature. Finally, Betelgeuse's atmosphere sometimes looks slightly oval at radio wavelengths. It looks most stretched when Siwarha is expected at its greatest apparent separation, and rounder when the companion should pass in front of or behind it."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Siwarha is thought to orbit at only about twice the star's radius, so it passes through the extended atmosphere. The companion is far too faint to be seen in these data, so the evidence is indirect: the shape of the gas, like ripples revealing an unseen boat."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The researchers say more observations covering more of the orbit, especially at radio frequencies not yet studied much, are needed to confirm the link. The planned Next Generation Very Large Array could make such studies easier."
+    }
+   ],
+   "sources": [
+    {
+     "name": "ScienceDaily (ALMA release)",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261103003149.htm"
+    },
+    {
+     "name": "The Astronomical Journal",
+     "url": "https://doi.org/10.3847/1538-3881/ae953d"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-n3",
+   "story_key": "german-b8-reactor-uranium-cubes",
+   "title": "Uranium cubes show Germany's last wartime reactor was far short of what it needed",
+   "category": "Physics",
+   "published": "2026-11-04T16:56:00-05:00",
+   "tldr": "A PNAS Nexus analysis of surviving uranium cubes and archives finds the B8 reactor would have needed 1,292 to 1,775 cubes, far more than the 664 used, contradicting Heisenberg's claim that it was nearly critical.",
+   "why_selected": "A physics-based answer to a long historical debate, resting on measured artefacts.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "At the end of World War II, Werner Heisenberg's group moved to Haigerloch and built the B8 reactor, an arrangement of 664 uranium cubes strung together with aircraft cable, submerged in heavy water and shielded by graphite. Heisenberg later claimed that a slight increase in size would have started sustained energy production, and a 2009 model suggested about 50 percent more cubes would have been enough."
+    },
+    {
+     "heading": "What happened",
+     "body": "University of Maryland physicist Timothy Koeth, who received one of the cubes in 2013, and co-authors analysed two surviving cubes (only 14 are known to exist) and combed through reports, correspondence and archives about the uranium, heavy water and graphite. Their paper in PNAS Nexus concludes that B8 would have needed between 1,292 and 1,775 cubes to reach criticality, the point at which a chain reaction sustains itself. It would also have needed twice the heavy water that the Norsk Hydro plant in Vemork, Norway, the only source at the time, produced over the whole war."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors note that German graphite came from metallurgical coke with twice as many impurities as American graphite made from petroleum coke, after a British naval blockade in January 1940 cut off supply. They conclude that no natural uranium, graphite-moderated pile could have gone critical with the materials Germany had. An earlier paper by Koeth and Hiebert had argued that combined inventories would have sufficed; this one reaches a different conclusion."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Expect historians to test these numbers against Heisenberg's own accounts and the 2009 model, since the two analyses disagree on how much more material was needed."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/"
+    },
+    {
+     "name": "PNAS Nexus",
+     "url": "https://doi.org/10.1093/pnasnexus/pgag282"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11238-4",
+   "title": "Towards observing interstitial hydrogen in solution in metal lattices",
+   "authors": [
+    "Chao Huang",
+    "Saiyu Liu",
+    "Wenting Lv",
+    "Chun Chen",
+    "Shangkun Shen",
+    "Ranming Niu",
+    "Zhao Xu",
+    "Yanqi Tu",
+    "Siwen Shen",
+    "Cheng-Yun Wu",
+    "Pang-Yu Liu",
+    "Kewei Gao",
+    "Yu Yang",
+    "Hung-Wei Yen",
+    "Xinping Mao",
+    "Engang Fu",
+    "Julie Cairney",
+    "Xiaolu Pang",
+    "Rongjian Shi",
+    "Eason Yi-Sheng Chen"
+   ],
+   "affiliations": [
+    "University of Sydney"
+   ],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Condensed matter & materials",
+   "tags": [
+    "Condensed matter & materials",
+    "Chemistry",
+    "Energy science"
+   ],
+   "tldr": "Cryogenic atom probe tomography with deuterium tracers gives the first direct observation of hydrogen dissolved in the gaps between metal atoms, and shows the metal's makeup decides where it sits.",
+   "why_selected": "Hydrogen embrittlement limits pipelines and storage for clean hydrogen; this is a basic step toward understanding it.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Hydrogen can enter metal pipelines and storage equipment and make strong metals crack unexpectedly, a failure called hydrogen embrittlement. To reduce the risk, scientists need to know how much hydrogen enters a metal, where it goes and how it interacts with the metal from within."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Hydrogen can exist in metals in three forms: as compounds called hydrides, trapped at defects, or dissolved in the tiny spaces between metal atoms. The first two had been observed experimentally. The third, called the interstitial state, was understood in theory but had been extremely difficult to observe directly, because hydrogen atoms are tiny and very mobile."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team, led by Julie Cairney, used cryogenic atom probe tomography, a technique that reconstructs the three-dimensional position of atoms in a sample. To make hydrogen traceable they swapped it for deuterium, a heavier form of hydrogen, in several metallic alloys. Working cold helps minimise loss of hydrogen while samples are prepared. Think of tagging one kind of marble so you can find it among a bag of others. Electron microscopy and theoretical calculations were then used to check that the signal reflects hydrogen sitting between metal atoms rather than only at defects."
+    },
+    {
+     "heading": "Results",
+     "body": "The deuterium accumulated preferentially in certain regions, showing that both the arrangement and the chemical composition of the metal atoms influence where hydrogen prefers to reside. The paper is published in Nature. I only had access to a university press summary, so specific measured concentrations are not reported here."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Knowing why hydrogen prefers particular atomic environments could guide stronger, hydrogen-resistant alloys for hydrogen storage and transport. The authors' next step is to link hydrogen inside metals to how metals deform under stress, starting with ultra-high-strength steels. The main caveat is that this is a foundation, not yet a new material."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11238-4",
+    "doi": "https://doi.org/10.1038/s41586-026-11238-4"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeb9422",
+   "title": "Enigmatic HCl detections as a potential signature of igneous activity on Mars",
+   "authors": [
+    "Alexander Trokhimovskiy",
+    "Daniel Mège",
+    "Oleg Korablev",
+    "Kevin S. Olsen",
+    "Anna A. Fedorova",
+    "Benjamin Taysum",
+    "Pierre-Antoine Tesson",
+    "Mikhail Luginin",
+    "Franck Montmessin",
+    "Pavel Vlasov",
+    "Alexey Grigoriev",
+    "Juan Alday",
+    "Denis Belyaev",
+    "Nikolay Ignatiev",
+    "Andrey Patrakeev",
+    "Nikita Kokonkov",
+    "Yuriy Ivanov",
+    "Joanna Gurgurewicz",
+    "Antoine Pommerol",
+    "Gabriele Cremonese",
+    "Nicolas Thomas"
+   ],
+   "affiliations": [
+    "Space Research Centre of the Polish Academy of Sciences"
+   ],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Planetary science",
+   "tags": [
+    "Planetary science",
+    "Earth science"
+   ],
+   "tldr": "Seasonal hydrogen chloride spikes above fresh fissures on Mars's Alba Mons suggest gas seeping from hot magma, a possible sign that Mars is dormant rather than dead.",
+   "why_selected": "Direct clues to Mars's present-day interior heat and to possible habitable niches.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Mars has the largest volcanoes in the solar system, but how active it still is inside remains unknown. Orbital imagery suggests some volcanoes were active within the last few million years and seismometers have detected marsquakes, yet no new lava flows or eruptions have ever been observed."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The ExoMars Trace Gas Orbiter first reported hydrogen chloride in the Martian atmosphere in 2021. On Earth this gas commonly escapes from magmatic vents. On Mars it varies with the seasons, peaking in northern winter and mostly disappearing in summer, and most of that variation tracks Mars's dust and water cycles."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Alexander Trokhimovskiy's international team found one exception: spikes at the same place and season every time, above volcanic fissures on the flanks of Alba Mons in early summer. The orbiter's infrared Atmospheric Chemistry Suite detected the gas, and its CaSSIS camera showed fresh, narrow fissures, some hundreds of metres long, with colour changes around them. The authors suggest magmatic gas rises through the fissures like Earth fumaroles, blocked by ice in winter at temperatures down to minus 120 C and released as the ice sublimates in early summer. They link this to a dormant magma chamber below."
+    },
+    {
+     "heading": "Results",
+     "body": "The result combines the localised, seasonal gas detection with the imagery and an examination of other chemical processes that could produce hydrogen chloride in the atmosphere. Daniel Mège says Mars may have kept enough internal heat to support volcanism until recently, and possibly still does."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If hot rock meets groundwater, warm habitable niches could exist, and the authors argue for searching the fissures for life. The caveat is the title's own wording: a potential signature, inferred indirectly, with no eruption observed."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aeb9422",
+    "doi": "https://doi.org/10.1126/sciadv.aeb9422"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-adv3196",
+   "title": "Chiral altermagnon in MnTe",
+   "authors": [
+    "Daniel Jost",
+    "Resham Babu Regmi",
+    "Eder G. Lomeli",
+    "Samuel Sahel-Schackis",
+    "Monika Scheufele",
+    "Marcel Neuhaus",
+    "Rachel Nickel",
+    "Flora Yakhou",
+    "Kurt Kummer",
+    "Nicholas B. Brookes",
+    "Lingjia Shen",
+    "Georgi L. Dakovski",
+    "Nirmal J. Ghimire",
+    "Stephan Geprägs",
+    "Matthias F. Kling"
+   ],
+   "affiliations": [
+    "SLAC National Accelerator Laboratory"
+   ],
+   "announced": "2026-10-29T00:00:00-04:00",
+   "primary_tag": "Condensed matter & materials",
+   "tags": [
+    "Condensed matter & materials",
+    "Quantum physics"
+   ],
+   "tldr": "Evidence of chirality in manganese telluride supports altermagnetism as a real third class of magnetism that sits between ferromagnets and antiferromagnets.",
+   "why_selected": "A confirmed new magnetic phase with possible uses in memory and low-energy computing.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "For nearly 90 years, magnetic materials were sorted into two classes. In ferromagnets, electron spins, a quantum property that behaves like a tiny compass needle pointing up or down, all align and produce a net magnetic field. In antiferromagnets, identified in 1933, neighbouring spins alternate and cancel out."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "In recent years, researchers observed materials with alternating spins and no net magnetisation, like antiferromagnets, that nonetheless carried useful spin currents, a ferromagnet-like property. In 2022 the term altermagnets was introduced for this proposed third class. By 2024 several factors favoured it, but a piece of the puzzle was missing."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Altermagnets alternate spins like antiferromagnets, but the crystal surroundings of oppositely aligned spins are rotated relative to each other. That breaks a symmetry conventional antiferromagnets keep. The team, led by SLAC's Daniel Jost, studied manganese telluride, long classed as an antiferromagnet, and looked for chirality, a handedness like that of a spiral staircase or screw whose mirror image cannot be superimposed on itself."
+    },
+    {
+     "heading": "Results",
+     "body": "The team reports direct evidence of chirality in the magnetic structure of manganese telluride, published in Science, and Jost says the results provide robust experimental confirmation that altermagnetism is real. I read only a press account, so details of the measurement are not given here. The finding builds on earlier work, and the SLAC team describes chirality as the crucial signature that was still missing from the case for altermagnetism."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Altermagnets could lead to memory systems, quantum devices and more energy-efficient data centres. The caveat is that this is one material, and application is still prospective. Because manganese telluride was long classed as an antiferromagnet, the result also suggests other materials with that label may deserve a second look."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.adv3196",
+    "doi": "https://doi.org/10.1126/science.adv3196"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  }
+ ]
+}
