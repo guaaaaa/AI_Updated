@@ -14,8 +14,8 @@ Every tool call re-reads the whole conversation, so cost ≈ (number of calls) �
 - **Target ≤ 15 tool calls** for the whole run. Chain shell commands with `&&` in one Bash call.
 - Do the steps **in this order**: news first (small), papers last, because full paper reads are the biggest
   thing in context and should be carried through as few calls as possible.
-- Batch: all brief reads in ONE `read_paper.py` call; all full reads in ONE call; all page fetches in as
-  few `fetch_page.py` calls as possible (it takes several URLs); write the whole write-up in ONE Write.
+- Batch: all brief reads in ONE `read_paper.py` call; full reads in TWO calls (3 + 2: five in one call exceed the
+  128k-character inline output limit and get saved to a file); all page fetches in as few `fetch_page.py` calls as possible (it takes several URLs); write the whole write-up in ONE Write.
 - Never re-read a file whose content is already in the conversation; never `cat` large files you don't need.
 - Don't call WebFetch on long pages when `fetch_page.py URL --max-words 600` is enough.
 
@@ -100,8 +100,8 @@ article URLs (Google News links are omitted on purpose), and get numbers right.
    (abstract, affiliations, intro, outline, captions, conclusion — about 900 words each):
    `python3 pipeline/read_paper.py ID1 ID2 ... --mode brief`
 2. **Select** up to 5 using the rubric below.
-3. **Read the finalists in full** in ONE call (main text ~4,000 words each, including results tables),
-   then write immediately: `python3 pipeline/read_paper.py ID1 ... ID5 --mode full`
+3. **Read the finalists in full** in TWO calls (main text ~4,000 words each, including results tables),
+   then write immediately: `python3 pipeline/read_paper.py ID1 ID2 ID3 --mode full`, then `... ID4 ID5 --mode full`
    (cached as `work/papers/ID.full.txt` for the accuracy pass).
 
 Do not read other papers in full. A shortlist shorter than 30 is normal on light days (e.g. Mondays).
