@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-05-n1",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "Bank of England raises its rate to 4%, the first increase in more than three years",
+  "tldr": "The Bank of England voted 8-1 to lift Bank Rate to 4% from 3.75%, saying energy-driven inflation pressure in the pipeline is now strong enough to justify tighter policy.",
+  "category": "Central Banks & Rates",
+  "byline": "Bank of England, BBC, BBC"
+ },
+ {
+  "id": "2026-11-05-n2",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "ECB wage tracker points to slightly firmer negotiated pay growth into 2027",
+  "tldr": "The ECB's wage tracker shows negotiated wage growth of 2.7% in late 2026 and 2.8% in early 2027, a little higher than the 2.3% headline figure for 2026 as a whole.",
+  "category": "Economy & Data",
+  "byline": "European Central Bank"
+ },
+ {
+  "id": "2026-11-05-n3",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "US trade deficit narrows slightly to $105.0 billion in September as exports and imports both rise",
+  "tldr": "The US goods and services trade deficit eased by $0.7 billion to $105.0 billion in September, though the three-month average deficit widened to $101.2 billion.",
+  "category": "Economy & Data",
+  "byline": "U.S. Bureau of Economic Analysis"
+ },
+ {
+  "id": "2026-11-05-n4",
+  "date": "2026-11-05",
+  "type": "news",
+  "title": "Canada's trade surplus widens to a four-year high as gold and energy offset tariff-hit exports",
+  "tldr": "Canada's September merchandise trade surplus widened to about C$5.4 billion, the highest since May 2022, but gold and oil hid a 5.6% drop in other exports hit by US tariffs.",
+  "category": "Economy & Data",
+  "byline": "Statistics Canada, The Globe and Mail"
+ },
+ {
+  "id": "nber-w35980",
+  "date": "2026-11-05",
+  "type": "paper",
+  "title": "Demand-Driven Inflation",
+  "tldr": "Giannone and Primiceri argue that unexpectedly strong demand, not supply shocks alone, drove the post-pandemic inflation surge in both the United States and the euro area.",
+  "primary_tag": "Monetary policy",
+  "tags": [
+   "Monetary policy",
+   "Inflation"
+  ],
+  "byline": "Domenico Giannone, Giorgio Primiceri · Johns Hopkins University; Northwestern University",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-04-n1",
   "date": "2026-11-04",
   "type": "news",

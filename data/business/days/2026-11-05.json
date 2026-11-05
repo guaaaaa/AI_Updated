@@ -1,0 +1,202 @@
+{
+ "date": "2026-11-05",
+ "edition": "weekday",
+ "generated_at": "2026-11-05T12:46:55+00:00",
+ "summary": "The Bank of England raises rates for the first time in over three years, the ECB's wage tracker edges up, and September trade data from the US and Canada show tariffs and energy prices at work.",
+ "news": [
+  {
+   "id": "2026-11-05-n1",
+   "story_key": "boe-rate-hike-2026-11",
+   "title": "Bank of England raises its rate to 4%, the first increase in more than three years",
+   "category": "Central Banks & Rates",
+   "published": "2026-11-05T07:02:00-05:00",
+   "tldr": "The Bank of England voted 8-1 to lift Bank Rate to 4% from 3.75%, saying energy-driven inflation pressure in the pipeline is now strong enough to justify tighter policy.",
+   "why_selected": "A central-bank decision is the highest-ranked news type, and it affects UK borrowers, savers and the pound.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Bank of England sets the UK's policy interest rate, called Bank Rate, through its nine-member Monetary Policy Committee. Rates had stood at 3.75% going into this meeting. UK consumer price inflation was 3.5% in September, well above the Bank's 2% target, and the Bank says a conflict in the Middle East, now in its ninth month, has pushed global energy prices higher still."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday 5 November the Bank announced that the committee, which met through 4 November, voted 8 to 1 to raise Bank Rate by 0.25 percentage points to 4%. One member wanted a larger rise of 0.5 points, to 4.25%. The BBC reports it is the first increase in more than three years. The Bank now expects CPI inflation to rise to around 5% by the middle of next year, then fall as the effect of energy prices on 12-month inflation rates fades. In its minutes, the committee said front-month Brent crude futures averaged $108 a barrel over the 15 working days to 27 October, 38% above their level at the time of the July report."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The Bank was explicit that it has seen limited evidence so far of energy costs spreading into other prices and wages. It acted anyway, judging that the inflationary pressure in the pipeline was enough to warrant a rise. That is a pre-emptive step, and it signals the committee wants to stop temporary energy shocks from becoming embedded in everyday pricing. The BBC notes about 500,000 homeowners have mortgages that track Bank Rate and face roughly 31 pounds more a month on a typical loan, while 87% of mortgage holders are on fixed deals whose payments do not change until the deal ends. Firms told the BBC higher rates limit their room to hire and raise pay. Sterling this week reached a joint high against a basket of 18 currencies, its strongest since the June 2016 Brexit referendum."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The committee's next decision is due on 17 December. Watch pay settlements and company pricing for signs of second-round effects, and oil and gas prices for any de-escalation in the Middle East."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Bank of England",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cx4g1q3vlp62o"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c6lykq2qjn2vo"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-n2",
+   "story_key": "ecb-wage-tracker-2026-11",
+   "title": "ECB wage tracker points to slightly firmer negotiated pay growth into 2027",
+   "category": "Economy & Data",
+   "published": "2026-11-04T12:00:00-05:00",
+   "tldr": "The ECB's wage tracker shows negotiated wage growth of 2.7% in late 2026 and 2.8% in early 2027, a little higher than the 2.3% headline figure for 2026 as a whole.",
+   "why_selected": "Wage growth is a key input to central-bank decisions on rates, and this is a primary-source data release.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Central banks watch wages closely because pay is the biggest cost for many service businesses, and faster pay growth can feed into prices. The European Central Bank publishes a wage tracker built from active collective bargaining agreements, the contracts negotiated between unions and employers, in participating euro-area countries. Because contracts are signed in advance, the tracker gives a forward-looking view of negotiated pay, though not a forecast."
+    },
+    {
+     "heading": "What happened",
+     "body": "On 4 November the ECB updated the tracker with agreements signed up to the middle of October 2026 and extended its horizon to the end of September 2027. The headline tracker, which spreads one-off payments over 12 months, shows negotiated wage growth of 2.3% for 2026 as a whole, 2.7% in the second half of 2026 and 2.8% in the first half of 2027, falling to 2.4% in the third quarter of 2027. Excluding one-off payments, the tracker rises from 2.6% in 2026 to 2.8% on average over the first three quarters of 2027. Compared with the September release, the headline figures for the second half of 2026 and first half of 2027 were revised up by about 0.1 percentage points on average."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The low reading for the first half of 2026 partly reflects a mechanical effect: one-off payments made in the second half of 2024 were not repeated the next year, and that drag fades fully in the second half of 2026. Stripping out one-offs, the ECB says the data point to slightly higher permanent negotiated wage growth in 2027 than in 2026. It also notes that recent agreements show limited scope for one-off payments. For workers, that means pay deals are holding up. For policymakers, it is one more input on whether domestic cost pressure is easing or building."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Coverage is the main caveat: the figure for the third quarter of 2027 rests on only 23.3% of employees, versus 46.2% for 2026, so it may change as more agreements are signed. The next update, in December, will extend the horizon to the full year 2027."
+    }
+   ],
+   "sources": [
+    {
+     "name": "European Central Bank",
+     "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-n3",
+   "story_key": "us-trade-deficit-2026-09",
+   "title": "US trade deficit narrows slightly to $105.0 billion in September as exports and imports both rise",
+   "category": "Economy & Data",
+   "published": "2026-11-04T08:30:00-05:00",
+   "tldr": "The US goods and services trade deficit eased by $0.7 billion to $105.0 billion in September, though the three-month average deficit widened to $101.2 billion.",
+   "why_selected": "A major macro release from the statistics agencies that shows how trade is evolving under tariffs.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The trade balance is the difference between what a country sells abroad (exports) and what it buys from abroad (imports). The US runs a deficit, meaning imports exceed exports. The Bureau of Economic Analysis and the Census Bureau publish the figures monthly, adjusted for seasonal patterns but not for price changes. The numbers feed into estimates of gross domestic product, the broadest measure of economic output."
+    },
+    {
+     "heading": "What happened",
+     "body": "The two agencies reported on 4 November that the goods and services deficit was $105.0 billion in September, down $0.7 billion from a revised $105.7 billion in August. Exports rose $5.8 billion to $321.5 billion and imports rose $5.2 billion to $426.6 billion. The goods deficit fell $0.7 billion to $135.9 billion, while the services surplus was $30.9 billion. Exports of capital goods rose $3.8 billion and soybeans rose $1.3 billion, while nonmonetary gold fell $3.4 billion. On the import side, capital goods rose $11.6 billion, including a $7.6 billion increase in computers and $5.7 billion in computer accessories."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The one-month change is small, but the wider picture is mixed. The average monthly deficit over the three months to September rose $11.3 billion to $101.2 billion, and was $36.5 billion larger than a year earlier. Year to date, however, the deficit is down $92.4 billion, or 12.2%, from the same period of 2025, with exports up 11.6% and imports up 6.2%. In inflation-adjusted terms the picture was less benign: the real goods deficit grew 3.0% to $119.5 billion, faster than the 2.2% nominal rise on a Census basis. Gold shipments can swing the headline, which is why BEA treats gold separately when building GDP."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The next release, for October, is due on 8 December 2026. Watch whether computer-related imports stay elevated and whether exports keep pace."
+    }
+   ],
+   "sources": [
+    {
+     "name": "U.S. Bureau of Economic Analysis",
+     "url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-september-2026"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-n4",
+   "story_key": "canada-trade-surplus-2026-09",
+   "title": "Canada's trade surplus widens to a four-year high as gold and energy offset tariff-hit exports",
+   "category": "Economy & Data",
+   "published": "2026-11-04T08:55:00-05:00",
+   "tldr": "Canada's September merchandise trade surplus widened to about C$5.4 billion, the highest since May 2022, but gold and oil hid a 5.6% drop in other exports hit by US tariffs.",
+   "why_selected": "A national macro release that shows how Canadian exporters are coping with US tariffs.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Canada sends most of its exports to the United States, so its monthly merchandise trade figures are a quick test of how exporters are coping with US tariffs. Statistics Canada, the national statistics agency, publishes them monthly. The Globe and Mail reports that new tariffs were imposed on Canadian exports after trade talks collapsed this summer."
+    },
+    {
+     "heading": "What happened",
+     "body": "On 4 November Statistics Canada reported that merchandise exports edged up 0.2% in September while imports fell 0.3%, widening the surplus with the world from C$5.0 billion in August to C$5.4 billion. Analysts polled by Reuters had expected C$4.1 billion, according to the Globe. Energy exports rose 8.2%, led by crude oil and bitumen (up 10.2%, on higher prices) and natural gas (up 32.1%). Unwrought gold exports rose 16.8% because US residents bought more Canadian-held gold. Excluding energy and metals, exports fell 5.6%, and total export volumes dropped 4.0%. Consumer goods fell 7.1% and electronics 13.9%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The headline strength is narrower than it looks. Without gold and energy, Canada's exports are shrinking, and the categories that fell are many of those targeted by the new US tariffs, which had posted significant gains in August. The surplus with the US edged up to C$12.3 billion from C$12.1 billion. Energy gains come from higher prices linked to the war in Iran, not from broad-based demand. For manufacturers, the data show tariff pain is real, while for the Canadian dollar and public finances, commodity income is cushioning the blow."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Globe says both governments indicated this week that talks on a renewed trade deal had intensified, just after Republicans lost both chambers of Congress. Look for whether September's drop in manufactured exports continues in the October data."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Statistics Canada",
+     "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261104/dq261104a-eng.htm"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/economy/article-canadas-trade-surplus-widens-to-more-than-four-year-high-in-september/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w35980",
+   "title": "Demand-Driven Inflation",
+   "authors": [
+    "Domenico Giannone",
+    "Giorgio Primiceri"
+   ],
+   "affiliations": [
+    "Johns Hopkins University; Northwestern University"
+   ],
+   "announced": "2026-11-05T00:00:00-05:00",
+   "primary_tag": "Monetary policy",
+   "tags": [
+    "Monetary policy",
+    "Inflation"
+   ],
+   "tldr": "Giannone and Primiceri argue that unexpectedly strong demand, not supply shocks alone, drove the post-pandemic inflation surge in both the United States and the euro area.",
+   "why_selected": "It challenges the widely held supply-shock story of the 2021-22 inflation and bears directly on how central banks respond to energy shocks like today's.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Inflation in the United States accelerated in the first half of 2021, peaked in the second quarter of 2022 and has since declined. Euro-area inflation followed the same path about six months later. What caused it matters for how central banks should respond to the next shock, and many people, especially in Europe, blame adverse supply shocks such as disrupted supply chains and energy prices."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Common explanations split inflation into demand and supply components and often conclude that supply disruptions dominated. The authors argue such splits are not neutral: how much a supply shock moves inflation depends on how forcefully the central bank responds to it, so any decomposition is relative to the monetary policy regime."
+    },
+    {
+     "heading": "Key idea",
+     "body": "In the standard aggregate demand and supply model, a central bank that reacts strongly to inflation makes the demand curve relatively flat. Supply shocks then mostly change output, not prices. Therefore a large inflation surge needs demand to shift. The authors test this with structural vector autoregressions, statistical models that separate shocks, plus an estimated New Keynesian model and survey evidence."
+    },
+    {
+     "heading": "Results",
+     "body": "They find unexpectedly strong demand was the dominant driver in both regions, from pent-up private spending, large fiscal support and an accommodative monetary stance. Relative to 2019, the US primary budget balance worsened by 8.6 percentage points of GDP in 2020 and 5.7 in 2021, versus 6.5 and 4.7 in the euro area. The Fed began raising rates in March 2022, when CPI inflation was already 7.9%, and the ECB in July, with inflation about 8.9%. Forecasters in both regions underestimated the persistence of inflation and the strength of the recovery, and early GDP releases made slack look larger than later revisions showed."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For central bankers and investors, the paper suggests that policy, not just supply chains, shaped the surge, and that real-time misreading of slack contributed. The authors take no stand on whether the trade-off was desirable, since accepting higher inflation may have cushioned the pandemic hit. The main caveat is that it is a working paper, not peer reviewed, and conclusions depend on model assumptions."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w35980"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}
