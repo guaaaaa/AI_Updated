@@ -28,7 +28,9 @@ other tabs ran in the last 3 days, and the validator flags repeats. News needs a
 outlets, and every run checks its draft against its sources sentence by sentence before publishing. Every tab has an
 automatic Week in review (most-covered stories and what the tab featured; AI's also lists the most-upvoted papers).
 Colours come from one generated scheme (`pipeline/make_themes.py`): light "Spring garden" (light green, sky blue,
-lilac, blossom pink, peach) and dark "Night sky" (indigo galaxy, aurora, dusk rose, moonlight, stars). The site opens on a **Today** page with every tab's latest highlights, and each tab has an RSS feed
+lilac, blossom pink, peach) and dark "Night sky" (indigo galaxy, aurora, dusk rose, moonlight, stars). The backdrop
+follows the clock (dawn, day, golden hour, blue hour; dusk, night, pre-dawn), leans toward each tab's own colour, and
+carries a fingerprint of the day's stories, so every edition looks a little different. The site opens on a **Today** page with every tab's latest highlights, and each tab has an RSS feed
 (`data/feeds/<tab>.xml`, plus `all.xml`). `.claude/settings.json` turns off Claude Code features the runs never use, which cuts each run's starting context
 from about 40k to 22k tokens.
 
