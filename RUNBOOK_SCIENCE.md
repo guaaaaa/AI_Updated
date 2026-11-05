@@ -50,7 +50,7 @@ PNAS, Science Advances and Nature's physics and astronomy journals, scored by ve
 
 ## 2. News (≤3)
 
-Group headlines into stories, shortlist ≤6, pick ≤3. Budget: **≤6 WebSearch queries and ≤8 page reads for news**
+The list already groups headlines into stories with outlet counts; merge rows that are the same story, shortlist ≤6, pick ≤3. Budget: **≤6 WebSearch queries and ≤8 page reads for news**
 (`python3 pipeline/fetch_page.py URL [URL ...] --max-words 800`); a fetch that comes back blocked or empty does not
 count. Papers have their own reads (step 3).
 - **Window**: `published` is the earliest verified timestamp of the first public report; a date-only source → 12:00

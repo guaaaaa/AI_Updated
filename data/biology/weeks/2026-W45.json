@@ -1,0 +1,39 @@
+{
+ "week": "2026-W45",
+ "start": "2026-11-02",
+ "end": "2026-11-07",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [],
+ "featured": {
+  "news": 3,
+  "papers": 1
+ },
+ "items": [
+  {
+   "id": "2026-11-04-n1",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "First measles death in New York State in 30 years"
+  },
+  {
+   "id": "2026-11-04-n2",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "FDA finalizes potency guidance for cell and gene therapies"
+  },
+  {
+   "id": "2026-11-04-n3",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "English A&Es to use early warning scores for sick children"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2607326",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "TAVR in Patients with Moderate Aortic Stenosis with At-Risk Features"
+  }
+ ]
+}

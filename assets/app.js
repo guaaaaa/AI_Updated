@@ -41,6 +41,7 @@
   const home = (dom = S.dom) => `#/${dom}`;
   const dayHref = (date, item, dom = S.dom) => `#/${dom}/day/${date}${item ? "/" + item : ""}`;
   const paperWord = () => (S.D && S.D.paper_label) || "Papers";
+  const weekHref = (id) => (S.dom === "ai" ? `#/trends/week/${id}` : `#/${S.dom}/week/${id}`);   // AI's lives in Trends
   async function getDay(date, dom = S.dom) {
     const k = `${dom}/${date}`;
     if (!S.dayFiles.has(k)) S.dayFiles.set(k, getJSON(`${dataBase(dom)}days/${date}.json`));
@@ -104,6 +105,8 @@
     const m = h.match(/^\/day\/(\d{4}-\d{2}-\d{2})(?:\/([\w.-]+))?/);
     if (m) return { view: "day", date: m[1], item: m[2] || null, dom };
     const t = dom === "ai" && h.match(/^\/trends(?:\/(week|month|direction|field)\/([\w.-]+))?/);
+    const wk = dom !== "ai" && h.match(/^\/week\/([\w-]+)/);
+    if (wk) return { view: "week", id: wk[1], dom };
     if (t) return { view: "trends", kind: t[1] ? { week: "weekly", month: "monthly", direction: "direction", field: "field" }[t[1]] : null, id: t[2] || null, dom };
     if (h.startsWith("/browse")) {
       const p = new URLSearchParams(h.split("?")[1] || "");
@@ -115,6 +118,12 @@
       return { view: "browse", dom, keep: true };
     }
     return { view: "day", date: null, dom };
+  }
+
+  async function renderWeek(id) {   // other tabs' Week in review (AI's is part of its Trends view)
+    const card = await window.AIUTrends.weekCard(S.index.weeks || [], id,
+      { base: S.D.index.replace(/index\.json$/, ""), link: (date, item) => dayHref(date, item), paperWord: paperWord() });
+    $("#main").replaceChildren(card || el("div", { class: "empty", text: `No ${S.D.name} Week in review yet.` }));
   }
 
   async function route() {
@@ -143,6 +152,7 @@
       if (r.view === "day") await renderDay(r.date, r.item);
       else if (r.view === "trends") await window.AIUTrends.render(main, r, S);
       else if (r.view === "jobs") await window.AIUJobs.render(main, r, S);
+      else if (r.view === "week") await renderWeek(r.id);
       else renderBrowse();
       if (r.view !== "jobs" && S.D.trends) $("#main").prepend(subNav(r.view === "trends" ? "trends" : "digest"));
     } catch (e) {
@@ -194,7 +204,7 @@
         class: cls, text: String(d), disabled: !has && !sum && !ranged,
         "aria-label": fmtLong(iso) + (has ? " (digest available)" : sum ? (sum.kind === "weekly" ? " (week in review)" : " (monthly summary)") : ""),
         title: sum ? (sum.kind === "weekly" ? "Week in review" : `Monthly summary: ${sum.headline}`) : null,
-        onclick: () => (sum && !ranged ? (location.hash = `#/trends/${sum.kind === "weekly" ? "week" : "month"}/${sum.id}`) : pickDate(iso)),
+        onclick: () => (sum && !ranged ? (location.hash = sum.kind === "weekly" ? weekHref(sum.id) : `#/trends/month/${sum.id}`) : pickDate(iso)),
       }));
     }
     const head = el("div", { class: "cal-head" },
@@ -341,7 +351,7 @@
     const head = el("div", { class: "day-head" },
       el("div", {}, el("h1", { text: fmtLong(date) }),
         el("div", { class: "day-meta" }, meta,
-          S.weekOf[date] ? el("a", { href: `#/trends/week/${S.weekOf[date].id}`, text: "Week in review →" }) : null)),
+          S.weekOf[date] ? el("a", { href: weekHref(S.weekOf[date].id), text: "Week in review →" }) : null)),
       nav);
     const out = [head];
     if (j.summary) out.push(el("p", { class: "day-summary", text: j.summary }));

@@ -1,0 +1,58 @@
+{
+ "week": "2026-W45",
+ "start": "2026-11-02",
+ "end": "2026-11-07",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [
+  {
+   "title": "Watch Disney (DIS) Targets 20% Cost Savings in Thousands of Layoffs",
+   "outlets": 5,
+   "date": "2026-11-03",
+   "covered": null
+  },
+  {
+   "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
+   "outlets": 3,
+   "date": "2026-11-03",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 5,
+  "papers": 0
+ },
+ "items": [
+  {
+   "id": "2026-11-04-n1",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "US tech stocks rebound as an AI-spending selloff ends on election day"
+  },
+  {
+   "id": "2026-11-04-n2",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Canva to cut or relocate 1,271 jobs as growth slows"
+  },
+  {
+   "id": "2026-11-04-n3",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Foodtastic bids $1 billion for MTY Food Group as MTY replaces its CEO"
+  },
+  {
+   "id": "2026-11-04-n4",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Shopify shares drop 12.8% at the open despite 31.5% revenue growth"
+  },
+  {
+   "id": "2026-11-04-n5",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "US factory orders jump 1.8% in September on aircraft and AI build-out"
+  }
+ ]
+}

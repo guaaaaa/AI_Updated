@@ -47,7 +47,7 @@ reputable business press, Google News searches filtered to reputable outlets, st
 
 ## 2. News (≤5)
 
-Group headlines into stories, shortlist ≤8, pick ≤5. Budget: **≤8 WebSearch queries and ≤12 page reads**
+The list already groups headlines into stories with outlet counts; merge rows that are the same story, shortlist ≤8, pick ≤5. Budget: **≤8 WebSearch queries and ≤12 page reads**
 (`python3 pipeline/fetch_page.py URL [URL ...] --max-words 800`); a fetch that comes back blocked or empty does not
 count. Keep 2 reads for the research slot.
 - Readable without tricks: the Guardian, BBC, the Globe and Mail, AP, TechCrunch, and the official releases (Fed,

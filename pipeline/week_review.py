@@ -1,8 +1,9 @@
 """Week in review (no LLM usage): the week's most-upvoted papers and most-covered stories, with no trend claims.
 
-Built from the daily evidence snapshots (data/state/daily/, written by every daily run) and the digests, by
+Built from the daily evidence snapshots (<domain state>/daily/, written by every daily run) and the digests, by
 build_index.py, so it updates after every daily publish and is complete after Saturday's. Written to
-data/weeks/<ISO week>.json.
+data/weeks/<ISO week>.json (AI) or data/<id>/weeks/ (other tabs). AI lists the most-upvoted papers; the other tabs,
+which have no upvote signal, list what they featured that week.
 """
 import datetime as dt
 import json
@@ -11,12 +12,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import stories  # noqa: E402
-from common import DATA, DAYS, STATE, load_json, today_et, week_days, week_id  # noqa: E402
-
-WEEKS = DATA / "weeks"
+from common import domain_paths, load_json, today_et, week_days, week_id  # noqa: E402
 
 
-def build(wid):
+def build(wid, did="ai"):
+    P = domain_paths(did)
+    STATE, DAYS = P["state"], P["days"]
     mon, sat, _ = week_days(wid)
     days = [mon + dt.timedelta(days=i) for i in range(6)]
     snaps = [s for s in (load_json(STATE / "daily" / f"{d.isoformat()}.json") for d in days) if s]
@@ -50,11 +51,16 @@ def build(wid):
             "complete": bool(load_json(DAYS / f"{sat.isoformat()}.json")) or today_et() > sat,
             "digests": len(digests), "papers": top, "stories": out_st,
             "featured": {"news": sum(len(j.get("news", [])) for j in digests),
-                         "papers": sum(len(j.get("papers", [])) for j in digests)}}
+                         "papers": sum(len(j.get("papers", [])) for j in digests)},
+            **({} if did == "ai" else {"items": [{"id": x["id"], "date": j["date"], "type": k, "title": x["title"]}
+                                             for j in digests for k, key in (("news", "news"), ("paper", "papers"))
+                                             for x in j.get(key, [])]})}
 
 
-def build_all():
+def build_all(did="ai"):
     """(Re)write every week that has snapshots or digests; return the index list, newest first."""
+    P = domain_paths(did)
+    STATE, DAYS, WEEKS = P["state"], P["days"], P["data"] / "weeks"
     weeks = set()
     for f in list((STATE / "daily").glob("*.json")) + list(DAYS.glob("*.json")):
         d = dt.date.fromisoformat(f.stem)
@@ -63,7 +69,7 @@ def build_all():
     WEEKS.mkdir(parents=True, exist_ok=True)
     out = []
     for wid in sorted(weeks, reverse=True):
-        r = build(wid)
+        r = build(wid, did)
         if not r:
             continue
         (WEEKS / f"{wid}.json").write_text(json.dumps(r, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

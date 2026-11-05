@@ -44,7 +44,7 @@ stories already covered), then a **research shortlist** of arXiv systems, securi
 
 ## 2. News (≤4)
 
-Group headlines into stories, shortlist ≤7, pick ≤4. Budget: **≤8 WebSearch queries and ≤10 page reads for
+The list already groups headlines into stories with outlet counts; merge rows that are the same story, shortlist ≤7, pick ≤4. Budget: **≤8 WebSearch queries and ≤10 page reads for
 news** (`python3 pipeline/fetch_page.py URL [URL ...] --max-words 800`); a fetch that comes back blocked or empty does
 not count.
 - Headlines from paywalled or bot-checked outlets (Bloomberg, WSJ, FT, Reuters, many Google News results) come

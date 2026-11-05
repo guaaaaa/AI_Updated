@@ -867,8 +867,10 @@
   }
 
   // Week in review: automatic lists (most-upvoted papers, most-covered stories), no trend claims.
-  async function weekCard(weeks, wantId) {
+  // opt (other tabs): base = the tab's data folder, link(date, id) = digest link, paperWord = the tab's word for papers
+  async function weekCard(weeks, wantId, opt = {}) {
     if (!weeks.length) return null;
+    const base = opt.base || "data/", link = opt.link || ((date, id) => `#/day/${date}/${id}`);
     // default: the latest complete week (the current one is still filling up); arrows reach the rest
     let i = wantId ? weeks.findIndex((w) => w.id === wantId) : weeks.findIndex((w) => w.complete);
     if (i < 0) i = 0;
@@ -876,25 +878,30 @@
     const draw = async () => {
       const w = weeks[i];
       let j;
-      try { j = await H.getJSON(`data/weeks/${w.id}.json`); } catch (e) { card.replaceChildren(H.el("p", { class: "note", text: "Could not load this week." })); return; }
+      try { j = await H.getJSON(`${base}weeks/${w.id}.json`); } catch (e) { card.replaceChildren(H.el("p", { class: "note", text: "Could not load this week." })); return; }
       const nav = H.el("div", { class: "week-nav" },
         H.el("button", { class: "icon-btn small", "aria-label": "Previous week", disabled: i >= weeks.length - 1, onclick: () => { i++; draw(); }, text: "‹" }),
         H.el("span", { text: fmtRange(j.start, j.end) + (j.complete ? "" : " (so far)") }),
         H.el("button", { class: "icon-btn small", "aria-label": "Next week", disabled: i <= 0, onclick: () => { i--; draw(); }, text: "›" }));
       const papers = H.el("ol", { class: "rank" }, j.papers.map((p) => H.el("li", {},
-        H.el("a", { href: p.featured ? `#/day/${p.featured}/${p.id}` : `https://arxiv.org/abs/${p.id}`,
+        H.el("a", { href: p.featured ? link(p.featured, p.id) : `https://arxiv.org/abs/${p.id}`,
           target: p.featured ? null : "_blank", rel: p.featured ? null : "noopener", text: p.title }),
         H.el("span", { class: "rank-meta", text: `${p.hf} upvotes${p.featured ? " · in digest" : ""}` }))));
       const storiesL = H.el("ol", { class: "rank" }, j.stories.map((x) => H.el("li", {},
-        x.covered ? H.el("a", { href: `#/day/${x.covered.slice(0, 10)}/${x.covered}`, text: x.title }) : H.el("span", { text: x.title }),
+        x.covered ? H.el("a", { href: link(x.covered.slice(0, 10), x.covered), text: x.title }) : H.el("span", { text: x.title }),
         H.el("span", { class: "rank-meta", text: `${x.outlets} outlets${x.covered ? " · in digest" : ""}` }))));
+      const day = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+      const items = j.items && H.el("ol", { class: "rank" }, j.items.map((x) => H.el("li", {},
+        H.el("a", { href: link(x.date, x.id), text: x.title }),
+        H.el("span", { class: "rank-meta", text: `${x.type === "news" ? "News" : (opt.paperWord || "Paper")} · ${day(x.date)}` }))));
       card.replaceChildren(
         H.el("div", { class: "card-top" }, H.el("span", { class: "kind", text: "Week in review" }), nav),
         H.el("div", { class: "week-cols" },
-          H.el("div", {}, H.el("h4", { text: "Most-upvoted papers" }), j.papers.length ? papers : H.el("p", { class: "note", text: "No data." })),
+          items ? H.el("div", {}, H.el("h4", { text: "Featured this week" }), j.items.length ? items : H.el("p", { class: "note", text: "Nothing yet." }))
+            : H.el("div", {}, H.el("h4", { text: "Most-upvoted papers" }), j.papers.length ? papers : H.el("p", { class: "note", text: "No data." })),
           H.el("div", {}, H.el("h4", { text: "Most-covered stories" }), j.stories.length ? storiesL : H.el("p", { class: "note", text: "No data." }))),
         H.el("p", { class: "week-foot", text: `Automatic lists from the week's ${j.digests} digests and their candidate pools: no trend claims. ` +
-          `We featured ${j.featured.papers} papers and ${j.featured.news} news stories.` }));
+          `We featured ${j.featured.news} news stories and ${j.featured.papers} ${opt.paperWord === "Research" ? "research items" : (opt.paperWord || "papers").toLowerCase()}.` }));
     };
     await draw();
     return card;
@@ -992,6 +999,6 @@
     }, 250);
   });
 
-  window.AIUTrends = { init(helpers) { H = helpers; }, render,
+  window.AIUTrends = { init(helpers) { H = helpers; }, render, weekCard,
     kit: { svg, stockChart, segmented, miniLine, ends, longDate, startIndex, cum, wsum, pct, pp, times, STATUS, dirHref, fieldHref, lastWidth, table } };
 })();

@@ -1,3 +1,17 @@
 {
-  "bashOutputMaxChars": 128000
+  "bashOutputMaxChars": 128000,
+  "env": {
+    "CLAUDE_CODE_DISABLE_ARTIFACT": "1",
+    "CLAUDE_CODE_DISABLE_CRON": "1",
+    "CLAUDE_CODE_DISABLE_EXPLORE_PLAN_AGENTS": "1",
+    "CLAUDE_CODE_DISABLE_ADVISOR_TOOL": "1",
+    "CLAUDE_CODE_DISABLE_AGENT_VIEW": "1"
+  },
+  "permissions": {
+    "deny": [
+      "NotebookEdit", "DesignSync", "EnterWorktree", "ExitWorktree", "ListConnectors", "ListPlugins", "ListSkills",
+      "PushNotification", "ReportFindings", "ScheduleWakeup", "SearchMcpRegistry", "SearchPlugins", "SearchSkills",
+      "SendUserFile", "ShowOnboardingRolePicker", "SuggestConnectors", "SuggestPluginInstall", "SuggestSkills"
+    ]
+  }
 }

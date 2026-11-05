@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T03:54:26+00:00",
+ "updated": "2026-11-05T04:18:54+00:00",
  "domain": "science",
  "days": [
   {
@@ -119,5 +119,12 @@
   "Physics": 1
  },
  "summaries": [],
- "weeks": []
+ "weeks": [
+  {
+   "id": "2026-W45",
+   "start": "2026-11-02",
+   "end": "2026-11-07",
+   "complete": false
+  }
+ ]
 }

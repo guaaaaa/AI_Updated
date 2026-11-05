@@ -63,7 +63,7 @@ def domain_index(did):
                           "cooling": [h["label"] for h in j["research"]["cooling"] + j["industry"]["cooling"]]})
     out = {"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "domain": did, "days": days, "items": items,
            "tag_groups": groups, "tag_counts": dict(tag_counts), "news_categories": cats,
-           "category_counts": dict(cat_counts), "summaries": summaries, "weeks": week_review.build_all() if did == "ai" else []}
+           "category_counts": dict(cat_counts), "summaries": summaries, "weeks": week_review.build_all(did)}
     P["data"].mkdir(parents=True, exist_ok=True)
     (P["data"] / "index.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{did} index.json: {len(days)} days, {len(items)} items, {len(summaries)} summaries, {len(out['weeks'])} weeks")

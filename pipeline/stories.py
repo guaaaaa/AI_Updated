@@ -14,7 +14,7 @@ def tokens(title):
     return {w for w in re.findall(r"[a-z0-9$][a-z0-9$.\-']+", title.lower()) if w not in STOP and len(w) > 2}
 
 
-def cluster(heads, min_shared=3, threshold=0.5):
+def cluster(heads, min_shared=3, threshold=0.5, keep=False):
     clusters = []
     index = {}  # token -> cluster ids (keeps this fast for a month of headlines)
     for h in sorted(heads, key=lambda x: x["ts"]):
@@ -42,6 +42,7 @@ def cluster(heads, min_shared=3, threshold=0.5):
         for w in tk:
             index.setdefault(w, set()).add(best)
     out = [{"title": c["items"][0]["t"], "date": c["items"][0]["ts"][:10], "outlets": sorted(c["pubs"]),
-            "n": len(c["items"]), "text": " | ".join(i["t"] for i in c["items"])} for c in clusters]
+            "n": len(c["items"]), "text": " | ".join(i["t"] for i in c["items"]), **({"items": c["items"]} if keep else {})}
+           for c in clusters]
     out.sort(key=lambda s: (-len(s["outlets"]), s["date"]))
     return out

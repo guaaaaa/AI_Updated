@@ -1,0 +1,52 @@
+{
+ "week": "2026-W45",
+ "start": "2026-11-02",
+ "end": "2026-11-07",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [
+  {
+   "title": "Dinosaur blood—oldest discovery rewrites what fossils can reveal about the past",
+   "outlets": 3,
+   "date": "2026-11-02",
+   "covered": "2026-11-04-n1"
+  }
+ ],
+ "featured": {
+  "news": 2,
+  "papers": 3
+ },
+ "items": [
+  {
+   "id": "2026-11-04-n1",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Chemical traces of blood found in a 115-million-year-old dinosaur bone"
+  },
+  {
+   "id": "2026-11-04-n2",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "LHCb sees first evidence of the rarest beauty-particle decay yet observed"
+  },
+  {
+   "id": "doi-10-1038-s41591-026-04745-4",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "Perioperative ivonescimab with or without chemotherapy in resectable non-small cell lung cancer: a phase 2 trial"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11228-6",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "An AI-native experimental laboratory for autonomous biomolecular operations"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11368-9",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "Carbon radical generation by irreversible metal-to-ligand charge transfer"
+  }
+ ]
+}

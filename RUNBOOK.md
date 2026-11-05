@@ -60,7 +60,7 @@ snapshot (`data/state/jobs/`) automatically; `field_daily` or `jobs:` warnings n
 
 ## 2. News
 
-Group headlines into stories yourself, shortlist ≤4, and pick ≤2 with the rubric below.
+The list already groups headlines into stories with outlet counts; merge rows that are the same story, shortlist ≤4, and pick ≤2 with the rubric below.
 
 Budget: **≤6 WebSearch queries and ≤6 page fetches** (each URL counts as one fetch; a search the tool
 rejects before running doesn't count). Use them to confirm facts, find the primary source and canonical

@@ -19,6 +19,7 @@ import xml.etree.ElementTree as ET_XML
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import stories  # noqa: E402
 from common import (DOM, DOMAIN, UTC, WORK, config, http_get, news_window, parse_date,  # noqa: E402
                     other_tabs, recent_digests, snapshot_update, subject_ok, today_et)
 
@@ -89,6 +90,33 @@ def canon(pub):
 
 def tokens(title):
     return {w for w in re.findall(r"[a-z0-9][a-z0-9\-\.]+", title.lower()) if w not in STOP and len(w) > 2}
+
+
+def press_section(press, when, limit=130):
+    """One row per story: headlines sharing distinctive words are grouped (stories.cluster), each outlet listed once."""
+    groups = stories.cluster([{"t": it["title"], "p": it["publisher"], "ts": it["time"].isoformat(), "k": k}
+                              for k, it in enumerate(press)], keep=True)
+    seen, rows = set(), []
+    for g in groups:
+        rows.append([press[h["k"]] for h in g["items"]])
+        seen.update(h["k"] for h in g["items"])
+    rows += [[it] for k, it in enumerate(press) if k not in seen]   # headlines too short to group
+    rows.sort(key=lambda its: (-len({i["publisher"] for i in its}), -max(i["time"] for i in its).timestamp()))
+    link = lambda it: "" if "news.google.com" in it["url"] else f"  <{it['url']}>"
+    out = []
+    for its in rows[:limit]:
+        its.sort(key=lambda i: i["time"])
+        first, outlets = its[0], {}
+        for i in its:
+            outlets.setdefault(i["publisher"], i)
+        if len(outlets) == 1:
+            out.append(f"- {when(first['time'])} | {first['publisher']}: {first['title']}{link(first)}")
+        else:
+            out.append(f"- [{len(outlets)} outlets] {when(first['time'])} | {first['title']}")
+            out.append("    " + " · ".join(f"{p}{link(i)}" for p, i in outlets.items()))
+    if len(rows) > limit:
+        out.append(f"- … {len(rows) - limit} more single-outlet headlines not shown")
+    return out
 
 
 def main():
@@ -212,12 +240,9 @@ def main():
             desc = " ".join(it.get("desc", "").split()[:20])
             L.append(f"- {when(it['time'])} | {it['publisher']}: {it['title']}  <{it['url']}>"
                      + (f"\n    {desc}…" if desc else ""))
-    L += ["", "## B. Press & newsletter headlines (chronological; Google News links omitted, search by headline)"]
-    press = [it for it in heads if it["tier"] != "primary"][-140:]  # newest 140 headlines max
-    for it in press:
-        if True:
-            u = "" if "news.google.com" in it["url"] else f"  <{it['url']}>"
-            L.append(f"- {when(it['time'])} | {it['publisher']}: {it['title']}{u}")
+    L += ["", "## B. Press coverage grouped into stories (most outlets first, then newest; Google News links omitted, "
+          "search by headline). Grouping is conservative: merge rows that are the same story."]
+    L += press_section([it for it in heads if it["tier"] != "primary"], when)
     L += ["", f"## C. Hacker News ({topic}, top by points)"] if hn else []
     L += [f"- {dt.datetime.fromisoformat(h['time']).astimezone(tz):%a %H:%M} | {h['points']} pts / {h['comments']} comments: "
           f"{h['title']}  <{h['url']}>" for h in hn[:10]]

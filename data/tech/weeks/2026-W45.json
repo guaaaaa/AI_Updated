@@ -1,0 +1,52 @@
+{
+ "week": "2026-W45",
+ "start": "2026-11-02",
+ "end": "2026-11-07",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [
+  {
+   "title": "Shop fridges and freezers across Europe hit by fresh suspected cyber-attack",
+   "outlets": 7,
+   "date": "2026-11-02",
+   "covered": null
+  },
+  {
+   "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+   "outlets": 3,
+   "date": "2026-11-03",
+   "covered": "2026-11-04-n3"
+  }
+ ],
+ "featured": {
+  "news": 4,
+  "papers": 0
+ },
+ "items": [
+  {
+   "id": "2026-11-04-n1",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Marvell agrees to buy Lumentum for $115 billion in an all-stock deal"
+  },
+  {
+   "id": "2026-11-04-n2",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Google and partners dismantle XCPE botnet built into 1.3 million Android TV boxes"
+  },
+  {
+   "id": "2026-11-04-n3",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Binance says a fake job interview started its $6.3 billion theft"
+  },
+  {
+   "id": "2026-11-04-n4",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "Apple warns memory costs are unprecedented as they squeeze margins and Mac supply"
+  }
+ ]
+}
