@@ -10,9 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/themes.css">
   <meta name="theme-color" content="#fbf9f5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0c0d14" media="(prefers-color-scheme: dark)">
-  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <script>(function(){var d=document.documentElement;d.dataset.palette='wellness';try{var u=new URLSearchParams(location.search).get('palette');var p=u||localStorage.getItem('palette');if(p)d.dataset.palette=p;if(u)localStorage.setItem('palette',u);var t=localStorage.getItem('theme');if(t)d.dataset.theme=t;}catch(e){}})();</script>
   <link rel="alternate" type="application/rss+xml" title="Updated · all tabs" href="data/feeds/all.xml">
   <link rel="alternate" type="application/rss+xml" title="Updated · AI" href="data/feeds/ai.xml">
   <link rel="alternate" type="application/rss+xml" title="Updated · Business" href="data/feeds/business.xml">
@@ -33,6 +34,11 @@
       <div class="top-actions">
         <button class="icon-btn filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="sidebar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters</button>
+        <div class="palette-wrap">
+          <button class="icon-btn" id="paletteBtn" aria-haspopup="true" aria-expanded="false" aria-label="Colour scheme" title="Colour scheme">
+            <span class="palette-dot" aria-hidden="true"></span></button>
+          <div class="palette-menu" id="paletteMenu" role="menu" hidden></div>
+        </div>
         <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle light / dark">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" stroke="none"/></svg></button>
       </div>

@@ -150,7 +150,7 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
 .logo {
   width: 34px; height: 34px; border-radius: 11px; display: grid; place-items: center; color: #2b2e3b;
   font: 800 13px/1 var(--font-display); letter-spacing: .4px;
-  background: linear-gradient(135deg, #b6dfe5 0%, #c9c3e6 45%, #f4b6c8 72%, #fbd3c5 100%);
+  background: var(--logo, linear-gradient(135deg, #b6dfe5 0%, #c9c3e6 45%, #f4b6c8 72%, #fbd3c5 100%));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .6), 0 6px 16px -6px rgba(196, 140, 180, .55);
 }
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
@@ -233,7 +233,7 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
   color: var(--text); font-weight: 600;
   box-shadow: 0 4px 12px -6px color-mix(in srgb, var(--c, var(--mint)) 80%, transparent), inset 0 1px 0 rgba(255, 255, 255, .4);
 }
-.chip.on::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--ci, var(--accent)); margin-right: 6px; vertical-align: 1px; }
+.chip.on::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: color-mix(in oklab, var(--c, var(--accent)) 50%, var(--ci, var(--accent))); margin-right: 6px; vertical-align: 1px; }
 .chip.on .n { color: var(--muted); }
 .chip:disabled { opacity: .4; cursor: default; }
 
@@ -264,7 +264,12 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
 .card:hover { box-shadow: var(--shadow-lift), inset 0 1px 0 var(--hi); }
 .card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
 .kind { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: var(--muted); }
-.kind::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ci, var(--accent)); flex: none; }
+/* dots: a mid-tone between the pastel and its ink, so they sit in the palette instead of punching out of it */
+.kind::before { content: ""; width: 8px; height: 8px; border-radius: 50%; flex: none;
+  background: color-mix(in oklab, var(--c, var(--accent)) 50%, var(--ci, var(--accent))); }
+/* news stays the stand-out label, by a soft halo in its own hue rather than a hard colour */
+.card.news .kind::before, .glance li[data-g="news"] .g-dot {
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--c, var(--accent)) 45%, transparent); }
 .card-date { font-size: 12px; color: var(--faint); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .card-top .card-date { white-space: normal; text-align: right; min-width: 0; }   /* long venue names wrap on phones */
 .card h3 { font: 600 19px/1.32 var(--font-display); margin: 0 0 6px; letter-spacing: -.012em; }
@@ -371,7 +376,7 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
 .glance { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 2px; }
 .glance li { display: grid; grid-template-columns: 14px 1fr auto; align-items: baseline; gap: 10px; padding: 6px 6px; border-radius: 10px; transition: background .15s; }
 .glance li:hover { background: var(--glass-soft); }
-.glance .g-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ci, var(--accent)); align-self: center; }
+.glance .g-dot { width: 8px; height: 8px; border-radius: 50%; background: color-mix(in oklab, var(--c, var(--accent)) 50%, var(--ci, var(--accent))); align-self: center; }
 .glance a { color: var(--text); font-weight: 500; font-size: 14.5px; }
 .glance .g-kind { color: var(--faint); font-size: 12px; white-space: nowrap; }
 
@@ -716,3 +721,26 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
 .today-grid .card h3 { font-size: 17px; }
 .feeds { margin-top: 6px; }
 @media (max-width: 560px) { .today-more { margin-left: 0; } }
+
+/* ---------- colour-scheme menu */
+.palette-wrap { position: relative; }
+.palette-dot { width: 16px; height: 16px; border-radius: 50%; display: block; background: var(--logo, var(--grad));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5); }
+.palette-menu {
+  position: absolute; right: 0; top: calc(100% + 10px); z-index: 40; width: 290px; padding: 8px; border-radius: 20px;
+  background: var(--sheen), var(--glass-strong); -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-border); box-shadow: var(--shadow-lift);
+}
+.palette-menu .pm-title { font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin: 6px 10px 8px; }
+.palette-opt { display: flex; align-items: center; gap: 12px; width: 100%; padding: 9px 10px; border: 0; border-radius: 14px;
+  background: transparent; text-align: left; color: var(--text); }
+.palette-opt:hover, .palette-opt:focus-visible { background: var(--glass-soft); }
+.palette-opt.on { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.palette-opt .sw { display: flex; flex: none; }
+.palette-opt .sw i { width: 13px; height: 26px; display: block; }
+.palette-opt .sw i:first-child { border-radius: 8px 0 0 8px; } .palette-opt .sw i:last-child { border-radius: 0 8px 8px 0; }
+.palette-opt b { display: block; font-size: 13.5px; font-weight: 600; }
+.palette-opt small { display: block; font-size: 12px; color: var(--muted); }
+.today-grid .card-top { gap: 10px; }
+.today-grid .card-top .kind { white-space: nowrap; flex: none; padding-left: 3px; }
+.today-grid .card-top .card-date { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }

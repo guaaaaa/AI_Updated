@@ -917,13 +917,13 @@
       board: () => set(F.board, `${dirs.length} research directions, measured over every new arXiv paper in our categories ` +
         `(${T.n_papers.toLocaleString()} in ${winTxt}). Each row's line is its share of new papers over 24 months; "All" lists the steady ones too.`, leaderboard(T)),
       growth: () => set(F.growth, "Each line is a direction's share of new papers divided by its share a year ago: above 1× it is gaining " +
-        "ground relative to the whole field, below 1× losing it. Log scale, so 2× and 0.5× are equally far from 1×. Warm lines are rising directions, cool lines fading ones.",
+        "ground relative to the whole field, below 1× losing it. Log scale, so 2× and 0.5× are equally far from 1×. Lines in the rising colour (as ↑ in the leaderboard) are gaining ground, lines in the fading colour (↓) losing it.",
         growthChart(T)),
       map: () => set(F.map, "Each dot is a direction: further right = a bigger share of new papers, higher up = faster growth over a year. " +
-        "Coloured dots passed the noise filters (warm rising, cool fading). Select a dot for its page.", momentumMap(T)),
+        "Coloured dots passed the noise filters (the leaderboard's ↑ rising and ↓ fading colours). Select a dot for its page.", momentumMap(T)),
       heat: () => {
         const rows = GROUPS.flatMap((g) => dirs.filter((d) => d.group === g)).map((d) => ({ label: d.name, color: GVAR[d.group], values: d.series, href: dirHref(d.id) }));
-        set(F.heat, "Every direction's monthly share of new papers against its own 24-month average: warm months ran above its usual level, cool months below.",
+        set(F.heat, "Every direction's monthly share of new papers against its own 24-month average: months in the rising colour ran above its usual level, months in the fading colour below.",
           heatGrid(rows, months, "Research directions by month"),
           table("Monthly share of new papers per direction", ["Direction", ...months], rows.map((r) => [r.label, ...r.values.map((v) => pct(v, 2))])));
       },
