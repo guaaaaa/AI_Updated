@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="assets/themes.css">
   <meta name="theme-color" content="#fbfbf5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0b0b27" media="(prefers-color-scheme: dark)">
-  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}
+  /* the sky follows the hour in New York (?hour=H previews another time) */
+  window.__sky=function(){var d=document.documentElement,q=new URLSearchParams(location.search).get('hour'),h;try{h=q!==null?+q:+new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour:'numeric',hourCycle:'h23'}).format(new Date());}catch(e){h=new Date().getHours();}d.dataset.skyLight=h>=5&&h<10?'dawn':h>=10&&h<16?'day':h>=16&&h<20?'golden':'blue';d.dataset.skyDark=h>=17&&h<21?'dusk':(h>=21||h<4)?'night':h<7?'predawn':'day';};window.__sky();</script>
   <link rel="alternate" type="application/rss+xml" title="Updated · all tabs" href="data/feeds/all.xml">
   <link rel="alternate" type="application/rss+xml" title="Updated · AI" href="data/feeds/ai.xml">
   <link rel="alternate" type="application/rss+xml" title="Updated · Business" href="data/feeds/business.xml">

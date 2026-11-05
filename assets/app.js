@@ -148,6 +148,9 @@
       r.date = r.date || S.dates[0];
       if (r.date) S.calMonth = new Date(dObj(r.date).getFullYear(), dObj(r.date).getMonth(), 1);
     }
+    const tab = r.view === "jobs" || r.view === "today" ? r.view : r.dom, tabD = S.domains.find((d) => d.id === tab);
+    document.documentElement.dataset.tab = tab;
+    document.documentElement.style.setProperty("--th", String(tab === "jobs" ? 350 : (tabD && tabD.hue) || 172));
     const wide = r.view === "trends" || r.view === "jobs" || r.view === "today";
     $(".layout").classList.toggle("wide", wide);
     for (const a of document.querySelectorAll("#viewNav a")) {
@@ -170,6 +173,7 @@
     } catch (e) {
       main.replaceChildren(el("div", { class: "empty", text: `Could not load this view (${e.message}).` }));
     }
+    paintBackdrop(r);
     if (window.innerWidth <= 900) { $("#sidebar").classList.remove("open"); $(".layout").classList.remove("filters-open"); }
     $("#filtersToggle").classList.toggle("active", Boolean(filtersActive()));
   }
@@ -337,6 +341,31 @@
     return card;
   }
 
+  // The day's fingerprint: one glow per story group on screen (its hue from the group's --gh), sized by its share and
+  // nudged toward the tab's hue; on Today, one glow per tab sized by its stories. Positions shift with the date.
+  function paintBackdrop(r) {
+    const R = document.documentElement;
+    let rows = [];
+    if (r.view === "today") rows = [...document.querySelectorAll(".today-tab")].map((s) => [+s.style.getPropertyValue("--sh") || 172, +s.dataset.n || 1]);
+    else if (r.view === "day" || r.view === "browse") {
+      const m = new Map();
+      for (const c of document.querySelectorAll("#main .card[data-g]")) {
+        const h = parseFloat(getComputedStyle(c).getPropertyValue("--gh"));
+        if (!Number.isNaN(h)) m.set(h, (m.get(h) || 0) + 1);
+      }
+      rows = [...m.entries()].sort((a, b) => b[1] - a[1]);
+    }
+    if (!rows.length) { R.style.setProperty("--fp", "none"); return; }
+    const total = rows.reduce((a, x) => a + x[1], 0), today = r.view === "today";
+    const anchors = today ? ["6% -8%", "100% 2%", "96% 70%", "-4% 96%", "50% 108%"] : ["96% 74%", "-4% 96%", "50% 108%", "28% 46%", "78% 34%", "8% 58%"];
+    const seed = today ? 0 : [...(r.date || "")].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) >>> 0, 7);
+    R.style.setProperty("--fp", rows.slice(0, anchors.length).map(([h, n], i) => {
+      const s = Math.round((today ? 640 : 480) + 820 * n / total), col = `oklch(var(--fp-l) var(--fp-c) ${h} / var(--fp-a))`;
+      return `radial-gradient(${s}px ${Math.round(s * .78)}px at ${anchors[(i + seed) % anchors.length]}, ` +
+        (today ? col : `color-mix(in oklab, ${col} 75%, oklch(var(--fp-l) var(--fp-c) var(--th) / var(--fp-a)))`) + ", transparent 62%)";
+    }).join(", "));
+  }
+
   // ---------- views
   // Today: the latest digest of every tab, three highlights each (news first, at least one paper where a tab has them)
   async function renderToday() {
@@ -354,7 +383,7 @@
       const nP = papers.length ? Math.min(papers.length, Math.max(1, 3 - Math.min(news.length, 2))) : 0;
       const picks = [...news.slice(0, 3 - nP).map((x) => [x, true]), ...papers.slice(0, nP).map((x) => [x, false])];
       const word = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
-      return el("section", { class: "today-tab" },
+      return el("section", { class: "today-tab", style: `--sh: ${d.hue || 172}`, "data-n": String(news.length + papers.length) },
         el("div", { class: "today-tab-head" },
           el("h2", {}, el("a", { href: `#/${d.id}`, text: d.name })),
           el("span", { class: "day-meta", text: `${fmtShort(j.date)} · ${word(news.length, "news story").replace("storys", "stories")}` +
@@ -503,6 +532,7 @@
     if (window.AIUTrends) window.AIUTrends.init(helpers);
     if (window.AIUJobs) window.AIUJobs.init(helpers, window.AIUTrends && window.AIUTrends.kit);
     await useDomain("ai");
+    if (window.__sky) setInterval(window.__sky, 10 * 60 * 1000);   // the sky follows the clock
     wire();
     route();
   }

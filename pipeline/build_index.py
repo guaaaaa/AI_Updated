@@ -143,7 +143,7 @@ def main():
         info = domain_index(d["id"])
         feed = info.pop("_feed")
         allfeed.extend(feed)
-        meta.append({"id": d["id"], "name": d["name"], "tagline": d.get("tagline", ""), "trends": bool(d.get("trends")),
+        meta.append({"id": d["id"], "name": d["name"], "tagline": d.get("tagline", ""), "trends": bool(d.get("trends")), "hue": d.get("hue", 172),
                      "paper_label": d.get("paper_label", "Papers"), "news": d["news"], "papers": d["papers"],
                      "index": "data/index.json" if d["id"] == "ai" else f"data/{d['id']}/index.json", **info})
     (DATA / "domains.json").write_text(json.dumps({"updated": dt.datetime.now(UTC).isoformat(timespec="seconds"), "domains": meta},

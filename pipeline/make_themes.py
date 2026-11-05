@@ -9,6 +9,7 @@ adjacent colour-blind separation, contrast) when --validator points at it.
 
 themes.css loads after style.css, so these tokens override the fallbacks there.
 """
+import json
 import math
 import subprocess
 import sys
@@ -89,6 +90,79 @@ SCHEME = {"id": "garden", "name": "Spring garden · Night sky", "light_name": "S
                              (205, 0.45, 0.08, .20, "-6% 100%", "760px 600px")],      # moonlit teal
                    "up": (160, 0.66, 0.12), "down": (300, 0.56, 0.13)}}
 SCHEMES = [SCHEME]
+
+# The page backdrop is layered (style.css composes them on body::before when the site sets data-tab):
+#   stars (dark night phases)  >  fingerprint (the day's story groups, set by app.js)  >  tab glows  >  sky.
+# Sky phases follow the hour in New York (app.js sets data-sky-light / data-sky-dark):
+SKY = {
+    "light": {   # (hue, L, C[, stop%]) top -> horizon, then glows (hue, L, C, alpha, where, size)
+        "dawn": ([(275, .945, .03), (350, .96, .03, 50), (55, .945, .055)], [(65, .925, .08, .70, "80% 106%", "1100px 520px"), (15, .935, .05, .50, "20% 110%", "900px 480px")]),
+        "day": ([(232, .935, .045), (215, .968, .02, 55), (150, .958, .04)], [(95, .985, .03, .85, "88% -8%", "700px 560px"), (145, .945, .05, .45, "-4% 104%", "900px 500px")]),
+        "golden": ([(290, .945, .03), (30, .955, .04, 52), (75, .935, .075)], [(70, .915, .09, .66, "12% 106%", "1100px 520px"), (20, .925, .06, .45, "90% 102%", "800px 460px")]),
+        "blue": ([(265, .925, .04), (300, .95, .025, 55), (220, .955, .025)], [(260, .97, .02, .70, "85% -6%", "600px 480px")]),
+    },
+    "dark": {
+        "dusk": ([(275, .18, .06), (315, .23, .075, 55), (5, .31, .085)], [(5, .46, .10, .32, "50% 112%", "1400px 520px"), (330, .40, .11, .28, "90% 100%", "800px 460px")], 1),
+        "night": ([(268, .15, .05), (278, .17, .055, 60), (290, .20, .06)], [(260, .80, .05, .18, "84% 6%", "380px 380px")], 3),
+        "predawn": ([(270, .16, .05), (295, .205, .065, 55), (205, .31, .075)], [(195, .47, .085, .34, "70% 110%", "1300px 480px"), (330, .42, .09, .20, "20% 104%", "900px 440px")], 2),
+        "day": ([(248, .18, .05), (238, .20, .05, 60), (205, .24, .055)], [(165, .40, .08, .20, "0% 100%", "900px 600px")], 0),
+    },
+}
+# the tab's own glows (var(--th) = the tab hue from config/domains.json); Today shows the day's spectrum instead
+TAB_GLOWS = {"light": [(0, .905, .075, .82, "6% -10%", "1000px 760px"), (45, .925, .05, .60, "100% 0%", "900px 700px")],
+             "dark": [(0, .42, .14, .50, "96% -6%", "1000px 760px"), (40, .34, .12, .40, "0% 18%", "900px 700px")]}
+FINGERPRINT = {"light": (.915, .06, .60), "dark": (.44, .12, .30)}   # L, C, alpha of each story-group glow
+TAB_INK = {"light": (.47, .10), "dark": (.84, .09)}                    # per-tab link colour
+JOBS_HUE = 350
+
+
+def sky_value(mode, phase):
+    spec = SKY[mode][phase]
+    grad, glows = spec[0], spec[1]
+    stops = ", ".join(f"oklch({l} {c} {h})" + (f" {s[0]}%" if s else "") for h, l, c, *s in grad)
+    return ", ".join([f"radial-gradient({size} at {pos}, oklch({l} {c} {h} / {a}), transparent 62%)" for h, l, c, a, pos, size in glows]
+                     + [f"linear-gradient(180deg, {stops})"])
+
+
+def tab_scene(mode):
+    return ", ".join(f"radial-gradient({size} at {pos}, oklch({l} {c} calc(var(--th) + {dh}) / {a}), transparent 62%)"
+                     for dh, l, c, a, pos, size in TAB_GLOWS[mode])
+
+
+def backdrop_css():
+    """Sky phases, tab glows, fingerprint tokens, per-tab links and the iridescent glass edge, for both modes."""
+    D = ':not([data-theme="light"])'
+    fl, fc, fa = FINGERPRINT["light"]
+    dl, dc, da = FINGERPRINT["dark"]
+    edge_l = ("linear-gradient(140deg, rgba(255, 255, 255, .95) 0%, oklch(.90 .06 200 / .75) 18%, oklch(.90 .06 300 / .55) 36%, "
+              "rgba(255, 255, 255, 0) 55%, oklch(.92 .06 350 / .55) 78%, oklch(.93 .07 70 / .7) 100%)")
+    edge_d = ("linear-gradient(140deg, oklch(.85 .08 200 / .45) 0%, oklch(.75 .12 300 / .30) 22%, rgba(255, 255, 255, 0) 52%, "
+              "oklch(.75 .12 350 / .25) 80%, oklch(.85 .09 70 / .3) 100%)")
+    nl = "\n"
+    out = ["/* backdrop layers: sky (by hour), tab glows, story fingerprint, stars; iridescent glass edge */",
+           ":root {" + nl + f"  --th: {SCHEME['light']['accent']};" + nl + "  --stars: none;" + nl
+           + f"  --tab-scene: {tab_scene('light')};" + nl + f"  --fp-l: {fl}; --fp-c: {fc}; --fp-a: {fa};" + nl
+           + f"  --edge: {edge_l};" + nl + "}"]
+    for ph in SKY["light"]:
+        out.append(f':root[data-sky-light="{ph}"] {{ --sky: {sky_value("light", ph)}; }}')
+    li, lc = TAB_INK["light"]
+    out.append(f':root[data-tab]:not([data-tab="today"]) {{ --accent: oklch({li} {lc} var(--th)); }}')
+    dark_root = (f"  --tab-scene: {tab_scene('dark')};" + nl + f"  --fp-l: {dl}; --fp-c: {dc}; --fp-a: {da};" + nl + f"  --edge: {edge_d};")
+    di, dc_ = TAB_INK["dark"]
+    dark_tab = f"--accent: oklch({di} {dc_} var(--th));"
+    for wrap, sel in (("@media (prefers-color-scheme: dark) {", f":root{D}"), ("", ':root[data-theme="dark"]')):
+        body = [sel + " {" + nl + dark_root + nl + "}"]
+        for ph, spec in SKY["dark"].items():
+            stars_v = ", ".join(stars(spec[2])) or "none"
+            phase_sel = sel.replace(":root", ':root[data-sky-dark="' + ph + '"]', 1)
+            body.append(f"{phase_sel} {{ --sky: {sky_value('dark', ph)}; --stars: {stars_v}; }}")
+        tab_sel = sel.replace(":root", ':root[data-tab]:not([data-tab="today"])', 1)
+        body.append(f"{tab_sel} {{ {dark_tab} }}")
+        out += ([wrap] + body + ["}"]) if wrap else body
+    out.append('html:root[data-tab="today"] { --tab-scene: linear-gradient(transparent, transparent); }')
+    return nl.join(out)
+
+
 SERIES = {   # validated as a set on light and dark chart surfaces (lightness band, chroma, adjacent colour-blind separation)
     "light": {"ge": "#c4772f", "trust": "#cc4f7c", "cap": "#1b87b8", "sci": "#76901c", "fm": "#8a6ad2", "train": "#1f9168"},
     "dark": {"ge": "#c4802f", "trust": "#d65d9c", "cap": "#3a98cc", "sci": "#82a02b", "fm": "#9a7ce0", "train": "#2aa17b"}}
@@ -206,6 +280,30 @@ def checks(s, lt, dt, validator):
             worst = min(contrast(tok[k], b) for b in bgs)
             if worst < 4.5:
                 bad.append(f"{mode} {k} {tok[k]} contrast {worst:.2f}")
+    hues = [d.get("hue", 172) for d in json.loads((ROOT / "config" / "domains.json").read_text())["domains"]] + [JOBS_HUE]
+    for mode in ("light", "dark"):
+        # (colour, opacity) of everything that can sit behind a card: sky stops (opaque), sky glows, tab glows, fingerprint glows
+        layers = []
+        for spec in SKY[mode].values():
+            layers += [(hexc(l, c, h), 1.0) for h, l, c, *_ in spec[0]] + [(hexc(l, c, h), a) for h, l, c, a, *_ in spec[1]]
+        fl, fc, fa = FINGERPRINT[mode]
+        for h in hues:
+            here = layers + [(hexc(l, c, h + dh), a) for dh, l, c, a, *_ in TAB_GLOWS[mode]] \
+                + [(hexc(fl, fc, gh), fa) for gh in list(SLOTS.values()) + [350]]
+            if mode == "light":   # white glass (52%) over the glow at full strength: the conservative case
+                bgs = [mix(b, "#ffffff", .52) for b, _ in here]
+            else:                 # dark glass (55%) over the glow at its own opacity
+                glass = hexc(0.24, s["dark"]["base"][1] * .9, s["dark"]["base"][2])
+                bgs = [mix(glass, b, min(.45, a * .45)) for b, a in here]
+            ink = hexc(*TAB_INK[mode], h)
+            worst = min(contrast(ink, b) for b in bgs)
+            if worst < 4.5:
+                bad.append(f"{mode} tab link hue {h} {ink} contrast {worst:.2f}")
+            for k in ("--text", "--muted", "--faint"):
+                tok = lt if mode == "light" else dt
+                w = min(contrast(tok[k], b) for b in bgs)
+                if w < 4.5:
+                    bad.append(f"{mode} {k} over sky/tab hue {h}: {w:.2f}")
     if validator:
         for mode, tok in (("light", lt), ("dark", dt)):
             series = ",".join(tok[f"--viz-{k}"] for k in list(SERIES[mode]) + ["news"])
@@ -227,7 +325,7 @@ def main():
     css = ["/* Generated by pipeline/make_themes.py -- edit the scheme there, not this file. */",
            f"/* {s['name']}: light = {s['light_name']}, dark = {s['dark_name']} */", block(":root", lt, ""),
            "@media (prefers-color-scheme: dark) {", block(':root:not([data-theme="light"])', dt), "}",
-           block(':root[data-theme="dark"]', dt, "")]
+           block(':root[data-theme="dark"]', dt, ""), backdrop_css()]
     OUT.write_text("\n".join(css) + "\n", encoding="utf-8")
     problems = checks(s, lt, dt, validator)
     print(f"wrote {OUT.relative_to(ROOT)}: {'all checks pass' if not problems else ''}")
