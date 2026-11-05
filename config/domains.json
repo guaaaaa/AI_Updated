@@ -45,17 +45,6 @@
    "paper_label": "Papers"
   },
   {
-   "id": "climate",
-   "name": "Climate",
-   "tagline": "Energy, climate science and climate policy",
-   "news": 4,
-   "papers": 1,
-   "runbook": "RUNBOOK_CLIMATE.md",
-   "trends": false,
-   "paper_window_h": 168,
-   "paper_label": "Research"
-  },
-  {
    "id": "tech",
    "name": "Tech",
    "tagline": "Chips, software, security, devices and space (beyond AI)",
@@ -65,16 +54,6 @@
    "trends": false,
    "paper_window_h": 168,
    "paper_label": "Research"
-  },
-  {
-   "id": "policy",
-   "name": "Policy",
-   "tagline": "Government, elections and world affairs",
-   "news": 5,
-   "papers": 0,
-   "runbook": "RUNBOOK_POLICY.md",
-   "trends": false,
-   "paper_label": "Papers"
   }
  ]
 }

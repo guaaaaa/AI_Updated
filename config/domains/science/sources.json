@@ -1,5 +1,5 @@
 {
- "_doc": "Science domain sources: agency releases (NASA, NSF), science press, Google News searches filtered to reputable publishers, and research from Nature, Science, Cell, PNAS, Science Advances and Nature's physics and astronomy journals. Clinical medicine and public health belong to the Health tab; energy systems and climate policy to the Climate tab.",
+ "_doc": "Science domain sources: agency releases (NASA, NSF), science press, Google News searches filtered to reputable publishers, and research from Nature, Science, Cell, PNAS, Science Advances and Nature's physics and astronomy journals. Clinical medicine and public health belong to the Health tab.",
  "news_feeds": [
   {
    "name": "NASA",

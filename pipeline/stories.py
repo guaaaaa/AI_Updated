@@ -26,7 +26,7 @@ def cluster(heads, min_shared=3, threshold=0.5):
             for ci in index.get(w, ()):
                 cand[ci] = cand.get(ci, 0) + 1
         best, score = None, 0.0
-        for ci, inter in cand.items():
+        for ci, inter in sorted(cand.items()):  # lowest cluster id wins ties, whatever the hash order
             if inter < min_shared:
                 continue
             j = inter / max(1, min(len(tk), len(clusters[ci]["seed"])))

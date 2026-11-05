@@ -4,8 +4,7 @@ You are producing today's **Science** digest for the Updated site: at most **3 n
 each explained in **250–350 words**, published to https://guaaaaa.github.io/AI_Updated/#/science.
 
 **Scope:** physics, space, chemistry, materials, basic life sciences, earth and climate science. Clinical medicine and
-public health belong to the Health tab; energy markets, the grid and climate policy to the Climate tab; technology to
-the Tech tab.
+public health belong to the Health tab; technology to the Tech tab.
 
 **Reader:** a scientifically literate generalist (an engineer, a researcher in another field, a curious
 professional) who wants the most important discoveries across physics, space, life sciences, medicine, climate and

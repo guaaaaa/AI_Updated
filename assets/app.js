@@ -72,7 +72,7 @@
     const latest = S.dates[0] ? dObj(S.dates[0]) : new Date();
     S.calMonth = new Date(latest.getFullYear(), latest.getMonth(), 1);
     $("#typeSeg").children[1].textContent = paperWord();
-    $("#typeSeg").hidden = !st.D.papers;                         // news-only domains (Policy) have no papers
+    $("#typeSeg").hidden = !st.D.papers;                         // news-only domains have no papers
     $("#tagsTitle").closest(".panel").hidden = !st.D.papers;
     $("#tagsTitle").textContent = `${paperWord() === "Papers" ? "Paper" : paperWord()} tags`;
   }

@@ -64,15 +64,15 @@
  ],
  "stories": [
   {
-   "title": "DeepSeek partners with Huawei to develop chip programming tools, reducing reliance on Nvidia",
-   "outlets": 6,
-   "date": "2026-09-29",
+   "title": "Google announces Gemini 4 Argon AI model, but you can’t use it yet",
+   "outlets": 7,
+   "date": "2026-09-30",
    "covered": null
   },
   {
-   "title": "Google announces Gemini 4 Argon AI model, but you can’t use it yet",
+   "title": "DeepSeek partners with Huawei to develop chip programming tools, reducing reliance on Nvidia",
    "outlets": 6,
-   "date": "2026-09-30",
+   "date": "2026-09-29",
    "covered": null
   },
   {
@@ -83,7 +83,7 @@
   },
   {
    "title": "Google unveils Gemini 4 Argon, retaking benchmark lead over OpenAI and Anthropic — but in limited release",
-   "outlets": 4,
+   "outlets": 3,
    "date": "2026-09-30",
    "covered": null
   }
