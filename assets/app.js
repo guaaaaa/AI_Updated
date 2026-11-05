@@ -41,6 +41,7 @@
   const home = (dom = S.dom) => `#/${dom}`;
   const dayHref = (date, item, dom = S.dom) => `#/${dom}/day/${date}${item ? "/" + item : ""}`;
   const paperWord = () => (S.D && S.D.paper_label) || "Papers";
+  const paperNoun = (n) => (paperWord() === "Research" ? "research paper" : "paper") + (n === 1 ? "" : "s");
   const weekHref = (id) => (S.dom === "ai" ? `#/trends/week/${id}` : `#/${S.dom}/week/${id}`);   // AI's lives in Trends
   async function getDay(date, dom = S.dom) {
     const k = `${dom}/${date}`;
@@ -346,7 +347,7 @@
     const nav = el("div", { class: "day-nav" },
       older ? el("a", { href: dayHref(older), title: "Previous day (←)", text: "← " + fmtShort(older) }) : el("span", { text: "←" }),
       newer ? el("a", { href: dayHref(newer), title: "Next day (→)", text: fmtShort(newer) + " →" }) : el("span", { text: "→" }));
-    const meta = [S.dom === "ai" && weekend ? "Weekend edition" : null, `${S.D.name}: ${(j.news || []).length} news · ${(j.papers || []).length} ${paperWord().toLowerCase()}`,
+    const meta = [S.dom === "ai" && weekend ? "Weekend edition" : null, `${S.D.name}: ${(j.news || []).length} news · ${(j.papers || []).length} ${paperNoun((j.papers || []).length)}`,
       j.backfill ? "backfilled" : null].filter(Boolean).join(" · ");
     const head = el("div", { class: "day-head" },
       el("div", {}, el("h1", { text: fmtLong(date) }),

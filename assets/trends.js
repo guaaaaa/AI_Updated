@@ -937,7 +937,7 @@
           "The pool comes from fixed news searches, so read the movement, not the level.",
           linePanels(cats.map((c) => {
             const rel = c.share_prev ? c.share / c.share_prev - 1 : null, sig = significant(c.z_prev, rel);
-            return { title: c.name, color: "--viz-news", values: N.category_series[c.name] || [], figure: pct(c.share, 1), unit: "of stories",
+            return { title: c.name, color: "--viz-news-solo", values: N.category_series[c.name] || [], figure: pct(c.share, 1), unit: "of stories",
               delta: rel == null ? "" : `${pp(rel)} vs prev 3 mo · ${sig ? "significant" : "within noise"}`, up: (rel || 0) >= 0, quiet: !sig };
           }).filter((p) => p.values.length), ml),
           table("Share of stories per category", ["Category", ...ml], cats.map((c) => [c.name, ...(N.category_series[c.name] || []).map((v) => pct(v, 1))])));
