@@ -1,0 +1,169 @@
+{
+ "date": "2026-11-04",
+ "edition": "weekday",
+ "generated_at": "2026-11-05T02:47:50+00:00",
+ "summary": "A $115 billion optical-networking deal, a takedown of a 1.3 million-device TV box botnet, Binance's account of a $6.3 billion heist, and Apple's warning on memory costs.",
+ "news": [
+  {
+   "id": "2026-11-04-n1",
+   "story_key": "marvell-lumentum-deal",
+   "title": "Marvell agrees to buy Lumentum for $115 billion in an all-stock deal",
+   "category": "Tech Business",
+   "published": "2026-11-02T12:54:11-05:00",
+   "tldr": "Chip designer Marvell will acquire optical component maker Lumentum in an all-stock deal valued at $115 billion including debt, expected to close in the first half of 2028.",
+   "why_selected": "One of the largest acquisitions in tech history, reshaping the supply chain for data-center optical networking.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Data centers move enormous volumes of data between servers, and the links that carry it increasingly use light instead of electricity. Optical components such as lasers, amplifiers and switches turn electrical signals into light and route them. Marvell Technology designs custom chips and networking silicon for data centers and telecom equipment. Lumentum makes many of the optical parts that products like Marvell's depend on. Nvidia invested $2 billion in each company in March, according to TechCrunch."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 2, Marvell announced a deal to acquire Lumentum. TechCrunch reports an enterprise value of $115 billion including debt and an equity value of about $80 billion. Lumentum holders will receive 4.5 Marvell shares per Lumentum share, which SiliconANGLE puts at about $1,132 per share, 23.9 percent above the last unaffected price. The deal needs approval from shareholders and regulators and is expected to close in the first half of 2028. Marvell chief executive Matt Murphy will lead the combined company, and Lumentum chief executive Michael Hurlston will join its board along with two Lumentum directors. Marvell expects the deal to add to adjusted earnings per share within a year of closing and targets more than $1 billion in annual cost savings. It estimates a combined addressable market of $550 billion. Marvell shares fell almost 13 percent and Lumentum shares almost 19 percent, according to SiliconANGLE."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "TechCrunch compares the deal with Microsoft's $68.7 billion purchase of Activision Blizzard and Dell's $67 billion purchase of EMC, making it one of the largest in tech history. The logic is supply-chain control: SiliconANGLE notes that Marvell would gain more say over how upstream optical parts are designed, including lasers for co-packaged optics, a design that connects servers to the network without separate transceiver modules. Marvell is positioning itself around AI connectivity, so the deal is a bet that data-center spending on optics keeps growing. The market reaction suggests investors worry that this growth may not last."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch for shareholder votes, regulatory review over a long timeline, and what happens to Lumentum's industrial laser business, which SiliconANGLE says has an unclear future under Marvell."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/"
+    },
+    {
+     "name": "SiliconANGLE",
+     "url": "https://siliconangle.com/2026/11/02/marvell-to-acquire-optical-component-maker-lumentum-in-massive-115b-deal/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-n2",
+   "story_key": "xcpe-android-tv-botnet",
+   "title": "Google and partners dismantle XCPE botnet built into 1.3 million Android TV boxes",
+   "category": "Cybersecurity",
+   "published": "2026-11-02T14:03:31-05:00",
+   "tldr": "Google's Threat Intelligence Group and partners disrupted XCPE, a backdoor that a Chinese manufacturer shipped in more than 1.3 million Android TV boxes to rent out owners' internet connections.",
+   "why_selected": "A large supply-chain compromise of consumer devices, with a rare finding that a manufacturer built the malware in.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A botnet is a network of compromised devices controlled remotely. Residential proxy services rent out ordinary home internet addresses so customers can hide their traffic or fake their location, and Krebs on Security notes they are a major source of account takeover, advertising fraud and content scraping. Cheap Android TV boxes have been a recurring source of such botnets, including BadBox 2.0, disrupted in March 2025 according to The Register."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, Google Threat Intelligence Group (GTIG) said it worked with Lumen, Human Security, Plume, Synthient, TrendAI and Japan's National Police Agency to disrupt XCPE, a backdoor on more than 1.3 million Android devices in more than 200 countries. GTIG assessed with high confidence that Shenzhen-based Videostrong Technology built and operated it for profit, selling access to criminal affiliates who loaded their own malware modules. Ars Technica reports the boxes, mostly sold under the MECOOL brand, were Google-certified, and that the malware stub disabled Play Protect. Google took legal action against the domains and servers involved, and says taking down affiliate control domains will cut access to at least 10 million additional compromised devices. Trend Micro counted 1,472,554 infected devices."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The infection came from the manufacturer, so owners had no chance to avoid it. Ars Technica notes that Play Protect remains disabled and the inactive modules remain installed as system apps that users cannot easily remove. Synthient published a list of 182 affected device models. Google says it has closed the certification gap, but Android is open source and uncertified boxes under other brands remain on sale."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch whether affected owners get a cleanup path, whether Videostrong reappears under new brands, and how proxy providers named by GTIG respond."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Krebs on Security",
+     "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-n3",
+   "story_key": "binance-incident-report",
+   "title": "Binance says a fake job interview started its $6.3 billion theft",
+   "category": "Cybersecurity",
+   "published": "2026-11-03T14:04:58-05:00",
+   "tldr": "Binance's incident report says a multi-stage attack beginning with a fake recruiter and malware led to the October 29 theft of about $6.34 billion, which the FBI attributed to North Korea's TraderTraitor group.",
+   "why_selected": "The largest crypto theft on record, now with a detailed account of how attackers moved from one engineer to a wallet signing service.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Crypto exchanges keep customer funds in wallets, and a signing service authorizes outgoing transactions. North Korean hacking groups have targeted the industry for years, and TraderTraitor, linked to Lazarus Group, stole more than $1.5 billion in a separate hack last year, according to WIRED. Fake recruiters who send developers a coding assignment containing malware are a known North Korean tactic."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday Binance published an incident report on the October 29 theft of about $6.34 billion. It says the attack began in September, when a software engineer was approached on a legitimate job platform by a fake recruiter, then interviewed by a fake HR representative and a fake CEO. The engineer was told to download a coding assignment that contained malicious code and ran undetected custom malware. By October 20, attackers used that computer and an internal AI tool to reach two more employees working on wallet infrastructure and obtained credentials and a container deployment token. On October 29 they used them to reach the wallet signing service and move funds across multiple blockchains. The FBI attributed the theft to TraderTraitor on October 31. BleepingComputer reports about $2.85 billion had been frozen or intercepted by November 3."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The report describes a chain: social engineering, a developer machine, internal tooling and finally the system that authorizes transactions. Sophos researcher Rafe Pilling told WIRED the attackers subverted the systems used to authorize transactions rather than simply stealing a key. WIRED cites TRM Labs figures that North Korea-linked hackers have stolen about $12 billion since 2017, over half this year."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch the independent review Binance has commissioned, further freezes of laundered funds, and any additional attribution detail."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398"
+    },
+    {
+     "name": "WIRED",
+     "url": "https://www.wired.com/story/binance-says-hackers-used-well-known-tricks-to-carry-out-a-dollar634-billion-heist/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-n4",
+   "story_key": "apple-memory-costs-q4",
+   "title": "Apple warns memory costs are unprecedented as they squeeze margins and Mac supply",
+   "category": "Chips & Hardware",
+   "published": "2026-11-02T18:04:57-05:00",
+   "tldr": "On its earnings call, Apple said memory pricing is unprecedented, forecast a December-quarter gross margin of 45 to 46 percent and expects Mac and iPad supply constraints.",
+   "why_selected": "Apple's disclosures give hard numbers on how the memory price surge is hitting a major hardware maker.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Memory chips (DRAM) are in every phone, laptop and server, and their prices have been climbing. The Register notes that Apple raised prices on Macs and iPads in June and iPhones in September. Monday's results were the first earnings call under chief executive John Ternus."
+    },
+    {
+     "heading": "What happened",
+     "body": "Apple reported September-quarter revenue of $114.5 billion, up 12 percent, with a gross margin of 47.9 percent that included about one point of tariff refunds. Chief financial officer Kevan Parekh said that without refunds, margin fell about one point from the June quarter, mainly because of memory costs. Ternus called memory pricing right now \"unprecedented\" and said Apple expects even higher memory costs in the December quarter and beyond. Apple guided to a December gross margin of 45 to 46 percent, also citing the cost of Siri AI. TechCrunch reports inventory rose to $14.54 billion from $5.72 billion a year earlier, and that manufacturing purchase obligations rose by $33 billion between June and September. Chief operating officer Sabih Khan said Mac and iPad supply will be constrained in the December quarter, mainly by memory. Mac revenue was $10.8 billion, up 24 percent, according to The Register."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Apple has large purchasing power and stockpiled memory, yet still reports shrinking benefit from lower-priced inventory. If it faces constraints, smaller device makers have less cushion. Higher component costs can show up as higher prices or limited supply for buyers."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch whether Apple raises prices again, which TechCrunch says Khan did not rule out, and how memory makers' pricing moves in coming quarters."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/"
+    },
+    {
+     "name": "9to5Mac",
+     "url": "https://9to5mac.com/2026/11/02/apple-says-memory-costs-and-siri-ai-will-weigh-on-holiday-quarter-profit-margins/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/personal-tech/2026/11/03/apples-mac-business-is-booming-but-the-memory-market-has-other-plans/5307188"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

@@ -1,8 +1,59 @@
 {
- "updated": "2026-11-05T02:46:56+00:00",
+ "updated": "2026-11-05T02:48:20+00:00",
  "domain": "health",
- "days": [],
- "items": [],
+ "days": [
+  {
+   "date": "2026-11-04",
+   "edition": "weekday",
+   "news": 3,
+   "papers": 1,
+   "backfill": false
+  }
+ ],
+ "items": [
+  {
+   "id": "2026-11-04-n1",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "First measles death in New York State in 30 years",
+   "tldr": "A child in Lewis County, New York, died of measles, the state's first measles death in 30 years, as US cases reach their highest level in about 35 years.",
+   "category": "Public Health",
+   "byline": "The Guardian, CIDRAP, Gothamist"
+  },
+  {
+   "id": "2026-11-04-n2",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "FDA finalizes potency guidance for cell and gene therapies",
+   "tldr": "The FDA issued final guidance telling makers of cell and gene therapies to build a plan proving that every batch is potent before it reaches a patient.",
+   "category": "Drugs & Approvals",
+   "byline": "FDA"
+  },
+  {
+   "id": "2026-11-04-n3",
+   "date": "2026-11-04",
+   "type": "news",
+   "title": "English A&Es to use early warning scores for sick children",
+   "tldr": "NHS England is introducing a vital-signs scoring system for children in emergency departments this winter, with parents' concerns able to trigger urgent review regardless of score.",
+   "category": "Global Health",
+   "byline": "The Guardian, BBC News"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2607326",
+   "date": "2026-11-04",
+   "type": "paper",
+   "title": "TAVR in Patients with Moderate Aortic Stenosis with At-Risk Features",
+   "tldr": "In a randomized trial of 744 older adults with moderate aortic stenosis and risk features, early valve replacement cut two-year death or heart failure events from 23.9% to 16.7%.",
+   "primary_tag": "Cardiovascular",
+   "tags": [
+    "Cardiovascular",
+    "Devices & diagnostics"
+   ],
+   "byline": "Philippe Généreux Raj R. Makkar Philippe Pibarot Jeroen J. Bax Brian R. Lindman Kamran Muhammad J. Bradley Oldemeyer Mark Pirwitz Colin M. Barker Vinod H. Thourani Pradeep K. Yadav Roberto Rodriguez Justin Strote Rahul Sakhuja Ramzi Khalil Rahul Sharma Adnan Chhatriwalla Jacob M. Mishell Biswajit Kar Sameer Gafoor Joseph Walsh Daniel Spoon Andrew Frutkin Andrei Pop Nicolas M. Van Mieghem Ruby Satpathy Kenji Ando Joseph Montarello John Webb Sreekanth Vemulapalli David J. Cohen Aakriti Gupta Brandon Park Heather Prince Philipp Blanke Michael Mack and Martin B. Leonthe PROGRESS Trial Investigators* · Atlantic Health Morristown Medical Center; Cedars-Sinai Medical Center",
+   "hf": null,
+   "venue": "The New England Journal of Medicine"
+  }
+ ],
  "tag_groups": {
   "Clinical": [
    "Oncology",
@@ -25,7 +76,10 @@
    "AI in medicine"
   ]
  },
- "tag_counts": {},
+ "tag_counts": {
+  "Cardiovascular": 1,
+  "Devices & diagnostics": 1
+ },
  "news_categories": [
   "Drugs & Approvals",
   "Clinical Research",
@@ -36,7 +90,11 @@
   "Health Tech & Devices",
   "Global Health"
  ],
- "category_counts": {},
+ "category_counts": {
+  "Public Health": 1,
+  "Drugs & Approvals": 1,
+  "Global Health": 1
+ },
  "summaries": [],
  "weeks": []
 }
