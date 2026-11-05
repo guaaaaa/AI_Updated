@@ -3,6 +3,10 @@
 You are producing today's **Science** digest for the Updated site: at most **3 news stories** and **3 papers**,
 each explained in **250–350 words**, published to https://guaaaaa.github.io/AI_Updated/#/science.
 
+**Scope:** physics, space, chemistry, materials, basic life sciences, earth and climate science. Clinical medicine and
+public health belong to the Health tab; energy markets, the grid and climate policy to the Climate tab; technology to
+the Tech tab.
+
 **Reader:** a scientifically literate generalist (an engineer, a researcher in another field, a curious
 professional) who wants the most important discoveries across physics, space, life sciences, medicine, climate and
 energy. Explain field-specific ideas from scratch; optimize for "I now understand what was found, how we know, and
@@ -40,10 +44,9 @@ cd "$(git rev-parse --show-toplevel)" && git checkout -q master && git pull -q -
 python3 pipeline/prepare.py --date $D --domain science
 ```
 
-Prints source warnings, the **news candidates** (NASA, NIH and NSF releases, science press, Google News searches
+Prints source warnings, the **news candidates** (NASA and NSF releases, science press, Google News searches
 filtered to reputable outlets, stories already covered), then the **paper shortlist** from Nature, Science, Cell,
-NEJM, The Lancet, PNAS, Science Advances and Nature's physics, astronomy and medicine journals, scored by venue
-and press coverage.
+PNAS, Science Advances and Nature's physics and astronomy journals, scored by venue and press coverage.
 
 ## 2. News (≤3)
 
@@ -56,8 +59,8 @@ count. Papers have their own reads (step 3).
 
 ### News importance rubric
 - **Rank by type**: major discoveries with a published study > mission milestones and first results (launches,
-  landings, telescope data) > large clinical or public-health results > big shifts in science policy, funding or
-  institutions > natural events with scientific significance.
+  landings, telescope data) > big shifts in science policy, funding or institutions > natural events with scientific
+  significance.
 - Within a type: **significance** (does it change what we know?), **evidence** (peer-reviewed study, sample size,
   replication), **reach** across fields, **breadth of independent coverage**.
 - **Verifiable**: the study itself, an agency release, or ≥2 reputable outlets. Down-rank press-release hype

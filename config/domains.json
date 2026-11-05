@@ -1,11 +1,80 @@
 {
  "note": "Each domain gets its own tab: digest (and trends where built). AI keeps the original paths. news/papers = daily caps; paper_window_h = how far back papers may come from (journals and working papers are weekly).",
  "domains": [
-  {"id": "ai", "name": "AI", "tagline": "AI research and industry", "news": 2, "papers": 5, "runbook": "RUNBOOK.md", "trends": true,
-   "paper_label": "Papers"},
-  {"id": "business", "name": "Business", "tagline": "Markets, companies and the economy", "news": 5, "papers": 1, "runbook": "RUNBOOK_BUSINESS.md",
-   "trends": false, "paper_window_h": 168, "paper_label": "Research"},
-  {"id": "science", "name": "Science", "tagline": "Discoveries across physics, life sciences, space and climate", "news": 3, "papers": 3,
-   "runbook": "RUNBOOK_SCIENCE.md", "trends": false, "paper_window_h": 168, "paper_label": "Papers"}
+  {
+   "id": "ai",
+   "name": "AI",
+   "tagline": "AI research and industry",
+   "news": 2,
+   "papers": 5,
+   "runbook": "RUNBOOK.md",
+   "trends": true,
+   "paper_label": "Papers"
+  },
+  {
+   "id": "business",
+   "name": "Business",
+   "tagline": "Markets, companies and the economy",
+   "news": 5,
+   "papers": 1,
+   "runbook": "RUNBOOK_BUSINESS.md",
+   "trends": false,
+   "paper_window_h": 168,
+   "paper_label": "Research"
+  },
+  {
+   "id": "science",
+   "name": "Science",
+   "tagline": "Discoveries across physics, life sciences, space and climate",
+   "news": 3,
+   "papers": 3,
+   "runbook": "RUNBOOK_SCIENCE.md",
+   "trends": false,
+   "paper_window_h": 168,
+   "paper_label": "Papers"
+  },
+  {
+   "id": "health",
+   "name": "Health",
+   "tagline": "Medicine, public health and biotech",
+   "news": 3,
+   "papers": 2,
+   "runbook": "RUNBOOK_HEALTH.md",
+   "trends": false,
+   "paper_window_h": 168,
+   "paper_label": "Papers"
+  },
+  {
+   "id": "climate",
+   "name": "Climate",
+   "tagline": "Energy, climate science and climate policy",
+   "news": 4,
+   "papers": 1,
+   "runbook": "RUNBOOK_CLIMATE.md",
+   "trends": false,
+   "paper_window_h": 168,
+   "paper_label": "Research"
+  },
+  {
+   "id": "tech",
+   "name": "Tech",
+   "tagline": "Chips, software, security, devices and space (beyond AI)",
+   "news": 4,
+   "papers": 1,
+   "runbook": "RUNBOOK_TECH.md",
+   "trends": false,
+   "paper_window_h": 168,
+   "paper_label": "Research"
+  },
+  {
+   "id": "policy",
+   "name": "Policy",
+   "tagline": "Government, elections and world affairs",
+   "news": 5,
+   "papers": 0,
+   "runbook": "RUNBOOK_POLICY.md",
+   "trends": false,
+   "paper_label": "Papers"
+  }
  ]
 }

@@ -1,0 +1,16 @@
+{
+ "_doc": "Policy & World taxonomy (news only).",
+ "news_categories": {
+  "US Politics": "Federal and state politics in the US",
+  "Canada Politics": "Federal and provincial politics in Canada",
+  "Elections": "Campaigns, votes and results anywhere",
+  "Courts & Law": "Court rulings and legal fights over policy",
+  "Legislation & Regulation": "Bills, executive actions and rules",
+  "International Relations": "Diplomacy and alliances",
+  "Conflicts & Security": "Wars, ceasefires, defense and terrorism",
+  "Trade & Sanctions": "Tariffs, trade deals and sanctions",
+  "Immigration": "Migration and border policy",
+  "Global Governance": "UN, NATO, G7/G20, EU institutions"
+ },
+ "paper_tags": {}
+}

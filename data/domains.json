@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T22:08:40+00:00",
+ "updated": "2026-11-05T02:46:56+00:00",
  "domains": [
   {
    "id": "ai",
@@ -36,6 +36,54 @@
    "index": "data/science/index.json",
    "latest": "2026-11-04",
    "days": 1
+  },
+  {
+   "id": "health",
+   "name": "Health",
+   "tagline": "Medicine, public health and biotech",
+   "trends": false,
+   "paper_label": "Papers",
+   "news": 3,
+   "papers": 2,
+   "index": "data/health/index.json",
+   "latest": null,
+   "days": 0
+  },
+  {
+   "id": "climate",
+   "name": "Climate",
+   "tagline": "Energy, climate science and climate policy",
+   "trends": false,
+   "paper_label": "Research",
+   "news": 4,
+   "papers": 1,
+   "index": "data/climate/index.json",
+   "latest": null,
+   "days": 0
+  },
+  {
+   "id": "tech",
+   "name": "Tech",
+   "tagline": "Chips, software, security, devices and space (beyond AI)",
+   "trends": false,
+   "paper_label": "Research",
+   "news": 4,
+   "papers": 1,
+   "index": "data/tech/index.json",
+   "latest": null,
+   "days": 0
+  },
+  {
+   "id": "policy",
+   "name": "Policy",
+   "tagline": "Government, elections and world affairs",
+   "trends": false,
+   "paper_label": "Papers",
+   "news": 5,
+   "papers": 0,
+   "index": "data/policy/index.json",
+   "latest": null,
+   "days": 0
   }
  ]
 }

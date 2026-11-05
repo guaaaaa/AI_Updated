@@ -680,6 +680,12 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
 @media (max-width: 560px) {
   .topbar-inner { flex-wrap: wrap; row-gap: 10px; }
   .top-actions { margin-left: auto; }
-  .view-nav { order: 3; width: 100%; margin: 0; display: flex; }
-  .view-nav a { flex: 1; text-align: center; padding: 6px 4px; }
+  .view-nav { order: 3; width: 100%; margin: 0; display: flex; overflow-x: auto; scrollbar-width: none; }
+  .view-nav::-webkit-scrollbar { display: none; }
+  .view-nav a { flex: none; text-align: center; padding: 6px 12px; white-space: nowrap; }
+}
+@media (min-width: 561px) and (max-width: 1100px) {   /* seven domains + Jobs: let the tab bar scroll before it wraps */
+  .view-nav { display: flex; overflow-x: auto; scrollbar-width: none; min-width: 0; flex: 1; margin: 0 8px; }
+  .view-nav a { flex: none; padding: 6px 12px; white-space: nowrap; }
+  .tagline { display: none; }
 }

@@ -1,0 +1,52 @@
+{
+ "_doc": "Technology (beyond AI) taxonomy. Stories mainly about AI models, labs or AI research belong to the AI tab.",
+ "news_categories": {
+  "Chips & Hardware": "Semiconductors, manufacturing, devices' silicon",
+  "Cybersecurity": "Attacks, breaches, vulnerabilities, defense",
+  "Consumer Tech & Devices": "Phones, computers, wearables, gaming",
+  "Software & Platforms": "Operating systems, apps, cloud and developer platforms",
+  "Telecom & Internet": "Networks, broadband, satellites, outages",
+  "Space Industry": "Launches, satellites, commercial space",
+  "Tech Policy & Antitrust": "Regulation, courts, competition, privacy law",
+  "Quantum Computing": "Quantum hardware and milestones",
+  "Tech Business": "Deals, earnings and strategy of tech companies"
+ },
+ "paper_tags": {
+  "Computer architecture & chips": {
+   "group": "Systems",
+   "desc": "Processors and hardware design"
+  },
+  "Networking": {
+   "group": "Systems",
+   "desc": "Networks and protocols"
+  },
+  "Distributed systems & cloud": {
+   "group": "Systems",
+   "desc": "Cloud and distributed computing"
+  },
+  "Operating systems & storage": {
+   "group": "Systems",
+   "desc": "OS, storage, file systems"
+  },
+  "Security & privacy": {
+   "group": "Security",
+   "desc": "Attacks, defenses, privacy"
+  },
+  "Cryptography": {
+   "group": "Security",
+   "desc": "Cryptographic methods"
+  },
+  "Software engineering": {
+   "group": "Software & People",
+   "desc": "Building and maintaining software"
+  },
+  "Human-computer interaction": {
+   "group": "Software & People",
+   "desc": "How people use technology"
+  },
+  "Quantum computing": {
+   "group": "Emerging",
+   "desc": "Quantum hardware and algorithms"
+  }
+ }
+}

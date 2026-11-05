@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
-from common import DOMAIN  # noqa: E402  (also exports AIU_DOMAIN to the child scripts)
+from common import DOM, DOMAIN  # noqa: E402  (also exports AIU_DOMAIN to the child scripts)
 
 
 def run(script, date):
@@ -33,7 +33,7 @@ def main():
     jobs = subprocess.Popen([sys.executable, str(ROOT / "pipeline" / "fetch_jobs.py"), "--date", d],
                             stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=ROOT) if ai else None
     news, w1 = run("fetch_news.py", d)
-    papers, w2 = run("fetch_papers.py" if ai else "fetch_research.py", d)
+    papers, w2 = run("fetch_papers.py" if ai else "fetch_research.py", d) if DOM["papers"] else ("(news-only domain: no research)", [])
     try:
         if jobs is None:
             raise LookupError

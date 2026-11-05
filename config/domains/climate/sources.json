@@ -1,0 +1,160 @@
+{
+ "_doc": "Climate & Energy sources: EIA and NOAA releases, energy and climate press, Google News searches filtered to reputable publishers, and research from Nature Climate Change, Nature Energy, Nature Sustainability and Joule.",
+ "news_feeds": [
+  {
+   "name": "EIA",
+   "tier": "primary",
+   "url": "https://www.eia.gov/rss/todayinenergy.xml"
+  },
+  {
+   "name": "NOAA",
+   "tier": "primary",
+   "url": "https://www.noaa.gov/news-release/rss.xml"
+  },
+  {
+   "name": "Carbon Brief",
+   "tier": "press",
+   "url": "https://www.carbonbrief.org/feed"
+  },
+  {
+   "name": "Canary Media",
+   "tier": "press",
+   "url": "https://www.canarymedia.com/rss.rss"
+  },
+  {
+   "name": "Inside Climate News",
+   "tier": "press",
+   "url": "https://insideclimatenews.org/feed/"
+  },
+  {
+   "name": "The Guardian",
+   "tier": "press",
+   "url": "https://www.theguardian.com/environment/rss"
+  },
+  {
+   "name": "The New York Times",
+   "tier": "press",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Climate.xml"
+  },
+  {
+   "name": "Utility Dive",
+   "tier": "press",
+   "url": "https://www.utilitydive.com/feeds/news/"
+  },
+  {
+   "name": "Electrek",
+   "tier": "press",
+   "url": "https://electrek.co/feed/"
+  },
+  {
+   "name": "Grist",
+   "tier": "press",
+   "url": "https://grist.org/feed/"
+  },
+  {
+   "name": "Yale Environment 360",
+   "tier": "press",
+   "url": "https://e360.yale.edu/feed.xml"
+  }
+ ],
+ "google_news_queries": [
+  "climate change study",
+  "renewable energy",
+  "oil prices OPEC",
+  "natural gas prices",
+  "electric vehicles sales",
+  "power grid",
+  "nuclear power",
+  "fusion energy",
+  "carbon emissions",
+  "COP climate talks",
+  "heat wave record",
+  "hurricane",
+  "battery storage",
+  "EPA emissions rule",
+  "solar power"
+ ],
+ "reputable_publishers": [
+  "Reuters",
+  "Associated Press",
+  "AP News",
+  "Bloomberg",
+  "Bloomberg.com",
+  "The Wall Street Journal",
+  "WSJ",
+  "Financial Times",
+  "The New York Times",
+  "The Washington Post",
+  "CNBC",
+  "BBC",
+  "The Guardian",
+  "The Economist",
+  "Axios",
+  "Fortune",
+  "Forbes",
+  "Business Insider",
+  "CNN",
+  "NPR",
+  "Politico",
+  "Los Angeles Times",
+  "Semafor",
+  "Nikkei Asia",
+  "South China Morning Post",
+  "The Atlantic",
+  "The Globe and Mail",
+  "CBC",
+  "CBC News",
+  "PBS",
+  "ABC News",
+  "CBS News",
+  "NBC News",
+  "Carbon Brief",
+  "Canary Media",
+  "Inside Climate News",
+  "Utility Dive",
+  "Electrek",
+  "Grist",
+  "Yale Environment 360",
+  "E&E News",
+  "Heatmap",
+  "Latitude Media",
+  "Bloomberg Green",
+  "Nature",
+  "Science",
+  "EIA",
+  "NOAA",
+  "IEA"
+ ],
+ "topic_keywords": [],
+ "general_feeds": [],
+ "hacker_news": false,
+ "research": {
+  "feeds": [
+   {
+    "name": "Nature Climate Change",
+    "venue": "Nature Climate Change",
+    "tier": "flagship",
+    "url": "https://www.nature.com/nclimate.rss"
+   },
+   {
+    "name": "Nature Energy",
+    "venue": "Nature Energy",
+    "tier": "flagship",
+    "url": "https://www.nature.com/nenergy.rss"
+   },
+   {
+    "name": "Joule",
+    "venue": "Joule",
+    "tier": "major",
+    "url": "https://www.cell.com/joule/current.rss"
+   },
+   {
+    "name": "Nature Sustainability",
+    "venue": "Nature Sustainability",
+    "tier": "major",
+    "url": "https://www.nature.com/natsustain.rss"
+   }
+  ],
+  "arxiv_categories": []
+ }
+}

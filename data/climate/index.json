@@ -1,0 +1,40 @@
+{
+ "updated": "2026-11-05T02:46:56+00:00",
+ "domain": "climate",
+ "days": [],
+ "items": [],
+ "tag_groups": {
+  "Climate System": [
+   "Climate change & attribution",
+   "Extreme weather",
+   "Oceans & ice",
+   "Carbon cycle & emissions"
+  ],
+  "Energy Technology": [
+   "Solar & photovoltaics",
+   "Batteries & storage",
+   "Hydrogen & fuels",
+   "Grids & energy systems",
+   "Nuclear"
+  ],
+  "Society": [
+   "Energy policy & economics",
+   "Adaptation & impacts",
+   "Land, food & biodiversity"
+  ]
+ },
+ "tag_counts": {},
+ "news_categories": [
+  "Energy Markets",
+  "Clean Energy & Grid",
+  "Climate Policy",
+  "Climate Science & Impacts",
+  "EVs & Transport",
+  "Nuclear & Fusion",
+  "Climate Finance & Business",
+  "Adaptation & Disasters"
+ ],
+ "category_counts": {},
+ "summaries": [],
+ "weeks": []
+}

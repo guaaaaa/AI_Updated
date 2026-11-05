@@ -72,6 +72,8 @@
     const latest = S.dates[0] ? dObj(S.dates[0]) : new Date();
     S.calMonth = new Date(latest.getFullYear(), latest.getMonth(), 1);
     $("#typeSeg").children[1].textContent = paperWord();
+    $("#typeSeg").hidden = !st.D.papers;                         // news-only domains (Policy) have no papers
+    $("#tagsTitle").closest(".panel").hidden = !st.D.papers;
     $("#tagsTitle").textContent = `${paperWord() === "Papers" ? "Paper" : paperWord()} tags`;
   }
 
@@ -129,7 +131,10 @@
     }
     const wide = r.view === "trends" || r.view === "jobs";
     $(".layout").classList.toggle("wide", wide);
-    for (const a of document.querySelectorAll("#viewNav a")) a.classList.toggle("on", a.dataset.view === (r.view === "jobs" ? "jobs" : r.dom));
+    for (const a of document.querySelectorAll("#viewNav a")) {
+      a.classList.toggle("on", a.dataset.view === (r.view === "jobs" ? "jobs" : r.dom));
+      if (a.classList.contains("on") && a.parentElement.scrollWidth > a.parentElement.clientWidth) a.scrollIntoView({ block: "nearest", inline: "nearest" });
+    }
     document.title = r.view === "jobs" ? "Jobs · Updated" : `${S.D.name} · Updated`;
     if (!wide) syncSidebar(r); else S.current = r;
     const main = $("#main");

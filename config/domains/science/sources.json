@@ -1,15 +1,10 @@
 {
- "_doc": "Science domain sources: agency releases (NASA, NIH, NSF), science press, Google News searches filtered to reputable publishers, and research from flagship journals (Nature, Science, Cell, NEJM, The Lancet, PNAS, Science Advances and Nature's physics, astronomy and medicine journals).",
+ "_doc": "Science domain sources: agency releases (NASA, NSF), science press, Google News searches filtered to reputable publishers, and research from Nature, Science, Cell, PNAS, Science Advances and Nature's physics and astronomy journals. Clinical medicine and public health belong to the Health tab; energy systems and climate policy to the Climate tab.",
  "news_feeds": [
   {
    "name": "NASA",
    "tier": "primary",
    "url": "https://www.nasa.gov/news-release/feed/"
-  },
-  {
-   "name": "NIH",
-   "tier": "primary",
-   "url": "https://www.nih.gov/news-releases/feed.xml"
   },
   {
    "name": "NSF",
@@ -60,11 +55,6 @@
    "name": "BBC",
    "tier": "press",
    "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
-  },
-  {
-   "name": "STAT",
-   "tier": "press",
-   "url": "https://www.statnews.com/feed/"
   }
  ],
  "google_news_queries": [
@@ -79,10 +69,8 @@
   "fossil discovery",
   "quantum physics experiment",
   "fusion energy",
-  "clinical trial results",
   "neuroscience study",
-  "new species",
-  "vaccine study"
+  "new species"
  ],
  "reputable_publishers": [
   "Reuters",
@@ -166,18 +154,6 @@
     "url": "https://www.cell.com/cell/current.rss"
    },
    {
-    "name": "NEJM",
-    "venue": "The New England Journal of Medicine",
-    "tier": "flagship",
-    "url": "https://www.nejm.org/action/showFeed?type=etoc&feed=rss&jc=nejm"
-   },
-   {
-    "name": "The Lancet",
-    "venue": "The Lancet",
-    "tier": "flagship",
-    "url": "https://www.thelancet.com/rssfeed/lancet_current.xml"
-   },
-   {
     "name": "PNAS",
     "venue": "PNAS",
     "tier": "major",
@@ -200,12 +176,6 @@
     "venue": "Nature Astronomy",
     "tier": "major",
     "url": "https://www.nature.com/natastron.rss"
-   },
-   {
-    "name": "Nature Medicine",
-    "venue": "Nature Medicine",
-    "tier": "major",
-    "url": "https://www.nature.com/nm.rss"
    }
   ],
   "arxiv_categories": []

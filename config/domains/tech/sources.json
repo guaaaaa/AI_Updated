@@ -1,0 +1,167 @@
+{
+ "_doc": "Technology (beyond AI) sources: company newsrooms, tech press, security outlets, space industry news, Google News searches filtered to reputable publishers, and arXiv systems/security research when the press covers it.",
+ "news_feeds": [
+  {
+   "name": "Apple",
+   "tier": "primary",
+   "url": "https://www.apple.com/newsroom/rss-feed.rss"
+  },
+  {
+   "name": "Microsoft",
+   "tier": "primary",
+   "url": "https://blogs.microsoft.com/feed/"
+  },
+  {
+   "name": "Google",
+   "tier": "primary",
+   "url": "https://blog.google/rss/"
+  },
+  {
+   "name": "The Verge",
+   "tier": "press",
+   "url": "https://www.theverge.com/rss/index.xml"
+  },
+  {
+   "name": "Ars Technica",
+   "tier": "press",
+   "url": "https://feeds.arstechnica.com/arstechnica/index"
+  },
+  {
+   "name": "TechCrunch",
+   "tier": "press",
+   "url": "https://techcrunch.com/feed/"
+  },
+  {
+   "name": "WIRED",
+   "tier": "press",
+   "url": "https://www.wired.com/feed/rss"
+  },
+  {
+   "name": "Engadget",
+   "tier": "press",
+   "url": "https://www.engadget.com/rss.xml"
+  },
+  {
+   "name": "The Register",
+   "tier": "press",
+   "url": "https://www.theregister.com/headlines.atom"
+  },
+  {
+   "name": "IEEE Spectrum",
+   "tier": "press",
+   "url": "https://spectrum.ieee.org/feeds/feed.rss"
+  },
+  {
+   "name": "BleepingComputer",
+   "tier": "press",
+   "url": "https://www.bleepingcomputer.com/feed/"
+  },
+  {
+   "name": "Krebs on Security",
+   "tier": "press",
+   "url": "https://krebsonsecurity.com/feed/"
+  },
+  {
+   "name": "The Record",
+   "tier": "press",
+   "url": "https://therecord.media/feed"
+  },
+  {
+   "name": "SpaceNews",
+   "tier": "press",
+   "url": "https://spacenews.com/feed/"
+  }
+ ],
+ "google_news_queries": [
+  "semiconductor chip",
+  "TSMC",
+  "Intel chips",
+  "cyberattack",
+  "data breach",
+  "ransomware",
+  "Apple iPhone",
+  "smartphone launch",
+  "antitrust tech",
+  "broadband",
+  "SpaceX launch",
+  "satellite internet",
+  "quantum computing",
+  "cloud outage",
+  "software update"
+ ],
+ "reputable_publishers": [
+  "Reuters",
+  "Associated Press",
+  "AP News",
+  "Bloomberg",
+  "Bloomberg.com",
+  "The Wall Street Journal",
+  "WSJ",
+  "Financial Times",
+  "The New York Times",
+  "The Washington Post",
+  "CNBC",
+  "BBC",
+  "The Guardian",
+  "The Economist",
+  "Axios",
+  "Fortune",
+  "Forbes",
+  "Business Insider",
+  "CNN",
+  "NPR",
+  "Politico",
+  "Los Angeles Times",
+  "Semafor",
+  "Nikkei Asia",
+  "South China Morning Post",
+  "The Atlantic",
+  "The Globe and Mail",
+  "CBC",
+  "CBC News",
+  "PBS",
+  "ABC News",
+  "CBS News",
+  "NBC News",
+  "The Verge",
+  "Ars Technica",
+  "TechCrunch",
+  "WIRED",
+  "Wired",
+  "Engadget",
+  "The Register",
+  "IEEE Spectrum",
+  "BleepingComputer",
+  "Krebs on Security",
+  "The Record",
+  "SpaceNews",
+  "Tom's Hardware",
+  "AnandTech",
+  "ZDNET",
+  "CNET",
+  "9to5Mac",
+  "9to5Google",
+  "MacRumors",
+  "The Information",
+  "Protocol",
+  "Apple",
+  "Microsoft",
+  "Google"
+ ],
+ "topic_keywords": [],
+ "general_feeds": [],
+ "hacker_news": false,
+ "research": {
+  "feeds": [],
+  "arxiv_categories": [
+   "cs.CR",
+   "cs.AR",
+   "cs.NI",
+   "cs.DC",
+   "cs.SE",
+   "cs.OS",
+   "cs.HC",
+   "quant-ph"
+  ]
+ }
+}

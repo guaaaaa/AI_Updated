@@ -1,0 +1,40 @@
+{
+ "updated": "2026-11-05T02:46:56+00:00",
+ "domain": "tech",
+ "days": [],
+ "items": [],
+ "tag_groups": {
+  "Systems": [
+   "Computer architecture & chips",
+   "Networking",
+   "Distributed systems & cloud",
+   "Operating systems & storage"
+  ],
+  "Security": [
+   "Security & privacy",
+   "Cryptography"
+  ],
+  "Software & People": [
+   "Software engineering",
+   "Human-computer interaction"
+  ],
+  "Emerging": [
+   "Quantum computing"
+  ]
+ },
+ "tag_counts": {},
+ "news_categories": [
+  "Chips & Hardware",
+  "Cybersecurity",
+  "Consumer Tech & Devices",
+  "Software & Platforms",
+  "Telecom & Internet",
+  "Space Industry",
+  "Tech Policy & Antitrust",
+  "Quantum Computing",
+  "Tech Business"
+ ],
+ "category_counts": {},
+ "summaries": [],
+ "weeks": []
+}

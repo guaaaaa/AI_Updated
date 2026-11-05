@@ -1,0 +1,42 @@
+{
+ "updated": "2026-11-05T02:46:56+00:00",
+ "domain": "health",
+ "days": [],
+ "items": [],
+ "tag_groups": {
+  "Clinical": [
+   "Oncology",
+   "Cardiovascular",
+   "Infectious disease",
+   "Neurology & mental health",
+   "Metabolic & endocrine",
+   "Maternal & child health",
+   "Immunology"
+  ],
+  "Therapeutics": [
+   "Drug development",
+   "Vaccines",
+   "Gene & cell therapy",
+   "Devices & diagnostics"
+  ],
+  "Population": [
+   "Epidemiology",
+   "Health services & policy",
+   "AI in medicine"
+  ]
+ },
+ "tag_counts": {},
+ "news_categories": [
+  "Drugs & Approvals",
+  "Clinical Research",
+  "Public Health",
+  "Health Policy & Coverage",
+  "Biotech & Pharma",
+  "Mental Health",
+  "Health Tech & Devices",
+  "Global Health"
+ ],
+ "category_counts": {},
+ "summaries": [],
+ "weeks": []
+}

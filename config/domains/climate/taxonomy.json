@@ -1,0 +1,63 @@
+{
+ "_doc": "Climate & Energy taxonomy.",
+ "news_categories": {
+  "Energy Markets": "Oil, gas, coal and power prices and supply",
+  "Clean Energy & Grid": "Renewables, storage, transmission and grids",
+  "Climate Policy": "Regulation, international talks, carbon pricing",
+  "Climate Science & Impacts": "Findings, records and extreme events",
+  "EVs & Transport": "Electric vehicles, aviation and shipping fuels",
+  "Nuclear & Fusion": "Fission and fusion energy",
+  "Climate Finance & Business": "Investment, company commitments, insurance",
+  "Adaptation & Disasters": "Floods, fires, storms and resilience"
+ },
+ "paper_tags": {
+  "Climate change & attribution": {
+   "group": "Climate System",
+   "desc": "Warming and its causes"
+  },
+  "Extreme weather": {
+   "group": "Climate System",
+   "desc": "Heat, floods, storms, drought"
+  },
+  "Oceans & ice": {
+   "group": "Climate System",
+   "desc": "Oceans, sea level, ice sheets"
+  },
+  "Carbon cycle & emissions": {
+   "group": "Climate System",
+   "desc": "Emissions, sinks, removal"
+  },
+  "Solar & photovoltaics": {
+   "group": "Energy Technology",
+   "desc": "Solar cells and systems"
+  },
+  "Batteries & storage": {
+   "group": "Energy Technology",
+   "desc": "Batteries and storage"
+  },
+  "Hydrogen & fuels": {
+   "group": "Energy Technology",
+   "desc": "Hydrogen, e-fuels, biofuels"
+  },
+  "Grids & energy systems": {
+   "group": "Energy Technology",
+   "desc": "Power systems and modelling"
+  },
+  "Nuclear": {
+   "group": "Energy Technology",
+   "desc": "Fission and fusion"
+  },
+  "Energy policy & economics": {
+   "group": "Society",
+   "desc": "Policy, prices and markets"
+  },
+  "Adaptation & impacts": {
+   "group": "Society",
+   "desc": "Impacts on people and adaptation"
+  },
+  "Land, food & biodiversity": {
+   "group": "Society",
+   "desc": "Land use, agriculture, ecosystems"
+  }
+ }
+}

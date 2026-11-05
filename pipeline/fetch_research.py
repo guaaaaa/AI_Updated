@@ -74,14 +74,23 @@ def _date(s):
     return dt.date.fromisoformat(m.group(1)) if m else None
 
 
+CORRECTION = re.compile(r"^(author|publisher)?\s*(correction|erratum|retraction|addendum)\b|^expression of concern", re.I)
+JAMA_STUDY = re.compile(r"^(this|in this)\b.{0,80}\b(study|trial|analysis|evaluation|review and meta-analysis)\b", re.I)
+
+
 def is_research(feed, it):
     link, title, typ = it["link"], it["title"], it["type"]
-    if "nature.com/articles/" in link:
-        return "/articles/s" in link
+    if CORRECTION.search(title):
+        return False
+    if "nature.com/articles/" in link:   # research is /articles/s...; short titles there are News & Views pieces
+        return "/articles/s" in link and len(title.split()) >= 6
+    if "jamanetwork.com" in link:   # no article types in the feed: research summaries start "This study ..."
+        d = it["desc"]
+        return bool(JAMA_STUDY.match(d)) and "Medical News" not in d and not d.startswith(("To the Editor", "In Reply"))
     if "nejm.org" in link:
         return "NEJMoa" in link
-    if "thelancet.com" in link:
-        return title.startswith("[Articles]") or bool(KEEP_TYPE.search(typ)) and not DROP_TYPE.search(typ)
+    if "thelancet.com" in link:   # research is the "Articles" section only (not World Report, Comment, Seminar ...)
+        return title.startswith("[Articles]") or typ.strip().lower() == "articles"
     if "nber.org" in link:
         return True
     if typ:
