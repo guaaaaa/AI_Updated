@@ -54,6 +54,11 @@ not count.
 - **Window**: `published` is the earliest verified timestamp of the first public report; a date-only source → 12:00
   ET on that date. A date-only report dated **today** cannot be placed inside the window: use it only if a source
   gives a time before 07:30 ET, otherwise leave it for tomorrow.
+  Write ET times with the offset in force that day: `-04:00` (EDT) until the first Sunday of November, `-05:00` (EST)
+  from then until March.
+
+- Sites that usually refuse automated reads (use other outlets or the primary source instead): sec.gov, CNBC, CISA,
+  NOAA, Utility Dive, NEJM, JAMA, The Lancet, MedPage Today, and every Google News link.
 
 ### News importance rubric
 - **Rank by type**: enacted laws, signed executive actions and major court rulings > election results > agreements, ceasefires and sanctions > major conflict developments > significant proposals with a real path to passage > leadership changes.

@@ -53,6 +53,11 @@ not count.
 - **Window**: `published` is the earliest verified timestamp of the first public report; a date-only source → 12:00
   ET on that date. A date-only report dated **today** cannot be placed inside the window: use it only if a source
   gives a time before 07:30 ET, otherwise leave it for tomorrow.
+  Write ET times with the offset in force that day: `-04:00` (EDT) until the first Sunday of November, `-05:00` (EST)
+  from then until March.
+
+- Sites that usually refuse automated reads (use other outlets or the primary source instead): sec.gov, CNBC, CISA,
+  NOAA, Utility Dive, NEJM, JAMA, The Lancet, MedPage Today, and every Google News link.
 
 ### News importance rubric
 - **Rank by type**: major security incidents and vulnerabilities with wide impact > significant chip or hardware news (manufacturing, export controls, new architectures) > launches of widely used devices or platforms > tech policy, antitrust and court rulings > major outages > space-industry milestones > big tech business moves.
@@ -84,6 +89,8 @@ caveat).
 
 **Style**: precise, calm, concrete; numbers over adjectives; define terms on first use; no hype words.
 **Accuracy (mandatory)**: every number, name and claim comes from a source you read in this run; never infer details.
+**Affiliations**: list them only if a page you read shows them; otherwise leave `affiliations:` empty. Never write
+placeholder text there.
 
 Write `work/tech/writeup_$D.md` in this format:
 

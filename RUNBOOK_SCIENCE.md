@@ -56,6 +56,11 @@ count. Papers have their own reads (step 3).
 - **Window**: `published` is the earliest verified timestamp of the first public report; a date-only source → 12:00
   ET on that date. A date-only report dated **today** cannot be placed inside the window (it closes at 07:30 ET
   today): use it only if a source gives an earlier time, otherwise leave it for tomorrow.
+  Write ET times with the offset in force that day: `-04:00` (EDT) until the first Sunday of November, `-05:00` (EST)
+  from then until March.
+
+- Sites that usually refuse automated reads (use other outlets or the primary source instead): sec.gov, CNBC, CISA,
+  NOAA, Utility Dive, NEJM, JAMA, The Lancet, MedPage Today, and every Google News link.
 
 ### News importance rubric
 - **Rank by type**: major discoveries with a published study > mission milestones and first results (launches,
@@ -92,6 +97,8 @@ concrete numbers from what you read), `Why it matters` (~45; implications and th
 **Style**: precise, calm, concrete; define terms on first use; no hype words. **Accuracy (mandatory)**: every
 number, name and claim comes from a source you read in this run; if you only saw the abstract, say less rather
 than guess, and never invent methods or numbers.
+**Affiliations**: list them only if a page you read shows them; otherwise leave `affiliations:` empty. Never write
+placeholder text there.
 
 Write `work/science/writeup_$D.md` in this format:
 

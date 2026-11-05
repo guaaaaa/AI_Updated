@@ -54,6 +54,9 @@ count. Keep 2 reads for the research slot.
   BEA, Bank of Canada, ECB). Usually blocked or paywalled: CNBC (bot check), Bloomberg, WSJ, FT, Barron's, sec.gov,
   bls.gov. Headlines from those come without links on purpose: find the same story at a readable outlet.
 
+- Sites that usually refuse automated reads (use other outlets or the primary source instead): sec.gov, CNBC, CISA,
+  NOAA, Utility Dive, NEJM, JAMA, The Lancet, MedPage Today, and every Google News link.
+
 ### News importance rubric
 - **Rank by type**: central-bank decisions and major macro releases (inflation, jobs, GDP) > large market moves
   with a clear cause > major deals (M&A, takeovers, investments above ~$1B) > results or guidance changes at very
@@ -70,6 +73,8 @@ count. Keep 2 reads for the research slot.
 - **Window**: for `published`, use the earliest verified timestamp of the first public report; a date-only source
   → 12:00 ET on that date. A date-only report dated **today** cannot be placed inside the window (it closes at
   07:30 ET today): use it only if a source gives a time before 07:30, otherwise leave the story for tomorrow.
+  Write ET times with the offset in force that day: `-04:00` (EDT) until the first Sunday of November, `-05:00` (EST)
+  from then until March.
 - Publishing fewer stories is fine when nothing clears the bar.
 
 ## 3. Research (≤1)
@@ -91,6 +96,8 @@ blank lines between paragraphs. Also a `tldr` (one sentence, ≤35 words) and a 
 
 **Style**: precise, calm, concrete; numbers over adjectives; define jargon (basis point, yield curve, EBITDA) on
 first use. **Accuracy (mandatory)**: every number, name and claim comes from a source you read in this run.
+**Affiliations**: list them only if a page you read shows them; otherwise leave `affiliations:` empty. Never write
+placeholder text there.
 
 Write `work/business/writeup_$D.md` in this format:
 

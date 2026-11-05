@@ -54,6 +54,11 @@ not count.
 - **Window**: `published` is the earliest verified timestamp of the first public report; a date-only source → 12:00
   ET on that date. A date-only report dated **today** cannot be placed inside the window: use it only if a source
   gives a time before 07:30 ET, otherwise leave it for tomorrow.
+  Write ET times with the offset in force that day: `-04:00` (EDT) until the first Sunday of November, `-05:00` (EST)
+  from then until March.
+
+- Sites that usually refuse automated reads (use other outlets or the primary source instead): sec.gov, CNBC, CISA,
+  NOAA, Utility Dive, NEJM, JAMA, The Lancet, MedPage Today, and every Google News link.
 
 ### News importance rubric
 - **Rank by type**: regulatory decisions on major drugs or devices (FDA, Health Canada, EMA) > large or practice-changing trial results > outbreaks and public-health alerts > health-policy and coverage changes (Medicare, insurance, drug pricing) > big biotech and pharma deals.
@@ -66,6 +71,7 @@ not count.
 From the shortlist pick ≤5 promising papers and read them in ONE call:
 `python3 pipeline/fetch_page.py <paper link> <paper link> ... --max-words 1500`
 Some journal pages (NEJM, The Lancet) refuse automated reads: then read the open abstract page if any, the authors' institution release, or reputable coverage, and write only what those support.
+JAMA dates on the shortlist are issue dates: check the online publication date in coverage.
 Select up to 2 by:
 1. **Clinical significance**: does it change practice, guidelines or what patients face?
 2. **Evidence**: randomized, size, follow-up, effect sizes with confidence intervals.
@@ -87,6 +93,8 @@ caveat).
 **Style**: precise, calm, concrete; numbers over adjectives; define terms on first use; no hype words.
 **Accuracy (mandatory)**: every number, name and claim comes from a source you read in this run; never infer details.
 Give absolute numbers alongside relative ones ("from 4% to 3%" as well as "25% lower").
+**Affiliations**: list them only if a page you read shows them; otherwise leave `affiliations:` empty. Never write
+placeholder text there.
 
 Write `work/health/writeup_$D.md` in this format:
 
