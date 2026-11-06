@@ -3,14 +3,20 @@
  "start": "2026-11-02",
  "end": "2026-11-07",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
    "title": "New York state reports first measles-linked child death in over 30 years amid outbreak",
-   "outlets": 4,
+   "outlets": 7,
    "date": "2026-11-02",
    "covered": "2026-11-04-n1"
+  },
+  {
+   "title": "Fossilised red blood cells found in 115m-year-old dinosaur’s bone, say scientists",
+   "outlets": 4,
+   "date": "2026-11-02",
+   "covered": null
   },
   {
    "title": "Dinosaur blood—oldest discovery rewrites what fossils can reveal about the past",
@@ -19,14 +25,14 @@
    "covered": null
   },
   {
-   "title": "Fossilised red blood cells found in 115m-year-old dinosaur’s bone, say scientists",
+   "title": "British healthcare worker with Ebola evacuated from DR Congo to UK",
    "outlets": 3,
-   "date": "2026-11-02",
+   "date": "2026-11-04",
    "covered": null
   }
  ],
  "featured": {
-  "news": 4,
+  "news": 6,
   "papers": 4
  },
  "items": [
@@ -77,6 +83,18 @@
    "date": "2026-11-05",
    "type": "paper",
    "title": "Prone positioning and high-frequency oscillatory ventilation in early paediatric acute respiratory distress syndrome (PROSpect): an international, two-by-two factorial, response-adaptive, phase 3, randomised controlled trial"
+  },
+  {
+   "id": "2026-11-06-n1",
+   "date": "2026-11-06",
+   "type": "news",
+   "title": "FDA grants accelerated approval to a subcutaneous antibody for previously treated head and neck cancer"
+  },
+  {
+   "id": "2026-11-06-n2",
+   "date": "2026-11-06",
+   "type": "news",
+   "title": "A hair and 1,000 seeds from a Siberian tomb give the oldest directly dated evidence of cannabis intoxication"
   }
  ]
 }

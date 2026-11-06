@@ -1,0 +1,87 @@
+{
+ "date": "2026-11-06",
+ "edition": "weekday",
+ "generated_at": "2026-11-06T13:52:37+00:00",
+ "summary": "The FDA gives accelerated approval to a subcutaneous antibody for previously treated head and neck cancer, and a Siberian tomb yields the oldest directly dated evidence of cannabis intoxication.",
+ "news": [
+  {
+   "id": "2026-11-06-n1",
+   "story_key": "fda-amivantamab-faspro-hnscc-accelerated-approval",
+   "title": "FDA grants accelerated approval to a subcutaneous antibody for previously treated head and neck cancer",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-05T17:30:00-05:00",
+   "tldr": "The FDA granted accelerated approval to Rybrevant Faspro for recurrent or metastatic head and neck squamous cell carcinoma after chemotherapy and immunotherapy, based on a 42% response rate in 102 patients.",
+   "why_selected": "A primary-source regulatory decision on a drug for a cancer with few options, the first approval in 10 years for this group of patients, with a clear caveat that benefit is still unconfirmed.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Head and neck squamous cell carcinoma (HNSCC) is the most common form of head and neck cancer, arising in the mouth, throat, voice box and nearby tissues. According to Johnson & Johnson, up to half of patients have a recurrence or metastatic spread even after early-stage treatment, and once the disease has recurred or spread, five-year survival is roughly 15 percent. Patients whose cancer progresses after platinum-based chemotherapy and immunotherapy have had few options, and the FDA says approved therapies produce responses in around 20% of patients or fewer."
+    },
+    {
+     "heading": "What happened",
+     "body": "On 5 November the FDA granted accelerated approval to Rybrevant Faspro (amivantamab and hyaluronidase-lpuj) for adults with recurrent or metastatic HNSCC whose disease progressed on or after platinum-based chemotherapy and immunotherapy. It is not indicated for oropharyngeal cancer associated with human papillomavirus (HPV). The approval rests on an open-label, multicenter trial of 102 patients. The overall response rate was 42%, meaning tumors shrank or disappeared; of those who responded, 56% had a response lasting six months or longer. Company data from the same study, OrigAMI-4, put complete responses at 15% and partial responses at 27%, with median follow-up of 11.8 months. The drug targets the proteins EGFR and MET and is given under the skin. Labeling warns of hypersensitivity, lung inflammation, skin reactions, eye toxicity and harm to an unborn baby. The FDA called it the first approval in 10 years for patients with this disease who had received prior platinum-based chemotherapy."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Accelerated approval lets a drug reach patients on an intermediate measure, here response rate and its duration, before survival benefit is proven. The FDA states it is not yet confirmed that this translates into a clinically meaningful long-term benefit, and it has required confirmatory studies. The trial had no comparison group, so the 42% figure is set against historical results with other drugs rather than a head-to-head test. In the company's data, median progression-free survival was 6.8 months and median overall survival 12.5 months, and the most common side effects were low blood albumin (50%) and rash (37%)."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Results of the required confirmatory studies, including the Phase 3 OrigAMI-5 trial testing the drug with carboplatin and pembrolizumab as first-line treatment, and longer follow-up on how long responses last."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDA",
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-treatment-head-and-neck-squamous-cell-carcinoma"
+    },
+    {
+     "name": "Johnson & Johnson (OrigAMI-4 results release)",
+     "url": "https://s203.q4cdn.com/636242992/files/doc_news/RYBREVANT-FASPRO-amivantamab-and-hyaluronidase-lpuj-pivotal-data-show-strong-and-durable-responses-in-advanced-head-and-neck-cancer-w-K9Q33.pdf"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-n2",
+   "story_key": "tunnug-1-cannabis-hair-science",
+   "title": "A hair and 1,000 seeds from a Siberian tomb give the oldest directly dated evidence of cannabis intoxication",
+   "category": "Evolution & Ecology",
+   "published": "2026-11-05T14:00:00-05:00",
+   "tldr": "Archaeologists found about 1,000 cannabis seeds and hair carrying a breakdown product of THC in a Scythian princely tomb in Siberia, dated to the early eighth century B.C., in a study in Science.",
+   "why_selected": "A peer-reviewed study in Science that combines plant remains with chemistry from a human body, reported with explicit limits by its authors and by independent experts.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Cannabis has long been grown for fibre and oil, and genomic studies suggest its domestication began in China about 12,000 years ago, according to New Scientist. Showing that ancient people used it as an intoxicant is harder, because flowers, leaves and resin rarely survive. Until now, the earliest firm evidence of its use as a drug was chemical traces on wooden braziers in China from about 2500 years ago, suggesting people inhaled it during funeral rites."
+    },
+    {
+     "heading": "What happened",
+     "body": "A team led by Gino Caspari of the University of Bern and the Max Planck Institute of Geoanthropology excavated Tunnug 1, a princely burial mound of the Scythians, a horse-riding culture, in the Republic of Tyva in southern Siberia. They recovered about 1,000 cannabis seeds; radiocarbon dating of six of them, with other dating results, places the seeds in the grave in the early eighth century B.C. The team also analysed preserved human hair from the central burial chamber using high-resolution mass spectrometry. Several samples showed clear signals consistent with cannabinol, which forms when THC, the main intoxicating compound in cannabis, oxidises, plus weak signals consistent with THC itself. The study appeared in Science on 5 November."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Seeds alone do not prove intoxication, and the researchers say so; the hair is what points to use. They stress that the work cannot show how much was consumed or whether it was smoked or eaten, and it says nothing about the THC content of the plants. Caspari links the find to ritual burial, with dozens of sacrificed horses and scattered human bones at the site. He suggested cannabis might have sedated a person chosen for sacrifice, an idea archaeologist Adam Brumm called intriguing but highly speculative."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The team has begun sequencing plant samples and says DNA preservation is excellent, which could clarify how cannabis was domesticated and spread."
+    }
+   ],
+   "sources": [
+    {
+     "name": "University of Bern",
+     "url": "https://mediarelations.unibe.ch/media_releases/2026/media_releases_2026/cannabis_was_used_as_an_intoxicant_as_early_as_2800_years_ago/index_eng.html"
+    },
+    {
+     "name": "New Scientist",
+     "url": "https://www.newscientist.com/article/2597653-tomb-in-siberia-reveals-humans-were-using-cannabis-2800-years-ago/"
+    },
+    {
+     "name": "Scientific American",
+     "url": "https://www.scientificamerican.com/article/ancient-humans-used-cannabis-in-burial-rituals-2-800-years-ago/"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

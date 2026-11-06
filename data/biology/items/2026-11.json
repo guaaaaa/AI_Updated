@@ -1,5 +1,23 @@
 [
  {
+  "id": "2026-11-06-n1",
+  "date": "2026-11-06",
+  "type": "news",
+  "title": "FDA grants accelerated approval to a subcutaneous antibody for previously treated head and neck cancer",
+  "tldr": "The FDA granted accelerated approval to Rybrevant Faspro for recurrent or metastatic head and neck squamous cell carcinoma after chemotherapy and immunotherapy, based on a 42% response rate in 102 patients.",
+  "category": "Drugs & Approvals",
+  "byline": "FDA, Johnson & Johnson (OrigAMI-4 results release)"
+ },
+ {
+  "id": "2026-11-06-n2",
+  "date": "2026-11-06",
+  "type": "news",
+  "title": "A hair and 1,000 seeds from a Siberian tomb give the oldest directly dated evidence of cannabis intoxication",
+  "tldr": "Archaeologists found about 1,000 cannabis seeds and hair carrying a breakdown product of THC in a Scythian princely tomb in Siberia, dated to the early eighth century B.C., in a study in Science.",
+  "category": "Evolution & Ecology",
+  "byline": "University of Bern, New Scientist, Scientific American"
+ },
+ {
   "id": "2026-11-05-n1",
   "date": "2026-11-05",
   "type": "news",
