@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 06 Nov 2026 11:51:52 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 12:18:51 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI launches GPT-6 Cyber, a cybersecurity model rated "Critical" on its Preparedness Framework</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>OpenAI released GPT-6 Cyber to vetted defenders, claiming better exploit-finding and far fewer out-of-scope actions, and its Preparedness Framework rates it "Critical" for cybersecurity. (The Verge, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Anthropic lets Claude read your bank accounts with a new Personal Finance feature</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n2</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Product &amp; Features</category>
+    <description>Anthropic launched a beta Personal Finance tool that links Claude to bank and card accounts through Plaid with read-only access, following a similar ChatGPT feature from May. (The Verge, TechCrunch)</description>
+  </item>
+  <item>
+    <title>ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05036</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05036</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>ToolSpace builds agent training tasks from how real tools are chained in execution traces, producing cross-service workflows that lift open models toward frontier tool-use scores. (Guanting Dong, Zhichao Sun, Xinyu Yang et al. · Renmin University of China, Fudan University, Shanghai Jiao Tong University)</description>
+  </item>
+  <item>
+    <title>On the Generalization Limitation of On-Policy Distillation for Post-RL Consolidation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05609</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05609</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>Merging several specialist models into one with on-policy distillation reaches near-teacher scores on training tasks yet loses ground on harder or combined tasks, unless supervision is also broadened. (Yichen Wang, Yufa Zhou, Siqi Zhu et al. · University of Chicago, Duke University, UIUC)</description>
+  </item>
+  <item>
+    <title>Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.06905</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.06905</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>Fine-tuning a generalist robot policy with value-based reinforcement learning across many tasks improves it on unseen objects and scenes, which single-task fine-tuning does not. (Michal Korniak, Marco Bagatella, Ralf Römer et al. · ETH Zurich, MPI for Intelligent Systems, Technical University of Munich)</description>
+  </item>
+  <item>
+    <title>Suppressing Misaligned Behaviors in Language Models, Durably</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05358</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05358</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Safety &amp; Alignment</category>
+    <description>PEARL trains a language model to recover from partly misaligned starts, making removal of a bad behavior far more resistant to later fine-tuning than standard supervised or reinforcement learning fixes. (Luxi He, Pengcheng Jiang, Jifan Zhang et al. · Princeton University, UIUC, Thinking Machines Lab)</description>
+  </item>
+  <item>
+    <title>Adversarial Speculative Reasoning Improves Long Horizon Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05345</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05345</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>Speculative decoding is lossless in distribution but not in numerical precision, and the authors train the draft model to disagree at key decision points to improve long-horizon coding agents. (Hongyin Luo, Wei Fang, Lijie Yang et al. · Subconscious)</description>
+  </item>
   <item>
     <title>OpenSSH patch fixes "*sshole", a ten-year-old login bypass on musl-based Linux systems</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
     <category>AI / Retrieval &amp; Memory</category>
     <description>DR Pixel does deep research directly on rendered page images instead of OCR text, and a step-weighted fine-tuning method lifts a 27B open model to GPT-5.4-level accuracy. (Tiansheng Hu, Yichuan Wang, James V. Talwar et al. · NYU Shanghai, UC Berkeley, Rational Dynamics)</description>
-  </item>
-  <item>
-    <title>Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.05266</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.05266</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Turning a judge's per-turn text feedback into a self-distillation signal, only on failing turns and alongside normal RL rewards, teaches coding agents behaviors that plain RL never discovers. (Kevin Frans, Alexander M Rush, Sergey Levine et al. · Cursor Research, UC Berkeley)</description>
-  </item>
-  <item>
-    <title>Anthropic's amended IPO filing says it may imminently reach its own "dramatically accelerated progress" threshold</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2026-11-03-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2026-11-03-n1</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Safety &amp; Security</category>
-    <description>In a revised S-1/A filed Monday, Anthropic wrote that its internal estimates suggest it may imminently meet the Responsible Scaling Policy's definition of AI-driven dramatically accelerated progress, while saying no current model crosses it. (TechCrunch)</description>
-  </item>
-  <item>
-    <title>Researchers show GPT-6 Astra can read and directly edit neural network weights, lifting a small Qwen model's math score</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2026-11-03-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2026-11-03-n2</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Research</category>
-    <description>A blog post reports that GPT-6 Astra, without writing training loops, identified a flaw in Qwen3.5-0.8B's weights and fixed it by editing 0.016% of them, raising MATH-500 from 7.9% to 48.1%. (Weight-Space Programming blog post)</description>
-  </item>
-  <item>
-    <title>Hinted Scaling Laws</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.02270</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.02270</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>Giving models partial reference solutions turns a hard benchmark into a smooth family of easier ones, letting scaling laws fit on small, near-zero-accuracy models forecast large-model benchmark accuracy with far lower error. (Suze van Adrichem, Luke Bailey, Rohith Kuditipudi et al. · Stanford University)</description>
-  </item>
-  <item>
-    <title>Wave Forcing: Towards Speed-of-Light Streaming Video Generation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.00859</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.00859</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>Wave Forcing lets several video chunks denoise at once on different GPUs, with earlier chunks serving as cleaner context for later ones, reaching about 135 end-to-end frames per second on eight H200 GPUs. (Yijie Jin, Yuxuan Liu, Jiajun Xu et al. · Shanghai Jiao Tong University, Xi'an Jiaotong University, Peking University)</description>
-  </item>
-  <item>
-    <title>WorldBridge: Bridging Video and Action for Task Generalization in World Action Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2610.40748</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2610.40748</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>In a video-plus-action world model, videos of new tasks without action labels lift out-of-distribution success on RoboTwin 2.0 from 25% to 56%, and one labeled demonstration per task lifts it to 71%. (Jun Cen, Yubo Guo, Hao Li et al. · Joy Future Academy)</description>
-  </item>
-  <item>
-    <title>Jet-QSparse: Accelerating Agentic LLM Inference with 4-Bit Sparse Attention</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.01022</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.01022</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>Jet-QSparse stores the KV cache in 4-bit NVFP4 and aggregates values from selected blocks only, giving 1.94 times faster decoding and 2.58 to 2.76 times cache capacity without training. (Haozhan Tang, Hao Kang, Meng Lu et al. · Carnegie Mellon University, Virginia Tech, Massachusetts Institute of Technology)</description>
   </item>
 </channel>
 </rss>

@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Thu, 05 Nov 2026 12:18:27 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 12:18:51 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI launches GPT-6 Cyber, a cybersecurity model rated "Critical" on its Preparedness Framework</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>OpenAI released GPT-6 Cyber to vetted defenders, claiming better exploit-finding and far fewer out-of-scope actions, and its Preparedness Framework rates it "Critical" for cybersecurity. (The Verge, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Anthropic lets Claude read your bank accounts with a new Personal Finance feature</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n2</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Product &amp; Features</category>
+    <description>Anthropic launched a beta Personal Finance tool that links Claude to bank and card accounts through Plaid with read-only access, following a similar ChatGPT feature from May. (The Verge, TechCrunch)</description>
+  </item>
+  <item>
+    <title>ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05036</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05036</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>ToolSpace builds agent training tasks from how real tools are chained in execution traces, producing cross-service workflows that lift open models toward frontier tool-use scores. (Guanting Dong, Zhichao Sun, Xinyu Yang et al. · Renmin University of China, Fudan University, Shanghai Jiao Tong University)</description>
+  </item>
+  <item>
+    <title>On the Generalization Limitation of On-Policy Distillation for Post-RL Consolidation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05609</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05609</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>Merging several specialist models into one with on-policy distillation reaches near-teacher scores on training tasks yet loses ground on harder or combined tasks, unless supervision is also broadened. (Yichen Wang, Yufa Zhou, Siqi Zhu et al. · University of Chicago, Duke University, UIUC)</description>
+  </item>
+  <item>
+    <title>Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.06905</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.06905</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>Fine-tuning a generalist robot policy with value-based reinforcement learning across many tasks improves it on unseen objects and scenes, which single-task fine-tuning does not. (Michal Korniak, Marco Bagatella, Ralf Römer et al. · ETH Zurich, MPI for Intelligent Systems, Technical University of Munich)</description>
+  </item>
+  <item>
+    <title>Suppressing Misaligned Behaviors in Language Models, Durably</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05358</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05358</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Safety &amp; Alignment</category>
+    <description>PEARL trains a language model to recover from partly misaligned starts, making removal of a bad behavior far more resistant to later fine-tuning than standard supervised or reinforcement learning fixes. (Luxi He, Pengcheng Jiang, Jifan Zhang et al. · Princeton University, UIUC, Thinking Machines Lab)</description>
+  </item>
+  <item>
+    <title>Adversarial Speculative Reasoning Improves Long Horizon Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05345</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05345</guid>
+    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>Speculative decoding is lossless in distribution but not in numerical precision, and the authors train the draft model to disagree at key decision points to improve long-horizon coding agents. (Hongyin Luo, Wei Fang, Lijie Yang et al. · Subconscious)</description>
+  </item>
   <item>
     <title>Midterm results make the data-center backlash a political force that could slow AI buildout</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2026-11-05-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Mon, 02 Nov 2026 05:38:08 +0000</pubDate>
     <category>AI / Pre-training &amp; Data</category>
     <description>In compute-matched experiments, spending part of a pretraining budget on synthetic pre-pretraining never beats spending it on natural text, and an earlier reported gain disappears once the baseline's initialization is improved. (Alexander Stern, Tim Rocktäschel, Acyr Locatelli et al. · Cohere, UCL AI Centre, MIT)</description>
-  </item>
-  <item>
-    <title>Backdoored Claude Code extension on Cursor's marketplace exposed up to 5,000 developers</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2026-10-31-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2026-10-31-n1</guid>
-    <pubDate>Mon, 02 Nov 2026 05:22:21 +0000</pubDate>
-    <category>AI / Safety &amp; Security</category>
-    <description>For about 11 hours on October 29, Cursor's marketplace served a tampered Claude Code extension that planted an SSH backdoor and phoned home with host details; Cursor says at most 5,000 users were affected. (Phorion, Ars Technica, The Register, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>OpenAI, Google, Microsoft and Anthropic back one robots.txt signal for opting out of AI training</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2026-10-31-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2026-10-31-n2</guid>
-    <pubDate>Mon, 02 Nov 2026 05:22:21 +0000</pubDate>
-    <category>AI / Policy &amp; Legal</category>
-    <description>OpenAI, Google, Microsoft and Anthropic say they will honor one robots.txt token, proposed at the IETF by an Anthropic standards lead, that lets websites opt out of generative-AI training for all of them at once. (OpenAI, IETF, The Verge)</description>
-  </item>
-  <item>
-    <title>Algebraic World Model: From Exploration to Proofs</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.40503</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.40503</guid>
-    <pubDate>Mon, 02 Nov 2026 05:22:21 +0000</pubDate>
-    <category>AI / AI for Math</category>
-    <description>An agent that learns an unfamiliar game's rules, compresses them into an explicit algebraic model and formalizes it in Lean can prove levels unwinnable; it also clears all 183 public ARC-AGI-3 levels. (Guancheng Pan, Qixin Tan, Yang Yuan et al. · Zhejiang University, Tsinghua University, Shanghai Qi Zhi Institute)</description>
-  </item>
-  <item>
-    <title>How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.40325</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.40325</guid>
-    <pubDate>Mon, 02 Nov 2026 05:22:21 +0000</pubDate>
-    <category>AI / Architectures</category>
-    <description>A controlled study of looped transformers up to 1B parameters shows which layers to loop under which budget, and how small fixes let loops run in parallel during decoding while keeping much of the gain. (Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan et al. · FAIR at Meta, MIT)</description>
-  </item>
-  <item>
-    <title>Gym-Anything for Robotics: Scaling physical simulations with digital agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.40565</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.40565</guid>
-    <pubDate>Mon, 02 Nov 2026 05:22:21 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>Coding agents, checked by adversarial auditor agents, build 25 realistic robotics simulations of economically valuable work; frontier models fail every test task, but simulator access helps them learn and teach small policies. (Pranjal Aggarwal, Sean Welleck · Carnegie Mellon University)</description>
-  </item>
-  <item>
-    <title>Multi-Token Prediction Done Right</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.38331</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.38331</guid>
-    <pubDate>Mon, 02 Nov 2026 05:22:21 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>The usual multi-token prediction loss hides a useful self-distillation gradient under a noisy residual; a one-line change removes the residual and improves perplexity, speculative decoding and fine-tuned math and code. (Jayden Teoh)</description>
-  </item>
-  <item>
-    <title>Elucidating the Design Space of LM Data Attribution</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.40655</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-10-31/2610.40655</guid>
-    <pubDate>Mon, 02 Nov 2026 05:22:21 +0000</pubDate>
-    <category>AI / Interpretability</category>
-    <description>A benchmark built on invented facts shows that data attribution fails because evidence in a few tokens gets averaged away; scoring with log-odds gradients and only top tokens boosts recall by 35 to 72 points. (Steven Yu, Sheng-Yu Wang, Kimia Hamidieh et al. · Northeastern University, MIT)</description>
   </item>
 </channel>
 </rss>

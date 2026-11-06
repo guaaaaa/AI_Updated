@@ -1,5 +1,98 @@
 [
  {
+  "id": "2026-11-06-n1",
+  "date": "2026-11-06",
+  "type": "news",
+  "title": "OpenAI launches GPT-6 Cyber, a cybersecurity model rated \"Critical\" on its Preparedness Framework",
+  "tldr": "OpenAI released GPT-6 Cyber to vetted defenders, claiming better exploit-finding and far fewer out-of-scope actions, and its Preparedness Framework rates it \"Critical\" for cybersecurity.",
+  "category": "Model Release",
+  "byline": "The Verge, TechCrunch"
+ },
+ {
+  "id": "2026-11-06-n2",
+  "date": "2026-11-06",
+  "type": "news",
+  "title": "Anthropic lets Claude read your bank accounts with a new Personal Finance feature",
+  "tldr": "Anthropic launched a beta Personal Finance tool that links Claude to bank and card accounts through Plaid with read-only access, following a similar ChatGPT feature from May.",
+  "category": "Product & Features",
+  "byline": "The Verge, TechCrunch"
+ },
+ {
+  "id": "2611.05036",
+  "date": "2026-11-06",
+  "type": "paper",
+  "title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents",
+  "tldr": "ToolSpace builds agent training tasks from how real tools are chained in execution traces, producing cross-service workflows that lift open models toward frontier tool-use scores.",
+  "primary_tag": "Agents",
+  "tags": [
+   "Agents",
+   "Pre-training & Data"
+  ],
+  "byline": "Guanting Dong, Zhichao Sun, Xinyu Yang et al. · Renmin University of China, Fudan University, Shanghai Jiao Tong University",
+  "hf": 39,
+  "venue": null
+ },
+ {
+  "id": "2611.05609",
+  "date": "2026-11-06",
+  "type": "paper",
+  "title": "On the Generalization Limitation of On-Policy Distillation for Post-RL Consolidation",
+  "tldr": "Merging several specialist models into one with on-policy distillation reaches near-teacher scores on training tasks yet loses ground on harder or combined tasks, unless supervision is also broadened.",
+  "primary_tag": "Post-training",
+  "tags": [
+   "Post-training",
+   "Theory"
+  ],
+  "byline": "Yichen Wang, Yufa Zhou, Siqi Zhu et al. · University of Chicago, Duke University, UIUC",
+  "hf": 19,
+  "venue": null
+ },
+ {
+  "id": "2611.06905",
+  "date": "2026-11-06",
+  "type": "paper",
+  "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
+  "tldr": "Fine-tuning a generalist robot policy with value-based reinforcement learning across many tasks improves it on unseen objects and scenes, which single-task fine-tuning does not.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Reinforcement Learning"
+  ],
+  "byline": "Michal Korniak, Marco Bagatella, Ralf Römer et al. · ETH Zurich, MPI for Intelligent Systems, Technical University of Munich",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.05358",
+  "date": "2026-11-06",
+  "type": "paper",
+  "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
+  "tldr": "PEARL trains a language model to recover from partly misaligned starts, making removal of a bad behavior far more resistant to later fine-tuning than standard supervised or reinforcement learning fixes.",
+  "primary_tag": "Safety & Alignment",
+  "tags": [
+   "Safety & Alignment",
+   "Reinforcement Learning"
+  ],
+  "byline": "Luxi He, Pengcheng Jiang, Jifan Zhang et al. · Princeton University, UIUC, Thinking Machines Lab",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.05345",
+  "date": "2026-11-06",
+  "type": "paper",
+  "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+  "tldr": "Speculative decoding is lossless in distribution but not in numerical precision, and the authors train the draft model to disagree at key decision points to improve long-horizon coding agents.",
+  "primary_tag": "Efficiency",
+  "tags": [
+   "Efficiency",
+   "Agents"
+  ],
+  "byline": "Hongyin Luo, Wei Fang, Lijie Yang et al. · Subconscious",
+  "hf": 9,
+  "venue": null
+ },
+ {
   "id": "2026-11-05-n1",
   "date": "2026-11-05",
   "type": "news",
