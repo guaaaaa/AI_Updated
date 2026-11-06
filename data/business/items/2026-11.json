@@ -1,5 +1,38 @@
 [
  {
+  "id": "2026-11-06-n1",
+  "date": "2026-11-06",
+  "type": "news",
+  "title": "Wall Street's AI-driven rout deepens after the midterms and spreads across Asia",
+  "tldr": "US stocks fell sharply on Thursday as investors feared Democratic control of Congress could slow the AI buildout, and the losses spread to Japan, South Korea and Taiwan on Friday.",
+  "category": "Markets",
+  "byline": "The Guardian (live, Nov 6), The Guardian (Nov 4), The Globe and Mail (Reuters)"
+ },
+ {
+  "id": "2026-11-06-n2",
+  "date": "2026-11-06",
+  "type": "news",
+  "title": "Tesla says it will stop making the Cybertruck next year to make room for the Cybercab",
+  "tldr": "Elon Musk said Tesla will wind down Cybertruck production in 2027, using the factory space for its two-seat Cybercab robotaxi after years of weak sales.",
+  "category": "Earnings & Companies",
+  "byline": "BBC News, TechCrunch"
+ },
+ {
+  "id": "nber-w35967",
+  "date": "2026-11-06",
+  "type": "paper",
+  "title": "Aggregate-Surplus Maximizing Monetary Policy",
+  "tldr": "A new NBER paper finds that when households differ in labor-market frictions, a central bank maximizing everyone's joint surplus should weight output stabilization about 37 percent more than inflation, compared with the standard model.",
+  "primary_tag": "Monetary policy",
+  "tags": [
+   "Monetary policy",
+   "Inequality & mobility"
+  ],
+  "byline": "David Baqaee, Ariel Burstein, Joao Guerreiro",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-05-n1",
   "date": "2026-11-05",
   "type": "news",

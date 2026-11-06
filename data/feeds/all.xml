@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 06 Nov 2026 12:18:51 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 12:52:17 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Wall Street's AI-driven rout deepens after the midterms and spreads across Asia</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/2026-11-06-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/2026-11-06-n1</guid>
+    <pubDate>Fri, 06 Nov 2026 12:52:17 +0000</pubDate>
+    <category>Business / Markets</category>
+    <description>US stocks fell sharply on Thursday as investors feared Democratic control of Congress could slow the AI buildout, and the losses spread to Japan, South Korea and Taiwan on Friday. (The Guardian (live, Nov 6), The Guardian (Nov 4), The Globe and Mail (Reuters))</description>
+  </item>
+  <item>
+    <title>Tesla says it will stop making the Cybertruck next year to make room for the Cybercab</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/2026-11-06-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/2026-11-06-n2</guid>
+    <pubDate>Fri, 06 Nov 2026 12:52:17 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>Elon Musk said Tesla will wind down Cybertruck production in 2027, using the factory space for its two-seat Cybercab robotaxi after years of weak sales. (BBC News, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Aggregate-Surplus Maximizing Monetary Policy</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/nber-w35967</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/nber-w35967</guid>
+    <pubDate>Fri, 06 Nov 2026 12:52:17 +0000</pubDate>
+    <category>Business / Monetary policy</category>
+    <description>A new NBER paper finds that when households differ in labor-market frictions, a central bank maximizing everyone's joint surplus should weight output stabilization about 37 percent more than inflation, compared with the standard model. (David Baqaee, Ariel Burstein, Joao Guerreiro)</description>
+  </item>
   <item>
     <title>OpenAI launches GPT-6 Cyber, a cybersecurity model rated "Critical" on its Preparedness Framework</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</link>
@@ -462,30 +486,6 @@
     <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
     <category>AI / Robotics</category>
     <description>An open-weight Qwen model, driven through a carefully designed tool harness and with no privileged inputs, beats the published GPT-6 Astra result on the RoboDojo robot benchmark. (Jiarui Yuan, Yuxin Zuo, Xiaoyu Huang et al. · Tsinghua University, UC Berkeley)</description>
-  </item>
-  <item>
-    <title>Measuring AI Agents as Teammates with Collaborative Intelligence</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.02633</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.02633</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Evaluation &amp; Benchmarks</category>
-    <description>A 240-task benchmark scores AI agents as teammates and finds that even the best model reaches only 82.2 out of 100, with strong models caving under social pressure and keeping inherited cheating. (Sean Wu, Aneesh Pappu, Jiaru Zou et al. · Stanford University, University of Oxford, MIT)</description>
-  </item>
-  <item>
-    <title>Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.03633</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.03633</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Optimization</category>
-    <description>Muon beats AdamW at pretraining loss but, with enough pretraining data, AdamW models fine-tune better, and the crossover arrives sooner as models grow. (Catherine Li, Jingchu Gai, Andrej Risteski et al.)</description>
-  </item>
-  <item>
-    <title>DR Pixel: Page-Native Deep Research with Vision-Language Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.03097</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.03097</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Retrieval &amp; Memory</category>
-    <description>DR Pixel does deep research directly on rendered page images instead of OCR text, and a step-weighted fine-tuning method lifts a 27B open model to GPT-5.4-level accuracy. (Tiansheng Hu, Yichuan Wang, James V. Talwar et al. · NYU Shanghai, UC Berkeley, Rational Dynamics)</description>
   </item>
 </channel>
 </rss>

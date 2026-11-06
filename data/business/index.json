@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-06T12:18:52+00:00",
+ "updated": "2026-11-06T12:52:22+00:00",
  "domain": "business",
  "days": [
+  {
+   "date": "2026-11-06",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 1,
+   "backfill": false
+  },
   {
    "date": "2026-11-05",
    "edition": "weekday",
@@ -20,7 +27,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 10
+   "n": 13
   }
  ],
  "tag_groups": {
@@ -52,7 +59,8 @@
   ]
  },
  "tag_counts": {
-  "Monetary policy": 1,
+  "Monetary policy": 2,
+  "Inequality & mobility": 1,
   "Inflation": 1
  },
  "news_categories": [
@@ -71,12 +79,12 @@
   "Real Estate"
  ],
  "category_counts": {
+  "Markets": 2,
+  "Earnings & Companies": 2,
   "Central Banks & Rates": 1,
   "Economy & Data": 4,
-  "Markets": 1,
   "Labor & Workplace": 1,
-  "Deals & M&A": 1,
-  "Earnings & Companies": 1
+  "Deals & M&A": 1
  },
  "summaries": [],
  "weeks": [

@@ -1,0 +1,136 @@
+{
+ "date": "2026-11-06",
+ "edition": "weekday",
+ "generated_at": "2026-11-06T12:52:17+00:00",
+ "summary": "A two-day AI-led stock rout spreads from Wall Street to Asia, and Tesla signals the end of the Cybertruck.",
+ "news": [
+  {
+   "id": "2026-11-06-n1",
+   "story_key": "ai-selloff-midterms-2026-11",
+   "title": "Wall Street's AI-driven rout deepens after the midterms and spreads across Asia",
+   "category": "Markets",
+   "published": "2026-11-05T16:41:00-05:00",
+   "tldr": "US stocks fell sharply on Thursday as investors feared Democratic control of Congress could slow the AI buildout, and the losses spread to Japan, South Korea and Taiwan on Friday.",
+   "why_selected": "The biggest market move of the window, with a clear cause and reach across several continents.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "On Wednesday, the day after the US midterm elections, markets first cheered the Democrats' wins. The Dow Jones rose close to 3%, its best day in over a year, and the Nasdaq and S&P 500 gained about 1.5% each. Brent crude, the global oil benchmark, fell below $100 a barrel for the first time since early October. The calm did not last."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday, US investors rushed to sell. The Guardian reports that more than $3.2 trillion was wiped off the US stock market. The Nasdaq fell 5.5%, the Dow dropped 1,833 points (3.44%) and the S&P 500 lost 4.36%. Memory-chip makers led the declines: SanDisk fell 22%, Micron and AMD 17% each, and Nvidia more than 9%. On Friday the rout spread. Japan's Nikkei slumped almost 6%, its worst fall since April 7, 2025, South Korea's KOSPI fell 6.7% and Taiwan's TAIEX 4.5%. Analysts pointed to fears that Democrats are more critical of data centres, which could slow AI investment. Reuters, via the Globe and Mail, adds that Microsoft tightened oversight of some data-centre projects, and that credit default swaps (contracts that pay out if a borrower defaults) on CoreWeave and SpaceX hit records."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The selloff shows how much of the market now rests on one idea: that spending on AI will keep rising. Earnings season had already undershot growth expectations for the \"Magnificent Seven\" big tech companies, so political risk landed on a shaky base. Falling tech prices hit pension and retirement savings, and a cooling of data-centre plans would also touch utilities, builders and chip suppliers. Funding conditions for new listings are tightening too: Reuters reports that investors are doubting whether Anthropic can hold a roadshow next week at the roughly $1.5 trillion valuation recently discussed."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Friday's US jobs report, for signs of how the economy is holding up; whether Anthropic's listing timing slips; and whether Asian and US markets stabilise."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian (live, Nov 6)",
+     "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates"
+    },
+    {
+     "name": "The Guardian (Nov 4)",
+     "url": "https://www.theguardian.com/business/2026/nov/04/us-dollar-slides-democrats-midterm-election-win-growth-fears"
+    },
+    {
+     "name": "The Globe and Mail (Reuters)",
+     "url": "https://www.theglobeandmail.com/business/article-anthropic-ipo-valuation-ai-investors/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-n2",
+   "story_key": "tesla-cybertruck-end-2026-11",
+   "title": "Tesla says it will stop making the Cybertruck next year to make room for the Cybercab",
+   "category": "Earnings & Companies",
+   "published": "2026-11-06T04:57:00-05:00",
+   "tldr": "Elon Musk said Tesla will wind down Cybertruck production in 2027, using the factory space for its two-seat Cybercab robotaxi after years of weak sales.",
+   "why_selected": "A strategic product decision at a bellwether company, covered by multiple outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Cybertruck, a steel-clad electric pickup, was unveiled in 2019 and was a personal passion project for Tesla chief executive Elon Musk. Tesla said at the time that it would start under $40,000 and offer up to 500 miles of range. It reached customers in late 2023 after delays, at a base price TechCrunch puts at around $60,000."
+    },
+    {
+     "heading": "What happened",
+     "body": "Musk said on X that Tesla will wind down Cybertruck production at its Texas factory in 2027, to make room for more Cybercabs, the company's two-seat robotaxis. The BBC notes he did not spell out whether production stops entirely, but the truck's lead engineer wrote that it \"lives on through Cybercab.\" Musk added that the existing Cybertruck fleet \"will be around for a long time.\" TechCrunch says Musk once predicted about 250,000 sales a year, while Tesla has sold only tens of thousands in total over three years. Tesla has been running Cybercabs on the streets of Austin for two months and plans to expand to Dallas later this month. Earlier this year it also chose to end the Model S and Model X, using that space for Optimus humanoid robots."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This is the third product Tesla has dropped to fund a bet on robotaxis and robots. It shows a company deliberately trading a consumer vehicle line for products that are not yet proven at scale. Investors will judge whether that shift offsets slower sales of conventional vehicles. For rivals in the US pickup market, a lucrative market, a polarising entrant is leaving. For owners, Musk says the existing fleet will be around for a long time."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Tesla confirms a full end to Cybertruck output, and how fast Cybercab service expands beyond Austin."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/06/tesla-will-stop-making-the-cybertruck-in-2027/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w35967",
+   "title": "Aggregate-Surplus Maximizing Monetary Policy",
+   "authors": [
+    "David Baqaee",
+    "Ariel Burstein",
+    "Joao Guerreiro"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-06T00:00:00-05:00",
+   "primary_tag": "Monetary policy",
+   "tags": [
+    "Monetary policy",
+    "Inequality & mobility"
+   ],
+   "tldr": "A new NBER paper finds that when households differ in labor-market frictions, a central bank maximizing everyone's joint surplus should weight output stabilization about 37 percent more than inflation, compared with the standard model.",
+   "why_selected": "A fresh, policy-relevant result on how central banks should weigh inflation against jobs when households are unequal.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Central banks such as the Federal Reserve are usually modeled as balancing two goals, stable prices and full employment. But households differ: some can borrow or save easily, others cannot, and workers face different gaps between what they earn and what their work is worth. The paper asks what monetary policy should do in an economy with these differences, without having to decide how gains should be split between winners and losers."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The standard benchmark is the representative-agent New Keynesian model, which treats everyone as one average household. Studies of optimal policy that do allow differences, in so-called heterogeneous-agent New Keynesian (HANK) models, normally rely on a social welfare function, a formula that places a value on how fairly resources are shared. That requires taking a stance on distribution."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Baqaee, Burstein and Guerreiro instead have the policymaker maximize the joint surplus of all households: the resources left over if winners from a policy were to compensate losers. This avoids any view about who deserves more. The authors derive an approximate optimal policy using linear-quadratic methods, and show it has two parts, a time-dependent part and a state-contingent part that responds to events."
+    },
+    {
+     "heading": "Results",
+     "body": "When labor wedges, the gaps between pay and the value of work, are the same across households, monetary policy cannot improve insurance and the optimal policy equals the standard benchmark. Departures arise when wedges differ. The time-dependent part then eases market incompleteness for a while but fades. The state-contingent part solves a two-goal problem like the standard one, but with higher weight on stabilizing output relative to inflation. In a calibrated model, differing labor wedges raise this weight by about 37 percent. A dual mandate with that higher weight captures almost all the gains of the full optimal policy and needs no transfers between winners and losers."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Anyone who follows central-bank debates over inflation versus jobs should care, because the paper gives a concrete reason to lean a little more toward output. The main caveat is that the result comes from a calibrated model rather than observed policy outcomes, so real-world weights could differ."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w35967"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major",
+    "press": 3
+   }
+  }
+ ]
+}

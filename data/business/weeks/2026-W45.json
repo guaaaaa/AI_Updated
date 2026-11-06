@@ -3,7 +3,7 @@
  "start": "2026-11-02",
  "end": "2026-11-07",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
@@ -25,15 +25,33 @@
    "covered": null
   },
   {
+   "title": "Fears of an AI crackdown after midterms spark $2 trillion rout in tech stocks",
+   "outlets": 4,
+   "date": "2026-11-06",
+   "covered": null
+  },
+  {
    "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
    "outlets": 3,
    "date": "2026-11-03",
    "covered": null
+  },
+  {
+   "title": "White House Delays Hearing on Fed Governor",
+   "outlets": 3,
+   "date": "2026-11-04",
+   "covered": null
+  },
+  {
+   "title": "Oil rises as investors weigh uncertainties around Iran war",
+   "outlets": 3,
+   "date": "2026-11-05",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 9,
-  "papers": 1
+  "news": 11,
+  "papers": 2
  },
  "items": [
   {
@@ -95,6 +113,24 @@
    "date": "2026-11-05",
    "type": "paper",
    "title": "Demand-Driven Inflation"
+  },
+  {
+   "id": "2026-11-06-n1",
+   "date": "2026-11-06",
+   "type": "news",
+   "title": "Wall Street's AI-driven rout deepens after the midterms and spreads across Asia"
+  },
+  {
+   "id": "2026-11-06-n2",
+   "date": "2026-11-06",
+   "type": "news",
+   "title": "Tesla says it will stop making the Cybertruck next year to make room for the Cybercab"
+  },
+  {
+   "id": "nber-w35967",
+   "date": "2026-11-06",
+   "type": "paper",
+   "title": "Aggregate-Surplus Maximizing Monetary Policy"
   }
  ]
 }
