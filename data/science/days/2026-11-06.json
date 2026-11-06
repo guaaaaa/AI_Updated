@@ -1,0 +1,109 @@
+{
+ "date": "2026-11-06",
+ "edition": "weekday",
+ "generated_at": "2026-11-06T13:23:42+00:00",
+ "summary": "Two papers today: a mantle-driven explanation for the Great Unconformity and a software method that sharpens Webb's exoplanet images.",
+ "news": [],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11156-5",
+   "title": "The deep Earth origin of the Great Unconformity",
+   "authors": [
+    "Santosh Dhungana",
+    "Nicolas Flament"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science"
+   ],
+   "tldr": "Models of slow mantle flow suggest continents rose for hundreds of millions of years and then sank, which would erase and then bury the rock record behind the Great Unconformity.",
+   "why_selected": "A century-old geological puzzle gets a tested, global explanation in Nature, with a clear link to where the gap is best preserved.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "In the Grand Canyon, Cambrian sandstones about 540 million years old sit directly on granite-like crystalline rock that can be over a billion years old. This jump is called the Great Unconformity. Depending on the place, the missing record spans from about 200 million years to well over a billion. What removed that rock?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The main candidates were the Cryogenian \"Snowball Earth\" glaciations (720 to 635 million years ago) scraping off rock, continental breakup and mantle plumes, a fall in sea level, and vertical motion driven from the mantle. According to the authors, none had been tested with dynamic models compared against global data."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The mantle is hot rock that is solid but flows very slowly, much as a glacier looks motionless yet keeps moving. Its currents push the surface up in some places and drag it down in others, an effect called dynamic topography. If a continent rises for hundreds of millions of years, erosion strips away much of its rock. If it then sinks for just as long, the sea floods it and new sediment buries the worn surface, protecting it.\n\nSantosh Dhungana and Nicolas Flament modelled mantle motion over the last billion years. They ran six versions of the simulation and used the one that best reproduced today's deep mantle structure. They compared the output with sediment preserved on each continent, using the Macrostrat rock database."
+    },
+    {
+     "heading": "Results",
+     "body": "For Laurentia (the ancient core of North America), Baltica (northern Europe) and North China, the models predict a long rise during the Neoproterozoic, the era from about 1 billion to 540 million years ago, then a long sinking over the last 540 million years, matching the jump in preserved sediment at the start of the Cambrian. Africa is an exception, being made of blocks with very different histories. Glaciers are not ruled out: a sustained rise would have favoured glacial erosion, which studies cited in the paper put at about ten times stronger than river erosion."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work offers one deep-Earth driver for a feature found on several continents. The caveat: this is a model matched to a rock database, not direct dating, and the shares of mantle and ice remain open."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11156-5",
+    "doi": "https://doi.org/10.1038/s41586-026-11156-5"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11213-z",
+   "title": "Imaging exoplanets below the telescope stability limit",
+   "authors": [
+    "Rodrigo Ferrer-Chavez",
+    "Jason J. Wang",
+    "Katherine L. Bouman",
+    "William T. Freeman",
+    "Laurent Pueyo",
+    "Brandon Y. Feng",
+    "Marshall D. Perrin"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Planetary science",
+   "tags": [
+    "Planetary science",
+    "Computational science & AI"
+   ],
+   "tldr": "A physics-based model of Webb's camera, tuned with the gradient descent used to train neural networks, cuts noise in exoplanet images and revealed a planet that had gone unseen at one wavelength.",
+   "why_selected": "A clever borrowing of machine-learning tools that measurably improves direct imaging of planets in Nature.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Imaging an exoplanet directly means picking out the faint light of a planet sitting next to a star that is far, far brighter. Coronagraphs block much of the starlight, but their effectiveness is limited by noise from subtle variations in the telescope's configuration and pointing between observations."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "A telescope blurs a point of light slightly; the mathematical description of that blur is the point spread function. One way to estimate it is to image a known target. That reduces noise, but the hardware changes over time and the blur varies with wavelength. The other is to model the hardware directly, but there are so many parameters that tuning them was computationally intractable."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team's process is called FLIP, for Physics-based Learning for Imaging Planets. It starts from a physical model of the James Webb Space Telescope's NIRCam camera with about a million possible parameters, then borrows gradient descent, the technique used to train large neural networks, to adjust every parameter and reduce an error. Run on a current GPU, the tuning takes a bit more than half an hour.\n\nThe procedure begins with a simulated point spread function and optimises it against data from a real star. The result is then fine-tuned on the science image itself, a critical step because some variables differ between observations."
+    },
+    {
+     "heading": "Results",
+     "body": "The researchers tested FLIP on Webb observations of two stars with known exoplanets, HIP 65426 and 51 Eridani, and a third, TYC 5899, which has no known planets but varies a lot between observations. FLIP raised the signal-to-noise ratio by a factor of 1.5 to 2, depending on the observation. At a wavelength usable for detecting carbon dioxide, one of the planets was spotted in Webb data for the first time. For TYC 5899, sensitivity improved by a factor of 15."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Lower noise should reveal dimmer, older or lower-mass planets that have eluded detection. The team also thinks FLIP could show where it changes the model most, which might reveal what is happening in the hardware. The caveat is that the test covered only three stars, and this summary rests on press coverage of the paper rather than the paper text."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11213-z",
+    "doi": "https://doi.org/10.1038/s41586-026-11213-z"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship",
+    "press": 1
+   }
+  }
+ ]
+}

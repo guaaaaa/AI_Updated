@@ -1,5 +1,34 @@
 [
  {
+  "id": "doi-10-1038-s41586-026-11156-5",
+  "date": "2026-11-06",
+  "type": "paper",
+  "title": "The deep Earth origin of the Great Unconformity",
+  "tldr": "Models of slow mantle flow suggest continents rose for hundreds of millions of years and then sank, which would erase and then bury the rock record behind the Great Unconformity.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science"
+  ],
+  "byline": "Santosh Dhungana, Nicolas Flament",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11213-z",
+  "date": "2026-11-06",
+  "type": "paper",
+  "title": "Imaging exoplanets below the telescope stability limit",
+  "tldr": "A physics-based model of Webb's camera, tuned with the gradient descent used to train neural networks, cuts noise in exoplanet images and revealed a planet that had gone unseen at one wavelength.",
+  "primary_tag": "Planetary science",
+  "tags": [
+   "Planetary science",
+   "Computational science & AI"
+  ],
+  "byline": "Rodrigo Ferrer-Chavez, Jason J. Wang, Katherine L. Bouman et al.",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-05-n1",
   "date": "2026-11-05",
   "type": "news",

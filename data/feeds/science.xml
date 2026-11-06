@@ -5,8 +5,24 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Thu, 05 Nov 2026 13:24:41 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 13:23:42 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>The deep Earth origin of the Great Unconformity</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-06/doi-10-1038-s41586-026-11156-5</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-06/doi-10-1038-s41586-026-11156-5</guid>
+    <pubDate>Fri, 06 Nov 2026 13:23:42 +0000</pubDate>
+    <category>Science / Earth science</category>
+    <description>Models of slow mantle flow suggest continents rose for hundreds of millions of years and then sank, which would erase and then bury the rock record behind the Great Unconformity. (Santosh Dhungana, Nicolas Flament)</description>
+  </item>
+  <item>
+    <title>Imaging exoplanets below the telescope stability limit</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-06/doi-10-1038-s41586-026-11213-z</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-06/doi-10-1038-s41586-026-11213-z</guid>
+    <pubDate>Fri, 06 Nov 2026 13:23:42 +0000</pubDate>
+    <category>Science / Planetary science</category>
+    <description>A physics-based model of Webb's camera, tuned with the gradient descent used to train neural networks, cuts noise in exoplanet images and revealed a planet that had gone unseen at one wavelength. (Rodrigo Ferrer-Chavez, Jason J. Wang, Katherine L. Bouman et al.)</description>
+  </item>
   <item>
     <title>NASA's Swift gamma-ray observatory ends its 22-year mission with a fiery re-entry</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/2026-11-05-n1</link>
