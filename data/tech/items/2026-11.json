@@ -1,5 +1,46 @@
 [
  {
+  "id": "2026-11-06-n1",
+  "date": "2026-11-06",
+  "type": "news",
+  "title": "OpenSSH patch fixes \"*sshole\", a ten-year-old login bypass on musl-based Linux systems",
+  "tldr": "OpenSSH 10.6p2 fixes a flaw, present since 2016, that lets an oversized password log in to accounts meant to refuse passwords on musl-based Linux systems such as Alpine.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, The Register"
+ },
+ {
+  "id": "2026-11-06-n2",
+  "date": "2026-11-06",
+  "type": "news",
+  "title": "Blue Origin pushes the next New Glenn launch into January 2027 after May launchpad explosion",
+  "tldr": "Blue Origin's CEO told staff the next New Glenn flight is now targeted for January 2027, after earlier hopes of launching before the end of this year.",
+  "category": "Space Industry",
+  "byline": "Engadget, The Verge"
+ },
+ {
+  "id": "2026-11-06-n3",
+  "date": "2026-11-06",
+  "type": "news",
+  "title": "FAA begins replacing floppy-disk-based air traffic displays with a digital system at more than 400 facilities",
+  "tldr": "The FAA says it will replace 1980s display systems that run on floppy disks with the digital E-IDS platform, targeting 435 sites by the end of 2028.",
+  "category": "Software & Platforms",
+  "byline": "Engadget, FAA"
+ },
+ {
+  "id": "2611.00594",
+  "date": "2026-11-06",
+  "type": "paper",
+  "title": "Beyond Sensitive APIs: Detecting Access Control Flaws at Sensitive Callsites in Android Firmware",
+  "tldr": "Callix, a tool that judges whether access checks are strong enough for a sensitive operation, found 819 vulnerable paths in pre-installed apps from ten Android vendors.",
+  "primary_tag": "Security & privacy",
+  "tags": [
+   "Security & privacy"
+  ],
+  "byline": "Haotian Deng, Meng Hao, Hanxiao Chen et al. · University of Electronic Science and Technology of China",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-05-n1",
   "date": "2026-11-05",
   "type": "news",

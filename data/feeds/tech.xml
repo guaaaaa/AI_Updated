@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Thu, 05 Nov 2026 12:03:08 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 11:51:52 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenSSH patch fixes "*sshole", a ten-year-old login bypass on musl-based Linux systems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n1</guid>
+    <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>OpenSSH 10.6p2 fixes a flaw, present since 2016, that lets an oversized password log in to accounts meant to refuse passwords on musl-based Linux systems such as Alpine. (BleepingComputer, The Register)</description>
+  </item>
+  <item>
+    <title>Blue Origin pushes the next New Glenn launch into January 2027 after May launchpad explosion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n2</guid>
+    <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
+    <category>Tech / Space Industry</category>
+    <description>Blue Origin's CEO told staff the next New Glenn flight is now targeted for January 2027, after earlier hopes of launching before the end of this year. (Engadget, The Verge)</description>
+  </item>
+  <item>
+    <title>FAA begins replacing floppy-disk-based air traffic displays with a digital system at more than 400 facilities</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n3</guid>
+    <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
+    <category>Tech / Software &amp; Platforms</category>
+    <description>The FAA says it will replace 1980s display systems that run on floppy disks with the digital E-IDS platform, targeting 435 sites by the end of 2028. (Engadget, FAA)</description>
+  </item>
+  <item>
+    <title>Beyond Sensitive APIs: Detecting Access Control Flaws at Sensitive Callsites in Android Firmware</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2611.00594</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2611.00594</guid>
+    <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
+    <category>Tech / Security &amp; privacy</category>
+    <description>Callix, a tool that judges whether access checks are strong enough for a sensitive operation, found 819 vulnerable paths in pre-installed apps from ten Android vendors. (Haotian Deng, Meng Hao, Hanxiao Chen et al. · University of Electronic Science and Technology of China)</description>
+  </item>
   <item>
     <title>Second wave of attacks on refrigeration controllers hits supermarkets across Europe</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n1</link>

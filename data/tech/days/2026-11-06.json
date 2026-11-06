@@ -1,0 +1,174 @@
+{
+ "date": "2026-11-06",
+ "edition": "weekday",
+ "generated_at": "2026-11-06T11:51:52+00:00",
+ "summary": "A decade-old OpenSSH and musl interaction is patched, Blue Origin's return to flight slips to 2027, the FAA starts retiring floppy-disk displays, and a study finds hundreds of access-control flaws in Android phone firmware.",
+ "news": [
+  {
+   "id": "2026-11-06-n1",
+   "story_key": "openssh-musl-sshole",
+   "title": "OpenSSH patch fixes \"*sshole\", a ten-year-old login bypass on musl-based Linux systems",
+   "category": "Cybersecurity",
+   "published": "2026-11-05T12:45:00-05:00",
+   "tldr": "OpenSSH 10.6p2 fixes a flaw, present since 2016, that lets an oversized password log in to accounts meant to refuse passwords on musl-based Linux systems such as Alpine.",
+   "why_selected": "A widely deployed server component, official cloud images affected, and a fix is available now.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Linux systems can block password logins for an account by putting an asterisk in the password field of the /etc/shadow file. An asterisk is not a valid password hash, so in theory no password can ever match it. OpenSSH is the standard remote-login service on Linux servers. Most distributions use the GNU C library, but some, including Alpine Linux, OpenWrt, Buildroot and Yocto, use a smaller alternative called musl, which is common in embedded and container systems."
+    },
+    {
+     "heading": "What happened",
+     "body": "Researcher Ozgun Kultekin disclosed a flaw nicknamed \"*sshole\". In 2016 OpenSSH added dummy password hashing for accounts without a usable hash, so that response times would not reveal which usernames exist. On musl, the crypt() function that computes hashes returns an asterisk when it fails, and it fails for passwords longer than 256 bytes. OpenSSH then compares that returned asterisk with the account's stored asterisk and treats it as a match. Exploitation needs several conditions: a musl system, PAM authentication disabled (the default in Alpine's openssh-server package), password authentication enabled, one account with an asterisk and another with a valid hash. Glibc systems and PAM setups are not affected. Kultekin says he found the flaw by running about 17,600 authentication tests with AI agents. OpenSSH 10.6p2 fixes it."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Musl is the standard C library for Alpine, and the researcher notes that its official AWS and Azure cloud images ship a default account with passwordless doas, a privilege-escalation tool, which could turn a login into root access. The Register reports there is no indication that vulnerable systems have been exploited. The bug also shows how a safeguard added against one problem, username enumeration, can interact badly with a different library's error convention for a decade before anyone notices."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Administrators who cannot update can set PasswordAuthentication no and restart SSH. Watch for downstream package updates for Alpine, OpenWrt and embedded firmware, which often lag behind upstream fixes."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/05/get-root-on-a-musl-linux-system-by-slamming-it-with-an-overly-long-password/5307910"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-n2",
+   "story_key": "blue-origin-new-glenn-2027",
+   "title": "Blue Origin pushes the next New Glenn launch into January 2027 after May launchpad explosion",
+   "category": "Space Industry",
+   "published": "2026-11-05T11:46:00-05:00",
+   "tldr": "Blue Origin's CEO told staff the next New Glenn flight is now targeted for January 2027, after earlier hopes of launching before the end of this year.",
+   "why_selected": "A heavy-lift rocket's absence affects Amazon's satellite broadband plans and competition with SpaceX.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "New Glenn is Blue Origin's large orbital rocket. The company, owned by Jeff Bezos, has competed for launch customers against SpaceX, and New Glenn is slated to carry satellites for Amazon's Leo broadband service. In May 2026 a New Glenn exploded on its launchpad in Florida during a hot-test, a ground firing of the engines, before a flight that would have carried Amazon Leo satellites."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Financial Times first reported, and CNBC and The Verge relayed, that a memo from Blue Origin chief executive Dave Limp says the next launch is expected in January 2027. Shortly after the explosion the company had said repairs would be quick and a launch would come before the end of the year; in October Bezos said the company was aiming for December, joking it could be \"probably December 31st.\" CNBC reports the new window is about 10 days later than the earlier target. According to Engadget, the memo says the pad's Vehicle Access Tower has been repaired and restacked and the launch bridge restored, and Limp credited weather for slowing the work. He wrote that in six months the team had accomplished what many thought would take years, and called the change a small adjustment."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Engadget notes that Blue Origin won a NASA contract in September to set up a telecommunications network for Mars, and that New Glenn is meant to bring more gear into orbit for Amazon Leo. A later return to flight pushes back the satellites New Glenn was due to carry for Amazon Leo and any work that depends on the rocket."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch for a firm launch date, whether the January target holds, and what the company says about the cause of the May explosion."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2308647/blue-origin-new-glenn-launch-delay-will-continue-into-2027/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/science/1028178/blue-origins-next-launch-now-wont-happen-until-2027"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-n3",
+   "story_key": "faa-floppy-eids",
+   "title": "FAA begins replacing floppy-disk-based air traffic displays with a digital system at more than 400 facilities",
+   "category": "Software & Platforms",
+   "published": "2026-11-05T14:16:00-05:00",
+   "tldr": "The FAA says it will replace 1980s display systems that run on floppy disks with the digital E-IDS platform, targeting 435 sites by the end of 2028.",
+   "why_selected": "Critical national infrastructure software modernization affecting hundreds of air traffic facilities.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Air traffic controllers rely on information display systems that show weather, pilot reports and notices to airmen, the alerts about hazards and changes. Some of these systems date from the 1980s and still load data from floppy disks, a storage format IBM introduced in 1971."
+    },
+    {
+     "heading": "What happened",
+     "body": "According to Engadget, the Federal Aviation Administration announced that it is modernizing air traffic control systems that have run on floppy disks. The diskette systems hold what the agency calls vital weather and other critical information and are still used at more than 400 facilities. They will be replaced by the Enterprise Information Display System, or E-IDS, a digital display that relays status information, updates and alerts. The FAA plans to have E-IDS in 435 sites by the end of 2028. The first five locations are Atlantic City International Airport, Nashville International Airport, Greater Rochester International Airport and data processing hubs in Atlanta and Salt Lake City. The FAA's program page says E-IDS will replace four legacy display systems and address end-of-life technical issues, and it names pilot report handling and timely distribution of notices to airmen as two top safety issues it targets."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The agency says the upgrade will give controllers faster access to information, cut repair costs and improve safety. Engadget notes that floppies have lingered in government: the US Air Force ended its use of 8-inch diskettes tied to nuclear missile silos only in 2019, and Japan's government said in 2024 it had phased out all but one of its floppy-dependent systems."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch whether the first five installations finish on schedule and how quickly the remaining sites follow toward the 2028 target."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2308330/the-faa-is-finally-phasing-out-floppy-disks-from-air-traffic-control/"
+    },
+    {
+     "name": "FAA",
+     "url": "https://www.faa.gov/air_traffic/technology/eids"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.00594",
+   "title": "Beyond Sensitive APIs: Detecting Access Control Flaws at Sensitive Callsites in Android Firmware",
+   "authors": [
+    "Haotian Deng",
+    "Meng Hao",
+    "Hanxiao Chen",
+    "Xinyuan Qian",
+    "Guowen Xu",
+    "Hongwei Li",
+    "Chaoshun Zuo"
+   ],
+   "affiliations": [
+    "University of Electronic Science and Technology of China"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Security & privacy",
+   "tags": [
+    "Security & privacy"
+   ],
+   "tldr": "Callix, a tool that judges whether access checks are strong enough for a sensitive operation, found 819 vulnerable paths in pre-installed apps from ten Android vendors.",
+   "why_selected": "A large measured study of firmware that ships on hundreds of millions of phones, with vendor-confirmed findings.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Phones ship with pre-installed apps that often hold elevated privileges and cannot be removed by users. A flaw in one is multiplied across every device a vendor ships and persists until the vendor sends an update. The study asks how to find cases where such an app lets any other app read or change private data."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier tools flag an app when it calls a predefined list of security-sensitive functions. Those lists usually leave out generic functions, such as a database read, to avoid false alarms, so they miss cases where a generic call becomes sensitive because it touches protected data. Existing access-control analyses also mostly check whether a check is present, not whether it is strong enough for the operation."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Callix works in three stages. First it rates each call site by two labels: what the operation does and what kind of data it touches. Second, it recovers each security check on the code path as an explicit property. Third, it introduces a notion called restriction context to decide whether those checks are enough for the sensitive operation. In one verified example, a messaging app on hundreds of millions of devices exposed a database interface; its write method only checked a caller-supplied claim to be a sync adapter, without authenticating the caller, so a third-party app could alter SMS and MMS messages."
+    },
+    {
+     "heading": "Results",
+     "body": "The authors analyzed 20,006 pre-installed apps from 50 firmware images of 10 vendors, reduced to 1,750 distinct apps with an externally accessible content provider. Callix reported 819 vulnerable paths, of which 42.1 percent allow reading or modifying private user data through generic database operations. Manual checks of a random 60 percent sample showed 95.1 percent precision. Many findings were confirmed and rewarded through vendor bug bounty programs."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result shows that vendor firmware remains a rich attack surface that ordinary app-store scanning does not reach. The main caveat is that the study covers 2025 firmware images from ten vendors and a single class of flaw, so it does not give a complete picture of Android security."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.00594"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}

@@ -3,7 +3,7 @@
  "start": "2026-11-02",
  "end": "2026-11-07",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
@@ -13,21 +13,51 @@
    "covered": null
   },
   {
+   "title": "15 Early Black Friday Deals That’ll Get You an iPhone, Google Pixel or Samsung Smartphone for Hundreds Off",
+   "outlets": 4,
+   "date": "2026-11-04",
+   "covered": null
+  },
+  {
+   "title": "Blue Origin delays New Glenn rocket launch into January, FT reports",
+   "outlets": 4,
+   "date": "2026-11-05",
+   "covered": "2026-11-06-n2"
+  },
+  {
    "title": "Binance says fake job interview led to $6.3 billion crypto heist",
    "outlets": 3,
    "date": "2026-11-03",
    "covered": "2026-11-04-n3"
   },
   {
+   "title": "Everything new in iOS 27.3 beta 1 so far",
+   "outlets": 3,
+   "date": "2026-11-03",
+   "covered": null
+  },
+  {
    "title": "With iOS 27.3, Apple will start checking iCloud public links for ‘harmful content’",
    "outlets": 3,
    "date": "2026-11-04",
    "covered": null
+  },
+  {
+   "title": "New York's Queens Public Library battles ransomware crims: Wi-Fi, checkouts, and website go dark",
+   "outlets": 3,
+   "date": "2026-11-05",
+   "covered": null
+  },
+  {
+   "title": "The New York Times is in talks to buy Letterboxd for around $330 million",
+   "outlets": 3,
+   "date": "2026-11-05",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 8,
-  "papers": 0
+  "news": 11,
+  "papers": 1
  },
  "items": [
   {
@@ -77,6 +107,30 @@
    "date": "2026-11-05",
    "type": "news",
    "title": "DreamHost confirms a two-month breach of its File Manager exposed FTP logins and webmail sessions"
+  },
+  {
+   "id": "2026-11-06-n1",
+   "date": "2026-11-06",
+   "type": "news",
+   "title": "OpenSSH patch fixes \"*sshole\", a ten-year-old login bypass on musl-based Linux systems"
+  },
+  {
+   "id": "2026-11-06-n2",
+   "date": "2026-11-06",
+   "type": "news",
+   "title": "Blue Origin pushes the next New Glenn launch into January 2027 after May launchpad explosion"
+  },
+  {
+   "id": "2026-11-06-n3",
+   "date": "2026-11-06",
+   "type": "news",
+   "title": "FAA begins replacing floppy-disk-based air traffic displays with a digital system at more than 400 facilities"
+  },
+  {
+   "id": "2611.00594",
+   "date": "2026-11-06",
+   "type": "paper",
+   "title": "Beyond Sensitive APIs: Detecting Access Control Flaws at Sensitive Callsites in Android Firmware"
   }
  ]
 }
