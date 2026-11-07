@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 07 Nov 2026 12:16:35 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 12:45:55 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>US hiring surprises at 165,000 jobs while Canada's labour market weakens, with unemployment at 4.1% and 6.7%</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/2026-11-07-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/2026-11-07-n1</guid>
+    <pubDate>Sat, 07 Nov 2026 12:45:55 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>US employers added 165,000 jobs in October versus about 65,000 expected, while Canada lost 4,700 jobs and its unemployment rate rose to 6.7%, widening the gap between the two labour markets. (Statistics Canada, Associated Press via The Globe and Mail, Reuters via The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Canada's 2026 budget moves bank anti-money-laundering supervision to OSFI and proposes tax simplifications</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/2026-11-07-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/2026-11-07-n2</guid>
+    <pubDate>Sat, 07 Nov 2026 12:45:55 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>Ottawa's budget shifts supervision of banks' anti-money-laundering work from FinTRAC to OSFI, offers modest corporate tax simplification, and a follow-on reform loosens temporary foreign worker limits. (Budget 2026, Government of Canada, The Globe and Mail, The Globe and Mail, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>The Effects of Monetary Policy on Macroeconomic Expectations: High-Frequency Evidence from Prediction Markets</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/nber-w35968</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/nber-w35968</guid>
+    <pubDate>Sat, 07 Nov 2026 12:45:55 +0000</pubDate>
+    <category>Business / Monetary policy</category>
+    <description>Using minute-by-minute prices of Kalshi prediction-market contracts, the authors find macro expectations respond to Fed announcements as standard theory predicts, with little or no "Fed information effect". (Eric T. Swanson, Wang Renxuan, Yanbin Wu)</description>
+  </item>
   <item>
     <title>Google releases Gemini Omni 1.2 Flash with 15-second video and a 30% lower price</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n1</link>
@@ -462,30 +486,6 @@
     <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
     <category>Biology / Public Health</category>
     <description>A child in Lewis County, New York, died of measles, the state's first measles death in 30 years, as US cases reach their highest level in about 35 years. (The Guardian, CIDRAP, Gothamist, WRGB (CBS6 Albany))</description>
-  </item>
-  <item>
-    <title>FDA finalizes potency guidance for cell and gene therapies</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n2</guid>
-    <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA issued final guidance telling makers of cell and gene therapies to build a plan proving that every batch is potent before it reaches a patient. (FDA)</description>
-  </item>
-  <item>
-    <title>English A&amp;Es to use early warning scores for sick children</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n3</guid>
-    <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
-    <category>Biology / Global Health</category>
-    <description>NHS England is introducing a vital-signs scoring system for children in emergency departments this winter, with parents' concerns able to trigger urgent review regardless of score. (The Guardian, BBC News)</description>
-  </item>
-  <item>
-    <title>TAVR in Patients with Moderate Aortic Stenosis with At-Risk Features</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/doi-10-1056-nejmoa2607326</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/doi-10-1056-nejmoa2607326</guid>
-    <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
-    <category>Biology / Cardiovascular</category>
-    <description>In a randomized trial of 744 older adults with moderate aortic stenosis and risk features, early valve replacement cut two-year death or heart failure events from 23.9% to 16.7%. (Philippe Généreux Raj R. Makkar Philippe Pibarot Jeroen J. Bax Brian R. Lindman Kamran Muhammad J. Bradley Oldemeyer Mark Pirwitz Colin M. Barker Vinod H. Thourani Pradeep K. Yadav Roberto Rodriguez Justin Strote Rahul Sakhuja Ramzi Khalil Rahul Sharma Adnan Chhatriwalla Jacob M. Mishell Biswajit Kar Sameer Gafoor Joseph Walsh Daniel Spoon Andrew Frutkin Andrei Pop Nicolas M. Van Mieghem Ruby Satpathy Kenji Ando Joseph Montarello John Webb Sreekanth Vemulapalli David J. Cohen Aakriti Gupta Brandon Park Heather Prince Philipp Blanke Michael Mack and Martin B. Leonthe PROGRESS Trial Investigators* · Atlantic Health Morristown Medical Center, Cedars-Sinai Medical Center)</description>
   </item>
 </channel>
 </rss>

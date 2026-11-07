@@ -2,10 +2,16 @@
  "week": "2026-W45",
  "start": "2026-11-02",
  "end": "2026-11-07",
- "complete": false,
- "digests": 3,
+ "complete": true,
+ "digests": 4,
  "papers": [],
  "stories": [
+  {
+   "title": "Is NVIDIA Stock A Buy Right Now?",
+   "outlets": 8,
+   "date": "2026-11-05",
+   "covered": "2026-11-04-n1"
+  },
   {
    "title": "Watch Disney (DIS) Targets 20% Cost Savings in Thousands of Layoffs",
    "outlets": 5,
@@ -19,39 +25,39 @@
    "covered": "2026-11-05-n1"
   },
   {
+   "title": "Fears of an AI crackdown after midterms spark $2 trillion rout in tech stocks",
+   "outlets": 5,
+   "date": "2026-11-06",
+   "covered": null
+  },
+  {
    "title": "China blocks SoftBank’s $5.4 billion takeover of ABB’s robotics division",
    "outlets": 4,
    "date": "2026-11-05",
    "covered": null
   },
   {
-   "title": "Fears of an AI crackdown after midterms spark $2 trillion rout in tech stocks",
-   "outlets": 4,
-   "date": "2026-11-06",
-   "covered": null
-  },
-  {
-   "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
+   "title": "Anthropic Investors Reportedly Push For Lower $1.6 Trillion IPO Valuation As Revenue Pace Slows",
    "outlets": 3,
    "date": "2026-11-03",
    "covered": null
   },
   {
-   "title": "White House Delays Hearing on Fed Governor",
+   "title": "Treasury yields rise as investors weigh midterm vote, jobs data and Iran tensions",
    "outlets": 3,
-   "date": "2026-11-04",
+   "date": "2026-11-03",
    "covered": null
   },
   {
-   "title": "Oil rises as investors weigh uncertainties around Iran war",
+   "title": "Current price of oil as of Nov. 3, 2026",
    "outlets": 3,
-   "date": "2026-11-05",
+   "date": "2026-11-03",
    "covered": null
   }
  ],
  "featured": {
-  "news": 11,
-  "papers": 2
+  "news": 13,
+  "papers": 3
  },
  "items": [
   {
@@ -131,6 +137,24 @@
    "date": "2026-11-06",
    "type": "paper",
    "title": "Aggregate-Surplus Maximizing Monetary Policy"
+  },
+  {
+   "id": "2026-11-07-n1",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "US hiring surprises at 165,000 jobs while Canada's labour market weakens, with unemployment at 4.1% and 6.7%"
+  },
+  {
+   "id": "2026-11-07-n2",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "Canada's 2026 budget moves bank anti-money-laundering supervision to OSFI and proposes tax simplifications"
+  },
+  {
+   "id": "nber-w35968",
+   "date": "2026-11-07",
+   "type": "paper",
+   "title": "The Effects of Monetary Policy on Macroeconomic Expectations: High-Frequency Evidence from Prediction Markets"
   }
  ]
 }

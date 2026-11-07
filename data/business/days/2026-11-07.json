@@ -1,0 +1,144 @@
+{
+ "date": "2026-11-07",
+ "edition": "weekend",
+ "generated_at": "2026-11-07T12:45:55+00:00",
+ "summary": "A surprisingly strong US jobs report keeps rate-hike talk alive, Canada's labour market weakens, and Ottawa's budget reshapes financial oversight and tax rules.",
+ "news": [
+  {
+   "id": "2026-11-07-n1",
+   "story_key": "us-canada-jobs-october-2026",
+   "title": "US hiring surprises at 165,000 jobs while Canada's labour market weakens, with unemployment at 4.1% and 6.7%",
+   "category": "Economy & Data",
+   "published": "2026-11-06T07:17:29-05:00",
+   "tldr": "US employers added 165,000 jobs in October versus about 65,000 expected, while Canada lost 4,700 jobs and its unemployment rate rose to 6.7%, widening the gap between the two labour markets.",
+   "why_selected": "Monthly jobs data are among the most important macro releases, and the US and Canadian reports pointed in opposite directions on the same Friday.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Each month the US Labor Department and Statistics Canada report how many jobs were added and the unemployment rate, the share of people looking for work who cannot find it. Central banks weigh both when setting interest rates. Both countries are absorbing the same shocks: US import taxes, higher energy prices from the war with Iran, and a technology-stock selloff. Canada's central bank raised its policy rate by 25 basis points in October (a basis point is one hundredth of a percentage point), according to the federal budget documents."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Associated Press, carried by the Globe and Mail, reported US employers added 165,000 jobs in October against about 65,000 expected. Revisions added 84,000 jobs to August and September, and unemployment slipped to 4.1% even though 421,000 people joined the labour force. Statistics Canada reported employment fell by 4,700, after drops of 68,000 in September and 42,000 in August. The unemployment rate rose 0.2 points to 6.7%, and youth unemployment jumped 0.7 points to 13.7%. Private-sector employees fell by 53,000."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "In the US, strong hiring weakens the case for the Federal Reserve to pause its rate increases. Reuters reported on Friday that traders put roughly a 70% chance on a December hike, down from over 80% a week earlier as the tech selloff tightened financial conditions. Yet the Yale Budget Lab estimates the job gains needed each month to keep US unemployment from rising has fallen from about 166,000 in late 2023 to just over 5,000, so modest hiring can look strong; adjusted for inflation, average hourly earnings fell 0.7% in September. In Canada, only 18.9% of people unemployed in September had found work in October, and 23.7% of the unemployed had searched 27 weeks or longer, versus a pre-pandemic average of 17.2%. That points to stalled hiring rather than mass layoffs: the layoff rate was 0.7%."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Fed's December meeting, the next US inflation reading, and the Bank of Canada's response to a weakening labour market."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Statistics Canada",
+     "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261106/dq261106a-eng.htm"
+    },
+    {
+     "name": "Associated Press via The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/economy/article-us-jobs-october-2026-wages-inflation/"
+    },
+    {
+     "name": "Reuters via The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-trader-angst-pivots-from-inflation-to-growth-as-tech-rout-deepens/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-07-n2",
+   "story_key": "canada-budget-2026-11",
+   "title": "Canada's 2026 budget moves bank anti-money-laundering supervision to OSFI and proposes tax simplifications",
+   "category": "Trade & Policy",
+   "published": "2026-11-05T17:27:00-05:00",
+   "tldr": "Ottawa's budget shifts supervision of banks' anti-money-laundering work from FinTRAC to OSFI, offers modest corporate tax simplification, and a follow-on reform loosens temporary foreign worker limits.",
+   "why_selected": "A federal budget sets the rules for Canadian banks, businesses and employers; this one pairs financial-crime oversight changes with tax and labour measures.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Finance Minister François-Philippe Champagne tabled the 2026 federal budget on Thursday under the theme of being \"masters of our destiny\". It argues that Canada enters a turbulent period of tariffs, geopolitical conflict and rapid AI change from a position of strength, citing second-quarter GDP growth of 3.3% annualised, the fastest in the G7. Beyond the headline spending, the budget contains regulatory changes that affect how banks and companies operate."
+    },
+    {
+     "heading": "What happened",
+     "body": "The government plans to move supervision of banks' efforts against money laundering and terrorist financing from FinTRAC, the anti-money-laundering watchdog, to OSFI, the federal banking regulator. The Globe and Mail reported it follows an Auditor-General report finding FinTRAC was overseeing too many businesses, about 38,000, to monitor them effectively. The Finance Department says the move is not tied to any enforcement matter. On tax, Ottawa proposes to address limits on transferring losses between corporate subsidiaries and awkward preferred-share rules, stopping short of the larger corporate tax overhaul promised in 2025. A second tranche is due in the Spring Economic Update. On Friday, Ottawa also let eligible employers staff up to 15% of their workforce with temporary foreign workers, up from 10%, and made labour assessments valid for two years instead of one."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For banks, one supervisor for the largest institutions could mean more consistent oversight, but a lawyer cautioned that two supervisors will now coexist and that OSFI does not do hands-on anti-money-laundering examinations today. For businesses, tax simplification lowers compliance cost but is incremental. The worker changes respond to employer complaints of shortages, while critics argue the program ties workers to employers."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Consultations on loss transfers, the Spring Economic Update, and how OSFI will staff and run its new anti-money-laundering role."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Budget 2026, Government of Canada",
+     "url": "https://budget.canada.ca/2026/report-rapport/overview-apercu-en.html"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-budget-money-laundering-supervision-fintrac-osfi/"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-federal-budget-corporate-tax-simplification-carney-champagne/"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-ottawa-temporary-foreign-workers-program-reforms/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w35968",
+   "title": "The Effects of Monetary Policy on Macroeconomic Expectations: High-Frequency Evidence from Prediction Markets",
+   "authors": [
+    "Eric T. Swanson",
+    "Wang Renxuan",
+    "Yanbin Wu"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-07T00:00:00-05:00",
+   "primary_tag": "Monetary policy",
+   "tags": [
+    "Monetary policy",
+    "Asset pricing"
+   ],
+   "tldr": "Using minute-by-minute prices of Kalshi prediction-market contracts, the authors find macro expectations respond to Fed announcements as standard theory predicts, with little or no \"Fed information effect\".",
+   "why_selected": "It tests a long-running puzzle about how rate hikes move expectations, using a novel data source from a regulated prediction market.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Standard macroeconomic models, and statistical models known as vector autoregressions (VARs), say that when the Federal Reserve raises interest rates, output, employment and inflation should fall over the following quarters. Yet professional forecasters' monthly forecast revisions are sometimes positively correlated with Fed rate changes, which looks like the opposite. That puzzle has fed a debate about what explains these correlations."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work relied on monthly-frequency surveys of professional forecasters. A leading explanation is the \"Fed information effect\": the idea that a rate increase tells the public the Fed knows something good about the economy, so forecasts move up rather than down. Monthly data, however, mix the Fed's announcement with everything else that happened in the month, making the explanation hard to separate from other news."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors use high-frequency data from macroeconomic event contracts traded on Kalshi, a CFTC-licensed, US-based event trading exchange and prediction market. In such a market, participants trade contracts that pay off depending on a macroeconomic outcome, so prices imply what traders expect. Because the contracts trade continuously, the authors can isolate the effect of monetary policy and other announcements on market-implied expectations in the narrow window around the announcement."
+    },
+    {
+     "heading": "Results",
+     "body": "According to the abstract, the results are consistent with the standard transmission channels from monetary policy to the macroeconomy, with little or no role for a Fed information effect. In other words, in these data a rate rise moves expectations the way textbook models predict rather than signalling hidden good news."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Anyone trying to read the effect of Fed decisions on growth, jobs and inflation, including investors, forecasters and central bankers, should care, because it suggests the textbook story survives a sharper test. The main caveat is that this is a working paper not yet peer reviewed, and only the abstract was reviewed here, so details such as sample period and contract coverage are not assessed."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w35968"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major",
+    "press": 4
+   }
+  }
+ ]
+}
