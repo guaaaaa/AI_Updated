@@ -5,8 +5,24 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 07 Nov 2026 13:20:39 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 13:52:57 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Noise pollution alters the body or behavior of 80% of animal species studied, a Science analysis finds</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-07/2026-11-07-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-07/2026-11-07-n1</guid>
+    <pubDate>Sat, 07 Nov 2026 13:52:57 +0000</pubDate>
+    <category>Biology / Evolution &amp; Ecology</category>
+    <description>A pooled analysis of 214 experiments on 177 species found human-made noise changed physiology or behavior in eight of ten species and cut animal numbers by about 37% in noisy areas. (Phys.org, Science (study DOI))</description>
+  </item>
+  <item>
+    <title>Parkinson's may be driven by a vicious cycle that clogs the brain's waste drainage</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-07/2026-11-07-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-07/2026-11-07-n2</guid>
+    <pubDate>Sat, 07 Nov 2026 13:52:57 +0000</pubDate>
+    <category>Biology / Neuroscience &amp; Mental Health</category>
+    <description>Misfolded alpha-synuclein appears to inflame the lymphatic vessels that drain the brain, which then clear it less well, in human tissue and mice. (New Scientist, Journal of Experimental Medicine (study))</description>
+  </item>
   <item>
     <title>China's space station cools a cloud of atoms to a record 9.7 picokelvin</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n1</link>
@@ -470,22 +486,6 @@
     <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
     <category>AI / Robotics</category>
     <description>NEO-VLA drops the separate vision encoder from a robot policy and lets its action module read visual features from many backbone layers, beating encoder-based baselines on LIBERO. (Weichen Fan, Haiwen Diao, Penghao Wu et al. · MMLab@NTU)</description>
-  </item>
-  <item>
-    <title>You don't need long context</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.05306</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.05306</guid>
-    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>NVIDIA researchers show frontier models keep most of their accuracy on long-horizon and long-input tasks when forced to work in short contexts through frequent compaction. (Peter Belcak, Saurav Muralidharan, Jindong Jiang et al. · NVIDIA)</description>
-  </item>
-  <item>
-    <title>FrontierPhysics: Evaluating Agents for End-to-End Physics Research</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.06910</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.06910</guid>
-    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
-    <category>AI / Evaluation &amp; Benchmarks</category>
-    <description>FrontierPhysics has 42 physicists turn their own research into 56 end-to-end tasks, and no AI agent configuration passes more than 46 of 168 attempts. (Bingran You, Wenjun Ke, Ria Rosenauer et al. · Multi-institution team of physicists (26 institutions))</description>
   </item>
 </channel>
 </rss>

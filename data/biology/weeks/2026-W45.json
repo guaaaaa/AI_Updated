@@ -2,8 +2,8 @@
  "week": "2026-W45",
  "start": "2026-11-02",
  "end": "2026-11-07",
- "complete": false,
- "digests": 3,
+ "complete": true,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
@@ -19,6 +19,12 @@
    "covered": null
   },
   {
+   "title": "STAT+: Novartis cites cases of previously unknown tumors possibly tied to its SMA gene therapy",
+   "outlets": 4,
+   "date": "2026-11-05",
+   "covered": null
+  },
+  {
    "title": "Dinosaur blood—oldest discovery rewrites what fossils can reveal about the past",
    "outlets": 3,
    "date": "2026-11-02",
@@ -29,10 +35,16 @@
    "outlets": 3,
    "date": "2026-11-04",
    "covered": null
+  },
+  {
+   "title": "Seven new tumor cases reported among patients on Novartis’ Zolgensma gene therapy",
+   "outlets": 3,
+   "date": "2026-11-05",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 6,
+  "news": 8,
   "papers": 4
  },
  "items": [
@@ -95,6 +107,18 @@
    "date": "2026-11-06",
    "type": "news",
    "title": "A hair and 1,000 seeds from a Siberian tomb give the oldest directly dated evidence of cannabis intoxication"
+  },
+  {
+   "id": "2026-11-07-n1",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "Noise pollution alters the body or behavior of 80% of animal species studied, a Science analysis finds"
+  },
+  {
+   "id": "2026-11-07-n2",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "Parkinson's may be driven by a vicious cycle that clogs the brain's waste drainage"
   }
  ]
 }

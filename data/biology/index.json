@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-07T13:20:40+00:00",
+ "updated": "2026-11-07T13:52:57+00:00",
  "domain": "biology",
  "days": [
+  {
+   "date": "2026-11-07",
+   "edition": "weekend",
+   "news": 2,
+   "papers": 0,
+   "backfill": false
+  },
   {
    "date": "2026-11-06",
    "edition": "weekday",
@@ -27,7 +34,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 10
+   "n": 12
   }
  ],
  "tag_groups": {
@@ -83,8 +90,9 @@
   "Global Health"
  ],
  "category_counts": {
+  "Evolution & Ecology": 2,
+  "Neuroscience & Mental Health": 1,
   "Drugs & Approvals": 2,
-  "Evolution & Ecology": 1,
   "Microbes & Infectious Disease": 1,
   "Public Health": 1,
   "Global Health": 1
@@ -95,7 +103,7 @@
    "id": "2026-W45",
    "start": "2026-11-02",
    "end": "2026-11-07",
-   "complete": false
+   "complete": true
   }
  ]
 }

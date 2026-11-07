@@ -1,0 +1,83 @@
+{
+ "date": "2026-11-07",
+ "edition": "weekend",
+ "generated_at": "2026-11-07T13:52:57+00:00",
+ "summary": "Noise pollution reshapes animal life across species, and a new Parkinson's study points to blocked brain-waste drainage.",
+ "news": [
+  {
+   "id": "2026-11-07-n1",
+   "story_key": "noise-pollution-animals-science-meta-analysis",
+   "title": "Noise pollution alters the body or behavior of 80% of animal species studied, a Science analysis finds",
+   "category": "Evolution & Ecology",
+   "published": "2026-11-06T13:20:00-05:00",
+   "tldr": "A pooled analysis of 214 experiments on 177 species found human-made noise changed physiology or behavior in eight of ten species and cut animal numbers by about 37% in noisy areas.",
+   "why_selected": "A large synthesis that moves noise from a single-animal stressor to a population and food-web problem.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Noise pollution is already known to harm people. Traffic, ships and industry have been linked to heart attacks and type 2 diabetes. Earlier experiments on animals showed individual effects such as stress and changes in how animals communicate. What was missing was a clear picture of how noise affects whole populations and food webs, because most experiments look at one species and one outcome at a time."
+    },
+    {
+     "heading": "What happened",
+     "body": "Hansjoerg Kunc and Rouven Schmidt at Queen's University Belfast pooled data from 214 experimental studies covering 177 species and published the analysis in the journal Science. Each study compared animals exposed to human-made noise with control groups. The researchers accounted for evolutionary relationships among species, since close relatives often react alike simply because they share ancestry. In 80% of the species, noise changed at least one aspect of body function, development or behavior, including cellular stress, elevated stress hormones and altered physical development. For every 100 animals in quiet areas, about 63 lived in noisy ones, which is 37% fewer. Under noise, predators spent 2.5 times the effort hunting but caught about 25% fewer prey, while prey became more vigilant."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The effects add up from genes and hormones to survival and whole communities. The authors describe winners and losers: a predator that cannot hear its prey goes hungry, while another predator may gain when noise drives prey out of shelter and into the open. These shifts can change the balance of an ecosystem. Overall the picture is negative. The work also shows why single-species studies can understate the problem. A caveat is that this is a pool of experimental studies, and the report does not say how closely they match natural settings."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The authors point to low-noise zones that create acoustic refuges as a practical response. Field studies measuring population change in real habitats would test whether the experimental pattern holds outdoors."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-11-noise-pollution-biology-behavior-animal.html"
+    },
+    {
+     "name": "Science (study DOI)",
+     "url": "https://doi.org/10.1126/science.adu9593"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-07-n2",
+   "story_key": "parkinsons-meningeal-lymphatics-vicious-cycle",
+   "title": "Parkinson's may be driven by a vicious cycle that clogs the brain's waste drainage",
+   "category": "Neuroscience & Mental Health",
+   "published": "2026-11-06T10:00:00-05:00",
+   "tldr": "Misfolded alpha-synuclein appears to inflame the lymphatic vessels that drain the brain, which then clear it less well, in human tissue and mice.",
+   "why_selected": "A proposed mechanism for why Parkinson's worsens over time, with human tissue and animal evidence.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Parkinson's disease affects more than 10 million people worldwide. It is marked by the loss of neurons in brain regions that control movement, causing tremor and muscle stiffness. It is thought to be driven by alpha-synuclein, a protein that occurs naturally in the brain but can misfold and form toxic clumps. In 2021 researchers showed that these clumps may partly build up because the lymphatic vessels in the meninges, the membranes around the brain, drain waste poorly. What damages those vessels was unknown."
+    },
+    {
+     "heading": "What happened",
+     "body": "Justin Rustenhoven at the University of Auckland and colleagues asked whether alpha-synuclein itself clogs the meninges. They analysed post-mortem meninges from seven people with severe Parkinson's and seven without. Only the Parkinson's samples had alpha-synuclein clumps. In mice, a virus made meningeal fibroblasts produce high levels of alpha-synuclein. Two months later the mice's meningeal lymphatics drained waste fluid half as fast as those of control mice. Immune cells called macrophages had engulfed the clumps, doubled in number and made about three times as much of the inflammatory molecule TNF-alpha. In human lymphatic cells, alpha-synuclein or TNF-alpha opened gaps between cells and made them leaky."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors describe a feedback loop: clumps trigger inflammation, inflammation impairs drainage, and poorer drainage lets more protein build up. That could help explain why Parkinson's is progressive. Camille Carroll at Newcastle University said the same mechanism probably applies to other diseases where proteins accumulate, such as Alzheimer's. Rustenhoven suggested that therapies damping this immune response might prevent lymphatic dysfunction. These are ideas, not tested treatments. The human sample was small, and the mouse model reproduces protein build-up but not the full disease."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The team plans experiments in mice after they develop Parkinson's symptoms, not just brain changes."
+    }
+   ],
+   "sources": [
+    {
+     "name": "New Scientist",
+     "url": "https://www.newscientist.com/article/2597911-parkinsons-may-be-driven-by-vicious-cycle-that-disrupts-brain-waste-drainage/"
+    },
+    {
+     "name": "Journal of Experimental Medicine (study)",
+     "url": "https://rupress.org/jem/article/223/11/e20251245/283091/Cerebrospinal-fluid-and-dural-accumulation-of"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

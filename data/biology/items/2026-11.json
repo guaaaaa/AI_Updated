@@ -1,5 +1,23 @@
 [
  {
+  "id": "2026-11-07-n1",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "Noise pollution alters the body or behavior of 80% of animal species studied, a Science analysis finds",
+  "tldr": "A pooled analysis of 214 experiments on 177 species found human-made noise changed physiology or behavior in eight of ten species and cut animal numbers by about 37% in noisy areas.",
+  "category": "Evolution & Ecology",
+  "byline": "Phys.org, Science (study DOI)"
+ },
+ {
+  "id": "2026-11-07-n2",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "Parkinson's may be driven by a vicious cycle that clogs the brain's waste drainage",
+  "tldr": "Misfolded alpha-synuclein appears to inflame the lymphatic vessels that drain the brain, which then clear it less well, in human tissue and mice.",
+  "category": "Neuroscience & Mental Health",
+  "byline": "New Scientist, Journal of Experimental Medicine (study)"
+ },
+ {
   "id": "2026-11-06-n1",
   "date": "2026-11-06",
   "type": "news",
