@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 07 Nov 2026 12:45:55 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 13:20:39 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>China's space station cools a cloud of atoms to a record 9.7 picokelvin</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n1</guid>
+    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
+    <category>Science / Physics</category>
+    <description>Researchers aboard China's Tiangong station cooled about 20,000 rubidium atoms to an equivalent 9.7 picokelvin, about four times below the previous record, and watched the cloud expand for seven seconds. (Phys.org, Chinese Academy of Sciences)</description>
+  </item>
+  <item>
+    <title>The Arctic polar vortex is breaking down weeks earlier than ever observed</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n2</guid>
+    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>Meteorologists say the stratospheric polar vortex is weakening in early November, the earliest disruption on record, but the cause and any effect on winter weather remain uncertain. (BBC Weather, Phys.org (AFP))</description>
+  </item>
+  <item>
+    <title>Mantle currents may have helped carve the Great Unconformity, geologists' biggest gap in the rock record</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n3</guid>
+    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>Simulations of mantle convection over the past billion years suggest slow uplift of continents, followed by glacial scouring, helped create the Great Unconformity. (Phys.org (University of Wollongong), Ars Technica)</description>
+  </item>
+  <item>
+    <title>Three-way circulation–soil moisture–temperature feedbacks amplify the most extreme mid-latitudinal heat waves</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-sciadv-aeh9111</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-sciadv-aeh9111</guid>
+    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
+    <category>Science / Climate science</category>
+    <description>A three-way feedback between drying soils, high-pressure systems and heat appears to make the most extreme midlatitude heat waves about 10% hotter, and warming makes the trigger threshold easier to cross. (Yinglin Tian, Jiangong Liu, Yu Huang et al. · Potsdam Institute for Climate Impact Research; International Institute for Applied Systems Analysis; Max Planck Institute of Geoanthropology)</description>
+  </item>
+  <item>
+    <title>Equivalence of pseudogap and pairing energy in a cuprate high-temperature superconductor</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-science-adt3444</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-science-adt3444</guid>
+    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
+    <category>Science / Condensed matter &amp; materials</category>
+    <description>Shot-noise measurements in a bismuth-based cuprate suggest the pseudogap energy equals the energy at which electrons begin pairing, tying a mysterious phase to superconductivity's building block. (Jiasen Niu, Maialen Ortego Larrazabal, Thomas Gozlinski et al. · Utrecht University; Leiden University; Ludwig Maximilian University of Munich)</description>
+  </item>
+  <item>
+    <title>Quantum gas microscopy of three-flavor Hubbard systems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-science-adv1247</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-science-adv1247</guid>
+    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>Researchers built the first tunable three-component Hubbard system from ultracold atoms and imaged it atom by atom, observing a Mott insulator and competing magnetic correlations. (Jirayu Mongkolkiattichai, Liyu Liu, Sohail Dasgupta et al. · University of Hamburg; Rice University)</description>
+  </item>
   <item>
     <title>US hiring surprises at 165,000 jobs while Canada's labour market weakens, with unemployment at 4.1% and 6.7%</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/2026-11-07-n1</link>
@@ -438,54 +486,6 @@
     <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
     <category>AI / Evaluation &amp; Benchmarks</category>
     <description>FrontierPhysics has 42 physicists turn their own research into 56 end-to-end tasks, and no AI agent configuration passes more than 46 of 168 attempts. (Bingran You, Wenjun Ke, Ria Rosenauer et al. · Multi-institution team of physicists (26 institutions))</description>
-  </item>
-  <item>
-    <title>SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.02846</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.02846</guid>
-    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>SpecOPD trains speculative-decoding draft models on their own sampled outputs in parallel branches, lifting accepted-token length by up to 41% and training throughput 16x. (Tianyu Liu, Jun Zhang, Wenjie Huang et al. · Qwen Business Unit of Alibaba, University of Science and Technology of China, Zhejiang University)</description>
-  </item>
-  <item>
-    <title>Second wave of attacks on refrigeration controllers hits supermarkets across Europe</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Remote tampering with refrigeration controllers raised temperatures in more than 115 stores in six European countries on November 2, and also reached a French blood-service supplier, following a larger French wave in October. (Al Jazeera, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Zyxel patches a switch flaw that was exploited on nearly 1,000 devices after being mistaken for an older bug</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n2</guid>
-    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Zyxel fixed CVE-2026-107441 in ten GS1900 switch models after attackers used it to compromise 996 devices; the bug had been misattributed to an earlier, already-patched flaw. (BleepingComputer, Help Net Security)</description>
-  </item>
-  <item>
-    <title>Suspected Russian hackers use patched iPhone and Android flaws in watering-hole attacks</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n3</guid>
-    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Sekoia says a group it links to Russia's foreign intelligence service used websites to profile visitors and attack phones that had not installed existing security updates. (Ars Technica, Sekoia blog)</description>
-  </item>
-  <item>
-    <title>DreamHost confirms a two-month breach of its File Manager exposed FTP logins and webmail sessions</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n4</guid>
-    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Web host DreamHost says an attacker exploited a flaw in its File Manager from August to October 23, stealing FTP/SFTP credentials and some webmail session data. (BleepingComputer, TechCrunch)</description>
-  </item>
-  <item>
-    <title>First measles death in New York State in 30 years</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-04/2026-11-04-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
-    <category>Biology / Public Health</category>
-    <description>A child in Lewis County, New York, died of measles, the state's first measles death in 30 years, as US cases reach their highest level in about 35 years. (The Guardian, CIDRAP, Gothamist, WRGB (CBS6 Albany))</description>
   </item>
 </channel>
 </rss>

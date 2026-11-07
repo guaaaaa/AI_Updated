@@ -1,5 +1,77 @@
 [
  {
+  "id": "2026-11-07-n1",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "China's space station cools a cloud of atoms to a record 9.7 picokelvin",
+  "tldr": "Researchers aboard China's Tiangong station cooled about 20,000 rubidium atoms to an equivalent 9.7 picokelvin, about four times below the previous record, and watched the cloud expand for seven seconds.",
+  "category": "Physics",
+  "byline": "Phys.org, Chinese Academy of Sciences"
+ },
+ {
+  "id": "2026-11-07-n2",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "The Arctic polar vortex is breaking down weeks earlier than ever observed",
+  "tldr": "Meteorologists say the stratospheric polar vortex is weakening in early November, the earliest disruption on record, but the cause and any effect on winter weather remain uncertain.",
+  "category": "Climate & Earth",
+  "byline": "BBC Weather, Phys.org (AFP)"
+ },
+ {
+  "id": "2026-11-07-n3",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "Mantle currents may have helped carve the Great Unconformity, geologists' biggest gap in the rock record",
+  "tldr": "Simulations of mantle convection over the past billion years suggest slow uplift of continents, followed by glacial scouring, helped create the Great Unconformity.",
+  "category": "Climate & Earth",
+  "byline": "Phys.org (University of Wollongong), Ars Technica"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aeh9111",
+  "date": "2026-11-07",
+  "type": "paper",
+  "title": "Three-way circulation–soil moisture–temperature feedbacks amplify the most extreme mid-latitudinal heat waves",
+  "tldr": "A three-way feedback between drying soils, high-pressure systems and heat appears to make the most extreme midlatitude heat waves about 10% hotter, and warming makes the trigger threshold easier to cross.",
+  "primary_tag": "Climate science",
+  "tags": [
+   "Climate science",
+   "Earth science"
+  ],
+  "byline": "Yinglin Tian, Jiangong Liu, Yu Huang et al. · Potsdam Institute for Climate Impact Research; International Institute for Applied Systems Analysis; Max Planck Institute of Geoanthropology",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
+  "id": "doi-10-1126-science-adt3444",
+  "date": "2026-11-07",
+  "type": "paper",
+  "title": "Equivalence of pseudogap and pairing energy in a cuprate high-temperature superconductor",
+  "tldr": "Shot-noise measurements in a bismuth-based cuprate suggest the pseudogap energy equals the energy at which electrons begin pairing, tying a mysterious phase to superconductivity's building block.",
+  "primary_tag": "Condensed matter & materials",
+  "tags": [
+   "Condensed matter & materials",
+   "Quantum physics"
+  ],
+  "byline": "Jiasen Niu, Maialen Ortego Larrazabal, Thomas Gozlinski et al. · Utrecht University; Leiden University; Ludwig Maximilian University of Munich",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-science-adv1247",
+  "date": "2026-11-07",
+  "type": "paper",
+  "title": "Quantum gas microscopy of three-flavor Hubbard systems",
+  "tldr": "Researchers built the first tunable three-component Hubbard system from ultracold atoms and imaged it atom by atom, observing a Mott insulator and competing magnetic correlations.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics",
+   "Condensed matter & materials"
+  ],
+  "byline": "Jirayu Mongkolkiattichai, Liyu Liu, Sohail Dasgupta et al. · University of Hamburg; Rice University",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
   "id": "doi-10-1038-s41586-026-11156-5",
   "date": "2026-11-06",
   "type": "paper",

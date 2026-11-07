@@ -2,8 +2,8 @@
  "week": "2026-W45",
  "start": "2026-11-02",
  "end": "2026-11-07",
- "complete": false,
- "digests": 3,
+ "complete": true,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
@@ -20,8 +20,8 @@
   }
  ],
  "featured": {
-  "news": 5,
-  "papers": 8
+  "news": 8,
+  "papers": 11
  },
  "items": [
   {
@@ -101,6 +101,42 @@
    "date": "2026-11-06",
    "type": "paper",
    "title": "Imaging exoplanets below the telescope stability limit"
+  },
+  {
+   "id": "2026-11-07-n1",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "China's space station cools a cloud of atoms to a record 9.7 picokelvin"
+  },
+  {
+   "id": "2026-11-07-n2",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "The Arctic polar vortex is breaking down weeks earlier than ever observed"
+  },
+  {
+   "id": "2026-11-07-n3",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "Mantle currents may have helped carve the Great Unconformity, geologists' biggest gap in the rock record"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeh9111",
+   "date": "2026-11-07",
+   "type": "paper",
+   "title": "Three-way circulation–soil moisture–temperature feedbacks amplify the most extreme mid-latitudinal heat waves"
+  },
+  {
+   "id": "doi-10-1126-science-adt3444",
+   "date": "2026-11-07",
+   "type": "paper",
+   "title": "Equivalence of pseudogap and pairing energy in a cuprate high-temperature superconductor"
+  },
+  {
+   "id": "doi-10-1126-science-adv1247",
+   "date": "2026-11-07",
+   "type": "paper",
+   "title": "Quantum gas microscopy of three-flavor Hubbard systems"
   }
  ]
 }
