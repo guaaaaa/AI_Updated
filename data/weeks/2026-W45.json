@@ -2,13 +2,13 @@
  "week": "2026-W45",
  "start": "2026-11-02",
  "end": "2026-11-07",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [
   {
    "id": "2611.01860",
    "title": "Advances in Agentic Computer Graphics",
-   "hf": 138,
+   "hf": 143,
    "org": "University of Texas at Austin",
    "featured": null
   },
@@ -20,11 +20,18 @@
    "featured": null
   },
   {
+   "id": "2611.08449",
+   "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+   "hf": 97,
+   "org": "NVIDIA",
+   "featured": "2026-11-07"
+  },
+  {
    "id": "2611.05275",
    "title": "Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems",
    "hf": 87,
    "org": null,
-   "featured": null
+   "featured": "2026-11-07"
   },
   {
    "id": "2611.06728",
@@ -43,22 +50,15 @@
   {
    "id": "2611.00617",
    "title": "Words Caught in the Heart: Simulating Person-Specific Expression for Self-Opaque Clients in Psychotherapy",
-   "hf": 74,
+   "hf": 76,
    "org": "CLAIN-WHU",
    "featured": null
   },
   {
-   "id": "2611.03178",
-   "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
-   "hf": 73,
-   "org": "Renmin University of China",
-   "featured": "2026-11-03"
-  },
-  {
-   "id": "2611.02737",
-   "title": "MoviEdit: Long-form Multi-Shot Video Editing Made Easy",
-   "hf": 71,
-   "org": "Adobe",
+   "id": "2611.08373",
+   "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+   "hf": 76,
+   "org": "HKUSTGZ",
    "featured": null
   }
  ],
@@ -71,13 +71,13 @@
   },
   {
    "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
-   "outlets": 9,
+   "outlets": 10,
    "date": "2026-10-30",
    "covered": "2026-11-06-n1"
   },
   {
    "title": "Meta’s Rating Outlook Cut to Negative by S&P on AI Spending",
-   "outlets": 9,
+   "outlets": 10,
    "date": "2026-10-30",
    "covered": null
   },
@@ -94,6 +94,12 @@
    "covered": "2026-11-06-n2"
   },
   {
+   "title": "OpenAI Staffer Pleads Not Guilty to Office Bugging Charge",
+   "outlets": 5,
+   "date": "2026-11-06",
+   "covered": null
+  },
+  {
    "title": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution",
    "outlets": 4,
    "date": "2026-10-31",
@@ -104,16 +110,10 @@
    "outlets": 4,
    "date": "2026-11-02",
    "covered": null
-  },
-  {
-   "title": "Marvell to buy Lumentum in $115 billion deal in AI data-center bet",
-   "outlets": 4,
-   "date": "2026-11-02",
-   "covered": "2026-11-02-n1"
   }
  ],
  "featured": {
-  "news": 8,
-  "papers": 25
+  "news": 10,
+  "papers": 30
  }
 }

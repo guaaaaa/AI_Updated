@@ -1,0 +1,460 @@
+{
+ "date": "2026-11-07",
+ "edition": "weekend",
+ "generated_at": "2026-11-07T12:16:35+00:00",
+ "summary": "Saturday edition: Google ships a cheaper, longer-clip Gemini Omni video model, OpenAI's round reaches $1.25 trillion, and the week's papers cover faster robot planning, web-agent training sandboxes, what agent RL really improves, model routing and real-world robot benchmarking.",
+ "news": [
+  {
+   "id": "2026-11-07-n1",
+   "story_key": "google-gemini-omni-1-2-flash-launch",
+   "title": "Google releases Gemini Omni 1.2 Flash with 15-second video and a 30% lower price",
+   "category": "Model Release",
+   "published": "2026-11-05T12:00:00-05:00",
+   "tldr": "Google made Gemini Omni 1.2 Flash generally available, with native 15-second video, multi-turn conversational editing, better reference adherence and a price of $0.07 per second at 720p, down 30%.",
+   "why_selected": "A generally available frontier video model with a concrete price cut and capability jump, and it drew heavy attention on Hacker News.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Gemini Omni is Google DeepMind's family of models that generate and edit video from text, images, short motion clips and audio cues. The previous version, Omni 1.1, produced clips of up to 10 seconds. Video generation has been moving from impressive demos toward production use in advertising, product catalogs and corporate video, where the deciding factors are cost per second, consistency of characters and products across shots, and how easily a clip can be revised without starting over."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 5 Google announced Gemini Omni 1.2 Flash and made it generally available on the Gemini API and Google Cloud, and across Gemini for business, Google Vids and Flow. It generates and edits clips natively up to 15 seconds, in one-second increments from 3 to 15 seconds. Users can guide generation with character, product or style images, motion clips of up to three seconds, and audio cues, and Google says faces, garments, packaging typography and brand colors stay consistent across camera angles. A clip can be refined turn by turn, for example swapping a background or changing the lighting or aspect ratio, instead of regenerating it. Google also describes clearer lip-sync, multi-speaker voice conditioning and fewer unwanted jump cuts in camera moves. The price is $0.07 per second for 720p video, 30% below Omni 1.1."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Conversational editing changes the cost structure of video work: a small fix becomes one cheap follow-up request instead of a full re-generation, so the effective price of a usable clip falls by more than the 30% list cut suggests. Longer single-shot clips and stronger reference following target advertising, e-commerce try-on and explainer videos, where consistency is the main complaint about generated video. Shipping it inside Vids and the business Gemini product puts it in front of non-specialist users directly. The claims are Google's own and rest on its showcase examples; independent comparisons will show how much of the consistency gain holds up."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether independent evaluations confirm the consistency gains, how competing video models respond on price, and how watermarking and provenance are handled as business use grows."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-07-n2",
+   "story_key": "openai-11b-raise-1-25t-valuation",
+   "title": "OpenAI reportedly raises another $11 billion, valuing it at $1.25 trillion",
+   "category": "Business & Funding",
+   "published": "2026-11-06T17:53:00-05:00",
+   "tldr": "Bloomberg reports OpenAI has raised $11 billion so far in a round at a $1.25 trillion valuation, with the total expected to reach about $20 billion, well below the $30 billion first sought.",
+   "why_selected": "A very large valuation for the leading AI lab, arriving as AI stocks sell off and its rival Anthropic nears its IPO.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "OpenAI raised $122 billion from investors in March at a valuation of $852 billion. In late September, Bloomberg reported that it was seeking $30 billion in a new round, and The Verge reports it had initially hoped for a valuation of $1.4 trillion. Since then technology stocks have fallen, and the results of the US midterm elections showed how much public opinion has turned against AI companies and data center projects. Rival Anthropic filed its S-1 to go public last week."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday, Bloomberg reported, citing sources familiar with the matter, that OpenAI has raised $11 billion so far in a new funding round that values the company at $1.25 trillion. The $11 billion is part of a larger round that has not closed. A source told Bloomberg the round is expected to close in the coming weeks and could total about $20 billion, well short of the original $30 billion target. TechCrunch notes that OpenAI had previously suggested it would go public this year, then delayed, and that an IPO is now expected sometime next year. TechCrunch had asked OpenAI for comment and had not received a response when it published. The reports come hours after Bloomberg said some prospective buyers of Anthropic's IPO shares see its valuation as low as $1.1 trillion, against the $2 trillion investors were said to expect about a month earlier."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A $1.25 trillion valuation would make OpenAI one of the world's most valuable companies, yet the round is smaller than planned and priced below the level first hoped for. That mix suggests investors still want exposure to the leading labs but are more selective on size and price amid the market correction and political backlash. The valuations also set a reference for Anthropic's IPO pricing, and both companies' fundraising depends on continued confidence in very large data center spending."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the round closes near $20 billion and who the investors are, any OpenAI confirmation, the timing of its own IPO, and how Anthropic's offering is priced."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.08449",
+   "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+   "authors": [
+    "Yu-Cheng Chou",
+    "Shihao Wang",
+    "Jin Huang",
+    "Chi-Pin Huang",
+    "Chiao-An Yang",
+    "Xianzhe Fan",
+    "Jing Wang",
+    "Zhiqi Li",
+    "Yuanguo Kuang",
+    "Ruijie Zheng",
+    "Johan Bjorck",
+    "Sifei Liu",
+    "Hang Su",
+    "Abhishek Badki",
+    "Lei Zhang",
+    "Alan Yuille",
+    "Linxi \"Jim'' Fan",
+    "Jan Kautz",
+    "Zhiding Yu"
+   ],
+   "affiliations": [
+    "NVIDIA"
+   ],
+   "announced": "2026-11-05T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Efficiency",
+    "Multimodal"
+   ],
+   "tldr": "VFlash predicts a whole bounding box or robot trajectory in one forward pass instead of token by token, cutting trajectory errors versus autoregressive decoding while running far faster.",
+   "why_selected": "Number 2 on the alphaXiv Hot list with 97 Hugging Face upvotes, from NVIDIA, and it overturns the assumption that parallel drafts must trade accuracy for speed.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Robots and self-driving systems use vision-language models to write visual plans: points, boxes and trajectories. These are emitted as coordinate tokens one at a time, so longer trajectories cost more sequential steps, limiting how often a robot can update its plan."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Speculative decoding has a small model draft tokens that the large model verifies, but verification stops at the first mismatch, so long drafts rarely pay off. Diffusion language models decode in parallel but often lose quality. DFlash drafts a block in one pass with a lightweight diffusion model, then verifies it."
+    },
+    {
+     "heading": "Key idea",
+     "body": "VFlash notices that a visual plan has a known shape. Once you know it is a box, or a trajectory with ten waypoints, you know exactly which slots hold which coordinates. Think of filling in a printed form instead of writing a free paragraph. Flash Primitive Decoding aligns each draft block with one complete primitive, so a small five-layer drafter, conditioned on features from a frozen four-billion-parameter target model, predicts every coordinate jointly in a single pass. It then accepts any structurally valid result without requiring it to match the target's tokens, because spatial accuracy, not token agreement, is what matters. Ordinary text still uses verified speculative decoding."
+    },
+    {
+     "heading": "Results",
+     "body": "On 2D trajectory benchmarks VFlash lowers all six error measures versus its autoregressive target, and on VABench-V it cuts errors by roughly 40% versus the best prior model. For 3D trajectories, average displacement error falls by 18 to 49% for the 3D-only target. On AgiBot, the share of waypoints within 5 cm rises from 50% to 73%. Box generation is 2.6 to 2.8 times faster at matched F1 with autoregressive fallback. Dense point-motion forecasting is about 25 times faster in preliminary single-rollout timing. A world action model conditioned on VFlash plans reaches 70.2% average success on MolmoSpaces versus 62.6% for the baseline."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For structured outputs, exact agreement with a slower model is the wrong target, opening a route to real-time spatial planning. Caveats: without the fallback, mean box F1 drops by about 20 points on crowded scenes, and some dense-motion metrics are worse than the baseline."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.08449",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.08449"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 2,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 97,
+    "notable_authors": [
+     "Linxi \"Jim'' Fan",
+     "Jan Kautz"
+    ],
+    "org": "NVIDIA"
+   }
+  },
+  {
+   "id": "2611.03634",
+   "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+   "authors": [
+    "Zhaoyang Wang",
+    "Qianhui Wu",
+    "Boyu Gou",
+    "Demi Wang",
+    "Jiacheng Zhang",
+    "Peichun Hua",
+    "Qize Li",
+    "Shi Qiu",
+    "Yifan Jiang",
+    "Yifan Zhang",
+    "Zexu Jin",
+    "Baolin Peng",
+    "Bolin Shen",
+    "Chetan Bansal",
+    "Dehan Kong",
+    "Deren Lei",
+    "Dongshen Peng",
+    "Fengqing Jiang",
+    "Hao Cheng",
+    "Haoqing Wang",
+    "Jiaming Shan",
+    "Jicheng Wang",
+    "Jingguang Zhou",
+    "Jixuan He",
+    "Kaide Zeng",
+    "Kangyu Zhu",
+    "Lama Moukheiber",
+    "Mufan Qiu",
+    "Peng Xia",
+    "Qihan Sun",
+    "Qingwei Lin",
+    "Qiushi Sun",
+    "Ruichen Zhang",
+    "Shuqing Luo",
+    "Si Qin",
+    "Sicheng Fan",
+    "Tao Xiong",
+    "Wenlin Yao",
+    "Xinyu Zhang",
+    "Xinyue Zeng",
+    "Xuanrui Li",
+    "Xuchao Zhang",
+    "Yian Wang",
+    "Yichao Liu",
+    "Yiming Liang",
+    "Yiyang Zhou",
+    "Yizhu Jiao",
+    "Yuetai Li",
+    "Yurun Chen",
+    "Yuxuan Zhang",
+    "Zheyuan Yang",
+    "Zhiyuan Yao",
+    "Zhongyang Li",
+    "Zihao Li",
+    "Zili Wang",
+    "Jianfeng Gao",
+    "Huaxiu Yao"
+   ],
+   "affiliations": [
+    "Microsoft",
+    "Tongji University"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "WebHarbor rebuilds 153 real websites as offline, resettable Docker environments with 3,518 tasks, and a 4B web agent trained only there matches or beats one trained on live sites.",
+   "why_selected": "Fixes a real bottleneck for GUI-agent research, namely unstable live websites, and shows the sandboxes are good enough to train on.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "GUI web agents need environments that stay put. Training with reinforcement learning requires repeatable resets and executable state changes, and evaluation requires stable results. Live sites change, block bots and rarely allow tests of logged-in workflows such as bookings, purchases and saved items."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Live benchmarks suffer from drift: the authors found that about 38% of Online-Mind2Web tasks were blocked by bot detection and 22% of WebVoyager tasks were outdated. Hand-built environments such as WebArena are reproducible but cover few sites. Recent automatically generated worlds either skip the real target site or simplify its layout and imagery, and they offer limited login-based functionality."
+    },
+    {
+     "heading": "Key idea",
+     "body": "WebHarbor docks real websites: it replaces live dependencies with local assets, a seeded database and controlled resets. The key is that tasks define the scope. Coding agents browse the real site, then build a self-contained application with a SQLite backend and local images, run each target task, find the first missing page or state change, and add it. Humans audit visual fidelity and task validity, and later stages remove answer leaks and add plausible near-miss alternatives so shortcuts do not work. The process started from WebVoyager's 15 sites and 643 tasks and extended to Online-Mind2Web's sites with new authenticated tasks."
+    },
+    {
+     "heading": "Results",
+     "body": "The suite has 153 environments and 3,518 tasks, split into 123 training sites and 30 held-out sites. Starting from the OpenWebRL-4B-SFT checkpoint, reinforcement learning with the same multi-turn GRPO objective in WebHarbor gives a 4B agent scoring 81.2 on WebVoyager and 70.4 on Online-Mind2Web, averaging 75.8, versus 70.6 for OpenWebRL-4B trained on live sites. Four agents score 4.4 to 18.8 points higher on WebHarbor than on live WebVoyager, with rankings preserved."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests that offline replicas can substitute for live-web training and give reproducible benchmarks. Caveats: only one 4B model was trained, client-heavy features such as maps are approximated, and scripted verifiers may miss valid alternative solutions."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.03634",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.03634",
+    "code": "https://github.com/aiming-lab/WebHarbor"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 42,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 25,
+    "notable_authors": [
+     "Jianfeng Gao"
+    ],
+    "org": "Microsoft"
+   }
+  },
+  {
+   "id": "2611.06483",
+   "title": "What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?",
+   "authors": [
+    "Kejian Zhu",
+    "Zhuoran Jin",
+    "Shangqing Tu",
+    "Tianyi Men",
+    "Yupu Hao",
+    "Jiachun Li",
+    "Kang Liu",
+    "Jun Zhao"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-04T20:00:00-05:00",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Agents"
+   ],
+   "tldr": "Multi-turn RL helps LLM agents mainly by improving recovery from errors over long horizons, not single-step decisions, so its gains shrink when the turn budget is tight; mixing budgets in training narrows that gap.",
+   "why_selected": "A clear diagnostic of what agentic RL actually changes, with a practical fix, at a time when most agent training relies on it.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reinforcement learning on multi-turn tasks such as coding and tool use has become a standard way to train LLM agents, yet it is unclear what it improves. That matters for deployment, where agents often face limits on how many interactions they may use."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most evaluations report whether a trajectory finishes within a fixed budget. For single-turn RL, researchers probe the capability boundary with Pass@K, the chance that at least one of K samples succeeds, and found RL does not expand it. Interactive agents add a second axis, the number of allowed turns, that these studies did not vary."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors evaluate Pass@(K,T), sweeping both samples K and turn budget T, on FrozenLake, DeepCoder-MT, BFCL and InterCode-SQL with Qwen3 models. Then they compare base and RL models at identical states, sampling 16 actions from each. RL actions stay plausible under the base model, with mean negative log-likelihood of 10.25 for base and 12.20 for RL, but whole successful RL trajectories become far likelier under the RL policy, with a cumulative log-likelihood ratio near 228 versus 26 for base. Think of it as a better habit of chaining reasonable steps. Their fix, BudgetMix RL, samples a different turn budget, at 10% steps of the maximum, for each training task group while keeping the reward unchanged."
+    },
+    {
+     "heading": "Results",
+     "body": "RL beats the base model as K grows, but at small turn budgets its advantage shrinks and can reverse. During DeepCoder-MT training, trajectory reward rises by 0.331 while per-step reward falls by 0.097. For Qwen3-4B, BudgetMix lifts average Pass@8 across tasks and budgets from 39.5 to 44.3 for GRPO, from 40.9 to 44.8 for GiGPO and from 40.3 to 44.4 for PPO, with the largest gains at tight budgets."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Agent RL buys resilience rather than sharper individual actions, so teams should test agents under the budgets they will run with. Caveats: step-quality measurement was possible only on two tasks, and process rewards that help are rarely available."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.06483",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.06483",
+    "code": "https://github.com/GaryStack/Rethinking-Agent-RL"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 28,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 37,
+    "org": "Chinese Academic of Science Institute of Automation"
+   }
+  },
+  {
+   "id": "2611.05275",
+   "title": "Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems",
+   "authors": [
+    "Pengfei Zhou",
+    "Yixing Ma",
+    "Hexin Wang",
+    "Weidong Tang",
+    "Zhenglin Wan",
+    "Wangbo Zhao",
+    "Yang You"
+   ],
+   "affiliations": [
+    "National University of Singapore",
+    "University of California Berkeley",
+    "Hong Kong University of Science and Technology"
+   ],
+   "announced": "2026-11-03T20:00:00-05:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "Across many modalities the best model varies by input, but learned routers beat the best single model only slightly; routing's reliable win is cost, averaging 8.82 times better efficiency.",
+   "why_selected": "A large cross-modality measurement of model routing with honest negative results and a clean theory of when routing pays.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "AI systems increasingly combine many specialized models, tools and policies. Sending each request to the right one could beat any single model or match it at lower cost, but it is unknown how much routing gains outside language models."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Routing research has mostly covered language models: cascades that escalate to a stronger model when needed, routers learned from preference data, and quality-cost formulations. Whether this works across images, video, speech, code and robots has not been measured on common inputs."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors build an omni-modal matrix of 25 benchmarks with 374,401 scored runs from 452 candidate configurations, where every candidate sees the same inputs. That gives a ladder of routers: the best fixed candidate at the bottom, the per-input oracle at the top, and in between routers that only see the benchmark or capability type. They fine-tune Qwen3.5-4B as the router, and add a theory showing that a reference policy and a quality tolerance fix the price of quality, so efficiency gains can be certified against a quality floor."
+    },
+    {
+     "heading": "Results",
+     "body": "On 19,814 test inputs the oracle beats the best fixed candidate by 5.4 points, 87.98 versus 82.60, with gaps of 18 to 19 points for video generation and robot manipulation. Picking the best candidate per capability type in hindsight closes only 8% of the gap. A learned capability-tree router scores 79.98 versus 79.68 for the fixed candidate and 84.80 for the oracle across 16 benchmarks. On robot manipulation a camera-based router gains 1.1 points with 24% less policy time, although the interval includes zero. In image generation none of 124 router configurations significantly beat the fixed generator. On cost, routes reach 25.5 times the efficiency of always using Claude Opus 4.6 on coding tasks at a 0.44-point loss, 7.1 times on text questions, and 8.82 times on average."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The practical lesson is that routing is mainly a cost tool: send easy inputs to cheaper models. Accuracy gains from routing remain small, and results come mostly from one training seed."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.05275",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.05275",
+    "code": "https://github.com/InfRec-Cardinal/route-anything"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 35,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 79
+   }
+  },
+  {
+   "id": "2611.02497",
+   "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild",
+   "authors": [
+    "Tan Sang Nguyen",
+    "Yi Ru Wang",
+    "Shailesh Shailesh",
+    "Gang Yang",
+    "Jiamo Hu",
+    "Jianuo Jiang",
+    "Haoquan Fang",
+    "Zhongzheng Ren",
+    "Zhongyi Luo",
+    "Ian Chong",
+    "Aaron Tung",
+    "Santiago Pravisani",
+    "Minghui Lin",
+    "Yao Mo",
+    "Ishneet Singh",
+    "Benjamin Tee",
+    "Harold Soh",
+    "Siddhartha Srinivasa",
+    "Dieter Fox",
+    "David Hsu",
+    "Haoming Song",
+    "Maxime Ellerbach",
+    "Thomas Wolf",
+    "Pepijn Kooijmans",
+    "Ruijie He",
+    "Michael Cho",
+    "Jiafei Duan"
+   ],
+   "affiliations": [
+    "National University of Singapore",
+    "Hugging Face",
+    "Singapore Embodied AI Centre",
+    "BitRobot"
+   ],
+   "announced": "2026-11-02T20:00:00-05:00",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Robotics"
+   ],
+   "tldr": "RoboColosseum runs blinded pairwise robot trials across 124 sites and finds frontier chat agents rival specialized robot policies, while rankings vary across tasks, robots and evaluation tracks.",
+   "why_selected": "Real-world robot evaluation at unusual scale, with findings that complicate how robot foundation models are compared.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "General-purpose robot policies must work across robots, tasks and environments, but physical trials are hard to reproduce. Object placement, lighting and camera setup change outcomes, so published comparisons often rest on few rollouts."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Simulation scales and resets easily, but differences in sensing, dynamics and appearance limit how well it predicts real performance. Standardized hardware and centralized remote testbeds improve comparability but cover few settings, and volunteer-run distributed efforts are hard to sustain."
+    },
+    {
+     "heading": "Key idea",
+     "body": "RoboColosseum links locally operated robots to shared policy-serving infrastructure and standard protocols. An Open Track compares models without task-specific adaptation in blinded, pairwise trials under matched local conditions. A Fine-tune Track gives every policy the same 100 demonstrations per task. It also scores partial progress, not just success. The study evaluates five vision-language-action policies and three API agents driving robots through joint-position commands with one move tool, over 41 days from September 17 to October 28, 2026, on four embodiments."
+    },
+    {
+     "heading": "Results",
+     "body": "The Open Track has 5,699 pairwise comparisons at 124 sites, and frontier agents rival the specialized policies, though no system completes open-world tasks reliably. After fine-tuning on 20 tasks, GR00T N1.7 leads on SO-101, with 89.0% progress against 85.4% for pi0.5, while pi0.5 leads on Franka and Bimanual-YAM. Rankings agree weakly across embodiment task suites, with Kendall's W of 0.24, and Open Track rankings poorly predict post-fine-tuning performance. On the G1 humanoid no policy completes any of five tasks, yet progress ranges from 13.3% to 23.2%. Active matchmaking needs substantially fewer physical trials than uniform sampling for comparable ranking agreement."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Single-robot, single-suite leaderboards can mislead, and progress scores reveal differences that success rates hide. It is an initial snapshot: five fine-tuning tasks per embodiment, and uneven model coverage."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.02497",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.02497",
+    "code": "https://github.com/RoboColosseum/robocolosseum-client"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 61,
+    "alphaxiv_hot_days": 3,
+    "hf_upvotes": 48,
+    "org": "Hugging Face"
+   }
+  }
+ ]
+}

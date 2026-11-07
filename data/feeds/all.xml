@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 07 Nov 2026 11:45:35 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 12:16:35 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google releases Gemini Omni 1.2 Flash with 15-second video and a 30% lower price</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n1</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Google made Gemini Omni 1.2 Flash generally available, with native 15-second video, multi-turn conversational editing, better reference adherence and a price of $0.07 per second at 720p, down 30%. (Google)</description>
+  </item>
+  <item>
+    <title>OpenAI reportedly raises another $11 billion, valuing it at $1.25 trillion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n2</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Business &amp; Funding</category>
+    <description>Bloomberg reports OpenAI has raised $11 billion so far in a round at a $1.25 trillion valuation, with the total expected to reach about $20 billion, well below the $30 billion first sought. (TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.08449</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.08449</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>VFlash predicts a whole bounding box or robot trajectory in one forward pass instead of token by token, cutting trajectory errors versus autoregressive decoding while running far faster. (Yu-Cheng Chou, Shihao Wang, Jin Huang et al. · NVIDIA)</description>
+  </item>
+  <item>
+    <title>WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.03634</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.03634</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>WebHarbor rebuilds 153 real websites as offline, resettable Docker environments with 3,518 tasks, and a 4B web agent trained only there matches or beats one trained on live sites. (Zhaoyang Wang, Qianhui Wu, Boyu Gou et al. · Microsoft, Tongji University)</description>
+  </item>
+  <item>
+    <title>What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.06483</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.06483</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Reinforcement Learning</category>
+    <description>Multi-turn RL helps LLM agents mainly by improving recovery from errors over long horizons, not single-step decisions, so its gains shrink when the turn budget is tight; mixing budgets in training narrows that gap. (Kejian Zhu, Zhuoran Jin, Shangqing Tu et al.)</description>
+  </item>
+  <item>
+    <title>Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.05275</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.05275</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>Across many modalities the best model varies by input, but learned routers beat the best single model only slightly; routing's reliable win is cost, averaging 8.82 times better efficiency. (Pengfei Zhou, Yixing Ma, Hexin Wang et al. · National University of Singapore, University of California Berkeley, Hong Kong University of Science and Technology)</description>
+  </item>
+  <item>
+    <title>RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.02497</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.02497</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>RoboColosseum runs blinded pairwise robot trials across 124 sites and finds frontier chat agents rival specialized robot policies, while rankings vary across tasks, robots and evaluation tracks. (Tan Sang Nguyen, Yi Ru Wang, Shailesh Shailesh et al. · National University of Singapore, Hugging Face, Singapore Embodied AI Centre)</description>
+  </item>
   <item>
     <title>Chainalysis says hackers obtained credentials and live tokens for all of its users</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Thu, 05 Nov 2026 02:48:50 +0000</pubDate>
     <category>Biology / Cardiovascular</category>
     <description>In a randomized trial of 744 older adults with moderate aortic stenosis and risk features, early valve replacement cut two-year death or heart failure events from 23.9% to 16.7%. (Philippe Généreux Raj R. Makkar Philippe Pibarot Jeroen J. Bax Brian R. Lindman Kamran Muhammad J. Bradley Oldemeyer Mark Pirwitz Colin M. Barker Vinod H. Thourani Pradeep K. Yadav Roberto Rodriguez Justin Strote Rahul Sakhuja Ramzi Khalil Rahul Sharma Adnan Chhatriwalla Jacob M. Mishell Biswajit Kar Sameer Gafoor Joseph Walsh Daniel Spoon Andrew Frutkin Andrei Pop Nicolas M. Van Mieghem Ruby Satpathy Kenji Ando Joseph Montarello John Webb Sreekanth Vemulapalli David J. Cohen Aakriti Gupta Brandon Park Heather Prince Philipp Blanke Michael Mack and Martin B. Leonthe PROGRESS Trial Investigators* · Atlantic Health Morristown Medical Center, Cedars-Sinai Medical Center)</description>
-  </item>
-  <item>
-    <title>Marvell agrees to buy Lumentum for $115 billion in an all-stock deal</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
-    <category>Tech / Tech Business</category>
-    <description>Chip designer Marvell will acquire optical component maker Lumentum in an all-stock deal valued at $115 billion including debt, expected to close in the first half of 2028. (TechCrunch, SiliconANGLE)</description>
-  </item>
-  <item>
-    <title>Google and partners dismantle XCPE botnet built into 1.3 million Android TV boxes</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n2</guid>
-    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Google's Threat Intelligence Group and partners disrupted XCPE, a backdoor that a Chinese manufacturer shipped in more than 1.3 million Android TV boxes to rent out owners' internet connections. (Krebs on Security, Ars Technica, The Register)</description>
-  </item>
-  <item>
-    <title>Binance says a fake job interview started its $6.3 billion theft</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n3</guid>
-    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Binance's incident report says a multi-stage attack beginning with a fake recruiter and malware led to the October 29 theft of about $6.34 billion, which the FBI attributed to North Korea's TraderTraitor group. (BleepingComputer, The Register, WIRED)</description>
-  </item>
-  <item>
-    <title>Apple warns memory costs are unprecedented as they squeeze margins and Mac supply</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n4</guid>
-    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
-    <category>Tech / Chips &amp; Hardware</category>
-    <description>On its earnings call, Apple said memory pricing is unprecedented, forecast a December-quarter gross margin of 45 to 46 percent and expects Mac and iPad supply constraints. (TechCrunch, 9to5Mac, The Register)</description>
-  </item>
-  <item>
-    <title>Chemical traces of blood found in a 115-million-year-old dinosaur bone</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n1</guid>
-    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
-    <category>Science / Life Sciences</category>
-    <description>A team led by Curtin University reports red blood cell-like structures and heme molecules inside the leg bone of a 115-million-year-old Brazilian dinosaur, the first chemical evidence of blood in a dinosaur. (Phys.org, The Conversation, Popular Science)</description>
-  </item>
-  <item>
-    <title>LHCb sees first evidence of the rarest beauty-particle decay yet observed</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n2</guid>
-    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
-    <category>Science / Physics</category>
-    <description>The upgraded LHCb experiment at CERN reports 3.2-sigma evidence for a beauty-particle decay into two muons that occurs about once per ten billion decays, consistent with the Standard Model. (BBC, University of Cambridge, Phys.org)</description>
-  </item>
-  <item>
-    <title>Perioperative ivonescimab with or without chemotherapy in resectable non-small cell lung cancer: a phase 2 trial</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41591-026-04745-4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41591-026-04745-4</guid>
-    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
-    <category>Science / Clinical medicine</category>
-    <description>In a 90-patient phase 2 trial, ivonescimab plus chemotherapy before and after surgery gave a 70.1% major pathological response in resectable lung cancer. (Xiaoliang Zhao, Bin Zhang, Chenguang Li et al. · Tianjin Medical University Cancer Institute and Hospital, The Fourth Hospital of Hebei Medical University)</description>
   </item>
 </channel>
 </rss>

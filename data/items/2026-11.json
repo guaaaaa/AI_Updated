@@ -1,5 +1,101 @@
 [
  {
+  "id": "2026-11-07-n1",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "Google releases Gemini Omni 1.2 Flash with 15-second video and a 30% lower price",
+  "tldr": "Google made Gemini Omni 1.2 Flash generally available, with native 15-second video, multi-turn conversational editing, better reference adherence and a price of $0.07 per second at 720p, down 30%.",
+  "category": "Model Release",
+  "byline": "Google"
+ },
+ {
+  "id": "2026-11-07-n2",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "OpenAI reportedly raises another $11 billion, valuing it at $1.25 trillion",
+  "tldr": "Bloomberg reports OpenAI has raised $11 billion so far in a round at a $1.25 trillion valuation, with the total expected to reach about $20 billion, well below the $30 billion first sought.",
+  "category": "Business & Funding",
+  "byline": "TechCrunch, The Verge"
+ },
+ {
+  "id": "2611.08449",
+  "date": "2026-11-07",
+  "type": "paper",
+  "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+  "tldr": "VFlash predicts a whole bounding box or robot trajectory in one forward pass instead of token by token, cutting trajectory errors versus autoregressive decoding while running far faster.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Efficiency",
+   "Multimodal"
+  ],
+  "byline": "Yu-Cheng Chou, Shihao Wang, Jin Huang et al. · NVIDIA",
+  "hf": 97,
+  "venue": null
+ },
+ {
+  "id": "2611.03634",
+  "date": "2026-11-07",
+  "type": "paper",
+  "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+  "tldr": "WebHarbor rebuilds 153 real websites as offline, resettable Docker environments with 3,518 tasks, and a 4B web agent trained only there matches or beats one trained on live sites.",
+  "primary_tag": "Agents",
+  "tags": [
+   "Agents",
+   "Reinforcement Learning",
+   "Evaluation & Benchmarks"
+  ],
+  "byline": "Zhaoyang Wang, Qianhui Wu, Boyu Gou et al. · Microsoft, Tongji University",
+  "hf": 25,
+  "venue": null
+ },
+ {
+  "id": "2611.06483",
+  "date": "2026-11-07",
+  "type": "paper",
+  "title": "What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?",
+  "tldr": "Multi-turn RL helps LLM agents mainly by improving recovery from errors over long horizons, not single-step decisions, so its gains shrink when the turn budget is tight; mixing budgets in training narrows that gap.",
+  "primary_tag": "Reinforcement Learning",
+  "tags": [
+   "Reinforcement Learning",
+   "Agents"
+  ],
+  "byline": "Kejian Zhu, Zhuoran Jin, Shangqing Tu et al.",
+  "hf": 37,
+  "venue": null
+ },
+ {
+  "id": "2611.05275",
+  "date": "2026-11-07",
+  "type": "paper",
+  "title": "Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems",
+  "tldr": "Across many modalities the best model varies by input, but learned routers beat the best single model only slightly; routing's reliable win is cost, averaging 8.82 times better efficiency.",
+  "primary_tag": "Efficiency",
+  "tags": [
+   "Efficiency",
+   "Agents",
+   "Evaluation & Benchmarks"
+  ],
+  "byline": "Pengfei Zhou, Yixing Ma, Hexin Wang et al. · National University of Singapore, University of California Berkeley, Hong Kong University of Science and Technology",
+  "hf": 79,
+  "venue": null
+ },
+ {
+  "id": "2611.02497",
+  "date": "2026-11-07",
+  "type": "paper",
+  "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild",
+  "tldr": "RoboColosseum runs blinded pairwise robot trials across 124 sites and finds frontier chat agents rival specialized robot policies, while rankings vary across tasks, robots and evaluation tracks.",
+  "primary_tag": "Evaluation & Benchmarks",
+  "tags": [
+   "Evaluation & Benchmarks",
+   "Robotics"
+  ],
+  "byline": "Tan Sang Nguyen, Yi Ru Wang, Shailesh Shailesh et al. · National University of Singapore, Hugging Face, Singapore Embodied AI Centre",
+  "hf": 48,
+  "venue": null
+ },
+ {
   "id": "2026-11-06-n1",
   "date": "2026-11-06",
   "type": "news",

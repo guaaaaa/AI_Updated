@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Fri, 06 Nov 2026 12:18:51 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 12:16:35 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google releases Gemini Omni 1.2 Flash with 15-second video and a 30% lower price</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n1</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Google made Gemini Omni 1.2 Flash generally available, with native 15-second video, multi-turn conversational editing, better reference adherence and a price of $0.07 per second at 720p, down 30%. (Google)</description>
+  </item>
+  <item>
+    <title>OpenAI reportedly raises another $11 billion, valuing it at $1.25 trillion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n2</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Business &amp; Funding</category>
+    <description>Bloomberg reports OpenAI has raised $11 billion so far in a round at a $1.25 trillion valuation, with the total expected to reach about $20 billion, well below the $30 billion first sought. (TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.08449</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.08449</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>VFlash predicts a whole bounding box or robot trajectory in one forward pass instead of token by token, cutting trajectory errors versus autoregressive decoding while running far faster. (Yu-Cheng Chou, Shihao Wang, Jin Huang et al. · NVIDIA)</description>
+  </item>
+  <item>
+    <title>WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.03634</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.03634</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>WebHarbor rebuilds 153 real websites as offline, resettable Docker environments with 3,518 tasks, and a 4B web agent trained only there matches or beats one trained on live sites. (Zhaoyang Wang, Qianhui Wu, Boyu Gou et al. · Microsoft, Tongji University)</description>
+  </item>
+  <item>
+    <title>What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.06483</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.06483</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Reinforcement Learning</category>
+    <description>Multi-turn RL helps LLM agents mainly by improving recovery from errors over long horizons, not single-step decisions, so its gains shrink when the turn budget is tight; mixing budgets in training narrows that gap. (Kejian Zhu, Zhuoran Jin, Shangqing Tu et al.)</description>
+  </item>
+  <item>
+    <title>Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.05275</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.05275</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>Across many modalities the best model varies by input, but learned routers beat the best single model only slightly; routing's reliable win is cost, averaging 8.82 times better efficiency. (Pengfei Zhou, Yixing Ma, Hexin Wang et al. · National University of Singapore, University of California Berkeley, Hong Kong University of Science and Technology)</description>
+  </item>
+  <item>
+    <title>RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.02497</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.02497</guid>
+    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>RoboColosseum runs blinded pairwise robot trials across 124 sites and finds frontier chat agents rival specialized robot policies, while rankings vary across tasks, robots and evaluation tracks. (Tan Sang Nguyen, Yi Ru Wang, Shailesh Shailesh et al. · National University of Singapore, Hugging Face, Singapore Embodied AI Centre)</description>
+  </item>
   <item>
     <title>OpenAI launches GPT-6 Cyber, a cybersecurity model rated "Critical" on its Preparedness Framework</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Mon, 02 Nov 2026 12:33:44 +0000</pubDate>
     <category>AI / Efficiency</category>
     <description>ACCT converts a small model's already-computed context cache into a compressed cache that a larger model in the same family can use directly, skipping the large model's expensive prefill. (Yuzhe Liu, Haolin Tian, Tonghan Wang · Tsinghua University)</description>
-  </item>
-  <item>
-    <title>OpenAI reportedly cuts its new funding round's target to $20 billion as investors cool</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2026-11-01-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2026-11-01-n1</guid>
-    <pubDate>Mon, 02 Nov 2026 05:38:08 +0000</pubDate>
-    <category>AI / Business &amp; Funding</category>
-    <description>The Financial Times reports OpenAI lowered its new round's target from $30 billion to $20 billion, and the Wall Street Journal says $11 billion is secured, during a tech-stock selloff over AI spending. (TechCrunch, The Next Web)</description>
-  </item>
-  <item>
-    <title>Google's Project Suncatcher satellite answers its first prompt, running Gemma 4 on a TPU in orbit</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2026-11-01-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2026-11-01-n2</guid>
-    <pubDate>Mon, 02 Nov 2026 05:38:08 +0000</pubDate>
-    <category>AI / Compute &amp; Infrastructure</category>
-    <description>Google's first Project Suncatcher prototype, carrying four TPUs, answered a prompt from orbit with Gemma 4, starting tests of whether data-center AI chips can survive heat and radiation in space. (TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.38095</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.38095</guid>
-    <pubDate>Mon, 02 Nov 2026 05:38:08 +0000</pubDate>
-    <category>AI / LLMs</category>
-    <description>NVIDIA's open Nemotron 3.5 Super, a 120B-parameter hybrid Mamba-Transformer mixture-of-experts with 12B active, adds a built-in drafter and 4-bit weights, reaching 51.78% on SWE-bench Pro. (NVIDIA, Aastha Jhunjhunwala, Aayushi Ashokkumar Srivastava et al. · NVIDIA)</description>
-  </item>
-  <item>
-    <title>Your LR Schedule May Not Be Principled: Effective Learning Rate Scheduling in Weight-Normalized Training</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.40362</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.40362</guid>
-    <pubDate>Mon, 02 Nov 2026 05:38:08 +0000</pubDate>
-    <category>AI / Optimization</category>
-    <description>Weight normalization's pretraining gains over weight decay come mostly from its effective learning-rate trajectory; scheduling that quantity with a theory-derived inverse-square-root shape (AIR) cuts MoE loss about 0.01 below cosine. (Qifan Yu, Xinyu Ma, Xingyan Bin et al. · ByteDance Seed, Peking University)</description>
-  </item>
-  <item>
-    <title>An ODE-based Sampler for Discrete Diffusion Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.40618</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.40618</guid>
-    <pubDate>Mon, 02 Nov 2026 05:38:08 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>Exponential residual flows give discrete diffusion language models an analogue of the probability-flow ODE: after one random draw, sampling is deterministic yet provably keeps the right distributions, enabling consistency distillation. (Samson Gourevitch, Yazid Janati, Eric Moulines et al. · École polytechnique, MBZUAI, EPITA)</description>
-  </item>
-  <item>
-    <title>ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.40627</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.40627</guid>
-    <pubDate>Mon, 02 Nov 2026 05:38:08 +0000</pubDate>
-    <category>AI / Security</category>
-    <description>Training a chatbot to write an explicit, rule-checkable safety decision before it replies turns the shallowness of safety alignment into a defense against multi-turn jailbreaks, without a judge model in the reward. (Qiyao Ma, Xiaodong Liu, Weiwei Yang et al. · Microsoft Research, University of California, Davis)</description>
-  </item>
-  <item>
-    <title>Rethinking Pre-pretraining</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.40051</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-01/2610.40051</guid>
-    <pubDate>Mon, 02 Nov 2026 05:38:08 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>In compute-matched experiments, spending part of a pretraining budget on synthetic pre-pretraining never beats spending it on natural text, and an earlier reported gain disappears once the baseline's initialization is improved. (Alexander Stern, Tim Rocktäschel, Acyr Locatelli et al. · Cohere, UCL AI Centre, MIT)</description>
   </item>
 </channel>
 </rss>
