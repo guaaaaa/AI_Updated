@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 06 Nov 2026 13:52:37 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 11:45:35 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Chainalysis says hackers obtained credentials and live tokens for all of its users</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n1</guid>
+    <pubDate>Sat, 07 Nov 2026 11:45:35 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Chainalysis, whose tools trace cryptocurrency flows, now says names, usernames, password hashes and live tokens for every user were exposed, widening an incident first described as limited. (BleepingComputer, Ars Technica)</description>
+  </item>
+  <item>
+    <title>DigiCert says a 16-month exposure of an internal system let an outsider read customer identity documents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n2</guid>
+    <pubDate>Sat, 07 Nov 2026 11:45:35 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>DigiCert says a server migration left an internal archive reachable from the internet from February 2025, and an unauthorized account read some customer records in June and July 2026. (The Register, The Record)</description>
+  </item>
+  <item>
+    <title>Fox completes its $22 billion acquisition of Roku, five months after announcing it</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n3</guid>
+    <pubDate>Sat, 07 Nov 2026 11:45:35 +0000</pubDate>
+    <category>Tech / Tech Business</category>
+    <description>Fox closed its $22 billion purchase of Roku, which reaches more than 100 million households, far earlier than the first-half-2027 completion the companies had projected. (TechCrunch, Engadget)</description>
+  </item>
+  <item>
+    <title>AST SpaceMobile plans its own medium-lift rocket, backed by a $1.3 billion Firefly engine deal</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n4</guid>
+    <pubDate>Sat, 07 Nov 2026 11:45:35 +0000</pubDate>
+    <category>Tech / Space Industry</category>
+    <description>The direct-to-phone satellite company says it will build Blacklift, a 20-ton-class rocket, and has committed $1.3 billion to Firefly for engines, a license and engineering support. (Ars Technica, Firefly Aerospace newsroom (headline))</description>
+  </item>
+  <item>
+    <title>FaultScope: A software package for fast error attribution in quantum error correction</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2610.41528</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2610.41528</guid>
+    <pubDate>Sat, 07 Nov 2026 11:45:35 +0000</pubDate>
+    <category>Tech / Quantum computing</category>
+    <description>FaultScope is an open-source simulator that estimates how much each noisy component contributes to logical errors in quantum error correction, at under 1% extra runtime in tests. (Yuguo Shao, Zhenyu Chen, Ningfeng Wang et al. · Yau Mathematical Sciences Center, Tsinghua University; Beijing Institute of Mathematical Sciences and Applications; Department of Computer Science and Technology, Tsinghua University)</description>
+  </item>
   <item>
     <title>FDA grants accelerated approval to a subcutaneous antibody for previously treated head and neck cancer</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-06/2026-11-06-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
     <category>Science / Clinical medicine</category>
     <description>In a 90-patient phase 2 trial, ivonescimab plus chemotherapy before and after surgery gave a 70.1% major pathological response in resectable lung cancer. (Xiaoliang Zhao, Bin Zhang, Chenguang Li et al. · Tianjin Medical University Cancer Institute and Hospital, The Fourth Hospital of Hebei Medical University)</description>
-  </item>
-  <item>
-    <title>An AI-native experimental laboratory for autonomous biomolecular operations</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11228-6</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11228-6</guid>
-    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
-    <category>Science / Computational science &amp; AI</category>
-    <description>AutoDNA, an AI-run laboratory, coordinates over 20 instruments across more than 11,000 steps to carry out DNA synthesis, amplification and sequencing with minimal human intervention. (Mingyu Wu, Zhaoguo Wang, Jiabin Wang et al.)</description>
-  </item>
-  <item>
-    <title>Carbon radical generation by irreversible metal-to-ligand charge transfer</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11368-9</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11368-9</guid>
-    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
-    <category>Science / Chemistry</category>
-    <description>Copper complexes of heteroaryl sulfones split apart when hit by visible light, releasing carbon radicals that enable fluoroalkylation of arenes and alkynes. (Zhiqiang Wei, Xiang Li, Lin Xiao et al. · Shanghai Institute of Organic Chemistry, ShanghaiTech University)</description>
-  </item>
-  <item>
-    <title>US tech stocks rebound as an AI-spending selloff ends on election day</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n1</guid>
-    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
-    <category>Business / Markets</category>
-    <description>US tech shares recovered on Tuesday after a week-long AI selloff, with oil easing from $117 to $103 a barrel, while investors largely looked past the midterm elections. (The Guardian)</description>
-  </item>
-  <item>
-    <title>Canva to cut or relocate 1,271 jobs as growth slows</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n2</guid>
-    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
-    <category>Business / Labor &amp; Workplace</category>
-    <description>Design-software firm Canva is restructuring 22% of its workforce, 1,271 people, after growth slowed for the first time in a decade and AI costs rose. (BBC News, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Foodtastic bids $1 billion for MTY Food Group as MTY replaces its CEO</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n3</guid>
-    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
-    <category>Business / Deals &amp; M&amp;A</category>
-    <description>Foodtastic took a $43-a-share cash offer for MTY directly to shareholders after MTY's board refused talks, on the same day MTY abruptly replaced its CEO. (The Globe and Mail)</description>
   </item>
 </channel>
 </rss>

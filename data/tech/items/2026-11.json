@@ -1,5 +1,55 @@
 [
  {
+  "id": "2026-11-07-n1",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "Chainalysis says hackers obtained credentials and live tokens for all of its users",
+  "tldr": "Chainalysis, whose tools trace cryptocurrency flows, now says names, usernames, password hashes and live tokens for every user were exposed, widening an incident first described as limited.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Ars Technica"
+ },
+ {
+  "id": "2026-11-07-n2",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "DigiCert says a 16-month exposure of an internal system let an outsider read customer identity documents",
+  "tldr": "DigiCert says a server migration left an internal archive reachable from the internet from February 2025, and an unauthorized account read some customer records in June and July 2026.",
+  "category": "Cybersecurity",
+  "byline": "The Register, The Record"
+ },
+ {
+  "id": "2026-11-07-n3",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "Fox completes its $22 billion acquisition of Roku, five months after announcing it",
+  "tldr": "Fox closed its $22 billion purchase of Roku, which reaches more than 100 million households, far earlier than the first-half-2027 completion the companies had projected.",
+  "category": "Tech Business",
+  "byline": "TechCrunch, Engadget"
+ },
+ {
+  "id": "2026-11-07-n4",
+  "date": "2026-11-07",
+  "type": "news",
+  "title": "AST SpaceMobile plans its own medium-lift rocket, backed by a $1.3 billion Firefly engine deal",
+  "tldr": "The direct-to-phone satellite company says it will build Blacklift, a 20-ton-class rocket, and has committed $1.3 billion to Firefly for engines, a license and engineering support.",
+  "category": "Space Industry",
+  "byline": "Ars Technica, Firefly Aerospace newsroom (headline)"
+ },
+ {
+  "id": "2610.41528",
+  "date": "2026-11-07",
+  "type": "paper",
+  "title": "FaultScope: A software package for fast error attribution in quantum error correction",
+  "tldr": "FaultScope is an open-source simulator that estimates how much each noisy component contributes to logical errors in quantum error correction, at under 1% extra runtime in tests.",
+  "primary_tag": "Quantum computing",
+  "tags": [
+   "Quantum computing"
+  ],
+  "byline": "Yuguo Shao, Zhenyu Chen, Ningfeng Wang et al. · Yau Mathematical Sciences Center, Tsinghua University; Beijing Institute of Mathematical Sciences and Applications; Department of Computer Science and Technology, Tsinghua University",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-06-n1",
   "date": "2026-11-06",
   "type": "news",

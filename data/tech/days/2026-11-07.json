@@ -1,0 +1,213 @@
+{
+ "date": "2026-11-07",
+ "edition": "weekend",
+ "generated_at": "2026-11-07T11:45:35+00:00",
+ "summary": "Two breaches at security-industry firms, a record-fast media-platform merger, a satellite operator's plan to build its own rocket, and a faster simulator for quantum error correction.",
+ "news": [
+  {
+   "id": "2026-11-07-n1",
+   "story_key": "chainalysis-all-users-breach",
+   "title": "Chainalysis says hackers obtained credentials and live tokens for all of its users",
+   "category": "Cybersecurity",
+   "published": "2026-11-06T09:17:00-05:00",
+   "tldr": "Chainalysis, whose tools trace cryptocurrency flows, now says names, usernames, password hashes and live tokens for every user were exposed, widening an incident first described as limited.",
+   "why_selected": "A widening breach at a vendor used by law enforcement and financial institutions, with many open questions.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Chainalysis sells blockchain analysis software that traces cryptocurrency transactions for investigations of fraud, ransomware and money laundering. Its customers include law enforcement, government agencies, financial institutions and crypto businesses. Ars Technica lists the FBI, US Immigration and Customs Enforcement, the US Air Force, Microsoft, Coinbase and Barclays among them. Last Friday the company disclosed that an attacker using AI-assisted offensive techniques had reached its systems and internal tools, and said only user IDs, full names, email addresses and role labels were accessed."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday the company said an \"on-path attack\", in which an attacker sits on infrastructure that carries traffic between two parties, had exposed some customer passwords. It later said an investigation on Monday found that names, usernames, password hashes and live tokens for all Chainalysis users were exposed. After detecting further abnormal activity it took its login portal offline, along with the Reactor and Data Solutions products, the Know-Your-Transaction interface and API, and address screening. On Friday it began phasing access back in. Customers must supply trusted IP addresses for an allowlist, then reset passwords and rotate API keys. The company says it has no evidence that investigations data was accessed or that its attribution data was manipulated."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A password hash is a scrambled form of a password, and a live token is a credential that works without one, so tokens are the more urgent exposure. Exposing them for an entire user base of investigators is sensitive because the identities of agencies using the tool can be valuable to criminals. Ars Technica notes several unanswered questions: where the on-path compromise occurred, whether the captured traffic was encrypted, why the all-users exposure was disclosed on Wednesday although found on Monday, and how the AI agents worked. The company declined to comment beyond its blog post."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Chainalysis names the compromised infrastructure, confirms that investigation data stayed untouched, and how long the mandatory credential rotation keeps customers locked out."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-07-n2",
+   "story_key": "digicert-exposed-system-breach",
+   "title": "DigiCert says a 16-month exposure of an internal system let an outsider read customer identity documents",
+   "category": "Cybersecurity",
+   "published": "2026-11-05T11:12:00-05:00",
+   "tldr": "DigiCert says a server migration left an internal archive reachable from the internet from February 2025, and an unauthorized account read some customer records in June and July 2026.",
+   "why_selected": "A certificate authority, a core trust provider for the web, disclosed a breach involving passports and other ID documents.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A certificate authority such as DigiCert vouches for the identity of websites and organizations by issuing digital certificates, which browsers use to decide whether a site can be trusted. Because the work involves verifying who customers are, such companies hold business contact details and sometimes identity documents. DigiCert published a post-mortem on Mozilla's Bugzilla tracker, since browser and operating system makers require certificate authorities to report incidents like this."
+    },
+    {
+     "heading": "What happened",
+     "body": "According to the report, an internal business system was moved in February 2025 out of a VPN-restricted network, which made it reachable from the internet. It shared an account platform with DigiCert's customer products, including a self-registration feature that was never meant to be on the internal system. Outsiders could therefore create accounts without multifactor authentication and, through a separate permissions flaw, browse archived customer records. DigiCert found unassigned accounts on June 18, 2026 and a researcher flagged the problem on June 21. It was shut down on July 2. On October 19 DigiCert confirmed that an unauthorized account had accessed a subset of records from June 27 to July 2. Exposed data included names, business emails, phone numbers and, for some, passports, driver's licenses or utility bills."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "DigiCert says certificate issuance, revocation and validation were unaffected and that customer credentials were not taken. The harm is therefore mainly privacy: identity documents tied to named business customers. The company has not said how many people were affected. It attributes the delay to treating the migration as an infrastructure change instead of a security change, so there was no detailed review, and to weak alerting on new accounts. The Register reports that investigation into actual access began only on October 12."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How many customers and individuals DigiCert eventually notifies, and whether browser root programs ask for further changes."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/06/digicert-admits-16-month-security-lapse-exposed-customer-information/5308097"
+    },
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/digicert-certificate-authority-reports-data-breach"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-07-n3",
+   "story_key": "fox-completes-roku",
+   "title": "Fox completes its $22 billion acquisition of Roku, five months after announcing it",
+   "category": "Tech Business",
+   "published": "2026-11-06T11:05:00-05:00",
+   "tldr": "Fox closed its $22 billion purchase of Roku, which reaches more than 100 million households, far earlier than the first-half-2027 completion the companies had projected.",
+   "why_selected": "A major deal that gives a media company control of a leading streaming-TV platform.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Roku makes streaming devices and the operating system built into many televisions. It earns money from advertising and subscription bundles on its home screen, and it owns the Tubi streaming service. Fox Corporation, a broadcaster and cable-news owner, announced the roughly $22 billion deal in June. Fox had sold its Roku shares in 2020 to help fund its Tubi purchase."
+    },
+    {
+     "heading": "What happened",
+     "body": "TechCrunch reports that Fox completed the acquisition on Friday. The companies had projected completion in the first half of 2027. The Justice Department issued a second request for information about two months before closing, asking both sides for more documents and data as part of its antitrust review, and reports earlier this month said the deal was nearing approval. Roku founder Anthony Wood will join Fox's board and co-lead a new division, Fox Digital Platforms, which oversees Roku, Tubi, Fox One and other digital brands. Fox says the combined company is the third-largest television business in the US by viewership and that Roku will remain an open platform for all content partners."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Whoever controls the home screen of a streaming device decides what viewers see first, which is valuable to advertisers and to content providers. Fox expects Roku's audience to improve its advertising targeting and reduce reliance on traditional TV distribution. Engadget notes that it is not yet clear what the change means for Roku owners and that the concern is less about services being removed than about what gets promoted on the home screen. Fox's pledge of an open platform is a statement of intent, not a binding rule, and the details of how Roku's recommendations will work were not given in the coverage."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Any change to home-screen placement, data sharing between Fox and Roku, and whether other platform owners respond with similar deals."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/06/fox-completes-its-22b-acquisition-of-roku/"
+    },
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2309307/fox-wraps-up-its-dollar22-billion-roku-deal/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-07-n4",
+   "story_key": "ast-spacemobile-blacklift-rocket",
+   "title": "AST SpaceMobile plans its own medium-lift rocket, backed by a $1.3 billion Firefly engine deal",
+   "category": "Space Industry",
+   "published": "2026-11-06T13:20:00-05:00",
+   "tldr": "The direct-to-phone satellite company says it will build Blacklift, a 20-ton-class rocket, and has committed $1.3 billion to Firefly for engines, a license and engineering support.",
+   "why_selected": "A satellite operator moving into rocket building shows how tight launch capacity has become.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "AST SpaceMobile, a Texas-based public company, builds very large satellites meant to connect directly to ordinary mobile phones. Such satellites need many launches, and Ars Technica reports that the company has had trouble finding rides to space. Firefly Aerospace builds rockets and engines, including the Miranda engine used on its Eclipse rocket."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday AST announced Blacklift, a medium-lift rocket able to carry 20 metric tons to low-Earth orbit, with commercial launches starting in late 2028. According to Ars Technica, AST signed an agreement with Firefly for engines for the first three Blacklift rockets, engineering services over three years, and a perpetual license to manufacture the Miranda and vacuum-variant Vira engines. Nine Miranda engines would power the first stage. AST committed $1.3 billion: $800 million for the license, $250 million for 27 Miranda and nine Vira engines, and $250 million for engineering support. Firefly's newsroom lists a rocket engine deal valued at more than $1.3 billion dated November 6."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Ars Technica argues that the 2028 timeline is far out of line with history. SpaceX's Falcon 9 took 4.7 years from announcement to orbit, and Vulcan took 8.7 years. Of the other US medium and heavy rockets announced since 2015, Ars says only Vulcan has reached orbit, and it puts typical development at five to nine years. Owning engines could save a year or two, in the outlet's estimate, but not the testing and regulatory work. The article also frames the plan as a sign that large constellation operators must secure launch capacity years ahead."
+    },
+    {
+     "heading": "What to watch",
+     "body": "First test firings of the Miranda engine, and whether the 2028 date holds."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/space/2026/11/ast-spacemobile-is-so-desperate-for-launch-theyre-building-their-own-rocket/"
+    },
+    {
+     "name": "Firefly Aerospace newsroom (headline)",
+     "url": "https://www.fireflyspace.com/news"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2610.41528",
+   "title": "FaultScope: A software package for fast error attribution in quantum error correction",
+   "authors": [
+    "Yuguo Shao",
+    "Zhenyu Chen",
+    "Ningfeng Wang",
+    "Song Cheng",
+    "Zhaohui Wei",
+    "Zi-Wen Liu",
+    "Zhengwei Liu"
+   ],
+   "affiliations": [
+    "Yau Mathematical Sciences Center",
+    "Tsinghua University; Beijing Institute of Mathematical Sciences and Applications; Department of Computer Science and Technology",
+    "Tsinghua University"
+   ],
+   "announced": "2026-11-01T20:00:00-05:00",
+   "primary_tag": "Quantum computing",
+   "tags": [
+    "Quantum computing"
+   ],
+   "tldr": "FaultScope is an open-source simulator that estimates how much each noisy component contributes to logical errors in quantum error correction, at under 1% extra runtime in tests.",
+   "why_selected": "A practical tool for finding which hardware errors matter most when building fault-tolerant quantum computers.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Quantum computers need error correction, which spreads one logical qubit over many physical ones. Designers estimate its quality by simulating circuits on classical computers and measuring the logical error rate. That single number does not show which noisy gates or qubits are responsible for failures, which makes it hard to decide where to improve hardware."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Fast simulators such as Stim sample many runs of an error-correction circuit and decode them. They report the overall failure rate. Frequency alone is misleading: a frequent error may be corrected, while a rarer one may fool the decoder into a wrong fix. Earlier work introduced an attribution scheme based on derivatives of the logical error rate, but it needed an efficient implementation."
+    },
+    {
+     "heading": "Key idea",
+     "body": "For each possible error event the paper estimates a sensitivity: the derivative of the logical error rate with respect to that event's probability. Equivalently, it is the chance of logical failure when the event occurs minus the chance when it does not. The estimate uses a likelihood-score trick on the same sampled and decoded runs, so the decoder is never modified or differentiated. Results can be grouped by qubit, gate or round to give a hotspot map. The core is written in Rust with a Python interface and supports forward simulation of Clifford circuits and direct sampling from detector error models."
+    },
+    {
+     "heading": "Results",
+     "body": "On repetition codes with 7 to 2047 error locations and 100,000 shots, computing all sensitivities added 0.33% to 0.97% to runtime. Across six CPU simulators on random Clifford circuits and surface codes with 1,000,000 shots, FaultScope had the lowest median runtime at every size. For 1024-qubit, 64-layer random circuits it was 1.70 times faster than Stim, and it was the only one to finish a distance-100 surface code."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Cheaply locating noise hotspots can guide limited engineering effort toward the components that most reduce logical errors. The main caveat, stated by the authors, is that at low logical error rates a fixed shot budget may be too small to separate the sensitivities needed to choose between interventions."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.41528"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 2
+   }
+  }
+ ]
+}

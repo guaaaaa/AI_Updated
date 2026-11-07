@@ -2,15 +2,27 @@
  "week": "2026-W45",
  "start": "2026-11-02",
  "end": "2026-11-07",
- "complete": false,
- "digests": 3,
+ "complete": true,
+ "digests": 4,
  "papers": [],
  "stories": [
+  {
+   "title": "Everything new in iOS 27.3 beta 1 so far",
+   "outlets": 9,
+   "date": "2026-11-03",
+   "covered": null
+  },
   {
    "title": "Shop fridges and freezers across Europe hit by fresh suspected cyber-attack",
    "outlets": 8,
    "date": "2026-11-02",
    "covered": null
+  },
+  {
+   "title": "Blue Origin delays New Glenn rocket launch into January, FT reports",
+   "outlets": 5,
+   "date": "2026-11-05",
+   "covered": "2026-11-06-n2"
   },
   {
    "title": "15 Early Black Friday Deals That’ll Get You an iPhone, Google Pixel or Samsung Smartphone for Hundreds Off",
@@ -19,22 +31,10 @@
    "covered": null
   },
   {
-   "title": "Blue Origin delays New Glenn rocket launch into January, FT reports",
-   "outlets": 4,
-   "date": "2026-11-05",
-   "covered": "2026-11-06-n2"
-  },
-  {
    "title": "Binance says fake job interview led to $6.3 billion crypto heist",
    "outlets": 3,
    "date": "2026-11-03",
    "covered": "2026-11-04-n3"
-  },
-  {
-   "title": "Everything new in iOS 27.3 beta 1 so far",
-   "outlets": 3,
-   "date": "2026-11-03",
-   "covered": null
   },
   {
    "title": "With iOS 27.3, Apple will start checking iCloud public links for ‘harmful content’",
@@ -43,21 +43,21 @@
    "covered": null
   },
   {
-   "title": "New York's Queens Public Library battles ransomware crims: Wi-Fi, checkouts, and website go dark",
+   "title": "Chainalysis warns all users hit in cyber breach involving ‘agentic’ techniques",
    "outlets": 3,
    "date": "2026-11-05",
-   "covered": null
+   "covered": "2026-11-07-n1"
   },
   {
-   "title": "The New York Times is in talks to buy Letterboxd for around $330 million",
+   "title": "New York's Queens Public Library battles ransomware crims: Wi-Fi, checkouts, and website go dark",
    "outlets": 3,
    "date": "2026-11-05",
    "covered": null
   }
  ],
  "featured": {
-  "news": 11,
-  "papers": 1
+  "news": 15,
+  "papers": 2
  },
  "items": [
   {
@@ -131,6 +131,36 @@
    "date": "2026-11-06",
    "type": "paper",
    "title": "Beyond Sensitive APIs: Detecting Access Control Flaws at Sensitive Callsites in Android Firmware"
+  },
+  {
+   "id": "2026-11-07-n1",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "Chainalysis says hackers obtained credentials and live tokens for all of its users"
+  },
+  {
+   "id": "2026-11-07-n2",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "DigiCert says a 16-month exposure of an internal system let an outsider read customer identity documents"
+  },
+  {
+   "id": "2026-11-07-n3",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "Fox completes its $22 billion acquisition of Roku, five months after announcing it"
+  },
+  {
+   "id": "2026-11-07-n4",
+   "date": "2026-11-07",
+   "type": "news",
+   "title": "AST SpaceMobile plans its own medium-lift rocket, backed by a $1.3 billion Firefly engine deal"
+  },
+  {
+   "id": "2610.41528",
+   "date": "2026-11-07",
+   "type": "paper",
+   "title": "FaultScope: A software package for fast error attribution in quantum error correction"
   }
  ]
 }
