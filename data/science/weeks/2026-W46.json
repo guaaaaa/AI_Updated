@@ -1,0 +1,45 @@
+{
+ "week": "2026-W46",
+ "start": "2026-11-09",
+ "end": "2026-11-14",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [],
+ "featured": {
+  "news": 2,
+  "papers": 3
+ },
+ "items": [
+  {
+   "id": "2026-11-09-n1",
+   "date": "2026-11-09",
+   "type": "news",
+   "title": "NASA commits to PROMISE, a nuclear-powered rover built from Mars spares, for the Moon's south pole"
+  },
+  {
+   "id": "2026-11-09-n2",
+   "date": "2026-11-09",
+   "type": "news",
+   "title": "Berkeley Earth says 2026 is very likely the hottest year on record as COP31 opens"
+  },
+  {
+   "id": "doi-10-1126-science-aed4270",
+   "date": "2026-11-09",
+   "type": "paper",
+   "title": "Glacial abrupt transitions in ocean circulation were much slower than ice-core records imply"
+  },
+  {
+   "id": "doi-10-1126-science-aeh7074",
+   "date": "2026-11-09",
+   "type": "paper",
+   "title": "Stacked porous NiTi structure with low cost and ultrahigh fatigue life for elastocaloric cooling"
+  },
+  {
+   "id": "doi-10-1126-science-aeg7301",
+   "date": "2026-11-09",
+   "type": "paper",
+   "title": "Seafloor geodesy delineates fast megathrust relocking after the giant 2011 Tohoku earthquake"
+  }
+ ]
+}

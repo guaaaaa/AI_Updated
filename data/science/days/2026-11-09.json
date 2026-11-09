@@ -1,0 +1,258 @@
+{
+ "date": "2026-11-09",
+ "edition": "weekday",
+ "generated_at": "2026-11-09T13:27:42+00:00",
+ "summary": "NASA commits to a nuclear-powered Moon rover built from Mars spares, forecasters say 2026 will be the hottest year, and three papers on ice-age ocean currents, solid-state cooling and rebuilt earthquake faults.",
+ "news": [
+  {
+   "id": "2026-11-09-n1",
+   "story_key": "nasa-promise-lunar-rover",
+   "title": "NASA commits to PROMISE, a nuclear-powered rover built from Mars spares, for the Moon's south pole",
+   "category": "Space & Astronomy",
+   "published": "2026-11-07T17:47:00-05:00",
+   "tldr": "NASA is building PROMISE, a six-wheeled, nuclear-powered rover assembled partly from Curiosity and Perseverance spare parts, to scout ice and resources near the Moon's south pole, with a launch targeted for late 2028.",
+   "why_selected": "A concrete mission milestone that shows how NASA plans to find out whether the lunar south pole has usable ice before astronauts rely on it.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "NASA wants a sustained presence on the Moon's south pole, which it calls the Moon Base. Permanently shadowed regions there are thought to hold ice, a possible source of water and fuel, but no one has measured how much is accessible or what else is mixed in. Landing sites, power systems and future infrastructure all depend on that survey. NASA announced the latest step on Saturday at the MAX POWER aerospace expo at Kennedy Space Center in Florida."
+    },
+    {
+     "heading": "What happened",
+     "body": "NASA said it is moving ahead with PROMISE, the Polar Rover for Observation, Mapping, and In-Situ Exploration. The six-wheeled rover will characterize the surface and subsurface, assess resource potential and supply data for choosing landing sites and siting infrastructure. NASA's Jet Propulsion Laboratory will manage the mission and build the rover from spare flight components and engineering test models made for the Curiosity and Perseverance Mars rovers, a choice NASA says cuts cost and shortens the schedule. It will be nuclear powered, so it can work through the long lunar night and inside shadowed regions. Instruments include a drill that can take regolith, the loose lunar dust, from about 1 meter below the surface, spectrometers for chemical composition, temperature and radiation sensors, and cameras. NASA awarded Blue Origin a $94 million base contract, with an option worth another $140 million, to deliver the rover with its Mark 1 lander. NASA targets a late 2028 launch and an 18-month mission. The same announcement named eight companies for the next phase of its commercial lunar delivery program."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Drilling to a meter and measuring composition would turn \"probably ice\" into data that mission planners can use. Reusing proven Mars hardware and operating methods is a way to reach the surface faster than designing a new rover."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the 2028 date holds, given that it depends on Blue Origin's lander, which NASA says will carry the rover. Also the first landing-site choices and the first results from the drill."
+    }
+   ],
+   "sources": [
+    {
+     "name": "NASA",
+     "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
+    },
+    {
+     "name": "ScienceDaily",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261108233054.htm"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-n2",
+   "story_key": "record-heat-2026-cop31-forecast",
+   "title": "Berkeley Earth says 2026 is very likely the hottest year on record as COP31 opens",
+   "category": "Climate & Earth",
+   "published": "2026-11-09T02:30:00-05:00",
+   "tldr": "Berkeley Earth is 95% confident 2026 will beat 2024's record, while the WMO's more cautious update puts it among the four warmest years, with a strengthening El Niño pushing 2027 higher.",
+   "why_selected": "Two respected assessments disagree on the ranking but agree on the direction, and both land on the day the UN climate summit opens.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Global temperature records are tracked by several groups using slightly different methods, so rankings can differ. The previous record year is 2024. Climate change from carbon dioxide and other greenhouse gases sets the long-term trend, while El Niño, a natural Pacific pattern, adds a temporary boost to the global average."
+    },
+    {
+     "heading": "What happened",
+     "body": "Berkeley Earth, an independent US research group, told BBC News it is 95% confident that 2026 will surpass 2024, even with two months left. Its researcher Robert Rohde said a run of record years is what to expect as warming progresses. The EU's Copernicus service confirmed October as the hottest on record. The World Meteorological Organization published a more cautious update: it expects 2026 to be among the four warmest years. Its data cover January to September, when global temperature was about 1.47 °C above the pre-industrial average, compared with 1.55 °C for 2024, and it does not yet reflect El Niño's latest effects. The WMO says El Niño has been intensifying since August and is expected to be the strongest on record by December. It also reports record sea level, an ocean on track for a tenth successive year of record warmth, and the highest Earth energy imbalance since monitoring began."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "WMO Secretary-General Celeste Saulo stressed that El Niño does not add new heat to the planet but releases heat from an ocean that is already the warmest measured. About 90% of the excess heat trapped by greenhouse gases goes into the ocean, so the stored heat keeps feeding extremes. BBC reports the world is on track for 2.8 °C of warming by 2100, well above the Paris goal of 1.5 °C."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The final 2026 numbers from each dataset, which will show whether the WMO ranking moves up, the WMO's full report in March 2027, and what negotiators in Antalya agree on adaptation and emissions."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/c6pvgg7mdvdvo"
+    },
+    {
+     "name": "World Meteorological Organization",
+     "url": "https://wmo.int/news/media-centre/state-of-climate-2026-gives-new-meaning-phrase-charts"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-aed4270",
+   "title": "Glacial abrupt transitions in ocean circulation were much slower than ice-core records imply",
+   "authors": [
+    "Xiyu Dong",
+    "Xu Zhang",
+    "Yuchen Sun",
+    "Gayatri Kathayat",
+    "Youwei Li",
+    "Sune O. Rasmussen",
+    "Anders Svensson",
+    "Christo Buizert",
+    "Ashish Sinha",
+    "Stephen Barker",
+    "Carlos Pérez-Mejías",
+    "Gregor Knorr",
+    "Rishui Chen",
+    "Kan Zhao",
+    "Wenjing Du",
+    "Haiwei Zhang",
+    "Hanying Li",
+    "Andrea Columbu",
+    "Liangcheng Tan",
+    "Yuao Zhang",
+    "Youfeng Ning",
+    "Martin Werner",
+    "Yongjin Wang",
+    "R. Lawrence Edwards",
+    "Hai Cheng"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-05T00:00:00-05:00",
+   "primary_tag": "Climate science",
+   "tags": [
+    "Climate science",
+    "Earth science"
+   ],
+   "tldr": "Asian cave records show ice-age abrupt warmings took over a century, far slower than Greenland ice cores imply, because Greenland captured a fast atmospheric change, not the ocean's pace.",
+   "why_selected": "It changes how fast the Atlantic overturning circulation is thought to have switched in the past, which matters for judging how abruptly it could change in the future.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "During the last ice age, the climate repeatedly jumped between cold and mild phases known as Dansgaard-Oeschger events. These are thought to reflect rapid shifts in the Atlantic Meridional Overturning Circulation, the ocean conveyor that carries heat northward. How fast the shifts really happened is central to how we think about tipping points."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Greenland ice cores have long been the reference. Their oxygen-isotope records, a chemical proxy for temperature, show warming transitions within a few decades, or even just over 10 years. That made the events look startlingly abrupt, and the ocean circulation was assumed to have flipped on the same timescale."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors used a different archive: speleothems, the mineral deposits that grow in caves, with precisely dated oxygen-isotope records from the Asian monsoon region. Those records track the same warmings but at a different place and through different physics. Combined with isotope modeling, they suggest that the Greenland signal mainly captures a rapid atmospheric reorganization triggered by the first retreat of sea ice in the northeastern North Atlantic. Think of a light switch versus a dimmer: the air over Greenland flips quickly once the ice cover opens, while the ocean circulation and the temperature balance between the hemispheres adjust gradually behind it."
+    },
+    {
+     "heading": "Results",
+     "body": "In the monsoon records, the same DO warmings unfolded over more than a century, not decades. The modeling indicates the parallel recovery of the overturning circulation and the hemispheric thermal adjustment proceeded much more slowly than the rapid North Greenland isotope shifts would imply."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result refines what \"abrupt\" means for natural ocean-circulation transitions, and it warns against reading one ice-core record as a direct clock for the ocean. The caveat is that this is a reinterpretation based on proxies and models, and the abstract does not say how the findings apply to future change."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aed4270",
+    "doi": "https://doi.org/10.1126/science.aed4270"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aeh7074",
+   "title": "Stacked porous NiTi structure with low cost and ultrahigh fatigue life for elastocaloric cooling",
+   "authors": [
+    "Changfeng Su",
+    "Yang Li",
+    "Zhongzheng Deng",
+    "Shiyu Zhong",
+    "Jiyuan Hu",
+    "Xueshi Li",
+    "Qiao Li Qingping Sun"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-05T00:00:00-05:00",
+   "primary_tag": "Condensed matter & materials",
+   "tags": [
+    "Condensed matter & materials"
+   ],
+   "tldr": "Stamping honeycomb chips from nitinol sheets and stacking them yields a cooling structure that survived more than 100 million cycles and delivers 3850 watts per kilogram, at about a tenth of the usual fabrication cost.",
+   "why_selected": "It tackles the cost and fatigue barriers that have kept solid-state elastocaloric refrigeration from commercial use.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Elastocaloric cooling uses shape memory alloys as refrigerants. When such an alloy is squeezed and released, it heats up and cools down, so it can pump heat without the gases used in conventional refrigerators, making it energy efficient and eco-friendly. The obstacle has been making the metal into a form that lasts and moves heat well, at a reasonable cost."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Shape memory alloys have been fabricated into structures before, but the abstract states that existing structures suffer buckling and splitting failures, and that cost-effective fabrication of fatigue-resistant, heat-transfer-enhanced forms remained a key obstacle to commercialization."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team introduces a \"stamping and stacking\" method. Honeycomb-like chips are stamped out of thin sheets of nitinol, a nickel-titanium shape memory alloy, and the chips are stacked into a layered tubular structure. The porous honeycomb pattern increases the surface area available for heat exchange, and building the tube from many thin layers avoids the buckling and splitting seen in earlier designs. A useful comparison is a stack of perforated washers instead of a single solid rod: the load is shared across layers, and fluid can pass through the holes."
+    },
+    {
+     "heading": "Results",
+     "body": "The stacked structure endured more than 10 to the power 8 compression cycles, that is, over 100 million. It delivered a specific cooling power of 3850 watts per kilogram. According to the authors, the stamping and stacking method reduces fabrication costs by one order of magnitude compared with existing approaches, which they say enables mass production of elastocaloric refrigerant structures."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fatigue life and cost are exactly the gaps between a laboratory demonstration and a product, so a tenfold cost cut and a long life are meaningful. The caveat is that the abstract reports component-level performance; a full refrigerator's efficiency and temperature span are not covered here."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aeh7074",
+    "doi": "https://doi.org/10.1126/science.aeh7074"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aeg7301",
+   "title": "Seafloor geodesy delineates fast megathrust relocking after the giant 2011 Tohoku earthquake",
+   "authors": [
+    "Fumiaki Tomita",
+    "Tianhaozhe Sun",
+    "Motoyuki Kido",
+    "Takeshi Iinuma",
+    "Naoki Uchida",
+    "Yusaku Ohta",
+    "Ryota Hino",
+    "Jiangheng He",
+    "Kelin Wang"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-05T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science"
+   ],
+   "tldr": "Fourteen years of seafloor measurements show the fault that produced Japan's 2011 magnitude 9 Tohoku earthquake has already returned to a locked state similar to before the quake.",
+   "why_selected": "Knowing how quickly a great earthquake fault reloads helps judge hazard in the years after a giant rupture, and it applies to other subduction zones.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Subduction megathrusts, where one tectonic plate dives beneath another, produce the largest earthquakes. Between quakes the interface is locked and strain builds up. After a great earthquake, how and when this locking recovers is central to understanding earthquake-cycle physics and future hazards."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Measurements on land can follow ground motion after an earthquake, but they sit far from the offshore fault. Seafloor geodesy, which measures the position of the ocean floor above the fault, can look at the relevant region more directly."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors collected 14 years of postseismic seafloor geodetic observations after the 2011 magnitude 9 Tohoku earthquake and combined them with onshore geodetic data, analyses of repeating earthquakes, and numerical modeling. Repeating earthquakes are small quakes that recur on the same patch of fault and act as markers of slow fault slip. Together, these datasets let the team separate several overlapping processes: the fault relocking, afterslip, which is gradual slip on the megathrust after the main shock, and stress relaxation in the viscoelastic upper mantle, which slowly flows like very thick syrup."
+    },
+    {
+     "heading": "Results",
+     "body": "The data show that recovery of locking is interrupted by afterslip on the megathrust and accompanied by stress relaxation in the mantle. Despite the ongoing relaxation, the megathrust has already arrived at a locking state today similar to that before the earthquake."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A fault that is again locked is accumulating strain, so this tells hazard researchers that reloading begins quickly after a giant rupture. The authors say the knowledge aids understanding of megathrust cycles at other subduction zones. The abstract does not say how this changes the timing of any future quake."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aeg7301",
+    "doi": "https://doi.org/10.1126/science.aeg7301"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

@@ -1,5 +1,66 @@
 [
  {
+  "id": "2026-11-09-n1",
+  "date": "2026-11-09",
+  "type": "news",
+  "title": "NASA commits to PROMISE, a nuclear-powered rover built from Mars spares, for the Moon's south pole",
+  "tldr": "NASA is building PROMISE, a six-wheeled, nuclear-powered rover assembled partly from Curiosity and Perseverance spare parts, to scout ice and resources near the Moon's south pole, with a launch targeted for late 2028.",
+  "category": "Space & Astronomy",
+  "byline": "NASA, ScienceDaily"
+ },
+ {
+  "id": "2026-11-09-n2",
+  "date": "2026-11-09",
+  "type": "news",
+  "title": "Berkeley Earth says 2026 is very likely the hottest year on record as COP31 opens",
+  "tldr": "Berkeley Earth is 95% confident 2026 will beat 2024's record, while the WMO's more cautious update puts it among the four warmest years, with a strengthening El Niño pushing 2027 higher.",
+  "category": "Climate & Earth",
+  "byline": "BBC News, World Meteorological Organization"
+ },
+ {
+  "id": "doi-10-1126-science-aed4270",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "Glacial abrupt transitions in ocean circulation were much slower than ice-core records imply",
+  "tldr": "Asian cave records show ice-age abrupt warmings took over a century, far slower than Greenland ice cores imply, because Greenland captured a fast atmospheric change, not the ocean's pace.",
+  "primary_tag": "Climate science",
+  "tags": [
+   "Climate science",
+   "Earth science"
+  ],
+  "byline": "Xiyu Dong, Xu Zhang, Yuchen Sun et al.",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-science-aeh7074",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "Stacked porous NiTi structure with low cost and ultrahigh fatigue life for elastocaloric cooling",
+  "tldr": "Stamping honeycomb chips from nitinol sheets and stacking them yields a cooling structure that survived more than 100 million cycles and delivers 3850 watts per kilogram, at about a tenth of the usual fabrication cost.",
+  "primary_tag": "Condensed matter & materials",
+  "tags": [
+   "Condensed matter & materials"
+  ],
+  "byline": "Changfeng Su, Yang Li, Zhongzheng Deng et al.",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-science-aeg7301",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "Seafloor geodesy delineates fast megathrust relocking after the giant 2011 Tohoku earthquake",
+  "tldr": "Fourteen years of seafloor measurements show the fault that produced Japan's 2011 magnitude 9 Tohoku earthquake has already returned to a locked state similar to before the quake.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science"
+  ],
+  "byline": "Fumiaki Tomita, Tianhaozhe Sun, Motoyuki Kido et al.",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
   "id": "2026-11-07-n1",
   "date": "2026-11-07",
   "type": "news",
