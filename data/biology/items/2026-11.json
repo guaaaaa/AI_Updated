@@ -1,5 +1,29 @@
 [
  {
+  "id": "2026-11-09-n1",
+  "date": "2026-11-09",
+  "type": "news",
+  "title": "Lp(a)-lowering drug pelacarsen cuts the target by 78% but not heart attacks or strokes, in a large phase 3 trial",
+  "tldr": "In Lp(a)HORIZON, pelacarsen lowered lipoprotein(a) by about 78% in over 8,300 people with heart disease, yet heart attacks, strokes and cardiovascular deaths occurred at the same rate as on placebo.",
+  "category": "Clinical Research",
+  "byline": "American Heart Association, Healio, American College of Cardiology"
+ },
+ {
+  "id": "doi-10-1056-nejmoa2606634",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "Discontinuing Statins in Older Adults without Cardiovascular Disease",
+  "tldr": "In a randomized trial of about 1,880 adults over 70 without heart disease, stopping statins was statistically noninferior over two years, but cardiovascular events were more frequent over longer follow-up.",
+  "primary_tag": "Cardiovascular",
+  "tags": [
+   "Cardiovascular",
+   "Epidemiology"
+  ],
+  "byline": "Nicolas Rodondi Moa Lina Haller Julia Bianca Bardoczi Luise Adam Manuel Raphael Blum Baris Gencer Tamar Itach Julian Simon Flury Lara Aurora Brockhus Philipp Stefan Aebi Martin Feller Claudia Gregoriano Roxane de la Harpe Jacobijn Gussekloo Nathalie Schwab Pierre Poulizac Simon Pieter Mooijaart Jürg-Hans Beer Stéphanie Baggio Sebastian Carballo Fabrice Bonnet Dina Zekry Luca Gabutti Maria Monika Wertli Drahomir Aujesky Douglas Charles Bauer Rita Fran Redberg Philip Greenland Rosalinde Klazina Elisabeth Poortvliet Philipp Schuetz Marie Méan Alan Gary Haynes and Sven Trellethe STREAM Investigators*",
+  "hf": null,
+  "venue": "The New England Journal of Medicine"
+ },
+ {
   "id": "2026-11-07-n1",
   "date": "2026-11-07",
   "type": "news",

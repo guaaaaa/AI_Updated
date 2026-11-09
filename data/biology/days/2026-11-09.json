@@ -1,0 +1,97 @@
+{
+ "date": "2026-11-09",
+ "edition": "weekday",
+ "generated_at": "2026-11-09T13:54:32+00:00",
+ "summary": "A drug that cut Lp(a) by 78% did not reduce heart attacks, and a trial finds stopping statins in older adults carried a small cost.",
+ "news": [
+  {
+   "id": "2026-11-09-n1",
+   "story_key": "pelacarsen-lpa-horizon-neutral-aha",
+   "title": "Lp(a)-lowering drug pelacarsen cuts the target by 78% but not heart attacks or strokes, in a large phase 3 trial",
+   "category": "Clinical Research",
+   "published": "2026-11-07T09:50:00-05:00",
+   "tldr": "In Lp(a)HORIZON, pelacarsen lowered lipoprotein(a) by about 78% in over 8,300 people with heart disease, yet heart attacks, strokes and cardiovascular deaths occurred at the same rate as on placebo.",
+   "why_selected": "Full results of the first outcomes trial of an Lp(a)-targeting drug, published in NEJM and presented at the American Heart Association meeting, reshape expectations for a whole drug class.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Lipoprotein(a), written Lp(a), is a cholesterol-carrying particle similar to LDL, the \"bad\" cholesterol. Its level is largely set by genes. High levels are associated with plaque build-up in arteries, and about one in five people worldwide has a level above 70 mg/dL. Statins do not lower Lp(a) much, so drugmakers developed new medicines aimed at it. Pelacarsen, from Ionis and Novartis, is an antisense oligonucleotide, a short strand of genetic material that reduces production of the protein Lp(a) is built around. It was the first of these drugs to report a cardiovascular outcomes trial."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Lp(a)HORIZON trial randomly assigned 8,350 adults with established cardiovascular disease and Lp(a) of at least 70 mg/dL to monthly 80 mg pelacarsen injections or placebo. Results were presented on November 7 at the American Heart Association Scientific Sessions and published in the New England Journal of Medicine. Lp(a) fell from a median of 233.4 nmol/L to 64.4 nmol/L at 12 months, a reduction of about 78%. Over a median follow-up of 4.7 years, the primary endpoint (cardiovascular death, nonfatal heart attack, nonfatal stroke or urgent revascularization) occurred in 12.3% on pelacarsen and 12.1% on placebo (hazard ratio 1.02; 95% confidence interval 0.90 to 1.15). Results were the same in people with Lp(a) of 90 mg/dL or higher."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The drug did what it was designed to do in the blood, yet outcomes did not change, even in analyses restricted to people who stayed on treatment. A related neutral result came from the ZEUS trial, in which Novo Nordisk's ziltivekimab, an antibody against the inflammation signal interleukin-6, showed a hazard ratio of 0.99 for major cardiovascular events in 6,376 people, according to the company's topline announcement. Together the trials show that a strong blood marker of risk is not always a lever that improves outcomes. Lead investigator Steven Nissen cautioned that one trial does not close the question: it tested one drug in people who already had heart disease and whose other risk factors were well treated."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Trials of other Lp(a)-lowering drugs, including small interfering RNA treatments and studies in people without existing heart disease, are still due to report."
+    }
+   ],
+   "sources": [
+    {
+     "name": "American Heart Association",
+     "url": "https://newsroom.heart.org/news/lp-a-horizon-trial-lp-a-fell-by-78-but-cardiovascular-outcomes-unexpectedly-neutral"
+    },
+    {
+     "name": "Healio",
+     "url": "https://www.healio.com/news/cardiology/20261107/pelacarsen-no-better-than-placebo-in-patients-with-high-lipoproteina-heart-disease"
+    },
+    {
+     "name": "American College of Cardiology",
+     "url": "https://www.acc.org/Latest-in-Cardiology/Articles/2026/11/06/14/37/sat-10am-lpa-aha-2026"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2606634",
+   "title": "Discontinuing Statins in Older Adults without Cardiovascular Disease",
+   "authors": [
+    "Nicolas Rodondi Moa Lina Haller Julia Bianca Bardoczi Luise Adam Manuel Raphael Blum Baris Gencer Tamar Itach Julian Simon Flury Lara Aurora Brockhus Philipp Stefan Aebi Martin Feller Claudia Gregoriano Roxane de la Harpe Jacobijn Gussekloo Nathalie Schwab Pierre Poulizac Simon Pieter Mooijaart Jürg-Hans Beer Stéphanie Baggio Sebastian Carballo Fabrice Bonnet Dina Zekry Luca Gabutti Maria Monika Wertli Drahomir Aujesky Douglas Charles Bauer Rita Fran Redberg Philip Greenland Rosalinde Klazina Elisabeth Poortvliet Philipp Schuetz Marie Méan Alan Gary Haynes and Sven Trellethe STREAM Investigators*"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-07T00:00:00-05:00",
+   "primary_tag": "Cardiovascular",
+   "tags": [
+    "Cardiovascular",
+    "Epidemiology"
+   ],
+   "tldr": "In a randomized trial of about 1,880 adults over 70 without heart disease, stopping statins was statistically noninferior over two years, but cardiovascular events were more frequent over longer follow-up.",
+   "why_selected": "A practical deprescribing question many older adults and doctors face, answered by a randomized trial in NEJM.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Millions of older adults take a statin to prevent a first heart attack or stroke. The evidence that statins help people past age 70, especially those with several chronic illnesses, is thinner than for younger adults. Patients and general practitioners often name cholesterol drugs as candidates to stop, and the open question is whether stopping is safe."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Guidelines disagree. Some recommend continuing statins in older adults with chronic conditions; others suggest considering stopping in selected cases, such as limited life expectancy. Trials of stopping statins in healthier older adults with several conditions have been scarce."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The STREAM trial, led by Nicolas Rodondi of the University of Bern, randomized adults aged 70 or older to stop or continue the statin they took for primary prevention (no previous heart disease). Participants had at least two chronic conditions. The design was a noninferiority trial: the question was not whether stopping is better, but whether it is not worse by more than a preset margin, 5.2 weeks of event-free survival over two years. The primary outcome was the first nonfatal heart attack, nonfatal ischemic stroke or death from any cause."
+    },
+    {
+     "heading": "Results",
+     "body": "Among nearly 1,900 participants (mean age 77.5, 46.9% women), mean event-free survival at two years was 96.5 weeks with discontinuation and 98.5 weeks with continuation, a difference of about 2 weeks, inside the margin. Over a median follow-up of 103 weeks, 12.7% of the discontinuation group and 9.2% of the continuation group had a primary-outcome event. At up to four years, heart attack occurred in 1.6% versus 0.6%, ischemic stroke in 2.2% versus 0.8%, and death in 9.8% versus 8%. Quality of life, pain, falls and sarcopenia risk did not differ."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors describe stopping as generally safe, yet commentators noted events did accumulate more with stopping, and about one extra event occurred per 40 people over two years. The result informs shared decisions between patient and clinician rather than a blanket rule, and it applies only to people without established heart disease."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2606634",
+    "doi": "https://doi.org/10.1056/NEJMoa2606634"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

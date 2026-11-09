@@ -1,0 +1,34 @@
+{
+ "week": "2026-W46",
+ "start": "2026-11-09",
+ "end": "2026-11-14",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [
+  {
+   "title": "New evidence for ancient cannabis use",
+   "outlets": 3,
+   "date": "2026-11-06",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 1,
+  "papers": 1
+ },
+ "items": [
+  {
+   "id": "2026-11-09-n1",
+   "date": "2026-11-09",
+   "type": "news",
+   "title": "Lp(a)-lowering drug pelacarsen cuts the target by 78% but not heart attacks or strokes, in a large phase 3 trial"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2606634",
+   "date": "2026-11-09",
+   "type": "paper",
+   "title": "Discontinuing Statins in Older Adults without Cardiovascular Disease"
+  }
+ ]
+}

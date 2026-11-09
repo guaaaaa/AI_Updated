@@ -5,8 +5,24 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 09 Nov 2026 13:27:42 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 13:54:32 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Lp(a)-lowering drug pelacarsen cuts the target by 78% but not heart attacks or strokes, in a large phase 3 trial</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-09/2026-11-09-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-09/2026-11-09-n1</guid>
+    <pubDate>Mon, 09 Nov 2026 13:54:32 +0000</pubDate>
+    <category>Biology / Clinical Research</category>
+    <description>In Lp(a)HORIZON, pelacarsen lowered lipoprotein(a) by about 78% in over 8,300 people with heart disease, yet heart attacks, strokes and cardiovascular deaths occurred at the same rate as on placebo. (American Heart Association, Healio, American College of Cardiology)</description>
+  </item>
+  <item>
+    <title>Discontinuing Statins in Older Adults without Cardiovascular Disease</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-09/doi-10-1056-nejmoa2606634</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-09/doi-10-1056-nejmoa2606634</guid>
+    <pubDate>Mon, 09 Nov 2026 13:54:32 +0000</pubDate>
+    <category>Biology / Cardiovascular</category>
+    <description>In a randomized trial of about 1,880 adults over 70 without heart disease, stopping statins was statistically noninferior over two years, but cardiovascular events were more frequent over longer follow-up. (Nicolas Rodondi Moa Lina Haller Julia Bianca Bardoczi Luise Adam Manuel Raphael Blum Baris Gencer Tamar Itach Julian Simon Flury Lara Aurora Brockhus Philipp Stefan Aebi Martin Feller Claudia Gregoriano Roxane de la Harpe Jacobijn Gussekloo Nathalie Schwab Pierre Poulizac Simon Pieter Mooijaart Jürg-Hans Beer Stéphanie Baggio Sebastian Carballo Fabrice Bonnet Dina Zekry Luca Gabutti Maria Monika Wertli Drahomir Aujesky Douglas Charles Bauer Rita Fran Redberg Philip Greenland Rosalinde Klazina Elisabeth Poortvliet Philipp Schuetz Marie Méan Alan Gary Haynes and Sven Trellethe STREAM Investigators*)</description>
+  </item>
   <item>
     <title>NASA commits to PROMISE, a nuclear-powered rover built from Mars spares, for the Moon's south pole</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/2026-11-09-n1</link>
@@ -470,22 +486,6 @@
     <pubDate>Thu, 05 Nov 2026 13:53:12 +0000</pubDate>
     <category>Biology / Microbes &amp; Infectious Disease</category>
     <description>A British healthcare worker infected in DR Congo is being evacuated to the UK, the first British case of an outbreak that has passed 10,000 confirmed cases and has no approved treatment. (The Guardian, ECDC)</description>
-  </item>
-  <item>
-    <title>Comprehensive mapping of essential-gene interactions in M. tuberculosis</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-05/doi-10-1038-s41586-026-11212-0</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-05/doi-10-1038-s41586-026-11212-0</guid>
-    <pubDate>Thu, 05 Nov 2026 13:53:12 +0000</pubDate>
-    <category>Biology / Microbiology</category>
-    <description>Researchers built the largest map yet of how essential genes interact in the tuberculosis bacterium, finding nearly 6,500 interactions that could guide new drug targets and antibiotic combinations. (Isaac J. Kresse, Natalie Y. Sayegh, Vanisha Munsamy-Govender et al. · Rockefeller University)</description>
-  </item>
-  <item>
-    <title>The global geography of threats to freshwater biodiversity</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-05/doi-10-1126-science-aeb7910</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-05/doi-10-1126-science-aeb7910</guid>
-    <pubDate>Thu, 05 Nov 2026 13:53:12 +0000</pubDate>
-    <category>Biology / Evolution &amp; ecology</category>
-    <description>A global analysis of 45 threats to more than 21,000 freshwater species finds farming, dams and agricultural runoff dominate, and that freshwater species face higher threat on average than land species. (Christophe Brabant, Laura Pollock, Jonas Geldmann et al. · McGill University)</description>
   </item>
 </channel>
 </rss>
