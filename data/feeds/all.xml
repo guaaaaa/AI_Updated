@@ -5,8 +5,24 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 07 Nov 2026 13:52:57 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 11:48:18 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Congress summons Nvidia's CEO over a reported Chinese spy operation, and Nvidia's board opens an investigation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</guid>
+    <pubDate>Mon, 09 Nov 2026 11:48:18 +0000</pubDate>
+    <category>Tech / Tech Policy &amp; Antitrust</category>
+    <description>House committee chairs asked Jensen Huang to brief them on November 18 about reported Chinese spying aimed at him; on Sunday Nvidia's board opened an independent investigation. (Ars Technica, TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>SonicWall patches a firewall VPN flaw that can sidestep SAML multi-factor login and is already exploited</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n2</guid>
+    <pubDate>Mon, 09 Nov 2026 11:48:18 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>SonicWall fixed seven SonicOS flaws, including CVE-2026-19868, which can bypass SAML-enforced MFA on SSL-VPN logins and was added to CISA's catalog of exploited bugs. (SonicWall advisory (as quoted by SecurityWeek), BleepingComputer, Help Net Security)</description>
+  </item>
   <item>
     <title>Noise pollution alters the body or behavior of 80% of animal species studied, a Science analysis finds</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-07/2026-11-07-n1</link>
@@ -470,22 +486,6 @@
     <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
     <category>AI / Open Source</category>
     <description>Moonshot AI published open weights for Kimi K3.1 Pro, a natively multimodal agentic model with a one-million-token context window, post-trained from Kimi K3 with large-scale reinforcement learning. (Moonshot AI (Hugging Face model card))</description>
-  </item>
-  <item>
-    <title>IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.03424</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.03424</guid>
-    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
-    <category>AI / RSI</category>
-    <description>IdeaTaste scores LLM-written research proposals against what a field actually published later, finding models match only about 18% of the human level on ideas. (Shanshan Zhong, Chen Xu, Jingjie Ning et al. · Carnegie Mellon University, Mohamed bin Zayed University of Artificial Intelligence)</description>
-  </item>
-  <item>
-    <title>From Pixels to Actions - Towards Native Vision-Language-Action Policies</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.06918</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.06918</guid>
-    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>NEO-VLA drops the separate vision encoder from a robot policy and lets its action module read visual features from many backbone layers, beating encoder-based baselines on LIBERO. (Weichen Fan, Haiwen Diao, Penghao Wu et al. · MMLab@NTU)</description>
   </item>
 </channel>
 </rss>

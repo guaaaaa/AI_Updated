@@ -1,5 +1,23 @@
 [
  {
+  "id": "2026-11-09-n1",
+  "date": "2026-11-09",
+  "type": "news",
+  "title": "Congress summons Nvidia's CEO over a reported Chinese spy operation, and Nvidia's board opens an investigation",
+  "tldr": "House committee chairs asked Jensen Huang to brief them on November 18 about reported Chinese spying aimed at him; on Sunday Nvidia's board opened an independent investigation.",
+  "category": "Tech Policy & Antitrust",
+  "byline": "Ars Technica, TechCrunch, The Verge"
+ },
+ {
+  "id": "2026-11-09-n2",
+  "date": "2026-11-09",
+  "type": "news",
+  "title": "SonicWall patches a firewall VPN flaw that can sidestep SAML multi-factor login and is already exploited",
+  "tldr": "SonicWall fixed seven SonicOS flaws, including CVE-2026-19868, which can bypass SAML-enforced MFA on SSL-VPN logins and was added to CISA's catalog of exploited bugs.",
+  "category": "Cybersecurity",
+  "byline": "SonicWall advisory (as quoted by SecurityWeek), BleepingComputer, Help Net Security"
+ },
+ {
   "id": "2026-11-07-n1",
   "date": "2026-11-07",
   "type": "news",

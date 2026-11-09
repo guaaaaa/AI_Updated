@@ -5,8 +5,24 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Sat, 07 Nov 2026 11:45:35 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 11:48:18 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Congress summons Nvidia's CEO over a reported Chinese spy operation, and Nvidia's board opens an investigation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</guid>
+    <pubDate>Mon, 09 Nov 2026 11:48:18 +0000</pubDate>
+    <category>Tech / Tech Policy &amp; Antitrust</category>
+    <description>House committee chairs asked Jensen Huang to brief them on November 18 about reported Chinese spying aimed at him; on Sunday Nvidia's board opened an independent investigation. (Ars Technica, TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>SonicWall patches a firewall VPN flaw that can sidestep SAML multi-factor login and is already exploited</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n2</guid>
+    <pubDate>Mon, 09 Nov 2026 11:48:18 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>SonicWall fixed seven SonicOS flaws, including CVE-2026-19868, which can bypass SAML-enforced MFA on SSL-VPN logins and was added to CISA's catalog of exploited bugs. (SonicWall advisory (as quoted by SecurityWeek), BleepingComputer, Help Net Security)</description>
+  </item>
   <item>
     <title>Chainalysis says hackers obtained credentials and live tokens for all of its users</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-07/2026-11-07-n1</link>

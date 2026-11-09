@@ -1,0 +1,91 @@
+{
+ "date": "2026-11-09",
+ "edition": "weekday",
+ "generated_at": "2026-11-09T11:48:18+00:00",
+ "summary": "Congress presses Nvidia's chief executive over a reported Chinese spying operation, and SonicWall patches a VPN login flaw that attackers are already using.",
+ "news": [
+  {
+   "id": "2026-11-09-n1",
+   "story_key": "nvidia-huang-congress-espionage",
+   "title": "Congress summons Nvidia's CEO over a reported Chinese spy operation, and Nvidia's board opens an investigation",
+   "category": "Tech Policy & Antitrust",
+   "published": "2026-11-06T09:13:00-05:00",
+   "tldr": "House committee chairs asked Jensen Huang to brief them on November 18 about reported Chinese spying aimed at him; on Sunday Nvidia's board opened an independent investigation.",
+   "why_selected": "A national-security and export-control story centered on the company that supplies the chips at the heart of US-China technology competition.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Export controls limit which advanced chips US companies may sell to China, and Nvidia's supply chain has come under growing scrutiny as those rules have encouraged smuggling. Last week the New York Times reported that US intelligence officials believed Nvidia chief executive Jensen Huang had been the target of a Chinese spy operation."
+    },
+    {
+     "heading": "What happened",
+     "body": "The chairs of three House committees, on China, foreign affairs and intelligence, wrote to Huang asking him to appear at a closed-door joint briefing on November 18. They cited concerns about China's access to sensitive US technology. The reports center on Alice Huang, an executive at Megaspeed, a Singapore-based cloud company that has bought billions of dollars of Nvidia chips. A memo circulated earlier this year, according to multiple media reports, claimed China's Ministry of State Security recruited her to spy on him. Nvidia says meetings with customers are part of a CEO's job and that regional cloud customers receive no information relevant to national security. It said an internal inspection of Megaspeed in Singapore found no evidence of chips being diverted to China, according to people familiar with the matter. On Sunday, Nvidia's board announced an independent investigation, and Huang sent employees a memo saying he supports it and will cooperate fully."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Nvidia's chips are among the most export-controlled products in the world, so questions about how its executives and customers are approached by foreign intelligence reach well beyond one company. The episode also tests how closely a chip designer can monitor what happens to its products after sale: Nvidia says it conducted unannounced on-site checks at Megaspeed. Nvidia disputes the broader claims, and the underlying intelligence memo has not been made public."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Huang appears at the November 18 briefing, what the board's investigation concludes, and whether regulators revisit licenses for Nvidia's Chinese and regional cloud customers."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/tech-policy/2026/11/nvidia-ceo-jensen-huang-summoned-by-congress-over-chinese-espionage-concerns/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-n2",
+   "story_key": "sonicwall-sonicos-saml-bypass",
+   "title": "SonicWall patches a firewall VPN flaw that can sidestep SAML multi-factor login and is already exploited",
+   "category": "Cybersecurity",
+   "published": "2026-11-06T19:00:00-05:00",
+   "tldr": "SonicWall fixed seven SonicOS flaws, including CVE-2026-19868, which can bypass SAML-enforced MFA on SSL-VPN logins and was added to CISA's catalog of exploited bugs.",
+   "why_selected": "A widely deployed edge-security product with a flaw that weakens multi-factor protection and has evidence of active exploitation.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A firewall sits at the edge of a company network, and many also run an SSL-VPN, a remote-access service that lets employees log in from outside. SAML is a standard that lets that login be handed to an organization's identity provider, which can then require multi-factor authentication (MFA), a second proof of identity beyond a password. SonicWall's SonicOS is the operating system on its firewalls, and the company's remote-access appliances have been attacked repeatedly this year, according to BleepingComputer."
+    },
+    {
+     "heading": "What happened",
+     "body": "In an advisory published on November 6, SonicWall described seven vulnerabilities in SonicOS. The most serious in practice is CVE-2026-19868, rated 7.1 on the CVSS severity scale. It lets a user holding valid credentials for an alternate authentication method bypass SAML authentication controls, potentially including SAML-enforced MFA. It affects only SSL-VPN services configured to use SAML. SonicWall said it had investigated a report of potential exploitation and urged customers to upgrade. The US Cybersecurity and Infrastructure Security Agency added the flaw to its Known Exploited Vulnerabilities catalog and gave federal civilian agencies until November 20 to fix it. Affected are Gen7 versions 7.3.3-7015 and earlier and Gen8 versions 8.2.2-8015 and earlier; fixes are in 7.3.4-7013 and 8.2.3-8015, and no workarounds exist. The other six flaws include two management-interface problems rated 8.8, denial-of-service bugs and a weak password hashing issue; none is flagged as exploited."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The flaw is not an unauthenticated bypass: an attacker needs working credentials first. But stolen VPN credentials are common, and MFA is the control many organizations rely on to make them useless, as Help Net Security notes. Neither SonicWall nor CISA has published how many organizations were hit or what attackers did afterward."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether security firms publish analysis of the attacks, and whether administrators follow the advice to compare VPN logins against identity-provider logs."
+    }
+   ],
+   "sources": [
+    {
+     "name": "SonicWall advisory (as quoted by SecurityWeek)",
+     "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/"
+    },
+    {
+     "name": "Help Net Security",
+     "url": "https://www.helpnetsecurity.com/2026/11/09/exploited-sonicwall-ssl-vpn-flaw-lets-attackers-bypass-saml-enforced-mfa-cve-2026-19868/"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

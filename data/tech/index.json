@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-07T13:52:57+00:00",
+ "updated": "2026-11-09T11:48:18+00:00",
  "domain": "tech",
  "days": [
+  {
+   "date": "2026-11-09",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 0,
+   "backfill": false
+  },
   {
    "date": "2026-11-07",
    "edition": "weekend",
@@ -34,7 +41,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 17
+   "n": 19
   }
  ],
  "tag_groups": {
@@ -72,7 +79,8 @@
   "Tech Business"
  ],
  "category_counts": {
-  "Cybersecurity": 9,
+  "Tech Policy & Antitrust": 1,
+  "Cybersecurity": 10,
   "Tech Business": 2,
   "Space Industry": 2,
   "Software & Platforms": 1,
@@ -80,6 +88,12 @@
  },
  "summaries": [],
  "weeks": [
+  {
+   "id": "2026-W46",
+   "start": "2026-11-09",
+   "end": "2026-11-14",
+   "complete": false
+  },
   {
    "id": "2026-W45",
    "start": "2026-11-02",
