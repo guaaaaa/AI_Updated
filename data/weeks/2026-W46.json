@@ -1,0 +1,86 @@
+{
+ "week": "2026-W46",
+ "start": "2026-11-09",
+ "end": "2026-11-14",
+ "complete": false,
+ "digests": 1,
+ "papers": [
+  {
+   "id": "2611.09894",
+   "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
+   "hf": 10,
+   "org": "University of Central Florida",
+   "featured": "2026-11-09"
+  },
+  {
+   "id": "2611.09382",
+   "title": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
+   "hf": 7,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.09017",
+   "title": "Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds",
+   "hf": 6,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.09055",
+   "title": "OmniLatent: Unified Latent for 3D Part Modeling",
+   "hf": 3,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.09113",
+   "title": "Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use",
+   "hf": 2,
+   "org": null,
+   "featured": null
+  }
+ ],
+ "stories": [
+  {
+   "title": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
+   "outlets": 8,
+   "date": "2026-11-08",
+   "covered": null
+  },
+  {
+   "title": "Anti-AI Protesters Break Into Microsoft Data Center Site in Amsterdam",
+   "outlets": 4,
+   "date": "2026-11-06",
+   "covered": null
+  },
+  {
+   "title": "Anthropic strikes $3.4bn deal to generate gas-fired power for data centres",
+   "outlets": 4,
+   "date": "2026-11-08",
+   "covered": null
+  },
+  {
+   "title": "Microsoft to reportedly wind down Oracle deal to rent AI cloud capacity",
+   "outlets": 3,
+   "date": "2026-11-06",
+   "covered": "2026-11-09-n1"
+  },
+  {
+   "title": "OpenAI gets $11 billion funding at $1.25 trillion valuation, source says",
+   "outlets": 3,
+   "date": "2026-11-06",
+   "covered": null
+  },
+  {
+   "title": "Nvidia Board to Probe Spying Case After CEO Jensen Huang Admits Infidelity",
+   "outlets": 3,
+   "date": "2026-11-08",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 1,
+  "papers": 5
+ }
+}

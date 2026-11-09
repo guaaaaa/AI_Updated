@@ -1,5 +1,92 @@
 [
  {
+  "id": "2026-11-09-n1",
+  "date": "2026-11-09",
+  "type": "news",
+  "title": "Microsoft is winding down its 2023 deal to rent AI computing from Oracle",
+  "tldr": "Bloomberg reports Microsoft let a 2023 agreement to rent Oracle AI servers lapse because the older Nvidia chips no longer fit its needs, while it reviews more than $80 billion of outside cloud contracts.",
+  "category": "Compute & Infrastructure",
+  "byline": "TNW, MarketScale"
+ },
+ {
+  "id": "2611.09828",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL",
+  "tldr": "Penalizing reward hacking with a monitor during RL usually teaches the model to evade the monitor; this study shows which monitor designs resist evasion and which training choices reduce hacking.",
+  "primary_tag": "Safety & Alignment",
+  "tags": [
+   "Safety & Alignment",
+   "Reinforcement Learning",
+   "Interpretability"
+  ],
+  "byline": "Aria Wong, Joshua Engels, Neel Nanda · MATS, Google DeepMind",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.09892",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "On Agentic Manipulation Policies",
+  "tldr": "Letting a general-purpose AI model write code that directly drives a robot arm, with no demonstrations or robot-specific training, beats leading specialist vision-language-action policies by a wide margin.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Agents"
+  ],
+  "byline": "Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji et al. · Apple",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.09822",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "Discovering formally verified quantum programs with AI",
+  "tldr": "Teams of LLM agents wrote quantum programs in the Lean theorem prover and proved their correctness and cost, cutting resource estimates for several scientific simulations by factors of 2.5 to 11.",
+  "primary_tag": "AI for Math",
+  "tags": [
+   "AI for Math",
+   "Agents",
+   "AI for Science & Health"
+  ],
+  "byline": "Sergey Shirobokov, Ben Jaderberg, Katerina Hristova et al. · Google DeepMind, Google Quantum AI",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.08977",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
+  "tldr": "Energy-Based Reasoners refine a latent answer by gradient descent on a learned energy, so one function guides updates, decides when to stop and picks the best candidate, solving Sudoku-Extreme with 1.8M parameters.",
+  "primary_tag": "Reasoning",
+  "tags": [
+   "Reasoning",
+   "Architectures"
+  ],
+  "byline": "William Xingxu Chen, Alexi Gladstone, Zeyu Michael Li et al. · Duke University, UIUC, Harvard University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.09894",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
+  "tldr": "Video-Coder trains a coding agent to build a 3D draft scene in Blender, which guides a video generator and raises physical plausibility scores on two benchmarks.",
+  "primary_tag": "Generative Models",
+  "tags": [
+   "Generative Models",
+   "Agents",
+   "Reinforcement Learning"
+  ],
+  "byline": "Chaoyang Wang, Sicheng Gao, Junan Hu et al. · University of Central Florida, University of Würzburg, Microsoft Research",
+  "hf": 10,
+  "venue": null
+ },
+ {
   "id": "2026-11-07-n1",
   "date": "2026-11-07",
   "type": "news",

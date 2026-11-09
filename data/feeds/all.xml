@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 09 Nov 2026 11:48:18 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 12:23:03 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Microsoft is winding down its 2023 deal to rent AI computing from Oracle</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2026-11-09-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2026-11-09-n1</guid>
+    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
+    <category>AI / Compute &amp; Infrastructure</category>
+    <description>Bloomberg reports Microsoft let a 2023 agreement to rent Oracle AI servers lapse because the older Nvidia chips no longer fit its needs, while it reviews more than $80 billion of outside cloud contracts. (TNW, MarketScale)</description>
+  </item>
+  <item>
+    <title>Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09828</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09828</guid>
+    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
+    <category>AI / Safety &amp; Alignment</category>
+    <description>Penalizing reward hacking with a monitor during RL usually teaches the model to evade the monitor; this study shows which monitor designs resist evasion and which training choices reduce hacking. (Aria Wong, Joshua Engels, Neel Nanda · MATS, Google DeepMind)</description>
+  </item>
+  <item>
+    <title>On Agentic Manipulation Policies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09892</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09892</guid>
+    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>Letting a general-purpose AI model write code that directly drives a robot arm, with no demonstrations or robot-specific training, beats leading specialist vision-language-action policies by a wide margin. (Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji et al. · Apple)</description>
+  </item>
+  <item>
+    <title>Discovering formally verified quantum programs with AI</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09822</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09822</guid>
+    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
+    <category>AI / AI for Math</category>
+    <description>Teams of LLM agents wrote quantum programs in the Lean theorem prover and proved their correctness and cost, cutting resource estimates for several scientific simulations by factors of 2.5 to 11. (Sergey Shirobokov, Ben Jaderberg, Katerina Hristova et al. · Google DeepMind, Google Quantum AI)</description>
+  </item>
+  <item>
+    <title>Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.08977</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.08977</guid>
+    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
+    <category>AI / Reasoning</category>
+    <description>Energy-Based Reasoners refine a latent answer by gradient descent on a learned energy, so one function guides updates, decides when to stop and picks the best candidate, solving Sudoku-Extreme with 1.8M parameters. (William Xingxu Chen, Alexi Gladstone, Zeyu Michael Li et al. · Duke University, UIUC, Harvard University)</description>
+  </item>
+  <item>
+    <title>Video-Coder: Reinforcing Agentic Coding for Video Generation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09894</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09894</guid>
+    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>Video-Coder trains a coding agent to build a 3D draft scene in Blender, which guides a video generator and raises physical plausibility scores on two benchmarks. (Chaoyang Wang, Sicheng Gao, Junan Hu et al. · University of Central Florida, University of Würzburg, Microsoft Research)</description>
+  </item>
   <item>
     <title>Congress summons Nvidia's CEO over a reported Chinese spy operation, and Nvidia's board opens an investigation</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</link>
@@ -438,54 +486,6 @@
     <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
     <category>Business / Central Banks &amp; Rates</category>
     <description>The Bank of England voted 8-1 to lift Bank Rate to 4% from 3.75%, saying energy-driven inflation pressure in the pipeline is now strong enough to justify tighter policy. (Bank of England, BBC, BBC)</description>
-  </item>
-  <item>
-    <title>ECB wage tracker points to slightly firmer negotiated pay growth into 2027</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n2</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>The ECB's wage tracker shows negotiated wage growth of 2.7% in late 2026 and 2.8% in early 2027, a little higher than the 2.3% headline figure for 2026 as a whole. (European Central Bank)</description>
-  </item>
-  <item>
-    <title>US trade deficit narrows slightly to $105.0 billion in September as exports and imports both rise</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n3</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>The US goods and services trade deficit eased by $0.7 billion to $105.0 billion in September, though the three-month average deficit widened to $101.2 billion. (U.S. Bureau of Economic Analysis)</description>
-  </item>
-  <item>
-    <title>Canada's trade surplus widens to a four-year high as gold and energy offset tariff-hit exports</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n4</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>Canada's September merchandise trade surplus widened to about C$5.4 billion, the highest since May 2022, but gold and oil hid a 5.6% drop in other exports hit by US tariffs. (Statistics Canada, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>Demand-Driven Inflation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/nber-w35980</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/nber-w35980</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Monetary policy</category>
-    <description>Giannone and Primiceri argue that unexpectedly strong demand, not supply shocks alone, drove the post-pandemic inflation surge in both the United States and the euro area. (Domenico Giannone, Giorgio Primiceri · Johns Hopkins University; Northwestern University)</description>
-  </item>
-  <item>
-    <title>Midterm results make the data-center backlash a political force that could slow AI buildout</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2026-11-05-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2026-11-05-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
-    <category>AI / Policy &amp; Legal</category>
-    <description>US voters backed candidates and ballot measures that restrict data centers, and with Democrats winning Congress, new limits on the buildout behind AI are now more likely. (The Verge, TechCrunch, Wired)</description>
-  </item>
-  <item>
-    <title>Moonshot AI releases the weights of Kimi K3.1 Pro, a 3T-class agentic model</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2026-11-05-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2026-11-05-n2</guid>
-    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
-    <category>AI / Open Source</category>
-    <description>Moonshot AI published open weights for Kimi K3.1 Pro, a natively multimodal agentic model with a one-million-token context window, post-trained from Kimi K3 with large-scale reinforcement learning. (Moonshot AI (Hugging Face model card))</description>
   </item>
 </channel>
 </rss>
