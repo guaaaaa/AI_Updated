@@ -1,5 +1,39 @@
 [
  {
+  "id": "2026-11-09-n1",
+  "date": "2026-11-09",
+  "type": "news",
+  "title": "Canada launches its instant payments system, the last G7 country to do so",
+  "tldr": "Payments Canada began the first phase of its Real-Time Rail on Monday, nearly seven years after the original 2019 target, with eight institutions but none of the big banks.",
+  "category": "Banking & Finance",
+  "byline": "The Globe and Mail, BetaKit"
+ },
+ {
+  "id": "2026-11-09-n2",
+  "date": "2026-11-09",
+  "type": "news",
+  "title": "Strathcona agrees to buy Greenfire in a deal worth up to C$2.9 billion",
+  "tldr": "Strathcona Resources will acquire Greenfire Resources for shares or C$11.00 in cash per share, valuing the deal at about C$2.7 to 2.9 billion including debt, with the same fund controlling both.",
+  "category": "Deals & M&A",
+  "byline": "Greenfire Resources (company release), The Globe and Mail"
+ },
+ {
+  "id": "nber-w36003",
+  "date": "2026-11-09",
+  "type": "paper",
+  "title": "AI as Shared Business Infrastructure: Firm Growth and the Distribution of Gains",
+  "tldr": "On a Chinese e-commerce platform, small firms that adopted built-in generative AI saw monthly sales rise 51.6%, with the biggest proportional gains for the smallest firms.",
+  "primary_tag": "Growth & productivity",
+  "tags": [
+   "Growth & productivity",
+   "Innovation & technology",
+   "Industrial organization"
+  ],
+  "byline": "Panle Jia Barwick, Lu Fang, Jinhan Liu et al.",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-07-n1",
   "date": "2026-11-07",
   "type": "news",

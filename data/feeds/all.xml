@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 09 Nov 2026 12:23:03 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 12:46:47 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Canada launches its instant payments system, the last G7 country to do so</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/2026-11-09-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/2026-11-09-n1</guid>
+    <pubDate>Mon, 09 Nov 2026 12:46:47 +0000</pubDate>
+    <category>Business / Banking &amp; Finance</category>
+    <description>Payments Canada began the first phase of its Real-Time Rail on Monday, nearly seven years after the original 2019 target, with eight institutions but none of the big banks. (The Globe and Mail, BetaKit)</description>
+  </item>
+  <item>
+    <title>Strathcona agrees to buy Greenfire in a deal worth up to C$2.9 billion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/2026-11-09-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/2026-11-09-n2</guid>
+    <pubDate>Mon, 09 Nov 2026 12:46:47 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>Strathcona Resources will acquire Greenfire Resources for shares or C$11.00 in cash per share, valuing the deal at about C$2.7 to 2.9 billion including debt, with the same fund controlling both. (Greenfire Resources (company release), The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>AI as Shared Business Infrastructure: Firm Growth and the Distribution of Gains</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/nber-w36003</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/nber-w36003</guid>
+    <pubDate>Mon, 09 Nov 2026 12:46:47 +0000</pubDate>
+    <category>Business / Growth &amp; productivity</category>
+    <description>On a Chinese e-commerce platform, small firms that adopted built-in generative AI saw monthly sales rise 51.6%, with the biggest proportional gains for the smallest firms. (Panle Jia Barwick, Lu Fang, Jinhan Liu et al.)</description>
+  </item>
   <item>
     <title>Microsoft is winding down its 2023 deal to rent AI computing from Oracle</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2026-11-09-n1</link>
@@ -462,30 +486,6 @@
     <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
     <category>Science / Condensed matter &amp; materials</category>
     <description>Cryogenic atom probe tomography with deuterium tracers gives the first direct observation of hydrogen dissolved in the gaps between metal atoms, and shows the metal's makeup decides where it sits. (Chao Huang, Saiyu Liu, Wenting Lv et al. · University of Sydney)</description>
-  </item>
-  <item>
-    <title>Enigmatic HCl detections as a potential signature of igneous activity on Mars</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1126-sciadv-aeb9422</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1126-sciadv-aeb9422</guid>
-    <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
-    <category>Science / Planetary science</category>
-    <description>Seasonal hydrogen chloride spikes above fresh fissures on Mars's Alba Mons suggest gas seeping from hot magma, a possible sign that Mars is dormant rather than dead. (Alexander Trokhimovskiy, Daniel Mège, Oleg Korablev et al. · Space Research Centre of the Polish Academy of Sciences)</description>
-  </item>
-  <item>
-    <title>Chiral altermagnon in MnTe</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1126-science-adv3196</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1126-science-adv3196</guid>
-    <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>Evidence of chirality in manganese telluride supports altermagnetism as a real third class of magnetism that sits between ferromagnets and antiferromagnets. (Daniel Jost, Resham Babu Regmi, Eder G. Lomeli et al. · SLAC National Accelerator Laboratory)</description>
-  </item>
-  <item>
-    <title>Bank of England raises its rate to 4%, the first increase in more than three years</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Central Banks &amp; Rates</category>
-    <description>The Bank of England voted 8-1 to lift Bank Rate to 4% from 3.75%, saying energy-driven inflation pressure in the pipeline is now strong enough to justify tighter policy. (Bank of England, BBC, BBC)</description>
   </item>
 </channel>
 </rss>

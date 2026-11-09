@@ -1,0 +1,40 @@
+{
+ "week": "2026-W46",
+ "start": "2026-11-09",
+ "end": "2026-11-14",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [
+  {
+   "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+   "outlets": 8,
+   "date": "2026-11-08",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 2,
+  "papers": 1
+ },
+ "items": [
+  {
+   "id": "2026-11-09-n1",
+   "date": "2026-11-09",
+   "type": "news",
+   "title": "Canada launches its instant payments system, the last G7 country to do so"
+  },
+  {
+   "id": "2026-11-09-n2",
+   "date": "2026-11-09",
+   "type": "news",
+   "title": "Strathcona agrees to buy Greenfire in a deal worth up to C$2.9 billion"
+  },
+  {
+   "id": "nber-w36003",
+   "date": "2026-11-09",
+   "type": "paper",
+   "title": "AI as Shared Business Infrastructure: Firm Growth and the Distribution of Gains"
+  }
+ ]
+}
