@@ -5,8 +5,24 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Mon, 09 Nov 2026 11:48:18 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 11:48:57 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Attackers are exploiting the "SSHole" OpenSSH flaw on Alpine-style Linux servers days after the fix</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</guid>
+    <pubDate>Tue, 10 Nov 2026 11:48:57 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Several security firms report real attacks on the OpenSSH and musl flaw CVE-2026-123158, which can give logins to passwordless accounts; OpenSSH 10.6p2 fixes it. (Ars Technica, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>Vanderbilt University tells campus to shut down devices as the new BYOD ransomware gang claims an attack</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n2</guid>
+    <pubDate>Tue, 10 Nov 2026 11:48:57 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Vanderbilt confirmed an active cyber incident and asked everyone to power off devices; a ransomware group called BYOD claims it stole data on over a million people. (The Record, BleepingComputer)</description>
+  </item>
   <item>
     <title>Congress summons Nvidia's CEO over a reported Chinese spy operation, and Nvidia's board opens an investigation</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</link>

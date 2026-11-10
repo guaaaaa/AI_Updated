@@ -1,5 +1,23 @@
 [
  {
+  "id": "2026-11-10-n1",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "Attackers are exploiting the \"SSHole\" OpenSSH flaw on Alpine-style Linux servers days after the fix",
+  "tldr": "Several security firms report real attacks on the OpenSSH and musl flaw CVE-2026-123158, which can give logins to passwordless accounts; OpenSSH 10.6p2 fixes it.",
+  "category": "Cybersecurity",
+  "byline": "Ars Technica, BleepingComputer"
+ },
+ {
+  "id": "2026-11-10-n2",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "Vanderbilt University tells campus to shut down devices as the new BYOD ransomware gang claims an attack",
+  "tldr": "Vanderbilt confirmed an active cyber incident and asked everyone to power off devices; a ransomware group called BYOD claims it stole data on over a million people.",
+  "category": "Cybersecurity",
+  "byline": "The Record, BleepingComputer"
+ },
+ {
   "id": "2026-11-09-n1",
   "date": "2026-11-09",
   "type": "news",

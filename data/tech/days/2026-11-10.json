@@ -1,0 +1,83 @@
+{
+ "date": "2026-11-10",
+ "edition": "weekday",
+ "generated_at": "2026-11-10T11:48:57+00:00",
+ "summary": "Attackers are exploiting the OpenSSH \"SSHole\" flaw within days of its fix, and a new ransomware group hits Vanderbilt University.",
+ "news": [
+  {
+   "id": "2026-11-10-n1",
+   "story_key": "sshole-exploited-in-the-wild",
+   "title": "Attackers are exploiting the \"SSHole\" OpenSSH flaw on Alpine-style Linux servers days after the fix",
+   "category": "Cybersecurity",
+   "published": "2026-11-09T14:41:34-05:00",
+   "tldr": "Several security firms report real attacks on the OpenSSH and musl flaw CVE-2026-123158, which can give logins to passwordless accounts; OpenSSH 10.6p2 fixes it.",
+   "why_selected": "Wide-impact vulnerability now confirmed under active exploitation by multiple independent firms, with a new development since the earlier story.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "OpenSSH is the standard tool for logging in to Linux servers remotely. It can run on top of different system libraries, including musl, a lightweight alternative to the common glibc library that is used by the Alpine Linux distribution popular in cloud and container environments. A flaw named SSHole, tracked as CVE-2026-123158, became public last week. It was disclosed by researcher Ozgun Kultekin."
+    },
+    {
+     "heading": "What happened",
+     "body": "OpenSSH maintainers released version 10.6p2 on November 5, and exploit code appeared roughly four hours later, according to BleepingComputer. The bug works like this: accounts that are barred from password login have an asterisk in their password field. If an attacker sends an oversized password, musl's hashing function fails and returns an asterisk, and OpenSSH wrongly treats that as a match. Ars Technica adds that passwords over 256 characters trigger it and that several configuration conditions must hold, including OpenSSH running without PAM. GreyNoise recorded the first successful exploitation in the wild on November 7, about 40 hours after the fix, and logged 16 successful chains from six source addresses. One attacker gained root and installed a Python backdoor called TAC Agent, though it could not reach its control server. Previdian saw 20 attempts from 13 addresses in nine countries, and watchTowr saw botnet and cryptomining activity."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "SSH servers are exposed to the internet by the millions, and the flaw lets an attacker act in seconds without any credentials on affected setups. Although several conditions are needed, Ars Technica describes the threat to a large base of machines, most notably Alpine systems, as serious. The speed also stands out: working attacks began about two days after a patch, which leaves little time for administrators."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether patching keeps pace, and whether further groups join in. Administrators should update to OpenSSH 10.6p2 or disable SSH password authentication, and check for unexpected keys and TAC Agent files."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-n2",
+   "story_key": "vanderbilt-byod-ransomware",
+   "title": "Vanderbilt University tells campus to shut down devices as the new BYOD ransomware gang claims an attack",
+   "category": "Cybersecurity",
+   "published": "2026-11-09T13:30:00-05:00",
+   "tldr": "Vanderbilt confirmed an active cyber incident and asked everyone to power off devices; a ransomware group called BYOD claims it stole data on over a million people.",
+   "why_selected": "A major university attack with a claimed large data theft, part of a fast-growing ransomware group's campaign against universities.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Ransomware gangs break into a network, steal data, and often encrypt systems, then threaten to publish the data unless they are paid. Universities are frequent targets because they hold large amounts of personal and research data. Vanderbilt, in Nashville, serves about 14,000 students and has more than 6,000 staff, according to The Record. Its medical center was attacked by a ransomware gang in 2023."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday morning, November 9, Vanderbilt announced a cybersecurity incident that may affect university devices, systems and cloud-based services. It told students, faculty and staff to shut down university devices, disconnect from university Wi-Fi and watch for signs of compromise such as pop-ups, changed files or unexpected authentication requests. The university has not said what kind of attack it was or whether data was taken. The ransomware group BYOD added Vanderbilt to its leak site and claimed it encrypted databases and holds over one million Social Security numbers plus student and employee records. BleepingComputer received a photo of a ransom note and confirmed the link in it leads to BYOD's site, but Vanderbilt has not confirmed the group's involvement. BYOD launched in 2026; ransomware expert Allan Liska told The Record its first victim appeared on September 29."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the claims are accurate, a large number of students and employees face identity-theft risk. The group has also been linked to attacks on the University of New Mexico Health Sciences Center, where outages disrupted patient care, and Michigan State University. A new group reaching large institutions within weeks fits reports that ransomware activity rose 40 percent between July and September, per Halcyon."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Vanderbilt's confirmation of what was taken, whether BYOD publishes data, and its next targets."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/vanderbilt-cyberattack-ransomware-alert"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

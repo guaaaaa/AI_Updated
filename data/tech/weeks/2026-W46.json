@@ -3,24 +3,30 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [
   {
+   "title": "France blames Iran for ‘unprecedented’ supermarket fridge cyberattack",
+   "outlets": 14,
+   "date": "2026-11-09",
+   "covered": null
+  },
+  {
    "title": "Nvidia CEO Jensen Huang summoned by Congress over Chinese espionage concerns",
-   "outlets": 5,
+   "outlets": 6,
    "date": "2026-11-06",
    "covered": null
   },
   {
    "title": "Apple Says More Than 100,000 Apps Optimized for iPhone Duo, Here's What's Still Missing",
-   "outlets": 5,
+   "outlets": 6,
    "date": "2026-11-06",
    "covered": null
   }
  ],
  "featured": {
-  "news": 2,
+  "news": 4,
   "papers": 0
  },
  "items": [
@@ -35,6 +41,18 @@
    "date": "2026-11-09",
    "type": "news",
    "title": "SonicWall patches a firewall VPN flaw that can sidestep SAML multi-factor login and is already exploited"
+  },
+  {
+   "id": "2026-11-10-n1",
+   "date": "2026-11-10",
+   "type": "news",
+   "title": "Attackers are exploiting the \"SSHole\" OpenSSH flaw on Alpine-style Linux servers days after the fix"
+  },
+  {
+   "id": "2026-11-10-n2",
+   "date": "2026-11-10",
+   "type": "news",
+   "title": "Vanderbilt University tells campus to shut down devices as the new BYOD ransomware gang claims an attack"
   }
  ]
 }

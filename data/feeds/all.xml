@@ -5,8 +5,24 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 09 Nov 2026 13:54:32 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 11:48:57 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Attackers are exploiting the "SSHole" OpenSSH flaw on Alpine-style Linux servers days after the fix</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</guid>
+    <pubDate>Tue, 10 Nov 2026 11:48:57 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Several security firms report real attacks on the OpenSSH and musl flaw CVE-2026-123158, which can give logins to passwordless accounts; OpenSSH 10.6p2 fixes it. (Ars Technica, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>Vanderbilt University tells campus to shut down devices as the new BYOD ransomware gang claims an attack</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n2</guid>
+    <pubDate>Tue, 10 Nov 2026 11:48:57 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Vanderbilt confirmed an active cyber incident and asked everyone to power off devices; a ransomware group called BYOD claims it stole data on over a million people. (The Record, BleepingComputer)</description>
+  </item>
   <item>
     <title>Lp(a)-lowering drug pelacarsen cuts the target by 78% but not heart attacks or strokes, in a large phase 3 trial</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-09/2026-11-09-n1</link>
@@ -470,22 +486,6 @@
     <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
     <category>Tech / Software &amp; Platforms</category>
     <description>The FAA says it will replace 1980s display systems that run on floppy disks with the digital E-IDS platform, targeting 435 sites by the end of 2028. (Engadget, FAA)</description>
-  </item>
-  <item>
-    <title>Beyond Sensitive APIs: Detecting Access Control Flaws at Sensitive Callsites in Android Firmware</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2611.00594</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2611.00594</guid>
-    <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
-    <category>Tech / Security &amp; privacy</category>
-    <description>Callix, a tool that judges whether access checks are strong enough for a sensitive operation, found 819 vulnerable paths in pre-installed apps from ten Android vendors. (Haotian Deng, Meng Hao, Hanxiao Chen et al. · University of Electronic Science and Technology of China)</description>
-  </item>
-  <item>
-    <title>British health worker with Ebola flown home as the Congo outbreak passes 10,000 cases</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-05/2026-11-05-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-05/2026-11-05-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 13:53:12 +0000</pubDate>
-    <category>Biology / Microbes &amp; Infectious Disease</category>
-    <description>A British healthcare worker infected in DR Congo is being evacuated to the UK, the first British case of an outbreak that has passed 10,000 confirmed cases and has no approved treatment. (The Guardian, ECDC)</description>
   </item>
 </channel>
 </rss>
