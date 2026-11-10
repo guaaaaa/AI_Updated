@@ -3,12 +3,12 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [],
  "featured": {
-  "news": 2,
-  "papers": 3
+  "news": 5,
+  "papers": 6
  },
  "items": [
   {
@@ -40,6 +40,42 @@
    "date": "2026-11-09",
    "type": "paper",
    "title": "Seafloor geodesy delineates fast megathrust relocking after the giant 2011 Tohoku earthquake"
+  },
+  {
+   "id": "2026-11-10-n1",
+   "date": "2026-11-10",
+   "type": "news",
+   "title": "Chandra finds a black hole or neutron star behind a star's repeating outbursts"
+  },
+  {
+   "id": "2026-11-10-n2",
+   "date": "2026-11-10",
+   "type": "news",
+   "title": "Global CO2 emissions are set to fall slightly in 2026, but mostly because of the Iran war's oil shock"
+  },
+  {
+   "id": "2026-11-10-n3",
+   "date": "2026-11-10",
+   "type": "news",
+   "title": "Physicists image \"ultraquantum\" turbulence in a cloud of ultracold atoms"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeh0938",
+   "date": "2026-11-10",
+   "type": "paper",
+   "title": "Scaling up chemical recycling: High-yield polyolefin pyrolysis to liquid hydrocarbons using iron single atom catalysts"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aed1631",
+   "date": "2026-11-10",
+   "type": "paper",
+   "title": "Revisiting the additionality and durability of carbon uptake in large-scale ocean iron fertilization"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aee7886",
+   "date": "2026-11-10",
+   "type": "paper",
+   "title": "Persistent bistability of Nordic Seas overflow waters over 800,000 years"
   }
  ]
 }

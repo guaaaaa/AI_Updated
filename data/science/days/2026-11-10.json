@@ -1,0 +1,271 @@
+{
+ "date": "2026-11-10",
+ "edition": "weekday",
+ "generated_at": "2026-11-10T13:26:39+00:00",
+ "summary": "A hidden companion explains a star's repeating outbursts, global CO2 dips for an unwelcome reason, quantum turbulence gets imaged, and three papers on plastic recycling, ocean iron fertilization and Atlantic circulation.",
+ "news": [
+  {
+   "id": "2026-11-10-n1",
+   "story_key": "chandra-at2016blu-companion",
+   "title": "Chandra finds a black hole or neutron star behind a star's repeating outbursts",
+   "category": "Space & Astronomy",
+   "published": "2026-11-09T13:55:50-05:00",
+   "tldr": "X-ray data show that a massive star that flares every 113 days is being stripped by a hidden black hole or neutron star, the first X-ray detection of this kind of erupting star.",
+   "why_selected": "A 15-year puzzle solved with a timed observation, and a possible link to ultra-luminous X-ray sources.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Some massive stars brighten dramatically without dying. They are called luminous blue variables, hot stars whose brightness changes; Eta Carinae is a well-known example. One of them, AT 2016blu, sits in the spiral galaxy NGC 4559, about 30 million light-years away, and has at least 33 times the mass of the Sun. Its flares are so extreme that they resemble supernovae, which earned it the name \"supernova impostor\". Astronomers had watched it brighten and fade for 15 years without knowing why."
+    },
+    {
+     "heading": "What happened",
+     "body": "A study published Monday in The Astrophysical Journal, led by Mojgan Aghakhanloo of the University of Virginia, reports the cause. Between 2012 and 2026 astronomers recorded at least 27 optical outbursts, roughly every 113 days. The team suspected that periodic X-ray blasts power the flashes, since dense gas around the system absorbs X-rays and glows in visible light. So they timed a Chandra observation to land during an outburst in March 2026. Chandra is the only X-ray telescope sharp enough to separate AT 2016blu from a bright neighbouring X-ray source. The star was at least 100 times brighter in X-rays than in Chandra data from 2001 to 2002, before the outbursts began. The best explanation is a compact companion, either a stellar-mass black hole or a neutron star, on an oval orbit. Near closest approach it captures material shed by the star, which heats up and shines in X-rays."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This is the first X-ray detection of this class of erupting star, and the first found with a black hole or neutron star companion. AT 2016blu is bright enough to count as a candidate ultra-luminous X-ray source, a rare class that astronomers do not yet fully understand. The result hints at a link between those sources and violent stellar eruptions. It also supports the idea that much of the pre-supernova misbehaviour of massive stars comes from a companion."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The release does not say whether the companion is a black hole or a neutron star. Further X-ray observations across the 113-day orbit could settle it and show whether other eruptive stars have hidden partners."
+    }
+   ],
+   "sources": [
+    {
+     "name": "NASA",
+     "url": "https://science.nasa.gov/missions/chandra/nasas-chandra-finds-source-of-stars-mysterious-outbursts/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-n2",
+   "story_key": "global-carbon-budget-2026-emissions-dip",
+   "title": "Global CO2 emissions are set to fall slightly in 2026, but mostly because of the Iran war's oil shock",
+   "category": "Climate & Earth",
+   "published": "2026-11-09T20:00:00-05:00",
+   "tldr": "The Global Carbon Budget projects fossil CO2 emissions down 0.4% to 38.2 billion tonnes in 2026, which its authors attribute largely to the oil shock from the Iran war rather than climate policy.",
+   "why_selected": "The year's authoritative emissions estimate, released as the UN climate talks open, with a clear message about what is and is not driving the dip.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Each year an international team of more than 140 researchers, the Global Carbon Project, estimates how much carbon dioxide the world emitted, using data from many countries plus estimates for the last months of the year. The figures are presented at the UN climate negotiations, this year in Antalya, Turkey."
+    },
+    {
+     "heading": "What happened",
+     "body": "The 2026 estimate is 38.2 billion tonnes of CO2 from fossil fuels, a 0.4% decrease from last year and the first fall in five years. Oil emissions are projected to fall 1.9%, natural gas 0.3%, while coal rose 0.6%. Co-author Glen Peters of the CICERO centre in Norway said the timing and fuel mix show the cause: oil emissions rose and then suddenly dropped, unlike the slow curve expected from a gradual shift to renewables. The war began in February, and Iran's blockade of the Strait of Hormuz, the route for about 20% of the world's oil and liquefied natural gas, raised prices. China, the largest emitter, is projected to fall 0.9%; the United States, Europe and Japan each fell about 1%; India rose 4.4%. Total CO2 emissions including land use rose 1%, because deforestation and peat fires grew faster than fossil emissions fell."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This is only the third fall this century, after 2009 and 2020. Authors say that if oil prices return to earlier levels, emissions will probably rebound unless renewables accelerate further. Electric vehicles, solar and wind are predicted to offset 64 to 79% of demand-driven growth in emissions through 2028."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch whether oil prices stay high, and whether the dip proves a blip as Robbie Andrew of CICERO suggested. Outside experts disagree on whether a global peak is near. The study appears in Earth System Science Data Discussions and a paper in Nature Climate Change."
+    }
+   ],
+   "sources": [
+    {
+     "name": "New Scientist",
+     "url": "https://www.newscientist.com/article/2598130-global-carbon-emissions-fall-in-2026-due-to-iran-energy-shock/"
+    },
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-11-carbon-pollution-scientists-cite-iran.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-n3",
+   "story_key": "ultraquantum-turbulence-imaged",
+   "title": "Physicists image \"ultraquantum\" turbulence in a cloud of ultracold atoms",
+   "category": "Physics",
+   "published": "2026-11-09T07:00:00-05:00",
+   "tldr": "A Cambridge team directly imaged tangled vortex lines in a turbulent quantum gas, and found it relaxes much like denser liquid helium does.",
+   "why_selected": "A first direct observation of a long-predicted quantum state, with implications from helium to neutron stars.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Ordinary turbulence is chaotic swirling in a liquid or gas, like the whirlpools made by stirring tea. Quantum fluids follow different rules. When disturbed, they stay largely still but become pocked with thin, tangled, string-like whirlpools, then settle toward equilibrium. A form of this called ultraquantum turbulence has been modelled for decades, but vortices are very hard to image, especially in a three-dimensional gas."
+    },
+    {
+     "heading": "What happened",
+     "body": "Sebastian Morris and colleagues at the University of Cambridge started with thousands of atoms that they cooled close to absolute zero with lasers and electromagnetic fields, making a very dilute quantum gas. They corralled the atoms into a cylinder a few dozen micrometres across and disturbed it to create turbulence and vortices. Imaging the whole cylinder would have hidden the tangles, so they lit a single slice with a sheet of laser light, where vortex lines show up as holes. Across many images they tracked the vortices as they tangled, broke apart, formed rings or moved to the edge, while the fluid grew less turbulent. The decay closely resembled what had been seen in liquid helium, another quantum fluid, though far denser and more strongly interacting. The work was published in Physical Review Letters."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Team member Christoph Eigen said the way order forms is similar in the two systems while nothing else is, and Zoran Hadzibabic said this points to universal behaviour that should appear in other quantum systems. Thomas Gasenzer of Heidelberg University said it gives decades-old models precise experimental support. He also noted that the same dynamics have been proposed for the dark matter halo of a neutron star."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Imaging several slices at once could reveal more about vortex behaviour, and the team is interested in doing so. Whether any observable can be compared with astrophysical settings remains an open question."
+    }
+   ],
+   "sources": [
+    {
+     "name": "New Scientist",
+     "url": "https://www.newscientist.com/article/2597812-weird-ultraquantum-turbulence-seen-for-the-first-time/"
+    },
+    {
+     "name": "Physical Review Letters",
+     "url": "https://journals.aps.org/prl/pdf/10.1103/lywd-gjg9"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-sciadv-aeh0938",
+   "title": "Scaling up chemical recycling: High-yield polyolefin pyrolysis to liquid hydrocarbons using iron single atom catalysts",
+   "authors": [
+    "Guo-Ping Lu",
+    "Xueping Zhang",
+    "Kai Xu",
+    "Chenhao Tan",
+    "Yamei Lin",
+    "Wenbin Yi",
+    "Kangkang Sun",
+    "Matthias Beller"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-06T00:00:00-05:00",
+   "primary_tag": "Chemistry",
+   "tags": [
+    "Chemistry",
+    "Energy science"
+   ],
+   "tldr": "An iron single-atom catalyst converts 97% of polyolefin plastic to liquid hydrocarbons with 94% yield, and works at kilogram scale.",
+   "why_selected": "Plastic recycling needs routes that are both selective and scalable; this reports both, with a mechanism.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Polyolefins, the plastics in packaging and bottles, are the largest family of plastic waste. Chemical recycling by pyrolysis, heating the plastic without oxygen until it breaks apart, offers a circular route for them. Industry has been held back by the high energy it demands and by poor control over which products form."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Conventional thermolysis breaks long polymer chains at high temperature and yields a messy mixture of products. Catalysts can steer the chemistry, but the abstract frames the combination of conversion, selectivity and energy cost as unsolved. This summary rests on the paper's abstract only, since the full text was not available to us."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors use a catalyst made of single iron atoms dispersed on a nitrogen-doped porous carbon, derived from a zeolitic imidazolate framework, a type of porous crystalline material. They combine it with a carefully controlled temperature gradient. Their mechanistic work indicates that the slowest step is an acid-base-promoted removal of hydrogen from the polymer backbone. The electronic interaction between the isolated iron centres and the carbon support stabilises reactive carbocation intermediates, charged fragments that then decompose quickly into olefins and alkanes. In effect, the catalyst makes the chain break at the right place in the right way, rather than anywhere at random."
+    },
+    {
+     "heading": "Results",
+     "body": "The process reaches 97% conversion of polyolefin and a 94% yield of liquid hydrocarbons with between 6 and 35 carbon atoms. The authors also demonstrated it at kilogram scale, which supports practical scalability."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If it holds up in realistic conditions, this kind of process could turn plastic waste into liquid fuels or chemical feedstocks. The main caveat is that the abstract does not report how the catalyst copes with mixed, dirty real-world waste, how long it lasts, or the full energy and cost balance, all of which determine industrial viability."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aeh0938",
+    "doi": "https://doi.org/10.1126/sciadv.aeh0938"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aed1631",
+   "title": "Revisiting the additionality and durability of carbon uptake in large-scale ocean iron fertilization",
+   "authors": [
+    "Kyung-Min Noh",
+    "Xiao Liu",
+    "Charles Stock",
+    "Dennis J. McGillicuddy",
+    "John Dunne"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-06T00:00:00-05:00",
+   "primary_tag": "Climate science",
+   "tags": [
+    "Climate science",
+    "Earth science"
+   ],
+   "tldr": "Simulations suggest ocean iron fertilization removes carbon most durably in the Southern Ocean, but only about 30 petagrams of carbon over a century, less than earlier estimates.",
+   "why_selected": "Carbon removal is central to 1.5 to 2 degree pathways, and this tests a controversial option with models.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Climate pathways that limit warming to 1.5 to 2 degrees Celsius need rapid emission cuts plus extra carbon dioxide removal of roughly 2 to 3 petagrams of carbon per year. Ocean iron fertilization adds iron to iron-starved waters so that plankton grow, take up carbon and carry some of it down."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier estimates of the potential were larger. Key doubts are additionality, whether fertilization removes more carbon than would otherwise be absorbed, and durability, whether the carbon stays out of the air. This summary rests on the paper's abstract only."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors run simulations of sustained, century-scale fertilization in different iron-limited regions and ask two questions. How much extra carbon is taken up once you account for effects elsewhere? And how much is kept after fertilization stops? The catch is that nutrients used up in one place are no longer available downstream, so uptake in unfertilized regions can fall and the ocean there may release carbon."
+    },
+    {
+     "heading": "Results",
+     "body": "Fertilizing the southern sector of the Southern Ocean contributes about 30 petagrams of carbon, around 0.3 petagrams per year, nearly matching the extra uptake from fertilizing globally. In other iron-limited regions, 70 to 100% of the uptake is offset by outgassing elsewhere. After 30 years of fertilization is stopped, the ocean keeps about 50% of the extra carbon in the Southern Ocean sector, and a negligible amount elsewhere."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The Southern Ocean looks the most favourable place for durable removal, yet its uptake is smaller than earlier estimates and well below the 2 to 3 petagrams per year needed. Limits include nutrient depletion, carbon returning to the surface and incomplete nutrient drawdown. The authors call for standardised multimodel comparisons; these are simulations of one setup, not field trials."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aed1631",
+    "doi": "https://doi.org/10.1126/sciadv.aed1631"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aee7886",
+   "title": "Persistent bistability of Nordic Seas overflow waters over 800,000 years",
+   "authors": [
+    "Nathan Stevenard",
+    "Aline Govin",
+    "Catherine Kissel",
+    "Didier Swingedouw",
+    "Samuel Toucanne",
+    "Nathaëlle Bouttes"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science",
+    "Climate science"
+   ],
+   "tldr": "An 800,000-year reconstruction of a deep North Atlantic current finds it flips between weak glacial and strong interglacial modes, with abrupt collapses and slower recoveries.",
+   "why_selected": "Direct long-term evidence on whether Atlantic overturning circulation has tipping behaviour, a major uncertainty in climate projections.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "The Atlantic Meridional Overturning Circulation, the conveyor of warm surface water northward and cold deep water southward, is a major source of uncertainty in climate projections. Whether it can tip abruptly between states is unclear, and direct evidence on orbital timescales is scarce."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Past work has relied on indirect indicators. This study instead targets a measurable part of the system, Iceland-Scotland Overflow Water, a key lower branch of the deep Atlantic circulation. This summary rests on the paper's abstract only."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors reconstruct the strength of that flow over the past 800,000 years. They combine 12 current-speed records from North Atlantic sediment cores, where the size of sediment grains reflects how fast the water moved, with a data-driven hybrid model that joins the records. They then analyse the series for thresholds, hysteresis and phase-space behaviour, which show whether the system has distinct stable states."
+    },
+    {
+     "heading": "Results",
+     "body": "The flow alternates persistently between weak glacial and strong interglacial modes, with strong millennial-scale variability inside both. Shifts are asymmetric: recoveries from weak to strong differ systematically from collapses from strong to weak. Regime shifts happen within a narrow window of atmospheric carbon dioxide and sea level and often follow hysteresis-like loops, where the path back is different from the path out. Bistability persists throughout, though its sensitivity and timing change over time."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The findings give long-term, high-resolution, data-driven constraints on the bistability of Nordic Seas overflow waters and on the resilience of the Atlantic circulation in a warming world. The main caveat is that glacial cycles differ from present-day warming, so the results constrain rather than predict future behaviour."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aee7886",
+    "doi": "https://doi.org/10.1126/sciadv.aee7886"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  }
+ ]
+}

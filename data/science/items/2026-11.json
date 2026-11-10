@@ -1,5 +1,77 @@
 [
  {
+  "id": "2026-11-10-n1",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "Chandra finds a black hole or neutron star behind a star's repeating outbursts",
+  "tldr": "X-ray data show that a massive star that flares every 113 days is being stripped by a hidden black hole or neutron star, the first X-ray detection of this kind of erupting star.",
+  "category": "Space & Astronomy",
+  "byline": "NASA"
+ },
+ {
+  "id": "2026-11-10-n2",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "Global CO2 emissions are set to fall slightly in 2026, but mostly because of the Iran war's oil shock",
+  "tldr": "The Global Carbon Budget projects fossil CO2 emissions down 0.4% to 38.2 billion tonnes in 2026, which its authors attribute largely to the oil shock from the Iran war rather than climate policy.",
+  "category": "Climate & Earth",
+  "byline": "New Scientist, Phys.org"
+ },
+ {
+  "id": "2026-11-10-n3",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "Physicists image \"ultraquantum\" turbulence in a cloud of ultracold atoms",
+  "tldr": "A Cambridge team directly imaged tangled vortex lines in a turbulent quantum gas, and found it relaxes much like denser liquid helium does.",
+  "category": "Physics",
+  "byline": "New Scientist, Physical Review Letters"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aeh0938",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Scaling up chemical recycling: High-yield polyolefin pyrolysis to liquid hydrocarbons using iron single atom catalysts",
+  "tldr": "An iron single-atom catalyst converts 97% of polyolefin plastic to liquid hydrocarbons with 94% yield, and works at kilogram scale.",
+  "primary_tag": "Chemistry",
+  "tags": [
+   "Chemistry",
+   "Energy science"
+  ],
+  "byline": "Guo-Ping Lu, Xueping Zhang, Kai Xu et al.",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aed1631",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Revisiting the additionality and durability of carbon uptake in large-scale ocean iron fertilization",
+  "tldr": "Simulations suggest ocean iron fertilization removes carbon most durably in the Southern Ocean, but only about 30 petagrams of carbon over a century, less than earlier estimates.",
+  "primary_tag": "Climate science",
+  "tags": [
+   "Climate science",
+   "Earth science"
+  ],
+  "byline": "Kyung-Min Noh, Xiao Liu, Charles Stock et al.",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aee7886",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Persistent bistability of Nordic Seas overflow waters over 800,000 years",
+  "tldr": "An 800,000-year reconstruction of a deep North Atlantic current finds it flips between weak glacial and strong interglacial modes, with abrupt collapses and slower recoveries.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science",
+   "Climate science"
+  ],
+  "byline": "Nathan Stevenard, Aline Govin, Catherine Kissel et al.",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
   "id": "2026-11-09-n1",
   "date": "2026-11-09",
   "type": "news",
