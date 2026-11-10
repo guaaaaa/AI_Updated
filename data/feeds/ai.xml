@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Mon, 09 Nov 2026 12:23:03 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 12:20:35 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Anthropic releases Claude Fable 5.2 and Mythos 5.2 at a lower price</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n1</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Anthropic launched Claude Fable 5.2, available to all users, and Mythos 5.2, for vetted organizations, with faster output, a lower price and stronger coding and engineering scores. (Anthropic, TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>Google DeepMind's AlphaProof Code formally verifies key guarantees of the Signal protocol</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n2</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Research</category>
+    <description>DeepMind used an agentic system, AlphaProof Code, to produce machine-checked Lean proofs of key Signal protocol guarantees in four weeks, with humans reviewing at key points. (WIRED, Google DeepMind)</description>
+  </item>
+  <item>
+    <title>Semiprime Factorization with Discrete Diffusion and Beam Search: Scaling Laws</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.10202</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.10202</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Theory</category>
+    <description>A discrete-diffusion transformer learns to factor semiprimes up to 68 bits, but scaling laws show compute grows exponentially with bit length, so RSA is not threatened. (Brendan O Donoghue, Nenad Tomasev, Volodymyr Mnih et al. · Google DeepMind)</description>
+  </item>
+  <item>
+    <title>Embodied First Exam</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12177</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12177</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>A benchmark of 1,156 robot tasks tests whether general coding agents can control robots; the best agent solves only 30% under real-robot-like conditions versus 77% with full simulator access. (Kangrui Wang, Qineng Wang, Changhe Chen et al. · Northwestern University, Carnegie Mellon University, UC Berkeley)</description>
+  </item>
+  <item>
+    <title>Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12184</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12184</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / RSI</category>
+    <description>AI scientists produce more original ideas when shown less of the task during generation, and a learned screener then discards half of the candidates while keeping most of the best. (Guowei Xu, Jiaru Zou, Mete Erdogan et al. · Stanford University)</description>
+  </item>
+  <item>
+    <title>Speculative Self-Distillation enables Efficient Knowledge Internalization</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12016</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12016</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>Speculative Self-Distillation lets the student write rollouts and hands control to the teacher only where the two strongly disagree, matching on-policy accuracy with 38 to 69% fewer supervised tokens. (Shayan Talaei, Agam Bhatia, Arshia Soltani Moakhar et al. · Stanford University, ETH Zürich)</description>
+  </item>
+  <item>
+    <title>System Optimizations for Cost-Efficient Agent Harnesses</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12122</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12122</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Agent costs are dominated by repeatedly re-reading context, and an interposition layer called Agency cuts costs by about 23% on average for existing harnesses with little accuracy loss. (Jongseok Park, Jiaxiang Yu, Eric Zhou et al.)</description>
+  </item>
   <item>
     <title>Microsoft is winding down its 2023 deal to rent AI computing from Oracle</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2026-11-09-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
     <category>AI / Reinforcement Learning</category>
     <description>Turning a judge's per-turn text feedback into a self-distillation signal, only on failing turns and alongside normal RL rewards, teaches coding agents behaviors that plain RL never discovers. (Kevin Frans, Alexander M Rush, Sergey Levine et al. · Cursor Research, UC Berkeley)</description>
-  </item>
-  <item>
-    <title>Anthropic's amended IPO filing says it may imminently reach its own "dramatically accelerated progress" threshold</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2026-11-03-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2026-11-03-n1</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Safety &amp; Security</category>
-    <description>In a revised S-1/A filed Monday, Anthropic wrote that its internal estimates suggest it may imminently meet the Responsible Scaling Policy's definition of AI-driven dramatically accelerated progress, while saying no current model crosses it. (TechCrunch)</description>
-  </item>
-  <item>
-    <title>Researchers show GPT-6 Astra can read and directly edit neural network weights, lifting a small Qwen model's math score</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2026-11-03-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2026-11-03-n2</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Research</category>
-    <description>A blog post reports that GPT-6 Astra, without writing training loops, identified a flaw in Qwen3.5-0.8B's weights and fixed it by editing 0.016% of them, raising MATH-500 from 7.9% to 48.1%. (Weight-Space Programming blog post)</description>
-  </item>
-  <item>
-    <title>Hinted Scaling Laws</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.02270</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.02270</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>Giving models partial reference solutions turns a hard benchmark into a smooth family of easier ones, letting scaling laws fit on small, near-zero-accuracy models forecast large-model benchmark accuracy with far lower error. (Suze van Adrichem, Luke Bailey, Rohith Kuditipudi et al. · Stanford University)</description>
-  </item>
-  <item>
-    <title>Wave Forcing: Towards Speed-of-Light Streaming Video Generation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.00859</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.00859</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>Wave Forcing lets several video chunks denoise at once on different GPUs, with earlier chunks serving as cleaner context for later ones, reaching about 135 end-to-end frames per second on eight H200 GPUs. (Yijie Jin, Yuxuan Liu, Jiajun Xu et al. · Shanghai Jiao Tong University, Xi'an Jiaotong University, Peking University)</description>
-  </item>
-  <item>
-    <title>WorldBridge: Bridging Video and Action for Task Generalization in World Action Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2610.40748</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2610.40748</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>In a video-plus-action world model, videos of new tasks without action labels lift out-of-distribution success on RoboTwin 2.0 from 25% to 56%, and one labeled demonstration per task lifts it to 71%. (Jun Cen, Yubo Guo, Hao Li et al. · Joy Future Academy)</description>
-  </item>
-  <item>
-    <title>Jet-QSparse: Accelerating Agentic LLM Inference with 4-Bit Sparse Attention</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.01022</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.01022</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>Jet-QSparse stores the KV cache in 4-bit NVFP4 and aggregates values from selected blocks only, giving 1.94 times faster decoding and 2.58 to 2.76 times cache capacity without training. (Haozhan Tang, Hao Kang, Meng Lu et al. · Carnegie Mellon University, Virginia Tech, Massachusetts Institute of Technology)</description>
-  </item>
-  <item>
-    <title>CoworkOS:Scaling Agent Coworkers for Real-world Automation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.03178</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-03/2611.03178</guid>
-    <pubDate>Tue, 03 Nov 2026 12:17:13 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>CoworkOS is an open agent harness that separates strategy from execution management, matches or beats Codex-style harnesses on 12 benchmarks, and drives five rounds of automated post-training that lifted a Qwen model by 9.76 points. (Jiajie Jin, Guanting Dong, Chengjun Pan et al. · Renmin University of China, Fudan University, Peking University)</description>
   </item>
 </channel>
 </rss>

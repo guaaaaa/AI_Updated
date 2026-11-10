@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 10 Nov 2026 11:48:57 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 12:20:35 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Anthropic releases Claude Fable 5.2 and Mythos 5.2 at a lower price</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n1</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Anthropic launched Claude Fable 5.2, available to all users, and Mythos 5.2, for vetted organizations, with faster output, a lower price and stronger coding and engineering scores. (Anthropic, TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>Google DeepMind's AlphaProof Code formally verifies key guarantees of the Signal protocol</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n2</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Research</category>
+    <description>DeepMind used an agentic system, AlphaProof Code, to produce machine-checked Lean proofs of key Signal protocol guarantees in four weeks, with humans reviewing at key points. (WIRED, Google DeepMind)</description>
+  </item>
+  <item>
+    <title>Semiprime Factorization with Discrete Diffusion and Beam Search: Scaling Laws</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.10202</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.10202</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Theory</category>
+    <description>A discrete-diffusion transformer learns to factor semiprimes up to 68 bits, but scaling laws show compute grows exponentially with bit length, so RSA is not threatened. (Brendan O Donoghue, Nenad Tomasev, Volodymyr Mnih et al. · Google DeepMind)</description>
+  </item>
+  <item>
+    <title>Embodied First Exam</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12177</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12177</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>A benchmark of 1,156 robot tasks tests whether general coding agents can control robots; the best agent solves only 30% under real-robot-like conditions versus 77% with full simulator access. (Kangrui Wang, Qineng Wang, Changhe Chen et al. · Northwestern University, Carnegie Mellon University, UC Berkeley)</description>
+  </item>
+  <item>
+    <title>Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12184</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12184</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / RSI</category>
+    <description>AI scientists produce more original ideas when shown less of the task during generation, and a learned screener then discards half of the candidates while keeping most of the best. (Guowei Xu, Jiaru Zou, Mete Erdogan et al. · Stanford University)</description>
+  </item>
+  <item>
+    <title>Speculative Self-Distillation enables Efficient Knowledge Internalization</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12016</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12016</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>Speculative Self-Distillation lets the student write rollouts and hands control to the teacher only where the two strongly disagree, matching on-policy accuracy with 38 to 69% fewer supervised tokens. (Shayan Talaei, Agam Bhatia, Arshia Soltani Moakhar et al. · Stanford University, ETH Zürich)</description>
+  </item>
+  <item>
+    <title>System Optimizations for Cost-Efficient Agent Harnesses</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12122</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12122</guid>
+    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Agent costs are dominated by repeatedly re-reading context, and an interposition layer called Agency cuts costs by about 23% on average for existing harnesses with little accuracy loss. (Jongseok Park, Jiaxiang Yu, Eric Zhou et al.)</description>
+  </item>
   <item>
     <title>Attackers are exploiting the "SSHole" OpenSSH flaw on Alpine-style Linux servers days after the fix</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
     <category>AI / Agents</category>
     <description>ToolSpace builds agent training tasks from how real tools are chained in execution traces, producing cross-service workflows that lift open models toward frontier tool-use scores. (Guanting Dong, Zhichao Sun, Xinyu Yang et al. · Renmin University of China, Fudan University, Shanghai Jiao Tong University)</description>
-  </item>
-  <item>
-    <title>On the Generalization Limitation of On-Policy Distillation for Post-RL Consolidation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05609</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05609</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Post-training</category>
-    <description>Merging several specialist models into one with on-policy distillation reaches near-teacher scores on training tasks yet loses ground on harder or combined tasks, unless supervision is also broadened. (Yichen Wang, Yufa Zhou, Siqi Zhu et al. · University of Chicago, Duke University, UIUC)</description>
-  </item>
-  <item>
-    <title>Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.06905</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.06905</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>Fine-tuning a generalist robot policy with value-based reinforcement learning across many tasks improves it on unseen objects and scenes, which single-task fine-tuning does not. (Michal Korniak, Marco Bagatella, Ralf Römer et al. · ETH Zurich, MPI for Intelligent Systems, Technical University of Munich)</description>
-  </item>
-  <item>
-    <title>Suppressing Misaligned Behaviors in Language Models, Durably</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05358</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05358</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Safety &amp; Alignment</category>
-    <description>PEARL trains a language model to recover from partly misaligned starts, making removal of a bad behavior far more resistant to later fine-tuning than standard supervised or reinforcement learning fixes. (Luxi He, Pengcheng Jiang, Jifan Zhang et al. · Princeton University, UIUC, Thinking Machines Lab)</description>
-  </item>
-  <item>
-    <title>Adversarial Speculative Reasoning Improves Long Horizon Agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05345</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05345</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>Speculative decoding is lossless in distribution but not in numerical precision, and the authors train the draft model to disagree at key decision points to improve long-horizon coding agents. (Hongyin Luo, Wei Fang, Lijie Yang et al. · Subconscious)</description>
-  </item>
-  <item>
-    <title>OpenSSH patch fixes "*sshole", a ten-year-old login bypass on musl-based Linux systems</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n1</guid>
-    <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>OpenSSH 10.6p2 fixes a flaw, present since 2016, that lets an oversized password log in to accounts meant to refuse passwords on musl-based Linux systems such as Alpine. (BleepingComputer, The Register)</description>
-  </item>
-  <item>
-    <title>Blue Origin pushes the next New Glenn launch into January 2027 after May launchpad explosion</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n2</guid>
-    <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
-    <category>Tech / Space Industry</category>
-    <description>Blue Origin's CEO told staff the next New Glenn flight is now targeted for January 2027, after earlier hopes of launching before the end of this year. (Engadget, The Verge)</description>
-  </item>
-  <item>
-    <title>FAA begins replacing floppy-disk-based air traffic displays with a digital system at more than 400 facilities</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-06/2026-11-06-n3</guid>
-    <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
-    <category>Tech / Software &amp; Platforms</category>
-    <description>The FAA says it will replace 1980s display systems that run on floppy disks with the digital E-IDS platform, targeting 435 sites by the end of 2028. (Engadget, FAA)</description>
   </item>
 </channel>
 </rss>

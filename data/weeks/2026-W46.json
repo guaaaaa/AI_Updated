@@ -3,54 +3,87 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [
+  {
+   "id": "2611.12806",
+   "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+   "hf": 89,
+   "org": "Robbyant",
+   "featured": null
+  },
+  {
+   "id": "2611.09124",
+   "title": "Toward the Era of Agentic Embodied Intelligence",
+   "hf": 45,
+   "org": "AutoLab",
+   "featured": null
+  },
+  {
+   "id": "2611.10771",
+   "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
+   "hf": 42,
+   "org": "OpenEnvision",
+   "featured": null
+  },
+  {
+   "id": "2611.12886",
+   "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+   "hf": 29,
+   "org": "Nanjing University",
+   "featured": null
+  },
+  {
+   "id": "2611.12762",
+   "title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
+   "hf": 26,
+   "org": "Shanghai AI Laboratory",
+   "featured": null
+  },
+  {
+   "id": "2611.09017",
+   "title": "Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds",
+   "hf": 22,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.09382",
+   "title": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
+   "hf": 13,
+   "org": null,
+   "featured": null
+  },
   {
    "id": "2611.09894",
    "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
    "hf": 10,
    "org": "University of Central Florida",
    "featured": "2026-11-09"
-  },
-  {
-   "id": "2611.09382",
-   "title": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
-   "hf": 7,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2611.09017",
-   "title": "Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds",
-   "hf": 6,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2611.09055",
-   "title": "OmniLatent: Unified Latent for 3D Part Modeling",
-   "hf": 3,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2611.09113",
-   "title": "Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use",
-   "hf": 2,
-   "org": null,
-   "featured": null
   }
  ],
  "stories": [
   {
    "title": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
-   "outlets": 8,
+   "outlets": 11,
    "date": "2026-11-08",
    "covered": null
   },
   {
+   "title": "Nvidia Board to Probe Spying Case After CEO Jensen Huang Admits Infidelity",
+   "outlets": 6,
+   "date": "2026-11-08",
+   "covered": null
+  },
+  {
+   "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+   "outlets": 6,
+   "date": "2026-11-09",
+   "covered": "2026-11-10-n1"
+  },
+  {
    "title": "Anti-AI Protesters Break Into Microsoft Data Center Site in Amsterdam",
-   "outlets": 4,
+   "outlets": 5,
    "date": "2026-11-06",
    "covered": null
   },
@@ -67,20 +100,20 @@
    "covered": "2026-11-09-n1"
   },
   {
-   "title": "OpenAI gets $11 billion funding at $1.25 trillion valuation, source says",
+   "title": "OpenAI Completes $11 Billion Portion of Funding at $1.25 Trillion Value",
    "outlets": 3,
    "date": "2026-11-06",
    "covered": null
   },
   {
-   "title": "Nvidia Board to Probe Spying Case After CEO Jensen Huang Admits Infidelity",
+   "title": "The future of AI hinges on… Jensen Huang’s sex life?",
    "outlets": 3,
-   "date": "2026-11-08",
+   "date": "2026-11-09",
    "covered": null
   }
  ],
  "featured": {
-  "news": 1,
-  "papers": 5
+  "news": 3,
+  "papers": 10
  }
 }

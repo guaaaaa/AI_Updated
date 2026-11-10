@@ -1,5 +1,102 @@
 [
  {
+  "id": "2026-11-10-n1",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "Anthropic releases Claude Fable 5.2 and Mythos 5.2 at a lower price",
+  "tldr": "Anthropic launched Claude Fable 5.2, available to all users, and Mythos 5.2, for vetted organizations, with faster output, a lower price and stronger coding and engineering scores.",
+  "category": "Model Release",
+  "byline": "Anthropic, TechCrunch, The Verge"
+ },
+ {
+  "id": "2026-11-10-n2",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "Google DeepMind's AlphaProof Code formally verifies key guarantees of the Signal protocol",
+  "tldr": "DeepMind used an agentic system, AlphaProof Code, to produce machine-checked Lean proofs of key Signal protocol guarantees in four weeks, with humans reviewing at key points.",
+  "category": "Research",
+  "byline": "WIRED, Google DeepMind"
+ },
+ {
+  "id": "2611.10202",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Semiprime Factorization with Discrete Diffusion and Beam Search: Scaling Laws",
+  "tldr": "A discrete-diffusion transformer learns to factor semiprimes up to 68 bits, but scaling laws show compute grows exponentially with bit length, so RSA is not threatened.",
+  "primary_tag": "Theory",
+  "tags": [
+   "Theory",
+   "Generative Models",
+   "Pre-training & Data"
+  ],
+  "byline": "Brendan O Donoghue, Nenad Tomasev, Volodymyr Mnih et al. · Google DeepMind",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.12177",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Embodied First Exam",
+  "tldr": "A benchmark of 1,156 robot tasks tests whether general coding agents can control robots; the best agent solves only 30% under real-robot-like conditions versus 77% with full simulator access.",
+  "primary_tag": "Evaluation & Benchmarks",
+  "tags": [
+   "Evaluation & Benchmarks",
+   "Robotics",
+   "Agents"
+  ],
+  "byline": "Kangrui Wang, Qineng Wang, Changhe Chen et al. · Northwestern University, Carnegie Mellon University, UC Berkeley",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.12184",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists",
+  "tldr": "AI scientists produce more original ideas when shown less of the task during generation, and a learned screener then discards half of the candidates while keeping most of the best.",
+  "primary_tag": "RSI",
+  "tags": [
+   "RSI",
+   "AI for Science & Health",
+   "Agents"
+  ],
+  "byline": "Guowei Xu, Jiaru Zou, Mete Erdogan et al. · Stanford University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.12016",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Speculative Self-Distillation enables Efficient Knowledge Internalization",
+  "tldr": "Speculative Self-Distillation lets the student write rollouts and hands control to the teacher only where the two strongly disagree, matching on-policy accuracy with 38 to 69% fewer supervised tokens.",
+  "primary_tag": "Post-training",
+  "tags": [
+   "Post-training",
+   "Efficiency",
+   "Retrieval & Memory"
+  ],
+  "byline": "Shayan Talaei, Agam Bhatia, Arshia Soltani Moakhar et al. · Stanford University, ETH Zürich",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.12122",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "System Optimizations for Cost-Efficient Agent Harnesses",
+  "tldr": "Agent costs are dominated by repeatedly re-reading context, and an interposition layer called Agency cuts costs by about 23% on average for existing harnesses with little accuracy loss.",
+  "primary_tag": "Agents",
+  "tags": [
+   "Agents",
+   "Efficiency"
+  ],
+  "byline": "Jongseok Park, Jiaxiang Yu, Eric Zhou et al.",
+  "hf": null,
+  "venue": null
+ },
+ {
   "id": "2026-11-09-n1",
   "date": "2026-11-09",
   "type": "news",

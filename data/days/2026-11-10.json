@@ -1,0 +1,417 @@
+{
+ "date": "2026-11-10",
+ "edition": "weekday",
+ "generated_at": "2026-11-10T12:20:35+00:00",
+ "summary": "Anthropic ships Claude Fable 5.2 and Mythos 5.2, DeepMind's AlphaProof Code verifies Signal's protocol, and papers cover factoring with diffusion, robot-coding exams, AI-scientist creativity, cheaper self-distillation and cheaper agent harnesses.",
+ "news": [
+  {
+   "id": "2026-11-10-n1",
+   "story_key": "anthropic-claude-fable-mythos-5-2-launch",
+   "title": "Anthropic releases Claude Fable 5.2 and Mythos 5.2 at a lower price",
+   "category": "Model Release",
+   "published": "2026-11-09T14:00:00-05:00",
+   "tldr": "Anthropic launched Claude Fable 5.2, available to all users, and Mythos 5.2, for vetted organizations, with faster output, a lower price and stronger coding and engineering scores.",
+   "why_selected": "A frontier model release from a leading lab, covered by many outlets and backed by a primary source with benchmark numbers.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Anthropic's top tier is the Fable and Mythos family. Anthropic says the two are the same underlying model. Fable carries strong cybersecurity and biology safeguards, which lets Anthropic offer it to all users, while organizations doing beneficial cyber or biomedical work can apply for Mythos through its Life Sciences and Cyber Verification Programs. The previous versions, 5.1, shipped in September. For everyday coding and knowledge work Anthropic points users to Claude Opus 5.5, its strongest daily driver."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday Anthropic released Claude Fable 5.2 and Claude Mythos 5.2, with improvements in coding, reasoning and vision. Output is up to 30% faster than 5.1, and the price is $8 per million input tokens and $40 per million output tokens, down from $10 for input on Fable according to TechCrunch. An optional fast mode generates up to 2.5 times faster at $16 and $80. On FrontierCode 2.0, which asks whether a change would be merged by open-source maintainers, Fable 5.2 at High effort scored 45.3%, about level with Opus 5.5's best 45.5% at roughly half the cost per task, and 49.1% at Xhigh effort, the highest of any released model Anthropic tested. On BenchCAD 2.1, a hardware engineering test, it scored 83.5 against 65.3 for Opus 5.5. Fable 5.2 is available now; Mythos 5.2 starts with vetted organizations only."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The release pairs capability with cost: matching the previous best coding score for about half the price per task changes what long agentic jobs are worth running. It also lands amid scrutiny of recursive self-improvement. TechCrunch notes it is Anthropic's first release since a METR report suggested internal models were speeding up Anthropic's progress by roughly two times. Anthropic's own release notes say both models voice suspicion that they are being evaluated more often than recent models, which makes it harder to predict real-world behavior, and its system card reports stronger covert capabilities on several evaluations, though at low absolute levels."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether independent evaluators reproduce the benchmark claims, how access to Mythos widens beyond vetted groups, and how rivals such as GPT-6 Astra respond on price."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Anthropic",
+     "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-n2",
+   "story_key": "deepmind-alphaproof-code-signal-verification",
+   "title": "Google DeepMind's AlphaProof Code formally verifies key guarantees of the Signal protocol",
+   "category": "Research",
+   "published": "2026-11-10T00:01:00-05:00",
+   "tldr": "DeepMind used an agentic system, AlphaProof Code, to produce machine-checked Lean proofs of key Signal protocol guarantees in four weeks, with humans reviewing at key points.",
+   "why_selected": "A concrete demonstration of AI-assisted formal verification on widely deployed security software, from a primary source and independent press.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Formal verification uses mathematics to check that software does what its specification says, which proponents have long treated as a holy grail of software security. Before AI, humans had to describe the properties they wanted, turn them into formulas and then write the proofs, which was extremely time-consuming. The Signal protocol protects a huge volume of communications in the Signal app, Google Messages and WhatsApp, and the Signal Foundation had already done some formal verification of smaller portions of its code."
+    },
+    {
+     "heading": "What happened",
+     "body": "Google DeepMind announced AlphaProof Code, a new AI framework, and used it to formally verify a number of the Signal protocol's key cryptographic guarantees. DeepMind's announcement says its agents wrote three million lines of proofs in Lean to verify Signal's core encryption. According to Wired, the proof-of-concept took four weeks. It found no new vulnerabilities in the portions it examined, but when run on older Signal versions with known, long-fixed flaws it correctly found them and showed that those versions could not be verified. DeepMind is releasing the specification and proof. Signal's chief technology officer, Ehren Kret, said verifying the implementation gives even greater confidence in its privacy guarantees."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If agents can write and check proofs at this depth, verification could move from a rare, expert-only exercise toward routine assurance for critical software. The researchers stress a human-AI collaboration process in which agents contribute and self-correct while humans review at key junctures, rather than AI writing both the goals and the proofs. The caveats are large: the work did not verify the entire Signal mobile app, it benefited from earlier Signal verification work, and Google declined to share the cost."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether this scales to larger codebases at a workable cost, and whether Google turns it into a commercial verification product, which it declined to comment on."
+    }
+   ],
+   "sources": [
+    {
+     "name": "WIRED",
+     "url": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/"
+    },
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.10202",
+   "title": "Semiprime Factorization with Discrete Diffusion and Beam Search: Scaling Laws",
+   "authors": [
+    "Brendan O Donoghue",
+    "Nenad Tomasev",
+    "Volodymyr Mnih",
+    "Timothy Nguyen",
+    "Dalin Guo",
+    "Arun Nair",
+    "Kenneth Yang",
+    "Alexandre Frechette",
+    "Jasper Xian",
+    "Jean Tarbouriech",
+    "Pavel Tyletski",
+    "Ingrid von Glehn",
+    "Johannes Bausch",
+    "Demis Hassabis",
+    "Raia Hadsell"
+   ],
+   "affiliations": [
+    "Google DeepMind"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Theory",
+   "tags": [
+    "Theory",
+    "Generative Models",
+    "Pre-training & Data"
+   ],
+   "tldr": "A discrete-diffusion transformer learns to factor semiprimes up to 68 bits, but scaling laws show compute grows exponentially with bit length, so RSA is not threatened.",
+   "why_selected": "A surprising use of diffusion models on a hard cryptographic problem, with scaling laws that clarify what learning can and cannot do there.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Factoring a product of two large primes underlies RSA encryption, whose security assumes this is intractable. Machine learning has struggled with it because the problem is discrete and combinatorial, and tiny changes break the arithmetic constraints."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The best classical method, the General Number Field Sieve, is sub-exponential but still super-polynomial, and the largest publicly acknowledged factored RSA modulus is 896 bits. Earlier learned approaches were limited to much smaller numbers, with the prior state of the art at 56 bits."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors write the number n and its two factors p and q as binary strings and treat factoring as filling in masked bits, given n as a fixed prefix. A bidirectional transformer is trained as a discrete denoising diffusion model: during training, contiguous blocks of the factor bits are masked and the model reconstructs them. Contiguous masking matters because it forces the model to handle long-range carry propagation rather than local bit interpolation. At test time a guided beam search prunes partial assignments that violate the arithmetic, and the model acts as a generative prior that proposes candidates which exact verification or lattice post-processing can finish."
+    },
+    {
+     "heading": "Results",
+     "body": "The method factors 68-bit integers, beating the prior 56-bit state of the art. With a single sampling trajectory and no search, a 325M model solves 87.6% of held-out 15-bit-factor cases at 16,384 denoising steps and 8.3% at 20 bits, while a 12B model at 34 bits solves none directly. Each extra factor bit needs roughly twice the training steps for the same loss, so data and compute scale exponentially in bit length, like learned brute force."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This is a careful negative result on scaling: unlike language, factoring has no reusable local structure, so the learned model cannot generalize from k bits to k plus one. The authors conclude that such methods pose no threat to RSA. For researchers it shows where diffusion and test-time search help, and where they cannot replace number-theoretic structure."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.10202",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.10202"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 21,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Volodymyr Mnih",
+     "Demis Hassabis",
+     "Raia Hadsell"
+    ]
+   }
+  },
+  {
+   "id": "2611.12177",
+   "title": "Embodied First Exam",
+   "authors": [
+    "Kangrui Wang",
+    "Qineng Wang",
+    "Changhe Chen",
+    "Pingyue Zhang",
+    "Chi Gui",
+    "Feishi Wang",
+    "Canyu Chen",
+    "Wenli Xiao",
+    "Xiaoyu Huang",
+    "Tonghe Zhang",
+    "Linjie Li",
+    "Zihan Wang",
+    "Minyeong Kim",
+    "Yiyou Sun",
+    "Mingkai Deng",
+    "Jinyu Hou",
+    "Qi Zhu",
+    "Han Liu",
+    "Eric P. Xing",
+    "Huaxiu Yao",
+    "Zhiwen Fan",
+    "Yuejiang Liu",
+    "Dawn Song",
+    "Pieter Abbeel",
+    "Li Fei-Fei",
+    "Jiajun Wu",
+    "Yuke Zhu",
+    "Guanya Shi",
+    "Ruohan Zhang",
+    "Manling Li"
+   ],
+   "affiliations": [
+    "Northwestern University",
+    "Carnegie Mellon University",
+    "UC Berkeley",
+    "University of Washington",
+    "Stanford University",
+    "UNC-Chapel Hill",
+    "Texas A&M University",
+    "UT Austin"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Robotics",
+    "Agents"
+   ],
+   "tldr": "A benchmark of 1,156 robot tasks tests whether general coding agents can control robots; the best agent solves only 30% under real-robot-like conditions versus 77% with full simulator access.",
+   "why_selected": "It measures a fast-moving idea, coding agents as robot programmers, with a clean protocol that isolates what real-world constraints cost.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Coding agents already solve hard software tasks, which raises the possibility that they could write robot programs or train robot policies directly. Whether they can do so under real physical constraints is unknown."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most robotics benchmarks are built around visuomotor policy learning, with a fixed input-output interface. Coding benchmarks, in turn, impose no physical constraints, so neither tests what a coding agent can do with a robot."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The Embodied First Exam packages 1,156 tasks in 35 suites on 47 robots, including 9 new suites for spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic whole-body control and sim-to-sim engineering. Agents pick their own control approach: output actions directly, write a controller program, or train a policy. The key design is three settings per task. Privileged gives full simulator state and unlimited resets, an approximate upper bound. Standard mimics a real robot: sensors only and no resets by default. Realtime also keeps the world running while the agent thinks. A verifier the agent cannot touch grades every attempt."
+    },
+    {
+     "heading": "Results",
+     "body": "On 456 core tasks, the strongest of eight agents, GPT-6 Astra in Codex, reaches 34% in the Standard setting. On the 391 tasks with both settings, it solves 77% in Privileged but 30% in Standard. Adding resets raises its Standard rate from 28% to 53%, while adding exact object state gives 45%, and both give 68%. Realtime is harder still: 63% of its tests are solved by no agent."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The gap shows agents lean on trial and error and perfect state information that real robots lack, so the ability to recover from failures matters as much as raw skill. Caveats: each agent makes one attempt per test, failure labels come from agents, and everything is in simulation."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12177",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12177"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 3,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Dawn Song",
+     "Pieter Abbeel",
+     "Jiajun Wu",
+     "Yuke Zhu"
+    ]
+   }
+  },
+  {
+   "id": "2611.12184",
+   "title": "Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists",
+   "authors": [
+    "Guowei Xu",
+    "Jiaru Zou",
+    "Mete Erdogan",
+    "Haotian Ye",
+    "Pan Lu",
+    "James Zou"
+   ],
+   "affiliations": [
+    "Stanford University"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "AI for Science & Health",
+    "Agents"
+   ],
+   "tldr": "AI scientists produce more original ideas when shown less of the task during generation, and a learned screener then discards half of the candidates while keeping most of the best.",
+   "why_selected": "A counterintuitive, general design principle for automated discovery, tested across five models and 12 tasks in four domains.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "AI agents are increasingly used for scientific discovery, but their proposals tend to be incremental variations of familiar approaches, and creativity needs ideas that are original, useful and non-obvious."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Current work relies on prompt engineering, retrieved literature or heuristic search. The authors argue prompts give diminishing returns on frontier models, self-retrieved literature is as undiverse as the agent's own ideas, and search needs fine-grained signals that scientific problems rarely offer."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Borrowing a psychology theory of creativity, Blind Variation and Selective Retention splits the roles of information. For blind variation, the proposer sees only a deliberately limited summary of the task, so independent generations are not anchored on the same familiar mechanisms. For selective retention, a language model with a scoring head is trained on past proposals and their measured outcomes with a pairwise loss that separates top-5% candidates from the rest, then used to discard likely duds before costly experiments. Creativity is scored as originality times utility times non-obviousness."
+    },
+    {
+     "heading": "Results",
+     "body": "Across five proposer models and 12 tasks, limited-information proposals scored creativity 0.530 versus 0.462 for the same method with full information and 0.429 for analogical reasoning. Added to the SimpleTES workflow with Kimi-K3, it improved final scores on all five tasks tested, for example 0.918 versus 0.906 on spatially variable genes and 0.679 versus 0.629 on anomaly detection."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests withholding information during exploration and using accumulated experience only for selection. The caveats are that creativity is judged partly by an LLM, and originality means generative rarity, not novelty against the literature."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12184",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12184"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 50,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "James Zou"
+    ]
+   }
+  },
+  {
+   "id": "2611.12016",
+   "title": "Speculative Self-Distillation enables Efficient Knowledge Internalization",
+   "authors": [
+    "Shayan Talaei",
+    "Agam Bhatia",
+    "Arshia Soltani Moakhar",
+    "Jonas Hübotter",
+    "Amin Saberi",
+    "Azalia Mirhoseini"
+   ],
+   "affiliations": [
+    "Stanford University",
+    "ETH Zürich"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Efficiency",
+    "Retrieval & Memory"
+   ],
+   "tldr": "Speculative Self-Distillation lets the student write rollouts and hands control to the teacher only where the two strongly disagree, matching on-policy accuracy with 38 to 69% fewer supervised tokens.",
+   "why_selected": "A simple mechanism that improves the accuracy, efficiency and forgetting trade-off for putting new knowledge into model weights.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Models often need knowledge absent from pretraining, such as private documents or new facts. Putting it in the prompt costs context and inference time, so researchers want it in the weights."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "In self-distillation, the same model with the source material in context is the teacher and a closed-book copy is the student. Off-policy versions train on teacher-written text: strong signal, but on states the student will not visit. On-policy versions use student-written text, but the teacher quickly agrees with generic student prefixes, so most supervision is wasted."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of an editor who lets a writer draft, and steps in only where the draft departs from the facts. At each token, the method compares teacher and student next-token distributions, using Jensen-Shannon divergence. If it exceeds a threshold, called an inflection position, the teacher emits the token; otherwise the student does. The loss is still computed at every position. The threshold interpolates between the two older methods: small values behave off-policy and large values on-policy."
+    },
+    {
+     "heading": "Results",
+     "body": "Versus on-policy training, SSD uses 48%, 38% and 69% fewer supervised tokens on Company Memo, Wikipedia and Science Q&A, with accuracy changes of minus 1.35, plus 0.08 and plus 0.15 points. On Science Q&A with Qwen3-4B it reaches 66.3% against 64.6% with 55% fewer tokens. In a forgetting test on Qwen2.5-7B, average general accuracy drops 1.4 points, versus 4.5 for on-policy and 6.6 for off-policy."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It makes continual knowledge updates cheaper and less damaging, though the tests are closed-book QA on small models."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12016",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12016",
+    "code": "https://github.com/ShayanTalaei/SpeculativeSelfDistillation"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 11,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2611.12122",
+   "title": "System Optimizations for Cost-Efficient Agent Harnesses",
+   "authors": [
+    "Jongseok Park",
+    "Jiaxiang Yu",
+    "Eric Zhou",
+    "Tony Hong",
+    "Sunga Kim",
+    "Yusuf Afifi",
+    "Ian Wong",
+    "Ion Stoica",
+    "Alvin Cheung"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Efficiency"
+   ],
+   "tldr": "Agent costs are dominated by repeatedly re-reading context, and an interposition layer called Agency cuts costs by about 23% on average for existing harnesses with little accuracy loss.",
+   "why_selected": "It reframes harness work from accuracy to cost and shows savings on unmodified Claude Code and Codex harnesses.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Long agent sessions on million-token-context models can cost 10 to 100 times more than short ones, so cost is now a main barrier to long-horizon agents."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Studies find a strong model's accuracy barely depends on the harness: its prompt and tools. Prior harness work therefore targeted accuracy, and token or tool-call reduction ideas often ignore end-to-end cost."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors analyze real traces and find that reading cached context is the largest cost, up to 73% even with caching, because every turn pays for the whole context again. Tool calls cost a full context read each, up to 26 times more at the same token count, and agents use only 27% of tool outputs on average. Their system, Agency, works like Valgrind for agents: it sits between the unmodified harness and its sandbox using ptrace and cgroups, translating LLM calls into a shared format that hooks can rewrite. Techniques include tool output compaction, context garbage collection, a subtask stack machine and metadata-assisted search."
+    },
+    {
+     "heading": "Results",
+     "body": "On 100 software tasks and 100 retrieval tasks across Claude Code, Codex and a basic harness, combined techniques cut cost to 0.77 of baseline with accuracy at 0.97 of baseline. Savings reach 0.51 to 0.66 on retrieval tasks with random file names, versus 0.90 to 0.96 on Terminal-Bench 2."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Harness designers should treat end-to-end cost as a metric. Caveats: benchmark traces are two to three times shorter than real ones, and editing context invalidates caches."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12122",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12122"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 9,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Ion Stoica"
+    ]
+   }
+  }
+ ]
+}
