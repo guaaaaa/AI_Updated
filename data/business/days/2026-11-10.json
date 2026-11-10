@@ -1,0 +1,172 @@
+{
+ "date": "2026-11-10",
+ "edition": "weekday",
+ "generated_at": "2026-11-10T12:44:50+00:00",
+ "summary": "Anthropic sets terms for a record-scale AI listing, the Fed's Waller lays out a December hike, and California voters reject a billionaire wealth tax.",
+ "news": [
+  {
+   "id": "2026-11-10-n1",
+   "story_key": "anthropic-ipo-terms-2026-11",
+   "title": "Anthropic sets a $70 to $78 price range for an IPO that could raise up to $64.4 billion",
+   "category": "Startups & VC",
+   "published": "2026-11-10T06:50:00-05:00",
+   "tldr": "Anthropic's filing shows an indicative range of $70 to $78 a share and up to $64.4 billion raised, the first public-market test of frontier AI valuations.",
+   "why_selected": "A listing of this size tests how investors price AI after a sharp tech selloff, with effects on every AI-linked company and fund.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "An initial public offering, or IPO, is when a private company first sells shares to public investors. Anthropic, the AI lab behind the Claude models, was last valued at $965 billion in a private funding round. Earlier reporting discussed a $1.5 trillion valuation, and some institutional investors have been pushing for a lower figure. The offering comes days after the Nasdaq's deepest one-day drop in 19 months, driven by fears of more scrutiny of AI data centre construction after Democratic gains in the US midterm elections."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday a regulatory filing showed the IPO could raise as much as $64.4 billion. Reuters reported that Anthropic and some of its investors plan to sell shares in an indicative price band of $70 to $78 per share. Separately, Anthropic will raise $26 billion in a private placement with cornerstone investors, a group that includes Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC, bringing the total to as much as $90.4 billion. Goldman Sachs and Morgan Stanley lead the underwriters, and the shares are expected to trade on the Nasdaq under the ticker ANT. The Wall Street Journal reported trading could begin Thursday or Friday of next week. The filing shows third-quarter revenue of $16.96 billion, up 47 percent from the prior quarter, a slower pace than the 144 percent of the quarter before, with a narrower net loss. It also discloses nearly $900 billion in computing commitments."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For investors, this is the first public-market price for a frontier AI lab, and it sets a reference for rivals such as OpenAI, valued at $1.25 trillion in its latest raise. The cornerstone list shows suppliers of chips, memory and cloud capacity also hold a stake in a major customer, the kind of circular financing arrangement that worries critics of the AI boom. The compute commitments mean growth depends on capacity partly financed beyond Anthropic's control. SpaceX raised $75 billion in June in the world's largest IPO."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the range is raised or cut during the road show, the pricing date, and how the shares trade against a volatile tech market."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-anthropic-ipo-to-raise-up-to-644-billion/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-n2",
+   "story_key": "waller-december-hike-2026-11",
+   "title": "Fed's Waller backs a December hike even if October inflation cools, and floats a half-point move",
+   "category": "Central Banks & Rates",
+   "published": "2026-11-10T07:09:00-05:00",
+   "tldr": "Governor Waller said he would support a quarter-point hike in December regardless of October's CPI, and a half-point if core prices rose 0.3 percent or more.",
+   "why_selected": "A voting Fed official tied the size of the next rate hike to a data release due the same morning.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Federal Reserve sets the US policy interest rate, which anchors borrowing costs across the economy. Last month the Fed's rate-setting committee held rates steady, with Governor Christopher Waller voting with the majority, because policymakers had already signalled further tightening and markets had priced much of it in. Inflation remains well above the Fed's 2 percent goal: the September reading of the preferred price gauge was 3.7 percent, and 3.1 percent excluding food and energy."
+    },
+    {
+     "heading": "What happened",
+     "body": "Speaking in London on Tuesday, Waller said that even if the October consumer price index, due at 8:30 a.m. Eastern, shows inflation cooling, he would still support a 25 basis point increase at the December meeting. A basis point is one hundredth of a percentage point. If core CPI, which excludes food and energy, rose 0.3 percent or more from September, he said a 50 basis point hike should be considered. Economists polled by Reuters expected a 0.2 percent core rise. Waller said more than 70 percent of core services components rose at 3 percent or more in September, so inflation appears to be broadening. Treasury yields rose after the remarks. Futures priced about an 85 percent chance of a hike on Dec. 8-9, to a target range of 4.00 to 4.25 percent."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Waller argued that if promised hikes are not delivered, markets will cut their rate expectations and borrowing costs will fall, loosening policy when the Fed wants it tight. He described the labour market as solid, with unemployment at 4.1 percent, and said stock market falls matter only if they dent consumer demand. His comments also contrast with Chair Kevin Warsh's reluctance to give rate guidance."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The October CPI figures, other Fed speakers, and the Dec. 8-9 decision."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Federal Reserve",
+     "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-us-cpi-october-2026-inflation-federal-reserve-rate/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-n3",
+   "story_key": "california-prop-40-2026-11",
+   "title": "California voters reject a one-time 5% tax on billionaires after a record-spending campaign",
+   "category": "Trade & Policy",
+   "published": "2026-11-09T21:54:00-05:00",
+   "tldr": "Californians defeated Proposition 40, a one-time 5% wealth tax on residents worth over $1 billion, after opponents spent nearly $425 million.",
+   "why_selected": "The first large test of a state billionaire wealth tax ended in defeat, shaping tax debates elsewhere.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A wealth tax is levied on what a person owns, not on income. Proposition 40 would have imposed a one-time 5 percent tax on Californians with a net worth above $1 billion as of Jan. 1, 2026. It was sponsored by the healthcare union SEIU-United Healthcare Workers West, with proceeds meant for healthcare, plus some education and food assistance, as a response to federal healthcare cuts in President Trump's tax and spending law. Experts believe it would have been the world's first wealth tax targeting billionaires."
+    },
+    {
+     "heading": "What happened",
+     "body": "After almost a week of counting following the midterm election, the measure was projected to fail. It faced division among Democrats and unions. Governor Gavin Newsom opposed it, fearing the wealthy would leave and take income tax revenue with them. The opposition campaign was the most expensive in state history, at nearly $425 million, with Google co-founder Sergey Brin giving at least $132 million according to campaign finance filings. Opponents also put two counter-measures on the ballot, Propositions 41 and 42, which would have blocked the tax even if it passed. Backers had projected it could raise as much as $100 billion over five years. The union's president, Dave Regan, pledged to seek a billionaire tax again in 2028."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "California has around 200 billionaires holding roughly $2 trillion, and the largest state economy in the US. The result may slow momentum for similar proposals in other states. Supporters say the money was needed to backfill healthcare funding gaps. Opponents argued the tax would have driven capital and founders out, an argument that was contested by analysts, and a handful of billionaires reportedly moved out of the state ahead of it. For startups and venture investors, the outcome removes a specific worry about forced share sales to pay a tax."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Any 2028 ballot measure, and whether other states move on wealth taxes."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cq398em3032wo"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/09/californias-proposed-billionaire-tax-fails-to-pass/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w35990",
+   "title": "Financial Advisors and Retirees' Risk-taking",
+   "authors": [
+    "Allison T. Cole",
+    "Maarten Meeuwis",
+    "Alessandro Previtero",
+    "Noah Stoffman"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-10T00:00:00-05:00",
+   "primary_tag": "Asset pricing",
+   "tags": [
+    "Asset pricing"
+   ],
+   "tldr": "Retirees with financial advisors hold about two-thirds of their portfolios in stocks, 30 to 40 percentage points more than comparable retirees without one.",
+   "why_selected": "It tests whether paid advice pushes retirees into riskier portfolios and whether that is worth the cost.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Retirees must decide how much of their savings to hold in stocks, which offer higher expected returns but can fall sharply. Rules of thumb and target-date funds, which are funds that adjust their mix automatically as investors age, serve as common benchmarks for retiree portfolios. The question is what financial advisors actually do with retirees' portfolios, and whether their influence helps or harms clients."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Rules of thumb, target-date funds and the choices of non-advised retirees all point to a much lower stock share than advised retirees hold."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors compare advised retirees with non-advised retirees, target-date funds and common rules of thumb. They then track what happens when a client switches advisors: if portfolios move toward the new advisor's investment style, the allocation reflects the advisor's choice and not client inertia. They also test whether advisor influence is stronger among clients with low financial knowledge or risk tolerance. Finally they build a standard life-cycle model of lifetime saving and model advisors as money doctors who correct clients' overly pessimistic beliefs about the equity premium, the extra return stocks earn over safe assets."
+    },
+    {
+     "heading": "Results",
+     "body": "Advised retirees keep about two-thirds of their portfolios in equities well into old age, 30 to 40 percentage points more than the comparison groups. These allocations reflect active choices: after an advisor switch, portfolios adjust gradually toward the new advisor's style. Equity shares rise with the length of the advisor relationship, and advisor influence is strongest among clients with low financial knowledge or risk tolerance. In the model, retirees' modest financial wealth relative to their safe pension income rationalizes these portfolios. The welfare gains from the higher risk-taking are of the same order of magnitude as the cost of advice."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Anyone designing retirement products or advice rules should note that advised retirees take far more equity risk, and the modeled welfare gain is of the same order as the cost of advice. The main caveat is that the welfare result depends on the model's assumptions, including that advisors correct pessimistic beliefs. This summary draws on the abstract."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w35990"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}

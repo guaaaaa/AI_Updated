@@ -3,7 +3,7 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [
   {
@@ -11,11 +11,53 @@
    "outlets": 8,
    "date": "2026-11-08",
    "covered": null
+  },
+  {
+   "title": "Oil Prices Fall, Staying Below $100, After Trump Downplays Prospect of New Iran Strikes",
+   "outlets": 6,
+   "date": "2026-11-09",
+   "covered": null
+  },
+  {
+   "title": "Anthropic reportedly plans to move forward with IPO plans",
+   "outlets": 6,
+   "date": "2026-11-10",
+   "covered": "2026-11-10-n1"
+  },
+  {
+   "title": "Anthropic’s $1.5 Trillion IPO Could Expose the Biggest Risk Facing the AI Boom",
+   "outlets": 4,
+   "date": "2026-11-08",
+   "covered": null
+  },
+  {
+   "title": "Oil falls as Trump signals restraint on Iran despite fresh shipping attacks",
+   "outlets": 4,
+   "date": "2026-11-08",
+   "covered": null
+  },
+  {
+   "title": "Gold rebounds above $4,100 as traders await U.S. inflation data after jobs beat",
+   "outlets": 3,
+   "date": "2026-11-09",
+   "covered": null
+  },
+  {
+   "title": "Dow futures rally 500 points as oil prices drop; traders brace for more data and earnings",
+   "outlets": 3,
+   "date": "2026-11-09",
+   "covered": null
+  },
+  {
+   "title": "California voters fail to pass proposed one-time tax on billionaires’ wealth",
+   "outlets": 3,
+   "date": "2026-11-10",
+   "covered": "2026-11-10-n3"
   }
  ],
  "featured": {
-  "news": 2,
-  "papers": 1
+  "news": 5,
+  "papers": 2
  },
  "items": [
   {
@@ -35,6 +77,30 @@
    "date": "2026-11-09",
    "type": "paper",
    "title": "AI as Shared Business Infrastructure: Firm Growth and the Distribution of Gains"
+  },
+  {
+   "id": "2026-11-10-n1",
+   "date": "2026-11-10",
+   "type": "news",
+   "title": "Anthropic sets a $70 to $78 price range for an IPO that could raise up to $64.4 billion"
+  },
+  {
+   "id": "2026-11-10-n2",
+   "date": "2026-11-10",
+   "type": "news",
+   "title": "Fed's Waller backs a December hike even if October inflation cools, and floats a half-point move"
+  },
+  {
+   "id": "2026-11-10-n3",
+   "date": "2026-11-10",
+   "type": "news",
+   "title": "California voters reject a one-time 5% tax on billionaires after a record-spending campaign"
+  },
+  {
+   "id": "nber-w35990",
+   "date": "2026-11-10",
+   "type": "paper",
+   "title": "Financial Advisors and Retirees' Risk-taking"
   }
  ]
 }

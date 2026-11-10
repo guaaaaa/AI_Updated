@@ -1,5 +1,46 @@
 [
  {
+  "id": "2026-11-10-n1",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "Anthropic sets a $70 to $78 price range for an IPO that could raise up to $64.4 billion",
+  "tldr": "Anthropic's filing shows an indicative range of $70 to $78 a share and up to $64.4 billion raised, the first public-market test of frontier AI valuations.",
+  "category": "Startups & VC",
+  "byline": "The Globe and Mail, TechCrunch"
+ },
+ {
+  "id": "2026-11-10-n2",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "Fed's Waller backs a December hike even if October inflation cools, and floats a half-point move",
+  "tldr": "Governor Waller said he would support a quarter-point hike in December regardless of October's CPI, and a half-point if core prices rose 0.3 percent or more.",
+  "category": "Central Banks & Rates",
+  "byline": "Federal Reserve, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-10-n3",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "California voters reject a one-time 5% tax on billionaires after a record-spending campaign",
+  "tldr": "Californians defeated Proposition 40, a one-time 5% wealth tax on residents worth over $1 billion, after opponents spent nearly $425 million.",
+  "category": "Trade & Policy",
+  "byline": "The Guardian, BBC, TechCrunch"
+ },
+ {
+  "id": "nber-w35990",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Financial Advisors and Retirees' Risk-taking",
+  "tldr": "Retirees with financial advisors hold about two-thirds of their portfolios in stocks, 30 to 40 percentage points more than comparable retirees without one.",
+  "primary_tag": "Asset pricing",
+  "tags": [
+   "Asset pricing"
+  ],
+  "byline": "Allison T. Cole, Maarten Meeuwis, Alessandro Previtero et al.",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-09-n1",
   "date": "2026-11-09",
   "type": "news",

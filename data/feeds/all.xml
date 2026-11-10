@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 10 Nov 2026 12:20:35 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 12:44:50 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Anthropic sets a $70 to $78 price range for an IPO that could raise up to $64.4 billion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-10/2026-11-10-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-10/2026-11-10-n1</guid>
+    <pubDate>Tue, 10 Nov 2026 12:44:50 +0000</pubDate>
+    <category>Business / Startups &amp; VC</category>
+    <description>Anthropic's filing shows an indicative range of $70 to $78 a share and up to $64.4 billion raised, the first public-market test of frontier AI valuations. (The Globe and Mail, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Fed's Waller backs a December hike even if October inflation cools, and floats a half-point move</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-10/2026-11-10-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-10/2026-11-10-n2</guid>
+    <pubDate>Tue, 10 Nov 2026 12:44:50 +0000</pubDate>
+    <category>Business / Central Banks &amp; Rates</category>
+    <description>Governor Waller said he would support a quarter-point hike in December regardless of October's CPI, and a half-point if core prices rose 0.3 percent or more. (Federal Reserve, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>California voters reject a one-time 5% tax on billionaires after a record-spending campaign</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-10/2026-11-10-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-10/2026-11-10-n3</guid>
+    <pubDate>Tue, 10 Nov 2026 12:44:50 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>Californians defeated Proposition 40, a one-time 5% wealth tax on residents worth over $1 billion, after opponents spent nearly $425 million. (The Guardian, BBC, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Financial Advisors and Retirees' Risk-taking</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-10/nber-w35990</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-10/nber-w35990</guid>
+    <pubDate>Tue, 10 Nov 2026 12:44:50 +0000</pubDate>
+    <category>Business / Asset pricing</category>
+    <description>Retirees with financial advisors hold about two-thirds of their portfolios in stocks, 30 to 40 percentage points more than comparable retirees without one. (Allison T. Cole, Maarten Meeuwis, Alessandro Previtero et al.)</description>
+  </item>
   <item>
     <title>Anthropic releases Claude Fable 5.2 and Mythos 5.2 at a lower price</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n1</link>
@@ -454,38 +486,6 @@
     <pubDate>Fri, 06 Nov 2026 12:52:17 +0000</pubDate>
     <category>Business / Earnings &amp; Companies</category>
     <description>Elon Musk said Tesla will wind down Cybertruck production in 2027, using the factory space for its two-seat Cybercab robotaxi after years of weak sales. (BBC News, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Aggregate-Surplus Maximizing Monetary Policy</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/nber-w35967</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/nber-w35967</guid>
-    <pubDate>Fri, 06 Nov 2026 12:52:17 +0000</pubDate>
-    <category>Business / Monetary policy</category>
-    <description>A new NBER paper finds that when households differ in labor-market frictions, a central bank maximizing everyone's joint surplus should weight output stabilization about 37 percent more than inflation, compared with the standard model. (David Baqaee, Ariel Burstein, Joao Guerreiro)</description>
-  </item>
-  <item>
-    <title>OpenAI launches GPT-6 Cyber, a cybersecurity model rated "Critical" on its Preparedness Framework</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>OpenAI released GPT-6 Cyber to vetted defenders, claiming better exploit-finding and far fewer out-of-scope actions, and its Preparedness Framework rates it "Critical" for cybersecurity. (The Verge, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Anthropic lets Claude read your bank accounts with a new Personal Finance feature</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n2</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Product &amp; Features</category>
-    <description>Anthropic launched a beta Personal Finance tool that links Claude to bank and card accounts through Plaid with read-only access, following a similar ChatGPT feature from May. (The Verge, TechCrunch)</description>
-  </item>
-  <item>
-    <title>ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05036</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05036</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>ToolSpace builds agent training tasks from how real tools are chained in execution traces, producing cross-service workflows that lift open models toward frontier tool-use scores. (Guanting Dong, Zhichao Sun, Xinyu Yang et al. · Renmin University of China, Fudan University, Shanghai Jiao Tong University)</description>
   </item>
 </channel>
 </rss>
