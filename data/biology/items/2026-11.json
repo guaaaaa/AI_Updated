@@ -1,5 +1,68 @@
 [
  {
+  "id": "2026-11-10-n1",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "FDA orders a rare optic-nerve warning on all GLP-1 drugs",
+  "tldr": "The FDA will require every GLP-1 medicine to carry a warning of a potential increased risk of NAION, a rare condition that can cause permanent vision loss in one eye.",
+  "category": "Drugs & Approvals",
+  "byline": "FDA, CBS News"
+ },
+ {
+  "id": "2026-11-10-n2",
+  "date": "2026-11-10",
+  "type": "news",
+  "title": "FDA approves asundexian, the first factor XIa blocker, to prevent a second stroke",
+  "tldr": "The FDA approved Bayer's once-daily pill Sunharbo (asundexian) alongside antiplatelet therapy after a mild-to-moderate non-cardioembolic stroke or high-risk TIA, after a 12,327-person trial showed a 26% lower risk of ischemic stroke.",
+  "category": "Drugs & Approvals",
+  "byline": "FDA, pharmaphorum"
+ },
+ {
+  "id": "doi-10-1056-nejmoa2612924",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Intensive Blood-Pressure Control in Patients with Previous Ischemic Stroke",
+  "tldr": "In 4,368 people with prior stroke or TIA, aiming for systolic blood pressure under 120 mm Hg rather than 140 cut major cardiovascular events by 21%, at the cost of more kidney-function events.",
+  "primary_tag": "Cardiovascular",
+  "tags": [
+   "Cardiovascular",
+   "Neurology & mental health"
+  ],
+  "byline": "Gisele Sampaio Silva M. Julia Machline-Carrion Karla Santo João Brainer Clares de Andrade Eduardo Martins Patrícia Oliveira Guimarães Frederico Monfardini Josué Nieri Silvia R.L. Assis Sheila Cristina Ouriques Martins Octávio Marques Pontes Neto Audes D.M. Feitosa Carla Heloisa Cabral Moro Sandra C. Fuchs Rubens Gagliardi Odilson Silvestre Ricardo Pereira Silva Murillo Antunes Eva Carolina Rocha Cesar Minelli Lilia Nigro Maia Luiz A. Bortolotto Marcio Gonçalves Sousa Luciano F. Drager Rodrigo Bazan José F. Vilela-Martin Jamary Oliveira-Filho Viviane Flumignan Zétola Wagner Avelar Leonardo Augusto Carbonera Gabriel Pereira Braga Adriana Bastos Conforto Caio A.M. Tavares Fabrício Oliveira Lima Gladys L. Martins Letícia Costa Rebello Anthony Rodgers Paul K. Whelton Flavio D. Fuchs and Otavio Berwangerthe OPTIMAL-STROKE Trial Investigators* · Federal University of São Paulo; Albert Einstein Israelite Hospital; George Institute for Global Health UK, Imperial College London",
+  "hf": null,
+  "venue": "The New England Journal of Medicine"
+ },
+ {
+  "id": "doi-10-1056-nejmoa2612126",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "Interleukin-6 Inhibition with Ziltivekimab for Atherosclerotic Disease",
+  "tldr": "Monthly ziltivekimab, an IL-6 antibody, sharply cut inflammatory markers in 6,376 people with atherosclerosis and kidney disease but did not change heart attack, stroke or cardiovascular death.",
+  "primary_tag": "Cardiovascular",
+  "tags": [
+   "Cardiovascular",
+   "Drug development"
+  ],
+  "byline": "Paul M Ridker A. Michael Lincoff Nikolaus Marx Ann Marie Navar Naveed Sattar Katherine R. Tuttle Matthew Budoff Morten Böttcher Matthew A. Cavender Robin P. Choudhury Jan H. Cornel Grzegorz Gajos Issei Komuro K.M.K. Reddy Parvathareddy Roberto Pontremoli José Francisco Kerr Saraiva Iana I. Simova Lance A. Sloan Alejandro López-Suárez Yi-Da Tang Lale Tokgözoğlu Nqoba Tsabedze Konstantinos Tsioufis Subodh Verma Mathias Vrolix Andreas Andersen Florian M.M. Baeres Kathrine Ekström Mads D.M. Engelmann Sofia Gerward G. Kees Hovingh Anders Hvelplund and Vlado Perkovicthe ZEUS Investigators* · Brigham and Women's Hospital; Mass General Brigham",
+  "hf": null,
+  "venue": "The New England Journal of Medicine"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aek2522",
+  "date": "2026-11-10",
+  "type": "paper",
+  "title": "A single–amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking",
+  "tldr": "One amino acid differs between rodent and human Andes virus glycoproteins, and swapping it changed how long the protein stays in the Golgi and how fast virus-like particles are released in human cells.",
+  "primary_tag": "Microbiology",
+  "tags": [
+   "Microbiology",
+   "Infectious disease"
+  ],
+  "byline": "Santiago Vidal-Freire, Natalia M. Ferressini-Gerpe, Carla M. Bellomo et al. · Icahn School of Medicine at Mount Sinai; Administración Nacional de Laboratorios e Institutos de Salud Dr. Carlos G. Malbrán (ANLIS); Centro Ciencia y Vida and Universidad San Sebastián; U.S. Army Medical Research Institute of Infectious Diseases; National Institute of Allergy and Infectious Diseases",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
   "id": "2026-11-09-n1",
   "date": "2026-11-09",
   "type": "news",

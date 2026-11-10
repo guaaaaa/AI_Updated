@@ -1,0 +1,251 @@
+{
+ "date": "2026-11-10",
+ "edition": "weekday",
+ "generated_at": "2026-11-10T13:54:21+00:00",
+ "summary": "The FDA adds an eye-nerve warning to every GLP-1 drug and approves a first-in-class stroke-prevention pill; three new papers cover blood pressure after stroke, an anti-inflammatory heart trial that came up empty, and a hantavirus protein.",
+ "news": [
+  {
+   "id": "2026-11-10-n1",
+   "story_key": "fda-glp1-naion-label-warning",
+   "title": "FDA orders a rare optic-nerve warning on all GLP-1 drugs",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-09T08:47:00-05:00",
+   "tldr": "The FDA will require every GLP-1 medicine to carry a warning of a potential increased risk of NAION, a rare condition that can cause permanent vision loss in one eye.",
+   "why_selected": "A class-wide safety decision on some of the most widely used drugs, backed by the regulator's own analysis of 126 trials.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "GLP-1 receptor agonists are drugs that mimic a gut hormone that lowers blood sugar and acts on brain regions controlling appetite. They are widely used for type 2 diabetes and for weight loss, and several have added approved uses, including reducing major cardiovascular events and treating sleep apnea. In July 2024 a published study tied semaglutide, the drug in Ozempic and Wegovy, to non-arteritic anterior ischemic optic neuropathy, or NAION. NAION is caused by reduced blood flow to the front of the optic nerve and brings sudden, painless vision loss in one eye."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, November 9, the FDA announced that it is requiring the makers of all GLP-1 drugs to add NAION to the Warnings and Precautions section of their labels. The agency says it reviewed clinical trial, animal and postmarketing data. In an analysis of 126 randomized trials, NAION occurred at 6.4 cases per 100,000 person-years in people on GLP-1 drugs versus 3.8 per 100,000 person-years in people on placebo or a non-GLP-1 glucose-lowering drug. For comparison, the FDA cites a general-population rate of 2.3 to 10.2 cases per 100,000 people a year in adults over 50. Cases were reported for all marketed products. Novo Nordisk told CBS News that the data do not establish cause and effect; Lilly said it was evaluating the update."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The absolute risk is small, and NAION also occurs in people who take none of these drugs. The FDA notes that diabetes, high blood pressure and sleep apnea, all common in people who use GLP-1 drugs, are themselves possible risk factors, which makes the reports hard to interpret. Still, vision loss from NAION tends to be irreversible, and the warning gives clinicians and patients a defined symptom list: sudden blurred or missing vision in one eye. The FDA says a person who has had NAION should discuss with their clinician whether to continue the drug. This is a regulator's statement about evidence, not guidance for any individual."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Updated labels from each manufacturer, any further studies separating drug effect from underlying risk factors, and whether further studies change the FDA's assessment."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDA",
+     "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/glp-1-vision-loss-side-effect-warning-fda/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-n2",
+   "story_key": "fda-asundexian-sunharbo-approval",
+   "title": "FDA approves asundexian, the first factor XIa blocker, to prevent a second stroke",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-09T17:15:00-05:00",
+   "tldr": "The FDA approved Bayer's once-daily pill Sunharbo (asundexian) alongside antiplatelet therapy after a mild-to-moderate non-cardioembolic stroke or high-risk TIA, after a 12,327-person trial showed a 26% lower risk of ischemic stroke.",
+   "why_selected": "A first-in-class approval for a leading cause of disability, with a large placebo-controlled phase 3 trial behind it.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "After a stroke caused by a blood clot, the main prevention tool is antiplatelet medicine such as aspirin or clopidogrel, which keeps platelets from clumping. Pharmaphorum, citing Bayer, notes that one in five people who have such a stroke will have another within five years. Factor XIa is one protein in the clotting cascade, and drugs that block it were designed in the hope of stopping harmful clots with less bleeding than older anticoagulants. Asundexian had previously failed a phase 3 trial in atrial fibrillation."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, November 9, the FDA approved Sunharbo (asundexian) 50 mg tablets for use with antiplatelet therapy in adults after a recent mild-to-moderate non-cardioembolic ischemic stroke, meaning a clot that did not originate in the heart, or a high-risk transient ischemic attack. The approval rests on OCEANIC-STROKE, a randomized, double-blind, placebo-controlled phase 3 trial of 12,327 adults, started within 72 hours of symptoms. Over a median 14.2 months, the drug reduced ischemic stroke by 26% versus placebo. Overall major bleeding was similar between groups, but higher with the drug in patients older than 75 and during the first 90 days; gastrointestinal bleeding was more common, and diarrhea was the most frequent side effect. It is not approved for stroke prevention in atrial fibrillation. The FDA had granted Fast Track and Priority Review, and the approval went to Bayer."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The FDA describes it as the first factor XIa inhibitor approved. The bleeding pattern, concentrated in older patients and early treatment, is the main trade-off and will shape how it is used. Competing factor XIa programs from Bristol Myers Squibb and Johnson & Johnson are still in phase 3, according to pharmaphorum."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Real-world bleeding data, pricing and coverage, and whether rival factor XIa drugs report results in atrial fibrillation and stroke."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDA",
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-factor-xla-inhibitor-help-prevent-stroke-certain-adults-high-risk"
+    },
+    {
+     "name": "pharmaphorum",
+     "url": "https://pharmaphorum.com/news/bayer-reveals-data-behind-asundexians-stroke-win"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2612924",
+   "title": "Intensive Blood-Pressure Control in Patients with Previous Ischemic Stroke",
+   "authors": [
+    "Gisele Sampaio Silva M. Julia Machline-Carrion Karla Santo João Brainer Clares de Andrade Eduardo Martins Patrícia Oliveira Guimarães Frederico Monfardini Josué Nieri Silvia R.L. Assis Sheila Cristina Ouriques Martins Octávio Marques Pontes Neto Audes D.M. Feitosa Carla Heloisa Cabral Moro Sandra C. Fuchs Rubens Gagliardi Odilson Silvestre Ricardo Pereira Silva Murillo Antunes Eva Carolina Rocha Cesar Minelli Lilia Nigro Maia Luiz A. Bortolotto Marcio Gonçalves Sousa Luciano F. Drager Rodrigo Bazan José F. Vilela-Martin Jamary Oliveira-Filho Viviane Flumignan Zétola Wagner Avelar Leonardo Augusto Carbonera Gabriel Pereira Braga Adriana Bastos Conforto Caio A.M. Tavares Fabrício Oliveira Lima Gladys L. Martins Letícia Costa Rebello Anthony Rodgers Paul K. Whelton Flavio D. Fuchs and Otavio Berwangerthe OPTIMAL-STROKE Trial Investigators*"
+   ],
+   "affiliations": [
+    "Federal University of São Paulo; Albert Einstein Israelite Hospital; George Institute for Global Health UK",
+    "Imperial College London"
+   ],
+   "announced": "2026-11-07T00:00:00-05:00",
+   "primary_tag": "Cardiovascular",
+   "tags": [
+    "Cardiovascular",
+    "Neurology & mental health"
+   ],
+   "tldr": "In 4,368 people with prior stroke or TIA, aiming for systolic blood pressure under 120 mm Hg rather than 140 cut major cardiovascular events by 21%, at the cost of more kidney-function events.",
+   "why_selected": "The first adequately powered trial answering how low blood pressure should go after a stroke, published in NEJM.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "High blood pressure is the most important risk factor for another stroke, and almost everyone leaves hospital on blood-pressure medicine. What clinicians lacked was a firm answer on how low to aim, since lowering too far had been feared to reduce blood flow to the brain."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The SPRINT trial set the stage for a systolic target below 120 mm Hg in high-risk patients, but excluded people with previous stroke. Other trials in this group were underpowered or limited to specific kinds of stroke, so guidance rested on thinner evidence."
+    },
+    {
+     "heading": "Key idea",
+     "body": "OPTIMAL-STROKE is a comparison of two targets. Think of a thermostat: both groups were treated with standard blood-pressure medicines, but one was told to reach a much lower setting. The multicenter, open-label randomized trial enrolled 4,368 participants at 30 sites in Brazil, all with high blood pressure and a history of ischemic stroke or TIA and clinically stable for 48 hours. Mean age was 64 and 48% were women. Participants were randomly assigned to a systolic target below 120 mm Hg or below 140 mm Hg. The primary outcome combined cardiovascular death, nonfatal heart attack, nonfatal stroke, and hospitalization for unstable angina or heart failure."
+    },
+    {
+     "heading": "Results",
+     "body": "Over a median 3.9 years, average systolic pressure reached 122 mm Hg in the intensive group and 135.2 mm Hg in the standard group. The primary outcome occurred in 10.9% of the intensive group and 13.5% of the standard group (hazard ratio 0.79; 95% CI 0.67 to 0.94). Serious adverse events were similar overall, but renal outcomes were more common with intensive treatment, 3.9% versus 2.2%, with no increase in end-stage kidney disease or dialysis."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result suggests the fear of lowering pressure after stroke may be overstated, in a trial large enough to be informative. Caveats are the open-label design, a single country, and the kidney-function signal, which the investigators attributed mainly to a sustained fall in kidney function that may be a hemodynamic effect."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2612924",
+    "doi": "https://doi.org/10.1056/NEJMoa2612924"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1056-nejmoa2612126",
+   "title": "Interleukin-6 Inhibition with Ziltivekimab for Atherosclerotic Disease",
+   "authors": [
+    "Paul M Ridker A. Michael Lincoff Nikolaus Marx Ann Marie Navar Naveed Sattar Katherine R. Tuttle Matthew Budoff Morten Böttcher Matthew A. Cavender Robin P. Choudhury Jan H. Cornel Grzegorz Gajos Issei Komuro K.M.K. Reddy Parvathareddy Roberto Pontremoli José Francisco Kerr Saraiva Iana I. Simova Lance A. Sloan Alejandro López-Suárez Yi-Da Tang Lale Tokgözoğlu Nqoba Tsabedze Konstantinos Tsioufis Subodh Verma Mathias Vrolix Andreas Andersen Florian M.M. Baeres Kathrine Ekström Mads D.M. Engelmann Sofia Gerward G. Kees Hovingh Anders Hvelplund and Vlado Perkovicthe ZEUS Investigators*"
+   ],
+   "affiliations": [
+    "Brigham and Women's Hospital; Mass General Brigham"
+   ],
+   "announced": "2026-11-07T00:00:00-05:00",
+   "primary_tag": "Cardiovascular",
+   "tags": [
+    "Cardiovascular",
+    "Drug development"
+   ],
+   "tldr": "Monthly ziltivekimab, an IL-6 antibody, sharply cut inflammatory markers in 6,376 people with atherosclerosis and kidney disease but did not change heart attack, stroke or cardiovascular death.",
+   "why_selected": "A large, well-run negative trial that tests the idea that lowering inflammation prevents heart disease, and says where the field goes next.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Cholesterol is not the whole story in heart disease: inflammation also contributes to heart attacks and strokes. The question is which inflammatory pathway to block, and in which patients."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The CANTOS trial showed that blocking interleukin-1 beta lowered recurrent heart attacks and strokes, and the colchicine trials LoDoCo2 and COLCOT showed benefit from a generic anti-inflammatory drug. ZEUS asked whether going one step downstream, to interleukin-6 (IL-6), would also work."
+    },
+    {
+     "heading": "Key idea",
+     "body": "IL-6 is a signaling molecule downstream of IL-1 that drives the liver to produce inflammatory proteins such as C-reactive protein. Ziltivekimab, from Novo Nordisk, is an antibody that neutralizes it. In this phase 3 trial, 6,376 adults (mean age 69) with atherosclerotic disease, chronic kidney disease and elevated hsCRP of at least 2 mg/L were randomly assigned to 15 mg monthly by injection or placebo. Many also had diabetes (66%) and heart failure (42%), making this a higher-risk group than CANTOS enrolled."
+    },
+    {
+     "heading": "Results",
+     "body": "At 24 months the drug lowered hsCRP by 64% and free IL-6 by 76% compared with placebo, so it hit its target. Over a median 33 months, the primary outcome of cardiovascular death, nonfatal heart attack or nonfatal stroke occurred in 17.6% of the drug group and 17.7% of the placebo group (hazard ratio 0.99; 95% CI 0.88 to 1.11). Serious infections were reported in 20.4% versus 17.9%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Inflammation as a target is not refuted, but IL-6 blockade in this older, sicker group did not help. Lead investigator Paul Ridker suggested the disease may have been too advanced to modify, or that another target, such as the upstream NLRP3 inflammasome, may be better. The main caveat is that the result applies to this population and drug."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2612126",
+    "doi": "https://doi.org/10.1056/NEJMoa2612126"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aek2522",
+   "title": "A single–amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking",
+   "authors": [
+    "Santiago Vidal-Freire",
+    "Natalia M. Ferressini-Gerpe",
+    "Carla M. Bellomo",
+    "André Filipe Pastor",
+    "Maya Tagliavia",
+    "Rachel Somavarapu",
+    "Shruti Shirsathe",
+    "Jayden Zhang",
+    "Elaina Giannetti",
+    "Ignacio Mena",
+    "Florian Krammer",
+    "Nicole D. Tischler",
+    "Juan Angel Patiño-Galindo",
+    "Maria Kaczmarek",
+    "Mariano Sanchez-Lockhart",
+    "Gabriella Worwa",
+    "Jens H. Kuhn",
+    "Connie S. Schmaljohn",
+    "Adolfo García-Sastre",
+    "Valeria P. Martínez",
+    "Gustavo Palacios"
+   ],
+   "affiliations": [
+    "Icahn School of Medicine at Mount Sinai; Administración Nacional de Laboratorios e Institutos de Salud Dr. Carlos G. Malbrán (ANLIS); Centro Ciencia y Vida and Universidad San Sebastián; U.S. Army Medical Research Institute of Infectious Diseases; National Institute of Allergy and Infectious Diseases"
+   ],
+   "announced": "2026-11-06T00:00:00-05:00",
+   "primary_tag": "Microbiology",
+   "tags": [
+    "Microbiology",
+    "Infectious disease"
+   ],
+   "tldr": "One amino acid differs between rodent and human Andes virus glycoproteins, and swapping it changed how long the protein stays in the Golgi and how fast virus-like particles are released in human cells.",
+   "why_selected": "A molecular-scale look at the only hantavirus known to spread between people, tied to a topical outbreak, with clear limits stated.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Andes virus is a rodent-borne RNA virus that can cause hantavirus pulmonary syndrome, a severe and potentially life-threatening illness. Unlike other known hantaviruses, it can spread from person to person. Scientists know little about which viral features shape how it behaves in humans."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "A 2018 to 2019 outbreak in Epuyén, Argentina, involved person-to-person spread and 11 deaths. Earlier work found biological differences between a rodent-derived isolate and a human-derived isolate from that outbreak, although the two are genetically very similar."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team at Mount Sinai compared the two isolates and found 25 amino acid differences, the building blocks of proteins. They focused on one near the cleavage domain of the glycoprotein, the viral surface protein that is cut and assembled inside the cell. Think of editing one letter in an assembly instruction. They changed that single amino acid in the human-derived glycoprotein to match the rodent version and watched where the protein went in human cells."
+    },
+    {
+     "heading": "Results",
+     "body": "The rodent-derived isolate grew faster than the human-derived one, though both eventually reached similar levels, and viral RNA production did not explain the gap. The modified protein spent less time in the Golgi apparatus, a cell compartment that processes proteins, and virus-like particles were released more quickly."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It links a specific, nameable molecular difference to a measurable change in viral assembly, a possible target for antiviral drugs, and it gives researchers a starting point for comparing sequences from other outbreaks, including the 2026 Hondius cruise ship outbreak. The caveat is large: experiments used expression systems and virus-like particles, not infectious virus, and the work does not show this change affects transmission between people."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aek2522",
+    "doi": "https://doi.org/10.1126/sciadv.aek2522"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major",
+    "press": 1
+   }
+  }
+ ]
+}

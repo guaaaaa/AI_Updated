@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-10T13:26:40+00:00",
+ "updated": "2026-11-10T13:54:22+00:00",
  "domain": "biology",
  "days": [
+  {
+   "date": "2026-11-10",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 3,
+   "backfill": false
+  },
   {
    "date": "2026-11-09",
    "edition": "weekday",
@@ -41,7 +48,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 14
+   "n": 19
   }
  ],
  "tag_groups": {
@@ -75,11 +82,13 @@
   ]
  },
  "tag_counts": {
-  "Cardiovascular": 2,
+  "Cardiovascular": 4,
+  "Neurology & mental health": 1,
+  "Drug development": 1,
+  "Microbiology": 2,
+  "Infectious disease": 3,
   "Epidemiology": 1,
-  "Microbiology": 1,
   "Genetics & genomics": 1,
-  "Infectious disease": 2,
   "Evolution & ecology": 1,
   "Maternal & child health": 1,
   "Devices & diagnostics": 1
@@ -98,10 +107,10 @@
   "Global Health"
  ],
  "category_counts": {
+  "Drugs & Approvals": 4,
   "Clinical Research": 1,
   "Evolution & Ecology": 2,
   "Neuroscience & Mental Health": 1,
-  "Drugs & Approvals": 2,
   "Microbes & Infectious Disease": 1,
   "Public Health": 1,
   "Global Health": 1
