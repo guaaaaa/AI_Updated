@@ -3,12 +3,12 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [],
  "featured": {
-  "news": 5,
-  "papers": 6
+  "news": 8,
+  "papers": 9
  },
  "items": [
   {
@@ -76,6 +76,42 @@
    "date": "2026-11-10",
    "type": "paper",
    "title": "Persistent bistability of Nordic Seas overflow waters over 800,000 years"
+  },
+  {
+   "id": "2026-11-11-n1",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "Gemini and Webb find the oldest compact pair of quasars, two black holes that grew too big too early"
+  },
+  {
+   "id": "2026-11-11-n2",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "NASA studies show how the LISA observatory could find planets with gravitational waves"
+  },
+  {
+   "id": "2026-11-11-n3",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "A vanished chemical fingerprint dates the switch to modern-style plate tectonics to 2.5 billion years ago"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aee6434",
+   "date": "2026-11-11",
+   "type": "paper",
+   "title": "Ultrafast Meissner-levitated microrotor"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeh7797",
+   "date": "2026-11-11",
+   "type": "paper",
+   "title": "Photonic entanglement swapping with remote quantum dots"
+  },
+  {
+   "id": "doi-10-1073-pnas-2630246123",
+   "date": "2026-11-11",
+   "type": "paper",
+   "title": "Modified Newtonian Dynamics and galaxy clusters"
   }
  ]
 }

@@ -1,5 +1,76 @@
 [
  {
+  "id": "2026-11-11-n1",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "Gemini and Webb find the oldest compact pair of quasars, two black holes that grew too big too early",
+  "tldr": "Astronomers found two actively feeding supermassive black holes, 1.5 billion and 400 million solar masses, only 18,100 light-years apart just 900 million years after the Big Bang, the oldest compact quasar pair known.",
+  "category": "Space & Astronomy",
+  "byline": "NSF NOIRLab, Phys.org"
+ },
+ {
+  "id": "2026-11-11-n2",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "NASA studies show how the LISA observatory could find planets with gravitational waves",
+  "tldr": "Two papers in The Astrophysical Journal work out how the planned LISA space observatory could detect giant planets orbiting pairs of white dwarfs, and how the Webb telescope could confirm them.",
+  "category": "Space & Astronomy",
+  "byline": "NASA"
+ },
+ {
+  "id": "2026-11-11-n3",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "A vanished chemical fingerprint dates the switch to modern-style plate tectonics to 2.5 billion years ago",
+  "tldr": "Curtin University geologists found that a chemical signature of crust formed about 4 billion years ago appears in rocks worldwide until 2.5 billion years ago, then disappears, marking a shift towards large-scale crustal recycling.",
+  "category": "Climate & Earth",
+  "byline": "Curtin University, Phys.org"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aee6434",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "Ultrafast Meissner-levitated microrotor",
+  "tldr": "A 30-micrometre magnet levitated above a superconductor at 4.2 K spins at 2.3 MHz, the fastest magnetically levitated rotor reported, with friction so low it serves as a pressure gauge and a dark-matter probe.",
+  "primary_tag": "Condensed matter & materials",
+  "tags": [
+   "Condensed matter & materials",
+   "Particle & nuclear physics"
+  ],
+  "byline": "Joel K. Jose, Andrea Marchese, Marion Cromb et al.",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aeh7797",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "Photonic entanglement swapping with remote quantum dots",
+  "tldr": "Physicists entangled two photons that never interacted by combining photon pairs from two separate on-demand quantum dots, reaching a swapping fidelity of 0.71, a step toward quantum repeaters built from deterministic light sources.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics",
+   "Condensed matter & materials"
+  ],
+  "byline": "Mattia Beccaceci, Giuseppe Ronco, Fabrizio Cienzo et al. · Sapienza Università di Roma; Politecnico di Milano; Johannes Kepler University Linz; University of Würzburg; Paderborn University; Karlsruhe Institute of Technology",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
+  "id": "doi-10-1073-pnas-2630246123",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "Modified Newtonian Dynamics and galaxy clusters",
+  "tldr": "Applied to 106 X-ray-mapped galaxy clusters, Modified Newtonian Dynamics cuts the needed unseen mass 4 to 10 times, leaving a compact residual that could be dark ordinary matter.",
+  "primary_tag": "Astrophysics & cosmology",
+  "tags": [
+   "Astrophysics & cosmology"
+  ],
+  "byline": "Francoise Combesahttps://ror.org/00cpdar66Observatoire de Paris, Laboratoire d’étude de l’Univers et des phénomènes eXtrêmes, Collège de France et al. · Observatoire de Paris; Collège de France; CNRS",
+  "hf": null,
+  "venue": "PNAS"
+ },
+ {
   "id": "2026-11-10-n1",
   "date": "2026-11-10",
   "type": "news",

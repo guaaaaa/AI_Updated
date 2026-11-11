@@ -1,0 +1,291 @@
+{
+ "date": "2026-11-11",
+ "edition": "weekday",
+ "generated_at": "2026-11-11T13:26:48+00:00",
+ "summary": "Two giant black holes paired far too early in cosmic history, a plan to find planets with gravitational waves, a chemical marker that dates the start of modern plate tectonics, and papers on a record-fast levitated rotor, entanglement passed between two separate quantum dots and MOND's missing mass in galaxy clusters.",
+ "news": [
+  {
+   "id": "2026-11-11-n1",
+   "story_key": "napowawaenakaulua-quasar-pair-cosmic-dawn",
+   "title": "Gemini and Webb find the oldest compact pair of quasars, two black holes that grew too big too early",
+   "category": "Space & Astronomy",
+   "published": "2026-11-10T19:50:02-05:00",
+   "tldr": "Astronomers found two actively feeding supermassive black holes, 1.5 billion and 400 million solar masses, only 18,100 light-years apart just 900 million years after the Big Bang, the oldest compact quasar pair known.",
+   "why_selected": "A clean observational result from Webb and Gemini that sharpens one of the biggest open questions in cosmology: how black holes grew so fast.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A quasar is a supermassive black hole swallowing gas so quickly that the heated material outshines every star in its host galaxy. Because galaxies often collide and merge, astronomers expect many pairs of quasars sitting closer together than the size of a galaxy. They are hard to find: the quasar phase is short, the most distant ones are faint, and two close points of light are difficult to separate from the ground. Before this result, only two quasar pairs were known from cosmic dawn, the universe's first billion years."
+    },
+    {
+     "heading": "What happened",
+     "body": "A team led by Silvia Onorato, a postdoctoral researcher at NSF NOIRLab, reported J1602+4228AB in The Astrophysical Journal Letters. It has been given the Hawaiian name Nāpōwawāʻenakaulua. The companion was spotted by eye in data from Aether, a Webb survey led by Emanuele Paolo Farina that collected spectra of 200 quasars, 43% of those known from this era, using Webb's Near-Infrared Spectrograph integral field unit. Follow-up came from the Gemini North telescope on Maunakea. The two quasars are about 18,100 light-years apart, roughly a fifth of the Milky Way's diameter, and have masses of 1.5 billion and 400 million suns. We see them 900 million years after the Big Bang, which makes this the most distant and most compact quasar pair yet found from cosmic dawn."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Black holes need time to grow, and there is no settled explanation for how even one of this size formed so early. \"There is no definitive theoretical explanation for how a single one of these giant quasars exists so early in the age of our universe, much less two,\" Onorato said. She noted they are as massive as black holes seen today, at a time when the universe was a thirteenth of its present age. Models of early structure formation must now account for such a pair."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the Aether data hide more close companions, which would show if such pairs are common, and whether the two host galaxies are in the middle of merging."
+    }
+   ],
+   "sources": [
+    {
+     "name": "NSF NOIRLab",
+     "url": "https://noirlab.edu/public/news/noirlab2627/"
+    },
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-11-earliest-compact-quasar-pair-poses.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-n2",
+   "story_key": "lisa-exoplanets-double-white-dwarfs",
+   "title": "NASA studies show how the LISA observatory could find planets with gravitational waves",
+   "category": "Space & Astronomy",
+   "published": "2026-11-10T11:00:26-05:00",
+   "tldr": "Two papers in The Astrophysical Journal work out how the planned LISA space observatory could detect giant planets orbiting pairs of white dwarfs, and how the Webb telescope could confirm them.",
+   "why_selected": "A concrete plan for a new population of exoplanets that no current method can reach, tied to a flagship mission now being built.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "LISA (Laser Interferometer Space Antenna) is a gravitational-wave observatory led by the European Space Agency and slated for launch in the mid-2030s, with NASA supplying the telescopes and other hardware. Three spacecraft trailing Earth will form a triangle 2.5 million kilometres on a side and measure changes in their separations smaller than the width of a helium atom. Its most common sources should be double white dwarfs: tight pairs of the Earth-sized remnants of Sun-like stars. Astronomers estimate the Milky Way holds 10 million such pairs with orbits shorter than an hour, and expect LISA to resolve about 10,000 of them."
+    },
+    {
+     "heading": "What happened",
+     "body": "Two papers published Tuesday, led by Casey McGrath of the University of Maryland, Baltimore County and NASA Goddard, work out a planet-hunting method first proposed by Naoki Seto in 2008. A planet circling a white dwarf pair makes the pair wobble. That wobble shifts the otherwise steady gravitational-wave frequency up and down, like the Doppler shifts used to find planets with starlight, and shows up as sidebands: weaker signals just above and below the main frequency. The first paper finds which planet masses and orbital periods the method suits best. The second shows that Webb could confirm candidates by spotting the planet's extra infrared glow, detectable out to at least 500 light-years."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "No planet has yet been found around a pair of white dwarfs, so LISA could reveal a new population. For a test system 500 light-years away, the authors find that Webb could detect a planet about five times Jupiter's mass, while LISA could detect one smaller than Jupiter under ideal conditions."
+    },
+    {
+     "heading": "What to watch",
+     "body": "These are predictions for an instrument that has not launched. Joint LISA and Webb detections would be needed to rule out false positives, as co-author Mary Anne Limbach notes."
+    }
+   ],
+   "sources": [
+    {
+     "name": "NASA",
+     "url": "https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-n3",
+   "story_key": "tectonics-switch-2-5-billion-years-crustal-fingerprint",
+   "title": "A vanished chemical fingerprint dates the switch to modern-style plate tectonics to 2.5 billion years ago",
+   "category": "Climate & Earth",
+   "published": "2026-11-10T19:05:00-05:00",
+   "tldr": "Curtin University geologists found that a chemical signature of crust formed about 4 billion years ago appears in rocks worldwide until 2.5 billion years ago, then disappears, marking a shift towards large-scale crustal recycling.",
+   "why_selected": "A global, data-driven answer to one of geology's longest-running questions, when Earth's plate tectonic engine started.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Plate tectonics moves continents, recycles crust deep inside the planet and helps regulate Earth's climate over long timescales. It also sets Earth apart from Venus and Mars, which have no such system. Yet geologists have long disagreed about when it began, partly because tectonics destroys its own record: old crust is dragged down and melted."
+    },
+    {
+     "heading": "What happened",
+     "body": "In a study in Proceedings of the Royal Society A, Janne Liebmann and Chris Kirkland of Curtin University in Australia searched thousands of rocks spanning almost 4 billion years for a specific chemical fingerprint. When new crust forms by melting older rock, it inherits a signature of that source. The team found that rocks older than 2.5 billion years consistently carry the mark of a pool of ancient crust formed about 4 billion years ago. In younger rocks the fingerprint is gone. \"Despite examining thousands of rocks, we never see it again,\" Liebmann said."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors read the disappearance as a change in how crust was made: from an early Earth where old crust was melted and reworked in place, to a system able to move and recycle crust on a much larger scale, closer to today's plate tectonics. Kirkland calls it the clearest geological evidence yet for when the tectonic engine \"switched on\". A firm date matters because tectonics influences the atmosphere and climate over deep time."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The release does not describe the specific chemical system used. Other lines of evidence will show whether 2.5 billion years holds as a sharp turning point or one step in a longer transition."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Curtin University",
+     "url": "https://www.curtin.edu.au/news/media-release/ancient-rocks-reveal-when-earths-tectonic-engine-switched-on/"
+    },
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-11-ancient-reveal-earth-tectonic.html"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-sciadv-aee6434",
+   "title": "Ultrafast Meissner-levitated microrotor",
+   "authors": [
+    "Joel K. Jose",
+    "Andrea Marchese",
+    "Marion Cromb",
+    "Hendrik Ulbricht",
+    "Andrejs Cebers",
+    "Ping Koy Lam",
+    "Tao Wang",
+    "Andrea Vinante"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-06T00:00:00-05:00",
+   "primary_tag": "Condensed matter & materials",
+   "tags": [
+    "Condensed matter & materials",
+    "Particle & nuclear physics"
+   ],
+   "tldr": "A 30-micrometre magnet levitated above a superconductor at 4.2 K spins at 2.3 MHz, the fastest magnetically levitated rotor reported, with friction so low it serves as a pressure gauge and a dark-matter probe.",
+   "why_selected": "A new record and a new regime for precision measurement, with uses from cryostat pressure sensing to searches for very weak forces.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Tiny objects floating without contact make very sensitive detectors, because almost nothing drains their motion. Levitated micromagnets have been used to measure magnetic fields and gravity, but always by letting them oscillate. Nobody had studied what happens when such a micromagnet spins freely, which could open new ways to sense weak forces and to measure gas pressure at very low temperature."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Magnetically levitated rotors are a mature technology, used in vacuum pumps, gyroscopes and spinning-rotor pressure gauges, but they are large and mostly work at room temperature. The fastest rotor levitated by a superconductor had reached 20 kHz. The fastest magnetically levitated rotor of any kind, a 0.5 mm steel sphere held up by active feedback, had reached 660 kHz."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team floats a hard rare-earth magnet sphere, about 24 to 30 micrometres in radius, in a bowl-shaped trap of lead cooled by liquid helium to 4.2 K. Lead becomes a superconductor and expels magnetic fields, the Meissner effect, so the magnet is pushed up and held in place with no feedback at all. A superconducting quantum sensor (a SQUID) picks up the rotation through a single wire loop, and that signal is fed back to a driving coil in step with the spinning magnet, like pushing a swing at the right moment, to spin it up. Gas molecules hitting the sphere slow it down, and this friction rises linearly with gas density, so the spin-down rate measures absolute pressure."
+    },
+    {
+     "heading": "Results",
+     "body": "The rotor exceeded 2.3 MHz, 138 million revolutions per minute, with a damping rate of 4.75 × 10^-7 Hz. The authors demonstrate accurate absolute pressure sensing over a wide range at cryogenic temperature, measure the rotor's thermal torque noise, and use it for a first preliminary upper limit on axion-like dark matter at 20 kHz."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fast rotation, low temperature and low noise together create a new regime for precision measurements of extremely weak forces and fields. The dark-matter limit is explicitly preliminary."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aee6434",
+    "doi": "https://doi.org/10.1126/sciadv.aee6434"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeh7797",
+   "title": "Photonic entanglement swapping with remote quantum dots",
+   "authors": [
+    "Mattia Beccaceci",
+    "Giuseppe Ronco",
+    "Fabrizio Cienzo",
+    "Pierpaolo Bassetti",
+    "Alessandro Laneve",
+    "Francesco Basso Basset",
+    "Tobias M. Krieger",
+    "Thomas Oberleitner",
+    "Quirin Buchinger",
+    "Francesco Salusti",
+    "Barbara Souza Damasceno",
+    "Silke Kuhn",
+    "Saimon F. Covre da Silva",
+    "Sandra Stroj",
+    "Klaus D. Jöns",
+    "Sven Höfling",
+    "Tobias Huber-Loyola",
+    "Armando Rastelli",
+    "Michele B. Rota",
+    "Rinaldo Trotta"
+   ],
+   "affiliations": [
+    "Sapienza Università di Roma; Politecnico di Milano; Johannes Kepler University Linz; University of Würzburg; Paderborn University; Karlsruhe Institute of Technology"
+   ],
+   "announced": "2026-11-06T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics",
+    "Condensed matter & materials"
+   ],
+   "tldr": "Physicists entangled two photons that never interacted by combining photon pairs from two separate on-demand quantum dots, reaching a swapping fidelity of 0.71, a step toward quantum repeaters built from deterministic light sources.",
+   "why_selected": "The first all-photonic entanglement swapping between separate quantum emitters, a missing building block for long-distance quantum networks.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Quantum signals cannot be copied or amplified, so they fade with distance. Long-distance quantum networks will need repeaters that pass entanglement, the linked quantum state of two particles, from node to node. The key operation is entanglement swapping: measuring one photon from each of two entangled pairs so that the two remaining photons, which never met, become entangled."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "All-photonic swapping has been shown in the lab, on chips, at telecom wavelengths and on deployed fibre, but always with probabilistic sources. In those, turning up the pair rate also produces unwanted extra photons that spoil entanglement, so a network would need very many attempts. Quantum dots, tiny semiconductor crystals that act like artificial atoms, emit entangled pairs on demand, but swapping had only been done with pairs from the same dot."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Each gallium arsenide quantum dot emits two polarization-entangled photons as it relaxes from an excited state in two steps. The team took one photon from each dot and made them interfere in a joint measurement, a Bell-state measurement, which projects the other two photons into an entangled state. The difficulty is that no two dots are identical, and interference needs photons that are indistinguishable. The dots sit in hybrid semiconductor-piezoelectric devices, which make the entangled photons from two dissimilar dots nearly identical."
+    },
+    {
+     "heading": "Results",
+     "body": "Entanglement swapping reached a fidelity of 0.71(2), more than 10 standard deviations above the classical limit. A theoretical model reproduces the data quantitatively and points to ways of improving the protocol's performance."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This opens the way to using quantum dot entangled-photon sources in quantum repeater networks. A fidelity of 0.71 is far from perfect, so the model's suggested improvements will need to be shown in practice."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aeh7797",
+    "doi": "https://doi.org/10.1126/sciadv.aeh7797"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1073-pnas-2630246123",
+   "title": "Modified Newtonian Dynamics and galaxy clusters",
+   "authors": [
+    "Francoise Combesahttps://ror.org/00cpdar66Observatoire de Paris",
+    "Laboratoire d’étude de l’Univers et des phénomènes eXtrêmes",
+    "Collège de France",
+    "CNRS",
+    "Paris-Sciences-Lettres University",
+    "Sorbonne University",
+    "Paris 75014",
+    "France"
+   ],
+   "affiliations": [
+    "Observatoire de Paris; Collège de France; CNRS"
+   ],
+   "announced": "2026-11-04T00:00:00-05:00",
+   "primary_tag": "Astrophysics & cosmology",
+   "tags": [
+    "Astrophysics & cosmology"
+   ],
+   "tldr": "Applied to 106 X-ray-mapped galaxy clusters, Modified Newtonian Dynamics cuts the needed unseen mass 4 to 10 times, leaving a compact residual that could be dark ordinary matter.",
+   "why_selected": "A large-sample test of the strongest challenge facing the main alternative to dark matter.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Galaxies spin too fast for their visible matter. The standard explanation is cold dark matter, an unseen particle. Modified Newtonian Dynamics, MOND, proposed by Milgrom in 1983, instead changes gravity at very weak accelerations, below about 1.2 × 10^-10 metres per second squared. MOND fits galaxy rotation curves well, but galaxy clusters still seem to need extra mass even under MOND."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier MOND analyses of dozens of X-ray clusters found that unseen mass was still required, roughly comparable to or up to 1.6 times the hot gas mass. Proposed fixes include adding light sterile neutrinos, which undercuts MOND's appeal, or invoking dark baryons: ordinary matter that does not shine, which Milgrom suggested should be concentrated in cluster cores."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Françoise Combes uses 106 clusters mapped in X-rays, which trace the hot intracluster gas that makes up most of their visible mass. Assuming the gas is in hydrostatic equilibrium, its pressure balancing gravity, and that clusters are spherical, she first derives the total mass with ordinary Newtonian gravity. She then uses MOND's modified version of the equation linking mass and gravity to reconstruct where the remaining invisible mass must sit. Candidates for this matter include stellar remnants, gas too diffuse to form stars, and compact clouds of cold molecular gas."
+    },
+    {
+     "heading": "Results",
+     "body": "MOND reduces the required dynamical mass by a factor of 4 to 10. The leftover missing mass is proportional to the total gas mass and roughly half of it. Relaxed cool-core clusters have the highest peaks of missing mass, which is concentrated centrally and drops off steeply beyond a core radius of 20 to 30 kiloparsecs, confirming previous studies."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result gives a specific, testable profile for dark baryons. The analysis rests on hydrostatic equilibrium and spherical symmetry, and the missing matter itself has not been detected."
+    }
+   ],
+   "links": {
+    "paper": "https://www.pnas.org/doi/abs/10.1073/pnas.2630246123",
+    "doi": "https://doi.org/10.1073/pnas.2630246123"
+   },
+   "signals": {
+    "venue": "PNAS",
+    "tier": "major"
+   }
+  }
+ ]
+}

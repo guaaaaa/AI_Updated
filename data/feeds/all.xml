@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 11 Nov 2026 12:45:35 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 13:26:48 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Gemini and Webb find the oldest compact pair of quasars, two black holes that grew too big too early</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n1</guid>
+    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>Astronomers found two actively feeding supermassive black holes, 1.5 billion and 400 million solar masses, only 18,100 light-years apart just 900 million years after the Big Bang, the oldest compact quasar pair known. (NSF NOIRLab, Phys.org)</description>
+  </item>
+  <item>
+    <title>NASA studies show how the LISA observatory could find planets with gravitational waves</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n2</guid>
+    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>Two papers in The Astrophysical Journal work out how the planned LISA space observatory could detect giant planets orbiting pairs of white dwarfs, and how the Webb telescope could confirm them. (NASA)</description>
+  </item>
+  <item>
+    <title>A vanished chemical fingerprint dates the switch to modern-style plate tectonics to 2.5 billion years ago</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n3</guid>
+    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>Curtin University geologists found that a chemical signature of crust formed about 4 billion years ago appears in rocks worldwide until 2.5 billion years ago, then disappears, marking a shift towards large-scale crustal recycling. (Curtin University, Phys.org)</description>
+  </item>
+  <item>
+    <title>Ultrafast Meissner-levitated microrotor</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1126-sciadv-aee6434</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1126-sciadv-aee6434</guid>
+    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
+    <category>Science / Condensed matter &amp; materials</category>
+    <description>A 30-micrometre magnet levitated above a superconductor at 4.2 K spins at 2.3 MHz, the fastest magnetically levitated rotor reported, with friction so low it serves as a pressure gauge and a dark-matter probe. (Joel K. Jose, Andrea Marchese, Marion Cromb et al.)</description>
+  </item>
+  <item>
+    <title>Photonic entanglement swapping with remote quantum dots</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1126-sciadv-aeh7797</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1126-sciadv-aeh7797</guid>
+    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>Physicists entangled two photons that never interacted by combining photon pairs from two separate on-demand quantum dots, reaching a swapping fidelity of 0.71, a step toward quantum repeaters built from deterministic light sources. (Mattia Beccaceci, Giuseppe Ronco, Fabrizio Cienzo et al. · Sapienza Università di Roma; Politecnico di Milano; Johannes Kepler University Linz; University of Würzburg; Paderborn University; Karlsruhe Institute of Technology)</description>
+  </item>
+  <item>
+    <title>Modified Newtonian Dynamics and galaxy clusters</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1073-pnas-2630246123</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1073-pnas-2630246123</guid>
+    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
+    <category>Science / Astrophysics &amp; cosmology</category>
+    <description>Applied to 106 X-ray-mapped galaxy clusters, Modified Newtonian Dynamics cuts the needed unseen mass 4 to 10 times, leaving a compact residual that could be dark ordinary matter. (Francoise Combesahttps://ror.org/00cpdar66Observatoire de Paris, Laboratoire d’étude de l’Univers et des phénomènes eXtrêmes, Collège de France et al. · Observatoire de Paris; Collège de France; CNRS)</description>
+  </item>
   <item>
     <title>US consumer prices rise 0.4% in October, more than forecast, keeping a December Fed hike in play</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-11/2026-11-11-n1</link>
@@ -438,54 +486,6 @@
     <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
     <category>AI / Robotics</category>
     <description>Letting a general-purpose AI model write code that directly drives a robot arm, with no demonstrations or robot-specific training, beats leading specialist vision-language-action policies by a wide margin. (Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji et al. · Apple)</description>
-  </item>
-  <item>
-    <title>Discovering formally verified quantum programs with AI</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09822</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09822</guid>
-    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
-    <category>AI / AI for Math</category>
-    <description>Teams of LLM agents wrote quantum programs in the Lean theorem prover and proved their correctness and cost, cutting resource estimates for several scientific simulations by factors of 2.5 to 11. (Sergey Shirobokov, Ben Jaderberg, Katerina Hristova et al. · Google DeepMind, Google Quantum AI)</description>
-  </item>
-  <item>
-    <title>Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.08977</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.08977</guid>
-    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
-    <category>AI / Reasoning</category>
-    <description>Energy-Based Reasoners refine a latent answer by gradient descent on a learned energy, so one function guides updates, decides when to stop and picks the best candidate, solving Sudoku-Extreme with 1.8M parameters. (William Xingxu Chen, Alexi Gladstone, Zeyu Michael Li et al. · Duke University, UIUC, Harvard University)</description>
-  </item>
-  <item>
-    <title>Video-Coder: Reinforcing Agentic Coding for Video Generation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09894</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09894</guid>
-    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>Video-Coder trains a coding agent to build a 3D draft scene in Blender, which guides a video generator and raises physical plausibility scores on two benchmarks. (Chaoyang Wang, Sicheng Gao, Junan Hu et al. · University of Central Florida, University of Würzburg, Microsoft Research)</description>
-  </item>
-  <item>
-    <title>Congress summons Nvidia's CEO over a reported Chinese spy operation, and Nvidia's board opens an investigation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</guid>
-    <pubDate>Mon, 09 Nov 2026 11:48:18 +0000</pubDate>
-    <category>Tech / Tech Policy &amp; Antitrust</category>
-    <description>House committee chairs asked Jensen Huang to brief them on November 18 about reported Chinese spying aimed at him; on Sunday Nvidia's board opened an independent investigation. (Ars Technica, TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>SonicWall patches a firewall VPN flaw that can sidestep SAML multi-factor login and is already exploited</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n2</guid>
-    <pubDate>Mon, 09 Nov 2026 11:48:18 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>SonicWall fixed seven SonicOS flaws, including CVE-2026-19868, which can bypass SAML-enforced MFA on SSL-VPN logins and was added to CISA's catalog of exploited bugs. (SonicWall advisory (as quoted by SecurityWeek), BleepingComputer, Help Net Security)</description>
-  </item>
-  <item>
-    <title>Noise pollution alters the body or behavior of 80% of animal species studied, a Science analysis finds</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-07/2026-11-07-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-07/2026-11-07-n1</guid>
-    <pubDate>Sat, 07 Nov 2026 13:52:57 +0000</pubDate>
-    <category>Biology / Evolution &amp; Ecology</category>
-    <description>A pooled analysis of 214 experiments on 177 species found human-made noise changed physiology or behavior in eight of ten species and cut animal numbers by about 37% in noisy areas. (Phys.org, Science (study DOI))</description>
   </item>
 </channel>
 </rss>
