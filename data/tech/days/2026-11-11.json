@@ -1,0 +1,206 @@
+{
+ "date": "2026-11-11",
+ "edition": "weekday",
+ "generated_at": "2026-11-11T11:46:41+00:00",
+ "summary": "France pins the supermarket freezer sabotage on Iran, Microsoft ships another four-digit patch batch, N-able pulls its remote-management cloud offline after public zero-days, and Mitsui Chemicals buys photoresist maker JSR.",
+ "news": [
+  {
+   "id": "2026-11-11-n1",
+   "story_key": "france-attributes-freezer-attacks-to-iran",
+   "title": "France formally blames Iran's Revolutionary Guards for the cyberattacks that heated supermarket freezers",
+   "category": "Cybersecurity",
+   "published": "2026-11-09T11:22:00-05:00",
+   "tldr": "France says an Iranian Revolutionary Guards cyber unit sabotaged refrigeration controllers at more than 700 grocery stores, causing at least 15 fires, and plans to push for EU sanctions.",
+   "why_selected": "A government attribution of a destructive attack on industrial controllers at national scale, with diplomatic consequences.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In October, attackers remotely broke into web-based controllers that manage fleets of refrigerated and freezer units in French supermarkets and raised the temperatures to spoil food. A second wave hit stores in Belgium, Ireland, Luxembourg and Sweden in early November. Security researchers have warned that these controllers can be attacked remotely, and some affected Danfoss models no longer receive security fixes."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, November 9, French foreign minister Jean-Noël Barrot said responsibility \"lies with the Islamic Revolutionary Guard Corps.\" A report by France's Cyber Crisis Coordination Centre (C4) says the attacks hit more than 700 stores of the Casino, Leclerc, Coopérative U, Metro, Carrefour and Intermarché groups, started at least 15 fires and caused food losses in the tens of millions of euros. It names the Shahid Kaveh unit, better known by hacktivist personas such as CyberAv3ngers. The evidence cited includes attack infrastructure that was also used to scan Schneider Electric equipment at small energy and water plants, traces of Farsi, and an Iranian outlet that publicized the incidents by October 13. French blood banks were also targeted, but the attacks were stopped before any blood spoiled."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "France's foreign ministry calls it the first cyber campaign on French territory carried out purely for sabotage. It shows how internet-exposed operational technology, the controllers that run physical equipment, can turn a remote intrusion into fires and spoiled stock across hundreds of sites in one night. The same group is suspected in July attacks on more than 100 US water systems, and US agencies attributed earlier water-facility attacks to CyberAv3ngers in 2023. Last week the US government urged owners and operators to take security measures against similar attacks. France has summoned Iran's ambassador, will propose EU sanctions, and says it reserves the right to take further public and non-public measures."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the EU adopts sanctions, whether US agencies make a formal attribution as they reportedly examine freezer outages on military bases, and how quickly unsupported controllers are replaced or taken off the internet."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/09/france-blames-iran-for-supermarket-hack-meltdowns/5308591"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/09/france-blames-iran-for-mass-hacks-targeting-freezers-in-grocery-stores-and-blood-banks/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-n2",
+   "story_key": "microsoft-patch-tuesday-november-2026",
+   "title": "Microsoft's November Patch Tuesday fixes over 1,000 flaws, including an Outlook bug already used to steal logins",
+   "category": "Cybersecurity",
+   "published": "2026-11-10T14:07:00-05:00",
+   "tldr": "Microsoft's monthly updates fix between 1,093 and 1,235 vulnerabilities depending on how they are counted, including an exploited Outlook spoofing flaw, alongside patches from Apple, Google, Mozilla and Adobe.",
+   "why_selected": "The second straight month of four-digit patch volume from the most widely used desktop software vendor, with one zero-day under active attack.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Microsoft releases its security updates in a monthly batch. The volume has exploded: a year ago it averaged around 100 fixes a month, according to Krebs on Security, while October brought 1,411. Microsoft credits artificial intelligence with helping it find and fix this many bugs."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 10, Microsoft shipped fixes for 1,235 flaws by BleepingComputer's count, which includes 142 in the Chromium-based Edge browser; Krebs on Security counts 1,093, with 63 rated critical and about 535 allowing an attacker to raise their privileges. One flaw, CVE-2026-124194, was already exploited. It is a spoofing bug in Outlook, affecting Microsoft 365 Apps for Enterprise and Office editions, that was used to steal NTLM password hashes, a Windows login credential, after a user opened a malicious message file. Microsoft has now shipped more than 5,100 patches this year. Apple released out-of-cycle fixes for at least nine flaws, including iMessage group-chat bugs, and backported them to iOS 18. Chrome 157 fixes nine holes, including the browser's sixth zero-day of the year; Firefox 160 fixes almost 100, and Adobe at least 110."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Stolen NTLM hashes can be cracked offline and used to log in to corporate accounts, so the Outlook bug can give attackers access to corporate accounts. The sheer volume strains IT teams. Ivanti's Chris Goettl notes that of some 95,000 vulnerabilities assigned identifiers this year, only 217 have been added to CISA's list of known exploited bugs, and 44% of those sit in edge devices and IT management or remote access tools. His advice: patch the internet-facing systems attackers actually target first."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether more of this month's flaws are exploited after patch analysis, and whether AI-assisted bug hunting keeps monthly counts above 1,000."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/"
+    },
+    {
+     "name": "Krebs on Security",
+     "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-n3",
+   "story_key": "n-able-n-central-zero-days-offline",
+   "title": "N-able takes its N-central remote-management cloud offline after a researcher publishes 30-plus unpatched flaws",
+   "category": "Cybersecurity",
+   "published": "2026-11-09T12:00:00-05:00",
+   "tldr": "After a researcher released working exploits for more than 30 alleged flaws without warning, N-able shut down hosted N-central worldwide and told on-premises customers to switch their servers off.",
+   "why_selected": "A widely used tool for managing other companies' computers is out of service, and public exploits put managed service providers' clients at risk.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "N-central is a remote monitoring and management platform. Managed service providers, the outside firms that run IT for other companies, and in-house IT teams use it to monitor and control customer devices and networks. Such tools are frequent targets because they can grant vast access to a company's network and internal data."
+    },
+    {
+     "heading": "What happened",
+     "body": "Late on Sunday, November 8, a security researcher published more than 30 alleged zero-day vulnerabilities, meaning flaws with no fix available, together with proof-of-concept exploits on GitHub under the name Able2Shell. The researcher says the flaws were found with AI assistance and include authentication bypasses, credential disclosure, privilege escalation to root and remote code execution. They were tested on a pre-release N-central version, and the researcher believes earlier versions are likely affected. On November 9, N-able took its hosted N-central environments offline across the Americas, Europe and Asia-Pacific, urged customers to take their own servers offline, and began building a hotfix. It says it has seen no exploitation or unauthorized data access, and other services reached through N-able Login remain up."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Releasing exploits before a fix forces every customer to choose between an outage and exposure. The researcher says he went public because two remote code execution flaws and a privilege escalation bug he reported in a different N-able product five to six months ago remain unpatched and follow-up emails went unanswered. N-able called the release \"non-responsible\" and did not answer questions about the earlier reports. Until the hotfix ships, providers relying on N-central cannot manage their clients' systems through it."
+    },
+    {
+     "heading": "What to watch",
+     "body": "When the hotfix ships and service returns, whether attackers use the public exploits, and whether N-able addresses the earlier reports."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/10/n-able-takes-its-remote-access-service-offline-after-researcher-publishes-dozens-of-zero-day-bugs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-n4",
+   "story_key": "mitsui-chemicals-buys-jsr",
+   "title": "Mitsui Chemicals agrees to buy photoresist maker JSR for $11.6 billion",
+   "category": "Chips & Hardware",
+   "published": "2026-11-08T21:11:00-05:00",
+   "tldr": "Mitsui Chemicals will pay 1.84 trillion yen for JSR, a leading maker of the light-sensitive coatings used to print chip circuits, in the largest deal ever in Japan's chemicals sector.",
+   "why_selected": "A large consolidation in a critical, concentrated link of the chip supply chain, backed by Japanese state funds.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Photoresists are light-sensitive coatings that let lithography tools print circuit patterns onto silicon wafers. Mitsui Chemicals describes JSR as number two in the global market for the resists used with ArF and extreme ultraviolet (EUV) lithography. The state-backed Japan Investment Corp (JIC) took JSR private in 2024 for 900 billion yen, saying it wanted to drive consolidation in chip materials."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 9, Mitsui Chemicals said it will buy JSR from JIC for 1.84 trillion yen ($11.61 billion), with the Development Bank of Japan investing 200 billion yen for a stake that becomes non-voting preferred shares. Reuters calls it the largest deal in Japan's chemicals sector, exceeding Showa Denko's $4.55 billion purchase of Hitachi Chemical in 2020. Mitsui will fund it with a 1.64 trillion yen bridge loan, a share sale of up to 150 billion yen, bonds and other financing. Its own market value was 664.6 billion yen, and its shares fell 8.5% on Monday, per Reuters. JSR's chip materials sales rose from 157.9 billion yen in fiscal 2024 to 196.0 billion yen in fiscal 2025."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "JSR is a major supplier of a material every chipmaker needs, and Reuters says the deal stands to reshape the chip supply chain as Japan's government moves to boost its competitiveness. JIC said it chose the buyer that could become a chip materials platform supporting Japan for five to ten years. Mitsui targets about 40 billion yen in added annual profit by fiscal 2035 and plans to sell JSR's life sciences unit and other non-core businesses. Market participants are questioning the business rationale and the heavy debt load, since the price is well above Mitsui's own market value."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Competition and foreign-investment approvals in Japan and other countries, the sale of JSR's non-core units, and closing, targeted for the second half of the fiscal year ending March 2028."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Reuters via The Star",
+     "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/mitsui-chemicals-and-dbj-to-buy-jsr-for-116-billion-filing-shows"
+    },
+    {
+     "name": "WebProNews",
+     "url": "https://www.webpronews.com/mitsui-chemicals-buys-jsr-photoresist-maker-11-6-billion"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.13879",
+   "title": "SFU-Sim: Bit-Exact Reverse Engineering of NVIDIA MUFU and Validation of PTX Paths",
+   "authors": [
+    "Haozhi Xie",
+    "Tao Su"
+   ],
+   "affiliations": [
+    "Sun Yat-sen University"
+   ],
+   "announced": "2026-11-10T20:00:00-05:00",
+   "primary_tag": "Computer architecture & chips",
+   "tags": [
+    "Computer architecture & chips"
+   ],
+   "tldr": "SFU-Sim reverse-engineers how Nvidia GPUs compute sine, cosine and other special functions, and its model matches real hardware bit for bit on every input across three GPU generations.",
+   "why_selected": "An exhaustively validated hardware reverse-engineering result that makes GPU math reproducible without a GPU.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "GPUs compute functions such as sine, cosine, reciprocals and square roots on a dedicated special function unit, using fast approximations. Nvidia documents only error bounds for these instructions, not the exact output for each input. Two implementations can meet the same bound yet return different bits, so simulators and hardware designers cannot reproduce a real GPU's results exactly."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work built bit-accurate models of the matrix-multiply units, but not of special functions. A tool for early Nvidia G80-era GPUs read the function tables directly through hardware registers, which does not work on modern chips. Another approach ran every input on a GPU and stored the results in gigabyte-scale lookup tables, which gives no arithmetic model."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors treat the GPU as a black box and infer its arithmetic from outputs. Published designs suggest the unit splits a reduced input into high bits, which pick a segment and its coefficients, and low bits, a position inside the segment, then evaluates a quadratic formula. Starting from the compiled machine code, the authors first separate the extra operations the compiler adds around each special-function instruction, such as a multiply that converts radians into turns for sine. They then recover the segment layout, the fixed-point scale, the coefficients and the squaring rule, testing each hypothesis against the hardware's outputs and accepting only bit-level agreement, never a smaller fitting error."
+    },
+    {
+     "heading": "Results",
+     "body": "The model covers 12 common instruction forms plus two BF16 forms. On an A100 (Ampere), an RTX 4060 laptop GPU (Ada Lovelace) and an RTX PRO 5000 (Blackwell), the authors checked every possible input: all 65,536 encodings for 16-bit paths and all 4.3 billion for 32-bit paths. They found zero mismatches, using the same coefficients on all three devices with no per-device refitting."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "SFU-Sim computes each output directly, with no lookup table and no physical GPU, so it can slot into instruction simulators and serve as a reference for hardware verification. The main caveat: it was validated only on the tested GPUs and compile settings."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.13879"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}

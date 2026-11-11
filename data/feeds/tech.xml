@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Tue, 10 Nov 2026 11:48:57 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 11:46:41 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>France formally blames Iran's Revolutionary Guards for the cyberattacks that heated supermarket freezers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n1</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>France says an Iranian Revolutionary Guards cyber unit sabotaged refrigeration controllers at more than 700 grocery stores, causing at least 15 fires, and plans to push for EU sanctions. (The Register, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Microsoft's November Patch Tuesday fixes over 1,000 flaws, including an Outlook bug already used to steal logins</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n2</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Microsoft's monthly updates fix between 1,093 and 1,235 vulnerabilities depending on how they are counted, including an exploited Outlook spoofing flaw, alongside patches from Apple, Google, Mozilla and Adobe. (BleepingComputer, Krebs on Security)</description>
+  </item>
+  <item>
+    <title>N-able takes its N-central remote-management cloud offline after a researcher publishes 30-plus unpatched flaws</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n3</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>After a researcher released working exploits for more than 30 alleged flaws without warning, N-able shut down hosted N-central worldwide and told on-premises customers to switch their servers off. (BleepingComputer, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Mitsui Chemicals agrees to buy photoresist maker JSR for $11.6 billion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n4</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>Mitsui Chemicals will pay 1.84 trillion yen for JSR, a leading maker of the light-sensitive coatings used to print chip circuits, in the largest deal ever in Japan's chemicals sector. (Reuters via The Star, WebProNews)</description>
+  </item>
+  <item>
+    <title>SFU-Sim: Bit-Exact Reverse Engineering of NVIDIA MUFU and Validation of PTX Paths</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2611.13879</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2611.13879</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Computer architecture &amp; chips</category>
+    <description>SFU-Sim reverse-engineers how Nvidia GPUs compute sine, cosine and other special functions, and its model matches real hardware bit for bit on every input across three GPU generations. (Haozhi Xie, Tao Su · Sun Yat-sen University)</description>
+  </item>
   <item>
     <title>Attackers are exploiting the "SSHole" OpenSSH flaw on Alpine-style Linux servers days after the fix</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</link>

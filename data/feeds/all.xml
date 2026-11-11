@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 10 Nov 2026 13:54:21 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 11:46:41 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>France formally blames Iran's Revolutionary Guards for the cyberattacks that heated supermarket freezers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n1</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>France says an Iranian Revolutionary Guards cyber unit sabotaged refrigeration controllers at more than 700 grocery stores, causing at least 15 fires, and plans to push for EU sanctions. (The Register, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Microsoft's November Patch Tuesday fixes over 1,000 flaws, including an Outlook bug already used to steal logins</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n2</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Microsoft's monthly updates fix between 1,093 and 1,235 vulnerabilities depending on how they are counted, including an exploited Outlook spoofing flaw, alongside patches from Apple, Google, Mozilla and Adobe. (BleepingComputer, Krebs on Security)</description>
+  </item>
+  <item>
+    <title>N-able takes its N-central remote-management cloud offline after a researcher publishes 30-plus unpatched flaws</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n3</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>After a researcher released working exploits for more than 30 alleged flaws without warning, N-able shut down hosted N-central worldwide and told on-premises customers to switch their servers off. (BleepingComputer, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Mitsui Chemicals agrees to buy photoresist maker JSR for $11.6 billion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n4</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>Mitsui Chemicals will pay 1.84 trillion yen for JSR, a leading maker of the light-sensitive coatings used to print chip circuits, in the largest deal ever in Japan's chemicals sector. (Reuters via The Star, WebProNews)</description>
+  </item>
+  <item>
+    <title>SFU-Sim: Bit-Exact Reverse Engineering of NVIDIA MUFU and Validation of PTX Paths</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2611.13879</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2611.13879</guid>
+    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
+    <category>Tech / Computer architecture &amp; chips</category>
+    <description>SFU-Sim reverse-engineers how Nvidia GPUs compute sine, cosine and other special functions, and its model matches real hardware bit for bit on every input across three GPU generations. (Haozhi Xie, Tao Su · Sun Yat-sen University)</description>
+  </item>
   <item>
     <title>FDA orders a rare optic-nerve warning on all GLP-1 drugs</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/2026-11-10-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
     <category>AI / Business &amp; Funding</category>
     <description>Bloomberg reports OpenAI has raised $11 billion so far in a round at a $1.25 trillion valuation, with the total expected to reach about $20 billion, well below the $30 billion first sought. (TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.08449</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.08449</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>VFlash predicts a whole bounding box or robot trajectory in one forward pass instead of token by token, cutting trajectory errors versus autoregressive decoding while running far faster. (Yu-Cheng Chou, Shihao Wang, Jin Huang et al. · NVIDIA)</description>
-  </item>
-  <item>
-    <title>WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.03634</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.03634</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>WebHarbor rebuilds 153 real websites as offline, resettable Docker environments with 3,518 tasks, and a 4B web agent trained only there matches or beats one trained on live sites. (Zhaoyang Wang, Qianhui Wu, Boyu Gou et al. · Microsoft, Tongji University)</description>
-  </item>
-  <item>
-    <title>What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.06483</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.06483</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Multi-turn RL helps LLM agents mainly by improving recovery from errors over long horizons, not single-step decisions, so its gains shrink when the turn budget is tight; mixing budgets in training narrows that gap. (Kejian Zhu, Zhuoran Jin, Shangqing Tu et al.)</description>
-  </item>
-  <item>
-    <title>Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.05275</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.05275</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>Across many modalities the best model varies by input, but learned routers beat the best single model only slightly; routing's reliable win is cost, averaging 8.82 times better efficiency. (Pengfei Zhou, Yixing Ma, Hexin Wang et al. · National University of Singapore, University of California Berkeley, Hong Kong University of Science and Technology)</description>
-  </item>
-  <item>
-    <title>RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.02497</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.02497</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Evaluation &amp; Benchmarks</category>
-    <description>RoboColosseum runs blinded pairwise robot trials across 124 sites and finds frontier chat agents rival specialized robot policies, while rankings vary across tasks, robots and evaluation tracks. (Tan Sang Nguyen, Yi Ru Wang, Shailesh Shailesh et al. · National University of Singapore, Hugging Face, Singapore Embodied AI Centre)</description>
   </item>
 </channel>
 </rss>

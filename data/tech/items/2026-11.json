@@ -1,5 +1,55 @@
 [
  {
+  "id": "2026-11-11-n1",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "France formally blames Iran's Revolutionary Guards for the cyberattacks that heated supermarket freezers",
+  "tldr": "France says an Iranian Revolutionary Guards cyber unit sabotaged refrigeration controllers at more than 700 grocery stores, causing at least 15 fires, and plans to push for EU sanctions.",
+  "category": "Cybersecurity",
+  "byline": "The Register, TechCrunch"
+ },
+ {
+  "id": "2026-11-11-n2",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "Microsoft's November Patch Tuesday fixes over 1,000 flaws, including an Outlook bug already used to steal logins",
+  "tldr": "Microsoft's monthly updates fix between 1,093 and 1,235 vulnerabilities depending on how they are counted, including an exploited Outlook spoofing flaw, alongside patches from Apple, Google, Mozilla and Adobe.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Krebs on Security"
+ },
+ {
+  "id": "2026-11-11-n3",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "N-able takes its N-central remote-management cloud offline after a researcher publishes 30-plus unpatched flaws",
+  "tldr": "After a researcher released working exploits for more than 30 alleged flaws without warning, N-able shut down hosted N-central worldwide and told on-premises customers to switch their servers off.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, TechCrunch"
+ },
+ {
+  "id": "2026-11-11-n4",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "Mitsui Chemicals agrees to buy photoresist maker JSR for $11.6 billion",
+  "tldr": "Mitsui Chemicals will pay 1.84 trillion yen for JSR, a leading maker of the light-sensitive coatings used to print chip circuits, in the largest deal ever in Japan's chemicals sector.",
+  "category": "Chips & Hardware",
+  "byline": "Reuters via The Star, WebProNews"
+ },
+ {
+  "id": "2611.13879",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "SFU-Sim: Bit-Exact Reverse Engineering of NVIDIA MUFU and Validation of PTX Paths",
+  "tldr": "SFU-Sim reverse-engineers how Nvidia GPUs compute sine, cosine and other special functions, and its model matches real hardware bit for bit on every input across three GPU generations.",
+  "primary_tag": "Computer architecture & chips",
+  "tags": [
+   "Computer architecture & chips"
+  ],
+  "byline": "Haozhi Xie, Tao Su · Sun Yat-sen University",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-10-n1",
   "date": "2026-11-10",
   "type": "news",

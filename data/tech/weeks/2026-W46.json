@@ -3,7 +3,7 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
@@ -13,21 +13,39 @@
    "covered": null
   },
   {
+   "title": "Apple Says More Than 100,000 Apps Optimized for iPhone Duo, Here's What's Still Missing",
+   "outlets": 8,
+   "date": "2026-11-06",
+   "covered": null
+  },
+  {
    "title": "Nvidia CEO Jensen Huang summoned by Congress over Chinese espionage concerns",
    "outlets": 6,
    "date": "2026-11-06",
    "covered": null
   },
   {
-   "title": "Apple Says More Than 100,000 Apps Optimized for iPhone Duo, Here's What's Still Missing",
-   "outlets": 6,
-   "date": "2026-11-06",
+   "title": "TSMC to invest up to $1 billion in Anthropic, OpenAI",
+   "outlets": 4,
+   "date": "2026-11-10",
+   "covered": null
+  },
+  {
+   "title": "Three workers die at Tata's India iPhone parts factory in latest safety incident",
+   "outlets": 3,
+   "date": "2026-11-10",
+   "covered": null
+  },
+  {
+   "title": "Google’s Pixel Tag tracker is now available",
+   "outlets": 3,
+   "date": "2026-11-10",
    "covered": null
   }
  ],
  "featured": {
-  "news": 4,
-  "papers": 0
+  "news": 8,
+  "papers": 1
  },
  "items": [
   {
@@ -53,6 +71,36 @@
    "date": "2026-11-10",
    "type": "news",
    "title": "Vanderbilt University tells campus to shut down devices as the new BYOD ransomware gang claims an attack"
+  },
+  {
+   "id": "2026-11-11-n1",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "France formally blames Iran's Revolutionary Guards for the cyberattacks that heated supermarket freezers"
+  },
+  {
+   "id": "2026-11-11-n2",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "Microsoft's November Patch Tuesday fixes over 1,000 flaws, including an Outlook bug already used to steal logins"
+  },
+  {
+   "id": "2026-11-11-n3",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "N-able takes its N-central remote-management cloud offline after a researcher publishes 30-plus unpatched flaws"
+  },
+  {
+   "id": "2026-11-11-n4",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "Mitsui Chemicals agrees to buy photoresist maker JSR for $11.6 billion"
+  },
+  {
+   "id": "2611.13879",
+   "date": "2026-11-11",
+   "type": "paper",
+   "title": "SFU-Sim: Bit-Exact Reverse Engineering of NVIDIA MUFU and Validation of PTX Paths"
   }
  ]
 }
