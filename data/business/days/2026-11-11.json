@@ -1,0 +1,203 @@
+{
+ "date": "2026-11-11",
+ "edition": "weekday",
+ "generated_at": "2026-11-11T12:45:35+00:00",
+ "summary": "US prices rose faster than forecast in October, Bank of Canada notes show why it hiked, Boeing trims its jet workforce and Children's Place goes bankrupt.",
+ "news": [
+  {
+   "id": "2026-11-11-n1",
+   "story_key": "us-cpi-october-2026",
+   "title": "US consumer prices rise 0.4% in October, more than forecast, keeping a December Fed hike in play",
+   "category": "Economy & Data",
+   "published": "2026-11-10T10:38:48-05:00",
+   "tldr": "The US consumer price index rose 0.4% in October, above the 0.3% analysts expected but slower than September's 0.6%, as energy price increases eased.",
+   "why_selected": "The first inflation reading since the midterms and a key input for the Fed's December rate decision.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Inflation in the United States has been pushed up this year mainly by energy costs linked to the war with Iran. Prices rose 3.7% in the 12 months to September, well above the Federal Reserve's 2% target. In September the Fed raised interest rates for the first time since 2023, and markets expect another increase at its December meeting."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Bureau of Labor Statistics said on Tuesday that the consumer price index (CPI), which tracks the cost of a basket of everyday goods and services, rose 0.4% from September to October. Analysts had expected 0.3%; September's rise was 0.6%. Housing, food and energy drove the increase, but energy prices rose only 0.7% after jumping 5.2% in September. The usual year-over-year figure was not published because the bureau did not collect data in October 2025 during the government shutdown. Oxford Economics estimates that, filling that gap, annual inflation would have been 3.9%, the highest since May, when it reached a three-year high of 4.2%. Gasoline averaged $4.41 a gallon at the start of October and $4.22 at the end, according to AAA, still more than $1 above a year earlier."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A hotter-than-expected reading strengthens the case for a December rate rise. Fed governor Christopher Waller had already said he was leaning towards one even if October's figures came in softer. Fed chair Kevin Warsh has said the central bank's job is to keep price rises in some sectors from spreading across the economy. Because inflation is so tied to fuel, it is unclear how quickly higher borrowing costs would bring it down. Tariffs add pressure: New York Fed research found US businesses absorbed nearly 90% of the cost of new import taxes."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether falling pump prices, which dropped below $4 a gallon on Monday for the first time since July, feed through to November's CPI, and the Fed's December decision."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/business/2026/nov/10/october-inflation-report"
+    },
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-n2",
+   "story_key": "boc-deliberations-october-2026",
+   "title": "Bank of Canada notes show it hiked because energy costs were starting to spread, and it may go further",
+   "category": "Central Banks & Rates",
+   "published": "2026-11-10T12:00:00-05:00",
+   "tldr": "The Bank of Canada's summary of its October 28 deliberations shows officials raised the rate to 2.5% to stop high energy prices becoming broad inflation and did not rule out more hikes.",
+   "why_selected": "An official explanation of Canada's rate increase and the clearest guide yet to its next moves.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "On October 28 the Bank of Canada raised its policy rate, the overnight rate that sets the floor for borrowing costs across the economy, by a quarter point to 2.5%. Since the war in the Middle East began, the bank had said it would look through the direct effect of oil prices on inflation. It has now published a summary of the debate behind its change of course."
+    },
+    {
+     "heading": "What happened",
+     "body": "The six-member Governing Council, led by Governor Tiff Macklem, weighed holding at 2.25% against raising to 2.5%. The case for holding: inflation was concentrated in energy and energy-heavy services such as airfares, CPI inflation excluding gasoline was 2.2%, core measures were near 2%, and new US tariffs would weigh on growth. The case for hiking: gasoline, diesel and heating oil prices were well above July's levels, oil was about US$35 a barrel above the bank's earlier assumption, and its surveys showed businesses planned to pass more of their higher costs on to customers over the next year. Members raised their 2026 growth forecast to 1% and now expect CPI inflation to reach 3.5% at the end of 2026, staying above 3% through much of 2027 before returning to 2% by mid-2028."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The bank concluded that while it cannot lower global energy prices, it can stop them from turning into generalized inflation. Members agreed there \"could be a need to increase the policy rate further\" and that uncertainty did not mean inaction. For Canadian households, that keeps the risk of higher mortgage and loan costs alive even though the labour market remains soft, with unemployment around 6.5%. Members noted the energy shock alone would keep inflation near 3% for more than a year."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The bank says it will decide one meeting at a time, so evidence that business costs are passing into core inflation measures will be key to whether it hikes again."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Bank of Canada",
+     "url": "https://www.bankofcanada.ca/2026/11/summary-of-governing-council-deliberations-fixed-announcement-date-of-october-28-2026/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-n3",
+   "story_key": "boeing-commercial-job-cuts-2026-11",
+   "title": "Boeing to cut about 5% of its commercial airplane workforce as it slows its production ramp-up",
+   "category": "Labor & Workplace",
+   "published": "2026-11-09T14:07:40-05:00",
+   "tldr": "Boeing will cut roughly 5% of its commercial airplane staff through layoffs and attrition after slowing plans to raise jet output, with layoff notices starting in December.",
+   "why_selected": "A large employer's job cuts that signal its recovery from years of safety and production problems is slower than promised.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Raising output of the 737 Max, its best-selling jet, is central to Boeing's plan to return to steady profit after years of losses tied to safety problems, including two deadly Max crashes in 2018 and 2019. Production matters because airlines pay most of a plane's price on delivery. In late October, Boeing said it would miss its 2026 targets for 737 production and deliveries."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, Stephanie Pope, head of Boeing Commercial Airplanes, told employees the unit would cut about 5% of its workforce through a mix of layoffs and attrition, with layoff notifications beginning in December. \"Adjusting our production schedules and reducing aircraft output puts us in an overstaffed position,\" she wrote. Boeing has pushed back the move from 47 to 52 Max jets a month until the second half of 2027 and is also slowing its 787 Dreamliner ramp-up. Boeing had about 182,000 employees at the end of 2025; it is unclear how many positions the cut will affect. The company lost $116 million in the third quarter on revenue of $24.19 billion, up 4%, and its shares fell 10.7% on October 27, their worst day in more than 18 months."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A slower ramp-up delays the cash Boeing needs and gives its suppliers more time to stabilize, but it also means fewer jets coming off its lines in the meantime. Chief executive Kelly Ortberg has blamed the pace of wing production and of fuselage production at its Kansas operation. Separately, a dispute with a Florida parts supplier has stalled 777 freighter production, costing Boeing about $6.5 million a day, according to court filings reported by Reuters."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How many workers receive notices in December, and whether Boeing reaches a steady 47 jets a month in early 2027 as Reuters reported it now expects."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/business/2026/nov/09/boeing-to-cut-commercial-plane-workforce"
+    },
+    {
+     "name": "KIRO 7 News",
+     "url": "https://www.kiro7.com/news/national/boeing-cut-commercial-airplane-workforce-by-about-5-amid-production-setbacks/YBJZYWUEIVCHXCP7ORB6D3IOZQ/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-n4",
+   "story_key": "childrens-place-chapter-11-2026-11",
+   "title": "Children's Place files for bankruptcy and puts its kidswear brands up for sale",
+   "category": "Consumer & Retail",
+   "published": "2026-11-09T09:08:11-05:00",
+   "tldr": "Children's Place, owner of the Gymboree brand, filed for Chapter 11 bankruptcy protection and set a December 9 deadline for bids on its assets after falling sales and mounting losses.",
+   "why_selected": "A well-known US and Canadian mall retailer failing, a sign of pressure on mid-market apparel chains.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Children's Place, founded in 1969, sells children's clothing under its own name and the Gymboree brand through more than 500 stores in the United States and Canada. Mithaq Capital, a family office of Saudi Arabia's Al Rajhi family, became its majority owner in 2024 and holds a 61.1% stake."
+    },
+    {
+     "heading": "What happened",
+     "body": "The company and 13 affiliates filed for Chapter 11 protection, a US process that shields a company from creditors while it reorganizes or sells itself, late on Sunday in the bankruptcy court in Newark, New Jersey. It reported assets of US$742.3 million and liabilities of US$881.3 million as of August 1. It lost US$31 million in the three months to August 1, when net sales fell 19% and sales at stores open at least a year fell 17%. A restructuring adviser told the court the company had received nine proposals for some or all of its assets. It plans a court-supervised sale, with bids due December 9 and completion expected by the end of December, funded by a new term loan from its existing secured lenders. Its shares, which closed Friday at 32.2 cents, traded 42% lower before Monday's open."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Stores and websites stay open, but liquidators GA Group, Tiger Group and SB360 Capital Partners will run promotional inventory sales across the chain, and the company's adviser said a liquidation was also among the options considered. For employees, landlords and suppliers, the outcome depends on whether a buyer keeps the business running. The company is also seeking recognition of the case in Canada so its Canadian stores can be included in the sale. Its adviser cited competitive and promotional pressure, rising costs and strained cash."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether bids by December 9 keep the chain operating as a going concern, and how many stores close."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-clothing-retailer-childrens-place-to-seek-buyer-after-filing-for/"
+    },
+    {
+     "name": "FashionUnited",
+     "url": "https://fashionunited.com/news/business/the-childrens-place-files-for-chapter-11-bankruptcy-to-pursue-asset-sale/2026110975618"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w35985",
+   "title": "Unconventional Monetary Policy and Deposit Retention",
+   "authors": [
+    "Philip Strahan",
+    "Tuo Yang"
+   ],
+   "affiliations": [
+    "Boston College"
+   ],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Banking & credit",
+   "tags": [
+    "Banking & credit",
+    "Monetary policy"
+   ],
+   "tldr": "Years of zero interest rates and Fed bond buying filled US banks with rate-sensitive depositors, which made keeping deposits costlier and riskier once rates rose in 2015 and 2022.",
+   "why_selected": "As central banks raise rates again, it explains why some banks must pay up to keep deposits, a lesson from the Silicon Valley Bank run.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Banks profit from \"sticky\" deposits: customers who leave money in accounts even when the bank pays less than market rates. After the 2008 financial crisis and again in the pandemic, the Federal Reserve held its policy rate near zero (the zero lower bound) and bought huge amounts of bonds, known as quantitative easing (QE). Philip Strahan and Tuo Yang ask how those two policies changed who keeps money at banks, and what that meant when rates rose again."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier research showed banks earn rents from deposits that are slow to move, and that QE can leave banks more exposed to liquidity risk. Separating the effect of zero rates from QE is hard because the Fed only resorts to bond buying once rates are already at zero."
+    },
+    {
+     "heading": "Key idea",
+     "body": "When the Fed buys bonds from non-banks, the sellers' cash lands as deposits, first at the small group of large \"primary dealer\" banks that handle the trades. The authors use public transaction-level data on Fed purchases to measure how exposed each bank was to these inflows, depending on how much it competes with primary dealers in local markets. They then compare deposit flows with each bank's rate relative to local rivals."
+    },
+    {
+     "heading": "Results",
+     "body": "At zero rates, differences between banks' deposit rates became too small to matter, so money flowed into banks from money market funds and shifted from time deposits to checking accounts. QE added large, uninsured depositors. When rates lifted off zero in late 2015 and in 2022, banks with more exposure to QE and zero rates saw deposit flows react more to rates and had to raise their deposit rates more, a higher \"deposit beta\", to keep the money."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Bank supervisors and investors should treat deposits gathered in easy-money years as less stable. The caveat is that this is a new working paper, not yet peer-reviewed, and the summary we read does not give effect sizes."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w35985"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major",
+    "press": 2
+   }
+  }
+ ]
+}

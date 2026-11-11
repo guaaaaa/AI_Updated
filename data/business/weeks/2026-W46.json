@@ -3,9 +3,15 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
+  {
+   "title": "Anthropic reportedly plans to move forward with IPO plans",
+   "outlets": 10,
+   "date": "2026-11-10",
+   "covered": "2026-11-10-n1"
+  },
   {
    "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
    "outlets": 8,
@@ -19,10 +25,10 @@
    "covered": null
   },
   {
-   "title": "Anthropic reportedly plans to move forward with IPO plans",
+   "title": "On Holding (ONON) Beats Q3 Earnings and Revenue Estimates",
    "outlets": 6,
    "date": "2026-11-10",
-   "covered": "2026-11-10-n1"
+   "covered": null
   },
   {
    "title": "Anthropic’s $1.5 Trillion IPO Could Expose the Biggest Risk Facing the AI Boom",
@@ -37,27 +43,21 @@
    "covered": null
   },
   {
+   "title": "Treasury yields are steady as investors await more economic data",
+   "outlets": 4,
+   "date": "2026-11-09",
+   "covered": null
+  },
+  {
    "title": "Gold rebounds above $4,100 as traders await U.S. inflation data after jobs beat",
    "outlets": 3,
    "date": "2026-11-09",
    "covered": null
-  },
-  {
-   "title": "Dow futures rally 500 points as oil prices drop; traders brace for more data and earnings",
-   "outlets": 3,
-   "date": "2026-11-09",
-   "covered": null
-  },
-  {
-   "title": "California voters fail to pass proposed one-time tax on billionaires’ wealth",
-   "outlets": 3,
-   "date": "2026-11-10",
-   "covered": "2026-11-10-n3"
   }
  ],
  "featured": {
-  "news": 5,
-  "papers": 2
+  "news": 9,
+  "papers": 3
  },
  "items": [
   {
@@ -101,6 +101,36 @@
    "date": "2026-11-10",
    "type": "paper",
    "title": "Financial Advisors and Retirees' Risk-taking"
+  },
+  {
+   "id": "2026-11-11-n1",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "US consumer prices rise 0.4% in October, more than forecast, keeping a December Fed hike in play"
+  },
+  {
+   "id": "2026-11-11-n2",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "Bank of Canada notes show it hiked because energy costs were starting to spread, and it may go further"
+  },
+  {
+   "id": "2026-11-11-n3",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "Boeing to cut about 5% of its commercial airplane workforce as it slows its production ramp-up"
+  },
+  {
+   "id": "2026-11-11-n4",
+   "date": "2026-11-11",
+   "type": "news",
+   "title": "Children's Place files for bankruptcy and puts its kidswear brands up for sale"
+  },
+  {
+   "id": "nber-w35985",
+   "date": "2026-11-11",
+   "type": "paper",
+   "title": "Unconventional Monetary Policy and Deposit Retention"
   }
  ]
 }

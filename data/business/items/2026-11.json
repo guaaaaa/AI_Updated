@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-11-n1",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "US consumer prices rise 0.4% in October, more than forecast, keeping a December Fed hike in play",
+  "tldr": "The US consumer price index rose 0.4% in October, above the 0.3% analysts expected but slower than September's 0.6%, as energy price increases eased.",
+  "category": "Economy & Data",
+  "byline": "The Guardian, BBC News"
+ },
+ {
+  "id": "2026-11-11-n2",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "Bank of Canada notes show it hiked because energy costs were starting to spread, and it may go further",
+  "tldr": "The Bank of Canada's summary of its October 28 deliberations shows officials raised the rate to 2.5% to stop high energy prices becoming broad inflation and did not rule out more hikes.",
+  "category": "Central Banks & Rates",
+  "byline": "Bank of Canada"
+ },
+ {
+  "id": "2026-11-11-n3",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "Boeing to cut about 5% of its commercial airplane workforce as it slows its production ramp-up",
+  "tldr": "Boeing will cut roughly 5% of its commercial airplane staff through layoffs and attrition after slowing plans to raise jet output, with layoff notices starting in December.",
+  "category": "Labor & Workplace",
+  "byline": "The Guardian, KIRO 7 News"
+ },
+ {
+  "id": "2026-11-11-n4",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "Children's Place files for bankruptcy and puts its kidswear brands up for sale",
+  "tldr": "Children's Place, owner of the Gymboree brand, filed for Chapter 11 bankruptcy protection and set a December 9 deadline for bids on its assets after falling sales and mounting losses.",
+  "category": "Consumer & Retail",
+  "byline": "The Globe and Mail, FashionUnited"
+ },
+ {
+  "id": "nber-w35985",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "Unconventional Monetary Policy and Deposit Retention",
+  "tldr": "Years of zero interest rates and Fed bond buying filled US banks with rate-sensitive depositors, which made keeping deposits costlier and riskier once rates rose in 2015 and 2022.",
+  "primary_tag": "Banking & credit",
+  "tags": [
+   "Banking & credit",
+   "Monetary policy"
+  ],
+  "byline": "Philip Strahan, Tuo Yang · Boston College",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-10-n1",
   "date": "2026-11-10",
   "type": "news",
