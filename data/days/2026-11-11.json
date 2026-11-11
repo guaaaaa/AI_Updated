@@ -1,0 +1,486 @@
+{
+ "date": "2026-11-11",
+ "edition": "weekday",
+ "generated_at": "2026-11-11T12:21:46+00:00",
+ "summary": "Google opens Gemini 4 Carbon to everyone and upgrades its robot brain; papers explain why plain policy-gradient post-training stalls, make k-means about ten times faster, and test agents on day-long infrastructure work.",
+ "news": [
+  {
+   "id": "2026-11-11-n1",
+   "story_key": "google-gemini-4-carbon-general-availability",
+   "title": "Google opens Gemini 4 Carbon to all paying developers and Ultra subscribers, with an agent \"swarm\" preview",
+   "category": "Model Release",
+   "published": "2026-11-10T11:00:00-05:00",
+   "tldr": "Two weeks after a defenders-only debut, Google's strongest model, Gemini 4 Carbon, is available through the API and to AI Ultra subscribers at $2/$10 per million tokens, alongside a multi-agent \"/swarm\" preview.",
+   "why_selected": "Wide release of a frontier model at a fraction of rivals' token prices; a materially new step after the limited cyber-defender launch we covered on October 29.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Google DeepMind announced Gemini 4 Carbon two weeks ago but gave it only to a set of cybersecurity defenders through its Fairwind Program. Carbon sits above Gemini 4 Argon, the frontier model Google launched last month, which Google says remains the right choice for most software engineering and knowledge work. Anthropic released Claude Fable 5.2 the day before this rollout."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 10 Google made Carbon available via the API in Google AI Studio and Gemini for business for all paying developers and enterprises, and began rolling it out to all Google AI Ultra subscribers in the Gemini app, AI Mode in Search and the Antigravity agent platform. The introductory price matches Argon: $2 per million input tokens and $10 per million output tokens. The Verge reports this is about a fifth of the cost of OpenAI's GPT-6 Astra and a quarter of Fable 5.2, and that prices double at the end of November. Google says Carbon spends more tokens than Argon to reason and verify, ranks first on CursorBench 4.0, Perplexity's WANDR and Zapier's AutomationBench at more than 2x lower cost per task than the next external model, and places second on a new Multimodal Knowledge Agent benchmark built with Artificial Analysis. It also previewed \"/swarm\" in Antigravity, which turns one prompt into a coordinated team of agents."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Frontier capability is now arriving with aggressive pricing, which matters most for long agentic runs where token bills dominate. Google's split between Argon for everyday work and Carbon for the hardest multi-step problems mirrors how teams increasingly route tasks between models. The swarm preview also signals that vendors see orchestration of many agents, with a strong model as coordinator and lighter models as workers, as the next product layer. The caveat is that per-token price is not per-task cost: The Verge notes models use different numbers of tokens for the same task, and the benchmark results are Google's own selection."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Carbon reaches lower subscription tiers, how independent evaluations compare it with Fable 5.2, and whether usage holds once the introductory price doubles."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/gemini-4-carbon-public-rollout"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-n2",
+   "story_key": "deepmind-gemini-robotics-2-5-launch",
+   "title": "Google DeepMind releases Gemini Robotics 2.5, which reached 96% success packing car parts in Mercedes-Benz plants",
+   "category": "Model Release",
+   "published": "2026-11-10T10:00:00-05:00",
+   "tldr": "DeepMind's new vision-language-action model raises task success 30 to 100% over its predecessor, ran factory kitting on Apptronik humanoids at 96% success, and ships with an open robot-jailbreak safety benchmark.",
+   "why_selected": "A new generation of a leading robot foundation model with a real factory test and an open safety benchmark, the clearest physical-AI release of the week.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "DeepMind's robotics stack has two layers. Gemini Robotics-ER (Embodied Reasoning) is a vision-language model that reads instructions and live video and plans the task. Gemini Robotics is a vision-language-action (VLA) model that turns that plan into motor commands. Robot learning remains short of data: teleoperated demonstrations are the best source, and there is far less such physical data than text."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 10 DeepMind released Gemini Robotics 2.5, calling it its most capable VLA model to date. Across more than 200 tasks, including serving food with tongs and pipetting liquid, it achieves 30% to 100% higher success than the previous baseline, depending on task type, and finishes 20% to 30% faster. On Mercedes-Benz production lines, Apptronik's Apollo 2 humanoid running the models picked and packed automotive parts with a 96% success rate. Ars Technica reports that Gemini 4 Argon was used to generate thousands of simulated variations of practice runs from real camera data and to analyze failures. Reasoning-based safety guidance improved safe task completion by 33% around obstacles and 43% around nearby people. DeepMind also released ASIMOV-Jailbreak, an open benchmark of prompts that disguise unsafe requests. The model is rolling out to DeepMind's robotics partners."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The release shows a frontier language model doing double duty as a data engine for a robot model, one plausible route around the physical-data shortage. The factory result moves evaluation from lab demos toward production metrics, and the open jailbreak benchmark gives the field a shared way to test whether robots can be talked into unsafe actions. The caveats are real: Ars notes the model still runs on cloud servers with noticeable latency, and DeepMind's Kanishka Rao called closing the last 4% gap to human reliability a \"steep road\"."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether partners move from pilots to paid deployments, on-device versions that cut latency, and how other labs score on ASIMOV-Jailbreak."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.14467",
+   "title": "A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets",
+   "authors": [
+    "Audrey Huang",
+    "Nan Jiang",
+    "Sham M. Kakade",
+    "Sadhika Malladi",
+    "Akshay Krishnamurthy",
+    "Dylan J. Foster"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-10T20:00:00-05:00",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Theory",
+    "Post-training"
+   ],
+   "tldr": "REINFORCE-style post-training can drive the probability of correct answers toward zero even as reward rises; periodically resetting the KL reference to the current policy provably prevents this and explains PPO, GRPO and Kimi-style recipes.",
+   "why_selected": "A rigorous theory from leading RL theorists that directly explains common RL-for-LLM tricks and gives concrete tuning guidance; strong attention on alphaXiv.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reinforcement learning (RL) post-training is supposed to amplify what a base model can already do: if the base model sometimes samples the right answer, training should make it do so reliably. Yet there is little theory saying which algorithms actually achieve this efficiently, so practitioners tune PPO and GRPO variants largely by trial and error."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Standard policy-gradient methods (REINFORCE, and PPO and GRPO built on it) are usually regularized with a KL penalty toward the fixed base model. Existing convergence guarantees either assume a uniform starting policy, ignoring the base model, or cannot rule out poor results even from a strong base model."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors define a base model's coverage as how readily it generates optimal responses, and ask for \"coverage-preserving\" algorithms whose cost depends only on that. Their first result is negative: on a simple bandit instance, REINFORCE with exact gradients can push the probability of the optimal response down to exponentially small values while average reward keeps improving. Once coverage collapses the gradient signal vanishes and convergence takes exponentially many steps, with or without KL to the base model. The fix is like a hiker who keeps re-anchoring a short rope to wherever they now stand: Approximate Policy Mirror Descent (APMD) repeatedly resets the KL reference to the latest policy and solves a strongly regularized subproblem around it. Each step is easy and local, yet successive resets reach the global optimum."
+    },
+    {
+     "heading": "Results",
+     "body": "APMD converges at the mirror-descent rate, with error at most log(2C)/(ηT) where C is base-model coverage, and every iterate keeps at least half the base model's probability of optimal answers on most prompts. For softmax linear policies the authors prove the first global convergence guarantees for stylized PPO and GRPO with reference resets and for squared-loss methods, including the objectives used to train Kimi models."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The theory recommends stronger regularization to a moving reference, more inner optimization steps than the common 1 to 4, and joint tuning of clipping, inner steps and batch size. The guarantees cover only softmax linear policies and treat each response as a single unit, not a token sequence."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.14467",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.14467"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 35,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Sham M. Kakade"
+    ]
+   }
+  },
+  {
+   "id": "2611.09501",
+   "title": "e-means: outperforming k-means (in one-tenth the epochs)",
+   "authors": [
+    "Swann Bessa",
+    "Pierre-Emmanuel Mazaré",
+    "Gergely Szilvasy",
+    "Hugo Touvron",
+    "David Picard",
+    "Matthijs Douze",
+    "Hervé Jégou"
+   ],
+   "affiliations": [
+    "FAIR at Meta",
+    "École Nationale des Ponts et Chaussées"
+   ],
+   "announced": "2026-11-08T20:00:00-05:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Pre-training & Data",
+    "Retrieval & Memory"
+   ],
+   "tldr": "e-means turns mini-batch k-means with exponential-moving-average centroids and fitted scaling laws into a tuning-free method that beats 25 epochs of Lloyd's algorithm in about two epochs.",
+   "why_selected": "A practical upgrade to one of the most-used algorithms in retrieval, quantization and data curation, from FAIR at Meta, with released code and a 10-billion-vector benchmark.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "k-means clustering underpins vector search indexes, quantization, data curation for pretraining and even KV-cache compression. At billions of vectors, every pass over the data is expensive, so the number of passes (epochs) needed to reach a good clustering matters a lot."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Lloyd's full-batch algorithm reassigns every point and recomputes each centroid as a mean, usually for a fixed number of iterations (25 is Faiss's default). Mini-batch k-means is faster per step but typically settles at a worse error, and practitioners must guess its batch size and step size for each new dataset."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Each centroid is stored as an exponential moving average (EMA) of a count and a sum of the points assigned to it, an update borrowed from VQ-VAE codebooks, and the centroid is read off as their ratio. Think of each centroid as a running average that gradually forgets old batches. The authors retarget this tool at fixed datasets: the step size decays on a cosine schedule so centroids settle, clusters whose share falls below 10% of the mean are revived by splitting a large donor cluster, and a final pass recomputes centroids from last-epoch assignments. They then fit log-linear scaling laws, from 75,000 runs on one dataset, that set batch size and step size from the number of points, clusters and epochs, removing hyperparameter sweeps."
+    },
+    {
+     "heading": "Results",
+     "body": "e-means matches the 25-iteration error of Flash-KMeans, the leading GPU implementation, in 1.4 to 2.6 epochs, a 9.5x to 45.5x wall-clock speedup, and three epochs beat its randomly initialized runs on all 8 tested setups. It splits 10 billion DINO embeddings into 16 million clusters in 2.5 epochs."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Anyone building large retrieval indexes or curating pretraining data by clustering can cut that cost by about an order of magnitude. Against a k-means++-initialized baseline the error margin narrows to 0.06% to 0.33%."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.09501",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.09501",
+    "code": "https://github.com/facebookresearch/faiss"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 39,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 5,
+    "org": "Meta"
+   }
+  },
+  {
+   "id": "2611.11995",
+   "title": "Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization",
+   "authors": [
+    "Zhengyu Hu",
+    "Zheyuan Xiao",
+    "Yike Wang",
+    "Hamish Ivison",
+    "Haoyu Wang",
+    "Yige Yuan",
+    "Rulin Shao",
+    "Yuetai Li",
+    "Niqi Lyu",
+    "Yicheng Ding",
+    "Shu Yang",
+    "Zhichen Zeng",
+    "Banghua Zhu",
+    "Jiaxin Pei",
+    "Kaize Ding",
+    "Pradeep Dasigi",
+    "Dan Roth",
+    "Hannaneh Hajishirzi",
+    "Noah A. Smith",
+    "Teng Xiao",
+    "Radha Poovendran"
+   ],
+   "affiliations": [
+    "University of Washington"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Agents",
+    "Efficiency"
+   ],
+   "tldr": "Infrathon gives coding agents 12 to 24 hours on 25 real AI-infrastructure optimization tasks; 135 of 150 runs keep improving in the second half, and one agent tripled a human-designed KV-cache codec's compression.",
+   "why_selected": "The first long-horizon benchmark for agents optimizing real training and serving code, with over 10,000 GPU-hours of evaluation and a concrete agent-discovered improvement.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Speeding up AI training and serving means repeatedly profiling, rewriting and validating kernels and pipelines without breaking correctness. If AI agents could do this over long stretches, they could accelerate AI development itself, but nobody knew how they behave on day-long infrastructure work."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "KernelBench covers single operators and modules, InferenceBench whole serving systems, and Φ-Bench spans all levels but mostly with 1.5-hour runs. Short budgets cannot show whether agents keep finding gains after the obvious fixes."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Infrathon has 25 tasks built with human experts from projects such as DeepGEMM, FlashMLA and FlashAttention: 11 operator tasks with 12-hour budgets and 5 module and 9 system tasks with 24 hours. Metrics such as TFLOP/s have no fixed ceiling. Think of it as a hackathon with a referee: the agent works and runs public tests in one container, a separate Controller model reviews each submission for rule-breaking and reward hacking, and a Judge runs hidden private tests. A stop hook pushes agents to continue when they declare themselves done early."
+    },
+    {
+     "heading": "Results",
+     "body": "Across six models and 150 runs, Claude Opus 5.5 won 17 tasks and GPT-6 Astra six. Rankings shift with time: Astra led at 25% of the budget, Claude at 50%. On a video-generation KV-cache codec task, Claude's design raised compression from 6.75x to 20.89x on WorldScore while improving image quality. One long run beat best-of-four short runs on system tasks, which reached only 77.3% of long-run performance."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Short evaluations can misjudge which agent is best and miss real gains. Agents still broke task rules, tested the wrong code and quit early; Claude once submitted downloaded human codec weights as its own."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.11995",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.11995"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 38,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 23,
+    "notable_authors": [
+     "Hannaneh Hajishirzi",
+     "Noah A. Smith"
+    ],
+    "org": "University of Washington"
+   }
+  },
+  {
+   "id": "2611.12806",
+   "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+   "authors": [
+    "Bing Han",
+    "Yichuan Peng",
+    "Haoyu Dong",
+    "Yuanmeng Hu",
+    "Yongyi Jia",
+    "Fangjing Wang",
+    "Kecheng Zheng",
+    "Yiming Zhang",
+    "Yanhong Zeng",
+    "Xiaoqing Zhang",
+    "Chen Song",
+    "Rundong Zou",
+    "Anqi Dong",
+    "Yuan Guan",
+    "Ka Leong Cheng",
+    "Xing Zhu",
+    "Yujun Shen",
+    "Nan Xue",
+    "Wei Ning"
+   ],
+   "affiliations": [
+    "Robbyant"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Pre-training & Data"
+   ],
+   "tldr": "LingBot-Touch learns one touch representation across three kinds of tactile sensors from 5,000 hours of data, and its small frozen encoder raises real-robot success by 14 to 26 points.",
+   "why_selected": "A credible step toward a foundation model for touch, the sense robots most lack, with broad gains across four policy families; with 96 upvotes on Hugging Face.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Robots manipulate objects almost entirely by sight, but vision cannot tell how hard a finger presses, whether a grasp slips or what happens under an occluding finger. Touch should help dexterous hands, yet it has not scaled the way vision and language have."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Piezoresistive, magnetic and camera-based (visuotactile) sensors all exist, but each has its own channels, layout, resolution and sampling rate. Data from one cannot be pooled with another, so evidence that touch helps is scattered across sensor-specific studies."
+    },
+    {
+     "heading": "Key idea",
+     "body": "A fingertip pressing on an edge is the same physical event whatever sensor records it. LingBot-Touch therefore maps every sensor's taxels (tactile pixels) into a shared canonical fingertip space, so the model sees positions on a finger rather than indices in a device-specific array. Modality-specific tokenizers feed one shared transformer, trained with Tactile-JEPA, a joint-embedding predictive objective that predicts the hidden representations of masked taxels rather than raw signals, which suits sparse, unlabeled touch data. Training uses a 5,000-hour corpus of 464,000 episodes and 1.33 billion frames from human tactile gloves and teleoperated robot hands."
+    },
+    {
+     "heading": "Results",
+     "body": "Adding the frozen 5.46-million-parameter encoder raised success on 26 real dual-arm tasks by 14 to 26 points for Diffusion Policy, π0.5, LingBot-VLA and T-Rex, while raw tactile input gave at most about half that gain. In simulated reinforcement learning across twelve dexterous tasks, success was 69% versus 46% with a task-specific network and 21% without touch. It transfers to a sensor model unseen in training."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A shared tactile token could let labs pool data across hardware, the precondition for scaling touch. Checkpoints for the small variants are promised but the full corpus is not."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12806",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12806",
+    "code": "https://github.com/Robbyant/lingbot-touch"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 6,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 96,
+    "org": "Robbyant"
+   }
+  },
+  {
+   "id": "2611.12762",
+   "title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
+   "authors": [
+    "Weida Wang",
+    "Benteng Chen",
+    "Yigeng Jiang",
+    "Shuchen Pu",
+    "Weiping Shen",
+    "Zichao Liu",
+    "Yulin Su",
+    "Zitong Wang",
+    "Siyu Zhou",
+    "Zifu Wang",
+    "Yizhi Li",
+    "Xin Zong",
+    "Yuning Yang",
+    "Jixiang Bi",
+    "Yuan Wang",
+    "Chuyi Peng",
+    "Shiyao Geng",
+    "Qi Zhang",
+    "Kuan Lu",
+    "Mengzhu Li",
+    "Weiwang Xu",
+    "Peishan Xiang",
+    "Chengjun Liu",
+    "Chengrui Wei",
+    "Fangchen Yu",
+    "Shengji Tang",
+    "Yichen Jiang",
+    "Jingqi Ye",
+    "Cheng Yang",
+    "Tao Hu",
+    "Jianbiao Mei",
+    "Qinglong Cao",
+    "Kun Li",
+    "Yixin Chen",
+    "Shengyuan Xu",
+    "Juncheng Xiao",
+    "Yiheng Wang",
+    "Ruizhe Chen",
+    "Shiyang Feng",
+    "Runmin Ma",
+    "Xiangchao Yan",
+    "Zongsheng Cao",
+    "Haomeng Hu",
+    "Yu Ke",
+    "Taihui Wu",
+    "Meng Dai",
+    "Xu Guo",
+    "Haoyang Peng",
+    "Yinglong Ni",
+    "Pingsen Shi",
+    "Xiaosong Wang",
+    "Shuyue Hu",
+    "Haijun Li",
+    "Sherry Dongqi Bao",
+    "Yang Yang",
+    "Chao Yang",
+    "Jie Hou",
+    "Tianfan Fu",
+    "Yi Gong",
+    "Jin Zeng",
+    "Mao Su",
+    "Hongxia Hao",
+    "Fanyang Mo",
+    "Fenghua Ling",
+    "Tianshu Yu",
+    "Yunqi Cai",
+    "Baihong Chi",
+    "Jingwei Wang",
+    "Lei Wang",
+    "Chuncheng Bu",
+    "Shide Lv",
+    "Guangyu Wang",
+    "Yuqiang Li",
+    "Chunfeng Song",
+    "Lei Bai",
+    "Hui Wang",
+    "Xujun Fu",
+    "Li Cao",
+    "Lei Chen",
+    "Dahua Lin",
+    "Xing Xie",
+    "Bowen Zhou",
+    "Wenlong Zhang",
+    "Pinlong Cai",
+    "Peng Ye",
+    "Aiwen Lei",
+    "Jie Li",
+    "Shengchun Wang",
+    "Bo Zhang",
+    "Shufei Zhang"
+   ],
+   "affiliations": [
+    "Shanghai Artificial Intelligence Laboratory"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "AI for Science & Health",
+   "tags": [
+    "AI for Science & Health",
+    "Agents",
+    "Reasoning"
+   ],
+   "tldr": "Sage-Taiyi adds a \"metacognitive\" layer that tracks what a research search has learned and chooses what to try next, beating AI Scientist-v2 on ideation and producing lab-validated chemistry gains.",
+   "why_selected": "Second on the alphaXiv Hot list with strong Hugging Face votes, and unusually it pairs benchmark wins with wet-lab and simulation results across five fields.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "AI \"co-scientists\" can generate many research ideas, but science is a loop in which what you learn should change what you look at next. Systems that react only to the latest round of feedback forget earlier failures and unresolved conflicts, repeat mistakes and keep searching dead ends."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The AI Scientist links ideation to experiments and paper writing, Co-Scientist iterates generation and critique, and Robin adds experimental feedback. Iteration alone does not ensure that findings from one branch, with their evidence and limits, shape method choices on others."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Borrowing from cognitive psychology, Sage-Taiyi splits the work into two levels, like a lab head supervising a postdoc. The object level does the science: a Target Tree breaks the question into subgoals, an Idea Graph records ideas and how they were merged, fused, repaired or evolved, and an Evidence State stores results with their sources. The meta level keeps a Cognitive State of what has been established and what remains uncertain, plus a reusable repertoire of ten research heuristics, such as analogical transfer and inverse design, and reasoning operators. Monitoring updates that state from new results; control decides which branch to pursue, revise or stop and which method to apply."
+    },
+    {
+     "heading": "Results",
+     "body": "On Taiyi-Bench, 265 tasks from 50 papers published after the base model's knowledge cutoff, Sage-Taiyi scored 54.0 overall versus 47.9 for AI Scientist-v2 using the same GPT-5.6-Sol model, leading all eight metrics. In expert-guided collaborations it raised a cobalt-catalyzed reaction's yield from trace amounts to 84% and a photocatalytic amination from 13% to 69%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests that how an agent organizes accumulated knowledge matters as much as raw model strength. Taiyi-Bench is the authors' own, scored by a model-based verifier, and the lab successes were expert-guided."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12762",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12762",
+    "code": "https://github.com/Alpha-Innovator/Sage-Taiyi"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 2,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 54,
+    "notable_authors": [
+     "Dahua Lin"
+    ],
+    "org": "Shanghai AI Laboratory"
+   }
+  }
+ ]
+}

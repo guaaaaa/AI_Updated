@@ -1,5 +1,102 @@
 [
  {
+  "id": "2026-11-11-n1",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "Google opens Gemini 4 Carbon to all paying developers and Ultra subscribers, with an agent \"swarm\" preview",
+  "tldr": "Two weeks after a defenders-only debut, Google's strongest model, Gemini 4 Carbon, is available through the API and to AI Ultra subscribers at $2/$10 per million tokens, alongside a multi-agent \"/swarm\" preview.",
+  "category": "Model Release",
+  "byline": "Google DeepMind, The Verge"
+ },
+ {
+  "id": "2026-11-11-n2",
+  "date": "2026-11-11",
+  "type": "news",
+  "title": "Google DeepMind releases Gemini Robotics 2.5, which reached 96% success packing car parts in Mercedes-Benz plants",
+  "tldr": "DeepMind's new vision-language-action model raises task success 30 to 100% over its predecessor, ran factory kitting on Apptronik humanoids at 96% success, and ships with an open robot-jailbreak safety benchmark.",
+  "category": "Model Release",
+  "byline": "Google DeepMind, Ars Technica"
+ },
+ {
+  "id": "2611.14467",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets",
+  "tldr": "REINFORCE-style post-training can drive the probability of correct answers toward zero even as reward rises; periodically resetting the KL reference to the current policy provably prevents this and explains PPO, GRPO and Kimi-style recipes.",
+  "primary_tag": "Reinforcement Learning",
+  "tags": [
+   "Reinforcement Learning",
+   "Theory",
+   "Post-training"
+  ],
+  "byline": "Audrey Huang, Nan Jiang, Sham M. Kakade et al.",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.09501",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "e-means: outperforming k-means (in one-tenth the epochs)",
+  "tldr": "e-means turns mini-batch k-means with exponential-moving-average centroids and fitted scaling laws into a tuning-free method that beats 25 epochs of Lloyd's algorithm in about two epochs.",
+  "primary_tag": "Efficiency",
+  "tags": [
+   "Efficiency",
+   "Pre-training & Data",
+   "Retrieval & Memory"
+  ],
+  "byline": "Swann Bessa, Pierre-Emmanuel Mazaré, Gergely Szilvasy et al. · FAIR at Meta, École Nationale des Ponts et Chaussées",
+  "hf": 5,
+  "venue": null
+ },
+ {
+  "id": "2611.11995",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization",
+  "tldr": "Infrathon gives coding agents 12 to 24 hours on 25 real AI-infrastructure optimization tasks; 135 of 150 runs keep improving in the second half, and one agent tripled a human-designed KV-cache codec's compression.",
+  "primary_tag": "Evaluation & Benchmarks",
+  "tags": [
+   "Evaluation & Benchmarks",
+   "Agents",
+   "Efficiency"
+  ],
+  "byline": "Zhengyu Hu, Zheyuan Xiao, Yike Wang et al. · University of Washington",
+  "hf": 23,
+  "venue": null
+ },
+ {
+  "id": "2611.12806",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+  "tldr": "LingBot-Touch learns one touch representation across three kinds of tactile sensors from 5,000 hours of data, and its small frozen encoder raises real-robot success by 14 to 26 points.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Pre-training & Data"
+  ],
+  "byline": "Bing Han, Yichuan Peng, Haoyu Dong et al. · Robbyant",
+  "hf": 96,
+  "venue": null
+ },
+ {
+  "id": "2611.12762",
+  "date": "2026-11-11",
+  "type": "paper",
+  "title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
+  "tldr": "Sage-Taiyi adds a \"metacognitive\" layer that tracks what a research search has learned and chooses what to try next, beating AI Scientist-v2 on ideation and producing lab-validated chemistry gains.",
+  "primary_tag": "AI for Science & Health",
+  "tags": [
+   "AI for Science & Health",
+   "Agents",
+   "Reasoning"
+  ],
+  "byline": "Weida Wang, Benteng Chen, Yigeng Jiang et al. · Shanghai Artificial Intelligence Laboratory",
+  "hf": 54,
+  "venue": null
+ },
+ {
   "id": "2026-11-10-n1",
   "date": "2026-11-10",
   "type": "news",

@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Tue, 10 Nov 2026 12:20:35 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 12:21:46 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google opens Gemini 4 Carbon to all paying developers and Ultra subscribers, with an agent "swarm" preview</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n1</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Two weeks after a defenders-only debut, Google's strongest model, Gemini 4 Carbon, is available through the API and to AI Ultra subscribers at $2/$10 per million tokens, alongside a multi-agent "/swarm" preview. (Google DeepMind, The Verge)</description>
+  </item>
+  <item>
+    <title>Google DeepMind releases Gemini Robotics 2.5, which reached 96% success packing car parts in Mercedes-Benz plants</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n2</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>DeepMind's new vision-language-action model raises task success 30 to 100% over its predecessor, ran factory kitting on Apptronik humanoids at 96% success, and ships with an open robot-jailbreak safety benchmark. (Google DeepMind, Ars Technica)</description>
+  </item>
+  <item>
+    <title>A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.14467</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.14467</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Reinforcement Learning</category>
+    <description>REINFORCE-style post-training can drive the probability of correct answers toward zero even as reward rises; periodically resetting the KL reference to the current policy provably prevents this and explains PPO, GRPO and Kimi-style recipes. (Audrey Huang, Nan Jiang, Sham M. Kakade et al.)</description>
+  </item>
+  <item>
+    <title>e-means: outperforming k-means (in one-tenth the epochs)</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.09501</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.09501</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>e-means turns mini-batch k-means with exponential-moving-average centroids and fitted scaling laws into a tuning-free method that beats 25 epochs of Lloyd's algorithm in about two epochs. (Swann Bessa, Pierre-Emmanuel Mazaré, Gergely Szilvasy et al. · FAIR at Meta, École Nationale des Ponts et Chaussées)</description>
+  </item>
+  <item>
+    <title>Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.11995</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.11995</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>Infrathon gives coding agents 12 to 24 hours on 25 real AI-infrastructure optimization tasks; 135 of 150 runs keep improving in the second half, and one agent tripled a human-designed KV-cache codec's compression. (Zhengyu Hu, Zheyuan Xiao, Yike Wang et al. · University of Washington)</description>
+  </item>
+  <item>
+    <title>Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12806</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12806</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>LingBot-Touch learns one touch representation across three kinds of tactile sensors from 5,000 hours of data, and its small frozen encoder raises real-robot success by 14 to 26 points. (Bing Han, Yichuan Peng, Haoyu Dong et al. · Robbyant)</description>
+  </item>
+  <item>
+    <title>Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12762</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12762</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / AI for Science &amp; Health</category>
+    <description>Sage-Taiyi adds a "metacognitive" layer that tracks what a research search has learned and chooses what to try next, beating AI Scientist-v2 on ideation and producing lab-validated chemistry gains. (Weida Wang, Benteng Chen, Yigeng Jiang et al. · Shanghai Artificial Intelligence Laboratory)</description>
+  </item>
   <item>
     <title>Anthropic releases Claude Fable 5.2 and Mythos 5.2 at a lower price</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
     <category>AI / Evaluation &amp; Benchmarks</category>
     <description>FrontierPhysics has 42 physicists turn their own research into 56 end-to-end tasks, and no AI agent configuration passes more than 46 of 168 attempts. (Bingran You, Wenjun Ke, Ria Rosenauer et al. · Multi-institution team of physicists (26 institutions))</description>
-  </item>
-  <item>
-    <title>SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.02846</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-05/2611.02846</guid>
-    <pubDate>Thu, 05 Nov 2026 12:18:27 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>SpecOPD trains speculative-decoding draft models on their own sampled outputs in parallel branches, lifting accepted-token length by up to 41% and training throughput 16x. (Tianyu Liu, Jun Zhang, Wenjie Huang et al. · Qwen Business Unit of Alibaba, University of Science and Technology of China, Zhejiang University)</description>
-  </item>
-  <item>
-    <title>Google will switch off Search for schools that reject its AI tools</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2026-11-04-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2026-11-04-n1</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Policy &amp; Legal</category>
-    <description>Google will turn its AI tools off by default for K-12 student accounts, but schools that keep them off also lose Google Search, because Google treats Search and AI as one product. (TechCrunch, The Verge, Ars Technica)</description>
-  </item>
-  <item>
-    <title>Democratizing Robot-Use Agents: A Unified Harness with Open Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.01560</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.01560</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>An open-weight Qwen model, driven through a carefully designed tool harness and with no privileged inputs, beats the published GPT-6 Astra result on the RoboDojo robot benchmark. (Jiarui Yuan, Yuxin Zuo, Xiaoyu Huang et al. · Tsinghua University, UC Berkeley)</description>
-  </item>
-  <item>
-    <title>Measuring AI Agents as Teammates with Collaborative Intelligence</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.02633</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.02633</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Evaluation &amp; Benchmarks</category>
-    <description>A 240-task benchmark scores AI agents as teammates and finds that even the best model reaches only 82.2 out of 100, with strong models caving under social pressure and keeping inherited cheating. (Sean Wu, Aneesh Pappu, Jiaru Zou et al. · Stanford University, University of Oxford, MIT)</description>
-  </item>
-  <item>
-    <title>Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.03633</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.03633</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Optimization</category>
-    <description>Muon beats AdamW at pretraining loss but, with enough pretraining data, AdamW models fine-tune better, and the crossover arrives sooner as models grow. (Catherine Li, Jingchu Gai, Andrej Risteski et al.)</description>
-  </item>
-  <item>
-    <title>DR Pixel: Page-Native Deep Research with Vision-Language Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.03097</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.03097</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Retrieval &amp; Memory</category>
-    <description>DR Pixel does deep research directly on rendered page images instead of OCR text, and a step-weighted fine-tuning method lifts a 27B open model to GPT-5.4-level accuracy. (Tiansheng Hu, Yichuan Wang, James V. Talwar et al. · NYU Shanghai, UC Berkeley, Rational Dynamics)</description>
-  </item>
-  <item>
-    <title>Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.05266</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-04/2611.05266</guid>
-    <pubDate>Wed, 04 Nov 2026 12:17:43 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Turning a judge's per-turn text feedback into a self-distillation signal, only on failing turns and alongside normal RL rewards, teaches coding agents behaviors that plain RL never discovers. (Kevin Frans, Alexander M Rush, Sergey Levine et al. · Cursor Research, UC Berkeley)</description>
   </item>
 </channel>
 </rss>

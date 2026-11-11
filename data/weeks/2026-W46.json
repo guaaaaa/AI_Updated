@@ -3,70 +3,88 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [
   {
    "id": "2611.12806",
    "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
-   "hf": 89,
+   "hf": 96,
    "org": "Robbyant",
-   "featured": null
-  },
-  {
-   "id": "2611.09124",
-   "title": "Toward the Era of Agentic Embodied Intelligence",
-   "hf": 45,
-   "org": "AutoLab",
-   "featured": null
+   "featured": "2026-11-11"
   },
   {
    "id": "2611.10771",
    "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
-   "hf": 42,
+   "hf": 55,
    "org": "OpenEnvision",
-   "featured": null
-  },
-  {
-   "id": "2611.12886",
-   "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
-   "hf": 29,
-   "org": "Nanjing University",
    "featured": null
   },
   {
    "id": "2611.12762",
    "title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
-   "hf": 26,
+   "hf": 54,
    "org": "Shanghai AI Laboratory",
+   "featured": "2026-11-11"
+  },
+  {
+   "id": "2611.09124",
+   "title": "Toward the Era of Agentic Embodied Intelligence",
+   "hf": 50,
+   "org": "AutoLab",
    "featured": null
   },
   {
-   "id": "2611.09017",
-   "title": "Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds",
-   "hf": 22,
+   "id": "2611.12886",
+   "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+   "hf": 38,
+   "org": "Nanjing University",
+   "featured": null
+  },
+  {
+   "id": "2611.14210",
+   "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+   "hf": 37,
    "org": null,
    "featured": null
   },
   {
-   "id": "2611.09382",
-   "title": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
-   "hf": 13,
-   "org": null,
+   "id": "2611.14320",
+   "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+   "hf": 35,
+   "org": "KAIST AI",
    "featured": null
   },
   {
-   "id": "2611.09894",
-   "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
-   "hf": 10,
-   "org": "University of Central Florida",
-   "featured": "2026-11-09"
+   "id": "2611.12426",
+   "title": "dNaViT: Discrete Codes are General-Purpose Visual Representations",
+   "hf": 30,
+   "org": "LongCat",
+   "featured": null
   }
  ],
  "stories": [
   {
    "title": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
-   "outlets": 11,
+   "outlets": 16,
    "date": "2026-11-08",
+   "covered": null
+  },
+  {
+   "title": "Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion",
+   "outlets": 9,
+   "date": "2026-11-06",
+   "covered": null
+  },
+  {
+   "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+   "outlets": 8,
+   "date": "2026-11-09",
+   "covered": "2026-11-10-n1"
+  },
+  {
+   "title": "Anti-AI Protesters Break Into Microsoft Data Center Site in Amsterdam",
+   "outlets": 6,
+   "date": "2026-11-06",
    "covered": null
   },
   {
@@ -76,44 +94,26 @@
    "covered": null
   },
   {
-   "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
-   "outlets": 6,
-   "date": "2026-11-09",
-   "covered": "2026-11-10-n1"
-  },
-  {
-   "title": "Anti-AI Protesters Break Into Microsoft Data Center Site in Amsterdam",
-   "outlets": 5,
-   "date": "2026-11-06",
-   "covered": null
-  },
-  {
    "title": "Anthropic strikes $3.4bn deal to generate gas-fired power for data centres",
-   "outlets": 4,
+   "outlets": 5,
    "date": "2026-11-08",
    "covered": null
   },
   {
-   "title": "Microsoft to reportedly wind down Oracle deal to rent AI cloud capacity",
-   "outlets": 3,
-   "date": "2026-11-06",
-   "covered": "2026-11-09-n1"
-  },
-  {
-   "title": "OpenAI Completes $11 Billion Portion of Funding at $1.25 Trillion Value",
-   "outlets": 3,
-   "date": "2026-11-06",
+   "title": "SoftBank books $7 billion quarterly loss on US data centre hit, financing costs",
+   "outlets": 4,
+   "date": "2026-11-10",
    "covered": null
   },
   {
-   "title": "The future of AI hinges on… Jensen Huang’s sex life?",
-   "outlets": 3,
-   "date": "2026-11-09",
+   "title": "OpenAI Revenue Jumps to $10 Billion in Third Quarter Amid Growing Losses",
+   "outlets": 4,
+   "date": "2026-11-10",
    "covered": null
   }
  ],
  "featured": {
-  "news": 3,
-  "papers": 10
+  "news": 5,
+  "papers": 15
  }
 }

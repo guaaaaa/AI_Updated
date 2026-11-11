@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 11 Nov 2026 11:46:41 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 12:21:46 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google opens Gemini 4 Carbon to all paying developers and Ultra subscribers, with an agent "swarm" preview</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n1</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Two weeks after a defenders-only debut, Google's strongest model, Gemini 4 Carbon, is available through the API and to AI Ultra subscribers at $2/$10 per million tokens, alongside a multi-agent "/swarm" preview. (Google DeepMind, The Verge)</description>
+  </item>
+  <item>
+    <title>Google DeepMind releases Gemini Robotics 2.5, which reached 96% success packing car parts in Mercedes-Benz plants</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n2</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>DeepMind's new vision-language-action model raises task success 30 to 100% over its predecessor, ran factory kitting on Apptronik humanoids at 96% success, and ships with an open robot-jailbreak safety benchmark. (Google DeepMind, Ars Technica)</description>
+  </item>
+  <item>
+    <title>A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.14467</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.14467</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Reinforcement Learning</category>
+    <description>REINFORCE-style post-training can drive the probability of correct answers toward zero even as reward rises; periodically resetting the KL reference to the current policy provably prevents this and explains PPO, GRPO and Kimi-style recipes. (Audrey Huang, Nan Jiang, Sham M. Kakade et al.)</description>
+  </item>
+  <item>
+    <title>e-means: outperforming k-means (in one-tenth the epochs)</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.09501</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.09501</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>e-means turns mini-batch k-means with exponential-moving-average centroids and fitted scaling laws into a tuning-free method that beats 25 epochs of Lloyd's algorithm in about two epochs. (Swann Bessa, Pierre-Emmanuel Mazaré, Gergely Szilvasy et al. · FAIR at Meta, École Nationale des Ponts et Chaussées)</description>
+  </item>
+  <item>
+    <title>Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.11995</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.11995</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>Infrathon gives coding agents 12 to 24 hours on 25 real AI-infrastructure optimization tasks; 135 of 150 runs keep improving in the second half, and one agent tripled a human-designed KV-cache codec's compression. (Zhengyu Hu, Zheyuan Xiao, Yike Wang et al. · University of Washington)</description>
+  </item>
+  <item>
+    <title>Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12806</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12806</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>LingBot-Touch learns one touch representation across three kinds of tactile sensors from 5,000 hours of data, and its small frozen encoder raises real-robot success by 14 to 26 points. (Bing Han, Yichuan Peng, Haoyu Dong et al. · Robbyant)</description>
+  </item>
+  <item>
+    <title>Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12762</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12762</guid>
+    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
+    <category>AI / AI for Science &amp; Health</category>
+    <description>Sage-Taiyi adds a "metacognitive" layer that tracks what a research search has learned and chooses what to try next, beating AI Scientist-v2 on ideation and producing lab-validated chemistry gains. (Weida Wang, Benteng Chen, Yigeng Jiang et al. · Shanghai Artificial Intelligence Laboratory)</description>
+  </item>
   <item>
     <title>France formally blames Iran's Revolutionary Guards for the cyberattacks that heated supermarket freezers</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
     <category>Science / Climate science</category>
     <description>A three-way feedback between drying soils, high-pressure systems and heat appears to make the most extreme midlatitude heat waves about 10% hotter, and warming makes the trigger threshold easier to cross. (Yinglin Tian, Jiangong Liu, Yu Huang et al. · Potsdam Institute for Climate Impact Research; International Institute for Applied Systems Analysis; Max Planck Institute of Geoanthropology)</description>
-  </item>
-  <item>
-    <title>Equivalence of pseudogap and pairing energy in a cuprate high-temperature superconductor</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-science-adt3444</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-science-adt3444</guid>
-    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>Shot-noise measurements in a bismuth-based cuprate suggest the pseudogap energy equals the energy at which electrons begin pairing, tying a mysterious phase to superconductivity's building block. (Jiasen Niu, Maialen Ortego Larrazabal, Thomas Gozlinski et al. · Utrecht University; Leiden University; Ludwig Maximilian University of Munich)</description>
-  </item>
-  <item>
-    <title>Quantum gas microscopy of three-flavor Hubbard systems</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-science-adv1247</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/doi-10-1126-science-adv1247</guid>
-    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>Researchers built the first tunable three-component Hubbard system from ultracold atoms and imaged it atom by atom, observing a Mott insulator and competing magnetic correlations. (Jirayu Mongkolkiattichai, Liyu Liu, Sohail Dasgupta et al. · University of Hamburg; Rice University)</description>
-  </item>
-  <item>
-    <title>US hiring surprises at 165,000 jobs while Canada's labour market weakens, with unemployment at 4.1% and 6.7%</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/2026-11-07-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/2026-11-07-n1</guid>
-    <pubDate>Sat, 07 Nov 2026 12:45:55 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>US employers added 165,000 jobs in October versus about 65,000 expected, while Canada lost 4,700 jobs and its unemployment rate rose to 6.7%, widening the gap between the two labour markets. (Statistics Canada, Associated Press via The Globe and Mail, Reuters via The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>Canada's 2026 budget moves bank anti-money-laundering supervision to OSFI and proposes tax simplifications</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/2026-11-07-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/2026-11-07-n2</guid>
-    <pubDate>Sat, 07 Nov 2026 12:45:55 +0000</pubDate>
-    <category>Business / Trade &amp; Policy</category>
-    <description>Ottawa's budget shifts supervision of banks' anti-money-laundering work from FinTRAC to OSFI, offers modest corporate tax simplification, and a follow-on reform loosens temporary foreign worker limits. (Budget 2026, Government of Canada, The Globe and Mail, The Globe and Mail, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>The Effects of Monetary Policy on Macroeconomic Expectations: High-Frequency Evidence from Prediction Markets</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/nber-w35968</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/nber-w35968</guid>
-    <pubDate>Sat, 07 Nov 2026 12:45:55 +0000</pubDate>
-    <category>Business / Monetary policy</category>
-    <description>Using minute-by-minute prices of Kalshi prediction-market contracts, the authors find macro expectations respond to Fed announcements as standard theory predicts, with little or no "Fed information effect". (Eric T. Swanson, Wang Renxuan, Yanbin Wu)</description>
-  </item>
-  <item>
-    <title>Google releases Gemini Omni 1.2 Flash with 15-second video and a 30% lower price</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n1</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Google made Gemini Omni 1.2 Flash generally available, with native 15-second video, multi-turn conversational editing, better reference adherence and a price of $0.07 per second at 720p, down 30%. (Google)</description>
-  </item>
-  <item>
-    <title>OpenAI reportedly raises another $11 billion, valuing it at $1.25 trillion</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n2</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Business &amp; Funding</category>
-    <description>Bloomberg reports OpenAI has raised $11 billion so far in a round at a $1.25 trillion valuation, with the total expected to reach about $20 billion, well below the $30 billion first sought. (TechCrunch, The Verge)</description>
   </item>
 </channel>
 </rss>
