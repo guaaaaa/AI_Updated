@@ -1,0 +1,213 @@
+{
+ "date": "2026-11-12",
+ "edition": "weekday",
+ "generated_at": "2026-11-12T12:46:39+00:00",
+ "summary": "Nvidia's board moves toward replacing Jensen Huang, the UK economy posts its fastest growth in two years, an EU court adviser says Google's AdSense fine should be revived, and Canadian Tire beats estimates on pricier gas.",
+ "news": [
+  {
+   "id": "2026-11-12-n1",
+   "story_key": "nvidia-board-huang-ouster-2026-11",
+   "title": "Nvidia's board prepares to replace CEO Jensen Huang, and the stock falls about 8% after hours",
+   "category": "Earnings & Companies",
+   "published": "2026-11-11T18:28:00-05:00",
+   "tldr": "Nvidia's board met to prepare for removing co-founder and CEO Jensen Huang after two reported affairs, one with a suspected Chinese spy; the shares fell about 8% in after-hours trading.",
+   "why_selected": "A possible leadership change at the company that designs the chips behind the AI boom, with a large market reaction days before its earnings.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Jensen Huang co-founded Nvidia and has run it for 33 years. On Sunday he admitted to an affair with Alice Huang (no relation), an executive at Singapore-based data-centre operator Megaspeed, a major Nvidia customer, whom U.S. intelligence regards as a suspected Chinese spy. Nvidia's board opened an investigation but said at the time that it had confidence in Huang."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday The Wall Street Journal reported that the board was preparing to oust Huang and would meet as soon as that day. The New York Times then reported a second affair, with Kimberly Powell, Nvidia's vice-president of health care, who reports to him. Fortune, citing Bloomberg, says the board met Wednesday night, picked an outside firm to find candidates and is considering a temporary CEO during the search. Nvidia shares fell about 8% after hours on Wednesday and were down about 11% over five days. By Monday the company had already lost more than $1 trillion in market value in a month, with the stock down 23% amid a wider AI sell-off."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Nvidia is one of the world's most valuable companies, and Fortune notes that millions of 401(k) retirement accounts are exposed to its shares. Huang delegates little, has about 60 direct reports and there is no obvious successor or public succession plan, which raises the risk of a messy handover. The case also reaches into Washington: Megaspeed is under U.S. investigation for suspected chip smuggling, and Senators Elizabeth Warren and Chris Coons have asked the Trump administration to preserve documents about Nvidia, its exports and Huang, a usual first step toward a formal inquiry."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Any board announcement on Huang or an interim CEO, and who hosts Nvidia's third-quarter earnings call on November 17."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/"
+    },
+    {
+     "name": "Fortune",
+     "url": "https://fortune.com/2026/11/12/nvidia-exit-jensen-huang-affair-trump-preserve-documents-spying-chip-smuggling/"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/commentary/article-nvidias-board-signals-jensen-huang-is-too-big-to-fire/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n2",
+   "story_key": "uk-gdp-q3-2026",
+   "title": "UK economy grows 0.7% in the third quarter, its fastest pace in more than two years",
+   "category": "Economy & Data",
+   "published": "2026-11-12T02:00:00-05:00",
+   "tldr": "UK GDP rose 0.7% from July to September, led by services such as computer programming tied to cloud and AI spending, despite higher energy prices from the Iran war.",
+   "why_selected": "A major macro release from a G7 economy that came in stronger than expected, with AI-linked services as the main driver.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Britain's economy has been squeezed by higher energy prices since the war with Iran, which led to the Strait of Hormuz, a key route for oil and gas, being blocked. Growth was 0.6% in the first quarter and 0.5% in the second, and many expected the summer to be weaker."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Office for National Statistics (ONS) said on Thursday that real gross domestic product (GDP, the total value of goods and services produced, adjusted for inflation) grew 0.7% in the third quarter, the fastest rate in more than two years. Output was 1.9% higher than a year earlier. Services, the largest part of the economy, grew 0.9%, led by business-facing services; production rose 0.1% and construction fell 0.7%. Monthly figures showed growth of 0.4% in July, none in August and 0.2% in September. The BBC reports that computer programming grew at its fastest pace in three years, helped by cloud computing and AI-linked spending, and has been the biggest driver of growth this year."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The figures suggest a more resilient economy than feared, and the BBC says they put the UK on course to be the second-fastest-growing G7 economy. Chancellor John Healey called the figures a sign of \"remarkable resilience\", and the ONS said growth could have been even stronger without the war in the Middle East. But the ONS chief economist, Grant Fitzner, warned that households may not feel better off, as prices could soon rise faster than wages, and early GDP estimates are often revised."
+    },
+    {
+     "heading": "What to watch",
+     "body": "A sharp rise in household energy bills forecast for January, which PwC's Jake Finney says could slow growth unless energy markets stabilise."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Office for National Statistics",
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpfirstquarterlyestimateuk/julytoseptember2026"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n3",
+   "story_key": "google-adsense-ag-opinion-2026-11",
+   "title": "EU court adviser says Google's annulled 1.49 billion euro AdSense fine was wrongly scrapped",
+   "category": "Trade & Policy",
+   "published": "2026-11-12T05:00:00-05:00",
+   "tldr": "Advocate General Juliane Kokott told the EU's top court that a lower court erred in 2024 when it annulled Google's AdSense fine, and proposed sending the case back for a new ruling.",
+   "why_selected": "The only EU antitrust fine Google ever had thrown out may now be revived, a signal for how Europe's competition rules are enforced against big platforms.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In March 2019 the European Commission fined Google 1.49 billion euros (about $1.7 billion) over AdSense for Search, a service that lets websites with their own search boxes show Google search ads for a revenue share. The Commission found that from 2006 to 2016 Google's contracts with publishers restricted or barred ads from rival services. In 2024 the EU General Court annulled the fine, and the Commission appealed."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday Advocate General Juliane Kokott, an adviser to the EU Court of Justice, proposed that the court set aside the General Court's judgment. The contracts at issue contained three clauses: one requiring exclusivity, one reserving the most visible ad space for Google, and one requiring Google's approval for changes. The General Court had accepted much of the Commission's case but found it had not properly assessed how long the publisher contracts lasted. Kokott said this set excessive requirements: since the clauses were capable of shutting out rivals, the Commission's overall assessment of the contracts was enough. She proposed returning the case to the General Court."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The opinion is not binding, but the court followed Kokott's earlier advice in Google's Shopping and Android cases, which upheld fines of 2.4 billion and 4.1 billion euros. Google's six EU antitrust fines total 10.38 billion euros, and AdSense was the only one a court ever threw out. Google is separately contesting a fine of nearly 3 billion euros over advertising technology, so the AdSense case is one of several open fronts with Brussels."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Court of Justice's ruling, expected next year, and then a fresh General Court decision on the fine itself."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TNW",
+     "url": "https://thenextweb.com/news/googles-e1-49b-adsense-fine-was-wrongly-scrapped"
+    },
+    {
+     "name": "EU Law Live",
+     "url": "https://eulawlive.com/ag-kokott-general-court-erred-in-annulling-googles-e1-5-billion-adsense-fine/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n4",
+   "story_key": "canadian-tire-q3-2026",
+   "title": "Canadian Tire beats profit estimates as higher gas prices lift sales, and raises its dividend",
+   "category": "Consumer & Retail",
+   "published": "2026-11-12T06:02:00-05:00",
+   "tldr": "Canadian Tire's third-quarter profit rose to $246.4 million, beating forecasts, as pricier gasoline boosted sales; comparable sales rose 4.4%, or 1.7% without its gas business.",
+   "why_selected": "A bellwether Canadian retailer shows how the energy shock is flowing through consumer spending.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Canadian Tire Corp. owns the Canadian Tire, SportChek and Mark's store chains, a petroleum business and a credit-card business tied to its Triangle loyalty program. The war in the Middle East has pushed up fuel costs in Canada: Statistics Canada says gasoline prices jumped 27.8% in September."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday morning the Toronto-based retailer reported results for the three months ended October 3. Net income was $246.4 million, or $4.28 a share, up from $191.3 million, or $3.14, a year earlier and above the $200.8 million, or $3.68 a share, analysts expected, according to S&P Capital IQ. Revenue rose 5.3% to $4.32 billion, beating estimates of $4.27 billion. Comparable sales, which track stores open more than a year, rose 4.4%, driven by the petroleum business; excluding gas they rose 1.7%. Comparable sales grew at all three store banners, e-commerce sales rose 15.3%, and the financial services arm reported record revenue. The company raised its annual dividend to $7.30 a share from $7.20."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The numbers show how an energy shock can flatter a retailer's headline sales: Canadians are buying less gas, yet higher prices still lifted revenue. The more telling figure for consumer health is the 1.7% gain outside fuel, which shows shoppers still spending on seasonal, gardening and automotive services. E-commerce growth and record financial-services revenue also point to strength beyond the pumps."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether non-fuel sales hold up in the holiday quarter if gas prices stay high."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-canadian-tire-third-quarter-results-sales-profit-gas-prices-dividend/"
+    },
+    {
+     "name": "Canadian Tire Corporation (newswire)",
+     "url": "https://www.newswire.ca/news/canadian-tire-corporation%2C-limited/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36004",
+   "title": "The Main Monetary Policy Shock",
+   "authors": [
+    "Christoph Boehm",
+    "Husang Kim",
+    "T. Niklas Kroner"
+   ],
+   "affiliations": [
+    "University of Texas at Austin",
+    "Federal Reserve Board of Governors"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Monetary policy",
+   "tags": [
+    "Monetary policy",
+    "Inflation"
+   ],
+   "tldr": "Combining three kinds of Fed announcement surprises, the authors find monetary policy shocks explain about 18% of swings in consumer prices over four years, far more than prior work suggested.",
+   "why_selected": "It challenges the consensus that surprise Fed moves barely matter for inflation and points to oil and the dollar as key channels.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A common view in economics is that surprise moves by the Federal Reserve, as opposed to its predictable responses to data, have not been an important driver of the U.S. business cycle in recent decades. One widely cited study found monetary shocks almost irrelevant for inflation since 1990. The authors ask whether that conclusion holds once the full range of news in Fed announcements is counted."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most studies sum up Fed news in a single number, such as the surprise change in short-term interest rates in a narrow window around a policy announcement. But research shows announcements carry several kinds of news, including guidance about longer-term rates and a \"non-yield\" shock, found earlier by two of the authors, that moves stocks and the dollar without changing the yield curve (the set of interest rates across loan lengths)."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors put three surprises into a statistical model of the economy (a vector autoregression): a near-term rate surprise, a surprise about rates two to 30 years ahead, and the non-yield shock. They then find the single combination of the three, the \"main monetary policy shock\", that best explains swings in industrial output and inflation."
+    },
+    {
+     "heading": "Results",
+     "body": "Over four years this shock explains about 9% of the variation in industrial production, about 18% in the consumer price index and about 16% in a broad dollar index. Including the non-yield shock is what drives the gap with earlier studies. A tightening shock leaves interest rates mostly unchanged but lowers output, tightens financial conditions, strengthens the dollar and reduces U.S. net exports. Its effect on headline inflation runs mainly through a large change in oil prices; core prices move only mildly."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For investors and policymakers, it suggests the Fed may influence the economy through commodity prices and the dollar more than through rates alone, with stronger effects abroad. The main caveat: this is an unreviewed working paper, and it does not identify which specific kinds of Fed news cause the effects. The authors say their shares are lower bounds, since they miss news outside announcement days."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36004"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major",
+    "press": 2
+   }
+  }
+ ]
+}

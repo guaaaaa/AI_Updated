@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-12-n1",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "Nvidia's board prepares to replace CEO Jensen Huang, and the stock falls about 8% after hours",
+  "tldr": "Nvidia's board met to prepare for removing co-founder and CEO Jensen Huang after two reported affairs, one with a suspected Chinese spy; the shares fell about 8% in after-hours trading.",
+  "category": "Earnings & Companies",
+  "byline": "TechCrunch, Fortune, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-12-n2",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "UK economy grows 0.7% in the third quarter, its fastest pace in more than two years",
+  "tldr": "UK GDP rose 0.7% from July to September, led by services such as computer programming tied to cloud and AI spending, despite higher energy prices from the Iran war.",
+  "category": "Economy & Data",
+  "byline": "Office for National Statistics, BBC"
+ },
+ {
+  "id": "2026-11-12-n3",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "EU court adviser says Google's annulled 1.49 billion euro AdSense fine was wrongly scrapped",
+  "tldr": "Advocate General Juliane Kokott told the EU's top court that a lower court erred in 2024 when it annulled Google's AdSense fine, and proposed sending the case back for a new ruling.",
+  "category": "Trade & Policy",
+  "byline": "TNW, EU Law Live"
+ },
+ {
+  "id": "2026-11-12-n4",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "Canadian Tire beats profit estimates as higher gas prices lift sales, and raises its dividend",
+  "tldr": "Canadian Tire's third-quarter profit rose to $246.4 million, beating forecasts, as pricier gasoline boosted sales; comparable sales rose 4.4%, or 1.7% without its gas business.",
+  "category": "Consumer & Retail",
+  "byline": "The Globe and Mail, Canadian Tire Corporation (newswire)"
+ },
+ {
+  "id": "nber-w36004",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "The Main Monetary Policy Shock",
+  "tldr": "Combining three kinds of Fed announcement surprises, the authors find monetary policy shocks explain about 18% of swings in consumer prices over four years, far more than prior work suggested.",
+  "primary_tag": "Monetary policy",
+  "tags": [
+   "Monetary policy",
+   "Inflation"
+  ],
+  "byline": "Christoph Boehm, Husang Kim, T. Niklas Kroner · University of Texas at Austin, Federal Reserve Board of Governors",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-11-n1",
   "date": "2026-11-11",
   "type": "news",

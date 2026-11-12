@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Thu, 12 Nov 2026 12:20:24 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 12:46:39 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Nvidia's board prepares to replace CEO Jensen Huang, and the stock falls about 8% after hours</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/2026-11-12-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/2026-11-12-n1</guid>
+    <pubDate>Thu, 12 Nov 2026 12:46:39 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>Nvidia's board met to prepare for removing co-founder and CEO Jensen Huang after two reported affairs, one with a suspected Chinese spy; the shares fell about 8% in after-hours trading. (TechCrunch, Fortune, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>UK economy grows 0.7% in the third quarter, its fastest pace in more than two years</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/2026-11-12-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/2026-11-12-n2</guid>
+    <pubDate>Thu, 12 Nov 2026 12:46:39 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>UK GDP rose 0.7% from July to September, led by services such as computer programming tied to cloud and AI spending, despite higher energy prices from the Iran war. (Office for National Statistics, BBC)</description>
+  </item>
+  <item>
+    <title>EU court adviser says Google's annulled 1.49 billion euro AdSense fine was wrongly scrapped</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/2026-11-12-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/2026-11-12-n3</guid>
+    <pubDate>Thu, 12 Nov 2026 12:46:39 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>Advocate General Juliane Kokott told the EU's top court that a lower court erred in 2024 when it annulled Google's AdSense fine, and proposed sending the case back for a new ruling. (TNW, EU Law Live)</description>
+  </item>
+  <item>
+    <title>Canadian Tire beats profit estimates as higher gas prices lift sales, and raises its dividend</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/2026-11-12-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/2026-11-12-n4</guid>
+    <pubDate>Thu, 12 Nov 2026 12:46:39 +0000</pubDate>
+    <category>Business / Consumer &amp; Retail</category>
+    <description>Canadian Tire's third-quarter profit rose to $246.4 million, beating forecasts, as pricier gasoline boosted sales; comparable sales rose 4.4%, or 1.7% without its gas business. (The Globe and Mail, Canadian Tire Corporation (newswire))</description>
+  </item>
+  <item>
+    <title>The Main Monetary Policy Shock</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/nber-w36004</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-12/nber-w36004</guid>
+    <pubDate>Thu, 12 Nov 2026 12:46:39 +0000</pubDate>
+    <category>Business / Monetary policy</category>
+    <description>Combining three kinds of Fed announcement surprises, the authors find monetary policy shocks explain about 18% of swings in consumer prices over four years, far more than prior work suggested. (Christoph Boehm, Husang Kim, T. Niklas Kroner · University of Texas at Austin, Federal Reserve Board of Governors)</description>
+  </item>
   <item>
     <title>Google DeepMind releases AlphaGenome 2, which predicts how DNA variants act in specific cell types</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
     <category>AI / RSI</category>
     <description>AI scientists produce more original ideas when shown less of the task during generation, and a learned screener then discards half of the candidates while keeping most of the best. (Guowei Xu, Jiaru Zou, Mete Erdogan et al. · Stanford University)</description>
-  </item>
-  <item>
-    <title>Speculative Self-Distillation enables Efficient Knowledge Internalization</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12016</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12016</guid>
-    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
-    <category>AI / Post-training</category>
-    <description>Speculative Self-Distillation lets the student write rollouts and hands control to the teacher only where the two strongly disagree, matching on-policy accuracy with 38 to 69% fewer supervised tokens. (Shayan Talaei, Agam Bhatia, Arshia Soltani Moakhar et al. · Stanford University, ETH Zürich)</description>
-  </item>
-  <item>
-    <title>System Optimizations for Cost-Efficient Agent Harnesses</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12122</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12122</guid>
-    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>Agent costs are dominated by repeatedly re-reading context, and an interposition layer called Agency cuts costs by about 23% on average for existing harnesses with little accuracy loss. (Jongseok Park, Jiaxiang Yu, Eric Zhou et al.)</description>
-  </item>
-  <item>
-    <title>Attackers are exploiting the "SSHole" OpenSSH flaw on Alpine-style Linux servers days after the fix</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</guid>
-    <pubDate>Tue, 10 Nov 2026 11:48:57 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Several security firms report real attacks on the OpenSSH and musl flaw CVE-2026-123158, which can give logins to passwordless accounts; OpenSSH 10.6p2 fixes it. (Ars Technica, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Vanderbilt University tells campus to shut down devices as the new BYOD ransomware gang claims an attack</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n2</guid>
-    <pubDate>Tue, 10 Nov 2026 11:48:57 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Vanderbilt confirmed an active cyber incident and asked everyone to power off devices; a ransomware group called BYOD claims it stole data on over a million people. (The Record, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Lp(a)-lowering drug pelacarsen cuts the target by 78% but not heart attacks or strokes, in a large phase 3 trial</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-09/2026-11-09-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-09/2026-11-09-n1</guid>
-    <pubDate>Mon, 09 Nov 2026 13:54:32 +0000</pubDate>
-    <category>Biology / Clinical Research</category>
-    <description>In Lp(a)HORIZON, pelacarsen lowered lipoprotein(a) by about 78% in over 8,300 people with heart disease, yet heart attacks, strokes and cardiovascular deaths occurred at the same rate as on placebo. (American Heart Association, Healio, American College of Cardiology)</description>
   </item>
 </channel>
 </rss>
