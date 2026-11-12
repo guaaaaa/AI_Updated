@@ -1,0 +1,218 @@
+{
+ "date": "2026-11-12",
+ "edition": "weekday",
+ "generated_at": "2026-11-12T11:46:50+00:00",
+ "summary": "A worm-like campaign plants rogue remote-access tools through MSPs' ScreenConnect panels, Maersk confirms a breach of a legacy logistics system, the EU proposes its Digital Fairness Act, and IBM reshapes its quantum roadmap.",
+ "news": [
+  {
+   "id": "2026-11-12-n1",
+   "story_key": "screenconnect-msp-sckit-campaign",
+   "title": "Attackers push rogue remote-access clients to hundreds of PCs through managed service providers' ScreenConnect panels",
+   "category": "Cybersecurity",
+   "published": "2026-11-11T17:56:00-05:00",
+   "tldr": "Attackers used cloud-hosted ScreenConnect panels to install rogue remote-access software on at least 288 computers at 48 organizations; ConnectWise disabled five third-party extensions across about 400 partner environments.",
+   "why_selected": "A supply-chain style attack through IT providers' remote-management tools, which can reach many downstream customers at once.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Managed service providers (MSPs) are companies that run IT for other businesses. Many use ScreenConnect, a remote access and support platform from ConnectWise, to manage and troubleshoot customers' computers from one console. That makes a compromised console valuable to attackers: one foothold can reach every machine the provider looks after. Huntress reported similar worm-like activity spawning rogue ScreenConnect clients in September 2026."
+    },
+    {
+     "heading": "What happened",
+     "body": "Security firm Huntress says that starting around 17:47 UTC on November 11, an operator used access to multiple cloud-hosted ScreenConnect panels to push commands that installed attacker-controlled ScreenConnect clients and a toolkit it calls SCKit. At least 288 hosts across 48 organizations that use Huntress were affected within 90 minutes, a third of them in the first 10 minutes. In an advisory that evening, ConnectWise confirmed unauthorized access to partner accounts and disabled five independent third-party extensions across about 400 partner environments as a precaution. Huntress later linked the activity to an authentication weakness in two versions of one of those extensions, RMM+."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The rogue clients give attackers remote access that sits outside the provider's legitimate console, so it survives even after the console is cleaned up. The toolkit was also built to jump from an infected PC to a technician's workstation when the technician connects to it, and from there to other endpoints; Huntress says that spreading step failed in every host log it has checked so far. ConnectWise warns that disabling the extensions does not remove software or access already planted, and that on-premises customers must disable the extensions themselves. Huntress adds that sequential identifiers used by the attackers suggest other MSPs may have been compromised earlier."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the victim count keeps rising, what ConnectWise finds about the initial access, and whether MSPs reviewing their Run Command history uncover earlier intrusions."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/"
+    },
+    {
+     "name": "Huntress",
+     "url": "https://www.huntress.com/blog/sckit-worm-rogue-screenconnect"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n2",
+   "story_key": "maersk-whitearmor-breach",
+   "title": "Maersk confirms data theft from a legacy logistics system as a ransomware gang demands $5 million",
+   "category": "Cybersecurity",
+   "published": "2026-11-11T07:05:00-05:00",
+   "tldr": "Maersk says attackers stole data from an isolated system inherited through an acquisition; the WhiteArmor gang claims about 100GB and wants $5 million in bitcoin within 30 days.",
+   "why_selected": "A breach at one of the world's largest container carriers, a company whose 2017 NotPetya outage showed how much global trade depends on its IT.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A.P. Moller-Maersk is a Danish shipping and logistics group operating in 130 countries, with 700 container ships, roughly 13.5% of global fleet capacity. In 2017 the NotPetya malware, which Western intelligence agencies attributed to Russia's military intelligence, forced it to rebuild 4,000 servers and 45,000 PCs and cost about $300 million."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday, November 11, Maersk said it was investigating an IT security incident involving data theft from a legacy local system \"from a previous acquisition.\" It said the affected system was secured, that its findings \"strongly suggest no sensitive data has been disclosed,\" and that it saw no impact on other Maersk systems or on customer and partner systems connected through APIs and EDI (electronic data interchange). Over the weekend, the WhiteArmor ransomware group listed Maersk on its leak site, claimed about 100GB from the OCF/LF Logistics platform, and demanded $5 million in bitcoin within 30 days. Maersk bought LF Logistics from the Li & Fung Group in 2022."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The gang's claims, which Maersk has not confirmed, include nearly 30,000 driver records, plaintext passwords, 33 top-level administrator accounts and 27,842 mobile device logs with phone numbers, emails and device identifiers. If accurate, the data would expose drivers and give fraudsters material for convincing scams aimed at Maersk's logistics customers. The case also shows a recurring risk in acquisitions: older systems from bought companies can stay connected long after the deal, outside the parent's main defenses. Maersk says it does not expect operational disruption and that customers can keep booking shipments as usual."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether WhiteArmor publishes data after the deadline, what types of data Maersk confirms were taken, and whether customers or drivers are notified."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/11/shipping-giant-maersk-probes-it-security-incident-data-theft/5309096"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n3",
+   "story_key": "eu-digital-fairness-act-proposal",
+   "title": "The EU proposes a Digital Fairness Act to ban dark patterns, rein in addictive design and limit loot boxes for minors",
+   "category": "Tech Policy & Antitrust",
+   "published": "2026-11-11T08:36:00-05:00",
+   "tldr": "The European Commission's draft Digital Fairness Act would ban manipulative \"dark patterns,\" let users switch off addictive features, curb pay-to-win games for minors and allow fines of up to 6% of global turnover.",
+   "why_selected": "A broad consumer-protection proposal that would change how games, social media, shopping sites and subscriptions are designed for hundreds of millions of EU users.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "\"Dark patterns\" are interface designs that push people into choices they might not otherwise make, such as fake \"almost sold out\" warnings or subscriptions that are hard to cancel. Enforcement of EU consumer rules against online practices has so far been a patchwork, handled country by country, with France among the more active enforcers."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday, November 11, the European Commission published its proposed Digital Fairness Act (DFA). It would ban dark patterns and manipulative marketing, require services to let users turn off addictive features such as endless scrolling, persistent prompts and video autoplay, and ban gambling-like pay-to-win and pay-to-progress features for minors. It also requires influencers to disclose advertising, restricts personalized ads and prices aimed at minors, makes subscriptions easier to cancel with reminders before renewals and free-trial endings, demands clear pricing for dynamic pricing and in-app currencies, and gives consumers a right to reach a human customer service agent. Violations could bring fines of up to 6% of worldwide annual turnover."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The scope reaches recommendation feeds on YouTube, TikTok and Meta's apps, conversational chatbots, and apps like Duolingo that nudge users to keep engaging. The Commission says consumers could save up to €13.7 billion a year. The draft would also give the Commission direct powers to investigate large cases, which Engadget reads as a shift away from national regulators such as Ireland's, where many tech giants are based. Justice commissioner Michael McGrath said the aim is \"making it harder to do business unfairly.\" Some gaming groups have called the rules \"unworkable, unjustified and disproportionate.\""
+    },
+    {
+     "heading": "What to watch",
+     "body": "The European Parliament and the Council must approve the proposal, and its measures could be changed or dropped along the way."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/policy/1031575/digital-fairness-act-eu-dfa-consumer-protection"
+    },
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2313329/europe-wants-to-ban-dark-patterns-in-apps-and-loot-boxes-for-minors/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n4",
+   "story_key": "ibm-quantum-roadmap-qdc-2026",
+   "title": "IBM's quantum roadmap swaps nine linked chips for two larger ones, targeting about 1,040 qubits in 2027",
+   "category": "Quantum Computing",
+   "published": "2026-11-11T07:00:00-05:00",
+   "tldr": "At its developer conference, IBM said its current Nighthawk r2 chip runs circuits of over 7,500 operations, and planned a 520-qubit Nighthawk r3 for 2027, with two chips linked into a roughly 1,040-qubit system.",
+   "why_selected": "A concrete update from one of the largest quantum hardware makers that shows both progress in speed and a retreat on linking many chips.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Quantum computers use qubits, which are fragile and pick up errors, so useful machines will need error correction spread across many qubits. IBM runs two tracks: experimental hardware for error correction, and a general-purpose processor family called Nighthawk for people testing algorithms today. Its previous roadmap planned to grow systems by linking several 120-qubit Nighthawk chips, reaching 1,080 qubits from nine chips."
+    },
+    {
+     "heading": "What happened",
+     "body": "At its Quantum Developer Conference on November 11, IBM said Nighthawk r2, released in September, runs accurate circuits with more than 7,500 quantum operations on 120 programmable qubits. The chip has 458 physical qubits; the extra ones are used to reset working qubits to their starting state quickly, reaching up to 100,000 samples per second, which IBM says is 25 times the throughput of its older Heron processor. Clients have run more than 34 billion circuits on it, reporting gains of up to 19 times. According to Ars Technica, the 2027 Nighthawk r3 will target 520 programmable qubits, and IBM will offer a 1,040-qubit machine by linking just two chips."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Ars notes that dropping from nine linked chips to two may suggest IBM is having difficulty with chip-to-chip communication, which it will eventually need for large error-corrected machines. At the same time, IBM says the faster resets let users run circuits on the chip faster than ever before. IBM says the research community reached verifiable quantum advantage this year and that it still plans to deliver Starling, a fault-tolerant computer, in 2029."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Nighthawk r3 arrives on schedule in 2027 at 520 qubits, and whether IBM demonstrates working links between chips."
+    }
+   ],
+   "sources": [
+    {
+     "name": "IBM Quantum",
+     "url": "https://www.ibm.com/quantum/blog/qdc-2026"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/science/2026/11/ibm-to-offer-access-to-a-dual-processor-quantum-system-in-2027/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.13630",
+   "title": "Machine-learning decoders for fusion-based quantum computing in real time",
+   "authors": [
+    "Daniel Barter",
+    "Jacob C. Bridgeman",
+    "Chris Dawson",
+    "Terry Farrelly",
+    "Shane Fleming",
+    "Mercedes Gimeno-Segovia",
+    "Paul Hartke",
+    "Timothy Hein",
+    "Sean Howell",
+    "Gregory Hyegang Jun",
+    "Siddhartha Kamalakara",
+    "Yehua Liu",
+    "Jose M. Monsalve Diaz",
+    "Eddie Richter",
+    "Sam Roberts"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-10T20:00:00-05:00",
+   "primary_tag": "Quantum computing",
+   "tags": [
+    "Quantum computing",
+    "Computer architecture & chips"
+   ],
+   "tldr": "PRISM, a transformer-based decoder for photonic quantum computers, matches slower integer-programming decoders on accuracy and runs on an AMD FPGA with 6.59-microsecond latency.",
+   "why_selected": "A measured hardware result on one of the main bottlenecks for fault-tolerant quantum computing: correcting errors fast enough to keep up with the machine.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Error-corrected quantum computers must constantly read error signals and decide what went wrong, a step called decoding. The decoder has to be accurate, fast and able to scale to very many qubits. In photonic \"fusion-based\" machines, which compute with particles of light and probabilistic \"fusion\" measurements, the dominant errors are erasures: photons that are lost or measurements that fail."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Decoders based on integer programming, a general optimization method, reach strong accuracy on these mixed error types, and the paper uses them as its accuracy yardstick. The difficulty is speed: a practical decoder must combine that accuracy with high throughput and low latency, and photonic machines need one that stays accurate at high erasure rates."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors introduce PRISM, a transformer-based machine-learning decoder, meaning it uses the same neural-network architecture behind modern language models. Its advantage is that, with erasures, the machine knows where the errors happened even if it does not know their effect. PRISM is designed to use those known erasure locations alongside ordinary errors. The team tested it on several families of error-correcting codes, including surface codes, color codes and quantum low-density parity-check codes, at code distances up to 24 (a measure of how many errors a code can tolerate). They then made the model use lower-precision arithmetic and built a dedicated accelerator for it on an FPGA, a reconfigurable chip."
+    },
+    {
+     "heading": "Results",
+     "body": "Across these benchmarks, PRISM matched the logical error rates of the integer-programming decoders while being significantly faster, including at error rates up to 50% of the threshold beyond which correction fails. On an AMD VP1902 FPGA, it decoded distance-8 logical blocks with a latency of 6.59 microseconds and an amortized decoding time of 1.56 microseconds per block."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fast, accurate decoding is a prerequisite for photonic quantum computers to run long error-corrected programs. The main caveat is that the hardware result covers distance-8 blocks; larger codes will demand more from the accelerator."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.13630"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}

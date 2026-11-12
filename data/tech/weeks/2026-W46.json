@@ -3,7 +3,7 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
@@ -25,9 +25,27 @@
    "covered": null
   },
   {
-   "title": "TSMC to invest up to $1 billion in Anthropic, OpenAI",
-   "outlets": 4,
+   "title": "Google’s Pixel Tag tracker is now available",
+   "outlets": 6,
    "date": "2026-11-10",
+   "covered": null
+  },
+  {
+   "title": "TSMC to invest up to $1 billion in Anthropic, OpenAI",
+   "outlets": 6,
+   "date": "2026-11-10",
+   "covered": null
+  },
+  {
+   "title": "Apple is racing to make Siri more agentic",
+   "outlets": 4,
+   "date": "2026-11-08",
+   "covered": null
+  },
+  {
+   "title": "Apple is shutting down its online Support Community on November 20",
+   "outlets": 4,
+   "date": "2026-11-11",
    "covered": null
   },
   {
@@ -35,17 +53,11 @@
    "outlets": 3,
    "date": "2026-11-10",
    "covered": null
-  },
-  {
-   "title": "Google’s Pixel Tag tracker is now available",
-   "outlets": 3,
-   "date": "2026-11-10",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 8,
-  "papers": 1
+  "news": 12,
+  "papers": 2
  },
  "items": [
   {
@@ -101,6 +113,36 @@
    "date": "2026-11-11",
    "type": "paper",
    "title": "SFU-Sim: Bit-Exact Reverse Engineering of NVIDIA MUFU and Validation of PTX Paths"
+  },
+  {
+   "id": "2026-11-12-n1",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "Attackers push rogue remote-access clients to hundreds of PCs through managed service providers' ScreenConnect panels"
+  },
+  {
+   "id": "2026-11-12-n2",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "Maersk confirms data theft from a legacy logistics system as a ransomware gang demands $5 million"
+  },
+  {
+   "id": "2026-11-12-n3",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "The EU proposes a Digital Fairness Act to ban dark patterns, rein in addictive design and limit loot boxes for minors"
+  },
+  {
+   "id": "2026-11-12-n4",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "IBM's quantum roadmap swaps nine linked chips for two larger ones, targeting about 1,040 qubits in 2027"
+  },
+  {
+   "id": "2611.13630",
+   "date": "2026-11-12",
+   "type": "paper",
+   "title": "Machine-learning decoders for fusion-based quantum computing in real time"
   }
  ]
 }

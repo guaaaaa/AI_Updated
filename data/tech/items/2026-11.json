@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-12-n1",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "Attackers push rogue remote-access clients to hundreds of PCs through managed service providers' ScreenConnect panels",
+  "tldr": "Attackers used cloud-hosted ScreenConnect panels to install rogue remote-access software on at least 288 computers at 48 organizations; ConnectWise disabled five third-party extensions across about 400 partner environments.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Huntress"
+ },
+ {
+  "id": "2026-11-12-n2",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "Maersk confirms data theft from a legacy logistics system as a ransomware gang demands $5 million",
+  "tldr": "Maersk says attackers stole data from an isolated system inherited through an acquisition; the WhiteArmor gang claims about 100GB and wants $5 million in bitcoin within 30 days.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, The Register"
+ },
+ {
+  "id": "2026-11-12-n3",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "The EU proposes a Digital Fairness Act to ban dark patterns, rein in addictive design and limit loot boxes for minors",
+  "tldr": "The European Commission's draft Digital Fairness Act would ban manipulative \"dark patterns,\" let users switch off addictive features, curb pay-to-win games for minors and allow fines of up to 6% of global turnover.",
+  "category": "Tech Policy & Antitrust",
+  "byline": "The Verge, Engadget"
+ },
+ {
+  "id": "2026-11-12-n4",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "IBM's quantum roadmap swaps nine linked chips for two larger ones, targeting about 1,040 qubits in 2027",
+  "tldr": "At its developer conference, IBM said its current Nighthawk r2 chip runs circuits of over 7,500 operations, and planned a 520-qubit Nighthawk r3 for 2027, with two chips linked into a roughly 1,040-qubit system.",
+  "category": "Quantum Computing",
+  "byline": "IBM Quantum, Ars Technica"
+ },
+ {
+  "id": "2611.13630",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "Machine-learning decoders for fusion-based quantum computing in real time",
+  "tldr": "PRISM, a transformer-based decoder for photonic quantum computers, matches slower integer-programming decoders on accuracy and runs on an AMD FPGA with 6.59-microsecond latency.",
+  "primary_tag": "Quantum computing",
+  "tags": [
+   "Quantum computing",
+   "Computer architecture & chips"
+  ],
+  "byline": "Daniel Barter, Jacob C. Bridgeman, Chris Dawson et al.",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-11-n1",
   "date": "2026-11-11",
   "type": "news",

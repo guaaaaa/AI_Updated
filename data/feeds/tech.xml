@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Wed, 11 Nov 2026 11:46:41 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 11:46:50 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Attackers push rogue remote-access clients to hundreds of PCs through managed service providers' ScreenConnect panels</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n1</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Attackers used cloud-hosted ScreenConnect panels to install rogue remote-access software on at least 288 computers at 48 organizations; ConnectWise disabled five third-party extensions across about 400 partner environments. (BleepingComputer, Huntress)</description>
+  </item>
+  <item>
+    <title>Maersk confirms data theft from a legacy logistics system as a ransomware gang demands $5 million</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n2</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Maersk says attackers stole data from an isolated system inherited through an acquisition; the WhiteArmor gang claims about 100GB and wants $5 million in bitcoin within 30 days. (BleepingComputer, The Register)</description>
+  </item>
+  <item>
+    <title>The EU proposes a Digital Fairness Act to ban dark patterns, rein in addictive design and limit loot boxes for minors</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n3</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Tech Policy &amp; Antitrust</category>
+    <description>The European Commission's draft Digital Fairness Act would ban manipulative "dark patterns," let users switch off addictive features, curb pay-to-win games for minors and allow fines of up to 6% of global turnover. (The Verge, Engadget)</description>
+  </item>
+  <item>
+    <title>IBM's quantum roadmap swaps nine linked chips for two larger ones, targeting about 1,040 qubits in 2027</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n4</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Quantum Computing</category>
+    <description>At its developer conference, IBM said its current Nighthawk r2 chip runs circuits of over 7,500 operations, and planned a 520-qubit Nighthawk r3 for 2027, with two chips linked into a roughly 1,040-qubit system. (IBM Quantum, Ars Technica)</description>
+  </item>
+  <item>
+    <title>Machine-learning decoders for fusion-based quantum computing in real time</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2611.13630</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2611.13630</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Quantum computing</category>
+    <description>PRISM, a transformer-based decoder for photonic quantum computers, matches slower integer-programming decoders on accuracy and runs on an AMD FPGA with 6.59-microsecond latency. (Daniel Barter, Jacob C. Bridgeman, Chris Dawson et al.)</description>
+  </item>
   <item>
     <title>France formally blames Iran's Revolutionary Guards for the cyberattacks that heated supermarket freezers</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n1</link>

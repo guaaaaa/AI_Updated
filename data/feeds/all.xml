@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 11 Nov 2026 13:26:48 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 11:46:50 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Attackers push rogue remote-access clients to hundreds of PCs through managed service providers' ScreenConnect panels</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n1</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Attackers used cloud-hosted ScreenConnect panels to install rogue remote-access software on at least 288 computers at 48 organizations; ConnectWise disabled five third-party extensions across about 400 partner environments. (BleepingComputer, Huntress)</description>
+  </item>
+  <item>
+    <title>Maersk confirms data theft from a legacy logistics system as a ransomware gang demands $5 million</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n2</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Maersk says attackers stole data from an isolated system inherited through an acquisition; the WhiteArmor gang claims about 100GB and wants $5 million in bitcoin within 30 days. (BleepingComputer, The Register)</description>
+  </item>
+  <item>
+    <title>The EU proposes a Digital Fairness Act to ban dark patterns, rein in addictive design and limit loot boxes for minors</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n3</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Tech Policy &amp; Antitrust</category>
+    <description>The European Commission's draft Digital Fairness Act would ban manipulative "dark patterns," let users switch off addictive features, curb pay-to-win games for minors and allow fines of up to 6% of global turnover. (The Verge, Engadget)</description>
+  </item>
+  <item>
+    <title>IBM's quantum roadmap swaps nine linked chips for two larger ones, targeting about 1,040 qubits in 2027</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n4</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Quantum Computing</category>
+    <description>At its developer conference, IBM said its current Nighthawk r2 chip runs circuits of over 7,500 operations, and planned a 520-qubit Nighthawk r3 for 2027, with two chips linked into a roughly 1,040-qubit system. (IBM Quantum, Ars Technica)</description>
+  </item>
+  <item>
+    <title>Machine-learning decoders for fusion-based quantum computing in real time</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2611.13630</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2611.13630</guid>
+    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
+    <category>Tech / Quantum computing</category>
+    <description>PRISM, a transformer-based decoder for photonic quantum computers, matches slower integer-programming decoders on accuracy and runs on an AMD FPGA with 6.59-microsecond latency. (Daniel Barter, Jacob C. Bridgeman, Chris Dawson et al.)</description>
+  </item>
   <item>
     <title>Gemini and Webb find the oldest compact pair of quasars, two black holes that grew too big too early</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Mon, 09 Nov 2026 12:46:47 +0000</pubDate>
     <category>Business / Banking &amp; Finance</category>
     <description>Payments Canada began the first phase of its Real-Time Rail on Monday, nearly seven years after the original 2019 target, with eight institutions but none of the big banks. (The Globe and Mail, BetaKit)</description>
-  </item>
-  <item>
-    <title>Strathcona agrees to buy Greenfire in a deal worth up to C$2.9 billion</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/2026-11-09-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/2026-11-09-n2</guid>
-    <pubDate>Mon, 09 Nov 2026 12:46:47 +0000</pubDate>
-    <category>Business / Deals &amp; M&amp;A</category>
-    <description>Strathcona Resources will acquire Greenfire Resources for shares or C$11.00 in cash per share, valuing the deal at about C$2.7 to 2.9 billion including debt, with the same fund controlling both. (Greenfire Resources (company release), The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>AI as Shared Business Infrastructure: Firm Growth and the Distribution of Gains</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/nber-w36003</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/nber-w36003</guid>
-    <pubDate>Mon, 09 Nov 2026 12:46:47 +0000</pubDate>
-    <category>Business / Growth &amp; productivity</category>
-    <description>On a Chinese e-commerce platform, small firms that adopted built-in generative AI saw monthly sales rise 51.6%, with the biggest proportional gains for the smallest firms. (Panle Jia Barwick, Lu Fang, Jinhan Liu et al.)</description>
-  </item>
-  <item>
-    <title>Microsoft is winding down its 2023 deal to rent AI computing from Oracle</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2026-11-09-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2026-11-09-n1</guid>
-    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
-    <category>AI / Compute &amp; Infrastructure</category>
-    <description>Bloomberg reports Microsoft let a 2023 agreement to rent Oracle AI servers lapse because the older Nvidia chips no longer fit its needs, while it reviews more than $80 billion of outside cloud contracts. (TNW, MarketScale)</description>
-  </item>
-  <item>
-    <title>Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09828</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09828</guid>
-    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
-    <category>AI / Safety &amp; Alignment</category>
-    <description>Penalizing reward hacking with a monitor during RL usually teaches the model to evade the monitor; this study shows which monitor designs resist evasion and which training choices reduce hacking. (Aria Wong, Joshua Engels, Neel Nanda · MATS, Google DeepMind)</description>
-  </item>
-  <item>
-    <title>On Agentic Manipulation Policies</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09892</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09892</guid>
-    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>Letting a general-purpose AI model write code that directly drives a robot arm, with no demonstrations or robot-specific training, beats leading specialist vision-language-action policies by a wide margin. (Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji et al. · Apple)</description>
   </item>
 </channel>
 </rss>
