@@ -3,7 +3,7 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [
   {
    "id": "2611.12806",
@@ -13,9 +13,37 @@
    "featured": "2026-11-11"
   },
   {
+   "id": "2611.14210",
+   "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+   "hf": 86,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.14033",
+   "title": "Few-Step Streaming Video Generation via Condition Shifting",
+   "hf": 84,
+   "org": "Tsinghua University",
+   "featured": null
+  },
+  {
+   "id": "2611.12885",
+   "title": "World In-Context Learning for Agentic Robot Manipulation",
+   "hf": 67,
+   "org": "ArcheOne-AI",
+   "featured": "2026-11-12"
+  },
+  {
+   "id": "2611.14320",
+   "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+   "hf": 58,
+   "org": "KAIST AI",
+   "featured": "2026-11-12"
+  },
+  {
    "id": "2611.10771",
    "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
-   "hf": 55,
+   "hf": 57,
    "org": "OpenEnvision",
    "featured": null
   },
@@ -32,40 +60,12 @@
    "hf": 50,
    "org": "AutoLab",
    "featured": null
-  },
-  {
-   "id": "2611.12886",
-   "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
-   "hf": 38,
-   "org": "Nanjing University",
-   "featured": null
-  },
-  {
-   "id": "2611.14210",
-   "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
-   "hf": 37,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2611.14320",
-   "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
-   "hf": 35,
-   "org": "KAIST AI",
-   "featured": null
-  },
-  {
-   "id": "2611.12426",
-   "title": "dNaViT: Discrete Codes are General-Purpose Visual Representations",
-   "hf": 30,
-   "org": "LongCat",
-   "featured": null
   }
  ],
  "stories": [
   {
    "title": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
-   "outlets": 16,
+   "outlets": 19,
    "date": "2026-11-08",
    "covered": null
   },
@@ -83,7 +83,7 @@
   },
   {
    "title": "Anti-AI Protesters Break Into Microsoft Data Center Site in Amsterdam",
-   "outlets": 6,
+   "outlets": 7,
    "date": "2026-11-06",
    "covered": null
   },
@@ -100,20 +100,20 @@
    "covered": null
   },
   {
-   "title": "SoftBank books $7 billion quarterly loss on US data centre hit, financing costs",
-   "outlets": 4,
+   "title": "OpenAI Revenue Jumps to $10 Billion in Third Quarter Amid Growing Losses",
+   "outlets": 5,
    "date": "2026-11-10",
    "covered": null
   },
   {
-   "title": "OpenAI Revenue Jumps to $10 Billion in Third Quarter Amid Growing Losses",
+   "title": "SoftBank books $7 billion quarterly loss on US data centre hit, financing costs",
    "outlets": 4,
    "date": "2026-11-10",
    "covered": null
   }
  ],
  "featured": {
-  "news": 5,
-  "papers": 15
+  "news": 7,
+  "papers": 20
  }
 }

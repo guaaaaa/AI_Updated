@@ -1,0 +1,386 @@
+{
+ "date": "2026-11-12",
+ "edition": "weekday",
+ "generated_at": "2026-11-12T12:20:24+00:00",
+ "summary": "DeepMind's AlphaGenome 2 and Google's new decision model lead the news; papers show fine-tuning by deleting weights, a compute-matched audit of dense rewards, evidence-linked agent memory, agent-aware serving and robots that learn in context.",
+ "news": [
+  {
+   "id": "2026-11-12-n1",
+   "story_key": "deepmind-alphagenome-2-launch",
+   "title": "Google DeepMind releases AlphaGenome 2, which predicts how DNA variants act in specific cell types",
+   "category": "Model Release",
+   "published": "2026-11-11T10:00:00-05:00",
+   "tldr": "AlphaGenome 2 predicts how DNA changes alter gene activity in individual cell types and states, finding nearly twice as many causal variants as its predecessor; it is open for non-commercial research.",
+   "why_selected": "A major new scientific foundation model from a frontier lab, with a clear architectural change and concrete benchmark gains.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Every cell carries the same DNA, but a heart muscle cell and an immune cell switch on different genes. Predicting how a small DNA variant changes that activity, and in which cells, is central to linking genetics to disease. Google DeepMind's first AlphaGenome, released last year, read a million-letter DNA sequence and predicted effects averaged over broad tissues, and the AlphaGenome Atlas later covered all 9 billion possible single-letter changes."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 11 DeepMind announced AlphaGenome 2. Instead of predicting thousands of tissue readouts in parallel, it is a conditional model: alongside the DNA sequence it takes one target condition, a tissue, cell type or cell state, as input at every stage. It was trained on bulk and single-cell data from human and mouse, including more than 100 million individual cell profiles across 68 tissues, and adds DNA methylation to its outputs. A cell encoder lets it adapt to a scientist's own single-cell data without retraining. On the TenK10K map of 28 immune cell types, it identified 30% of causal variants versus 16% for the original model fine-tuned on single-cell data. It is available through the AlphaGenome API for non-commercial research, with a private preview for commercial use."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Conditioning on cell state turns static cell atlases into something you can query: give the model a variant and a cell type, and it predicts the effect. That matters for drug discovery, where, as DeepMind's genomics lead Žiga Avsec told The Verge, drugs target specific proteins in specific cell types. The model can also predict unmeasured readouts, such as chromatin accessibility from gene activity, which could help labs choose which experiments to run. The caveat is cost: Avsec said its predictions are more expensive than the first model's, so it will not replace the genome-wide Atlas."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether outside groups reproduce the variant-recall gains, how commercial access is priced, and DeepMind's stated plans for more training data and multi-species models."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n2",
+   "story_key": "google-gemini-decisions-api-launch",
+   "title": "Google launches the Gemini Decisions API, a model that scores yes/no, choice and rubric questions in one pass",
+   "category": "Product & Features",
+   "published": "2026-11-11T13:00:00-05:00",
+   "tldr": "Gemini Decision 1 answers up to 1,000 closed-set questions about a multimodal input in one forward pass, returning calibrated probabilities in 150-250 ms for $0.10 per million input tokens and no output charge.",
+   "why_selected": "A new model type from a frontier lab that targets a large share of production LLM calls: routing, grading and policy checks.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Many calls that applications make to large language models are not open-ended writing but bounded decisions: which tool to use, whether content breaks a rule, which model tier should handle a query. Developers usually either train small custom classifiers or ask a generative model to write out an answer token by token, which is slow and gives no reliable confidence. Decision models are a newer category: as Simon Willison notes, OpenAI already sells one at the same price, and a provider called Jev offers a cheaper text-only one."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 11 Google introduced the Gemini Decisions API, powered by a new model, Gemini Decision 1. A request carries one input of up to 256,000 tokens, mixing text, images, audio, video and PDFs, plus up to 1,000 independent questions of three kinds: yes/no, multiple choice among 2 to 255 options, and ordered rubric scores. Rather than generating text, the model scores the options in a single forward pass and returns probabilities with a confidence score between 0 and 1. Google cites 150-250 ms end-to-end latency, pricing of $0.10 per million input tokens with output free, and says it is nearly 5 times cheaper on its benchmark suite than Gemini 3.5 Flash-Lite, with the lowest calibration error among the models it compared."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Calibrated probabilities let software send ambiguous cases to a fallback model or a human instead of trusting a confident-sounding text answer. Google already uses the API inside its own products, for example routing Gemini Notebook queries to the right model tier with up to 40% lower latency, and as a safety layer for tools in Search. Full multimodal input is what separates it from rivals: Willison notes Jev handles text only and OpenAI's model text and images. The benchmark claims are Google's own and have not been independently checked."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent calibration tests, whether agent frameworks adopt decision endpoints for routing and guardrails, and how OpenAI and others respond on price and modalities."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
+    {
+     "name": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.10866",
+   "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
+   "authors": [
+    "Jack Lu",
+    "Zhenbang Yang",
+    "Mike Lasby",
+    "Tejas Pote",
+    "Yani Ioannou",
+    "Mengye Ren"
+   ],
+   "affiliations": [
+    "New York University",
+    "University of Calgary"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Efficiency",
+    "Reinforcement Learning"
+   ],
+   "tldr": "Learning which 0.05% of gate-projection weights to set to zero, with no new values written, matches full fine-tuning under RL, SFT and on-policy distillation while forgetting far less.",
+   "why_selected": "A simple, surprising result about how little post-training needs to change, tested up to a 30B mixture-of-experts model in three training regimes.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Post-training teaches a pretrained language model new skills, but how much of the network actually has to change? Full fine-tuning rewrites every weight, produces huge checkpoints and often makes the model forget what it knew, a central obstacle to learning tasks one after another."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "LoRA learns a low-rank update; sparse methods update values at a chosen subset of positions. Pruning, in contrast, removes weights only to make an already trained model cheaper. All the adaptation methods still write new numbers into the network."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Deletion Tuning writes nothing. Think of it as editing a model with only an eraser: for each weight in the gate projection of every transformer MLP block, it learns a single bit, keep or zero. The gate projection multiplies the channels that flow through the MLP, so switching off a few of its weights can reroute computation. During training each weight gets a trainable logit passed through a sigmoid that is gradually sharpened toward a hard step, so gradients flow while the mask converges to binary; at deployment the hard mask is used, which changes accuracy by at most 0.08 points. Logits start from the Wanda pruning score (weight magnitude times input activation), but Wanda pruning alone stays near base accuracy, so the gains come from learning the mask."
+    },
+    {
+     "heading": "Results",
+     "body": "Under GRPO reinforcement learning, Qwen3-30B-A3B reaches 58.54% versus 58.43% for full fine-tuning, with a 29.6 MB mask against a 116,471 MB checkpoint; Qwen2.5-14B scores 55.43 versus 54.87. Llama3-8B on GSM8K reaches 83.55 versus 83.24. It matches full fine-tuning on tool use under on-policy distillation (69.07 versus 68.04). In retention runs, prior-task accuracy stays near base while full fine-tuning, LoRA and random sparse tuning lose up to 5.4 points."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests post-training can work by selecting among existing weights, which yields tiny adapters, less forgetting and masks that may be inspected or combined. Caveats: at small scales it trails full fine-tuning (54.44 versus 60.50 on Llama 1B), and training needs one logit per masked weight, so it uses more memory than LoRA."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.10866",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.10866",
+    "code": "https://github.com/agentic-learning-ai-lab/deleting-weights"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 92,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 12,
+    "org": "agentic learning ai lab"
+   }
+  },
+  {
+   "id": "2611.13560",
+   "title": "Are Dense Rewards Worth Their Tokens in GRPO?",
+   "authors": [
+    "Vikash Singh",
+    "Weicong Chen",
+    "Debargha Ganguly",
+    "Yanyan Zhang",
+    "Mohsen Hariri",
+    "Sreehari Sankar",
+    "Wang Yang",
+    "Chaoda Song",
+    "Alexander Nemecek",
+    "Osama Zafar",
+    "Yuting Shao",
+    "Kai Ye",
+    "Biyao Zhang",
+    "Xinpeng Li",
+    "Shouren Wang",
+    "Erman Ayday",
+    "Jing Ma",
+    "Sanmukh Rao Kuppannagari",
+    "Vipin Chaudhary"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-10T20:00:00-05:00",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Post-training",
+    "Reasoning",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "Across 1,668 preregistered runs, dense step-level rewards that beat GRPO per update lose once their extra generated tokens and GPU time are counted, while picking prompts near 50% success holds up.",
+   "why_selected": "A careful, compute-matched audit that overturns a common way of judging RL-for-reasoning tricks and offers a protocol others can adopt.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reinforcement learning with verifiable rewards (RLVR) trains reasoning models by rewarding correct final answers. GRPO, the standard algorithm, gives every token in a solution the same credit, so a solution that slips only in its last step is penalised for its good steps too. Many papers propose fixes, but how should one tell whether a fix really helps?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Dense or process rewards credit individual steps, for example a Monte-Carlo reward that scores a step by sampling continuations from it. They are usually justified by comparing accuracy after the same number of updates, or by a gradient test showing their update points in a good direction. Neither counts what the extra sampling costs."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Compare every intervention at matched compute, measured both in generated tokens (including continuations and discarded samples) and in training GPU-hours. Think of it as comparing cars by distance per litre of fuel rather than per trip. The authors reimplemented a GRPO trainer, preregistered hypotheses and equivalence margins before running each study, paired configurations by seed, and added controls for side effects, for instance random choice among the same candidate prompts to separate prompt choice from simply moving faster through the data."
+    },
+    {
+     "heading": "Results",
+     "body": "On Qwen2.5-1.5B the Monte-Carlo reward leads GRPO per update, but its continuations take 91% of generated tokens: at equal tokens it makes 50 updates to GRPO's 584 and ends 14.3 points lower, and 7.8 points lower at equal training time. None of four dense-reward variants beat GRPO at equal time. Training on prompts with predicted success near one half gained 1.7 points on Qwen3-0.6B and 0.8 on Qwen2.5-1.5B, replicating on fresh seeds and unseen problems."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Claims about RL training tricks should report token and GPU-hour budgets. Even the surviving gain is modest: GRPO with twice the initial learning rate comes within half a point. Experiments use small models (up to 7B) on math."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.13560",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.13560",
+    "code": "https://github.com/vicky157/grpo-validation"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 47,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 4,
+    "org": "Case Western Reserve University"
+   }
+  },
+  {
+   "id": "2611.14320",
+   "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+   "authors": [
+    "Yukyeong Lee",
+    "Yumin Choi",
+    "Jinheon Baek",
+    "Sung Ju Hwang"
+   ],
+   "affiliations": [
+    "KAIST",
+    "DeepAuto.ai"
+   ],
+   "announced": "2026-11-10T20:00:00-05:00",
+   "primary_tag": "Retrieval & Memory",
+   "tags": [
+    "Retrieval & Memory",
+    "Agents"
+   ],
+   "tldr": "WikiTrace links each lesson in an agent's memory to the run it came from, so the agent can check doubtful lessons, raising scores on all eight test suites and cutting memory-induced failures.",
+   "why_selected": "Names and measures a real failure of agent memory, then fixes it with a simple design that beats established memory methods.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents can improve from experience by distilling past runs into short lessons. But memory can also hurt: an agent fails a task it would solve without memory. The authors find that 52% of such failures trace to a memory item the agent followed, most often a wrong one. Lessons are guessed from runs labelled only success or failure, so some are wrong."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Methods such as ExpeL, AWM and ReasoningBank store rules, workflows or reasoning strategies, but hand them to the agent without the runs they came from. The agent has no way to check whether a lesson is supported or applies to the task at hand."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Keep the receipts. WikiTrace stores memory in three linked layers, like a wiki page with citations: a short insight, a compilation summarising why its source run succeeded or failed, and the raw trajectory itself. The agent sees all insights up front. When an insight lacks a needed detail, conflicts with another, or comes from a failed run, the agent follows its links with ordinary terminal tools to read the evidence and revise the lesson before acting. Memory is built once, offline, and never edited."
+    },
+    {
+     "heading": "Results",
+     "body": "Across ALFWorld, ScienceWorld, PlanCraft, AppWorld and tau-cubed-bench Retail (eight suites), WikiTrace averages 90.2 versus 79.5 with no memory and 87.0 for the same insights without links, and is best on every suite. Regression, the rate at which memory breaks previously solved tasks, falls to 4.5% from 6.5% for insights only. It costs 1.17 times as much per task as insights only."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Builders of agents with long-term memory should keep provenance, not just summaries; agents consult evidence more on harder tasks, where gains are largest. Limitation: all insights go into the prompt, so very large memories will need retrieval, which the paper leaves open."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.14320",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.14320",
+    "code": "https://github.com/yukyeongleee/wikitrace"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 13,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 58,
+    "org": "KAIST AI"
+   }
+  },
+  {
+   "id": "2611.12304",
+   "title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale",
+   "authors": [
+    "Hao Kang",
+    "Weili Xu",
+    "Ziyang Li",
+    "Zheng Du",
+    "Hanchen Li",
+    "Tian Xia",
+    "Song Bian",
+    "Tushar Krishna",
+    "Huizi Mao",
+    "Ion Stoica",
+    "Song Han"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Agents"
+   ],
+   "tldr": "Evolving Infra lets serving nodes switch between prefill and decode in seconds and evicts cached context that no live agent branch needs, cutting latency up to 4.1x versus NVIDIA's Dynamo.",
+   "why_selected": "Agent traffic is a fast-growing share of inference; this system, from a team including Song Han and Ion Stoica, shows large gains on realistic agent traces at up to 256 GPUs.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents send long chains of requests that share long prefixes, so serving them well depends on reusing the stored attention state (the KV cache). Production systems split GPUs into prefill nodes (reading the prompt) and decode nodes (generating output), but the best split shifts as the mix of agents changes, and agents fork sub-agents and compact histories in ways that defeat simple cache rules."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "NVIDIA's Dynamo relaunches a worker to change its role, which took 681 seconds per switch on Claude Code traces. Arrow switches in place but strands the node's cache, losing 55.5% of possible cache reuse. Planners size the split from coarse signals like queue depth, and caches evict by recency."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Decouple compute from memory. A symmetric engine, built on SGLang, can serve either phase without restarting, and the host memory of all nodes is pooled so any node can read any cached prefix over RDMA. A KV directory counts how many active agent branches reference each cached block, so the system first evicts context that no branch will reuse, such as replaced histories or finished sub-agents. Think of a library that discards books nobody currently has on hold, not the ones least recently touched. An online planner models each node's iteration time separately for cached and uncached tokens and re-sizes the split every planning window."
+    },
+    {
+     "heading": "Results",
+     "body": "On 36 GB300 GPUs serving GLM-5.2 and Kimi K2.6, a role switch takes 6.2 seconds on average, over 100 times faster than a Dynamo relaunch. Under steady load it delivers up to 2.73 times Dynamo's throughput and loses 81-95% less KV reuse; mean latency drops up to 4.12 times. Under a shifting workload it cuts mean latency 2.15 times versus Dynamo and 1.33 times versus the best static split."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Inference providers serving coding and computer-use agents could recover substantial capacity. The evaluation relies on replayed traces and one production baseline, Dynamo."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12304",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12304",
+    "code": "https://github.com/mit-han-lab/EvolvingInfra"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 3,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 3,
+    "notable_authors": [
+     "Ion Stoica",
+     "Song Han"
+    ],
+    "org": "MIT HAN Lab"
+   }
+  },
+  {
+   "id": "2611.12885",
+   "title": "World In-Context Learning for Agentic Robot Manipulation",
+   "authors": [
+    "Heng Fang",
+    "Zehui Guo",
+    "Yuehan Zhang",
+    "Mingyang Du",
+    "Dingkang Liang",
+    "Xiang Bai"
+   ],
+   "affiliations": [
+    "Huazhong University of Science and Technology",
+    "ArcheOne AI"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents"
+   ],
+   "tldr": "A frozen foundation model learns robot tasks by rehearsing in a simulator and writing lessons into a text memory, reaching 83.4% on RoboTwin 2.0 from one demonstration, over 20 points above trained policies.",
+   "why_selected": "A different route to robot skill, learning in context rather than in weights, with strong benchmark results and a physical-robot transfer.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Robot policies usually store skills in network weights, which ties them to their training distribution. FastWAM, trained on clean RoboTwin 2.0 scenes, reaches 77.8% success there but 1.9% under randomised scenes. Each new task or setting needs new data and training."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "In-context learning lets a frozen model imitate a demonstration shown in its prompt, but a demonstration from another scene carries no feedback about the table in front of the robot. Code-as-policies systems call robot APIs but accumulate errors without feedback."
+    },
+    {
+     "heading": "Key idea",
+     "body": "World In-Context Learning treats a simulator the way a coding agent treats a terminal: try, read what happens, revise. From a single demonstration, a frozen model rehearses the task on simulator scenes held apart from test scenes and writes what it learns, object roles, task steps and what went wrong, into a readable Task Memory, then freezes it. Because the memory records semantics rather than appearance, it transfers to scenes that look different. The acting agent sees only camera images, depth and joint readings, the inputs a real robot has, and a linter rejects memories containing coordinates or simulator ground truth. A reflection agent can later rewrite guidance from evaluation records."
+    },
+    {
+     "heading": "Results",
+     "body": "On all 50 RoboTwin 2.0 tasks, the RoboScript system averages 83.4% across clean and randomised settings with one demonstration and no gradient updates, versus 61.7% for the strongest trained policy using 50 demonstrations. With GPT-6.1-Sol it scores 83.6% clean and 83.2% randomised; the lightweight DeepSeek-V4.1-Flash still reaches 77.8% and 78.4%. Memories transferred to a physical dual-arm robot via an adapter."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Robot skill could improve with each new foundation model, without retraining. The caveat is that results are in simulation, with heavy tool scaffolding, and the real-robot evidence comes from one dual-arm platform."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12885",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12885",
+    "code": "https://github.com/ArcheOne-AI/RoboScript"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 14,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 67,
+    "org": "ArcheOne-AI"
+   }
+  }
+ ]
+}

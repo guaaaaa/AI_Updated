@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Thu, 12 Nov 2026 11:46:50 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 12:20:24 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google DeepMind releases AlphaGenome 2, which predicts how DNA variants act in specific cell types</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n1</guid>
+    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>AlphaGenome 2 predicts how DNA changes alter gene activity in individual cell types and states, finding nearly twice as many causal variants as its predecessor; it is open for non-commercial research. (Google DeepMind, The Verge)</description>
+  </item>
+  <item>
+    <title>Google launches the Gemini Decisions API, a model that scores yes/no, choice and rubric questions in one pass</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n2</guid>
+    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
+    <category>AI / Product &amp; Features</category>
+    <description>Gemini Decision 1 answers up to 1,000 closed-set questions about a multimodal input in one forward pass, returning calibrated probabilities in 150-250 ms for $0.10 per million input tokens and no output charge. (Google, Simon Willison)</description>
+  </item>
+  <item>
+    <title>The Surprising Effectiveness of Deleting Weights in LLM Post-Training</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.10866</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.10866</guid>
+    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>Learning which 0.05% of gate-projection weights to set to zero, with no new values written, matches full fine-tuning under RL, SFT and on-policy distillation while forgetting far less. (Jack Lu, Zhenbang Yang, Mike Lasby et al. · New York University, University of Calgary)</description>
+  </item>
+  <item>
+    <title>Are Dense Rewards Worth Their Tokens in GRPO?</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.13560</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.13560</guid>
+    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
+    <category>AI / Reinforcement Learning</category>
+    <description>Across 1,668 preregistered runs, dense step-level rewards that beat GRPO per update lose once their extra generated tokens and GPU time are counted, while picking prompts near 50% success holds up. (Vikash Singh, Weicong Chen, Debargha Ganguly et al.)</description>
+  </item>
+  <item>
+    <title>Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.14320</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.14320</guid>
+    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
+    <category>AI / Retrieval &amp; Memory</category>
+    <description>WikiTrace links each lesson in an agent's memory to the run it came from, so the agent can check doubtful lessons, raising scores on all eight test suites and cutting memory-induced failures. (Yukyeong Lee, Yumin Choi, Jinheon Baek et al. · KAIST, DeepAuto.ai)</description>
+  </item>
+  <item>
+    <title>Evolving Infra: Agent-Adaptive LLM Serving at Scale</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12304</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12304</guid>
+    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>Evolving Infra lets serving nodes switch between prefill and decode in seconds and evicts cached context that no live agent branch needs, cutting latency up to 4.1x versus NVIDIA's Dynamo. (Hao Kang, Weili Xu, Ziyang Li et al.)</description>
+  </item>
+  <item>
+    <title>World In-Context Learning for Agentic Robot Manipulation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12885</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12885</guid>
+    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>A frozen foundation model learns robot tasks by rehearsing in a simulator and writing lessons into a text memory, reaching 83.4% on RoboTwin 2.0 from one demonstration, over 20 points above trained policies. (Heng Fang, Zehui Guo, Yuehan Zhang et al. · Huazhong University of Science and Technology, ArcheOne AI)</description>
+  </item>
   <item>
     <title>Attackers push rogue remote-access clients to hundreds of PCs through managed service providers' ScreenConnect panels</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Mon, 09 Nov 2026 13:54:32 +0000</pubDate>
     <category>Biology / Clinical Research</category>
     <description>In Lp(a)HORIZON, pelacarsen lowered lipoprotein(a) by about 78% in over 8,300 people with heart disease, yet heart attacks, strokes and cardiovascular deaths occurred at the same rate as on placebo. (American Heart Association, Healio, American College of Cardiology)</description>
-  </item>
-  <item>
-    <title>Discontinuing Statins in Older Adults without Cardiovascular Disease</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-09/doi-10-1056-nejmoa2606634</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-09/doi-10-1056-nejmoa2606634</guid>
-    <pubDate>Mon, 09 Nov 2026 13:54:32 +0000</pubDate>
-    <category>Biology / Cardiovascular</category>
-    <description>In a randomized trial of about 1,880 adults over 70 without heart disease, stopping statins was statistically noninferior over two years, but cardiovascular events were more frequent over longer follow-up. (Nicolas Rodondi Moa Lina Haller Julia Bianca Bardoczi Luise Adam Manuel Raphael Blum Baris Gencer Tamar Itach Julian Simon Flury Lara Aurora Brockhus Philipp Stefan Aebi Martin Feller Claudia Gregoriano Roxane de la Harpe Jacobijn Gussekloo Nathalie Schwab Pierre Poulizac Simon Pieter Mooijaart Jürg-Hans Beer Stéphanie Baggio Sebastian Carballo Fabrice Bonnet Dina Zekry Luca Gabutti Maria Monika Wertli Drahomir Aujesky Douglas Charles Bauer Rita Fran Redberg Philip Greenland Rosalinde Klazina Elisabeth Poortvliet Philipp Schuetz Marie Méan Alan Gary Haynes and Sven Trellethe STREAM Investigators*)</description>
-  </item>
-  <item>
-    <title>NASA commits to PROMISE, a nuclear-powered rover built from Mars spares, for the Moon's south pole</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/2026-11-09-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/2026-11-09-n1</guid>
-    <pubDate>Mon, 09 Nov 2026 13:27:42 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>NASA is building PROMISE, a six-wheeled, nuclear-powered rover assembled partly from Curiosity and Perseverance spare parts, to scout ice and resources near the Moon's south pole, with a launch targeted for late 2028. (NASA, ScienceDaily)</description>
-  </item>
-  <item>
-    <title>Berkeley Earth says 2026 is very likely the hottest year on record as COP31 opens</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/2026-11-09-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/2026-11-09-n2</guid>
-    <pubDate>Mon, 09 Nov 2026 13:27:42 +0000</pubDate>
-    <category>Science / Climate &amp; Earth</category>
-    <description>Berkeley Earth is 95% confident 2026 will beat 2024's record, while the WMO's more cautious update puts it among the four warmest years, with a strengthening El Niño pushing 2027 higher. (BBC News, World Meteorological Organization)</description>
-  </item>
-  <item>
-    <title>Glacial abrupt transitions in ocean circulation were much slower than ice-core records imply</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aed4270</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aed4270</guid>
-    <pubDate>Mon, 09 Nov 2026 13:27:42 +0000</pubDate>
-    <category>Science / Climate science</category>
-    <description>Asian cave records show ice-age abrupt warmings took over a century, far slower than Greenland ice cores imply, because Greenland captured a fast atmospheric change, not the ocean's pace. (Xiyu Dong, Xu Zhang, Yuchen Sun et al.)</description>
-  </item>
-  <item>
-    <title>Stacked porous NiTi structure with low cost and ultrahigh fatigue life for elastocaloric cooling</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aeh7074</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aeh7074</guid>
-    <pubDate>Mon, 09 Nov 2026 13:27:42 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>Stamping honeycomb chips from nitinol sheets and stacking them yields a cooling structure that survived more than 100 million cycles and delivers 3850 watts per kilogram, at about a tenth of the usual fabrication cost. (Changfeng Su, Yang Li, Zhongzheng Deng et al.)</description>
-  </item>
-  <item>
-    <title>Seafloor geodesy delineates fast megathrust relocking after the giant 2011 Tohoku earthquake</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aeg7301</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aeg7301</guid>
-    <pubDate>Mon, 09 Nov 2026 13:27:42 +0000</pubDate>
-    <category>Science / Earth science</category>
-    <description>Fourteen years of seafloor measurements show the fault that produced Japan's 2011 magnitude 9 Tohoku earthquake has already returned to a locked state similar to before the quake. (Fumiaki Tomita, Tianhaozhe Sun, Motoyuki Kido et al.)</description>
-  </item>
-  <item>
-    <title>Canada launches its instant payments system, the last G7 country to do so</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/2026-11-09-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-09/2026-11-09-n1</guid>
-    <pubDate>Mon, 09 Nov 2026 12:46:47 +0000</pubDate>
-    <category>Business / Banking &amp; Finance</category>
-    <description>Payments Canada began the first phase of its Real-Time Rail on Monday, nearly seven years after the original 2019 target, with eight institutions but none of the big banks. (The Globe and Mail, BetaKit)</description>
   </item>
 </channel>
 </rss>

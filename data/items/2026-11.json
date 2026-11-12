@@ -1,5 +1,101 @@
 [
  {
+  "id": "2026-11-12-n1",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "Google DeepMind releases AlphaGenome 2, which predicts how DNA variants act in specific cell types",
+  "tldr": "AlphaGenome 2 predicts how DNA changes alter gene activity in individual cell types and states, finding nearly twice as many causal variants as its predecessor; it is open for non-commercial research.",
+  "category": "Model Release",
+  "byline": "Google DeepMind, The Verge"
+ },
+ {
+  "id": "2026-11-12-n2",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "Google launches the Gemini Decisions API, a model that scores yes/no, choice and rubric questions in one pass",
+  "tldr": "Gemini Decision 1 answers up to 1,000 closed-set questions about a multimodal input in one forward pass, returning calibrated probabilities in 150-250 ms for $0.10 per million input tokens and no output charge.",
+  "category": "Product & Features",
+  "byline": "Google, Simon Willison"
+ },
+ {
+  "id": "2611.10866",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
+  "tldr": "Learning which 0.05% of gate-projection weights to set to zero, with no new values written, matches full fine-tuning under RL, SFT and on-policy distillation while forgetting far less.",
+  "primary_tag": "Post-training",
+  "tags": [
+   "Post-training",
+   "Efficiency",
+   "Reinforcement Learning"
+  ],
+  "byline": "Jack Lu, Zhenbang Yang, Mike Lasby et al. · New York University, University of Calgary",
+  "hf": 12,
+  "venue": null
+ },
+ {
+  "id": "2611.13560",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "Are Dense Rewards Worth Their Tokens in GRPO?",
+  "tldr": "Across 1,668 preregistered runs, dense step-level rewards that beat GRPO per update lose once their extra generated tokens and GPU time are counted, while picking prompts near 50% success holds up.",
+  "primary_tag": "Reinforcement Learning",
+  "tags": [
+   "Reinforcement Learning",
+   "Post-training",
+   "Reasoning",
+   "Evaluation & Benchmarks"
+  ],
+  "byline": "Vikash Singh, Weicong Chen, Debargha Ganguly et al.",
+  "hf": 4,
+  "venue": null
+ },
+ {
+  "id": "2611.14320",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+  "tldr": "WikiTrace links each lesson in an agent's memory to the run it came from, so the agent can check doubtful lessons, raising scores on all eight test suites and cutting memory-induced failures.",
+  "primary_tag": "Retrieval & Memory",
+  "tags": [
+   "Retrieval & Memory",
+   "Agents"
+  ],
+  "byline": "Yukyeong Lee, Yumin Choi, Jinheon Baek et al. · KAIST, DeepAuto.ai",
+  "hf": 58,
+  "venue": null
+ },
+ {
+  "id": "2611.12304",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale",
+  "tldr": "Evolving Infra lets serving nodes switch between prefill and decode in seconds and evicts cached context that no live agent branch needs, cutting latency up to 4.1x versus NVIDIA's Dynamo.",
+  "primary_tag": "Efficiency",
+  "tags": [
+   "Efficiency",
+   "Agents"
+  ],
+  "byline": "Hao Kang, Weili Xu, Ziyang Li et al.",
+  "hf": 3,
+  "venue": null
+ },
+ {
+  "id": "2611.12885",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "World In-Context Learning for Agentic Robot Manipulation",
+  "tldr": "A frozen foundation model learns robot tasks by rehearsing in a simulator and writing lessons into a text memory, reaching 83.4% on RoboTwin 2.0 from one demonstration, over 20 points above trained policies.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Agents"
+  ],
+  "byline": "Heng Fang, Zehui Guo, Yuehan Zhang et al. · Huazhong University of Science and Technology, ArcheOne AI",
+  "hf": 67,
+  "venue": null
+ },
+ {
   "id": "2026-11-11-n1",
   "date": "2026-11-11",
   "type": "news",
