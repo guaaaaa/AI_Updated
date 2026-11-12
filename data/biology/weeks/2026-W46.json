@@ -3,12 +3,12 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
    "title": "FDA Slaps New Safety Warning on GLP-1 Drugs",
-   "outlets": 7,
+   "outlets": 12,
    "date": "2026-11-09",
    "covered": "2026-11-10-n1"
   },
@@ -20,8 +20,8 @@
   }
  ],
  "featured": {
-  "news": 3,
-  "papers": 4
+  "news": 6,
+  "papers": 7
  },
  "items": [
   {
@@ -65,6 +65,42 @@
    "date": "2026-11-10",
    "type": "paper",
    "title": "A single–amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking"
+  },
+  {
+   "id": "2026-11-12-n1",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "Beam's base-edited sickle cell therapy keeps patients free of severe pain crises for a year in its pivotal trial"
+  },
+  {
+   "id": "2026-11-12-n2",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "A Lancet Psychiatry analysis compares how well 21 antidepressants keep depression at bay over months to years"
+  },
+  {
+   "id": "2026-11-12-n3",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "Everyone in a 100,000-person All of Us sample carries gene variants that affect medicines, and a quarter got an affected drug"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11256-2",
+   "date": "2026-11-12",
+   "type": "paper",
+   "title": "UNC13A splice correction rescues synaptic dysfunction induced by TDP-43 loss"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11269-x",
+   "date": "2026-11-12",
+   "type": "paper",
+   "title": "Evolutionary dynamics in the years preceding acute myeloid leukaemia"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11285-x",
+   "date": "2026-11-12",
+   "type": "paper",
+   "title": "Human land use drives microplastic abundance in terrestrial wildlife"
   }
  ]
 }

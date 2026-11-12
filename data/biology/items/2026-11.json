@@ -1,5 +1,79 @@
 [
  {
+  "id": "2026-11-12-n1",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "Beam's base-edited sickle cell therapy keeps patients free of severe pain crises for a year in its pivotal trial",
+  "tldr": "Beam Therapeutics says its one-time base-edited cell therapy, risto-cel, met its main goal of 12 months without severe pain crises in a 49-patient single-arm trial, and plans a US filing.",
+  "category": "Clinical Research",
+  "byline": "PharmaShots (summary of Beam's press release), BioPharm International"
+ },
+ {
+  "id": "2026-11-12-n2",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "A Lancet Psychiatry analysis compares how well 21 antidepressants keep depression at bay over months to years",
+  "tldr": "Pooling 115 studies longer than 12 weeks, researchers found escitalopram, duloxetine and agomelatine somewhat more likely than fluoxetine to bring lasting improvement; experts call the differences modest.",
+  "category": "Neuroscience & Mental Health",
+  "byline": "The New York Times, BBC News"
+ },
+ {
+  "id": "2026-11-12-n3",
+  "date": "2026-11-12",
+  "type": "news",
+  "title": "Everyone in a 100,000-person All of Us sample carries gene variants that affect medicines, and a quarter got an affected drug",
+  "tldr": "A Pitt-led analysis of nearly 100,000 genomes found every participant carried at least one drug-relevant variant (median nine), 24.4% had been prescribed an affected drug, and over 17,000 variants were new.",
+  "category": "Genetics & Genomics",
+  "byline": "University of Pittsburgh via Medical Xpress, STAT, Science Translational Medicine"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11256-2",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "UNC13A splice correction rescues synaptic dysfunction induced by TDP-43 loss",
+  "tldr": "In lab-grown human neurons lacking the ALS protein TDP-43, fixing one splicing error in the synapse gene UNC13A with an antisense drug restored communication between neurons.",
+  "primary_tag": "Neuroscience",
+  "tags": [
+   "Neuroscience",
+   "Molecular & cell biology",
+   "Neurology & mental health"
+  ],
+  "byline": "Matthew J. Keuss, Peter Harley, Eugeni Ryadnov et al. · King's College London; University College London; Francis Crick Institute; Leibniz-FMP; Trace Neuroscience",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11269-x",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "Evolutionary dynamics in the years preceding acute myeloid leukaemia",
+  "tldr": "Yearly stored blood samples show that in two-thirds of women who later got acute myeloid leukaemia, the first driver mutation arose before age 20, and mutant clones then grew predictably.",
+  "primary_tag": "Oncology",
+  "tags": [
+   "Oncology",
+   "Genetics & genomics",
+   "Epidemiology"
+  ],
+  "byline": "Caroline J. Watson, Gladys Y. P. Poon, Hamish A. J. MacGregor et al. · University of Cambridge; University College London",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11285-x",
+  "date": "2026-11-12",
+  "type": "paper",
+  "title": "Human land use drives microplastic abundance in terrestrial wildlife",
+  "tldr": "GPS-tracked tapirs and giant anteaters in Brazil carried more microplastics in their blood when their home ranges held more human disturbance or lay nearer waste facilities.",
+  "primary_tag": "Evolution & ecology",
+  "tags": [
+   "Evolution & ecology",
+   "Epidemiology"
+  ],
+  "byline": "Marcia de Almeida Monteiro Melo Ferraz, Arnaud L. J. Desbiez, Mario Henrique Alves et al. · University of British Columbia (Kelowna); Center for Advanced Systems Understanding (CASUS), Helmholtz-Zentrum Dresden-Rossendorf",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-10-n1",
   "date": "2026-11-10",
   "type": "news",

@@ -1,0 +1,324 @@
+{
+ "date": "2026-11-12",
+ "edition": "weekday",
+ "generated_at": "2026-11-12T13:54:37+00:00",
+ "summary": "A base-edited sickle cell therapy meets its pivotal goal, a long-term ranking of 21 antidepressants, drug-gene variants in everyone; plus an ALS splicing fix, leukaemia's decades-long run-up and microplastics in wild mammals.",
+ "news": [
+  {
+   "id": "2026-11-12-n1",
+   "story_key": "beam-risto-cel-beacon-pivotal-sickle-cell",
+   "title": "Beam's base-edited sickle cell therapy keeps patients free of severe pain crises for a year in its pivotal trial",
+   "category": "Clinical Research",
+   "published": "2026-11-10T05:00:00-05:00",
+   "tldr": "Beam Therapeutics says its one-time base-edited cell therapy, risto-cel, met its main goal of 12 months without severe pain crises in a 49-patient single-arm trial, and plans a US filing.",
+   "why_selected": "Pivotal results for the first base-editing therapy heading toward an FDA filing, in a disease with few curative options.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Sickle cell disease is an inherited blood disorder in which a single-letter change in the hemoglobin gene makes red blood cells stiff and sickle-shaped. They block small blood vessels and cause vaso-occlusive crises, episodes of severe pain that often need hospital care. Base editing is a gene-editing method designed to change individual DNA letters."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 10, Beam Therapeutics reported topline results from BEACON, the phase 1/2 trial of risto-cel (ristoglogene autogetemcel, formerly BEAM-101), a cell therapy made by base editing patients' own blood stem cells. As of the October 20, 2026 data cutoff, 39 adults and 10 adolescents with sickle cell disease and severe crises had been treated. At a prespecified interim analysis of the 31 patients who had completed the follow-up period, the trial met its primary endpoint: freedom from severe vaso-occlusive crises for at least 12 consecutive months. Beam said all primary safety endpoints and all secondary efficacy endpoints were also met. It expects to file a Biologics License Application, the request for US approval, with the FDA as early as the end of 2026, and plans to present detailed pivotal results at a medical meeting in 2027."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A one-time treatment that stops pain crises would change daily life for people who now face repeated hospital stays. The result is also a test of base editing as a medicine, and a successful filing would put this editing approach before US regulators. But the evidence so far is a company announcement, not a peer-reviewed paper. The trial is single-arm and open-label, so each patient is compared with their own history rather than with a control group, and the release gives the endpoint as met without the share of patients who reached it or full safety details."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The full dataset at a 2027 medical meeting, the FDA filing expected around year-end, and long-term safety follow-up."
+    }
+   ],
+   "sources": [
+    {
+     "name": "PharmaShots (summary of Beam's press release)",
+     "url": "https://pharmashots.com/37381/beam-risto-cel-beacon-pivotal-topline-scd"
+    },
+    {
+     "name": "BioPharm International",
+     "url": "https://www.biopharminternational.com/view/beam-risto-cel-primary-endpoint-sickle-cell-trial"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n2",
+   "story_key": "antidepressants-long-term-network-meta-analysis",
+   "title": "A Lancet Psychiatry analysis compares how well 21 antidepressants keep depression at bay over months to years",
+   "category": "Neuroscience & Mental Health",
+   "published": "2026-11-10T18:30:00-05:00",
+   "tldr": "Pooling 115 studies longer than 12 weeks, researchers found escitalopram, duloxetine and agomelatine somewhat more likely than fluoxetine to bring lasting improvement; experts call the differences modest.",
+   "why_selected": "The first broad comparison of antidepressants over the long periods people actually take them, with cautious expert reaction.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Many people with depression take antidepressants for months or years, and doctors usually advise staying on them for at least six months after symptoms ease to prevent relapse. Yet most trials comparing these drugs last about eight weeks, so there has been little evidence on which ones work best over the longer term. Depression affects around one in six people in the UK."
+    },
+    {
+     "heading": "What happened",
+     "body": "A study published on November 10 in The Lancet Psychiatry pooled 115 published and unpublished studies of people with major depressive disorder that lasted more than 12 weeks, one as long as two years, covering 21 drugs. The researchers measured \"sustained response\", an improvement that lasted until the trial ended, and how often people stopped taking the drug for any reason. Each drug was compared with fluoxetine (Prozac). Most drugs performed similarly. People taking escitalopram, duloxetine or agomelatine were more likely than those on fluoxetine to improve and stay improved; escitalopram ranked first and was also less likely to be stopped. Sertraline was no better than fluoxetine, and bupropion and reboxetine performed worse than several other drugs."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The analysis fills a real gap: long-term outcomes matter more to patients than eight-week snapshots. One author, Eric Ruhé of Radboud University, said it can help prescribers and patients choose a drug that keeps people well, not only gets them well. Other experts urged caution. The differences were modest, Allan Young of the Royal College of Psychiatrists said they are unlikely to outweigh side effects, past response and preference, and Sameer Jauhar of Imperial College London said the study cannot say which drug suits an individual and is no reason for someone doing well to switch. Treatment decisions belong with a patient and their doctor."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Longer head-to-head trials, which experts say are still needed, and whether guideline bodies revisit first-choice recommendations."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The New York Times",
+     "url": "https://www.nytimes.com/2026/11/10/well/mind/antidepressants-efficacy-work.html"
+    },
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/cv62yyng00jyo"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n3",
+   "story_key": "all-of-us-pharmacogenomics-stm",
+   "title": "Everyone in a 100,000-person All of Us sample carries gene variants that affect medicines, and a quarter got an affected drug",
+   "category": "Genetics & Genomics",
+   "published": "2026-11-11T14:00:00-05:00",
+   "tldr": "A Pitt-led analysis of nearly 100,000 genomes found every participant carried at least one drug-relevant variant (median nine), 24.4% had been prescribed an affected drug, and over 17,000 variants were new.",
+   "why_selected": "The largest diverse look yet at how common drug-gene interactions are in real prescribing, from the NIH's flagship cohort.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Pharmacogenomics studies how inherited DNA differences change the way the body handles medicines. Some variants make a drug less effective; others make toxic side effects more likely. More than 300 medicines carry label information about such interactions, but early genetic studies included limited racial and ethnic diversity, which skews risk estimates. The NIH's All of Us program aims to gather genomes and health records from 1 million Americans of varied backgrounds."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 11, a team led by the University of Pittsburgh reported in Science Translational Medicine on nearly 100,000 All of Us participants with whole-genome data. They assessed 16 genetic markers known to affect how medicines work or how toxic they are. Every participant carried at least one such variant, with a median of nine per person. Linking genomes to medical records showed that 24.4% had been prescribed at least one medicine known to interact with a variant they carried. The most common were ondansetron (for nausea), ibuprofen, omeprazole and pantoprazole (for acid reflux) and atorvastatin (for cholesterol). The team also found more than 17,000 previously unknown variants in these genes and reported variant frequencies for ancestry groups where none had been estimated."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The study suggests genetics could shape drug response for a large share of ordinary patients, not a rare few. Senior author Philip Empey argues for a one-time panel test stored in the health record, so that electronic alerts could flag a risky prescription, as is already done before some chemotherapy, where variants can cause serious toxicity in up to 8% of patients, and for clopidogrel after heart stenting. Whether broad screening is worth its cost is for policymakers and insurers to weigh, and remains an active research question."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether health systems add pharmacogenomic panels to records, and functional studies of the newly found variants."
+    }
+   ],
+   "sources": [
+    {
+     "name": "University of Pittsburgh via Medical Xpress",
+     "url": "https://medicalxpress.com/news/2026-11-genes-affect-medications-highlights-high.html"
+    },
+    {
+     "name": "STAT",
+     "url": "https://www.statnews.com/2026/11/11/all-of-us-study-finds-gene-variants-drug-responses/"
+    },
+    {
+     "name": "Science Translational Medicine",
+     "url": "https://www.science.org/doi/10.1126/scitranslmed.adt8040"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11256-2",
+   "title": "UNC13A splice correction rescues synaptic dysfunction induced by TDP-43 loss",
+   "authors": [
+    "Matthew J. Keuss",
+    "Peter Harley",
+    "Eugeni Ryadnov",
+    "Rachel E. Jackson",
+    "Moritz Boll",
+    "Matteo Zanovello",
+    "Oscar G. Wilkins",
+    "Simone Barattucci",
+    "Dragana Ilic",
+    "Rebecca L. Simkin",
+    "Max Z. Y. J. Chien",
+    "Alexander J. Cammack",
+    "Darija Šoltić",
+    "Puja R. Mehta",
+    "Yan To Ling",
+    "Maria Kowald",
+    "Ryan D. Morrie",
+    "Georgiana Miller",
+    "Marcio G. Oliveira",
+    "Graham Duddy",
+    "Sophie Wood",
+    "Joanna E. Parkes",
+    "Aparna Sinha",
+    "Andrés F. Correa-Sánchez",
+    "Adrian M. Isaacs",
+    "Peter L. Oliver",
+    "Fursham Hamid",
+    "Eric M. Green",
+    "Elizabeth M. C. Fisher",
+    "Benjamin Davies"
+   ],
+   "affiliations": [
+    "King's College London; University College London; Francis Crick Institute; Leibniz-FMP; Trace Neuroscience"
+   ],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Neuroscience",
+   "tags": [
+    "Neuroscience",
+    "Molecular & cell biology",
+    "Neurology & mental health"
+   ],
+   "tldr": "In lab-grown human neurons lacking the ALS protein TDP-43, fixing one splicing error in the synapse gene UNC13A with an antisense drug restored communication between neurons.",
+   "why_selected": "Pins a key failure in most ALS cases on a single correctable RNA error, with a related drug already in human trials.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Motor neuron disease (MND), also called ALS, destroys the nerve cells that control muscles and is fatal; about 1 in 300 people develop it. In roughly 97% of cases a protein called TDP-43 stops working properly, and for these cases there is no significant disease-modifying treatment."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "TDP-43 normally acts as a proofreader of RNA, ensuring that genes are spliced, or cut and joined, correctly. When it fails, hundreds of splicing events go wrong. Common variants in one affected gene, UNC13A, were already among the strongest genetic risk factors for MND, but it was unclear how much its faulty processing mattered."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team recreated TDP-43 loss in human neurons grown in the lab and watched the consequences. Without TDP-43, neurons wrongly insert an extra piece, a \"cryptic exon\", into UNC13A's RNA, so less working UNC13A protein is made. UNC13A sits at the presynaptic terminal, where it helps release the chemical signals neurons use to talk to each other. The researchers then designed an antisense oligonucleotide (ASO), a short synthetic strand that targets this specific error, like taping over a wrong turn on a map so the cell's RNA processing takes the correct route."
+    },
+    {
+     "heading": "Results",
+     "body": "A single error in UNC13A processing was enough to sharply reduce communication between neurons, which live imaging showed directly. The ASO restored correct splicing, UNC13A protein and its position at the synapse, and neurons communicated again, even though hundreds of other splicing events remained disrupted."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It points to one target that may be the main driver of failed signalling in most ALS cases. A similar ASO, TRCN-1023, recently dosed its first UK participants in a phase 1/2 trial. The caveat: these are cell experiments, and restoring synapses in a dish is not proof of benefit in patients."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11256-2",
+    "doi": "https://doi.org/10.1038/s41586-026-11256-2"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11269-x",
+   "title": "Evolutionary dynamics in the years preceding acute myeloid leukaemia",
+   "authors": [
+    "Caroline J. Watson",
+    "Gladys Y. P. Poon",
+    "Hamish A. J. MacGregor",
+    "Adriana V. A. Fonseca",
+    "Sophia Apostolidou",
+    "Aristi Damaskou",
+    "Christopher Boniface",
+    "Samuel Hackett",
+    "Aleksandra Gentry-Maharaj",
+    "Usha Menon",
+    "Jamie R. Blundell"
+   ],
+   "affiliations": [
+    "University of Cambridge; University College London"
+   ],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Oncology",
+   "tags": [
+    "Oncology",
+    "Genetics & genomics",
+    "Epidemiology"
+   ],
+   "tldr": "Yearly stored blood samples show that in two-thirds of women who later got acute myeloid leukaemia, the first driver mutation arose before age 20, and mutant clones then grew predictably.",
+   "why_selected": "Reconstructs a cancer's decades-long run-up year by year, revealing a predictable growth pattern that could open a window for prevention.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Acute myeloid leukaemia (AML) is an aggressive blood cancer; only about one in six patients survives five years. Many healthy older people carry blood cells with leukaemia-type mutations, called clonal haematopoiesis, but only a few develop AML, and the process had never been tracked year by year before diagnosis."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Carrying such mutations was known to raise risk, but without samples taken over many years nobody could see when the mutations arose or how fast the cells carrying them, called clones, were growing."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team treated stored blood as a \"fossil record\". The UK Collaborative Trial of Ovarian Cancer Screening collected yearly blood samples from about 50,000 women for up to 11 years. The researchers studied 47 women who later developed AML, at an average age of 72, and 46 matched women who stayed free of blood cancer, with samples reaching back up to 15 years before diagnosis. Using ultra-sensitive DNA sequencing and mathematical models of evolution, they worked backwards from each clone's size over time to estimate when each mutation arose and how fast it grew, much as tree rings date a tree."
+    },
+    {
+     "heading": "Results",
+     "body": "In two-thirds of AML cases the first driver mutation arose before age 20, more than 50 years before diagnosis. Those clones grew slowly, taking years to double; each extra mutation raised growth two- to three-fold, and clones with four drivers doubled in weeks. Growth was steady and predictable. In at least a third of cases one clone dominated the blood years before diagnosis, which never happened in controls; UK Biobank data linked such \"sweeps\" to greatly increased AML risk."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A clone's current growth rate could flag who is at highest risk, and modest slowing might prevent leukaemia. Caveats: all participants were women, and in about one in five cases clones became detectable only one to two years before diagnosis."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11269-x",
+    "doi": "https://doi.org/10.1038/s41586-026-11269-x"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11285-x",
+   "title": "Human land use drives microplastic abundance in terrestrial wildlife",
+   "authors": [
+    "Marcia de Almeida Monteiro Melo Ferraz",
+    "Arnaud L. J. Desbiez",
+    "Mario Henrique Alves",
+    "Justin M. Calabrese",
+    "Alexandra Tiso Cumerlato",
+    "Fernanda Cristina Jacoby",
+    "Nicole Grechi",
+    "Danilo Kluyber",
+    "Erika Y. Lin",
+    "Marcella Pecora Milazzotto",
+    "Grazielle Soresini",
+    "Emília Patrícia Medici",
+    "Gabriela Mastromonaco",
+    "Michael J. Noonan"
+   ],
+   "affiliations": [
+    "University of British Columbia (Kelowna); Center for Advanced Systems Understanding (CASUS)",
+    "Helmholtz-Zentrum Dresden-Rossendorf"
+   ],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Evolution & ecology",
+   "tags": [
+    "Evolution & ecology",
+    "Epidemiology"
+   ],
+   "tldr": "GPS-tracked tapirs and giant anteaters in Brazil carried more microplastics in their blood when their home ranges held more human disturbance or lay nearer waste facilities.",
+   "why_selected": "Ties microplastic levels inside free-living mammals to the human land use they move through, using blood samples and movement tracking together.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Microplastics, plastic pieces smaller than 5 millimetres, spread through air, rain, rivers and floods. They are harmful to many species in experiments, and they have been found in land animals, but it was not known whether greater exposure in human-altered landscapes actually leads to more plastic inside individual wild animals."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work measured microplastic concentrations in the land environment, or detected particles in wildlife, but did not link an animal's internal burden quantitatively to the places it lives and moves. That requires blood measurements, fine-scale movement data and detailed land-use maps from the same animals, a combination that did not exist."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Led by Marcia de Almeida Monteiro Melo Ferraz, the team sampled blood from 26 lowland tapirs and 21 giant anteaters across Brazil's Amazon, Cerrado and Pantanal regions and followed them with GPS tracking. Movement software called ctmm reconstructed each animal's likely path between GPS fixes and its home range, the area it habitually uses. The researchers then compared how much human disturbance and infrastructure each home range contained with how much plastic was in the animal's blood, like matching a person's commute to the air pollution they breathe."
+    },
+    {
+     "heading": "Results",
+     "body": "Microplastic particles were found in 43 of the 47 animals. Blood concentrations were significantly higher in animals whose home ranges included more intensive human disturbance, and in those living closer to waste management facilities."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Co-author Justin Calabrese says it is the first demonstration of this link for land mammals. It suggests better waste management near settlements, especially in fast-growing frontier areas, could cut wildlife exposure. Caveat: the study measures exposure in two species, not health effects."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11285-x",
+    "doi": "https://doi.org/10.1038/s41586-026-11285-x"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}
