@@ -3,12 +3,12 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [],
  "featured": {
-  "news": 8,
-  "papers": 9
+  "news": 11,
+  "papers": 11
  },
  "items": [
   {
@@ -112,6 +112,36 @@
    "date": "2026-11-11",
    "type": "paper",
    "title": "Modified Newtonian Dynamics and galaxy clusters"
+  },
+  {
+   "id": "2026-11-12-n1",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "Euclid's first major data release maps more than 900 million galaxies and about 15,000 likely gravitational lenses"
+  },
+  {
+   "id": "2026-11-12-n2",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "ESA's Hera begins close-up study of the asteroid pair NASA's DART mission hit in 2022"
+  },
+  {
+   "id": "2026-11-12-n3",
+   "date": "2026-11-12",
+   "type": "news",
+   "title": "The two most notorious \"forever chemicals\" have fallen by about 30% in England's rivers, but replacements are appearing"
+  },
+  {
+   "id": "doi-10-1038-s41567-026-03519-6",
+   "date": "2026-11-12",
+   "type": "paper",
+   "title": "Bound states in the continuum through quantum interference in ultracold atomic collisions"
+  },
+  {
+   "id": "doi-10-1073-pnas-2608514123",
+   "date": "2026-11-12",
+   "type": "paper",
+   "title": "Majorana edge reconstruction and the ν = 5/2 non-Abelian thermal Hall puzzle"
   }
  ]
 }

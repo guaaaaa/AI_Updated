@@ -1,0 +1,234 @@
+{
+ "date": "2026-11-12",
+ "edition": "weekday",
+ "generated_at": "2026-11-12T13:24:09+00:00",
+ "summary": "Euclid's first big data release maps 900 million galaxies, Hera starts inspecting the asteroid DART hit, and England's oldest forever chemicals fall in rivers as replacements spread.",
+ "news": [
+  {
+   "id": "2026-11-12-n1",
+   "story_key": "euclid-dr1-foundation-900m-galaxies",
+   "title": "Euclid's first major data release maps more than 900 million galaxies and about 15,000 likely gravitational lenses",
+   "category": "Space & Astronomy",
+   "published": "2026-11-12T06:08:54-05:00",
+   "tldr": "ESA's Euclid telescope has published its first major data release, covering about 14% of its planned survey, with over 900 million galaxies, 60 million possible quasars and roughly 15,000 probable strong lenses.",
+   "why_selected": "The largest high-resolution sky map yet, and a fifteen-fold jump in strong-lens candidates that could test what dark matter is.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The European Space Agency's Euclid telescope, launched in July 2023, is building a three-dimensional map covering a third of the sky and more than 10 billion years of cosmic history. Its purpose is to study dark energy and dark matter, which are thought to make up about 70% and 25% of the universe. Euclid's selling point is that it combines sharp, Hubble-like resolution with a very wide field, so it can image huge volumes of space in detail."
+    },
+    {
+     "heading": "What happened",
+     "body": "ESA's release schedule lists 12 November 2026 for \"DR1-Foundation\", the first stage of Euclid's first data release, with the full DR1 set for 16 June 2027. According to The Guardian, the data cover about 14% of the sky area Euclid will eventually map and capture more than 900 million galaxies and over 60 million potential quasars, the bright cores of distant galaxies powered by supermassive black holes. Andy Taylor of the University of Edinburgh, who leads the UK science ground segment, called it \"the biggest high-resolution image of the universe we've ever had.\""
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The release contains about 15,000 probable cases of strong gravitational lensing, where a foreground galaxy bends the light of a more distant one into arcs or rings. About 1,000 such systems were known before; some 170,000 are expected by the mission's end. Because lensing depends on how dark matter clumps inside galaxies, a large sample can rule out some theories of what dark matter is. Stephen Serjeant of the Open University said a breakthrough on dark matter could plausibly come from strong lensing, while stressing that this is not certain."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The next release, expected next summer, should add results on how galaxies are distributed and on weak lensing, the subtle distortions that let astronomers map where dark matter sits and compare its statistics with competing models of dark matter and dark energy."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/science/2026/nov/12/european-euclid-mission-reveals-900m-galaxies-secrets-dark-universe"
+    },
+    {
+     "name": "ESA Euclid",
+     "url": "https://www.cosmos.esa.int/web/euclid/data-release-dr1"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n2",
+   "story_key": "hera-arrives-didymos-dimorphos",
+   "title": "ESA's Hera begins close-up study of the asteroid pair NASA's DART mission hit in 2022",
+   "category": "Space & Astronomy",
+   "published": "2026-11-12T04:07:30-05:00",
+   "tldr": "ESA says its Hera spacecraft is now studying the asteroid Didymos and its moonlet Dimorphos from 25 to 30 kilometres away, starting a \"crash site investigation\" of the first asteroid deflection test.",
+   "why_selected": "The first close look at the aftermath of humanity's only asteroid deflection, which turns a one-off experiment into usable planetary defence data.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In September 2022 NASA's Double Asteroid Redirection Test (DART) deliberately crashed into Dimorphos, a moonlet about 151 metres across that orbits the 780-metre asteroid Didymos. The impact shortened Dimorphos's orbit around Didymos and slightly changed the pair's path around the Sun. ESA describes Dimorphos as the first object in the Solar System whose orbit humans have measurably shifted. Rubble and boulders thrown off by the impact added an extra push, and the debris trail stretched more than 10,000 kilometres into space for months."
+    },
+    {
+     "heading": "What happened",
+     "body": "The European Space Agency announced on Wednesday that Hera, launched in October 2024, is now studying the two asteroids from 25 to 30 kilometres away, the Associated Press reported. Next month the car-sized spacecraft is due to move in to about 20 kilometres. ESA officials describe the mission as a \"crash site investigation\". Hera carries 25 science instruments and two shoebox-sized CubeSats that will survey Dimorphos more closely and attempt to land on it. Scientists say some impact debris could still be in the vicinity."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "DART showed that hitting an asteroid can change its orbit, but an impact seen from a distance leaves key quantities uncertain, such as the moonlet's mass and how its surface responded. ESA says Hera's survey during 2026 and 2027 is meant to turn the kinetic-impact test into a well-understood and repeatable technique for defending Earth from potentially hazardous asteroids. Measuring the crater and the moonlet's properties is what allows future missions to predict how hard to hit a threatening object."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The move to about 20 kilometres next month, the first detailed images of the impact site, and the release and landing attempts of the two CubeSats on Dimorphos."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Phys.org (Associated Press)",
+     "url": "https://phys.org/news/2026-11-europe-hera-spacecraft-asteroid-rammed.html"
+    },
+    {
+     "name": "ESA",
+     "url": "https://www.esa.int/Enabling_Support/Operations/Hera_operations"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-n3",
+   "story_key": "england-rivers-pfos-pfoa-decline-ea-report",
+   "title": "The two most notorious \"forever chemicals\" have fallen by about 30% in England's rivers, but replacements are appearing",
+   "category": "Climate & Earth",
+   "published": "2026-11-11T19:01:00-05:00",
+   "tldr": "An Environment Agency report finds PFOS and PFOA concentrations in English rivers fell 30% and 29% over a decade, while short-chain substitutes such as trifluoroacetic acid are now widespread.",
+   "why_selected": "A decade-long national dataset that shows chemical bans work, and also why banning chemicals one at a time falls short.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "PFAS (per- and polyfluoroalkyl substances) are a family of thousands of synthetic chemicals prized for repelling oil and water and used in non-stick coatings, firefighting foam and industrial processes. They are called forever chemicals because they take a very long time to break down. The two best studied, PFOS and PFOA, have been linked to reproductive and developmental harm and other serious health problems. They were restricted under the UN Stockholm Convention from 2009 and 2019, respectively."
+    },
+    {
+     "heading": "What happened",
+     "body": "A new report by England's Environment Agency (EA) finds that concentrations of PFOS and PFOA in English rivers have fallen by 30% and 29% over the past decade, and levels in freshwater fish by 49%. The BBC reports that the agency attributes the decline to the restrictions. But the substances used to replace them, including short-chain PFAS and fluorotelomer compounds, are now detectable in the environment. One of them, trifluoroacetic acid (TFA), which can form when pesticides, refrigerants and drugs break down, is widespread in England. The EA now tests regularly for 60 other PFAS."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The data suggest restrictions do lower environmental levels, but the EA cautions that the total amount of PFOS and PFOA has probably not changed: it has been diluted and washed out to sea. PFOS levels still often exceed the environmental quality standard meant to protect ecosystems. The agency says the findings reinforce the case for regulating PFAS as a group rather than one at a time; the chemicals industry opposes that approach."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the UK follows the EU, which is considering a ban on all PFAS, and new standards being developed for other PFAS beyond PFOS."
+    }
+   ],
+   "sources": [
+    {
+     "name": "New Scientist",
+     "url": "https://www.newscientist.com/article/2598571-some-pfas-chemicals-are-declining-in-english-rivers-but-others-are-appearing/"
+    },
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/cmze75r55g3jo"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41567-026-03519-6",
+   "title": "Bound states in the continuum through quantum interference in ultracold atomic collisions",
+   "authors": [
+    "Alexander Guthmann",
+    "Louisa Marie Kienesberger",
+    "Felix Lang",
+    "Eleonora Lippi",
+    "Artur Widera"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-09T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics"
+   ],
+   "tldr": "Physicists created a molecular state of two lithium atoms that stays bound above the energy at which it should fall apart, by making two collision resonances cancel each other's escape routes.",
+   "why_selected": "First quantum-mechanical realisation of a 1985 proposal for a bound state in the continuum, adding interference as a new way to protect quantum states from loss.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "In quantum mechanics a pair of particles is normally either bound, with energy below a threshold, or free, with energy above it. States above the threshold leak into the \"continuum\" of free motion, which makes loss and decoherence unavoidable. A bound state in the continuum (BIC) is an exception: it sits above the threshold yet stays localised because escape paths cancel."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "BICs have mostly been made in classical wave systems such as photonic crystals, waveguides and acoustics, usually protected by symmetry or geometry. In 1985 Friedrich and Wintgen predicted that two interfering Feshbach resonances, collision resonances where two atoms briefly form a molecule, could produce a BIC between colliding atoms. That mechanism had not been observed in a genuine quantum system."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Alexander Guthmann, Artur Widera and colleagues cooled lithium-6 atoms below 600 nanokelvin and shook the magnetic field periodically, a technique called Floquet engineering, to create an extra Feshbach resonance whose position and width they could tune. Using the modulation frequency as a dial, they brought it near a second resonance. The two resonances share the same exit into free motion, so their leakage can interfere destructively, much like noise-cancelling headphones. At a critical setting the combined state no longer couples to the continuum: a molecule above the dissociation threshold that does not fall apart."
+    },
+    {
+     "heading": "Results",
+     "body": "At that point both elastic and inelastic coupling to the continuum vanished. The team confirmed this three ways: atom-loss spectroscopy, quench dynamics of the cloud, and radio-frequency photoassociation, which probes the molecular wavefunction directly. Full coupled-channel calculations and a minimal two-level non-Hermitian model reproduce the observations quantitatively."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work establishes quantum interference, alongside energy gaps and topology, as a way to shield a state from its environment, and offers a tunable testbed for engineering open quantum systems. It is a demonstration in an ultracold gas; practical uses remain to be shown."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41567-026-03519-6",
+    "doi": "https://doi.org/10.1038/s41567-026-03519-6"
+   },
+   "signals": {
+    "venue": "Nature Physics",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1073-pnas-2608514123",
+   "title": "Majorana edge reconstruction and the ν = 5/2 non-Abelian thermal Hall puzzle",
+   "authors": [
+    "Tevž LotričTaige WangMichael P. ZaletelSteven H. SimonS. A. ParameswaranaRudolf Peierls Centre for Theoretical Physics",
+    "Oxford OX1 3PU",
+    "United Kingdombhttps://ror.org/01an7q238Department of Physics",
+    "University of California at Berkeley",
+    "Berkeley",
+    "CA 94720chttps://ror.org/02jbv0t02Material Science Division",
+    "Lawrence Berkeley National Laboratory",
+    "Berkeley",
+    "CA 94720dhttps://ror.org/03vek6s52Department of Physics",
+    "Harvard University",
+    "Cambridge",
+    "MA 02138ehttps://ror.org/042nb2s44Materials Research Laboratory",
+    "Massachusetts Institute of Technology",
+    "Cambridge",
+    "MA 02139"
+   ],
+   "affiliations": [
+    "Rudolf Peierls Centre for Theoretical Physics",
+    "University of Oxford; Department of Physics",
+    "University of California at Berkeley"
+   ],
+   "announced": "2026-11-05T00:00:00-05:00",
+   "primary_tag": "Condensed matter & materials",
+   "tags": [
+    "Condensed matter & materials",
+    "Quantum physics"
+   ],
+   "tldr": "Theorists propose that the edge of the 5/2 quantum Hall state reorganises itself into stripes, which would reconcile a long-running clash between heat-flow experiments and numerical predictions.",
+   "why_selected": "A natural, untuned explanation for a central puzzle about a leading candidate platform for non-Abelian anyons.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "When electrons in a thin layer are chilled in a strong magnetic field, they can form exotic liquids. At the \"filling factor\" 5/2, the liquid is expected to host non-Abelian anyons, particles with a memory of how they are braided around each other, which are candidates for robust quantum computing. Which of three candidate states actually forms has been disputed."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most numerical studies favour states called the Pfaffian or the AntiPfaffian. Yet a series of thermal Hall measurements, which count heat-carrying modes at the sample edge, consistently match a third state, the PH-Pfaffian. Earlier proposed fixes either assumed edge modes failed to reach equilibrium, an idea challenged by later experiments, or invoked disorder-induced puddles in the bulk that require fine-tuning."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Tevž Lotrič, Taige Wang, Michael Zaletel, Steven Simon and S. A. Parameswaran used density-matrix renormalisation group simulations of realistic edges. They found strong density oscillations reaching about 40 magnetic lengths into the liquid, with alternating stripes of Pfaffian and AntiPfaffian character near the edge. Each boundary between stripes carries four Majorana modes, neutral excitations that carry heat but no charge. Like a layer of insulation hiding the wall behind it, scattering between these modes produces an edge that looks like the PH-Pfaffian whichever state fills the bulk."
+    },
+    {
+     "heading": "Results",
+     "body": "Analytic calculations show the screening works over a wide range of physically reasonable parameters, without fine-tuning. Heat-flow measurements at the edge are insensitive to compensating modes that end up deep in the bulk, so experiments would read PH-Pfaffian values. With reasonable assumptions, the model also explains how the measured signal scales with temperature."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If correct, theory and experiment need not disagree, and the bulk may still be Pfaffian or AntiPfaffian. That matters for interferometry experiments designed to detect non-Abelian braiding. The proposal is theoretical and awaits experimental tests that can see past the edge."
+    }
+   ],
+   "links": {
+    "paper": "https://www.pnas.org/doi/abs/10.1073/pnas.2608514123",
+    "doi": "https://doi.org/10.1073/pnas.2608514123"
+   },
+   "signals": {
+    "venue": "PNAS",
+    "tier": "major"
+   }
+  }
+ ]
+}
