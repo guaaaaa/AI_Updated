@@ -1,5 +1,55 @@
 [
  {
+  "id": "2026-11-13-n1",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "A Microsoft 365 outage tied to Exchange Online knocks out email, Teams and Copilot for more than 12 hours",
+  "tldr": "Microsoft 365 services that depend on Exchange Online failed worldwide from Thursday afternoon, and Microsoft's fixes had not brought sustained recovery more than 12 hours later.",
+  "category": "Software & Platforms",
+  "byline": "BleepingComputer, The Register"
+ },
+ {
+  "id": "2026-11-13-n2",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "Apache patches a critical HTTP/2 flaw in its web server that could let attackers run code remotely",
+  "tldr": "Apache HTTP Server 2.4.71 fixes a critical race condition in its HTTP/2 module that could let an unauthenticated attacker run code on servers that have HTTP/2 switched on.",
+  "category": "Cybersecurity",
+  "byline": "Apache HTTP Server Project, BleepingComputer"
+ },
+ {
+  "id": "2026-11-13-n3",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "Police in nine countries seize 235 servers behind the Gootloader, CastleRAT and StealC malware",
+  "tldr": "An Operation Endgame action coordinated by Europol took down 235 servers and 257 domains used by three malware families and found about 6.4 million stolen credentials.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, The Record"
+ },
+ {
+  "id": "2026-11-13-n4",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "Google opens pre-orders for its first Gemini smart glasses, made with Warby Parker, Gentle Monster and Samsung",
+  "tldr": "Google's camera-equipped \"intelligent eyewear,\" starting at $395, is up for pre-order ahead of a December 10 launch, with privacy limits such as a tamper-checked recording light.",
+  "category": "Consumer Tech & Devices",
+  "byline": "Google, Ars Technica"
+ },
+ {
+  "id": "2611.12098",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "A Universal Fault-Tolerant Quantum Computing Architecture with Globally Driven Atom Arrays",
+  "tldr": "A design for neutral-atom quantum computers that picks which qubits to operate on by moving helper atoms, letting simple global laser and microwave pulses run error-corrected computation in simulation.",
+  "primary_tag": "Quantum computing",
+  "tags": [
+   "Quantum computing"
+  ],
+  "byline": "Zhihao Zhang, Shuaifan Cao, Xinyang Yu et al. · Fudan University",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-12-n1",
   "date": "2026-11-12",
   "type": "news",

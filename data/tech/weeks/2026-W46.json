@@ -3,13 +3,19 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [
   {
    "title": "France blames Iran for ‘unprecedented’ supermarket fridge cyberattack",
    "outlets": 14,
    "date": "2026-11-09",
+   "covered": null
+  },
+  {
+   "title": "Google’s Pixel Tag tracker is now available",
+   "outlets": 9,
+   "date": "2026-11-10",
    "covered": null
   },
   {
@@ -20,14 +26,14 @@
   },
   {
    "title": "Nvidia CEO Jensen Huang summoned by Congress over Chinese espionage concerns",
-   "outlets": 6,
+   "outlets": 7,
    "date": "2026-11-06",
    "covered": null
   },
   {
-   "title": "Google’s Pixel Tag tracker is now available",
-   "outlets": 6,
-   "date": "2026-11-10",
+   "title": "Microsoft Outlook is still down",
+   "outlets": 7,
+   "date": "2026-11-12",
    "covered": null
   },
   {
@@ -47,17 +53,11 @@
    "outlets": 4,
    "date": "2026-11-11",
    "covered": null
-  },
-  {
-   "title": "Three workers die at Tata's India iPhone parts factory in latest safety incident",
-   "outlets": 3,
-   "date": "2026-11-10",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 12,
-  "papers": 2
+  "news": 16,
+  "papers": 3
  },
  "items": [
   {
@@ -143,6 +143,36 @@
    "date": "2026-11-12",
    "type": "paper",
    "title": "Machine-learning decoders for fusion-based quantum computing in real time"
+  },
+  {
+   "id": "2026-11-13-n1",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "A Microsoft 365 outage tied to Exchange Online knocks out email, Teams and Copilot for more than 12 hours"
+  },
+  {
+   "id": "2026-11-13-n2",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "Apache patches a critical HTTP/2 flaw in its web server that could let attackers run code remotely"
+  },
+  {
+   "id": "2026-11-13-n3",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "Police in nine countries seize 235 servers behind the Gootloader, CastleRAT and StealC malware"
+  },
+  {
+   "id": "2026-11-13-n4",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "Google opens pre-orders for its first Gemini smart glasses, made with Warby Parker, Gentle Monster and Samsung"
+  },
+  {
+   "id": "2611.12098",
+   "date": "2026-11-13",
+   "type": "paper",
+   "title": "A Universal Fault-Tolerant Quantum Computing Architecture with Globally Driven Atom Arrays"
   }
  ]
 }

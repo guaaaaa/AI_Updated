@@ -1,0 +1,213 @@
+{
+ "date": "2026-11-13",
+ "edition": "weekday",
+ "generated_at": "2026-11-13T11:47:25+00:00",
+ "summary": "A long Microsoft 365 outage, a critical Apache web server fix, a police strike on malware infrastructure and Google's first smart glasses go on pre-order.",
+ "news": [
+  {
+   "id": "2026-11-13-n1",
+   "story_key": "microsoft-365-exchange-outage-nov-2026",
+   "title": "A Microsoft 365 outage tied to Exchange Online knocks out email, Teams and Copilot for more than 12 hours",
+   "category": "Software & Platforms",
+   "published": "2026-11-12T13:32:00-05:00",
+   "tldr": "Microsoft 365 services that depend on Exchange Online failed worldwide from Thursday afternoon, and Microsoft's fixes had not brought sustained recovery more than 12 hours later.",
+   "why_selected": "A global outage of the email and collaboration platform many organizations rely on, lasting well into a second working day.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Microsoft 365 is the company's bundle of cloud office services. Exchange Online, its hosted email system, sits underneath much of it: Outlook mail, calendars, Teams meetings and the Copilot assistant all reach into it. When Exchange Online struggles, the problem spreads to every service that depends on it, which is why a single backend fault can stop work at a very large number of organizations at once."
+    },
+    {
+     "heading": "What happened",
+     "body": "Microsoft says the incident began on Thursday at 1:26 PM ET. In an admin advisory, MO1550821, it confirmed that customers might be unable to reach Exchange Online, Teams, SharePoint Online, Microsoft 365 Copilot and Defender XDR, and that users in any region could be affected. Microsoft first blamed elevated load, then said the load was not caused by more traffic but by a number of servers unexpectedly becoming unavailable and straining the rest. It paused deployments, moved traffic and restarted servers. By Thursday evening it reported limited recovery. According to The Register, the outage had passed 12 hours by Friday morning, with Microsoft reporting virtual machines stuck in a bad state and saying it had no indication of malicious activity."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The outage shows how concentrated work tools have become. A failure in one email backend took down meetings, file sharing, an AI assistant and a security product at the same time, and Australian users were already calling Friday the \"Microsoft long weekend.\" It also shows the limits of quick fixes at cloud scale: several of Microsoft's early remedies did not give the expected relief, and a separate Teams messaging incident had hit the Americas earlier on Thursday. For IT teams, it is a reminder to have fallback communication channels and to track the provider's status feed rather than its status page alone, since The Register notes the page shows only the latest update."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Microsoft publishes a root-cause report explaining why the servers failed, whether the recent configuration changes Microsoft considered reverting played a role, and how long the gradual recovery takes."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/saas/2026/11/13/microsofts-massive-m365-outage-stretches-past-12-hours-as-its-fixes-keep-failing/5309609"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-n2",
+   "story_key": "apache-httpd-mod-http2-cve-2026-119618",
+   "title": "Apache patches a critical HTTP/2 flaw in its web server that could let attackers run code remotely",
+   "category": "Cybersecurity",
+   "published": "2026-11-11T12:00:00-05:00",
+   "tldr": "Apache HTTP Server 2.4.71 fixes a critical race condition in its HTTP/2 module that could let an unauthenticated attacker run code on servers that have HTTP/2 switched on.",
+   "why_selected": "A critical, remotely reachable flaw in web server software that runs a large share of the internet's websites.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Apache HTTP Server is free, open-source software that answers requests from browsers and serves web pages and images; BleepingComputer cites estimates that it backs roughly one in five websites. HTTP/2 is a newer version of the web's basic protocol that lets a browser send many requests over one connection. Apache supports it through an optional module called mod_http2, which is off by default."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 11 the Apache project released version 2.4.71, which fixes three vulnerabilities. The most serious, CVE-2026-119618, is rated critical. It is a race condition, a bug where two threads touch shared data without proper coordination, in the assign_headers function of mod_http2, and it can corrupt heap memory and lead to remote code execution. It affects versions 2.4.55 through 2.4.70 and the standalone mod_h2 module versions 2.0.8 through 2.0.42. Apache credits Anthropic's OSS Scanner and two researchers from Google Cloud Vulnerability Research. The release also fixes an important crash bug in mod_md and a low-severity flaw in mod_vhost_alias."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "An attacker who succeeds could run commands with the web server's privileges without logging in. Cloud security firm Wiz told BleepingComputer that 64% of cloud environments contain vulnerable resources and about half of those have publicly exposed instances, although those figures do not account for whether HTTP/2 is enabled. Wiz said it knew of no public exploits or attacks yet, and the security firm watchTowr advised administrators to \"patch now or drop h2 until you can.\""
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Linux distributions and hosting providers ship the update quickly, and whether attacks appear; Wiz cautioned that the lack of known exploits could change soon."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Apache HTTP Server Project",
+     "url": "https://httpd.apache.org/security/vulnerabilities_24.html"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-n3",
+   "story_key": "operation-endgame-gootloader-castlerat-stealc",
+   "title": "Police in nine countries seize 235 servers behind the Gootloader, CastleRAT and StealC malware",
+   "category": "Cybersecurity",
+   "published": "2026-11-12T10:07:00-05:00",
+   "tldr": "An Operation Endgame action coordinated by Europol took down 235 servers and 257 domains used by three malware families and found about 6.4 million stolen credentials.",
+   "why_selected": "A broad international takedown of tools that feed ransomware attacks, with stolen data being returned to victims.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Many cyberattacks start with commodity malware sold as a service. Gootloader is a loader, a program that sneaks onto a machine and installs other malware, active since 2020. StealC is an infostealer that takes passwords and cryptocurrency wallets, and CastleRAT is a remote access trojan that lets criminals control infected computers. All three have been used by ransomware gangs. Operation Endgame is a long-running international police effort against such services."
+    },
+    {
+     "heading": "What happened",
+     "body": "Europol said this week's action, with police from Bulgaria, Canada, Denmark, Germany, Moldova, the Netherlands, Poland, the UK and the US and coordination by Europol and Eurojust, seized 257 domains and 235 servers with help from private-sector partners. Investigators found about 6.4 million stolen credentials; The Record reports they came from more than 40,000 victims. It is the second takedown of StealC infrastructure this year after an operation in June. German police said the rebuilt network had been traced to Virtualine, a bulletproof hosting provider, meaning a host that ignores abuse complaints, which the FBI seized in October. The Record reports no arrests, cryptocurrency seizures or charges accompanied this round."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Taking down the infrastructure behind loaders and stealers cuts off one of the earliest steps in ransomware attacks, and stolen credentials are being shared with services such as Have I Been Pwned so victims can find out and reset passwords. The quick return of StealC after June also shows the limits of server seizures without arrests: operators can rebuild, though German officials said each rebuild leaves new leads."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the three operations reappear on new hosting, whether arrests follow, and how many people learn of exposed passwords through the notification services."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/"
+    },
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/european-authorities-take-down-stealic-malware-second-time"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-n4",
+   "story_key": "google-intelligent-eyewear-preorders",
+   "title": "Google opens pre-orders for its first Gemini smart glasses, made with Warby Parker, Gentle Monster and Samsung",
+   "category": "Consumer Tech & Devices",
+   "published": "2026-11-12T09:00:00-05:00",
+   "tldr": "Google's camera-equipped \"intelligent eyewear,\" starting at $395, is up for pre-order ahead of a December 10 launch, with privacy limits such as a tamper-checked recording light.",
+   "why_selected": "Google's return to smart glasses, a new device category from a major platform company, with notable privacy rules.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Smart glasses have faced doubts about comfort and privacy since the Google Glass days. Meta's Ray-Ban glasses, on the market for a few years, use a simpler design: no screens in the lenses, just a camera, microphones and speakers linked to an AI assistant. Google previewed its own plans several times before this launch, which it built with eyewear brands and Samsung."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 12 Google opened pre-orders for \"intelligent eyewear\" ahead of a December 10 launch. Warby Parker offers three frames, Alden, Reid and Wren, from $395 in the US; Gentle Monster offers six styles from $449 in the US and South Korea. Samsung supplies the computing hardware and Google the software. The frames weigh about 41 grams and have a 12-megapixel camera, open-ear speakers and up to nine hours of battery life, and they work with Pixel, Samsung and iPhone handsets. There is no display; users talk to the Gemini assistant by voice or by tapping the frame, for directions, translation in more than 70 languages and spoken descriptions of what the camera sees."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Glasses with cameras raise concerns for people being filmed, and Google is leading with safeguards. A recording light turns on whenever the camera runs; according to Ars Technica, the glasses refuse to use the camera if the light is covered or altered, and every pair has a physical off switch. The terms of use forbid recording people without consent, and Google may remotely disable glasses that break the rules. Ars Technica also notes that the device's usefulness rests on an assistant that still makes mistakes, which is harder to catch without a screen."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Final prices once prescription lenses are added, early reviews after December 10, and whether the privacy rules hold up in practice."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google",
+     "url": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.12098",
+   "title": "A Universal Fault-Tolerant Quantum Computing Architecture with Globally Driven Atom Arrays",
+   "authors": [
+    "Zhihao Zhang",
+    "Shuaifan Cao",
+    "Xinyang Yu",
+    "Yanyan Chen",
+    "Yueyang Min",
+    "Yingzhou Li",
+    "Zhongcheng Yu",
+    "Lei Feng",
+    "Xiaopeng Li"
+   ],
+   "affiliations": [
+    "Fudan University"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Quantum computing",
+   "tags": [
+    "Quantum computing"
+   ],
+   "tldr": "A design for neutral-atom quantum computers that picks which qubits to operate on by moving helper atoms, letting simple global laser and microwave pulses run error-corrected computation in simulation.",
+   "why_selected": "A concrete proposal to simplify control hardware for fault-tolerant quantum computers, with simulated error-correction results under a hardware-based noise model.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Neutral-atom quantum computers hold qubits in individual atoms trapped by laser \"tweezers.\" Scaling them up needs both programmability, meaning the ability to act on chosen qubits, and simple, high-fidelity control. Pointing a separate focused laser at each atom gives programmability, but every beam must be built and calibrated, which becomes a burden as machines grow."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Global pulses, which hit every atom at once with the same microwave or laser signal, are simple and accurate but cannot by themselves single out one qubit. Most designs therefore combine global pulses with locally addressed beams for selected atoms, keeping the calibration burden, and conventional implementations of magic state cultivation, a key error-correction step, rely on sequences of locally addressed operations."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors use two atomic species. Stationary cesium atoms store the data, while mobile rubidium atoms, moved by tweezers, act either as helpers for error checks or as \"addressors.\" Because the two species respond to different frequencies, global pulses can drive each separately. A global Rydberg pulse, which excites atoms into a strongly interacting state, only produces a two-qubit gate between atoms that sit close together. So moving a rubidium atom next to a chosen cesium atom selects it, with no local beam needed. The team packages this into an instruction set called GRAIL, with five families of operations: global rotations, shuttling, global Rydberg pulses, reset and measurement. They then compile surface-code error correction and magic state cultivation, a way to prepare the special states needed for universal computation, into GRAIL."
+    },
+    {
+     "heading": "Results",
+     "body": "In simulations with a noise model inferred from hardware, crosstalk on idle atoms was below 0.1% at a Rydberg drive strength of 12 MHz, and the abstract reports it can be suppressed to the 10^-4 level. The quantum memory showed an error-correction threshold of 1.43%. At 2.38 MHz, raising the code distance by two cut logical errors by a factor of about 8.76, and extrapolation suggests a distance-17 code could fall below 10^-9."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If it works on real hardware, replacing per-atom laser addressing with atom movement could remove a large calibration burden from scaling neutral-atom machines. The main caveat is that every result here comes from simulation and extrapolation, not from a running device."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12098"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 2
+   }
+  }
+ ]
+}
