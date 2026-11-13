@@ -1,7 +1,7 @@
 {
  "date": "2026-11-13",
  "edition": "weekday",
- "generated_at": "2026-11-13T14:23:30+00:00",
+ "generated_at": "2026-11-13T14:24:11+00:00",
  "summary": "A papers-only day: a calibration-proof re-imaging of the M87 black hole shadow, a 3.95-billion-year-old rock that points to very early subduction, and bendable rubber blades for tidal turbines.",
  "news": [],
  "papers": [
@@ -25,7 +25,7 @@
    "sections": [
     {
      "heading": "Problem",
-     "body": "In 2019 the Event Horizon Telescope collaboration published the first image of a black hole shadow: a bright ring around the supermassive black hole at the centre of the galaxy Messier 87, called M87*. But different analyses of the same data produced different fine details, and some outside groups even questioned whether the ring shape itself was real."
+     "body": "The Event Horizon Telescope collaboration published the first image of a black hole shadow: a bright ring around the supermassive black hole at the centre of the galaxy Messier 87, called M87*. But different analyses of the same data produced different fine details, and some outside groups even questioned whether the ring shape itself was real."
     },
     {
      "heading": "Existing approaches",
@@ -33,7 +33,7 @@
     },
     {
      "heading": "Key idea",
-     "body": "The authors built a new imaging algorithm that avoids both weak points. First, it does not assume any expected shape, such as a ring, in advance. Second, it uses only quantities that are immune to instrument calibration errors. A useful analogy: if every microphone in a room had an unknown volume setting, you could still compare certain combinations of their recordings in which those unknown settings cancel out. Interferometry has such combinations, built from groups of three or more dishes, and they describe the source's structure regardless of how each dish is calibrated. By reconstructing the image from these combinations alone, the method gives a check on the original result that shares none of its calibration assumptions."
+     "body": "The authors built a new imaging algorithm that avoids both weak points. First, it does not assume any expected shape, such as a ring, in advance. Second, it uses only quantities that are immune to instrument calibration errors. A useful analogy: if every microphone in a room had an unknown volume setting, you could still compare certain combinations of their recordings in which those unknown settings cancel out. Interferometry has such observables, and they describe the source's structure regardless of how each dish is calibrated. By reconstructing the image from these combinations alone, the method gives a check on the original result that shares none of its calibration assumptions."
     },
     {
      "heading": "Results",
@@ -82,11 +82,11 @@
     },
     {
      "heading": "Existing approaches",
-     "body": "The Acasta rocks, about 4.0 billion years old, are thought to have formed at low pressure, consistent with crust melting near the surface rather than deep burial. Clues about this era also come from zircon, a tough mineral that survives erosion and records the age and chemistry of the magma it grew in."
+     "body": "The Acasta rocks, about 4.0 billion years old, are thought to have formed at low pressure, consistent with crust melting near the surface rather than deep burial. Clues about this era also come from zircon, a mineral whose crystals record the age and isotopic chemistry of the magma they grew in."
     },
     {
      "heading": "Key idea",
-     "body": "The team reports a newly discovered trondhjemitic gneiss, a light-coloured, banded rock, from eastern Hebei in the North China Craton, dated to 3.95 billion years from its zircon crystals. Two chemical fingerprints in the zircon tell the story. Its oxygen isotopes are elevated, which points to a source rock that had been altered by water at low temperature, like basalt on the seafloor. Its hafnium isotopes are positive, indicating that this basalt originally came from mantle already depleted by earlier melting during the Hadean, Earth's first eon. Unlike Acasta, the rock carries chemical signs of a high-pressure origin."
+     "body": "The team reports a newly discovered trondhjemitic gneiss, a type of granite-like metamorphic rock, from eastern Hebei in the North China Craton, dated to 3.95 billion years from its zircon crystals. Two chemical fingerprints in the zircon tell the story. Its oxygen isotopes are elevated, which points to a source rock that had been altered by water at low temperature, like basalt on the seafloor. Its hafnium isotopes are positive, indicating that this basalt originally came from mantle already depleted by earlier melting during the Hadean, Earth's first eon. Unlike Acasta, the rock carries chemical signs of a high-pressure origin."
     },
     {
      "heading": "Results",
@@ -130,7 +130,7 @@
    "sections": [
     {
      "heading": "Problem",
-     "body": "Tidal power is unusually predictable for a renewable energy source, because tides follow the Moon and Sun. But the sea is rough: turbulence and waves hammer turbine blades with rapidly fluctuating forces. These loads raise building and maintenance costs and wear out parts through fatigue, the gradual damage caused by repeated stress."
+     "body": "Tidal power is a uniquely predictable and substantial renewable energy resource. But the sea is rough: turbulence and waves hammer turbine blades with rapidly fluctuating forces. These loads raise building and maintenance costs and wear out parts through fatigue, the gradual damage caused by repeated stress."
     },
     {
      "heading": "Existing approaches",
@@ -146,7 +146,7 @@
     },
     {
      "heading": "Why it matters",
-     "body": "If the result holds at full scale, tidal turbines could become simpler, more durable and cheaper to run. The caveat is that these were laboratory experiments under simulated conditions; long-term rubber durability in seawater remains to be shown."
+     "body": "If the result holds at full scale, tidal turbines could become simpler, more durable and cheaper to run. The caveat is that these were laboratory experiments under simulated conditions; performance and durability in real seas over years remain to be shown."
     }
    ],
    "links": {
