@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 13 Nov 2026 14:24:11 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 15:38:44 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>The American Cancer Society now recommends regular PSA screening for prostate cancer, every two years from age 50</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/2026-11-13-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/2026-11-13-n1</guid>
+    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
+    <category>Biology / Public Health</category>
+    <description>The American Cancer Society's new guideline recommends a PSA blood test every two years for average-risk men aged 50 to 69, and yearly from 45 for Black men and men with strong family history. (American Cancer Society, The New York Times)</description>
+  </item>
+  <item>
+    <title>FDA approves pimicotinib, a once-daily pill, for joint tumors that are hard to remove surgically</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/2026-11-13-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/2026-11-13-n2</guid>
+    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
+    <category>Biology / Drugs &amp; Approvals</category>
+    <description>The FDA approved EMD Serono's pimicotinib for symptomatic tenosynovial giant cell tumor after a placebo-controlled trial in which 56% of treated patients responded, against 3.2% on placebo. (FDA, HMP Global Oncology)</description>
+  </item>
+  <item>
+    <title>Intismeran Autogene plus Pembrolizumab for Resected Stage IIB to IV Melanoma</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1056-nejmoa2609762</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1056-nejmoa2609762</guid>
+    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
+    <category>Biology / Oncology</category>
+    <description>In a phase 3 trial of 1,137 people with resected high-risk melanoma, adding a personalized mRNA therapy to pembrolizumab raised two-year recurrence-free survival from 70.0% to 82.2%. (Georgina V. Long Muhammad A. Khattak Helen J. Gogas Dirk Schadendorf Ana Arance Matteo S. Carlino Piotr Rutkowski Gareth Rivalland Antoni Ribas Janice M. Mehnert Patrick A. Ott Reinhard Dummer Paola Queirolo Christoffer Gebhardt Caroline Dutriaux Carlos Rojas Yuanbin Chen Lisa M. Tachiki Ronnie Shapira-Frommer Oliver Bechter Ryan J. Sullivan Alexander M.M. Eggermont Laureen S. Ojalvo Michelle Brown Jinchun Zhang Dmitri O. Grebennik Mizuho Fukunaga-Kalabis Paolo A. Ascierto and Michele Del Vecchiothe INTerpath-001 Investigators* · Melanoma Institute Australia)</description>
+  </item>
+  <item>
+    <title>Cross-species multiomic atlas of the primate basal ganglia</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1016-j-cell-2026-10-012</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1016-j-cell-2026-10-012</guid>
+    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
+    <category>Biology / Neuroscience</category>
+    <description>A cell-by-cell atlas of 1.8 million nuclei from human, macaque and marmoset basal ganglia finds 61 cell types conserved over 76 million years and maps psychiatric and neurodegenerative risk onto specific cells. (Nelson J. Johansen, Yuanyuan Fu, Matthew Schmitz et al. · Allen Institute)</description>
+  </item>
+  <item>
+    <title>Suppression of epithelial proliferation and tumorigenesis by IgA</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1038-s41586-026-11264-2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1038-s41586-026-11264-2</guid>
+    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
+    <category>Biology / Immunology</category>
+    <description>In mice, the gut antibody IgA slows the renewal of the colon lining through a surface protein called DMBT1, and its absence raises susceptibility to colorectal tumors. (Gregory P. Donaldson, Gabriella Lima dos Reis, Marwa Saad et al. · The Rockefeller University)</description>
+  </item>
   <item>
     <title>Independent interferometric observable confirms black hole shadow in M87*</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11241-9</link>
@@ -446,46 +486,6 @@
     <pubDate>Wed, 11 Nov 2026 12:45:35 +0000</pubDate>
     <category>Business / Economy &amp; Data</category>
     <description>The US consumer price index rose 0.4% in October, above the 0.3% analysts expected but slower than September's 0.6%, as energy price increases eased. (The Guardian, BBC News)</description>
-  </item>
-  <item>
-    <title>Bank of Canada notes show it hiked because energy costs were starting to spread, and it may go further</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-11/2026-11-11-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-11/2026-11-11-n2</guid>
-    <pubDate>Wed, 11 Nov 2026 12:45:35 +0000</pubDate>
-    <category>Business / Central Banks &amp; Rates</category>
-    <description>The Bank of Canada's summary of its October 28 deliberations shows officials raised the rate to 2.5% to stop high energy prices becoming broad inflation and did not rule out more hikes. (Bank of Canada)</description>
-  </item>
-  <item>
-    <title>Boeing to cut about 5% of its commercial airplane workforce as it slows its production ramp-up</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-11/2026-11-11-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-11/2026-11-11-n3</guid>
-    <pubDate>Wed, 11 Nov 2026 12:45:35 +0000</pubDate>
-    <category>Business / Labor &amp; Workplace</category>
-    <description>Boeing will cut roughly 5% of its commercial airplane staff through layoffs and attrition after slowing plans to raise jet output, with layoff notices starting in December. (The Guardian, KIRO 7 News)</description>
-  </item>
-  <item>
-    <title>Children's Place files for bankruptcy and puts its kidswear brands up for sale</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-11/2026-11-11-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-11/2026-11-11-n4</guid>
-    <pubDate>Wed, 11 Nov 2026 12:45:35 +0000</pubDate>
-    <category>Business / Consumer &amp; Retail</category>
-    <description>Children's Place, owner of the Gymboree brand, filed for Chapter 11 bankruptcy protection and set a December 9 deadline for bids on its assets after falling sales and mounting losses. (The Globe and Mail, FashionUnited)</description>
-  </item>
-  <item>
-    <title>Unconventional Monetary Policy and Deposit Retention</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-11/nber-w35985</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-11/nber-w35985</guid>
-    <pubDate>Wed, 11 Nov 2026 12:45:35 +0000</pubDate>
-    <category>Business / Banking &amp; credit</category>
-    <description>Years of zero interest rates and Fed bond buying filled US banks with rate-sensitive depositors, which made keeping deposits costlier and riskier once rates rose in 2015 and 2022. (Philip Strahan, Tuo Yang · Boston College)</description>
-  </item>
-  <item>
-    <title>Google opens Gemini 4 Carbon to all paying developers and Ultra subscribers, with an agent "swarm" preview</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n1</guid>
-    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Two weeks after a defenders-only debut, Google's strongest model, Gemini 4 Carbon, is available through the API and to AI Ultra subscribers at $2/$10 per million tokens, alongside a multi-agent "/swarm" preview. (Google DeepMind, The Verge)</description>
   </item>
 </channel>
 </rss>

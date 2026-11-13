@@ -3,12 +3,12 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
    "title": "FDA Slaps New Safety Warning on GLP-1 Drugs",
-   "outlets": 12,
+   "outlets": 13,
    "date": "2026-11-09",
    "covered": "2026-11-10-n1"
   },
@@ -17,11 +17,17 @@
    "outlets": 3,
    "date": "2026-11-06",
    "covered": null
+  },
+  {
+   "title": "Pfizer Signs $1.5 Billion Deal With Blackstone to Fund Weight-Loss-Drug Development",
+   "outlets": 3,
+   "date": "2026-11-11",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 6,
-  "papers": 7
+  "news": 8,
+  "papers": 10
  },
  "items": [
   {
@@ -101,6 +107,36 @@
    "date": "2026-11-12",
    "type": "paper",
    "title": "Human land use drives microplastic abundance in terrestrial wildlife"
+  },
+  {
+   "id": "2026-11-13-n1",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "The American Cancer Society now recommends regular PSA screening for prostate cancer, every two years from age 50"
+  },
+  {
+   "id": "2026-11-13-n2",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "FDA approves pimicotinib, a once-daily pill, for joint tumors that are hard to remove surgically"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2609762",
+   "date": "2026-11-13",
+   "type": "paper",
+   "title": "Intismeran Autogene plus Pembrolizumab for Resected Stage IIB to IV Melanoma"
+  },
+  {
+   "id": "doi-10-1016-j-cell-2026-10-012",
+   "date": "2026-11-13",
+   "type": "paper",
+   "title": "Cross-species multiomic atlas of the primate basal ganglia"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11264-2",
+   "date": "2026-11-13",
+   "type": "paper",
+   "title": "Suppression of epithelial proliferation and tumorigenesis by IgA"
   }
  ]
 }

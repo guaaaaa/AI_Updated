@@ -1,0 +1,279 @@
+{
+ "date": "2026-11-13",
+ "edition": "weekday",
+ "generated_at": "2026-11-13T15:38:44+00:00",
+ "summary": "The American Cancer Society reverses course on PSA screening, the FDA approves an oral pill for a rare joint tumor, and papers on a personalized mRNA melanoma therapy, a primate basal ganglia atlas and an anti-tumor role for gut IgA.",
+ "news": [
+  {
+   "id": "2026-11-13-n1",
+   "story_key": "acs-prostate-psa-screening-guideline-2026",
+   "title": "The American Cancer Society now recommends regular PSA screening for prostate cancer, every two years from age 50",
+   "category": "Public Health",
+   "published": "2026-11-12T07:00:00-05:00",
+   "tldr": "The American Cancer Society's new guideline recommends a PSA blood test every two years for average-risk men aged 50 to 69, and yearly from 45 for Black men and men with strong family history.",
+   "why_selected": "A major cancer body reverses a long-debated screening stance, citing new evidence on deaths prevented and on ways to limit overtreatment.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Prostate cancer is the second leading cause of cancer death in US men; the American Cancer Society (ACS) estimates 333,830 diagnoses and 36,320 deaths in 2026. Screening relies on the prostate-specific antigen (PSA) blood test. Its value has long been disputed: evidence of benefit was limited, and treating slow-growing cancers that may never cause problems carries well-documented harms. The previous ACS guideline, from 2010, made no direct recommendation for regular screening and instead advised shared decision-making."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 12 the ACS published an updated guideline in its journal CA: A Cancer Journal for Clinicians. Drawing on a systematic review and a modeling study, it recommends PSA-based screening every two years for average-risk men aged 50 to 69, and yearly screening from 45 to 69 for Black men and for men with a strong family history (a first-degree relative diagnosed before 65, or several affected first-degree relatives). For men aged 45 to 69, a PSA of 3.0 ng/mL or higher should be repeated within two weeks to three months; if it stays high, men should be offered MRI or a validated biomarker test before any biopsy. Screening is individualized at 70 to 74 and not recommended from 75 or from 80, and low-risk cancers should be managed first with active surveillance."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "\"This is truly a reversal,\" Philipp Dahm, a University of Minnesota urologist not involved in the guideline, told The New York Times. The ACS says evidence is now stronger that PSA screening reduces prostate cancer deaths and diagnoses of advanced disease, and that newer steps after an abnormal result, such as MRI, biomarkers and monitoring instead of immediate treatment, reduce unnecessary biopsies and treatment. It also targets a disparity: Black men have 67% higher incidence and nearly double the death rate of White men, according to ACS chief scientific officer William Dahut. The guideline describes recommendations for clinicians and patients to discuss; it is not individual advice."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The ACS calls this a \"living guideline\" that will be updated as evidence changes. Its advocacy arm is pushing for coverage of screening and follow-up tests without cost sharing."
+    }
+   ],
+   "sources": [
+    {
+     "name": "American Cancer Society",
+     "url": "https://pressroom.cancer.org/prostate-cancer-screening-guideline-update-2026"
+    },
+    {
+     "name": "The New York Times",
+     "url": "https://www.nytimes.com/2026/11/12/well/prostate-cancer-screening-guideline.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-n2",
+   "story_key": "fda-pimicotinib-pimjetmi-tgct-approval",
+   "title": "FDA approves pimicotinib, a once-daily pill, for joint tumors that are hard to remove surgically",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-10T13:35:00-05:00",
+   "tldr": "The FDA approved EMD Serono's pimicotinib for symptomatic tenosynovial giant cell tumor after a placebo-controlled trial in which 56% of treated patients responded, against 3.2% on placebo.",
+   "why_selected": "A regulatory decision giving patients for whom surgery is risky a new oral treatment, backed by a randomized, double-blind phase 3 trial.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Tenosynovial giant cell tumor (TGCT) affects joints, limiting their movement and causing pain. For some patients, removing it surgically may worsen how the joint works or cause serious complications. Pimicotinib is an oral drug that blocks the colony stimulating factor-1 receptor (CSF-1R), a receptor through which a signalling molecule called colony stimulating factor-1 acts; the FDA classes it as a kinase inhibitor."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 10 the FDA approved pimicotinib (brand name Pimjetmi, from EMD Serono) for adults with symptomatic TGCT for whom surgery may cause worsening functional limitation or severe morbidity. The decision rests on MANEUVER, an international, double-blind trial that randomly assigned patients 2:1 to 50 mg of pimicotinib or placebo once daily. Each patient had at least one tumor 2 cm or larger. At week 25, an independent blinded review found that tumors had shrunk enough to count as a response in 56% of the pimicotinib group (95% confidence interval 42 to 68) and 3.2% of the placebo group. Of the responders, 91% stayed in response for at least six months and 77% for at least 12 months."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Patients on the drug also gained joint range of motion, reported less severe pain and scored better on physical function than those on placebo, measures that matter as much as tumor size for a condition that limits movement. The approval gives a new systemic option to people who may not be good candidates for surgery. The drug has side effects: the most common were itching, rash, swelling of the face, around the eyes and in the limbs, fatigue, nausea and headache. The label warns about liver toxicity, harm to a fetus and a rise in blood creatinine that does not reflect kidney damage. The FDA reviewed it under Project Orbis, alongside regulators in Australia, Canada, Israel, Switzerland and the UK."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Full prescribing information will be posted on Drugs@FDA. Applications to the other Project Orbis regulators may still be under review, so further approvals could follow."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDA",
+     "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-pimicotinib-symptomatic-tenosynovial-giant-cell-tumor"
+    },
+    {
+     "name": "HMP Global Oncology",
+     "url": "https://www.hmpgloballearningnetwork.com/site/onc/fda-approval/fda-approves-pimicotinib-symptomatic-tenosynovial-giant-cell-tumor"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2609762",
+   "title": "Intismeran Autogene plus Pembrolizumab for Resected Stage IIB to IV Melanoma",
+   "authors": [
+    "Georgina V. Long Muhammad A. Khattak Helen J. Gogas Dirk Schadendorf Ana Arance Matteo S. Carlino Piotr Rutkowski Gareth Rivalland Antoni Ribas Janice M. Mehnert Patrick A. Ott Reinhard Dummer Paola Queirolo Christoffer Gebhardt Caroline Dutriaux Carlos Rojas Yuanbin Chen Lisa M. Tachiki Ronnie Shapira-Frommer Oliver Bechter Ryan J. Sullivan Alexander M.M. Eggermont Laureen S. Ojalvo Michelle Brown Jinchun Zhang Dmitri O. Grebennik Mizuho Fukunaga-Kalabis Paolo A. Ascierto and Michele Del Vecchiothe INTerpath-001 Investigators*"
+   ],
+   "affiliations": [
+    "Melanoma Institute Australia"
+   ],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Oncology",
+   "tags": [
+    "Oncology",
+    "Immunology"
+   ],
+   "tldr": "In a phase 3 trial of 1,137 people with resected high-risk melanoma, adding a personalized mRNA therapy to pembrolizumab raised two-year recurrence-free survival from 70.0% to 82.2%.",
+   "why_selected": "A large double-blind trial testing whether a vaccine-like therapy built for each patient's own tumor improves on standard immunotherapy.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "After surgery removes a high-risk melanoma (stage IIB to IV), the cancer can still come back, sometimes spreading to distant organs. Doctors give follow-up (\"adjuvant\") treatment to lower that risk. The question was whether teaching the immune system to recognize each patient's own tumor adds to the protection from existing immunotherapy."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "In this trial every patient received pembrolizumab, an antibody-based immunotherapy given intravenously, so the comparison was pembrolizumab alone versus pembrolizumab plus the new therapy. The new therapy, intismeran autogene, was developed and funded by Merck Sharp and Dohme and Moderna."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Tumors carry mutations that change some of their proteins, creating fragments called neoantigens that healthy cells do not have. Intismeran is an individualized, mRNA-based neoantigen therapy: it is made for each patient from the profile of their own tumor and is designed to induce new T-cell responses, and expand existing ones, against those patient-specific targets. Think of it as a custom wanted poster that shows immune cells exactly what this particular cancer looks like. In the double-blind phase 3 trial, patients were randomly assigned 2:1 to 1 mg of intismeran or placebo injected into muscle every three weeks for nine doses, plus 400 mg of pembrolizumab every six weeks for nine cycles."
+    },
+    {
+     "heading": "Results",
+     "body": "Of 1,137 patients, 757 received intismeran and 380 placebo; median follow-up was 24.6 months. At 24 months, 82.2% versus 70.0% were alive without recurrence, and 88.5% versus 80.2% were free of distant metastasis. The benefit appeared after six months: the hazard ratio for recurrence was 0.99 before six months and 0.42 (95% CI 0.30 to 0.58) afterwards. Serious (grade 3 or higher) adverse events occurred in 23.6% versus 20.3%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It is a large randomized test of a personalized mRNA cancer therapy, and it lowered recurrence on top of standard immunotherapy. The main caveat: the abstract reports recurrence and metastasis, not overall survival, so whether it extends life is not yet shown."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2609762",
+    "doi": "https://doi.org/10.1056/NEJMoa2609762"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1016-j-cell-2026-10-012",
+   "title": "Cross-species multiomic atlas of the primate basal ganglia",
+   "authors": [
+    "Nelson J. Johansen",
+    "Yuanyuan Fu",
+    "Matthew Schmitz",
+    "Alma Dubuc",
+    "Niklas Kempynck",
+    "Morgan Wirthlin",
+    "Aaron D. Garcia",
+    "Madeleine Hewitt",
+    "Meghan A. Turner",
+    "Stephanie C. Seeman",
+    "Brian Long",
+    "Xiao-Ping Liu",
+    "Agata Budzillo",
+    "Shu Dan",
+    "Michael DeBerardine",
+    "Inkar Kapen",
+    "Anna Marie Yanny",
+    "Wubin Ding",
+    "Alida Avola",
+    "Samuel T. Barlow",
+    "Darren Bertagnolli",
+    "Ashwin Bhandiwad",
+    "Victor Eduardo Nieto Caballero",
+    "Lakme Caceres",
+    "Tamara Casper",
+    "Anish Bhaswanth Chakka",
+    "Rushil Chakrabarty",
+    "Michael Clark",
+    "Scott Daniel",
+    "Jeroen Eggermont"
+   ],
+   "affiliations": [
+    "Allen Institute"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Neuroscience",
+   "tags": [
+    "Neuroscience",
+    "Genetics & genomics",
+    "Evolution & ecology"
+   ],
+   "tldr": "A cell-by-cell atlas of 1.8 million nuclei from human, macaque and marmoset basal ganglia finds 61 cell types conserved over 76 million years and maps psychiatric and neurodegenerative risk onto specific cells.",
+   "why_selected": "A foundational map of brain circuits involved in neurological and psychiatric disease, aligned across three primate species.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "The basal ganglia are a set of deep brain structures essential for movement control, learning, emotion and thinking, and they are involved in neurological and psychiatric diseases. Yet there was no unified, cross-species catalog of the cell types they contain, which makes it hard to compare findings in monkeys with the human brain."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Neuroscientists have long sorted basal ganglia neurons by a few classic features: whether they carry D1 or D2 dopamine receptors, and whether they sit in the \"striosome\" patches or the surrounding \"matrix\" of the striatum. Whole-brain cell atlases already exist for mouse and human."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team, whose first author is at the Allen Institute, profiled 1.8 million cell nuclei from humans, macaques and marmosets across eight basal ganglia structures, including the caudate, putamen, nucleus accumbens, globus pallidus, subthalamic nucleus and substantia nigra. For each nucleus they combined three readouts: which genes are switched on, which stretches of DNA are open and accessible, and where the cell sits in the tissue. They then aligned the three species, and the mouse and human whole-brain atlases, into one consensus taxonomy. It is like matching the parts catalogs of three car models descended from one design to see which parts never changed."
+    },
+    {
+     "heading": "Results",
+     "body": "The atlas identifies 61 cell types shared across species and conserved over 76 million years. A cell's position along the brain's top-to-bottom (dorsal-ventral) axis turned out to be more conserved than its D1/D2 or striosome/matrix identity. One striatal group, D2 SMYD2-HTR7 spiny projection neurons, has distinct molecular, electrical and shape features. Conserved DNA \"grammars\" that encode cell identity could help target viral tools to specific cells, and genetic risk for psychiatric and neurodegenerative disorders mapped to particular cell populations."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The atlas gives researchers a shared reference for studying these circuits and for choosing which cells to target in disease. Caveat: localizing genetic risk to a cell type is a statistical association, not proof that those cells cause disease."
+    }
+   ],
+   "links": {
+    "paper": "https://www.cell.com/cell/fulltext/S0092-8674(26)01256-0?rss=yes",
+    "doi": "https://doi.org/10.1016/j.cell.2026.10.012"
+   },
+   "signals": {
+    "venue": "Cell",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11264-2",
+   "title": "Suppression of epithelial proliferation and tumorigenesis by IgA",
+   "authors": [
+    "Gregory P. Donaldson",
+    "Gabriella Lima dos Reis",
+    "Marwa Saad",
+    "Christopher Wichmann",
+    "Izabela Mamede",
+    "Guo Chen",
+    "Caroline E. Harrer",
+    "Nicole L. DelGaudio",
+    "Dayu Zhang",
+    "Begüm Aydin",
+    "Tiago B. R. Castro",
+    "Sergei I. Grivennikov",
+    "Bernardo S. Reis",
+    "Elise G. Liu",
+    "Stephanie C. Eisenbarth",
+    "Kivanç Birsoy",
+    "Sohail F. Tavazoie",
+    "Beth M. Stadtmueller",
+    "Gabriel D. Victora",
+    "Daniel Mucida"
+   ],
+   "affiliations": [
+    "The Rockefeller University"
+   ],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Immunology",
+   "tags": [
+    "Immunology",
+    "Microbiology",
+    "Oncology"
+   ],
+   "tldr": "In mice, the gut antibody IgA slows the renewal of the colon lining through a surface protein called DMBT1, and its absence raises susceptibility to colorectal tumors.",
+   "why_selected": "It assigns a new, microbe-independent job to the body's most abundant antibody and links a common immune deficiency to cancer risk in mice.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Immunoglobulin A (IgA) is the most abundant type of antibody that mammals make. It is constantly secreted into the gut, where it binds resident microbes. What this means for health has been unclear. IgA deficiency is common in people, but it is hard to study because its causes are complex and it comes with other conditions."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "IgA was understood mainly as a regulator of the gut's microbes: by binding them, it shapes which bacteria settle in the intestine and how they behave. Studying its effects in people is confounded by the varied causes and other illnesses that accompany IgA deficiency."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The researchers used genetically and environmentally controlled mice, so that IgA could be removed without other differences. Without IgA, cells lining the colon switched on antibacterial defenses and divided faster in response to the gut microbes. Giving IgA by mouth slowed this division, and the effect came from the antibody's structure, not from which microbes it recognized. In a dish, IgA directly suppressed the growth of lining cells. Using mass spectrometry and a targeted CRISPR screen, the team found the protein IgA grips on these cells: DMBT1, which sits on the cell surface. IgA acts like a hand on a brake pedal, and DMBT1 is the pedal."
+    },
+    {
+     "heading": "Results",
+     "body": "Several models of IgA deficiency made mice more susceptible to several models of colorectal cancer, and oral IgA protected mice from tumors. In IgA-knockout mice, deleting the parts of DMBT1 that span the membrane and signal inside the cell reversed both the faster cell division and the higher tumor susceptibility. The abstract does not give effect sizes."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work suggests IgA normally tempers how the gut lining responds to microbes, a role that may protect against cancer. The main caveat: all of this was shown in mice and cultured cells; whether people with IgA deficiency face higher colorectal cancer risk through this route is untested."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11264-2",
+    "doi": "https://doi.org/10.1038/s41586-026-11264-2"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

@@ -1,5 +1,70 @@
 [
  {
+  "id": "2026-11-13-n1",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "The American Cancer Society now recommends regular PSA screening for prostate cancer, every two years from age 50",
+  "tldr": "The American Cancer Society's new guideline recommends a PSA blood test every two years for average-risk men aged 50 to 69, and yearly from 45 for Black men and men with strong family history.",
+  "category": "Public Health",
+  "byline": "American Cancer Society, The New York Times"
+ },
+ {
+  "id": "2026-11-13-n2",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "FDA approves pimicotinib, a once-daily pill, for joint tumors that are hard to remove surgically",
+  "tldr": "The FDA approved EMD Serono's pimicotinib for symptomatic tenosynovial giant cell tumor after a placebo-controlled trial in which 56% of treated patients responded, against 3.2% on placebo.",
+  "category": "Drugs & Approvals",
+  "byline": "FDA, HMP Global Oncology"
+ },
+ {
+  "id": "doi-10-1056-nejmoa2609762",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Intismeran Autogene plus Pembrolizumab for Resected Stage IIB to IV Melanoma",
+  "tldr": "In a phase 3 trial of 1,137 people with resected high-risk melanoma, adding a personalized mRNA therapy to pembrolizumab raised two-year recurrence-free survival from 70.0% to 82.2%.",
+  "primary_tag": "Oncology",
+  "tags": [
+   "Oncology",
+   "Immunology"
+  ],
+  "byline": "Georgina V. Long Muhammad A. Khattak Helen J. Gogas Dirk Schadendorf Ana Arance Matteo S. Carlino Piotr Rutkowski Gareth Rivalland Antoni Ribas Janice M. Mehnert Patrick A. Ott Reinhard Dummer Paola Queirolo Christoffer Gebhardt Caroline Dutriaux Carlos Rojas Yuanbin Chen Lisa M. Tachiki Ronnie Shapira-Frommer Oliver Bechter Ryan J. Sullivan Alexander M.M. Eggermont Laureen S. Ojalvo Michelle Brown Jinchun Zhang Dmitri O. Grebennik Mizuho Fukunaga-Kalabis Paolo A. Ascierto and Michele Del Vecchiothe INTerpath-001 Investigators* · Melanoma Institute Australia",
+  "hf": null,
+  "venue": "The New England Journal of Medicine"
+ },
+ {
+  "id": "doi-10-1016-j-cell-2026-10-012",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Cross-species multiomic atlas of the primate basal ganglia",
+  "tldr": "A cell-by-cell atlas of 1.8 million nuclei from human, macaque and marmoset basal ganglia finds 61 cell types conserved over 76 million years and maps psychiatric and neurodegenerative risk onto specific cells.",
+  "primary_tag": "Neuroscience",
+  "tags": [
+   "Neuroscience",
+   "Genetics & genomics",
+   "Evolution & ecology"
+  ],
+  "byline": "Nelson J. Johansen, Yuanyuan Fu, Matthew Schmitz et al. · Allen Institute",
+  "hf": null,
+  "venue": "Cell"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11264-2",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Suppression of epithelial proliferation and tumorigenesis by IgA",
+  "tldr": "In mice, the gut antibody IgA slows the renewal of the colon lining through a surface protein called DMBT1, and its absence raises susceptibility to colorectal tumors.",
+  "primary_tag": "Immunology",
+  "tags": [
+   "Immunology",
+   "Microbiology",
+   "Oncology"
+  ],
+  "byline": "Gregory P. Donaldson, Gabriella Lima dos Reis, Marwa Saad et al. · The Rockefeller University",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-12-n1",
   "date": "2026-11-12",
   "type": "news",
