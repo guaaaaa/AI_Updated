@@ -3,12 +3,12 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [],
  "featured": {
   "news": 11,
-  "papers": 11
+  "papers": 14
  },
  "items": [
   {
@@ -142,6 +142,24 @@
    "date": "2026-11-12",
    "type": "paper",
    "title": "Majorana edge reconstruction and the ν = 5/2 non-Abelian thermal Hall puzzle"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11241-9",
+   "date": "2026-11-13",
+   "type": "paper",
+   "title": "Independent interferometric observable confirms black hole shadow in M87*"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11280-2",
+   "date": "2026-11-13",
+   "type": "paper",
+   "title": "Hadean mantle depletion and 3.95-Gyr subduction implied by North China rocks"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11278-w",
+   "date": "2026-11-13",
+   "type": "paper",
+   "title": "Flexible rubber blades for tidal turbines"
   }
  ]
 }

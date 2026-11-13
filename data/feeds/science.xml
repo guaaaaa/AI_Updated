@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Thu, 12 Nov 2026 13:24:09 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 14:23:30 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Independent interferometric observable confirms black hole shadow in M87*</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11241-9</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11241-9</guid>
+    <pubDate>Fri, 13 Nov 2026 14:23:30 +0000</pubDate>
+    <category>Science / Astrophysics &amp; cosmology</category>
+    <description>An independent imaging method built only on calibration-proof measurements recovers the ring around M87's black hole, 42.2 microarcseconds across, implying a mass of about 6.5 billion Suns. (Samuel Lai, Nithyanandan Thyagarajan, O. Ivy Wong et al.)</description>
+  </item>
+  <item>
+    <title>Hadean mantle depletion and 3.95-Gyr subduction implied by North China rocks</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11280-2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11280-2</guid>
+    <pubDate>Fri, 13 Nov 2026 14:23:30 +0000</pubDate>
+    <category>Science / Earth science</category>
+    <description>A newly found 3.95-billion-year-old rock in North China formed from ocean crust buried to mantle depths, suggesting a short-lived subduction event early in Earth's history. (Hangqiang Xie, Chunyan Dong, Pengchuan Li et al.)</description>
+  </item>
+  <item>
+    <title>Flexible rubber blades for tidal turbines</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11278-w</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11278-w</guid>
+    <pubDate>Fri, 13 Nov 2026 14:23:30 +0000</pubDate>
+    <category>Science / Energy science</category>
+    <description>Tidal turbine blades made of flexible rubber matched the energy yield of rigid blades with active pitch control while cutting fatigue-causing load swings by up to a third. (Zhehong Zhang, Junchen Tan, Eric-Carin Neba et al.)</description>
+  </item>
   <item>
     <title>Euclid's first major data release maps more than 900 million galaxies and about 15,000 likely gravitational lenses</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-12/2026-11-12-n1</link>
@@ -302,30 +326,6 @@
     <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
     <category>Science / Life Sciences</category>
     <description>A team led by Curtin University reports red blood cell-like structures and heme molecules inside the leg bone of a 115-million-year-old Brazilian dinosaur, the first chemical evidence of blood in a dinosaur. (Phys.org, The Conversation, Popular Science)</description>
-  </item>
-  <item>
-    <title>LHCb sees first evidence of the rarest beauty-particle decay yet observed</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n2</guid>
-    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
-    <category>Science / Physics</category>
-    <description>The upgraded LHCb experiment at CERN reports 3.2-sigma evidence for a beauty-particle decay into two muons that occurs about once per ten billion decays, consistent with the Standard Model. (BBC, University of Cambridge, Phys.org)</description>
-  </item>
-  <item>
-    <title>Perioperative ivonescimab with or without chemotherapy in resectable non-small cell lung cancer: a phase 2 trial</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41591-026-04745-4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41591-026-04745-4</guid>
-    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
-    <category>Science / Clinical medicine</category>
-    <description>In a 90-patient phase 2 trial, ivonescimab plus chemotherapy before and after surgery gave a 70.1% major pathological response in resectable lung cancer. (Xiaoliang Zhao, Bin Zhang, Chenguang Li et al. · Tianjin Medical University Cancer Institute and Hospital, The Fourth Hospital of Hebei Medical University)</description>
-  </item>
-  <item>
-    <title>An AI-native experimental laboratory for autonomous biomolecular operations</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11228-6</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/doi-10-1038-s41586-026-11228-6</guid>
-    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
-    <category>Science / Computational science &amp; AI</category>
-    <description>AutoDNA, an AI-run laboratory, coordinates over 20 instruments across more than 11,000 steps to carry out DNA synthesis, amplification and sequencing with minimal human intervention. (Mingyu Wu, Zhaoguo Wang, Jiabin Wang et al.)</description>
   </item>
 </channel>
 </rss>

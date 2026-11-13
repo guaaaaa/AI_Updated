@@ -1,0 +1,162 @@
+{
+ "date": "2026-11-13",
+ "edition": "weekday",
+ "generated_at": "2026-11-13T14:23:30+00:00",
+ "summary": "A papers-only day: a calibration-proof re-imaging of the M87 black hole shadow, a 3.95-billion-year-old rock that points to very early subduction, and bendable rubber blades for tidal turbines.",
+ "news": [],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11241-9",
+   "title": "Independent interferometric observable confirms black hole shadow in M87*",
+   "authors": [
+    "Samuel Lai",
+    "Nithyanandan Thyagarajan",
+    "O. Ivy Wong",
+    "Foivos Diakogiannis"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Astrophysics & cosmology",
+   "tags": [
+    "Astrophysics & cosmology"
+   ],
+   "tldr": "An independent imaging method built only on calibration-proof measurements recovers the ring around M87's black hole, 42.2 microarcseconds across, implying a mass of about 6.5 billion Suns.",
+   "why_selected": "Settles a lingering dispute over whether the first black hole image's ring was real or an artefact of the processing.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "In 2019 the Event Horizon Telescope collaboration published the first image of a black hole shadow: a bright ring around the supermassive black hole at the centre of the galaxy Messier 87, called M87*. But different analyses of the same data produced different fine details, and some outside groups even questioned whether the ring shape itself was real."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The telescope links radio dishes across the Earth into one virtual, Earth-sized instrument, a technique called very long baseline interferometry. Because the dishes sample the sky only sparsely, many different images fit the data. Turning the measurements into a picture therefore depends on calibrating each dish, on post-processing algorithms and on chosen imaging settings, and the result can shift with those choices."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors built a new imaging algorithm that avoids both weak points. First, it does not assume any expected shape, such as a ring, in advance. Second, it uses only quantities that are immune to instrument calibration errors. A useful analogy: if every microphone in a room had an unknown volume setting, you could still compare certain combinations of their recordings in which those unknown settings cancel out. Interferometry has such combinations, built from groups of three or more dishes, and they describe the source's structure regardless of how each dish is calibrated. By reconstructing the image from these combinations alone, the method gives a check on the original result that shares none of its calibration assumptions."
+    },
+    {
+     "heading": "Results",
+     "body": "Applied to the M87* data, the method reproduced a ring-like shape, which the authors describe as unequivocal. The ring's angular diameter is 42.2 plus or minus 1.5 microarcseconds, corresponding to a black hole mass of 6.5 plus or minus 0.5 billion solar masses under nominal scaling assumptions. The data also indicate the system is viewed about 20 degrees from the approaching jet."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "An image confirmed by a method with different assumptions is far stronger evidence that the shadow is real. The caveat is that the mass estimate still depends on assumed scaling parameters, and the underlying data remain sparse."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11241-9",
+    "doi": "https://doi.org/10.1038/s41586-026-11241-9"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11280-2",
+   "title": "Hadean mantle depletion and 3.95-Gyr subduction implied by North China rocks",
+   "authors": [
+    "Hangqiang Xie",
+    "Chunyan Dong",
+    "Pengchuan Li",
+    "Rongfeng Ge",
+    "Simon A. Wilde",
+    "Shoujie Liu",
+    "Dunyi Liu",
+    "Yusheng Wan"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science"
+   ],
+   "tldr": "A newly found 3.95-billion-year-old rock in North China formed from ocean crust buried to mantle depths, suggesting a short-lived subduction event early in Earth's history.",
+   "why_selected": "Only the second confirmed set of rocks older than 3.9 billion years, and it bears directly on when plate-tectonic processes began.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Rocks older than 3.9 billion years are extraordinarily rare, so geologists know little about how the first continental crust formed or when plate tectonics began. Until now, the only unequivocally documented rocks of that age came from the Acasta Gneiss Complex in Canada, which makes it hard to tell whether the earliest crust formed in one way or several."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The Acasta rocks, about 4.0 billion years old, are thought to have formed at low pressure, consistent with crust melting near the surface rather than deep burial. Clues about this era also come from zircon, a tough mineral that survives erosion and records the age and chemistry of the magma it grew in."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team reports a newly discovered trondhjemitic gneiss, a light-coloured, banded rock, from eastern Hebei in the North China Craton, dated to 3.95 billion years from its zircon crystals. Two chemical fingerprints in the zircon tell the story. Its oxygen isotopes are elevated, which points to a source rock that had been altered by water at low temperature, like basalt on the seafloor. Its hafnium isotopes are positive, indicating that this basalt originally came from mantle already depleted by earlier melting during the Hadean, Earth's first eon. Unlike Acasta, the rock carries chemical signs of a high-pressure origin."
+    },
+    {
+     "heading": "Results",
+     "body": "The zircons average +6.77 plus or minus 0.23 per mil in oxygen isotopes, with a weighted mean hafnium value of +1.45 plus or minus 0.27. Modelling shows the parent magma formed by 8 to 16 percent melting of basaltic crust at more than 1.6 gigapascals and 740 to 820 degrees Celsius."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Getting surface-altered ocean crust that deep, along a cool thermal gradient, requires rapid burial; the authors propose a transient subduction event. That suggests a form of subduction operated about 3.95 billion years ago, though one rock cannot show it was widespread or continuous."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11280-2",
+    "doi": "https://doi.org/10.1038/s41586-026-11280-2"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11278-w",
+   "title": "Flexible rubber blades for tidal turbines",
+   "authors": [
+    "Zhehong Zhang",
+    "Junchen Tan",
+    "Eric-Carin Neba",
+    "Sylvain Morival",
+    "Kuba Frankowski",
+    "Bertrand Daval",
+    "Ignazio Maria Viola"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Energy science",
+   "tags": [
+    "Energy science",
+    "Condensed matter & materials"
+   ],
+   "tldr": "Tidal turbine blades made of flexible rubber matched the energy yield of rigid blades with active pitch control while cutting fatigue-causing load swings by up to a third.",
+   "why_selected": "A simple passive design that could lower the cost of one of the most predictable renewable energy sources.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Tidal power is unusually predictable for a renewable energy source, because tides follow the Moon and Sun. But the sea is rough: turbulence and waves hammer turbine blades with rapidly fluctuating forces. These loads raise building and maintenance costs and wear out parts through fatigue, the gradual damage caused by repeated stress."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Large modern tidal turbines handle these fluctuations with active pitch systems, which mechanically rotate each blade to change its angle to the flow. They work, but they are complex and expensive, and every extra moving part is something else that can fail underwater, where repairs are difficult."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors replace the mechanism with material. Their blades are made of flexible rubber that can deform along the chord, the direction running from the blade's leading edge to its trailing edge, with most of the bending at the trailing edge. When the water pushes harder, the blade flexes and its camber, the curvature that lets it generate lift, flattens. A flatter blade grabs less force, so it automatically sheds part of a sudden load and recovers its shape when the surge passes. It is similar to how a flexible fishing rod absorbs a sharp tug that might snap a stiff one. The regulation comes from the interaction between the flow and the blade's own elasticity, with no sensors, motors or control software."
+    },
+    {
+     "heading": "Results",
+     "body": "In experiments over simulated tidal cycles, the flexible blades delivered the same total energy yield as rigid blades with active pitch control. At the same time they reduced high-frequency load fluctuations, the kind that drive fatigue, by up to one-third."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the result holds at full scale, tidal turbines could become simpler, more durable and cheaper to run. The caveat is that these were laboratory experiments under simulated conditions; long-term rubber durability in seawater remains to be shown."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11278-w",
+    "doi": "https://doi.org/10.1038/s41586-026-11278-w"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

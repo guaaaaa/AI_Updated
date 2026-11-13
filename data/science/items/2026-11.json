@@ -1,5 +1,48 @@
 [
  {
+  "id": "doi-10-1038-s41586-026-11241-9",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Independent interferometric observable confirms black hole shadow in M87*",
+  "tldr": "An independent imaging method built only on calibration-proof measurements recovers the ring around M87's black hole, 42.2 microarcseconds across, implying a mass of about 6.5 billion Suns.",
+  "primary_tag": "Astrophysics & cosmology",
+  "tags": [
+   "Astrophysics & cosmology"
+  ],
+  "byline": "Samuel Lai, Nithyanandan Thyagarajan, O. Ivy Wong et al.",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11280-2",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Hadean mantle depletion and 3.95-Gyr subduction implied by North China rocks",
+  "tldr": "A newly found 3.95-billion-year-old rock in North China formed from ocean crust buried to mantle depths, suggesting a short-lived subduction event early in Earth's history.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science"
+  ],
+  "byline": "Hangqiang Xie, Chunyan Dong, Pengchuan Li et al.",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11278-w",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Flexible rubber blades for tidal turbines",
+  "tldr": "Tidal turbine blades made of flexible rubber matched the energy yield of rigid blades with active pitch control while cutting fatigue-causing load swings by up to a third.",
+  "primary_tag": "Energy science",
+  "tags": [
+   "Energy science",
+   "Condensed matter & materials"
+  ],
+  "byline": "Zhehong Zhang, Junchen Tan, Eric-Carin Neba et al.",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-12-n1",
   "date": "2026-11-12",
   "type": "news",
