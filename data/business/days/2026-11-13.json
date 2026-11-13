@@ -1,0 +1,209 @@
+{
+ "date": "2026-11-13",
+ "edition": "weekday",
+ "generated_at": "2026-11-13T12:45:49+00:00",
+ "summary": "Jensen Huang resigns from Nvidia, the Fed drops its October and December 2027 rate votes, US home sales sink to a 16-year low, and Cisco raises its outlook on AI networking demand.",
+ "news": [
+  {
+   "id": "2026-11-13-n1",
+   "story_key": "nvidia-huang-resigns-kress-interim-2026-11",
+   "title": "Jensen Huang resigns as Nvidia's CEO, CFO Colette Kress takes over on an interim basis, and the shares open down more than 13%",
+   "category": "Earnings & Companies",
+   "published": "2026-11-12T09:32:00-05:00",
+   "tldr": "Nvidia's co-founder Jensen Huang resigned as CEO and director with immediate effect; CFO Colette Kress is interim CEO while the board searches for a successor, and Huang has agreed to testify to Congress.",
+   "why_selected": "The first leadership change in 33 years at one of the world's most valuable companies, a materially new step after the board's preparations reported the day before.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Jensen Huang co-founded Nvidia and ran it for 33 years, turning a maker of video-game graphics chips into the main supplier of the processors behind the AI boom. Earlier this week reports said he had affairs with a woman suspected of being a Chinese spy and with one of his direct reports at Nvidia, and the board began preparing to replace him. TechCrunch notes he never set out a succession plan."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday morning Nvidia's board announced that Huang had resigned as president, CEO and board member, effective immediately. Chief financial officer Colette Kress, 59, who joined Nvidia in 2013 after roles at Cisco and Microsoft, became interim CEO while the company runs a fuller search. \"Our focus remains on serving our customers, partners, developers and shareholders,\" she said. Nvidia shares opened down more than 13% in New York, wiping more than half a trillion dollars off its market value, according to the BBC. Bernstein analyst Stacy Rasgon halved his firm's price target. Separately, House Foreign Affairs chairman Brian Mast said Huang agreed to testify behind closed doors before Thanksgiving, after lawmakers threatened a subpoena."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Nvidia is worth about $3.8 trillion, so its leadership affects index funds, AI customers and suppliers well beyond its own shareholders. Kress is well known to investors because she has fronted every earnings call, but analysts quoted by the BBC say a permanent chief may need to be an engineer; names floated include co-founder Chris Malachowsky, computing head Ian Buck and Arm's Rene Haas. Ten Cap's Jun Bei Liu framed the issue as corporate governance and national security, not only personal conduct, and several firms have cut their forecasts for the company."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Nvidia reports quarterly earnings on Tuesday, the first chance to hear Kress set out plans. Also watch Huang's congressional testimony and the board's choice of a permanent CEO."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cqgm37dv20e8o"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-n2",
+   "story_key": "fed-2027-meeting-schedule",
+   "title": "The Fed scraps its October 2027 rate vote and holds no December meeting, so no rate decision is due between mid-November 2027 and late January 2028",
+   "category": "Central Banks & Rates",
+   "published": "2026-11-12T12:45:00-05:00",
+   "tldr": "The Fed's revised 2027 calendar keeps eight meetings but turns October's into a strategy session with no rate decision and drops December, part of Chair Kevin Warsh's plan to meet less often.",
+   "why_selected": "A structural change to how often the US central bank can move rates, with direct consequences for markets that trade around its meetings.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Federal Open Market Committee (FOMC), the Fed's rate-setting body, has long met eight times a year and announced a policy decision at each meeting. Kevin Warsh, who became Fed chair in May, outlined last month a plan to cut the number of rate-setting meetings to six by 2028, alongside two meetings devoted to longer-term strategy."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday at 12:45 p.m. the Fed published a revised tentative schedule for 2027. The committee will still meet eight times, but the October 26-27 meeting \"will be dedicated to the discussion of broad monetary policy strategy issues\" and will not produce a policy decision. According to The New York Times, the meetings are also spaced so that the committee meets in mid-November and not in December, which means the next rate vote after November 2027 comes on January 25-26, 2028. The Times reports that strategy meetings will carry no policy vote and are not expected to be followed by a statement. Warsh has called the meeting cadence \"an institutional choice, affecting the nature and the quality of our deliberations.\""
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fewer decision points change how markets price rates. Bond traders, mortgage lenders and companies that watch Fed meetings will face a stretch of more than two months at the end of 2027 with no scheduled chance for a rate move. The Times points out the main cost: if the economy shifts suddenly, the Fed may need unscheduled meetings, which in the past were usually reserved for crises."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The 2028 calendar, which should show the full six-plus-two structure, and whether the Fed publishes anything after its October strategy session."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Federal Reserve",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
+    },
+    {
+     "name": "The New York Times",
+     "url": "https://www.nytimes.com/2026/11/12/business/economy/fed-warsh-october.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-n3",
+   "story_key": "us-existing-home-sales-october-2026",
+   "title": "US existing-home sales fall 5.5% in October to 3.75 million, the lowest pace since August 2010, as mortgage rates climb",
+   "category": "Real Estate",
+   "published": "2026-11-12T10:00:00-05:00",
+   "tldr": "Sales of previously owned US homes fell 5.5% in October to an annual pace of 3.75 million, down 8.8% from a year earlier, as 30-year mortgage rates hover near 7.18%.",
+   "why_selected": "Housing is the part of the economy most exposed to rising rates, and this major monthly release shows activity at a 16-year low.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Mortgage rates fell through 2024 and 2025, and the 30-year rate dropped below 6% in February 2026. Since then, faster inflation linked to the Iran war and a Federal Reserve that raised rates in September for the first time since 2023 have pushed borrowing costs back up. The Fed's policy rate now sits at 3.75% to 4%, and the Guardian reports the Fed is poised to raise rates again next month."
+    },
+    {
+     "heading": "What happened",
+     "body": "The National Association of Realtors (NAR) reported on Thursday that existing-home sales, meaning sales of already built homes, fell 5.5% in October to a seasonally adjusted annual rate of 3.75 million, down 8.8% from a year earlier. Sales fell in the Midwest, South and West and held steady in the Northeast; compared with a year ago they declined in all four regions. The median sale price rose slightly to $416,700. \"Home sales fell to their lowest level since August 2010,\" said NAR chief economist Lawrence Yun, blaming mortgage rates at their highest since 2000 apart from one month in 2023. The 30-year rate is about 7.18%, according to the Guardian."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fewer sales mean less business for real estate agents, mortgage lenders and others whose income depends on home transactions. Prices have not fallen, so affordability is squeezed from both sides. Yun noted that the 88 million US homeowners are mostly in a comfortable position thanks to built-up housing wealth, and argued there could be sizable pent-up demand if rates decline. Realtor.com economist Danielle Hale told the Guardian she does not see this as a new normal, but as a \"perfect storm\" of a sudden rate shift and election uncertainty."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Fed's December decision and mortgage-rate moves, plus pending home sales, a leading indicator that hit a record low in September."
+    }
+   ],
+   "sources": [
+    {
+     "name": "National Association of Realtors",
+     "url": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/business/2026/nov/12/home-sales-october-low"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-n4",
+   "story_key": "cisco-q1-fy2027-results",
+   "title": "Cisco raises its annual revenue forecast to as much as $75.8 billion after a record quarter driven by AI networking",
+   "category": "Tech & AI Business",
+   "published": "2026-11-12T16:48:00-05:00",
+   "tldr": "Cisco's quarterly revenue rose 24% to a record $18.5 billion, beating estimates, and it lifted its fiscal 2027 outlook and its forecast for AI infrastructure sales to cloud giants to $9 billion.",
+   "why_selected": "A bellwether read on whether AI data-centre spending is holding up beyond chips, at a time when investors fear a slowdown.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Big Tech's spending on AI has moved beyond processors to the switches and routers that link large data-centre systems, which is Cisco's core business. Investors have worried that the buildout could slow after Democrats' sweeping midterm win and as rising borrowing costs bite into debt-funded construction. A shortage of memory chips has also raised component costs for hardware makers."
+    },
+    {
+     "heading": "What happened",
+     "body": "After the market closed on Thursday, Cisco reported revenue of $18.5 billion for the quarter ended October 24, up 24% from a year earlier and above analysts' average estimate of $18.14 billion, according to LSEG data cited by the Globe and Mail. Adjusted earnings were $1.40 per share against estimates of $1.33. The company said these were its fastest revenue and adjusted earnings growth rates in more than 15 years. Product revenue rose 32% while services rose 1%. Cisco raised its fiscal 2027 revenue forecast to $74.8 billion to $75.8 billion, from $72.2 billion to $73.4 billion, and lifted its expected AI infrastructure revenue from hyperscalers, the largest cloud operators, to $9 billion from $7.5 billion. \"We are in the very early stages of a multi-year networking supercycle,\" said CEO Chuck Robbins."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The results suggest that demand for the plumbing of AI data centres remained strong into the autumn, despite the midterm and rate worries. Cisco also raised its earnings guidance, saying growth was double-digit across all regions and customer markets. The main soft spot is profitability: adjusted gross margin, the share of revenue left after production costs, was 65.6%, in line with estimates but down from 68.1% a year earlier as memory costs rose. Shares were flat in volatile after-hours trading."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Second-quarter guidance of $18.0 billion to $18.2 billion in revenue, and whether memory costs keep squeezing margins."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Cisco",
+     "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-reports-first-quarter-earnings.html"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-cisco-earnings-profit-ai/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w35989",
+   "title": "Clearing the Fog: Price Transparency, Market Churn, and Consumer Welfare in Short-Term Rentals",
+   "authors": [
+    "Ginger Zhe Jin",
+    "Liad Wagman",
+    "Jingyi Xing"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-13T00:00:00-05:00",
+   "primary_tag": "Regulation",
+   "tags": [
+    "Regulation",
+    "Industrial organization"
+   ],
+   "tldr": "After California required Airbnb and similar hosts to show fee-inclusive prices, guests became more price-sensitive, nightly rates rose 4.8%, and many fee-heavy listings left the market, with net gains for consumers on average.",
+   "why_selected": "All-in pricing rules are spreading, and this study shows they reshape markets in ways the simple \"transparency lowers prices\" story misses.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Many online platforms show a low headline price and add cleaning or service fees at checkout, a practice often called drip pricing. Regulators are pushing for all-in prices. California's law AB 537 required Airbnb and other short-term lodging providers to advertise fee-inclusive prices from July 1, 2024. The question is what such a rule actually does to prices, to which listings stay on the market, and to consumers."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The standard prediction is simple: once guests can compare full prices, competition intensifies and prices fall. That view focuses on prices alone and pays less attention to how hosts respond by changing their fees, raising nightly rates or leaving the market altogether."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Ginger Zhe Jin, Liad Wagman and Jingyi Xing compare Airbnb listings in San Diego and San Francisco, which were covered by the law, with listings in Seattle and Chicago, which were not. They use Coarsened Exact Matching, a method that pairs listings with similar characteristics across the two groups so that like is compared with like. They then estimate a discrete-choice model of guest decisions to measure consumer welfare."
+    },
+    {
+     "heading": "Results",
+     "body": "Relative to the control cities, all-in pricing made guests more sensitive to price. Contrary to the standard prediction, average daily rates rose by 4.8%. The covered cities also saw more churn: more listings exited and entered, listings that relied on cleaning-fee revenue were disproportionately likely to leave, higher-quality listings were more likely to stay, and new entrants offered lower fees and lower quality than incumbents. The welfare analysis finds the law removed a sizable \"welfare illusion\" created by hidden fees and, largely through this churn, raised the consumer surplus guests actually realized."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Policymakers and platforms designing fee-transparency rules should expect markets to reorganize rather than prices simply to drop. The authors report net gains that are positive on average after the price increases, but unevenly spread across ZIP codes. The main caveat is that the evidence comes from two treated and two control cities, so local differences could affect the estimates."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w35989"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}

@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-13-n1",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "Jensen Huang resigns as Nvidia's CEO, CFO Colette Kress takes over on an interim basis, and the shares open down more than 13%",
+  "tldr": "Nvidia's co-founder Jensen Huang resigned as CEO and director with immediate effect; CFO Colette Kress is interim CEO while the board searches for a successor, and Huang has agreed to testify to Congress.",
+  "category": "Earnings & Companies",
+  "byline": "TechCrunch, BBC, TechCrunch"
+ },
+ {
+  "id": "2026-11-13-n2",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "The Fed scraps its October 2027 rate vote and holds no December meeting, so no rate decision is due between mid-November 2027 and late January 2028",
+  "tldr": "The Fed's revised 2027 calendar keeps eight meetings but turns October's into a strategy session with no rate decision and drops December, part of Chair Kevin Warsh's plan to meet less often.",
+  "category": "Central Banks & Rates",
+  "byline": "Federal Reserve, The New York Times"
+ },
+ {
+  "id": "2026-11-13-n3",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "US existing-home sales fall 5.5% in October to 3.75 million, the lowest pace since August 2010, as mortgage rates climb",
+  "tldr": "Sales of previously owned US homes fell 5.5% in October to an annual pace of 3.75 million, down 8.8% from a year earlier, as 30-year mortgage rates hover near 7.18%.",
+  "category": "Real Estate",
+  "byline": "National Association of Realtors, The Guardian"
+ },
+ {
+  "id": "2026-11-13-n4",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "Cisco raises its annual revenue forecast to as much as $75.8 billion after a record quarter driven by AI networking",
+  "tldr": "Cisco's quarterly revenue rose 24% to a record $18.5 billion, beating estimates, and it lifted its fiscal 2027 outlook and its forecast for AI infrastructure sales to cloud giants to $9 billion.",
+  "category": "Tech & AI Business",
+  "byline": "Cisco, The Globe and Mail"
+ },
+ {
+  "id": "nber-w35989",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Clearing the Fog: Price Transparency, Market Churn, and Consumer Welfare in Short-Term Rentals",
+  "tldr": "After California required Airbnb and similar hosts to show fee-inclusive prices, guests became more price-sensitive, nightly rates rose 4.8%, and many fee-heavy listings left the market, with net gains for consumers on average.",
+  "primary_tag": "Regulation",
+  "tags": [
+   "Regulation",
+   "Industrial organization"
+  ],
+  "byline": "Ginger Zhe Jin, Liad Wagman, Jingyi Xing",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-12-n1",
   "date": "2026-11-12",
   "type": "news",

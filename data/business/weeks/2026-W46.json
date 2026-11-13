@@ -3,18 +3,18 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [
   {
    "title": "Anthropic reportedly plans to move forward with IPO plans",
-   "outlets": 17,
+   "outlets": 22,
    "date": "2026-11-10",
-   "covered": "2026-11-10-n1"
+   "covered": "2026-11-09-n2"
   },
   {
    "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
-   "outlets": 9,
+   "outlets": 10,
    "date": "2026-11-08",
    "covered": "2026-11-12-n1"
   },
@@ -31,15 +31,15 @@
    "covered": null
   },
   {
-   "title": "Oil falls as Trump signals restraint on Iran despite fresh shipping attacks",
-   "outlets": 4,
-   "date": "2026-11-08",
+   "title": "European shares rise on banking boost",
+   "outlets": 6,
+   "date": "2026-11-09",
    "covered": null
   },
   {
-   "title": "European shares rise on banking boost",
-   "outlets": 4,
-   "date": "2026-11-09",
+   "title": "Oil falls as Trump signals restraint on Iran despite fresh shipping attacks",
+   "outlets": 5,
+   "date": "2026-11-08",
    "covered": null
   },
   {
@@ -56,8 +56,8 @@
   }
  ],
  "featured": {
-  "news": 13,
-  "papers": 4
+  "news": 17,
+  "papers": 5
  },
  "items": [
   {
@@ -161,6 +161,36 @@
    "date": "2026-11-12",
    "type": "paper",
    "title": "The Main Monetary Policy Shock"
+  },
+  {
+   "id": "2026-11-13-n1",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "Jensen Huang resigns as Nvidia's CEO, CFO Colette Kress takes over on an interim basis, and the shares open down more than 13%"
+  },
+  {
+   "id": "2026-11-13-n2",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "The Fed scraps its October 2027 rate vote and holds no December meeting, so no rate decision is due between mid-November 2027 and late January 2028"
+  },
+  {
+   "id": "2026-11-13-n3",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "US existing-home sales fall 5.5% in October to 3.75 million, the lowest pace since August 2010, as mortgage rates climb"
+  },
+  {
+   "id": "2026-11-13-n4",
+   "date": "2026-11-13",
+   "type": "news",
+   "title": "Cisco raises its annual revenue forecast to as much as $75.8 billion after a record quarter driven by AI networking"
+  },
+  {
+   "id": "nber-w35989",
+   "date": "2026-11-13",
+   "type": "paper",
+   "title": "Clearing the Fog: Price Transparency, Market Churn, and Consumer Welfare in Short-Term Rentals"
   }
  ]
 }
