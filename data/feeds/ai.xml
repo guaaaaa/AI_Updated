@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Thu, 12 Nov 2026 12:20:24 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 12:20:07 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google launches Gemini 4 Hydrogen, a fast Gemini 4 model that replaces 3.8 Flash and now powers Search</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n1</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Google released Gemini 4 Hydrogen, a fast, cheaper Gemini 4 model priced at $1.50/$7.50 per million tokens that scores level with the frontier Argon model on one index and now runs Google Search. (Google DeepMind, Ars Technica, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Nonprofits sue OpenAI, Anthropic, Google, Meta and SpaceX to halt frontier AI development</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n2</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Policy &amp; Legal</category>
+    <description>Four nonprofits asked a San Francisco court to stop five leading AI developers from building or deploying new models, citing the companies' own warnings of catastrophic risk under California unfair-competition law. (Associated Press via BNN Bloomberg, Reuters via Claims Journal)</description>
+  </item>
+  <item>
+    <title>Goal Encoding in LLMs</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17297</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17297</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Interpretability</category>
+    <description>A sparse set of attention heads in a coding LLM encodes the next sub-goal before it is written, can be read out in plain English, and steers behavior across programming languages. (Arnab Sen Sharma, Eric Todd, Sheridan Feucht et al. · Northeastern University, Parallax, University of Copenhagen)</description>
+  </item>
+  <item>
+    <title>Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14488</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14488</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>Memory-augmented robot policies often track elapsed time rather than events, so a harmless pause makes them believe work was done; indexing memory by events recovers much of the loss. (Chubin Zhang, Bo An · Nanyang Technological University)</description>
+  </item>
+  <item>
+    <title>Factored One-sided Adam-Moment for Practical and Scalable SOAP</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.16905</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.16905</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Optimization</category>
+    <description>FOAM keeps nearly all of the SOAP optimizer's quality in LLM pre-training while using half its optimizer memory and reaching AdamW's final loss in about AdamW's own wall-clock time. (Jaemyung Yu, Byeongho Heo, Sangdoo Yun et al. · NAVER AI Lab)</description>
+  </item>
+  <item>
+    <title>Tree-Ising: Repairing Language Models with Bit-Level Ising Edits</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14210</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14210</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Reasoning</category>
+    <description>Tree-Ising fixes a small reasoning model's endless loops by flipping signs and shifting exponents in its stored weights, beating a frontier-agent repair on math benchmarks at about $0.90 instead of $312. (Hadi Salloum, Ammar Ali)</description>
+  </item>
+  <item>
+    <title>Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17167</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17167</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Decision models that act poorly can still teach well: asked in hindsight whether each action helped, JEV lifts a 1.5B agent's ALFWorld success from 72.8% to 82.9% over outcome-only GRPO. (Haochen Liu, Qianhao Zhu, Zixuan Wang et al. · Zhejiang University, Baidu Inc.)</description>
+  </item>
   <item>
     <title>Google DeepMind releases AlphaGenome 2, which predicts how DNA variants act in specific cell types</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
     <category>AI / Efficiency</category>
     <description>Across many modalities the best model varies by input, but learned routers beat the best single model only slightly; routing's reliable win is cost, averaging 8.82 times better efficiency. (Pengfei Zhou, Yixing Ma, Hexin Wang et al. · National University of Singapore, University of California Berkeley, Hong Kong University of Science and Technology)</description>
-  </item>
-  <item>
-    <title>RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.02497</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.02497</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Evaluation &amp; Benchmarks</category>
-    <description>RoboColosseum runs blinded pairwise robot trials across 124 sites and finds frontier chat agents rival specialized robot policies, while rankings vary across tasks, robots and evaluation tracks. (Tan Sang Nguyen, Yi Ru Wang, Shailesh Shailesh et al. · National University of Singapore, Hugging Face, Singapore Embodied AI Centre)</description>
-  </item>
-  <item>
-    <title>OpenAI launches GPT-6 Cyber, a cybersecurity model rated "Critical" on its Preparedness Framework</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n1</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>OpenAI released GPT-6 Cyber to vetted defenders, claiming better exploit-finding and far fewer out-of-scope actions, and its Preparedness Framework rates it "Critical" for cybersecurity. (The Verge, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Anthropic lets Claude read your bank accounts with a new Personal Finance feature</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2026-11-06-n2</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Product &amp; Features</category>
-    <description>Anthropic launched a beta Personal Finance tool that links Claude to bank and card accounts through Plaid with read-only access, following a similar ChatGPT feature from May. (The Verge, TechCrunch)</description>
-  </item>
-  <item>
-    <title>ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05036</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05036</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>ToolSpace builds agent training tasks from how real tools are chained in execution traces, producing cross-service workflows that lift open models toward frontier tool-use scores. (Guanting Dong, Zhichao Sun, Xinyu Yang et al. · Renmin University of China, Fudan University, Shanghai Jiao Tong University)</description>
-  </item>
-  <item>
-    <title>On the Generalization Limitation of On-Policy Distillation for Post-RL Consolidation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05609</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05609</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Post-training</category>
-    <description>Merging several specialist models into one with on-policy distillation reaches near-teacher scores on training tasks yet loses ground on harder or combined tasks, unless supervision is also broadened. (Yichen Wang, Yufa Zhou, Siqi Zhu et al. · University of Chicago, Duke University, UIUC)</description>
-  </item>
-  <item>
-    <title>Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.06905</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.06905</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>Fine-tuning a generalist robot policy with value-based reinforcement learning across many tasks improves it on unseen objects and scenes, which single-task fine-tuning does not. (Michal Korniak, Marco Bagatella, Ralf Römer et al. · ETH Zurich, MPI for Intelligent Systems, Technical University of Munich)</description>
-  </item>
-  <item>
-    <title>Suppressing Misaligned Behaviors in Language Models, Durably</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05358</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-06/2611.05358</guid>
-    <pubDate>Fri, 06 Nov 2026 12:18:51 +0000</pubDate>
-    <category>AI / Safety &amp; Alignment</category>
-    <description>PEARL trains a language model to recover from partly misaligned starts, making removal of a bad behavior far more resistant to later fine-tuning than standard supervised or reinforcement learning fixes. (Luxi He, Pengcheng Jiang, Jifan Zhang et al. · Princeton University, UIUC, Thinking Machines Lab)</description>
   </item>
 </channel>
 </rss>

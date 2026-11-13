@@ -1,5 +1,103 @@
 [
  {
+  "id": "2026-11-13-n1",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "Google launches Gemini 4 Hydrogen, a fast Gemini 4 model that replaces 3.8 Flash and now powers Search",
+  "tldr": "Google released Gemini 4 Hydrogen, a fast, cheaper Gemini 4 model priced at $1.50/$7.50 per million tokens that scores level with the frontier Argon model on one index and now runs Google Search.",
+  "category": "Model Release",
+  "byline": "Google DeepMind, Ars Technica, TechCrunch"
+ },
+ {
+  "id": "2026-11-13-n2",
+  "date": "2026-11-13",
+  "type": "news",
+  "title": "Nonprofits sue OpenAI, Anthropic, Google, Meta and SpaceX to halt frontier AI development",
+  "tldr": "Four nonprofits asked a San Francisco court to stop five leading AI developers from building or deploying new models, citing the companies' own warnings of catastrophic risk under California unfair-competition law.",
+  "category": "Policy & Legal",
+  "byline": "Associated Press via BNN Bloomberg, Reuters via Claims Journal"
+ },
+ {
+  "id": "2611.17297",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Goal Encoding in LLMs",
+  "tldr": "A sparse set of attention heads in a coding LLM encodes the next sub-goal before it is written, can be read out in plain English, and steers behavior across programming languages.",
+  "primary_tag": "Interpretability",
+  "tags": [
+   "Interpretability",
+   "LLMs",
+   "Agents"
+  ],
+  "byline": "Arnab Sen Sharma, Eric Todd, Sheridan Feucht et al. · Northeastern University, Parallax, University of Copenhagen",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.14488",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
+  "tldr": "Memory-augmented robot policies often track elapsed time rather than events, so a harmless pause makes them believe work was done; indexing memory by events recovers much of the loss.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Retrieval & Memory",
+   "Evaluation & Benchmarks"
+  ],
+  "byline": "Chubin Zhang, Bo An · Nanyang Technological University",
+  "hf": 8,
+  "venue": null
+ },
+ {
+  "id": "2611.16905",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+  "tldr": "FOAM keeps nearly all of the SOAP optimizer's quality in LLM pre-training while using half its optimizer memory and reaching AdamW's final loss in about AdamW's own wall-clock time.",
+  "primary_tag": "Optimization",
+  "tags": [
+   "Optimization",
+   "Pre-training & Data",
+   "Efficiency"
+  ],
+  "byline": "Jaemyung Yu, Byeongho Heo, Sangdoo Yun et al. · NAVER AI Lab",
+  "hf": 11,
+  "venue": null
+ },
+ {
+  "id": "2611.14210",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+  "tldr": "Tree-Ising fixes a small reasoning model's endless loops by flipping signs and shifting exponents in its stored weights, beating a frontier-agent repair on math benchmarks at about $0.90 instead of $312.",
+  "primary_tag": "Reasoning",
+  "tags": [
+   "Reasoning",
+   "Interpretability",
+   "Efficiency"
+  ],
+  "byline": "Hadi Salloum, Ammar Ali",
+  "hf": 66,
+  "venue": null
+ },
+ {
+  "id": "2611.17167",
+  "date": "2026-11-13",
+  "type": "paper",
+  "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+  "tldr": "Decision models that act poorly can still teach well: asked in hindsight whether each action helped, JEV lifts a 1.5B agent's ALFWorld success from 72.8% to 82.9% over outcome-only GRPO.",
+  "primary_tag": "Agents",
+  "tags": [
+   "Agents",
+   "Reinforcement Learning",
+   "Post-training"
+  ],
+  "byline": "Haochen Liu, Qianhao Zhu, Zixuan Wang et al. · Zhejiang University, Baidu Inc.",
+  "hf": 24,
+  "venue": null
+ },
+ {
   "id": "2026-11-12-n1",
   "date": "2026-11-12",
   "type": "news",

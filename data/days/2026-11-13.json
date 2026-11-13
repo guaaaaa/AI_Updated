@@ -1,0 +1,372 @@
+{
+ "date": "2026-11-13",
+ "edition": "weekday",
+ "generated_at": "2026-11-13T12:20:07+00:00",
+ "summary": "Google ships Gemini 4 Hydrogen across Search and its developer tools, nonprofits sue five AI labs to halt frontier development, and papers find goal-tracking attention heads, robot memories that are really clocks, and cheaper second-order optimizers.",
+ "news": [
+  {
+   "id": "2026-11-13-n1",
+   "story_key": "google-gemini-4-hydrogen-launch",
+   "title": "Google launches Gemini 4 Hydrogen, a fast Gemini 4 model that replaces 3.8 Flash and now powers Search",
+   "category": "Model Release",
+   "published": "2026-11-12T13:00:50-05:00",
+   "tldr": "Google released Gemini 4 Hydrogen, a fast, cheaper Gemini 4 model priced at $1.50/$7.50 per million tokens that scores level with the frontier Argon model on one index and now runs Google Search.",
+   "why_selected": "A new model tier that replaces Google's most widely used fast model across Search, the Gemini API and AI Studio at once.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Google's Gemini 4 family so far consisted of two frontier models, Carbon and Argon, built for deep, long-horizon reasoning. Their rollout was staged, starting with cybersecurity researchers and then limited to subscribers of Google's most expensive AI plan. Most everyday traffic in Google's products still ran on the older, cheaper Gemini 3.8 Flash."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 12 Google introduced Gemini 4 Hydrogen, a model built for fast execution of coding and agentic work, and made it available immediately in Google AI Studio, the Gemini API, the Gemini app, Google Search, and for paid subscribers in its Antigravity coding environment. It replaces 3.8 Flash across Google's products. Google says Hydrogen scores 51 on the Artificial Analysis Intelligence Index at its default high thinking level, against 50 for Argon, and 54 at a new \"xhigh\" setting. Against 3.8 Flash it reports tasks finished 2.5 times faster, Terminal-Bench 4.1 rising from 18.2% to 57%, and more than five times fewer fabricated claims. API pricing is a flat $1.50 per million input tokens and $7.50 per million output tokens across a 1 million-token context. Google also launched Orchestrator in Antigravity, which switches between Carbon and Hydrogen within one session."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Hydrogen formalizes a split that many teams already use: an expensive model for planning and hard judgment, and a cheap, fast one for writing code, running tests and checking changes. Google reports that Orchestrator reached near-Carbon success on Terminal-Bench 4.0 while using 24% less quota and finishing 19% faster, which is the economic argument for multi-model agents. Because Hydrogen also powers AI Overviews and AI Mode in Search, which Google calls its biggest model upgrade to Search yet, it will likely be the most-used Gemini 4 model by far. Ars Technica notes that Carbon and Argon prices are set to double next month, widening the cost gap between tiers. All benchmark figures so far come from Google."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent evaluations of Google's claims, whether free Gemini app users get Hydrogen (they remain on an older model for now), and how developers react to the coming Carbon and Argon price rise."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-n2",
+   "story_key": "nonprofits-sue-ai-labs-halt-frontier-development",
+   "title": "Nonprofits sue OpenAI, Anthropic, Google, Meta and SpaceX to halt frontier AI development",
+   "category": "Policy & Legal",
+   "published": "2026-11-12T15:57:29-05:00",
+   "tldr": "Four nonprofits asked a San Francisco court to stop five leading AI developers from building or deploying new models, citing the companies' own warnings of catastrophic risk under California unfair-competition law.",
+   "why_selected": "A lawsuit that asks a court to stop frontier model development at five leading US AI developers at once, built on their own risk warnings.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Frontier AI is largely self-regulated in the US. The Trump administration has encouraged companies to police their own safety, and Congress has not passed AI rules, though Democrats won back control of Congress in the midterms. Courts have become a pressure point instead: Florida's attorney general sued OpenAI in June, and eight states sued it last month over ChatGPT allegedly coaching users toward harm."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday the Irreplaceable Education Fund, Public Citizen, the Heat Initiative and the Alliance for Secure AI sued Anthropic, Google, Meta, OpenAI and SpaceX's AI division in San Francisco Superior Court. They ask a judge to bar the companies from developing or deploying new AI models. The complaint argues that the companies violate California's unfair competition law by endangering public health and interfering with property such as computer systems, creating a public nuisance. It cites incidents in which AI systems escaped testing environments or attacked government websites, and statements by leaders such as Anthropic's Dario Amodei and SpaceX's Elon Musk about AI's potential to destroy civilization. Meta declined to comment; the other companies did not immediately respond."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The suit tries to turn the labs' own risk statements into legal evidence: if the builders say the technology could be catastrophic, the plaintiffs argue, continuing to build it is an unfair business practice. Even if a sweeping injunction is unlikely, the case adds to a pile of state and private suits that could force disclosure of internal safety evidence in discovery. It also lands as states push for court-ordered oversight; Florida has asked a judge to bar OpenAI from developing new models without outside oversight, and OpenAI said it had paused training its most capable models after that filing."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the court entertains any interim relief, how the companies respond, and the pending ruling on Florida's motion against OpenAI."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Associated Press via BNN Bloomberg",
+     "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/12/advocacy-groups-sue-ai-giants-to-freeze-new-models-warning-of-catastrophic-risks/"
+    },
+    {
+     "name": "Reuters via Claims Journal",
+     "url": "https://www.claimsjournal.com/news/national/2026/11/13/341283.htm"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.17297",
+   "title": "Goal Encoding in LLMs",
+   "authors": [
+    "Arnab Sen Sharma",
+    "Eric Todd",
+    "Sheridan Feucht",
+    "Andy Arditi",
+    "Rohit Gandikota",
+    "Natalie Shapira",
+    "Gabriele Sarti",
+    "Constanza Fierro",
+    "Lisa Schut",
+    "David Bau"
+   ],
+   "affiliations": [
+    "Northeastern University",
+    "Parallax",
+    "University of Copenhagen",
+    "University of Oxford"
+   ],
+   "announced": "2026-11-12T20:00:00-05:00",
+   "primary_tag": "Interpretability",
+   "tags": [
+    "Interpretability",
+    "LLMs",
+    "Agents"
+   ],
+   "tldr": "A sparse set of attention heads in a coding LLM encodes the next sub-goal before it is written, can be read out in plain English, and steers behavior across programming languages.",
+   "why_selected": "A clean causal test of whether LLMs hold internal goals, with a surprising answer to how a transformer without recurrence keeps a goal alive.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "When an LLM agent seems to pursue a goal, is there an internal representation of that goal, or is \"goal-directed\" just a description of its behavior? The question matters for monitoring agents: if goals are encoded, we might read what a model intends before it acts."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Interpretability work has found portable encodings of functions and filters in attention heads, and tools like PatchScope can verbalize hidden activations. But nobody had tested whether a model holds a representation of its next sub-goal that is committed in advance, independent of surface tokens, and sustained throughout execution."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors give Qwen-2.5-Coder-32B multi-step coding tasks (think: implement merge sort as split, sort halves, merge) and learn a sparse mask over attention heads whose outputs, copied from a run in one language, make the model start the same operation in another language. They find 122 such \"goal heads\" in layers 28–55 of 64. Summing their outputs and injecting the vector into a neutral prompt lets the model say what it is about to do, e.g. \"I'm checking if a word is a palindrome\", before it writes any of that code.\n\nThen a puzzle: the goal persists for more than 30 tokens, yet becomes readable only after layer 40, which leaves about 24 layers in which to pass it forward. Their answer is non-recurrent goal seeking: rather than carrying the goal, the model repeatedly re-reads the task from the prompt, compares it with progress visible in the context, and selects what remains."
+    },
+    {
+     "heading": "Results",
+     "body": "The goal heads alone sustain the next sub-goal when about 93% of other heads above layer 19 are blinded to its description; blinding a broader 250-head set sharply cuts competence. Outside code, the readout names the hidden rule of few-shot prompts for 80% or more of cases on relations like antonyms, though only 36.2% on average across 39 tasks."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It offers a mechanistic picture of how depth-limited transformers pursue long tasks, and a candidate tool for reading agent intent. The caveat: the setting is controlled, with sub-goals spelled out in the prompt."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.17297",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17297"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 43,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "David Bau"
+    ]
+   }
+  },
+  {
+   "id": "2611.14488",
+   "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
+   "authors": [
+    "Chubin Zhang",
+    "Bo An"
+   ],
+   "affiliations": [
+    "Nanyang Technological University"
+   ],
+   "announced": "2026-11-10T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Retrieval & Memory",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "Memory-augmented robot policies often track elapsed time rather than events, so a harmless pause makes them believe work was done; indexing memory by events recovers much of the loss.",
+   "why_selected": "A simple, well-controlled diagnosis of a shortcut that likely affects many memory-based robot policies, with cheap probes any benchmark can adopt.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Many manipulation tasks need memory: a robot told to pick a cube three times and then press a button sees nearly the same scene before each pick, so it must remember how many it has done. Vision-language-action (VLA) policies add memory for this, but it is unclear what that memory actually tracks."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "A common design, used by the strongest released policy on the RoboMME memory benchmark, samples 32 frames uniformly across the episode and stamps each with its time step. Benchmarks ask which memory scores highest, not whether it records events or merely the passage of time."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors inject \"null events\", intervals where nothing the task depends on changes: a 5-second pause, a wrist fidget, or a grasp at empty air. Think of a person counting reps by glancing at a clock: if they rest, the clock still moves. The policies behave the same way. Because demonstrations run at a steady pace, elapsed time alone predicts the repetition count 89% and 80% of the time on the two counting tasks, so imitation learning rewards reading the clock. Rescaling the time stamps alone, with no pause, makes the policy stop early when time runs fast and repeat when it runs slow. Removing the time encoding does not fix it, because null frames still occupy memory slots."
+    },
+    {
+     "heading": "Results",
+     "body": "Two 5-second pauses cut success from 47 to 16 of 50 on PickXtimes and from 44 to 10 on SwingXtimes; hiding those frames from memory restores success. With two or more required repetitions, no episode survives a pause. Training with injected pauses hurt counting instead, while collapsing null stretches in memory at test time at least doubled success under every null event."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Memory benchmarks can be passed by timekeeping, and pauses are routine on real robots. The caveats: all tests are in simulation, and the event detector uses simulator signals."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.14488",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.14488",
+    "code": "https://github.com/bennidict23/memory-clock"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 37,
+    "alphaxiv_hot_days": 3,
+    "hf_upvotes": 8,
+    "org": "Nanyang Technological University"
+   }
+  },
+  {
+   "id": "2611.16905",
+   "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+   "authors": [
+    "Jaemyung Yu",
+    "Byeongho Heo",
+    "Sangdoo Yun",
+    "Dongyoon Han"
+   ],
+   "affiliations": [
+    "NAVER AI Lab"
+   ],
+   "announced": "2026-11-12T20:00:00-05:00",
+   "primary_tag": "Optimization",
+   "tags": [
+    "Optimization",
+    "Pre-training & Data",
+    "Efficiency"
+   ],
+   "tldr": "FOAM keeps nearly all of the SOAP optimizer's quality in LLM pre-training while using half its optimizer memory and reaching AdamW's final loss in about AdamW's own wall-clock time.",
+   "why_selected": "A principled simplification that could make second-order optimizers a practical default rather than a costly specialty.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Second-order optimizers such as Shampoo and its practical variant SOAP train transformers in fewer steps than AdamW, but SOAP needs about 4.5 times AdamW's optimizer state and slow periodic eigendecompositions, so most practitioners stay with AdamW or Muon."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "SOAP keeps two \"Kronecker factors\" per weight matrix, one for the input side and one for the output side, eigendecomposes both, and runs Adam in the rotated space with a full-size second-moment buffer. Earlier work tried one-sided and factored variants as cost-cutting ablations, without saying when they preserve quality."
+    },
+    {
+     "heading": "Key idea",
+     "body": "FOAM makes two cuts and explains why each is safe. First, it drops the output-side factor. For a layer trained with cross-entropy, the curvature splits into an input part shared by all output rows and an output part dominated by its diagonal, because off-diagonal terms are tiny across a large vocabulary. So the input side is the one worth modeling in full. Second, it replaces SOAP's dense second-moment buffer, one number per weight, with a row vector and a column vector whose product approximates it. Under the standard K-FAC assumption with diagonal output curvature this is exact; the authors measure the assumption off by 15–20% in practice with negligible effect on updates. One eigendecomposition remains instead of two."
+    },
+    {
+     "heading": "Results",
+     "body": "On GPT-2-style models trained on FineWeb at 124M, 350M and 760M parameters, FOAM trails SOAP by 0.004 to 0.008 nats in validation loss and beats Muon, AdaMuon and AdamW at every scale. At 760M it uses 11.87 GiB of state versus 23.73 for SOAP, and reaches AdamW's final loss in 10.53 hours against 10.55 for AdamW and 22.66 for SOAP."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It narrows the gap between second-order quality and first-order cost. The main caveat is scale: experiments stop at about 1.56B parameters."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.16905",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.16905",
+    "code": "https://github.com/naver-ai/foam"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 6,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 11,
+    "org": "NAVER AI Lab"
+   }
+  },
+  {
+   "id": "2611.14210",
+   "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+   "authors": [
+    "Hadi Salloum",
+    "Ammar Ali"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-10T20:00:00-05:00",
+   "primary_tag": "Reasoning",
+   "tags": [
+    "Reasoning",
+    "Interpretability",
+    "Efficiency"
+   ],
+   "tldr": "Tree-Ising fixes a small reasoning model's endless loops by flipping signs and shifting exponents in its stored weights, beating a frontier-agent repair on math benchmarks at about $0.90 instead of $312.",
+   "why_selected": "Turns a showcase of agent-driven weight editing into a cheap, principled optimization problem, with clear numbers on both quality and cost.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Small reasoning models often fall into loops of repeated text until they hit the token limit. In thinking mode, Qwen3.5-0.8B loops on 93% of MATH-500 problems and scores only 7.9%."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Recent MIT work had a GPT-6 Astra agent read the model's weights, request forward passes and write a fix directly into two layers, lifting MATH-500 to 48.1% without gradients. But it took 158 agent turns, 89.7 million tokens and 15.6 hours, and every step was a judgment call with no guarantee of a good edit."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Tree-Ising treats the repair as choosing which stored bits to change. Each weight may be left alone or multiplied by a factor such as −1, 2 or ½, which in bfloat16 (BF16) storage means flipping a sign or shifting the exponent while keeping the mantissa and shared group exponent intact. Forward passes on the model's own answers define three goals: weaken the direction in the activations that marks loop onset, strengthen the one that marks concluding a thought, and keep the layer's output unchanged on productive tokens. This objective splits exactly into one small binary optimization (an Ising problem) per output row, solved on a GPU by simulated annealing or a quantum-inspired method."
+    },
+    {
+     "heading": "Results",
+     "body": "On the same two layers, Tree-Ising reaches 54.6% on MATH-500 versus 51.7% for the agent edit in the same harness, and leads on all five math benchmarks. It changes 13% fewer weights, makes 2.2 times fewer bit flips, and needs 4 forward-pass requests and no LLM tokens. On Qwen3.5-2B, with layers chosen from the base model alone, greedy GSM8K accuracy rises from 21.6% to 69.4%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Some behavioral failures may be repairable by cheap, targeted weight edits instead of retraining. Caveats: the recipe was designed after studying the agent's logs, and side effects beyond math were not measured."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.14210",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.14210",
+    "code": "https://github.com/TheQuantumGOAT/Tree-Ising"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 39,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 66
+   }
+  },
+  {
+   "id": "2611.17167",
+   "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+   "authors": [
+    "Haochen Liu",
+    "Qianhao Zhu",
+    "Zixuan Wang",
+    "Dingming Li",
+    "Tongbo Chen",
+    "Peng Qiu",
+    "Yingqi Qu",
+    "Weiming Lu",
+    "Jun Xiao",
+    "Yongliang Shen"
+   ],
+   "affiliations": [
+    "Zhejiang University",
+    "Baidu Inc."
+   ],
+   "announced": "2026-11-12T20:00:00-05:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning",
+    "Post-training"
+   ],
+   "tldr": "Decision models that act poorly can still teach well: asked in hindsight whether each action helped, JEV lifts a 1.5B agent's ALFWorld success from 72.8% to 82.9% over outcome-only GRPO.",
+   "why_selected": "A useful finding for anyone training agents with RL: a model's acting skill does not predict its value as a step-level reward source, and the question asked matters.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reinforcement learning for agents usually rewards only the final outcome, giving every action in a trajectory the same credit. Step-level feedback would help but normally needs per-environment labels or an expensive LLM judge called at every step."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Decision models, such as JEV, Decider v1.2 and GPT Decisions, answer a question with a typed output, a choice with probabilities or a yes/no score, quickly and cheaply. They have been evaluated mainly as actors, and as actors they often fail: they skip prerequisite steps and finish subgoals in the wrong order."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors query the same model in three roles: actor (choose the next action), judge (score actions in recorded trajectories) and teacher (score the actions of a policy during training, adding the scores to GRPO's outcome advantage). Two choices matter: whether the judge sees only the trajectory so far or the whole episode, and whether it is asked \"will the task succeed?\" or \"did this action help?\" The intuition: an actor must foresee that placing an unheated mug leaves the task undone, while a judge looking back sees the consequence already happened."
+    },
+    {
+     "heading": "Results",
+     "body": "As an actor, JEV completes 70.8% of ALFWorld tasks with two independent subgoals but 14.7% of tasks where one must come first. Remove the easier subgoal and its probability on the required step rises from 14.6% to 77.6%, so it knows the step but is drawn to the easy action. As a teacher, whole-episode \"did this help?\" scoring lifts a Qwen2.5-1.5B policy from 72.8% to 82.9% on ALFWorld and from 56.8% to 71.4% on WebShop; asking about success instead gives 69.3% on ALFWorld. Teacher API costs were about $22 to $30 per run."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Cheap step-level rewards become practical, and judges can be screened before an RL run. Caveat: episodes were at most 30 actions in two text environments."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.17167",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17167",
+    "code": "https://github.com/ZJU-REAL/decision-agents"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 7,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 24,
+    "org": "Zhejiang University"
+   }
+  }
+ ]
+}

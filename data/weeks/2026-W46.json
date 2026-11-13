@@ -3,7 +3,7 @@
  "start": "2026-11-09",
  "end": "2026-11-14",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [
   {
    "id": "2611.12806",
@@ -13,18 +13,18 @@
    "featured": "2026-11-11"
   },
   {
+   "id": "2611.14033",
+   "title": "Few-Step Streaming Video Generation via Condition Shifting",
+   "hf": 88,
+   "org": "Tsinghua University",
+   "featured": null
+  },
+  {
    "id": "2611.14210",
    "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
    "hf": 86,
    "org": null,
-   "featured": null
-  },
-  {
-   "id": "2611.14033",
-   "title": "Few-Step Streaming Video Generation via Condition Shifting",
-   "hf": 84,
-   "org": "Tsinghua University",
-   "featured": null
+   "featured": "2026-11-13"
   },
   {
    "id": "2611.12885",
@@ -55,19 +55,19 @@
    "featured": "2026-11-11"
   },
   {
-   "id": "2611.09124",
-   "title": "Toward the Era of Agentic Embodied Intelligence",
-   "hf": 50,
-   "org": "AutoLab",
+   "id": "2611.15777",
+   "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+   "hf": 51,
+   "org": "National University of Singapore",
    "featured": null
   }
  ],
  "stories": [
   {
    "title": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
-   "outlets": 19,
+   "outlets": 22,
    "date": "2026-11-08",
-   "covered": null
+   "covered": "2026-11-13-n2"
   },
   {
    "title": "Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion",
@@ -100,20 +100,20 @@
    "covered": null
   },
   {
-   "title": "OpenAI Revenue Jumps to $10 Billion in Third Quarter Amid Growing Losses",
+   "title": "The future of AI hinges on… Jensen Huang’s sex life?",
    "outlets": 5,
-   "date": "2026-11-10",
+   "date": "2026-11-09",
    "covered": null
   },
   {
-   "title": "SoftBank books $7 billion quarterly loss on US data centre hit, financing costs",
-   "outlets": 4,
+   "title": "OpenAI Revenue Jumps to $10 Billion in Third Quarter Amid Growing Losses",
+   "outlets": 5,
    "date": "2026-11-10",
    "covered": null
   }
  ],
  "featured": {
-  "news": 7,
-  "papers": 20
+  "news": 9,
+  "papers": 25
  }
 }

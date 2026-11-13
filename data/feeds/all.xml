@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 13 Nov 2026 11:47:25 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 12:20:07 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google launches Gemini 4 Hydrogen, a fast Gemini 4 model that replaces 3.8 Flash and now powers Search</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n1</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Google released Gemini 4 Hydrogen, a fast, cheaper Gemini 4 model priced at $1.50/$7.50 per million tokens that scores level with the frontier Argon model on one index and now runs Google Search. (Google DeepMind, Ars Technica, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Nonprofits sue OpenAI, Anthropic, Google, Meta and SpaceX to halt frontier AI development</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n2</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Policy &amp; Legal</category>
+    <description>Four nonprofits asked a San Francisco court to stop five leading AI developers from building or deploying new models, citing the companies' own warnings of catastrophic risk under California unfair-competition law. (Associated Press via BNN Bloomberg, Reuters via Claims Journal)</description>
+  </item>
+  <item>
+    <title>Goal Encoding in LLMs</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17297</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17297</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Interpretability</category>
+    <description>A sparse set of attention heads in a coding LLM encodes the next sub-goal before it is written, can be read out in plain English, and steers behavior across programming languages. (Arnab Sen Sharma, Eric Todd, Sheridan Feucht et al. · Northeastern University, Parallax, University of Copenhagen)</description>
+  </item>
+  <item>
+    <title>Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14488</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14488</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>Memory-augmented robot policies often track elapsed time rather than events, so a harmless pause makes them believe work was done; indexing memory by events recovers much of the loss. (Chubin Zhang, Bo An · Nanyang Technological University)</description>
+  </item>
+  <item>
+    <title>Factored One-sided Adam-Moment for Practical and Scalable SOAP</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.16905</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.16905</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Optimization</category>
+    <description>FOAM keeps nearly all of the SOAP optimizer's quality in LLM pre-training while using half its optimizer memory and reaching AdamW's final loss in about AdamW's own wall-clock time. (Jaemyung Yu, Byeongho Heo, Sangdoo Yun et al. · NAVER AI Lab)</description>
+  </item>
+  <item>
+    <title>Tree-Ising: Repairing Language Models with Bit-Level Ising Edits</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14210</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14210</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Reasoning</category>
+    <description>Tree-Ising fixes a small reasoning model's endless loops by flipping signs and shifting exponents in its stored weights, beating a frontier-agent repair on math benchmarks at about $0.90 instead of $312. (Hadi Salloum, Ammar Ali)</description>
+  </item>
+  <item>
+    <title>Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17167</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17167</guid>
+    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Decision models that act poorly can still teach well: asked in hindsight whether each action helped, JEV lifts a 1.5B agent's ALFWorld success from 72.8% to 82.9% over outcome-only GRPO. (Haochen Liu, Qianhao Zhu, Zixuan Wang et al. · Zhejiang University, Baidu Inc.)</description>
+  </item>
   <item>
     <title>A Microsoft 365 outage tied to Exchange Online knocks out email, Teams and Copilot for more than 12 hours</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2026-11-13-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
     <category>Tech / Cybersecurity</category>
     <description>Microsoft's monthly updates fix between 1,093 and 1,235 vulnerabilities depending on how they are counted, including an exploited Outlook spoofing flaw, alongside patches from Apple, Google, Mozilla and Adobe. (BleepingComputer, Krebs on Security)</description>
-  </item>
-  <item>
-    <title>N-able takes its N-central remote-management cloud offline after a researcher publishes 30-plus unpatched flaws</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n3</guid>
-    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>After a researcher released working exploits for more than 30 alleged flaws without warning, N-able shut down hosted N-central worldwide and told on-premises customers to switch their servers off. (BleepingComputer, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Mitsui Chemicals agrees to buy photoresist maker JSR for $11.6 billion</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2026-11-11-n4</guid>
-    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
-    <category>Tech / Chips &amp; Hardware</category>
-    <description>Mitsui Chemicals will pay 1.84 trillion yen for JSR, a leading maker of the light-sensitive coatings used to print chip circuits, in the largest deal ever in Japan's chemicals sector. (Reuters via The Star, WebProNews)</description>
-  </item>
-  <item>
-    <title>SFU-Sim: Bit-Exact Reverse Engineering of NVIDIA MUFU and Validation of PTX Paths</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2611.13879</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2611.13879</guid>
-    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
-    <category>Tech / Computer architecture &amp; chips</category>
-    <description>SFU-Sim reverse-engineers how Nvidia GPUs compute sine, cosine and other special functions, and its model matches real hardware bit for bit on every input across three GPU generations. (Haozhi Xie, Tao Su · Sun Yat-sen University)</description>
-  </item>
-  <item>
-    <title>FDA orders a rare optic-nerve warning on all GLP-1 drugs</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/2026-11-10-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/2026-11-10-n1</guid>
-    <pubDate>Tue, 10 Nov 2026 13:54:21 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA will require every GLP-1 medicine to carry a warning of a potential increased risk of NAION, a rare condition that can cause permanent vision loss in one eye. (FDA, CBS News)</description>
-  </item>
-  <item>
-    <title>FDA approves asundexian, the first factor XIa blocker, to prevent a second stroke</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/2026-11-10-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/2026-11-10-n2</guid>
-    <pubDate>Tue, 10 Nov 2026 13:54:21 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA approved Bayer's once-daily pill Sunharbo (asundexian) alongside antiplatelet therapy after a mild-to-moderate non-cardioembolic stroke or high-risk TIA, after a 12,327-person trial showed a 26% lower risk of ischemic stroke. (FDA, pharmaphorum)</description>
-  </item>
-  <item>
-    <title>Intensive Blood-Pressure Control in Patients with Previous Ischemic Stroke</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/doi-10-1056-nejmoa2612924</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/doi-10-1056-nejmoa2612924</guid>
-    <pubDate>Tue, 10 Nov 2026 13:54:21 +0000</pubDate>
-    <category>Biology / Cardiovascular</category>
-    <description>In 4,368 people with prior stroke or TIA, aiming for systolic blood pressure under 120 mm Hg rather than 140 cut major cardiovascular events by 21%, at the cost of more kidney-function events. (Gisele Sampaio Silva M. Julia Machline-Carrion Karla Santo João Brainer Clares de Andrade Eduardo Martins Patrícia Oliveira Guimarães Frederico Monfardini Josué Nieri Silvia R.L. Assis Sheila Cristina Ouriques Martins Octávio Marques Pontes Neto Audes D.M. Feitosa Carla Heloisa Cabral Moro Sandra C. Fuchs Rubens Gagliardi Odilson Silvestre Ricardo Pereira Silva Murillo Antunes Eva Carolina Rocha Cesar Minelli Lilia Nigro Maia Luiz A. Bortolotto Marcio Gonçalves Sousa Luciano F. Drager Rodrigo Bazan José F. Vilela-Martin Jamary Oliveira-Filho Viviane Flumignan Zétola Wagner Avelar Leonardo Augusto Carbonera Gabriel Pereira Braga Adriana Bastos Conforto Caio A.M. Tavares Fabrício Oliveira Lima Gladys L. Martins Letícia Costa Rebello Anthony Rodgers Paul K. Whelton Flavio D. Fuchs and Otavio Berwangerthe OPTIMAL-STROKE Trial Investigators* · Federal University of São Paulo; Albert Einstein Israelite Hospital; George Institute for Global Health UK, Imperial College London)</description>
-  </item>
-  <item>
-    <title>Interleukin-6 Inhibition with Ziltivekimab for Atherosclerotic Disease</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/doi-10-1056-nejmoa2612126</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/doi-10-1056-nejmoa2612126</guid>
-    <pubDate>Tue, 10 Nov 2026 13:54:21 +0000</pubDate>
-    <category>Biology / Cardiovascular</category>
-    <description>Monthly ziltivekimab, an IL-6 antibody, sharply cut inflammatory markers in 6,376 people with atherosclerosis and kidney disease but did not change heart attack, stroke or cardiovascular death. (Paul M Ridker A. Michael Lincoff Nikolaus Marx Ann Marie Navar Naveed Sattar Katherine R. Tuttle Matthew Budoff Morten Böttcher Matthew A. Cavender Robin P. Choudhury Jan H. Cornel Grzegorz Gajos Issei Komuro K.M.K. Reddy Parvathareddy Roberto Pontremoli José Francisco Kerr Saraiva Iana I. Simova Lance A. Sloan Alejandro López-Suárez Yi-Da Tang Lale Tokgözoğlu Nqoba Tsabedze Konstantinos Tsioufis Subodh Verma Mathias Vrolix Andreas Andersen Florian M.M. Baeres Kathrine Ekström Mads D.M. Engelmann Sofia Gerward G. Kees Hovingh Anders Hvelplund and Vlado Perkovicthe ZEUS Investigators* · Brigham and Women's Hospital; Mass General Brigham)</description>
   </item>
 </channel>
 </rss>
