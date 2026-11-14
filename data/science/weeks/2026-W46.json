@@ -2,13 +2,13 @@
  "week": "2026-W46",
  "start": "2026-11-09",
  "end": "2026-11-14",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [],
  "stories": [],
  "featured": {
-  "news": 11,
-  "papers": 14
+  "news": 12,
+  "papers": 17
  },
  "items": [
   {
@@ -160,6 +160,30 @@
    "date": "2026-11-13",
    "type": "paper",
    "title": "Flexible rubber blades for tidal turbines"
+  },
+  {
+   "id": "2026-11-14-n1",
+   "date": "2026-11-14",
+   "type": "news",
+   "title": "Climate Action Tracker finds the warming outlook has stalled for a fifth year, with current policies heading for 2.7°C"
+  },
+  {
+   "id": "doi-10-1126-science-aed9544",
+   "date": "2026-11-14",
+   "type": "paper",
+   "title": "Atmospheric O2 reveals a strengthening ocean carbon sink and a stagnant net land sink since 1990"
+  },
+  {
+   "id": "doi-10-1126-science-adw7770",
+   "date": "2026-11-14",
+   "type": "paper",
+   "title": "Carbon dioxide and amorphous water ices in the debris disk around β Pictoris"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeg3307",
+   "date": "2026-11-14",
+   "type": "paper",
+   "title": "Discovery of a likely supermassive neutron star in a remarkably wide binary"
   }
  ]
 }

@@ -1,5 +1,58 @@
 [
  {
+  "id": "2026-11-14-n1",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "Climate Action Tracker finds the warming outlook has stalled for a fifth year, with current policies heading for 2.7°C",
+  "tldr": "The Climate Action Tracker's COP31 update projects 2.7°C of warming by 2100 under current policies and says even full delivery of every pledge would permanently overshoot 1.5°C.",
+  "category": "Climate & Earth",
+  "byline": "Climate Action Tracker, Ars Technica (Inside Climate News), The New York Times"
+ },
+ {
+  "id": "doi-10-1126-science-aed9544",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "Atmospheric O2 reveals a strengthening ocean carbon sink and a stagnant net land sink since 1990",
+  "tldr": "Three decades of precise air-oxygen measurements show the ocean has absorbed a growing share of fossil carbon since 1990, while the net land sink has not grown, contrary to many models.",
+  "primary_tag": "Climate science",
+  "tags": [
+   "Climate science",
+   "Earth science"
+  ],
+  "byline": "Eric J. Morgan, Yuming Jin, Elena Kozlova et al. · Scripps Institution of Oceanography, UC San Diego",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-science-adw7770",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "Carbon dioxide and amorphous water ices in the debris disk around β Pictoris",
+  "tldr": "Webb detects glassy water ice mixed with carbon dioxide across the Beta Pictoris debris disk, a mixture that looks like comet ice formed in interstellar space before the star's planets.",
+  "primary_tag": "Planetary science",
+  "tags": [
+   "Planetary science",
+   "Astrophysics & cosmology"
+  ],
+  "byline": "S. K. Betti, C. H. Chen, C. Xie et al. · Space Telescope Science Institute",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aeg3307",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "Discovery of a likely supermassive neutron star in a remarkably wide binary",
+  "tldr": "A red giant wobbling around an unseen companion of about 2.2 solar masses points to an unusually heavy neutron star in a wide, nearly circular orbit that standard binary models fail to produce.",
+  "primary_tag": "Astrophysics & cosmology",
+  "tags": [
+   "Astrophysics & cosmology"
+  ],
+  "byline": "Xinlin Zhao, Song Wang, Guang-Yao Xiao et al.",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
   "id": "doi-10-1038-s41586-026-11241-9",
   "date": "2026-11-13",
   "type": "paper",

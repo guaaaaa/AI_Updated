@@ -1,0 +1,237 @@
+{
+ "date": "2026-11-14",
+ "edition": "weekend",
+ "generated_at": "2026-11-14T13:22:27+00:00",
+ "summary": "Climate Action Tracker sees warming outlook stalled for a fifth year; air oxygen records show the ocean carbon sink growing while land stalls; Webb finds interstellar ice at Beta Pictoris; a likely heavyweight neutron star in a wide orbit.",
+ "news": [
+  {
+   "id": "2026-11-14-n1",
+   "story_key": "cat-warming-projections-2026-cop31",
+   "title": "Climate Action Tracker finds the warming outlook has stalled for a fifth year, with current policies heading for 2.7°C",
+   "category": "Climate & Earth",
+   "published": "2026-11-12T12:00:00-05:00",
+   "tldr": "The Climate Action Tracker's COP31 update projects 2.7°C of warming by 2100 under current policies and says even full delivery of every pledge would permanently overshoot 1.5°C.",
+   "why_selected": "The main independent yardstick of whether national climate policies are bending the warming curve, released at the UN climate talks.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Climate Action Tracker (CAT) is an independent analysis project that adds up countries' climate policies and promises and runs them through a climate model to estimate warming by 2100. Its annual update at the UN climate conference checks whether those policies are moving the world toward the 2015 Paris Agreement's 1.5°C limit on warming above preindustrial levels."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday, at the COP31 talks in Antalya, Turkey, CAT published its 2026 update under the headline that the world is heading to \"irrecoverable overshoot\" of 1.5°C. Current policies are projected to give 2.7°C of warming by 2100, up slightly from 2.6°C last year. Meeting the 2030 and 2035 targets would give 2.6°C, unchanged. Achieving all pledges and long-term targets would give 2.1°C, and the most optimistic case, with every net zero commitment delivered, still reaches 1.9°C. CAT says collective action has essentially stalled for five consecutive years, as positive and negative moves cancel out. It points to real progress: in 2025 clean electricity met all additional global power demand, and electric vehicle sales reached new highs. But global emissions are still rising, and long-term warming is projected to pass 1.5°C around 2030. A separate Copernicus bulletin, reported by Ars Technica, now puts the crossing of 1.5°C as soon as 2029."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The numbers say the question is no longer whether 1.5°C is exceeded but by how much and for how long. To bring warming back below 1.5°C by 2100, CAT estimates emissions would need to fall about 4% a year to 2030, 7% a year in the early 2030s and 9% a year from 2035 to 2050."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether COP31's final text commits to transitioning away from fossil fuels, and the dispute over timing of the next IPCC assessment reports: The New York Times reports that Saudi Arabia, India and Russia are among countries pushing for at least two of them to come out after the 2028 global stocktake."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Climate Action Tracker",
+     "url": "https://climateactiontracker.org/publications/warming-projections-global-update-2026/"
+    },
+    {
+     "name": "Ars Technica (Inside Climate News)",
+     "url": "https://arstechnica.com/science/2026/11/scientists-warn-the-1-5c-climate-change-threshold-could-arrive-by-2029/"
+    },
+    {
+     "name": "The New York Times",
+     "url": "https://www.nytimes.com/2026/11/13/climate/cop31-turkey-ipcc-climate-report.html"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-aed9544",
+   "title": "Atmospheric O2 reveals a strengthening ocean carbon sink and a stagnant net land sink since 1990",
+   "authors": [
+    "Eric J. Morgan",
+    "Yuming Jin",
+    "Elena Kozlova",
+    "Andrew J. Watson",
+    "Andrew C. Manning",
+    "Sönke Zaehle",
+    "Yasunori Tohjima",
+    "Xin Lan",
+    "Ralph F. Keeling"
+   ],
+   "affiliations": [
+    "Scripps Institution of Oceanography",
+    "UC San Diego"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Climate science",
+   "tags": [
+    "Climate science",
+    "Earth science"
+   ],
+   "tldr": "Three decades of precise air-oxygen measurements show the ocean has absorbed a growing share of fossil carbon since 1990, while the net land sink has not grown, contrary to many models.",
+   "why_selected": "A long, purely observational record that tests a central assumption of climate projections: that land vegetation will keep soaking up more CO2.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Roughly half of the carbon dioxide released by burning fossil fuels has not stayed in the air: the ocean and land ecosystems have absorbed it, slowing warming. But these \"sinks\" cannot be observed directly. How much each one takes up, and whether that uptake is growing or weakening, matters greatly for projecting future climate and the emission cuts a temperature target requires."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Scientists have tracked rising atmospheric CO2 since the 1960s, but CO2 alone cannot say where the missing carbon went. Many computer models of the land carbon cycle predict that the land sink should have grown, because extra CO2 and nitrogen fertilize plant growth. Testing that claim needs an independent observational constraint."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The trick is oxygen bookkeeping. Burning coal, oil and gas consumes oxygen as well as making CO2. On land, photosynthesis takes up CO2 and releases oxygen, so the two gases move together. In the ocean, CO2 dissolves mainly through seawater chemistry that leaves oxygen untouched. So by measuring long-term trends in both oxygen and CO2 in the air, researchers can split the absorbed carbon between ocean and land, like using two equations to solve for two unknowns. The study uses more than 30 years of air samples from the Scripps O2 Program, which now collects at 10 sites on a transect along the Pacific from the high Arctic to the South Pole."
+    },
+    {
+     "heading": "Results",
+     "body": "From 1990 to 2019, the ocean absorbed an average of 2.8 billion tonnes of carbon a year, about 35% of fossil emissions, and its uptake grew by 0.63 billion tonnes a year per decade. The net land sink averaged 1 billion tonnes a year, about 13% of fossil emissions, with large decade-to-decade swings and no notable long-term growth; it peaked in the decade centered on 2009 and has generally declined since."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the land sink is more fragile than models assume, projections may underestimate how fast CO2 will rise for a given level of emissions. The ocean sink also has limits: warmer water holds less CO2 and mixes less efficiently into the deep ocean, and the absorbed carbon acidifies seawater."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aed9544",
+    "doi": "https://doi.org/10.1126/science.aed9544"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1126-science-adw7770",
+   "title": "Carbon dioxide and amorphous water ices in the debris disk around β Pictoris",
+   "authors": [
+    "S. K. Betti",
+    "C. H. Chen",
+    "C. Xie",
+    "K. Worthen",
+    "S. Brittain",
+    "J. Najita",
+    "I. Rebollido",
+    "T. Beck",
+    "B. T. Bolin",
+    "D. Hines",
+    "C. Ingebretsen",
+    "C. Lisse",
+    "M. D. Perrin",
+    "L. Pueyo",
+    "I. Wong",
+    "C. Stark"
+   ],
+   "affiliations": [
+    "Space Telescope Science Institute"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Planetary science",
+   "tags": [
+    "Planetary science",
+    "Astrophysics & cosmology"
+   ],
+   "tldr": "Webb detects glassy water ice mixed with carbon dioxide across the Beta Pictoris debris disk, a mixture that looks like comet ice formed in interstellar space before the star's planets.",
+   "why_selected": "Ices finally detected in one of the best-studied young planetary systems, with implications for how common water-rich planets may be.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Beta Pictoris is a young star, about 20 million years old and 64 light-years away, surrounded by a disk of dust and rubble in which at least three planets are known. Everything suggested the disk should be icy: it holds carbon monoxide gas that starlight should destroy within 50 to 300 years, so something, probably colliding icy comets, must keep resupplying it. Yet nobody had found the ice."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Searches for water vapor, and for the dip water ice leaves in starlight at 3 micrometers, failed. Models offered an explanation: ultraviolet light from the star should destroy small grains of pure ice faster than collisions make them, while \"dirty\" ice mixed with other molecules should survive longer."
+    },
+    {
+     "heading": "Key idea",
+     "body": "A team led by Sarah Betti used the James Webb Space Telescope's near-infrared spectrograph in a mode that records a full spectrum from 0.6 to 5.2 micrometers for every point in the image. After subtracting the star's glare, they measured how the disk's dust reflects starlight at each wavelength and looked for the absorption fingerprints of ices. The fingerprints' shapes carry extra information. Carbon dioxide trapped inside water ice absorbs at slightly shorter wavelengths and over a broader band than pure carbon dioxide ice; ordered, crystalline water ice shows a sharp peak just above 3 micrometers that disordered, glassy ice lacks."
+    },
+    {
+     "heading": "Results",
+     "body": "Spectra from two spots about 100 astronomical units on either side of the star both showed water ice and carbon dioxide ice. The carbon dioxide is thoroughly mixed into the water at about 11% of the ice, within the 2.5 to 30% range measured in Solar System comets. Less than 7% of the water ice is crystalline, and its spread across the disk is strikingly uniform."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Glassy ice survives only if it stays colder than about 100 kelvin or something keeps disrupting its crystal structure; the authors conclude it most likely formed in interstellar space before the planets did, and that frequent collisions keep replenishing it. If such primordial ice is common, so may be the raw materials for water-rich worlds. The team could not pin down the exact crystalline fraction or rule out other molecules in the mix."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.adw7770",
+    "doi": "https://doi.org/10.1126/science.adw7770"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeg3307",
+   "title": "Discovery of a likely supermassive neutron star in a remarkably wide binary",
+   "authors": [
+    "Xinlin Zhao",
+    "Song Wang",
+    "Guang-Yao Xiao",
+    "Meng Sun",
+    "Roberto Soria",
+    "Kyle Akira Rocha",
+    "Seth Goggage",
+    "Pengfei Wang",
+    "Hongliang Yan",
+    "Xuan Mao",
+    "Yang Huang",
+    "Maosheng Xiang",
+    "Shuai Liu",
+    "Dan Qiu",
+    "Meng Zhang",
+    "Xue Li",
+    "Fabo Feng",
+    "Xihong Luo",
+    "Xiaohong Yang",
+    "Jifeng Liu"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Astrophysics & cosmology",
+   "tags": [
+    "Astrophysics & cosmology"
+   ],
+   "tldr": "A red giant wobbling around an unseen companion of about 2.2 solar masses points to an unusually heavy neutron star in a wide, nearly circular orbit that standard binary models fail to produce.",
+   "why_selected": "Heavy neutron stars constrain how matter behaves at extreme densities, and this one's orbit challenges models of how binaries evolve.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Neutron stars, the collapsed cores of exploded massive stars, usually weigh about 1.4 times the Sun packed into a sphere roughly 20 kilometers across. None above 2.5 solar masses has been found, while black holes formed from stars are typically at least five solar masses. What happens in the gap between, and how heavy a neutron star can be, depends on how matter behaves at crushing densities, which is still poorly understood."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Heavy neutron stars are mostly found in tight binaries, where they are thought to have gained mass by pulling material off a companion. Astronomers also find dark companions by watching a visible star's motion, an approach that recently produced Gaia NS1, a neutron star candidate of about 1.9 solar masses in a roughly two-year orbit."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Using spectra from the LAMOST and APOGEE surveys, the team tracked the back-and-forth Doppler shifts of a red giant in a system called J0008+0128. Like inferring the weight of an unseen dance partner from how much the visible one sways, the star's motion reveals the companion's mass and orbit. No light beyond the red giant's was detected, ruling out an ordinary star as the partner. The researchers then ran about 300,000 simulations of isolated binary evolution with the POSYDON code to see whether such a system could form."
+    },
+    {
+     "heading": "Results",
+     "body": "The companion's mass is between 1.8 and 2.8 solar masses, with a best estimate of 2.2. The pair orbits every 3.3 years on a nearly circular path, too wide for the companion to strip material from the giant, and there are no signs of mass transfer. None of the simulations reproduced the system's combination of masses and orbit."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If confirmed, the object pushes the limits of how massive neutron stars can get, and forming it may require extreme conditions such as a high birth mass and a minimal supernova kick, pointing to gaps in binary evolution models. The authors note alternatives remain, including a hidden triple system, a past merger, or an unusually small black hole."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aeg3307",
+    "doi": "https://doi.org/10.1126/sciadv.aeg3307"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major",
+    "press": 1
+   }
+  }
+ ]
+}

@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Fri, 13 Nov 2026 14:24:11 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 13:22:27 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Climate Action Tracker finds the warming outlook has stalled for a fifth year, with current policies heading for 2.7°C</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/2026-11-14-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/2026-11-14-n1</guid>
+    <pubDate>Sat, 14 Nov 2026 13:22:27 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>The Climate Action Tracker's COP31 update projects 2.7°C of warming by 2100 under current policies and says even full delivery of every pledge would permanently overshoot 1.5°C. (Climate Action Tracker, Ars Technica (Inside Climate News), The New York Times)</description>
+  </item>
+  <item>
+    <title>Atmospheric O2 reveals a strengthening ocean carbon sink and a stagnant net land sink since 1990</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/doi-10-1126-science-aed9544</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/doi-10-1126-science-aed9544</guid>
+    <pubDate>Sat, 14 Nov 2026 13:22:27 +0000</pubDate>
+    <category>Science / Climate science</category>
+    <description>Three decades of precise air-oxygen measurements show the ocean has absorbed a growing share of fossil carbon since 1990, while the net land sink has not grown, contrary to many models. (Eric J. Morgan, Yuming Jin, Elena Kozlova et al. · Scripps Institution of Oceanography, UC San Diego)</description>
+  </item>
+  <item>
+    <title>Carbon dioxide and amorphous water ices in the debris disk around β Pictoris</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/doi-10-1126-science-adw7770</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/doi-10-1126-science-adw7770</guid>
+    <pubDate>Sat, 14 Nov 2026 13:22:27 +0000</pubDate>
+    <category>Science / Planetary science</category>
+    <description>Webb detects glassy water ice mixed with carbon dioxide across the Beta Pictoris debris disk, a mixture that looks like comet ice formed in interstellar space before the star's planets. (S. K. Betti, C. H. Chen, C. Xie et al. · Space Telescope Science Institute)</description>
+  </item>
+  <item>
+    <title>Discovery of a likely supermassive neutron star in a remarkably wide binary</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/doi-10-1126-sciadv-aeg3307</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/doi-10-1126-sciadv-aeg3307</guid>
+    <pubDate>Sat, 14 Nov 2026 13:22:27 +0000</pubDate>
+    <category>Science / Astrophysics &amp; cosmology</category>
+    <description>A red giant wobbling around an unseen companion of about 2.2 solar masses points to an unusually heavy neutron star in a wide, nearly circular orbit that standard binary models fail to produce. (Xinlin Zhao, Song Wang, Guang-Yao Xiao et al.)</description>
+  </item>
   <item>
     <title>Independent interferometric observable confirms black hole shadow in M87*</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11241-9</link>
@@ -294,38 +326,6 @@
     <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
     <category>Science / Physics</category>
     <description>A PNAS Nexus analysis of surviving uranium cubes and archives finds the B8 reactor would have needed 1,292 to 1,775 cubes, far more than the 664 used, contradicting Heisenberg's claim that it was nearly critical. (Ars Technica, PNAS Nexus)</description>
-  </item>
-  <item>
-    <title>Towards observing interstitial hydrogen in solution in metal lattices</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1038-s41586-026-11238-4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1038-s41586-026-11238-4</guid>
-    <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>Cryogenic atom probe tomography with deuterium tracers gives the first direct observation of hydrogen dissolved in the gaps between metal atoms, and shows the metal's makeup decides where it sits. (Chao Huang, Saiyu Liu, Wenting Lv et al. · University of Sydney)</description>
-  </item>
-  <item>
-    <title>Enigmatic HCl detections as a potential signature of igneous activity on Mars</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1126-sciadv-aeb9422</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1126-sciadv-aeb9422</guid>
-    <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
-    <category>Science / Planetary science</category>
-    <description>Seasonal hydrogen chloride spikes above fresh fissures on Mars's Alba Mons suggest gas seeping from hot magma, a possible sign that Mars is dormant rather than dead. (Alexander Trokhimovskiy, Daniel Mège, Oleg Korablev et al. · Space Research Centre of the Polish Academy of Sciences)</description>
-  </item>
-  <item>
-    <title>Chiral altermagnon in MnTe</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1126-science-adv3196</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/doi-10-1126-science-adv3196</guid>
-    <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>Evidence of chirality in manganese telluride supports altermagnetism as a real third class of magnetism that sits between ferromagnets and antiferromagnets. (Daniel Jost, Resham Babu Regmi, Eder G. Lomeli et al. · SLAC National Accelerator Laboratory)</description>
-  </item>
-  <item>
-    <title>Chemical traces of blood found in a 115-million-year-old dinosaur bone</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-04/2026-11-04-n1</guid>
-    <pubDate>Wed, 04 Nov 2026 22:08:14 +0000</pubDate>
-    <category>Science / Life Sciences</category>
-    <description>A team led by Curtin University reports red blood cell-like structures and heme molecules inside the leg bone of a 115-million-year-old Brazilian dinosaur, the first chemical evidence of blood in a dinosaur. (Phys.org, The Conversation, Popular Science)</description>
   </item>
 </channel>
 </rss>
