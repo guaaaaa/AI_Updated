@@ -1,0 +1,303 @@
+{
+ "date": "2026-11-14",
+ "edition": "weekend",
+ "generated_at": "2026-11-14T13:55:11+00:00",
+ "summary": "A new pre-surgery option for bladder cancer, a rising US measles toll, China's first weight-loss pill, and papers on helicopter ECMO for cardiac arrest, primate brain evolution and 10,000 years of sheep breeding.",
+ "news": [
+  {
+   "id": "2026-11-14-n1",
+   "story_key": "fda-durvalumab-enfortumab-vedotin-mibc-volga",
+   "title": "FDA approves durvalumab plus enfortumab vedotin around surgery for bladder cancer patients who cannot take cisplatin",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-13T13:22:00-05:00",
+   "tldr": "The FDA approved an immunotherapy plus antibody-drug conjugate given before and after bladder removal for patients who cannot or will not take cisplatin, after a 695-patient trial showed longer event-free and overall survival.",
+   "why_selected": "A regulatory decision backed by a randomized phase 3 trial that improved overall survival in a group with few options.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Muscle-invasive bladder cancer has grown into the muscle wall of the bladder. A standard treatment is radical cystectomy, surgery that removes the bladder. Cisplatin-based chemotherapy is one option given around surgery, but some patients are ineligible for it or refuse it. For that group, the new approval's pivotal trial compared adding drugs before and after surgery with surgery alone."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 13 the US Food and Drug Administration approved durvalumab (Imfinzi, AstraZeneca), an immunotherapy that blocks the PD-L1 protein, combined with enfortumab vedotin, an antibody-drug conjugate that delivers a toxic payload to cancer cells. Patients receive both drugs for three cycles before surgery, then durvalumab alone for up to nine cycles afterward. The approval covers adults who are ineligible for or have refused cisplatin.\n\nIt rests on VOLGA, a randomized, open-label trial of 695 patients split three ways. Compared with surgery alone, the combination lengthened event-free survival, the time until the cancer progressed, recurred or the patient died: the median was not yet reached with the drugs versus 12.1 months with surgery alone (hazard ratio 0.51). Overall survival also improved (hazard ratio 0.58, meaning a 42% lower risk of death at any given time), though median survival was not reached in either arm."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For patients who cannot tolerate the standard chemotherapy, this adds a treatment before surgery with evidence that it helps people live longer, not only delays recurrence. The FDA acted six weeks ahead of its goal date under priority review, and coordinated the review with regulators in Australia, Brazil, Canada, Israel, Singapore and the UK through Project Orbis, so approvals elsewhere may follow. Side effects were common: the label lists rash, itching, liver enzyme rises, fatigue, peripheral neuropathy and altered taste among reactions seen in more than 20% of patients, plus warnings for immune-mediated reactions."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Full VOLGA results in a peer-reviewed journal, decisions by the partner regulators, and how doctors choose between this regimen and other immunotherapy combinations for cisplatin-ineligible patients."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDA",
+     "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-durvalumab-enfortumab-vedotin-ejfv-muscle-invasive-bladder-cancer"
+    },
+    {
+     "name": "The ASCO Post",
+     "url": "https://ascopost.com/news/november-2026/fda-approves-durvalumab-with-enfortumab-vedotin-ejfv-for-muscle-invasive-bladder-cancer/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-n2",
+   "story_key": "us-measles-deaths-cases-5400-november-2026",
+   "title": "US measles deaths climb as the CDC's tally reaches six and states report ten, with cases above 5,400",
+   "category": "Public Health",
+   "published": "2026-11-12T12:28:00-05:00",
+   "tldr": "The CDC now counts six US measles deaths in 2026 while state health departments report ten, cases have reached 5,412, and a regional health body is weighing whether the US has lost measles-elimination status.",
+   "why_selected": "The worst US measles year in more than three decades, with rising deaths and an imminent ruling on elimination status.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Measles is a highly contagious respiratory virus that causes rash, cough and high fever and can lead to hospitalization and death. The United States achieved \"elimination\" status, meaning no sustained domestic spread, about 26 years ago. Vaccination with the measles, mumps and rubella (MMR) vaccine prevents it, and communities with coverage below 95% are considered vulnerable to outbreaks."
+    },
+    {
+     "heading": "What happened",
+     "body": "The CDC's latest count stands at 5,412 cases for 2026, up 230 in a week, the 14th straight week of triple-digit increases, according to CIDRAP. The agency's tally of measles-related deaths reached six, while state health departments report ten: seven in Pennsylvania, two in Wisconsin and one in New York. At least four of the people who died were children. This week Wisconsin reported the death of a child in Grant County, and Pennsylvania reported the death of an unvaccinated resident of Montour County. People who are unvaccinated or of unknown status make up 96% of cases, and 11% of cases have been hospitalized. Pennsylvania has the most cases this year, 1,542."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Experts quoted by both outlets say the true number of infections is probably far higher: officials typically expect about one to two deaths per 1,000 cases (one to three among unvaccinated children), so ten deaths suggest many cases were never recorded, and genomic data from Utah's outbreak point the same way. PolitiFact reports that the federal death count has lagged state counts after Health Secretary Robert F. Kennedy Jr. questioned whether measles caused some deaths. The CDC reports 43 outbreaks so far this year, against 48 in all of 2025 and 16 in 2024."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Pan American Health Organization's commission is expected to announce on November 17 whether the US keeps its measles-elimination status, and states expect a possible rise in late winter and spring."
+    }
+   ],
+   "sources": [
+    {
+     "name": "CIDRAP",
+     "url": "https://www.cidrap.umn.edu/measles/2-more-people-die-measles-complications-us-cases-top-5400"
+    },
+    {
+     "name": "PolitiFact",
+     "url": "https://politifact.com/article/2026/nov/12/measles-elimination-transmission-vaccine-outbreak/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-n3",
+   "story_key": "china-nmpa-orforglipron-approval",
+   "title": "China approves Lilly's orforglipron, the first GLP-1 weight-loss pill cleared there",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-12T09:23:00-05:00",
+   "tldr": "China's drug regulator approved Eli Lilly's orforglipron tablets for adults with obesity, or overweight plus a related condition, making it the first oral GLP-1 drug for weight management in the country.",
+   "why_selected": "A first-of-its-kind approval in a country where hundreds of millions of adults may be overweight or obese by 2050.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "GLP-1 receptor agonists mimic a gut hormone that regulates appetite, and they have become the leading drugs for obesity. Most are injections. China had already approved several injectable versions, including Lilly's tirzepatide (Zepbound), Novo Nordisk's semaglutide (Wegovy), ecnoglutide from Pfizer and Sciwind Biosciences, and Innovent's mazdutide. Orforglipron is taken as a tablet."
+    },
+    {
+     "heading": "What happened",
+     "body": "China's National Medical Products Administration announced on Thursday, November 12, that it had approved the marketing license for Eli Lilly's orforglipron tablets, sold in China under the name Muyouda (marketed as Foundayo elsewhere). The approval covers adults with obesity, or overweight adults with at least one weight-related health condition. It is the first oral GLP-1 drug approved for weight management in China. The drug is already approved in the US, the UK and the United Arab Emirates. Novo Nordisk's oral Wegovy is still under review in China, and Chinese firms Huadong Medicine and Jiangsu Hengrui Pharmaceuticals are also seeking approval for oral weight-loss drugs."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The potential patient population is very large: a 2025 study in The Lancet projected that the number of overweight or obese adults in China could reach 630 million by 2050. A pill avoids injections, which may matter for uptake, though price and access are not yet known. The approval also shows how quickly the obesity-drug field is moving from injections to tablets, with several companies competing in the same market. The sources read did not report the trial results the regulator relied on or the price."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Pricing, whether the drug is covered by China's national insurance, the launch date, and decisions on the rival oral drugs under review."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Pharmaceutical Technology",
+     "url": "https://www.pharmaceutical-technology.com/news/eli-lilly-oral-glp1-ra-foundayo-nmpa-approval-weight-management/"
+    },
+    {
+     "name": "Plataforma Media",
+     "url": "https://www.plataformamedia.com/en/2026/11/13/china-authorizes-marketing-of-first-glp-1-type-weight-loss-pill/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2602919",
+   "title": "Prehospital Extracorporeal Life Support in Refractory Out-of-Hospital Cardiac Arrest",
+   "authors": [
+    "Dinis Reis Miranda Xavier Moors Samir Ali Iscander M. Maissan Hans L. van Schuppen Lars Mommers Ellen E.M. Weelink Robert-Jan Houmes Fabian O. Kooij Marijn Tacken Manfred J. Hirner Mark van Vledder Patrick R. Schober Cor Slagt Lieneke Venema Christiaan Meuwese Annemarie Engstrom Merijn Kant Sakir Akin Joris van der Heijden Walter M. van den Bergh Judith M.D. van den Brule Erik Scholten Carlos V. Elzo Kraemer Luuk Otterspoor Laurien van Koppenhagen Jesse de Metz Thijs S.R. Delnoij Jeroen J.H. Bunge Paul Wijnandts Rohit M. Oemrawsingh Gabe Bleeker Dirk W. Donker Bas W.J. Bens Robert-Jan M. van Geuns Ineke van de Pol Jose M. Montero-Cabezas Leon Montenij Marijn Kuipers Bas van den Bogaard Roberto Lorusso Robert van Thiel Jose P.S. Henriques Stefan Verstraeten Tim Jansen Adriaan O. Kraaijeveld Maurits H. Renes Krischan D. Sjauw Jeroen A. Janson Ingeborg Harks Henrik Endeman Marcel C.G. van de Poll Dwight Dumay Sanne E. Hoeks Esther van Lieshout Dennis Den Hartog and Diederik Gommers"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-07T00:00:00-05:00",
+   "primary_tag": "Cardiovascular",
+   "tags": [
+    "Cardiovascular",
+    "Devices & diagnostics"
+   ],
+   "tldr": "In a non-randomized Dutch study of 231 young adults in refractory cardiac arrest, helicopter teams starting ECMO on scene saw 40% survive to discharge versus 20% with conventional care.",
+   "why_selected": "A large effect on survival from a hard-to-study emergency intervention, published in NEJM, with serious design caveats worth understanding.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Some people whose heart stops outside hospital do not respond to prolonged resuscitation, a \"refractory\" arrest. Transporting them to hospital while CPR continues can prolong poor blood flow to the organs. The question is whether starting artificial circulation at the scene, rather than at the hospital, saves lives."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Extracorporeal CPR (ECPR) uses an ECMO machine, which pumps blood through an artificial lung outside the body, to restore circulation during arrest. Hospital-based randomized trials disagreed: ARREST supported it at one experienced centre, while the Prague OHCA and INCEPTION trials did not show significant gains in their main neurological outcomes."
+    },
+    {
+     "heading": "Key idea",
+     "body": "OnScene tested whether the Netherlands' existing helicopter emergency medical services (HEMS) could bring ECPR to the patient. Four HEMS stations started with conventional, physician-led care and then, one at a time, began flying with an ECMO circuit on board, a \"stepped-wedge\" design. Eligible patients were aged 18 to 50, had a witnessed arrest or signs of life, and had a shockable heart rhythm or suspected pulmonary embolism, with arrest lasting more than 20 minutes after dispatch. Which group a patient joined depended on which station responded and when. Neither patients nor the order in which stations switched were randomized: investigators chose the order based on experience, geography and response times. Recruitment ran from October 2021 to June 2025."
+    },
+    {
+     "heading": "Results",
+     "body": "Of 231 patients, 144 were in the intervention group and 87 in the conventional group. Median time to ECMO flow was 45 minutes, versus 77 minutes for conventional patients who received ECPR after reaching hospital. Survival to discharge was 40% (57 of 144) versus 20% (17 of 87), odds ratio 2.72 (95% CI 1.59 to 4.66). Good neurological function at six months: 36% versus 13%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A doubling of survival would be among the largest effects reported in resuscitation. But 60% of intervention patients came from the Rotterdam station, home to the study's ECMO-experienced physicians, and crews judged eligibility knowing their group. An EMCrit reanalysis adjusting for station gave an odds ratio of 2.27 with a confidence interval crossing 1."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2602919",
+    "doi": "https://doi.org/10.1056/NEJMoa2602919"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aed3856",
+   "title": "An LHX2-DACH1 regulatory innovation drives basal progenitor expansion in the primate neocortex",
+   "authors": [
+    "Pei-Shan Hou",
+    "Ching-Yu Chuang",
+    "Feng-Lan Chiu",
+    "Chan-Hsien Yeh",
+    "Shih-Shun Hung",
+    "Quan Wu",
+    "Taeko Suetsugu",
+    "Fumio Matsuzaki",
+    "Shen-Ju Chou",
+    "Hung-Chih Kuo"
+   ],
+   "affiliations": [
+    "National Yang Ming Chiao Tung University; Academia Sinica; Kyoto University"
+   ],
+   "announced": "2026-11-13T00:00:00-05:00",
+   "primary_tag": "Development & aging",
+   "tags": [
+    "Development & aging",
+    "Neuroscience",
+    "Evolution & ecology"
+   ],
+   "tldr": "A small DNA switch that controls the gene DACH1, with a feature shared among primates, helps the developing cortex make more of a special stem cell abundant in primate brains, in organoids and mice.",
+   "why_selected": "A concrete, tested mechanism for how primate brains evolved new kinds of building cells without new genes.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Why is the primate cerebral cortex, the brain's outer layer involved in perception, language and memory, so much larger and more complex than a mouse's? Earlier work showed genetic changes that let developing brains make more cells or keep dividing for longer. Whether evolution also changed which types of brain-building cells are made was less clear."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Researchers knew that a specialized neural stem cell, basal radial glia (bRG), is abundant in developing primate brains and rare in mice. These cells divide repeatedly, expanding the pool of cells that build the cortex, and contribute neurons that connect different cortical regions. Less was known about DNA changes that might steer the brain toward making them."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team, from Taiwan and Japan, studied DACH1, a gene present in humans, monkeys and mice. Rather than a new gene, they found a small regulatory region of DNA, a \"switch\" that controls when and where DACH1 is active, with a feature shared among primates but different in other vertebrates. Think of the developing brain as a factory: the machinery was already present, but part of its operating manual changed. They tested this in cortical organoids, tiny three-dimensional models of the developing cortex grown from human and rhesus monkey stem cells, and in developing mouse brains. They also used live imaging to follow individual stem cells as they divided."
+    },
+    {
+     "heading": "Results",
+     "body": "Deleting the regulatory region from organoids reduced the number of cells carrying a key bRG marker, while other progenitor populations stayed largely unchanged. Adding the human regulatory element to developing mouse brains increased cells with bRG features. Boosting DACH1 activity raised the share of daughter cells becoming bRG-like from about 4% to nearly 15%, and DACH1 worked by suppressing another molecular signal in neural stem cells."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work shows that rewiring gene control can change the mix of brain-building cells, a third route to a bigger, more complex brain. The results come from organoids and mice, and the authors note they do not directly explain the evolution of intelligence."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aed3856",
+    "doi": "https://doi.org/10.1126/sciadv.aed3856"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41588-026-02825-2",
+   "title": "A multi-tissue atlas of genetic regulatory effects in sheep",
+   "authors": [
+    "Mian Gong",
+    "Ziyang Zhuang",
+    "Xiangrong Sun",
+    "Yuan Xu",
+    "Huanhuan Zhang",
+    "Yanan Wang",
+    "Dailu Guan",
+    "Ran Li",
+    "Xiaoning Lu",
+    "Zhonghao Bai",
+    "Pingjie Feng",
+    "Meiwen Song",
+    "Min Tian",
+    "Jingsheng Lu",
+    "Mingshan Wang",
+    "Xuemei Lu",
+    "Dongdong Wu",
+    "Peng Su",
+    "Peiyao Liu",
+    "Guoqing Zhang",
+    "Jianxin Shi",
+    "Mingzhu Shan",
+    "Yuanyuan Zhang",
+    "Zhu Meng",
+    "Hao Li",
+    "Xiaoyun He",
+    "Jianqi Yang",
+    "Yize Song",
+    "Xinyue Li",
+    "Xiaolong Du"
+   ],
+   "affiliations": [
+    "Aarhus University"
+   ],
+   "announced": "2026-11-09T00:00:00-05:00",
+   "primary_tag": "Genetics & genomics",
+   "tags": [
+    "Genetics & genomics",
+    "Evolution & ecology"
+   ],
+   "tldr": "SheepGTEx maps how DNA variants control gene activity across 51 sheep tissues and cell types, and ancient DNA shows breeding favored variants acting in just one or a few tissues, such as skin.",
+   "why_selected": "A large genetic resource for a major farm animal that also reveals how domestication worked through gene regulation.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "For around 10,000 years people have bred sheep for wool, size and reproduction. Genetic studies can find regions of the genome linked to traits, but often cannot tell which gene is involved, how it acts, or in which tissue. That gap limits both breeding science and our understanding of how domestication changed animals."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Until now, sheep genetic studies could point to regions of the genome associated with traits but often struggled to identify the genes involved, the biological mechanisms at work, or the tissues where variants act. No map of how genetic variation influences gene regulation across the sheep body came close to this level of detail."
+    },
+    {
+     "heading": "Key idea",
+     "body": "An international team, including scientists at Aarhus University, built SheepGTEx. They analyzed 6,761 RNA-sequencing samples, which measure gene activity, from 2,816 sheep across 51 tissues and cell types, and examined seven types of molecular regulation. They then combined the atlas with DNA from 52 ancient sheep spanning about 10,000 years. That allowed them to ask whether breeding acted on regulatory switches as well as on genes, and in which tissues, like reading which settings on a control panel were turned over millennia."
+    },
+    {
+     "heading": "Results",
+     "body": "The atlas contains hundreds of thousands of genetic regulatory effects. Variants regulating genes in just one or a few tissues showed stronger signs of selection than variants acting in many tissues. Selection marks appeared in variants active in skin and cervix, consistent with breeding for wool, pigmentation and reproduction. A variant linked to higher activity of the gene THNSL2 in skin generally became more common in European sheep between the Neolithic and the Middle Ages. A regulatory link for the gene FXYD1 in the anterior pituitary offers a clue to differences in litter size."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The atlas gives breeders and geneticists a way to pin trait-linked DNA to genes and tissues. The links are associations: the researchers have not shown that THNSL2 affects wool or that FXYD1 sets litter size."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41588-026-02825-2",
+    "doi": "https://doi.org/10.1038/s41588-026-02825-2"
+   },
+   "signals": {
+    "venue": "Nature Genetics",
+    "tier": "major",
+    "press": 1
+   }
+  }
+ ]
+}
