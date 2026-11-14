@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-14-n1",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "Attackers break into unpatched Check Point gateways through PHP2Shell and wipe servers at some Israeli organizations",
+  "tldr": "Check Point says an attacker used the PHP2Shell flaws and a new privilege-escalation bug to take over unpatched Security Gateways, then wiped VMware ESXi servers at some Israeli organizations.",
+  "category": "Cybersecurity",
+  "byline": "Check Point Research, BleepingComputer"
+ },
+ {
+  "id": "2026-11-14-n2",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "A failure in aging air traffic telecom equipment grounds every US departure for more than four hours",
+  "tldr": "The FAA halted all US departures on Friday after legacy telecom switches and routers in the air traffic network started passing inconsistent data; officials linked the failure to patches made during an upgrade.",
+  "category": "Telecom & Internet",
+  "byline": "The Verge, WIRED, Ars Technica"
+ },
+ {
+  "id": "2026-11-14-n3",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "Trezor confirms spy implants in three Safe 5 hardware wallets sold by a Southeast Asian reseller",
+  "tldr": "Trezor found extra circuit boards in three Safe 5 wallets bought from reseller CryptoBilis that capture recovery phrases from the screen and send them out over a cellular network; new firmware blocks them.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Trezor"
+ },
+ {
+  "id": "2026-11-14-n4",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "Starship reaches orbit and deploys 26 Starlink satellites, but its booster diverts into the Gulf instead of a tower catch",
+  "tldr": "SpaceX's 15th Starship flight put 26 Starlink V3 satellites into orbit, but the Super Heavy booster was diverted into the Gulf and exploded; a first attempt to catch the upper stage could come Saturday.",
+  "category": "Space Industry",
+  "byline": "Ars Technica, Next Spaceflight"
+ },
+ {
+  "id": "2611.12252",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "Lessons Not Learned: Why Cross-Chain Bridges Keep Losing Billions the Same Way",
+  "tldr": "Most cross-chain bridge losses since 2023 came from how bridges were set up, not from code bugs; a rubric scored from on-chain data, plus rate limits and emergency stops, would have cut modeled losses 105-fold.",
+  "primary_tag": "Security & privacy",
+  "tags": [
+   "Security & privacy",
+   "Cryptography"
+  ],
+  "byline": "Mohsen Ahmadvand, Piotr Dobaczewski, Camille Bouzerand · Monad Foundation",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-13-n1",
   "date": "2026-11-13",
   "type": "news",

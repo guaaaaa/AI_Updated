@@ -1,0 +1,216 @@
+{
+ "date": "2026-11-14",
+ "edition": "weekend",
+ "generated_at": "2026-11-14T11:48:01+00:00",
+ "summary": "A wiper campaign through unpatched Check Point gateways, a five-hour nationwide US flight stop caused by aging telecom gear, confirmed spy implants in Trezor wallets, and Starship's second orbital flight.",
+ "news": [
+  {
+   "id": "2026-11-14-n1",
+   "story_key": "check-point-gateways-php2shell-wiper",
+   "title": "Attackers break into unpatched Check Point gateways through PHP2Shell and wipe servers at some Israeli organizations",
+   "category": "Cybersecurity",
+   "published": "2026-11-12T08:56:37-05:00",
+   "tldr": "Check Point says an attacker used the PHP2Shell flaws and a new privilege-escalation bug to take over unpatched Security Gateways, then wiped VMware ESXi servers at some Israeli organizations.",
+   "why_selected": "A destructive campaign against widely deployed firewall gateways, with a vendor fix that administrators need to apply now.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "PHP2Shell is the name given to two critical flaws in PHP, tracked as CVE-2026-109618 and CVE-2026-109619, that let an attacker run code on a server without logging in. PHP shipped emergency patches on October 21, and Amazon Threat Intelligence says exploitation attempts began four days before that. Check Point's Security Gateways, which act as firewalls and VPN entry points, run PHP in their Mobile Access web portal."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 12, Check Point Research reported that from October 30, about a week after a fix was available, an attacker broke into unpatched gateways through the Mobile Access portal. The intruder then used a newly disclosed local privilege-escalation flaw in the gateway's DynamicCLI interface, CVE-2026-123039, to gain root (full administrator) control, and installed web shells and a backdoor called TSGA. The first wave, on October 30, targeted Israeli organizations. At some of them the attacker moved on to VMware ESXi hosts, the servers that run virtual machines, and ran a data-wiping program called destroy_v6, leaving a politically themed note that rejects ransom negotiations. A broader second wave on November 2 hit organizations in several countries and sectors, with no destructive activity found."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Gateways sit at the edge of a network, so taking one over gives an attacker a trusted foothold inside. The goal here was damage, not extortion. Attribution is unclear: TSGA is a modified variant of PhiliKit, a framework that ESET has associated with the China-linked group UNC5221, but Check Point says the evidence does not support a high-confidence conclusion. It lists several possibilities, including a false-flag operation, and notes the wiper note uses the brand of Dream Security, a firm that had published research on PHP2Shell attacks."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Check Point urges customers to install its November Jumbo Hotfix on all management servers and gateways, starting with internet-facing Mobile Access portals, and to look for signs of compromise such as unexplained gaps in firewall logs."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Check Point Research",
+     "url": "https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-n2",
+   "story_key": "faa-nationwide-ground-stop-nov-2026",
+   "title": "A failure in aging air traffic telecom equipment grounds every US departure for more than four hours",
+   "category": "Telecom & Internet",
+   "published": "2026-11-13T16:38:25-05:00",
+   "tldr": "The FAA halted all US departures on Friday after legacy telecom switches and routers in the air traffic network started passing inconsistent data; officials linked the failure to patches made during an upgrade.",
+   "why_selected": "Only the third nationwide ground stop in US history, caused by a failure in critical communications infrastructure.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "US air traffic control depends on the FAA Telecommunications Infrastructure (FTI) network, the private backbone that links radar, controllers and pilots' radio communications. The contractor L3Harris runs it and is in the middle of a multiyear modernization that replaces decades-old copper lines with fiber. Earlier this month L3Harris said 70% of FAA sites had been upgraded. Older parts of the network still use TDM, a legacy telecom technology."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday, November 13, the FAA issued a nationwide ground stop in the afternoon, halting departures from all US airports. It was lifted at 8:15 pm ET. Transportation Secretary Sean Duffy said old switches and routers \"got overloaded with data\" and began sending inconsistent information; equipment already replaced was not affected, and radar and communications were not lost entirely. Homeland Security Secretary Markwayne Mullin said \"patches\" made while new equipment was being installed overwhelmed the older system, and that there was no indication of a cyberattack, though it has not been ruled out. FlightAware counted more than 6,300 cancellations and 9,500 delays by the time the stop ended."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It was only the third nationwide ground stop, after the September 11, 2001 attacks and a roughly 90-minute stop in January 2023 when the pilot notice system failed. The episode shows that the riskiest moment for old infrastructure can be the upgrade itself. Duffy is asking Congress for $30.1 billion more for modernization, and on Friday said he wants $50 billion. A September Government Accountability Office report warned the accelerated program may favor speed over cost and disruption, and runs on 11,389 separate schedules that are not integrated."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Repositioning crews and aircraft will likely take days, if not weeks, WIRED reports. Officials are also checking any link to the new SMART traffic-management system activated on November 10; its developer denies one."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/news/1033489/faa-ground-stop"
+    },
+    {
+     "name": "WIRED",
+     "url": "https://www.wired.com/story/the-faa-nationwide-ground-stop-is-over/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/tech-policy/2026/11/faa-orders-third-nationwide-ground-stop-in-its-history/"
+    },
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2316792/faa-flights-resume-ground-stop-old-equipment/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-n3",
+   "story_key": "trezor-cryptobilis-implants-confirmed",
+   "title": "Trezor confirms spy implants in three Safe 5 hardware wallets sold by a Southeast Asian reseller",
+   "category": "Cybersecurity",
+   "published": "2026-11-13T14:38:00-05:00",
+   "tldr": "Trezor found extra circuit boards in three Safe 5 wallets bought from reseller CryptoBilis that capture recovery phrases from the screen and send them out over a cellular network; new firmware blocks them.",
+   "why_selected": "A confirmed hardware supply-chain attack on security devices, with a firmware fix and clear steps for affected owners.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A hardware wallet is a small device that keeps the keys to cryptocurrency offline. Its recovery phrase, a list of words shown on its screen, can rebuild the wallet anywhere, so anyone who sees it can take the funds. In October, Ledger confirmed that some of its wallets sold through CryptoBilis, an authorized reseller in Southeast Asia, had been physically tampered with. Trezor dropped CryptoBilis on October 9 and on October 28 received a report of an implant in one of its own devices."
+    },
+    {
+     "heading": "What happened",
+     "body": "Trezor now says three Safe 5 wallets bought from CryptoBilis between August 20 and September 23, 2026 contained malicious implants. It examined the original device in its laboratory and identified two more from owners' photographs. The implant is an extra circuit board fitted between the main board and the display. It captures recovery words and passphrases when they appear on screen, encrypts them and sends them over a mobile network, retrying until it connects. On November 11 Trezor released firmware 2.13.1, which it says stops the implants found so far from capturing anything. Forty-eight CryptoBilis customers have contacted the company, and none has reported lost funds."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The implant does not alter the wallet's firmware or its Secure Element, the tamper-resistant chip that stores keys, so the device's own integrity checks would not reveal it. That makes the retail channel part of the security model. Trezor has cut its reseller network by about 80% and imposed tighter controls on how remaining partners source, store and handle devices."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The firmware cannot protect a phrase that was already captured. Trezor advises CryptoBilis buyers to move funds to a newly created wallet with a new recovery phrase, and offers a replacement device to anyone who bought from CryptoBilis since March 2026."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/"
+    },
+    {
+     "name": "Trezor",
+     "url": "https://trezor.io/blog/news/implant-reported-in-a-trezor-sold-by-cryptobilis"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-n4",
+   "story_key": "starship-flight-15",
+   "title": "Starship reaches orbit and deploys 26 Starlink satellites, but its booster diverts into the Gulf instead of a tower catch",
+   "category": "Space Industry",
+   "published": "2026-11-13T19:49:13-05:00",
+   "tldr": "SpaceX's 15th Starship flight put 26 Starlink V3 satellites into orbit, but the Super Heavy booster was diverted into the Gulf and exploded; a first attempt to catch the upper stage could come Saturday.",
+   "why_selected": "The largest rocket ever flown completed an operational satellite deployment and set up the first attempt to recover its upper stage.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Starship is SpaceX's two-stage rocket: a Super Heavy booster and an upper stage also called Starship. Both are meant to be caught by the launch tower and flown again, which is the key to lowering launch costs. Flight 15 was planned as the first mission to bring both stages back to the launch site in Texas for a catch, during a flight of more than 22 hours and about 14 orbits."
+    },
+    {
+     "heading": "What happened",
+     "body": "Starship lifted off on Friday evening from Starbase in South Texas, its 15th test flight in more than three years. The upper stage reached a planned orbit, the second time Starship has flown into low Earth orbit, and about 40 minutes into the flight released 26 Starlink V3 satellites, all of which reached orbit. Each V3 satellite is meant to add 1 terabit of network capacity; the 26 together equal about 10 Falcon 9 launches of the older V2 Mini satellites. The booster, however, was commanded to divert into the Gulf of Mexico because of an unspecified issue, rather than return to Starbase, and exploded."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Ars Technica says the deployment makes Starship an operational orbital rocket, the largest and most powerful ever launched. The remaining challenge is reuse: SpaceX has landed and reflown earlier boosters but not the current version 3. The heat shield is one of the biggest hurdles. For this flight SpaceX added tile retention mechanisms and a curved tile design meant to reduce heating in gaps, and three of the satellites carry cameras to image the shield."
+    },
+    {
+     "heading": "What to watch",
+     "body": "If the upper stage passes health checks in orbit and during descent, SpaceX will try to catch it at about 3:15 pm local time Saturday, the first such attempt. Otherwise it will be steered into the ocean."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/space/2026/11/starship-flight-15-powers-to-orbit-setting-up-a-possible-catch-on-saturday/"
+    },
+    {
+     "name": "Next Spaceflight",
+     "url": "https://nextspaceflight.com/launches/details/8403/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.12252",
+   "title": "Lessons Not Learned: Why Cross-Chain Bridges Keep Losing Billions the Same Way",
+   "authors": [
+    "Mohsen Ahmadvand",
+    "Piotr Dobaczewski",
+    "Camille Bouzerand"
+   ],
+   "affiliations": [
+    "Monad Foundation"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Security & privacy",
+   "tags": [
+    "Security & privacy",
+    "Cryptography"
+   ],
+   "tldr": "Most cross-chain bridge losses since 2023 came from how bridges were set up, not from code bugs; a rubric scored from on-chain data, plus rate limits and emergency stops, would have cut modeled losses 105-fold.",
+   "why_selected": "A systematic study of $3.52 billion in bridge hacks that turns recurring failures into checks anyone can run on live deployments.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Cross-chain bridges move cryptocurrency tokens between blockchains by locking or burning a token on one chain and releasing or minting it on another. The destination chain cannot read the source chain, so it must trust keys and services that report what happened there. Bridge hacks have cost billions, and many involved no software bug at all."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The usual defense is a code audit, which checks whether smart contracts behave as written. But an audit cannot show who holds the keys, how many signatures a release needs, or which outside services a deployment trusts. The April 2026 KelpDAO loss of $292 million came from a repeatedly audited contract configured to accept messages approved by a single verifier."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors catalogue 72 bridge incidents from 2021 to 2026, with $3.52 billion in reported losses, and sort each by one test: did the code do what it was written to do? If it did, the loss is a \"posture\" failure, meaning the attacker beat the setup of people, keys, controls and off-chain infrastructure. From these failures they build a rubric of scored questions, read from on-chain data, with hard caps that drop a score to the lowest value when a fatal setting is present. A token scores as its weakest deployment on any chain sharing its backing. They also show that rate limits and an emergency stop bound losses from unforeseen attacks, and replay each hack in a model with these controls switched on or off."
+    },
+    {
+     "heading": "Results",
+     "body": "Posture failures account for 88% of reported losses since 2023. In the replays, the rubric's controls stopped 28 of 29 posture failures, and with rate limits and a stop, losses fell from $3.52 billion to $33 million. On-chain data alone revealed the fatal setting in 21 of the 29 posture failures. In 4 of the 7 hacks with known timing, attackers changed the bridge and drained it within the hour."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Users and operators can check a bridge's risk before funds move, not after. The main caveat: results come from a model built on the same hacks, and with a looser $5 million allowance and one-day stop the reduction falls to 18-fold."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12252"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}

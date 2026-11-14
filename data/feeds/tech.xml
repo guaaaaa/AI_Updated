@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Fri, 13 Nov 2026 11:47:25 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 11:48:01 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Attackers break into unpatched Check Point gateways through PHP2Shell and wipe servers at some Israeli organizations</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n1</guid>
+    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Check Point says an attacker used the PHP2Shell flaws and a new privilege-escalation bug to take over unpatched Security Gateways, then wiped VMware ESXi servers at some Israeli organizations. (Check Point Research, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>A failure in aging air traffic telecom equipment grounds every US departure for more than four hours</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n2</guid>
+    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
+    <category>Tech / Telecom &amp; Internet</category>
+    <description>The FAA halted all US departures on Friday after legacy telecom switches and routers in the air traffic network started passing inconsistent data; officials linked the failure to patches made during an upgrade. (The Verge, WIRED, Ars Technica, Engadget)</description>
+  </item>
+  <item>
+    <title>Trezor confirms spy implants in three Safe 5 hardware wallets sold by a Southeast Asian reseller</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n3</guid>
+    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Trezor found extra circuit boards in three Safe 5 wallets bought from reseller CryptoBilis that capture recovery phrases from the screen and send them out over a cellular network; new firmware blocks them. (BleepingComputer, Trezor)</description>
+  </item>
+  <item>
+    <title>Starship reaches orbit and deploys 26 Starlink satellites, but its booster diverts into the Gulf instead of a tower catch</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n4</guid>
+    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
+    <category>Tech / Space Industry</category>
+    <description>SpaceX's 15th Starship flight put 26 Starlink V3 satellites into orbit, but the Super Heavy booster was diverted into the Gulf and exploded; a first attempt to catch the upper stage could come Saturday. (Ars Technica, Next Spaceflight)</description>
+  </item>
+  <item>
+    <title>Lessons Not Learned: Why Cross-Chain Bridges Keep Losing Billions the Same Way</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2611.12252</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2611.12252</guid>
+    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
+    <category>Tech / Security &amp; privacy</category>
+    <description>Most cross-chain bridge losses since 2023 came from how bridges were set up, not from code bugs; a rubric scored from on-chain data, plus rate limits and emergency stops, would have cut modeled losses 105-fold. (Mohsen Ahmadvand, Piotr Dobaczewski, Camille Bouzerand · Monad Foundation)</description>
+  </item>
   <item>
     <title>A Microsoft 365 outage tied to Exchange Online knocks out email, Teams and Copilot for more than 12 hours</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2026-11-13-n1</link>
@@ -286,14 +326,6 @@
     <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
     <category>Tech / Cybersecurity</category>
     <description>Binance's incident report says a multi-stage attack beginning with a fake recruiter and malware led to the October 29 theft of about $6.34 billion, which the FBI attributed to North Korea's TraderTraitor group. (BleepingComputer, The Register, WIRED)</description>
-  </item>
-  <item>
-    <title>Apple warns memory costs are unprecedented as they squeeze margins and Mac supply</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n4</guid>
-    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
-    <category>Tech / Chips &amp; Hardware</category>
-    <description>On its earnings call, Apple said memory pricing is unprecedented, forecast a December-quarter gross margin of 45 to 46 percent and expects Mac and iPad supply constraints. (TechCrunch, 9to5Mac, The Register)</description>
   </item>
 </channel>
 </rss>
