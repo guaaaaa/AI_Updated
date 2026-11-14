@@ -1,0 +1,390 @@
+{
+ "date": "2026-11-14",
+ "edition": "weekend",
+ "generated_at": "2026-11-14T12:14:45+00:00",
+ "summary": "Weekend edition: OpenAI lets ChatGPT agents pay at checkout, llama.cpp reaches a stable 1.0, and the week's best papers rethink vision encoders, pixel-space video, synthetic data, agent-written weight edits and world action models.",
+ "news": [
+  {
+   "id": "2026-11-14-n1",
+   "story_key": "openai-chatgpt-wallet-launch",
+   "title": "OpenAI launches ChatGPT Wallet so its Dots agents can buy things for users, with approval for each purchase",
+   "category": "Product & Features",
+   "published": "2026-11-13T10:00:00-05:00",
+   "tldr": "OpenAI's new ChatGPT Wallet lets its Dots agents complete purchases with a tokenized card after the user approves each one biometrically, starting with a limited group of US Pro subscribers.",
+   "why_selected": "A major lab putting payment rails under its consumer agents is a concrete step from agents that suggest to agents that transact.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Earlier this year OpenAI launched Dots, a platform of AI agents inside ChatGPT. Agents that act for users have struggled to close the loop on shopping: TechCrunch notes that DoorDash and Uber have reported low numbers of agent-placed orders, while Meta's Muse, with over 10 million users, has seen AI-assisted shopping become a top activity. Some retailers block agents outright; Amazon blocked Muse agents earlier this year."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday OpenAI launched ChatGPT Wallet. Users add a card once, then ask a Dot to help buy something. Before checkout the user reviews the items, the total and the card, and approves with a biometric check such as Face ID or a fingerprint, which creates a record of the transaction. The wallet charges the card with a payment token, a stand-in for the real card number, so neither the agent nor the merchant sees the card details; the merchant receives shipping and contact information from the Dot. Card rewards and dispute protections still apply. At launch it is limited to some US ChatGPT Pro subscribers aged 18 and over with eligible US-issued Visa, Mastercard or American Express cards (The Verge also lists Chase). OpenAI also published a Commerce Partner Playbook for retailers."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Payments are where agent autonomy meets real liability. OpenAI's design borrows from tap-to-pay: tokenized cards and a human confirmation per purchase, which keeps fraud and dispute handling inside existing card-network rules rather than inventing new ones. The open question for the industry is whether merchants cooperate. OpenAI says websites must make sure agents are not inadvertently blocked and that payment and risk systems recognize legitimate agent purchases. That pushes retailers to choose between serving third-party agents and steering shoppers to their own assistants, as Amazon is doing with Alexa."
+    },
+    {
+     "heading": "What to watch",
+     "body": "OpenAI plans to let users pre-approve purchases within spending limits, categories or time periods, removing the per-purchase check. Watch how many large retailers accept agent checkouts, and how fraud rates compare with ordinary card payments."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-n2",
+   "story_key": "llama-cpp-ggml-v1-release",
+   "title": "llama.cpp and ggml reach version 1.0, promising stable interfaces for the local AI software built on them",
+   "category": "Open Source",
+   "published": "2026-11-13T09:05:00-05:00",
+   "tldr": "The llama.cpp team released its libraries as v1.0.0 and adopted semantic versioning, so future breaking API or ABI changes will come only with major version bumps.",
+   "why_selected": "llama.cpp is the engine under much of local LLM inference, and a stability commitment changes how safely others can build on it.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "llama.cpp is an open-source C/C++ inference engine that runs large language models, including multimodal ones, on hardware from laptops to enterprise servers, using quantization and a portable machine-learning library called ggml. In the 3.5 years since it started, many downstream applications have come to depend on it. The team behind it, ggml-org, now works at Hugging Face."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday the team released the llama.cpp and ggml libraries as v1.0.0. Going forward, both projects will signal any incompatibility in the application programming interface (API, the functions code calls) or application binary interface (ABI, how compiled code links) with a major-version bump, under semantic-versioning rules that apply to all ggml-org projects. The post says llama.cpp supports more than 150 model architecture variants and all mainstream speculative decoding methods, and that ggml backends for different hardware can be compiled as separate libraries and loaded at runtime. The team is expanding continuous-integration testing using Hugging Face Buckets and Jobs, with self-hosted test machines supported by NVIDIA, AMD, Qualcomm, Arm, IBM and Intel. It also points to Llama desktop apps for macOS and Windows."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Version numbers are a contract. Applications, language bindings and operating-system packages that embed llama.cpp have had to pin exact builds or absorb breakage; a semantic-versioning promise lets them upgrade minor releases with less risk and makes the library easier to ship through standard packaging. The team expects that dependence to grow as local AI and privacy become more important. The team also says it integrates LLMs into its own development cycle while keeping control of the architecture and implementation details."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the team holds the line on breaking changes as new model architectures keep arriving, how quickly distributions package the 1.0 libraries, and whether a Linux desktop app follows, which one commenter asked about."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Hugging Face (ggml-org)",
+     "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.17334",
+   "title": "Unbundling Multimodal Vision Encoding",
+   "authors": [
+    "Ellis Brown",
+    "Chris Hoang",
+    "Shengyi Qian",
+    "Shang-Wen Li",
+    "Mike Lewis",
+    "Marjan Ghazvininejad",
+    "Luke Zettlemoyer",
+    "Lucas Beyer",
+    "Mengye Ren",
+    "Jakob Verbeek",
+    "Saining Xie",
+    "Hu Xu"
+   ],
+   "affiliations": [
+    "New York University",
+    "Meta FAIR"
+   ],
+   "announced": "2026-11-12T20:00:00-05:00",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Architectures",
+    "Pre-training & Data"
+   ],
+   "tldr": "In a compute-matched study trained entirely from scratch, a pretrained vision encoder brings no advantage, but vision-only parameters do, and they work as well placed inside the first layers of the language backbone.",
+   "why_selected": "Top of the alphaXiv Hot list; a carefully controlled answer to a live design debate (pretrained, from-scratch or no encoder) for vision-language models.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Most multimodal language models see images through a separately pretrained vision encoder such as a CLIP-style model. Some recent models train the encoder from scratch with the language model, and others drop it entirely. Which choice is right affects the cost and design of every future vision-language model, yet published models differ in data, compute and architecture, so they cannot settle it."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier controlled studies typically compare different pretrained encoders, start from a pretrained language model, and treat the encoder's own pretraining as free. Encoder-versus-encoder-free comparisons change several things at once, so any gap cannot be pinned on one cause."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors \"unbundle\" an encoder into three separate choices: a visual prior imported from upstream pretraining, dedicated capacity (parameters only image tokens use), and pre-fusion placement (processing images before they meet text). Think of testing whether a team's star hire helps because of prior experience, because of an extra pair of hands, or because of where they sit in the pipeline. Every recipe is trained from scratch on the same data with a Qwen3-style backbone, and compared at matched lifetime compute, which charges encoder pretraining to the same budget. To test placement, they add \"in-fusion\" vision-only modules: extra attention and feed-forward weights inside chosen backbone layers that only image tokens use, added to the shared weights and initialized to zero."
+    },
+    {
+     "heading": "Results",
+     "body": "With a 1.7B backbone, a from-scratch encoder averages 44.4% on visual question answering (VQA) versus 39.0% for encoder-free; giving the encoder-free model the encoder's 0.4B parameters as shared weights leaves it at 38.6 to 38.8%, with the largest gap on OCR (38.2 vs 25.2). Vision-only modules in layers 1 to 8 score 45.0%, but only 35.1% in layers 21 to 28. Even free extra encoder pretraining raised ImageNet accuracy from 80.4% to 84.4% without improving VQA."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For builders, the recipe is to train vision capacity jointly and place it early, which removes a pretraining stage and can cut time to first token. Caveats: dense backbones up to 6.4B, 224-pixel images, and encoders pretrained only on the same images, so encoders trained on far more data were not ruled out."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.17334",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17334"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 1,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 14,
+    "notable_authors": [
+     "Mike Lewis",
+     "Luke Zettlemoyer",
+     "Lucas Beyer",
+     "Saining Xie"
+    ],
+    "org": "Meta"
+   }
+  },
+  {
+   "id": "2611.17336",
+   "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
+   "authors": [
+    "Yanke Song",
+    "Shuo Chen",
+    "Chris Rockwell",
+    "Guande He",
+    "Nan Liu",
+    "Desai Xie",
+    "Tianpei Gu",
+    "Yong-Hyun Park",
+    "Aryan V S",
+    "Dennis Yuren Menn",
+    "Ming-Hsuan Yang",
+    "Xun Huang"
+   ],
+   "affiliations": [
+    "Roblox",
+    "University of California",
+    "Merced",
+    "University of Pennsylvania",
+    "University of Texas at Austin"
+   ],
+   "announced": "2026-11-12T20:00:00-05:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "World Models",
+    "Efficiency"
+   ],
+   "tldr": "PixVid fine-tunes a pretrained latent video diffusion model to generate every frame directly in pixels, matching its quality while enabling higher resolution, frame-accurate editing and one-frame control latency.",
+   "why_selected": "Fourth on the alphaXiv Hot list; it challenges the near-universal VAE latent design of video generators with a cheap fine-tuning route and clear practical gains.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Frontier video generators work in the compressed latent space of a variational autoencoder (VAE) that merges several frames into one latent. That made training tractable, but it now limits interactive uses: doubling resolution quadruples tokens, conditions apply to groups of frames, and a world model cannot draw the frame for a control input until the whole block of controls has arrived."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Pixel-space image models have recently become competitive, but pixel-space video is less explored: concurrent models are trained from scratch, at high cost, and either target small benchmarks or show patch artifacts."
+    },
+    {
+     "heading": "Key idea",
+     "body": "PixVid keeps the pretrained diffusion transformer (DiT), which already knows semantics and motion, and swaps the VAE for two light pieces: a linear patch embedding that maps each frame's pixel patches to tokens, and a small convolutional \"detailer\" head that turns the DiT's outputs back into pixels. Think of keeping the director and replacing only the camera crew. Each frame gets its own tokens, so conditions align with single frames and an autoregressive model can react at the very next frame. Resolution scales by enlarging the patch size rather than the token count. Two training choices proved key: predicting the clean video rather than the velocity, and a larger noise shift."
+    },
+    {
+     "heading": "Results",
+     "body": "Fine-tuned from Wan2.1-14B within about 1.3M training clips, PixVid scores 84.78 on VBench versus 84.05 for Wan2.1 and 83.72 for the concurrent pixel model PixelUMM, and human raters preferred it in all comparisons. In depth-conditioned editing on fast clips, motion error falls to 10.7 pixels versus 17.9 for a latent model fine-tuned on the same data. As an interactive world model, control-to-screen latency drops from 495 ms to 34 ms, though frame rate falls from 72.0 to 29.4."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It offers a route out of the VAE bottleneck without training from scratch, and opens pixel-level losses and rewards. Caveat: without temporal compression it processes 3.9 times as many tokens per second of video at 480p, so short low-resolution clips cost more."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.17336",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.17336"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 4,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 3,
+    "org": "Roblox Corporation"
+   }
+  },
+  {
+   "id": "2611.11962",
+   "title": "Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality",
+   "authors": [
+    "Ching Lam Choi",
+    "Antonio Torralba",
+    "Phillip Isola",
+    "Stefanie Jegelka"
+   ],
+   "affiliations": [
+    "MIT CSAIL",
+    "Technical University of Munich"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Computer Vision",
+    "Generative Models"
+   ],
+   "tldr": "Synthetic image datasets train better representations when they cover the full range of likelihood levels real images occupy, and a simple distance over that \"energy profile\" predicts pretraining quality better than FID.",
+   "why_selected": "NeurIPS 2026 oral from Torralba, Isola and Jegelka; a principled, cheap diagnostic for the growing practice of pretraining on synthetic images.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Synthetic images can scale visual pretraining, but practitioners lack a reliable way to tell in advance which synthetic dataset will train strong representations. Choosing badly wastes large training runs."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Selection usually relies on realism or feature-space similarity: Fréchet Inception Distance (FID), perceptual diversity (LPIPS) or recall. These compress a dataset into feature moments or neighbourhoods and never ask where samples sit in the probability landscape of real images."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Real photos are not equally \"likely\": under a normalized density model of ImageNet, simple sparse scenes get high likelihood and dense textures low likelihood, forming a broad spread. A good synthetic set should reproduce that spread, not cluster at the most likely images or drift into noise. The authors score every image's energy (negative log-likelihood) under a fixed real-image density model, convert each score to its percentile among real images, and define Energy-Level Distribution Distance (ELD) as the one-dimensional Wasserstein distance between the synthetic and real percentile distributions. They show two datasets can have identical feature mean and variance, hence identical FID, yet very different energy profiles. ELD also suggests a curation rule: resample a candidate pool so its percentile histogram is roughly uniform."
+    },
+    {
+     "heading": "Results",
+     "body": "Across synthetic datasets used for DINO pretraining of a ViT-S, ELD predicts ImageNet linear-probe accuracy with a leave-one-dataset-out error of 0.82 points, versus 0.91 for FID, 1.67 for LPIPS and 4.53 for recall; without noise-like sources the gap widens (0.99 vs 1.66 for FID). The best source, mid-guidance diffusion, has the lowest ELD (.088) and highest linear accuracy (29.17%). ELD-guided selection beats top-likelihood filtering on effective classes (128.0 vs 82.9)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Anyone building synthetic pretraining sets gets a cheap audit that needs only a few thousand scored samples. Caveats: results depend on the chosen density model, and the curation gains are shown on frozen-feature diagnostics rather than full pretraining runs."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.11962",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.11962"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 23,
+    "alphaxiv_hot_days": 2,
+    "notable_authors": [
+     "Antonio Torralba",
+     "Phillip Isola"
+    ]
+   }
+  },
+  {
+   "id": "2611.09382",
+   "title": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
+   "authors": [
+    "Junru Hu",
+    "Cheng Tang",
+    "Wei Li",
+    "Hongze Zhu",
+    "Chun-Mei Feng",
+    "Qi Zhang",
+    "Yirong Chen",
+    "Ming Hu"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-08T20:00:00-05:00",
+   "primary_tag": "Interpretability",
+   "tags": [
+    "Interpretability",
+    "RSI",
+    "LLMs"
+   ],
+   "tldr": "A reasoning model that edits another model's weights directly, without gradients, raised Qwen3.5-0.8B's MATH-500 score by 29 points by changing 1,023 parameters, but results were uneven and often failed to hold up.",
+   "why_selected": "A systematic, honest test of an emerging idea, agents doing targeted model surgery, with striking wins and clearly documented failures.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Adapting a model normally means gradient-based fine-tuning on task data. Weight-Space Programming (WSP) proposes instead that a reasoning agent inspect a network, diagnose why it fails, and edit specific weights by hand. Early results were striking, but it was unclear whether this is a general adaptation method or a trick for fixing one obvious failure."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Knowledge editing and task-vector arithmetic also change weights directly, but they follow fixed procedures. The original WSP study showed a large MATH gain from fixing reasoning loops, yet reported limited success on models without such an identifiable failure mode."
+    },
+    {
+     "heading": "Key idea",
+     "body": "GPT-6 Astra acts as a \"surgeon\" on Qwen3.5-0.8B and Qwen3.5-9B. In each search it gets 50 forward requests to the target model, either sampling answers with scores or teacher-forced runs returning log-probabilities and activations, plus up to 300 Python analyses of the weights. No backpropagation is allowed. It may make any edit inside transformer blocks, such as rescaling an attention head or a rank-one update, and picks a final checkpoint from development data alone, with the option to keep the original. In the best math edit, the agent built a direction contrasting \"doubt\" tokens with \"progress\" tokens and subtracted it from one column of a layer-23 feed-forward matrix, curbing endless reasoning."
+    },
+    {
+     "heading": "Results",
+     "body": "On held-out tests the 0.8B model gained 29.45 points on MATH-500 (8.35% to 37.80%), 36.72 on IFEval and 17.11 on SciBench. The math edit transferred, adding 12.18 points on IFEval and 20.10 on SciBench, but not SciCode. Six of 16 searches kept the original weights, and a 9B math candidate with a 29.69-point development gain lost 0.35 points on the test set."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It shows that agents can find small, interpretable fixes and hints at models helping repair models. Caveat: gains concentrate on a weak small model, and searches are costly and inconsistent."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.09382",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.09382",
+    "code": "https://github.com/WSP-Scope/WSP-Scope-Project"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 40,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 19
+   }
+  },
+  {
+   "id": "2611.12870",
+   "title": "SWAM: Scaling World Action Models with Cross-Modal Alignment",
+   "authors": [
+    "Yu Zhou",
+    "Xinyuan Xia",
+    "Xuankun Yang",
+    "Yinghao Yang",
+    "Wendi Chen",
+    "Bowen Liu",
+    "Jianhan Ma",
+    "Weicheng Duan",
+    "Jun Lv",
+    "Cewu Lu",
+    "Yanwei Li"
+   ],
+   "affiliations": [
+    "Shanghai Jiao Tong University"
+   ],
+   "announced": "2026-11-09T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "World Models",
+    "Pre-training & Data"
+   ],
+   "tldr": "A 47,000-hour study of how to train world action models finds that detailed captions and mixing human egocentric video with handheld-gripper demonstrations best preserve video-model knowledge while learning robot control.",
+   "why_selected": "Sustained Hot-list attention over four days; a rare systematic data and supervision study for world action models, with data, code and weights released.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "World action models (WAMs) predict future video and robot actions together from a language instruction, building on pretrained video generators. Adding action learning can erode the language-video understanding those generators learned, and there has been little guidance on which data and supervision preserve it."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Prior WAM work focuses on architectures and training mechanisms, treating language-video alignment from video pretraining as a given. The separate roles of human video, human demonstrations and robot data for generalization remain unclear."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors assemble about 47,000 hours of experience: roughly 11,000 hours of general video, 11,000 of egocentric (first-person) human video, 15,000 of in-house UMI demonstrations, where people manipulate objects with handheld grippers that record actions, and 10,000 of robot demonstrations. They think of each source as teaching a different link: video teaches what language describes, while UMI and robot data teach how that maps onto actions. Starting from the Wan2.2-TI2V-5B video model with a new action branch linked through shared masked attention, they run controlled ablations on caption detail, data mixtures and architecture, then post-train on RoboTwin 2.0's 50 tasks using only clean-scene demonstrations."
+    },
+    {
+     "heading": "Results",
+     "body": "Detailed, subtask-level captions with environment information raised success on randomized scenes from 44.96% (brief episode captions) to 55.04%. Under a fixed budget, egocentric video alone scored 42.56% on randomized scenes versus 53.84% for a 1:1 mix with UMI data. Adding CLIP, DINOv2 or SigLIP2 image features hurt. The final model reaches 88.10% on clean and 61.56% on randomized scenes, and 40.00% on three real-world tasks versus 23.33% for the strongest baseline."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It gives practical data-mixing rules and evidence that cheap human gripper demonstrations transfer to robots. Caveats: limited support for multi-stage planning and long tasks, and a small real-world evaluation."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.12870",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.12870",
+    "code": "https://github.com/shaaaaron/SWAM"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 16,
+    "alphaxiv_hot_days": 4,
+    "hf_upvotes": 23,
+    "org": "Shanghai Jiao Tong University"
+   }
+  }
+ ]
+}

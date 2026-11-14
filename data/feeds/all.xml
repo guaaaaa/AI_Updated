@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 14 Nov 2026 11:48:01 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 12:14:45 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI launches ChatGPT Wallet so its Dots agents can buy things for users, with approval for each purchase</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n1</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Product &amp; Features</category>
+    <description>OpenAI's new ChatGPT Wallet lets its Dots agents complete purchases with a tokenized card after the user approves each one biometrically, starting with a limited group of US Pro subscribers. (TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>llama.cpp and ggml reach version 1.0, promising stable interfaces for the local AI software built on them</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n2</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Open Source</category>
+    <description>The llama.cpp team released its libraries as v1.0.0 and adopted semantic versioning, so future breaking API or ABI changes will come only with major version bumps. (Hugging Face (ggml-org))</description>
+  </item>
+  <item>
+    <title>Unbundling Multimodal Vision Encoding</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17334</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17334</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Multimodal</category>
+    <description>In a compute-matched study trained entirely from scratch, a pretrained vision encoder brings no advantage, but vision-only parameters do, and they work as well placed inside the first layers of the language backbone. (Ellis Brown, Chris Hoang, Shengyi Qian et al. · New York University, Meta FAIR)</description>
+  </item>
+  <item>
+    <title>Back to Pixels: Lifting Latent Video Diffusion into Pixel Space</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17336</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17336</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>PixVid fine-tunes a pretrained latent video diffusion model to generate every frame directly in pixels, matching its quality while enabling higher resolution, frame-accurate editing and one-frame control latency. (Yanke Song, Shuo Chen, Chris Rockwell et al. · Roblox, University of California, Merced)</description>
+  </item>
+  <item>
+    <title>Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.11962</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.11962</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Pre-training &amp; Data</category>
+    <description>Synthetic image datasets train better representations when they cover the full range of likelihood levels real images occupy, and a simple distance over that "energy profile" predicts pretraining quality better than FID. (Ching Lam Choi, Antonio Torralba, Phillip Isola et al. · MIT CSAIL, Technical University of Munich)</description>
+  </item>
+  <item>
+    <title>Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.09382</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.09382</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Interpretability</category>
+    <description>A reasoning model that edits another model's weights directly, without gradients, raised Qwen3.5-0.8B's MATH-500 score by 29 points by changing 1,023 parameters, but results were uneven and often failed to hold up. (Junru Hu, Cheng Tang, Wei Li et al.)</description>
+  </item>
+  <item>
+    <title>SWAM: Scaling World Action Models with Cross-Modal Alignment</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.12870</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.12870</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>A 47,000-hour study of how to train world action models finds that detailed captions and mixing human egocentric video with handheld-gripper demonstrations best preserve video-model knowledge while learning robot control. (Yu Zhou, Xinyuan Xia, Xuankun Yang et al. · Shanghai Jiao Tong University)</description>
+  </item>
   <item>
     <title>Attackers break into unpatched Check Point gateways through PHP2Shell and wipe servers at some Israeli organizations</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
     <category>AI / Robotics</category>
     <description>A frozen foundation model learns robot tasks by rehearsing in a simulator and writing lessons into a text memory, reaching 83.4% on RoboTwin 2.0 from one demonstration, over 20 points above trained policies. (Heng Fang, Zehui Guo, Yuehan Zhang et al. · Huazhong University of Science and Technology, ArcheOne AI)</description>
-  </item>
-  <item>
-    <title>Attackers push rogue remote-access clients to hundreds of PCs through managed service providers' ScreenConnect panels</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n1</guid>
-    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Attackers used cloud-hosted ScreenConnect panels to install rogue remote-access software on at least 288 computers at 48 organizations; ConnectWise disabled five third-party extensions across about 400 partner environments. (BleepingComputer, Huntress)</description>
-  </item>
-  <item>
-    <title>Maersk confirms data theft from a legacy logistics system as a ransomware gang demands $5 million</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n2</guid>
-    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Maersk says attackers stole data from an isolated system inherited through an acquisition; the WhiteArmor gang claims about 100GB and wants $5 million in bitcoin within 30 days. (BleepingComputer, The Register)</description>
-  </item>
-  <item>
-    <title>The EU proposes a Digital Fairness Act to ban dark patterns, rein in addictive design and limit loot boxes for minors</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n3</guid>
-    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
-    <category>Tech / Tech Policy &amp; Antitrust</category>
-    <description>The European Commission's draft Digital Fairness Act would ban manipulative "dark patterns," let users switch off addictive features, curb pay-to-win games for minors and allow fines of up to 6% of global turnover. (The Verge, Engadget)</description>
-  </item>
-  <item>
-    <title>IBM's quantum roadmap swaps nine linked chips for two larger ones, targeting about 1,040 qubits in 2027</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n4</guid>
-    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
-    <category>Tech / Quantum Computing</category>
-    <description>At its developer conference, IBM said its current Nighthawk r2 chip runs circuits of over 7,500 operations, and planned a 520-qubit Nighthawk r3 for 2027, with two chips linked into a roughly 1,040-qubit system. (IBM Quantum, Ars Technica)</description>
-  </item>
-  <item>
-    <title>Machine-learning decoders for fusion-based quantum computing in real time</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2611.13630</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2611.13630</guid>
-    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
-    <category>Tech / Quantum computing</category>
-    <description>PRISM, a transformer-based decoder for photonic quantum computers, matches slower integer-programming decoders on accuracy and runs on an AMD FPGA with 6.59-microsecond latency. (Daniel Barter, Jacob C. Bridgeman, Chris Dawson et al.)</description>
-  </item>
-  <item>
-    <title>Gemini and Webb find the oldest compact pair of quasars, two black holes that grew too big too early</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n1</guid>
-    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>Astronomers found two actively feeding supermassive black holes, 1.5 billion and 400 million solar masses, only 18,100 light-years apart just 900 million years after the Big Bang, the oldest compact quasar pair known. (NSF NOIRLab, Phys.org)</description>
-  </item>
-  <item>
-    <title>NASA studies show how the LISA observatory could find planets with gravitational waves</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/2026-11-11-n2</guid>
-    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>Two papers in The Astrophysical Journal work out how the planned LISA space observatory could detect giant planets orbiting pairs of white dwarfs, and how the Webb telescope could confirm them. (NASA)</description>
   </item>
 </channel>
 </rss>

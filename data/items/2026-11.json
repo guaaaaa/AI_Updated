@@ -1,5 +1,103 @@
 [
  {
+  "id": "2026-11-14-n1",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "OpenAI launches ChatGPT Wallet so its Dots agents can buy things for users, with approval for each purchase",
+  "tldr": "OpenAI's new ChatGPT Wallet lets its Dots agents complete purchases with a tokenized card after the user approves each one biometrically, starting with a limited group of US Pro subscribers.",
+  "category": "Product & Features",
+  "byline": "TechCrunch, The Verge"
+ },
+ {
+  "id": "2026-11-14-n2",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "llama.cpp and ggml reach version 1.0, promising stable interfaces for the local AI software built on them",
+  "tldr": "The llama.cpp team released its libraries as v1.0.0 and adopted semantic versioning, so future breaking API or ABI changes will come only with major version bumps.",
+  "category": "Open Source",
+  "byline": "Hugging Face (ggml-org)"
+ },
+ {
+  "id": "2611.17334",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "Unbundling Multimodal Vision Encoding",
+  "tldr": "In a compute-matched study trained entirely from scratch, a pretrained vision encoder brings no advantage, but vision-only parameters do, and they work as well placed inside the first layers of the language backbone.",
+  "primary_tag": "Multimodal",
+  "tags": [
+   "Multimodal",
+   "Architectures",
+   "Pre-training & Data"
+  ],
+  "byline": "Ellis Brown, Chris Hoang, Shengyi Qian et al. · New York University, Meta FAIR",
+  "hf": 14,
+  "venue": null
+ },
+ {
+  "id": "2611.17336",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
+  "tldr": "PixVid fine-tunes a pretrained latent video diffusion model to generate every frame directly in pixels, matching its quality while enabling higher resolution, frame-accurate editing and one-frame control latency.",
+  "primary_tag": "Generative Models",
+  "tags": [
+   "Generative Models",
+   "World Models",
+   "Efficiency"
+  ],
+  "byline": "Yanke Song, Shuo Chen, Chris Rockwell et al. · Roblox, University of California, Merced",
+  "hf": 3,
+  "venue": null
+ },
+ {
+  "id": "2611.11962",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality",
+  "tldr": "Synthetic image datasets train better representations when they cover the full range of likelihood levels real images occupy, and a simple distance over that \"energy profile\" predicts pretraining quality better than FID.",
+  "primary_tag": "Pre-training & Data",
+  "tags": [
+   "Pre-training & Data",
+   "Computer Vision",
+   "Generative Models"
+  ],
+  "byline": "Ching Lam Choi, Antonio Torralba, Phillip Isola et al. · MIT CSAIL, Technical University of Munich",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.09382",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
+  "tldr": "A reasoning model that edits another model's weights directly, without gradients, raised Qwen3.5-0.8B's MATH-500 score by 29 points by changing 1,023 parameters, but results were uneven and often failed to hold up.",
+  "primary_tag": "Interpretability",
+  "tags": [
+   "Interpretability",
+   "RSI",
+   "LLMs"
+  ],
+  "byline": "Junru Hu, Cheng Tang, Wei Li et al.",
+  "hf": 19,
+  "venue": null
+ },
+ {
+  "id": "2611.12870",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "SWAM: Scaling World Action Models with Cross-Modal Alignment",
+  "tldr": "A 47,000-hour study of how to train world action models finds that detailed captions and mixing human egocentric video with handheld-gripper demonstrations best preserve video-model knowledge while learning robot control.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "World Models",
+   "Pre-training & Data"
+  ],
+  "byline": "Yu Zhou, Xinyuan Xia, Xuankun Yang et al. · Shanghai Jiao Tong University",
+  "hf": 23,
+  "venue": null
+ },
+ {
   "id": "2026-11-13-n1",
   "date": "2026-11-13",
   "type": "news",

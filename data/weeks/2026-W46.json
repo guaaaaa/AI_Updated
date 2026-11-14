@@ -2,8 +2,8 @@
  "week": "2026-W46",
  "start": "2026-11-09",
  "end": "2026-11-14",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [
   {
    "id": "2611.12806",
@@ -27,11 +27,25 @@
    "featured": "2026-11-13"
   },
   {
+   "id": "2611.15777",
+   "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+   "hf": 84,
+   "org": "National University of Singapore",
+   "featured": null
+  },
+  {
    "id": "2611.12885",
    "title": "World In-Context Learning for Agentic Robot Manipulation",
    "hf": 67,
    "org": "ArcheOne-AI",
    "featured": "2026-11-12"
+  },
+  {
+   "id": "2611.10771",
+   "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
+   "hf": 58,
+   "org": "OpenEnvision",
+   "featured": null
   },
   {
    "id": "2611.14320",
@@ -41,33 +55,19 @@
    "featured": "2026-11-12"
   },
   {
-   "id": "2611.10771",
-   "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
-   "hf": 57,
-   "org": "OpenEnvision",
-   "featured": null
-  },
-  {
    "id": "2611.12762",
    "title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
    "hf": 54,
    "org": "Shanghai AI Laboratory",
    "featured": "2026-11-11"
-  },
-  {
-   "id": "2611.15777",
-   "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
-   "hf": 51,
-   "org": "National University of Singapore",
-   "featured": null
   }
  ],
  "stories": [
   {
    "title": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
-   "outlets": 22,
+   "outlets": 25,
    "date": "2026-11-08",
-   "covered": "2026-11-13-n2"
+   "covered": "2026-11-10-n1"
   },
   {
    "title": "Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion",
@@ -88,9 +88,21 @@
    "covered": null
   },
   {
+   "title": "The future of AI hinges on… Jensen Huang’s sex life?",
+   "outlets": 7,
+   "date": "2026-11-09",
+   "covered": null
+  },
+  {
    "title": "Nvidia Board to Probe Spying Case After CEO Jensen Huang Admits Infidelity",
    "outlets": 6,
    "date": "2026-11-08",
+   "covered": null
+  },
+  {
+   "title": "UK chip start-up Fractile hits $7bn valuation",
+   "outlets": 6,
+   "date": "2026-11-11",
    "covered": null
   },
   {
@@ -98,22 +110,10 @@
    "outlets": 5,
    "date": "2026-11-08",
    "covered": null
-  },
-  {
-   "title": "The future of AI hinges on… Jensen Huang’s sex life?",
-   "outlets": 5,
-   "date": "2026-11-09",
-   "covered": null
-  },
-  {
-   "title": "OpenAI Revenue Jumps to $10 Billion in Third Quarter Amid Growing Losses",
-   "outlets": 5,
-   "date": "2026-11-10",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 9,
-  "papers": 25
+  "news": 11,
+  "papers": 30
  }
 }

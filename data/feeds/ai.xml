@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Fri, 13 Nov 2026 12:20:07 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 12:14:45 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI launches ChatGPT Wallet so its Dots agents can buy things for users, with approval for each purchase</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n1</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Product &amp; Features</category>
+    <description>OpenAI's new ChatGPT Wallet lets its Dots agents complete purchases with a tokenized card after the user approves each one biometrically, starting with a limited group of US Pro subscribers. (TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>llama.cpp and ggml reach version 1.0, promising stable interfaces for the local AI software built on them</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n2</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Open Source</category>
+    <description>The llama.cpp team released its libraries as v1.0.0 and adopted semantic versioning, so future breaking API or ABI changes will come only with major version bumps. (Hugging Face (ggml-org))</description>
+  </item>
+  <item>
+    <title>Unbundling Multimodal Vision Encoding</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17334</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17334</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Multimodal</category>
+    <description>In a compute-matched study trained entirely from scratch, a pretrained vision encoder brings no advantage, but vision-only parameters do, and they work as well placed inside the first layers of the language backbone. (Ellis Brown, Chris Hoang, Shengyi Qian et al. · New York University, Meta FAIR)</description>
+  </item>
+  <item>
+    <title>Back to Pixels: Lifting Latent Video Diffusion into Pixel Space</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17336</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17336</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>PixVid fine-tunes a pretrained latent video diffusion model to generate every frame directly in pixels, matching its quality while enabling higher resolution, frame-accurate editing and one-frame control latency. (Yanke Song, Shuo Chen, Chris Rockwell et al. · Roblox, University of California, Merced)</description>
+  </item>
+  <item>
+    <title>Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.11962</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.11962</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Pre-training &amp; Data</category>
+    <description>Synthetic image datasets train better representations when they cover the full range of likelihood levels real images occupy, and a simple distance over that "energy profile" predicts pretraining quality better than FID. (Ching Lam Choi, Antonio Torralba, Phillip Isola et al. · MIT CSAIL, Technical University of Munich)</description>
+  </item>
+  <item>
+    <title>Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.09382</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.09382</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Interpretability</category>
+    <description>A reasoning model that edits another model's weights directly, without gradients, raised Qwen3.5-0.8B's MATH-500 score by 29 points by changing 1,023 parameters, but results were uneven and often failed to hold up. (Junru Hu, Cheng Tang, Wei Li et al.)</description>
+  </item>
+  <item>
+    <title>SWAM: Scaling World Action Models with Cross-Modal Alignment</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.12870</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.12870</guid>
+    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>A 47,000-hour study of how to train world action models finds that detailed captions and mixing human egocentric video with handheld-gripper demonstrations best preserve video-model knowledge while learning robot control. (Yu Zhou, Xinyuan Xia, Xuankun Yang et al. · Shanghai Jiao Tong University)</description>
+  </item>
   <item>
     <title>Google launches Gemini 4 Hydrogen, a fast Gemini 4 model that replaces 3.8 Flash and now powers Search</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
     <category>AI / Reasoning</category>
     <description>Energy-Based Reasoners refine a latent answer by gradient descent on a learned energy, so one function guides updates, decides when to stop and picks the best candidate, solving Sudoku-Extreme with 1.8M parameters. (William Xingxu Chen, Alexi Gladstone, Zeyu Michael Li et al. · Duke University, UIUC, Harvard University)</description>
-  </item>
-  <item>
-    <title>Video-Coder: Reinforcing Agentic Coding for Video Generation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09894</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-09/2611.09894</guid>
-    <pubDate>Mon, 09 Nov 2026 12:23:03 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>Video-Coder trains a coding agent to build a 3D draft scene in Blender, which guides a video generator and raises physical plausibility scores on two benchmarks. (Chaoyang Wang, Sicheng Gao, Junan Hu et al. · University of Central Florida, University of Würzburg, Microsoft Research)</description>
-  </item>
-  <item>
-    <title>Google releases Gemini Omni 1.2 Flash with 15-second video and a 30% lower price</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n1</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Google made Gemini Omni 1.2 Flash generally available, with native 15-second video, multi-turn conversational editing, better reference adherence and a price of $0.07 per second at 720p, down 30%. (Google)</description>
-  </item>
-  <item>
-    <title>OpenAI reportedly raises another $11 billion, valuing it at $1.25 trillion</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2026-11-07-n2</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Business &amp; Funding</category>
-    <description>Bloomberg reports OpenAI has raised $11 billion so far in a round at a $1.25 trillion valuation, with the total expected to reach about $20 billion, well below the $30 billion first sought. (TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.08449</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.08449</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>VFlash predicts a whole bounding box or robot trajectory in one forward pass instead of token by token, cutting trajectory errors versus autoregressive decoding while running far faster. (Yu-Cheng Chou, Shihao Wang, Jin Huang et al. · NVIDIA)</description>
-  </item>
-  <item>
-    <title>WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.03634</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.03634</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>WebHarbor rebuilds 153 real websites as offline, resettable Docker environments with 3,518 tasks, and a 4B web agent trained only there matches or beats one trained on live sites. (Zhaoyang Wang, Qianhui Wu, Boyu Gou et al. · Microsoft, Tongji University)</description>
-  </item>
-  <item>
-    <title>What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.06483</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.06483</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Multi-turn RL helps LLM agents mainly by improving recovery from errors over long horizons, not single-step decisions, so its gains shrink when the turn budget is tight; mixing budgets in training narrows that gap. (Kejian Zhu, Zhuoran Jin, Shangqing Tu et al.)</description>
-  </item>
-  <item>
-    <title>Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.05275</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-07/2611.05275</guid>
-    <pubDate>Sat, 07 Nov 2026 12:16:35 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>Across many modalities the best model varies by input, but learned routers beat the best single model only slightly; routing's reliable win is cost, averaging 8.82 times better efficiency. (Pengfei Zhou, Yixing Ma, Hexin Wang et al. · National University of Singapore, University of California Berkeley, Hong Kong University of Science and Technology)</description>
   </item>
 </channel>
 </rss>
