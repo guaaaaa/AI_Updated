@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-14-n1",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "US producer prices rise 6.5% over the year to October, the biggest annual gain since 2022, as inflation spreads beyond energy",
+  "tldr": "US producer prices rose 0.3% in October, slightly less than forecast, but 6.5% over twelve months, the largest annual gain since November 2022, with food and core goods prices climbing.",
+  "category": "Economy & Data",
+  "byline": "The Globe and Mail (Reuters), The Jolt Journal"
+ },
+ {
+  "id": "2026-11-14-n2",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "The Fed's financial stability report finds AI is now the most-cited risk, named by 87% of surveyed market contacts",
+  "tldr": "The Fed's twice-yearly stability report says AI enthusiasm keeps asset prices near historic highs, AI-related debt issuance has passed $680 billion this year, and 87% of surveyed contacts now see AI as a key risk.",
+  "category": "Banking & Finance",
+  "byline": "Federal Reserve, Yahoo Finance"
+ },
+ {
+  "id": "2026-11-14-n3",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "Alberta cuts royalties on new oil sands projects to 2% for five years in a bid to double crude output",
+  "tldr": "Alberta's new Oil Sands Growth Program guarantees eligible new projects a 10-year royalty schedule starting at 2%, part of Premier Danielle Smith's push to double oil production to eight million barrels a day.",
+  "category": "Energy & Commodities",
+  "byline": "Government of Alberta, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-14-n4",
+  "date": "2026-11-14",
+  "type": "news",
+  "title": "An arbitrator imposes the first binding union contract for Amazon workers in North America, at a B.C. warehouse",
+  "tldr": "About 800 workers at Amazon's YVR2 warehouse in Delta, B.C., are now covered by a three-year contract set by an arbitrator, with wages rising to $29 an hour; Amazon says it may go to court.",
+  "category": "Labor & Workplace",
+  "byline": "Unifor, The Globe and Mail"
+ },
+ {
+  "id": "nber-w35987",
+  "date": "2026-11-14",
+  "type": "paper",
+  "title": "TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale",
+  "tldr": "Researchers used system-run interviews with 132 workers to build task lists for six occupations, capturing 79 tasks missing from the O*NET occupational database and shifting estimates of AI exposure.",
+  "primary_tag": "Labor markets",
+  "tags": [
+   "Labor markets",
+   "Innovation & technology"
+  ],
+  "byline": "Jennifer Wang, Andreas Haupt, Isaac Robinson et al.",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-13-n1",
   "date": "2026-11-13",
   "type": "news",

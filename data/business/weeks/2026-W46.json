@@ -2,21 +2,27 @@
  "week": "2026-W46",
  "start": "2026-11-09",
  "end": "2026-11-14",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [],
  "stories": [
   {
    "title": "Anthropic reportedly plans to move forward with IPO plans",
-   "outlets": 22,
+   "outlets": 25,
    "date": "2026-11-10",
-   "covered": "2026-11-09-n2"
+   "covered": "2026-11-09-n1"
   },
   {
    "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
    "outlets": 10,
    "date": "2026-11-08",
    "covered": "2026-11-12-n1"
+  },
+  {
+   "title": "European shares rise on banking boost",
+   "outlets": 10,
+   "date": "2026-11-09",
+   "covered": null
   },
   {
    "title": "On Holding (ONON) Beats Q3 Earnings and Revenue Estimates",
@@ -26,12 +32,6 @@
   },
   {
    "title": "Oil Prices Fall, Staying Below $100, After Trump Downplays Prospect of New Iran Strikes",
-   "outlets": 6,
-   "date": "2026-11-09",
-   "covered": null
-  },
-  {
-   "title": "European shares rise on banking boost",
    "outlets": 6,
    "date": "2026-11-09",
    "covered": null
@@ -56,8 +56,8 @@
   }
  ],
  "featured": {
-  "news": 17,
-  "papers": 5
+  "news": 21,
+  "papers": 6
  },
  "items": [
   {
@@ -191,6 +191,36 @@
    "date": "2026-11-13",
    "type": "paper",
    "title": "Clearing the Fog: Price Transparency, Market Churn, and Consumer Welfare in Short-Term Rentals"
+  },
+  {
+   "id": "2026-11-14-n1",
+   "date": "2026-11-14",
+   "type": "news",
+   "title": "US producer prices rise 6.5% over the year to October, the biggest annual gain since 2022, as inflation spreads beyond energy"
+  },
+  {
+   "id": "2026-11-14-n2",
+   "date": "2026-11-14",
+   "type": "news",
+   "title": "The Fed's financial stability report finds AI is now the most-cited risk, named by 87% of surveyed market contacts"
+  },
+  {
+   "id": "2026-11-14-n3",
+   "date": "2026-11-14",
+   "type": "news",
+   "title": "Alberta cuts royalties on new oil sands projects to 2% for five years in a bid to double crude output"
+  },
+  {
+   "id": "2026-11-14-n4",
+   "date": "2026-11-14",
+   "type": "news",
+   "title": "An arbitrator imposes the first binding union contract for Amazon workers in North America, at a B.C. warehouse"
+  },
+  {
+   "id": "nber-w35987",
+   "date": "2026-11-14",
+   "type": "paper",
+   "title": "TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale"
   }
  ]
 }

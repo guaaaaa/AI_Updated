@@ -1,0 +1,208 @@
+{
+ "date": "2026-11-14",
+ "edition": "weekend",
+ "generated_at": "2026-11-14T12:46:28+00:00",
+ "summary": "US wholesale inflation hits a four-year high, the Fed names AI as the top worry for financial stability, Alberta cuts royalties on new oil sands projects, and Amazon workers in B.C. get North America's first binding Amazon union contract.",
+ "news": [
+  {
+   "id": "2026-11-14-n1",
+   "story_key": "us-ppi-october-2026",
+   "title": "US producer prices rise 6.5% over the year to October, the biggest annual gain since 2022, as inflation spreads beyond energy",
+   "category": "Economy & Data",
+   "published": "2026-11-13T08:30:00-05:00",
+   "tldr": "US producer prices rose 0.3% in October, slightly less than forecast, but 6.5% over twelve months, the largest annual gain since November 2022, with food and core goods prices climbing.",
+   "why_selected": "A major US inflation release that follows a hot consumer price report and feeds directly into the Fed's December rate decision.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The producer price index (PPI) measures what businesses receive for their goods and services, so it often signals price pressure before it reaches shoppers. US inflation has climbed this year as fuel prices surged; earlier this week the October consumer price index also came in hotter than expected. The Federal Reserve held its benchmark rate at 3.75% to 4% last month."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday at 8:30 a.m. ET the Bureau of Labor Statistics reported that the PPI for final demand rose 0.3% in October, after an upwardly revised 1.4% jump in September. Economists polled by Reuters had expected 0.4%. Over twelve months the index rose 6.5%, the largest annual gain since a 7.4% increase in November 2022. Goods prices rose 0.5% in the month and 10.2% over the year. Food jumped 1.3%, led by vegetables, poultry and roasted coffee, while energy dipped 0.1% as diesel fell 7.9%; diesel was still 115.2% higher than a year earlier. Goods excluding food and energy rose 0.5% and made up more than 60% of the goods increase. Services rose 0.2%, with trucking freight up 3.9%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The worry is broadening. Expensive diesel is raising transport costs, and those costs are now showing up in food and other goods rather than only in fuel. Economists estimated that the Fed's preferred core measure, core PCE inflation (personal consumption expenditures excluding food and energy), rose 0.3% in October and 3.2% over the year, well above the 2% target. Markets were weighing a quarter-point hike, 25 basis points, against a half-point move in December, and priced another increase in January. Higher rates would raise borrowing costs for companies and households already facing an affordability squeeze."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Fed meets December 8 to 9. Before then, the October PCE data will show whether the estimates hold and how much of the producer price pressure is reaching consumers."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail (Reuters)",
+     "url": "https://www.theglobeandmail.com/business/article-us-producer-prices-climb-at-highest-annual-rate-in-four-years/"
+    },
+    {
+     "name": "The Jolt Journal",
+     "url": "https://www.joltjournal.com/finance/producer-price-index-october-2026/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-n2",
+   "story_key": "fed-financial-stability-report-2026-11",
+   "title": "The Fed's financial stability report finds AI is now the most-cited risk, named by 87% of surveyed market contacts",
+   "category": "Banking & Finance",
+   "published": "2026-11-13T16:00:00-05:00",
+   "tldr": "The Fed's twice-yearly stability report says AI enthusiasm keeps asset prices near historic highs, AI-related debt issuance has passed $680 billion this year, and 87% of surveyed contacts now see AI as a key risk.",
+   "why_selected": "The central bank's official assessment of where the US financial system is vulnerable, with new numbers on the debt behind the data center boom.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Twice a year the Federal Reserve Board publishes a Financial Stability Report. It focuses on vulnerabilities, the weak points that could turn a shock into a crisis: stretched asset prices, heavy borrowing, leverage at financial firms and fragile funding. It also reports a survey of market contacts about which shocks they fear most. This edition uses data available as of October 28."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday the Fed said asset valuations remained near the upper end of their historical ranges across most markets, with equity prices partly driven by enthusiasm for superintelligence but moderated by concerns over companies' spending and debt plans. Debt issued to finance advanced computing infrastructure rose to more than $680 billion by October 2026, about five times the $130 billion issued in all of 2023, and reached about 31% of investment-grade nonfinancial corporate issuance. In the survey of 23 contacts, 87% cited AI as a salient risk, up from 50% in the spring. A correction in risky assets was cited by 52%, higher long-term rates by 48% and cyberattacks by 43%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The report links the AI boom to the plumbing of credit markets. It warns that the ties among data center builders, public bond markets, private lenders and special purpose financing vehicles need close monitoring, and notes that private credit default rates have risen to the upper end of their historical range. Bank exposure to nonbank lenders such as private credit and private equity passed $2.8 trillion in the second quarter. Hedge fund leverage is at its highest since 2013. Banks were described as sound and resilient, and household debt as subdued."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Watch whether AI-related borrowing keeps shifting toward private credit, structured credit and project finance, and whether a disappointment in corporate earnings tests the valuations the Fed flags."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Federal Reserve",
+     "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf"
+    },
+    {
+     "name": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/economy/policy/articles/fed-warns-financial-risks-ai-225438596.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-n3",
+   "story_key": "alberta-oil-sands-growth-program-2026-11",
+   "title": "Alberta cuts royalties on new oil sands projects to 2% for five years in a bid to double crude output",
+   "category": "Energy & Commodities",
+   "published": "2026-11-13T12:00:00-05:00",
+   "tldr": "Alberta's new Oil Sands Growth Program guarantees eligible new projects a 10-year royalty schedule starting at 2%, part of Premier Danielle Smith's push to double oil production to eight million barrels a day.",
+   "why_selected": "A major fiscal change for one of the world's largest oil reserves, tied to new pipeline capacity and a federal-provincial deal with the biggest producers.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Royalties are the share of revenue Alberta collects from companies that produce its oil. Premier Danielle Smith wants to double the province's oil production to eight million barrels per day and fill new pipeline capacity that is on its way. Alberta, Ottawa and five large producers have signed a non-binding memorandum of understanding to build fiscal and regulatory frameworks for oil sands growth."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday Smith announced the Oil Sands Growth Program in Calgary, flanked by oil company chief executives. Approved projects get a guaranteed 10-year royalty framework: a 2% rate for the first five years, rising by one percentage point a year to 6% in years nine and 10. New greenfield projects or expansions producing 5,000 barrels a day are eligible, but cannot sit inside the boundary of an already approved project. Afterwards projects return to the regular regime, where royalties range from 1% to 9% before a developer recoups its investment and 25% to 40% after. The government says doubling output could bring about $205 billion in cumulative additional revenue by 2040."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The program trades near-term royalty income for investment. Suncor, Cenovus, Canadian Natural, ConocoPhillips and Imperial all welcomed it, and Suncor's CEO said it would make a material difference. Critics such as the Pembina Institute say the province is leaving revenue on the table for a sector that is already very profitable. Smith argues that a project that never gets built yields nothing. The rules take effect next spring, and the government says it expects investment to begin immediately, though its value depends on oil prices."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Remaining definitive agreements under the memorandum were due November 15, but company chiefs said that deadline, including details on a large carbon capture project, will likely be missed."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Government of Alberta",
+     "url": "https://www.alberta.ca/announcements.cfm?xID=981275DC1AC17-BD32-E06C-F81BC3AE18865A02"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-alberta-danielle-smith-unveils-new-oil-sands-royalty-regime/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-n4",
+   "story_key": "amazon-bc-first-union-contract-2026-11",
+   "title": "An arbitrator imposes the first binding union contract for Amazon workers in North America, at a B.C. warehouse",
+   "category": "Labor & Workplace",
+   "published": "2026-11-13T16:41:00-05:00",
+   "tldr": "About 800 workers at Amazon's YVR2 warehouse in Delta, B.C., are now covered by a three-year contract set by an arbitrator, with wages rising to $29 an hour; Amazon says it may go to court.",
+   "why_selected": "The first binding collective agreement for Amazon anywhere in North America, a precedent for one of the continent's largest employers.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Amazon has opposed union drives at its North American warehouses. Unifor, Canada's largest private-sector union, was certified to represent workers at the YVR2 fulfilment centre in Delta, British Columbia, in July 2025, after the province's Labour Relations Board found Amazon had hired extra staff to frustrate the organizing drive. In August 2026 the board ordered binding arbitration, over Amazon's objections, because the two sides had not reached a deal."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday Unifor and Amazon both said an independent arbitrator had imposed the terms of a three-year agreement covering about 800 workers. According to Unifor, it raises hourly wages to $29 by the end of the deal, provides severance of up to 18 weeks and adds a week of vacation for workers with 10 years of service. It also includes a grocery benefit, seniority-based holiday scheduling and protections keeping benefits at least as good as existing coverage. The contract runs until November 13, 2029. Amazon vice-president J. Ofori Agboka called the process improper and unfair and said the company would take its concerns to court if necessary."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The labour board ordered arbitration after finding that Amazon's conduct had affected the two sides' ability to reach an agreement, so the terms were set without a negotiated deal. Unifor says it intends to support thousands more workers and invites staff at other Amazon sites in Metro Vancouver to talk to its organizers. Amazon argues workers could take home less after paying union dues and objects that they never voted on the deal. For other large employers, the case shows a labour board can impose contract terms when it finds bargaining has been undermined."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Amazon challenges the award in court, and whether organizing spreads to other Amazon sites in B.C. and elsewhere in Canada."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Unifor",
+     "url": "https://www.unifor.org/news/all-news/amazon-workers-delta-win-first-union-contract-north-america"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/canada/article-landmark-amazon-union-contract-imposed-in-bc/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w35987",
+   "title": "TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale",
+   "authors": [
+    "Jennifer Wang",
+    "Andreas Haupt",
+    "Isaac Robinson",
+    "Phil Lewis",
+    "Erik Brynjolfsson",
+    "Diyi Yang"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-14T00:00:00-05:00",
+   "primary_tag": "Labor markets",
+   "tags": [
+    "Labor markets",
+    "Innovation & technology"
+   ],
+   "tldr": "Researchers used system-run interviews with 132 workers to build task lists for six occupations, capturing 79 tasks missing from the O*NET occupational database and shifting estimates of AI exposure.",
+   "why_selected": "Most estimates of how AI will affect jobs rest on official task lists; this paper shows those lists miss a lot and offers a scalable way to update them.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "To estimate how AI will affect a job, economists usually break it into tasks and ask which tasks AI can do. The answers depend on having an accurate, current list of what workers actually do. Jobs change quickly, and new duties and tools often appear in everyday work long before they reach official descriptions."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "A major source is O*NET, a US database of occupations and their tasks. It collects standardized ratings from workers and lets them write in suggested new tasks, but only about 65% of those write-in suggestions are accepted by O*NET analysts. Open-ended interviews capture change better, but they are costly to run and hard to summarize at scale."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors built the Stanford Task Network (TaskNet). A system interviews workers about their everyday work, turns each conversation into a standardized list of tasks, and merges the lists into a task inventory for each occupation. Other workers in the same jobs then rate each task for relevance and importance."
+    },
+    {
+     "heading": "Results",
+     "body": "Across six occupations with different education requirements and AI exposure, the system interviewed 132 workers and produced 202 task statements from 2,726 reports, all of which O*NET Center analysts accepted. A further 318 workers gave 7,923 ratings. TaskNet covers 75% of the 118 published O*NET tasks for these jobs, adds 79 tasks with no O*NET counterpart and refines 58 others. It covers 89% of the tasks described by held-out workers, against 79% for O*NET, and slightly more of the activities in employer job postings (72.5% versus 70.2%). Using TaskNet changes AI exposure estimates in both directions, raising them for software developers and lawyers."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Workforce policy and training budgets lean on AI exposure estimates, so incomplete task lists can point help toward the wrong workers. TaskNet suggests a scalable way to keep occupational data current. The main caveat is scale: it has been tested on only six occupations so far."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w35987"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}

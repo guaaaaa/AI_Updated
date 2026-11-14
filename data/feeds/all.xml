@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 14 Nov 2026 12:14:45 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 12:46:28 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>US producer prices rise 6.5% over the year to October, the biggest annual gain since 2022, as inflation spreads beyond energy</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n1</guid>
+    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>US producer prices rose 0.3% in October, slightly less than forecast, but 6.5% over twelve months, the largest annual gain since November 2022, with food and core goods prices climbing. (The Globe and Mail (Reuters), The Jolt Journal)</description>
+  </item>
+  <item>
+    <title>The Fed's financial stability report finds AI is now the most-cited risk, named by 87% of surveyed market contacts</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n2</guid>
+    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
+    <category>Business / Banking &amp; Finance</category>
+    <description>The Fed's twice-yearly stability report says AI enthusiasm keeps asset prices near historic highs, AI-related debt issuance has passed $680 billion this year, and 87% of surveyed contacts now see AI as a key risk. (Federal Reserve, Yahoo Finance)</description>
+  </item>
+  <item>
+    <title>Alberta cuts royalties on new oil sands projects to 2% for five years in a bid to double crude output</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n3</guid>
+    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
+    <category>Business / Energy &amp; Commodities</category>
+    <description>Alberta's new Oil Sands Growth Program guarantees eligible new projects a 10-year royalty schedule starting at 2%, part of Premier Danielle Smith's push to double oil production to eight million barrels a day. (Government of Alberta, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>An arbitrator imposes the first binding union contract for Amazon workers in North America, at a B.C. warehouse</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n4</guid>
+    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
+    <category>Business / Labor &amp; Workplace</category>
+    <description>About 800 workers at Amazon's YVR2 warehouse in Delta, B.C., are now covered by a three-year contract set by an arbitrator, with wages rising to $29 an hour; Amazon says it may go to court. (Unifor, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/nber-w35987</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/nber-w35987</guid>
+    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
+    <category>Business / Labor markets</category>
+    <description>Researchers used system-run interviews with 132 workers to build task lists for six occupations, capturing 79 tasks missing from the O*NET occupational database and shifting estimates of AI exposure. (Jennifer Wang, Andreas Haupt, Isaac Robinson et al.)</description>
+  </item>
   <item>
     <title>OpenAI launches ChatGPT Wallet so its Dots agents can buy things for users, with approval for each purchase</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
     <category>AI / Product &amp; Features</category>
     <description>Gemini Decision 1 answers up to 1,000 closed-set questions about a multimodal input in one forward pass, returning calibrated probabilities in 150-250 ms for $0.10 per million input tokens and no output charge. (Google, Simon Willison)</description>
-  </item>
-  <item>
-    <title>The Surprising Effectiveness of Deleting Weights in LLM Post-Training</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.10866</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.10866</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Post-training</category>
-    <description>Learning which 0.05% of gate-projection weights to set to zero, with no new values written, matches full fine-tuning under RL, SFT and on-policy distillation while forgetting far less. (Jack Lu, Zhenbang Yang, Mike Lasby et al. · New York University, University of Calgary)</description>
-  </item>
-  <item>
-    <title>Are Dense Rewards Worth Their Tokens in GRPO?</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.13560</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.13560</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Across 1,668 preregistered runs, dense step-level rewards that beat GRPO per update lose once their extra generated tokens and GPU time are counted, while picking prompts near 50% success holds up. (Vikash Singh, Weicong Chen, Debargha Ganguly et al.)</description>
-  </item>
-  <item>
-    <title>Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.14320</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.14320</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Retrieval &amp; Memory</category>
-    <description>WikiTrace links each lesson in an agent's memory to the run it came from, so the agent can check doubtful lessons, raising scores on all eight test suites and cutting memory-induced failures. (Yukyeong Lee, Yumin Choi, Jinheon Baek et al. · KAIST, DeepAuto.ai)</description>
-  </item>
-  <item>
-    <title>Evolving Infra: Agent-Adaptive LLM Serving at Scale</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12304</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12304</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>Evolving Infra lets serving nodes switch between prefill and decode in seconds and evicts cached context that no live agent branch needs, cutting latency up to 4.1x versus NVIDIA's Dynamo. (Hao Kang, Weili Xu, Ziyang Li et al.)</description>
-  </item>
-  <item>
-    <title>World In-Context Learning for Agentic Robot Manipulation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12885</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12885</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>A frozen foundation model learns robot tasks by rehearsing in a simulator and writing lessons into a text memory, reaching 83.4% on RoboTwin 2.0 from one demonstration, over 20 points above trained policies. (Heng Fang, Zehui Guo, Yuehan Zhang et al. · Huazhong University of Science and Technology, ArcheOne AI)</description>
   </item>
 </channel>
 </rss>
