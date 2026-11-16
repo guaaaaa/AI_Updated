@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 19:20:05 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 19:21:45 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>ULA's Vulcan rocket fails during launch, the company's first total loss since it was formed in 2006</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/2026-11-16-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/2026-11-16-n1</guid>
+    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>United Launch Alliance's Vulcan rocket failed to reach orbit on Sunday with 40 Amazon Leo satellites, the company's first outright failure, and the rocket is now grounded while engineers look for the cause. (Ars Technica, Spaceflight Now)</description>
+  </item>
+  <item>
+    <title>Quantitative measurement of viscosity in two-dimensional electron fluids</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</guid>
+    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <category>Science / Condensed matter &amp; materials</category>
+    <description>A ring-shaped graphene device lets physicists measure the viscosity of flowing electrons directly, and the result departs from the standard theory of metals. (Yihang Zeng, Haoyu Guo, Olivia M. Ghosh et al.)</description>
+  </item>
+  <item>
+    <title>A primordial heavy water reservoir in the outer solar system</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</guid>
+    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <category>Science / Planetary science</category>
+    <description>Twelve dust grains collected in Earth's stratosphere, traced to the Kuiper Belt, carry the oxygen signature of an isotopically heavy water reservoir that stayed separate from the inner solar system. (Lindsay P. Keller, Christopher J. Snead, Ming-Chang Liu et al. · NASA Johnson Space Center)</description>
+  </item>
+  <item>
+    <title>Passive imaging with quantum advantage</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</guid>
+    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination. (Li Gong, Aonan Zhang, Madhura Ghosh Dastidar et al.)</description>
+  </item>
   <item>
     <title>An 11-year-old Linux kernel flaw called NoisyTCP lets remote attackers crash servers, and a patch is available</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n1</link>
@@ -454,38 +486,6 @@
     <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
     <category>Biology / Clinical Research</category>
     <description>Beam Therapeutics says its one-time base-edited cell therapy, risto-cel, met its main goal of 12 months without severe pain crises in a 49-patient single-arm trial, and plans a US filing. (PharmaShots (summary of Beam's press release), BioPharm International)</description>
-  </item>
-  <item>
-    <title>A Lancet Psychiatry analysis compares how well 21 antidepressants keep depression at bay over months to years</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/2026-11-12-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/2026-11-12-n2</guid>
-    <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
-    <category>Biology / Neuroscience &amp; Mental Health</category>
-    <description>Pooling 115 studies longer than 12 weeks, researchers found escitalopram, duloxetine and agomelatine somewhat more likely than fluoxetine to bring lasting improvement; experts call the differences modest. (The New York Times, BBC News)</description>
-  </item>
-  <item>
-    <title>Everyone in a 100,000-person All of Us sample carries gene variants that affect medicines, and a quarter got an affected drug</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/2026-11-12-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/2026-11-12-n3</guid>
-    <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
-    <category>Biology / Genetics &amp; Genomics</category>
-    <description>A Pitt-led analysis of nearly 100,000 genomes found every participant carried at least one drug-relevant variant (median nine), 24.4% had been prescribed an affected drug, and over 17,000 variants were new. (University of Pittsburgh via Medical Xpress, STAT, Science Translational Medicine)</description>
-  </item>
-  <item>
-    <title>UNC13A splice correction rescues synaptic dysfunction induced by TDP-43 loss</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11256-2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11256-2</guid>
-    <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
-    <category>Biology / Neuroscience</category>
-    <description>In lab-grown human neurons lacking the ALS protein TDP-43, fixing one splicing error in the synapse gene UNC13A with an antisense drug restored communication between neurons. (Matthew J. Keuss, Peter Harley, Eugeni Ryadnov et al. · King's College London; University College London; Francis Crick Institute; Leibniz-FMP; Trace Neuroscience)</description>
-  </item>
-  <item>
-    <title>Evolutionary dynamics in the years preceding acute myeloid leukaemia</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11269-x</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11269-x</guid>
-    <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
-    <category>Biology / Oncology</category>
-    <description>Yearly stored blood samples show that in two-thirds of women who later got acute myeloid leukaemia, the first driver mutation arose before age 20, and mutant clones then grew predictably. (Caroline J. Watson, Gladys Y. P. Poon, Hamish A. J. MacGregor et al. · University of Cambridge; University College London)</description>
   </item>
 </channel>
 </rss>

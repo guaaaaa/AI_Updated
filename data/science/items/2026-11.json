@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-16-n1",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "ULA's Vulcan rocket fails during launch, the company's first total loss since it was formed in 2006",
+  "tldr": "United Launch Alliance's Vulcan rocket failed to reach orbit on Sunday with 40 Amazon Leo satellites, the company's first outright failure, and the rocket is now grounded while engineers look for the cause.",
+  "category": "Space & Astronomy",
+  "byline": "Ars Technica, Spaceflight Now"
+ },
+ {
+  "id": "doi-10-1126-science-adr5469",
+  "date": "2026-11-16",
+  "type": "paper",
+  "title": "Quantitative measurement of viscosity in two-dimensional electron fluids",
+  "tldr": "A ring-shaped graphene device lets physicists measure the viscosity of flowing electrons directly, and the result departs from the standard theory of metals.",
+  "primary_tag": "Condensed matter & materials",
+  "tags": [
+   "Condensed matter & materials"
+  ],
+  "byline": "Yihang Zeng, Haoyu Guo, Olivia M. Ghosh et al.",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aeg1602",
+  "date": "2026-11-16",
+  "type": "paper",
+  "title": "A primordial heavy water reservoir in the outer solar system",
+  "tldr": "Twelve dust grains collected in Earth's stratosphere, traced to the Kuiper Belt, carry the oxygen signature of an isotopically heavy water reservoir that stayed separate from the inner solar system.",
+  "primary_tag": "Planetary science",
+  "tags": [
+   "Planetary science"
+  ],
+  "byline": "Lindsay P. Keller, Christopher J. Snead, Ming-Chang Liu et al. · NASA Johnson Space Center",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aei1896",
+  "date": "2026-11-16",
+  "type": "paper",
+  "title": "Passive imaging with quantum advantage",
+  "tldr": "Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics"
+  ],
+  "byline": "Li Gong, Aonan Zhang, Madhura Ghosh Dastidar et al.",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
   "id": "2026-11-14-n1",
   "date": "2026-11-14",
   "type": "news",

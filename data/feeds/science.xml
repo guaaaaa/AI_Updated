@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Sat, 14 Nov 2026 13:22:27 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 19:21:45 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>ULA's Vulcan rocket fails during launch, the company's first total loss since it was formed in 2006</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/2026-11-16-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/2026-11-16-n1</guid>
+    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>United Launch Alliance's Vulcan rocket failed to reach orbit on Sunday with 40 Amazon Leo satellites, the company's first outright failure, and the rocket is now grounded while engineers look for the cause. (Ars Technica, Spaceflight Now)</description>
+  </item>
+  <item>
+    <title>Quantitative measurement of viscosity in two-dimensional electron fluids</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</guid>
+    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <category>Science / Condensed matter &amp; materials</category>
+    <description>A ring-shaped graphene device lets physicists measure the viscosity of flowing electrons directly, and the result departs from the standard theory of metals. (Yihang Zeng, Haoyu Guo, Olivia M. Ghosh et al.)</description>
+  </item>
+  <item>
+    <title>A primordial heavy water reservoir in the outer solar system</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</guid>
+    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <category>Science / Planetary science</category>
+    <description>Twelve dust grains collected in Earth's stratosphere, traced to the Kuiper Belt, carry the oxygen signature of an isotopically heavy water reservoir that stayed separate from the inner solar system. (Lindsay P. Keller, Christopher J. Snead, Ming-Chang Liu et al. · NASA Johnson Space Center)</description>
+  </item>
+  <item>
+    <title>Passive imaging with quantum advantage</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</guid>
+    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination. (Li Gong, Aonan Zhang, Madhura Ghosh Dastidar et al.)</description>
+  </item>
   <item>
     <title>Climate Action Tracker finds the warming outlook has stalled for a fifth year, with current policies heading for 2.7°C</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/2026-11-14-n1</link>
@@ -294,38 +326,6 @@
     <pubDate>Fri, 06 Nov 2026 13:23:42 +0000</pubDate>
     <category>Science / Earth science</category>
     <description>Models of slow mantle flow suggest continents rose for hundreds of millions of years and then sank, which would erase and then bury the rock record behind the Great Unconformity. (Santosh Dhungana, Nicolas Flament)</description>
-  </item>
-  <item>
-    <title>Imaging exoplanets below the telescope stability limit</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-06/doi-10-1038-s41586-026-11213-z</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-06/doi-10-1038-s41586-026-11213-z</guid>
-    <pubDate>Fri, 06 Nov 2026 13:23:42 +0000</pubDate>
-    <category>Science / Planetary science</category>
-    <description>A physics-based model of Webb's camera, tuned with the gradient descent used to train neural networks, cuts noise in exoplanet images and revealed a planet that had gone unseen at one wavelength. (Rodrigo Ferrer-Chavez, Jason J. Wang, Katherine L. Bouman et al.)</description>
-  </item>
-  <item>
-    <title>NASA's Swift gamma-ray observatory ends its 22-year mission with a fiery re-entry</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/2026-11-05-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/2026-11-05-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>NASA's Neil Gehrels Swift Observatory, which tracked more than 2,000 gamma-ray bursts, was predicted to fall out of orbit on 4 November after a failed rescue attempt, and NASA now lists it as having re-entered. (The Guardian, NASA)</description>
-  </item>
-  <item>
-    <title>A hidden companion star may be stirring Betelgeuse's atmosphere</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/2026-11-05-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/2026-11-05-n2</guid>
-    <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>Radio observations from the VLA and ALMA suggest a close companion star, Siwarha, distorts the atmosphere of the red supergiant Betelgeuse, which has otherwise recovered from its Great Dimming. (ScienceDaily (ALMA release), The Astronomical Journal)</description>
-  </item>
-  <item>
-    <title>Uranium cubes show Germany's last wartime reactor was far short of what it needed</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/2026-11-05-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-05/2026-11-05-n3</guid>
-    <pubDate>Thu, 05 Nov 2026 13:24:41 +0000</pubDate>
-    <category>Science / Physics</category>
-    <description>A PNAS Nexus analysis of surviving uranium cubes and archives finds the B8 reactor would have needed 1,292 to 1,775 cubes, far more than the 664 used, contradicting Heisenberg's claim that it was nearly critical. (Ars Technica, PNAS Nexus)</description>
   </item>
 </channel>
 </rss>

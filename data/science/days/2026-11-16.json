@@ -1,0 +1,197 @@
+{
+ "date": "2026-11-16",
+ "edition": "weekday",
+ "generated_at": "2026-11-16T19:21:45+00:00",
+ "summary": "ULA's Vulcan rocket fails for the first time, while new papers measure how \"thick\" an electron fluid is, find a distinct ancient water reservoir in Kuiper Belt dust, and squeeze more detail out of faint light.",
+ "news": [
+  {
+   "id": "2026-11-16-n1",
+   "story_key": "ula-vulcan-first-failure-amazon-leo",
+   "title": "ULA's Vulcan rocket fails during launch, the company's first total loss since it was formed in 2006",
+   "category": "Space & Astronomy",
+   "published": "2026-11-15T18:11:54-05:00",
+   "tldr": "United Launch Alliance's Vulcan rocket failed to reach orbit on Sunday with 40 Amazon Leo satellites, the company's first outright failure, and the rocket is now grounded while engineers look for the cause.",
+   "why_selected": "A rare outright failure of a major US launcher, confirmed by the company and reported in detail by two specialist outlets, with consequences for military, commercial and NASA launch plans.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Vulcan is the heavy-lift rocket that United Launch Alliance (ULA), a partnership of Boeing and Lockheed Martin formed in 2006, built to replace its Atlas 5. Its first stage burns methane in two BE-4 engines supplied by Blue Origin, helped at liftoff by strap-on solid rocket boosters; a hydrogen-fuelled Centaur upper stage finishes the climb to orbit. Sunday's launch was Vulcan's fifth flight and its first in nine months. Two earlier flights had problems with the solid boosters' nozzles, although the rocket still reached orbit both times."
+    },
+    {
+     "heading": "What happened",
+     "body": "The rocket lifted off from Cape Canaveral Space Force Station on Sunday at 17:40 UTC, carrying 40 satellites for Amazon's Leo broadband network. The six solid boosters appeared to work normally. The BE-4 engines then fired for at least 30 seconds longer than planned, Ars Technica reported, and an animation driven by the rocket's telemetry showed it starting to spin after they shut down. The Centaur stage separated and ignited. ULA said the vehicle \"suffered an anomaly 10 minutes into the flight and failed to deliver the Amazon mission to orbit\", and that it did not yet have specific data to explain it. Sources told Ars Technica the problem arose in the booster stage; Spaceflight Now reports that ULA's update placed the anomaly during the Centaur burn."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The rocket is expected to be grounded during the investigation. Ars Technica says Vulcan is on contract for roughly half of the US military's national security launches over the next few years. This was also the first of 38 Vulcan launches bought by Amazon, whose constellation has 396 satellites in orbit out of a planned 3,292 in its first generation. Blue Origin's New Glenn, which also uses BE-4 engines and is also booked by Amazon, has not flown since an explosion on the pad in May that was traced to an oxygen valve in one engine. Sunday's engines had been retrofitted with a fix."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The cause, and in particular whether the first-stage engines or the upper stage were at fault; how long the grounding lasts; and how Amazon and the Space Force rearrange their launches."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/"
+    },
+    {
+     "name": "Spaceflight Now",
+     "url": "https://spaceflightnow.com/mission-reports/vulcan/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-adr5469",
+   "title": "Quantitative measurement of viscosity in two-dimensional electron fluids",
+   "authors": [
+    "Yihang Zeng",
+    "Haoyu Guo",
+    "Olivia M. Ghosh",
+    "Kenji Watanabe",
+    "Takashi Taniguchi",
+    "Leonid S. Levitov",
+    "Cory R. Dean"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Condensed matter & materials",
+   "tags": [
+    "Condensed matter & materials"
+   ],
+   "tldr": "A ring-shaped graphene device lets physicists measure the viscosity of flowing electrons directly, and the result departs from the standard theory of metals.",
+   "why_selected": "A clean, quantitative method for a quantity that has been hard to pin down, published in Science, with a result that contradicts the textbook expectation for electrons in metals.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "In very clean materials, electrons collide with each other so often that they flow together like a liquid, with a viscosity (resistance to shearing, the property that makes honey slower than water). That viscosity measures how strongly electrons scatter off one another. Signs of such \"electron hydrodynamics\" have been reported in several two-dimensional materials, but measuring the viscosity precisely has remained difficult."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Electron-electron collisions conserve momentum, so they do not by themselves produce measurable resistance; losses happen at the device's edges and depend on its shape. And real devices are never purely fluid-like: ordinary (\"Ohmic\") resistance from lattice vibrations and impurities is mixed in. Earlier methods usually assumed the Ohmic part was small."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors use a Corbino geometry: current flows between an inner and an outer ring electrode, so the graphene has no edges apart from the contacts. They then apply a magnetic field. The resistance rises with the square of the field, and the steepness of that rise takes two different values. At low fields it reflects both viscous and Ohmic flow. At high fields the magnetic field suppresses the viscous contribution, leaving only the Ohmic part. The high-field slope gives the ordinary resistivity; inserting that into the low-field slope gives the viscosity. The device works as a combined ohmmeter and viscometer, even when the two kinds of flow are mixed."
+    },
+    {
+     "heading": "Results",
+     "body": "As a check, the extracted Ohmic resistivity reproduces the known strength of electron scattering by lattice vibrations. In both single-layer and two-layer graphene, at high electron density, the effective electron-electron scattering rate grows linearly with temperature. Standard Fermi liquid theory, the usual description of electrons in metals, predicts growth with the square of temperature. The linear behaviour matches a recently proposed \"tomographic\" flow regime predicted for two-dimensional electron fluids. At low density the viscosity follows different temperature laws in the two materials, in line with theory."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The method allows theories of interacting electrons to be tested with numbers rather than qualitative signs. This summary is based on the authors' preprint; the version published in Science may differ in detail."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.adr5469",
+    "doi": "https://doi.org/10.1126/science.adr5469"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeg1602",
+   "title": "A primordial heavy water reservoir in the outer solar system",
+   "authors": [
+    "Lindsay P. Keller",
+    "Christopher J. Snead",
+    "Ming-Chang Liu",
+    "Kevin D. McKeegan"
+   ],
+   "affiliations": [
+    "NASA Johnson Space Center"
+   ],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Planetary science",
+   "tags": [
+    "Planetary science"
+   ],
+   "tldr": "Twelve dust grains collected in Earth's stratosphere, traced to the Kuiper Belt, carry the oxygen signature of an isotopically heavy water reservoir that stayed separate from the inner solar system.",
+   "why_selected": "Physical samples from a region no spacecraft has sampled, giving evidence for a long-suspected reservoir of water in the early solar system.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "How well the solar system's water was mixed when the planets formed is recorded in isotopes: versions of an element with different numbers of neutrons. Oxygen is mostly oxygen-16, with small amounts of the heavier oxygen-17 and oxygen-18, and their proportions act as a fingerprint of where a material formed. A reservoir of water rich in the heavy isotopes has long been suspected in the early solar system, but evidence has been hard to find."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most meteorites come from regions where mixing and chemical alteration have blurred the original signatures. The Kuiper Belt, beyond Neptune at roughly 30 times the Earth-Sun distance, is thought to hold some of the least altered material, but no mission has collected samples there."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The Kuiper Belt delivers samples on its own: dust drifts slowly inward because sunlight exerts a slight drag, and some reaches Earth. The team, led by Lindsay Keller of NASA's Johnson Space Center, studied 12 grains, each 10 to 30 micrometres across, collected in the stratosphere by high-altitude NASA aircraft. To establish their origin, the researchers counted the tracks that energetic particles from the Sun leave in mineral crystals. The longer a grain spends in space, the more tracks it gathers. They then measured the oxygen isotopes in minerals that form when water reacts with rock, and worked backwards through the chemistry to the composition of that water."
+    },
+    {
+     "heading": "Results",
+     "body": "The grains had track densities about 100 times higher than expected for dust from the asteroid belt or Jupiter-family comets, consistent with a Kuiper Belt origin. Many contain clays such as saponite and serpentine, which means liquid water once existed inside their parent bodies. The minerals are enriched in the heavy oxygen isotopes, and the inferred water is distinctly different from the water inferred from carbonaceous meteorites."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors call this compelling evidence for a major heavy water reservoir beyond the gas giants that was largely isolated from inner solar system material; they suggest Saturn created a pressure barrier in the young Sun's disk that stopped material drifting inward. The main caveat is the sample: twelve grains. This summary relies on press coverage, not the full paper."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aeg1602",
+    "doi": "https://doi.org/10.1126/sciadv.aeg1602"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aei1896",
+   "title": "Passive imaging with quantum advantage",
+   "authors": [
+    "Li Gong",
+    "Aonan Zhang",
+    "Madhura Ghosh Dastidar",
+    "Alexander Duplinskii",
+    "A. I. Lvovsky"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics"
+   ],
+   "tldr": "Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination.",
+   "why_selected": "It turns an abstract result from quantum measurement theory into a practical imaging scheme for arbitrary objects, with possible uses in microscopy, astronomy and remote sensing.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Any lens blurs. It acts as a filter that passes coarse features of a scene and cuts off the finest ones, and features just below the cutoff come through only weakly. When light is scarce, a second limit appears: light arrives as individual photons at random times, and this \"shot noise\" buries the weak fine detail."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Software can sharpen a blurred image afterwards (deconvolution), but it degrades quickly when noise is present. Many super-resolution microscopes actively control the illumination, impossible for a star. Quantum measurement theory offered another route: for measuring the gap between two point sources, sorting the light into particular spatial patterns before detection extracts far more information than an ordinary camera image. That advantage had not been established for full images of arbitrary objects."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors treat imaging as a quantum estimation problem. The quantities to be estimated are the strengths of the object's spatial frequencies, the fine and coarse stripe patterns that add up to the picture. They calculate how much information about each one the collected light carries in principle, and compare it with what a conventional camera extracts. Their scheme, Fourier Domain Division, splits the light into several regions at the plane inside the instrument where it is sorted by spatial frequency, records a separate image from each region, and combines these with a statistical filter. A loose analogy is splitting an orchestra's sound into frequency bands and recording each with its own microphone, so that quiet high notes are not drowned by noise from loud low ones."
+    },
+    {
+     "heading": "Results",
+     "body": "In a microscopy experiment on a fluorescent resolution target, the method gave a five-fold improvement in Fisher information, a standard measure of how much each detected photon tells you, for high spatial frequencies. About five times fewer photons are therefore needed for the same accuracy on fine detail. Resolution improved 1.1-fold."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The technique is passive: it only rearranges how incoming light is measured, so it could apply where illumination cannot be controlled; the authors name astronomy and remote sensing. This summary is based on the authors' preprint; the published version may differ."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aei1896",
+    "doi": "https://doi.org/10.1126/sciadv.aei1896"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  }
+ ]
+}

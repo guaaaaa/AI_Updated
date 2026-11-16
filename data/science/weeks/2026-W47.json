@@ -1,0 +1,39 @@
+{
+ "week": "2026-W47",
+ "start": "2026-11-16",
+ "end": "2026-11-21",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [],
+ "featured": {
+  "news": 1,
+  "papers": 3
+ },
+ "items": [
+  {
+   "id": "2026-11-16-n1",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "ULA's Vulcan rocket fails during launch, the company's first total loss since it was formed in 2006"
+  },
+  {
+   "id": "doi-10-1126-science-adr5469",
+   "date": "2026-11-16",
+   "type": "paper",
+   "title": "Quantitative measurement of viscosity in two-dimensional electron fluids"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aeg1602",
+   "date": "2026-11-16",
+   "type": "paper",
+   "title": "A primordial heavy water reservoir in the outer solar system"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aei1896",
+   "date": "2026-11-16",
+   "type": "paper",
+   "title": "Passive imaging with quantum advantage"
+  }
+ ]
+}
