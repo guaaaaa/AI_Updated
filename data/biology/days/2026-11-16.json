@@ -1,0 +1,303 @@
+{
+ "date": "2026-11-16",
+ "edition": "weekday",
+ "generated_at": "2026-11-16T19:22:35+00:00",
+ "summary": "The FDA turns down the PD-1/VEGF antibody ivonescimab, the US is reported to have lost measles elimination status, violence hampers Congo's Ebola response, and papers on clot prevention after joint replacement, the aging primate brain and the limits of predicting evolution.",
+ "news": [
+  {
+   "id": "2026-11-16-n1",
+   "story_key": "fda-ivonescimab-crl-harmoni-egfr-nsclc",
+   "title": "FDA declines to approve ivonescimab for lung cancer because the trial did not show a significant survival gain",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-15T07:59:00-05:00",
+   "tldr": "The FDA rejected Summit's ivonescimab plus chemotherapy for previously treated EGFR-mutated lung cancer, saying slower tumor progression without a statistically significant survival benefit was not enough.",
+   "why_selected": "A regulatory decision on one of the most closely watched cancer drugs, reported by several outlets from the company's own disclosure, with a clear message about what evidence the FDA requires.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Ivonescimab is a bispecific antibody, a single molecule that blocks two targets: PD-1, a brake that tumors use to evade immune attack, and VEGF, a signal tumors use to grow blood vessels. It was invented by the Chinese drugmaker Akeso, and China first authorized it in May 2024. Summit Therapeutics acquired rights for the United States, Canada, Europe and Japan in 2022 in a deal worth up to $5 billion."
+    },
+    {
+     "heading": "What happened",
+     "body": "Summit disclosed on Sunday, November 15, that the FDA had issued a complete response letter, the agency's formal notice that an application cannot be approved in its current form. Summit had sought approval of ivonescimab plus platinum chemotherapy for advanced non-small cell lung cancer with EGFR mutations in patients whose disease had progressed after a targeted EGFR drug.\n\nThe application rested on HARMONi, a randomized, double-blind phase 3 trial comparing chemotherapy plus ivonescimab with chemotherapy plus placebo. According to Reuters, adding ivonescimab cut the risk of disease progression or death by 48%. But the primary analysis of overall survival did not reach statistical significance. A later analysis that was not part of the original plan gave a hazard ratio of 0.76 for death, according to Summit. The company said the FDA concluded that slower progression without a significant survival gain did not establish substantial evidence of effectiveness."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The decision shows where the FDA sets the bar in this setting: delaying tumor growth was not sufficient on its own, and analyses added after the fact did not substitute for a planned survival result. Summit has argued that the survival shortfall reflected slow enrollment in the study and that longer follow-up supports the drug's benefit.\n\nIvonescimab is being tested in several other cancers; the rejection covers only this use. In HARMONi, treatment-related side effects led 16 patients (7.3%) to stop ivonescimab and 11 (5.0%) to stop placebo."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Two phase 3 trials are testing ivonescimab as a first treatment for metastatic lung cancer, HARMONi-3 with chemotherapy and HARMONi-7 alone. Reuters reports that Summit expects late-stage data from a separate lung cancer study by year-end."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The New York Times",
+     "url": "https://www.nytimes.com/2026/11/15/business/fda-lung-cancer-drug-china.html"
+    },
+    {
+     "name": "Reuters (via SRN News)",
+     "url": "https://srnnews.com/us-fda-declines-to-approve-summit-lung-cancer-drug-after-trial-misses-key-survival-goal/"
+    },
+    {
+     "name": "OncoDaily",
+     "url": "https://oncodaily.com/not-to-miss/fda-ivonescimab-lung-cancer-633292"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-n2",
+   "story_key": "us-measles-elimination-status-lost-paho",
+   "title": "The US has lost its measles elimination status after 26 years, people close to the Pan American Health Organization's review say",
+   "category": "Public Health",
+   "published": "2026-11-13T20:22:00-05:00",
+   "tldr": "An expert commission reporting to the Pan American Health Organization has concluded that measles is again spreading continuously in the US, ending a status held since 2000, according to people familiar with the review.",
+   "why_selected": "A formal milestone in the US measles resurgence, distinct from last week's case and death counts, confirmed by two outlets with separate sources.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Measles was declared eliminated in the United States in 2000. Elimination does not mean zero cases: travelers still bring the virus in, but each outbreak is expected to die out. Under the rules used in the Americas, a country loses the status when the same strain of the virus passes from person to person inside it for at least a year. Two doses of the measles-mumps-rubella vaccine prevent about 97% of infections."
+    },
+    {
+     "heading": "What happened",
+     "body": "An independent commission of experts that reports to the director of the Pan American Health Organization (PAHO) has determined that the US no longer qualifies, a source close to the process told CNN on Friday. KFF Health News, citing researchers with direct knowledge of the deliberations, reported the same conclusion and said PAHO based it on two analyses, one from the CDC and one from an independent group of measles experts. PAHO had planned a public announcement for November 17, so the finding is not yet official.\n\nTo decide such cases, the committee compares the genetic code of viruses sampled from patients. In August, Utah's public health laboratory posted a preprint showing that one strain had circulated in the state for more than a year, causing more than 600 cases between June 2025 and June 2026."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Elimination status is a marker of how well a country's vaccination and outbreak response work, and its loss means measles is again treated as a disease that spreads at home rather than one that is only imported. CNN reports more than 5,400 cases this year, the most since 1991, with about 1 in 9 reported cases hospitalized. KFF Health News counts more than 8,000 illnesses and more than 830 hospitalizations over two years, with 13 measles-associated deaths reported by states. Infants too young for the vaccine and people with weakened immune systems face the greatest added risk. A spokesperson for the Department of Health and Human Services attributed the resurgence to vaccination gaps that opened in earlier years."
+    },
+    {
+     "heading": "What to watch",
+     "body": "PAHO's formal statement, expected on November 17, and whether it describes the evidence used."
+    }
+   ],
+   "sources": [
+    {
+     "name": "CNN",
+     "url": "https://www.cnn.com/2026/11/13/health/us-measles-elimination-status"
+    },
+    {
+     "name": "KFF Health News (via NPR)",
+     "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-n3",
+   "story_key": "drc-bundibugyo-ebola-six-months-violence-november-2026",
+   "title": "Six months in, Congo's Ebola outbreak still adds up to 500 cases a week as attacks on health workers disrupt the response",
+   "category": "Microbes & Infectious Disease",
+   "published": "2026-11-13T15:17:00-05:00",
+   "tldr": "The Bundibugyo Ebola outbreak centered on the Democratic Republic of the Congo has passed 11,000 cases and 5,400 deaths, and WHO and UN officials say armed violence is now blocking containment.",
+   "why_selected": "The second-largest Ebola outbreak on record, with new official figures and a UN warning that conflict is undoing the response.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The outbreak began in May in the Democratic Republic of the Congo (DRC) and is caused by Bundibugyo virus, one of the viruses that cause Ebola disease. The US Centers for Disease Control and Prevention (CDC) calls it the second-largest Ebola outbreak on record and says it has spread much faster than earlier ones: it passed 1,000 confirmed cases within 40 days, against about 235 days for the DRC outbreak of 2018."
+    },
+    {
+     "heading": "What happened",
+     "body": "The outbreak's toll has reached 11,145 cases, including 5,437 deaths, CIDRAP reported on Friday. World Health Organization (WHO) officials said prevention work has substantially reduced transmission in earlier hot spots, but up to 500 infections are still being diagnosed each week.\n\nMarie Roseline Belizaire, WHO's regional emergency director for Africa, called for \"an urgent halt in hostilities and violence\". WHO has logged 81 attacks on health facilities and workers since May. In the previous week, 66 civilians, including three health workers, were killed in North Kivu province and three facilities were looted and burned; response work was interrupted and patients were forced to flee, including 1,000 contacts. The UN's senior Ebola response coordinator, Julien Harneis, said rebels of the Allied Democratic Forces had killed more people than Ebola in recent days in villages in Ituri and North Kivu."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Ebola control depends on finding each patient, isolating them and following everyone they had contact with for 21 days. The European Centre for Disease Prevention and Control (ECDC) reports that 85.5% of identified contacts were under follow-up as of November 11, that eight provinces and 67 of 178 health zones there have been affected, and that Ituri alone accounts for 7,728 cases. When contacts scatter after an attack, chains of transmission can restart in places that had been brought under control.\n\nSpread beyond the DRC has so far been limited. Kenya has reported nine cases and two deaths, all linked to one traveler, and Nigeria has cleared all 62 contacts of its single case."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether access for response teams improves, and Kenya's 42-day countdown to being declared free of the virus."
+    }
+   ],
+   "sources": [
+    {
+     "name": "CIDRAP",
+     "url": "https://www.cidrap.umn.edu/ebola/500-ebola-cases-still-diagnosed-week-amid-escalating-attacks-officials-say"
+    },
+    {
+     "name": "ECDC",
+     "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-12"
+    },
+    {
+     "name": "CDC",
+     "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2602435",
+   "title": "Prevention of Venous Thromboembolism after Total Hip or Knee Replacement",
+   "authors": [
+    "Vincent D. Pellegrini Carol A. Lambourne Laurence S. Magder Patricia D. Franklin Jay S. Magaziner Brook I. Martin Richard Iorio Kevin L. Garvin Michael A. Mont Wayne E. Moschetti Antonia F. Chen David Warwick C. McCollister Evarts Adina Harri Laura M. Kernan Samuel Z. Goldhaber William J. Maloney Zeke J. Walton James A. Browne Harry A. Demos James I. Huddleston Stephen L. Kates Peter J. Brooks Navin D. Fernando Brock A. Lindsey Matthew J. Dietz James Nace Ronald E. Delanois Michael S. Kain Mark J. Spangehl Brent A. Lanting Eric M. Cohen Lisa K. Moores William L. Healy and Charles W. Francisthe PEPPER Trial Investigators and the Steering Committee of the PEPPER Trial*"
+   ],
+   "affiliations": [
+    "Dartmouth-Hitchcock Medical Center and Geisel School of Medicine at Dartmouth; University of Maryland School of Medicine; Northwestern University Feinberg School of Medicine; University of Utah; Harvard Medical School and Brigham and Women's Hospital"
+   ],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Cardiovascular",
+   "tags": [
+    "Cardiovascular",
+    "Drug development"
+   ],
+   "tldr": "In a trial of 18,883 joint replacement patients, aspirin was not shown to prevent clots and deaths as well as rivaroxaban or warfarin, which in turn were not shown to be as safe.",
+   "why_selected": "A very large randomized comparison of three everyday options after two of the most common operations, addressing a question on which earlier studies disagreed.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Hip and knee replacements raise the risk of venous thromboembolism (VTE): a clot in a deep vein that can travel to the lungs. Patients therefore receive a preventive drug after surgery. The choice is a trade-off, because drugs that suppress clotting more strongly can also cause bleeding and wound problems."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Three options are in common use: low-dose aspirin, which is cheap and needs no monitoring; warfarin, an older anticoagulant adjusted with blood tests; and rivaroxaban, a newer anticoagulant pill. Earlier comparisons gave conflicting results."
+    },
+    {
+     "heading": "Key idea",
+     "body": "PEPPER, funded by the Patient-Centered Outcomes Research Institute, randomly assigned patients having elective hip or knee replacement to aspirin (81 mg twice daily), warfarin or rivaroxaban (10 mg daily) for 30 days, and assessed outcomes through 6 months in a blinded fashion.\n\nIt was a noninferiority trial. It asked whether a drug is not worse than another by more than a preset margin, here 0.69 percentage points. The test was applied in both directions: aspirin had to be no worse at preventing death or symptomatic VTE, and the anticoagulants had to be no worse than aspirin on a safety outcome combining bleeding, reoperation for wound problems and heart attack. A result passes only if the whole range of statistical uncertainty stays inside the margin."
+    },
+    {
+     "heading": "Results",
+     "body": "Of 18,883 people randomized, 15,317 were in the primary analysis. Death or symptomatic VTE occurred in 77 of 6,090 on aspirin (1.26%), 52 of 4,231 on warfarin (1.23%) and 47 of 4,996 on rivaroxaban (0.94%). Safety events occurred in 2.91%, 3.36% and 3.48%. In the direct comparison, aspirin's risk was 0.30 points higher than rivaroxaban's (95% confidence interval, -0.20 to 0.81), so the interval crossed the margin. Rivaroxaban's safety risk was 0.68 points higher than aspirin's (-0.04 to 1.41)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Neither side passed: aspirin was not shown to be as effective, and the anticoagulants were not shown to be as safe. All the events were uncommon and the differences between drugs small, so the trial does not crown a single best option. The main caveat is that failing a noninferiority test does not prove a drug is worse."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2602435",
+    "doi": "https://doi.org/10.1056/NEJMoa2602435"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1016-j-cell-2026-09-014",
+   "title": "Single-cell, multi-region profiling of the macaque brain across the lifespan",
+   "authors": [
+    "Wei Yang",
+    "Kelsi L. Watkins",
+    "Alex R. DeCasien",
+    "Mary B. O’Neill",
+    "Martin O. Bohlen",
+    "Diana R. O’Day",
+    "Elliot A. Smith",
+    "Madeleine Duran",
+    "Chengxiang Qiu",
+    "Anastasia Meleshko",
+    "Anh Vo",
+    "Melia Menke",
+    "Diego Calderon",
+    "Cayo Biobank Research Unit",
+    "Jérôme Sallet",
+    "James P. Higham",
+    "Melween I. Martínez",
+    "Cole Trapnell",
+    "Lea M. Starita",
+    "Michael J. Montague",
+    "Michael L. Platt",
+    "Kenneth L. Chiou",
+    "Jay Shendure",
+    "Noah Snyder-Mackler"
+   ],
+   "affiliations": [
+    "University of Washington; Arizona State University; National Institute on Aging; University of Pennsylvania; University of Alabama at Birmingham; Caribbean Primate Research Center",
+    "University of Puerto Rico"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Development & aging",
+   "tags": [
+    "Development & aging",
+    "Neuroscience",
+    "Genetics & genomics"
+   ],
+   "tldr": "An atlas of 5.3 million cells from 11 brain regions of 55 rhesus macaques charts how each cell type changes with age and finds overlap with the molecular signatures of Alzheimer's disease.",
+   "why_selected": "One of the largest single-cell maps of primate brain aging, covering ages from infancy to 21 years, both sexes and many regions in a primate.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Brains age unevenly. Some regions and cell types decline early, others hold up, and individuals differ widely. The molecular and cellular pathways behind this, and behind the differences between people, are poorly defined. A map that follows many cell types across ages, regions and both sexes in a primate has been missing."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Single-cell sequencing reads which genes are active in each cell, one cell at a time, so that cell types can be counted and compared. Bulk measurements, which grind tissue together, average over all cells and can hide a shift in a rare cell type. Small studies, or studies of one region, cannot tell a brain-wide change from a local one."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team built a transcriptomic atlas, a catalogue of gene activity, of 5.3 million cells from 582 samples spanning 11 brain regions of 55 rhesus macaques aged 0.5 to 21 years. Sampling many animals at many ages, in both sexes and in the same set of regions, lets the authors separate three things that are usually tangled together: which cells become scarcer with age, how gene activity inside each cell type drifts, and whether those changes are shared across the brain or specific to a region or a sex."
+    },
+    {
+     "heading": "Results",
+     "body": "The authors identify neuronal populations that are depleted with age and appear vulnerable. They also find subtle age-related differences in the makeup of glia, the brain's non-neuronal support cells, that they say are detectable only at single-cell resolution. Some molecular signatures of aging converge across regions and cell types while others diverge, and some differ by sex. The aging signatures overlap those of Alzheimer's disease."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The overlap suggests that normal aging and Alzheimer's disease share molecular roots that emerge at different ages and in windows that depend on region and sex, which could help explain why neurological disorders affect women and men differently. The caveats: this summary rests on the paper's abstract, the data come from macaques rather than people, and they show association with age, not cause."
+    }
+   ],
+   "links": {
+    "paper": "https://www.cell.com/cell/fulltext/S0092-8674(26)01116-5?rss=yes",
+    "doi": "https://doi.org/10.1016/j.cell.2026.09.014"
+   },
+   "signals": {
+    "venue": "Cell",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aee0342",
+   "title": "Limited genomic predictability of complex trait evolution despite genotype-phenotype stability",
+   "authors": [
+    "J. A. Smiley-Rhodes",
+    "M. C. Bitter",
+    "S. Berardi",
+    "J. Beltz",
+    "D. A. Petrov",
+    "P. Schmidt"
+   ],
+   "affiliations": [
+    "Stanford University; University of Pennsylvania; Chan Zuckerberg Biohub"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Evolution & ecology",
+   "tags": [
+    "Evolution & ecology",
+    "Genetics & genomics"
+   ],
+   "tldr": "Fruit flies evolving in outdoor and indoor cages changed pigmentation in a direction a genetic map could predict, but which genes did the changing was largely unpredictable.",
+   "why_selected": "A direct experimental test of whether genomes can forecast adaptation, a basic question in evolutionary biology.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "If we know which genetic variants influence a trait, can we predict how that trait will evolve? It is hardest for complex traits, those shaped by many genes with small effects. The authors say that whether genomic data can predict adaptation in natural populations has been unknown."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Genomic prediction uses a genotype-phenotype map, a table linking DNA variants to their effects on a trait, to estimate trait values from genomes. Two doubts follow: whether the map holds in other populations, and whether it holds outside the laboratory, where organisms face many pressures at once."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team used abdominal pigmentation in the fruit fly Drosophila melanogaster as a model complex trait. Populations founded from 76 inbred lines were raised for ten weeks in outdoor cages exposed to natural environmental fluctuations and in indoor cages under controlled conditions. The researchers tracked pigmentation and the frequency of variants across the genome over seven generations.\n\nAt two time points, weeks four and ten, they built the map from scratch. They sorted flies into the darkest 15%, the lightest 15% and a middle group and sequenced each. Variants much more common in dark flies than in light ones are linked to pigmentation. Comparing maps made at different times and in independent populations tests whether the map is stable."
+    },
+    {
+     "heading": "Results",
+     "body": "The map was stable across independent populations, and it recovered known pigmentation genes as well as new loci. Using it, the authors correctly inferred the direction of pigmentation evolution in both the field and the lab cages. But the particular loci that responded to selection were largely unpredictable. The authors suggest two reasons, both stronger outdoors: pleiotropy, where a gene affects several traits and so is constrained by selection on the others, and effects that change with the environment."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Predicting that a trait will shift may be feasible while predicting which genes carry the shift is not. That is a caution against extrapolating from laboratory studies to evolution in the wild. The caveat is scope: one trait in one species, and this summary rests on the abstract and data description."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aee0342",
+    "doi": "https://doi.org/10.1126/science.aee0342"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

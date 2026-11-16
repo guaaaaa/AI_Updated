@@ -1,0 +1,51 @@
+{
+ "week": "2026-W47",
+ "start": "2026-11-16",
+ "end": "2026-11-21",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [],
+ "featured": {
+  "news": 3,
+  "papers": 3
+ },
+ "items": [
+  {
+   "id": "2026-11-16-n1",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "FDA declines to approve ivonescimab for lung cancer because the trial did not show a significant survival gain"
+  },
+  {
+   "id": "2026-11-16-n2",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "The US has lost its measles elimination status after 26 years, people close to the Pan American Health Organization's review say"
+  },
+  {
+   "id": "2026-11-16-n3",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "Six months in, Congo's Ebola outbreak still adds up to 500 cases a week as attacks on health workers disrupt the response"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2602435",
+   "date": "2026-11-16",
+   "type": "paper",
+   "title": "Prevention of Venous Thromboembolism after Total Hip or Knee Replacement"
+  },
+  {
+   "id": "doi-10-1016-j-cell-2026-09-014",
+   "date": "2026-11-16",
+   "type": "paper",
+   "title": "Single-cell, multi-region profiling of the macaque brain across the lifespan"
+  },
+  {
+   "id": "doi-10-1126-science-aee0342",
+   "date": "2026-11-16",
+   "type": "paper",
+   "title": "Limited genomic predictability of complex trait evolution despite genotype-phenotype stability"
+  }
+ ]
+}
