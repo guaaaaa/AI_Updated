@@ -125,7 +125,11 @@ def main():
     print(f"pushed {sha[:8]} to {site['branch']}; waiting for GitHub Pages deploy...")
     concl, run_url = wait_pages_run(site["repo"], sha)
     print(f"pages run: {concl} {run_url or ''}")
-    if concl not in (None, "success"):
+    if concl == "cancelled":
+        # Another tab pushed right after us: GitHub cancels the older deploy and the newer one carries this commit
+        # too. Not a failure; the live check below confirms the content. Do not re-run publish.py for this.
+        print("deploy superseded by a newer push; checking the live site instead")
+    elif concl not in (None, "success"):
         raise SystemExit(f"FAILED: Pages deploy {concl}. Inspect: gh api repos/{site['repo']}/actions/runs?head_sha={sha}")
     if a.date:
         rel, page = f"{DAYS.relative_to(ROOT).as_posix()}/{a.date}.json", f"#/{DOMAIN}/day/{a.date}"

@@ -148,7 +148,9 @@ def check_day(path, tax):
         for x in elsewhere:
             xt = tokens(x["title"])
             shared = len(tk & xt)
-            if (n.get("story_key") and n.get("story_key") == x["key"]) or (shared >= 3 and shared >= 0.5 * min(len(tk), len(xt))):
+            m = min(len(tk), len(xt))
+            if (n.get("story_key") and n.get("story_key") == x["key"]) or (shared >= 3 and shared >= 0.5 * m) \
+                    or (shared >= 4 and shared >= 0.4 * m):
                 W(f"{label}: looks like the story {x['tab']} ran on {x['date']} ({x['title']!r}); each story goes on one tab")
         try:
             t = dt.datetime.fromisoformat(n["published"])
