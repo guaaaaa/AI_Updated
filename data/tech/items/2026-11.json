@@ -1,5 +1,32 @@
 [
  {
+  "id": "2026-11-16-n1",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "An 11-year-old Linux kernel flaw called NoisyTCP lets remote attackers crash servers, and a patch is available",
+  "tldr": "A flaw in the Linux kernel's TCP code, present for 11 years, lets unauthenticated attackers crash servers over the network; it cannot be used to run code, and a fix is out.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Red Hat"
+ },
+ {
+  "id": "2026-11-16-n2",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "ULA's Vulcan rocket fails for the first time, destroying 40 Amazon Leo broadband satellites",
+  "tldr": "United Launch Alliance's Vulcan rocket failed about 10 minutes after liftoff on Sunday, losing 40 Amazon Leo satellites in the company's first total mission failure since it was formed in 2006.",
+  "category": "Space Industry",
+  "byline": "Ars Technica, The Register, Engadget"
+ },
+ {
+  "id": "2026-11-16-n3",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "SpaceX catches a Starship upper stage with its launch tower after nearly a day in orbit",
+  "tldr": "SpaceX's Starship upper stage returned from orbit on Saturday and was caught by the arms of the launch tower it had left 22 and a half hours earlier, on the first attempt.",
+  "category": "Space Industry",
+  "byline": "Ars Technica, The Register"
+ },
+ {
   "id": "2026-11-14-n1",
   "date": "2026-11-14",
   "type": "news",

@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-16",
+ "edition": "weekday",
+ "generated_at": "2026-11-16T19:20:05+00:00",
+ "summary": "An 11-year-old Linux kernel flaw lets remote attackers crash servers, ULA's Vulcan rocket fails with 40 Amazon Leo satellites aboard, and SpaceX catches a Starship upper stage returning from orbit.",
+ "news": [
+  {
+   "id": "2026-11-16-n1",
+   "story_key": "noisytcp-linux-kernel-cve-2026-99288",
+   "title": "An 11-year-old Linux kernel flaw called NoisyTCP lets remote attackers crash servers, and a patch is available",
+   "category": "Cybersecurity",
+   "published": "2026-11-16T04:30:04-05:00",
+   "tldr": "A flaw in the Linux kernel's TCP code, present for 11 years, lets unauthenticated attackers crash servers over the network; it cannot be used to run code, and a fix is out.",
+   "why_selected": "A remotely triggerable crash that affects almost all Linux distributions in default configurations, confirmed by Red Hat's own advisory.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Linux kernel is the core of the operating system that runs most web servers. Its TCP code handles every network connection a server accepts, so a bug there is reachable by anyone who can send the machine packets. One protective feature in that code is SYN cookies, a way of surviving SYN floods, in which an attacker opens huge numbers of half-finished connections to exhaust a server."
+    },
+    {
+     "heading": "What happened",
+     "body": "Security researcher Hyunwoo Kim disclosed a vulnerability he named NoisyTCP, tracked as CVE-2026-99288. BleepingComputer reports that the flaw is 11 years old, affects almost all Linux distributions, and lets attackers crash systems running Nginx, Apache or SSH servers in their default configurations. No login is needed. Red Hat's advisory describes a race condition, a bug that depends on two operations happening in an unlucky order, in how the kernel looks up network sockets: recycled memory can be used before it is fully set up, which makes the kernel crash. Red Hat rates the flaw Important. A fix was merged into the mainline kernel two weeks ago and a patch is available."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The impact is limited to availability. Both sources say the flaw causes a kernel panic that takes down the host, but does not let an attacker alter data or run code. That still matters for anyone running public-facing Linux servers, because a crash needs no credentials. Kim notes one practical limit: the timing window is narrow, so triggering the bug against a quiet bare-metal server can take a long time. For administrators who cannot patch at once, the suggested workarounds are to disable SYN cookies, which lowers protection against SYN floods, or to restrict incoming traffic to a single receive queue. Red Hat notes that the SYN cookie setting has to be applied in each container that uses its own network namespace."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether distributions ship patched kernels quickly, and whether attackers start using the flaw against busy internet-facing servers, where the narrow timing window is easier to hit."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/"
+    },
+    {
+     "name": "Red Hat",
+     "url": "https://access.redhat.com/security/cve/CVE-2026-99288"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-n2",
+   "story_key": "ula-vulcan-amazon-leo-lv01-failure",
+   "title": "ULA's Vulcan rocket fails for the first time, destroying 40 Amazon Leo broadband satellites",
+   "category": "Space Industry",
+   "published": "2026-11-15T14:47:00-05:00",
+   "tldr": "United Launch Alliance's Vulcan rocket failed about 10 minutes after liftoff on Sunday, losing 40 Amazon Leo satellites in the company's first total mission failure since it was formed in 2006.",
+   "why_selected": "The first total failure in ULA's history grounds a rocket that Amazon's Starlink rival and the US military both depend on.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "United Launch Alliance (ULA) is a joint venture of Boeing and Lockheed Martin, formed in 2006. Vulcan is its new heavy-lift rocket. Amazon Leo is Amazon's network of broadband internet satellites in low Earth orbit, built to compete with SpaceX's Starlink. Amazon has booked 38 Vulcan launches, and Sunday's mission, called LV-01, was the first of them."
+    },
+    {
+     "heading": "What happened",
+     "body": "Vulcan lifted off from Cape Canaveral Space Force Station in Florida at 12:40 pm Eastern time on Sunday carrying 40 Amazon Leo satellites. ULA said the rocket \"suffered an anomaly 10 minutes into the flight and failed to deliver the Amazon mission to orbit,\" and that it did not yet have specific data to explain what happened. The six solid rocket boosters, which had problems on two of Vulcan's four previous flights, appeared to work normally. Ars Technica reports that the two BE-4 main engines, supplied by Blue Origin, fired at least 30 seconds longer than planned, and that telemetry-driven animation on ULA's broadcast showed the rocket start to spin. Multiple sources told Ars the problem occurred in the booster stage. Ars and Engadget both describe it as ULA's first total mission failure."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The lost satellites matter less than the grounding that follows. Ars reports that Amazon Leo has 396 satellites in orbit out of a planned first generation of 3,292, and that Amazon has 37 more Vulcan launches reserved, each meant to carry 40 or more satellites. Engadget notes that Amazon's other launch provider, Blue Origin, suffered its own setback in May when its New Glenn rocket exploded on the launchpad. Vulcan is also under contract to launch roughly half of the US military's national security space missions over the next few years, so a long investigation would delay government payloads too. After the earlier booster incidents, reviews took months before flights resumed."
+    },
+    {
+     "heading": "What to watch",
+     "body": "ULA's investigation findings, how long Vulcan stays grounded, and whether Amazon still begins initial commercial service by the end of the year, as its officials told Ars in October."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/networks/2026/11/16/amazon-loses-first-batch-of-broadband-satellites-launched-on-custom-rocket/5310000"
+    },
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2317283/ula-vulcan-rocket-failure-destroys-40-amazon-leo-satellites/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-n3",
+   "story_key": "starship-upper-stage-tower-catch",
+   "title": "SpaceX catches a Starship upper stage with its launch tower after nearly a day in orbit",
+   "category": "Space Industry",
+   "published": "2026-11-14T16:14:00-05:00",
+   "tldr": "SpaceX's Starship upper stage returned from orbit on Saturday and was caught by the arms of the launch tower it had left 22 and a half hours earlier, on the first attempt.",
+   "why_selected": "The first tower catch of a Starship upper stage returning from orbit is a materially new step toward full reuse, beyond the launch covered on Friday.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Starship is SpaceX's two-stage rocket: a Super Heavy booster and an upper stage, also called Starship. SpaceX wants to reuse both by having them fly back to the launch site, where two mechanical arms on the launch tower catch them. Before this flight the booster had been caught on three earlier test flights, while the upper stage had only made practice landings in the Indian Ocean."
+    },
+    {
+     "heading": "What happened",
+     "body": "Flight 15 launched from Pad 2 at Starbase, Texas, reached orbit and deployed 26 Starlink V3 satellites. After a deorbit burn, the upper stage came back to the launch site 22 and a half hours after it left. Ars Technica, reporting from Starbase, describes the ship flying horizontally until the final moments, when three Raptor engines ignited and swung it upright. The tower arms then caught it by two nubs that protrude only about one foot from either side of the vehicle. The Register reports this was the first attempt at such a catch. The booster did not return: SpaceX said its boostback burn ended early because of low fuel mass, and it diverted offshore."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "With this catch, SpaceX has returned both parts of the rocket to the launch tower, though not yet on the same flight. Getting the whole vehicle back is the precondition for the cheap, frequent launches the company is aiming for. Ars notes that NASA's Space Shuttle flew 135 times in 30 years, and that SpaceX aims to fly that often in a single year within a few years. The company can currently build an upper stage every three weeks. Much remains unproven. Elon Musk said \"many small fixes are needed to achieve immediate reusability,\" and Ars expects the heat shield to be the hardest part of rapid reuse. The Register adds that SpaceX has not yet demonstrated moving propellant between vehicles in space, which NASA's Artemis Moon missions require."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the caught ship flies again, a flight that recovers both stages, and the first in-space propellant transfer test."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/science/2026/11/16/spacex-catches-starship-on-the-first-try/5310059"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

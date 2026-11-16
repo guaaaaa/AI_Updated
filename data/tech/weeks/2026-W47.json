@@ -1,0 +1,58 @@
+{
+ "week": "2026-W47",
+ "start": "2026-11-16",
+ "end": "2026-11-21",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [
+  {
+   "title": "SpaceX’s Latest Starship Launch Skips Attempt to Catch the Booster",
+   "outlets": 5,
+   "date": "2026-11-13",
+   "covered": null
+  },
+  {
+   "title": "SpaceX launches Starship in key test flight of massive rocket",
+   "outlets": 4,
+   "date": "2026-11-13",
+   "covered": null
+  },
+  {
+   "title": "FAA has lifted its third-ever nationwide ground stop",
+   "outlets": 4,
+   "date": "2026-11-13",
+   "covered": null
+  },
+  {
+   "title": "SpaceX catches upper stage of Starship rocket in historic first",
+   "outlets": 3,
+   "date": "2026-11-14",
+   "covered": "2026-11-16-n3"
+  }
+ ],
+ "featured": {
+  "news": 3,
+  "papers": 0
+ },
+ "items": [
+  {
+   "id": "2026-11-16-n1",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "An 11-year-old Linux kernel flaw called NoisyTCP lets remote attackers crash servers, and a patch is available"
+  },
+  {
+   "id": "2026-11-16-n2",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "ULA's Vulcan rocket fails for the first time, destroying 40 Amazon Leo broadband satellites"
+  },
+  {
+   "id": "2026-11-16-n3",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "SpaceX catches a Starship upper stage with its launch tower after nearly a day in orbit"
+  }
+ ]
+}

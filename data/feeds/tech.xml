@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Sat, 14 Nov 2026 11:48:01 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 19:20:05 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>An 11-year-old Linux kernel flaw called NoisyTCP lets remote attackers crash servers, and a patch is available</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n1</guid>
+    <pubDate>Mon, 16 Nov 2026 19:20:05 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>A flaw in the Linux kernel's TCP code, present for 11 years, lets unauthenticated attackers crash servers over the network; it cannot be used to run code, and a fix is out. (BleepingComputer, Red Hat)</description>
+  </item>
+  <item>
+    <title>ULA's Vulcan rocket fails for the first time, destroying 40 Amazon Leo broadband satellites</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n2</guid>
+    <pubDate>Mon, 16 Nov 2026 19:20:05 +0000</pubDate>
+    <category>Tech / Space Industry</category>
+    <description>United Launch Alliance's Vulcan rocket failed about 10 minutes after liftoff on Sunday, losing 40 Amazon Leo satellites in the company's first total mission failure since it was formed in 2006. (Ars Technica, The Register, Engadget)</description>
+  </item>
+  <item>
+    <title>SpaceX catches a Starship upper stage with its launch tower after nearly a day in orbit</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n3</guid>
+    <pubDate>Mon, 16 Nov 2026 19:20:05 +0000</pubDate>
+    <category>Tech / Space Industry</category>
+    <description>SpaceX's Starship upper stage returned from orbit on Saturday and was caught by the arms of the launch tower it had left 22 and a half hours earlier, on the first attempt. (Ars Technica, The Register)</description>
+  </item>
   <item>
     <title>Attackers break into unpatched Check Point gateways through PHP2Shell and wipe servers at some Israeli organizations</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n1</link>
@@ -302,30 +326,6 @@
     <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
     <category>Tech / Cybersecurity</category>
     <description>Web host DreamHost says an attacker exploited a flaw in its File Manager from August to October 23, stealing FTP/SFTP credentials and some webmail session data. (BleepingComputer, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Marvell agrees to buy Lumentum for $115 billion in an all-stock deal</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
-    <category>Tech / Tech Business</category>
-    <description>Chip designer Marvell will acquire optical component maker Lumentum in an all-stock deal valued at $115 billion including debt, expected to close in the first half of 2028. (TechCrunch, SiliconANGLE)</description>
-  </item>
-  <item>
-    <title>Google and partners dismantle XCPE botnet built into 1.3 million Android TV boxes</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n2</guid>
-    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Google's Threat Intelligence Group and partners disrupted XCPE, a backdoor that a Chinese manufacturer shipped in more than 1.3 million Android TV boxes to rent out owners' internet connections. (Krebs on Security, Ars Technica, The Register)</description>
-  </item>
-  <item>
-    <title>Binance says a fake job interview started its $6.3 billion theft</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-04/2026-11-04-n3</guid>
-    <pubDate>Thu, 05 Nov 2026 02:47:50 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Binance's incident report says a multi-stage attack beginning with a fake recruiter and malware led to the October 29 theft of about $6.34 billion, which the FBI attributed to North Korea's TraderTraitor group. (BleepingComputer, The Register, WIRED)</description>
   </item>
 </channel>
 </rss>

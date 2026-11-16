@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 14 Nov 2026 13:55:11 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 19:20:05 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>An 11-year-old Linux kernel flaw called NoisyTCP lets remote attackers crash servers, and a patch is available</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n1</guid>
+    <pubDate>Mon, 16 Nov 2026 19:20:05 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>A flaw in the Linux kernel's TCP code, present for 11 years, lets unauthenticated attackers crash servers over the network; it cannot be used to run code, and a fix is out. (BleepingComputer, Red Hat)</description>
+  </item>
+  <item>
+    <title>ULA's Vulcan rocket fails for the first time, destroying 40 Amazon Leo broadband satellites</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n2</guid>
+    <pubDate>Mon, 16 Nov 2026 19:20:05 +0000</pubDate>
+    <category>Tech / Space Industry</category>
+    <description>United Launch Alliance's Vulcan rocket failed about 10 minutes after liftoff on Sunday, losing 40 Amazon Leo satellites in the company's first total mission failure since it was formed in 2006. (Ars Technica, The Register, Engadget)</description>
+  </item>
+  <item>
+    <title>SpaceX catches a Starship upper stage with its launch tower after nearly a day in orbit</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n3</guid>
+    <pubDate>Mon, 16 Nov 2026 19:20:05 +0000</pubDate>
+    <category>Tech / Space Industry</category>
+    <description>SpaceX's Starship upper stage returned from orbit on Saturday and was caught by the arms of the launch tower it had left 22 and a half hours earlier, on the first attempt. (Ars Technica, The Register)</description>
+  </item>
   <item>
     <title>FDA approves durvalumab plus enfortumab vedotin around surgery for bladder cancer patients who cannot take cisplatin</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/2026-11-14-n1</link>
@@ -462,30 +486,6 @@
     <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
     <category>Biology / Oncology</category>
     <description>Yearly stored blood samples show that in two-thirds of women who later got acute myeloid leukaemia, the first driver mutation arose before age 20, and mutant clones then grew predictably. (Caroline J. Watson, Gladys Y. P. Poon, Hamish A. J. MacGregor et al. · University of Cambridge; University College London)</description>
-  </item>
-  <item>
-    <title>Human land use drives microplastic abundance in terrestrial wildlife</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11285-x</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11285-x</guid>
-    <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
-    <category>Biology / Evolution &amp; ecology</category>
-    <description>GPS-tracked tapirs and giant anteaters in Brazil carried more microplastics in their blood when their home ranges held more human disturbance or lay nearer waste facilities. (Marcia de Almeida Monteiro Melo Ferraz, Arnaud L. J. Desbiez, Mario Henrique Alves et al. · University of British Columbia (Kelowna); Center for Advanced Systems Understanding (CASUS), Helmholtz-Zentrum Dresden-Rossendorf)</description>
-  </item>
-  <item>
-    <title>Euclid's first major data release maps more than 900 million galaxies and about 15,000 likely gravitational lenses</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-12/2026-11-12-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-12/2026-11-12-n1</guid>
-    <pubDate>Thu, 12 Nov 2026 13:24:09 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>ESA's Euclid telescope has published its first major data release, covering about 14% of its planned survey, with over 900 million galaxies, 60 million possible quasars and roughly 15,000 probable strong lenses. (The Guardian, ESA Euclid)</description>
-  </item>
-  <item>
-    <title>ESA's Hera begins close-up study of the asteroid pair NASA's DART mission hit in 2022</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-12/2026-11-12-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-12/2026-11-12-n2</guid>
-    <pubDate>Thu, 12 Nov 2026 13:24:09 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>ESA says its Hera spacecraft is now studying the asteroid Didymos and its moonlet Dimorphos from 25 to 30 kilometres away, starting a "crash site investigation" of the first asteroid deflection test. (Phys.org (Associated Press), ESA)</description>
   </item>
 </channel>
 </rss>
