@@ -1,0 +1,64 @@
+{
+ "week": "2026-W47",
+ "start": "2026-11-16",
+ "end": "2026-11-21",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [
+  {
+   "title": "Stocks fall ahead of Nvidia earnings and Anthropic IPO",
+   "outlets": 5,
+   "date": "2026-11-16",
+   "covered": null
+  },
+  {
+   "title": "Social media reacts to the global Microsoft outage",
+   "outlets": 3,
+   "date": "2026-11-13",
+   "covered": null
+  },
+  {
+   "title": "China, US Discuss Tariffs in First Meeting of Trade Council",
+   "outlets": 3,
+   "date": "2026-11-14",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 4,
+  "papers": 1
+ },
+ "items": [
+  {
+   "id": "2026-11-16-n1",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "Japan's economy shrinks at a 0.1% annualized rate in the third quarter, its first contraction in four quarters"
+  },
+  {
+   "id": "2026-11-16-n2",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "China's October retail sales grow just 0.4% and investment falls 8.1%, missing forecasts across the board"
+  },
+  {
+   "id": "2026-11-16-n3",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "Carney says Canada could turn to Chinese automakers if US trade talks fail to protect its auto industry"
+  },
+  {
+   "id": "2026-11-16-n4",
+   "date": "2026-11-16",
+   "type": "news",
+   "title": "Telus pulls out of two planned AI data centres in Vancouver after local opposition and a strategy shift"
+  },
+  {
+   "id": "nber-w36032",
+   "date": "2026-11-16",
+   "type": "paper",
+   "title": "Clouds of Credit: Mapping the Financial Web Behind AI Compute"
+  }
+ ]
+}

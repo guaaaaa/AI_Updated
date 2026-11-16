@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 19:22:35 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 19:23:07 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Japan's economy shrinks at a 0.1% annualized rate in the third quarter, its first contraction in four quarters</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>Japan's real GDP edged down 0.02% in July-September, a 0.1% annualized fall that missed forecasts of growth, as households cut spending while business investment rose 1.6%. (Cabinet Office of Japan, Xinhua)</description>
+  </item>
+  <item>
+    <title>China's October retail sales grow just 0.4% and investment falls 8.1%, missing forecasts across the board</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n2</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>China's retail sales, factory output and fixed-asset investment all came in below expectations in October, with consumer spending nearly flat and property investment down 21.6% so far this year. (National Bureau of Statistics of China, ING Think, Quartz)</description>
+  </item>
+  <item>
+    <title>Carney says Canada could turn to Chinese automakers if US trade talks fail to protect its auto industry</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n3</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>Days before meeting Xi Jinping, Mark Carney said Canada will pursue European, Chinese or Japanese carmakers if a US deal does not leave it a viable auto sector. (The Guardian, Euronews, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Telus pulls out of two planned AI data centres in Vancouver after local opposition and a strategy shift</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n4</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Tech &amp; AI Business</category>
+    <description>Telus has dropped out of two Vancouver AI data centre projects announced in May; developer Westbank says it will proceed with a new, unnamed partner. (The Globe and Mail, Daily Hive)</description>
+  </item>
+  <item>
+    <title>Clouds of Credit: Mapping the Financial Web Behind AI Compute</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/nber-w36032</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/nber-w36032</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Corporate finance</category>
+    <description>A model of the contracts linking chipmakers, cloud firms, AI labs and landlords finds the AI buildout is larger than socially optimal, about 59% debt-funded, and exposed to $16.9 trillion of losses if AI disappoints. (Stijn Van Nieuwerburgh, Zijin Su · Columbia University Graduate School of Business; NBER)</description>
+  </item>
   <item>
     <title>FDA declines to approve ivonescimab for lung cancer because the trial did not show a significant survival gain</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/2026-11-16-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
     <category>AI / Policy &amp; Legal</category>
     <description>Four nonprofits asked a San Francisco court to stop five leading AI developers from building or deploying new models, citing the companies' own warnings of catastrophic risk under California unfair-competition law. (Associated Press via BNN Bloomberg, Reuters via Claims Journal)</description>
-  </item>
-  <item>
-    <title>Goal Encoding in LLMs</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17297</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17297</guid>
-    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
-    <category>AI / Interpretability</category>
-    <description>A sparse set of attention heads in a coding LLM encodes the next sub-goal before it is written, can be read out in plain English, and steers behavior across programming languages. (Arnab Sen Sharma, Eric Todd, Sheridan Feucht et al. · Northeastern University, Parallax, University of Copenhagen)</description>
-  </item>
-  <item>
-    <title>Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14488</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14488</guid>
-    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>Memory-augmented robot policies often track elapsed time rather than events, so a harmless pause makes them believe work was done; indexing memory by events recovers much of the loss. (Chubin Zhang, Bo An · Nanyang Technological University)</description>
-  </item>
-  <item>
-    <title>Factored One-sided Adam-Moment for Practical and Scalable SOAP</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.16905</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.16905</guid>
-    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
-    <category>AI / Optimization</category>
-    <description>FOAM keeps nearly all of the SOAP optimizer's quality in LLM pre-training while using half its optimizer memory and reaching AdamW's final loss in about AdamW's own wall-clock time. (Jaemyung Yu, Byeongho Heo, Sangdoo Yun et al. · NAVER AI Lab)</description>
-  </item>
-  <item>
-    <title>Tree-Ising: Repairing Language Models with Bit-Level Ising Edits</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14210</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.14210</guid>
-    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
-    <category>AI / Reasoning</category>
-    <description>Tree-Ising fixes a small reasoning model's endless loops by flipping signs and shifting exponents in its stored weights, beating a frontier-agent repair on math benchmarks at about $0.90 instead of $312. (Hadi Salloum, Ammar Ali)</description>
-  </item>
-  <item>
-    <title>Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17167</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17167</guid>
-    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>Decision models that act poorly can still teach well: asked in hindsight whether each action helped, JEV lifts a 1.5B agent's ALFWorld success from 72.8% to 82.9% over outcome-only GRPO. (Haochen Liu, Qianhao Zhu, Zixuan Wang et al. · Zhejiang University, Baidu Inc.)</description>
   </item>
 </channel>
 </rss>

@@ -1,5 +1,57 @@
 [
  {
+  "id": "2026-11-16-n1",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "Japan's economy shrinks at a 0.1% annualized rate in the third quarter, its first contraction in four quarters",
+  "tldr": "Japan's real GDP edged down 0.02% in July-September, a 0.1% annualized fall that missed forecasts of growth, as households cut spending while business investment rose 1.6%.",
+  "category": "Economy & Data",
+  "byline": "Cabinet Office of Japan, Xinhua"
+ },
+ {
+  "id": "2026-11-16-n2",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "China's October retail sales grow just 0.4% and investment falls 8.1%, missing forecasts across the board",
+  "tldr": "China's retail sales, factory output and fixed-asset investment all came in below expectations in October, with consumer spending nearly flat and property investment down 21.6% so far this year.",
+  "category": "Economy & Data",
+  "byline": "National Bureau of Statistics of China, ING Think, Quartz"
+ },
+ {
+  "id": "2026-11-16-n3",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "Carney says Canada could turn to Chinese automakers if US trade talks fail to protect its auto industry",
+  "tldr": "Days before meeting Xi Jinping, Mark Carney said Canada will pursue European, Chinese or Japanese carmakers if a US deal does not leave it a viable auto sector.",
+  "category": "Trade & Policy",
+  "byline": "The Guardian, Euronews, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-16-n4",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "Telus pulls out of two planned AI data centres in Vancouver after local opposition and a strategy shift",
+  "tldr": "Telus has dropped out of two Vancouver AI data centre projects announced in May; developer Westbank says it will proceed with a new, unnamed partner.",
+  "category": "Tech & AI Business",
+  "byline": "The Globe and Mail, Daily Hive"
+ },
+ {
+  "id": "nber-w36032",
+  "date": "2026-11-16",
+  "type": "paper",
+  "title": "Clouds of Credit: Mapping the Financial Web Behind AI Compute",
+  "tldr": "A model of the contracts linking chipmakers, cloud firms, AI labs and landlords finds the AI buildout is larger than socially optimal, about 59% debt-funded, and exposed to $16.9 trillion of losses if AI disappoints.",
+  "primary_tag": "Corporate finance",
+  "tags": [
+   "Corporate finance",
+   "Banking & credit",
+   "Innovation & technology"
+  ],
+  "byline": "Stijn Van Nieuwerburgh, Zijin Su · Columbia University Graduate School of Business; NBER",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-14-n1",
   "date": "2026-11-14",
   "type": "news",

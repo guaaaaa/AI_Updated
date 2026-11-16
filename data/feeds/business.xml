@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/business</link>
   <description>Markets, companies and the economy</description>
   <language>en</language>
-  <lastBuildDate>Sat, 14 Nov 2026 12:46:28 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 19:23:07 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/business.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Japan's economy shrinks at a 0.1% annualized rate in the third quarter, its first contraction in four quarters</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>Japan's real GDP edged down 0.02% in July-September, a 0.1% annualized fall that missed forecasts of growth, as households cut spending while business investment rose 1.6%. (Cabinet Office of Japan, Xinhua)</description>
+  </item>
+  <item>
+    <title>China's October retail sales grow just 0.4% and investment falls 8.1%, missing forecasts across the board</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n2</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>China's retail sales, factory output and fixed-asset investment all came in below expectations in October, with consumer spending nearly flat and property investment down 21.6% so far this year. (National Bureau of Statistics of China, ING Think, Quartz)</description>
+  </item>
+  <item>
+    <title>Carney says Canada could turn to Chinese automakers if US trade talks fail to protect its auto industry</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n3</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>Days before meeting Xi Jinping, Mark Carney said Canada will pursue European, Chinese or Japanese carmakers if a US deal does not leave it a viable auto sector. (The Guardian, Euronews, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Telus pulls out of two planned AI data centres in Vancouver after local opposition and a strategy shift</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n4</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Tech &amp; AI Business</category>
+    <description>Telus has dropped out of two Vancouver AI data centre projects announced in May; developer Westbank says it will proceed with a new, unnamed partner. (The Globe and Mail, Daily Hive)</description>
+  </item>
+  <item>
+    <title>Clouds of Credit: Mapping the Financial Web Behind AI Compute</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/nber-w36032</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/nber-w36032</guid>
+    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
+    <category>Business / Corporate finance</category>
+    <description>A model of the contracts linking chipmakers, cloud firms, AI labs and landlords finds the AI buildout is larger than socially optimal, about 59% debt-funded, and exposed to $16.9 trillion of losses if AI disappoints. (Stijn Van Nieuwerburgh, Zijin Su · Columbia University Graduate School of Business; NBER)</description>
+  </item>
   <item>
     <title>US producer prices rise 6.5% over the year to October, the biggest annual gain since 2022, as inflation spreads beyond energy</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
     <category>Business / Economy &amp; Data</category>
     <description>The ECB's wage tracker shows negotiated wage growth of 2.7% in late 2026 and 2.8% in early 2027, a little higher than the 2.3% headline figure for 2026 as a whole. (European Central Bank)</description>
-  </item>
-  <item>
-    <title>US trade deficit narrows slightly to $105.0 billion in September as exports and imports both rise</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n3</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>The US goods and services trade deficit eased by $0.7 billion to $105.0 billion in September, though the three-month average deficit widened to $101.2 billion. (U.S. Bureau of Economic Analysis)</description>
-  </item>
-  <item>
-    <title>Canada's trade surplus widens to a four-year high as gold and energy offset tariff-hit exports</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n4</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>Canada's September merchandise trade surplus widened to about C$5.4 billion, the highest since May 2022, but gold and oil hid a 5.6% drop in other exports hit by US tariffs. (Statistics Canada, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>Demand-Driven Inflation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/nber-w35980</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/nber-w35980</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Monetary policy</category>
-    <description>Giannone and Primiceri argue that unexpectedly strong demand, not supply shocks alone, drove the post-pandemic inflation surge in both the United States and the euro area. (Domenico Giannone, Giorgio Primiceri · Johns Hopkins University; Northwestern University)</description>
-  </item>
-  <item>
-    <title>US tech stocks rebound as an AI-spending selloff ends on election day</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n1</guid>
-    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
-    <category>Business / Markets</category>
-    <description>US tech shares recovered on Tuesday after a week-long AI selloff, with oil easing from $117 to $103 a barrel, while investors largely looked past the midterm elections. (The Guardian)</description>
-  </item>
-  <item>
-    <title>Canva to cut or relocate 1,271 jobs as growth slows</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-04/2026-11-04-n2</guid>
-    <pubDate>Wed, 04 Nov 2026 22:02:37 +0000</pubDate>
-    <category>Business / Labor &amp; Workplace</category>
-    <description>Design-software firm Canva is restructuring 22% of its workforce, 1,271 people, after growth slowed for the first time in a decade and AI costs rose. (BBC News, TechCrunch)</description>
   </item>
 </channel>
 </rss>

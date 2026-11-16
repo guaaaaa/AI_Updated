@@ -1,0 +1,215 @@
+{
+ "date": "2026-11-16",
+ "edition": "weekday",
+ "generated_at": "2026-11-16T19:23:07+00:00",
+ "summary": "Japan's economy slips into a slight contraction, China's October data miss on every front, Carney floats Chinese automakers as a fallback, and Telus quits two Vancouver AI data centres.",
+ "news": [
+  {
+   "id": "2026-11-16-n1",
+   "story_key": "japan-gdp-q3-2026",
+   "title": "Japan's economy shrinks at a 0.1% annualized rate in the third quarter, its first contraction in four quarters",
+   "category": "Economy & Data",
+   "published": "2026-11-15T19:55:00-05:00",
+   "tldr": "Japan's real GDP edged down 0.02% in July-September, a 0.1% annualized fall that missed forecasts of growth, as households cut spending while business investment rose 1.6%.",
+   "why_selected": "A major macro release that came in below forecasts, with a clear split between weak households and strong corporate investment.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Japan's Cabinet Office publishes a first preliminary estimate of gross domestic product (GDP) for each quarter and revises it later. The headline is usually quoted as an annualized rate, meaning the quarterly change scaled up as if it continued for a full year. Private consumption accounts for more than half of the economy."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Cabinet Office said on Monday that GDP adjusted for inflation edged down 0.02% in July-September from the previous three months, an annualized contraction of 0.1%. It is the first contraction in four quarters and fell short of the average forecast of 0.2% annualized growth from 13 private-sector financial institutions.\n\nPrivate consumption fell 0.3% from the April-June period, weighed down by higher prices. Spending was also hit by a 7.1-magnitude earthquake in Kumamoto Prefecture in late July and by prolonged rain, which kept people at home and dampened demand for summer goods. Housing investment fell 1.1%. Business investment rose 1.6%, which a Cabinet Office official attributed to demand for labor-saving equipment, digitalization and AI-related technology. Government consumption edged down 0.03%. Exports slipped 0.2% while imports climbed 2.5%. In nominal terms, before adjusting for inflation, GDP grew 0.4% on the quarter, or 1.6% annualized."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The decline is tiny, but the composition is what counts. Households are pulling back while companies keep investing, and nominal output is growing while real output is not, which means higher prices rather than higher volumes account for the increase in spending. Falling exports alongside sharply higher imports also weigh on the total, because imports are subtracted when GDP is calculated. Some of the consumption weakness came from one-off events, the earthquake and the weather, which could reverse. The drag from higher prices may prove more persistent."
+    },
+    {
+     "heading": "What to watch",
+     "body": "This is a first preliminary estimate, and the Cabinet Office notes that its figures are re-estimated with every release, so a small negative could be revised to a small positive or a larger fall. Watch whether consumption recovers in the October-December quarter."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Cabinet Office of Japan",
+     "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/gdemenuea.html"
+    },
+    {
+     "name": "Xinhua",
+     "url": "https://english.news.cn/20261116/0c28de96af58410caa740fd0f0001fe6/c.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-n2",
+   "story_key": "china-activity-data-october-2026",
+   "title": "China's October retail sales grow just 0.4% and investment falls 8.1%, missing forecasts across the board",
+   "category": "Economy & Data",
+   "published": "2026-11-15T21:06:00-05:00",
+   "tldr": "China's retail sales, factory output and fixed-asset investment all came in below expectations in October, with consumer spending nearly flat and property investment down 21.6% so far this year.",
+   "why_selected": "China's monthly activity release missed on all three headline measures, showing domestic demand weakening while exports and high-tech manufacturing carry growth.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Each month China's National Bureau of Statistics publishes three closely watched indicators: retail sales, a proxy for consumer spending; industrial output, which measures factory, mining and utility production; and fixed-asset investment, which covers spending on property, infrastructure and equipment and is reported as a year-to-date figure. Together they give the first broad read on how each quarter is starting."
+    },
+    {
+     "heading": "What happened",
+     "body": "The bureau said on Monday that retail sales of consumer goods rose 0.4% in October from a year earlier. According to ING, that was down from 1.1% in September and below the market forecast of 0.8%. ING's breakdown showed three categories with double-digit declines: gold and jewellery sales fell 28.7% as gold prices dropped, auto sales fell 21.4%, and building and decoration materials fell 11.2%.\n\nIndustrial output grew 4.8%, down from 5.5% in September and below the 5.3% forecast. High-tech manufacturing grew 17.6%, and ING noted that the value of goods delivered for export rose 18.6%. Fixed-asset investment fell 8.1% in the first ten months of the year, worse than the 7.0% decline forecast. Within that, real estate development investment fell 21.6%, infrastructure 5.1%, manufacturing 2.9% and private investment 11.4%. The official manufacturing purchasing managers' index stood at 49.3; readings below 50 indicate contraction."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The numbers describe a two-speed economy. Factories tied to exports and advanced technology are still growing quickly: output of industrial robots rose 26.0% and lithium-ion batteries 30.0%. Sectors that depend on Chinese households and builders are shrinking. ING said this year will likely be the worst for consumption since the pandemic, and that the government's trade-in subsidy programme has turned from a support into a drag, since it pulled purchases forward. For foreign companies, that means weak demand inside China for cars, jewellery and construction materials, while Chinese export production keeps expanding. The statistics bureau itself described the economy as generally stable."
+    },
+    {
+     "heading": "What to watch",
+     "body": "ING argued the domestic economy would benefit from more policy support, particularly measures that restore household confidence, so watch for new consumption or property measures. It also saw signs of further stabilisation in property prices, a possible bright spot."
+    }
+   ],
+   "sources": [
+    {
+     "name": "National Bureau of Statistics of China",
+     "url": "https://www.stats.gov.cn/english/PressRelease/202611/t20261116_1965843.html"
+    },
+    {
+     "name": "ING Think",
+     "url": "https://think.ing.com/articles/china-october-domestic-activity-data-disappoints-across-the-board"
+    },
+    {
+     "name": "Quartz",
+     "url": "https://qz.com/china-october-economic-data-retail-sales-investment-miss-111626"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-n3",
+   "story_key": "carney-chinese-automakers-us-talks-2026-11",
+   "title": "Carney says Canada could turn to Chinese automakers if US trade talks fail to protect its auto industry",
+   "category": "Trade & Policy",
+   "published": "2026-11-15T23:39:20-05:00",
+   "tldr": "Days before meeting Xi Jinping, Mark Carney said Canada will pursue European, Chinese or Japanese carmakers if a US deal does not leave it a viable auto sector.",
+   "why_selected": "A direct statement from Canada's prime minister that reshapes the stakes of the Canada-US trade talks and the future of the integrated North American auto industry.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Canada's auto industry is built around cross-border production. Ford, General Motors and Stellantis run plants in Canada, the United States and Mexico, and parts can cross borders several times before a vehicle is finished. US tariffs have disrupted that system, and President Donald Trump has repeatedly pressed carmakers to move production out of Canada. In January, Canada cut its 100% tariff on Chinese electric vehicles to 6.1% for up to 49,000 vehicles a year."
+    },
+    {
+     "heading": "What happened",
+     "body": "Speaking to reporters in Cambodia on Monday, Prime Minister Mark Carney said negotiations with the US remain his priority, but that their outcome could determine whether Canada pursues alternatives involving European, Chinese or Japanese automakers. He said the North American market \"has become less integrated because of US trade actions.\" Asked whether Chinese investment was leverage in the talks, he replied: \"It's not leverage. But action, reaction,\" adding that \"Canada is going to move forward either way.\"\n\nCarney set conditions. Any Chinese investment would need substantial manufacturing in Canada, proper labor standards and domestic supply chains that grow over time, including Canadian critical minerals. \"It's not just about kit cars,\" he said. He is due to meet Chinese leader Xi Jinping in Shenzhen this week, where auto manufacturing is expected to be discussed. Carney also said the two countries were making progress toward a possible agreement, though differences remained."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The comments come as Ottawa is in an open dispute with Stellantis, which moved planned Jeep Compass production from Brampton, Ontario, to Illinois and agreed to sell the idled plant to defence contractor Roshel. The federal government has served the company a notice of default on a 2022 agreement under which it committed up to C$529 million, while offering new funding to keep the plant. Ontario Premier Doug Ford has warned that opening the market to Chinese electric vehicles could threaten Canadian jobs and access to the US market."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Carney-Xi meeting in Shenzhen this week, and whether the Canada-US talks produce terms covering autos. Stellantis has 30 days from Ottawa's notice to respond on Brampton."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/16/canada-carney-cars-evs-tariffs-xi-jinping-china-trump-trade-talks"
+    },
+    {
+     "name": "Euronews",
+     "url": "https://www.euronews.com/2026/11/16/canada-ready-to-turn-to-chinese-carmakers-if-us-trade-talks-fail-to-protect-auto-sector-pm"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-ottawa-ontario-package-persuade-stellantis-cancel-sale-brampton-plant/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-n4",
+   "story_key": "telus-vancouver-data-centres-exit-2026-11",
+   "title": "Telus pulls out of two planned AI data centres in Vancouver after local opposition and a strategy shift",
+   "category": "Tech & AI Business",
+   "published": "2026-11-15T19:05:49-05:00",
+   "tldr": "Telus has dropped out of two Vancouver AI data centre projects announced in May; developer Westbank says it will proceed with a new, unnamed partner.",
+   "why_selected": "A large Canadian telecom is retreating from a flagship piece of Ottawa's sovereign AI computing push, showing how community opposition and cost discipline are constraining data centre buildouts.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In May, Telus and Vancouver developer Westbank announced two AI data centres in Vancouver: a new building downtown and the conversion of an existing office building in the Mount Pleasant neighbourhood. Telus said the sites would hold some 63,000 Nvidia chips over time and draw up to 163 megawatts of electricity. Ottawa promoted Telus as a key part of its effort to make Canada less reliant on US cloud providers."
+    },
+    {
+     "heading": "What happened",
+     "body": "Telus said on Sunday that it \"has decided not to proceed\" with co-developing the two data centres. The company gave no reason. The Globe and Mail, citing a source familiar with the matter, reported that a lack of local support led Telus to reconsider. Hundreds of people protested in Vancouver over the summer, citing environmental, community and housing concerns. A city council motion due in November could add requirements such as independent environmental assessments.\n\nWestbank confirmed that Telus is no longer a partner and said it is proceeding with a new partnership, which it has not named. Telus said it will keep expanding its Kamloops, British Columbia, facility, which Daily Hive reported is set to reach 20 megawatts by the end of 2028, and is evaluating other partnerships and locations."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The decision reflects two pressures on data centre plans. The first is local resistance. The second is financial. The Vancouver projects were among the last initiatives under former chief executive Darren Entwistle, who retired in June, and involved buying costly specialized chips that some analysts warned could become outdated. His successor, Victor Dodig, has sold assets and cut the dividend, and is shifting the data centre strategy toward using Telus's existing fibre networks, including supplying connectivity to other developers. For Ottawa, the withdrawal removes the named anchor from a showcase of its domestic computing strategy."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Who Westbank names as its new partner, how Vancouver's council votes on the data centre motion, and the fuller strategy Telus says it will detail in the coming months."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/technology/article-telus-pulls-out-of-two-planned-vancouver-ai-data-centres/"
+    },
+    {
+     "name": "Daily Hive",
+     "url": "https://dailyhive.com/vancouver/telus-westbank-vancouver-ai-data-centre-partnership-changes"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36032",
+   "title": "Clouds of Credit: Mapping the Financial Web Behind AI Compute",
+   "authors": [
+    "Stijn Van Nieuwerburgh",
+    "Zijin Su"
+   ],
+   "affiliations": [
+    "Columbia University Graduate School of Business; NBER"
+   ],
+   "announced": "2026-11-16T00:00:00-05:00",
+   "primary_tag": "Corporate finance",
+   "tags": [
+    "Corporate finance",
+    "Banking & credit",
+    "Innovation & technology"
+   ],
+   "tldr": "A model of the contracts linking chipmakers, cloud firms, AI labs and landlords finds the AI buildout is larger than socially optimal, about 59% debt-funded, and exposed to $16.9 trillion of losses if AI disappoints.",
+   "why_selected": "It puts numbers on the question dominating markets this month: who is exposed to whom in AI infrastructure financing, and how losses would spread if the technology underdelivers.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Building the chips, data centres and power supply behind artificial intelligence is expected to cost trillions of dollars, more than the leading technology companies can or will pay from their own cash flows. They increasingly rely on outside developers, joint ventures and lenders. The result is a web of contracts, leases, loans and equity stakes in which each firm's revenue depends on other firms honoring their promises."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work measured the size of the buildout or studied pieces such as data-centre mortgages. A separate literature models how defaults spread through payment networks. Missing was a measured map of the AI network in which investment, financing and contract prices are determined together."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors assemble a ledger, as of June 30, 2026, of who owes what to whom, drawn from company filings and financing announcements. They use it to calibrate a model of Nvidia, six hyperscalers (the largest cloud companies), two AI labs, two \"neoclouds\" (specialist compute providers) and a data-centre landlord sector. Each firm chooses how much capacity to add; then AI's productivity is revealed, and payments, defaults and losses flow through the network."
+    },
+    {
+     "heading": "Results",
+     "body": "In the baseline, firms add 277.5 gigawatts of computing capacity at a cost of $6.30 trillion, 55% more than the 178.9 gigawatts that would be socially optimal, because each firm ignores the revenue its expansion takes from competitors. The expansion is funded by $3.73 trillion of new loans, $2.26 trillion of new equity and $0.31 trillion of cash, so debt covers about 59%. If AI productivity is low, outside investors lose $16.87 trillion: about $14.64 trillion falls on shareholders and $2.07 trillion on lenders. A hypothetical government guarantee of payments between the main firms would cost $5.06 trillion and cut private losses to $11.81 trillion, roughly 30%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Investors, lenders and regulators get a concrete account of the weak links. Today's large equity cushions protect creditors, but loans secured only on project cash flows can lose money even when the borrower stays solvent. The main caveat is that these are outputs of a calibrated model that rests on assumptions about AI's benefits, costs and financing limits, and the paper has not been peer reviewed."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36032"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}
