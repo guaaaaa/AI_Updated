@@ -1,5 +1,101 @@
 [
  {
+  "id": "2026-11-16-n1",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "Alibaba launches Qwen4-Max, a 2.4-trillion-parameter flagship that stays closed-weight",
+  "tldr": "Alibaba released Qwen4-Max, a 2.4-trillion-parameter multimodal model priced at $1.50/$4.50 per million tokens, and kept its weights closed, unlike many earlier Qwen releases.",
+  "category": "Model Release",
+  "byline": "TNW, Crypto Briefing, Data Studios"
+ },
+ {
+  "id": "2026-11-16-n2",
+  "date": "2026-11-16",
+  "type": "news",
+  "title": "OpenAI signs four outside evaluators to assess its models and safeguards from inside the company",
+  "tldr": "OpenAI signed agreements with Apollo Research, METR, Transluce and Goodfire to run pilot assessments of its models' alignment, safeguards and monitoring using internal resources.",
+  "category": "Safety & Security",
+  "byline": "OpenAI, MLQ.ai, Quartz"
+ },
+ {
+  "id": "2611.18562",
+  "date": "2026-11-16",
+  "type": "paper",
+  "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
+  "tldr": "An open-weight 27B reasoning model learns to control robots by reinforcement learning in simulation alone, with no demonstrations, and then succeeds in 60% of trials on a real dual-arm robot.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Reinforcement Learning",
+   "Post-training",
+   "Agents"
+  ],
+  "byline": "Jiaming Tang, Zhuoyang Zhang, Junxian Guo et al. · MIT, Inco AI, UC Berkeley",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.17820",
+  "date": "2026-11-16",
+  "type": "paper",
+  "title": "Aligning AI Teams",
+  "tldr": "Teams of individually aligned LLM agents pick less safe trade-offs than one agent because responsibility diffuses; a designated safety lead plus a shared safety document restores single-agent behavior.",
+  "primary_tag": "Safety & Alignment",
+  "tags": [
+   "Safety & Alignment",
+   "Agents"
+  ],
+  "byline": "Siddarth Srinivasan, Morgan Jane Matthews, Jascha Sohl-Dickstein et al. · Harvard University, Constellation Institute, Anthropic",
+  "hf": 12,
+  "venue": null
+ },
+ {
+  "id": "2611.17767",
+  "date": "2026-11-16",
+  "type": "paper",
+  "title": "Learning Anisotropic Prediction Targets for Flow Models",
+  "tldr": "AnisoFlow lets a flow model learn what quantity it should predict, with a separate noise weight per data direction, improving pixel-space ImageNet FID from 1.90 to 1.55 without other changes.",
+  "primary_tag": "Generative Models",
+  "tags": [
+   "Generative Models",
+   "Theory"
+  ],
+  "byline": "Rayhan Zirvi, Hansheng Chen, Gordon Wetzstein et al. · Stanford University, California Institute of Technology",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.17876",
+  "date": "2026-11-16",
+  "type": "paper",
+  "title": "Delayed Effects of Temporary Weight Decay in Muon Pretraining",
+  "tldr": "Weight decay applied only early in Muon pretraining can look harmful when it is switched off yet give a lower final loss, because it leaves smaller weights and thus larger relative steps.",
+  "primary_tag": "Optimization",
+  "tags": [
+   "Optimization",
+   "Pre-training & Data"
+  ],
+  "byline": "Md Rifat Arefin, Ravid Shwartz-Ziv, Ernie Chang et al. · Meta, Mila-Quebec AI Institute, Université de Montréal",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.18114",
+  "date": "2026-11-16",
+  "type": "paper",
+  "title": "Interpretable weight-space programming builds transparent transformers and brain encoding models",
+  "tldr": "An LLM agent writes neural network weights and features by hand, with training forbidden, producing readable transformers and brain-response models that beat classical interpretable baselines.",
+  "primary_tag": "Interpretability",
+  "tags": [
+   "Interpretability",
+   "AI for Science & Health",
+   "Agents"
+  ],
+  "byline": "Yash Mehta, Chandan Singh, Weijia Xu et al.",
+  "hf": null,
+  "venue": null
+ },
+ {
   "id": "2026-11-14-n1",
   "date": "2026-11-14",
   "type": "news",

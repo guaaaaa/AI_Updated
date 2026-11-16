@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 19:23:07 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 19:33:23 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Alibaba launches Qwen4-Max, a 2.4-trillion-parameter flagship that stays closed-weight</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n1</guid>
+    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Alibaba released Qwen4-Max, a 2.4-trillion-parameter multimodal model priced at $1.50/$4.50 per million tokens, and kept its weights closed, unlike many earlier Qwen releases. (TNW, Crypto Briefing, Data Studios)</description>
+  </item>
+  <item>
+    <title>OpenAI signs four outside evaluators to assess its models and safeguards from inside the company</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n2</guid>
+    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
+    <category>AI / Safety &amp; Security</category>
+    <description>OpenAI signed agreements with Apollo Research, METR, Transluce and Goodfire to run pilot assessments of its models' alignment, safeguards and monitoring using internal resources. (OpenAI, MLQ.ai, Quartz)</description>
+  </item>
+  <item>
+    <title>Training Reasoning Models in Simulation to Natively Use Real Robots</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18562</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18562</guid>
+    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>An open-weight 27B reasoning model learns to control robots by reinforcement learning in simulation alone, with no demonstrations, and then succeeds in 60% of trials on a real dual-arm robot. (Jiaming Tang, Zhuoyang Zhang, Junxian Guo et al. · MIT, Inco AI, UC Berkeley)</description>
+  </item>
+  <item>
+    <title>Aligning AI Teams</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17820</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17820</guid>
+    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
+    <category>AI / Safety &amp; Alignment</category>
+    <description>Teams of individually aligned LLM agents pick less safe trade-offs than one agent because responsibility diffuses; a designated safety lead plus a shared safety document restores single-agent behavior. (Siddarth Srinivasan, Morgan Jane Matthews, Jascha Sohl-Dickstein et al. · Harvard University, Constellation Institute, Anthropic)</description>
+  </item>
+  <item>
+    <title>Learning Anisotropic Prediction Targets for Flow Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17767</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17767</guid>
+    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>AnisoFlow lets a flow model learn what quantity it should predict, with a separate noise weight per data direction, improving pixel-space ImageNet FID from 1.90 to 1.55 without other changes. (Rayhan Zirvi, Hansheng Chen, Gordon Wetzstein et al. · Stanford University, California Institute of Technology)</description>
+  </item>
+  <item>
+    <title>Delayed Effects of Temporary Weight Decay in Muon Pretraining</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17876</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17876</guid>
+    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
+    <category>AI / Optimization</category>
+    <description>Weight decay applied only early in Muon pretraining can look harmful when it is switched off yet give a lower final loss, because it leaves smaller weights and thus larger relative steps. (Md Rifat Arefin, Ravid Shwartz-Ziv, Ernie Chang et al. · Meta, Mila-Quebec AI Institute, Université de Montréal)</description>
+  </item>
+  <item>
+    <title>Interpretable weight-space programming builds transparent transformers and brain encoding models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18114</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18114</guid>
+    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
+    <category>AI / Interpretability</category>
+    <description>An LLM agent writes neural network weights and features by hand, with training forbidden, producing readable transformers and brain-response models that beat classical interpretable baselines. (Yash Mehta, Chandan Singh, Weijia Xu et al.)</description>
+  </item>
   <item>
     <title>Japan's economy shrinks at a 0.1% annualized rate in the third quarter, its first contraction in four quarters</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Fri, 13 Nov 2026 14:24:11 +0000</pubDate>
     <category>Science / Energy science</category>
     <description>Tidal turbine blades made of flexible rubber matched the energy yield of rigid blades with active pitch control while cutting fatigue-causing load swings by up to a third. (Zhehong Zhang, Junchen Tan, Eric-Carin Neba et al.)</description>
-  </item>
-  <item>
-    <title>Jensen Huang resigns as Nvidia's CEO, CFO Colette Kress takes over on an interim basis, and the shares open down more than 13%</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n1</guid>
-    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
-    <category>Business / Earnings &amp; Companies</category>
-    <description>Nvidia's co-founder Jensen Huang resigned as CEO and director with immediate effect; CFO Colette Kress is interim CEO while the board searches for a successor, and Huang has agreed to testify to Congress. (TechCrunch, BBC, TechCrunch)</description>
-  </item>
-  <item>
-    <title>The Fed scraps its October 2027 rate vote and holds no December meeting, so no rate decision is due between mid-November 2027 and late January 2028</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n2</guid>
-    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
-    <category>Business / Central Banks &amp; Rates</category>
-    <description>The Fed's revised 2027 calendar keeps eight meetings but turns October's into a strategy session with no rate decision and drops December, part of Chair Kevin Warsh's plan to meet less often. (Federal Reserve, The New York Times)</description>
-  </item>
-  <item>
-    <title>US existing-home sales fall 5.5% in October to 3.75 million, the lowest pace since August 2010, as mortgage rates climb</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n3</guid>
-    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
-    <category>Business / Real Estate</category>
-    <description>Sales of previously owned US homes fell 5.5% in October to an annual pace of 3.75 million, down 8.8% from a year earlier, as 30-year mortgage rates hover near 7.18%. (National Association of Realtors, The Guardian)</description>
-  </item>
-  <item>
-    <title>Cisco raises its annual revenue forecast to as much as $75.8 billion after a record quarter driven by AI networking</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n4</guid>
-    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
-    <category>Business / Tech &amp; AI Business</category>
-    <description>Cisco's quarterly revenue rose 24% to a record $18.5 billion, beating estimates, and it lifted its fiscal 2027 outlook and its forecast for AI infrastructure sales to cloud giants to $9 billion. (Cisco, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>Clearing the Fog: Price Transparency, Market Churn, and Consumer Welfare in Short-Term Rentals</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/nber-w35989</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/nber-w35989</guid>
-    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
-    <category>Business / Regulation</category>
-    <description>After California required Airbnb and similar hosts to show fee-inclusive prices, guests became more price-sensitive, nightly rates rose 4.8%, and many fee-heavy listings left the market, with net gains for consumers on average. (Ginger Zhe Jin, Liad Wagman, Jingyi Xing)</description>
-  </item>
-  <item>
-    <title>Google launches Gemini 4 Hydrogen, a fast Gemini 4 model that replaces 3.8 Flash and now powers Search</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n1</guid>
-    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Google released Gemini 4 Hydrogen, a fast, cheaper Gemini 4 model priced at $1.50/$7.50 per million tokens that scores level with the frontier Argon model on one index and now runs Google Search. (Google DeepMind, Ars Technica, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Nonprofits sue OpenAI, Anthropic, Google, Meta and SpaceX to halt frontier AI development</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2026-11-13-n2</guid>
-    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
-    <category>AI / Policy &amp; Legal</category>
-    <description>Four nonprofits asked a San Francisco court to stop five leading AI developers from building or deploying new models, citing the companies' own warnings of catastrophic risk under California unfair-competition law. (Associated Press via BNN Bloomberg, Reuters via Claims Journal)</description>
   </item>
 </channel>
 </rss>

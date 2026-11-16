@@ -1,0 +1,83 @@
+{
+ "week": "2026-W47",
+ "start": "2026-11-16",
+ "end": "2026-11-21",
+ "complete": false,
+ "digests": 1,
+ "papers": [
+  {
+   "id": "2611.18359",
+   "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+   "hf": 107,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.18397",
+   "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+   "hf": 87,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.18482",
+   "title": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
+   "hf": 35,
+   "org": "National University of Singapore",
+   "featured": null
+  },
+  {
+   "id": "2611.17831",
+   "title": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+   "hf": 21,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.17878",
+   "title": "DySENSE: Dynamic Spatiotemporal ENergy Synthesis and Emulation with Satellite Imagery",
+   "hf": 20,
+   "org": "Massachusetts Institute of Technology",
+   "featured": null
+  },
+  {
+   "id": "2611.18338",
+   "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
+   "hf": 17,
+   "org": "The University of Hong Kong",
+   "featured": null
+  },
+  {
+   "id": "2611.17814",
+   "title": "G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands",
+   "hf": 17,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.18549",
+   "title": "JVT: Just Video Transformer makes pixel-space video diffusion simple",
+   "hf": 14,
+   "org": null,
+   "featured": null
+  }
+ ],
+ "stories": [
+  {
+   "title": "Jensen Huang and the End of the Founder Fairy Tale",
+   "outlets": 6,
+   "date": "2026-11-13",
+   "covered": null
+  },
+  {
+   "title": "Exclusive | Trump Administration to Name Nvidia Among AI ‘National Champions’",
+   "outlets": 3,
+   "date": "2026-11-16",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 2,
+  "papers": 5
+ }
+}
