@@ -1,14 +1,5 @@
 [
  {
-  "id": "2026-11-16-n1",
-  "date": "2026-11-16",
-  "type": "news",
-  "title": "ULA's Vulcan rocket fails during launch, the company's first total loss since it was formed in 2006",
-  "tldr": "United Launch Alliance's Vulcan rocket failed to reach orbit on Sunday with 40 Amazon Leo satellites, the company's first outright failure, and the rocket is now grounded while engineers look for the cause.",
-  "category": "Space & Astronomy",
-  "byline": "Ars Technica, Spaceflight Now"
- },
- {
   "id": "doi-10-1126-science-adr5469",
   "date": "2026-11-16",
   "type": "paper",

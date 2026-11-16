@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-16T19:33:25+00:00",
+ "updated": "2026-11-16T19:57:40+00:00",
  "domain": "science",
  "days": [
   {
    "date": "2026-11-16",
    "edition": "weekday",
-   "news": 1,
+   "news": 0,
    "papers": 3,
    "backfill": false
   },
@@ -83,7 +83,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 52
+   "n": 51
   }
  ],
  "tag_groups": {
@@ -135,8 +135,8 @@
   "Life Sciences"
  ],
  "category_counts": {
-  "Space & Astronomy": 9,
   "Climate & Earth": 7,
+  "Space & Astronomy": 8,
   "Physics": 4,
   "Life Sciences": 1
  },

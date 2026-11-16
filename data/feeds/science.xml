@@ -5,21 +5,13 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 19:21:45 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 19:57:22 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
-  <item>
-    <title>ULA's Vulcan rocket fails during launch, the company's first total loss since it was formed in 2006</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/2026-11-16-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/2026-11-16-n1</guid>
-    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>United Launch Alliance's Vulcan rocket failed to reach orbit on Sunday with 40 Amazon Leo satellites, the company's first outright failure, and the rocket is now grounded while engineers look for the cause. (Ars Technica, Spaceflight Now)</description>
-  </item>
   <item>
     <title>Quantitative measurement of viscosity in two-dimensional electron fluids</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</link>
     <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</guid>
-    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
     <category>Science / Condensed matter &amp; materials</category>
     <description>A ring-shaped graphene device lets physicists measure the viscosity of flowing electrons directly, and the result departs from the standard theory of metals. (Yihang Zeng, Haoyu Guo, Olivia M. Ghosh et al.)</description>
   </item>
@@ -27,7 +19,7 @@
     <title>A primordial heavy water reservoir in the outer solar system</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</link>
     <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</guid>
-    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
     <category>Science / Planetary science</category>
     <description>Twelve dust grains collected in Earth's stratosphere, traced to the Kuiper Belt, carry the oxygen signature of an isotopically heavy water reservoir that stayed separate from the inner solar system. (Lindsay P. Keller, Christopher J. Snead, Ming-Chang Liu et al. · NASA Johnson Space Center)</description>
   </item>
@@ -35,7 +27,7 @@
     <title>Passive imaging with quantum advantage</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</link>
     <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</guid>
-    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
+    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
     <category>Science / Quantum physics</category>
     <description>Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination. (Li Gong, Aonan Zhang, Madhura Ghosh Dastidar et al.)</description>
   </item>
@@ -326,6 +318,14 @@
     <pubDate>Fri, 06 Nov 2026 13:23:42 +0000</pubDate>
     <category>Science / Earth science</category>
     <description>Models of slow mantle flow suggest continents rose for hundreds of millions of years and then sank, which would erase and then bury the rock record behind the Great Unconformity. (Santosh Dhungana, Nicolas Flament)</description>
+  </item>
+  <item>
+    <title>Imaging exoplanets below the telescope stability limit</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-06/doi-10-1038-s41586-026-11213-z</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-06/doi-10-1038-s41586-026-11213-z</guid>
+    <pubDate>Fri, 06 Nov 2026 13:23:42 +0000</pubDate>
+    <category>Science / Planetary science</category>
+    <description>A physics-based model of Webb's camera, tuned with the gradient descent used to train neural networks, cuts noise in exoplanet images and revealed a planet that had gone unseen at one wavelength. (Rodrigo Ferrer-Chavez, Jason J. Wang, Katherine L. Bouman et al.)</description>
   </item>
 </channel>
 </rss>

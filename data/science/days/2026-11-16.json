@@ -1,47 +1,9 @@
 {
  "date": "2026-11-16",
  "edition": "weekday",
- "generated_at": "2026-11-16T19:21:45+00:00",
- "summary": "ULA's Vulcan rocket fails for the first time, while new papers measure how \"thick\" an electron fluid is, find a distinct ancient water reservoir in Kuiper Belt dust, and squeeze more detail out of faint light.",
- "news": [
-  {
-   "id": "2026-11-16-n1",
-   "story_key": "ula-vulcan-first-failure-amazon-leo",
-   "title": "ULA's Vulcan rocket fails during launch, the company's first total loss since it was formed in 2006",
-   "category": "Space & Astronomy",
-   "published": "2026-11-15T18:11:54-05:00",
-   "tldr": "United Launch Alliance's Vulcan rocket failed to reach orbit on Sunday with 40 Amazon Leo satellites, the company's first outright failure, and the rocket is now grounded while engineers look for the cause.",
-   "why_selected": "A rare outright failure of a major US launcher, confirmed by the company and reported in detail by two specialist outlets, with consequences for military, commercial and NASA launch plans.",
-   "sections": [
-    {
-     "heading": "Context",
-     "body": "Vulcan is the heavy-lift rocket that United Launch Alliance (ULA), a partnership of Boeing and Lockheed Martin formed in 2006, built to replace its Atlas 5. Its first stage burns methane in two BE-4 engines supplied by Blue Origin, helped at liftoff by strap-on solid rocket boosters; a hydrogen-fuelled Centaur upper stage finishes the climb to orbit. Sunday's launch was Vulcan's fifth flight and its first in nine months. Two earlier flights had problems with the solid boosters' nozzles, although the rocket still reached orbit both times."
-    },
-    {
-     "heading": "What happened",
-     "body": "The rocket lifted off from Cape Canaveral Space Force Station on Sunday at 17:40 UTC, carrying 40 satellites for Amazon's Leo broadband network. The six solid boosters appeared to work normally. The BE-4 engines then fired for at least 30 seconds longer than planned, Ars Technica reported, and an animation driven by the rocket's telemetry showed it starting to spin after they shut down. The Centaur stage separated and ignited. ULA said the vehicle \"suffered an anomaly 10 minutes into the flight and failed to deliver the Amazon mission to orbit\", and that it did not yet have specific data to explain it. Sources told Ars Technica the problem arose in the booster stage; Spaceflight Now reports that ULA's update placed the anomaly during the Centaur burn."
-    },
-    {
-     "heading": "Why it matters",
-     "body": "The rocket is expected to be grounded during the investigation. Ars Technica says Vulcan is on contract for roughly half of the US military's national security launches over the next few years. This was also the first of 38 Vulcan launches bought by Amazon, whose constellation has 396 satellites in orbit out of a planned 3,292 in its first generation. Blue Origin's New Glenn, which also uses BE-4 engines and is also booked by Amazon, has not flown since an explosion on the pad in May that was traced to an oxygen valve in one engine. Sunday's engines had been retrofitted with a fix."
-    },
-    {
-     "heading": "What to watch",
-     "body": "The cause, and in particular whether the first-stage engines or the upper stage were at fault; how long the grounding lasts; and how Amazon and the Space Force rearrange their launches."
-    }
-   ],
-   "sources": [
-    {
-     "name": "Ars Technica",
-     "url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/"
-    },
-    {
-     "name": "Spaceflight Now",
-     "url": "https://spaceflightnow.com/mission-reports/vulcan/"
-    }
-   ]
-  }
- ],
+ "generated_at": "2026-11-16T19:57:22+00:00",
+ "summary": "New papers measure how \"thick\" an electron fluid is, find a distinct ancient water reservoir in Kuiper Belt dust, and squeeze more detail out of faint light.",
+ "news": [],
  "papers": [
   {
    "id": "doi-10-1126-science-adr5469",

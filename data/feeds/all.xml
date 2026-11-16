@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 19:33:23 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 19:57:22 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Quantitative measurement of viscosity in two-dimensional electron fluids</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</guid>
+    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
+    <category>Science / Condensed matter &amp; materials</category>
+    <description>A ring-shaped graphene device lets physicists measure the viscosity of flowing electrons directly, and the result departs from the standard theory of metals. (Yihang Zeng, Haoyu Guo, Olivia M. Ghosh et al.)</description>
+  </item>
+  <item>
+    <title>A primordial heavy water reservoir in the outer solar system</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</guid>
+    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
+    <category>Science / Planetary science</category>
+    <description>Twelve dust grains collected in Earth's stratosphere, traced to the Kuiper Belt, carry the oxygen signature of an isotopically heavy water reservoir that stayed separate from the inner solar system. (Lindsay P. Keller, Christopher J. Snead, Ming-Chang Liu et al. · NASA Johnson Space Center)</description>
+  </item>
+  <item>
+    <title>Passive imaging with quantum advantage</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</guid>
+    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination. (Li Gong, Aonan Zhang, Madhura Ghosh Dastidar et al.)</description>
+  </item>
   <item>
     <title>Alibaba launches Qwen4-Max, a 2.4-trillion-parameter flagship that stays closed-weight</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n1</link>
@@ -150,38 +174,6 @@
     <pubDate>Mon, 16 Nov 2026 19:22:35 +0000</pubDate>
     <category>Biology / Evolution &amp; ecology</category>
     <description>Fruit flies evolving in outdoor and indoor cages changed pigmentation in a direction a genetic map could predict, but which genes did the changing was largely unpredictable. (J. A. Smiley-Rhodes, M. C. Bitter, S. Berardi et al. · Stanford University; University of Pennsylvania; Chan Zuckerberg Biohub)</description>
-  </item>
-  <item>
-    <title>ULA's Vulcan rocket fails during launch, the company's first total loss since it was formed in 2006</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/2026-11-16-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/2026-11-16-n1</guid>
-    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>United Launch Alliance's Vulcan rocket failed to reach orbit on Sunday with 40 Amazon Leo satellites, the company's first outright failure, and the rocket is now grounded while engineers look for the cause. (Ars Technica, Spaceflight Now)</description>
-  </item>
-  <item>
-    <title>Quantitative measurement of viscosity in two-dimensional electron fluids</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</guid>
-    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>A ring-shaped graphene device lets physicists measure the viscosity of flowing electrons directly, and the result departs from the standard theory of metals. (Yihang Zeng, Haoyu Guo, Olivia M. Ghosh et al.)</description>
-  </item>
-  <item>
-    <title>A primordial heavy water reservoir in the outer solar system</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</guid>
-    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
-    <category>Science / Planetary science</category>
-    <description>Twelve dust grains collected in Earth's stratosphere, traced to the Kuiper Belt, carry the oxygen signature of an isotopically heavy water reservoir that stayed separate from the inner solar system. (Lindsay P. Keller, Christopher J. Snead, Ming-Chang Liu et al. · NASA Johnson Space Center)</description>
-  </item>
-  <item>
-    <title>Passive imaging with quantum advantage</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</guid>
-    <pubDate>Mon, 16 Nov 2026 19:21:45 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination. (Li Gong, Aonan Zhang, Madhura Ghosh Dastidar et al.)</description>
   </item>
   <item>
     <title>An 11-year-old Linux kernel flaw called NoisyTCP lets remote attackers crash servers, and a patch is available</title>
@@ -486,6 +478,14 @@
     <pubDate>Fri, 13 Nov 2026 14:24:11 +0000</pubDate>
     <category>Science / Energy science</category>
     <description>Tidal turbine blades made of flexible rubber matched the energy yield of rigid blades with active pitch control while cutting fatigue-causing load swings by up to a third. (Zhehong Zhang, Junchen Tan, Eric-Carin Neba et al.)</description>
+  </item>
+  <item>
+    <title>Jensen Huang resigns as Nvidia's CEO, CFO Colette Kress takes over on an interim basis, and the shares open down more than 13%</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n1</guid>
+    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>Nvidia's co-founder Jensen Huang resigned as CEO and director with immediate effect; CFO Colette Kress is interim CEO while the board searches for a successor, and Huang has agreed to testify to Congress. (TechCrunch, BBC, TechCrunch)</description>
   </item>
 </channel>
 </rss>
