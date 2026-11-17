@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 17 Nov 2026 12:49:11 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 13:21:05 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>The largest US data centres use about 1.8% of the country's electricity, a first facility-by-facility tally finds</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n1</guid>
+    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>A study of 403 hyperscale data centres estimates they used 68 to 99 terawatt-hours in a year, about as much as a mid-sized US state, with 54% of it from fossil fuels. (New Scientist, Ars Technica)</description>
+  </item>
+  <item>
+    <title>Japan's Hayabusa2 abandons its final asteroid target after engine trouble and will fly past a different one in 2028</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n2</guid>
+    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>With its ageing main engines malfunctioning repeatedly, JAXA's Hayabusa2 will skip its planned 2031 arrival at asteroid 1998 KY26 and instead attempt a high-speed flyby of the small asteroid 2015 BM510 in April 2028. (Phys.org (AFP), The Japan Times)</description>
+  </item>
+  <item>
+    <title>Giant elastoresistance in magic-angle twisted bilayer graphene</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-adz0597</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-adz0597</guid>
+    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
+    <category>Science / Condensed matter &amp; materials</category>
+    <description>Stretching magic-angle twisted bilayer graphene by a fraction of a percent changes its electrical resistance up to about 400 times more strongly than the same strain would in an ordinary metal. (Xuetao Ma, Zhaoyu Liu, Jiaqi Cai et al.)</description>
+  </item>
+  <item>
+    <title>Direct monitoring of breaching in deltaic submarine landslides</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-aef8444</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-aef8444</guid>
+    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
+    <category>Science / Earth science</category>
+    <description>Sonar images taken every second at a Canadian river delta show underwater landslides peeling the seabed back gradually for up to 100 minutes, not collapsing all at once. (Rebecca G. Englert, Matthieu J. B. Cartigny, Megan L. Baker et al. · Durham University)</description>
+  </item>
+  <item>
+    <title>Climate aridity amplifies global riverine nitrate beyond human inputs</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-aeg2366</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-aeg2366</guid>
+    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
+    <category>Science / Earth science</category>
+    <description>A global machine-learning map of about 2.9 million river segments finds that dry climates raise nitrate concentrations in rivers even where there is little farming or urban development. (Kayalvizhi Sadayappan and Li Li · Penn State)</description>
+  </item>
   <item>
     <title>Canadian inflation holds at 3.1% in October as gasoline keeps the headline rate above target while core measures stay near 2%</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
     <category>Business / Labor &amp; Workplace</category>
     <description>About 800 workers at Amazon's YVR2 warehouse in Delta, B.C., are now covered by a three-year contract set by an arbitrator, with wages rising to $29 an hour; Amazon says it may go to court. (Unifor, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/nber-w35987</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/nber-w35987</guid>
-    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
-    <category>Business / Labor markets</category>
-    <description>Researchers used system-run interviews with 132 workers to build task lists for six occupations, capturing 79 tasks missing from the O*NET occupational database and shifting estimates of AI exposure. (Jennifer Wang, Andreas Haupt, Isaac Robinson et al.)</description>
-  </item>
-  <item>
-    <title>OpenAI launches ChatGPT Wallet so its Dots agents can buy things for users, with approval for each purchase</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n1</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Product &amp; Features</category>
-    <description>OpenAI's new ChatGPT Wallet lets its Dots agents complete purchases with a tokenized card after the user approves each one biometrically, starting with a limited group of US Pro subscribers. (TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>llama.cpp and ggml reach version 1.0, promising stable interfaces for the local AI software built on them</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n2</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Open Source</category>
-    <description>The llama.cpp team released its libraries as v1.0.0 and adopted semantic versioning, so future breaking API or ABI changes will come only with major version bumps. (Hugging Face (ggml-org))</description>
-  </item>
-  <item>
-    <title>Unbundling Multimodal Vision Encoding</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17334</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17334</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Multimodal</category>
-    <description>In a compute-matched study trained entirely from scratch, a pretrained vision encoder brings no advantage, but vision-only parameters do, and they work as well placed inside the first layers of the language backbone. (Ellis Brown, Chris Hoang, Shengyi Qian et al. · New York University, Meta FAIR)</description>
-  </item>
-  <item>
-    <title>Back to Pixels: Lifting Latent Video Diffusion into Pixel Space</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17336</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17336</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>PixVid fine-tunes a pretrained latent video diffusion model to generate every frame directly in pixels, matching its quality while enabling higher resolution, frame-accurate editing and one-frame control latency. (Yanke Song, Shuo Chen, Chris Rockwell et al. · Roblox, University of California, Merced)</description>
   </item>
 </channel>
 </rss>

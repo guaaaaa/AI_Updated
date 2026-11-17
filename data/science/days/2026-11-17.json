@@ -1,0 +1,252 @@
+{
+ "date": "2026-11-17",
+ "edition": "weekday",
+ "generated_at": "2026-11-17T13:21:05+00:00",
+ "summary": "A first tally of what America's largest data centres draw from the grid, Hayabusa2 gives up its final asteroid for an easier one, and papers on strain-sensitive graphene, underwater landslides filmed in the act, and nitrate in dry-climate rivers.",
+ "news": [
+  {
+   "id": "2026-11-17-n1",
+   "story_key": "us-hyperscale-data-centres-electricity-emissions-tally",
+   "title": "The largest US data centres use about 1.8% of the country's electricity, a first facility-by-facility tally finds",
+   "category": "Climate & Earth",
+   "published": "2026-11-16T11:00:00-05:00",
+   "tldr": "A study of 403 hyperscale data centres estimates they used 68 to 99 terawatt-hours in a year, about as much as a mid-sized US state, with 54% of it from fossil fuels.",
+   "why_selected": "A peer-reviewed baseline for a fast-growing electricity load whose operators rarely publish figures, covered independently by several outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Hyperscale data centres are the very large facilities that run cloud computing and artificial intelligence systems. They are being built quickly across the United States, but their operators seldom report how much electricity each site uses, so estimates of their energy and climate footprint have rested on national totals and industry statements. A Lawrence Berkeley National Laboratory report put the electricity use of all US data centres at 192 terawatt-hours in 2024."
+    },
+    {
+     "heading": "What happened",
+     "body": "A team including Francesca Dominici of Harvard University published an estimate in Nature Sustainability built from individual facilities. They started with 675 sites in a commercial database compiled from news reports, company statements and satellite imagery, and kept the 403 that had a reported electrical capacity and could be verified as suitably large buildings with the expected cooling and grid equipment. The average capacity was about 40 megawatts.\n\nBecause actual operating levels are not public, the team used a range: conventional data centres run at about 48% of capacity on average, while AI training loads run at about 70%. That gives 68 to 99 terawatt-hours between May 2024 and April 2025, with a central estimate of about 82, or roughly 1.8% of US electricity use.\n\nApplying each region's generation mix, the team attributes about 54% of the electricity to fossil fuels, mainly natural gas, 25% to renewables and 21% to nuclear. Emissions come to 21 to 31 million tonnes of carbon dioxide for the year, around 0.5% of US fossil fuel emissions."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The figures give a reference point against which later growth can be measured. They are probably conservative, since 272 suspected large facilities were left out and on-site gas generators were not counted. Outside researchers told New Scientist that the result matches International Energy Agency estimates, but that it depends on commercial data and assumptions that cannot be independently checked."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The study cannot separate AI workloads from ordinary cloud services. Repeating it in later years would show how fast the buildout adds demand, and how much moves to private gas generation, which Ars Technica reports emits 60 to 80% more per unit of electricity than utility plants."
+    }
+   ],
+   "sources": [
+    {
+     "name": "New Scientist",
+     "url": "https://www.newscientist.com/article/2599078-massive-datacentres-use-as-much-electricity-as-an-entire-us-state/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/science/2026/11/hyperscale-data-centers-use-2-of-us-electricity/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n2",
+   "story_key": "hayabusa2-retargets-2015-bm510-engine-trouble",
+   "title": "Japan's Hayabusa2 abandons its final asteroid target after engine trouble and will fly past a different one in 2028",
+   "category": "Space & Astronomy",
+   "published": "2026-11-17T04:12:00-05:00",
+   "tldr": "With its ageing main engines malfunctioning repeatedly, JAXA's Hayabusa2 will skip its planned 2031 arrival at asteroid 1998 KY26 and instead attempt a high-speed flyby of the small asteroid 2015 BM510 in April 2028.",
+   "why_selected": "A major change to one of the few active asteroid missions, announced by the mission team and reported by two outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Hayabusa2 is a spacecraft of the Japan Aerospace Exploration Agency (JAXA). Launched 12 years ago, it collected material from the asteroid Ryugu and delivered it to Earth in 2020. The spacecraft itself stayed in space and was given an extended mission to visit more asteroids. In July it passed 400 metres from a near-Earth asteroid, which JAXA has described as the closest approach recorded in such a mission. Its main remaining destination was a small asteroid called 1998 KY26, which it was due to reach in 2031, when the asteroid would be about 300 million kilometres from Earth."
+    },
+    {
+     "heading": "What happened",
+     "body": "The mission team said on Tuesday that it has given up on 1998 KY26. Yuya Mimasu, who leads the extended mission, told reporters that the deterioration of the onboard equipment is becoming increasingly evident, and that because the main engines have suffered repeated malfunctions the team decided to revise the plan to one that could be carried out safely.\n\nThe spacecraft will now head for an asteroid called 2015 BM510 and aim to fly past it in April 2028. A flyby means passing close to the target at high speed rather than stopping alongside it. The new target is between 17 and 74 metres across and rotates once every 49 minutes. Mimasu said that because the asteroid is dark and small, the encounter will be one of the most difficult flyby missions attempted anywhere."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The change trades a long stay at one unusual object for a brief look at another, three years sooner, on a spacecraft whose hardware is wearing out. JAXA presents the revised plan as still useful: according to Mimasu, practising a precise pass by a small, dim body can help future planetary defence missions, which aim to deflect asteroids that might otherwise hit Earth."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the engines hold up well enough to steer the spacecraft onto its new course, and how closely the team will try to pass 2015 BM510. The reports do not say what observations are planned during the flyby, or whether anything will follow it."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Phys.org (AFP)",
+     "url": "https://phys.org/news/2026-11-japan-space-probe.html"
+    },
+    {
+     "name": "The Japan Times",
+     "url": "https://www.japantimes.co.jp/news/2026/11/17/japan/science-health/hayabusa2-probe-changes-course/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-adz0597",
+   "title": "Giant elastoresistance in magic-angle twisted bilayer graphene",
+   "authors": [
+    "Xuetao Ma",
+    "Zhaoyu Liu",
+    "Jiaqi Cai",
+    "Kenji Watanabe",
+    "Takashi Taniguchi",
+    "Xiaodong Xu",
+    "Jiun-Haw Chu",
+    "Matthew Yankowitz"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Condensed matter & materials",
+   "tags": [
+    "Condensed matter & materials",
+    "Quantum physics"
+   ],
+   "tldr": "Stretching magic-angle twisted bilayer graphene by a fraction of a percent changes its electrical resistance up to about 400 times more strongly than the same strain would in an ordinary metal.",
+   "why_selected": "Turns strain into a controllable knob for one of the most studied quantum materials, and the size of the response is itself a clue to the physics.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Two sheets of graphene stacked with a twist of about 1.1 degrees, the \"magic angle\", form a long-wavelength interference pattern called a moiré lattice. In it electrons slow down so much that their mutual repulsion dominates, producing insulating, superconducting and other correlated states. These states depend delicately on lattice geometry, yet strain in such devices has been an accident of fabrication."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "To learn how strain matters, researchers have had to build many nominally identical devices, each with a different built-in strain, and the patchy strain that results cannot be reproduced from one device to the next. In bulk crystals, squeezing a sample with piezoelectric stacks is a standard probe, but extending that to atomically thin, gated devices has proven difficult."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors mount a complete, dual-gated graphene device on a platform of three piezoelectric stacks. A voltage makes the central stack and the two outer stacks change length in opposite senses, so the sample is stretched or compressed along one direction, continuously and at low temperature, while its resistance is measured.\n\nThe quantity of interest is the gauge factor: the fractional change in resistance divided by the strain. For an ordinary metal it is of order one and simply reflects the wire getting longer and thinner. A much larger value means the strain is changing the behaviour of the electrons themselves."
+    },
+    {
+     "heading": "Results",
+     "body": "In the version of the paper read here, the arXiv preprint, ordinary (Bernal) bilayer graphene showed no measurable resistance change over a strain range of 0.16%. A device twisted at 1.10 degrees changed clearly over just 0.09%, and devices at 1.20 and 1.31 degrees behaved similarly. Gauge factors approached 400 in some cases, a figure the authors argue is a lower bound. The value varied sharply with electron density and generally grew on cooling, at certain densities following a Curie–Weiss law, a form associated with fluctuations building towards order."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Strain joins twist angle and pressure as a tunable probe of moiré materials. The authors discuss possible origins, including fluctuations towards a direction-selecting (\"nematic\") electronic order, without settling on one. The published version may differ in detail from the preprint."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.adz0597",
+    "doi": "https://doi.org/10.1126/science.adz0597"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aef8444",
+   "title": "Direct monitoring of breaching in deltaic submarine landslides",
+   "authors": [
+    "Rebecca G. Englert",
+    "Matthieu J. B. Cartigny",
+    "Megan L. Baker",
+    "Sanem Acikalin",
+    "Dick Mastbergen",
+    "Niall Tracey",
+    "Sean C. Ruffell",
+    "Daniel H. Shugar",
+    "D. Gwyn Lintern",
+    "Romit Aggarwal",
+    "Lewis Bailey",
+    "Daniel Bell",
+    "Michael A. Clare",
+    "Stephen M. Hubbard",
+    "Gustavo Lobato",
+    "Daniel Parsons",
+    "Stephen M. Simmons",
+    "Cooper Stacey",
+    "Peter Talling",
+    "Michael Tilston"
+   ],
+   "affiliations": [
+    "Durham University"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science"
+   ],
+   "tldr": "Sonar images taken every second at a Canadian river delta show underwater landslides peeling the seabed back gradually for up to 100 minutes, not collapsing all at once.",
+   "why_selected": "The first direct observation of a natural, fully underwater landslide as it unfolds, confirming a mechanism known only from laboratories and dredging accidents.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Where rivers deliver sediment to the sea, the piled-up sand on the delta front regularly fails and slides. These submarine landslides are hidden from view, yet they threaten seabed cables, pipelines and offshore wind turbine foundations, and they carry sediment, carbon and pollutants from the coast into the deep ocean. How one proceeds had not been watched in nature."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Understanding has come from computer models, laboratory experiments and observations of slides set off by dredging. Those sources pointed to a process called breaching, in which a steep face of sand retreats slowly upslope while shedding grains, but whether it occurs naturally beneath the sea was not established."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team, from Durham University and international partners, spent 18 days at the Homathko Delta in British Columbia, Canada. They aimed sonar at the steep edge of the delta and recorded an image every second. They also mapped the sea floor every day and placed a sensor further down the slope to record how cloudy the water became as sediment passed.\n\nThe picture that emerged resembles a sand cliff on a beach crumbling grain by grain as its face eats backwards, as opposed to a block that breaks off and slumps in one piece."
+    },
+    {
+     "heading": "Results",
+     "body": "The team recorded around 30 small landslides over 11 days. The edges of the slides crept upslope at 2 to 27 millimetres per second, and individual events lasted between 38 and 100 minutes. They produced turbidity currents, flows of sediment-laden water, that travelled at least two kilometres down an underwater channel and left the water cloudy for 12 to 14 hours. In total the slides removed about 61,000 cubic metres of sediment, roughly 20% of the sand the river delivered over the same period. Retreat was faster and less regular than models predicted."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Engineers assessing risks to offshore infrastructure now have field measurements of how such failures unfold. The main caveat is the cause: every slide occurred during high river flow and a falling tide, which hints at a trigger, but the release says more work is needed to establish how the failures begin. The observations come from a single delta."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aef8444",
+    "doi": "https://doi.org/10.1126/science.aef8444"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aeg2366",
+   "title": "Climate aridity amplifies global riverine nitrate beyond human inputs",
+   "authors": [
+    "Kayalvizhi Sadayappan and Li Li"
+   ],
+   "affiliations": [
+    "Penn State"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science",
+    "Climate science",
+    "Computational science & AI"
+   ],
+   "tldr": "A global machine-learning map of about 2.9 million river segments finds that dry climates raise nitrate concentrations in rivers even where there is little farming or urban development.",
+   "why_selected": "Recasts a pollutant usually treated as a local farming and sewage problem as one also set by climate, with consequences as regions dry out.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Nitrate, a nitrogen compound, is among the most common inorganic pollutants in rivers and groundwater. At high levels in drinking water it can cause methemoglobinemia, or blue baby syndrome, in which an infant's blood cannot carry oxygen properly; it also fuels algal growth. Measurements are concentrated in temperate regions such as North America and Europe, leaving the global pattern unclear."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Nitrate hotspots have generally been attributed to human inputs: fertilizer running off farmland and wastewater from cities. Long-term climate was not usually considered a control."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The two authors gathered millions of nitrate readings from more than 7,000 river monitoring sites worldwide and, for each river segment, 26 descriptive variables covering climate, land use and soils. Machine-learning models were trained to predict a site's long-term average nitrate concentration from those variables, then applied to river segments with no measurements.\n\nSome readings were withheld during training and used to test predictions against data the model had not seen. And about 1,000 models were built, each on a different subset of sites, so that the spread among them indicates uncertainty."
+    },
+    {
+     "heading": "Results",
+     "body": "The resulting map covers about 2.9 million river segments. Human inputs still have the largest effect, and heavily farmed areas such as the US Corn Belt show some of the highest concentrations. But rivers in arid climates were consistently elevated even with little or no agriculture or urban activity: the Sahara showed concentrations comparable to or higher than humid, developed parts of southeast Asia. The authors estimate that about 480 million people live near rivers averaging above 2.5 milligrams per litre, a level some research links to chronic health effects, and about 37,000 near rivers above the 10 milligram US drinking water standard."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors' explanation is that nitrate released naturally from soils accumulates where there is too little water to dilute or flush it. If so, a drying climate could raise nitrate without any added fertilizer. Caveats: arid regions have few measurements, so the map is least tested where the finding is strongest; it shows long-term river averages, not tap water; and the mechanism is inferred, not measured."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aeg2366",
+    "doi": "https://doi.org/10.1126/science.aeg2366"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

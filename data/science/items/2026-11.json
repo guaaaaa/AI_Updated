@@ -1,5 +1,68 @@
 [
  {
+  "id": "2026-11-17-n1",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "The largest US data centres use about 1.8% of the country's electricity, a first facility-by-facility tally finds",
+  "tldr": "A study of 403 hyperscale data centres estimates they used 68 to 99 terawatt-hours in a year, about as much as a mid-sized US state, with 54% of it from fossil fuels.",
+  "category": "Climate & Earth",
+  "byline": "New Scientist, Ars Technica"
+ },
+ {
+  "id": "2026-11-17-n2",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "Japan's Hayabusa2 abandons its final asteroid target after engine trouble and will fly past a different one in 2028",
+  "tldr": "With its ageing main engines malfunctioning repeatedly, JAXA's Hayabusa2 will skip its planned 2031 arrival at asteroid 1998 KY26 and instead attempt a high-speed flyby of the small asteroid 2015 BM510 in April 2028.",
+  "category": "Space & Astronomy",
+  "byline": "Phys.org (AFP), The Japan Times"
+ },
+ {
+  "id": "doi-10-1126-science-adz0597",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "Giant elastoresistance in magic-angle twisted bilayer graphene",
+  "tldr": "Stretching magic-angle twisted bilayer graphene by a fraction of a percent changes its electrical resistance up to about 400 times more strongly than the same strain would in an ordinary metal.",
+  "primary_tag": "Condensed matter & materials",
+  "tags": [
+   "Condensed matter & materials",
+   "Quantum physics"
+  ],
+  "byline": "Xuetao Ma, Zhaoyu Liu, Jiaqi Cai et al.",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-science-aef8444",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "Direct monitoring of breaching in deltaic submarine landslides",
+  "tldr": "Sonar images taken every second at a Canadian river delta show underwater landslides peeling the seabed back gradually for up to 100 minutes, not collapsing all at once.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science"
+  ],
+  "byline": "Rebecca G. Englert, Matthieu J. B. Cartigny, Megan L. Baker et al. · Durham University",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-science-aeg2366",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "Climate aridity amplifies global riverine nitrate beyond human inputs",
+  "tldr": "A global machine-learning map of about 2.9 million river segments finds that dry climates raise nitrate concentrations in rivers even where there is little farming or urban development.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science",
+   "Climate science",
+   "Computational science & AI"
+  ],
+  "byline": "Kayalvizhi Sadayappan and Li Li · Penn State",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
   "id": "doi-10-1126-science-adr5469",
   "date": "2026-11-16",
   "type": "paper",

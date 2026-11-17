@@ -3,12 +3,12 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [],
  "featured": {
-  "news": 0,
-  "papers": 3
+  "news": 2,
+  "papers": 6
  },
  "items": [
   {
@@ -28,6 +28,36 @@
    "date": "2026-11-16",
    "type": "paper",
    "title": "Passive imaging with quantum advantage"
+  },
+  {
+   "id": "2026-11-17-n1",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "The largest US data centres use about 1.8% of the country's electricity, a first facility-by-facility tally finds"
+  },
+  {
+   "id": "2026-11-17-n2",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "Japan's Hayabusa2 abandons its final asteroid target after engine trouble and will fly past a different one in 2028"
+  },
+  {
+   "id": "doi-10-1126-science-adz0597",
+   "date": "2026-11-17",
+   "type": "paper",
+   "title": "Giant elastoresistance in magic-angle twisted bilayer graphene"
+  },
+  {
+   "id": "doi-10-1126-science-aef8444",
+   "date": "2026-11-17",
+   "type": "paper",
+   "title": "Direct monitoring of breaching in deltaic submarine landslides"
+  },
+  {
+   "id": "doi-10-1126-science-aeg2366",
+   "date": "2026-11-17",
+   "type": "paper",
+   "title": "Climate aridity amplifies global riverine nitrate beyond human inputs"
   }
  ]
 }
