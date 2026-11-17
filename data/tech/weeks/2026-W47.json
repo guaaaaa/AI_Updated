@@ -3,14 +3,32 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [
+  {
+   "title": "California sues OpenAI over rogue AI hacking incidents",
+   "outlets": 9,
+   "date": "2026-11-16",
+   "covered": null
+  },
+  {
+   "title": "Apple releases iOS 27.3 beta 2 for iPhone",
+   "outlets": 8,
+   "date": "2026-11-16",
+   "covered": null
+  },
   {
    "title": "SpaceX’s Latest Starship Launch Skips Attempt to Catch the Booster",
    "outlets": 5,
    "date": "2026-11-13",
    "covered": null
+  },
+  {
+   "title": "United Launch Alliance loses Vulcan rocket and 40 Amazon Leo internet satellites in launch mishap",
+   "outlets": 5,
+   "date": "2026-11-15",
+   "covered": "2026-11-16-n2"
   },
   {
    "title": "SpaceX launches Starship in key test flight of massive rocket",
@@ -25,6 +43,12 @@
    "covered": null
   },
   {
+   "title": "Uber confirms hackers stole thousands of drivers’ license information in data breach",
+   "outlets": 3,
+   "date": "2026-11-13",
+   "covered": null
+  },
+  {
    "title": "SpaceX catches upper stage of Starship rocket in historic first",
    "outlets": 3,
    "date": "2026-11-14",
@@ -32,7 +56,7 @@
   }
  ],
  "featured": {
-  "news": 3,
+  "news": 7,
   "papers": 0
  },
  "items": [
@@ -53,6 +77,30 @@
    "date": "2026-11-16",
    "type": "news",
    "title": "SpaceX catches a Starship upper stage with its launch tower after nearly a day in orbit"
+  },
+  {
+   "id": "2026-11-17-n1",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "Attackers plant malware on CNN, BBC, Zoom and Salesforce pages through the web-testing service Optimizely"
+  },
+  {
+   "id": "2026-11-17-n2",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "The US bars China from renting advanced chips in data centers in five countries and requires licenses for sales there"
+  },
+  {
+   "id": "2026-11-17-n3",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "Italy's privacy regulator fines Meta €805 million because Facebook's Android app read users' photo galleries without specific consent"
+  },
+  {
+   "id": "2026-11-17-n4",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "A software bug at JPMorganChase slows payments across US banks, with thousands of customers reporting problems"
   }
  ]
 }

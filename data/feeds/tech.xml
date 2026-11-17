@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 19:20:05 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 11:46:04 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Attackers plant malware on CNN, BBC, Zoom and Salesforce pages through the web-testing service Optimizely</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n1</guid>
+    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Attackers abused a flaw in Optimizely's signup flow to add malicious code to scripts that 178 organizations load on their websites, exposing visitors to theft of card details and cryptocurrency. (BleepingComputer, Optimizely)</description>
+  </item>
+  <item>
+    <title>The US bars China from renting advanced chips in data centers in five countries and requires licenses for sales there</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n2</guid>
+    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>A new US Commerce Department rule restricts remote access to advanced chips housed in Indonesia, Malaysia, Singapore, Thailand and Brazil, and makes large sales to those countries subject to licenses. (Ars Technica, The Register)</description>
+  </item>
+  <item>
+    <title>Italy's privacy regulator fines Meta €805 million because Facebook's Android app read users' photo galleries without specific consent</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n3</guid>
+    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
+    <category>Tech / Tech Policy &amp; Antitrust</category>
+    <description>Italy's data protection authority fined Meta €805 million ($886 million) over a Facebook feature that scanned Android users' photos and videos to suggest posts, affecting about 20 million people. (The Record, Sky TG24, Garante per la protezione dei dati personali)</description>
+  </item>
+  <item>
+    <title>A software bug at JPMorganChase slows payments across US banks, with thousands of customers reporting problems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n4</guid>
+    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
+    <category>Tech / Telecom &amp; Internet</category>
+    <description>JPMorganChase blamed a software bug in its own on-premise systems for slow transactions on Monday that spread to customers of other banks and to Zelle transfers; it says there is no sign of a cyberattack. (WIRED, Engadget)</description>
+  </item>
   <item>
     <title>An 11-year-old Linux kernel flaw called NoisyTCP lets remote attackers crash servers, and a patch is available</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n1</link>
@@ -294,38 +326,6 @@
     <pubDate>Fri, 06 Nov 2026 11:51:52 +0000</pubDate>
     <category>Tech / Security &amp; privacy</category>
     <description>Callix, a tool that judges whether access checks are strong enough for a sensitive operation, found 819 vulnerable paths in pre-installed apps from ten Android vendors. (Haotian Deng, Meng Hao, Hanxiao Chen et al. · University of Electronic Science and Technology of China)</description>
-  </item>
-  <item>
-    <title>Second wave of attacks on refrigeration controllers hits supermarkets across Europe</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Remote tampering with refrigeration controllers raised temperatures in more than 115 stores in six European countries on November 2, and also reached a French blood-service supplier, following a larger French wave in October. (Al Jazeera, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Zyxel patches a switch flaw that was exploited on nearly 1,000 devices after being mistaken for an older bug</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n2</guid>
-    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Zyxel fixed CVE-2026-107441 in ten GS1900 switch models after attackers used it to compromise 996 devices; the bug had been misattributed to an earlier, already-patched flaw. (BleepingComputer, Help Net Security)</description>
-  </item>
-  <item>
-    <title>Suspected Russian hackers use patched iPhone and Android flaws in watering-hole attacks</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n3</guid>
-    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Sekoia says a group it links to Russia's foreign intelligence service used websites to profile visitors and attack phones that had not installed existing security updates. (Ars Technica, Sekoia blog)</description>
-  </item>
-  <item>
-    <title>DreamHost confirms a two-month breach of its File Manager exposed FTP logins and webmail sessions</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-05/2026-11-05-n4</guid>
-    <pubDate>Thu, 05 Nov 2026 12:03:08 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Web host DreamHost says an attacker exploited a flaw in its File Manager from August to October 23, stealing FTP/SFTP credentials and some webmail session data. (BleepingComputer, TechCrunch)</description>
   </item>
 </channel>
 </rss>

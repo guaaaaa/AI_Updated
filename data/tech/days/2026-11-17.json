@@ -1,0 +1,161 @@
+{
+ "date": "2026-11-17",
+ "edition": "weekday",
+ "generated_at": "2026-11-17T11:46:04+00:00",
+ "summary": "A hijacked web-testing service pushes malware onto major sites, the US closes the rented-chip route around its export controls, Italy fines Meta €805 million, and a JPMorganChase bug slows US bank payments.",
+ "news": [
+  {
+   "id": "2026-11-17-n1",
+   "story_key": "optimizely-supply-chain-malicious-javascript",
+   "title": "Attackers plant malware on CNN, BBC, Zoom and Salesforce pages through the web-testing service Optimizely",
+   "category": "Cybersecurity",
+   "published": "2026-11-16T21:12:00-05:00",
+   "tldr": "Attackers abused a flaw in Optimizely's signup flow to add malicious code to scripts that 178 organizations load on their websites, exposing visitors to theft of card details and cryptocurrency.",
+   "why_selected": "A supply-chain attack with wide reach: one vendor's flaw put malicious code on some of the most visited news and business websites.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Optimizely sells a platform that lets organizations test and personalize their websites. To do that, customers load Optimizely's JavaScript files, small programs that run in each visitor's browser, directly into their own pages. That arrangement makes the vendor part of every customer's site: if its files are altered, the altered code runs for visitors of all the sites that include them. This is called a supply-chain attack."
+    },
+    {
+     "heading": "What happened",
+     "body": "Optimizely told BleepingComputer that on November 16 an unauthorized party exploited a vulnerability in the account signup flow of its Experimentation product and used it to add malicious JavaScript to some customer projects. Security researcher Scott Helme, who first uncovered the attack, said his team analyzed 1,611 scripts and found 188 infected files belonging to 178 organizations. BleepingComputer confirmed from recorded scans that the malicious script loaded, or tried to load, on sites including Zoom, KLM, GitLab, BBC, CNN and Salesforce, as well as Fox News and Air France. The code was built to swap cryptocurrency wallet addresses shown on a page for the attackers' own, to capture payment card details typed into forms, and to deliver attack code aimed at iPhones and iPads. Optimizely says it blocked the vulnerable path, deployed a fix, removed the injected code, reset access for affected accounts and notified affected customers."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The affected sites did nothing wrong in their own code; they trusted a third party's script, as most large websites do. By 21:52 UTC on November 16 only one of the 188 files was still infected, according to Helme, so the exposure was short. Its size is still unknown: Helme's earliest observed injection was early on November 16, but it is unclear how long the vulnerability existed or how many visitors received the code. Wallets named in the script had received about $7,000, though some were active before the attack. People who entered card details on affected sites that day are advised to watch their statements."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Optimizely's status page still lists the security incident as unresolved and promises updates there. Salesforce has disabled Optimizely scripts and says it will notify customers if it finds unauthorized access to their data."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/"
+    },
+    {
+     "name": "Optimizely",
+     "url": "https://status.optimizely.com/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n2",
+   "story_key": "us-remote-access-chip-rule-five-countries",
+   "title": "The US bars China from renting advanced chips in data centers in five countries and requires licenses for sales there",
+   "category": "Chips & Hardware",
+   "published": "2026-11-15T12:00:00-05:00",
+   "tldr": "A new US Commerce Department rule restricts remote access to advanced chips housed in Indonesia, Malaysia, Singapore, Thailand and Brazil, and makes large sales to those countries subject to licenses.",
+   "why_selected": "A significant widening of chip export controls that moves the compliance burden from chip makers to data center operators across Southeast Asia and Brazil.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The United States restricts exports of its most advanced computer chips to China, Russia and Iran. The controls cover shipping hardware, but a customer can also rent the same chips over the internet from a data center in another country. From 2021 to 2024 Washington required US-based cloud providers to make sure they did not serve Chinese customers this way, The Register notes. Cloud operators elsewhere had no such obligation."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Commerce Department announced on Sunday a rule that it says closes this loophole. Its Bureau of Industry and Security will ban remote access to certain graphics processors and servers running in data centers in Indonesia, Malaysia, Singapore, Thailand and Brazil, and will require a license before advanced chips and servers are sold into those five countries. Companies based there are deemed to present a higher-than-normal risk of diversion; when transferring high volumes of advanced chips they must apply for a license with know-your-customer controls and, if it is granted, file monthly reports naming every party to a transaction and the chips' final destination. The rule takes effect 90 days after publication in the Federal Register. Computing used exclusively for commercial recommender systems is exempt."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The rule follows the case of Megaspeed, a Singaporean data center firm at the center of the scandal that led Nvidia chief executive Jensen Huang to resign; Megaspeed denies smuggling chips. Neil Shah of the analyst firm Counterpoint told The Register that the rules shift the burden of complying with export controls from hardware makers to cloud operators, who must show regulators that their computing capacity is not passed on to embargoed nations or risk losing access to US chips. He expects a severe short-term shortage of computing power for Chinese technology companies and a stronger push toward domestic alternatives such as Huawei's Ascend ecosystem. The Register says it remains to be seen whether the rules slow data center development in the five countries."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Enforcement rests with the Commerce Department, and Ars Technica reports it is unclear how aggressively it will act. Late on Monday the Commerce and Justice departments confirmed a criminal investigation into Megaspeed."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/off-prem/2026/11/17/us-extends-chip-sale-restrictions-to-more-asian-countries-to-reduce-risk-of-diversion-to-china/5310307"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n3",
+   "story_key": "garante-meta-805m-camera-roll-fine",
+   "title": "Italy's privacy regulator fines Meta €805 million because Facebook's Android app read users' photo galleries without specific consent",
+   "category": "Tech Policy & Antitrust",
+   "published": "2026-11-14T12:00:00-05:00",
+   "tldr": "Italy's data protection authority fined Meta €805 million ($886 million) over a Facebook feature that scanned Android users' photos and videos to suggest posts, affecting about 20 million people.",
+   "why_selected": "One of the largest fines the Italian regulator has issued, and a ruling that treats any app access to data stored on a phone as requiring specific consent.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Since 2023 Facebook has offered a feature that looks through the photos and videos stored on a phone, the camera roll, and suggests items the user might want to post. To work, the app needs the phone's permission to read the gallery. Italy's data protection authority, known as the Garante, opened an investigation in July 2025 after a complaint from a consumer protection center in Bolzano, Sky TG24 reports."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Saturday, November 14, the Garante announced a fine of €805 million, about $886 million, against Meta. It found that the Facebook app for Android accessed photos, videos and their metadata on Italian users' phones without specific consent and without informing users adequately. The app asked for gallery access through a single permission covering the whole app and several features, preceded by a generic notice about enabling other features, and the suggestion feature was switched on by default. Within 60 days Meta must ask for consent in a separate request specific to the feature, explain what it does and keep it off by default, including for people who already granted permission. Meta said it strongly disagrees with the decision, called the amount disproportionate and intends to appeal."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The legal basis is notable. The Garante relied on article 122 of Italy's privacy code, which it says protects the smartphone as part of a person's private sphere: any access to information stored on the device needs free and informed consent, whether or not data is transmitted or harm occurs. The Garante rejected Meta's argument that it lacked jurisdiction. The amount, about 0.47% of the group's worldwide revenue, reflects roughly 20 million affected Android users in Italy, the duration of the violation, an earlier 2019 measure against the company and what the regulator called poor cooperation."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Meta must report its initiatives to the Garante within 30 days and its measures within 90. The regulator will examine separately a feature launched in 2026 that processes gallery content in the cloud."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/italian-regulator-fines-meta-886-million-privacy"
+    },
+    {
+     "name": "Sky TG24",
+     "url": "https://tg24.sky.it/cronaca/2026/11/14/garante-805-milioni-multa-a-meta"
+    },
+    {
+     "name": "Garante per la protezione dei dati personali",
+     "url": "https://www.garanteprivacy.it/home/stampa-comunicazione/comunicati-stampa"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n4",
+   "story_key": "jpmorganchase-bank-payments-outage-nov-2026",
+   "title": "A software bug at JPMorganChase slows payments across US banks, with thousands of customers reporting problems",
+   "category": "Telecom & Internet",
+   "published": "2026-11-16T15:49:00-05:00",
+   "tldr": "JPMorganChase blamed a software bug in its own on-premise systems for slow transactions on Monday that spread to customers of other banks and to Zelle transfers; it says there is no sign of a cyberattack.",
+   "why_selected": "A major outage at the largest US retail bank that rippled to other institutions, days after the Microsoft 365 and FAA failures.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Banks do not operate in isolation: a transfer between customers of two institutions needs both sides' systems to respond. Zelle, the person-to-person payment service adopted by major US banks, works the same way; it has no accounts of its own and moves money between accounts held at participating banks and credit unions. A slowdown at one very large bank can therefore show up as failed or delayed payments for customers elsewhere. JPMorganChase is the top US retail bank and holds more than 10 percent of all US deposits, WIRED notes."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, November 16, thousands of people reported problems with their banks on the outage-tracking site Downdetector. Reports began around 9:30 am ET and peaked around 2 pm, according to WIRED; at 3 pm Chase, Bank of America, US Bank and Wells Fargo had the most reports, Engadget wrote. JPMorganChase spokesperson Pablo Rodriguez said the bank had \"a temporary issue related to a software bug in on-premise hardware systems\", meaning equipment in its own facilities, and that there was no evidence it was cyber-related. He said customers still had access to their accounts and funds, but that serving some of them was taking longer than usual, and that other banks were affected only where they were party to a transaction with JPMorganChase."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The other companies named in user reports mostly said their own systems were fine. Zelle said it was operating as it should. US Bank said its systems were not directly affected but that Zelle payments involving another institution could be delayed. Mastercard, Visa, Capital One and Bank of America all said they were operating normally, and Mastercard called the Downdetector data on it \"not correct\". The episode also came days after a global Microsoft 365 outage and a nationwide ground stop ordered by the Federal Aviation Administration, both traced to technical faults."
+    },
+    {
+     "heading": "What to watch",
+     "body": "JPMorganChase has not said which systems failed or how many transactions were delayed, and WIRED reported that the overall impact remained unclear."
+    }
+   ],
+   "sources": [
+    {
+     "name": "WIRED",
+     "url": "https://www.wired.com/story/jpmorganchase-bank-outage-oh-come-on/"
+    },
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2318431/customers-at-major-banks-report-difficulty-accessing-accounts-online/"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

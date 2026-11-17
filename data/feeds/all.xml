@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 19:57:22 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 11:46:04 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Attackers plant malware on CNN, BBC, Zoom and Salesforce pages through the web-testing service Optimizely</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n1</guid>
+    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Attackers abused a flaw in Optimizely's signup flow to add malicious code to scripts that 178 organizations load on their websites, exposing visitors to theft of card details and cryptocurrency. (BleepingComputer, Optimizely)</description>
+  </item>
+  <item>
+    <title>The US bars China from renting advanced chips in data centers in five countries and requires licenses for sales there</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n2</guid>
+    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>A new US Commerce Department rule restricts remote access to advanced chips housed in Indonesia, Malaysia, Singapore, Thailand and Brazil, and makes large sales to those countries subject to licenses. (Ars Technica, The Register)</description>
+  </item>
+  <item>
+    <title>Italy's privacy regulator fines Meta €805 million because Facebook's Android app read users' photo galleries without specific consent</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n3</guid>
+    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
+    <category>Tech / Tech Policy &amp; Antitrust</category>
+    <description>Italy's data protection authority fined Meta €805 million ($886 million) over a Facebook feature that scanned Android users' photos and videos to suggest posts, affecting about 20 million people. (The Record, Sky TG24, Garante per la protezione dei dati personali)</description>
+  </item>
+  <item>
+    <title>A software bug at JPMorganChase slows payments across US banks, with thousands of customers reporting problems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n4</guid>
+    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
+    <category>Tech / Telecom &amp; Internet</category>
+    <description>JPMorganChase blamed a software bug in its own on-premise systems for slow transactions on Monday that spread to customers of other banks and to Zelle transfers; it says there is no sign of a cyberattack. (WIRED, Engadget)</description>
+  </item>
   <item>
     <title>Quantitative measurement of viscosity in two-dimensional electron fluids</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</link>
@@ -454,38 +486,6 @@
     <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
     <category>Biology / Immunology</category>
     <description>In mice, the gut antibody IgA slows the renewal of the colon lining through a surface protein called DMBT1, and its absence raises susceptibility to colorectal tumors. (Gregory P. Donaldson, Gabriella Lima dos Reis, Marwa Saad et al. · The Rockefeller University)</description>
-  </item>
-  <item>
-    <title>Independent interferometric observable confirms black hole shadow in M87*</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11241-9</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11241-9</guid>
-    <pubDate>Fri, 13 Nov 2026 14:24:11 +0000</pubDate>
-    <category>Science / Astrophysics &amp; cosmology</category>
-    <description>An independent imaging method built only on calibration-proof measurements recovers the ring around M87's black hole, 42.2 microarcseconds across, implying a mass of about 6.5 billion Suns. (Samuel Lai, Nithyanandan Thyagarajan, O. Ivy Wong et al.)</description>
-  </item>
-  <item>
-    <title>Hadean mantle depletion and 3.95-Gyr subduction implied by North China rocks</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11280-2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11280-2</guid>
-    <pubDate>Fri, 13 Nov 2026 14:24:11 +0000</pubDate>
-    <category>Science / Earth science</category>
-    <description>A newly found 3.95-billion-year-old rock in North China formed from ocean crust buried to mantle depths, suggesting a short-lived subduction event early in Earth's history. (Hangqiang Xie, Chunyan Dong, Pengchuan Li et al.)</description>
-  </item>
-  <item>
-    <title>Flexible rubber blades for tidal turbines</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11278-w</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-13/doi-10-1038-s41586-026-11278-w</guid>
-    <pubDate>Fri, 13 Nov 2026 14:24:11 +0000</pubDate>
-    <category>Science / Energy science</category>
-    <description>Tidal turbine blades made of flexible rubber matched the energy yield of rigid blades with active pitch control while cutting fatigue-causing load swings by up to a third. (Zhehong Zhang, Junchen Tan, Eric-Carin Neba et al.)</description>
-  </item>
-  <item>
-    <title>Jensen Huang resigns as Nvidia's CEO, CFO Colette Kress takes over on an interim basis, and the shares open down more than 13%</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n1</guid>
-    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
-    <category>Business / Earnings &amp; Companies</category>
-    <description>Nvidia's co-founder Jensen Huang resigned as CEO and director with immediate effect; CFO Colette Kress is interim CEO while the board searches for a successor, and Huang has agreed to testify to Congress. (TechCrunch, BBC, TechCrunch)</description>
   </item>
 </channel>
 </rss>

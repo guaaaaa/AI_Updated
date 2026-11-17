@@ -1,5 +1,41 @@
 [
  {
+  "id": "2026-11-17-n1",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "Attackers plant malware on CNN, BBC, Zoom and Salesforce pages through the web-testing service Optimizely",
+  "tldr": "Attackers abused a flaw in Optimizely's signup flow to add malicious code to scripts that 178 organizations load on their websites, exposing visitors to theft of card details and cryptocurrency.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Optimizely"
+ },
+ {
+  "id": "2026-11-17-n2",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "The US bars China from renting advanced chips in data centers in five countries and requires licenses for sales there",
+  "tldr": "A new US Commerce Department rule restricts remote access to advanced chips housed in Indonesia, Malaysia, Singapore, Thailand and Brazil, and makes large sales to those countries subject to licenses.",
+  "category": "Chips & Hardware",
+  "byline": "Ars Technica, The Register"
+ },
+ {
+  "id": "2026-11-17-n3",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "Italy's privacy regulator fines Meta €805 million because Facebook's Android app read users' photo galleries without specific consent",
+  "tldr": "Italy's data protection authority fined Meta €805 million ($886 million) over a Facebook feature that scanned Android users' photos and videos to suggest posts, affecting about 20 million people.",
+  "category": "Tech Policy & Antitrust",
+  "byline": "The Record, Sky TG24, Garante per la protezione dei dati personali"
+ },
+ {
+  "id": "2026-11-17-n4",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "A software bug at JPMorganChase slows payments across US banks, with thousands of customers reporting problems",
+  "tldr": "JPMorganChase blamed a software bug in its own on-premise systems for slow transactions on Monday that spread to customers of other banks and to Zelle transfers; it says there is no sign of a cyberattack.",
+  "category": "Telecom & Internet",
+  "byline": "WIRED, Engadget"
+ },
+ {
   "id": "2026-11-16-n1",
   "date": "2026-11-16",
   "type": "news",
