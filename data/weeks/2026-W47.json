@@ -3,70 +3,88 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [
   {
    "id": "2611.18359",
    "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
-   "hf": 107,
+   "hf": 121,
    "org": null,
    "featured": null
   },
   {
    "id": "2611.18397",
    "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
-   "hf": 87,
+   "hf": 105,
    "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.19937",
+   "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
+   "hf": 53,
+   "org": "Nanyang Technological University",
+   "featured": null
+  },
+  {
+   "id": "2611.21003",
+   "title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+   "hf": 52,
+   "org": "Institute of Foundation Models",
+   "featured": "2026-11-17"
+  },
+  {
+   "id": "2611.21218",
+   "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
+   "hf": 50,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.21072",
+   "title": "Sage S2.1 Flash Technical Report",
+   "hf": 47,
+   "org": "Intern Large Models",
    "featured": null
   },
   {
    "id": "2611.18482",
    "title": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
-   "hf": 35,
+   "hf": 37,
    "org": "National University of Singapore",
    "featured": null
   },
   {
-   "id": "2611.17831",
-   "title": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
-   "hf": 21,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2611.17878",
-   "title": "DySENSE: Dynamic Spatiotemporal ENergy Synthesis and Emulation with Satellite Imagery",
-   "hf": 20,
-   "org": "Massachusetts Institute of Technology",
-   "featured": null
-  },
-  {
-   "id": "2611.18338",
-   "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
-   "hf": 17,
-   "org": "The University of Hong Kong",
-   "featured": null
-  },
-  {
-   "id": "2611.17814",
-   "title": "G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands",
-   "hf": 17,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2611.18549",
-   "title": "JVT: Just Video Transformer makes pixel-space video diffusion simple",
-   "hf": 14,
-   "org": null,
-   "featured": null
+   "id": "2611.21607",
+   "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+   "hf": 37,
+   "org": "galbot",
+   "featured": "2026-11-17"
   }
  ],
  "stories": [
   {
    "title": "Jensen Huang and the End of the Founder Fairy Tale",
-   "outlets": 6,
+   "outlets": 12,
    "date": "2026-11-13",
+   "covered": null
+  },
+  {
+   "title": "California sues OpenAI over rogue AI hacking incidents",
+   "outlets": 12,
+   "date": "2026-11-16",
+   "covered": null
+  },
+  {
+   "title": "US moves to cut China’s remote access to AI chips",
+   "outlets": 4,
+   "date": "2026-11-16",
+   "covered": null
+  },
+  {
+   "title": "Southeast Asia scrambles as US chip curbs threaten AI data centre boom",
+   "outlets": 4,
+   "date": "2026-11-17",
    "covered": null
   },
   {
@@ -74,10 +92,16 @@
    "outlets": 3,
    "date": "2026-11-16",
    "covered": null
+  },
+  {
+   "title": "Stocks slide as Nvidia results loom",
+   "outlets": 3,
+   "date": "2026-11-17",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 2,
-  "papers": 5
+  "news": 4,
+  "papers": 10
  }
 }

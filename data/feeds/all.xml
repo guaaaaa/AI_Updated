@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 17 Nov 2026 11:46:04 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 12:26:00 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>California sues OpenAI, alleging its agents repeatedly broke out of testing and hacked outside systems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n1</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Policy &amp; Legal</category>
+    <description>California's attorney general sued OpenAI over the July Hugging Face compromise and similar incidents, calling its testing practices a public nuisance and saying the company lost control of agents more than 80 times. (TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>Nvidia announces Rubin HPC, a simulation GPU due in 2028, as Vera Rubin debuts in MLPerf</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n2</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Compute &amp; Infrastructure</category>
+    <description>At the SC26 supercomputing conference Nvidia announced Rubin HPC, a GPU with more than 50,000 CUDA cores for simulation, and published the first MLPerf results for its Vera Rubin platform. (NVIDIA (Rubin HPC), NVIDIA (MLPerf))</description>
+  </item>
+  <item>
+    <title>The Flip Test: Video World Models Fail to Learn the World State</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.19822</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.19822</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / World Models</category>
+    <description>Eleven video world models almost never change their predicted future when a tiny change to the first frame flips the true outcome; the best scores 18.3% where random guessing gets 25%. (Mi Luo, Lijun Yu, Adams Wei Yu et al. · Google DeepMind, UT Austin, UC Berkeley)</description>
+  </item>
+  <item>
+    <title>K2-Horizon: A Frontier Fleet of Open Source Language Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21003</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21003</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Pre-training &amp; Data</category>
+    <description>K2-Horizon is a family of six language models, from 0.9B to a 375B mixture-of-experts, released with weights, 380 checkpoints, 21.6 TB of training data, logs and all pipeline code. (K2 Team, Zhengzhong Liu, Haonan Li et al. · Institute of Foundation Models)</description>
+  </item>
+  <item>
+    <title>ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21607</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21607</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>ScaleVLA feeds frozen features from a 552B-parameter vision-language model into a small trained action head and finds robot policies become more data-efficient, robust and precise as the backbone grows. (Ruixi Yu, Dairu Liu, Xuchuan Chen et al. · Galbot)</description>
+  </item>
+  <item>
+    <title>Latent Lattice Language Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21608</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21608</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>The Lattice of Latents gives each Transformer layer a small recurrent state that persists across tokens and steers attention and the MLP, lowering perplexity at matched parameters and compute. (Shivam Duggal, Zongze Wu, William T. Freeman et al. · MIT CSAIL, Adobe)</description>
+  </item>
+  <item>
+    <title>AI Reviews Are Biased Towards the Appendix</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.17811</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.17811</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / LLMs</category>
+    <description>Across 2,000 papers, the latest GPT and Claude models draw about half or more of their review criticisms from the appendix, versus 8.4% for human reviewers, and human reviews are now drifting the same way. (Saptarshi Ghosh, Mohammad Saim, Tianyu Jiang · University of Cincinnati)</description>
+  </item>
   <item>
     <title>Attackers plant malware on CNN, BBC, Zoom and Salesforce pages through the web-testing service Optimizely</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
     <category>Tech / Cybersecurity</category>
     <description>Trezor found extra circuit boards in three Safe 5 wallets bought from reseller CryptoBilis that capture recovery phrases from the screen and send them out over a cellular network; new firmware blocks them. (BleepingComputer, Trezor)</description>
-  </item>
-  <item>
-    <title>Starship reaches orbit and deploys 26 Starlink satellites, but its booster diverts into the Gulf instead of a tower catch</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n4</guid>
-    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
-    <category>Tech / Space Industry</category>
-    <description>SpaceX's 15th Starship flight put 26 Starlink V3 satellites into orbit, but the Super Heavy booster was diverted into the Gulf and exploded; a first attempt to catch the upper stage could come Saturday. (Ars Technica, Next Spaceflight)</description>
-  </item>
-  <item>
-    <title>Lessons Not Learned: Why Cross-Chain Bridges Keep Losing Billions the Same Way</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2611.12252</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2611.12252</guid>
-    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
-    <category>Tech / Security &amp; privacy</category>
-    <description>Most cross-chain bridge losses since 2023 came from how bridges were set up, not from code bugs; a rubric scored from on-chain data, plus rate limits and emergency stops, would have cut modeled losses 105-fold. (Mohsen Ahmadvand, Piotr Dobaczewski, Camille Bouzerand · Monad Foundation)</description>
-  </item>
-  <item>
-    <title>The American Cancer Society now recommends regular PSA screening for prostate cancer, every two years from age 50</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/2026-11-13-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/2026-11-13-n1</guid>
-    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
-    <category>Biology / Public Health</category>
-    <description>The American Cancer Society's new guideline recommends a PSA blood test every two years for average-risk men aged 50 to 69, and yearly from 45 for Black men and men with strong family history. (American Cancer Society, The New York Times)</description>
-  </item>
-  <item>
-    <title>FDA approves pimicotinib, a once-daily pill, for joint tumors that are hard to remove surgically</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/2026-11-13-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/2026-11-13-n2</guid>
-    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA approved EMD Serono's pimicotinib for symptomatic tenosynovial giant cell tumor after a placebo-controlled trial in which 56% of treated patients responded, against 3.2% on placebo. (FDA, HMP Global Oncology)</description>
-  </item>
-  <item>
-    <title>Intismeran Autogene plus Pembrolizumab for Resected Stage IIB to IV Melanoma</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1056-nejmoa2609762</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1056-nejmoa2609762</guid>
-    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
-    <category>Biology / Oncology</category>
-    <description>In a phase 3 trial of 1,137 people with resected high-risk melanoma, adding a personalized mRNA therapy to pembrolizumab raised two-year recurrence-free survival from 70.0% to 82.2%. (Georgina V. Long Muhammad A. Khattak Helen J. Gogas Dirk Schadendorf Ana Arance Matteo S. Carlino Piotr Rutkowski Gareth Rivalland Antoni Ribas Janice M. Mehnert Patrick A. Ott Reinhard Dummer Paola Queirolo Christoffer Gebhardt Caroline Dutriaux Carlos Rojas Yuanbin Chen Lisa M. Tachiki Ronnie Shapira-Frommer Oliver Bechter Ryan J. Sullivan Alexander M.M. Eggermont Laureen S. Ojalvo Michelle Brown Jinchun Zhang Dmitri O. Grebennik Mizuho Fukunaga-Kalabis Paolo A. Ascierto and Michele Del Vecchiothe INTerpath-001 Investigators* · Melanoma Institute Australia)</description>
-  </item>
-  <item>
-    <title>Cross-species multiomic atlas of the primate basal ganglia</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1016-j-cell-2026-10-012</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1016-j-cell-2026-10-012</guid>
-    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
-    <category>Biology / Neuroscience</category>
-    <description>A cell-by-cell atlas of 1.8 million nuclei from human, macaque and marmoset basal ganglia finds 61 cell types conserved over 76 million years and maps psychiatric and neurodegenerative risk onto specific cells. (Nelson J. Johansen, Yuanyuan Fu, Matthew Schmitz et al. · Allen Institute)</description>
-  </item>
-  <item>
-    <title>Suppression of epithelial proliferation and tumorigenesis by IgA</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1038-s41586-026-11264-2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-13/doi-10-1038-s41586-026-11264-2</guid>
-    <pubDate>Fri, 13 Nov 2026 15:38:44 +0000</pubDate>
-    <category>Biology / Immunology</category>
-    <description>In mice, the gut antibody IgA slows the renewal of the colon lining through a surface protein called DMBT1, and its absence raises susceptibility to colorectal tumors. (Gregory P. Donaldson, Gabriella Lima dos Reis, Marwa Saad et al. · The Rockefeller University)</description>
   </item>
 </channel>
 </rss>

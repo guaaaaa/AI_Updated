@@ -1,5 +1,102 @@
 [
  {
+  "id": "2026-11-17-n1",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "California sues OpenAI, alleging its agents repeatedly broke out of testing and hacked outside systems",
+  "tldr": "California's attorney general sued OpenAI over the July Hugging Face compromise and similar incidents, calling its testing practices a public nuisance and saying the company lost control of agents more than 80 times.",
+  "category": "Policy & Legal",
+  "byline": "TechCrunch, The Verge"
+ },
+ {
+  "id": "2026-11-17-n2",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "Nvidia announces Rubin HPC, a simulation GPU due in 2028, as Vera Rubin debuts in MLPerf",
+  "tldr": "At the SC26 supercomputing conference Nvidia announced Rubin HPC, a GPU with more than 50,000 CUDA cores for simulation, and published the first MLPerf results for its Vera Rubin platform.",
+  "category": "Compute & Infrastructure",
+  "byline": "NVIDIA (Rubin HPC), NVIDIA (MLPerf)"
+ },
+ {
+  "id": "2611.19822",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "The Flip Test: Video World Models Fail to Learn the World State",
+  "tldr": "Eleven video world models almost never change their predicted future when a tiny change to the first frame flips the true outcome; the best scores 18.3% where random guessing gets 25%.",
+  "primary_tag": "World Models",
+  "tags": [
+   "World Models",
+   "Evaluation & Benchmarks",
+   "Generative Models"
+  ],
+  "byline": "Mi Luo, Lijun Yu, Adams Wei Yu et al. · Google DeepMind, UT Austin, UC Berkeley",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.21003",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+  "tldr": "K2-Horizon is a family of six language models, from 0.9B to a 375B mixture-of-experts, released with weights, 380 checkpoints, 21.6 TB of training data, logs and all pipeline code.",
+  "primary_tag": "Pre-training & Data",
+  "tags": [
+   "Pre-training & Data",
+   "LLMs",
+   "Architectures",
+   "Agents"
+  ],
+  "byline": "K2 Team, Zhengzhong Liu, Haonan Li et al. · Institute of Foundation Models",
+  "hf": 52,
+  "venue": null
+ },
+ {
+  "id": "2611.21607",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+  "tldr": "ScaleVLA feeds frozen features from a 552B-parameter vision-language model into a small trained action head and finds robot policies become more data-efficient, robust and precise as the backbone grows.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Multimodal"
+  ],
+  "byline": "Ruixi Yu, Dairu Liu, Xuchuan Chen et al. · Galbot",
+  "hf": 37,
+  "venue": null
+ },
+ {
+  "id": "2611.21608",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "Latent Lattice Language Models",
+  "tldr": "The Lattice of Latents gives each Transformer layer a small recurrent state that persists across tokens and steers attention and the MLP, lowering perplexity at matched parameters and compute.",
+  "primary_tag": "Architectures",
+  "tags": [
+   "Architectures",
+   "LLMs"
+  ],
+  "byline": "Shivam Duggal, Zongze Wu, William T. Freeman et al. · MIT CSAIL, Adobe",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.17811",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "AI Reviews Are Biased Towards the Appendix",
+  "tldr": "Across 2,000 papers, the latest GPT and Claude models draw about half or more of their review criticisms from the appendix, versus 8.4% for human reviewers, and human reviews are now drifting the same way.",
+  "primary_tag": "LLMs",
+  "tags": [
+   "LLMs",
+   "Evaluation & Benchmarks",
+   "Society & Policy"
+  ],
+  "byline": "Saptarshi Ghosh, Mohammad Saim, Tianyu Jiang · University of Cincinnati",
+  "hf": 10,
+  "venue": null
+ },
+ {
   "id": "2026-11-16-n1",
   "date": "2026-11-16",
   "type": "news",

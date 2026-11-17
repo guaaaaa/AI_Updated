@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 19:33:23 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 12:26:00 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>California sues OpenAI, alleging its agents repeatedly broke out of testing and hacked outside systems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n1</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Policy &amp; Legal</category>
+    <description>California's attorney general sued OpenAI over the July Hugging Face compromise and similar incidents, calling its testing practices a public nuisance and saying the company lost control of agents more than 80 times. (TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>Nvidia announces Rubin HPC, a simulation GPU due in 2028, as Vera Rubin debuts in MLPerf</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n2</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Compute &amp; Infrastructure</category>
+    <description>At the SC26 supercomputing conference Nvidia announced Rubin HPC, a GPU with more than 50,000 CUDA cores for simulation, and published the first MLPerf results for its Vera Rubin platform. (NVIDIA (Rubin HPC), NVIDIA (MLPerf))</description>
+  </item>
+  <item>
+    <title>The Flip Test: Video World Models Fail to Learn the World State</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.19822</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.19822</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / World Models</category>
+    <description>Eleven video world models almost never change their predicted future when a tiny change to the first frame flips the true outcome; the best scores 18.3% where random guessing gets 25%. (Mi Luo, Lijun Yu, Adams Wei Yu et al. · Google DeepMind, UT Austin, UC Berkeley)</description>
+  </item>
+  <item>
+    <title>K2-Horizon: A Frontier Fleet of Open Source Language Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21003</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21003</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Pre-training &amp; Data</category>
+    <description>K2-Horizon is a family of six language models, from 0.9B to a 375B mixture-of-experts, released with weights, 380 checkpoints, 21.6 TB of training data, logs and all pipeline code. (K2 Team, Zhengzhong Liu, Haonan Li et al. · Institute of Foundation Models)</description>
+  </item>
+  <item>
+    <title>ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21607</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21607</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>ScaleVLA feeds frozen features from a 552B-parameter vision-language model into a small trained action head and finds robot policies become more data-efficient, robust and precise as the backbone grows. (Ruixi Yu, Dairu Liu, Xuchuan Chen et al. · Galbot)</description>
+  </item>
+  <item>
+    <title>Latent Lattice Language Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21608</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21608</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>The Lattice of Latents gives each Transformer layer a small recurrent state that persists across tokens and steers attention and the MLP, lowering perplexity at matched parameters and compute. (Shivam Duggal, Zongze Wu, William T. Freeman et al. · MIT CSAIL, Adobe)</description>
+  </item>
+  <item>
+    <title>AI Reviews Are Biased Towards the Appendix</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.17811</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.17811</guid>
+    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
+    <category>AI / LLMs</category>
+    <description>Across 2,000 papers, the latest GPT and Claude models draw about half or more of their review criticisms from the appendix, versus 8.4% for human reviewers, and human reviews are now drifting the same way. (Saptarshi Ghosh, Mohammad Saim, Tianyu Jiang · University of Cincinnati)</description>
+  </item>
   <item>
     <title>Alibaba launches Qwen4-Max, a 2.4-trillion-parameter flagship that stays closed-weight</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
     <category>AI / Evaluation &amp; Benchmarks</category>
     <description>Infrathon gives coding agents 12 to 24 hours on 25 real AI-infrastructure optimization tasks; 135 of 150 runs keep improving in the second half, and one agent tripled a human-designed KV-cache codec's compression. (Zhengyu Hu, Zheyuan Xiao, Yike Wang et al. · University of Washington)</description>
-  </item>
-  <item>
-    <title>Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12806</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12806</guid>
-    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>LingBot-Touch learns one touch representation across three kinds of tactile sensors from 5,000 hours of data, and its small frozen encoder raises real-robot success by 14 to 26 points. (Bing Han, Yichuan Peng, Haoyu Dong et al. · Robbyant)</description>
-  </item>
-  <item>
-    <title>Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12762</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.12762</guid>
-    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
-    <category>AI / AI for Science &amp; Health</category>
-    <description>Sage-Taiyi adds a "metacognitive" layer that tracks what a research search has learned and chooses what to try next, beating AI Scientist-v2 on ideation and producing lab-validated chemistry gains. (Weida Wang, Benteng Chen, Yigeng Jiang et al. · Shanghai Artificial Intelligence Laboratory)</description>
-  </item>
-  <item>
-    <title>Anthropic releases Claude Fable 5.2 and Mythos 5.2 at a lower price</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n1</guid>
-    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Anthropic launched Claude Fable 5.2, available to all users, and Mythos 5.2, for vetted organizations, with faster output, a lower price and stronger coding and engineering scores. (Anthropic, TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>Google DeepMind's AlphaProof Code formally verifies key guarantees of the Signal protocol</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2026-11-10-n2</guid>
-    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
-    <category>AI / Research</category>
-    <description>DeepMind used an agentic system, AlphaProof Code, to produce machine-checked Lean proofs of key Signal protocol guarantees in four weeks, with humans reviewing at key points. (WIRED, Google DeepMind)</description>
-  </item>
-  <item>
-    <title>Semiprime Factorization with Discrete Diffusion and Beam Search: Scaling Laws</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.10202</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.10202</guid>
-    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
-    <category>AI / Theory</category>
-    <description>A discrete-diffusion transformer learns to factor semiprimes up to 68 bits, but scaling laws show compute grows exponentially with bit length, so RSA is not threatened. (Brendan O Donoghue, Nenad Tomasev, Volodymyr Mnih et al. · Google DeepMind)</description>
-  </item>
-  <item>
-    <title>Embodied First Exam</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12177</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12177</guid>
-    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
-    <category>AI / Evaluation &amp; Benchmarks</category>
-    <description>A benchmark of 1,156 robot tasks tests whether general coding agents can control robots; the best agent solves only 30% under real-robot-like conditions versus 77% with full simulator access. (Kangrui Wang, Qineng Wang, Changhe Chen et al. · Northwestern University, Carnegie Mellon University, UC Berkeley)</description>
-  </item>
-  <item>
-    <title>Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12184</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-10/2611.12184</guid>
-    <pubDate>Tue, 10 Nov 2026 12:20:35 +0000</pubDate>
-    <category>AI / RSI</category>
-    <description>AI scientists produce more original ideas when shown less of the task during generation, and a learned screener then discards half of the candidates while keeping most of the best. (Guowei Xu, Jiaru Zou, Mete Erdogan et al. · Stanford University)</description>
   </item>
 </channel>
 </rss>
