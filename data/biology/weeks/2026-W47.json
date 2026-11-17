@@ -3,12 +3,25 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
- "stories": [],
+ "stories": [
+  {
+   "title": "F.D.A. Rejects Closely Watched Lung Cancer Drug From China",
+   "outlets": 3,
+   "date": "2026-11-15",
+   "covered": null
+  },
+  {
+   "title": "U.S. Loses Measles Elimination Status After 26 Years. It Won't Be Easy To Get It Back",
+   "outlets": 3,
+   "date": "2026-11-15",
+   "covered": null
+  }
+ ],
  "featured": {
-  "news": 3,
-  "papers": 3
+  "news": 6,
+  "papers": 6
  },
  "items": [
   {
@@ -46,6 +59,42 @@
    "date": "2026-11-16",
    "type": "paper",
    "title": "Limited genomic predictability of complex trait evolution despite genotype-phenotype stability"
+  },
+  {
+   "id": "2026-11-17-n1",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "FDA approves giredestrant, a Roche pill for advanced breast cancer with ESR1 mutations"
+  },
+  {
+   "id": "2026-11-17-n2",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "A bladder-instilled immunotherapy cut cancer recurrence by 68% in a phase 3 trial, CG Oncology reports"
+  },
+  {
+   "id": "2026-11-17-n3",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "CDC scientists count 112 measles infections in pregnancy and 13 babies born with measles since 2025"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2604058",
+   "date": "2026-11-17",
+   "type": "paper",
+   "title": "Semaglutide for the Treatment of Obesity in Children 6 to <12 Years of Age"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11237-5",
+   "date": "2026-11-17",
+   "type": "paper",
+   "title": "Validation of clinical and preclinical obesity across global cohorts"
+  },
+  {
+   "id": "doi-10-1126-science-aef9342",
+   "date": "2026-11-17",
+   "type": "paper",
+   "title": "Poisoned hunting weapons, megafauna, and plant use at a 125,000-year-old Arabian paleolakeshore"
   }
  ]
 }

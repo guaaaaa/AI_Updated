@@ -1,5 +1,77 @@
 [
  {
+  "id": "2026-11-17-n1",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "FDA approves giredestrant, a Roche pill for advanced breast cancer with ESR1 mutations",
+  "tldr": "The FDA approved Roche's giredestrant (Wilserdly) with everolimus for advanced ER-positive breast cancer carrying an ESR1 mutation, after a trial showed a longer delay before the cancer worsened.",
+  "category": "Drugs & Approvals",
+  "byline": "Genentech (press release via Yahoo Finance), Medical Daily, STAT"
+ },
+ {
+  "id": "2026-11-17-n2",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "A bladder-instilled immunotherapy cut cancer recurrence by 68% in a phase 3 trial, CG Oncology reports",
+  "tldr": "In a 367-patient randomized trial, CG Oncology's cretostimogene lowered the risk of bladder cancer returning after surgery by 68% compared with monitoring alone, according to topline company results.",
+  "category": "Clinical Research",
+  "byline": "Quiver Quantitative (summary of CG Oncology press release), PharmaShots, STAT"
+ },
+ {
+  "id": "2026-11-17-n3",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "CDC scientists count 112 measles infections in pregnancy and 13 babies born with measles since 2025",
+  "tldr": "A preliminary CDC analysis in NEJM Evidence documents 112 confirmed measles cases in pregnant women and 13 newborns with congenital measles in the United States since the start of 2025.",
+  "category": "Public Health",
+  "byline": "The New York Times, NBC News (Associated Press), Associated Press via KSLA"
+ },
+ {
+  "id": "doi-10-1056-nejmoa2604058",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "Semaglutide for the Treatment of Obesity in Children 6 to <12 Years of Age",
+  "tldr": "In a two-year randomized trial of 167 children aged 6 to 11 with obesity, weekly semaglutide lowered BMI by 13.5% at 68 weeks while it rose 2.7% on placebo; stomach side effects were common.",
+  "primary_tag": "Maternal & child health",
+  "tags": [
+   "Maternal & child health",
+   "Metabolic & endocrine",
+   "Drug development"
+  ],
+  "byline": "Ania M. Jastreboff Nina M. Harder-Lauridsen Michelle Van Name Antje Körner Aaron S. Kelly Daniel Weghuber Jens-Christian Holm Christine Frithioff-Bøjsøe Shilpa Middolu Tina Buch and Martin Wabitschthe STEP Young Investigators* · Yale University School of Medicine; Ulm University Medical Center; University of Leipzig",
+  "hf": null,
+  "venue": "The New England Journal of Medicine"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11237-5",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "Validation of clinical and preclinical obesity across global cohorts",
+  "tldr": "Tested in 844,108 adults in four countries, a definition of obesity that adds waist measures and organ function to BMI separated people at high risk of death from those at modest risk.",
+  "primary_tag": "Epidemiology",
+  "tags": [
+   "Epidemiology",
+   "Metabolic & endocrine"
+  ],
+  "byline": "An Pan, Shengping Yang, Rafael Ramos et al. · King's College London; Huazhong University of Science and Technology; Kailuan General Hospital; North China University of Science and Technology; Pennington Biomedical Research Center; University of Colorado Anschutz; University of Girona; Università Cattolica del Sacro Cuore",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1126-science-aef9342",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "Poisoned hunting weapons, megafauna, and plant use at a 125,000-year-old Arabian paleolakeshore",
+  "tldr": "Stone points from a 125,000-year-old lakeshore in Saudi Arabia's Empty Quarter carry residues suggesting they were mounted on shafts and possibly tipped with plant poison.",
+  "primary_tag": "Evolution & ecology",
+  "tags": [
+   "Evolution & ecology"
+  ],
+  "byline": "Chris Clarkson, Gilbert J. Price, Amir Kalifi et al. · Griffith University; King Abdullah University of Science and Technology; Saudi Heritage Commission",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
   "id": "2026-11-16-n1",
   "date": "2026-11-16",
   "type": "news",

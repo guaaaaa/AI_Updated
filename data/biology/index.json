@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-17T13:21:05+00:00",
+ "updated": "2026-11-17T13:53:20+00:00",
  "domain": "biology",
  "days": [
+  {
+   "date": "2026-11-17",
+   "edition": "weekday",
+   "news": 3,
+   "papers": 3,
+   "backfill": false
+  },
   {
    "date": "2026-11-16",
    "edition": "weekday",
@@ -76,7 +83,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 42
+   "n": 48
   }
  ],
  "tag_groups": {
@@ -110,21 +117,22 @@
   ]
  },
  "tag_counts": {
+  "Maternal & child health": 2,
+  "Metabolic & endocrine": 2,
+  "Drug development": 3,
+  "Epidemiology": 4,
+  "Evolution & ecology": 7,
   "Cardiovascular": 6,
-  "Drug development": 2,
   "Development & aging": 2,
   "Neuroscience": 4,
   "Genetics & genomics": 6,
-  "Evolution & ecology": 6,
   "Devices & diagnostics": 2,
   "Oncology": 3,
   "Immunology": 2,
   "Microbiology": 3,
   "Molecular & cell biology": 1,
   "Neurology & mental health": 2,
-  "Epidemiology": 3,
-  "Infectious disease": 3,
-  "Maternal & child health": 1
+  "Infectious disease": 3
  },
  "news_categories": [
   "Genetics & Genomics",
@@ -140,10 +148,10 @@
   "Global Health"
  ],
  "category_counts": {
-  "Drugs & Approvals": 8,
-  "Public Health": 4,
+  "Drugs & Approvals": 9,
+  "Clinical Research": 3,
+  "Public Health": 5,
   "Microbes & Infectious Disease": 2,
-  "Clinical Research": 2,
   "Neuroscience & Mental Health": 2,
   "Genetics & Genomics": 1,
   "Evolution & Ecology": 2,

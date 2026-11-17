@@ -1,0 +1,317 @@
+{
+ "date": "2026-11-17",
+ "edition": "weekday",
+ "generated_at": "2026-11-17T13:53:19+00:00",
+ "summary": "A new pill for hormone-resistant breast cancer, a bladder cancer trial win, babies born with measles, and semaglutide tested in children as young as six.",
+ "news": [
+  {
+   "id": "2026-11-17-n1",
+   "story_key": "fda-giredestrant-wilserdly-esr1-breast-cancer-approval",
+   "title": "FDA approves giredestrant, a Roche pill for advanced breast cancer with ESR1 mutations",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-16T15:56:00-05:00",
+   "tldr": "The FDA approved Roche's giredestrant (Wilserdly) with everolimus for advanced ER-positive breast cancer carrying an ESR1 mutation, after a trial showed a longer delay before the cancer worsened.",
+   "why_selected": "A regulatory decision on a major new drug class member, backed by a randomized phase 3 trial, with a second and larger decision due within two weeks.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Many breast cancers are estrogen receptor (ER) positive: the receptor for the hormone estrogen fuels their growth, so they are treated with hormone-blocking drugs. After months or years of such therapy, tumors often develop mutations in ESR1 and become resistant. Genentech, the Roche unit that makes the new drug, says up to 40% of patients with hormone receptor-positive metastatic breast cancer develop these mutations."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 16 the FDA approved giredestrant, sold as Wilserdly, in combination with everolimus for adults with ER-positive, HER2-negative, ESR1-mutated breast cancer that is locally advanced or metastatic and has returned or progressed after hormone-based therapy. An FDA-authorized test must find the mutation; Medical Daily reports the agency authorized the FoundationOne Liquid CDx blood test for this. Giredestrant is a selective estrogen receptor degrader, or SERD: it blocks the receptor and helps break it down. Everolimus blocks a separate growth pathway called mTOR.\n\nThe approval rests on the phase 3 evERA trial, an open-label randomized study of 373 adults, 207 of them with ESR1-mutated tumors. Patients received giredestrant or their doctor's choice of a standard hormone drug, and all took everolimus. In the ESR1-mutated group the risk of progression or death was 62% lower (hazard ratio 0.38; 95% confidence interval 0.27 to 0.54). Median time before the cancer worsened was 10 months versus 5.5 months, and tumors shrank in 27% of patients versus 14%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The combination is taken entirely by mouth, at a stage where options narrow. The limits are clear as well. The trial was open-label, so patients and doctors knew who received what, and progression was judged by investigators. Overall survival data were immature, so it is not yet known whether patients live longer. Side effects seen in at least 20% of patients included mouth sores, rash, fatigue, diarrhea, pneumonitis (lung inflammation) and nausea, several of them known effects of everolimus. Genentech sponsored the trial."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The FDA is also reviewing giredestrant after surgery for stage I to III breast cancer at intermediate to high risk of recurrence, with a decision date of November 30. Survival results from evERA are still to come."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Genentech (press release via Yahoo Finance)",
+     "url": "https://finance.yahoo.com/healthcare/articles/fda-approves-genentech-wilserdly-giredestrant-222000500.html"
+    },
+    {
+     "name": "Medical Daily",
+     "url": "https://www.medicaldaily.com/fda-approves-wilserdly-esr1-breast-cancer-481330"
+    },
+    {
+     "name": "STAT",
+     "url": "https://www.statnews.com/2026/11/16/fda-approves-new-roche-breast-cancer-drug/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n2",
+   "story_key": "cg-oncology-cretostimogene-pivot-006-topline",
+   "title": "A bladder-instilled immunotherapy cut cancer recurrence by 68% in a phase 3 trial, CG Oncology reports",
+   "category": "Clinical Research",
+   "published": "2026-11-16T08:00:00-05:00",
+   "tldr": "In a 367-patient randomized trial, CG Oncology's cretostimogene lowered the risk of bladder cancer returning after surgery by 68% compared with monitoring alone, according to topline company results.",
+   "why_selected": "A positive randomized phase 3 result in a patient group that, according to the company, has no FDA-approved treatment after surgery; reported by several outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Non-muscle invasive bladder cancer (NMIBC) is bladder cancer that has not grown into the muscle of the bladder wall. Tumors can be surgically removed, but they can come back. In this trial, the comparison for patients classed as intermediate risk was surveillance, meaning monitoring without further treatment. CG Oncology says there are currently no FDA-approved adjuvant therapies (treatments given after surgery to prevent a return) for this group."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 16 CG Oncology announced topline results from PIVOT-006, a phase 3 trial of cretostimogene grenadenorepvec, an investigational immunotherapy delivered directly into the bladder. The trial enrolled 367 patients with intermediate-risk NMIBC or high-grade Ta tumors of 3 cm or less, all of whom had their tumors completely removed. They were randomly assigned to cretostimogene or to surveillance alone.\n\nThe trial met its primary endpoint. At a median follow-up of 17 months, the risk of recurrence was 68% lower with cretostimogene (hazard ratio 0.32; p<0.0001). A hazard ratio compares how fast events occur in two groups over time; 0.32 means recurrences came at roughly one third the rate. The company reported no treatment-related adverse events of grade 3 or higher (side effects are graded by severity) and no patients stopping because of treatment-related side effects."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the full data hold up, patients who now only wait and watch could have an active treatment that lowers the chance of the cancer returning. But this is a company announcement, not a peer-reviewed paper. The release does not give the absolute recurrence rates in each group, so the size of the benefit for a typical patient cannot yet be judged. The comparison group received no placebo, which means patients and doctors knew who was treated. The company itself cautions that topline data are preliminary and that the FDA may read the results differently or ask for more studies."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Detailed results are due at the Society of Urologic Oncology annual meeting on December 2. CG Oncology plans to seek FDA approval for this use in the second quarter of 2027."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Quiver Quantitative (summary of CG Oncology press release)",
+     "url": "https://www.quiverquant.com/news/CG+Oncology+Announces+Positive+Phase+3+PIVOT-006+Topline+Results+for+Cretostimogene+in+Intermediate-Risk+and+High-Grade+Ta+NMIBC"
+    },
+    {
+     "name": "PharmaShots",
+     "url": "https://pharmashots.com/37656/cgon-pivot006-nmibc"
+    },
+    {
+     "name": "STAT",
+     "url": "https://www.statnews.com/2026/11/16/bladder-cancer-immunotherapy-reduced-tumor-recurrence-cg-oncology/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n3",
+   "story_key": "us-congenital-measles-pregnancy-nejm-evidence",
+   "title": "CDC scientists count 112 measles infections in pregnancy and 13 babies born with measles since 2025",
+   "category": "Public Health",
+   "published": "2026-11-16T15:00:00-05:00",
+   "tldr": "A preliminary CDC analysis in NEJM Evidence documents 112 confirmed measles cases in pregnant women and 13 newborns with congenital measles in the United States since the start of 2025.",
+   "why_selected": "The first national tally of a complication that had almost vanished in the US, published by CDC scientists in a medical journal and covered by several major outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Measles is a highly contagious virus. The United States has held measles-free status since 2000, but falling vaccination rates have let it spread again: the CDC counts more than 7,500 cases over the past two years. One consequence is congenital measles, in which a pregnant woman passes the virus to her fetus and the baby shows evidence of infection very soon after birth."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, CDC scientists published a preliminary analysis as a public health alert in NEJM Evidence, in partnership with the University of Minnesota's Center for Infectious Disease Research and Policy. From the start of 2025 through the end of September 2026, 13 cases of congenital measles were reported to the CDC, the Associated Press reports. The alert also describes 112 confirmed measles cases during pregnancy, almost all in women who were unvaccinated before pregnancy or whose vaccination status was unknown.\n\nAccording to The New York Times, nearly one quarter of the 112 women were hospitalized for complications unrelated to labor, such as pneumonia and respiratory failure, and one was admitted to intensive care. Some delivered preterm, and two lost their pregnancies. This is a descriptive count of reported cases, not a study that can show measles caused each outcome."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "\"This is a brand new phenomenon,\" said Michael Osterholm, who directs the Minnesota center. His explanation is that many women of childbearing age were neither vaccinated nor ever exposed to the virus during the 25 years it was kept at bay. The MMR vaccine cannot be given during pregnancy, so protection has to come before it; the alert says vaccination before pregnancy and high community vaccination rates \"are important to prevent measles and related complications.\" For newborns, complications include pneumonia and encephalitis, and pediatricians quoted by the AP say congenital infection may raise the risk of SSPE, a brain disorder that appears years later and is almost always fatal."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The figures are preliminary. Nationally, 92.4% of kindergarteners received the required MMR shots in 2025-26, below the 95% level at which outbreaks are considered unlikely."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The New York Times",
+     "url": "https://www.nytimes.com/2026/11/16/well/measles-pregnancy-newborns.html"
+    },
+    {
+     "name": "NBC News (Associated Press)",
+     "url": "https://www.nbcnews.com/health/health-news/100-pregnant-women-confirmed-measles-new-report-finds-rcna609710"
+    },
+    {
+     "name": "Associated Press via KSLA",
+     "url": "https://www.ksla.com/2026/11/17/doctors-sound-alarm-about-us-babies-born-with-measles-first-time-decades/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2604058",
+   "title": "Semaglutide for the Treatment of Obesity in Children 6 to <12 Years of Age",
+   "authors": [
+    "Ania M. Jastreboff Nina M. Harder-Lauridsen Michelle Van Name Antje Körner Aaron S. Kelly Daniel Weghuber Jens-Christian Holm Christine Frithioff-Bøjsøe Shilpa Middolu Tina Buch and Martin Wabitschthe STEP Young Investigators*"
+   ],
+   "affiliations": [
+    "Yale University School of Medicine; Ulm University Medical Center; University of Leipzig"
+   ],
+   "announced": "2026-11-16T00:00:00-05:00",
+   "primary_tag": "Maternal & child health",
+   "tags": [
+    "Maternal & child health",
+    "Metabolic & endocrine",
+    "Drug development"
+   ],
+   "tldr": "In a two-year randomized trial of 167 children aged 6 to 11 with obesity, weekly semaglutide lowered BMI by 13.5% at 68 weeks while it rose 2.7% on placebo; stomach side effects were common.",
+   "why_selected": "A phase 3 trial of semaglutide in children under 12, randomized and placebo-controlled with two years of treatment, published in NEJM and widely covered.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Childhood obesity is a chronic, relapsing disease, investigators said, and affected children face a higher risk of cardiovascular disease and type 2 diabetes. No GLP-1 drug is approved in the United States for children younger than 12, so families of younger children have few medical options."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Guidelines treat behavioral and lifestyle programs as the cornerstone of care, but investigator Martin Wabitsch of Ulm University Medical Center said they have only limited effect and are out of reach for many families. Semaglutide (Wegovy), a weekly injection of the GLP-1 receptor agonist class, was approved by the FDA for adolescents aged 12 to 17 in December 2022."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The STEP Young trial asked whether the same drug works and is tolerated in younger children. It enrolled 167 children aged 6 to 11 (mean age 10; 59% girls) whose body mass index (BMI) was at or above the 95th percentile for age and sex on CDC growth charts. They were randomly assigned 2:1 to weekly semaglutide or placebo injections for two years, with a maximum dose of 1.7 mg or 2.4 mg depending on body weight. Both groups received lifestyle support. The main outcome was the percent change in BMI at 68 weeks. Treatment then stopped for a 7-week washout to see what happened off the drug."
+    },
+    {
+     "heading": "Results",
+     "body": "At 68 weeks BMI had fallen 13.5% with semaglutide and risen 2.7% with placebo, a difference of 16.2 percentage points (P<0.001). At two years the figures were a 9.4% fall and an 8.4% rise. At 68 weeks, 38% of the semaglutide group had dropped below the obesity threshold, against 2% on placebo. Vomiting (70% vs 29%), diarrhea (62% vs 35%) and nausea (58% vs 24%) were more frequent with the drug; 4% versus 2% stopped treatment because of adverse events. Investigators reported no effects on puberty or bone mineral density."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The trial shows the drug lowers BMI in young children, with improvements in blood pressure and blood markers. But BMI began rising when treatment stopped, the trial was funded by the manufacturer, and two years cannot answer what long-term treatment through childhood would mean. No GLP-1 drug is approved in the United States for this age group."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2604058",
+    "doi": "https://doi.org/10.1056/NEJMoa2604058"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11237-5",
+   "title": "Validation of clinical and preclinical obesity across global cohorts",
+   "authors": [
+    "An Pan",
+    "Shengping Yang",
+    "Rafael Ramos",
+    "Xianli Li",
+    "Jinchi Xie",
+    "Robert H. Eckel",
+    "Geltrude Mingrone",
+    "Jordi Blanch",
+    "Jingyuan Jiang",
+    "Hongmin Liu",
+    "Shuohua Chen",
+    "Tingting Geng",
+    "Shouling Wu",
+    "Eric Ravussin",
+    "José Manuel Fernández-Real",
+    "Francesco Rubino"
+   ],
+   "affiliations": [
+    "King's College London; Huazhong University of Science and Technology; Kailuan General Hospital; North China University of Science and Technology; Pennington Biomedical Research Center; University of Colorado Anschutz; University of Girona; Università Cattolica del Sacro Cuore"
+   ],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Epidemiology",
+   "tags": [
+    "Epidemiology",
+    "Metabolic & endocrine"
+   ],
+   "tldr": "Tested in 844,108 adults in four countries, a definition of obesity that adds waist measures and organ function to BMI separated people at high risk of death from those at modest risk.",
+   "why_selected": "A very large multi-country test of a proposed change to how obesity is diagnosed, published in Nature, with direct consequences for who is considered ill.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Obesity is usually diagnosed with body mass index (BMI), weight divided by height squared. BMI does not show how much fat a person carries or where it sits, and it says nothing about whether organs are affected. It therefore cannot tell illness from health."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "In January 2025 a Lancet Diabetes & Endocrinology Commission proposed a two-step alternative. First, confirm excess body fat by adding measures such as waist circumference or waist-to-height ratio to BMI. Second, separate clinical obesity, in which excess fat already impairs organ function, from preclinical obesity, in which function is preserved but risk is raised."
+    },
+    {
+     "heading": "Key idea",
+     "body": "A team led from King's College London applied both the BMI-only definition and the new framework to health data from 844,108 adults in China, the United Kingdom, the United States and Spain, then compared how well each sorted people by later health and death. One difficulty is that organ problems also occur in people without obesity. The authors used a statistical method that accounts for this background rate, so that dysfunction was not automatically blamed on body fat. The study is observational: it follows existing cohorts and does not test a treatment."
+    },
+    {
+     "heading": "Results",
+     "body": "BMI alone misclassified people in both directions. It missed obesity-level body fat in up to 8.6% of participants and labelled up to 3.1% as having obesity when waist measures did not agree. Obesity was linked to a higher risk of death only when defined with waist measures, not with BMI alone. Clinical obesity made up 23% to 31% of obesity cases, or 5.6% to 10.9% of the population. An outside expert summarizing the paper put its ten-year mortality about 70% higher, against almost 20% higher for preclinical obesity. Between 77% and 91% of people with preclinical obesity did not progress to clinical obesity over ten years."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The results support treating obesity as a disease in some people and a risk state in others. Outside experts noted caveats: organ dysfunction is part of the definition of clinical obesity, so higher mortality there is partly expected; records were collected differently across cohorts; and the study does not show that using the framework improves patient outcomes."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11237-5",
+    "doi": "https://doi.org/10.1038/s41586-026-11237-5"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aef9342",
+   "title": "Poisoned hunting weapons, megafauna, and plant use at a 125,000-year-old Arabian paleolakeshore",
+   "authors": [
+    "Chris Clarkson",
+    "Gilbert J. Price",
+    "Amir Kalifi",
+    "Giacomo Losi",
+    "Carney Matheson",
+    "Faisal Al-Jibreen",
+    "Abdullah M. Alsharekh",
+    "Simon J. Armitage",
+    "Ikram Blilou",
+    "Nicole Boivin",
+    "Paul S. Breeze",
+    "Nick Drake",
+    "Mathieu Duval",
+    "Sophia Gradwell",
+    "Huw S. Groucutt",
+    "Maria Guagnin",
+    "Juliana Guzmán",
+    "Laurence Hapiot",
+    "Virginia Martínez-Pillado",
+    "Jihede Haj Messaoud",
+    "Kasih Norman",
+    "Veerle Rots",
+    "Ian H. Sobbe",
+    "Mathew Stewart",
+    "Michael D. Petraglia",
+    "Frans van Buchem"
+   ],
+   "affiliations": [
+    "Griffith University; King Abdullah University of Science and Technology; Saudi Heritage Commission"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Evolution & ecology",
+   "tags": [
+    "Evolution & ecology"
+   ],
+   "tldr": "Stone points from a 125,000-year-old lakeshore in Saudi Arabia's Empty Quarter carry residues suggesting they were mounted on shafts and possibly tipped with plant poison.",
+   "why_selected": "A rare, detailed view of early Homo sapiens behavior outside Africa, published in Science, with chemical evidence that may point to very early use of hunting poisons.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Early Homo sapiens spread out of Africa through Arabia, but it is unclear whether people merely passed through or settled and developed complex ways of life there. Evidence is scarce because the organic parts of ancient tools, such as shafts, bindings and coatings, rarely survive."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Arabia has often been treated as a transit corridor during human dispersals. Earlier work, including a 2025 Nature study, documented recurrent humid periods in Arabia over the past 8 million years, when the region held water and vegetation, but the new site adds detail on what people did in those environments."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team studied 'Uruq Aljelibah, a site beside a former freshwater lake in the Mundafan basin of the Rub' al-Khali, or Empty Quarter, now one of the driest regions on Earth. The lakeshore dates to a humid period called Marine Isotope Stage 5e. Beyond the shapes of the stone tools, the researchers examined what was stuck to them, using microscopy and chemical analysis of residues. Residues work like fingerprints at a scene: tissue near a tip points to what the tool struck, while resin and fibers at the base point to how it was attached to a handle or shaft."
+    },
+    {
+     "heading": "Results",
+     "body": "More than 5,000 stone artifacts were recovered alongside fossil animal remains. Several stone points showed impact damage consistent with hunting large animals, with traces of animal tissue near the tips and plant resin and fibers at the base, indicating composite weapons made of several materials. Several points also carried chemical biomarkers linked to Acokanthera schimperi, the arrow-poison tree, known historically for its toxic cardiac glycosides, along with other potentially toxic plant compounds. Clusters of tools matched clusters of animal bones, and fossils show the area supported hippopotamuses, buffalo, camels, gazelles and oryx. Plant fibers, wood fragments and palm tissue point to plant processing."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The site suggests people in Arabia hunted with hafted weapons and worked plants at a lakeshore that was a focal point for hunting and processing game. The poison evidence is the most striking claim and the least certain: the researchers themselves say the chemical traces \"raise the possibility\" of poisoned weapons and do not claim proof."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aef9342",
+    "doi": "https://doi.org/10.1126/science.aef9342"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  }
+ ]
+}
