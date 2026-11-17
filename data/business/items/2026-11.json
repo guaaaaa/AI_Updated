@@ -1,5 +1,65 @@
 [
  {
+  "id": "2026-11-17-n1",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "Canadian inflation holds at 3.1% in October as gasoline keeps the headline rate above target while core measures stay near 2%",
+  "tldr": "Canada's consumer prices rose 3.1% over the year to October, unchanged from September and just under forecasts, with gasoline up 30.9% but inflation excluding energy easing to 2.0%.",
+  "category": "Economy & Data",
+  "byline": "Statistics Canada, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-17-n2",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "Tiff Macklem will leave the Bank of Canada when his term ends in June 2027, and the board starts the search for a successor",
+  "tldr": "Bank of Canada Governor Tiff Macklem will not seek a second term when his seven-year term expires on June 2, 2027; the board aims to pick a successor by spring.",
+  "category": "Central Banks & Rates",
+  "byline": "Bank of Canada, BNN Bloomberg (The Canadian Press)"
+ },
+ {
+  "id": "2026-11-17-n3",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "Quebecor makes a $31-billion cash-and-stock proposal to buy Telus, which would cut Canada's national wireless carriers from four to three",
+  "tldr": "Quebecor proposed buying larger rival Telus for about C$19.45 a share, a 60% premium, in a non-binding offer that Telus's board says carries significant regulatory and governance risks.",
+  "category": "Deals & M&A",
+  "byline": "Quebecor (Cision newswire), The Globe and Mail, The Globe and Mail (Business Brief)"
+ },
+ {
+  "id": "2026-11-17-n4",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "Canada and China widen their tariff arrangement as Carney meets Xi, with relief for pork and seafood and a revived currency swap",
+  "tldr": "China will cut tariffs on about C$400 million of Canadian pork and seafood exports, and Canada will extend and widen tariff refunds on Chinese steel and aluminium it cannot source at home.",
+  "category": "Trade & Policy",
+  "byline": "The Globe and Mail, Reuters (via TimesLIVE), BNN Bloomberg (The Canadian Press)"
+ },
+ {
+  "id": "2026-11-17-n5",
+  "date": "2026-11-17",
+  "type": "news",
+  "title": "Home Depot names finance chief Richard McPhail as CEO and reports quarterly sales of $43.4 billion, ahead of estimates",
+  "tldr": "Home Depot promoted CFO Richard McPhail to chief executive from November 23 and posted third-quarter sales of $43.4 billion, while do-it-yourself spending stays weak.",
+  "category": "Earnings & Companies",
+  "byline": "The Home Depot (PR Newswire), The Globe and Mail"
+ },
+ {
+  "id": "nber-w36036",
+  "date": "2026-11-17",
+  "type": "paper",
+  "title": "How Does Capital Flow To Poor Countries? Evidence from Venture Capital and Private Equity",
+  "tldr": "A survey experiment with 1,485 venture capital and private equity investors in 108 countries finds that identical firms attract much less interest when located in poorer countries, especially from non-specialist investors.",
+  "primary_tag": "Corporate finance",
+  "tags": [
+   "Corporate finance",
+   "Asset pricing"
+  ],
+  "byline": "Emanuele Colonnelli, Marcio Cruz, Josh Lerner et al.",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-16-n1",
   "date": "2026-11-16",
   "type": "news",

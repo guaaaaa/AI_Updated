@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/business</link>
   <description>Markets, companies and the economy</description>
   <language>en</language>
-  <lastBuildDate>Mon, 16 Nov 2026 19:23:07 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 12:49:11 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/business.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Canadian inflation holds at 3.1% in October as gasoline keeps the headline rate above target while core measures stay near 2%</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n1</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>Canada's consumer prices rose 3.1% over the year to October, unchanged from September and just under forecasts, with gasoline up 30.9% but inflation excluding energy easing to 2.0%. (Statistics Canada, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Tiff Macklem will leave the Bank of Canada when his term ends in June 2027, and the board starts the search for a successor</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n2</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Central Banks &amp; Rates</category>
+    <description>Bank of Canada Governor Tiff Macklem will not seek a second term when his seven-year term expires on June 2, 2027; the board aims to pick a successor by spring. (Bank of Canada, BNN Bloomberg (The Canadian Press))</description>
+  </item>
+  <item>
+    <title>Quebecor makes a $31-billion cash-and-stock proposal to buy Telus, which would cut Canada's national wireless carriers from four to three</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n3</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>Quebecor proposed buying larger rival Telus for about C$19.45 a share, a 60% premium, in a non-binding offer that Telus's board says carries significant regulatory and governance risks. (Quebecor (Cision newswire), The Globe and Mail, The Globe and Mail (Business Brief))</description>
+  </item>
+  <item>
+    <title>Canada and China widen their tariff arrangement as Carney meets Xi, with relief for pork and seafood and a revived currency swap</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n4</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>China will cut tariffs on about C$400 million of Canadian pork and seafood exports, and Canada will extend and widen tariff refunds on Chinese steel and aluminium it cannot source at home. (The Globe and Mail, Reuters (via TimesLIVE), BNN Bloomberg (The Canadian Press))</description>
+  </item>
+  <item>
+    <title>Home Depot names finance chief Richard McPhail as CEO and reports quarterly sales of $43.4 billion, ahead of estimates</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n5</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n5</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>Home Depot promoted CFO Richard McPhail to chief executive from November 23 and posted third-quarter sales of $43.4 billion, while do-it-yourself spending stays weak. (The Home Depot (PR Newswire), The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>How Does Capital Flow To Poor Countries? Evidence from Venture Capital and Private Equity</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/nber-w36036</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/nber-w36036</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Corporate finance</category>
+    <description>A survey experiment with 1,485 venture capital and private equity investors in 108 countries finds that identical firms attract much less interest when located in poorer countries, especially from non-specialist investors. (Emanuele Colonnelli, Marcio Cruz, Josh Lerner et al.)</description>
+  </item>
   <item>
     <title>Japan's economy shrinks at a 0.1% annualized rate in the third quarter, its first contraction in four quarters</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</link>
@@ -278,54 +326,6 @@
     <pubDate>Sat, 07 Nov 2026 12:45:55 +0000</pubDate>
     <category>Business / Trade &amp; Policy</category>
     <description>Ottawa's budget shifts supervision of banks' anti-money-laundering work from FinTRAC to OSFI, offers modest corporate tax simplification, and a follow-on reform loosens temporary foreign worker limits. (Budget 2026, Government of Canada, The Globe and Mail, The Globe and Mail, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>The Effects of Monetary Policy on Macroeconomic Expectations: High-Frequency Evidence from Prediction Markets</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/nber-w35968</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-07/nber-w35968</guid>
-    <pubDate>Sat, 07 Nov 2026 12:45:55 +0000</pubDate>
-    <category>Business / Monetary policy</category>
-    <description>Using minute-by-minute prices of Kalshi prediction-market contracts, the authors find macro expectations respond to Fed announcements as standard theory predicts, with little or no "Fed information effect". (Eric T. Swanson, Wang Renxuan, Yanbin Wu)</description>
-  </item>
-  <item>
-    <title>Wall Street's AI-driven rout deepens after the midterms and spreads across Asia</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/2026-11-06-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/2026-11-06-n1</guid>
-    <pubDate>Fri, 06 Nov 2026 12:52:17 +0000</pubDate>
-    <category>Business / Markets</category>
-    <description>US stocks fell sharply on Thursday as investors feared Democratic control of Congress could slow the AI buildout, and the losses spread to Japan, South Korea and Taiwan on Friday. (The Guardian (live, Nov 6), The Guardian (Nov 4), The Globe and Mail (Reuters))</description>
-  </item>
-  <item>
-    <title>Tesla says it will stop making the Cybertruck next year to make room for the Cybercab</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/2026-11-06-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/2026-11-06-n2</guid>
-    <pubDate>Fri, 06 Nov 2026 12:52:17 +0000</pubDate>
-    <category>Business / Earnings &amp; Companies</category>
-    <description>Elon Musk said Tesla will wind down Cybertruck production in 2027, using the factory space for its two-seat Cybercab robotaxi after years of weak sales. (BBC News, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Aggregate-Surplus Maximizing Monetary Policy</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/nber-w35967</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-06/nber-w35967</guid>
-    <pubDate>Fri, 06 Nov 2026 12:52:17 +0000</pubDate>
-    <category>Business / Monetary policy</category>
-    <description>A new NBER paper finds that when households differ in labor-market frictions, a central bank maximizing everyone's joint surplus should weight output stabilization about 37 percent more than inflation, compared with the standard model. (David Baqaee, Ariel Burstein, Joao Guerreiro)</description>
-  </item>
-  <item>
-    <title>Bank of England raises its rate to 4%, the first increase in more than three years</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n1</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Central Banks &amp; Rates</category>
-    <description>The Bank of England voted 8-1 to lift Bank Rate to 4% from 3.75%, saying energy-driven inflation pressure in the pipeline is now strong enough to justify tighter policy. (Bank of England, BBC, BBC)</description>
-  </item>
-  <item>
-    <title>ECB wage tracker points to slightly firmer negotiated pay growth into 2027</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-05/2026-11-05-n2</guid>
-    <pubDate>Thu, 05 Nov 2026 12:46:55 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>The ECB's wage tracker shows negotiated wage growth of 2.7% in late 2026 and 2.8% in early 2027, a little higher than the 2.3% headline figure for 2026 as a whole. (European Central Bank)</description>
   </item>
 </channel>
 </rss>

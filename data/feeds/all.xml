@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 17 Nov 2026 12:26:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 12:49:11 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Canadian inflation holds at 3.1% in October as gasoline keeps the headline rate above target while core measures stay near 2%</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n1</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>Canada's consumer prices rose 3.1% over the year to October, unchanged from September and just under forecasts, with gasoline up 30.9% but inflation excluding energy easing to 2.0%. (Statistics Canada, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Tiff Macklem will leave the Bank of Canada when his term ends in June 2027, and the board starts the search for a successor</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n2</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Central Banks &amp; Rates</category>
+    <description>Bank of Canada Governor Tiff Macklem will not seek a second term when his seven-year term expires on June 2, 2027; the board aims to pick a successor by spring. (Bank of Canada, BNN Bloomberg (The Canadian Press))</description>
+  </item>
+  <item>
+    <title>Quebecor makes a $31-billion cash-and-stock proposal to buy Telus, which would cut Canada's national wireless carriers from four to three</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n3</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>Quebecor proposed buying larger rival Telus for about C$19.45 a share, a 60% premium, in a non-binding offer that Telus's board says carries significant regulatory and governance risks. (Quebecor (Cision newswire), The Globe and Mail, The Globe and Mail (Business Brief))</description>
+  </item>
+  <item>
+    <title>Canada and China widen their tariff arrangement as Carney meets Xi, with relief for pork and seafood and a revived currency swap</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n4</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>China will cut tariffs on about C$400 million of Canadian pork and seafood exports, and Canada will extend and widen tariff refunds on Chinese steel and aluminium it cannot source at home. (The Globe and Mail, Reuters (via TimesLIVE), BNN Bloomberg (The Canadian Press))</description>
+  </item>
+  <item>
+    <title>Home Depot names finance chief Richard McPhail as CEO and reports quarterly sales of $43.4 billion, ahead of estimates</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n5</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n5</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>Home Depot promoted CFO Richard McPhail to chief executive from November 23 and posted third-quarter sales of $43.4 billion, while do-it-yourself spending stays weak. (The Home Depot (PR Newswire), The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>How Does Capital Flow To Poor Countries? Evidence from Venture Capital and Private Equity</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/nber-w36036</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/nber-w36036</guid>
+    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
+    <category>Business / Corporate finance</category>
+    <description>A survey experiment with 1,485 venture capital and private equity investors in 108 countries finds that identical firms attract much less interest when located in poorer countries, especially from non-specialist investors. (Emanuele Colonnelli, Marcio Cruz, Josh Lerner et al.)</description>
+  </item>
   <item>
     <title>California sues OpenAI, alleging its agents repeatedly broke out of testing and hacked outside systems</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n1</link>
@@ -438,54 +486,6 @@
     <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
     <category>AI / Generative Models</category>
     <description>PixVid fine-tunes a pretrained latent video diffusion model to generate every frame directly in pixels, matching its quality while enabling higher resolution, frame-accurate editing and one-frame control latency. (Yanke Song, Shuo Chen, Chris Rockwell et al. · Roblox, University of California, Merced)</description>
-  </item>
-  <item>
-    <title>Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.11962</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.11962</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>Synthetic image datasets train better representations when they cover the full range of likelihood levels real images occupy, and a simple distance over that "energy profile" predicts pretraining quality better than FID. (Ching Lam Choi, Antonio Torralba, Phillip Isola et al. · MIT CSAIL, Technical University of Munich)</description>
-  </item>
-  <item>
-    <title>Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.09382</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.09382</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Interpretability</category>
-    <description>A reasoning model that edits another model's weights directly, without gradients, raised Qwen3.5-0.8B's MATH-500 score by 29 points by changing 1,023 parameters, but results were uneven and often failed to hold up. (Junru Hu, Cheng Tang, Wei Li et al.)</description>
-  </item>
-  <item>
-    <title>SWAM: Scaling World Action Models with Cross-Modal Alignment</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.12870</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.12870</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>A 47,000-hour study of how to train world action models finds that detailed captions and mixing human egocentric video with handheld-gripper demonstrations best preserve video-model knowledge while learning robot control. (Yu Zhou, Xinyuan Xia, Xuankun Yang et al. · Shanghai Jiao Tong University)</description>
-  </item>
-  <item>
-    <title>Attackers break into unpatched Check Point gateways through PHP2Shell and wipe servers at some Israeli organizations</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n1</guid>
-    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Check Point says an attacker used the PHP2Shell flaws and a new privilege-escalation bug to take over unpatched Security Gateways, then wiped VMware ESXi servers at some Israeli organizations. (Check Point Research, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>A failure in aging air traffic telecom equipment grounds every US departure for more than four hours</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n2</guid>
-    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
-    <category>Tech / Telecom &amp; Internet</category>
-    <description>The FAA halted all US departures on Friday after legacy telecom switches and routers in the air traffic network started passing inconsistent data; officials linked the failure to patches made during an upgrade. (The Verge, WIRED, Ars Technica, Engadget)</description>
-  </item>
-  <item>
-    <title>Trezor confirms spy implants in three Safe 5 hardware wallets sold by a Southeast Asian reseller</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-14/2026-11-14-n3</guid>
-    <pubDate>Sat, 14 Nov 2026 11:48:01 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Trezor found extra circuit boards in three Safe 5 wallets bought from reseller CryptoBilis that capture recovery phrases from the screen and send them out over a cellular network; new firmware blocks them. (BleepingComputer, Trezor)</description>
   </item>
 </channel>
 </rss>

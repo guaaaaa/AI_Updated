@@ -3,13 +3,19 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [
   {
    "title": "Stocks fall ahead of Nvidia earnings and Anthropic IPO",
-   "outlets": 5,
+   "outlets": 10,
    "date": "2026-11-16",
+   "covered": null
+  },
+  {
+   "title": "Jensen Huang reportedly mulling comeback as Nvidia CEO",
+   "outlets": 4,
+   "date": "2026-11-15",
    "covered": null
   },
   {
@@ -23,11 +29,35 @@
    "outlets": 3,
    "date": "2026-11-14",
    "covered": null
+  },
+  {
+   "title": "Anthropic’s giant IPO puts the heat on OpenAI",
+   "outlets": 3,
+   "date": "2026-11-15",
+   "covered": null
+  },
+  {
+   "title": "Oil prices fall on expectations of coming supply surplus",
+   "outlets": 3,
+   "date": "2026-11-16",
+   "covered": null
+  },
+  {
+   "title": "United Airlines resolves system outage that affected departing flights",
+   "outlets": 3,
+   "date": "2026-11-17",
+   "covered": null
+  },
+  {
+   "title": "Canada and China extend trade deals as Xi meets Carney ahead of APEC summit",
+   "outlets": 3,
+   "date": "2026-11-17",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 4,
-  "papers": 1
+  "news": 9,
+  "papers": 2
  },
  "items": [
   {
@@ -59,6 +89,42 @@
    "date": "2026-11-16",
    "type": "paper",
    "title": "Clouds of Credit: Mapping the Financial Web Behind AI Compute"
+  },
+  {
+   "id": "2026-11-17-n1",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "Canadian inflation holds at 3.1% in October as gasoline keeps the headline rate above target while core measures stay near 2%"
+  },
+  {
+   "id": "2026-11-17-n2",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "Tiff Macklem will leave the Bank of Canada when his term ends in June 2027, and the board starts the search for a successor"
+  },
+  {
+   "id": "2026-11-17-n3",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "Quebecor makes a $31-billion cash-and-stock proposal to buy Telus, which would cut Canada's national wireless carriers from four to three"
+  },
+  {
+   "id": "2026-11-17-n4",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "Canada and China widen their tariff arrangement as Carney meets Xi, with relief for pork and seafood and a revived currency swap"
+  },
+  {
+   "id": "2026-11-17-n5",
+   "date": "2026-11-17",
+   "type": "news",
+   "title": "Home Depot names finance chief Richard McPhail as CEO and reports quarterly sales of $43.4 billion, ahead of estimates"
+  },
+  {
+   "id": "nber-w36036",
+   "date": "2026-11-17",
+   "type": "paper",
+   "title": "How Does Capital Flow To Poor Countries? Evidence from Venture Capital and Private Equity"
   }
  ]
 }

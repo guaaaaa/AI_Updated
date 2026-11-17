@@ -1,0 +1,253 @@
+{
+ "date": "2026-11-17",
+ "edition": "weekday",
+ "generated_at": "2026-11-17T12:49:11+00:00",
+ "summary": "A Canada-heavy day: inflation holds at 3.1%, the central bank governor says he will leave, Quebecor bids $31 billion for Telus and Ottawa widens its trade arrangement with China, while Home Depot names a new chief executive.",
+ "news": [
+  {
+   "id": "2026-11-17-n1",
+   "story_key": "canada-cpi-october-2026",
+   "title": "Canadian inflation holds at 3.1% in October as gasoline keeps the headline rate above target while core measures stay near 2%",
+   "category": "Economy & Data",
+   "published": "2026-11-16T07:54:00-05:00",
+   "tldr": "Canada's consumer prices rose 3.1% over the year to October, unchanged from September and just under forecasts, with gasoline up 30.9% but inflation excluding energy easing to 2.0%.",
+   "why_selected": "A major macro release that shapes the Bank of Canada's December rate decision, three weeks after its first hike in more than three years.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Bank of Canada raised its key interest rate by a quarter of a percentage point to 2.5% on October 28, its first increase in more than three years, because it worried that expensive energy could push up other prices. The bank aims for 2% inflation, the midpoint of a 1% to 3% target range."
+    },
+    {
+     "heading": "What happened",
+     "body": "Statistics Canada said on Monday that the CPI rose 3.1% over the year to October, matching September. Economists had expected 3.2%, the Globe and Mail reported. Prices rose 0.2% from September.\n\nGasoline did most of the work. It was up 30.9% from a year earlier, against 27.8% in September. Part of that is a base-year effect: gasoline fell 4.8% in October 2025, and that drop has now left the 12-month comparison. Month over month, gasoline actually fell 2.5%.\n\nExcluding energy, inflation eased to 2.0% from 2.1%. Grocery prices rose 2.0%, up from 1.7%, ending four months of slowing; they are 31.9% higher than in October 2020. Clothing prices jumped 3.4% in a single month, the largest monthly rise since September 2019, which the agency linked in time to higher shipping costs."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The report gives the central bank no clear signal. The headline rate sits above the top of the target range, yet inflation excluding energy is at the 2% target. A Royal Bank of Canada economist quoted by the Globe said the index excluding food and energy slowed to 1.8% and that strong price growth remains concentrated in a narrow part of the consumer basket. A Bank of Montreal strategist said nothing in the numbers \"screams rate hike\".\n\nFor households, the pressure is concentrated in fuel and food. The risk, in the Royal Bank economist's words, is that the longer energy prices stay elevated, the more cost pressures filter through to consumer prices with a lag."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the Bank of Canada raises rates again in December, and whether gasoline prices, which the Royal Bank economist said have declined so far in November, keep falling."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Statistics Canada",
+     "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261116/dq261116a-eng.htm"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/canada/article-canadian-inflation-expected-to-have-ticked-up-to-32-in-october/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n2",
+   "story_key": "macklem-not-seeking-second-term-2026-11",
+   "title": "Tiff Macklem will leave the Bank of Canada when his term ends in June 2027, and the board starts the search for a successor",
+   "category": "Central Banks & Rates",
+   "published": "2026-11-16T11:30:00-05:00",
+   "tldr": "Bank of Canada Governor Tiff Macklem will not seek a second term when his seven-year term expires on June 2, 2027; the board aims to pick a successor by spring.",
+   "why_selected": "A leadership change at Canada's central bank, announced weeks after it began raising rates again, affects how markets read the path of Canadian interest rates.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The governor heads the Bank of Canada, which sets the country's key interest rate, so the identity of the governor matters for mortgages, business loans and the Canadian dollar. Tiff Macklem was named governor in May 2020 and took over in June of that year, in the early months of the COVID-19 pandemic. From 2010 to 2014 he was the bank's senior deputy governor under Mark Carney, who is now prime minister."
+    },
+    {
+     "heading": "What happened",
+     "body": "The bank's board of directors announced on Monday that Macklem has told them he will not seek a second term when his seven-year term expires on June 2, 2027. \"It has been the highlight of my career to serve as the 10th Governor of the Bank of Canada,\" he said.\n\nThe independent directors have formed a search committee, assisted by the recruiting firm Egon Zehnder, and expect to finish the process by spring 2027. Their choice needs the approval of the finance minister and the federal cabinet. The next governor will serve seven years from June 3, 2027.\n\nThe Canadian Press named possible successors: Senior Deputy Governor Carolyn Rogers; her predecessor Carolyn Wilkins; Jean Boivin, head of the BlackRock Investment Institute; and Scotiabank chief economist Jean-François Perrault."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Macklem's tenure covered an emergency policy rate of 0.25% during the pandemic and then, two years later, what the Canadian Press called a historic rate-hiking campaign to bring inflation back to 2%. The handover comes at a delicate time. The bank has just started raising rates again, and investors will try to judge whether a successor would be more or less tolerant of inflation.\n\nMore than six months of notice reduces that uncertainty, because the current governor stays in charge until June."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Who emerges as the front-runner before spring, whether the government picks an insider or an outside candidate, and how Macklem steers policy in his remaining months."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Bank of Canada",
+     "url": "https://www.bankofcanada.ca/2026/11/bank-of-canada-governor-tiff-macklem-to-step-down-in-june-2027/"
+    },
+    {
+     "name": "BNN Bloomberg (The Canadian Press)",
+     "url": "https://www.bnnbloomberg.ca/business/economics/2026/11/16/tiff-macklem-to-step-down-as-bank-of-canada-governor-at-end-of-his-term/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n3",
+   "story_key": "quebecor-telus-proposal-2026-11",
+   "title": "Quebecor makes a $31-billion cash-and-stock proposal to buy Telus, which would cut Canada's national wireless carriers from four to three",
+   "category": "Deals & M&A",
+   "published": "2026-11-16T07:30:00-05:00",
+   "tldr": "Quebecor proposed buying larger rival Telus for about C$19.45 a share, a 60% premium, in a non-binding offer that Telus's board says carries significant regulatory and governance risks.",
+   "why_selected": "A $31-billion takeover proposal that is a direct test of Ottawa's long-standing policy of keeping four national wireless competitors.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Canada's wireless market is dominated by four companies, and Ottawa has encouraged competition by pushing for four national players, a policy the Globe and Mail describes as consumer-friendly. Quebecor, based in Montreal and led by Pierre Karl Péladeau, is the fourth-largest telecom company and owns Freedom Mobile. Telus, based in Vancouver, is the second-largest by market value, but its shares have fallen more than 40% over the past year under a heavy debt load. Figures are in Canadian dollars."
+    },
+    {
+     "heading": "What happened",
+     "body": "Quebecor said on Monday that it had made a non-binding proposal to acquire Telus. Telus shareholders would get $6.35 in cash and 0.17 of a Quebecor share for each Telus share, which Quebecor values at about $19.45. That is a 60% premium to Friday's close of $12.14 and values Telus's equity at $31 billion.\n\nTelus formed a special committee of independent directors. Board chair John Manley said Quebecor \"has yet to explain\" how the plan could be approved under current telecom rules. Telus shareholders would hold about 54% of the combined company's economic interest but only 23% of the votes, because the Péladeau family controls Quebecor through a dual-class share structure.\n\nTelus shares rose 12.8% to $13.70, far below the offer. Quebecor's Class B shares fell 15.3% to $65.25."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The gap between Telus's share price and the offer shows that investors doubt the deal will happen as proposed. It needs approval from the competition watchdog, several agencies and Industry Minister Mélanie Joly. Joly said the government is updating its policies to reflect the need for \"sovereign connectivity\", which the Globe and Mail read as a possible shift in attitude toward telecom competition.\n\nFor consumers, the question is whether three carriers would mean higher prices; Péladeau argues the combination would support investment and affordable rates. For Telus, the bid has started a strategic review in which, a director said, \"all options are on the table\"."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The special committee's formal response, any improved proposal from Quebecor or a rival approach, and signals from Ottawa on wireless competition rules."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Quebecor (Cision newswire)",
+     "url": "https://www.newswire.ca/news/quebecor/"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-quebecor-proposes-to-acquire-telus-for-31-billion/"
+    },
+    {
+     "name": "The Globe and Mail (Business Brief)",
+     "url": "https://www.theglobeandmail.com/business/article-business-brief-historic-bids-and-risky-business/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n4",
+   "story_key": "canada-china-arrangement-extended-2026-11",
+   "title": "Canada and China widen their tariff arrangement as Carney meets Xi, with relief for pork and seafood and a revived currency swap",
+   "category": "Trade & Policy",
+   "published": "2026-11-16T22:37:00-05:00",
+   "tldr": "China will cut tariffs on about C$400 million of Canadian pork and seafood exports, and Canada will extend and widen tariff refunds on Chinese steel and aluminium it cannot source at home.",
+   "why_selected": "A concrete new step in Canada's effort to reduce its trade dependence on the United States, with direct effects on farm, seafood and metals trade.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Reducing Canada's heavy reliance on the United States, which has imposed steep tariffs on many Canadian products, is a central part of Prime Minister Mark Carney's economic strategy. In January, Canada and China agreed to advance a strategic partnership. Since then Ottawa has approved annual imports of 49,000 Chinese cars at a 6.1% tariff, and China has lowered tariffs on Canadian canola seed."
+    },
+    {
+     "heading": "What happened",
+     "body": "Carney met President Xi Jinping in Shenzhen ahead of the Asia-Pacific Economic Co-operation summit, Reuters reported. According to Carney's office, the two agreed to extend and expand a preliminary arrangement on market access for Canadian farmers and seafood harvesters. China will give additional tariff relief on around C$400 million of Canadian exports, including $116 million of frozen pork cuts and more than $285 million of fish and seafood the Globe and Mail reported.\n\nIn exchange, Canada will extend by two years its remission measures for certain Chinese steel and aluminium products, which were due to expire at the end of 2026, and add another 32 product types. Remission lets importers get refunds on Canada's 25% tariffs when a product cannot be found in sufficient quantity at home.\n\nChina's finance ministry said both countries welcome steps by their central banks to implement a bilateral local currency swap agreement, an arrangement that lets each central bank obtain the other's currency, and welcomed Canadian institutions issuing Panda bonds, which are yuan-denominated bonds sold in China."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The amounts are small relative to total trade, and the Globe and Mail called the measures baby steps. Still, they add to a recovery: Canadian merchandise exports to China rose 31.4% in the first half of 2026 to $21.5 billion, according to Global Affairs Canada figures cited by the Canadian Press, and crude oil shipments are up about 37% this year.\n\nThere are risks. Easier entry for Chinese metals could anger the Trump administration, which has accused Canada of being a back door for Chinese goods, while Ottawa is still negotiating trade with Washington."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Any reaction from Washington, the Canadian trade mission to China planned for 2027, and whether Chinese automakers invest in Canadian manufacturing."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/politics/article-canada-china-trade-deal-1116/"
+    },
+    {
+     "name": "Reuters (via TimesLIVE)",
+     "url": "https://www.timeslive.co.za/news/world/2026-11-17-canada-and-china-extend-trade-deals-as-xi-meets-carney-ahead-of-apec-summit/"
+    },
+    {
+     "name": "BNN Bloomberg (The Canadian Press)",
+     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/17/carney-secures-china-trade-concessions-as-tensions-over-auto-investment-persist/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-n5",
+   "story_key": "home-depot-mcphail-ceo-q3-fy2026",
+   "title": "Home Depot names finance chief Richard McPhail as CEO and reports quarterly sales of $43.4 billion, ahead of estimates",
+   "category": "Earnings & Companies",
+   "published": "2026-11-17T05:43:00-05:00",
+   "tldr": "Home Depot promoted CFO Richard McPhail to chief executive from November 23 and posted third-quarter sales of $43.4 billion, while do-it-yourself spending stays weak.",
+   "why_selected": "A leadership change and results at a bellwether for US housing and consumer spending, at the start of a week of major retailer earnings.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Home Depot, which describes itself as the world's largest home improvement retailer, is closely watched as a gauge of how willing American households are to spend on their homes. Its chief executive, Ted Decker, took a medical leave of absence in August and has since returned. In recent years the company has pushed into supplying professional contractors, buying the building materials distributors SRS Distribution and GMS."
+    },
+    {
+     "heading": "What happened",
+     "body": "Before the market opened on Tuesday, Home Depot announced that its board has appointed Richard McPhail as chief executive, effective November 23. McPhail has been at the company for about two decades, became chief financial officer in 2019 and led it during Decker's absence, the Globe and Mail reported. Decker will become chair of the board. Jordan Broggi was named chief financial officer and Marie Campbell chief operating officer, effective on the same date.\n\nThe company also reported third-quarter sales of $43.4 billion, above the $42.8 billion average analyst estimate compiled by LSEG. Earnings per share were $3.86, against an estimate of $3.84. Home Depot said it now expects annual sales growth at the higher end of its earlier forecast of 2.5% to 4.5%. Its shares fell about 2% in premarket trading."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The results describe a split in the housing economy. Sales to professional contractors have held up better than do-it-yourself spending, because high borrowing costs, economic uncertainty and cost-of-living pressures make households wary of large home projects. It suggests that consumer caution is concentrated in big discretionary purchases.\n\nChoosing the executive who oversaw the contractor acquisitions signals continuity: the company is leaning further into the professional market to offset weak consumer demand. The handover itself is orderly, with an insider taking over and the outgoing chief staying on as chair.\n\nHome Depot is also the first of several large US retailers reporting this week, so its numbers are an early read on the sector."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Results from Lowe's and Target on Wednesday and Walmart on Thursday, and whether McPhail changes the pace of the contractor strategy."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Home Depot (PR Newswire)",
+     "url": "https://www.prnewswire.com/news/the-home-depot/"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-home-depot-names-richard-mcphail-ceo-quarterly-results/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36036",
+   "title": "How Does Capital Flow To Poor Countries? Evidence from Venture Capital and Private Equity",
+   "authors": [
+    "Emanuele Colonnelli",
+    "Marcio Cruz",
+    "Josh Lerner",
+    "Mariana Pereira-Lopez",
+    "Yuanchang Wei"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-17T00:00:00-05:00",
+   "primary_tag": "Corporate finance",
+   "tags": [
+    "Corporate finance",
+    "Asset pricing"
+   ],
+   "tldr": "A survey experiment with 1,485 venture capital and private equity investors in 108 countries finds that identical firms attract much less interest when located in poorer countries, especially from non-specialist investors.",
+   "why_selected": "The most press-covered paper on the shortlist, with experimental evidence on a long-standing question about why private capital avoids poor countries.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Very little private capital flows to poor countries, even though capital is scarce there. The open question is why. One possibility is that firms in poor countries are simply weaker investments. Another is that investors mark down a firm because of where it is, regardless of its quality."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Separating these explanations is hard with data on actual deals. Firms in different countries differ in many ways at once, so a low level of investment could reflect the firms, the country, or the investors who happen to look at them. This paper, by Emanuele Colonnelli, Marcio Cruz, Josh Lerner, Mariana Pereira-Lopez and Yuanchang Wei, uses an experiment to pull those factors apart."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors ran an experimental survey of 1,485 venture capital and private equity investors in 108 countries. Each investor evaluated hypothetical investment opportunities in which the firm's characteristics, its location and the investment terms were randomized. Respondents were given incentives to answer carefully. Because location is assigned at random, any difference in interest between two otherwise comparable firms can be attributed to the country itself."
+    },
+    {
+     "heading": "Results",
+     "body": "Investors responded similarly to firm fundamentals wherever the firm was located. However, otherwise comparable firms attracted substantially less interest when placed in poorer countries, which the authors call a poor-country penalty. The penalty was much smaller among investors who specialize in emerging markets. The two groups have largely similar investment practices but differ in how they obtain country information, how they assess and manage country risk, and how they exit investments. Investors who reported actively managing country risk applied smaller penalties, even after accounting for their market focus."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The findings suggest that the obstacle is partly on the investor side. The same firm can face very different financing prospects depending on which investors evaluate it, so specialization and risk-management know-how may matter as much as the quality of local companies. The main caveat is that these are evaluations of hypothetical opportunities, not real commitments of money, and this summary relies on the paper's abstract, which does not report the size of the penalty."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36036"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major",
+    "press": 3
+   }
+  }
+ ]
+}
