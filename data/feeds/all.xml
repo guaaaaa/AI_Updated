@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 18 Nov 2026 13:29:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 13:54:15 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>FDA approves adrabetadex, the first drug shown to lengthen survival in infantile-onset Niemann-Pick disease type C</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/2026-11-18-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/2026-11-18-n1</guid>
+    <pubDate>Wed, 18 Nov 2026 13:54:15 +0000</pubDate>
+    <category>Biology / Drugs &amp; Approvals</category>
+    <description>The FDA approved Lembaz (adrabetadex), a spinal injection given every two weeks, after treated patients with early-onset Niemann-Pick disease type C lived a median 8.5 years versus 4.9 years in matched controls. (FDA)</description>
+  </item>
+  <item>
+    <title>AriBio's oral Alzheimer's drug AR1001 slows decline in patients taking no other dementia drug, but not in its full phase 3 trial</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/2026-11-18-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/2026-11-18-n2</guid>
+    <pubDate>Wed, 18 Nov 2026 13:54:15 +0000</pubDate>
+    <category>Biology / Clinical Research</category>
+    <description>In a 1,535-patient phase 3 trial, the daily pill AR1001 slowed decline by 31% among 604 patients on no other dementia drug, meeting a prespecified goal, but showed no significant effect overall. (MoneyToday, iNews24)</description>
+  </item>
+  <item>
+    <title>Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/doi-10-1001-jama-2026-18828</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/doi-10-1001-jama-2026-18828</guid>
+    <pubDate>Wed, 18 Nov 2026 13:54:15 +0000</pubDate>
+    <category>Biology / Neurology &amp; mental health</category>
+    <description>In a 410-person randomized trial, a year of the NAD-boosting supplement nicotinamide riboside did not slow early Parkinson's disease; symptom scores ended slightly worse than with placebo. (Charalampos Tzoulis and the NOPARK investigators · University of Bergen; Haukeland University Hospital)</description>
+  </item>
   <item>
     <title>Voyager 1 becomes the first spacecraft to reach one light-day from Earth</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n1</link>
@@ -462,30 +486,6 @@
     <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
     <category>AI / Safety &amp; Alignment</category>
     <description>Teams of individually aligned LLM agents pick less safe trade-offs than one agent because responsibility diffuses; a designated safety lead plus a shared safety document restores single-agent behavior. (Siddarth Srinivasan, Morgan Jane Matthews, Jascha Sohl-Dickstein et al. · Harvard University, Constellation Institute, Anthropic)</description>
-  </item>
-  <item>
-    <title>Learning Anisotropic Prediction Targets for Flow Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17767</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17767</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>AnisoFlow lets a flow model learn what quantity it should predict, with a separate noise weight per data direction, improving pixel-space ImageNet FID from 1.90 to 1.55 without other changes. (Rayhan Zirvi, Hansheng Chen, Gordon Wetzstein et al. · Stanford University, California Institute of Technology)</description>
-  </item>
-  <item>
-    <title>Delayed Effects of Temporary Weight Decay in Muon Pretraining</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17876</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17876</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Optimization</category>
-    <description>Weight decay applied only early in Muon pretraining can look harmful when it is switched off yet give a lower final loss, because it leaves smaller weights and thus larger relative steps. (Md Rifat Arefin, Ravid Shwartz-Ziv, Ernie Chang et al. · Meta, Mila-Quebec AI Institute, Université de Montréal)</description>
-  </item>
-  <item>
-    <title>Interpretable weight-space programming builds transparent transformers and brain encoding models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18114</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18114</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Interpretability</category>
-    <description>An LLM agent writes neural network weights and features by hand, with training forbidden, producing readable transformers and brain-response models that beat classical interpretable baselines. (Yash Mehta, Chandan Singh, Weijia Xu et al.)</description>
   </item>
 </channel>
 </rss>

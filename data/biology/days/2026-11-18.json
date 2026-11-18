@@ -1,0 +1,128 @@
+{
+ "date": "2026-11-18",
+ "edition": "weekday",
+ "generated_at": "2026-11-18T13:54:15+00:00",
+ "summary": "The FDA approves the first drug shown to extend survival in a severe childhood form of Niemann-Pick disease type C, an oral Alzheimer's drug meets its trial goal in only one of two groups, and a large trial finds an NAD-boosting supplement does not help early Parkinson's disease.",
+ "news": [
+  {
+   "id": "2026-11-18-n1",
+   "story_key": "fda-adrabetadex-lembaz-niemann-pick-type-c-approval",
+   "title": "FDA approves adrabetadex, the first drug shown to lengthen survival in infantile-onset Niemann-Pick disease type C",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-17T14:15:00-05:00",
+   "tldr": "The FDA approved Lembaz (adrabetadex), a spinal injection given every two weeks, after treated patients with early-onset Niemann-Pick disease type C lived a median 8.5 years versus 4.9 years in matched controls.",
+   "why_selected": "A regulatory decision on the first therapy with survival evidence in a severe rare disease that begins in early childhood, documented by the agency's own release.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Niemann-Pick disease type C (NPC) is a rare inherited disorder in which cells cannot properly process cholesterol and other fats. The FDA classes it as a lysosomal storage disorder and estimates it affects 1 in 150,000 people. The fats accumulate, particularly in the brain, causing progressive loss of movement, coordination and the ability to swallow. Patients whose neurological symptoms begin before age 6 have the most serious form."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 17 the FDA approved Lembaz (adrabetadex) injection to reduce the risk of death in adults and children who weigh at least 7 kg (about 15 pounds) and whose neurological symptoms began before age 6, known as infantile-onset NPC. A trained healthcare provider injects the drug directly into the spinal canal, a procedure called intrathecal injection, every two weeks.\n\nThe agency examined the survival of 36 treated patients drawn from three clinical studies and an expanded access program, and compared them with a matched external control group rather than a randomized one. Treated patients had a 55% lower risk of death; median survival was 8.5 years with Lembaz and 4.9 years in the control group. The benefit was seen whether or not patients also took miglustat, a therapy used off-label in NPC. Approval went to Mandos, a subsidiary of Beren Therapeutics."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Two therapies were already approved for NPC, but the FDA says neither has been shown to reduce the risk of death, and both carry age and weight restrictions that limit access for the youngest and most seriously affected patients. Lembaz is the first with survival evidence in this group.\n\nThe evidence has limits a reader should weigh: 36 patients, and a comparison against outside controls matched after the fact which is weaker evidence than a randomized trial. The drug also carries a boxed warning for hearing impairment, including permanent hearing loss. Other common side effects include balance problems, fatigue and vomiting."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The FDA says a comprehensive hearing evaluation should be performed before treatment starts and regularly afterwards, with dose adjustments possible based on the results. How often hearing loss occurs in wider use will shape how the drug is used."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDA",
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-shown-help-patients-infantile-onset-niemann-pick-disease-type-c-live-longer"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n2",
+   "story_key": "aribio-ar1001-mirodenafil-polaris-ad-phase3-ctad",
+   "title": "AriBio's oral Alzheimer's drug AR1001 slows decline in patients taking no other dementia drug, but not in its full phase 3 trial",
+   "category": "Clinical Research",
+   "published": "2026-11-16T17:36:00-05:00",
+   "tldr": "In a 1,535-patient phase 3 trial, the daily pill AR1001 slowed decline by 31% among 604 patients on no other dementia drug, meeting a prespecified goal, but showed no significant effect overall.",
+   "why_selected": "A large phase 3 readout for an oral Alzheimer's drug whose split result (one of two prespecified populations) needs careful explanation.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Alzheimer's treatment market is dominated by injectable drugs, so an effective pill would be more convenient. AriBio, a South Korean company, has been testing AR1001 (generic name mirodenafil) as a once-daily tablet. Its global phase 3 trial, POLARIS-AD, enrolled 1,535 people with early-stage Alzheimer's disease at about 230 sites in 13 countries. It was completed in July."
+    },
+    {
+     "heading": "What happened",
+     "body": "The results were presented on November 16 at the Clinical Trials on Alzheimer's Disease conference (CTAD 2026) in Boston by Sharon Sha of Stanford University, the trial's principal investigator. Participants took one 30 mg tablet of AR1001 or a placebo daily for 52 weeks. The primary endpoint was the change in the Clinical Dementia Rating-Sum of Boxes (CDR-SB), a score of memory, judgment and daily function in which higher numbers mean worse dementia.\n\nThe trial had two prespecified primary populations and counted as a success if either showed a significant effect: all patients, and a monotherapy group of patients not taking existing dementia drugs. In the 604 monotherapy patients, scores worsened 31% less with AR1001 than with placebo, a difference of 0.44 points (p=0.0266, under the 0.03 threshold assigned to that group). In all 1,535 patients the difference was 0.11 points (p=0.4015), not statistically significant."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The trial technically met its primary goal, yet the drug did not show a benefit in the full population it was tested in. Translated into time, the result corresponds to a delay of about 3.5 months over a year in the monotherapy group and 0.8 months overall. Other cognitive tests leaned in the drug's favor without reaching significance, and spinal-fluid marker changes were not corrected for multiple testing.\n\nSerious adverse events were similar (10.0% with AR1001, 9.8% with placebo), while more patients stopped the drug because of side effects (5.2% versus 1.7%). So far the results come from a conference presentation."
+    },
+    {
+     "heading": "What to watch",
+     "body": "AriBio is expected to seek approval on the strength of the monotherapy result. Whether the FDA accepts a win in one of two populations as sufficient evidence will decide the drug's future."
+    }
+   ],
+   "sources": [
+    {
+     "name": "MoneyToday",
+     "url": "https://www.mt.co.kr/en/thebio/2026/11/17/2026111707315228010"
+    },
+    {
+     "name": "iNews24",
+     "url": "https://inews24.com/view/2026898"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1001-jama-2026-18828",
+   "title": "Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease",
+   "authors": [
+    "Charalampos Tzoulis and the NOPARK investigators"
+   ],
+   "affiliations": [
+    "University of Bergen; Haukeland University Hospital"
+   ],
+   "announced": "2026-11-17T00:00:00-05:00",
+   "primary_tag": "Neurology & mental health",
+   "tags": [
+    "Neurology & mental health",
+    "Drug development"
+   ],
+   "tldr": "In a 410-person randomized trial, a year of the NAD-boosting supplement nicotinamide riboside did not slow early Parkinson's disease; symptom scores ended slightly worse than with placebo.",
+   "why_selected": "A large, well-controlled negative trial that settles an open question about an NAD-boosting supplement and shows that hitting a biological target does not guarantee clinical benefit.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Parkinson's disease is one of the most common neurological diseases. Current drugs relieve symptoms, but no treatment has been shown to stop or slow the underlying disease."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "One hope has been to support the cell's energy metabolism. NAD (nicotinamide adenine dinucleotide) is a molecule cells need to produce energy and repair DNA, and mitochondria, the cell's power plants, do not work optimally in Parkinson's disease. Nicotinamide riboside (NR) is a precursor the body converts into NAD. Smaller, shorter studies had reported promising signs of clinical improvement."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The NOPARK trial was a randomized, double-blind phase 3 trial at 11 Norwegian centers, led by Charalampos Tzoulis of Haukeland University Hospital and the University of Bergen. A total of 410 people with early Parkinson's disease were randomly assigned to 1,000 mg of NR a day or a placebo for 52 weeks. They were followed with clinical examinations, blood tests and brain imaging.\n\nDisease progression was measured with the MDS-UPDRS, an established Parkinson's rating scale in which a higher score means more pronounced symptoms and functional difficulty. If raising NAD protects neurons, the NR group should worsen less than the placebo group. The University of Bergen describes the study as the largest trial of NAD-boosting treatment in brain disease."
+    },
+    {
+     "heading": "Results",
+     "body": "NAD levels rose clearly, but patients did not benefit. After one year the NR group had worsened by an average of 2.45 points, while the placebo group was roughly unchanged (a 0.27-point decrease), an adjusted difference of 2.72 points in favor of placebo. The difference was statistically significant but below the usual threshold for clinically relevant worsening. Brain imaging showed no sign that NR either slowed or accelerated the disease. Four of five prespecified secondary outcomes showed no significant difference. Serious adverse events occurred in 8.3% of the NR group and 14.1% of the placebo group."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors conclude that the findings do not support NR as a disease-modifying treatment for early Parkinson's disease. The result does not show that NAD metabolism is irrelevant to the disease, only that this dose and duration brought no benefit. The team will next examine whether subgroups responded differently."
+    }
+   ],
+   "links": {
+    "paper": "https://jamanetwork.com/journals/jama/fullarticle/2855023",
+    "doi": "https://doi.org/10.1001/jama.2026.18828"
+   },
+   "signals": {
+    "venue": "JAMA",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

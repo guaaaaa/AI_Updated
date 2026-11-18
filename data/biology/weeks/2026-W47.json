@@ -3,14 +3,26 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
    "title": "F.D.A. Rejects Closely Watched Lung Cancer Drug From China",
-   "outlets": 3,
+   "outlets": 6,
    "date": "2026-11-15",
    "covered": null
+  },
+  {
+   "title": "US Has Lost Measles Elimination Status, Global Health Authorities Say",
+   "outlets": 4,
+   "date": "2026-11-14",
+   "covered": "2026-11-16-n2"
+  },
+  {
+   "title": "US FDA approves Roche's oral treatment for advanced breast cancer",
+   "outlets": 4,
+   "date": "2026-11-16",
+   "covered": "2026-11-17-n1"
   },
   {
    "title": "U.S. Loses Measles Elimination Status After 26 Years. It Won't Be Easy To Get It Back",
@@ -20,8 +32,8 @@
   }
  ],
  "featured": {
-  "news": 6,
-  "papers": 6
+  "news": 8,
+  "papers": 7
  },
  "items": [
   {
@@ -95,6 +107,24 @@
    "date": "2026-11-17",
    "type": "paper",
    "title": "Poisoned hunting weapons, megafauna, and plant use at a 125,000-year-old Arabian paleolakeshore"
+  },
+  {
+   "id": "2026-11-18-n1",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "FDA approves adrabetadex, the first drug shown to lengthen survival in infantile-onset Niemann-Pick disease type C"
+  },
+  {
+   "id": "2026-11-18-n2",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "AriBio's oral Alzheimer's drug AR1001 slows decline in patients taking no other dementia drug, but not in its full phase 3 trial"
+  },
+  {
+   "id": "doi-10-1001-jama-2026-18828",
+   "date": "2026-11-18",
+   "type": "paper",
+   "title": "Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease"
   }
  ]
 }

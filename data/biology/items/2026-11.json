@@ -1,5 +1,38 @@
 [
  {
+  "id": "2026-11-18-n1",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "FDA approves adrabetadex, the first drug shown to lengthen survival in infantile-onset Niemann-Pick disease type C",
+  "tldr": "The FDA approved Lembaz (adrabetadex), a spinal injection given every two weeks, after treated patients with early-onset Niemann-Pick disease type C lived a median 8.5 years versus 4.9 years in matched controls.",
+  "category": "Drugs & Approvals",
+  "byline": "FDA"
+ },
+ {
+  "id": "2026-11-18-n2",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "AriBio's oral Alzheimer's drug AR1001 slows decline in patients taking no other dementia drug, but not in its full phase 3 trial",
+  "tldr": "In a 1,535-patient phase 3 trial, the daily pill AR1001 slowed decline by 31% among 604 patients on no other dementia drug, meeting a prespecified goal, but showed no significant effect overall.",
+  "category": "Clinical Research",
+  "byline": "MoneyToday, iNews24"
+ },
+ {
+  "id": "doi-10-1001-jama-2026-18828",
+  "date": "2026-11-18",
+  "type": "paper",
+  "title": "Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease",
+  "tldr": "In a 410-person randomized trial, a year of the NAD-boosting supplement nicotinamide riboside did not slow early Parkinson's disease; symptom scores ended slightly worse than with placebo.",
+  "primary_tag": "Neurology & mental health",
+  "tags": [
+   "Neurology & mental health",
+   "Drug development"
+  ],
+  "byline": "Charalampos Tzoulis and the NOPARK investigators · University of Bergen; Haukeland University Hospital",
+  "hf": null,
+  "venue": "JAMA"
+ },
+ {
   "id": "2026-11-17-n1",
   "date": "2026-11-17",
   "type": "news",
