@@ -1,5 +1,93 @@
 [
  {
+  "id": "2026-11-18-n1",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "OpenAI releases GPT-6.2 Astra and Sol, cutting Astra's price 20% and crossing its own \"High\" self-improvement threshold",
+  "tldr": "OpenAI launched GPT-6.2 Astra and Sol, claiming better professional work at lower cost; Astra is its first released model to meet the company's High threshold for AI self-improvement.",
+  "category": "Model Release",
+  "byline": "OpenAI, SiliconANGLE, 9to5Google"
+ },
+ {
+  "id": "2611.23219",
+  "date": "2026-11-18",
+  "type": "paper",
+  "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+  "tldr": "Given only file-editing tools, a sandbox and a way to watch a copy of itself play games, recent frontier models invent their own self-improvement procedures; older generations do not.",
+  "primary_tag": "RSI",
+  "tags": [
+   "RSI",
+   "Agents",
+   "Safety & Alignment"
+  ],
+  "byline": "Shobhita Sundaram, Cansu Sancaktar, Phillip Isola · MIT CSAIL, University of Tübingen",
+  "hf": 3,
+  "venue": null
+ },
+ {
+  "id": "2611.23068",
+  "date": "2026-11-18",
+  "type": "paper",
+  "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+  "tldr": "A 1,030-run reproducibility study argues that agent \"evolution\" stalls because noisy evaluations cannot tell better prompts and skills from worse ones, not because good candidates are missing.",
+  "primary_tag": "Evaluation & Benchmarks",
+  "tags": [
+   "Evaluation & Benchmarks",
+   "Agents",
+   "RSI"
+  ],
+  "byline": "Yuanhao Zeng, Shaocheng Lan, Ao Lu et al. · ShanghaiTech University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.21600",
+  "date": "2026-11-18",
+  "type": "paper",
+  "title": "How VLMs Plan What's Next",
+  "tldr": "Causal patching in Qwen3-VL shows how a vision-language model lists items in an image: it keeps a \"cursor\" marking how far it has got and picks the nearest unwritten region next.",
+  "primary_tag": "Interpretability",
+  "tags": [
+   "Interpretability",
+   "Multimodal"
+  ],
+  "byline": "Rohit Gandikota, Arnab Sen Sharma, Adam Belfki et al. · Northeastern University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.23001",
+  "date": "2026-11-18",
+  "type": "paper",
+  "title": "NVIDIA Kumo Tabular: Pushing the Accuracy$\\unicode{8211}$Efficiency Frontier for Tabular Prediction",
+  "tldr": "NVIDIA's open Kumo Tabular models, pretrained only on synthetic tables, predict on new tables with no training and rank first on eight tabular benchmarks while running faster than the runners-up.",
+  "primary_tag": "Pre-training & Data",
+  "tags": [
+   "Pre-training & Data",
+   "Architectures",
+   "Efficiency"
+  ],
+  "byline": "Jingang Qu, Valter Hudovernik, Martin Jurkovič et al. · NVIDIA, Stanford University, INRIA",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.23226",
+  "date": "2026-11-18",
+  "type": "paper",
+  "title": "FastFrames: Video Generation at Interactive Latency",
+  "tldr": "FastFrames gets autoregressive video diffusion under 50 ms per frame by replacing the VAE decoder and the cache-refresh pass, which together took over half of inference time.",
+  "primary_tag": "Generative Models",
+  "tags": [
+   "Generative Models",
+   "Efficiency",
+   "World Models"
+  ],
+  "byline": "Gene Chou, Guandao Yang, Fujun Luan et al. · Apple",
+  "hf": 19,
+  "venue": null
+ },
+ {
   "id": "2026-11-17-n1",
   "date": "2026-11-17",
   "type": "news",

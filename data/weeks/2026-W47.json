@@ -3,26 +3,54 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [
   {
-   "id": "2611.18359",
-   "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
-   "hf": 121,
-   "org": null,
+   "id": "2611.22115",
+   "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
+   "hf": 144,
+   "org": "XingChen-AGI",
    "featured": null
   },
   {
    "id": "2611.18397",
    "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
-   "hf": 105,
+   "hf": 128,
    "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.18359",
+   "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+   "hf": 125,
+   "org": "Grid Robotics",
+   "featured": null
+  },
+  {
+   "id": "2611.21072",
+   "title": "Sage S2.1 Flash Technical Report",
+   "hf": 95,
+   "org": "Intern Large Models",
+   "featured": null
+  },
+  {
+   "id": "2611.21218",
+   "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
+   "hf": 94,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.17621",
+   "title": "AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs",
+   "hf": 90,
+   "org": "SLAI-AITP",
    "featured": null
   },
   {
    "id": "2611.19937",
    "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
-   "hf": 53,
+   "hf": 69,
    "org": "Nanyang Technological University",
    "featured": null
   },
@@ -32,59 +60,43 @@
    "hf": 52,
    "org": "Institute of Foundation Models",
    "featured": "2026-11-17"
-  },
-  {
-   "id": "2611.21218",
-   "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
-   "hf": 50,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2611.21072",
-   "title": "Sage S2.1 Flash Technical Report",
-   "hf": 47,
-   "org": "Intern Large Models",
-   "featured": null
-  },
-  {
-   "id": "2611.18482",
-   "title": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
-   "hf": 37,
-   "org": "National University of Singapore",
-   "featured": null
-  },
-  {
-   "id": "2611.21607",
-   "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
-   "hf": 37,
-   "org": "galbot",
-   "featured": "2026-11-17"
   }
  ],
  "stories": [
   {
    "title": "Jensen Huang and the End of the Founder Fairy Tale",
-   "outlets": 12,
+   "outlets": 17,
    "date": "2026-11-13",
    "covered": null
   },
   {
    "title": "California sues OpenAI over rogue AI hacking incidents",
-   "outlets": 12,
+   "outlets": 14,
    "date": "2026-11-16",
    "covered": null
   },
   {
+   "title": "Wall Street Braces for Anthropic’s Aggressive Spending",
+   "outlets": 5,
+   "date": "2026-11-15",
+   "covered": null
+  },
+  {
    "title": "US moves to cut China’s remote access to AI chips",
-   "outlets": 4,
+   "outlets": 5,
    "date": "2026-11-16",
    "covered": null
   },
   {
    "title": "Southeast Asia scrambles as US chip curbs threaten AI data centre boom",
-   "outlets": 4,
+   "outlets": 5,
    "date": "2026-11-17",
+   "covered": null
+  },
+  {
+   "title": "Anthropic’s IPO is the next big test for AI",
+   "outlets": 3,
+   "date": "2026-11-15",
    "covered": null
   },
   {
@@ -101,7 +113,7 @@
   }
  ],
  "featured": {
-  "news": 4,
-  "papers": 10
+  "news": 5,
+  "papers": 15
  }
 }

@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-18T11:46:56+00:00",
+ "updated": "2026-11-18T12:16:21+00:00",
  "domain": "ai",
  "days": [
+  {
+   "date": "2026-11-18",
+   "edition": "weekday",
+   "news": 1,
+   "papers": 5,
+   "backfill": false
+  },
   {
    "date": "2026-11-17",
    "edition": "weekday",
@@ -300,7 +307,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 102
+   "n": 108
   },
   {
    "month": "2026-10",
@@ -346,26 +353,26 @@
   ]
  },
  "tag_counts": {
-  "World Models": 25,
-  "Evaluation & Benchmarks": 31,
-  "Generative Models": 34,
-  "Pre-training & Data": 32,
+  "RSI": 17,
+  "Agents": 85,
+  "Safety & Alignment": 10,
+  "Evaluation & Benchmarks": 32,
+  "Interpretability": 12,
+  "Multimodal": 22,
+  "Pre-training & Data": 33,
+  "Architectures": 33,
+  "Efficiency": 56,
+  "Generative Models": 35,
+  "World Models": 26,
   "LLMs": 15,
-  "Architectures": 32,
-  "Agents": 83,
   "Robotics": 36,
-  "Multimodal": 21,
   "Society & Policy": 2,
   "Reinforcement Learning": 41,
   "Post-training": 40,
-  "Safety & Alignment": 9,
   "Theory": 14,
   "Optimization": 5,
-  "Interpretability": 11,
   "AI for Science & Health": 10,
-  "Efficiency": 54,
   "Computer Vision": 6,
-  "RSI": 15,
   "Retrieval & Memory": 13,
   "Reasoning": 18,
   "AI for Math": 5,
@@ -384,9 +391,9 @@
   "People"
  ],
  "category_counts": {
+  "Model Release": 24,
   "Policy & Legal": 9,
   "Compute & Infrastructure": 5,
-  "Model Release": 23,
   "Safety & Security": 11,
   "Product & Features": 7,
   "Open Source": 2,

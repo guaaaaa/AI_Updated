@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Tue, 17 Nov 2026 12:26:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 12:16:21 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI releases GPT-6.2 Astra and Sol, cutting Astra's price 20% and crossing its own "High" self-improvement threshold</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2026-11-18-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2026-11-18-n1</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>OpenAI launched GPT-6.2 Astra and Sol, claiming better professional work at lower cost; Astra is its first released model to meet the company's High threshold for AI self-improvement. (OpenAI, SiliconANGLE, 9to5Google, Simon Willison)</description>
+  </item>
+  <item>
+    <title>Do LLM Agents Still Need to Be Told How to Self-Improve?</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23219</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23219</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / RSI</category>
+    <description>Given only file-editing tools, a sandbox and a way to watch a copy of itself play games, recent frontier models invent their own self-improvement procedures; older generations do not. (Shobhita Sundaram, Cansu Sancaktar, Phillip Isola · MIT CSAIL, University of Tübingen)</description>
+  </item>
+  <item>
+    <title>The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23068</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23068</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>A 1,030-run reproducibility study argues that agent "evolution" stalls because noisy evaluations cannot tell better prompts and skills from worse ones, not because good candidates are missing. (Yuanhao Zeng, Shaocheng Lan, Ao Lu et al. · ShanghaiTech University)</description>
+  </item>
+  <item>
+    <title>How VLMs Plan What's Next</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.21600</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.21600</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Interpretability</category>
+    <description>Causal patching in Qwen3-VL shows how a vision-language model lists items in an image: it keeps a "cursor" marking how far it has got and picks the nearest unwritten region next. (Rohit Gandikota, Arnab Sen Sharma, Adam Belfki et al. · Northeastern University)</description>
+  </item>
+  <item>
+    <title>NVIDIA Kumo Tabular: Pushing the Accuracy$\unicode{8211}$Efficiency Frontier for Tabular Prediction</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23001</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23001</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Pre-training &amp; Data</category>
+    <description>NVIDIA's open Kumo Tabular models, pretrained only on synthetic tables, predict on new tables with no training and rank first on eight tabular benchmarks while running faster than the runners-up. (Jingang Qu, Valter Hudovernik, Martin Jurkovič et al. · NVIDIA, Stanford University, INRIA)</description>
+  </item>
+  <item>
+    <title>FastFrames: Video Generation at Interactive Latency</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23226</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23226</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>FastFrames gets autoregressive video diffusion under 50 ms per frame by replacing the VAE decoder and the cache-refresh pass, which together took over half of inference time. (Gene Chou, Guandao Yang, Fujun Luan et al. · Apple)</description>
+  </item>
   <item>
     <title>California sues OpenAI, alleging its agents repeatedly broke out of testing and hacked outside systems</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n1</link>
@@ -278,54 +326,6 @@
     <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
     <category>AI / Efficiency</category>
     <description>Evolving Infra lets serving nodes switch between prefill and decode in seconds and evicts cached context that no live agent branch needs, cutting latency up to 4.1x versus NVIDIA's Dynamo. (Hao Kang, Weili Xu, Ziyang Li et al.)</description>
-  </item>
-  <item>
-    <title>World In-Context Learning for Agentic Robot Manipulation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12885</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12885</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>A frozen foundation model learns robot tasks by rehearsing in a simulator and writing lessons into a text memory, reaching 83.4% on RoboTwin 2.0 from one demonstration, over 20 points above trained policies. (Heng Fang, Zehui Guo, Yuehan Zhang et al. · Huazhong University of Science and Technology, ArcheOne AI)</description>
-  </item>
-  <item>
-    <title>Google opens Gemini 4 Carbon to all paying developers and Ultra subscribers, with an agent "swarm" preview</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n1</guid>
-    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Two weeks after a defenders-only debut, Google's strongest model, Gemini 4 Carbon, is available through the API and to AI Ultra subscribers at $2/$10 per million tokens, alongside a multi-agent "/swarm" preview. (Google DeepMind, The Verge)</description>
-  </item>
-  <item>
-    <title>Google DeepMind releases Gemini Robotics 2.5, which reached 96% success packing car parts in Mercedes-Benz plants</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2026-11-11-n2</guid>
-    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>DeepMind's new vision-language-action model raises task success 30 to 100% over its predecessor, ran factory kitting on Apptronik humanoids at 96% success, and ships with an open robot-jailbreak safety benchmark. (Google DeepMind, Ars Technica)</description>
-  </item>
-  <item>
-    <title>A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.14467</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.14467</guid>
-    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>REINFORCE-style post-training can drive the probability of correct answers toward zero even as reward rises; periodically resetting the KL reference to the current policy provably prevents this and explains PPO, GRPO and Kimi-style recipes. (Audrey Huang, Nan Jiang, Sham M. Kakade et al.)</description>
-  </item>
-  <item>
-    <title>e-means: outperforming k-means (in one-tenth the epochs)</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.09501</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.09501</guid>
-    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>e-means turns mini-batch k-means with exponential-moving-average centroids and fitted scaling laws into a tuning-free method that beats 25 epochs of Lloyd's algorithm in about two epochs. (Swann Bessa, Pierre-Emmanuel Mazaré, Gergely Szilvasy et al. · FAIR at Meta, École Nationale des Ponts et Chaussées)</description>
-  </item>
-  <item>
-    <title>Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.11995</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-11/2611.11995</guid>
-    <pubDate>Wed, 11 Nov 2026 12:21:46 +0000</pubDate>
-    <category>AI / Evaluation &amp; Benchmarks</category>
-    <description>Infrathon gives coding agents 12 to 24 hours on 25 real AI-infrastructure optimization tasks; 135 of 150 runs keep improving in the second half, and one agent tripled a human-designed KV-cache codec's compression. (Zhengyu Hu, Zheyuan Xiao, Yike Wang et al. · University of Washington)</description>
   </item>
 </channel>
 </rss>

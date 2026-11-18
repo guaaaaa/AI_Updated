@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 18 Nov 2026 11:46:56 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 12:16:21 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI releases GPT-6.2 Astra and Sol, cutting Astra's price 20% and crossing its own "High" self-improvement threshold</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2026-11-18-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2026-11-18-n1</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>OpenAI launched GPT-6.2 Astra and Sol, claiming better professional work at lower cost; Astra is its first released model to meet the company's High threshold for AI self-improvement. (OpenAI, SiliconANGLE, 9to5Google, Simon Willison)</description>
+  </item>
+  <item>
+    <title>Do LLM Agents Still Need to Be Told How to Self-Improve?</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23219</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23219</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / RSI</category>
+    <description>Given only file-editing tools, a sandbox and a way to watch a copy of itself play games, recent frontier models invent their own self-improvement procedures; older generations do not. (Shobhita Sundaram, Cansu Sancaktar, Phillip Isola · MIT CSAIL, University of Tübingen)</description>
+  </item>
+  <item>
+    <title>The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23068</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23068</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>A 1,030-run reproducibility study argues that agent "evolution" stalls because noisy evaluations cannot tell better prompts and skills from worse ones, not because good candidates are missing. (Yuanhao Zeng, Shaocheng Lan, Ao Lu et al. · ShanghaiTech University)</description>
+  </item>
+  <item>
+    <title>How VLMs Plan What's Next</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.21600</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.21600</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Interpretability</category>
+    <description>Causal patching in Qwen3-VL shows how a vision-language model lists items in an image: it keeps a "cursor" marking how far it has got and picks the nearest unwritten region next. (Rohit Gandikota, Arnab Sen Sharma, Adam Belfki et al. · Northeastern University)</description>
+  </item>
+  <item>
+    <title>NVIDIA Kumo Tabular: Pushing the Accuracy$\unicode{8211}$Efficiency Frontier for Tabular Prediction</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23001</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23001</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Pre-training &amp; Data</category>
+    <description>NVIDIA's open Kumo Tabular models, pretrained only on synthetic tables, predict on new tables with no training and rank first on eight tabular benchmarks while running faster than the runners-up. (Jingang Qu, Valter Hudovernik, Martin Jurkovič et al. · NVIDIA, Stanford University, INRIA)</description>
+  </item>
+  <item>
+    <title>FastFrames: Video Generation at Interactive Latency</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23226</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23226</guid>
+    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>FastFrames gets autoregressive video diffusion under 50 ms per frame by replacing the VAE decoder and the cache-refresh pass, which together took over half of inference time. (Gene Chou, Guandao Yang, Fujun Luan et al. · Apple)</description>
+  </item>
   <item>
     <title>Oracle patches Java4Shell, a Java runtime flaw that lets attackers take over widely used server software</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n1</link>
@@ -438,54 +486,6 @@
     <pubDate>Mon, 16 Nov 2026 19:22:35 +0000</pubDate>
     <category>Biology / Evolution &amp; ecology</category>
     <description>Fruit flies evolving in outdoor and indoor cages changed pigmentation in a direction a genetic map could predict, but which genes did the changing was largely unpredictable. (J. A. Smiley-Rhodes, M. C. Bitter, S. Berardi et al. · Stanford University; University of Pennsylvania; Chan Zuckerberg Biohub)</description>
-  </item>
-  <item>
-    <title>An 11-year-old Linux kernel flaw called NoisyTCP lets remote attackers crash servers, and a patch is available</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n1</guid>
-    <pubDate>Mon, 16 Nov 2026 19:20:05 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>A flaw in the Linux kernel's TCP code, present for 11 years, lets unauthenticated attackers crash servers over the network; it cannot be used to run code, and a fix is out. (BleepingComputer, Red Hat)</description>
-  </item>
-  <item>
-    <title>ULA's Vulcan rocket fails for the first time, destroying 40 Amazon Leo broadband satellites</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n2</guid>
-    <pubDate>Mon, 16 Nov 2026 19:20:05 +0000</pubDate>
-    <category>Tech / Space Industry</category>
-    <description>United Launch Alliance's Vulcan rocket failed about 10 minutes after liftoff on Sunday, losing 40 Amazon Leo satellites in the company's first total mission failure since it was formed in 2006. (Ars Technica, The Register, Engadget)</description>
-  </item>
-  <item>
-    <title>SpaceX catches a Starship upper stage with its launch tower after nearly a day in orbit</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-16/2026-11-16-n3</guid>
-    <pubDate>Mon, 16 Nov 2026 19:20:05 +0000</pubDate>
-    <category>Tech / Space Industry</category>
-    <description>SpaceX's Starship upper stage returned from orbit on Saturday and was caught by the arms of the launch tower it had left 22 and a half hours earlier, on the first attempt. (Ars Technica, The Register)</description>
-  </item>
-  <item>
-    <title>FDA approves durvalumab plus enfortumab vedotin around surgery for bladder cancer patients who cannot take cisplatin</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/2026-11-14-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/2026-11-14-n1</guid>
-    <pubDate>Sat, 14 Nov 2026 13:55:11 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA approved an immunotherapy plus antibody-drug conjugate given before and after bladder removal for patients who cannot or will not take cisplatin, after a 695-patient trial showed longer event-free and overall survival. (FDA, The ASCO Post)</description>
-  </item>
-  <item>
-    <title>US measles deaths climb as the CDC's tally reaches six and states report ten, with cases above 5,400</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/2026-11-14-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/2026-11-14-n2</guid>
-    <pubDate>Sat, 14 Nov 2026 13:55:11 +0000</pubDate>
-    <category>Biology / Public Health</category>
-    <description>The CDC now counts six US measles deaths in 2026 while state health departments report ten, cases have reached 5,412, and a regional health body is weighing whether the US has lost measles-elimination status. (CIDRAP, PolitiFact)</description>
-  </item>
-  <item>
-    <title>China approves Lilly's orforglipron, the first GLP-1 weight-loss pill cleared there</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/2026-11-14-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/2026-11-14-n3</guid>
-    <pubDate>Sat, 14 Nov 2026 13:55:11 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>China's drug regulator approved Eli Lilly's orforglipron tablets for adults with obesity, or overweight plus a related condition, making it the first oral GLP-1 drug for weight management in the country. (Pharmaceutical Technology, Plataforma Media)</description>
   </item>
 </channel>
 </rss>
