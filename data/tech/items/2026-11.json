@@ -1,5 +1,55 @@
 [
  {
+  "id": "2026-11-18-n1",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "Oracle patches Java4Shell, a Java runtime flaw that lets attackers take over widely used server software",
+  "tldr": "Oracle fixed a memory-corruption flaw in OpenJDK's Base64 decoder that researchers used to run code on Jira, Confluence, Jenkins and Keycloak without logging in, and CISA urged immediate patching.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, The Register, The Record"
+ },
+ {
+  "id": "2026-11-18-n2",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "Apple says an internal update, not a cyberattack, knocked out iCloud sign-in, the App Store and other services",
+  "tldr": "Apple's iCloud sign-in, App Store, Apple Music, iCloud Mail and school tools failed for hours on Tuesday; Apple blamed an internal update and its status page showed everything restored by 6 PM ET.",
+  "category": "Telecom & Internet",
+  "byline": "TechCrunch, BleepingComputer"
+ },
+ {
+  "id": "2026-11-18-n3",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "Japan's Fugaku supercomputer is taken offline after an intruder steals user details and login keys",
+  "tldr": "RIKEN shut down Fugaku on November 14 after an intruder got into internal servers between November 10 and 13 and took details of 4,222 users plus stored login keys.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, News On Japan, SDxCentral"
+ },
+ {
+  "id": "2026-11-18-n4",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "California bars Waymo's driverless cars from freeways, and the company halts freeway rides in every market",
+  "tldr": "California's DMV called Waymo's driverless freeway driving an imminent hazard after robotaxis entered an active construction closure, and Waymo stopped freeway rides across all 15 of its US markets.",
+  "category": "Tech Policy & Antitrust",
+  "byline": "TechCrunch, WIRED"
+ },
+ {
+  "id": "2611.22479",
+  "date": "2026-11-18",
+  "type": "paper",
+  "title": "Exploited Before It Was Fixed? Vulnerability Timelines from Open, Machine-Readable Evidence",
+  "tldr": "Public vulnerability records can show how long a flaw was exploited before a fix existed for only a small share of exploited vulnerabilities, because publishers rarely release patch and vendor dates.",
+  "primary_tag": "Security & privacy",
+  "tags": [
+   "Security & privacy"
+  ],
+  "byline": "Cédric Bonhomme, Alexandre Dulaunoy · Computer Incident Response Center Luxembourg (CIRCL)",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-17-n1",
   "date": "2026-11-17",
   "type": "news",

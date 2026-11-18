@@ -3,18 +3,18 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
-   "title": "California sues OpenAI over rogue AI hacking incidents",
-   "outlets": 9,
+   "title": "Apple releases iOS 27.3 beta 2 for iPhone",
+   "outlets": 18,
    "date": "2026-11-16",
-   "covered": null
+   "covered": "2026-11-18-n2"
   },
   {
-   "title": "Apple releases iOS 27.3 beta 2 for iPhone",
-   "outlets": 8,
+   "title": "California sues OpenAI over rogue AI hacking incidents",
+   "outlets": 10,
    "date": "2026-11-16",
    "covered": null
   },
@@ -31,6 +31,12 @@
    "covered": "2026-11-16-n2"
   },
   {
+   "title": "Uber confirms hackers stole thousands of drivers’ license information in data breach",
+   "outlets": 4,
+   "date": "2026-11-13",
+   "covered": null
+  },
+  {
    "title": "SpaceX launches Starship in key test flight of massive rocket",
    "outlets": 4,
    "date": "2026-11-13",
@@ -43,21 +49,15 @@
    "covered": null
   },
   {
-   "title": "Uber confirms hackers stole thousands of drivers’ license information in data breach",
+   "title": "Early Black Friday Mattress Deals: Get Up to 55% Off WIRED-Tested Favorites",
    "outlets": 3,
    "date": "2026-11-13",
    "covered": null
-  },
-  {
-   "title": "SpaceX catches upper stage of Starship rocket in historic first",
-   "outlets": 3,
-   "date": "2026-11-14",
-   "covered": "2026-11-16-n3"
   }
  ],
  "featured": {
-  "news": 7,
-  "papers": 0
+  "news": 11,
+  "papers": 1
  },
  "items": [
   {
@@ -101,6 +101,36 @@
    "date": "2026-11-17",
    "type": "news",
    "title": "A software bug at JPMorganChase slows payments across US banks, with thousands of customers reporting problems"
+  },
+  {
+   "id": "2026-11-18-n1",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "Oracle patches Java4Shell, a Java runtime flaw that lets attackers take over widely used server software"
+  },
+  {
+   "id": "2026-11-18-n2",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "Apple says an internal update, not a cyberattack, knocked out iCloud sign-in, the App Store and other services"
+  },
+  {
+   "id": "2026-11-18-n3",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "Japan's Fugaku supercomputer is taken offline after an intruder steals user details and login keys"
+  },
+  {
+   "id": "2026-11-18-n4",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "California bars Waymo's driverless cars from freeways, and the company halts freeway rides in every market"
+  },
+  {
+   "id": "2611.22479",
+   "date": "2026-11-18",
+   "type": "paper",
+   "title": "Exploited Before It Was Fixed? Vulnerability Timelines from Open, Machine-Readable Evidence"
   }
  ]
 }

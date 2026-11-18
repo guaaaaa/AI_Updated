@@ -1,0 +1,218 @@
+{
+ "date": "2026-11-18",
+ "edition": "weekday",
+ "generated_at": "2026-11-18T11:46:56+00:00",
+ "summary": "A critical Java runtime flaw gets an urgent patch, Apple traces a services outage to its own update, Japan's Fugaku supercomputer stays offline after a break-in, and California bars Waymo from freeways.",
+ "news": [
+  {
+   "id": "2026-11-18-n1",
+   "story_key": "java4shell-openjdk-cve-2026-114938",
+   "title": "Oracle patches Java4Shell, a Java runtime flaw that lets attackers take over widely used server software",
+   "category": "Cybersecurity",
+   "published": "2026-11-17T18:04:00-05:00",
+   "tldr": "Oracle fixed a memory-corruption flaw in OpenJDK's Base64 decoder that researchers used to run code on Jira, Confluence, Jenkins and Keycloak without logging in, and CISA urged immediate patching.",
+   "why_selected": "A flaw in the shared Java runtime reaches many unrelated enterprise products at once, and the US cybersecurity agency issued an alert the same day.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Java is one of the most widely used programming platforms, running enterprise applications, web services and financial systems. Many products share the same Java runtime, so a flaw in one of its core components reaches applications that otherwise have nothing in common. One such component decodes Base64, a common way of writing binary data as text."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday, November 17, Oracle released a fix for CVE-2026-114938 as part of its November security update, which contains 655 patches. The flaw, named Java4Shell by the security firm Calif, sits in the version of the Base64 decoder that OpenJDK speeds up with specialized processor instructions. Malformed input can make that code overwrite neighboring memory, which can expose sensitive data or let an attacker run their own code. It affects OpenJDK 17.0.6 and later on x86-64 processors with a feature called AVX-512 VBMI, including the Java builds from Oracle, Amazon, Eclipse, Microsoft, Azul and Red Hat. Calif said it achieved code execution without authentication against default installations of Keycloak, Atlassian Jira and Confluence, JFrog Artifactory, Jenkins and PingFederate. The Cybersecurity and Infrastructure Security Agency (CISA) issued a notice on Tuesday night urging organizations to patch immediately."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Because the bug is in Java's standard library, fixing it is an inventory problem: CISA told organizations to look for affected Java installations bundled inside third-party applications and to start with internet-facing systems. There are limits. Calif says there is no universal attack, since each application needs its own way of delivering the malformed data, and only certain processors are affected. Cisco's Talos team has not yet seen attacks in the wild. The discovery is also notable for its cost: Calif said researcher Quang Luong found the flaw in about an hour with an AI coding assistant and built a first working attack in two more hours, for less than $200 in usage fees."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether exploitation is reported, how quickly vendors that bundle Java ship updated versions, and when Calif releases the application-specific attack code it is withholding until users have had time to upgrade."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/18/oracle-reveals-fix-this-asap-grade-java4shell-bug-that-allows-attacks-on-many-third-party-apps/5310661"
+    },
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/cisa-issues-java4shell-alert"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n2",
+   "story_key": "apple-services-outage-nov-2026",
+   "title": "Apple says an internal update, not a cyberattack, knocked out iCloud sign-in, the App Store and other services",
+   "category": "Telecom & Internet",
+   "published": "2026-11-17T13:55:00-05:00",
+   "tldr": "Apple's iCloud sign-in, App Store, Apple Music, iCloud Mail and school tools failed for hours on Tuesday; Apple blamed an internal update and its status page showed everything restored by 6 PM ET.",
+   "why_selected": "An outage of account sign-in affecting all Apple users, and the latest in a week of large failures that companies have attributed to their own software.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Most Apple services depend on one account system: iCloud Account & Sign In, which checks a user's Apple ID before the App Store, Mail or device setup will work. The outage came in a week of high-profile failures. Microsoft's cloud systems behind Outlook and Teams failed days earlier, Chase's banking app had a brief outage, and the National Security Agency's internal classified network had a partial outage. According to TechCrunch, each was blamed on software problems."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday, November 17, Apple's System Status page began listing problems. At about 11:45 AM ET, iCloud Account & Sign In was marked as slow or unavailable for all users. The App Store and Apple Music were also listed with issues. Apple School Manager and Schoolwork, its tools for schools, followed at about 1:40 PM ET, and iCloud Mail and the iCloud.com web apps at about 2:03 PM ET. Some people on Reddit reported that they could not activate a new iPhone. Apple said in a statement: \"Many of our systems are back up and running after an internal update caused some outages this morning.\" By 6 PM ET the status page showed all the outages resolved."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A sign-in failure is more visible than most cloud problems. TechCrunch noted that it can make an iPhone ask again for an Apple ID and password and cause sign-ins to other services to fail, which is why a fault in one system showed up across unrelated products. The cause matters as well. Users on social media speculated about an attack, but Apple said the outage was caused by its own update and was not a cyberattack, and TechCrunch reported that none of the past week's outages has been attributed to one. The disruption came from a change inside the company, which security defenses do not address."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Apple has not said what the update changed or why its effects spread to so many services."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/17/apple-services-including-icloud-app-store-and-apple-music-hit-by-outage/"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n3",
+   "story_key": "riken-fugaku-unauthorized-access-shutdown",
+   "title": "Japan's Fugaku supercomputer is taken offline after an intruder steals user details and login keys",
+   "category": "Cybersecurity",
+   "published": "2026-11-16T12:00:00-05:00",
+   "tldr": "RIKEN shut down Fugaku on November 14 after an intruder got into internal servers between November 10 and 13 and took details of 4,222 users plus stored login keys.",
+   "why_selected": "A breach that halts one of the world's leading research supercomputers and exposes keys that its users also rely on to reach other systems.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Fugaku is a supercomputer developed by the research institute RIKEN and Fujitsu and run by the RIKEN Center for Computational Science in Kobe. It topped the Top500 ranking of supercomputers in 2020 and entered shared use in March 2021. Researchers in universities and industry use the 537-petaflops machine for drug discovery, severe-weather forecasting and simulations of airborne virus transmission. The center also runs a second system, Rikyu."
+    },
+    {
+     "heading": "What happened",
+     "body": "RIKEN announced the breach on November 16. According to its account, reported by BleepingComputer, an unauthorized party got into multiple internal servers between November 10 and 13 by way of the public dashboard that displays Fugaku's operating status, then planted malware aimed at user data. The compromised information includes the names, email addresses and user IDs of 4,222 Fugaku users, the names and email addresses of 375 Rikyu users, and SSH private keys, access keys and research data files that users had stored. The attacker used some of the keys in attempts to connect to other systems; the investigation has not found further unauthorized access or theft of research results. RIKEN shut Fugaku down on November 14 and disabled users' login keys. RIKEN has not attributed the attack and is still working out how the intruder got in."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "An SSH private key is a file that proves a user's identity to a remote computer in place of a password. Researchers often keep such keys on the machines they work from, so a breach at a shared facility can open doors elsewhere, and RIKEN says the attacker tried exactly that. This is why the institute asked users to revoke and replace any credentials they had stored on Fugaku and to watch for emails impersonating RIKEN. The intrusion also began at a public status page, a peripheral service, and reached internal servers."
+    },
+    {
+     "heading": "What to watch",
+     "body": "RIKEN says Fugaku will resume only once it is safe. Its plan includes fixing the exploited software flaw, rebuilding the compromised servers and reviewing the network configuration."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/"
+    },
+    {
+     "name": "News On Japan",
+     "url": "https://newsonjapan.com/article/151402.php"
+    },
+    {
+     "name": "SDxCentral",
+     "url": "https://www.sdxcentral.com/news/fugaku-supercomputer-hit-by-unauthorized-access-attack-report/"
+    },
+    {
+     "name": "RIKEN Center for Computational Science",
+     "url": "https://www.r-ccs.riken.jp/en/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n4",
+   "story_key": "california-dmv-waymo-freeway-ban",
+   "title": "California bars Waymo's driverless cars from freeways, and the company halts freeway rides in every market",
+   "category": "Tech Policy & Antitrust",
+   "published": "2026-11-17T14:38:00-05:00",
+   "tldr": "California's DMV called Waymo's driverless freeway driving an imminent hazard after robotaxis entered an active construction closure, and Waymo stopped freeway rides across all 15 of its US markets.",
+   "why_selected": "A state regulator has restricted the largest US robotaxi service for a safety problem that an earlier software fix was meant to solve.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Waymo, owned by Alphabet, runs driverless taxis commercially in 15 US cities and began carrying passengers on freeways in late 2025. California's Department of Motor Vehicles (DMV) regulates the testing and deployment of autonomous vehicles in the state. In June it recalled its software after federal regulators found that the system failed to recognize highway construction zones, and its cars returned to freeways in July after an update."
+    },
+    {
+     "heading": "What happened",
+     "body": "The DMV restricted Waymo's freeway operations on November 11, and the order became public on Tuesday, November 17. The department said it acted after three Waymo vehicles entered an active construction closure on US Route 101 near Burlingame, and after a separate incident involving California Highway Patrol cars on a San Francisco highway. It said the freeway operations \"pose an imminent hazard to public safety due to recurring incursions by its vehicles into active construction zones\". Waymo complied and went further, suspending driverless freeway trips in all its markets. It said the Route 101 encounters involved no injuries or collisions. Service on surface streets continues, and the company will keep testing on highways with safety operators behind the wheel."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Freeway access lets the service reach airports and shortens long trips, especially between San Francisco and Silicon Valley, where rides previously took 45 minutes to more than an hour. The regulator's wording is the larger issue: it says the problem recurred after corrective action. WIRED notes that construction zones have troubled self-driving systems for at least a decade, because their layouts vary and there are no fixed rules for cones, signs and arrows."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The ban stays until Waymo shows the DMV it has taken \"effective corrective actions\", with no timeline given."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/17/waymo-suspends-freeway-rides-nationwide-after-california-dmv-order/"
+    },
+    {
+     "name": "WIRED",
+     "url": "https://www.wired.com/story/waymo-pulls-its-robotaxis-from-highways-after-california-incidents/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.22479",
+   "title": "Exploited Before It Was Fixed? Vulnerability Timelines from Open, Machine-Readable Evidence",
+   "authors": [
+    "Cédric Bonhomme",
+    "Alexandre Dulaunoy"
+   ],
+   "affiliations": [
+    "Computer Incident Response Center Luxembourg (CIRCL)"
+   ],
+   "announced": "2026-11-17T20:00:00-05:00",
+   "primary_tag": "Security & privacy",
+   "tags": [
+    "Security & privacy"
+   ],
+   "tldr": "Public vulnerability records can show how long a flaw was exploited before a fix existed for only a small share of exploited vulnerabilities, because publishers rarely release patch and vendor dates.",
+   "why_selected": "A measurement on 3,758 exploited vulnerabilities that shows what open data can and cannot say about the gap between attack and patch, a number defenders and policymakers often quote.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "When a vulnerability is exploited, defenders want to know whether a fix already existed and, if not, how long attacks ran before one did. Earlier answers rested on whatever data each team could assemble, such as one vendor's telemetry, and were reported mainly as averages. Averages are fragile: one earlier study found a median of 2 days to exploit publication but a mean of 91."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "A 2015 framework, Vulnerability Timeline and Exposure Metrics, named nine dates in a vulnerability's life and defined metrics from them. It observed that vendors seldom publish them. Since then, more dates have appeared in machine-readable form, in CVE records, vendor advisories and catalogs of known exploited vulnerabilities."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors build an evidence model, implemented in the open-source Vulnerability-Lookup service, that computes the exploitation-to-patch interval for each vulnerability separately. For every lifecycle event it selects the earliest dated evidence across all records and stores the source of every figure so it can be checked. Each date is treated as an upper bound: a catalog lists a flaw only after someone saw it exploited, so the real event came earlier. The model also sets aside dates that describe the catalog rather than the attack, such as days when a catalog listed a backlog of hundreds of old vulnerabilities at once."
+    },
+    {
+     "heading": "Results",
+     "body": "On data as of November 3, 2026, 3,758 identifiers had exploitation evidence. Disclosure was dated for 98% of them, but patch evidence existed for only 15.7%, or 590. Of the exploitation dates, 1,041 fell on backlog days. After removing those and 89 same-day pairs of unknown order, patch evidence preceded exploitation evidence for 307 vulnerabilities and followed it for 59, by a median of 7.6 days."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The paper shows that the limit on measuring attack-before-patch time is the evidence publishers release, not the arithmetic. Most patch dates came from just two vendors, Red Hat and Microsoft. The main caveat is that both dates can lag the real events, so the sign of an interval does not prove which happened first."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.22479"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}

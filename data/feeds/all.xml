@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 17 Nov 2026 13:53:19 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 11:46:56 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Oracle patches Java4Shell, a Java runtime flaw that lets attackers take over widely used server software</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n1</guid>
+    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Oracle fixed a memory-corruption flaw in OpenJDK's Base64 decoder that researchers used to run code on Jira, Confluence, Jenkins and Keycloak without logging in, and CISA urged immediate patching. (BleepingComputer, The Register, The Record)</description>
+  </item>
+  <item>
+    <title>Apple says an internal update, not a cyberattack, knocked out iCloud sign-in, the App Store and other services</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n2</guid>
+    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
+    <category>Tech / Telecom &amp; Internet</category>
+    <description>Apple's iCloud sign-in, App Store, Apple Music, iCloud Mail and school tools failed for hours on Tuesday; Apple blamed an internal update and its status page showed everything restored by 6 PM ET. (TechCrunch, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>Japan's Fugaku supercomputer is taken offline after an intruder steals user details and login keys</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n3</guid>
+    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>RIKEN shut down Fugaku on November 14 after an intruder got into internal servers between November 10 and 13 and took details of 4,222 users plus stored login keys. (BleepingComputer, News On Japan, SDxCentral, RIKEN Center for Computational Science)</description>
+  </item>
+  <item>
+    <title>California bars Waymo's driverless cars from freeways, and the company halts freeway rides in every market</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n4</guid>
+    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
+    <category>Tech / Tech Policy &amp; Antitrust</category>
+    <description>California's DMV called Waymo's driverless freeway driving an imminent hazard after robotaxis entered an active construction closure, and Waymo stopped freeway rides across all 15 of its US markets. (TechCrunch, WIRED)</description>
+  </item>
+  <item>
+    <title>Exploited Before It Was Fixed? Vulnerability Timelines from Open, Machine-Readable Evidence</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2611.22479</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2611.22479</guid>
+    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
+    <category>Tech / Security &amp; privacy</category>
+    <description>Public vulnerability records can show how long a flaw was exploited before a fix existed for only a small share of exploited vulnerabilities, because publishers rarely release patch and vendor dates. (Cédric Bonhomme, Alexandre Dulaunoy · Computer Incident Response Center Luxembourg (CIRCL))</description>
+  </item>
   <item>
     <title>FDA approves giredestrant, a Roche pill for advanced breast cancer with ESR1 mutations</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/2026-11-17-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Sat, 14 Nov 2026 13:55:11 +0000</pubDate>
     <category>Biology / Drugs &amp; Approvals</category>
     <description>China's drug regulator approved Eli Lilly's orforglipron tablets for adults with obesity, or overweight plus a related condition, making it the first oral GLP-1 drug for weight management in the country. (Pharmaceutical Technology, Plataforma Media)</description>
-  </item>
-  <item>
-    <title>Prehospital Extracorporeal Life Support in Refractory Out-of-Hospital Cardiac Arrest</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/doi-10-1056-nejmoa2602919</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/doi-10-1056-nejmoa2602919</guid>
-    <pubDate>Sat, 14 Nov 2026 13:55:11 +0000</pubDate>
-    <category>Biology / Cardiovascular</category>
-    <description>In a non-randomized Dutch study of 231 young adults in refractory cardiac arrest, helicopter teams starting ECMO on scene saw 40% survive to discharge versus 20% with conventional care. (Dinis Reis Miranda Xavier Moors Samir Ali Iscander M. Maissan Hans L. van Schuppen Lars Mommers Ellen E.M. Weelink Robert-Jan Houmes Fabian O. Kooij Marijn Tacken Manfred J. Hirner Mark van Vledder Patrick R. Schober Cor Slagt Lieneke Venema Christiaan Meuwese Annemarie Engstrom Merijn Kant Sakir Akin Joris van der Heijden Walter M. van den Bergh Judith M.D. van den Brule Erik Scholten Carlos V. Elzo Kraemer Luuk Otterspoor Laurien van Koppenhagen Jesse de Metz Thijs S.R. Delnoij Jeroen J.H. Bunge Paul Wijnandts Rohit M. Oemrawsingh Gabe Bleeker Dirk W. Donker Bas W.J. Bens Robert-Jan M. van Geuns Ineke van de Pol Jose M. Montero-Cabezas Leon Montenij Marijn Kuipers Bas van den Bogaard Roberto Lorusso Robert van Thiel Jose P.S. Henriques Stefan Verstraeten Tim Jansen Adriaan O. Kraaijeveld Maurits H. Renes Krischan D. Sjauw Jeroen A. Janson Ingeborg Harks Henrik Endeman Marcel C.G. van de Poll Dwight Dumay Sanne E. Hoeks Esther van Lieshout Dennis Den Hartog and Diederik Gommers)</description>
-  </item>
-  <item>
-    <title>An LHX2-DACH1 regulatory innovation drives basal progenitor expansion in the primate neocortex</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/doi-10-1126-sciadv-aed3856</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/doi-10-1126-sciadv-aed3856</guid>
-    <pubDate>Sat, 14 Nov 2026 13:55:11 +0000</pubDate>
-    <category>Biology / Development &amp; aging</category>
-    <description>A small DNA switch that controls the gene DACH1, with a feature shared among primates, helps the developing cortex make more of a special stem cell abundant in primate brains, in organoids and mice. (Pei-Shan Hou, Ching-Yu Chuang, Feng-Lan Chiu et al. · National Yang Ming Chiao Tung University; Academia Sinica; Kyoto University)</description>
-  </item>
-  <item>
-    <title>A multi-tissue atlas of genetic regulatory effects in sheep</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/doi-10-1038-s41588-026-02825-2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-14/doi-10-1038-s41588-026-02825-2</guid>
-    <pubDate>Sat, 14 Nov 2026 13:55:11 +0000</pubDate>
-    <category>Biology / Genetics &amp; genomics</category>
-    <description>SheepGTEx maps how DNA variants control gene activity across 51 sheep tissues and cell types, and ancient DNA shows breeding favored variants acting in just one or a few tissues, such as skin. (Mian Gong, Ziyang Zhuang, Xiangrong Sun et al. · Aarhus University)</description>
-  </item>
-  <item>
-    <title>Climate Action Tracker finds the warming outlook has stalled for a fifth year, with current policies heading for 2.7°C</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/2026-11-14-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/2026-11-14-n1</guid>
-    <pubDate>Sat, 14 Nov 2026 13:22:27 +0000</pubDate>
-    <category>Science / Climate &amp; Earth</category>
-    <description>The Climate Action Tracker's COP31 update projects 2.7°C of warming by 2100 under current policies and says even full delivery of every pledge would permanently overshoot 1.5°C. (Climate Action Tracker, Ars Technica (Inside Climate News), The New York Times)</description>
-  </item>
-  <item>
-    <title>Atmospheric O2 reveals a strengthening ocean carbon sink and a stagnant net land sink since 1990</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/doi-10-1126-science-aed9544</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-14/doi-10-1126-science-aed9544</guid>
-    <pubDate>Sat, 14 Nov 2026 13:22:27 +0000</pubDate>
-    <category>Science / Climate science</category>
-    <description>Three decades of precise air-oxygen measurements show the ocean has absorbed a growing share of fossil carbon since 1990, while the net land sink has not grown, contrary to many models. (Eric J. Morgan, Yuming Jin, Elena Kozlova et al. · Scripps Institution of Oceanography, UC San Diego)</description>
   </item>
 </channel>
 </rss>
