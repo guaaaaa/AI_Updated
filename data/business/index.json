@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-18T12:16:21+00:00",
+ "updated": "2026-11-18T12:45:11+00:00",
  "domain": "business",
  "days": [
+  {
+   "date": "2026-11-18",
+   "edition": "weekday",
+   "news": 5,
+   "papers": 1,
+   "backfill": false
+  },
   {
    "date": "2026-11-17",
    "edition": "weekday",
@@ -90,7 +97,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 54
+   "n": 60
   }
  ],
  "tag_groups": {
@@ -122,15 +129,15 @@
   ]
  },
  "tag_counts": {
+  "Monetary policy": 6,
+  "Inflation": 3,
+  "Industrial organization": 3,
   "Corporate finance": 2,
   "Asset pricing": 3,
   "Banking & credit": 2,
   "Innovation & technology": 3,
   "Labor markets": 1,
   "Regulation": 1,
-  "Industrial organization": 2,
-  "Monetary policy": 5,
-  "Inflation": 2,
   "Growth & productivity": 1,
   "Inequality & mobility": 1
  },
@@ -150,17 +157,17 @@
   "Real Estate"
  ],
  "category_counts": {
-  "Economy & Data": 11,
+  "Earnings & Companies": 6,
+  "Banking & Finance": 3,
+  "Economy & Data": 12,
+  "Consumer & Retail": 3,
+  "Deals & M&A": 4,
   "Central Banks & Rates": 5,
-  "Deals & M&A": 3,
   "Trade & Policy": 5,
-  "Earnings & Companies": 5,
   "Tech & AI Business": 2,
-  "Banking & Finance": 2,
   "Energy & Commodities": 1,
   "Labor & Workplace": 3,
   "Real Estate": 1,
-  "Consumer & Retail": 2,
   "Startups & VC": 1,
   "Markets": 2
  },

@@ -3,19 +3,43 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
    "title": "Stocks fall ahead of Nvidia earnings and Anthropic IPO",
-   "outlets": 10,
+   "outlets": 13,
+   "date": "2026-11-16",
+   "covered": "2026-11-18-n3"
+  },
+  {
+   "title": "Jensen Huang reportedly mulling comeback as Nvidia CEO",
+   "outlets": 9,
+   "date": "2026-11-15",
+   "covered": "2026-11-18-n4"
+  },
+  {
+   "title": "Anthropic’s giant IPO puts the heat on OpenAI",
+   "outlets": 4,
+   "date": "2026-11-15",
+   "covered": null
+  },
+  {
+   "title": "Oil prices fall on expectations of coming supply surplus",
+   "outlets": 4,
    "date": "2026-11-16",
    "covered": null
   },
   {
-   "title": "Jensen Huang reportedly mulling comeback as Nvidia CEO",
+   "title": "Shoe Prices Hit a Record High Amid Inflation and Increased Tariffs",
    "outlets": 4,
-   "date": "2026-11-15",
+   "date": "2026-11-17",
+   "covered": "2026-11-18-n3"
+  },
+  {
+   "title": "Jensen Huang’s Resignation From Nvidia Worries the A.I. Start-Up World",
+   "outlets": 3,
+   "date": "2026-11-13",
    "covered": null
   },
   {
@@ -29,35 +53,11 @@
    "outlets": 3,
    "date": "2026-11-14",
    "covered": null
-  },
-  {
-   "title": "Anthropic’s giant IPO puts the heat on OpenAI",
-   "outlets": 3,
-   "date": "2026-11-15",
-   "covered": null
-  },
-  {
-   "title": "Oil prices fall on expectations of coming supply surplus",
-   "outlets": 3,
-   "date": "2026-11-16",
-   "covered": null
-  },
-  {
-   "title": "United Airlines resolves system outage that affected departing flights",
-   "outlets": 3,
-   "date": "2026-11-17",
-   "covered": null
-  },
-  {
-   "title": "Canada and China extend trade deals as Xi meets Carney ahead of APEC summit",
-   "outlets": 3,
-   "date": "2026-11-17",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 9,
-  "papers": 2
+  "news": 14,
+  "papers": 3
  },
  "items": [
   {
@@ -125,6 +125,42 @@
    "date": "2026-11-17",
    "type": "paper",
    "title": "How Does Capital Flow To Poor Countries? Evidence from Venture Capital and Private Equity"
+  },
+  {
+   "id": "2026-11-18-n1",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "Nvidia's quarterly revenue doubles to $115.8 billion, and the board says it will not bring Jensen Huang back"
+  },
+  {
+   "id": "2026-11-18-n2",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "ECB warns that AI valuations and debt-funded data centres leave markets exposed to an abrupt correction"
+  },
+  {
+   "id": "2026-11-18-n3",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "UK inflation rises to 3.6%, a one-year high, as diesel reaches a record price"
+  },
+  {
+   "id": "2026-11-18-n4",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "Target raises its sales forecast after a third strong quarter, with comparable sales up 5.6%"
+  },
+  {
+   "id": "2026-11-18-n5",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "Canadian Natural Resources agrees to buy Advantage Energy for $2.53 billion to expand in Alberta's Montney"
+  },
+  {
+   "id": "nber-w36008",
+   "date": "2026-11-18",
+   "type": "paper",
+   "title": "Monetary policy in a Phelps–Winter Economy"
   }
  ]
 }

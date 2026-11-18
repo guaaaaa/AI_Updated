@@ -1,0 +1,249 @@
+{
+ "date": "2026-11-18",
+ "edition": "weekday",
+ "generated_at": "2026-11-18T12:45:11+00:00",
+ "summary": "Nvidia's sales double in its first report without Jensen Huang, the ECB warns on AI valuations, UK inflation hits a one-year high, Target raises its forecast, and Canadian Natural buys Advantage Energy.",
+ "news": [
+  {
+   "id": "2026-11-18-n1",
+   "story_key": "nvidia-q3-fy2027-results",
+   "title": "Nvidia's quarterly revenue doubles to $115.8 billion, and the board says it will not bring Jensen Huang back",
+   "category": "Earnings & Companies",
+   "published": "2026-11-17T17:42:00-05:00",
+   "tldr": "Nvidia reported revenue of $115.8 billion, up 103% from a year ago, guided to about $130 billion next quarter, and its chair said the board does not intend to reinstate Jensen Huang.",
+   "why_selected": "First results from the bellwether of AI spending since its founder's exit, with guidance and a clear answer on his return.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Nvidia plays a pivotal role in the AI business, so its results are read as a gauge of AI spending. Co-founder Jensen Huang resigned as president, chief executive and director on November 12 after what the board called personal behavior inconsistent with the company's code of conduct. Chief financial officer Colette Kress is interim CEO. On Tuesday Huang posted that he would be honored to return if the board asked."
+    },
+    {
+     "heading": "What happened",
+     "body": "Nvidia reported revenue of $115.8 billion for the quarter ended October 25, up 20% from the previous quarter and 103% from a year earlier. Data centre revenue was $107.6 billion, up 110%. The gross margin, the share of revenue left after production costs, was 74.8%, and earnings were $2.70 per share.\n\nFor the current quarter, which has an extra week, Nvidia expects revenue of $130 billion, plus or minus 3%, and a gross margin of 71% to 72%. The forecast assumes no data centre computing revenue from China, and Kress said Nvidia is no longer shipping its Hopper data centre chips there, without explaining why.\n\nOn the earnings call, chair Harvey Jones said the board unanimously accepted Huang's resignation and \"does not intend to reinstate\" him. A search firm is reviewing internal and external candidates. The shares rose 4.8% in after-hours trading, the BBC reported."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Analysts had been unsure whether Nvidia would give any forecast at all, the BBC reported. It did, and the forecast points to continued growth, which eases two worries at once: that demand for AI hardware is cooling, and that the business would stall without its founder.\n\nThe open questions are further out. One analyst quoted by the BBC said Huang's exit could matter more when Nvidia makes its next decisions on products, partnerships and investment. The guided margin is also lower than this quarter's. And the company still faces its own board's investigation into Huang's conduct and, according to TechCrunch, a Securities and Exchange Commission probe."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Who gets the permanent job and how long the search takes, the outcome of the investigations, and whether sales to China resume."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Nvidia",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n2",
+   "story_key": "ecb-financial-stability-review-2026-11",
+   "title": "ECB warns that AI valuations and debt-funded data centres leave markets exposed to an abrupt correction",
+   "category": "Banking & Finance",
+   "published": "2026-11-18T04:00:00-05:00",
+   "tldr": "The ECB's November Financial Stability Review says risks remain elevated, led by stretched AI valuations, rising government borrowing and geoeconomic tensions, though euro area banks look resilient.",
+   "why_selected": "An official risk assessment for the euro area that puts AI financing next to sovereign debt as a top threat.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The European Central Bank's Financial Stability Review is its assessment of what could disrupt the euro area's banks, markets and other financial firms. Last week the US Federal Reserve's own stability report found that AI was the risk most often cited by its market contacts."
+    },
+    {
+     "heading": "What happened",
+     "body": "The November 2026 review, published on Wednesday, says the outlook is shaped by three risks: AI valuations, fiscal imbalances and geoeconomic tensions. \"Risks to euro area financial stability remain elevated, given persistent geoeconomic uncertainty and growing exposure to AI,\" said ECB Vice-President Boris Vujčić.\n\nOn AI, the ECB says share prices rely on ambitious earnings expectations that could be challenged by financing concerns or by competition from cheaper AI models. Because AI infrastructure is increasingly funded through debt, a change in sentiment could spread losses from stock markets to bond markets.\n\nOn public finances, it points to elevated debt, growing government borrowing needs and a shift towards more news-sensitive and leveraged investors in euro area government bonds, which raises the risk of abrupt repricing, although markets have continued to function in an orderly way."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The ECB's message is that the AI boom is no longer only a stock market story. When data centres are built with borrowed money, the lenders and bondholders share the risk, and the review says euro area banks and non-banks, meaning firms such as investment funds and insurers, are exposed both to AI financing and to government bonds.\n\nThe review draws a line between the two groups. Banks are described as well placed to absorb shocks thanks to strong profits, solid capital buffers and ample liquidity, although higher energy prices and a weaker economy could make it harder for households and firms to repay debts. Vulnerabilities are more pronounced among certain non-banks, where safeguards are less developed, and closer links between banks and non-banks could spread and amplify a shock."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether regulators act on liquidity and borrowing at non-bank firms, how government bond markets handle growing issuance, and how AI shares trade after this week's earnings."
+    }
+   ],
+   "sources": [
+    {
+     "name": "European Central Bank",
+     "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n3",
+   "story_key": "uk-cpi-october-2026",
+   "title": "UK inflation rises to 3.6%, a one-year high, as diesel reaches a record price",
+   "category": "Economy & Data",
+   "published": "2026-11-18T02:15:00-05:00",
+   "tldr": "UK consumer prices rose 3.6% in the year to October, up from 3.5%, driven by motor fuel, while core inflation held near 2.8% and energy bills are forecast to jump in January.",
+   "why_selected": "A major inflation release, two weeks after the Bank of England's first rate rise in three years.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "UK inflation has climbed since the summer as energy prices rose, largely because of the US-Israel war with Iran. Earlier this month the Bank of England raised its interest rate for the first time in three years, from 3.75% to 4%, and signalled that another rise could be likely unless the conflict is resolved. Its inflation target is 2%."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Office for National Statistics said the Consumer Prices Index rose 3.6% in the 12 months to October, up from 3.5% in September and the highest rate in a year. Prices rose 0.5% on the month.\n\nTransport, particularly motor fuel, made the largest upward contribution. Petrol rose 5.2p per litre between September and October to an average of 174.7p, the highest since August 2022, and diesel averaged 199.5p, the highest since records began 30 years ago, the BBC reported.\n\nUnderneath, pressures were steadier. Core CPI, which excludes energy, food, alcohol and tobacco, rose 2.8%, little changed from September. Services inflation was 3.7%, also little changed. Food and non-alcoholic drink prices rose 0.9% over the year, and the rate for restaurants and hotels slowed."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The split matters for interest rates. The headline rate is rising because of fuel, but the measures the Bank of England watches most closely are not accelerating, which the BBC said could mean it holds off on another rate rise in December.\n\nThe risk is that energy costs spread. ONS chief economist Grant Fitzner said the annual costs of raw materials and of goods leaving factories continue to climb. Households face another jump: consultancy Cornwall Insight forecasts that the cap on gas and electricity bills will rise 26% in January, adding £443 a year and taking a typical annual bill to £2,166. The Bank has said inflation could peak at 4.9% in the middle of next year and not return to 2% until 2028, or reach 6.2% in 2027 in an adverse scenario in which the war escalates."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Regulator Ofgem announces the new energy price cap on November 25, and the Bank of England's next rate decision follows in December."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Office for National Statistics",
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n4",
+   "story_key": "target-q3-2026-results",
+   "title": "Target raises its sales forecast after a third strong quarter, with comparable sales up 5.6%",
+   "category": "Consumer & Retail",
+   "published": "2026-11-18T07:19:00-05:00",
+   "tldr": "Target's third-quarter net sales rose 7.1% to $27.1 billion, comparable sales grew 5.6% against estimates of 3.5%, and it now expects full-year sales growth of about 6%.",
+   "why_selected": "A large US retailer's results and raised guidance just before the holiday season, a read on consumers squeezed by inflation.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Target's results show how US households are spending on essentials and extras. The company is emerging from a multiyear slump. Michael Fiddelke became chief executive earlier this year, and Target has invested around US$5 billion to refresh its product mix and remodel stores, in a year the Globe and Mail describes as marked by steep inflation and record-high fuel prices."
+    },
+    {
+     "heading": "What happened",
+     "body": "Target said on Wednesday that third-quarter net sales rose 7.1% from a year earlier to $27.1 billion. Comparable sales, which track stores and digital channels open for at least a year, grew 5.6%, beating estimates of 3.5%, with customer traffic up 5.0% and digital comparable sales up 9.8%.\n\nEarnings were $2.65 per share, up from $1.51 a year ago. That includes $0.50 per share from tariff refunds, worth $301 million before tax.\n\nGrowth was uneven. Sales in the category of toys and electronics jumped nearly 27%, beauty rose more than 9% and food and beverage nearly 7%. Apparel sales fell 3.8% and home decor grew 2.5%, the Globe and Mail reported.\n\nTarget now expects full-year net sales growth of around 6%, one percentage point above its earlier guidance, and earnings per share of $10.65 to $11.40, including about $2.14 from tariff refunds. It plans capital spending of $5 billion to $6 billion in 2027."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The numbers suggest shoppers are still spending, but selectively: traffic and sales rose most in food, beauty, toys and collectibles, while larger discretionary purchases lagged. Apparel and home decor together account for about 30% of Target's merchandise sales, and analysts quoted by the Globe and Mail said fixing them is essential to long-term profitability. Fiddelke acknowledged the gap: \"We haven't arrived.\"\n\nInvestors should also separate the operating improvement from one-off gains. A meaningful part of this year's profit comes from tariff refunds, which Target itself strips out when it says adjusted earnings would have risen 21% without them."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Holiday sales: Target says November sales so far are in line with its guidance and faster than October's. Also whether apparel and home decor recover."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Target",
+     "url": "https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-after-another-strong-quarter-target-lifts-annual-sales-growth-target/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n5",
+   "story_key": "cnq-advantage-energy-acquisition-2026-11",
+   "title": "Canadian Natural Resources agrees to buy Advantage Energy for $2.53 billion to expand in Alberta's Montney",
+   "category": "Deals & M&A",
+   "published": "2026-11-16T04:30:00-05:00",
+   "tldr": "Canadian Natural Resources will pay $13.55 in cash per Advantage Energy share, a deal worth about $2.53 billion including debt, adding roughly 79,000 barrels of oil equivalent a day near Grande Prairie.",
+   "why_selected": "A multibillion-dollar all-cash takeover by a senior Canadian oil and gas producer, consolidating land in the Montney.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Canadian Natural Resources is a senior Canadian oil and natural gas producer with operations in Western Canada, the UK North Sea and offshore Africa. It has a record of growing by acquisition, usually buying at low points in the market, according to Desjardins Securities. Advantage Energy, built over the last 25 years, produces in the Montney and Charlie Lake areas of northwestern Alberta."
+    },
+    {
+     "heading": "What happened",
+     "body": "Canadian Natural said on Monday it has a definitive agreement to buy all of Advantage's shares for $13.55 each in cash. That is about $2.255 billion for the equity and about $2.53 billion in total once Advantage's net debt and convertible debentures are included. All figures are in Canadian dollars.\n\nThe purchase brings production of about 79,000 barrels of oil equivalent per day, a measure that combines oil and gas output, which works out to roughly $32,000 per daily barrel. It also brings undeveloped land next to Canadian Natural's existing operations around Grande Prairie.\n\nCanadian Natural will pay from cash on hand and existing bank credit lines. The deal needs approval from Advantage shareholders and regulators and is targeted to close in the first quarter of 2027."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The logic is scale in one place. Owning neighbouring land lets a producer share pipelines, plants and crews, which president Scott Stauth described as improving \"area efficiencies\".\n\nThe price is the unusual part. Desjardins analyst Robert Mann wrote that Canadian Natural appears to be paying full price, \"somewhat against the grain\" of its habit of buying in downturns, though he said the deal fits its strategy of consolidating assets now that it has reached its net debt target. For shareholders, the company says payouts are unaffected: it still aims to return 100% of free cash flow, the cash left after spending on operations and investment, through share buybacks, subject to market conditions."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Competition Act review, which Mann called the main milestone given delays on some of Canadian Natural's recent deals, and the Advantage shareholder vote."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Canadian Natural Resources (news release via BOE Report)",
+     "url": "https://boereport.com/2026/11/16/canadian-natural-resources-limited-enters-into-agreement-to-acquire-advantage-energy-ltd/amp/"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-canadian-natural-resources-to-buy-advantage-energy-in-253-billion-deal/"
+    },
+    {
+     "name": "BNN Bloomberg",
+     "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/16/canadian-natural-buying-advantage-energy-in-deal-valued-at-253b-including-debt/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36008",
+   "title": "Monetary policy in a Phelps–Winter Economy",
+   "authors": [
+    "Bruce C. Greenwald",
+    "Joseph E. Stiglitz"
+   ],
+   "affiliations": [
+    "Columbia University"
+   ],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Monetary policy",
+   "tags": [
+    "Monetary policy",
+    "Inflation",
+    "Industrial organization"
+   ],
+   "tldr": "Greenwald and Stiglitz argue that in markets where firms hold on to captive customers, higher interest rates push firms to raise prices, weakening rate hikes as a tool against inflation.",
+   "why_selected": "A direct challenge to the logic of rate hikes from two Columbia economists, published as central banks are raising rates against an energy-driven inflation.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Central banks fight inflation by raising interest rates to cool demand. Bruce Greenwald and Joseph Stiglitz argue that the record of this approach is poor. The Federal Reserve announced a 2% inflation target in 2012; by the authors' count, only two of the thirteen years since came within a tenth of it. Inflation averaged 1.3% from 2013 to 2017 and reached 8.0% in 2022."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The standard view treats markets as essentially competitive: firms set prices in response to imbalances between supply and demand, so weaker demand means lower inflation. The authors say this fits a shrinking part of the economy. Spending has shifted from goods sold in large global markets, such as cars, towards locally produced services such as medical care and housing, and towards specialised technology firms with high switching costs."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The paper uses the \"customer market\" model of Phelps and Winter (1970). A firm's customers do not leave the moment it raises prices; they drift away over time. A price increase therefore earns more today at the cost of a smaller customer base tomorrow, so when rates rise, future profits are worth less relative to current ones, so firms become more willing to raise prices now and lose some customers later."
+    },
+    {
+     "heading": "Results",
+     "body": "The paper is theoretical. In the model, raising interest rates pushes prices up through this channel, and the authors say the effect can be significant at relevant levels of interest rates, is present in the short run even when a rate hike does reduce overall demand, and grows with uncertainty about policy and its effects. As evidence that customer captivity has risen, they note that corporate profits fell to 8.5% of US national income over the 1989-91 business cycle and nearly doubled to 16.5% over the following 35 years."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the authors are right, rate hikes carry a built-in inflationary side effect that grows as services and captive-customer businesses take a larger share of the economy. The caveats are substantial: this is a working paper that has not been peer reviewed and its core result comes from a stylised model that runs against the standard view."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36008"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major",
+    "press": 2
+   }
+  }
+ ]
+}

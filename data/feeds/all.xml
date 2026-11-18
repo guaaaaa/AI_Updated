@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 18 Nov 2026 12:16:21 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 12:45:11 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Nvidia's quarterly revenue doubles to $115.8 billion, and the board says it will not bring Jensen Huang back</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n1</guid>
+    <pubDate>Wed, 18 Nov 2026 12:45:11 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>Nvidia reported revenue of $115.8 billion, up 103% from a year ago, guided to about $130 billion next quarter, and its chair said the board does not intend to reinstate Jensen Huang. (Nvidia, BBC, TechCrunch)</description>
+  </item>
+  <item>
+    <title>ECB warns that AI valuations and debt-funded data centres leave markets exposed to an abrupt correction</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n2</guid>
+    <pubDate>Wed, 18 Nov 2026 12:45:11 +0000</pubDate>
+    <category>Business / Banking &amp; Finance</category>
+    <description>The ECB's November Financial Stability Review says risks remain elevated, led by stretched AI valuations, rising government borrowing and geoeconomic tensions, though euro area banks look resilient. (European Central Bank)</description>
+  </item>
+  <item>
+    <title>UK inflation rises to 3.6%, a one-year high, as diesel reaches a record price</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n3</guid>
+    <pubDate>Wed, 18 Nov 2026 12:45:11 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>UK consumer prices rose 3.6% in the year to October, up from 3.5%, driven by motor fuel, while core inflation held near 2.8% and energy bills are forecast to jump in January. (Office for National Statistics, BBC)</description>
+  </item>
+  <item>
+    <title>Target raises its sales forecast after a third strong quarter, with comparable sales up 5.6%</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n4</guid>
+    <pubDate>Wed, 18 Nov 2026 12:45:11 +0000</pubDate>
+    <category>Business / Consumer &amp; Retail</category>
+    <description>Target's third-quarter net sales rose 7.1% to $27.1 billion, comparable sales grew 5.6% against estimates of 3.5%, and it now expects full-year sales growth of about 6%. (Target, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Canadian Natural Resources agrees to buy Advantage Energy for $2.53 billion to expand in Alberta's Montney</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n5</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n5</guid>
+    <pubDate>Wed, 18 Nov 2026 12:45:11 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>Canadian Natural Resources will pay $13.55 in cash per Advantage Energy share, a deal worth about $2.53 billion including debt, adding roughly 79,000 barrels of oil equivalent a day near Grande Prairie. (Canadian Natural Resources (news release via BOE Report), The Globe and Mail, BNN Bloomberg)</description>
+  </item>
+  <item>
+    <title>Monetary policy in a Phelps–Winter Economy</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/nber-w36008</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/nber-w36008</guid>
+    <pubDate>Wed, 18 Nov 2026 12:45:11 +0000</pubDate>
+    <category>Business / Monetary policy</category>
+    <description>Greenwald and Stiglitz argue that in markets where firms hold on to captive customers, higher interest rates push firms to raise prices, weakening rate hikes as a tool against inflation. (Bruce C. Greenwald, Joseph E. Stiglitz · Columbia University)</description>
+  </item>
   <item>
     <title>OpenAI releases GPT-6.2 Astra and Sol, cutting Astra's price 20% and crossing its own "High" self-improvement threshold</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2026-11-18-n1</link>
@@ -438,54 +486,6 @@
     <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
     <category>Business / Corporate finance</category>
     <description>A model of the contracts linking chipmakers, cloud firms, AI labs and landlords finds the AI buildout is larger than socially optimal, about 59% debt-funded, and exposed to $16.9 trillion of losses if AI disappoints. (Stijn Van Nieuwerburgh, Zijin Su · Columbia University Graduate School of Business; NBER)</description>
-  </item>
-  <item>
-    <title>FDA declines to approve ivonescimab for lung cancer because the trial did not show a significant survival gain</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/2026-11-16-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/2026-11-16-n1</guid>
-    <pubDate>Mon, 16 Nov 2026 19:22:35 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA rejected Summit's ivonescimab plus chemotherapy for previously treated EGFR-mutated lung cancer, saying slower tumor progression without a statistically significant survival benefit was not enough. (The New York Times, Reuters (via SRN News), OncoDaily)</description>
-  </item>
-  <item>
-    <title>The US has lost its measles elimination status after 26 years, people close to the Pan American Health Organization's review say</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/2026-11-16-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/2026-11-16-n2</guid>
-    <pubDate>Mon, 16 Nov 2026 19:22:35 +0000</pubDate>
-    <category>Biology / Public Health</category>
-    <description>An expert commission reporting to the Pan American Health Organization has concluded that measles is again spreading continuously in the US, ending a status held since 2000, according to people familiar with the review. (CNN, KFF Health News (via NPR))</description>
-  </item>
-  <item>
-    <title>Six months in, Congo's Ebola outbreak still adds up to 500 cases a week as attacks on health workers disrupt the response</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/2026-11-16-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/2026-11-16-n3</guid>
-    <pubDate>Mon, 16 Nov 2026 19:22:35 +0000</pubDate>
-    <category>Biology / Microbes &amp; Infectious Disease</category>
-    <description>The Bundibugyo Ebola outbreak centered on the Democratic Republic of the Congo has passed 11,000 cases and 5,400 deaths, and WHO and UN officials say armed violence is now blocking containment. (CIDRAP, ECDC, CDC)</description>
-  </item>
-  <item>
-    <title>Prevention of Venous Thromboembolism after Total Hip or Knee Replacement</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/doi-10-1056-nejmoa2602435</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/doi-10-1056-nejmoa2602435</guid>
-    <pubDate>Mon, 16 Nov 2026 19:22:35 +0000</pubDate>
-    <category>Biology / Cardiovascular</category>
-    <description>In a trial of 18,883 joint replacement patients, aspirin was not shown to prevent clots and deaths as well as rivaroxaban or warfarin, which in turn were not shown to be as safe. (Vincent D. Pellegrini Carol A. Lambourne Laurence S. Magder Patricia D. Franklin Jay S. Magaziner Brook I. Martin Richard Iorio Kevin L. Garvin Michael A. Mont Wayne E. Moschetti Antonia F. Chen David Warwick C. McCollister Evarts Adina Harri Laura M. Kernan Samuel Z. Goldhaber William J. Maloney Zeke J. Walton James A. Browne Harry A. Demos James I. Huddleston Stephen L. Kates Peter J. Brooks Navin D. Fernando Brock A. Lindsey Matthew J. Dietz James Nace Ronald E. Delanois Michael S. Kain Mark J. Spangehl Brent A. Lanting Eric M. Cohen Lisa K. Moores William L. Healy and Charles W. Francisthe PEPPER Trial Investigators and the Steering Committee of the PEPPER Trial* · Dartmouth-Hitchcock Medical Center and Geisel School of Medicine at Dartmouth; University of Maryland School of Medicine; Northwestern University Feinberg School of Medicine; University of Utah; Harvard Medical School and Brigham and Women's Hospital)</description>
-  </item>
-  <item>
-    <title>Single-cell, multi-region profiling of the macaque brain across the lifespan</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/doi-10-1016-j-cell-2026-09-014</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/doi-10-1016-j-cell-2026-09-014</guid>
-    <pubDate>Mon, 16 Nov 2026 19:22:35 +0000</pubDate>
-    <category>Biology / Development &amp; aging</category>
-    <description>An atlas of 5.3 million cells from 11 brain regions of 55 rhesus macaques charts how each cell type changes with age and finds overlap with the molecular signatures of Alzheimer's disease. (Wei Yang, Kelsi L. Watkins, Alex R. DeCasien et al. · University of Washington; Arizona State University; National Institute on Aging; University of Pennsylvania; University of Alabama at Birmingham; Caribbean Primate Research Center, University of Puerto Rico)</description>
-  </item>
-  <item>
-    <title>Limited genomic predictability of complex trait evolution despite genotype-phenotype stability</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/doi-10-1126-science-aee0342</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-16/doi-10-1126-science-aee0342</guid>
-    <pubDate>Mon, 16 Nov 2026 19:22:35 +0000</pubDate>
-    <category>Biology / Evolution &amp; ecology</category>
-    <description>Fruit flies evolving in outdoor and indoor cages changed pigmentation in a direction a genetic map could predict, but which genes did the changing was largely unpredictable. (J. A. Smiley-Rhodes, M. C. Bitter, S. Berardi et al. · Stanford University; University of Pennsylvania; Chan Zuckerberg Biohub)</description>
   </item>
 </channel>
 </rss>
