@@ -1,0 +1,225 @@
+{
+ "date": "2026-11-18",
+ "edition": "weekday",
+ "generated_at": "2026-11-18T13:29:00+00:00",
+ "summary": "Voyager 1 reaches one light-day from Earth, a court voids the wildlife review behind the first US seabed-mining lease sale, NASA retires the NICER X-ray telescope, and two quantum papers show new ways to control an oscillator and to pack logical qubits.",
+ "news": [
+  {
+   "id": "2026-11-18-n1",
+   "story_key": "voyager-1-one-light-day",
+   "title": "Voyager 1 becomes the first spacecraft to reach one light-day from Earth",
+   "category": "Space & Astronomy",
+   "published": "2026-11-16T13:29:24-05:00",
+   "tldr": "At 5:16 a.m. Eastern on 18 November, NASA's Voyager 1 passed 25.9 billion kilometres from Earth, the distance light covers in 24 hours, a first for any human-made object.",
+   "why_selected": "A mission milestone with no precedent, confirmed by NASA, and a concrete measure of how far a working spacecraft has travelled.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Voyager 1 launched on 5 September 1977, flew past Jupiter and Saturn, and kept going. In 2012 it crossed the heliopause, the boundary of the heliosphere, which is the bubble of particles and magnetic fields that the Sun's wind blows into the surrounding gas. It has been the most distant human-made object for decades. A light-day is a unit of distance, not time: it is how far light travels in 24 hours, about 16.09 billion miles (25.89 billion kilometres)."
+    },
+    {
+     "heading": "What happened",
+     "body": "NASA says Voyager 1 reached one light-day from Earth on 18 November 2026. EarthSky and Science News put the moment at 10:16:07 UTC, or 5:16:07 a.m. Eastern. EarthSky gives the distance as 173.14 astronomical units (one unit is the Earth-Sun distance) and the travel time as 49 years, 2 months and 11 days. NASA puts the probe's speed at about 38,000 mph (61,000 kph). Science News notes the distance is more than four times that from the Sun to Pluto. A radio command now takes a full day to arrive, and the reply takes another day to return."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The number itself is symbolic, but the spacecraft is still doing science. Jamie Rankin, a Princeton heliophysicist and deputy project scientist, told Popular Science the team is trying to find how far out the Sun's influence is felt, and that she thinks Voyager 1 is at the edge of undisturbed interstellar gas. Few instruments have ever sampled this region. The probe's 23-watt transmitter can only be heard by the 70-metre dishes of NASA's Deep Space Network."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Power is running down. Popular Science reports that only two instruments remain active, that the Low-energy Charged Particles experiment was turned off in April, and that NASA briefly lost contact with the probe in late October. NASA estimates the network will lose contact around 2036. Voyager 2 is expected to reach one light-day in November 2035."
+    }
+   ],
+   "sources": [
+    {
+     "name": "NASA Science",
+     "url": "https://science.nasa.gov/?p=1511054"
+    },
+    {
+     "name": "EarthSky",
+     "url": "https://earthsky.org/space/voyager-1-1-light-day-from-earth-november-17-18-2026/"
+    },
+    {
+     "name": "Popular Science",
+     "url": "https://www.popsci.com/science/voyager-1-one-light-day-away/"
+    },
+    {
+     "name": "Science News",
+     "url": "https://sciencenews.org/article/voyager-1-light-day-exploration"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n2",
+   "story_key": "american-samoa-seabed-mining-esa-ruling",
+   "title": "US judge voids the endangered-species review behind the first US deep-sea mining lease sale",
+   "category": "Climate & Earth",
+   "published": "2026-11-17T12:00:00-05:00",
+   "tldr": "A federal judge in Hawaii ruled that the fisheries service broke the Endangered Species Act by assessing only seabed surveying, not the mining that leases off American Samoa could later allow.",
+   "why_selected": "A science-policy decision that sets how much environmental evidence the US must gather before opening the deep seabed to mining, days before the first planned auction.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Parts of the deep ocean floor are covered in mineral-rich nodules, and companies want to collect them. Commercial deep-sea mining does not yet exist beyond a few small exploratory projects, according to Earthjustice. The US Marine Minerals Administration planned to sell the country's first deep-sea mining leases on Thursday 19 November: two areas of seabed northeast of American Samoa's Manu'a Islands covering more than 31 million acres. Under the Endangered Species Act, an agency must consult wildlife regulators before acting. An informal consultation can end with a letter saying harm is unlikely; a formal one requires a detailed assessment."
+    },
+    {
+     "heading": "What happened",
+     "body": "US District Judge Jill Otake ruled on Monday that the National Marine Fisheries Service violated the act, Courthouse News reports. The service had issued a letter finding the sale \"not likely to adversely affect\" protected species, 10 days after it determined it had enough information to begin. It considered only the sale and early work such as mapping and sampling. Otake wrote in a 41-page order that this \"ignores the reality that the purpose of the leases being sold is eventually to conduct deep-sea mining\". The affected waters are home to several dozen protected species, including blue, fin, sei and sperm whales, sea turtles and five types of coral. She declined to leave the approval in place while the agency redoes the review. The case was brought by Fa'asao Amerika Samoa and the Conservation Council for Hawaii."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The ruling says the possible effects of mining itself must be examined before leases are sold, even though the industry is at an early stage. The government had argued mining was not yet reasonably certain to occur; the judge answered that the law demands foresight, writing that \"extinction is permanent\"."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The order does not cancel or delay Thursday's auction, and it is unclear whether the Interior Department can proceed without the approval. A second sale, off the Northern Mariana Islands and Guam, is tentatively scheduled for December and faces a separate lawsuit."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Earthjustice",
+     "url": "https://earthjustice.org/press/2026/court-rules-trump-administration-violated-law-in-greenlighting-american-samoa-deep-sea-mining-lease-sale"
+    },
+    {
+     "name": "Courthouse News Service",
+     "url": "https://www.courthousenews.com/deep-sea-mining-sale-off-american-samoa-in-flux-after-wildlife-review-tossed/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-n3",
+   "story_key": "nicer-ends-science-operations",
+   "title": "NASA ends science operations of NICER, its neutron-star X-ray telescope on the space station",
+   "category": "Space & Astronomy",
+   "published": "2026-11-17T13:18:16-05:00",
+   "tldr": "NASA has retired NICER, the X-ray telescope on the International Space Station, after engineers concluded that a failed internal motor left it unable to track targets.",
+   "why_selected": "The end of a productive mission that measured neutron stars, the densest matter that can be measured, announced by NASA itself.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "NICER, the Neutron star Interior Composition Explorer, is an X-ray telescope mounted on the outside of the International Space Station, near its starboard solar array. It launched in 2017 for a prime mission of 18 months. Its main targets were neutron stars, the collapsed remains of massive stars, which NASA describes as containing the densest matter in the universe that we can measure. To observe them, the telescope has to swivel and follow each object across the sky as the station orbits."
+    },
+    {
+     "heading": "What happened",
+     "body": "In a status update dated 17 November 2026, NASA said NICER has ended science operations, six and a half years beyond its initial mission. The trouble began in June 2025, when the telescope was suddenly unable to swivel side to side beyond its current orientation. The team paused data collection on 17 June of that year. Robotic cameras on the station's exterior photographed the instrument, which helped rule out external causes. After what NASA calls an extensive investigation, engineers think an internal motor has failed."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "NASA credits NICER with groundbreaking measurements of neutron stars and with changing the understanding of black holes and active galaxies. It also demonstrated that a spacecraft can navigate using X-ray signals from pulsars, which are spinning neutron stars, a technique NASA says could be used for travel to Mars and beyond. Technology developed to test the telescope before launch is being built into prototype portable CT scanners and materials analysis systems. The telescope had already survived one serious fault: in May 2023 damage to its thin thermal shields let sunlight leak in, and an astronaut later installed nine patches during a spacewalk."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The mission and station teams are now finalising NICER's eight-year archive of X-ray observations and planning to decommission the telescope and detach it from the station. NASA has not given a date for the removal."
+    }
+   ],
+   "sources": [
+    {
+     "name": "NASA",
+     "url": "https://www.nasa.gov/missions/station/nicer-status-updates/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-sciadv-aee5380",
+   "title": "Nonlinear cooling and control of a mechanical quantum harmonic oscillator",
+   "authors": [
+    "Matteo Simoni",
+    "Ivan Rojkov",
+    "Matteo Mazzanti",
+    "Wojciech Adamczyk",
+    "Alexander Ferk",
+    "Pavel Hrmo",
+    "Shreyans Jain",
+    "Tobias Sägesser",
+    "Daniel Kienzler",
+    "Jonathan Home"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-11T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics"
+   ],
+   "tldr": "Using the natural non-linearity of laser light acting on one trapped ion, physicists cooled its motion directly into Schrödinger's cat states with two to five components.",
+   "why_selected": "A new control method for quantum oscillators that turns an effect usually treated as a nuisance into a tool, with a claimed experimental first.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A quantum harmonic oscillator, such as a single ion vibrating in a trap, is a basic building block for quantum sensors and for error-corrected qubits. Its most useful states include Schrödinger's cat states, in which the oscillator is in several distinct motions at once. Making them requires a non-linearity, and strong non-linearities are hard to control."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The usual route couples the oscillator linearly to a two-level system, the ion's internal \"spin\", and lets the spin supply the non-linearity. Most experiments work in the Lamb-Dicke regime, where the ion's wavepacket is much smaller than the wavelength of the laser, so the light looks uniform across it. That keeps the mathematics simple but makes higher-order processes, which add or remove several quanta of vibration at once, weak."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors deliberately leave that regime. The ion then samples the light wave's sinusoidal shape, and processes that change the vibration by two, three or more quanta become usable, each selected by tuning the laser frequency. They apply two such processes at once, one that raises the vibration by r quanta and one that lowers it by l, while continuously resetting the spin. The raising process wins at low energies and the lowering process at high energies, so population gathers where the two balance. This is cooling into a chosen set of quantum states, not the ground state. Those states are superpositions of energy levels spaced r plus l apart, which is a cat state with that many components."
+    },
+    {
+     "heading": "Results",
+     "body": "The experiment used a single beryllium ion in a micro-fabricated surface Penning trap, oscillating at about 2.0 MHz and driven by a pair of 313-nanometre laser beams. Combinations of processes produced cat-state manifolds with 2, 3, 4 and 5 components. The authors say this is, to their knowledge, the first time 3-, 4- and 5-component cats have been stabilised in a mechanical system. They also measured the number of quanta modulo 3 to purify three-component states. (Read as the arXiv preprint.)"
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Cat states with higher rotational symmetry are candidates for error-correcting codes that store a qubit in one oscillator. The caveat is scale: one ion, one mode of motion, and no error correction demonstrated."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aee5380",
+    "doi": "https://doi.org/10.1126/sciadv.aee5380"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aec4142",
+   "title": "Fault-tolerant quantum computing with high-rate symplectic double codes",
+   "authors": [
+    "Naoyuki Kanomata and Hayato Goto"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-13T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics",
+    "Computational science & AI"
+   ],
+   "tldr": "A compact error-correcting code that stores six logical qubits in 30 physical ones now has a fault-tolerant way to prepare its starting states, tested in noise simulations.",
+   "why_selected": "Addresses a practical gap for efficient quantum error-correcting codes at a size that current trapped-ion and neutral-atom machines could attempt.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Quantum computers need error correction: many fragile physical qubits are combined into fewer, more reliable \"logical\" qubits. The leading scheme, the surface code, is simple and tolerant of noise but has a low encoding rate, so the hardware cost is high. Codes with a higher encoding rate exist, but most lack an efficient, fault-tolerant way to prepare their initial encoded states."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "A code is described by three numbers [[n,k,d]]: k logical qubits stored in n physical qubits, with distance d, a measure of how many errors it withstands. A typical small bivariate bicycle code is [[72,12,6]], a rate of about 17%. A trimmed variant, [[30,4,5]], is smaller but its rate drops to about 13%. Earlier fault-tolerance studies of symplectic double codes stopped at distance 3."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors study a [[30,6,5]] code: six logical qubits in 30 physical ones, a 20% rate at distance 5. It is built by a \"symplectic double\" construction, which doubles a 15-qubit code storing three logical qubits into a code of the simpler Calderbank-Shor-Steane type. Their main contribution is an encoder, the circuit that prepares the logical starting state. The circuit must detect crucial errors during encoding; the authors extend a minimum-overhead verification method devised for a seven-qubit code, using as few auxiliary qubits as possible. A second encoder injects arbitrary quantum states into the code, which together with basic fault-tolerant operations supports universal computation."
+    },
+    {
+     "heading": "Results",
+     "body": "A direct encoder for the logical plus state needs 108 two-qubit CNOT gates; by merging overlapping operations the authors cut this to 67. Because the code has only 12 error-check outcomes for each error type, decoding can use a lookup table of 2 to the power 12 rows. Simulations with a circuit-level noise model showed fewer gates and auxiliary qubits than more naive methods while keeping logical error rates low. (Read as the arXiv preprint.)"
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A 30-qubit block is small enough to try on current hardware, so the proposal can be tested soon. The caveat is that the evidence is numerical simulation only; no experiment has yet run this encoder."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aec4142",
+    "doi": "https://doi.org/10.1126/sciadv.aec4142"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  }
+ ]
+}

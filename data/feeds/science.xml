@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Tue, 17 Nov 2026 13:21:05 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 13:29:00 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Voyager 1 becomes the first spacecraft to reach one light-day from Earth</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n1</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>At 5:16 a.m. Eastern on 18 November, NASA's Voyager 1 passed 25.9 billion kilometres from Earth, the distance light covers in 24 hours, a first for any human-made object. (NASA Science, EarthSky, Popular Science, Science News)</description>
+  </item>
+  <item>
+    <title>US judge voids the endangered-species review behind the first US deep-sea mining lease sale</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n2</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>A federal judge in Hawaii ruled that the fisheries service broke the Endangered Species Act by assessing only seabed surveying, not the mining that leases off American Samoa could later allow. (Earthjustice, Courthouse News Service)</description>
+  </item>
+  <item>
+    <title>NASA ends science operations of NICER, its neutron-star X-ray telescope on the space station</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n3</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>NASA has retired NICER, the X-ray telescope on the International Space Station, after engineers concluded that a failed internal motor left it unable to track targets. (NASA)</description>
+  </item>
+  <item>
+    <title>Nonlinear cooling and control of a mechanical quantum harmonic oscillator</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aee5380</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aee5380</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>Using the natural non-linearity of laser light acting on one trapped ion, physicists cooled its motion directly into Schrödinger's cat states with two to five components. (Matteo Simoni, Ivan Rojkov, Matteo Mazzanti et al.)</description>
+  </item>
+  <item>
+    <title>Fault-tolerant quantum computing with high-rate symplectic double codes</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aec4142</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aec4142</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>A compact error-correcting code that stores six logical qubits in 30 physical ones now has a fault-tolerant way to prepare its starting states, tested in noise simulations. (Naoyuki Kanomata and Hayato Goto)</description>
+  </item>
   <item>
     <title>The largest US data centres use about 1.8% of the country's electricity, a first facility-by-facility tally finds</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Mon, 09 Nov 2026 13:27:42 +0000</pubDate>
     <category>Science / Climate science</category>
     <description>Asian cave records show ice-age abrupt warmings took over a century, far slower than Greenland ice cores imply, because Greenland captured a fast atmospheric change, not the ocean's pace. (Xiyu Dong, Xu Zhang, Yuchen Sun et al.)</description>
-  </item>
-  <item>
-    <title>Stacked porous NiTi structure with low cost and ultrahigh fatigue life for elastocaloric cooling</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aeh7074</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aeh7074</guid>
-    <pubDate>Mon, 09 Nov 2026 13:27:42 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>Stamping honeycomb chips from nitinol sheets and stacking them yields a cooling structure that survived more than 100 million cycles and delivers 3850 watts per kilogram, at about a tenth of the usual fabrication cost. (Changfeng Su, Yang Li, Zhongzheng Deng et al.)</description>
-  </item>
-  <item>
-    <title>Seafloor geodesy delineates fast megathrust relocking after the giant 2011 Tohoku earthquake</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aeg7301</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-09/doi-10-1126-science-aeg7301</guid>
-    <pubDate>Mon, 09 Nov 2026 13:27:42 +0000</pubDate>
-    <category>Science / Earth science</category>
-    <description>Fourteen years of seafloor measurements show the fault that produced Japan's 2011 magnitude 9 Tohoku earthquake has already returned to a locked state similar to before the quake. (Fumiaki Tomita, Tianhaozhe Sun, Motoyuki Kido et al.)</description>
-  </item>
-  <item>
-    <title>China's space station cools a cloud of atoms to a record 9.7 picokelvin</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n1</guid>
-    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
-    <category>Science / Physics</category>
-    <description>Researchers aboard China's Tiangong station cooled about 20,000 rubidium atoms to an equivalent 9.7 picokelvin, about four times below the previous record, and watched the cloud expand for seven seconds. (Phys.org, Chinese Academy of Sciences)</description>
-  </item>
-  <item>
-    <title>The Arctic polar vortex is breaking down weeks earlier than ever observed</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n2</guid>
-    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
-    <category>Science / Climate &amp; Earth</category>
-    <description>Meteorologists say the stratospheric polar vortex is weakening in early November, the earliest disruption on record, but the cause and any effect on winter weather remain uncertain. (BBC Weather, Phys.org (AFP))</description>
-  </item>
-  <item>
-    <title>Mantle currents may have helped carve the Great Unconformity, geologists' biggest gap in the rock record</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-07/2026-11-07-n3</guid>
-    <pubDate>Sat, 07 Nov 2026 13:20:39 +0000</pubDate>
-    <category>Science / Climate &amp; Earth</category>
-    <description>Simulations of mantle convection over the past billion years suggest slow uplift of continents, followed by glacial scouring, helped create the Great Unconformity. (Phys.org (University of Wollongong), Ars Technica)</description>
   </item>
 </channel>
 </rss>

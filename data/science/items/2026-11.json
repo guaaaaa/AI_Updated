@@ -1,5 +1,61 @@
 [
  {
+  "id": "2026-11-18-n1",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "Voyager 1 becomes the first spacecraft to reach one light-day from Earth",
+  "tldr": "At 5:16 a.m. Eastern on 18 November, NASA's Voyager 1 passed 25.9 billion kilometres from Earth, the distance light covers in 24 hours, a first for any human-made object.",
+  "category": "Space & Astronomy",
+  "byline": "NASA Science, EarthSky, Popular Science"
+ },
+ {
+  "id": "2026-11-18-n2",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "US judge voids the endangered-species review behind the first US deep-sea mining lease sale",
+  "tldr": "A federal judge in Hawaii ruled that the fisheries service broke the Endangered Species Act by assessing only seabed surveying, not the mining that leases off American Samoa could later allow.",
+  "category": "Climate & Earth",
+  "byline": "Earthjustice, Courthouse News Service"
+ },
+ {
+  "id": "2026-11-18-n3",
+  "date": "2026-11-18",
+  "type": "news",
+  "title": "NASA ends science operations of NICER, its neutron-star X-ray telescope on the space station",
+  "tldr": "NASA has retired NICER, the X-ray telescope on the International Space Station, after engineers concluded that a failed internal motor left it unable to track targets.",
+  "category": "Space & Astronomy",
+  "byline": "NASA"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aee5380",
+  "date": "2026-11-18",
+  "type": "paper",
+  "title": "Nonlinear cooling and control of a mechanical quantum harmonic oscillator",
+  "tldr": "Using the natural non-linearity of laser light acting on one trapped ion, physicists cooled its motion directly into Schrödinger's cat states with two to five components.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics"
+  ],
+  "byline": "Matteo Simoni, Ivan Rojkov, Matteo Mazzanti et al.",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aec4142",
+  "date": "2026-11-18",
+  "type": "paper",
+  "title": "Fault-tolerant quantum computing with high-rate symplectic double codes",
+  "tldr": "A compact error-correcting code that stores six logical qubits in 30 physical ones now has a fault-tolerant way to prepare its starting states, tested in noise simulations.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics",
+   "Computational science & AI"
+  ],
+  "byline": "Naoyuki Kanomata and Hayato Goto",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
   "id": "2026-11-17-n1",
   "date": "2026-11-17",
   "type": "news",

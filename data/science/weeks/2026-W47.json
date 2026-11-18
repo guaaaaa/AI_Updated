@@ -3,12 +3,19 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
- "stories": [],
+ "stories": [
+  {
+   "title": "After 49 Years, Voyager 1 Is a Mind-Blowing One Light-Day From Earth",
+   "outlets": 3,
+   "date": "2026-11-18",
+   "covered": "2026-11-18-n1"
+  }
+ ],
  "featured": {
-  "news": 2,
-  "papers": 6
+  "news": 5,
+  "papers": 8
  },
  "items": [
   {
@@ -58,6 +65,36 @@
    "date": "2026-11-17",
    "type": "paper",
    "title": "Climate aridity amplifies global riverine nitrate beyond human inputs"
+  },
+  {
+   "id": "2026-11-18-n1",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "Voyager 1 becomes the first spacecraft to reach one light-day from Earth"
+  },
+  {
+   "id": "2026-11-18-n2",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "US judge voids the endangered-species review behind the first US deep-sea mining lease sale"
+  },
+  {
+   "id": "2026-11-18-n3",
+   "date": "2026-11-18",
+   "type": "news",
+   "title": "NASA ends science operations of NICER, its neutron-star X-ray telescope on the space station"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aee5380",
+   "date": "2026-11-18",
+   "type": "paper",
+   "title": "Nonlinear cooling and control of a mechanical quantum harmonic oscillator"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aec4142",
+   "date": "2026-11-18",
+   "type": "paper",
+   "title": "Fault-tolerant quantum computing with high-rate symplectic double codes"
   }
  ]
 }

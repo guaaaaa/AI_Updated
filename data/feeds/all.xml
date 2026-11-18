@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 18 Nov 2026 12:45:11 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 13:29:00 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Voyager 1 becomes the first spacecraft to reach one light-day from Earth</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n1</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>At 5:16 a.m. Eastern on 18 November, NASA's Voyager 1 passed 25.9 billion kilometres from Earth, the distance light covers in 24 hours, a first for any human-made object. (NASA Science, EarthSky, Popular Science, Science News)</description>
+  </item>
+  <item>
+    <title>US judge voids the endangered-species review behind the first US deep-sea mining lease sale</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n2</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>A federal judge in Hawaii ruled that the fisheries service broke the Endangered Species Act by assessing only seabed surveying, not the mining that leases off American Samoa could later allow. (Earthjustice, Courthouse News Service)</description>
+  </item>
+  <item>
+    <title>NASA ends science operations of NICER, its neutron-star X-ray telescope on the space station</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/2026-11-18-n3</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>NASA has retired NICER, the X-ray telescope on the International Space Station, after engineers concluded that a failed internal motor left it unable to track targets. (NASA)</description>
+  </item>
+  <item>
+    <title>Nonlinear cooling and control of a mechanical quantum harmonic oscillator</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aee5380</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aee5380</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>Using the natural non-linearity of laser light acting on one trapped ion, physicists cooled its motion directly into Schrödinger's cat states with two to five components. (Matteo Simoni, Ivan Rojkov, Matteo Mazzanti et al.)</description>
+  </item>
+  <item>
+    <title>Fault-tolerant quantum computing with high-rate symplectic double codes</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aec4142</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aec4142</guid>
+    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>A compact error-correcting code that stores six logical qubits in 30 physical ones now has a fault-tolerant way to prepare its starting states, tested in noise simulations. (Naoyuki Kanomata and Hayato Goto)</description>
+  </item>
   <item>
     <title>Nvidia's quarterly revenue doubles to $115.8 billion, and the board says it will not bring Jensen Huang back</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-18/2026-11-18-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
     <category>AI / Interpretability</category>
     <description>An LLM agent writes neural network weights and features by hand, with training forbidden, producing readable transformers and brain-response models that beat classical interpretable baselines. (Yash Mehta, Chandan Singh, Weijia Xu et al.)</description>
-  </item>
-  <item>
-    <title>Japan's economy shrinks at a 0.1% annualized rate in the third quarter, its first contraction in four quarters</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>Japan's real GDP edged down 0.02% in July-September, a 0.1% annualized fall that missed forecasts of growth, as households cut spending while business investment rose 1.6%. (Cabinet Office of Japan, Xinhua)</description>
-  </item>
-  <item>
-    <title>China's October retail sales grow just 0.4% and investment falls 8.1%, missing forecasts across the board</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n2</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>China's retail sales, factory output and fixed-asset investment all came in below expectations in October, with consumer spending nearly flat and property investment down 21.6% so far this year. (National Bureau of Statistics of China, ING Think, Quartz)</description>
-  </item>
-  <item>
-    <title>Carney says Canada could turn to Chinese automakers if US trade talks fail to protect its auto industry</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n3</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Trade &amp; Policy</category>
-    <description>Days before meeting Xi Jinping, Mark Carney said Canada will pursue European, Chinese or Japanese carmakers if a US deal does not leave it a viable auto sector. (The Guardian, Euronews, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>Telus pulls out of two planned AI data centres in Vancouver after local opposition and a strategy shift</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n4</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Tech &amp; AI Business</category>
-    <description>Telus has dropped out of two Vancouver AI data centre projects announced in May; developer Westbank says it will proceed with a new, unnamed partner. (The Globe and Mail, Daily Hive)</description>
-  </item>
-  <item>
-    <title>Clouds of Credit: Mapping the Financial Web Behind AI Compute</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/nber-w36032</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/nber-w36032</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Corporate finance</category>
-    <description>A model of the contracts linking chipmakers, cloud firms, AI labs and landlords finds the AI buildout is larger than socially optimal, about 59% debt-funded, and exposed to $16.9 trillion of losses if AI disappoints. (Stijn Van Nieuwerburgh, Zijin Su · Columbia University Graduate School of Business; NBER)</description>
   </item>
 </channel>
 </rss>
