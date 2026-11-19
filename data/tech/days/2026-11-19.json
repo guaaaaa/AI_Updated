@@ -1,7 +1,7 @@
 {
  "date": "2026-11-19",
  "edition": "weekday",
- "generated_at": "2026-11-19T11:48:16+00:00",
+ "generated_at": "2026-11-19T11:49:10+00:00",
  "summary": "Attackers hijack Microsoft's official Agent Framework package on PyPI, Intel signs its first outside customer for its 18A chip process, Windows Server 2028 ships hardened by default, and a Slovak quantum network delivers encryption keys in real time across four cities.",
  "news": [
   {
@@ -154,7 +154,7 @@
     },
     {
      "heading": "Key idea",
-     "body": "A single source in Trnava produces pairs of polarization-entangled photons, particles whose measured properties are correlated. Because the two photons of a pair have matching wavelengths on either side of a central value, the team routes wavelength channels passively, with filters and simple splitters, so each pair of cities receives one shared channel. A matrix describing which users are connected lets the authors enumerate layouts in which every pair shares exactly one channel; four users need only three wavelength pairs, half of what dedicated channels require. Trnava, Bratislava and Nitra form a mesh with no trusted node, and Trenčín connects through Trnava. Keys are delivered through the ETSI GS QKD 014 standard interface."
+     "body": "A single source in Trnava produces pairs of polarization-entangled photons, particles whose measured properties are correlated. Because the two photons of a pair have matching wavelengths on either side of a central value, the team routes wavelength channels passively, with filters and simple splitters, so each pair of cities receives one shared channel. A matrix describing which users are connected lets the authors enumerate layouts in which every pair shares exactly one channel; four users need only three wavelength pairs, half of what dedicated channels require. Trnava, Bratislava and Nitra form a mesh with no trusted node, and Trenčín connects through Trnava. Keys reach applications via the ETSI GS QKD 014 interface."
     },
     {
      "heading": "Results",

@@ -5,13 +5,13 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Thu, 19 Nov 2026 11:48:16 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 11:49:10 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Attackers publish two credential-stealing versions of Microsoft's official Agent Framework package on PyPI</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n1</link>
     <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n1</guid>
-    <pubDate>Thu, 19 Nov 2026 11:48:16 +0000</pubDate>
+    <pubDate>Thu, 19 Nov 2026 11:49:10 +0000</pubDate>
     <category>Tech / Cybersecurity</category>
     <description>Two malicious releases of Microsoft's agent-framework Python package, downloaded about 200,000 times a month, stole cloud and developer credentials; developers who installed versions 1.26.1 or 1.26.2 should rebuild and rotate secrets. (BleepingComputer, The Register)</description>
   </item>
@@ -19,7 +19,7 @@
     <title>Intel signs its first outside customer for its 18A chip-making process, and Microsoft adopts its EMIB packaging</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n2</link>
     <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n2</guid>
-    <pubDate>Thu, 19 Nov 2026 11:48:16 +0000</pubDate>
+    <pubDate>Thu, 19 Nov 2026 11:49:10 +0000</pubDate>
     <category>Tech / Chips &amp; Hardware</category>
     <description>Intel CEO Lip-Bu Tan says an unnamed company has signed on to make chips with Intel's 18A-P process, and that 18A yields have reached 70%, a step for Intel's effort to compete with TSMC. (Crypto Briefing, TrendForce)</description>
   </item>
@@ -27,7 +27,7 @@
     <title>Microsoft previews Windows Server 2028, which ships hardened by default with post-quantum key exchange</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n3</link>
     <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n3</guid>
-    <pubDate>Thu, 19 Nov 2026 11:48:16 +0000</pubDate>
+    <pubDate>Thu, 19 Nov 2026 11:49:10 +0000</pubDate>
     <category>Tech / Software &amp; Platforms</category>
     <description>Windows Server 2028's public preview turns on hundreds of security settings from first boot, including Kerberos over NTLM and hybrid post-quantum TLS, and Microsoft warns that some older software may break. (BleepingComputer, Ars Technica)</description>
   </item>
@@ -35,7 +35,7 @@
     <title>A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2611.17265</link>
     <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2611.17265</guid>
-    <pubDate>Thu, 19 Nov 2026 11:48:16 +0000</pubDate>
+    <pubDate>Thu, 19 Nov 2026 11:49:10 +0000</pubDate>
     <category>Tech / Quantum computing</category>
     <description>A Slovak quantum key distribution network links four cities over ordinary telecom fiber, runs all links at once and delivers finished keys to applications in real time, with honest post-processed key rates. (Gilberto Borges, Saeid Salari, Ekta Panwar et al. · Institute of Physics, Slovak Academy of Sciences)</description>
   </item>
