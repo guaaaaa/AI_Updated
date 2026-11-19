@@ -1,5 +1,52 @@
 [
  {
+  "id": "2026-11-19-n1",
+  "date": "2026-11-19",
+  "type": "news",
+  "title": "Astronomers watch a Sun-like star spiral into a supergiant in Andromeda, with Webb confirming the merger",
+  "tldr": "A star of about 0.7 solar masses merged with a supergiant seven times the Sun's mass in Andromeda after only seven orbits, and Webb observed the aftermath 47 days after the outburst peaked.",
+  "category": "Space & Astronomy",
+  "byline": "NASA, Phys.org"
+ },
+ {
+  "id": "2026-11-19-n2",
+  "date": "2026-11-19",
+  "type": "news",
+  "title": "Fiji declares a national disaster and Tonga a state of emergency as El Niño drought deepens",
+  "tldr": "Fiji's cabinet declared a nationwide natural disaster and Tonga a 27-day state of emergency as El Niño-driven drought cuts water supplies, with effects expected to last until at least mid-2027.",
+  "category": "Climate & Earth",
+  "byline": "Phys.org (AFP), RNZ, NZ Herald"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11289-7",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "Observation of tunable superradiant frequency combs",
+  "tldr": "Billions of ytterbium ions in a crystal synchronise through a shared microwave field and emit regular pulses at microwave and optical frequencies at once, forming a new kind of frequency comb.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics",
+   "Condensed matter & materials"
+  ],
+  "byline": "Tian Xie, Rikuto Fukumori, Wai-Keong Mok et al. · California Institute of Technology; Stanford University",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aee0802",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "Unblockable communication with gravity",
+  "tldr": "Physicists sent the word \"Gravity\" through a brick wall by moving a 1.8-tonne elevator counterweight and reading its pull with a gravimeter, at one bit per minute.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science"
+  ],
+  "byline": "Andrew J. Groszek, Charles W. Woffinden, Michael D. Harvey et al. · University of Queensland",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
   "id": "2026-11-18-n1",
   "date": "2026-11-18",
   "type": "news",

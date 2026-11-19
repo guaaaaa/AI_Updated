@@ -1,0 +1,193 @@
+{
+ "date": "2026-11-19",
+ "edition": "weekday",
+ "generated_at": "2026-11-19T13:20:51+00:00",
+ "summary": "Astronomers catch a giant star swallowing a Sun-like companion in Andromeda, Fiji and Tonga declare drought emergencies as El Niño bites, and two physics papers turn synchronised atoms into a dual frequency comb and an elevator into a gravity transmitter.",
+ "news": [
+  {
+   "id": "2026-11-19-n1",
+   "story_key": "andromeda-supergiant-merger-bao-webb",
+   "title": "Astronomers watch a Sun-like star spiral into a supergiant in Andromeda, with Webb confirming the merger",
+   "category": "Space & Astronomy",
+   "published": "2026-11-18T11:00:00-05:00",
+   "tldr": "A star of about 0.7 solar masses merged with a supergiant seven times the Sun's mass in Andromeda after only seven orbits, and Webb observed the aftermath 47 days after the outburst peaked.",
+   "why_selected": "A rare stellar process caught as it happened, published in Nature and backed by multi-telescope data, that tests a poorly understood step in how binary stars evolve.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Many stars live in pairs. When one of them swells into a giant, its companion can end up inside the giant's outer layers. Astronomers call this stage common envelope evolution: the outer gas is shared by both stars, and its drag robs the smaller star of orbital energy so that it spirals inward. Sometimes both stars survive in a tight orbit, and such pairs can later produce neutron stars, black holes, supernovae, gravitational waves and millisecond pulsars. Sometimes they merge. Mergers are hard to observe because they are hard to predict."
+    },
+    {
+     "heading": "What happened",
+     "body": "In a Nature paper published on 18 November, a team led by Viraj Karambelkar, a NASA Hubble Fellow at Columbia University, described a merger on the outskirts of the Andromeda galaxy, nicknamed Bao. The team noticed an unusual variable star in February 2023 and saw a slow brightening, the sign of a companion peeling gas off the giant's surface. In 2025 the system erupted; its brightness rose and peaked within a week. NASA's James Webb Space Telescope observed it 47 days after the peak, the earliest follow-up of such an event, alongside ultraviolet, visible and near-infrared data from other telescopes. Simulations matched to Webb's mid-infrared data indicate the giant had seven times the Sun's mass, 350 times its radius and 18,000 times its brightness, and the companion about 0.7 solar masses. Once they touched, the stars merged after only seven orbits, about seven years; other known mergers of smaller stars took thousands of orbits."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Common envelope evolution is a key but uncertain step in models of compact binaries. Webb's data let the team measure how much mass was ejected and how efficient the process was. The caveat: this is one event, and the masses come from modelling."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Future observations should show how the merged, possibly \"rejuvenated\" star settles."
+    }
+   ],
+   "sources": [
+    {
+     "name": "NASA",
+     "url": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/"
+    },
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-11-webb-kind-merger-supergiant-smaller.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-n2",
+   "story_key": "fiji-tonga-el-nino-drought-emergencies",
+   "title": "Fiji declares a national disaster and Tonga a state of emergency as El Niño drought deepens",
+   "category": "Climate & Earth",
+   "published": "2026-11-19T07:20:04-05:00",
+   "tldr": "Fiji's cabinet declared a nationwide natural disaster and Tonga a 27-day state of emergency as El Niño-driven drought cuts water supplies, with effects expected to last until at least mid-2027.",
+   "why_selected": "A clear, well-documented example of a single climate pattern pushing two countries into emergency measures, reported by several independent outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "El Niño is a recurring warming of surface waters in parts of the tropical Pacific that shifts wind, heat and rain patterns around the world. In the South Pacific it tends to suppress the rains that keep tropical islands green, so drought follows. Experts have warned that the current El Niño may become one of the most powerful on record. Tonga had already declared drought across most of its islands last month."
+    },
+    {
+     "heading": "What happened",
+     "body": "Fiji's cabinet, on advice from the National Disaster Risk Management Council, declared a state of national natural disaster, saying the drought \"has reached crisis thresholds\". The declaration lets the government order evacuations, curfews and travel restrictions, ration water and redirect public money. Prime Minister Sitiveni Rabuka said FJ$20 million had been reallocated and that more than two million litres of emergency water were delivered to maritime areas over the past month. In greater Suva, the water authority imposed night-time restrictions from 9pm to 4am after the Tamavua treatment plant lost more than 15% of its raw water inflow, and wildfires have become a daily occurrence. In Tonga, Acting Prime Minister Viliami Latu declared a 27-day state of emergency covering all land and sea areas, running from 19 November to 16 December, on the recommendation of the ministry responsible for meteorology and disaster management."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The declarations turn a forecast into measurable stress on water, farms, fisheries and health, the sectors Tonga's government says are worsening daily. They show how quickly a shift in Pacific Ocean temperatures reaches the water supply of island nations."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Tonga will review its emergency before 16 December. El Niño's effects are expected to persist until at least June 2027, so how long water rationing lasts, and whether other islands follow, are the next questions."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Phys.org (AFP)",
+     "url": "https://phys.org/news/2026-11-pacific-island-nations-declare-el.html"
+    },
+    {
+     "name": "RNZ",
+     "url": "https://www.rnz.co.nz/news/pacific/2683569/a-natural-hazard-tonga-declares-state-of-emergency-as-el-nino-drought-worsens"
+    },
+    {
+     "name": "NZ Herald",
+     "url": "https://www.nzherald.co.nz/talanoa/fiji-declares-state-of-national-disaster-over-el-nino-drought/SNO2Q73Q3JBE5ARTYKZH4GE3RM/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11289-7",
+   "title": "Observation of tunable superradiant frequency combs",
+   "authors": [
+    "Tian Xie",
+    "Rikuto Fukumori",
+    "Wai-Keong Mok",
+    "Jiahui Li",
+    "Joonhee Choi",
+    "Andrei Faraon"
+   ],
+   "affiliations": [
+    "California Institute of Technology; Stanford University"
+   ],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics",
+    "Condensed matter & materials"
+   ],
+   "tldr": "Billions of ytterbium ions in a crystal synchronise through a shared microwave field and emit regular pulses at microwave and optical frequencies at once, forming a new kind of frequency comb.",
+   "why_selected": "An unexpected collective phenomenon, explained by a model and turned into a tunable light source that could link microwave quantum hardware to optical fibres.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A frequency comb is light made of many colours spaced exactly evenly, like the teeth of a comb. Combs underpin atomic clocks, precise distance measurement and chemical identification. Most are made by mode-locked lasers, whose pulses come from light bouncing between mirrors, so tiny changes in mirror spacing, for example from temperature, shift the frequencies."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Superradiance, first proposed by Dicke in 1954, is an alternative: emitters synchronise through a shared field and radiate together, with output growing as the square of their number. It has been seen in cold atoms, gases, artificial atoms and crystal defects, producing bursts and very narrow-linewidth lasers. Periodic pulsed superradiance had been hinted at, but its mechanism remained unclear."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team placed billions of ytterbium ions in a yttrium orthovanadate crystal beneath a superconducting microwave resonator. A laser excites the ions, which emit microwaves into the resonator; because every ion feels the same field, they lock into step without any mirrors. Below a threshold the emission is steady. When the collective coupling between ions and resonator outgrows the resonator's losses, the steady state breaks: coherence among the ions builds up, collapses in a synchronised flash, and is rebuilt by the pump, over and over, like a crowd falling into rhythmic clapping with no leader. The authors' model shows that moderate disorder among the ions lowers the threshold. Because the ions have both a microwave and an optical transition, each microwave flash comes with an optical one."
+    },
+    {
+     "heading": "Results",
+     "body": "Above a certain laser power the emission switched from continuous to periodic pulses that repeated without decay, with a repetition rate set by the ensemble's cooperativity, a measure of collective coupling. The team reports the first simultaneous, phase-coherent microwave and optical superradiant pulse trains, which it calls dual-rail combs, and links the pulsing to a continuous time crystal."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Because the frequency comes from the atoms rather than mirrors, the authors argue such combs could in principle be more stable, and the dual output could connect superconducting quantum processors to optical links. The setup needs superconducting circuits at cryogenic temperatures, and the stability advantage is not yet demonstrated."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11289-7",
+    "doi": "https://doi.org/10.1038/s41586-026-11289-7"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aee0802",
+   "title": "Unblockable communication with gravity",
+   "authors": [
+    "Andrew J. Groszek",
+    "Charles W. Woffinden",
+    "Michael D. Harvey",
+    "Andrew G. White",
+    "Matthew J. Davis"
+   ],
+   "affiliations": [
+    "University of Queensland"
+   ],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science"
+   ],
+   "tldr": "Physicists sent the word \"Gravity\" through a brick wall by moving a 1.8-tonne elevator counterweight and reading its pull with a gravimeter, at one bit per minute.",
+   "why_selected": "A simple, memorable demonstration that information can travel in the gravitational field, a channel ordinary barriers cannot block.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Wireless communication uses electromagnetic waves: radio, microwaves and light. Ordinary material can block them, which is why phone reception fails in tunnels and Wi-Fi struggles through solid walls. Some settings, such as places that radio waves and light cannot penetrate, would benefit from a signal that no barrier can screen out. Gravity is such a signal, because a mass pulls on everything around it regardless of what lies in between."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Gravimeters, instruments that measure tiny changes in the local pull of gravity, are well established. The University of Queensland team had been developing one use for them: a contactless truck scale that would weigh large vehicles by measuring their gravitational pull. Once that worked, they realised the same physics could carry information."
+    },
+    {
+     "heading": "Key idea",
+     "body": "In the university's Parnell Building, the researchers used an elevator as the transmitter. Moving the car between two levels shifts its 1.8-tonne counterweight between two positions, and each position stands for a binary 0 or 1. A gravimeter in an adjacent bathroom, on the other side of a brick wall, sensed the slight change in gravitational pull as the counterweight moved and decoded the sequence. It is like signalling to a neighbour by moving a heavy piece of furniture back and forth, if the neighbour had a scale sensitive enough to feel its pull."
+    },
+    {
+     "heading": "Results",
+     "body": "The system transmitted the word \"Gravity\". The 1950s elevator managed one bit per minute, so a single word took about an hour. The team's modelling suggests that quantum sensors could, under what it calls rather ambitious assumptions, reach ranges of about 500 metres and rates of around 15 bits per minute."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The experiment shows that information can be encoded in the gravitational field and recovered at a distance through ordinary material. The speed depends on the size of the mass, how fast it moves and the detector's sensitivity. The authors stress the system is far from practical: it is slow and short-range."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aee0802",
+    "doi": "https://doi.org/10.1126/sciadv.aee0802"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major",
+    "press": 1
+   }
+  }
+ ]
+}

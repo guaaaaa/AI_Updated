@@ -3,19 +3,25 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
-   "title": "After 49 Years, Voyager 1 Is a Mind-Blowing One Light-Day From Earth",
+   "title": "Massive data centres collectively use as much electricity as an entire US state",
+   "outlets": 3,
+   "date": "2026-11-16",
+   "covered": null
+  },
+  {
+   "title": "After 49 years, Nasa’s Voyager 1 is one light-day away from us. Can we save this ‘pale blue dot’? |",
    "outlets": 3,
    "date": "2026-11-18",
    "covered": "2026-11-18-n1"
   }
  ],
  "featured": {
-  "news": 5,
-  "papers": 8
+  "news": 7,
+  "papers": 10
  },
  "items": [
   {
@@ -95,6 +101,30 @@
    "date": "2026-11-18",
    "type": "paper",
    "title": "Fault-tolerant quantum computing with high-rate symplectic double codes"
+  },
+  {
+   "id": "2026-11-19-n1",
+   "date": "2026-11-19",
+   "type": "news",
+   "title": "Astronomers watch a Sun-like star spiral into a supergiant in Andromeda, with Webb confirming the merger"
+  },
+  {
+   "id": "2026-11-19-n2",
+   "date": "2026-11-19",
+   "type": "news",
+   "title": "Fiji declares a national disaster and Tonga a state of emergency as El Niño drought deepens"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11289-7",
+   "date": "2026-11-19",
+   "type": "paper",
+   "title": "Observation of tunable superradiant frequency combs"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aee0802",
+   "date": "2026-11-19",
+   "type": "paper",
+   "title": "Unblockable communication with gravity"
   }
  ]
 }
