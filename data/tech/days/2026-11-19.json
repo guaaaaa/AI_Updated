@@ -1,0 +1,178 @@
+{
+ "date": "2026-11-19",
+ "edition": "weekday",
+ "generated_at": "2026-11-19T11:47:32+00:00",
+ "summary": "Attackers hijack Microsoft's official Agent Framework package on PyPI, Intel signs its first outside customer for its 18A chip process, Windows Server 2028 ships hardened by default, and a Slovak quantum network delivers encryption keys in real time across four cities.",
+ "news": [
+  {
+   "id": "2026-11-19-n1",
+   "story_key": "microsoft-agent-framework-pypi-compromise",
+   "title": "Attackers publish two credential-stealing versions of Microsoft's official Agent Framework package on PyPI",
+   "category": "Cybersecurity",
+   "published": "2026-11-17T12:00:00-05:00",
+   "tldr": "Two malicious releases of Microsoft's agent-framework Python package, downloaded about 200,000 times a month, stole cloud and developer credentials; developers who installed versions 1.26.1 or 1.26.2 should rebuild and rotate secrets.",
+   "why_selected": "A software supply-chain attack on an official package from one of the largest software vendors, aimed at the credentials that unlock cloud accounts and build systems.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "PyPI, the Python Package Index, is the public registry from which developers install Python libraries with a single command. Because projects pull in packages automatically, an attacker who gains publishing rights to a trusted package can reach many machines at once; this is called a software supply-chain attack. Microsoft Agent Framework is the company's open-source toolkit for building AI agents and has roughly 200,000 monthly downloads on PyPI."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 17, two malicious versions of the package, 1.26.1 and 1.26.2, were published under Microsoft's official PyPI project, according to BleepingComputer, which cited the security firms Socket, StepSecurity and Ox Security. The code ran automatically whenever Python started in an affected environment, even if the package was never imported, while the real 1.26.0 code kept the framework working normally. It collected secrets from environment variables and configuration files for services including Azure, AWS, GitHub, Docker and Hugging Face, and requested fresh identity tokens from Azure, Azure DevOps and GitHub Actions. PyPI quarantined the first release; the second appeared about 2.5 minutes later and was quarantined roughly eight minutes after that, a sign the attacker still had publishing access. How the account was compromised is unknown. Microsoft told The Register it had made some repositories private while it investigates."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The malware targeted the credentials that matter most in modern development: cloud accounts and automated build pipelines. Researchers quoted by The Register noted that even short-lived tokens are useful when they are stolen and used immediately, which makes build servers particularly exposed. The incident also shows that an official vendor namespace is no guarantee of safety. Recommended steps are to isolate affected environments, rebuild them from the safe 1.26.0 release, rotate every credential the environment could reach, and check outbound network logs for transfers to the attacker's endpoint."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Microsoft explains how its publishing access was obtained, whether other packages were touched, and whether organizations report stolen cloud credentials being used."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-n2",
+   "story_key": "intel-18a-first-external-customer",
+   "title": "Intel signs its first outside customer for its 18A chip-making process, and Microsoft adopts its EMIB packaging",
+   "category": "Chips & Hardware",
+   "published": "2026-11-18T15:10:00-05:00",
+   "tldr": "Intel CEO Lip-Bu Tan says an unnamed company has signed on to make chips with Intel's 18A-P process, and that 18A yields have reached 70%, a step for Intel's effort to compete with TSMC.",
+   "why_selected": "Intel's contract-manufacturing business has been waiting years for an outside customer on its most advanced process; the deal affects the competitive balance in leading-edge chipmaking.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Intel is trying to become a foundry, a company that manufactures chips designed by others, in competition with TSMC and Samsung. Its 18A process combines RibbonFET, a gate-all-around transistor in which the control gate wraps around the channel, with PowerVia, which moves power wiring to the back of the chip. 18A was developed mainly for Intel's own products, and outside customers had been steered toward a later node, 14A."
+    },
+    {
+     "heading": "What happened",
+     "body": "Speaking at the TomorrowX Summit on November 18, CEO Lip-Bu Tan said: \"18A, I'm involved in production and we just signed the first customer.\" He did not name the client. Intel technology chief Pushkar Ranade later clarified on X that the deal uses 18A-P, an upgraded version of the process that entered risk production in June, according to CNBC as cited by TrendForce. Tan also said 18A yields, the share of chips on a wafer that work, have reached 70%; when he became CEO in March 2025, yields were reportedly described as \"horrible.\" Separately, Intel said Microsoft is the first publicly announced customer for its Embedded Multi-die Interconnect Bridge (EMIB) packaging, which links several chip pieces inside one package, for custom Azure silicon. That deal includes a multi-year Xeon supply agreement and joint work on the CXL memory interconnect."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "TSMC makes most of the world's leading-edge chips, and many customers want a second source, ideally outside Taiwan. A paying 18A customer and a 70% yield suggest Intel's process is maturing, but Intel gave no figures for volume, revenue or timing, and one customer is far from a full foundry business. Demand for TSMC's CoWoS packaging, stretched by AI chips, is also pushing hyperscalers toward alternatives such as EMIB."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the customer is named, with analysts mentioning Apple, Nvidia and cloud companies, and whether Intel keeps its late-2027 target for its first internal 14A product."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Crypto Briefing",
+     "url": "https://cryptobriefing.com/intel-first-external-customer-18a-process/"
+    },
+    {
+     "name": "TrendForce",
+     "url": "https://www.trendforce.com/news/2026/11/19/news-intel-scores-dual-foundry-wins-microsoft-named-first-emib-customer-tan-says-18a-secures-first-external-deal/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-n3",
+   "story_key": "windows-server-2028-preview",
+   "title": "Microsoft previews Windows Server 2028, which ships hardened by default with post-quantum key exchange",
+   "category": "Software & Platforms",
+   "published": "2026-11-17T12:00:00-05:00",
+   "tldr": "Windows Server 2028's public preview turns on hundreds of security settings from first boot, including Kerberos over NTLM and hybrid post-quantum TLS, and Microsoft warns that some older software may break.",
+   "why_selected": "Windows Server runs a large share of corporate data centers, and making a hardened configuration the default changes how organizations deploy servers.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Until now, a freshly installed Windows Server started from a fairly open configuration. Administrators then applied hardening guides such as the Defense Information Systems Agency's Security Technical Implementation Guides (STIGs), and the server could sit exposed in the meantime. Secure baselines existed but were not the default."
+    },
+    {
+     "heading": "What happened",
+     "body": "Microsoft announced Windows Server 2028 at its Ignite conference on Tuesday and opened a public preview. Server Core installations, the version without a graphical desktop, now start in what Microsoft calls Hardened Server Core, which Ars Technica says is aligned with Defense Department benchmarks. Kerberos is preferred over the older NTLM sign-in protocol, and LSASS, the process that holds credentials, is protected. SMB file sharing is signed and encrypted, and the firewall is on in every profile. TLS is limited to modern cipher suites, and key exchange uses a hybrid scheme with ML-KEM, an algorithm designed to resist future quantum computers. Remote Desktop requires network-level authentication, and PowerShell script logging is on. The release also enables the native NVMe storage stack by default, adds Intune management for servers, and can boot from the ReFS file system. Admins can relax individual settings."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Secure defaults remove the window in which a new server waits to be hardened. Microsoft says plainly that the settings may break applications that rely on legacy protocols, authentication or scripts, and it is asking testers to report which setting broke which workload. The preview is not a release candidate: NTLM blocking, print and RPC hardening and hardware-backed protections such as Secure Boot enforcement come in later builds, and a known bug in the hybrid key exchange can crash LSASS, so Microsoft advises disabling those key-exchange groups for now."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How many hardening settings survive feedback before general availability, and whether the Desktop Experience edition gets the same defaults."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/gadgets/2026/11/windows-server-2028-public-preview-bets-on-a-security-first-approach/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.17265",
+   "title": "A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds",
+   "authors": [
+    "Gilberto Borges",
+    "Saeid Salari",
+    "Ekta Panwar",
+    "Samgeeth Puliyil",
+    "Kartik Kakade",
+    "Peter Rapčan",
+    "Mario Ziman",
+    "Djeylan Aktas"
+   ],
+   "affiliations": [
+    "Institute of Physics",
+    "Slovak Academy of Sciences"
+   ],
+   "announced": "2026-11-12T20:00:00-05:00",
+   "primary_tag": "Quantum computing",
+   "tags": [
+    "Quantum computing",
+    "Cryptography",
+    "Networking"
+   ],
+   "tldr": "A Slovak quantum key distribution network links four cities over ordinary telecom fiber, runs all links at once and delivers finished keys to applications in real time, with honest post-processed key rates.",
+   "why_selected": "A deployed, multi-city quantum network measured on its complete key pipeline, not on raw detector counts, and checked against strict finite-key security bounds.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Quantum key distribution (QKD) lets two sites build a shared secret key whose security rests on physics rather than on hard math problems. To be useful, a network must produce finished key fast enough for real applications and hand it over as it is made. Many demonstrations instead estimate key rates afterwards from raw photon coincidences."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Long-distance QKD networks usually relay keys through trusted nodes, intermediate sites that hold key material and must be physically secured. Entanglement-based networks avoid this, but real-time operation had mostly been shown on single metropolitan links, and one earlier inter-city network ran its links in separate measurement campaigns rather than simultaneously."
+    },
+    {
+     "heading": "Key idea",
+     "body": "A single source in Trnava produces pairs of polarization-entangled photons, particles whose measured properties are correlated. Because the two photons of a pair have matching wavelengths on either side of a central value, the team routes wavelength channels passively, with filters and simple splitters, so each pair of cities receives one shared channel. The authors describe this routing with a matrix that encodes which users are connected, letting them enumerate layouts in which every pair of users shares exactly one channel. Four users can be fully connected with three wavelength pairs, half of what dedicated channels need. Trnava, Bratislava and Nitra form a fully meshed sub-network with no trusted node, and Trenčín connects through Trnava. Keys go through the complete distillation chain and are delivered through the ETSI GS QKD 014 standard interface."
+    },
+    {
+     "heading": "Results",
+     "body": "With partial dispersion compensation, the network delivered 13.5 bit/s of final key over 109 km and 4.3 bit/s over 142.9 km, with 32.1 dB of accumulated loss, between two cities without a direct fiber link. Benchmarking showed that replacing the implemented detect-and-discard step with error correction would raise the finite-key rate by a factor of 4.1 to 6.6 and yield positive key on the 142.9 km link, where the current scheme yields none."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work is part of Europe's EuroQCI quantum communication infrastructure and shows what deployed entanglement-based QKD delivers in practice. The main caveat is rigor: the authors find that the system's heuristic privacy amplification, the step that shrinks the key to remove leaked information, can produce more key than the finite-key security bound allows, so the deployed post-processing still needs tightening."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.17265"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}

@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 18 Nov 2026 13:54:15 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 11:47:32 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Attackers publish two credential-stealing versions of Microsoft's official Agent Framework package on PyPI</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n1</guid>
+    <pubDate>Thu, 19 Nov 2026 11:47:32 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Two malicious releases of Microsoft's agent-framework Python package, downloaded about 200,000 times a month, stole cloud and developer credentials; developers who installed versions 1.26.1 or 1.26.2 should rebuild and rotate secrets. (BleepingComputer, The Register)</description>
+  </item>
+  <item>
+    <title>Intel signs its first outside customer for its 18A chip-making process, and Microsoft adopts its EMIB packaging</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n2</guid>
+    <pubDate>Thu, 19 Nov 2026 11:47:32 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>Intel CEO Lip-Bu Tan says an unnamed company has signed on to make chips with Intel's 18A-P process, and that 18A yields have reached 70%, a step for Intel's effort to compete with TSMC. (Crypto Briefing, TrendForce)</description>
+  </item>
+  <item>
+    <title>Microsoft previews Windows Server 2028, which ships hardened by default with post-quantum key exchange</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n3</guid>
+    <pubDate>Thu, 19 Nov 2026 11:47:32 +0000</pubDate>
+    <category>Tech / Software &amp; Platforms</category>
+    <description>Windows Server 2028's public preview turns on hundreds of security settings from first boot, including Kerberos over NTLM and hybrid post-quantum TLS, and Microsoft warns that some older software may break. (BleepingComputer, Ars Technica)</description>
+  </item>
+  <item>
+    <title>A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2611.17265</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2611.17265</guid>
+    <pubDate>Thu, 19 Nov 2026 11:47:32 +0000</pubDate>
+    <category>Tech / Quantum computing</category>
+    <description>A Slovak quantum key distribution network links four cities over ordinary telecom fiber, runs all links at once and delivers finished keys to applications in real time, with honest post-processed key rates. (Gilberto Borges, Saeid Salari, Ekta Panwar et al. · Institute of Physics, Slovak Academy of Sciences)</description>
+  </item>
   <item>
     <title>FDA approves adrabetadex, the first drug shown to lengthen survival in infantile-onset Niemann-Pick disease type C</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/2026-11-18-n1</link>
@@ -454,38 +486,6 @@
     <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
     <category>Science / Quantum physics</category>
     <description>Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination. (Li Gong, Aonan Zhang, Madhura Ghosh Dastidar et al.)</description>
-  </item>
-  <item>
-    <title>Alibaba launches Qwen4-Max, a 2.4-trillion-parameter flagship that stays closed-weight</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n1</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Alibaba released Qwen4-Max, a 2.4-trillion-parameter multimodal model priced at $1.50/$4.50 per million tokens, and kept its weights closed, unlike many earlier Qwen releases. (TNW, Crypto Briefing, Data Studios)</description>
-  </item>
-  <item>
-    <title>OpenAI signs four outside evaluators to assess its models and safeguards from inside the company</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n2</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Safety &amp; Security</category>
-    <description>OpenAI signed agreements with Apollo Research, METR, Transluce and Goodfire to run pilot assessments of its models' alignment, safeguards and monitoring using internal resources. (OpenAI, MLQ.ai, Quartz)</description>
-  </item>
-  <item>
-    <title>Training Reasoning Models in Simulation to Natively Use Real Robots</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18562</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18562</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>An open-weight 27B reasoning model learns to control robots by reinforcement learning in simulation alone, with no demonstrations, and then succeeds in 60% of trials on a real dual-arm robot. (Jiaming Tang, Zhuoyang Zhang, Junxian Guo et al. · MIT, Inco AI, UC Berkeley)</description>
-  </item>
-  <item>
-    <title>Aligning AI Teams</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17820</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17820</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Safety &amp; Alignment</category>
-    <description>Teams of individually aligned LLM agents pick less safe trade-offs than one agent because responsibility diffuses; a designated safety lead plus a shared safety document restores single-agent behavior. (Siddarth Srinivasan, Morgan Jane Matthews, Jascha Sohl-Dickstein et al. · Harvard University, Constellation Institute, Anthropic)</description>
   </item>
 </channel>
 </rss>

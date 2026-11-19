@@ -3,12 +3,12 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
    "title": "Apple releases iOS 27.3 beta 2 for iPhone",
-   "outlets": 18,
+   "outlets": 23,
    "date": "2026-11-16",
    "covered": "2026-11-18-n2"
   },
@@ -19,16 +19,16 @@
    "covered": null
   },
   {
+   "title": "United Launch Alliance loses Vulcan rocket and 40 Amazon Leo internet satellites in launch mishap",
+   "outlets": 6,
+   "date": "2026-11-15",
+   "covered": "2026-11-16-n2"
+  },
+  {
    "title": "SpaceX’s Latest Starship Launch Skips Attempt to Catch the Booster",
    "outlets": 5,
    "date": "2026-11-13",
    "covered": null
-  },
-  {
-   "title": "United Launch Alliance loses Vulcan rocket and 40 Amazon Leo internet satellites in launch mishap",
-   "outlets": 5,
-   "date": "2026-11-15",
-   "covered": "2026-11-16-n2"
   },
   {
    "title": "Uber confirms hackers stole thousands of drivers’ license information in data breach",
@@ -56,8 +56,8 @@
   }
  ],
  "featured": {
-  "news": 11,
-  "papers": 1
+  "news": 14,
+  "papers": 2
  },
  "items": [
   {
@@ -131,6 +131,30 @@
    "date": "2026-11-18",
    "type": "paper",
    "title": "Exploited Before It Was Fixed? Vulnerability Timelines from Open, Machine-Readable Evidence"
+  },
+  {
+   "id": "2026-11-19-n1",
+   "date": "2026-11-19",
+   "type": "news",
+   "title": "Attackers publish two credential-stealing versions of Microsoft's official Agent Framework package on PyPI"
+  },
+  {
+   "id": "2026-11-19-n2",
+   "date": "2026-11-19",
+   "type": "news",
+   "title": "Intel signs its first outside customer for its 18A chip-making process, and Microsoft adopts its EMIB packaging"
+  },
+  {
+   "id": "2026-11-19-n3",
+   "date": "2026-11-19",
+   "type": "news",
+   "title": "Microsoft previews Windows Server 2028, which ships hardened by default with post-quantum key exchange"
+  },
+  {
+   "id": "2611.17265",
+   "date": "2026-11-19",
+   "type": "paper",
+   "title": "A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds"
   }
  ]
 }
