@@ -3,7 +3,7 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
@@ -13,27 +13,33 @@
    "covered": null
   },
   {
+   "title": "US FDA approves Roche's oral treatment for advanced breast cancer",
+   "outlets": 5,
+   "date": "2026-11-16",
+   "covered": "2026-11-17-n1"
+  },
+  {
    "title": "US Has Lost Measles Elimination Status, Global Health Authorities Say",
    "outlets": 4,
    "date": "2026-11-14",
    "covered": "2026-11-16-n2"
   },
   {
-   "title": "US FDA approves Roche's oral treatment for advanced breast cancer",
+   "title": "U.S. Loses Measles Elimination Status After 26 Years. It Won't Be Easy To Get It Back",
    "outlets": 4,
-   "date": "2026-11-16",
-   "covered": "2026-11-17-n1"
+   "date": "2026-11-15",
+   "covered": null
   },
   {
-   "title": "U.S. Loses Measles Elimination Status After 26 Years. It Won't Be Easy To Get It Back",
-   "outlets": 3,
-   "date": "2026-11-15",
+   "title": "White House Yanks Pick for FDA Chief",
+   "outlets": 4,
+   "date": "2026-11-17",
    "covered": null
   }
  ],
  "featured": {
-  "news": 8,
-  "papers": 7
+  "news": 11,
+  "papers": 10
  },
  "items": [
   {
@@ -125,6 +131,42 @@
    "date": "2026-11-18",
    "type": "paper",
    "title": "Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease"
+  },
+  {
+   "id": "2026-11-19-n1",
+   "date": "2026-11-19",
+   "type": "news",
+   "title": "FDA approves venglustat, the first treatment for the neurological symptoms of type 3 Gaucher disease"
+  },
+  {
+   "id": "2026-11-19-n2",
+   "date": "2026-11-19",
+   "type": "news",
+   "title": "An off-the-shelf leukemia vaccine extends survival by nine months in a phase 3 trial, its developers report"
+  },
+  {
+   "id": "2026-11-19-n3",
+   "date": "2026-11-19",
+   "type": "news",
+   "title": "Biogen's tau-lowering drug diranersen shows larger effects at two years in early Alzheimer's, in an open-label extension"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11155-6",
+   "date": "2026-11-19",
+   "type": "paper",
+   "title": "Rainforest adaptation in late Homo erectus from southern China"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11283-z",
+   "date": "2026-11-19",
+   "type": "paper",
+   "title": "Closest relatives of poxviruses prevail in human and animal guts worldwide"
+  },
+  {
+   "id": "doi-10-1001-jama-2026-18859",
+   "date": "2026-11-19",
+   "type": "paper",
+   "title": "Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease: The NOPARK Randomized Clinical Trial"
   }
  ]
 }

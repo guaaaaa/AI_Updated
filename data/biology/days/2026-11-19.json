@@ -1,0 +1,295 @@
+{
+ "date": "2026-11-19",
+ "edition": "weekday",
+ "generated_at": "2026-11-19T13:54:23+00:00",
+ "summary": "A first drug for the brain symptoms of type 3 Gaucher disease, an off-the-shelf leukemia vaccine that lengthened survival, two-year tau-lowering data in Alzheimer's, and papers on rainforest Homo erectus, smallpox's gut-dwelling cousins and a failed Parkinson's supplement trial.",
+ "news": [
+  {
+   "id": "2026-11-19-n1",
+   "story_key": "fda-venglustat-infilbray-gaucher-type-3-approval",
+   "title": "FDA approves venglustat, the first treatment for the neurological symptoms of type 3 Gaucher disease",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-18T14:13:00-05:00",
+   "tldr": "The FDA approved Sanofi's Infilbray (venglustat), a daily pill that reaches the brain, after a 43-patient randomized trial showed better neurological scores than standard enzyme infusions at one year.",
+   "why_selected": "A regulatory first for a rare inherited brain disease, backed by a randomized, double-blind trial and documented in the agency's own release.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Gaucher disease is an inherited condition in which a faulty enzyme fails to break down fatty substances called glucosphingolipids, so they build up in organs and tissues. Type 1 spares the brain. Type 3 does not: the substances also accumulate in the brain and nervous system, causing problems with balance, coordination, speech, memory and thinking that can worsen over time. Enzyme replacement therapy, given by intravenous infusion, is used to treat the disease's effects outside the brain."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 18 the US Food and Drug Administration approved Infilbray (venglustat) tablets from Genzyme, a Sanofi company, as the first treatment for the neurological symptoms of type 3 Gaucher disease. It is cleared for adults and for children weighing at least 15 kg (about 33 pounds). Venglustat blocks glucosylceramide synthase, an enzyme that makes the fatty substances, and it crosses the blood-brain barrier. The approval rests on a randomized, double-blind, multicenter study of 43 patients aged 12 and older whose body-wide disease was already stable on enzyme replacement. They took the pill once daily or continued infusions every two weeks for 52 weeks. At week 52, the venglustat group did better on a combined measure of ataxia (loss of muscle control) and cognitive function."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The idea is to shrink the supply of the harmful substance rather than add enzyme to clear it, and to do so inside the brain. The trial was small, with 43 patients, and the FDA reported real risks: gastrointestinal effects, mood changes and serious psychiatric risks including suicidal thoughts and behavior, plus possible clouding of vision in younger patients and harm to a fetus, both identified in animal studies."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How the drug performs outside the trial, how its psychiatric risks are monitored, and whether regulators in other countries follow. It received Orphan Drug designation and Priority Review."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDA",
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-neurological-symptoms-type-3-gaucher-disease"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-n2",
+   "story_key": "sellas-galinpepimut-s-regal-aml-phase3-topline",
+   "title": "An off-the-shelf leukemia vaccine extends survival by nine months in a phase 3 trial, its developers report",
+   "category": "Clinical Research",
+   "published": "2026-11-17T09:37:00-05:00",
+   "tldr": "In the 126-patient REGAL trial, people with acute myeloid leukemia in second remission who got the WT1 peptide vaccine galinpepimut-S lived a median 24.0 months, against 14.7 months on other treatments.",
+   "why_selected": "A randomized phase 3 survival result for a new kind of maintenance treatment in an aggressive blood cancer, though so far only as topline data.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Acute myeloid leukemia (AML) is one of the most common and aggressive blood cancers. Chemotherapy, sometimes followed by a bone marrow transplant, can push it into remission, but it often returns, and options after a relapse are limited. A therapeutic cancer vaccine aims to train the immune system to hunt down the few leukemia cells left behind after treatment, before they regrow."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 17 SELLAS Life Sciences reported topline results from REGAL, a randomized, open-label phase 3 trial of its vaccine galinpepimut-S (GPS) in 126 patients with AML in a second or later remission who could not have a transplant. The comparison group received the investigator's choice of best available treatment. Median overall survival was 24.0 months with the vaccine and 14.7 months without it, a hazard ratio of 0.59 (a 41% lower risk of death; p = 0.035). Side effects were mostly mild to moderate, most often reactions at the injection site. GPS was invented by David Scheinberg at Memorial Sloan Kettering Cancer Center, which licensed it to SELLAS; MSK and Scheinberg disclose financial interests in the company."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "GPS is made of synthetic peptides, short protein fragments, from WT1, a protein that MSK says is present in the cancer cells of more than 95% of people with AML. Because it is the same for every patient, it can be stockpiled and given straight away, unlike personalized vaccines built for each tumor. A survival gain in a randomized trial is strong evidence, but these are company topline numbers: they have not been peer reviewed, the trial was small, and patients and doctors knew who got the vaccine."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Secondary end points are due at an upcoming medical conference. SELLAS plans to meet the FDA and is targeting a licence application in the first half of 2027."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Memorial Sloan Kettering",
+     "url": "https://www.mskcc.org/news/vaccine-improves-survival-in-people-with-acute-myeloid-leukemia-aml"
+    },
+    {
+     "name": "BioPharm International",
+     "url": "https://www.biopharminternational.com/view/sellas-cancer-vaccine-galinpepimut-s-overall-survival-phase-3-regal-aml"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-n3",
+   "story_key": "biogen-diranersen-celia-two-year-ctad-2026",
+   "title": "Biogen's tau-lowering drug diranersen shows larger effects at two years in early Alzheimer's, in an open-label extension",
+   "category": "Neuroscience & Mental Health",
+   "published": "2026-11-17T16:45:00-05:00",
+   "tldr": "Biogen says the twice-yearly 60 mg dose of diranersen slowed decline on the CDR-SB dementia scale by 38% at two years, up from 26% at 18 months, though the comparison comes from an open-label extension.",
+   "why_selected": "The most closely watched attempt to treat Alzheimer's by lowering tau rather than amyloid, presented at the field's main trials meeting.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Alzheimer's disease has two hallmark proteins: amyloid, which forms plaques, and tau, which forms tangles inside neurons and tracks more closely with symptoms. Marketed drugs remove amyloid and offer modest benefit. Diranersen is an antisense oligonucleotide, a short synthetic strand of genetic material designed to cut the production of tau. In the phase 2 CELIA trial it missed its primary goal of showing that higher doses worked better than lower ones."
+    },
+    {
+     "heading": "What happened",
+     "body": "At the Clinical Trials on Alzheimer's Disease (CTAD) conference, Biogen reported two-year (week 96) data on November 17. With the 60 mg twice-yearly dose, decline slowed by 38% on the Clinical Dementia Rating Sum of Boxes (CDR-SB), a 1.09-point difference, up from 26% at 18 months. Effects also rose on four other measures, for example from 42% to 54% on the ADAS-Cog13 cognitive test and from 0% to 30% on a daily-living scale. Biogen said the drug was generally well tolerated with no new safety signals. New 18-month analyses showed reduced tau on brain scans and lower tau markers in spinal fluid and blood."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the effect is real and keeps growing, tau lowering could join or complement amyloid removal. But the two-year comparison is not a randomized one: it pits patients who stayed on drug against former placebo patients who had received no doses or a single dose after entering the extension. The trial also did not show that higher doses work better, and these are company-reported conference results."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Biogen plans a phase 3 trial to confirm efficacy and safety. Diranersen is investigational and not approved anywhere."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Biogen (GlobeNewswire)",
+     "url": "https://via.ritzau.dk/pressemeddelelse/15295439/biogen-inc?publisherId=90446"
+    },
+    {
+     "name": "ReachMD",
+     "url": "https://reachmd.com/news/diranersen-slows-decline-in-phase-2-celia-trial-for-early-alzheimer-disease/2487872/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11155-6",
+   "title": "Rainforest adaptation in late Homo erectus from southern China",
+   "authors": [
+    "K. E. Westaway",
+    "R. Joannes-Boyau",
+    "W. Liao",
+    "Q. Shao",
+    "W. Yu",
+    "M. Quinn",
+    "A.-M. Bacon",
+    "H. Liang",
+    "N. Bourgon",
+    "J.-x. Zhao",
+    "P. Roberts",
+    "R. Kono",
+    "Y. Pan",
+    "L. Yang",
+    "Y. Wang",
+    "C. Jin",
+    "Z. Wu",
+    "S. Murray",
+    "C. Zanolli",
+    "F. Demeter",
+    "F. Welker",
+    "R. D. Ásmundsdóttir",
+    "Q. Fu",
+    "V. Balter",
+    "W. Wang",
+    "Y. Zhang"
+   ],
+   "affiliations": [
+    "Macquarie University",
+    "Southern Cross University",
+    "Chinese Academy of Sciences Institute of Vertebrate Palaeontology and Palaeoanthropology",
+    "Max Planck Institute of Geoanthropology"
+   ],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Evolution & ecology",
+   "tags": [
+    "Evolution & ecology"
+   ],
+   "tldr": "Eight Homo erectus teeth from two caves in southern China, dated 324,000 to 184,000 years ago, carry chemical signs of a dense rainforest diet and of long journeys in childhood.",
+   "why_selected": "It extends the known survival of Homo erectus in mainland China and gives the first direct evidence of a human species other than ours living in rainforest.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Homo erectus survived for nearly two million years and spread from Africa across Asia through grasslands and open woodland. Little is known about how adaptable it was or why it disappeared. One idea holds that it faded as its open habitats turned into rainforest, a setting long thought to be manageable only by our own species."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Until now the youngest Homo erectus fossil in China was about 400,000 years old. Homo sapiens is known to have adapted to rainforests around the world between 100,000 and 13,000 years ago, and Homo erectus is known to have lasted in Indonesia until about 100,000 years ago, but direct evidence of it living inside rainforest was missing."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team studied fossils from Baxian and Naxian, two caves about 15 km apart in the limestone hills of Guangxi. The deposits are mostly teeth, probably gathered by ancient porcupines that gnaw bones to sharpen their incisors. Of nine hominin teeth, eight were identified as Homo erectus using their shape and ancient genetic signatures; the ninth belongs to an unidentified hominin. Teeth work like a chemical diary: their enamel records the food and water consumed while they grew. The researchers compared these traces in the human teeth and in teeth of the animals around them, and used strontium, which reflects local geology, to trace where individuals spent their childhoods."
+    },
+    {
+     "heading": "Results",
+     "body": "Five independent dating methods place the teeth between 324,000 and 184,000 years ago, the youngest securely dated Homo erectus evidence in mainland China. Human and animal teeth both point to a dense tropical rainforest ecosystem. Some strontium signatures point well beyond the caves, possibly towards northern Vietnam, about 250 km away."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Southern China may have been a late refuge where Homo erectus coped with rainforest, which complicates climate-driven explanations of its extinction. The main caveat, raised by an outside expert, is the small sample of eight teeth."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11155-6",
+    "doi": "https://doi.org/10.1038/s41586-026-11155-6"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11283-z",
+   "title": "Closest relatives of poxviruses prevail in human and animal guts worldwide",
+   "authors": [
+    "Morgan Gaïa",
+    "Ulysse Guyet",
+    "Hans-Joachim Ruscheweyh",
+    "A. Murat Eren",
+    "Shinichi Sunagawa",
+    "Eugene V. Koonin",
+    "Mart Krupovic",
+    "Tom O. Delmont"
+   ],
+   "affiliations": [
+    "French National Centre for Scientific Research (CNRS)"
+   ],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Microbiology",
+   "tags": [
+    "Microbiology",
+    "Evolution & ecology"
+   ],
+   "tldr": "Mining 85,123 genetic datasets, researchers found egoviruses, the closest known relatives of poxviruses, in the guts of humans and livestock worldwide, hinting that the smallpox family began in animal guts.",
+   "why_selected": "It fills a long-standing gap in where poxviruses, which include smallpox and mpox, came from, and reveals a common unnoticed virus in the human gut.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Poxviruses, the family that includes smallpox, mpox and molluscum contagiosum, are giant DNA viruses that infect animals directly. Most of their giant-virus relatives infect single-celled life in soil, water and plankton. Where the poxvirus line came from, and how it made the jump to animal cells, has been a long-standing blank in virology."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Until now the closest known relatives of poxviruses were the asfuviruses, which include African swine fever virus. Asfuviruses did not settle where the poxvirus line began. Metagenomics, sequencing all the DNA in a sample at once, offers a way to find relatives that have never been grown in a lab."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team searched 85,123 existing metagenomic assemblies, from river mud to human stool, for a marker gene carried by these giant viruses, finding nearly two million copies and sorting them by origin. A cluster that matched no known virus kept turning up in guts. They assembled 12 complete genomes from humans, buffalo, goats, chickens, deer and pigs, and propose a new viral order, Egovirales, as a third branch beside poxviruses and asfuviruses. To guess the hosts, they looked for genes swapped between virus and host over long periods, a fingerprint of repeated infection."
+    },
+    {
+     "heading": "Results",
+     "body": "Egoviruses appeared in 864 samples, with more than 200 partial genomes. One human clade, nearly identical from Tanzania's Hadza to Europe and Fiji, is estimated to be in over 1% of people, about 180 million by Nature's news estimate, and persisted in people for close to a year. Gene-swap signals point to gut-dwelling single-celled ciliates and parabasalids, which include Trichomonas."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Poxviruses may have started out infecting single-celled organisms in animal guts. No egovirus has been isolated or seen infecting a host, and there is no evidence they make people sick."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11283-z",
+    "doi": "https://doi.org/10.1038/s41586-026-11283-z"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1001-jama-2026-18859",
+   "title": "Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease: The NOPARK Randomized Clinical Trial",
+   "authors": [
+    "NOPARK trial investigators (study director: Charalampos Tzoulis)"
+   ],
+   "affiliations": [
+    "Haukeland University Hospital",
+    "University of Bergen"
+   ],
+   "announced": "2026-11-17T00:00:00-05:00",
+   "primary_tag": "Neurology & mental health",
+   "tags": [
+    "Neurology & mental health"
+   ],
+   "tldr": "In a 410-person Norwegian trial, a year of the NAD-boosting supplement nicotinamide riboside did not help early Parkinson's disease; symptom scores were slightly worse than with placebo.",
+   "why_selected": "A large, rigorous randomized test of a widely discussed supplement strategy for brain disease, with a clear negative answer.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Parkinson's disease damages the brain's dopamine system, and researchers are looking for treatments that slow it rather than only ease symptoms. NAD (nicotinamide adenine dinucleotide) is a molecule essential for cellular energy, DNA repair and control of inflammation. Raising NAD levels has been proposed as a way to protect vulnerable neurons, and nicotinamide riboside (NR) is a compound that does this."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Preclinical studies and smaller clinical trials had suggested that boosting NAD might protect the nerve cells affected by Parkinson's, and earlier small studies of NR had produced encouraging findings. A large, rigorous phase 3 trial was needed to test whether that holds in patients."
+    },
+    {
+     "heading": "Key idea",
+     "body": "NOPARK, led by Charalampos Tzoulis, was designed as the decisive test. At 11 centers in Norway, 410 people with early Parkinson's were randomly assigned to 500 mg of NR twice daily or a matching placebo for 52 weeks, with neither patients nor study teams knowing who got which. The main measure was the MDS-UPDRS, a standard rating of Parkinson's symptoms and function on which higher scores mean worse disease. Brain imaging of the dopamine system checked for effects on the underlying damage."
+    },
+    {
+     "heading": "Results",
+     "body": "NR clearly raised NAD metabolism. Yet after 52 weeks MDS-UPDRS scores rose by 2.45 points with NR and fell by 0.27 points with placebo, an adjusted difference of 2.72 points favouring placebo: statistically significant but below the threshold usually considered clinically important. Non-motor symptoms also worsened more with NR (4.22 points). Imaging showed no effect either way, and overall adverse events were similar."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Raising a biomarker did not translate into benefit. The findings do not support NR as a treatment to slow Parkinson's; they do not rule out benefits in other diseases, which would need their own trials."
+    }
+   ],
+   "links": {
+    "paper": "https://jamanetwork.com/journals/jama/fullarticle/2855021",
+    "doi": "https://doi.org/10.1001/jama.2026.18859"
+   },
+   "signals": {
+    "venue": "JAMA",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

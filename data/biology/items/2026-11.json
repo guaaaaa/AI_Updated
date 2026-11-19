@@ -1,5 +1,75 @@
 [
  {
+  "id": "2026-11-19-n1",
+  "date": "2026-11-19",
+  "type": "news",
+  "title": "FDA approves venglustat, the first treatment for the neurological symptoms of type 3 Gaucher disease",
+  "tldr": "The FDA approved Sanofi's Infilbray (venglustat), a daily pill that reaches the brain, after a 43-patient randomized trial showed better neurological scores than standard enzyme infusions at one year.",
+  "category": "Drugs & Approvals",
+  "byline": "FDA"
+ },
+ {
+  "id": "2026-11-19-n2",
+  "date": "2026-11-19",
+  "type": "news",
+  "title": "An off-the-shelf leukemia vaccine extends survival by nine months in a phase 3 trial, its developers report",
+  "tldr": "In the 126-patient REGAL trial, people with acute myeloid leukemia in second remission who got the WT1 peptide vaccine galinpepimut-S lived a median 24.0 months, against 14.7 months on other treatments.",
+  "category": "Clinical Research",
+  "byline": "Memorial Sloan Kettering, BioPharm International"
+ },
+ {
+  "id": "2026-11-19-n3",
+  "date": "2026-11-19",
+  "type": "news",
+  "title": "Biogen's tau-lowering drug diranersen shows larger effects at two years in early Alzheimer's, in an open-label extension",
+  "tldr": "Biogen says the twice-yearly 60 mg dose of diranersen slowed decline on the CDR-SB dementia scale by 38% at two years, up from 26% at 18 months, though the comparison comes from an open-label extension.",
+  "category": "Neuroscience & Mental Health",
+  "byline": "Biogen (GlobeNewswire), ReachMD"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11155-6",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "Rainforest adaptation in late Homo erectus from southern China",
+  "tldr": "Eight Homo erectus teeth from two caves in southern China, dated 324,000 to 184,000 years ago, carry chemical signs of a dense rainforest diet and of long journeys in childhood.",
+  "primary_tag": "Evolution & ecology",
+  "tags": [
+   "Evolution & ecology"
+  ],
+  "byline": "K. E. Westaway, R. Joannes-Boyau, W. Liao et al. · Macquarie University, Southern Cross University, Chinese Academy of Sciences Institute of Vertebrate Palaeontology and Palaeoanthropology",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11283-z",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "Closest relatives of poxviruses prevail in human and animal guts worldwide",
+  "tldr": "Mining 85,123 genetic datasets, researchers found egoviruses, the closest known relatives of poxviruses, in the guts of humans and livestock worldwide, hinting that the smallpox family began in animal guts.",
+  "primary_tag": "Microbiology",
+  "tags": [
+   "Microbiology",
+   "Evolution & ecology"
+  ],
+  "byline": "Morgan Gaïa, Ulysse Guyet, Hans-Joachim Ruscheweyh et al. · French National Centre for Scientific Research (CNRS)",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1001-jama-2026-18859",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease: The NOPARK Randomized Clinical Trial",
+  "tldr": "In a 410-person Norwegian trial, a year of the NAD-boosting supplement nicotinamide riboside did not help early Parkinson's disease; symptom scores were slightly worse than with placebo.",
+  "primary_tag": "Neurology & mental health",
+  "tags": [
+   "Neurology & mental health"
+  ],
+  "byline": "NOPARK trial investigators (study director: Charalampos Tzoulis) · Haukeland University Hospital, University of Bergen",
+  "hf": null,
+  "venue": "JAMA"
+ },
+ {
   "id": "2026-11-18-n1",
   "date": "2026-11-18",
   "type": "news",
