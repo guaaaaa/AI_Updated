@@ -1,0 +1,371 @@
+{
+ "date": "2026-11-19",
+ "edition": "weekday",
+ "generated_at": "2026-11-19T12:15:56+00:00",
+ "summary": "Google ships Gemini 4 Neon and Anthropic prices the largest IPO on record; papers on counterfactual world models, decoder-free diffusion, stable asynchronous RL, 4D scene perception and cheaper MoE communication.",
+ "news": [
+  {
+   "id": "2026-11-19-n1",
+   "story_key": "google-gemini-4-neon-launch",
+   "title": "Google launches Gemini 4 Neon, a fast frontier model priced at $3 per million input tokens",
+   "category": "Model Release",
+   "published": "2026-11-18T16:35:00-05:00",
+   "tldr": "Google released Gemini 4 Neon, which ranks third on the Artificial Analysis Intelligence Index and first on its Coding Agent Index, at $3/$15 per million input/output tokens with a 1-million-token context.",
+   "why_selected": "A new frontier-class model from a top lab, available the same day in the API, the Gemini app and Google Antigravity, with independent leaderboard results.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Google has been rolling out its Gemini 4 generation as a family of models named after chemical elements. Gemini 4 Hydrogen, a fast model, arrived earlier, and Gemini 4 Carbon is the existing model Google uses as its reference point. Google pitches Neon as frontier-level intelligence with fast end-to-end task completion, built for long, tool-heavy agent workflows."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 18, Google introduced Gemini 4 Neon. At its highest (\"xhigh\") thinking level it scores 61 on the Artificial Analysis Intelligence Index, third overall and behind only larger, slower models, and it ranks first on the Artificial Analysis Coding Agent Index (58.6). Google reports 65.2% on Terminal-Bench 4.1, 70.9% on the Vals Index (second place), first place on Zapier's AutomationBench (56.3%) and Andon Labs' Vending-Bench 2, and a score of 1336 on Arena's new Agent Arena Index, second globally. Pricing is $3 per million input tokens, $0.15 for cached input and $15 per million output tokens, with a 1-million-token context window. The model is available in the Gemini API, Gemini for business, Google Antigravity and the Gemini app for paid Pro and Ultra subscribers."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Neon is aimed at the work that now drives model revenue: coding agents and long-running business tasks. Google stresses cost per task rather than raw scores. At its default \"high\" level it says Neon costs 32% less per task than Carbon and roughly 50% to 80% less than top competing frontier models on the Vals and Agent Arena evaluations. It also describes Neon as an orchestrator that directs parallel Hydrogen subagents, which hints at how labs expect agent systems to be built: a capable planner handing work to cheap, fast workers. Its biggest gain is harness-dependent: on SWE-sweep it scores 12.8% in a minimal harness but 39.0% in Google's own Antigravity. That is a reminder that agent results depend heavily on tooling."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent replication of the coding and agent numbers outside Google's harness, how rivals respond on price, and whether Neon replaces Carbon as the default model for Gemini's paid tiers."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-n2",
+   "story_key": "anthropic-ipo-pricing-record",
+   "title": "Anthropic prices its IPO at $83 a share, raising $81.3 billion in the largest offering on record",
+   "category": "Business & Funding",
+   "published": "2026-11-18T17:11:15-05:00",
+   "tldr": "Anthropic sold 980 million shares at $83, above its $70 to $78 range, raising $81.3 billion and valuing the Claude maker at about $1.5 trillion before Nasdaq trading under the ticker ANT.",
+   "why_selected": "The first IPO of a company focused solely on generative AI, and the largest by proceeds in history, sets the public-market benchmark for frontier labs.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Anthropic was founded nearly six years ago by researchers who left OpenAI, and it is organized as a public benefit corporation, which lets it weigh societal impact alongside shareholder returns. It raised $65 billion in May at a $965 billion valuation. OpenAI had long been expected to go public first but has not announced IPO plans. The offering comes amid market nerves after Nvidia CEO Jensen Huang's departure."
+    },
+    {
+     "heading": "What happened",
+     "body": "Anthropic priced its IPO at $83 per share, above the initial $70 to $78 range, and sold 980 million shares instead of the 825 million first planned. Proceeds of $81.3 billion beat SpaceX's $75 billion record from June; counting private share sales, the raise exceeds $107 billion. The price values the company at roughly $1.5 trillion fully diluted, below the $2 trillion it reportedly once targeted. AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC Partners agreed to buy $26 billion of non-voting shares in a private placement. Amazon owns nearly 15% and Google almost 14%. Trading on Nasdaq under the ticker ANT begins Thursday."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The deal gives Anthropic about $200 billion in cash, according to WIRED, more than every tech giant except Alphabet. That money is needed: the company has committed more than $900 billion to vendors over 19 years, mostly for data centers. Its numbers show both sides of the frontier-lab business. Quarterly sales reached $17 billion, up more than 1,100% from a year earlier, yet stock-based compensation accounting produced over $104 billion in losses this year through September. As the first public pure-play generative AI company, Anthropic will now report results every quarter. That gives investors and researchers a regular view of what frontier AI costs and earns, and its share price becomes a reference point for OpenAI's own valuation of about $1.25 trillion."
+    },
+    {
+     "heading": "What to watch",
+     "body": "First-day trading, any IPO plans from OpenAI, and whether opposition to new data centers delays the capacity Anthropic has committed to buy."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/"
+    },
+    {
+     "name": "WIRED",
+     "url": "https://www.wired.com/story/anthropics-record-breaking-ipo-highlights-the-ai-giants-worst-enemy-itself/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.24778",
+   "title": "Counterfactual World Models: JEPAs That Reason About \"What If\"",
+   "authors": [
+    "Randall Balestriero",
+    "Yann LeCun",
+    "Kerda Varaku"
+   ],
+   "affiliations": [
+    "Brown University",
+    "New York University",
+    "AMI Labs"
+   ],
+   "announced": "2026-11-18T20:00:00-05:00",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Theory"
+   ],
+   "tldr": "Factual world models cannot answer \"what if I had acted differently?\" on their own, but for force-like disturbances adding the observed residual to the model's predicted action difference gives near-optimal counterfactuals with no retraining.",
+   "why_selected": "A clean impossibility result plus a two-line fix with matching bounds, from Balestriero and LeCun, near the top of alphaXiv Hot on its first day.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "An agent picks a boat heading, and an unseen current pushes it off course. Afterward it wants to know where it would have ended up with a different heading in that same current. Answering separates bad decisions from bad luck and supports credit assignment and debugging. Standard world models, trained only on what actually happened, just return the average outcome over all possible currents."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Action-conditioned world models, including joint-embedding predictive architectures (JEPAs) that predict in the feature space of a frozen encoder, learn interventional averages. The authors prove that no amount of factual data or model capacity identifies individual counterfactuals: different counterfactual worlds can produce exactly the same factual data. Getting them normally requires paired trials or a known simulator."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Physics supplies the missing structure: nature makes no leaps. When the action and the disturbance act as separate forces, like propulsion and current, each changes the outcome mainly through its own channel, and their interaction is second-order in the transition time. So the counterfactual is the observed outcome plus the world model's predicted difference between the alternative and actual actions. Think of it as: the residual carries the event, the model carries the action. This costs two predictor calls and one addition, with no counterfactual data, extra parameters or retraining. The authors prove an error bound that shrinks with the square of the step duration, a matching lower bound, and predictable failures at contacts, folded coordinates, and disturbances that scale the command."
+    },
+    {
+     "heading": "Results",
+     "body": "Using JEPA world models on frozen DINOv2 and masked-autoencoder encoders, counterfactual R² rises from 38–46% to 86–96% on four rendered simulators with the same models. Four other frozen encoders give 81–95%. In hindsight planning, the method finds the goal-reaching action in 35–69% of events, against 14–23% for an oracle planner that knows the simulator but not the outcome."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This gives any trained world model a counterfactual mode for free, which is useful for robot debugging and credit assignment. The caveat: it fails through contacts or gain-like faults, and the key diagnostic cannot be checked from factual logs alone."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.24778",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24778"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 2,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Randall Balestriero",
+     "Yann LeCun"
+    ]
+   }
+  },
+  {
+   "id": "2611.22287",
+   "title": "Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers",
+   "authors": [
+    "Hansheng Chen",
+    "Shengqu Cai",
+    "Jan Ackermann",
+    "Rayhan Zirvi",
+    "Gordon Wetzstein",
+    "Xinchen Yan",
+    "Leonidas Guibas"
+   ],
+   "affiliations": [
+    "Luma AI",
+    "California Institute of Technology",
+    "Stanford University"
+   ],
+   "announced": "2026-11-17T20:00:00-05:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency"
+   ],
+   "tldr": "Adding a linear pixel head to a fine-tuned diffusion transformer removes the latent decoder entirely, matching or improving quality, and the same separate head sets a new ImageNet FID record for pixel flow models.",
+   "why_selected": "A simple, general change that cuts inference cost across image and video generators and even improves decoder-free models; on alphaXiv Hot for two days.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Latent diffusion models denoise in a compressed latent space, then run a separate decoder to produce pixels. That decoder adds deployment complexity and cost: on an H100, a 4-step Wan 1.3B video model spends 2.8 seconds sampling and another 1.9 seconds decoding a 5-second clip, about 70% overhead."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Prior work builds faster or distilled decoders, or skips latents and denoises pixels directly. In both cases the denoiser's output is the path to final pixels, which ties detail rendering to denoising. Pixel models trained with squared error predict conditional means and smooth away fine texture, while adding perceptual losses to the denoiser can collapse sample diversity."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Decoding Without a Decoder (DWD) adds a second linear output head beside the transformer's usual denoising head. Both read the same last-layer tokens, which a linear probe shows already encode most of the image. The denoising head keeps driving sampling and is anchored to a frozen copy of the original model so the trajectory does not drift. The new head is used only at the final step and is trained with L1, perceptual (LPIPS) and adversarial losses to output pixel patches directly. Think of it as giving the model a dedicated \"render\" output separate from its \"denoise\" output. Only the last few blocks are fine-tuned. Evaluating at a small nonzero timestep matters: at fully denoised inputs the gain disappears."
+    },
+    {
+     "heading": "Results",
+     "body": "ImageNet FID improves from 1.38 to 1.36 (REPA) and from 1.12 to 1.06 (REPA-E) with the decoder gone, saving 622 decoder GFLOPs for REPA. On pixel model AnisoFlow, FID falls from 1.55 to 1.43; fusing the heads instead worsens it to 1.71. On Wan2.1 14B video, warping error drops 23% (1.52 to 1.18)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The decoder may be unnecessary for latent diffusion, which simplifies serving and speeds few-step generation. The limitation: gains shrink when the decoder is already strong, as on FLUX.2."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.22287",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.22287"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 16,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 7,
+    "notable_authors": [
+     "Gordon Wetzstein",
+     "Leonidas Guibas"
+    ],
+    "org": "Stanford University"
+   }
+  },
+  {
+   "id": "2611.21791",
+   "title": "Regularized Score Centering",
+   "authors": [
+    "Hao Bai",
+    "Chenlu Ye",
+    "Xuanchang Zhang",
+    "Aviral Kumar",
+    "Tong Zhang"
+   ],
+   "affiliations": [
+    "UIUC",
+    "CMU"
+   ],
+   "announced": "2026-11-17T20:00:00-05:00",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Agents",
+    "Post-training"
+   ],
+   "tldr": "Regularized Score Centering adds a reverse-KL penalty toward the data-generating policy to score-centered off-policy RL, stabilizing asynchronous LLM agent training and winning on all six agentic benchmarks tested.",
+   "why_selected": "Asynchronous RL is how agents are trained at scale; this is a principled fix with theory and broad agentic results, with Aviral Kumar and Tong Zhang among the authors.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Asynchronous reinforcement learning (RL) speeds up training by generating responses and updating the model at the same time. But the data then comes from stale policies, and mismatched numerics between training and inference engines make even the same weights disagree. Training becomes off-policy and can destabilize, especially for agents whose actions change later states and rewards."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Importance sampling reweights stale samples but produces extreme gradients; truncating the weights (TIS) limits them at the cost of bias. Score centering (SC) subtracts the behavior policy's mean score so reward baselines stop leaking into the update. But SC still breaks when the learner drifts far from the policy that generated the data."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Regularized Score Centering (RSC) keeps score centering and adds a reverse Kullback-Leibler (KL) penalty that pulls the learner's next-token distribution toward the behavior policy's at each history. Think of SC as removing a systematic bias and the KL term as a leash: the update can only trust behavior-policy value estimates near where they were collected. The KL also damps large positive updates on tokens with low behavior probability. The authors prove that this regularization makes good surrogate fitting translate into reward improvement, with a step-size radius that does not shrink with response length. They also replace the original top-128 approximation of the center with unbiased Monte Carlo draws."
+    },
+    {
+     "heading": "Results",
+     "body": "RSC with TIS achieves top final performance on all six controlled agentic tasks: 14.3% better than SC and SC+TIS on AppWorld, 43% over SC+TIS on WebShop, and 52% on Crafter, 16% on Craftax and 9.9× the score on BabyAI relative to IS-PPOClip. In fully asynchronous software-engineering training, RSC variants raise evaluation scores over SC and SC+TIS by about 127% and 51% in one configuration."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It is a drop-in change for teams running asynchronous agent RL. The main open question is how far policy staleness can grow before it breaks down."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.21791",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21791"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 24,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 14,
+    "notable_authors": [
+     "Aviral Kumar"
+    ],
+    "org": "University of Illinois at Urbana-Champaign"
+   }
+  },
+  {
+   "id": "2611.23144",
+   "title": "$\\pi^4$: A Foundation Model for 4D Scene Geometry and Motion",
+   "authors": [
+    "Yifan Wang",
+    "Weiguang Zhao",
+    "Ni Yang",
+    "Haoyu Guo",
+    "Junting Dong",
+    "Weinan Zhang",
+    "Chunhua Shen"
+   ],
+   "affiliations": [
+    "Shanghai Artificial Intelligence Laboratory",
+    "Shanghai Jiao Tong University",
+    "Zhejiang University"
+   ],
+   "announced": "2026-11-17T20:00:00-05:00",
+   "primary_tag": "Computer Vision",
+   "tags": [
+    "Computer Vision"
+   ],
+   "tldr": "π⁴ is a 0.5B-parameter feed-forward model that recovers dense geometry, camera poses, metric scale, 2D/3D point tracks and moving-object masks from uncalibrated images or video in a single forward pass.",
+   "why_selected": "Number one on alphaXiv Hot; open code and models for a compact unified 4D perception model that tops geometry rankings at under half the size of most rivals.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Many applications need to know a scene's 3D shape, where the camera was and what moved, from casual footage with no calibration. Doing all of that robustly on in-the-wild input, from a single photo to an unordered collection to thousands of frames, remains hard."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Classical structure-from-motion pipelines such as COLMAP rely on slow matching and optimization. Feed-forward models such as VGGT and π³ predict geometry and cameras directly, and newer ones add tracking, but they are typically over 1B parameters. Regressing 3D tracks directly also entangles correspondence with geometry, camera placement and scale."
+    },
+    {
+     "heading": "Key idea",
+     "body": "π⁴ splits the job. A shared DINOv3 image encoder feeds two looped transformer decoders, which reuse the same pair of blocks repeatedly to save parameters and memory. The geometry branch, which treats all views symmetrically, predicts per-image pointmaps, camera poses and a metric scale. The motion branch, conditioned on frozen geometry features, predicts only 2D correspondences between images plus moving-object masks. Each 2D track is then lifted into 3D using the reconstructed geometry of the target view. Think of it as: find where a pixel went in the other image, then look up where that spot sits in 3D. Training mixes single images, short view sets and sets of up to 64 views."
+    },
+    {
+     "heading": "Results",
+     "body": "Across 16 geometry settings against nine baselines, π⁴ has the best overall average rank (3.00 vs 3.10 for Pi3X) using 343M parameters in the geometry model. On long Oxford Spires routes processed in one pass, it cuts trajectory error by 47.2% and Chamfer distance by 24.1% relative to DVLT. Tracking is competitive, leading average 2D tracking on unseen game clips."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It is a compact, open base model for 4D perception. The authors note it still trails optimization methods on sequences much longer than seen in training."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.23144",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23144",
+    "code": "https://github.com/yyfz/Pi4"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 1,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 13,
+    "org": "Shanghai AI Laboratory"
+   }
+  },
+  {
+   "id": "2611.22215",
+   "title": "Communicate the Change: Efficient Expert Parallelism via Activation Compression",
+   "authors": [
+    "Fengyuan Liu",
+    "Jay Gala",
+    "Siva Reddy",
+    "Dzmitry Bahdanau"
+   ],
+   "affiliations": [
+    "Mila - Quebec AI Institute",
+    "McGill University",
+    "Periodic Labs"
+   ],
+   "announced": "2026-11-17T20:00:00-05:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Architectures"
+   ],
+   "tldr": "EchoMoE retrofits existing mixture-of-experts models to send only a compressed change from an earlier layer's hidden state between GPUs, cutting inter-node traffic 58% and raising serving throughput 22.6%.",
+   "why_selected": "Expert-parallel communication is a central bottleneck in serving large MoE models; this retrofit works on existing checkpoints with released code and a vLLM integration.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Large mixture-of-experts (MoE) models spread experts across many GPUs. At every MoE layer, each token's hidden state is sent to its chosen experts and the results are sent back. For DeepSeek-V3 on 128 GPUs, these transfers take about 60% of transformer-layer latency, and still 32% after overlapping with computation. Compute is growing faster than interconnect bandwidth, so this gets worse."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Architectures that communicate lower-dimensional activations must be built in before pretraining. Faster kernels and low-precision transfers work on existing models, but they still send all hidden dimensions at every layer."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Transformer layers add small updates to a running residual stream, so a token's input to one MoE layer is highly predictable from its input a few layers earlier: adjacent-layer cosine similarity exceeds 90% in several large models. EchoMoE sends the full hidden state only at a \"reference\" layer every few layers, where every GPU caches it. For the following layers it transmits only a compressed code of the difference between the current state and a rescaled reference, like video compression sending a keyframe and then only the changes. Expert outputs are compressed on the way back too. Because the decompression is linear, it folds into each expert's input weights, adding no extra serving step. The retrofit needs about 8,500× fewer training tokens than pretraining."
+    },
+    {
+     "heading": "Results",
+     "body": "On Qwen3-30B-A3B, the main configuration cuts inter-node traffic by 58% (2.39×) with a 3.8-point drop in average score across 18 benchmarks. Served with vLLM it gives 22.6% higher throughput. At width 512, plain compression of dispatched states loses 21.1 points, whereas using the reference loses 2.6. Over bandwidth-limited Ethernet, throughput improves up to 2.38×."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It offers a cheap way to serve MoE models across slower links. The caveat is a real quality cost, which grows quickly under more aggressive compression."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.22215",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.22215"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 39,
+    "alphaxiv_hot_days": 2,
+    "notable_authors": [
+     "Siva Reddy"
+    ]
+   }
+  }
+ ]
+}

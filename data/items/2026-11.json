@@ -1,5 +1,98 @@
 [
  {
+  "id": "2026-11-19-n1",
+  "date": "2026-11-19",
+  "type": "news",
+  "title": "Google launches Gemini 4 Neon, a fast frontier model priced at $3 per million input tokens",
+  "tldr": "Google released Gemini 4 Neon, which ranks third on the Artificial Analysis Intelligence Index and first on its Coding Agent Index, at $3/$15 per million input/output tokens with a 1-million-token context.",
+  "category": "Model Release",
+  "byline": "Google"
+ },
+ {
+  "id": "2026-11-19-n2",
+  "date": "2026-11-19",
+  "type": "news",
+  "title": "Anthropic prices its IPO at $83 a share, raising $81.3 billion in the largest offering on record",
+  "tldr": "Anthropic sold 980 million shares at $83, above its $70 to $78 range, raising $81.3 billion and valuing the Claude maker at about $1.5 trillion before Nasdaq trading under the ticker ANT.",
+  "category": "Business & Funding",
+  "byline": "TechCrunch, WIRED"
+ },
+ {
+  "id": "2611.24778",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "Counterfactual World Models: JEPAs That Reason About \"What If\"",
+  "tldr": "Factual world models cannot answer \"what if I had acted differently?\" on their own, but for force-like disturbances adding the observed residual to the model's predicted action difference gives near-optimal counterfactuals with no retraining.",
+  "primary_tag": "World Models",
+  "tags": [
+   "World Models",
+   "Theory"
+  ],
+  "byline": "Randall Balestriero, Yann LeCun, Kerda Varaku · Brown University, New York University, AMI Labs",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.22287",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers",
+  "tldr": "Adding a linear pixel head to a fine-tuned diffusion transformer removes the latent decoder entirely, matching or improving quality, and the same separate head sets a new ImageNet FID record for pixel flow models.",
+  "primary_tag": "Generative Models",
+  "tags": [
+   "Generative Models",
+   "Efficiency"
+  ],
+  "byline": "Hansheng Chen, Shengqu Cai, Jan Ackermann et al. · Luma AI, California Institute of Technology, Stanford University",
+  "hf": 7,
+  "venue": null
+ },
+ {
+  "id": "2611.21791",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "Regularized Score Centering",
+  "tldr": "Regularized Score Centering adds a reverse-KL penalty toward the data-generating policy to score-centered off-policy RL, stabilizing asynchronous LLM agent training and winning on all six agentic benchmarks tested.",
+  "primary_tag": "Reinforcement Learning",
+  "tags": [
+   "Reinforcement Learning",
+   "Agents",
+   "Post-training"
+  ],
+  "byline": "Hao Bai, Chenlu Ye, Xuanchang Zhang et al. · UIUC, CMU",
+  "hf": 14,
+  "venue": null
+ },
+ {
+  "id": "2611.23144",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "$\\pi^4$: A Foundation Model for 4D Scene Geometry and Motion",
+  "tldr": "π⁴ is a 0.5B-parameter feed-forward model that recovers dense geometry, camera poses, metric scale, 2D/3D point tracks and moving-object masks from uncalibrated images or video in a single forward pass.",
+  "primary_tag": "Computer Vision",
+  "tags": [
+   "Computer Vision"
+  ],
+  "byline": "Yifan Wang, Weiguang Zhao, Ni Yang et al. · Shanghai Artificial Intelligence Laboratory, Shanghai Jiao Tong University, Zhejiang University",
+  "hf": 13,
+  "venue": null
+ },
+ {
+  "id": "2611.22215",
+  "date": "2026-11-19",
+  "type": "paper",
+  "title": "Communicate the Change: Efficient Expert Parallelism via Activation Compression",
+  "tldr": "EchoMoE retrofits existing mixture-of-experts models to send only a compressed change from an earlier layer's hidden state between GPUs, cutting inter-node traffic 58% and raising serving throughput 22.6%.",
+  "primary_tag": "Efficiency",
+  "tags": [
+   "Efficiency",
+   "Architectures"
+  ],
+  "byline": "Fengyuan Liu, Jay Gala, Siva Reddy et al. · Mila - Quebec AI Institute, McGill University, Periodic Labs",
+  "hf": null,
+  "venue": null
+ },
+ {
   "id": "2026-11-18-n1",
   "date": "2026-11-18",
   "type": "news",

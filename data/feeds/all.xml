@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Thu, 19 Nov 2026 11:49:48 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 12:15:56 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google launches Gemini 4 Neon, a fast frontier model priced at $3 per million input tokens</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n1</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Google released Gemini 4 Neon, which ranks third on the Artificial Analysis Intelligence Index and first on its Coding Agent Index, at $3/$15 per million input/output tokens with a 1-million-token context. (Google)</description>
+  </item>
+  <item>
+    <title>Anthropic prices its IPO at $83 a share, raising $81.3 billion in the largest offering on record</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n2</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Business &amp; Funding</category>
+    <description>Anthropic sold 980 million shares at $83, above its $70 to $78 range, raising $81.3 billion and valuing the Claude maker at about $1.5 trillion before Nasdaq trading under the ticker ANT. (TechCrunch, WIRED)</description>
+  </item>
+  <item>
+    <title>Counterfactual World Models: JEPAs That Reason About "What If"</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.24778</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.24778</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / World Models</category>
+    <description>Factual world models cannot answer "what if I had acted differently?" on their own, but for force-like disturbances adding the observed residual to the model's predicted action difference gives near-optimal counterfactuals with no retraining. (Randall Balestriero, Yann LeCun, Kerda Varaku · Brown University, New York University, AMI Labs)</description>
+  </item>
+  <item>
+    <title>Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22287</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22287</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>Adding a linear pixel head to a fine-tuned diffusion transformer removes the latent decoder entirely, matching or improving quality, and the same separate head sets a new ImageNet FID record for pixel flow models. (Hansheng Chen, Shengqu Cai, Jan Ackermann et al. · Luma AI, California Institute of Technology, Stanford University)</description>
+  </item>
+  <item>
+    <title>Regularized Score Centering</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.21791</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.21791</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Reinforcement Learning</category>
+    <description>Regularized Score Centering adds a reverse-KL penalty toward the data-generating policy to score-centered off-policy RL, stabilizing asynchronous LLM agent training and winning on all six agentic benchmarks tested. (Hao Bai, Chenlu Ye, Xuanchang Zhang et al. · UIUC, CMU)</description>
+  </item>
+  <item>
+    <title>$\pi^4$: A Foundation Model for 4D Scene Geometry and Motion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.23144</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.23144</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Computer Vision</category>
+    <description>π⁴ is a 0.5B-parameter feed-forward model that recovers dense geometry, camera poses, metric scale, 2D/3D point tracks and moving-object masks from uncalibrated images or video in a single forward pass. (Yifan Wang, Weiguang Zhao, Ni Yang et al. · Shanghai Artificial Intelligence Laboratory, Shanghai Jiao Tong University, Zhejiang University)</description>
+  </item>
+  <item>
+    <title>Communicate the Change: Efficient Expert Parallelism via Activation Compression</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22215</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22215</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>EchoMoE retrofits existing mixture-of-experts models to send only a compressed change from an earlier layer's hidden state between GPUs, cutting inter-node traffic 58% and raising serving throughput 22.6%. (Fengyuan Liu, Jay Gala, Siva Reddy et al. · Mila - Quebec AI Institute, McGill University, Periodic Labs)</description>
+  </item>
   <item>
     <title>Attackers publish two credential-stealing versions of Microsoft's official Agent Framework package on PyPI</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
     <category>AI / LLMs</category>
     <description>Across 2,000 papers, the latest GPT and Claude models draw about half or more of their review criticisms from the appendix, versus 8.4% for human reviewers, and human reviews are now drifting the same way. (Saptarshi Ghosh, Mohammad Saim, Tianyu Jiang · University of Cincinnati)</description>
-  </item>
-  <item>
-    <title>Attackers plant malware on CNN, BBC, Zoom and Salesforce pages through the web-testing service Optimizely</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n1</guid>
-    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Attackers abused a flaw in Optimizely's signup flow to add malicious code to scripts that 178 organizations load on their websites, exposing visitors to theft of card details and cryptocurrency. (BleepingComputer, Optimizely)</description>
-  </item>
-  <item>
-    <title>The US bars China from renting advanced chips in data centers in five countries and requires licenses for sales there</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n2</guid>
-    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
-    <category>Tech / Chips &amp; Hardware</category>
-    <description>A new US Commerce Department rule restricts remote access to advanced chips housed in Indonesia, Malaysia, Singapore, Thailand and Brazil, and makes large sales to those countries subject to licenses. (Ars Technica, The Register)</description>
-  </item>
-  <item>
-    <title>Italy's privacy regulator fines Meta €805 million because Facebook's Android app read users' photo galleries without specific consent</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n3</guid>
-    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
-    <category>Tech / Tech Policy &amp; Antitrust</category>
-    <description>Italy's data protection authority fined Meta €805 million ($886 million) over a Facebook feature that scanned Android users' photos and videos to suggest posts, affecting about 20 million people. (The Record, Sky TG24, Garante per la protezione dei dati personali)</description>
-  </item>
-  <item>
-    <title>A software bug at JPMorganChase slows payments across US banks, with thousands of customers reporting problems</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-17/2026-11-17-n4</guid>
-    <pubDate>Tue, 17 Nov 2026 11:46:04 +0000</pubDate>
-    <category>Tech / Telecom &amp; Internet</category>
-    <description>JPMorganChase blamed a software bug in its own on-premise systems for slow transactions on Monday that spread to customers of other banks and to Zelle transfers; it says there is no sign of a cyberattack. (WIRED, Engadget)</description>
-  </item>
-  <item>
-    <title>Quantitative measurement of viscosity in two-dimensional electron fluids</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</guid>
-    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>A ring-shaped graphene device lets physicists measure the viscosity of flowing electrons directly, and the result departs from the standard theory of metals. (Yihang Zeng, Haoyu Guo, Olivia M. Ghosh et al.)</description>
-  </item>
-  <item>
-    <title>A primordial heavy water reservoir in the outer solar system</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</guid>
-    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
-    <category>Science / Planetary science</category>
-    <description>Twelve dust grains collected in Earth's stratosphere, traced to the Kuiper Belt, carry the oxygen signature of an isotopically heavy water reservoir that stayed separate from the inner solar system. (Lindsay P. Keller, Christopher J. Snead, Ming-Chang Liu et al. · NASA Johnson Space Center)</description>
-  </item>
-  <item>
-    <title>Passive imaging with quantum advantage</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</guid>
-    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination. (Li Gong, Aonan Zhang, Madhura Ghosh Dastidar et al.)</description>
   </item>
 </channel>
 </rss>

@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Wed, 18 Nov 2026 12:16:21 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 12:15:56 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Google launches Gemini 4 Neon, a fast frontier model priced at $3 per million input tokens</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n1</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Google released Gemini 4 Neon, which ranks third on the Artificial Analysis Intelligence Index and first on its Coding Agent Index, at $3/$15 per million input/output tokens with a 1-million-token context. (Google)</description>
+  </item>
+  <item>
+    <title>Anthropic prices its IPO at $83 a share, raising $81.3 billion in the largest offering on record</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n2</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Business &amp; Funding</category>
+    <description>Anthropic sold 980 million shares at $83, above its $70 to $78 range, raising $81.3 billion and valuing the Claude maker at about $1.5 trillion before Nasdaq trading under the ticker ANT. (TechCrunch, WIRED)</description>
+  </item>
+  <item>
+    <title>Counterfactual World Models: JEPAs That Reason About "What If"</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.24778</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.24778</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / World Models</category>
+    <description>Factual world models cannot answer "what if I had acted differently?" on their own, but for force-like disturbances adding the observed residual to the model's predicted action difference gives near-optimal counterfactuals with no retraining. (Randall Balestriero, Yann LeCun, Kerda Varaku · Brown University, New York University, AMI Labs)</description>
+  </item>
+  <item>
+    <title>Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22287</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22287</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>Adding a linear pixel head to a fine-tuned diffusion transformer removes the latent decoder entirely, matching or improving quality, and the same separate head sets a new ImageNet FID record for pixel flow models. (Hansheng Chen, Shengqu Cai, Jan Ackermann et al. · Luma AI, California Institute of Technology, Stanford University)</description>
+  </item>
+  <item>
+    <title>Regularized Score Centering</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.21791</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.21791</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Reinforcement Learning</category>
+    <description>Regularized Score Centering adds a reverse-KL penalty toward the data-generating policy to score-centered off-policy RL, stabilizing asynchronous LLM agent training and winning on all six agentic benchmarks tested. (Hao Bai, Chenlu Ye, Xuanchang Zhang et al. · UIUC, CMU)</description>
+  </item>
+  <item>
+    <title>$\pi^4$: A Foundation Model for 4D Scene Geometry and Motion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.23144</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.23144</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Computer Vision</category>
+    <description>π⁴ is a 0.5B-parameter feed-forward model that recovers dense geometry, camera poses, metric scale, 2D/3D point tracks and moving-object masks from uncalibrated images or video in a single forward pass. (Yifan Wang, Weiguang Zhao, Ni Yang et al. · Shanghai Artificial Intelligence Laboratory, Shanghai Jiao Tong University, Zhejiang University)</description>
+  </item>
+  <item>
+    <title>Communicate the Change: Efficient Expert Parallelism via Activation Compression</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22215</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22215</guid>
+    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>EchoMoE retrofits existing mixture-of-experts models to send only a compressed change from an earlier layer's hidden state between GPUs, cutting inter-node traffic 58% and raising serving throughput 22.6%. (Fengyuan Liu, Jay Gala, Siva Reddy et al. · Mila - Quebec AI Institute, McGill University, Periodic Labs)</description>
+  </item>
   <item>
     <title>OpenAI releases GPT-6.2 Astra and Sol, cutting Astra's price 20% and crossing its own "High" self-improvement threshold</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2026-11-18-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
     <category>AI / Reasoning</category>
     <description>Tree-Ising fixes a small reasoning model's endless loops by flipping signs and shifting exponents in its stored weights, beating a frontier-agent repair on math benchmarks at about $0.90 instead of $312. (Hadi Salloum, Ammar Ali)</description>
-  </item>
-  <item>
-    <title>Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17167</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-13/2611.17167</guid>
-    <pubDate>Fri, 13 Nov 2026 12:20:07 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>Decision models that act poorly can still teach well: asked in hindsight whether each action helped, JEV lifts a 1.5B agent's ALFWorld success from 72.8% to 82.9% over outcome-only GRPO. (Haochen Liu, Qianhao Zhu, Zixuan Wang et al. · Zhejiang University, Baidu Inc.)</description>
-  </item>
-  <item>
-    <title>Google DeepMind releases AlphaGenome 2, which predicts how DNA variants act in specific cell types</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n1</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>AlphaGenome 2 predicts how DNA changes alter gene activity in individual cell types and states, finding nearly twice as many causal variants as its predecessor; it is open for non-commercial research. (Google DeepMind, The Verge)</description>
-  </item>
-  <item>
-    <title>Google launches the Gemini Decisions API, a model that scores yes/no, choice and rubric questions in one pass</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2026-11-12-n2</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Product &amp; Features</category>
-    <description>Gemini Decision 1 answers up to 1,000 closed-set questions about a multimodal input in one forward pass, returning calibrated probabilities in 150-250 ms for $0.10 per million input tokens and no output charge. (Google, Simon Willison)</description>
-  </item>
-  <item>
-    <title>The Surprising Effectiveness of Deleting Weights in LLM Post-Training</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.10866</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.10866</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Post-training</category>
-    <description>Learning which 0.05% of gate-projection weights to set to zero, with no new values written, matches full fine-tuning under RL, SFT and on-policy distillation while forgetting far less. (Jack Lu, Zhenbang Yang, Mike Lasby et al. · New York University, University of Calgary)</description>
-  </item>
-  <item>
-    <title>Are Dense Rewards Worth Their Tokens in GRPO?</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.13560</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.13560</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Across 1,668 preregistered runs, dense step-level rewards that beat GRPO per update lose once their extra generated tokens and GPU time are counted, while picking prompts near 50% success holds up. (Vikash Singh, Weicong Chen, Debargha Ganguly et al.)</description>
-  </item>
-  <item>
-    <title>Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.14320</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.14320</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Retrieval &amp; Memory</category>
-    <description>WikiTrace links each lesson in an agent's memory to the run it came from, so the agent can check doubtful lessons, raising scores on all eight test suites and cutting memory-induced failures. (Yukyeong Lee, Yumin Choi, Jinheon Baek et al. · KAIST, DeepAuto.ai)</description>
-  </item>
-  <item>
-    <title>Evolving Infra: Agent-Adaptive LLM Serving at Scale</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12304</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-12/2611.12304</guid>
-    <pubDate>Thu, 12 Nov 2026 12:20:24 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>Evolving Infra lets serving nodes switch between prefill and decode in seconds and evicts cached context that no live agent branch needs, cutting latency up to 4.1x versus NVIDIA's Dynamo. (Hao Kang, Weili Xu, Ziyang Li et al.)</description>
   </item>
 </channel>
 </rss>

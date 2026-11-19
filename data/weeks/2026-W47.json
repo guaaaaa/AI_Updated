@@ -3,12 +3,12 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [
   {
    "id": "2611.22115",
    "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
-   "hf": 144,
+   "hf": 156,
    "org": "XingChen-AGI",
    "featured": null
   },
@@ -27,17 +27,17 @@
    "featured": null
   },
   {
-   "id": "2611.21072",
-   "title": "Sage S2.1 Flash Technical Report",
-   "hf": 95,
-   "org": "Intern Large Models",
+   "id": "2611.21218",
+   "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
+   "hf": 102,
+   "org": null,
    "featured": null
   },
   {
-   "id": "2611.21218",
-   "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
-   "hf": 94,
-   "org": null,
+   "id": "2611.21072",
+   "title": "Sage S2.1 Flash Technical Report",
+   "hf": 96,
+   "org": "Intern Large Models",
    "featured": null
   },
   {
@@ -50,7 +50,7 @@
   {
    "id": "2611.19937",
    "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
-   "hf": 69,
+   "hf": 72,
    "org": "Nanyang Technological University",
    "featured": null
   },
@@ -65,7 +65,7 @@
  "stories": [
   {
    "title": "Jensen Huang and the End of the Founder Fairy Tale",
-   "outlets": 17,
+   "outlets": 19,
    "date": "2026-11-13",
    "covered": null
   },
@@ -76,20 +76,26 @@
    "covered": null
   },
   {
-   "title": "Wall Street Braces for Anthropic’s Aggressive Spending",
-   "outlets": 5,
-   "date": "2026-11-15",
+   "title": "US moves to cut China’s remote access to AI chips",
+   "outlets": 9,
+   "date": "2026-11-16",
    "covered": null
   },
   {
-   "title": "US moves to cut China’s remote access to AI chips",
-   "outlets": 5,
-   "date": "2026-11-16",
+   "title": "Wall Street Braces for Anthropic’s Aggressive Spending",
+   "outlets": 6,
+   "date": "2026-11-15",
    "covered": null
   },
   {
    "title": "Southeast Asia scrambles as US chip curbs threaten AI data centre boom",
    "outlets": 5,
+   "date": "2026-11-17",
+   "covered": null
+  },
+  {
+   "title": "Anthropic IPO: how can I buy shares, and is it worth it?",
+   "outlets": 4,
    "date": "2026-11-17",
    "covered": null
   },
@@ -104,16 +110,10 @@
    "outlets": 3,
    "date": "2026-11-16",
    "covered": null
-  },
-  {
-   "title": "Stocks slide as Nvidia results loom",
-   "outlets": 3,
-   "date": "2026-11-17",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 5,
-  "papers": 15
+  "news": 7,
+  "papers": 20
  }
 }
