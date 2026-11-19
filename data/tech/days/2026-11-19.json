@@ -1,7 +1,7 @@
 {
  "date": "2026-11-19",
  "edition": "weekday",
- "generated_at": "2026-11-19T11:49:10+00:00",
+ "generated_at": "2026-11-19T11:49:48+00:00",
  "summary": "Attackers hijack Microsoft's official Agent Framework package on PyPI, Intel signs its first outside customer for its 18A chip process, Windows Server 2028 ships hardened by default, and a Slovak quantum network delivers encryption keys in real time across four cities.",
  "news": [
   {
@@ -162,7 +162,7 @@
     },
     {
      "heading": "Why it matters",
-     "body": "The work is part of Europe's EuroQCI quantum communication infrastructure and shows what deployed entanglement-based QKD delivers in practice. The main caveat is rigor: the authors find that the system's heuristic privacy amplification, the step that shrinks the key to remove leaked information, can produce more key than the finite-key security bound allows, so the deployed post-processing still needs tightening."
+     "body": "The work is part of Europe's EuroQCI quantum communication infrastructure and shows what deployed entanglement-based QKD delivers in practice. The main caveat is rigor: the authors find that the system's heuristic privacy amplification, which shrinks the key to remove leaked information, can produce more key than the finite-key security bound allows, so the deployed post-processing still needs tightening."
     }
    ],
    "links": {
