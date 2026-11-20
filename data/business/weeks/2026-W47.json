@@ -3,24 +3,24 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [
   {
    "title": "Stocks fall ahead of Nvidia earnings and Anthropic IPO",
-   "outlets": 18,
+   "outlets": 23,
    "date": "2026-11-16",
-   "covered": "2026-11-17-n5"
+   "covered": "2026-11-17-n1"
   },
   {
    "title": "Jensen Huang reportedly mulling comeback as Nvidia CEO",
-   "outlets": 11,
+   "outlets": 12,
    "date": "2026-11-15",
    "covered": "2026-11-18-n4"
   },
   {
    "title": "Anthropic’s giant IPO puts the heat on OpenAI",
-   "outlets": 7,
+   "outlets": 10,
    "date": "2026-11-15",
    "covered": null
   },
@@ -56,8 +56,8 @@
   }
  ],
  "featured": {
-  "news": 18,
-  "papers": 4
+  "news": 22,
+  "papers": 5
  },
  "items": [
   {
@@ -191,6 +191,36 @@
    "date": "2026-11-19",
    "type": "paper",
    "title": "Irregular Demand: The Anti-Compromise Effect in the Field"
+  },
+  {
+   "id": "2026-11-20-n1",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "US retail sales rise just 0.2% in October as car purchases fall and prices outpace spending"
+  },
+  {
+   "id": "2026-11-20-n2",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "Walmart raises its annual outlook for the third time as US online sales grow 23%"
+  },
+  {
+   "id": "2026-11-20-n3",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "Japan's core inflation rises to 2.2% in October, its fastest this year, as energy subsidies end"
+  },
+  {
+   "id": "2026-11-20-n4",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "Canada seeks an interim tariff deal with the US by year-end, but says some sector tariffs will stay"
+  },
+  {
+   "id": "nber-w36014",
+   "date": "2026-11-20",
+   "type": "paper",
+   "title": "The Labor Market Impact of Temporary High-Skill Immigration Programs"
   }
  ]
 }

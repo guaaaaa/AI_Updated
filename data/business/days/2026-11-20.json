@@ -1,0 +1,213 @@
+{
+ "date": "2026-11-20",
+ "edition": "weekday",
+ "generated_at": "2026-11-20T12:49:07+00:00",
+ "summary": "US shoppers slow down but Walmart keeps gaining, Japan's inflation picks up on energy, and Canada seeks a stopgap US tariff deal.",
+ "news": [
+  {
+   "id": "2026-11-20-n1",
+   "story_key": "us-retail-sales-october-2026",
+   "title": "US retail sales rise just 0.2% in October as car purchases fall and prices outpace spending",
+   "category": "Economy & Data",
+   "published": "2026-11-17T08:30:00-05:00",
+   "tldr": "US retail and food-service sales rose 0.2% in October to $748.2 billion, slowing from 0.8% in September, as auto dealers' sales fell and consumer prices rose faster than spending.",
+   "why_selected": "Retail sales are the first broad read on US consumer spending, which drives most of the economy, ahead of a likely Fed rate hike in December.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Retail sales measure what Americans spend at stores, online sellers and restaurants each month, and they are the earliest broad gauge of consumer demand. The figures are not adjusted for inflation, which matters now: consumer prices rose 0.4% in October, and regular gasoline averaged a record $4.31 a gallon as the war with Iran keeps fuel costs high."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Census Bureau's advance estimate, released on November 17, put October retail and food-service sales at $748.2 billion, up 0.2% from September and 6.8% from a year earlier. The monthly gain matched economists' forecasts, and September's 0.8% rise was left unrevised. The bureau noted that the 90% confidence interval around October's change includes zero, so it cannot rule out that sales were flat. Auto and parts dealers were the weak spot, with sales down 1.6%; excluding them, sales rose 0.6%. Gas stations took in 30.3% more than a year earlier. Sales for August through October were up 6.4% from the same period in 2025."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Because prices rose 0.4% while nominal sales rose 0.2%, prices grew faster than spending in October. Shoppers pulled back on a range of purchases, from cars and clothing to furniture and hobbies, the Globe and Mail reported, even as gas stations' takings jumped. That mix matters for retailers heading into the holidays, when sellers of discretionary goods depend on shoppers having money left after essentials. A private gauge, the CNBC/NRF Retail Monitor based on about 120 million card accounts, showed weaker spending than the official data. For the Federal Reserve, the report came in as expected: the 10-year Treasury yield edged up to 5.14%, and futures pricing implied a 93% chance of a quarter-point rate hike in December."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The November report is due on December 16, covering the start of the holiday season, and it will show whether fuel costs keep crowding out other spending."
+    }
+   ],
+   "sources": [
+    {
+     "name": "U.S. Census Bureau",
+     "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+    },
+    {
+     "name": "StockAnalysis",
+     "url": "https://stockanalysis.com/news/us-retail-sales-rise-october-2026/"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-walmart-results-sales-and-profit-outlook/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n2",
+   "story_key": "walmart-q3-fy2027-results",
+   "title": "Walmart raises its annual outlook for the third time as US online sales grow 23%",
+   "category": "Consumer & Retail",
+   "published": "2026-11-19T07:27:00-05:00",
+   "tldr": "Walmart's quarterly sales rose 5.2% to $188.8 billion and it raised its full-year guidance again, as shoppers across income groups seek lower prices and its online, marketplace and advertising businesses grow fast.",
+   "why_selected": "Walmart serves more than 150 million customers a week, so its results are a key read on US consumers before the holiday season.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Walmart is treated as a barometer of American spending because more than 150 million customers shop its stores or website every week. Its results this year have come against painful inflation and record fuel prices, conditions that push households of all incomes toward discounters. The company has also been shifting its growth toward e-commerce, its Walmart+ membership and advertising."
+    },
+    {
+     "heading": "What happened",
+     "body": "For the quarter ended October 31, reported on November 19, Walmart's sales rose 5.2% to $188.8 billion, above the $187.38 billion analysts expected, according to FactSet. Adjusted earnings were 65 cents a share against an expected 64 cents; net income fell to $4.94 billion from $6.14 billion a year earlier. Comparable sales, which strip out new stores and include digital channels, rose 2.9%, up from 2.6% last quarter but down from 4.5% a year ago. US e-commerce grew 23%, marketplace sales by nearly 50% and the Walmart Connect advertising business by 36%. Walmart raised its annual guidance for the third time this year, though the outlook was more conservative than analysts expected, and the shares slipped a little under 1%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The results show where the money is flowing in a squeezed economy. Walmart says it keeps gaining market share, with its grocery business posting its biggest share gains in three years, while US store comparable sales fell and more than 80% of US online orders are filled from stores. More total sales volume is passing through US stores than ever, its finance chief said, so stores are acting as delivery hubs. Walmart says it used tariff refunds to invest in prices, with about 7,700 rollbacks, while fast-growing marketplace and advertising revenue diversifies its profit and supports its goal of growing operating income faster than sales."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Walmart's prediction of a strong holiday season holds as fuel costs eat into shoppers' budgets, and how its new $120 Walmart+ and Sam's Club Plus bundle sells."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Walmart",
+     "url": "https://corporate.walmart.com/news/2026/11/walmart-releases-q3-fy27-earnings"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-walmart-results-sales-and-profit-outlook/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n3",
+   "story_key": "japan-cpi-october-2026",
+   "title": "Japan's core inflation rises to 2.2% in October, its fastest this year, as energy subsidies end",
+   "category": "Economy & Data",
+   "published": "2026-11-19T18:36:00-05:00",
+   "tldr": "Japan's core consumer prices rose 2.2% from a year earlier in October, up from 2.1%, as expiring energy subsidies lifted power and gas bills, keeping a December Bank of Japan rate hike in view.",
+   "why_selected": "Japan's inflation data shape Bank of Japan rate decisions, which move the yen and global bond markets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Bank of Japan (BOJ) is gradually raising interest rates as inflation holds above its 2% target. The BOJ watches \"core\" inflation, which excludes volatile fresh food, and an even narrower \"core-core\" measure that also strips out energy, to judge whether price gains are spreading through the economy."
+    },
+    {
+     "heading": "What happened",
+     "body": "Core consumer prices rose 2.2% in October from a year earlier, up from 2.1% in September and the fastest pace this year, Japan's statistics bureau said on November 20. Economists polled by Reuters had expected 2.3%. Headline inflation rose to 2.3%. Energy prices swung from a 0.6% fall to a 2.2% rise as household energy subsidies ended and utilities raised rates: city gas rose 5.3% and electricity 1.6%, while gasoline was 2.3% cheaper than a year earlier. The core-core measure slowed to 2.2% from 2.4%, and food excluding fresh items cooled to 2.2% from 2.9%. Services inflation eased to 1.4%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The data cut both ways. Inflation is above target for a second straight month, which supports another rate rise, but the increase came from energy rather than broader domestic demand, and services inflation, a gauge of domestically generated price pressure, softened. Governor Kazuo Ueda told parliament a day earlier that the bank will keep raising rates, and 61 of 71 economists in a Reuters poll expect a quarter-point hike to 1.50% at the December 17-18 meeting. Government measures, including abolishing the provisional gasoline tax, cut the headline rate by an estimated 0.97 point, so prices would be rising faster without them. The yen, near 159.6 per dollar, firmed slightly after the release."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The BOJ's December 17-18 decision, and how the return of household energy subsidies in December changes the inflation readings."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Xinhua",
+     "url": "https://english.news.cn/20261120/8339f7ba31c24aa9877c3b782e6ed807/c.html"
+    },
+    {
+     "name": "MLQ.ai",
+     "url": "https://mlq.ai/news/japans-core-inflation-rises-to-22-in-october-the-fastest-this-year-as-household-energy-subsidies-end/"
+    },
+    {
+     "name": "ActionForex",
+     "url": "https://www.actionforex.com/live-comments/661497-japan-core-cpi-rises-to-2-2-as-energy-costs-rebound-core-core-inflation-eases/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n4",
+   "story_key": "canada-us-interim-tariff-arrangement-2026-11",
+   "title": "Canada seeks an interim tariff deal with the US by year-end, but says some sector tariffs will stay",
+   "category": "Trade & Policy",
+   "published": "2026-11-19T14:04:00-05:00",
+   "tldr": "Ottawa wants an interim deal by year-end to lower US tariffs on steel, aluminum, autos and lumber, but its trade minister says some tariffs will remain.",
+   "why_selected": "US tariffs on Canadian autos are set to double to 50% in January, putting jobs and cross-border supply chains at stake.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Canada-US trade talks collapsed in August, and President Donald Trump threatened higher levies on Canadian autos, car parts and steel from January 1. US tariffs on Canadian autos are set to rise to 50% from 25% in January. Section 232 tariffs are imposed on national-security grounds; Section 338 tariffs are a separate set of levies Washington also placed on Canadian goods."
+    },
+    {
+     "heading": "What happened",
+     "body": "Dominic LeBlanc, the minister responsible for Canada-US trade, briefed the federal advisory committee on Canada-US relations on November 19. Based on that meeting, CBC News reported that the government wants an interim trade arrangement with the Trump administration by the end of the year. LeBlanc told CBC that such a deal would likely keep some Section 232 tariffs on steel, aluminum, autos and lumber, at lower rates, while Ottawa wants the Section 338 tariffs removed entirely. He said Washington has signalled that cutting those tariffs could open the formal review of the Canada-U.S.-Mexico Agreement (CUSMA). \"We have made progress,\" he said, but not enough for a deal. Committee members who attended the private briefing told Reuters the US has made no movement so far."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Companies and industry groups have warned that the January auto tariff increase could dismantle decades-old supply chains and lead to job losses and factory shutdowns. By saying publicly that \"an element of those tariffs\" will remain, LeBlanc is lowering expectations of a return to tariff-free trade. Linking the interim deal to the CUSMA review raises the stakes, since the review covers the trilateral trade pact with the US and Mexico. Democrats' takeover of Congress after the midterms has not yet changed the negotiations, committee members said."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether a deal arrives before the January 1 auto increase; LeBlanc said Ottawa would keep negotiating into January or February if needed."
+    }
+   ],
+   "sources": [
+    {
+     "name": "CBC News via Yahoo News Canada",
+     "url": "https://ca.news.yahoo.com/canada-seeking-interim-trade-arrangement-190459914.html"
+    },
+    {
+     "name": "Reuters via Free Malaysia Today",
+     "url": "https://www.freemalaysiatoday.com/category/business/2026/11/20/canada-sees-little-us-movement-on-tariff-relief"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36014",
+   "title": "The Labor Market Impact of Temporary High-Skill Immigration Programs",
+   "authors": [
+    "George J. Borjas"
+   ],
+   "affiliations": [
+    "Harvard Kennedy School"
+   ],
+   "announced": "2026-11-20T00:00:00-05:00",
+   "primary_tag": "Labor markets",
+   "tags": [
+    "Labor markets",
+    "Inequality & mobility"
+   ],
+   "tldr": "Temporary high-skill visa programs such as H-1B cut earnings of native science and engineering graduates by about 3.3%, but raised average US wages by about 1.3%, Borjas estimates.",
+   "why_selected": "The H-1B program is at the centre of US immigration and tech-labor debates, and this paper offers a new way to estimate its full wage effects.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "About 1.2 million foreigners worked in the US under temporary high-skill programs in 2019, roughly half on H-1B visas, with others on L-1 transfers, TN status and Optional Practical Training (OPT) after US degrees. Policymakers argue over whether these workers mainly complement Americans or compete with them for jobs and pay. Answering that is hard because surveys do not record visa status, and many temporary workers stay on after their visas end."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most research links the H-1B program to innovation, often by comparing firms that won or lost the visa lottery, with mixed results. Fewer studies look at wages, and those disagree: some find native graduates gain when more foreign STEM workers arrive, while one study grouping workers by college major finds that wages fell in the most exposed majors."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Borjas identifies \"likely temporary\" workers in the American Community Survey for 2012-2024: non-citizen college graduates who arrived as adults within the past 10 years, are not in school and are not married to a US citizen. This yields 1.5 million in 2019, near the official 1.2 million. He then compares native earnings across 60 skill groups defined by degree level and field. A model shows that the standard estimate automatically captures the effect of workers who stayed after their visas expired, so the programs' full effect can be measured without data on stayers."
+    },
+    {
+     "heading": "Results",
+     "body": "In high-exposure groups, mostly computing and engineering, temporary workers per native doubled from 0.28 to 0.56, and mean earnings fell 6.9% while rising 5.8% in low-exposure groups. Relative to no programs, native science and engineering graduates earned about 3.3% less in 2024, and natives with master's degrees in computing or electrical and computer engineering 15-16% less. Natives also became less likely to work full-time year-round. The programs raised the average wage by about 1.3% through complementarities."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Employers, tech workers and visa policymakers get a sharper estimate of who gains and loses: about $43.7 billion a year in losses for 13.5 million exposed natives against $73.2 billion in gains for 129.4 million others. Caveat: it is an unreviewed working paper, and the gains rest on assumptions such as long-run capital adjustment."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36014"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}

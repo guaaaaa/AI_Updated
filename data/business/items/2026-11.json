@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-20-n1",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "US retail sales rise just 0.2% in October as car purchases fall and prices outpace spending",
+  "tldr": "US retail and food-service sales rose 0.2% in October to $748.2 billion, slowing from 0.8% in September, as auto dealers' sales fell and consumer prices rose faster than spending.",
+  "category": "Economy & Data",
+  "byline": "U.S. Census Bureau, StockAnalysis, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-20-n2",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "Walmart raises its annual outlook for the third time as US online sales grow 23%",
+  "tldr": "Walmart's quarterly sales rose 5.2% to $188.8 billion and it raised its full-year guidance again, as shoppers across income groups seek lower prices and its online, marketplace and advertising businesses grow fast.",
+  "category": "Consumer & Retail",
+  "byline": "Walmart, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-20-n3",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "Japan's core inflation rises to 2.2% in October, its fastest this year, as energy subsidies end",
+  "tldr": "Japan's core consumer prices rose 2.2% from a year earlier in October, up from 2.1%, as expiring energy subsidies lifted power and gas bills, keeping a December Bank of Japan rate hike in view.",
+  "category": "Economy & Data",
+  "byline": "Xinhua, MLQ.ai, ActionForex"
+ },
+ {
+  "id": "2026-11-20-n4",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "Canada seeks an interim tariff deal with the US by year-end, but says some sector tariffs will stay",
+  "tldr": "Ottawa wants an interim deal by year-end to lower US tariffs on steel, aluminum, autos and lumber, but its trade minister says some tariffs will remain.",
+  "category": "Trade & Policy",
+  "byline": "CBC News via Yahoo News Canada, Reuters via Free Malaysia Today"
+ },
+ {
+  "id": "nber-w36014",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "The Labor Market Impact of Temporary High-Skill Immigration Programs",
+  "tldr": "Temporary high-skill visa programs such as H-1B cut earnings of native science and engineering graduates by about 3.3%, but raised average US wages by about 1.3%, Borjas estimates.",
+  "primary_tag": "Labor markets",
+  "tags": [
+   "Labor markets",
+   "Inequality & mobility"
+  ],
+  "byline": "George J. Borjas · Harvard Kennedy School",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-19-n1",
   "date": "2026-11-19",
   "type": "news",

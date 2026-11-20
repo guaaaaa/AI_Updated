@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 20 Nov 2026 12:29:19 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 12:49:07 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>US retail sales rise just 0.2% in October as car purchases fall and prices outpace spending</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/2026-11-20-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/2026-11-20-n1</guid>
+    <pubDate>Fri, 20 Nov 2026 12:49:07 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>US retail and food-service sales rose 0.2% in October to $748.2 billion, slowing from 0.8% in September, as auto dealers' sales fell and consumer prices rose faster than spending. (U.S. Census Bureau, StockAnalysis, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Walmart raises its annual outlook for the third time as US online sales grow 23%</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/2026-11-20-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/2026-11-20-n2</guid>
+    <pubDate>Fri, 20 Nov 2026 12:49:07 +0000</pubDate>
+    <category>Business / Consumer &amp; Retail</category>
+    <description>Walmart's quarterly sales rose 5.2% to $188.8 billion and it raised its full-year guidance again, as shoppers across income groups seek lower prices and its online, marketplace and advertising businesses grow fast. (Walmart, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Japan's core inflation rises to 2.2% in October, its fastest this year, as energy subsidies end</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/2026-11-20-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/2026-11-20-n3</guid>
+    <pubDate>Fri, 20 Nov 2026 12:49:07 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>Japan's core consumer prices rose 2.2% from a year earlier in October, up from 2.1%, as expiring energy subsidies lifted power and gas bills, keeping a December Bank of Japan rate hike in view. (Xinhua, MLQ.ai, ActionForex)</description>
+  </item>
+  <item>
+    <title>Canada seeks an interim tariff deal with the US by year-end, but says some sector tariffs will stay</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/2026-11-20-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/2026-11-20-n4</guid>
+    <pubDate>Fri, 20 Nov 2026 12:49:07 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>Ottawa wants an interim deal by year-end to lower US tariffs on steel, aluminum, autos and lumber, but its trade minister says some tariffs will remain. (CBC News via Yahoo News Canada, Reuters via Free Malaysia Today)</description>
+  </item>
+  <item>
+    <title>The Labor Market Impact of Temporary High-Skill Immigration Programs</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/nber-w36014</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-20/nber-w36014</guid>
+    <pubDate>Fri, 20 Nov 2026 12:49:07 +0000</pubDate>
+    <category>Business / Labor markets</category>
+    <description>Temporary high-skill visa programs such as H-1B cut earnings of native science and engineering graduates by about 3.3%, but raised average US wages by about 1.3%, Borjas estimates. (George J. Borjas · Harvard Kennedy School)</description>
+  </item>
   <item>
     <title>Microsoft launches MAI Code 2 and Code 2 Flash, in-house coding models that come close to OpenAI's and Anthropic's at a lower cost</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
     <category>AI / Evaluation &amp; Benchmarks</category>
     <description>A 1,030-run reproducibility study argues that agent "evolution" stalls because noisy evaluations cannot tell better prompts and skills from worse ones, not because good candidates are missing. (Yuanhao Zeng, Shaocheng Lan, Ao Lu et al. · ShanghaiTech University)</description>
-  </item>
-  <item>
-    <title>How VLMs Plan What's Next</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.21600</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.21600</guid>
-    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
-    <category>AI / Interpretability</category>
-    <description>Causal patching in Qwen3-VL shows how a vision-language model lists items in an image: it keeps a "cursor" marking how far it has got and picks the nearest unwritten region next. (Rohit Gandikota, Arnab Sen Sharma, Adam Belfki et al. · Northeastern University)</description>
-  </item>
-  <item>
-    <title>NVIDIA Kumo Tabular: Pushing the Accuracy$\unicode{8211}$Efficiency Frontier for Tabular Prediction</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23001</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23001</guid>
-    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>NVIDIA's open Kumo Tabular models, pretrained only on synthetic tables, predict on new tables with no training and rank first on eight tabular benchmarks while running faster than the runners-up. (Jingang Qu, Valter Hudovernik, Martin Jurkovič et al. · NVIDIA, Stanford University, INRIA)</description>
-  </item>
-  <item>
-    <title>FastFrames: Video Generation at Interactive Latency</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23226</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23226</guid>
-    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>FastFrames gets autoregressive video diffusion under 50 ms per frame by replacing the VAE decoder and the cache-refresh pass, which together took over half of inference time. (Gene Chou, Guandao Yang, Fujun Luan et al. · Apple)</description>
-  </item>
-  <item>
-    <title>Oracle patches Java4Shell, a Java runtime flaw that lets attackers take over widely used server software</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n1</guid>
-    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Oracle fixed a memory-corruption flaw in OpenJDK's Base64 decoder that researchers used to run code on Jira, Confluence, Jenkins and Keycloak without logging in, and CISA urged immediate patching. (BleepingComputer, The Register, The Record)</description>
-  </item>
-  <item>
-    <title>Apple says an internal update, not a cyberattack, knocked out iCloud sign-in, the App Store and other services</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n2</guid>
-    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
-    <category>Tech / Telecom &amp; Internet</category>
-    <description>Apple's iCloud sign-in, App Store, Apple Music, iCloud Mail and school tools failed for hours on Tuesday; Apple blamed an internal update and its status page showed everything restored by 6 PM ET. (TechCrunch, BleepingComputer)</description>
   </item>
 </channel>
 </rss>
