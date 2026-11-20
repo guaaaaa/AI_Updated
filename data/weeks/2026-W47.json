@@ -3,12 +3,12 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [
   {
    "id": "2611.22115",
    "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
-   "hf": 156,
+   "hf": 164,
    "org": "XingChen-AGI",
    "featured": null
   },
@@ -25,6 +25,13 @@
    "hf": 125,
    "org": "Grid Robotics",
    "featured": null
+  },
+  {
+   "id": "2611.24738",
+   "title": "Jeveration: System One Models Now Generate",
+   "hf": 123,
+   "org": "National University of Singapore",
+   "featured": "2026-11-20"
   },
   {
    "id": "2611.21218",
@@ -53,21 +60,14 @@
    "hf": 72,
    "org": "Nanyang Technological University",
    "featured": null
-  },
-  {
-   "id": "2611.21003",
-   "title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
-   "hf": 52,
-   "org": "Institute of Foundation Models",
-   "featured": "2026-11-17"
   }
  ],
  "stories": [
   {
    "title": "Jensen Huang and the End of the Founder Fairy Tale",
-   "outlets": 19,
+   "outlets": 26,
    "date": "2026-11-13",
-   "covered": null
+   "covered": "2026-11-19-n1"
   },
   {
    "title": "California sues OpenAI over rogue AI hacking incidents",
@@ -83,7 +83,7 @@
   },
   {
    "title": "Wall Street Braces for Anthropic’s Aggressive Spending",
-   "outlets": 6,
+   "outlets": 7,
    "date": "2026-11-15",
    "covered": null
   },
@@ -100,20 +100,20 @@
    "covered": null
   },
   {
+   "title": "Meta’s Muse Charm might cost $300",
+   "outlets": 4,
+   "date": "2026-11-19",
+   "covered": null
+  },
+  {
    "title": "Anthropic’s IPO is the next big test for AI",
    "outlets": 3,
    "date": "2026-11-15",
    "covered": null
-  },
-  {
-   "title": "Exclusive | Trump Administration to Name Nvidia Among AI ‘National Champions’",
-   "outlets": 3,
-   "date": "2026-11-16",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 7,
-  "papers": 20
+  "news": 9,
+  "papers": 25
  }
 }

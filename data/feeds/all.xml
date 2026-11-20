@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 20 Nov 2026 11:47:11 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 12:29:19 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Microsoft launches MAI Code 2 and Code 2 Flash, in-house coding models that come close to OpenAI's and Anthropic's at a lower cost</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n1</guid>
+    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>At Ignite, Microsoft released MAI Code 2 and Code 2 Flash, coding models it says nearly match GPT-6.1 Sol and Claude Opus 5.5 on four coding benchmarks at a fraction of the cost per task. (InfoWorld, The New Stack, Microsoft AI)</description>
+  </item>
+  <item>
+    <title>Anthropic's Claude agents settle two open problems in black-hole physics, with one result checked in the Lean proof assistant</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n2</guid>
+    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
+    <category>AI / Research</category>
+    <description>Anthropic says Claude Fable 5.2 agents, working for about six weeks, solved two open quantum-gravity problems: a holographic phase transition and a proven bound on the lightest black holes. (Anthropic)</description>
+  </item>
+  <item>
+    <title>Jeveration: System One Models Now Generate</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.24738</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.24738</guid>
+    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>Jeveration turns a frozen vision-language model into an image generator that outputs a whole 512-pixel image in one forward pass, taking 78 ms, by conditioning all positions on a shared random state. (Yuhe Liu, Qi Li, Shihua Zhang et al. · National University of Singapore)</description>
+  </item>
+  <item>
+    <title>Weight-Space Programming Doesn't Need Transformers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.22055</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.22055</guid>
+    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>When frontier LLMs write a model's weights by hand instead of training it, they abandon Transformers for sparse fact tables, which beat the Transformers they write with about 1,800 times fewer parameters. (Hyunjong Ok, Jaeho Lee · Pohang University of Science and Technology (POSTECH))</description>
+  </item>
+  <item>
+    <title>Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.23229</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.23229</guid>
+    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>Ambient SFT adds one loss term to fine-tuning, matching the model's high-temperature predictions to those of its frozen pre-trained self, and beats standard SFT on small instruction, domain and reasoning datasets. (Giannis Daras, Marios Papachristou, Adam Klivans et al. · MIT, Arizona State University, University of Texas at Austin)</description>
+  </item>
+  <item>
+    <title>Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.26603</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.26603</guid>
+    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
+    <category>AI / Computer Vision</category>
+    <description>Apple's Depth Pro 2 estimates metric depth from images and video at full resolution, ending the usual trade-off between sharp object edges and depth that stays stable from frame to frame. (Peiyun Hu, Marko Mihajlovic, Lyndon Duong et al. · Apple)</description>
+  </item>
+  <item>
+    <title>ALOHA Lightning: Learning Fast and Precise Manipulation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.21919</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.21919</guid>
+    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>ALOHA Lightning lets operators physically guide a two-armed robot at near-human speed, then trains policies that fold shorts or insert batteries about as fast as people, from 50 demonstrations per task. (John Hua Yao. Qi Wu, Yihuai Gao, Chelsea Finn et al. · Stanford University)</description>
+  </item>
   <item>
     <title>Chase, Visa and Mastercard confirm breaches at outside vendors after an extortion gang leaks customer data</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
     <category>Tech / Telecom &amp; Internet</category>
     <description>Apple's iCloud sign-in, App Store, Apple Music, iCloud Mail and school tools failed for hours on Tuesday; Apple blamed an internal update and its status page showed everything restored by 6 PM ET. (TechCrunch, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Japan's Fugaku supercomputer is taken offline after an intruder steals user details and login keys</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n3</guid>
-    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>RIKEN shut down Fugaku on November 14 after an intruder got into internal servers between November 10 and 13 and took details of 4,222 users plus stored login keys. (BleepingComputer, News On Japan, SDxCentral, RIKEN Center for Computational Science)</description>
-  </item>
-  <item>
-    <title>California bars Waymo's driverless cars from freeways, and the company halts freeway rides in every market</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n4</guid>
-    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
-    <category>Tech / Tech Policy &amp; Antitrust</category>
-    <description>California's DMV called Waymo's driverless freeway driving an imminent hazard after robotaxis entered an active construction closure, and Waymo stopped freeway rides across all 15 of its US markets. (TechCrunch, WIRED)</description>
-  </item>
-  <item>
-    <title>Exploited Before It Was Fixed? Vulnerability Timelines from Open, Machine-Readable Evidence</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2611.22479</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2611.22479</guid>
-    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
-    <category>Tech / Security &amp; privacy</category>
-    <description>Public vulnerability records can show how long a flaw was exploited before a fix existed for only a small share of exploited vulnerabilities, because publishers rarely release patch and vendor dates. (Cédric Bonhomme, Alexandre Dulaunoy · Computer Incident Response Center Luxembourg (CIRCL))</description>
-  </item>
-  <item>
-    <title>FDA approves giredestrant, a Roche pill for advanced breast cancer with ESR1 mutations</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/2026-11-17-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/2026-11-17-n1</guid>
-    <pubDate>Tue, 17 Nov 2026 13:53:19 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA approved Roche's giredestrant (Wilserdly) with everolimus for advanced ER-positive breast cancer carrying an ESR1 mutation, after a trial showed a longer delay before the cancer worsened. (Genentech (press release via Yahoo Finance), Medical Daily, STAT)</description>
-  </item>
-  <item>
-    <title>A bladder-instilled immunotherapy cut cancer recurrence by 68% in a phase 3 trial, CG Oncology reports</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/2026-11-17-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/2026-11-17-n2</guid>
-    <pubDate>Tue, 17 Nov 2026 13:53:19 +0000</pubDate>
-    <category>Biology / Clinical Research</category>
-    <description>In a 367-patient randomized trial, CG Oncology's cretostimogene lowered the risk of bladder cancer returning after surgery by 68% compared with monitoring alone, according to topline company results. (Quiver Quantitative (summary of CG Oncology press release), PharmaShots, STAT)</description>
-  </item>
-  <item>
-    <title>CDC scientists count 112 measles infections in pregnancy and 13 babies born with measles since 2025</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/2026-11-17-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/2026-11-17-n3</guid>
-    <pubDate>Tue, 17 Nov 2026 13:53:19 +0000</pubDate>
-    <category>Biology / Public Health</category>
-    <description>A preliminary CDC analysis in NEJM Evidence documents 112 confirmed measles cases in pregnant women and 13 newborns with congenital measles in the United States since the start of 2025. (The New York Times, NBC News (Associated Press), Associated Press via KSLA)</description>
-  </item>
-  <item>
-    <title>Semaglutide for the Treatment of Obesity in Children 6 to &lt;12 Years of Age</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/doi-10-1056-nejmoa2604058</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/doi-10-1056-nejmoa2604058</guid>
-    <pubDate>Tue, 17 Nov 2026 13:53:19 +0000</pubDate>
-    <category>Biology / Maternal &amp; child health</category>
-    <description>In a two-year randomized trial of 167 children aged 6 to 11 with obesity, weekly semaglutide lowered BMI by 13.5% at 68 weeks while it rose 2.7% on placebo; stomach side effects were common. (Ania M. Jastreboff Nina M. Harder-Lauridsen Michelle Van Name Antje Körner Aaron S. Kelly Daniel Weghuber Jens-Christian Holm Christine Frithioff-Bøjsøe Shilpa Middolu Tina Buch and Martin Wabitschthe STEP Young Investigators* · Yale University School of Medicine; Ulm University Medical Center; University of Leipzig)</description>
   </item>
 </channel>
 </rss>

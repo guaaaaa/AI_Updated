@@ -1,5 +1,98 @@
 [
  {
+  "id": "2026-11-20-n1",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "Microsoft launches MAI Code 2 and Code 2 Flash, in-house coding models that come close to OpenAI's and Anthropic's at a lower cost",
+  "tldr": "At Ignite, Microsoft released MAI Code 2 and Code 2 Flash, coding models it says nearly match GPT-6.1 Sol and Claude Opus 5.5 on four coding benchmarks at a fraction of the cost per task.",
+  "category": "Model Release",
+  "byline": "InfoWorld, The New Stack, Microsoft AI"
+ },
+ {
+  "id": "2026-11-20-n2",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "Anthropic's Claude agents settle two open problems in black-hole physics, with one result checked in the Lean proof assistant",
+  "tldr": "Anthropic says Claude Fable 5.2 agents, working for about six weeks, solved two open quantum-gravity problems: a holographic phase transition and a proven bound on the lightest black holes.",
+  "category": "Research",
+  "byline": "Anthropic"
+ },
+ {
+  "id": "2611.24738",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "Jeveration: System One Models Now Generate",
+  "tldr": "Jeveration turns a frozen vision-language model into an image generator that outputs a whole 512-pixel image in one forward pass, taking 78 ms, by conditioning all positions on a shared random state.",
+  "primary_tag": "Generative Models",
+  "tags": [
+   "Generative Models",
+   "Multimodal",
+   "Efficiency"
+  ],
+  "byline": "Yuhe Liu, Qi Li, Shihua Zhang et al. · National University of Singapore",
+  "hf": 123,
+  "venue": null
+ },
+ {
+  "id": "2611.22055",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "Weight-Space Programming Doesn't Need Transformers",
+  "tldr": "When frontier LLMs write a model's weights by hand instead of training it, they abandon Transformers for sparse fact tables, which beat the Transformers they write with about 1,800 times fewer parameters.",
+  "primary_tag": "Architectures",
+  "tags": [
+   "Architectures",
+   "Retrieval & Memory",
+   "Interpretability"
+  ],
+  "byline": "Hyunjong Ok, Jaeho Lee · Pohang University of Science and Technology (POSTECH)",
+  "hf": 55,
+  "venue": null
+ },
+ {
+  "id": "2611.23229",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+  "tldr": "Ambient SFT adds one loss term to fine-tuning, matching the model's high-temperature predictions to those of its frozen pre-trained self, and beats standard SFT on small instruction, domain and reasoning datasets.",
+  "primary_tag": "Post-training",
+  "tags": [
+   "Post-training",
+   "Theory"
+  ],
+  "byline": "Giannis Daras, Marios Papachristou, Adam Klivans et al. · MIT, Arizona State University, University of Texas at Austin",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.26603",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+  "tldr": "Apple's Depth Pro 2 estimates metric depth from images and video at full resolution, ending the usual trade-off between sharp object edges and depth that stays stable from frame to frame.",
+  "primary_tag": "Computer Vision",
+  "tags": [
+   "Computer Vision"
+  ],
+  "byline": "Peiyun Hu, Marko Mihajlovic, Lyndon Duong et al. · Apple",
+  "hf": 16,
+  "venue": null
+ },
+ {
+  "id": "2611.21919",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "ALOHA Lightning: Learning Fast and Precise Manipulation",
+  "tldr": "ALOHA Lightning lets operators physically guide a two-armed robot at near-human speed, then trains policies that fold shorts or insert batteries about as fast as people, from 50 demonstrations per task.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics"
+  ],
+  "byline": "John Hua Yao. Qi Wu, Yihuai Gao, Chelsea Finn et al. · Stanford University",
+  "hf": null,
+  "venue": null
+ },
+ {
   "id": "2026-11-19-n1",
   "date": "2026-11-19",
   "type": "news",

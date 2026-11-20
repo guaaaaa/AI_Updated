@@ -1,0 +1,360 @@
+{
+ "date": "2026-11-20",
+ "edition": "weekday",
+ "generated_at": "2026-11-20T12:29:19+00:00",
+ "summary": "Microsoft ships its own cheap coding models, Claude agents settle two open black-hole physics problems, and papers on one-pass image generation, LLM-written weights, safer fine-tuning, sharp video depth and human-speed robots.",
+ "news": [
+  {
+   "id": "2026-11-20-n1",
+   "story_key": "microsoft-mai-code-2-launch",
+   "title": "Microsoft launches MAI Code 2 and Code 2 Flash, in-house coding models that come close to OpenAI's and Anthropic's at a lower cost",
+   "category": "Model Release",
+   "published": "2026-11-17T14:14:48-05:00",
+   "tldr": "At Ignite, Microsoft released MAI Code 2 and Code 2 Flash, coding models it says nearly match GPT-6.1 Sol and Claude Opus 5.5 on four coding benchmarks at a fraction of the cost per task.",
+   "why_selected": "A model release from the company that runs GitHub Copilot, and a clear step in Microsoft reducing its reliance on OpenAI and Anthropic.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "GitHub Copilot, owned by Microsoft, is a major AI coding tool, but the models behind it have mostly come from OpenAI and Anthropic, so Microsoft pays its partners each time a developer uses it. Microsoft AI, the company's in-house model group, has been building its own MAI models, and its news page now headlines seven new models."
+    },
+    {
+     "heading": "What happened",
+     "body": "At its Ignite conference in San Francisco on Tuesday, November 17, Microsoft launched two coding models. MAI Code 2 targets everyday enterprise work such as deep debugging, changes across many files, reasoning over a whole repository and user-interface code. MAI Code 2 Flash targets high-volume jobs such as explanations, targeted edits and routine fixes. On Microsoft's own comparison across four benchmarks (DeepSWE 1.1, Terminal-Bench 2.1, SWE-Atlas and FrontierCode v1.1), MAI Code 2 averaged 63.2%, against 64.1% for GPT-6.1 Sol and 65.3% for Claude Opus 5.5. Flash averaged 61% on three benchmarks, ahead of GPT-6 Luna (55.1%) and Claude Haiku 5.5 (53.9%). Microsoft put the average cost per task at $0.309 for MAI Code 2, against $0.761 for GPT-6.1 Sol and $6.306 for Claude Opus 5.5. Both models are available in GitHub Copilot; Flash is in limited preview on Microsoft Foundry."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Microsoft owns the distribution for coding tools: GitHub, Visual Studio and Azure, used by millions of developers. Replacing partner models with its own in Copilot would let it keep more of that revenue and set prices itself. The launch also shows a different strategy from the frontier labs. Microsoft says these models are explicitly not yet tuned for harder problems such as fundamental science research or very long agentic tasks, so it is betting that a specialist model is good enough for most daily coding work. The caveats are real: the benchmarks were chosen by Microsoft, the cost comparison uses a 50% promotional price that runs until May 17, 2027, and OpenAI released GPT-6.2 Astra and Sol the same day."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Independent benchmark results, how often Copilot users pick MAI models over partner models, the price after the promotion ends, and announced support on OpenRouter, Vercel and other tools."
+    }
+   ],
+   "sources": [
+    {
+     "name": "InfoWorld",
+     "url": "https://www.infoworld.com/article/4250152/microsoft-launches-mai-code-2-models-to-challenge-openai-and-anthropic-in-ai-coding.html"
+    },
+    {
+     "name": "The New Stack",
+     "url": "https://thenewstack.io/microsoft-mai-code-2/"
+    },
+    {
+     "name": "Microsoft AI",
+     "url": "https://microsoft.ai/news/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n2",
+   "story_key": "anthropic-claude-black-hole-physics-problems",
+   "title": "Anthropic's Claude agents settle two open problems in black-hole physics, with one result checked in the Lean proof assistant",
+   "category": "Research",
+   "published": "2026-11-17T12:00:00-05:00",
+   "tldr": "Anthropic says Claude Fable 5.2 agents, working for about six weeks, solved two open quantum-gravity problems: a holographic phase transition and a proven bound on the lightest black holes.",
+   "why_selected": "A concrete, checkable case of AI agents producing new results in theoretical physics, with methods described in detail.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Physicists study quantum gravity in simplified model universes. In holographic duality, a universe with gravity can be described equivalently by a quantum theory without gravity on its boundary. In 1983 Stephen Hawking and Don Page showed that heating such a universe causes an abrupt switch from a gas of particles to a black hole. Whether the same switch stays abrupt when the universe becomes very small was unknown."
+    },
+    {
+     "heading": "What happened",
+     "body": "Anthropic reported that Claude Fable 5.2 solved two open problems. An Anthropic researcher, Hongbin Chen, asked Claude in August to list open problems on black holes and the bootstrap method; it proposed 22, and separate agents worked on each for about six weeks, reading each other's progress posts. First, completing a calculation set out in 2003 and never finished, Claude showed that the phase transition in N=4 super Yang-Mills theory is abrupt in the small-universe regime too; a physicist who had independently used Claude reached the same answer by a different method. Second, in a universe with two space dimensions, Claude spotted a pattern in numerical bootstrap results, borrowed a method from a sphere-packing problem, and proved the exact ceiling on the mass of the lightest black hole for the simplest version of the technique, and that it cannot be lowered. An earlier agent had failed at it in 61 parallel attempts. The bootstrap results were formally verified in Lean, and a physicist checked every main result."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Here a group of agents chose problems, divided work, cross-checked results against known ones and wrote the paper with minimal guidance, while machine-checked proofs and independent derivations limit the room for error. The work also shows ideas moving between fields: a method found while working on sphere packing transferred to physics. Anthropic notes that neither result describes our own universe or has practical applications, and that half of the bound's proof follows a strategy from an earlier proof by an OpenAI model."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Peer review and physicists' reaction to the papers, whether the other 20 problems yield results, and whether this kind of long-running agent research spreads to other fields."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Anthropic",
+     "url": "https://www.anthropic.com/research/claude-black-hole-physics"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.24738",
+   "title": "Jeveration: System One Models Now Generate",
+   "authors": [
+    "Yuhe Liu",
+    "Qi Li",
+    "Shihua Zhang",
+    "Xinchao Wang"
+   ],
+   "affiliations": [
+    "National University of Singapore"
+   ],
+   "announced": "2026-11-18T20:00:00-05:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Multimodal",
+    "Efficiency"
+   ],
+   "tldr": "Jeveration turns a frozen vision-language model into an image generator that outputs a whole 512-pixel image in one forward pass, taking 78 ms, by conditioning all positions on a shared random state.",
+   "why_selected": "A new route to image generation without sequential steps, already near the top of the alphaXiv Hot list with 123 Hugging Face upvotes.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Image generators today are slow because they are sequential: autoregressive models write an image token by token, and diffusion models denoise it over many steps. Generating every part of an image at once in a single pass would be much faster, but the parts must agree with each other, which is hard when one prompt allows many valid images."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "\"System One\" decision models such as Jev answer questions with fast, parallel typed outputs (choices or scores) instead of long text. Masked-token generators like MaskGIT still need several rounds. The authors' first attempt, picking each image code independently in parallel, produced regions that did not fit together."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Think of a team of painters each filling one tile of a mural at the same moment: if they don't share a plan, the tiles clash. Jeveration gives everyone the same plan, a shared random state. The image is 128 discrete codes from a frozen image tokenizer, and 128 decision tokens, initialised from one random draw, are appended to the input of a frozen Qwen3.5-4B model with LoRA adapters. Every position sees the same random state, so each draw gives a different but coherent image. Because a model trained directly on images tends to ignore this state, the authors first train a masked model that learns the distribution over codes, then use it as a judge whose conditional distributions the single-pass predictions are trained to match. The same checkpoint also does image-to-image generation and dense prediction."
+    },
+    {
+     "heading": "Results",
+     "body": "On one H200, a 512x512 image takes 77.8 ms and reaches 0.74 GenEval, 122 times faster than Janus-Pro-7B and higher than the 0.49 to 0.65 of multi-step generators at 512 pixels. Without decision training, one pass reaches only 0.32 GenEval. On NYUv2 segmentation it reaches 67.7 mIoU, matching dense-only models on the same backbone (67.8)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests one frozen multimodal model could understand, perceive and generate images, each at the speed of a single forward pass, which matters for interactive tools. Caveats: results are at 512 pixels, and surface-normal estimation lags dedicated models."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.24738",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24738",
+    "code": "https://github.com/Carol-lyh/Jeveration"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 9,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 123,
+    "org": "National University of Singapore"
+   }
+  },
+  {
+   "id": "2611.22055",
+   "title": "Weight-Space Programming Doesn't Need Transformers",
+   "authors": [
+    "Hyunjong Ok",
+    "Jaeho Lee"
+   ],
+   "affiliations": [
+    "Pohang University of Science and Technology (POSTECH)"
+   ],
+   "announced": "2026-11-17T20:00:00-05:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Retrieval & Memory",
+    "Interpretability"
+   ],
+   "tldr": "When frontier LLMs write a model's weights by hand instead of training it, they abandon Transformers for sparse fact tables, which beat the Transformers they write with about 1,800 times fewer parameters.",
+   "why_selected": "A surprising look at which architecture fits a world where models write models, with careful controls and a faster design that follows from it.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Transformers won because they train well with gradient descent and run fast on GPUs. In weight-space programming, an LLM writes the weights of another model directly, without gradients or data fitting. If gradients are gone, is the Transformer still the right structure to write into?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work showed language models can read and write network weights, or compiled hand-built computations into fixed Transformers. Those studies kept the architecture fixed and asked what could be written into it; none let the LLM choose the structure and compared the two."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Claude Opus 5.5, GPT-6.1 Sol and GPT-6 Astra each got ten labeled ARC science questions and a sandbox, and either wrote weights for a fixed architecture or designed their own. All three converged on the same design: write facts as plain sentences, compile each into a row of a sparse table over a few thousand concepts, and score each answer option by matching it against rows. Think of it as a hand-built index rather than a neural network. The reason is debuggability: every prediction traces to a specific row, so the writer can find and fix a wrong fact, and deleting a row changes only about one answer, against 4.8 for a written Transformer. From this the authors build an associative-memory model that reads a fixed number of rows per question."
+    },
+    {
+     "heading": "Results",
+     "body": "LLM-designed models reach up to 54.4% on 3,530 ARC test questions, against 36.1% for the two-layer Transformer that Claude wrote and 29.8% for the same Transformer trained by gradient descent on 3,358 questions. Their associative-memory model runs up to 17 times faster on GPUs than a same-sized Transformer."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If AI systems increasingly build other models, the best architectures may favour readable, editable structure over gradient-friendly density. The big caveat: written models only recall stated facts, stay near chance on MMLU, and trail a fine-tuned Qwen3.5-0.8B (82.1%)."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.22055",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.22055",
+    "code": "https://github.com/effl-lab/Weight-Space-Programming"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 37,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 55,
+    "org": "Pohang University of Science and Technology"
+   }
+  },
+  {
+   "id": "2611.23229",
+   "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+   "authors": [
+    "Giannis Daras",
+    "Marios Papachristou",
+    "Adam Klivans",
+    "Antonio Torralba",
+    "Constantinos Daskalakis"
+   ],
+   "affiliations": [
+    "MIT",
+    "Arizona State University",
+    "University of Texas at Austin"
+   ],
+   "announced": "2026-11-17T20:00:00-05:00",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Theory"
+   ],
+   "tldr": "Ambient SFT adds one loss term to fine-tuning, matching the model's high-temperature predictions to those of its frozen pre-trained self, and beats standard SFT on small instruction, domain and reasoning datasets.",
+   "why_selected": "A simple, drop-in fix for overfitting in small-data fine-tuning, with theory and gains across several model families.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Pre-training uses trillions of tokens, but supervised fine-tuning (SFT) often uses only thousands of curated examples. Models overfit to those few examples and forget the rarer parts of what they learned in pre-training, a cost known as the alignment tax. Collecting more high-quality data is expensive."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Common fixes mix pre-training data back in, add noise to embeddings (NEFTune), or penalise distance from the original weights (L2-SP). Knowledge distillation copies a stronger teacher, but here the only teacher available, the pre-trained model, is weaker at the target task than the model being fine-tuned."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Raising the sampling temperature flattens any model's next-token distribution, so at high temperature two different models look much alike. The authors prove that a distribution can be recovered from its high-temperature version alone. So a weak teacher seen at high temperature is a reasonable stand-in for an ideal one. Ambient SFT keeps the normal cross-entropy loss on the fine-tuning data and adds a \"temperature matching\" term: the student's distribution at temperature T should match the frozen pre-trained model's distribution at the same T. Think of it as trusting the old model about the rough shape of the answer, not the details. T is a trust knob: infinite T is plain SFT, T=1 is ordinary distillation. Training is about 1.1 times slower."
+    },
+    {
+     "heading": "Results",
+     "body": "Instruction-tuning Qwen3 base models on about 21,000 examples, Ambient SFT improves on vanilla SFT by 8.0% to 20.3% on average across eight benchmarks; on Qwen3-1.7B, MATH rises from 24.3 to 40.4. It also helps OLMo-3-7B (+15.4%) and Llama-3.1-8B (+8.3%). In domain adaptation, News validation loss falls from 1.99 to 1.68."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Teams fine-tuning on scarce data could get better models for little extra compute. The main caveat: instruction following (IFEval) often drops, for example from 58.8 to 52.3 on Qwen3-1.7B, partly fixed with per-source temperatures."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.23229",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.23229"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 25,
+    "alphaxiv_hot_days": 3,
+    "notable_authors": [
+     "Antonio Torralba",
+     "Constantinos Daskalakis"
+    ]
+   }
+  },
+  {
+   "id": "2611.26603",
+   "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+   "authors": [
+    "Peiyun Hu",
+    "Marko Mihajlovic",
+    "Lyndon Duong",
+    "Lahav Lipson",
+    "Wei Dong",
+    "Amaël Delaunoy",
+    "Stephan R. Richter",
+    "Vladlen Koltun"
+   ],
+   "affiliations": [
+    "Apple"
+   ],
+   "announced": "2026-11-19T20:00:00-05:00",
+   "primary_tag": "Computer Vision",
+   "tags": [
+    "Computer Vision"
+   ],
+   "tldr": "Apple's Depth Pro 2 estimates metric depth from images and video at full resolution, ending the usual trade-off between sharp object edges and depth that stays stable from frame to frame.",
+   "why_selected": "A widely useful perception model with released code and weights, and a clear diagnosis of a long-standing trade-off.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Many video applications, such as synthetic background blur, need a depth map for every frame, in real units, from a single camera. Users want both sharp boundaries, such as fur against leaves, and depth that does not flicker as the video plays."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The authors find that methods split into two camps. Single-image methods produce sharp edges but place objects at changing distances from frame to frame. Video methods, using temporal attention or video diffusion priors, are stable but run at reduced resolution, which smooths away fine detail."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Depth Pro 2 is one network that processes any number of frames jointly at their native resolution. Joint processing keeps estimates stable over time; native resolution keeps edges sharp. It starts from a DINOv3 vision transformer pretrained on single images. The first third of its blocks attend only within a frame; the remaining blocks alternate within-frame and cross-frame attention. It deliberately has no encoding of frame order, so the same weights handle one image, a clip or a stream. It is trained on clips of 1 to 32 frames with a temporal-consistency loss. To convert to real distances it needs the camera's focal length, which a small 23.5M-parameter estimator predicts when metadata is missing."
+    },
+    {
+     "heading": "Results",
+     "body": "The largest model, Depth Pro 2-H+ (872M parameters), has the best average rank on zero-shot metric depth for both images and video, with and without ground-truth camera parameters, and on boundary sharpness, while also leading temporal consistency. Its focal-length estimator ranks first on all six test sets, at 88.6% mean accuracy against 71.7% for Depth Pro. The smallest model runs at 53 fps on streaming 1080p video on a B200."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A single released model family covering images and video, from 24M to 872M parameters, gives developers a practical default for depth. A caveat: the largest model runs at only 8 fps at 1080p."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.26603",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26603",
+    "code": "https://github.com/apple-aiml-research/ml-depth-pro-2"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 18,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 16,
+    "org": "Apple"
+   }
+  },
+  {
+   "id": "2611.21919",
+   "title": "ALOHA Lightning: Learning Fast and Precise Manipulation",
+   "authors": [
+    "John Hua Yao. Qi Wu",
+    "Yihuai Gao",
+    "Chelsea Finn",
+    "Zipeng Fu"
+   ],
+   "affiliations": [
+    "Stanford University"
+   ],
+   "announced": "2026-11-17T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics"
+   ],
+   "tldr": "ALOHA Lightning lets operators physically guide a two-armed robot at near-human speed, then trains policies that fold shorts or insert batteries about as fast as people, from 50 demonstrations per task.",
+   "why_selected": "Tackles robot speed, a practical bottleneck of imitation learning, with a simple full-stack system from Chelsea Finn's group.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Robots trained by imitating human demonstrations can now fold laundry and cook, but they move far slower than people. That limits their usefulness in kitchens, homes and any task done alongside humans. The authors trace the slowness to two causes: slow demonstrations and policies that become unstable when fast."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most demonstrations come from teleoperation, through leader arms, virtual-reality controllers or game pads. Delay and missing touch feedback make operators move slowly and carefully, so policies learn sluggish motions. Simply replaying a policy faster, by doubling controller frequency or skipping actions, breaks precise tasks."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Instead of a remote controller, operators grab handles on the robot's own grippers and move the arms directly, with gravity compensation making them feel light. This gives real-time vision, touch and sound, so demonstrations come at natural speed. Two tricks make learning work. First, the operator's hands appear in camera images during collection but not during deployment, so the system computes where the hands must be from the arm positions and blacks out those regions in both phases. Second, at speed, the jumps between consecutive predicted action chunks become jerky, so a test-time smoothing step blends each new chunk into the previous one."
+    },
+    {
+     "heading": "Results",
+     "body": "With 50 demonstrations per task and the ACT policy, the robot unstacks cups (90% success in 3.97 s), inserts a battery (85%, 5.70 s), buses a table (100%, 6.81 s) and folds shorts (100%, 5.94 s). A teleoperated baseline took 17.87 s for the battery at 55% success. A two-second toss and catch succeeded 50% of the time."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Speed, not just success rate, determines whether robots are worth deploying. This shows much of it can come from better data collection. Limits: masking hides useful cues near the hands, and the system has no touch sensing."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.21919",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21919"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 7,
+    "alphaxiv_hot_days": 3,
+    "notable_authors": [
+     "Chelsea Finn"
+    ]
+   }
+  }
+ ]
+}
