@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Thu, 19 Nov 2026 13:20:51 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 13:22:08 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>BepiColombo reaches Mercury after an eight-year voyage and prepares to become the second spacecraft ever to orbit it</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/2026-11-20-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/2026-11-20-n1</guid>
+    <pubDate>Fri, 20 Nov 2026 13:22:08 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>The European-Japanese BepiColombo mission has arrived at Mercury after more than eight years and is set to fire its thrusters to enter orbit, with science operations due to begin in April. (The Guardian, BBC News)</description>
+  </item>
+  <item>
+    <title>The US sells its first deep-sea mining leases, off American Samoa, to a single bidder days after a court faulted the review</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/2026-11-20-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/2026-11-20-n2</guid>
+    <pubDate>Fri, 20 Nov 2026 13:22:08 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>The Interior Department sold two seabed lease areas covering 31.5 million acres off American Samoa for the $6 million minimum, with one company bidding, three days after a judge found the wildlife review unlawful. (gCaptain, Yahoo News (AFP), Nature World News)</description>
+  </item>
+  <item>
+    <title>Physicists send a "practically unblockable" message through a brick wall by moving an elevator's counterweight and measuring its gravity</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/2026-11-20-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/2026-11-20-n3</guid>
+    <pubDate>Fri, 20 Nov 2026 13:22:08 +0000</pubDate>
+    <category>Science / Physics</category>
+    <description>University of Queensland physicists encoded the word "gravity" in the position of a 1.8-tonne elevator counterweight and read it through a wall with a gravimeter, at one bit per minute. (University of Queensland via EurekAlert!, The Guardian)</description>
+  </item>
+  <item>
+    <title>Quantum position verification with remote untrusted devices</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/doi-10-1038-s41586-026-11247-3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/doi-10-1038-s41586-026-11247-3</guid>
+    <pubDate>Fri, 20 Nov 2026 13:22:08 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>Using entangled photons and a loophole-free Bell test across a 195-metre network, NIST-led researchers certified that a remote party really sat in a target region, without trusting its hardware. (Gautam A. Kavuri, Yanbao Zhang, Abigail R. Gookin et al. · National Institute of Standards and Technology (NIST))</description>
+  </item>
+  <item>
+    <title>Quantum-classical separation in bounded-resource tasks arising from measurement contextuality</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/doi-10-1126-science-aec3042</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/doi-10-1126-science-aec3042</guid>
+    <pubDate>Fri, 20 Nov 2026 13:22:08 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>On a superconducting quantum processor, Google researchers used contextuality to win cooperative games and solve a structured problem at success rates no classical strategy can reach. (Google Quantum AI and CollaboratorsS. Kumar, E. Rosenberg, A. Grajales Dau et al. · Google Quantum AI)</description>
+  </item>
   <item>
     <title>Astronomers watch a Sun-like star spiral into a supergiant in Andromeda, with Webb confirming the merger</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-19/2026-11-19-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
     <category>Science / Astrophysics &amp; cosmology</category>
     <description>Applied to 106 X-ray-mapped galaxy clusters, Modified Newtonian Dynamics cuts the needed unseen mass 4 to 10 times, leaving a compact residual that could be dark ordinary matter. (Francoise Combesahttps://ror.org/00cpdar66Observatoire de Paris, Laboratoire d’étude de l’Univers et des phénomènes eXtrêmes, Collège de France et al. · Observatoire de Paris; Collège de France; CNRS)</description>
-  </item>
-  <item>
-    <title>Chandra finds a black hole or neutron star behind a star's repeating outbursts</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/2026-11-10-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/2026-11-10-n1</guid>
-    <pubDate>Tue, 10 Nov 2026 13:26:39 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>X-ray data show that a massive star that flares every 113 days is being stripped by a hidden black hole or neutron star, the first X-ray detection of this kind of erupting star. (NASA)</description>
-  </item>
-  <item>
-    <title>Global CO2 emissions are set to fall slightly in 2026, but mostly because of the Iran war's oil shock</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/2026-11-10-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/2026-11-10-n2</guid>
-    <pubDate>Tue, 10 Nov 2026 13:26:39 +0000</pubDate>
-    <category>Science / Climate &amp; Earth</category>
-    <description>The Global Carbon Budget projects fossil CO2 emissions down 0.4% to 38.2 billion tonnes in 2026, which its authors attribute largely to the oil shock from the Iran war rather than climate policy. (New Scientist, Phys.org)</description>
-  </item>
-  <item>
-    <title>Physicists image "ultraquantum" turbulence in a cloud of ultracold atoms</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/2026-11-10-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/2026-11-10-n3</guid>
-    <pubDate>Tue, 10 Nov 2026 13:26:39 +0000</pubDate>
-    <category>Science / Physics</category>
-    <description>A Cambridge team directly imaged tangled vortex lines in a turbulent quantum gas, and found it relaxes much like denser liquid helium does. (New Scientist, Physical Review Letters)</description>
-  </item>
-  <item>
-    <title>Scaling up chemical recycling: High-yield polyolefin pyrolysis to liquid hydrocarbons using iron single atom catalysts</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/doi-10-1126-sciadv-aeh0938</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/doi-10-1126-sciadv-aeh0938</guid>
-    <pubDate>Tue, 10 Nov 2026 13:26:39 +0000</pubDate>
-    <category>Science / Chemistry</category>
-    <description>An iron single-atom catalyst converts 97% of polyolefin plastic to liquid hydrocarbons with 94% yield, and works at kilogram scale. (Guo-Ping Lu, Xueping Zhang, Kai Xu et al.)</description>
-  </item>
-  <item>
-    <title>Revisiting the additionality and durability of carbon uptake in large-scale ocean iron fertilization</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/doi-10-1126-sciadv-aed1631</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-10/doi-10-1126-sciadv-aed1631</guid>
-    <pubDate>Tue, 10 Nov 2026 13:26:39 +0000</pubDate>
-    <category>Science / Climate science</category>
-    <description>Simulations suggest ocean iron fertilization removes carbon most durably in the Southern Ocean, but only about 30 petagrams of carbon over a century, less than earlier estimates. (Kyung-Min Noh, Xiao Liu, Charles Stock et al.)</description>
   </item>
 </channel>
 </rss>

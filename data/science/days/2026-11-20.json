@@ -1,0 +1,265 @@
+{
+ "date": "2026-11-20",
+ "edition": "weekday",
+ "generated_at": "2026-11-20T13:22:08+00:00",
+ "summary": "BepiColombo reaches Mercury, the US sells its first deep-sea mining leases, physicists send a message through a wall with gravity, and two quantum experiments turn textbook strangeness into measurable tasks.",
+ "news": [
+  {
+   "id": "2026-11-20-n1",
+   "story_key": "bepicolombo-arrives-mercury-orbit",
+   "title": "BepiColombo reaches Mercury after an eight-year voyage and prepares to become the second spacecraft ever to orbit it",
+   "category": "Space & Astronomy",
+   "published": "2026-11-19T19:01:00-05:00",
+   "tldr": "The European-Japanese BepiColombo mission has arrived at Mercury after more than eight years and is set to fire its thrusters to enter orbit, with science operations due to begin in April.",
+   "why_selected": "A major planetary mission milestone at the least-explored rocky planet, covered by several leading outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Mercury is the smallest planet and the closest to the Sun, and it remains poorly explored. Only two spacecraft have visited, both from NASA: Mariner 10 flew past three times in the 1970s, and Messenger orbited for four years from 2011. Reaching Mercury is hard because a spacecraft falling toward the Sun speeds up and must spend much of its journey braking to avoid shooting past."
+    },
+    {
+     "heading": "What happened",
+     "body": "BepiColombo, a joint mission of the European Space Agency (ESA) and the Japanese space agency JAXA, launched from French Guiana in 2018 and has now arrived after a trip of almost six billion miles. To slow down it looped once around Earth, twice around Venus and six times around Mercury; a propulsion problem added a year to the journey. Flight controllers plan to fire its thrusters on Saturday in a 37-minute manoeuvre to be captured into orbit, which would make it only the second mission ever to circle the planet. In early December the craft will split into two orbiters in different polar orbits. ESA's Mercury Planetary Orbiter will map the surface, composition and interior; the Japanese orbiter will study the magnetic field and the thin sodium exosphere, the tenuous layer of gas around the planet. The mission cost €1.6bn."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Mercury is only about 50% larger than the Moon but has four times its mass, implying an unusually large metal core. Leading ideas are that collisions stripped away much of its rocky mantle or that it formed in a metal-rich region. The mission will also study ice in permanently shadowed polar craters, the planet's magnetic field, and thousands of shallow \"hollows\" that look young, about 100,000 years old, and whose origin is unknown."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the orbit insertion succeeds this weekend, the separation of the two orbiters in December, and the start of science operations in April. The spacecraft are expected to work for about three years before running out of fuel and crashing into the surface."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo"
+    },
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/c39w9l4v1p9ro"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n2",
+   "story_key": "american-samoa-deep-sea-lease-sale-held",
+   "title": "The US sells its first deep-sea mining leases, off American Samoa, to a single bidder days after a court faulted the review",
+   "category": "Climate & Earth",
+   "published": "2026-11-19T15:24:00-05:00",
+   "tldr": "The Interior Department sold two seabed lease areas covering 31.5 million acres off American Samoa for the $6 million minimum, with one company bidding, three days after a judge found the wildlife review unlawful.",
+   "why_selected": "The first US offshore critical-minerals lease sale is a turning point for deep-sea mining, a field where the science of seabed ecosystems is still thin.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Mining companies want polymetallic nodules, potato-sized lumps on the deep ocean floor that contain nickel, copper, cobalt and manganese used in batteries. The deep sea is among the least understood places on Earth, and scientists warn of sediment plumes, noise and slow-growing animals that live on the nodules. The sale answered a request from the US company Impossible Metals. On Monday, Judge Jill Otake in Hawaii ruled that the National Marine Fisheries Service broke the Endangered Species Act in clearing it."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday the Interior Department's Marine Minerals Administration completed Pacific Mineral Lease Sale 1, selling two areas on the federal outer continental shelf about 150 to 240 miles east of Pago Pago, in water 4,630 to 20,100 feet deep. Each drew the $3 million minimum bid. According to the Associated Press, as reported by Nature World News, two bidders registered but only the startup Wetstone US Ventures bid, and an agency spokesperson said it had \"provisionally acquired\" both leases. Interior Secretary Doug Burgum called it a historic step for mineral security."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The leases do not allow mining. They give rights to preliminary work such as mapping and limited sampling, plus an exclusive chance to propose exploration and extraction, which would need further environmental review. They run for a 20-year primary term, with royalties of 2% rising to 5%. The areas lie near the Rose Atoll marine national monument. American Samoa banned deep-sea mining in its own waters in 2024, and its governor opposes commercial extraction."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Earthjustice says it will push for the leases to be voided, and three lawsuits are pending. The administration is also weighing lease sales near the Northern Mariana Islands and off Alaska and Virginia."
+    }
+   ],
+   "sources": [
+    {
+     "name": "gCaptain",
+     "url": "https://gcaptain.com/u-s-holds-historic-deep-sea-mining-lease-sale/"
+    },
+    {
+     "name": "Yahoo News (AFP)",
+     "url": "https://ca.news.yahoo.com/us-sells-first-deep-sea-052314572.html"
+    },
+    {
+     "name": "Nature World News",
+     "url": "https://www.natureworldnews.com/articles/73957/20261120/only-one-company-bid-us-auctions-its-first-deep-sea-mining-leases-off-american-samoa.htm"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n3",
+   "story_key": "uq-gravity-communication-elevator",
+   "title": "Physicists send a \"practically unblockable\" message through a brick wall by moving an elevator's counterweight and measuring its gravity",
+   "category": "Physics",
+   "published": "2026-11-18T14:00:00-05:00",
+   "tldr": "University of Queensland physicists encoded the word \"gravity\" in the position of a 1.8-tonne elevator counterweight and read it through a wall with a gravimeter, at one bit per minute.",
+   "why_selected": "A peer-reviewed proof of principle for a communication channel that ordinary matter cannot screen, explained clearly by the team.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Wireless communication uses electromagnetic waves, which walls, rock, water and tunnels block. Gravity cannot be screened by ordinary material: every mass pulls on every other, whatever lies between. Exotic channels such as neutrinos or gravitational waves have been proposed, but the authors note that producing a measurable signal with them is very difficult."
+    },
+    {
+     "heading": "What happened",
+     "body": "In a study published in Science Advances, a team at the University of Queensland used a 1950s elevator in the university's Parnell Building. Moving its 1.8-tonne counterweight between two floors represented binary 0 and 1. A gravimeter, an instrument that measures the strength of gravity, sat in an adjacent men's bathroom about 70 cm away through a brick wall and detected the tiny change in pull. A classical gravimeter works roughly like a mass on a spring whose bouncing rate shifts slightly when gravity changes. The team sent the word \"gravity\" in binary at one bit per minute, so the single word took nearly an hour. The idea grew out of a project to weigh trucks contactlessly from their gravitational pull."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The experiment shows that information can be encoded in a gravitational field and recovered on the other side of a barrier. Speed is the main limit: it depends on how big the mass is, how fast it moves and how sensitive the detector is. Co-author Matthew Davis said a practical use is hard to imagine for now, and noted that Voyager 1 sends data faster from a light-day away."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The team's modelling suggests that quantum gravity sensors, under what they call rather ambitious assumptions, could reach ranges of about 500 metres and roughly 15 bits per minute. Progress in quantum gravimeters will decide whether the idea ever becomes useful, for example underground."
+    }
+   ],
+   "sources": [
+    {
+     "name": "University of Queensland via EurekAlert!",
+     "url": "https://www.eurekalert.org/news-releases/1152152"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/science/2026/nov/20/scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11247-3",
+   "title": "Quantum position verification with remote untrusted devices",
+   "authors": [
+    "Gautam A. Kavuri",
+    "Yanbao Zhang",
+    "Abigail R. Gookin",
+    "Soumyadip Patra",
+    "Joshua C. Bienfang",
+    "Honghao Fu",
+    "Yusuf Alnawakhtha",
+    "Dileep V. Reddy",
+    "Michael D. Mazurek",
+    "Carlos Abellán",
+    "Waldimar Amaya",
+    "Morgan W. Mitchell",
+    "Carl A. Miller",
+    "Richard P. Mirin",
+    "Martin J. Stevens",
+    "Scott Glancy",
+    "Emanuel Knill",
+    "Lynden K. Shalm"
+   ],
+   "affiliations": [
+    "National Institute of Standards and Technology (NIST)"
+   ],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics"
+   ],
+   "tldr": "Using entangled photons and a loophole-free Bell test across a 195-metre network, NIST-led researchers certified that a remote party really sat in a target region, without trusting its hardware.",
+   "why_selected": "The first complete demonstration of quantum position verification, a long-sought cryptographic primitive, in Nature.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Many systems would benefit from proving where a remote party is, for example that a wire-transfer command really comes from a secure terminal at company headquarters. Classical methods time light-speed signals, but an adversary who knows the devices can intercept and relay signals to fake a location. In classical physics, secure localization is fundamentally impossible."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Today's workarounds authenticate position with secret keys or tamper-proof hardware, which fail if keys leak or hardware is broken. Quantum proposals use signals that cannot be copied, but earlier schemes tolerated little photon loss, relied on unrealistic assumptions or required trusting quantum devices, and none had been demonstrated unconditionally."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Two verifiers send random numbers timed to arrive together at the claimed location. The prover uses them to choose how to measure the polarization of one photon from an entangled pair, and reports the result. Only someone inside the target region can receive both numbers and answer in time, because nothing travels faster than light. Colluders outside the region would have to copy and share quantum information, which the no-cloning theorem forbids. The verifiers then check whether the results pass a loophole-free Bell test, which shows correlations stronger than classical physics allows. Passing it certifies the position and that the devices behaved, so the hardware need not be trusted. Security holds against adversaries with unlimited computing power who share no entanglement beforehand, and an extended version tolerates a small amount."
+    },
+    {
+     "heading": "Results",
+     "body": "The verifiers stood 195.1 metres apart on NIST's Boulder campus and ran 335 protocol instances over two days. The certified region was 2.47 times smaller than the best classical localization protocol, and 4.53 times smaller than a classical protocol with identical latencies. NIST's superconducting nanowire detectors, which capture nearly every photon, were essential."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work ties digital security to physical location. The main caveat is that security assumes adversaries share very little prior entanglement, and NIST says real-world use is likely a decade or more away."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11247-3",
+    "doi": "https://doi.org/10.1038/s41586-026-11247-3"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aec3042",
+   "title": "Quantum-classical separation in bounded-resource tasks arising from measurement contextuality",
+   "authors": [
+    "Google Quantum AI and CollaboratorsS. Kumar",
+    "E. Rosenberg",
+    "A. Grajales Dau",
+    "R. G. Cortiñas",
+    "D. Maslov",
+    "R. Oliver",
+    "A. Zalcman",
+    "M. Neeley",
+    "A. Pagano",
+    "A. Szasz",
+    "I. Drozdov",
+    "Z. Minev",
+    "C. Gidney",
+    "N. Yosri",
+    "S. J. de Graaf",
+    "A. Maiti",
+    "D. Abanin",
+    "R. Acharya",
+    "L. Aghababaie Beni",
+    "G. Aigeldinger",
+    "R. Alcaraz",
+    "S. Alcaraz",
+    "T. I. Andersen",
+    "M. Ansmann",
+    "F. Arute",
+    "K. Arya",
+    "W. Askew",
+    "N. Astrakhantsev",
+    "J. Atalaya",
+    "R. Babbush"
+   ],
+   "affiliations": [
+    "Google Quantum AI"
+   ],
+   "announced": "2026-11-19T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics"
+   ],
+   "tldr": "On a superconducting quantum processor, Google researchers used contextuality to win cooperative games and solve a structured problem at success rates no classical strategy can reach.",
+   "why_selected": "Measures a provable quantum-classical gap on real hardware and links it to a specific quantum resource, published in Science.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Quantum computers are expected to beat classical ones on some tasks, but no unconditional proof of quantum advantage exists for general computation. A few tasks with bounded resources do have provable gaps, yet these had not been measured directly on hardware. It is also unclear which quantum feature is the real computational resource."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Entanglement is well understood as a resource for quantum communication. Some theorists argue that contextuality is the key resource for computation, but it has seen few experiments, mostly with very few particles, and its role in many-particle systems is poorly understood."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Contextuality means a quantum measurement's outcome is not fixed in advance but depends on which other compatible measurements are made with it. It can be turned into \"pseudo-telepathy\" games. In the magic square game, a referee gives Alice a row and Bob a column of a 3x3 grid; each must fill in plus or minus ones so Alice's row multiplies to +1 and Bob's column to -1, and they win if they agree on the shared cell. Any pre-agreed classical table is self-contradictory, so the best classical strategy wins 8 in 9 times. Players sharing entangled qubits can, in principle, always win. The team played this game on four qubits, then scaled up to a many-player game and a two-dimensional \"hidden linear function\" problem."
+    },
+    {
+     "heading": "Results",
+     "body": "Each of the nine magic-square games was played 100,000 times, giving an average win rate of 0.9830, above the classical 0.889 bound. The processor also exceeded classical success rates in the many-player game and in the hidden linear function problem, and the team quantified contextuality through a violation of a Kochen-Specker-Bell inequality."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The experiments turn a foundational puzzle into a measurable benchmark of how quantum a processor really is. The caveat is that these separations hold for specially designed, resource-limited tasks, not for useful general computation."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aec3042",
+    "doi": "https://doi.org/10.1126/science.aec3042"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

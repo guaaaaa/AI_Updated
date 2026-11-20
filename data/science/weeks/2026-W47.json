@@ -3,7 +3,7 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [
   {
@@ -13,15 +13,15 @@
    "covered": null
   },
   {
-   "title": "After 49 years, Nasa’s Voyager 1 is one light-day away from us. Can we save this ‘pale blue dot’? |",
+   "title": "After 49 Years, Voyager 1 Is a Mind-Blowing One Light-Day From Earth",
    "outlets": 3,
    "date": "2026-11-18",
    "covered": "2026-11-18-n1"
   }
  ],
  "featured": {
-  "news": 7,
-  "papers": 10
+  "news": 10,
+  "papers": 12
  },
  "items": [
   {
@@ -125,6 +125,36 @@
    "date": "2026-11-19",
    "type": "paper",
    "title": "Unblockable communication with gravity"
+  },
+  {
+   "id": "2026-11-20-n1",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "BepiColombo reaches Mercury after an eight-year voyage and prepares to become the second spacecraft ever to orbit it"
+  },
+  {
+   "id": "2026-11-20-n2",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "The US sells its first deep-sea mining leases, off American Samoa, to a single bidder days after a court faulted the review"
+  },
+  {
+   "id": "2026-11-20-n3",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "Physicists send a \"practically unblockable\" message through a brick wall by moving an elevator's counterweight and measuring its gravity"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11247-3",
+   "date": "2026-11-20",
+   "type": "paper",
+   "title": "Quantum position verification with remote untrusted devices"
+  },
+  {
+   "id": "doi-10-1126-science-aec3042",
+   "date": "2026-11-20",
+   "type": "paper",
+   "title": "Quantum-classical separation in bounded-resource tasks arising from measurement contextuality"
   }
  ]
 }

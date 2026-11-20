@@ -1,5 +1,60 @@
 [
  {
+  "id": "2026-11-20-n1",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "BepiColombo reaches Mercury after an eight-year voyage and prepares to become the second spacecraft ever to orbit it",
+  "tldr": "The European-Japanese BepiColombo mission has arrived at Mercury after more than eight years and is set to fire its thrusters to enter orbit, with science operations due to begin in April.",
+  "category": "Space & Astronomy",
+  "byline": "The Guardian, BBC News"
+ },
+ {
+  "id": "2026-11-20-n2",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "The US sells its first deep-sea mining leases, off American Samoa, to a single bidder days after a court faulted the review",
+  "tldr": "The Interior Department sold two seabed lease areas covering 31.5 million acres off American Samoa for the $6 million minimum, with one company bidding, three days after a judge found the wildlife review unlawful.",
+  "category": "Climate & Earth",
+  "byline": "gCaptain, Yahoo News (AFP), Nature World News"
+ },
+ {
+  "id": "2026-11-20-n3",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "Physicists send a \"practically unblockable\" message through a brick wall by moving an elevator's counterweight and measuring its gravity",
+  "tldr": "University of Queensland physicists encoded the word \"gravity\" in the position of a 1.8-tonne elevator counterweight and read it through a wall with a gravimeter, at one bit per minute.",
+  "category": "Physics",
+  "byline": "University of Queensland via EurekAlert!, The Guardian"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11247-3",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "Quantum position verification with remote untrusted devices",
+  "tldr": "Using entangled photons and a loophole-free Bell test across a 195-metre network, NIST-led researchers certified that a remote party really sat in a target region, without trusting its hardware.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics"
+  ],
+  "byline": "Gautam A. Kavuri, Yanbao Zhang, Abigail R. Gookin et al. · National Institute of Standards and Technology (NIST)",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1126-science-aec3042",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "Quantum-classical separation in bounded-resource tasks arising from measurement contextuality",
+  "tldr": "On a superconducting quantum processor, Google researchers used contextuality to win cooperative games and solve a structured problem at success rates no classical strategy can reach.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics"
+  ],
+  "byline": "Google Quantum AI and CollaboratorsS. Kumar, E. Rosenberg, A. Grajales Dau et al. · Google Quantum AI",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
   "id": "2026-11-19-n1",
   "date": "2026-11-19",
   "type": "news",
