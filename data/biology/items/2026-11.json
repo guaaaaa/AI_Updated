@@ -1,5 +1,68 @@
 [
  {
+  "id": "2026-11-20-n1",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "A daily KRAS-blocking pill plus chemotherapy stops tumour growth in 90% of patients with advanced pancreatic cancer in an early trial",
+  "tldr": "In a 61-patient phase 1/2 trial, daraxonrasib plus standard chemotherapy shrank tumours in just over 60% of people newly diagnosed with metastatic pancreatic cancer; 76.6% were alive at one year.",
+  "category": "Clinical Research",
+  "byline": "BBC News, The Guardian"
+ },
+ {
+  "id": "2026-11-20-n2",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "FDA grants accelerated approval to GSK's Nelkarmi for ALK-positive lung cancer that has outgrown earlier drugs",
+  "tldr": "The FDA cleared neladalkib, a daily pill, for advanced ALK-positive non-small cell lung cancer after earlier ALK inhibitors stop working, based on response rates of 49% and 32% in a 222-patient trial.",
+  "category": "Drugs & Approvals",
+  "byline": "pharmaphorum, chemXplore"
+ },
+ {
+  "id": "doi-10-1056-nejmoa2610676",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "Retatrutide Once Weekly in Adults with Knee Osteoarthritis Pain and Obesity",
+  "tldr": "In two phase 3 trials with 1,019 adults with obesity and painful knee osteoarthritis, weekly retatrutide injections cut pain scores and body weight significantly more than placebo, with more serious side effects.",
+  "primary_tag": "Metabolic & endocrine",
+  "tags": [
+   "Metabolic & endocrine",
+   "Drug development"
+  ],
+  "byline": "Thomas J. Schnitzer David J. Hunter Philip G. Conaghan Arya M. Sharma Sue D. Pedersen Kaiyi Chen So Young Park Nune Makarova Kathryn Giblin and Tammy Forresterthe TRIUMPH-4 and TRIUMPH-1-OA Investigators* · Northwestern University Feinberg School of Medicine; University of Sydney; University of Leeds; University of Alberta; University of Calgary; Eli Lilly and Company",
+  "hf": null,
+  "venue": "The New England Journal of Medicine"
+ },
+ {
+  "id": "doi-10-1126-science-ael0508",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "A DNA Typewriter records the cell lineage history of a mouse, from zygote to late organogenesis",
+  "tldr": "A DNA recorder inserted into a fertilized mouse egg wrote an ordered log of cell divisions into the genome, letting researchers rebuild a mouse embryo's cell family tree from the first division to organ formation.",
+  "primary_tag": "Development & aging",
+  "tags": [
+   "Development & aging",
+   "Genetics & genomics"
+  ],
+  "byline": "Qi Yu, Haedong Kim, Sophie Seidel et al. · University of Washington School of Medicine; Howard Hughes Medical Institute; Dartmouth College",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1016-j-cell-2026-10-023",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "Spatial transcriptomics reveals molecular organization of human and nonhuman primate basal ganglia",
+  "tldr": "Mapping where each cell type sits in the basal ganglia of humans, macaques and marmosets, researchers found a highly stereotyped layout shared across primates and often with mice, with gene gradients laid over discrete compartments.",
+  "primary_tag": "Neuroscience",
+  "tags": [
+   "Neuroscience",
+   "Genetics & genomics"
+  ],
+  "byline": "Madeleine N. Hewitt, Meghan A. Turner, Nelson Johansen et al. · Allen Institute for Brain Science; Princeton Neuroscience Institute; Leiden University Medical Center; Delft University of Technology; The Rockefeller University; Massachusetts Institute of Technology; Washington University in St. Louis; RIKEN; Kyoto University; University of Washington",
+  "hf": null,
+  "venue": "Cell"
+ },
+ {
   "id": "2026-11-19-n1",
   "date": "2026-11-19",
   "type": "news",

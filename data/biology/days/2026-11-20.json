@@ -1,0 +1,277 @@
+{
+ "date": "2026-11-20",
+ "edition": "weekday",
+ "generated_at": "2026-11-20T13:53:30+00:00",
+ "summary": "A KRAS-blocking pill plus chemotherapy controls advanced pancreatic cancer in nine of ten trial patients, the FDA clears a new ALK inhibitor for lung cancer, and papers on retatrutide for knee pain, a DNA recorder that traces a mouse's cell family tree, and a cross-primate map of the basal ganglia.",
+ "news": [
+  {
+   "id": "2026-11-20-n1",
+   "story_key": "daraxonrasib-chemo-first-line-pancreatic-phase1-2-eortc-2026",
+   "title": "A daily KRAS-blocking pill plus chemotherapy stops tumour growth in 90% of patients with advanced pancreatic cancer in an early trial",
+   "category": "Clinical Research",
+   "published": "2026-11-19T19:08:00-05:00",
+   "tldr": "In a 61-patient phase 1/2 trial, daraxonrasib plus standard chemotherapy shrank tumours in just over 60% of people newly diagnosed with metastatic pancreatic cancer; 76.6% were alive at one year.",
+   "why_selected": "Pancreatic cancer has the worst outlook of the common cancers, and these early results for drugging KRAS were presented at a major cancer meeting with unusually broad expert attention.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Pancreatic cancer is among the deadliest cancers. Only about 3% of patients survive five years once it has spread to other organs, and chemotherapy usually shrinks tumours only briefly. Most of these cancers carry mutations in RAS genes, such as KRAS, that drive tumour growth, a little like an accelerator stuck down. These proteins have long been described as \"undruggable\"."
+    },
+    {
+     "heading": "What happened",
+     "body": "Dr Wungki Park of Memorial Sloan Kettering Cancer Center presented results at the EORTC-NCI-AACR Symposium on Molecular Targets and Cancer Therapeutics in Barcelona, reported by the BBC late on November 19. In a phase 1/2 trial, 61 people recently diagnosed with metastatic pancreatic cancer took daraxonrasib, a daily pill that locks onto mutated RAS proteins and switches them off, together with the chemotherapy drugs gemcitabine and nab-paclitaxel. After a median follow-up of 18 months, tumours stopped growing in 90% of patients, shrank or disappeared in just over 60%, and became undetectable on CT scans in about 8%, or one in 12. At one year 76.6% were alive; the Guardian notes that 40-45% of patients usually survive a year on chemotherapy alone."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Cancer Research UK called it the biggest leap forward in decades for the disease. The drug, which the BBC reports is already approved in the US, targets the mutation that drives most pancreatic cancers, and similar mutations occur in lung, ovarian and other cancers. The main caveat is the design: this was a small, early trial with no randomized comparison group, so the one-year survival figure is set against historical results rather than a control arm. Doctors stress it is not a cure and that it is unclear how long the disease stays controlled."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Longer follow-up, and randomized trials that test whether adding daraxonrasib to chemotherapy lengthens overall survival in newly diagnosed patients."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/cqrmgjnzz9l0o"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n2",
+   "story_key": "fda-neladalkib-nelkarmi-alk-nsclc-accelerated-approval",
+   "title": "FDA grants accelerated approval to GSK's Nelkarmi for ALK-positive lung cancer that has outgrown earlier drugs",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-17T13:30:00-05:00",
+   "tldr": "The FDA cleared neladalkib, a daily pill, for advanced ALK-positive non-small cell lung cancer after earlier ALK inhibitors stop working, based on response rates of 49% and 32% in a 222-patient trial.",
+   "why_selected": "A new option for a lung cancer that often affects younger patients and eventually resists existing targeted drugs, backed by response data that includes brain metastases.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In ALK-positive non-small cell lung cancer (NSCLC), an altered ALK gene drives tumour growth. Patients are often younger and can stay on pills called ALK inhibitors, such as Roche's alectinib, for years, but tumours can develop resistance to these drugs. Once the available inhibitors fail, patients are largely left with chemotherapy."
+    },
+    {
+     "heading": "What happened",
+     "body": "The US Food and Drug Administration granted accelerated approval to GSK's Nelkarmi (neladalkib) for adults with locally advanced or metastatic ALK-positive NSCLC who have received either alectinib as their only ALK inhibitor, or at least two ALK inhibitors plus platinum-based chemotherapy. The decision rests on the phase 1/2 ALKOVE-1 trial of 222 previously treated patients. The confirmed response rate was 49% (33 of 67) after alectinib alone and 32% (50 of 155) in the more heavily treated group; about half of responders in each group stayed in response for at least 12 months. Among patients with measurable brain metastases, tumours in the brain responded in 55% and 26%, respectively."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Neladalkib was designed to treat tumours that have become resistant to other drugs in its class, and it is thought to penetrate the central nervous system better. It is the second lung cancer drug GSK has gained from its $10.6 billion purchase of Nuvalent. The approval is accelerated: it rests on tumour response rates in an early-phase trial, not on proof of longer survival. The most common side effects included liver toxicity, muscle and bone pain, constipation, altered taste, nerve damage, swelling and fatigue; 5% of patients stopped permanently because of side effects, most often liver toxicity."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The phase 3 ALKAZAR trial, which compares neladalkib with alectinib in patients who have not yet had an ALK inhibitor, including those whose cancer has reached the brain."
+    }
+   ],
+   "sources": [
+    {
+     "name": "pharmaphorum",
+     "url": "https://pharmaphorum.com/news/gsk-gets-second-cancer-drug-approval-nuvalent-buy"
+    },
+    {
+     "name": "chemXplore",
+     "url": "https://chemxplore.com/news/nelkarmi-neladalkib-fda-approval"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2610676",
+   "title": "Retatrutide Once Weekly in Adults with Knee Osteoarthritis Pain and Obesity",
+   "authors": [
+    "Thomas J. Schnitzer David J. Hunter Philip G. Conaghan Arya M. Sharma Sue D. Pedersen Kaiyi Chen So Young Park Nune Makarova Kathryn Giblin and Tammy Forresterthe TRIUMPH-4 and TRIUMPH-1-OA Investigators*"
+   ],
+   "affiliations": [
+    "Northwestern University Feinberg School of Medicine; University of Sydney; University of Leeds; University of Alberta; University of Calgary; Eli Lilly and Company"
+   ],
+   "announced": "2026-11-08T00:00:00-05:00",
+   "primary_tag": "Metabolic & endocrine",
+   "tags": [
+    "Metabolic & endocrine",
+    "Drug development"
+   ],
+   "tldr": "In two phase 3 trials with 1,019 adults with obesity and painful knee osteoarthritis, weekly retatrutide injections cut pain scores and body weight significantly more than placebo, with more serious side effects.",
+   "why_selected": "Knee osteoarthritis is common and hard to treat, and two replicated, randomized phase 3 trials of a triple-acting obesity drug show a measurable effect on pain as well as weight.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Knee osteoarthritis is a progressive joint disease whose pain limits daily life for many people. Obesity raises the risk of getting it and of it getting worse: each pound of body weight lost is associated with roughly four times less load across the knee. But losing enough weight is hard, and current pain drugs give modest relief."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Guidelines combine weight loss and exercise with anti-inflammatory painkillers, injections into the joint, and surgery, which can bring limited tolerability and safety problems. A previous study of semaglutide, a GLP-1 obesity drug, suggested it improved knee osteoarthritis pain, raising the question of whether stronger obesity drugs could do more."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Retatrutide is an experimental weekly injection that activates three hormone receptors at once: those for GLP-1, GIP and glucagon. GLP-1 drugs such as semaglutide already act on just one of them. The researchers ran two randomized, double-blind phase 3 trials in North America, Europe and Australia, enrolling adults without diabetes who had moderate to severe knee pain, X-ray evidence of osteoarthritis and a body mass index of at least 27. TRIUMPH-4 (445 people, 68 weeks) tested 9 mg and 12 mg doses against placebo; TRIUMPH-1-OA (574 people, 80 weeks) added a 4 mg dose. Pain was scored on the WOMAC scale from 0 to 10. Running two trials tests whether the result replicates."
+    },
+    {
+     "heading": "Results",
+     "body": "In TRIUMPH-4, pain scores fell by 3.96 points on 9 mg and 3.74 on 12 mg, against 2.12 on placebo (differences of 1.83 and 1.61 points). Body weight fell 20.0% and 23.7%, against 4.6% on placebo. In TRIUMPH-1-OA, pain fell 3.22 to 3.64 points across doses, against 1.87 on placebo."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The pain benefit replicated across two independent trials, pointing to obesity drugs as a possible treatment for joint symptoms. The caveats: serious adverse events were more common with retatrutide than placebo, gastrointestinal effects were most frequent, and Eli Lilly funded both trials."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2610676",
+    "doi": "https://doi.org/10.1056/NEJMoa2610676"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-ael0508",
+   "title": "A DNA Typewriter records the cell lineage history of a mouse, from zygote to late organogenesis",
+   "authors": [
+    "Qi Yu",
+    "Haedong Kim",
+    "Sophie Seidel",
+    "James F. Acosta-Clark",
+    "Beth K. Martin",
+    "Kyle O’Connor",
+    "Riza M. Daza",
+    "Molly Gasperini",
+    "Jenny F. Nathans",
+    "Maggie Lam",
+    "Elena Gamo",
+    "Shruthi VijayKumar",
+    "Lauren Kuo",
+    "Jean-Benoît Lalanne",
+    "Kamen P. Simeonov",
+    "Marion Pepper",
+    "Cole Trapnell",
+    "Jesse M. Gray",
+    "Junhong Choi",
+    "Chengxiang Qiu",
+    "Jay Shendure"
+   ],
+   "affiliations": [
+    "University of Washington School of Medicine; Howard Hughes Medical Institute; Dartmouth College"
+   ],
+   "announced": "2026-11-19T00:00:00-05:00",
+   "primary_tag": "Development & aging",
+   "tags": [
+    "Development & aging",
+    "Genetics & genomics"
+   ],
+   "tldr": "A DNA recorder inserted into a fertilized mouse egg wrote an ordered log of cell divisions into the genome, letting researchers rebuild a mouse embryo's cell family tree from the first division to organ formation.",
+   "why_selected": "Tracing every cell's ancestry has been possible in a transparent worm since 1983 but not in mammals; this proof of principle opens the way to studying how organs form and how development goes wrong.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A mammal grows from a single fertilized egg into an animal with many cell types, but this happens inside the uterus, where embryos cannot be continuously watched. So it has been hard to know which cells descend from which, and when each lineage commits to becoming blood, retina or skin."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Live imaging works only in transparent tissue, and genomic measurements destroy the cell and capture a single moment. Earlier DNA-based lineage tracers often relied on enzymes that cut DNA, which could damage cells, erase earlier records, run out of recording space, or leave marks whose order had to be guessed."
+    },
+    {
+     "heading": "Key idea",
+     "body": "DNA Typewriter, developed by Jay Shendure and Junhong Choi, uses a cell's own DNA as recording tape. The team redesigned the tape so its history is easier to read from single cells and inserted it into the genome of a fertilized mouse egg. As cells divide, the system writes short marks onto the tape in strict order, without fully severing the DNA. Daughter cells inherit everything written so far and then add their own marks, much like copies of a diary that keep getting new entries. Comparing the shared and unique entries across cells reveals common ancestry and the order in which branches split."
+    },
+    {
+     "heading": "Results",
+     "body": "The experiment was attempted in 100 fertilized eggs and yielded 10 embryos for examination. In the most informative one, nearly every profiled cell could be traced back to one of the first two cells. One of those two produced more descendants, but both generated diverse cell types in nearly equal proportions. Blood and retinal cells committed relatively early; cells of the skin's outer layer committed later."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Cell identity is not fixed in one coordinated step: lineages become restricted on different schedules. A companion Cell study traced 1.4 million cells in 16 embryos. The main caveat is scale: the detailed record comes largely from a single embryo."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.ael0508",
+    "doi": "https://doi.org/10.1126/science.ael0508"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1016-j-cell-2026-10-023",
+   "title": "Spatial transcriptomics reveals molecular organization of human and nonhuman primate basal ganglia",
+   "authors": [
+    "Madeleine N. Hewitt",
+    "Meghan A. Turner",
+    "Nelson Johansen",
+    "Delissa A. McMillen",
+    "Shu Dan",
+    "Michael DeBerardine",
+    "Augustin Ruiz",
+    "Mike Huang",
+    "Jacob Quon",
+    "Yuanyuan Fu",
+    "Inkar Kapen",
+    "Stuard Barta",
+    "Naomi Martin",
+    "Nasmil Valera Cuevas",
+    "Paul Olsen",
+    "Josh Nagra",
+    "Jazmin Campos",
+    "Marshall M. VanNess",
+    "Shea Ransford",
+    "Zoe Juneau",
+    "Sam Hastings",
+    "Lindsey Ching",
+    "Michael Kunst",
+    "Soumyadeep Basu",
+    "Thomas Höllt",
+    "Chang Li",
+    "Boudewijn Lelieveldt",
+    "Faraz Yazdani",
+    "Qiangge Zhang",
+    "Kirsten Levandowski"
+   ],
+   "affiliations": [
+    "Allen Institute for Brain Science; Princeton Neuroscience Institute; Leiden University Medical Center; Delft University of Technology; The Rockefeller University; Massachusetts Institute of Technology; Washington University in St. Louis; RIKEN; Kyoto University; University of Washington"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Neuroscience",
+   "tags": [
+    "Neuroscience",
+    "Genetics & genomics"
+   ],
+   "tldr": "Mapping where each cell type sits in the basal ganglia of humans, macaques and marmosets, researchers found a highly stereotyped layout shared across primates and often with mice, with gene gradients laid over discrete compartments.",
+   "why_selected": "The basal ganglia are central to movement, reward and diseases such as Parkinson's and Huntington's, and this spatial atlas is a shared reference from a coordinated 28-paper effort.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "The basal ganglia are a set of deep brain structures, including the striatum, globus pallidus, subthalamic nucleus and substantia nigra, that help control movement, decisions and reward. They are implicated in Parkinson's disease, Huntington's disease and addiction. Yet how their cells are organized in primates, whose basal ganglia differ from those of rodents, was poorly mapped."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Rodent basal ganglia have detailed anatomical and functional maps. Single-cell sequencing has begun to catalogue primate cell types, but it requires breaking tissue into individual cells, which loses information about where each cell sat. That missing location data is needed to link cell types to the region's well-known layout."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Spatial transcriptomics reads which genes are active in cells while they are still in place in a thin slice of tissue, like adding street addresses to a census. The team imaged nearly 100 slices across the full front-to-back extent of the basal ganglia in humans, rhesus macaques and common marmosets, measuring panels of up to 300 genes, then matched each cell to a shared cross-species catalogue of cell types. The work is part of a package of 28 papers from the BRAIN Initiative Cell Atlas Network."
+    },
+    {
+     "heading": "Results",
+     "body": "In the preprint version, the atlas covers more than eight million cells, over one million in each species. Cells are organized into discrete domains, while gene-expression gradients run across whole structures such as the striatum. The internal globus pallidus has cell-type-specific core and shell compartments that are also found in mice."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The conserved layout suggests that findings in animal models can often carry over to the human basal ganglia, and the openly shared data give labs a common reference. The caveat: it shows where cell types sit, not what each one does."
+    }
+   ],
+   "links": {
+    "paper": "https://www.cell.com/cell/fulltext/S0092-8674(26)01273-0?rss=yes",
+    "doi": "https://doi.org/10.1016/j.cell.2026.10.023"
+   },
+   "signals": {
+    "venue": "Cell",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

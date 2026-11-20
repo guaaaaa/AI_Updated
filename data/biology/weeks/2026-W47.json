@@ -3,7 +3,7 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [
   {
@@ -14,7 +14,7 @@
   },
   {
    "title": "US FDA approves Roche's oral treatment for advanced breast cancer",
-   "outlets": 5,
+   "outlets": 6,
    "date": "2026-11-16",
    "covered": "2026-11-17-n1"
   },
@@ -35,11 +35,23 @@
    "outlets": 4,
    "date": "2026-11-17",
    "covered": null
+  },
+  {
+   "title": "AriBio’s repurposed erectile dysfunction drug for Alzheimer’s yields tepid results",
+   "outlets": 3,
+   "date": "2026-11-16",
+   "covered": null
+  },
+  {
+   "title": "US FDA approves Regeneron's drug for generalized myasthenia gravis",
+   "outlets": 3,
+   "date": "2026-11-18",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 11,
-  "papers": 10
+  "news": 13,
+  "papers": 13
  },
  "items": [
   {
@@ -167,6 +179,36 @@
    "date": "2026-11-19",
    "type": "paper",
    "title": "Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease: The NOPARK Randomized Clinical Trial"
+  },
+  {
+   "id": "2026-11-20-n1",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "A daily KRAS-blocking pill plus chemotherapy stops tumour growth in 90% of patients with advanced pancreatic cancer in an early trial"
+  },
+  {
+   "id": "2026-11-20-n2",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "FDA grants accelerated approval to GSK's Nelkarmi for ALK-positive lung cancer that has outgrown earlier drugs"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2610676",
+   "date": "2026-11-20",
+   "type": "paper",
+   "title": "Retatrutide Once Weekly in Adults with Knee Osteoarthritis Pain and Obesity"
+  },
+  {
+   "id": "doi-10-1126-science-ael0508",
+   "date": "2026-11-20",
+   "type": "paper",
+   "title": "A DNA Typewriter records the cell lineage history of a mouse, from zygote to late organogenesis"
+  },
+  {
+   "id": "doi-10-1016-j-cell-2026-10-023",
+   "date": "2026-11-20",
+   "type": "paper",
+   "title": "Spatial transcriptomics reveals molecular organization of human and nonhuman primate basal ganglia"
   }
  ]
 }

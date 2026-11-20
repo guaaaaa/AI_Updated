@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/biology</link>
   <description>Life sciences: discoveries, medicine and biotech</description>
   <language>en</language>
-  <lastBuildDate>Thu, 19 Nov 2026 13:54:23 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 13:53:30 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/biology.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>A daily KRAS-blocking pill plus chemotherapy stops tumour growth in 90% of patients with advanced pancreatic cancer in an early trial</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/2026-11-20-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/2026-11-20-n1</guid>
+    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
+    <category>Biology / Clinical Research</category>
+    <description>In a 61-patient phase 1/2 trial, daraxonrasib plus standard chemotherapy shrank tumours in just over 60% of people newly diagnosed with metastatic pancreatic cancer; 76.6% were alive at one year. (BBC News, The Guardian)</description>
+  </item>
+  <item>
+    <title>FDA grants accelerated approval to GSK's Nelkarmi for ALK-positive lung cancer that has outgrown earlier drugs</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/2026-11-20-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/2026-11-20-n2</guid>
+    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
+    <category>Biology / Drugs &amp; Approvals</category>
+    <description>The FDA cleared neladalkib, a daily pill, for advanced ALK-positive non-small cell lung cancer after earlier ALK inhibitors stop working, based on response rates of 49% and 32% in a 222-patient trial. (pharmaphorum, chemXplore)</description>
+  </item>
+  <item>
+    <title>Retatrutide Once Weekly in Adults with Knee Osteoarthritis Pain and Obesity</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1056-nejmoa2610676</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1056-nejmoa2610676</guid>
+    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
+    <category>Biology / Metabolic &amp; endocrine</category>
+    <description>In two phase 3 trials with 1,019 adults with obesity and painful knee osteoarthritis, weekly retatrutide injections cut pain scores and body weight significantly more than placebo, with more serious side effects. (Thomas J. Schnitzer David J. Hunter Philip G. Conaghan Arya M. Sharma Sue D. Pedersen Kaiyi Chen So Young Park Nune Makarova Kathryn Giblin and Tammy Forresterthe TRIUMPH-4 and TRIUMPH-1-OA Investigators* · Northwestern University Feinberg School of Medicine; University of Sydney; University of Leeds; University of Alberta; University of Calgary; Eli Lilly and Company)</description>
+  </item>
+  <item>
+    <title>A DNA Typewriter records the cell lineage history of a mouse, from zygote to late organogenesis</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1126-science-ael0508</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1126-science-ael0508</guid>
+    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
+    <category>Biology / Development &amp; aging</category>
+    <description>A DNA recorder inserted into a fertilized mouse egg wrote an ordered log of cell divisions into the genome, letting researchers rebuild a mouse embryo's cell family tree from the first division to organ formation. (Qi Yu, Haedong Kim, Sophie Seidel et al. · University of Washington School of Medicine; Howard Hughes Medical Institute; Dartmouth College)</description>
+  </item>
+  <item>
+    <title>Spatial transcriptomics reveals molecular organization of human and nonhuman primate basal ganglia</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1016-j-cell-2026-10-023</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1016-j-cell-2026-10-023</guid>
+    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
+    <category>Biology / Neuroscience</category>
+    <description>Mapping where each cell type sits in the basal ganglia of humans, macaques and marmosets, researchers found a highly stereotyped layout shared across primates and often with mice, with gene gradients laid over discrete compartments. (Madeleine N. Hewitt, Meghan A. Turner, Nelson Johansen et al. · Allen Institute for Brain Science; Princeton Neuroscience Institute; Leiden University Medical Center; Delft University of Technology; The Rockefeller University; Massachusetts Institute of Technology; Washington University in St. Louis; RIKEN; Kyoto University; University of Washington)</description>
+  </item>
   <item>
     <title>FDA approves venglustat, the first treatment for the neurological symptoms of type 3 Gaucher disease</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/2026-11-19-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
     <category>Biology / Genetics &amp; Genomics</category>
     <description>A Pitt-led analysis of nearly 100,000 genomes found every participant carried at least one drug-relevant variant (median nine), 24.4% had been prescribed an affected drug, and over 17,000 variants were new. (University of Pittsburgh via Medical Xpress, STAT, Science Translational Medicine)</description>
-  </item>
-  <item>
-    <title>UNC13A splice correction rescues synaptic dysfunction induced by TDP-43 loss</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11256-2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11256-2</guid>
-    <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
-    <category>Biology / Neuroscience</category>
-    <description>In lab-grown human neurons lacking the ALS protein TDP-43, fixing one splicing error in the synapse gene UNC13A with an antisense drug restored communication between neurons. (Matthew J. Keuss, Peter Harley, Eugeni Ryadnov et al. · King's College London; University College London; Francis Crick Institute; Leibniz-FMP; Trace Neuroscience)</description>
-  </item>
-  <item>
-    <title>Evolutionary dynamics in the years preceding acute myeloid leukaemia</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11269-x</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11269-x</guid>
-    <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
-    <category>Biology / Oncology</category>
-    <description>Yearly stored blood samples show that in two-thirds of women who later got acute myeloid leukaemia, the first driver mutation arose before age 20, and mutant clones then grew predictably. (Caroline J. Watson, Gladys Y. P. Poon, Hamish A. J. MacGregor et al. · University of Cambridge; University College London)</description>
-  </item>
-  <item>
-    <title>Human land use drives microplastic abundance in terrestrial wildlife</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11285-x</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-12/doi-10-1038-s41586-026-11285-x</guid>
-    <pubDate>Thu, 12 Nov 2026 13:54:37 +0000</pubDate>
-    <category>Biology / Evolution &amp; ecology</category>
-    <description>GPS-tracked tapirs and giant anteaters in Brazil carried more microplastics in their blood when their home ranges held more human disturbance or lay nearer waste facilities. (Marcia de Almeida Monteiro Melo Ferraz, Arnaud L. J. Desbiez, Mario Henrique Alves et al. · University of British Columbia (Kelowna); Center for Advanced Systems Understanding (CASUS), Helmholtz-Zentrum Dresden-Rossendorf)</description>
-  </item>
-  <item>
-    <title>FDA orders a rare optic-nerve warning on all GLP-1 drugs</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/2026-11-10-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/2026-11-10-n1</guid>
-    <pubDate>Tue, 10 Nov 2026 13:54:21 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA will require every GLP-1 medicine to carry a warning of a potential increased risk of NAION, a rare condition that can cause permanent vision loss in one eye. (FDA, CBS News)</description>
-  </item>
-  <item>
-    <title>FDA approves asundexian, the first factor XIa blocker, to prevent a second stroke</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/2026-11-10-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-10/2026-11-10-n2</guid>
-    <pubDate>Tue, 10 Nov 2026 13:54:21 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA approved Bayer's once-daily pill Sunharbo (asundexian) alongside antiplatelet therapy after a mild-to-moderate non-cardioembolic stroke or high-risk TIA, after a 12,327-person trial showed a 26% lower risk of ischemic stroke. (FDA, pharmaphorum)</description>
   </item>
 </channel>
 </rss>
