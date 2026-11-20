@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-20-n1",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "Chase, Visa and Mastercard confirm breaches at outside vendors after an extortion gang leaks customer data",
+  "tldr": "JPMorgan Chase, Visa and Mastercard say vendors were breached, exposing customer names and email addresses but no card numbers, after the N0n extortion group posted their data online.",
+  "category": "Cybersecurity",
+  "byline": "The Register, SecurityWeek"
+ },
+ {
+  "id": "2026-11-20-n2",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "Broadcom patches a vCenter flaw that suspected Chinese state hackers exploited since September",
+  "tldr": "Broadcom issued an emergency fix for a 9.8-rated vCenter Server authentication bypass that Mandiant says a suspected Chinese espionage group used as a zero-day to take over virtualized environments.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, The Register"
+ },
+ {
+  "id": "2026-11-20-n3",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "The European Commission confirms a cyberattack in which hackers used a public AI hacking tool",
+  "tldr": "The European Commission says attackers using a publicly available AI tool disrupted staff payroll, leave and medical reimbursement systems for more than ten days, with no evidence so far of a broad data breach.",
+  "category": "Cybersecurity",
+  "byline": "The Register, The Record"
+ },
+ {
+  "id": "2026-11-20-n4",
+  "date": "2026-11-20",
+  "type": "news",
+  "title": "Congress publishes Nvidia and AMD's China chip licences, showing 879,000 AI chips approved",
+  "tldr": "House committee chair Brian Mast released licence records showing US regulators approved more than 879,000 of 3.4 million requested Nvidia and AMD AI chips for China, including sales to Alibaba and Tencent.",
+  "category": "Chips & Hardware",
+  "byline": "House Foreign Affairs Committee, The Register"
+ },
+ {
+  "id": "2611.23314",
+  "date": "2026-11-20",
+  "type": "paper",
+  "title": "YUL: Bringing Software Supply Chain Security to Coding Agents",
+  "tldr": "YUL checks every software dependency a coding agent declares against the package registry and blocks stale or nonexistent versions, so agents end on the latest release in over 90% of affected runs.",
+  "primary_tag": "Security & privacy",
+  "tags": [
+   "Security & privacy",
+   "Software engineering"
+  ],
+  "byline": "Aman Sharma, Frank Reyes, Martin Monperrus · KTH Royal Institute of Technology",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-19-n1",
   "date": "2026-11-19",
   "type": "news",

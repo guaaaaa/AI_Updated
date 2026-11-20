@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Thu, 19 Nov 2026 11:49:48 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 11:47:11 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Chase, Visa and Mastercard confirm breaches at outside vendors after an extortion gang leaks customer data</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n1</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>JPMorgan Chase, Visa and Mastercard say vendors were breached, exposing customer names and email addresses but no card numbers, after the N0n extortion group posted their data online. (The Register, SecurityWeek)</description>
+  </item>
+  <item>
+    <title>Broadcom patches a vCenter flaw that suspected Chinese state hackers exploited since September</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n2</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Broadcom issued an emergency fix for a 9.8-rated vCenter Server authentication bypass that Mandiant says a suspected Chinese espionage group used as a zero-day to take over virtualized environments. (BleepingComputer, The Register)</description>
+  </item>
+  <item>
+    <title>The European Commission confirms a cyberattack in which hackers used a public AI hacking tool</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n3</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>The European Commission says attackers using a publicly available AI tool disrupted staff payroll, leave and medical reimbursement systems for more than ten days, with no evidence so far of a broad data breach. (The Register, The Record)</description>
+  </item>
+  <item>
+    <title>Congress publishes Nvidia and AMD's China chip licences, showing 879,000 AI chips approved</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n4</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>House committee chair Brian Mast released licence records showing US regulators approved more than 879,000 of 3.4 million requested Nvidia and AMD AI chips for China, including sales to Alibaba and Tencent. (House Foreign Affairs Committee, The Register)</description>
+  </item>
+  <item>
+    <title>YUL: Bringing Software Supply Chain Security to Coding Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2611.23314</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2611.23314</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Security &amp; privacy</category>
+    <description>YUL checks every software dependency a coding agent declares against the package registry and blocks stale or nonexistent versions, so agents end on the latest release in over 90% of affected runs. (Aman Sharma, Frank Reyes, Martin Monperrus · KTH Royal Institute of Technology)</description>
+  </item>
   <item>
     <title>Attackers publish two credential-stealing versions of Microsoft's official Agent Framework package on PyPI</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
     <category>Tech / Chips &amp; Hardware</category>
     <description>Mitsui Chemicals will pay 1.84 trillion yen for JSR, a leading maker of the light-sensitive coatings used to print chip circuits, in the largest deal ever in Japan's chemicals sector. (Reuters via The Star, WebProNews)</description>
-  </item>
-  <item>
-    <title>SFU-Sim: Bit-Exact Reverse Engineering of NVIDIA MUFU and Validation of PTX Paths</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2611.13879</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-11/2611.13879</guid>
-    <pubDate>Wed, 11 Nov 2026 11:46:41 +0000</pubDate>
-    <category>Tech / Computer architecture &amp; chips</category>
-    <description>SFU-Sim reverse-engineers how Nvidia GPUs compute sine, cosine and other special functions, and its model matches real hardware bit for bit on every input across three GPU generations. (Haozhi Xie, Tao Su · Sun Yat-sen University)</description>
-  </item>
-  <item>
-    <title>Attackers are exploiting the "SSHole" OpenSSH flaw on Alpine-style Linux servers days after the fix</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n1</guid>
-    <pubDate>Tue, 10 Nov 2026 11:48:57 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Several security firms report real attacks on the OpenSSH and musl flaw CVE-2026-123158, which can give logins to passwordless accounts; OpenSSH 10.6p2 fixes it. (Ars Technica, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Vanderbilt University tells campus to shut down devices as the new BYOD ransomware gang claims an attack</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-10/2026-11-10-n2</guid>
-    <pubDate>Tue, 10 Nov 2026 11:48:57 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Vanderbilt confirmed an active cyber incident and asked everyone to power off devices; a ransomware group called BYOD claims it stole data on over a million people. (The Record, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Congress summons Nvidia's CEO over a reported Chinese spy operation, and Nvidia's board opens an investigation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n1</guid>
-    <pubDate>Mon, 09 Nov 2026 11:48:18 +0000</pubDate>
-    <category>Tech / Tech Policy &amp; Antitrust</category>
-    <description>House committee chairs asked Jensen Huang to brief them on November 18 about reported Chinese spying aimed at him; on Sunday Nvidia's board opened an independent investigation. (Ars Technica, TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>SonicWall patches a firewall VPN flaw that can sidestep SAML multi-factor login and is already exploited</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-09/2026-11-09-n2</guid>
-    <pubDate>Mon, 09 Nov 2026 11:48:18 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>SonicWall fixed seven SonicOS flaws, including CVE-2026-19868, which can bypass SAML-enforced MFA on SSL-VPN logins and was added to CISA's catalog of exploited bugs. (SonicWall advisory (as quoted by SecurityWeek), BleepingComputer, Help Net Security)</description>
   </item>
 </channel>
 </rss>

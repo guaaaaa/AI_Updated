@@ -3,14 +3,14 @@
  "start": "2026-11-16",
  "end": "2026-11-21",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [
   {
    "title": "Apple releases iOS 27.3 beta 2 for iPhone",
-   "outlets": 23,
+   "outlets": 33,
    "date": "2026-11-16",
-   "covered": "2026-11-18-n2"
+   "covered": "2026-11-17-n2"
   },
   {
    "title": "California sues OpenAI over rogue AI hacking incidents",
@@ -56,8 +56,8 @@
   }
  ],
  "featured": {
-  "news": 14,
-  "papers": 2
+  "news": 18,
+  "papers": 3
  },
  "items": [
   {
@@ -155,6 +155,36 @@
    "date": "2026-11-19",
    "type": "paper",
    "title": "A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds"
+  },
+  {
+   "id": "2026-11-20-n1",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "Chase, Visa and Mastercard confirm breaches at outside vendors after an extortion gang leaks customer data"
+  },
+  {
+   "id": "2026-11-20-n2",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "Broadcom patches a vCenter flaw that suspected Chinese state hackers exploited since September"
+  },
+  {
+   "id": "2026-11-20-n3",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "The European Commission confirms a cyberattack in which hackers used a public AI hacking tool"
+  },
+  {
+   "id": "2026-11-20-n4",
+   "date": "2026-11-20",
+   "type": "news",
+   "title": "Congress publishes Nvidia and AMD's China chip licences, showing 879,000 AI chips approved"
+  },
+  {
+   "id": "2611.23314",
+   "date": "2026-11-20",
+   "type": "paper",
+   "title": "YUL: Bringing Software Supply Chain Security to Coding Agents"
   }
  ]
 }

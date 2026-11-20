@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Thu, 19 Nov 2026 13:54:23 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 11:47:11 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Chase, Visa and Mastercard confirm breaches at outside vendors after an extortion gang leaks customer data</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n1</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>JPMorgan Chase, Visa and Mastercard say vendors were breached, exposing customer names and email addresses but no card numbers, after the N0n extortion group posted their data online. (The Register, SecurityWeek)</description>
+  </item>
+  <item>
+    <title>Broadcom patches a vCenter flaw that suspected Chinese state hackers exploited since September</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n2</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Broadcom issued an emergency fix for a 9.8-rated vCenter Server authentication bypass that Mandiant says a suspected Chinese espionage group used as a zero-day to take over virtualized environments. (BleepingComputer, The Register)</description>
+  </item>
+  <item>
+    <title>The European Commission confirms a cyberattack in which hackers used a public AI hacking tool</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n3</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>The European Commission says attackers using a publicly available AI tool disrupted staff payroll, leave and medical reimbursement systems for more than ten days, with no evidence so far of a broad data breach. (The Register, The Record)</description>
+  </item>
+  <item>
+    <title>Congress publishes Nvidia and AMD's China chip licences, showing 879,000 AI chips approved</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n4</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>House committee chair Brian Mast released licence records showing US regulators approved more than 879,000 of 3.4 million requested Nvidia and AMD AI chips for China, including sales to Alibaba and Tencent. (House Foreign Affairs Committee, The Register)</description>
+  </item>
+  <item>
+    <title>YUL: Bringing Software Supply Chain Security to Coding Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2611.23314</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2611.23314</guid>
+    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
+    <category>Tech / Security &amp; privacy</category>
+    <description>YUL checks every software dependency a coding agent declares against the package registry and blocks stale or nonexistent versions, so agents end on the latest release in over 90% of affected runs. (Aman Sharma, Frank Reyes, Martin Monperrus · KTH Royal Institute of Technology)</description>
+  </item>
   <item>
     <title>FDA approves venglustat, the first treatment for the neurological symptoms of type 3 Gaucher disease</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/2026-11-19-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Tue, 17 Nov 2026 13:53:19 +0000</pubDate>
     <category>Biology / Maternal &amp; child health</category>
     <description>In a two-year randomized trial of 167 children aged 6 to 11 with obesity, weekly semaglutide lowered BMI by 13.5% at 68 weeks while it rose 2.7% on placebo; stomach side effects were common. (Ania M. Jastreboff Nina M. Harder-Lauridsen Michelle Van Name Antje Körner Aaron S. Kelly Daniel Weghuber Jens-Christian Holm Christine Frithioff-Bøjsøe Shilpa Middolu Tina Buch and Martin Wabitschthe STEP Young Investigators* · Yale University School of Medicine; Ulm University Medical Center; University of Leipzig)</description>
-  </item>
-  <item>
-    <title>Validation of clinical and preclinical obesity across global cohorts</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/doi-10-1038-s41586-026-11237-5</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/doi-10-1038-s41586-026-11237-5</guid>
-    <pubDate>Tue, 17 Nov 2026 13:53:19 +0000</pubDate>
-    <category>Biology / Epidemiology</category>
-    <description>Tested in 844,108 adults in four countries, a definition of obesity that adds waist measures and organ function to BMI separated people at high risk of death from those at modest risk. (An Pan, Shengping Yang, Rafael Ramos et al. · King's College London; Huazhong University of Science and Technology; Kailuan General Hospital; North China University of Science and Technology; Pennington Biomedical Research Center; University of Colorado Anschutz; University of Girona; Università Cattolica del Sacro Cuore)</description>
-  </item>
-  <item>
-    <title>Poisoned hunting weapons, megafauna, and plant use at a 125,000-year-old Arabian paleolakeshore</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/doi-10-1126-science-aef9342</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-17/doi-10-1126-science-aef9342</guid>
-    <pubDate>Tue, 17 Nov 2026 13:53:19 +0000</pubDate>
-    <category>Biology / Evolution &amp; ecology</category>
-    <description>Stone points from a 125,000-year-old lakeshore in Saudi Arabia's Empty Quarter carry residues suggesting they were mounted on shafts and possibly tipped with plant poison. (Chris Clarkson, Gilbert J. Price, Amir Kalifi et al. · Griffith University; King Abdullah University of Science and Technology; Saudi Heritage Commission)</description>
-  </item>
-  <item>
-    <title>The largest US data centres use about 1.8% of the country's electricity, a first facility-by-facility tally finds</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n1</guid>
-    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
-    <category>Science / Climate &amp; Earth</category>
-    <description>A study of 403 hyperscale data centres estimates they used 68 to 99 terawatt-hours in a year, about as much as a mid-sized US state, with 54% of it from fossil fuels. (New Scientist, Ars Technica)</description>
-  </item>
-  <item>
-    <title>Japan's Hayabusa2 abandons its final asteroid target after engine trouble and will fly past a different one in 2028</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n2</guid>
-    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>With its ageing main engines malfunctioning repeatedly, JAXA's Hayabusa2 will skip its planned 2031 arrival at asteroid 1998 KY26 and instead attempt a high-speed flyby of the small asteroid 2015 BM510 in April 2028. (Phys.org (AFP), The Japan Times)</description>
-  </item>
-  <item>
-    <title>Giant elastoresistance in magic-angle twisted bilayer graphene</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-adz0597</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-adz0597</guid>
-    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>Stretching magic-angle twisted bilayer graphene by a fraction of a percent changes its electrical resistance up to about 400 times more strongly than the same strain would in an ordinary metal. (Xuetao Ma, Zhaoyu Liu, Jiaqi Cai et al.)</description>
   </item>
 </channel>
 </rss>

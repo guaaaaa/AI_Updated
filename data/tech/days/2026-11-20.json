@@ -1,0 +1,208 @@
+{
+ "date": "2026-11-20",
+ "edition": "weekday",
+ "generated_at": "2026-11-20T11:47:11+00:00",
+ "summary": "Vendor breaches hit Chase, Visa and Mastercard customers, a vCenter zero-day gets patched, the European Commission confirms an AI-tool-assisted attack, and Congress publishes Nvidia and AMD China licence data.",
+ "news": [
+  {
+   "id": "2026-11-20-n1",
+   "story_key": "chase-visa-mastercard-vendor-breaches-n0n",
+   "title": "Chase, Visa and Mastercard confirm breaches at outside vendors after an extortion gang leaks customer data",
+   "category": "Cybersecurity",
+   "published": "2026-11-19T11:14:00-05:00",
+   "tldr": "JPMorgan Chase, Visa and Mastercard say vendors were breached, exposing customer names and email addresses but no card numbers, after the N0n extortion group posted their data online.",
+   "why_selected": "Three of the largest US financial firms confirmed third-party breaches in one day, showing how vendor access widens the attack surface.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Large banks and card networks share customer data with outside providers for marketing, loyalty and benefit programmes. A breach at one of those vendors can expose a large company's customers without touching its own systems. The disclosures came in a week when JPMorgan Chase had already faced a payments outage, which it attributed to a software bug rather than an attack."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday, JPMorgan Chase said on X that companies providing services to it had been hit by a cyberattack and that attackers had probably accessed marketing data that may include some customer names and email addresses. It said its services were not disrupted, that the incident is unrelated to the earlier outage, and that it plans to offer affected customers free credit monitoring where appropriate. Visa said the claims relate to a third-party provider in Asia Pacific and that no card numbers were affected. Mastercard said a provider exposed a limited number of email addresses from cardholders in one benefit programme. The extortion group N0n, which emerged in September, had listed all three firms on its leak site. According to Reuters, the JPMorgan-related files contain more than 16,000 customer email addresses, some with phone numbers and postal codes."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "None of the incidents touched payment networks or card numbers, but email addresses tied to a known bank relationship are valuable for phishing, the practice of sending convincing fake messages to steal logins or money. Customers who receive messages that appear to come from Chase, Visa or Mastercard now have more reason to be cautious. The case also shows that a company's security depends on its suppliers. None of the three firms has named the vendors, said when the breaches happened or said how many customers were affected."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the vendors are identified, whether other financial firms that share those providers come forward, and whether regulators ask for notifications to affected customers."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/19/chase-visa-mastercard-confirm-third-party-cyberattacks-that-may-have-exposed-customers-info/5311175"
+    },
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n2",
+   "story_key": "vmware-vcenter-zero-day-cve-2026-123890",
+   "title": "Broadcom patches a vCenter flaw that suspected Chinese state hackers exploited since September",
+   "category": "Cybersecurity",
+   "published": "2026-11-19T12:00:00-05:00",
+   "tldr": "Broadcom issued an emergency fix for a 9.8-rated vCenter Server authentication bypass that Mandiant says a suspected Chinese espionage group used as a zero-day to take over virtualized environments.",
+   "why_selected": "vCenter controls the virtual machines of many large organisations, and the flaw was exploited before a patch existed.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "VMware vCenter Server is the management console many organisations use to run fleets of virtual machines, the software-defined computers that host most corporate servers. Whoever controls vCenter can control every machine it manages. A zero-day is a flaw attackers exploit before the vendor has a fix, leaving defenders no patch to apply."
+    },
+    {
+     "heading": "What happened",
+     "body": "Broadcom, which owns VMware, released advisory VMSA-2026-0009 on November 19 to fix CVE-2026-123890, a flaw in vCenter's directory service rated 9.8 out of 10. Someone with network access to a vulnerable server could bypass authentication and gain administrative access. The advisory also fixes four other flaws in SDDC Manager and VMware Tools for Windows, including CVE-2026-123891 in SDDC Manager. Broadcom treats the vCenter fix as an emergency update and says there are no official workarounds, although firewall controls reduce exposure. Researchers at Google's Mandiant said a suspected Chinese state-sponsored group it tracks as Armory Castle, formerly UNC5221, exploited the flaw in early September. The group first broke into BeyondTrust Remote Support appliances through a separate zero-day, moved to internal Linux systems, then compromised vCenter and reached ESXi hosts and data inside virtual machines."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The flaw affects vCenter and SDDC Manager whether deployed alone or inside VMware Cloud Foundation, vSphere Foundation and the Telco Cloud products, so the patch matters across a wide range of deployments. Mandiant says the attackers stole data that can yield further credentials and deployed tools that forge login tokens, bypassing multifactor authentication. Mandiant urges administrators to patch quickly and add further controls around virtualization systems. Mandiant says the use of two zero-days in one campaign, with malware tailored to each platform, shows the group's technical expertise."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether more victims are identified, whether CISA adds the flaw to its exploited list, and when VMware ships fixes for a separate Apache flaw in VMSA-2026-0010."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n3",
+   "story_key": "european-commission-artex-cyberattack",
+   "title": "The European Commission confirms a cyberattack in which hackers used a public AI hacking tool",
+   "category": "Cybersecurity",
+   "published": "2026-11-19T10:14:00-05:00",
+   "tldr": "The European Commission says attackers using a publicly available AI tool disrupted staff payroll, leave and medical reimbursement systems for more than ten days, with no evidence so far of a broad data breach.",
+   "why_selected": "An attack on the EU's executive arm shows automated offensive tools reaching government systems, weeks after FBI and CERT-EU warnings.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Penetration-testing frameworks help security teams probe their own networks for weaknesses. ARTEX is an open-source framework released in July that uses commercial AI models to automate finding and exploiting vulnerabilities. Its developer removed the GitHub repository in October after reports of misuse, but copies remained available. Last week the FBI warned that criminals and state-backed groups were using it, with some intrusions reaching privileged access in under three hours."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday, Commission spokesperson Thomas Regnier confirmed the attack, first reported by Politico, and said the first signs were detected on October 22. He called it an \"AI-generated cyber campaign\" but did not name the tool. According to Politico, CERT-EU, the cybersecurity team for EU institutions, identified the use of ARTEX. Staff systems were disrupted for more than ten days, including Sysper, used for payslips, timesheets and leave requests, MyPMO, which handles medical reimbursements, and translation services. Regnier said investigators had found no evidence of a breach affecting staff broadly and knew of no ransom demand. Affected individuals were notified and other systems are being checked. It is the Commission's third disclosed cyber incident this year."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The case shows that tools able to automate much of an intrusion are now in the hands of attackers, cutting the skill and time an attack requires. CERT-EU warned on November 5 that it had seen ARTEX-assisted attacks, and the FBI said researchers found more than 1,600 ARTEX consoles exposed online. A SentinelOne researcher told The Record that such tools let attackers exploit internet-facing devices faster and with less skill, and Horizon3.ai's chief executive told The Register that shared tools make it harder to tell state hackers from criminals."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the Commission confirms what data, if any, was taken, and whether other EU bodies report similar intrusions."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/cyber-crime/2026/11/19/european-commission-scrambles-to-contain-ai-assisted-cyberattack/5311103"
+    },
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-20-n4",
+   "story_key": "house-mast-nvidia-amd-china-license-disclosure",
+   "title": "Congress publishes Nvidia and AMD's China chip licences, showing 879,000 AI chips approved",
+   "category": "Chips & Hardware",
+   "published": "2026-11-19T14:18:08-05:00",
+   "tldr": "House committee chair Brian Mast released licence records showing US regulators approved more than 879,000 of 3.4 million requested Nvidia and AMD AI chips for China, including sales to Alibaba and Tencent.",
+   "why_selected": "The most detailed public look yet at how US export controls on advanced chips are applied in practice.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The US requires export licences to sell advanced AI chips to China, because such chips can help design weapons and train powerful models. The Commerce Department's Bureau of Industry and Security (BIS) decides on those applications. Earlier this week Washington also adopted a policy that bars remote access to advanced AI chips, aimed at stopping diversion to China."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday afternoon, House Foreign Affairs Committee chair Brian Mast used his powers under the Export Control Reform Act to publish licence application data for Nvidia and AMD. The records show requests to sell 3.4 million AI chips to China and BIS approval of more than 879,000. Approvals included sales to Alibaba and Tencent, which the Department of War lists as Chinese military companies. BIS refused some large requests, including Nvidia applications to sell 610,000 chips to Alibaba and 508,000 to ByteDance. Mast also says some Nvidia applications relied on possible chip-smuggling fronts. One document says every Nvidia and AMD application rated the risk of diversion, meaning chips ending up somewhere other than declared, as \"low\". The committee calls it the most detailed disclosure in the law's history."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The release gives Congress evidence to question how strictly export rules are enforced, and it raises pressure on BIS and on Nvidia, already under scrutiny over its former chief executive. The practical effect may be limited: The Register reports that many approved orders never shipped, likely because Beijing did not approve imports. Tencent and Alibaba say the new remote-access ban will slow their AI build-outs, while expecting Chinese chipmakers to supply advanced hardware at scale in 2027 or 2028."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Congress moves to block future licences, and how BIS responds to the claim about smuggling fronts."
+    }
+   ],
+   "sources": [
+    {
+     "name": "House Foreign Affairs Committee",
+     "url": "https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/legal/2026/11/20/us-let-nvidia-and-amd-sell-bucketloads-of-chips-to-military-linked-chinese-companies/5311200"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.23314",
+   "title": "YUL: Bringing Software Supply Chain Security to Coding Agents",
+   "authors": [
+    "Aman Sharma",
+    "Frank Reyes",
+    "Martin Monperrus"
+   ],
+   "affiliations": [
+    "KTH Royal Institute of Technology"
+   ],
+   "announced": "2026-11-18T20:00:00-05:00",
+   "primary_tag": "Security & privacy",
+   "tags": [
+    "Security & privacy",
+    "Software engineering"
+   ],
+   "tldr": "YUL checks every software dependency a coding agent declares against the package registry and blocks stale or nonexistent versions, so agents end on the latest release in over 90% of affected runs.",
+   "why_selected": "A simple, enforceable defence against a software supply chain risk that grows as more code is written by agents.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Coding agents now pick the third-party libraries a project depends on. They often declare a version remembered from their training data, which may be stale, meaning older than the latest release. Stale dependencies can carry known vulnerabilities already fixed upstream, and an invented package name can be registered by an attacker and filled with malicious code."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Systems with outdated dependencies are about four times as likely to have security issues as up-to-date ones, the authors note. The OpenSSF guide for AI code assistants recommends telling the agent to \"prefer the latest stable release\". Prompting alone cannot enforce this, so an agent may still write an old version."
+    },
+    {
+     "heading": "Key idea",
+     "body": "YUL works inside the agent's harness, the program that runs the language model in a loop. It uses hooks, commands that run at fixed points before a tool call and can block it. When the agent tries to write a manifest file such as requirements.txt or package.json, or runs a package manager command with a pinned version, YUL extracts every dependency and looks up its latest release in the registry. If a version is stale or the package does not exist, YUL blocks the write and tells the agent which version to use, so the agent retries with the fix. Only when every dependency is current does the write reach disk, so a stale version is never downloaded or executed."
+    },
+    {
+     "heading": "Results",
+     "body": "The authors built 60 tasks across six ecosystems: Maven, GitHub Actions, PyPI, npm, Go modules and Cargo. Without YUL, Claude Code with Claude Opus 5.5 declared a stale version in 42 of 146 valid runs (29%) and OpenCode with DeepSeek V4.1 Flash in 54 of 139 (39%); both did so in every GitHub Actions run. With YUL, agents ended on the latest release in 93% and 96% of those stale runs."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The approach turns a recommendation into an enforced rule and needs no change to the model. The main caveat is scope: the evaluation covers 60 tasks and two agents, so results on larger, real projects remain to be shown."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.23314"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 2
+   }
+  }
+ ]
+}
