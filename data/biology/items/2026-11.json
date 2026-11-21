@@ -1,5 +1,53 @@
 [
  {
+  "id": "2026-11-21-n1",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "A blood protein flags advanced CTE in former football players, a small JAMA study finds",
+  "tldr": "In 21 former football players who later donated their brains, blood levels of a tau protein fragment were far higher in those with advanced CTE, a preliminary step toward diagnosing the disease in life.",
+  "category": "Devices & Diagnostics",
+  "byline": "The Boston Globe, AZFamily"
+ },
+ {
+  "id": "2026-11-21-n2",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "FDA approves Regeneron's Livsayis, the first gene-silencing drug for generalized myasthenia gravis",
+  "tldr": "The FDA approved cemdisiran (Livsayis), an injection given four times a year that silences production of the immune protein C5, for adults with antibody-positive generalized myasthenia gravis.",
+  "category": "Drugs & Approvals",
+  "byline": "Medical Daily, WebMD, BioPharm International"
+ },
+ {
+  "id": "doi-10-1126-science-aef8963",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "A neural code for generative speech production in human Wernicke’s area",
+  "tldr": "Recordings from 28 surgical patients show a small spot in Wernicke's area, long seen as a listening region, activates about a quarter-second before each spoken word and is needed for speaking.",
+  "primary_tag": "Neuroscience",
+  "tags": [
+   "Neuroscience",
+   "Neurology & mental health"
+  ],
+  "byline": "Alexander B. Silva, Matthew K. Leonard, Patrick W. Hullett et al. · University of California, San Francisco",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11271-3",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "Evidence for late Middle Pleistocene Homo erectus in mainland East Asia",
+  "tldr": "Teeth from two caves in Guangxi, dated to between about 324,000 and 184,000 years ago, show Homo erectus survived in southern China's rainforests much later than its previously known disappearance from mainland Asia.",
+  "primary_tag": "Evolution & ecology",
+  "tags": [
+   "Evolution & ecology",
+   "Genetics & genomics"
+  ],
+  "byline": "Wei Liao, Clément Zanolli, Ragnheiður Diljá Ásmundsdóttir et al.",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-20-n1",
   "date": "2026-11-20",
   "type": "news",

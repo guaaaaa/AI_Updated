@@ -1,0 +1,219 @@
+{
+ "date": "2026-11-21",
+ "edition": "weekend",
+ "generated_at": "2026-11-21T13:53:27+00:00",
+ "summary": "A blood marker for advanced CTE in former football players, the first gene-silencing drug for myasthenia gravis, a speech-planning hub inside Wernicke's area, and Homo erectus surviving in southern China's rainforests.",
+ "news": [
+  {
+   "id": "2026-11-21-n1",
+   "story_key": "bu-banner-cte-blood-test-emtbr-tau-jama-2026",
+   "title": "A blood protein flags advanced CTE in former football players, a small JAMA study finds",
+   "category": "Devices & Diagnostics",
+   "published": "2026-11-19T12:00:00-05:00",
+   "tldr": "In 21 former football players who later donated their brains, blood levels of a tau protein fragment were far higher in those with advanced CTE, a preliminary step toward diagnosing the disease in life.",
+   "why_selected": "CTE can currently be confirmed only after death; a blood marker would open the door to diagnosis and treatment trials in living people.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Chronic traumatic encephalopathy (CTE) is a degenerative brain disease linked to repeated blows to the head, best known in American football players. Like Alzheimer's disease, it involves clumps of a protein called tau inside nerve cells. Today it can be confirmed only by examining brain tissue after death, which makes it hard to measure how common it is or to test treatments."
+    },
+    {
+     "heading": "What happened",
+     "body": "Researchers co-led by Boston University and Banner Health in Arizona published a study in JAMA on November 19 and presented it at a conference in Boston. They analysed blood from 21 former professional, college and high-school football players who gave samples while alive and later donated their brains. Autopsy showed CTE in 18: 16 at an advanced stage (McKee stage 3 or 4) and two at a low stage; three had no CTE. Using each player's last sample before death, the team measured a tau fragment called eMTBR-tau, a marker of tau tangles. Levels were significantly higher in players with advanced CTE than in those with low-stage or no CTE. A second Alzheimer's-related protein was not linked to CTE, which the authors suggest could help tell the two diseases apart."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A blood test would let doctors identify CTE during life and let researchers run clinical trials, as happened when blood tests changed Alzheimer's research. A separate JAMA study from another group, published November 13, also found an elevated form of this tau fragment in people with autopsy-confirmed CTE. But the evidence is thin: 21 people, very few with early disease or without CTE, and no age-matched controls. An independent neurologist called it \"really just a hint\". The test is not FDA-approved or available to the public, and the researchers say it should not guide diagnosis yet."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Validation in larger, broader groups, including people with and without head-impact histories followed over time, and whether combining blood markers with brain imaging can detect early-stage disease."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Boston Globe",
+     "url": "https://www.bostonglobe.com/2026/11/19/metro/cte-diagnosis-blood-test-bu/"
+    },
+    {
+     "name": "AZFamily",
+     "url": "https://www.azfamily.com/2026/11/19/arizona-lab-helps-find-blood-test-that-may-detect-cte-living-people/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-n2",
+   "story_key": "fda-cemdisiran-livsayis-myasthenia-gravis-approval",
+   "title": "FDA approves Regeneron's Livsayis, the first gene-silencing drug for generalized myasthenia gravis",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-18T12:00:00-05:00",
+   "tldr": "The FDA approved cemdisiran (Livsayis), an injection given four times a year that silences production of the immune protein C5, for adults with antibody-positive generalized myasthenia gravis.",
+   "why_selected": "A new drug class for a common autoimmune neuromuscular disease, with the least frequent dosing of any approved complement inhibitor for it.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Myasthenia gravis is an autoimmune disease in which antibodies disrupt signals between nerves and muscles, causing drooping eyelids, double vision, trouble swallowing and, in severe cases, breathing problems. In patients with antibodies against the acetylcholine receptor, the most common form, a group of immune proteins called complement joins the attack. About 85,000 people in the US live with the disease, according to Regeneron."
+    },
+    {
+     "heading": "What happened",
+     "body": "Regeneron announced on November 18 that the FDA had approved Livsayis (cemdisiran) for adults with generalized myasthenia gravis who test positive for anti-acetylcholine-receptor antibodies. It is the first small interfering RNA (siRNA) drug for the disease: rather than blocking the complement protein C5 after it is made, it destroys the genetic message the liver uses to produce it. Patients receive it as an injection under the skin every three months. Approval rests on the phase 3 NIMBLE trial, a randomized, double-blind comparison of 64 patients on cemdisiran and 59 on placebo over 24 weeks. On a 24-point daily-activities scale, scores improved by 4.5 points with the drug versus 2.2 with placebo; 77% versus 44% improved by at least 3 points."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Livsayis joins eculizumab, ravulizumab, zilucoplan and gefurulimab, cleared earlier this month, as complement inhibitors for the disease, but needs only four doses a year. Like other C5 blockers it carries a boxed warning for serious meningococcal infection, requires vaccination beforehand and is available only through a restricted programme. One patient died of pneumonia in the trial's extension phase. The 24-week trial was not designed to establish long-term safety and did not compare the drug directly with other treatments."
+    },
+    {
+     "heading": "What to watch",
+     "body": "A European decision expected in the second half of 2027, longer-term safety data, and how doctors weigh quarterly dosing against other drug classes."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Medical Daily",
+     "url": "https://www.medicaldaily.com/fda-approves-livsayis-myasthenia-gravis-sirna-481436"
+    },
+    {
+     "name": "WebMD",
+     "url": "https://www.webmd.com/drugs/updates/fda-livsayis-myasthenia-gravis"
+    },
+    {
+     "name": "BioPharm International",
+     "url": "https://www.biopharminternational.com/view/fda-approves-cemdisiran-livsayis-first-rnai-therapy-myasthenia-gravis"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-aef8963",
+   "title": "A neural code for generative speech production in human Wernicke’s area",
+   "authors": [
+    "Alexander B. Silva",
+    "Matthew K. Leonard",
+    "Patrick W. Hullett",
+    "Deborah F. Levy",
+    "Catherine Wang",
+    "Duo Xu",
+    "Ilina Bhaya-Grossman",
+    "Edward F. Chang"
+   ],
+   "affiliations": [
+    "University of California",
+    "San Francisco"
+   ],
+   "announced": "2026-11-19T00:00:00-05:00",
+   "primary_tag": "Neuroscience",
+   "tags": [
+    "Neuroscience",
+    "Neurology & mental health"
+   ],
+   "tldr": "Recordings from 28 surgical patients show a small spot in Wernicke's area, long seen as a listening region, activates about a quarter-second before each spoken word and is needed for speaking.",
+   "why_selected": "It answers a 150-year-old question about why damage to a \"hearing\" area of the brain breaks speech, with direct relevance to speech-restoring implants.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "In 1874 the neurologist Carl Wernicke described a region above the left ear as necessary for understanding speech. People with damage there struggle to comprehend words, but many also produce speech with swapped sounds and near-miss words. Why injury to a hearing area should break speaking has stayed an open question for 150 years."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Wernicke's area has been taught mainly as a region for making sense of heard speech, while devices that aim to restore speech have mostly targeted the motor cortex, which controls the movements needed to talk. Why damage to Wernicke's area also produces errors in speaking was left unexplained."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team, led by Edward Chang at the University of California, San Francisco, recorded brain activity directly from the cortex of 28 people being evaluated before surgery for epilepsy or tumors, while they listened to words and prepared to speak. They focused on one small part of Wernicke's area, the left posterior superior temporal gyrus (lpSTG). If this spot only processed incoming sound, it should stay quiet before a person speaks. Instead it behaves like a launch pad: it activates while listening and again just before speaking, and its cells prefer certain kinds of words. The researchers then tested whether the region is necessary, briefly stimulating it with electricity at the moment people were about to talk."
+    },
+    {
+     "heading": "Results",
+     "body": "The lpSTG became active roughly a quarter of a second before each word was spoken, and more so for long words: more for \"caterpillar\" than for \"cat\". Stimulation disrupted speech production only in this area and only when delivered just before speaking. Experimental implants in two volunteers with paralysis picked up both what they heard and what they were trying to say."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work places Wernicke's area early on the path to every spoken word and suggests an additional target for brain-computer interfaces that restore speech. The caveat: the recordings come from 28 people with epilepsy or tumors, and the implant results involve only two volunteers."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aef8963",
+    "doi": "https://doi.org/10.1126/science.aef8963"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11271-3",
+   "title": "Evidence for late Middle Pleistocene Homo erectus in mainland East Asia",
+   "authors": [
+    "Wei Liao",
+    "Clément Zanolli",
+    "Ragnheiður Diljá Ásmundsdóttir",
+    "Zhongyou Wu",
+    "Zhixing Yi",
+    "Viridiana Villa-Islas",
+    "Zandra Fagernäs",
+    "Gaudry Troché",
+    "Kai Zhou",
+    "Xiaotian Feng",
+    "Feng Liu",
+    "Jesper V. Olsen",
+    "Qingfeng Shao",
+    "Wenjing Yu",
+    "Molly Quinn",
+    "Anne-Marie Bacon",
+    "Hua Liang",
+    "Yue Pan",
+    "Liyun Yang",
+    "Reiko T. Kono",
+    "Yaobin Fan",
+    "Yanyan Yao",
+    "Yingqi Zhang",
+    "Yuan Wang",
+    "Changzhu Jin",
+    "Kira E. Westaway",
+    "Renaud Joannes-Boyau",
+    "Fabrice Demeter",
+    "Wei Wang",
+    "Qiaomei Fu"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Evolution & ecology",
+   "tags": [
+    "Evolution & ecology",
+    "Genetics & genomics"
+   ],
+   "tldr": "Teeth from two caves in Guangxi, dated to between about 324,000 and 184,000 years ago, show Homo erectus survived in southern China's rainforests much later than its previously known disappearance from mainland Asia.",
+   "why_selected": "It fills a long gap in the record of a key human relative and shows it lived in rainforest, a habitat once thought beyond it.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Homo erectus, which arose about two million years ago, was the first member of our genus to spread from Africa across Eurasia. Its last known populations lived on Java, at Ngandong, 117,000 to 108,000 years ago. On the Asian mainland, though, there were no securely dated fossils younger than about 400,000 years, leaving its later history there unknown."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Fragmentary fossil teeth from southern China have been hard to interpret: some have been confused with orangutan teeth, and many cave deposits are difficult to date. Researchers had also proposed that expanding rainforests helped drive late Homo erectus to extinction, assuming only Homo sapiens could exploit them."
+    },
+    {
+     "heading": "Key idea",
+     "body": "This paper and a companion study, published together, examine nine hominin teeth from Baxian and Naxian, two sister caves in Guangxi. The age comes from 43 radiometric dates using five techniques, including luminescence dating of sediments and uranium-series dating of teeth and mineral deposits, combined in a statistical model. Identity comes from two lines of evidence: CT scans of the teeth's internal structure, and ancient proteins preserved in enamel, which, like a molecular fingerprint, can carry species information in fossils too old for DNA."
+    },
+    {
+     "heading": "Results",
+     "body": "The fossils date to between 324,000 and 184,000 years ago at Baxian and between 319,000 and 241,000 years ago at Naxian. Eight of the nine teeth match Homo erectus. Proteins were recovered from all five teeth analysed; four carried an ameloblastin variant previously seen only in roughly 400,000-year-old Chinese Homo erectus, and none showed orangutan features. One tooth, PA1796, fits neither Homo erectus nor modern humans and may belong to a Denisovan or another group. Isotopes in animal and hominin teeth point to a rainforest setting."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Homo erectus persisted on the mainland far longer than thought, possibly alongside another human group, and lived in rainforest. The caveat: the evidence is a handful of teeth, and the odd tooth remains unidentified."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11271-3",
+    "doi": "https://doi.org/10.1038/s41586-026-11271-3"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

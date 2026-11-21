@@ -2,8 +2,8 @@
  "week": "2026-W47",
  "start": "2026-11-16",
  "end": "2026-11-21",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [],
  "stories": [
   {
@@ -37,21 +37,21 @@
    "covered": null
   },
   {
+   "title": "US FDA approves Regeneron's drug for generalized myasthenia gravis",
+   "outlets": 4,
+   "date": "2026-11-18",
+   "covered": "2026-11-21-n2"
+  },
+  {
    "title": "AriBio’s repurposed erectile dysfunction drug for Alzheimer’s yields tepid results",
    "outlets": 3,
    "date": "2026-11-16",
    "covered": null
-  },
-  {
-   "title": "US FDA approves Regeneron's drug for generalized myasthenia gravis",
-   "outlets": 3,
-   "date": "2026-11-18",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 13,
-  "papers": 13
+  "news": 15,
+  "papers": 15
  },
  "items": [
   {
@@ -209,6 +209,30 @@
    "date": "2026-11-20",
    "type": "paper",
    "title": "Spatial transcriptomics reveals molecular organization of human and nonhuman primate basal ganglia"
+  },
+  {
+   "id": "2026-11-21-n1",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "A blood protein flags advanced CTE in former football players, a small JAMA study finds"
+  },
+  {
+   "id": "2026-11-21-n2",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "FDA approves Regeneron's Livsayis, the first gene-silencing drug for generalized myasthenia gravis"
+  },
+  {
+   "id": "doi-10-1126-science-aef8963",
+   "date": "2026-11-21",
+   "type": "paper",
+   "title": "A neural code for generative speech production in human Wernicke’s area"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11271-3",
+   "date": "2026-11-21",
+   "type": "paper",
+   "title": "Evidence for late Middle Pleistocene Homo erectus in mainland East Asia"
   }
  ]
 }
