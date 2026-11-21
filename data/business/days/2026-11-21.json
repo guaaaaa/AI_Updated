@@ -1,0 +1,212 @@
+{
+ "date": "2026-11-21",
+ "edition": "weekend",
+ "generated_at": "2026-11-21T12:46:30+00:00",
+ "summary": "An AI-led sell-off pushes the S&P 500 and Dow into a correction, the UK and EU agree a food, carbon and youth-mobility deal, Intuit sells Mailchimp and Canadian retail sales rise on fuel prices.",
+ "news": [
+  {
+   "id": "2026-11-21-n1",
+   "story_key": "us-stocks-correction-ai-selloff-2026-11-20",
+   "title": "An AI sell-off pushes the S&P 500 and the Dow into a correction as Nvidia falls about 14%",
+   "category": "Markets",
+   "published": "2026-11-20T16:00:00-05:00",
+   "tldr": "The S&P 500 fell 3.7% and the Nasdaq 5.28% on Friday, pushing the S&P 500 and Dow into a correction and erasing the Nasdaq's gains for the year as AI stocks slumped.",
+   "why_selected": "A large market move with a clear cause, affecting retirement savings and corporate funding well beyond the technology sector.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "For months, investors have questioned whether spending on artificial intelligence can keep growing fast enough to justify the valuations of the companies building it. Nvidia, the leading AI chipmaker, was already under pressure: its chief executive Jensen Huang stepped down on November 12, and the stock was heading for its longest weekly losing streak since 2008, even after reporting quarterly revenue up 103% from a year earlier."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday the Dow Jones Industrial Average fell nearly 950 points, the S&P 500 dropped 3.7% and the technology-heavy Nasdaq Composite fell 5.28%. The Dow and the S&P 500 both entered a correction, meaning they had fallen at least 10% from their recent record highs. The Nasdaq's loss erased its gains for the year and was its second-largest one-day point drop on record. Nvidia shares fell about 14%, and newly listed Anthropic fell about 9% in only its second day of trading. It was the S&P 500's seventh losing session in a row, its longest streak since February 2020. For the week, the S&P 500 had its worst percentage decline since April 2025 and the Nasdaq its largest since March 2020. The VIX volatility index, often called the fear gauge, closed at its highest level since April 2025, and gold rose as investors sought safer assets."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The selling was concentrated in AI and technology stocks, which carry heavy weight in the major indexes. The fall came despite strong Nvidia results and a highly anticipated Anthropic debut, which suggests investors are now worried less about current earnings than about whether AI valuations and spending can last. Fox Business also pointed to recent technology outages at companies such as United Airlines and JPMorgan Chase as a source of unease."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the selling spreads beyond technology next week, how Nvidia's board handles its search for a permanent chief executive, and how the Federal Reserve weighs weaker markets against its inflation fight."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Fox Business",
+     "url": "https://www.foxbusiness.com/markets/wall-street-suffers-historic-losses-dow-sp-500-plunge-correction-territory.amp"
+    },
+    {
+     "name": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-suffers-historic-losses-012826644.html"
+    },
+    {
+     "name": "Quartz",
+     "url": "https://qz.com/nvidia-stock-weekly-losing-streak-2008-112026"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-n2",
+   "story_key": "uk-eu-summit-deal-2026-11",
+   "title": "The UK and EU agree deals on food trade, carbon markets and youth mobility, but tuition fees remain unresolved",
+   "category": "Trade & Policy",
+   "published": "2026-11-20T05:41:00-05:00",
+   "tldr": "The UK and EU agreed to ease Brexit checks on food, relink their emissions trading schemes and create a youth mobility scheme, in exchange for UK alignment with EU rules in those areas.",
+   "why_selected": "The biggest change to UK-EU trade terms since Brexit, with direct effects on food exporters, heavy industry and labour mobility.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Since Brexit, British food exporters have faced veterinary checks, certificates and paperwork to sell into the European Union. According to the BBC, the real value of UK agrifood exports has fallen 24% since 2019. Prime Minister Andy Burnham's government has made rebuilding ties with the EU a central part of its plan to lower costs for businesses and consumers."
+    },
+    {
+     "heading": "What happened",
+     "body": "At a summit on Friday, the two sides agreed a 12-page statement covering three deals. The food and drink agreement eases Brexit controls on the vast majority of animal and plant products and is due to apply from 1 March 2028. An energy deal relinks the British and EU emissions trading schemes, the markets in which companies buy permits to emit carbon, shielding producers of goods such as steel and fertiliser from carbon levies at the border; it should take effect in 2028. A youth scheme would let up to 100,000 young people a year from each side live, work and study in the other for up to three years, by 2030 at the latest. In return, the UK must align with EU law in these areas, with observer status but no vote. Tuition fees were left unresolved for six months, and the EU said it would not sign off the deals without equal fees for its students."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The government's own assessment puts the gain from the food deal at £5 billion, or 0.14% of the economy, by 2040, and about 0.5%, or £17 billion a year, for all the agreements together. That is modest, but the BBC notes it matches all of the UK's post-Brexit trade deals combined by the Treasury's own measures. Retailers M&S and Tesco welcomed the deal but did not commit to cutting prices, and farmers have raised concerns about following EU pesticide rules."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Talks on tuition fees over the next six months, and a planned deal in 2027 to bring the UK back into the EU electricity market, which would require a UK contribution to the EU budget."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/politics/2026/nov/20/what-is-in-deal-between-uk-eu-explainer"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm1wr029evnqo"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-n3",
+   "story_key": "intuit-mailchimp-sale-bending-spoons-2026-11",
+   "title": "Intuit agrees to sell Mailchimp to Bending Spoons for about $3.68 billion, less than a third of what it paid",
+   "category": "Deals & M&A",
+   "published": "2026-11-19T12:00:00-05:00",
+   "tldr": "Intuit will sell email marketing platform Mailchimp to Bending Spoons for about $3.68 billion, less than a third of the roughly $12 billion it paid in 2021, and use the cash to buy back shares.",
+   "why_selected": "A large deal that shows how far valuations of older software businesses have fallen as AI reshapes the industry.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Intuit, the maker of TurboTax, QuickBooks and Credit Karma, bought Mailchimp in 2021 for roughly $12 billion to give small businesses marketing tools alongside its accounting software. Since then, TechCrunch says, Intuit has been hit hard by the sell-off in software stocks driven by AI, and it reports that Intuit's shares are worth less than half what they were a year ago. Mailchimp's revenue fell 1% to $313 million in the latest quarter."
+    },
+    {
+     "heading": "What happened",
+     "body": "Alongside its first-quarter results on November 19, Intuit announced a definitive agreement to sell Mailchimp to Bending Spoons for about $3.68 billion: $3.31 billion in cash and $368 million in Bending Spoons stock. The deal needs regulatory approval and is expected to close in early 2027. Intuit said it will use the cash to repurchase its own shares within fiscal 2027 and that selling Mailchimp sharpens its focus on AI tools that help businesses win and manage customers. In the quarter to October 31, Intuit's total revenue rose 12% to $4.4 billion, its QuickBooks Online Accounting revenue grew 19%, and it repurchased $1.5 billion of stock."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The price, about 30% of what Intuit paid five years ago, is a clear marker of how much the market has marked down mature software businesses. For Bending Spoons, it is the latest in a string of purchases: in the past year it bought AOL, Eventbrite, Airtable and Miro, after earlier deals for Evernote, Meetup and Vimeo. TechCrunch notes its model is to centralise engineering and revenue systems to cut costs, which often means big changes for the staff and customers of the companies it buys."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Regulatory approval and the closing date, what Bending Spoons changes at Mailchimp, and how much Intuit's share buybacks grow once the cash arrives."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Intuit",
+     "url": "https://investors.intuit.com/news-events/press-releases/detail/1331/intuit-reports-first-quarter-results-and-enters-agreement-to-sell-mailchimp-to-bending-spoons"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-n4",
+   "story_key": "canada-retail-sales-september-2026",
+   "title": "Canadian retail sales rise 0.8% in September on higher gas prices, but an early estimate points to a 1.5% drop in October",
+   "category": "Economy & Data",
+   "published": "2026-11-20T08:30:00-05:00",
+   "tldr": "Canadian retail sales rose 0.8% to $75.3 billion in September, mostly on higher prices at gas stations, while sales volumes rose just 0.1% and an early estimate shows a 1.5% fall in October.",
+   "why_selected": "A major monthly read on Canadian consumer spending, released as the Bank of Canada weighs inflation driven by fuel prices.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Canadian inflation held at 3.1% in October, kept above the Bank of Canada's 2% target largely by gasoline prices. Retail sales, which make up a large share of consumer spending, help show whether households are still buying more goods or simply paying more for the same things."
+    },
+    {
+     "heading": "What happened",
+     "body": "Statistics Canada said on November 20 that retail sales rose 0.8% to $75.3 billion in September, with increases in five of nine subsectors. Gasoline stations and fuel vendors led, up 6.9%, but only 1.6% in volume terms, meaning most of the gain came from higher prices. Core retail sales, which exclude gas stations and car dealers, edged up 0.1%: general merchandise rose 1.5% and clothing 0.8%, while food and beverage retailers fell 0.4%. Overall sales volumes rose just 0.1%. Sales grew in nine provinces, with Alberta up 1.7% and Manitoba the only decline, down 1.6%. For the third quarter, sales rose 1.2%, or 1.0% in volume terms. An early estimate suggests sales fell 1.5% in October, though it is based on responses from 58.1% of surveyed companies and will be revised."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The gap between the 0.8% headline and the 0.1% volume gain shows that fuel prices, not stronger demand, are lifting spending figures. For retailers, flat core sales and falling grocery sales point to cautious shoppers whose budgets are being squeezed by energy costs. If the October drop is confirmed, it would suggest consumer spending weakened at the start of the fourth quarter, which matters for economic growth and for the Bank of Canada as it judges how much underlying demand is adding to inflation."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The final October figure next month, and whether the Bank of Canada treats fuel-driven price gains as temporary at its next rate decision."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Statistics Canada",
+     "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261120/dq261120a-eng.htm"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/economy/article-canadian-retail-sales-september-2026-gas-prices/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36010",
+   "title": "Gambling for Goals",
+   "authors": [
+    "Costas Arkolakis",
+    "Spencer Y. Kwon",
+    "Dominic Russel",
+    "Claire Shi",
+    "Hyunjoo Yang"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-21T00:00:00-05:00",
+   "primary_tag": "Households & housing",
+   "tags": [
+    "Households & housing",
+    "Asset pricing",
+    "Inequality & mobility"
+   ],
+   "tldr": "Using a survey linked to millions of Korean credit, telecom and card records, economists find that people who see life goals like homeownership as out of reach take more financial risks, such as trading crypto.",
+   "why_selected": "A timely explanation for the rise of speculative investing among young adults, built on unusually rich linked data.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Young adults in rich countries have grown more pessimistic about their economic prospects in recent years. Over the same period, gambling-like financial activities, such as cryptocurrency trading, have spread. The authors ask whether the two trends are linked: do people take big financial gambles because the ordinary path to goals like owning a home or getting married seems closed?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Many explanations for speculative investing focus on overconfidence, entertainment or easy access through trading apps. The authors return to an older idea from economists Milton Friedman and Leonard Savage, who argued in 1948 that people may rationally accept unfavourable bets when a large win could lift them over an important threshold that steady saving cannot reach."
+    },
+    {
+     "heading": "Key idea",
+     "body": "If a goal such as buying a home sits just out of reach, a risky bet that might pay off big can look more attractive than slow saving. The authors test this with an original survey linked to millions of records from South Korea's leading credit bureau, telecom provider and credit card issuer. This lets them compare people's stated goals with their actual financial behaviour, and follow the same individuals as their circumstances change."
+    },
+    {
+     "heading": "Results",
+     "body": "People who place more importance on hard-to-reach goals take more risk, and the form of risk they take varies systematically with how far they are from those goals. Within the same individuals, cryptocurrency app use rises during unemployment and falls after they win the right, through a lottery, to buy price-regulated housing, a change that brings homeownership within reach. The working paper's summary does not report effect sizes. A calibrated model shows that hard-to-reach goals make households act more aggressively on their beliefs, which magnifies the harm from being overoptimistic."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For policymakers and financial regulators, the findings suggest that speculative trading among young people may partly reflect housing affordability and job insecurity, not just poor financial judgement, so housing policy could affect risk-taking. The main caveat is that the evidence comes from South Korea, whose housing lottery and investing culture may not carry over directly to other countries."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36010"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}

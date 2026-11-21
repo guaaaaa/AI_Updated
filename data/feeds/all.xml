@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 21 Nov 2026 12:17:35 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 12:46:30 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>An AI sell-off pushes the S&amp;P 500 and the Dow into a correction as Nvidia falls about 14%</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n1</guid>
+    <pubDate>Sat, 21 Nov 2026 12:46:30 +0000</pubDate>
+    <category>Business / Markets</category>
+    <description>The S&amp;P 500 fell 3.7% and the Nasdaq 5.28% on Friday, pushing the S&amp;P 500 and Dow into a correction and erasing the Nasdaq's gains for the year as AI stocks slumped. (Fox Business, Yahoo Finance, Quartz)</description>
+  </item>
+  <item>
+    <title>The UK and EU agree deals on food trade, carbon markets and youth mobility, but tuition fees remain unresolved</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n2</guid>
+    <pubDate>Sat, 21 Nov 2026 12:46:30 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>The UK and EU agreed to ease Brexit checks on food, relink their emissions trading schemes and create a youth mobility scheme, in exchange for UK alignment with EU rules in those areas. (The Guardian, BBC)</description>
+  </item>
+  <item>
+    <title>Intuit agrees to sell Mailchimp to Bending Spoons for about $3.68 billion, less than a third of what it paid</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n3</guid>
+    <pubDate>Sat, 21 Nov 2026 12:46:30 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>Intuit will sell email marketing platform Mailchimp to Bending Spoons for about $3.68 billion, less than a third of the roughly $12 billion it paid in 2021, and use the cash to buy back shares. (Intuit, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Canadian retail sales rise 0.8% in September on higher gas prices, but an early estimate points to a 1.5% drop in October</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n4</guid>
+    <pubDate>Sat, 21 Nov 2026 12:46:30 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>Canadian retail sales rose 0.8% to $75.3 billion in September, mostly on higher prices at gas stations, while sales volumes rose just 0.1% and an early estimate shows a 1.5% fall in October. (Statistics Canada, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Gambling for Goals</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/nber-w36010</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/nber-w36010</guid>
+    <pubDate>Sat, 21 Nov 2026 12:46:30 +0000</pubDate>
+    <category>Business / Households &amp; housing</category>
+    <description>Using a survey linked to millions of Korean credit, telecom and card records, economists find that people who see life goals like homeownership as out of reach take more financial risks, such as trading crypto. (Costas Arkolakis, Spencer Y. Kwon, Dominic Russel et al.)</description>
+  </item>
   <item>
     <title>Anthropic mathematician Levent Alpöge claims a Lean-formalized proof of the Riemann hypothesis, found working with Claude</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
     <category>AI / Model Release</category>
     <description>Google released Gemini 4 Neon, which ranks third on the Artificial Analysis Intelligence Index and first on its Coding Agent Index, at $3/$15 per million input/output tokens with a 1-million-token context. (Google)</description>
-  </item>
-  <item>
-    <title>Anthropic prices its IPO at $83 a share, raising $81.3 billion in the largest offering on record</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n2</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Business &amp; Funding</category>
-    <description>Anthropic sold 980 million shares at $83, above its $70 to $78 range, raising $81.3 billion and valuing the Claude maker at about $1.5 trillion before Nasdaq trading under the ticker ANT. (TechCrunch, WIRED)</description>
-  </item>
-  <item>
-    <title>Counterfactual World Models: JEPAs That Reason About "What If"</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.24778</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.24778</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / World Models</category>
-    <description>Factual world models cannot answer "what if I had acted differently?" on their own, but for force-like disturbances adding the observed residual to the model's predicted action difference gives near-optimal counterfactuals with no retraining. (Randall Balestriero, Yann LeCun, Kerda Varaku · Brown University, New York University, AMI Labs)</description>
-  </item>
-  <item>
-    <title>Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22287</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22287</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>Adding a linear pixel head to a fine-tuned diffusion transformer removes the latent decoder entirely, matching or improving quality, and the same separate head sets a new ImageNet FID record for pixel flow models. (Hansheng Chen, Shengqu Cai, Jan Ackermann et al. · Luma AI, California Institute of Technology, Stanford University)</description>
-  </item>
-  <item>
-    <title>Regularized Score Centering</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.21791</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.21791</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Regularized Score Centering adds a reverse-KL penalty toward the data-generating policy to score-centered off-policy RL, stabilizing asynchronous LLM agent training and winning on all six agentic benchmarks tested. (Hao Bai, Chenlu Ye, Xuanchang Zhang et al. · UIUC, CMU)</description>
-  </item>
-  <item>
-    <title>$\pi^4$: A Foundation Model for 4D Scene Geometry and Motion</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.23144</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.23144</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Computer Vision</category>
-    <description>π⁴ is a 0.5B-parameter feed-forward model that recovers dense geometry, camera poses, metric scale, 2D/3D point tracks and moving-object masks from uncalibrated images or video in a single forward pass. (Yifan Wang, Weiguang Zhao, Ni Yang et al. · Shanghai Artificial Intelligence Laboratory, Shanghai Jiao Tong University, Zhejiang University)</description>
   </item>
 </channel>
 </rss>

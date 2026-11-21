@@ -1,5 +1,57 @@
 [
  {
+  "id": "2026-11-21-n1",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "An AI sell-off pushes the S&P 500 and the Dow into a correction as Nvidia falls about 14%",
+  "tldr": "The S&P 500 fell 3.7% and the Nasdaq 5.28% on Friday, pushing the S&P 500 and Dow into a correction and erasing the Nasdaq's gains for the year as AI stocks slumped.",
+  "category": "Markets",
+  "byline": "Fox Business, Yahoo Finance, Quartz"
+ },
+ {
+  "id": "2026-11-21-n2",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "The UK and EU agree deals on food trade, carbon markets and youth mobility, but tuition fees remain unresolved",
+  "tldr": "The UK and EU agreed to ease Brexit checks on food, relink their emissions trading schemes and create a youth mobility scheme, in exchange for UK alignment with EU rules in those areas.",
+  "category": "Trade & Policy",
+  "byline": "The Guardian, BBC"
+ },
+ {
+  "id": "2026-11-21-n3",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "Intuit agrees to sell Mailchimp to Bending Spoons for about $3.68 billion, less than a third of what it paid",
+  "tldr": "Intuit will sell email marketing platform Mailchimp to Bending Spoons for about $3.68 billion, less than a third of the roughly $12 billion it paid in 2021, and use the cash to buy back shares.",
+  "category": "Deals & M&A",
+  "byline": "Intuit, TechCrunch"
+ },
+ {
+  "id": "2026-11-21-n4",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "Canadian retail sales rise 0.8% in September on higher gas prices, but an early estimate points to a 1.5% drop in October",
+  "tldr": "Canadian retail sales rose 0.8% to $75.3 billion in September, mostly on higher prices at gas stations, while sales volumes rose just 0.1% and an early estimate shows a 1.5% fall in October.",
+  "category": "Economy & Data",
+  "byline": "Statistics Canada, The Globe and Mail"
+ },
+ {
+  "id": "nber-w36010",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "Gambling for Goals",
+  "tldr": "Using a survey linked to millions of Korean credit, telecom and card records, economists find that people who see life goals like homeownership as out of reach take more financial risks, such as trading crypto.",
+  "primary_tag": "Households & housing",
+  "tags": [
+   "Households & housing",
+   "Asset pricing",
+   "Inequality & mobility"
+  ],
+  "byline": "Costas Arkolakis, Spencer Y. Kwon, Dominic Russel et al.",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-20-n1",
   "date": "2026-11-20",
   "type": "news",

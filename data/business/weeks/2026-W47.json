@@ -2,31 +2,31 @@
  "week": "2026-W47",
  "start": "2026-11-16",
  "end": "2026-11-21",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [],
  "stories": [
   {
    "title": "Stocks fall ahead of Nvidia earnings and Anthropic IPO",
-   "outlets": 23,
+   "outlets": 26,
    "date": "2026-11-16",
-   "covered": "2026-11-17-n1"
+   "covered": "2026-11-16-n1"
   },
   {
    "title": "Jensen Huang reportedly mulling comeback as Nvidia CEO",
-   "outlets": 12,
+   "outlets": 13,
    "date": "2026-11-15",
    "covered": "2026-11-18-n4"
   },
   {
    "title": "Anthropic’s giant IPO puts the heat on OpenAI",
-   "outlets": 10,
+   "outlets": 11,
    "date": "2026-11-15",
    "covered": null
   },
   {
    "title": "Oil prices fall on expectations of coming supply surplus",
-   "outlets": 5,
+   "outlets": 6,
    "date": "2026-11-16",
    "covered": null
   },
@@ -56,8 +56,8 @@
   }
  ],
  "featured": {
-  "news": 22,
-  "papers": 5
+  "news": 26,
+  "papers": 6
  },
  "items": [
   {
@@ -221,6 +221,36 @@
    "date": "2026-11-20",
    "type": "paper",
    "title": "The Labor Market Impact of Temporary High-Skill Immigration Programs"
+  },
+  {
+   "id": "2026-11-21-n1",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "An AI sell-off pushes the S&P 500 and the Dow into a correction as Nvidia falls about 14%"
+  },
+  {
+   "id": "2026-11-21-n2",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "The UK and EU agree deals on food trade, carbon markets and youth mobility, but tuition fees remain unresolved"
+  },
+  {
+   "id": "2026-11-21-n3",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "Intuit agrees to sell Mailchimp to Bending Spoons for about $3.68 billion, less than a third of what it paid"
+  },
+  {
+   "id": "2026-11-21-n4",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "Canadian retail sales rise 0.8% in September on higher gas prices, but an early estimate points to a 1.5% drop in October"
+  },
+  {
+   "id": "nber-w36010",
+   "date": "2026-11-21",
+   "type": "paper",
+   "title": "Gambling for Goals"
   }
  ]
 }
