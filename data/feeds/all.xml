@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 21 Nov 2026 11:48:23 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 12:17:35 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Anthropic mathematician Levent Alpöge claims a Lean-formalized proof of the Riemann hypothesis, found working with Claude</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n1</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Research</category>
+    <description>Anthropic mathematician Levent Alpöge says he and Claude proved the Riemann hypothesis and formalized it in Lean; outside mathematicians report the code compiles, but no human-readable proof exists yet. (Levent Alpöge, The Verge, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Google rolls out Genie 4, its most realistic interactive world model, to Google AI Ultra subscribers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n2</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Google DeepMind's Genie 4 world model reaches paying users in Project Genie, letting them edit generated worlds mid-session with text prompts and adding real-time native audio. (Google DeepMind)</description>
+  </item>
+  <item>
+    <title>Posterior Matching Distillation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.26629</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.26629</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>PMD distills diffusion models into four-step generators that keep the teacher's diversity, by matching "tilted" posterior means that each cost a single teacher call at a shifted input. (Hidir Yesiltepe, Julius Berner, Arash Vahdat et al. · Virginia Tech, NVIDIA)</description>
+  </item>
+  <item>
+    <title>Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21250</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21250</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Reasoning</category>
+    <description>Stream of Belief lets several copies of a frozen LLM reason together by exchanging probability-weighted "belief tokens" instead of text, iterating until their joint state stops changing. (Yu Yao, Jiayi Dong, Yilun Du · MIT, UCLA, Harvard)</description>
+  </item>
+  <item>
+    <title>Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.18397</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.18397</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Gamer is a vision-language-action model that plays complex 3D games in real time from raw screen pixels with keyboard and mouse, trained by continued pre-training, sparse-reasoning fine-tuning and long-horizon RL. (Run Luo, Kuan Zhang, Qi Deng et al. · miHoYo, National University of Singapore, Tsinghua University)</description>
+  </item>
+  <item>
+    <title>On Evaluating User Simulators for Interactive Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.24892</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.24892</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>By deliberately breaking simulated users and checking whether metrics notice, this paper shows existing user-simulator evaluations miss many failures, and proposes a suite that catches all ten tested. (Hengguang Zhou, I-Hung Hsu, Li Chen et al.)</description>
+  </item>
+  <item>
+    <title>DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21925</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21925</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>DNeo, a parallel draft model for speculative decoding, fixes how drafters read the target model's hidden states and remembers rejected drafts, generating up to 1.3 times faster than the previous best. (Jameson Sandler, Shane Bergsma, Mostafa Elhoushi et al.)</description>
+  </item>
   <item>
     <title>F5 issues emergency hotfixes for critical BIG-IP flaws that can crash traffic handling and may allow remote code execution</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2026-11-21-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
     <category>AI / Computer Vision</category>
     <description>π⁴ is a 0.5B-parameter feed-forward model that recovers dense geometry, camera poses, metric scale, 2D/3D point tracks and moving-object masks from uncalibrated images or video in a single forward pass. (Yifan Wang, Weiguang Zhao, Ni Yang et al. · Shanghai Artificial Intelligence Laboratory, Shanghai Jiao Tong University, Zhejiang University)</description>
-  </item>
-  <item>
-    <title>Communicate the Change: Efficient Expert Parallelism via Activation Compression</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22215</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22215</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>EchoMoE retrofits existing mixture-of-experts models to send only a compressed change from an earlier layer's hidden state between GPUs, cutting inter-node traffic 58% and raising serving throughput 22.6%. (Fengyuan Liu, Jay Gala, Siva Reddy et al. · Mila - Quebec AI Institute, McGill University, Periodic Labs)</description>
-  </item>
-  <item>
-    <title>Attackers publish two credential-stealing versions of Microsoft's official Agent Framework package on PyPI</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n1</guid>
-    <pubDate>Thu, 19 Nov 2026 11:49:48 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Two malicious releases of Microsoft's agent-framework Python package, downloaded about 200,000 times a month, stole cloud and developer credentials; developers who installed versions 1.26.1 or 1.26.2 should rebuild and rotate secrets. (BleepingComputer, The Register)</description>
-  </item>
-  <item>
-    <title>Intel signs its first outside customer for its 18A chip-making process, and Microsoft adopts its EMIB packaging</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n2</guid>
-    <pubDate>Thu, 19 Nov 2026 11:49:48 +0000</pubDate>
-    <category>Tech / Chips &amp; Hardware</category>
-    <description>Intel CEO Lip-Bu Tan says an unnamed company has signed on to make chips with Intel's 18A-P process, and that 18A yields have reached 70%, a step for Intel's effort to compete with TSMC. (Crypto Briefing, TrendForce)</description>
-  </item>
-  <item>
-    <title>Microsoft previews Windows Server 2028, which ships hardened by default with post-quantum key exchange</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2026-11-19-n3</guid>
-    <pubDate>Thu, 19 Nov 2026 11:49:48 +0000</pubDate>
-    <category>Tech / Software &amp; Platforms</category>
-    <description>Windows Server 2028's public preview turns on hundreds of security settings from first boot, including Kerberos over NTLM and hybrid post-quantum TLS, and Microsoft warns that some older software may break. (BleepingComputer, Ars Technica)</description>
-  </item>
-  <item>
-    <title>A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2611.17265</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2611.17265</guid>
-    <pubDate>Thu, 19 Nov 2026 11:49:48 +0000</pubDate>
-    <category>Tech / Quantum computing</category>
-    <description>A Slovak quantum key distribution network links four cities over ordinary telecom fiber, runs all links at once and delivers finished keys to applications in real time, with honest post-processed key rates. (Gilberto Borges, Saeid Salari, Ekta Panwar et al. · Institute of Physics, Slovak Academy of Sciences)</description>
-  </item>
-  <item>
-    <title>FDA approves adrabetadex, the first drug shown to lengthen survival in infantile-onset Niemann-Pick disease type C</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/2026-11-18-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/2026-11-18-n1</guid>
-    <pubDate>Wed, 18 Nov 2026 13:54:15 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA approved Lembaz (adrabetadex), a spinal injection given every two weeks, after treated patients with early-onset Niemann-Pick disease type C lived a median 8.5 years versus 4.9 years in matched controls. (FDA)</description>
-  </item>
-  <item>
-    <title>AriBio's oral Alzheimer's drug AR1001 slows decline in patients taking no other dementia drug, but not in its full phase 3 trial</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/2026-11-18-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-18/2026-11-18-n2</guid>
-    <pubDate>Wed, 18 Nov 2026 13:54:15 +0000</pubDate>
-    <category>Biology / Clinical Research</category>
-    <description>In a 1,535-patient phase 3 trial, the daily pill AR1001 slowed decline by 31% among 604 patients on no other dementia drug, meeting a prespecified goal, but showed no significant effect overall. (MoneyToday, iNews24)</description>
   </item>
 </channel>
 </rss>

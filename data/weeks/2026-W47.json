@@ -2,27 +2,27 @@
  "week": "2026-W47",
  "start": "2026-11-16",
  "end": "2026-11-21",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [
   {
    "id": "2611.22115",
    "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
-   "hf": 164,
+   "hf": 167,
    "org": "XingChen-AGI",
    "featured": null
   },
   {
    "id": "2611.18397",
    "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
-   "hf": 128,
+   "hf": 145,
    "org": null,
-   "featured": null
+   "featured": "2026-11-21"
   },
   {
    "id": "2611.18359",
    "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
-   "hf": 125,
+   "hf": 136,
    "org": "Grid Robotics",
    "featured": null
   },
@@ -36,28 +36,28 @@
   {
    "id": "2611.21218",
    "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
-   "hf": 102,
+   "hf": 104,
    "org": null,
    "featured": null
   },
   {
    "id": "2611.21072",
    "title": "Sage S2.1 Flash Technical Report",
-   "hf": 96,
+   "hf": 98,
    "org": "Intern Large Models",
    "featured": null
   },
   {
    "id": "2611.17621",
    "title": "AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs",
-   "hf": 90,
+   "hf": 94,
    "org": "SLAI-AITP",
    "featured": null
   },
   {
    "id": "2611.19937",
    "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
-   "hf": 72,
+   "hf": 74,
    "org": "Nanyang Technological University",
    "featured": null
   }
@@ -65,9 +65,9 @@
  "stories": [
   {
    "title": "Jensen Huang and the End of the Founder Fairy Tale",
-   "outlets": 26,
+   "outlets": 30,
    "date": "2026-11-13",
-   "covered": "2026-11-19-n1"
+   "covered": "2026-11-16-n2"
   },
   {
    "title": "California sues OpenAI over rogue AI hacking incidents",
@@ -94,6 +94,12 @@
    "covered": null
   },
   {
+   "title": "Stocks slide as Nvidia results loom",
+   "outlets": 4,
+   "date": "2026-11-17",
+   "covered": null
+  },
+  {
    "title": "Anthropic IPO: how can I buy shares, and is it worth it?",
    "outlets": 4,
    "date": "2026-11-17",
@@ -104,16 +110,10 @@
    "outlets": 4,
    "date": "2026-11-19",
    "covered": null
-  },
-  {
-   "title": "Anthropic’s IPO is the next big test for AI",
-   "outlets": 3,
-   "date": "2026-11-15",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 9,
-  "papers": 25
+  "news": 11,
+  "papers": 30
  }
 }

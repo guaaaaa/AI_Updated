@@ -1,0 +1,386 @@
+{
+ "date": "2026-11-21",
+ "edition": "weekend",
+ "generated_at": "2026-11-21T12:17:35+00:00",
+ "summary": "Weekend edition: an Anthropic mathematician claims a Lean-checked proof of the Riemann hypothesis found with Claude, Google opens Genie 4 to subscribers, and the week's best papers on diffusion distillation, latent multi-agent reasoning, game agents, user simulators and faster speculative decoding.",
+ "news": [
+  {
+   "id": "2026-11-21-n1",
+   "story_key": "alpoge-claude-riemann-hypothesis-claim",
+   "title": "Anthropic mathematician Levent Alpöge claims a Lean-formalized proof of the Riemann hypothesis, found working with Claude",
+   "category": "Research",
+   "published": "2026-11-20T11:34:13-05:00",
+   "tldr": "Anthropic mathematician Levent Alpöge says he and Claude proved the Riemann hypothesis and formalized it in Lean; outside mathematicians report the code compiles, but no human-readable proof exists yet.",
+   "why_selected": "The week's most covered AI story (11 outlets): a claimed AI-assisted solution to one of mathematics' central open problems, with a machine-checkable proof attached.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Riemann hypothesis, proposed in 1859, concerns the zeros of a function tied to how prime numbers are distributed. It is one of the seven Millennium Prize problems, which carry a $1 million award from the Clay Mathematics Institute; only the Poincaré conjecture has been officially solved. AI labs have been racing on such problems: in September OpenAI claimed a solution to the Navier-Stokes problem."
+    },
+    {
+     "heading": "What happened",
+     "body": "After Anthropic's IPO on Thursday, Levent Alpöge, a mathematician at Anthropic, posted a short note on his website saying that \"working with Claude\" he had found a proof of the Riemann hypothesis, that the method also resolves the Generalized Riemann Hypothesis, and that he and Claude had formalized the argument in Lean, a language whose proofs a computer can check. He published only the Lean files, saying the argument is \"incredibly long\" and that he did not want to post an unreadable document. He wrote that Claude \"far outpaced\" him near the end, and that he messaged Anthropic CEO Dario Amodei about the result late on Sunday, before the company's IPO. TechCrunch reports that participants in a mathematicians' Zulip chat, including MIT's Andrew Sutherland, say they have compiled the Lean proof successfully. Anthropic did not comment to The Verge."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If it holds, this is a machine-checked solution to one of the most important problems in mathematics, produced with substantial help from a commercial model. That would move the debate about AI in research from \"can it help?\" to how humans digest results they did not derive themselves. It also shows formal verification becoming the way to establish trust in AI-assisted work: a compiling Lean proof is strong evidence, though TechCrunch notes it will be a while before mathematicians feel they have a handle on the argument itself. The same day, Stanford postdoc Alessandro Masullo released a separate, entirely human proof attempt, which has not been formalized."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Further independent checks of the Lean files, and Alpöge's promised human-readable write-up. Clay rules require publication and two years of scrutiny before a prize can be considered."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Levent Alpöge",
+     "url": "https://alpo.ge/remark.pdf"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-n2",
+   "story_key": "google-genie-4-project-genie-rollout",
+   "title": "Google rolls out Genie 4, its most realistic interactive world model, to Google AI Ultra subscribers",
+   "category": "Model Release",
+   "published": "2026-11-18T12:00:00-05:00",
+   "tldr": "Google DeepMind's Genie 4 world model reaches paying users in Project Genie, letting them edit generated worlds mid-session with text prompts and adding real-time native audio.",
+   "why_selected": "First public access to a new generation of Google's interactive world model, a major capability launch in a fast-moving area.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "World models generate an explorable environment frame by frame in response to a user's actions, rather than rendering a fixed video. Earlier this year Google DeepMind introduced Project Genie, an experimental research prototype built on its Genie 3 model that let people generate and walk through interactive worlds from a text or image prompt. Early testers asked for more control over what happens inside those worlds and easier ways to share them."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday Google DeepMind began rolling out Genie 4 to eligible Google AI Ultra subscribers through Project Genie; Google AI Pro members can join a waitlist. Google calls Genie 4 its most realistic and interactive world model yet. Users can type a new prompt while navigating to edit the world in real time, for example shifting the weather, dropping in a character or redirecting the action. For the first time, the visuals come with real-time native audio, from ambient sound to character dialogue. Genie 3 also gained longer sessions of up to 3 minutes per generation (up from 60 seconds), the ability to chain worlds, and seeding from 360-degree panorama images. A new Project Genie agent builds worlds from a conversation using Google's other generative models, Gemini can join a session to suggest directions or trigger events, and a community gallery lets users publish and remix worlds."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Interactive world models are moving from research demos to paid products. Promptable mid-session events and synchronized audio are steps toward controllable, persistent simulation, and the new agent shows Google combining its world, image, music and Gemini models into a single creative tool. Opening Genie 4 to paying users also tests whether people will pay for world generation, and will expose its limits far more widely than a research preview could."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether access widens beyond Ultra, how long sessions stay consistent, and whether Google publishes technical details or benchmarks for Genie 4."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/blog/genie-4-is-now-available/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.26629",
+   "title": "Posterior Matching Distillation",
+   "authors": [
+    "Hidir Yesiltepe",
+    "Julius Berner",
+    "Arash Vahdat",
+    "Pinar Yanardag"
+   ],
+   "affiliations": [
+    "Virginia Tech",
+    "NVIDIA"
+   ],
+   "announced": "2026-11-19T20:00:00-05:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Efficiency"
+   ],
+   "tldr": "PMD distills diffusion models into four-step generators that keep the teacher's diversity, by matching \"tilted\" posterior means that each cost a single teacher call at a shifted input.",
+   "why_selected": "A simple, provable new distillation objective with clearly better sample diversity on SDXL and FLUX.2; on the alphaXiv Hot list for two days.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Diffusion and flow models produce images by denoising over dozens of network evaluations, which is slow. Distillation trains a student to do it in a few steps. But a noisy image corresponds to many plausible clean images, and a fast student tends to collapse onto the most common ones, so four-step generators often produce near-identical pictures for the same prompt."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Distribution Matching Distillation (DMD) aligns student and teacher distributions with an approximate reverse-KL objective, which is mode-seeking: it rewards hitting dominant modes and loses rarer ones. Moment Matching compares only conditional means, and at a different noisy state than the one the student started from. Neither directly supervises the full distribution of clean images given a noisy input."
+    },
+    {
+     "heading": "Key idea",
+     "body": "A denoiser normally gives only the average clean image for a noisy input. PMD asks for more: averages reweighted by exp(λ·x), which act like a spotlight on different modes. The authors' \"Tilt=Shift\" identity shows that, under Gaussian noise, such a tilted average equals the teacher's ordinary prediction at a slightly shifted input, so each target costs one frozen-teacher call. They prove that matching these tilted means over a neighborhood of tilts pins down the teacher's entire posterior, including how likely each mode is. The student is made stochastic by adding a random input; for each noisy state it draws a few samples (as few as four), reweights them with a softmax over λ·x, and is trained so its tilted mean matches the teacher's."
+    },
+    {
+     "heading": "Results",
+     "body": "On FLUX.2 [klein] 4B with four steps, PMD's Vendi diversity score is 3.37 versus 2.32 for the official four-step model and 1.85 for RTDMD; on SDXL it is 4.46 versus 2.52 for DMD2. PMD has the best four-step FID on both models (19.14 on SDXL vs 19.20 for DMD2) and leads OneIG-EN and PickScore on SDXL."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Few-step generators are what ships in products, and diversity loss is their known weakness. PMD offers a principled fix that needs no auxiliary score network and allows any step count within the trained grid. Caveat: the guarantees assume an exact teacher denoiser, and prompt-alignment scores are competitive rather than uniformly best."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.26629",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26629",
+    "code": "https://github.com/yesiltepe-hidir/PMD"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 15,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 35,
+    "org": "NVIDIA"
+   }
+  },
+  {
+   "id": "2611.21250",
+   "title": "Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics",
+   "authors": [
+    "Yu Yao",
+    "Jiayi Dong",
+    "Yilun Du"
+   ],
+   "affiliations": [
+    "MIT",
+    "UCLA",
+    "Harvard"
+   ],
+   "announced": "2026-11-16T20:00:00-05:00",
+   "primary_tag": "Reasoning",
+   "tags": [
+    "Reasoning",
+    "Agents"
+   ],
+   "tldr": "Stream of Belief lets several copies of a frozen LLM reason together by exchanging probability-weighted \"belief tokens\" instead of text, iterating until their joint state stops changing.",
+   "why_selected": "Second on alphaXiv Hot for five days running; a clean new framing of multi-agent reasoning that beats prior latent-communication methods by wide margins.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Multi-agent systems, where several LLM agents critique and revise each other's answers, can improve reasoning, but they communicate in text. Writing out every reasoning trace is slow and squeezes each agent's uncertainty into one chosen word at a time."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Multi-agent debate exchanges full natural-language arguments, which works well but generates many tokens. Latent methods such as LatentMAS, ThoughtComm and Interlat pass hidden states or key-value caches between agents, sometimes with trained adapters, but they have been much less accurate than debate."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Each agent writes in \"belief tokens\": instead of picking the next word, it feeds back the average of the top 50 candidate word embeddings weighted by their probabilities. If the model is 55% sure of A and 30% of B, the token blends both, so uncertainty survives. Four agents with different one-sentence personas run on the same frozen model. Each cycle has a global step, where every agent regenerates its block of 384 belief tokens while reading the others' blocks, followed by a local step where it refines only its own. The authors treat this as a dynamical system searching for a collective equilibrium, a state where more communication changes nothing. Agents decode short probe answers after each cycle; when the majority answer stays fixed for two cycles, each agent writes a final answer and the group votes."
+    },
+    {
+     "heading": "Results",
+     "body": "With Qwen3-8B, SoB scores 77.2% on MATH-500 versus 65.6% for LatentMAS, 44.9% versus 34.3% on GPQA-Diamond, and 76.3% on MedQA, above text debate's 73.7%. It uses 51% fewer text tokens than Soft Thinking and has 1.1 to 2.6 times lower sequential latency than LatentMAS. Belief tokens drift toward real word embeddings as cycles proceed."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It narrows the gap between latent and text-based collaboration without any training, suggesting richer channels between agents than language. Caveats: text debate still wins on several benchmarks, total compute is not reduced, and latent exchanges are harder to inspect."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.21250",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21250",
+    "code": "https://github.com/AI4SciDisc/stream-of-belief"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 2,
+    "alphaxiv_hot_days": 5
+   }
+  },
+  {
+   "id": "2611.18397",
+   "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+   "authors": [
+    "Run Luo",
+    "Kuan Zhang",
+    "Qi Deng",
+    "Yukun Chen",
+    "Zhihao Yang",
+    "Yufei Zhang",
+    "Renrong Hu",
+    "Yi Zhang",
+    "Guiyu Ma",
+    "Tianyu Fan",
+    "Longze Chen",
+    "Hao Sun",
+    "Jiaming Li",
+    "Jiaming Yang",
+    "Xiaohao Liu",
+    "Tao Tan",
+    "Minzheng Wang",
+    "Hangtian Jia",
+    "Shuai Yuan",
+    "Lvdi Wang",
+    "Xiao Liu",
+    "Chao Ma",
+    "Yuting Zou",
+    "Yinhe Zheng",
+    "Xiaobo Xia",
+    "Dawei Jiang",
+    "Shaoqing Ren"
+   ],
+   "affiliations": [
+    "miHoYo",
+    "National University of Singapore",
+    "Tsinghua University",
+    "University of Chinese Academy of Sciences",
+    "University of Science and Technology of China",
+    "Xi'an Jiaotong University"
+   ],
+   "announced": "2026-11-15T20:00:00-05:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning",
+    "Multimodal"
+   ],
+   "tldr": "Gamer is a vision-language-action model that plays complex 3D games in real time from raw screen pixels with keyboard and mouse, trained by continued pre-training, sparse-reasoning fine-tuning and long-horizon RL.",
+   "why_selected": "One of the week's most upvoted papers (145 on Hugging Face) and a full recipe, from scaling study to serving system, for real-time agents that act through a human interface.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents that operate computers, games or robots must perceive cluttered scenes, plan over hours and act fast enough that the world has not moved on. Modern 3D games are a controllable testbed for this, but they require low-level keyboard and mouse control, long memory and real-time reactions."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier game agents beat humans in Atari, Minecraft or StarCraft using internal game state, custom action spaces or game-specific APIs, which transfer poorly. General multimodal models can reason about screens but are slow: the authors show their scores collapse when the game keeps running during inference."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Gamer treats every game as screen pixels in, device events out. It looks at the screen five times a second and emits accumulated mouse motion plus six sets of pressed keys per step, giving about 30 Hz control. Starting from Qwen3-VL-8B, continued pre-training on gameplay from several sources, with random key remapping, teaches generic control. Fine-tuning adds \"sparse thinking\": the model writes reasoning only at decision points such as a failed route, and periodically compresses progress into a memory summary so tasks can outlast the context window. A reinforcement learning variant, Temporal-Aware GRPO, splits long rollouts into memory-linked segments and compares segments across rollouts of the same task. A custom server, Streaming-vLLM, keeps cached state across turns and streams actions early."
+    },
+    {
+     "heading": "Results",
+     "body": "Under real-time play, Gamer-8B-CPT averages 29.5 across four game benchmarks, versus 17.6 for GPT-5.6-Sol and 17.3 for Claude-Opus-5.0, whose scores fall by 26 to 35 points compared with paused-game evaluation. On the Minecraft benchmark MCU it scores 47.7 against 8.7 for both frontier models. A 120-configuration scaling study used about 45,000 H200 GPU-hours."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It shows that latency, not just intelligence, limits general agents, and that ordinary keyboard and mouse logs scale as training data. Caveat: long-horizon results center on one game, Honkai: Star Rail, and the serving setup used 64 H200 GPUs for 32 parallel games."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.18397",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.18397",
+    "code": "https://github.com/RainBowLuoCS/Gamer"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 7,
+    "alphaxiv_hot_days": 3,
+    "hf_upvotes": 145
+   }
+  },
+  {
+   "id": "2611.24892",
+   "title": "On Evaluating User Simulators for Interactive Agents",
+   "authors": [
+    "Hengguang Zhou",
+    "I-Hung Hsu",
+    "Li Chen",
+    "Priyanshi Shrivastava",
+    "Anastasios Angelopoulos",
+    "Wei-Lin Chiang",
+    "Ion Stoica",
+    "Cho-Jui Hsieh"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-18T20:00:00-05:00",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Agents"
+   ],
+   "tldr": "By deliberately breaking simulated users and checking whether metrics notice, this paper shows existing user-simulator evaluations miss many failures, and proposes a suite that catches all ten tested.",
+   "why_selected": "Simulated users increasingly grade and train agents; this careful meta-evaluation, on real artifact-building sessions and on alphaXiv Hot for three days, shows how unreliable current checks are.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents that build apps, documents or games are judged through multi-turn conversations, so evaluation needs a user who reacts to the work. Real users are expensive and hard to repeat, so LLM-based user simulators stand in. But a simulator can sound natural while approving broken work or forgetting a requirement, quietly distorting which agent looks best."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier benchmarks score simulators by similarity to human language and behavior, consistency with a written user profile, or agreement with human ratings of agents. Nobody had checked whether these metrics actually drop when a simulator misbehaves."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Test the tests. The authors replay real user sessions with a simulator, then inject ten controlled defects into its setup: changing the user's goal, removing constraints, stopping early, front-loading every requirement, accepting broken work, switching language or persona, and secretly favoring one agent. A metric \"detects\" a defect if scores reliably fall against an unmodified control replay. Their own suite checks three levels: whether simulator feedback ranks agents as real users do, whether simulated populations behave like real ones (dialogue acts, turn length, reactions to errors), and whether each replay preserves its particular user's intent, constraints and persona."
+    },
+    {
+     "heading": "Results",
+     "body": "Evaluation suites adapted from SimulatorArena, VISTA and SWE-Together detect six, five and six of the ten defects; none detects agent favoritism, and their combined scores even prefer simulators told to accept broken work. The new suite detects all ten. Testing six simulators on 351 real sessions from 348 users in 23 languages, the best scored 70 out of 100, and population-level statistics alone missed wrong goals and ignored constraints."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Leaderboards and reinforcement learning that rely on simulated users inherit these blind spots. The perturbation method is reusable for checking any evaluation metric. Caveat: the reference rankings and labels come from an LLM judge, and detection does not always mean useful filtering."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.24892",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.24892"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 8,
+    "alphaxiv_hot_days": 3,
+    "notable_authors": [
+     "Ion Stoica"
+    ]
+   }
+  },
+  {
+   "id": "2611.21925",
+   "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+   "authors": [
+    "Jameson Sandler",
+    "Shane Bergsma",
+    "Mostafa Elhoushi",
+    "Bin Claire Zhang",
+    "Gavia Gray",
+    "Joel Hestness",
+    "Nolan Dey",
+    "Ferdinando Fioretto"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-17T20:00:00-05:00",
+   "primary_tag": "Efficiency",
+   "tags": [
+    "Efficiency",
+    "Architectures"
+   ],
+   "tldr": "DNeo, a parallel draft model for speculative decoding, fixes how drafters read the target model's hidden states and remembers rejected drafts, generating up to 1.3 times faster than the previous best.",
+   "why_selected": "Concrete, well-ablated gains for lossless LLM speed-ups, a technique already central to serving; on alphaXiv Hot for four days.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "LLMs generate one token per forward pass. Speculative decoding speeds this up without changing outputs: a small drafter proposes several tokens and the large model checks them all at once, keeping the ones it agrees with. Speed depends on how many draft tokens are accepted per round."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Parallel drafters such as DFlash, DFlash-2 and DSpark propose a whole block of tokens in one pass and read hidden states from evenly spaced layers of the target model through a dense projection. The authors argue this projection scrambles the features, a problem they call residual mixing, and that drafters discard everything learned from drafts that were just rejected."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Instead of a dense projection, DNeo's Mixture-of-Features Attention takes a learned weighted average of a few target layers, one scalar per layer, so each feature coordinate keeps its meaning. Think of it as choosing how much to listen to each layer rather than blending everything into a new code; it uses about 0.05% of the parameters of the dense encoder, and the weights reveal which layers matter. Those weights show the later half of the network is most useful, so DNeo draws features only from there. A \"rejection memory\" lets the drafter attend to features of previously rejected proposals, and a fused causal head corrects each draft token given the one before it."
+    },
+    {
+     "heading": "Results",
+     "body": "With Qwen3-4B on one H100 at temperature 1, DNeo reaches 3.55 times faster generation than standard decoding on MATH-500, versus 2.93 for DFlash-2, and accepts 5.37 tokens per round versus 4.05. At batch size 1 it serves 705 tokens per second versus 590 for DFlash-2. Removing the new encoder alone costs 0.65 accepted tokens per round."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Faster lossless decoding cuts serving cost directly, and the finding that encoding matters more than drafter size is useful for anyone building drafters. Caveats: tests use one 4B target, and gains shrink at temperature 0 on GPQA and MT-Bench, where DFlash is faster."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.21925",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.21925",
+    "code": "https://github.com/J-sandler/DNeo"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 12,
+    "alphaxiv_hot_days": 4,
+    "hf_upvotes": 8,
+    "org": "Cerebras"
+   }
+  }
+ ]
+}

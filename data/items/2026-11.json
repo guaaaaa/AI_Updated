@@ -1,5 +1,99 @@
 [
  {
+  "id": "2026-11-21-n1",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "Anthropic mathematician Levent Alpöge claims a Lean-formalized proof of the Riemann hypothesis, found working with Claude",
+  "tldr": "Anthropic mathematician Levent Alpöge says he and Claude proved the Riemann hypothesis and formalized it in Lean; outside mathematicians report the code compiles, but no human-readable proof exists yet.",
+  "category": "Research",
+  "byline": "Levent Alpöge, The Verge, TechCrunch"
+ },
+ {
+  "id": "2026-11-21-n2",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "Google rolls out Genie 4, its most realistic interactive world model, to Google AI Ultra subscribers",
+  "tldr": "Google DeepMind's Genie 4 world model reaches paying users in Project Genie, letting them edit generated worlds mid-session with text prompts and adding real-time native audio.",
+  "category": "Model Release",
+  "byline": "Google DeepMind"
+ },
+ {
+  "id": "2611.26629",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "Posterior Matching Distillation",
+  "tldr": "PMD distills diffusion models into four-step generators that keep the teacher's diversity, by matching \"tilted\" posterior means that each cost a single teacher call at a shifted input.",
+  "primary_tag": "Generative Models",
+  "tags": [
+   "Generative Models",
+   "Efficiency"
+  ],
+  "byline": "Hidir Yesiltepe, Julius Berner, Arash Vahdat et al. · Virginia Tech, NVIDIA",
+  "hf": 35,
+  "venue": null
+ },
+ {
+  "id": "2611.21250",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics",
+  "tldr": "Stream of Belief lets several copies of a frozen LLM reason together by exchanging probability-weighted \"belief tokens\" instead of text, iterating until their joint state stops changing.",
+  "primary_tag": "Reasoning",
+  "tags": [
+   "Reasoning",
+   "Agents"
+  ],
+  "byline": "Yu Yao, Jiayi Dong, Yilun Du · MIT, UCLA, Harvard",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.18397",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+  "tldr": "Gamer is a vision-language-action model that plays complex 3D games in real time from raw screen pixels with keyboard and mouse, trained by continued pre-training, sparse-reasoning fine-tuning and long-horizon RL.",
+  "primary_tag": "Agents",
+  "tags": [
+   "Agents",
+   "Reinforcement Learning",
+   "Multimodal"
+  ],
+  "byline": "Run Luo, Kuan Zhang, Qi Deng et al. · miHoYo, National University of Singapore, Tsinghua University",
+  "hf": 145,
+  "venue": null
+ },
+ {
+  "id": "2611.24892",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "On Evaluating User Simulators for Interactive Agents",
+  "tldr": "By deliberately breaking simulated users and checking whether metrics notice, this paper shows existing user-simulator evaluations miss many failures, and proposes a suite that catches all ten tested.",
+  "primary_tag": "Evaluation & Benchmarks",
+  "tags": [
+   "Evaluation & Benchmarks",
+   "Agents"
+  ],
+  "byline": "Hengguang Zhou, I-Hung Hsu, Li Chen et al.",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.21925",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+  "tldr": "DNeo, a parallel draft model for speculative decoding, fixes how drafters read the target model's hidden states and remembers rejected drafts, generating up to 1.3 times faster than the previous best.",
+  "primary_tag": "Efficiency",
+  "tags": [
+   "Efficiency",
+   "Architectures"
+  ],
+  "byline": "Jameson Sandler, Shane Bergsma, Mostafa Elhoushi et al.",
+  "hf": 8,
+  "venue": null
+ },
+ {
   "id": "2026-11-20-n1",
   "date": "2026-11-20",
   "type": "news",

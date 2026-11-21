@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Fri, 20 Nov 2026 12:29:19 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 12:17:35 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Anthropic mathematician Levent Alpöge claims a Lean-formalized proof of the Riemann hypothesis, found working with Claude</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n1</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Research</category>
+    <description>Anthropic mathematician Levent Alpöge says he and Claude proved the Riemann hypothesis and formalized it in Lean; outside mathematicians report the code compiles, but no human-readable proof exists yet. (Levent Alpöge, The Verge, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Google rolls out Genie 4, its most realistic interactive world model, to Google AI Ultra subscribers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n2</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Google DeepMind's Genie 4 world model reaches paying users in Project Genie, letting them edit generated worlds mid-session with text prompts and adding real-time native audio. (Google DeepMind)</description>
+  </item>
+  <item>
+    <title>Posterior Matching Distillation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.26629</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.26629</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>PMD distills diffusion models into four-step generators that keep the teacher's diversity, by matching "tilted" posterior means that each cost a single teacher call at a shifted input. (Hidir Yesiltepe, Julius Berner, Arash Vahdat et al. · Virginia Tech, NVIDIA)</description>
+  </item>
+  <item>
+    <title>Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21250</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21250</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Reasoning</category>
+    <description>Stream of Belief lets several copies of a frozen LLM reason together by exchanging probability-weighted "belief tokens" instead of text, iterating until their joint state stops changing. (Yu Yao, Jiayi Dong, Yilun Du · MIT, UCLA, Harvard)</description>
+  </item>
+  <item>
+    <title>Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.18397</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.18397</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Gamer is a vision-language-action model that plays complex 3D games in real time from raw screen pixels with keyboard and mouse, trained by continued pre-training, sparse-reasoning fine-tuning and long-horizon RL. (Run Luo, Kuan Zhang, Qi Deng et al. · miHoYo, National University of Singapore, Tsinghua University)</description>
+  </item>
+  <item>
+    <title>On Evaluating User Simulators for Interactive Agents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.24892</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.24892</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>By deliberately breaking simulated users and checking whether metrics notice, this paper shows existing user-simulator evaluations miss many failures, and proposes a suite that catches all ten tested. (Hengguang Zhou, I-Hung Hsu, Li Chen et al.)</description>
+  </item>
+  <item>
+    <title>DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21925</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21925</guid>
+    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
+    <category>AI / Efficiency</category>
+    <description>DNeo, a parallel draft model for speculative decoding, fixes how drafters read the target model's hidden states and remembers rejected drafts, generating up to 1.3 times faster than the previous best. (Jameson Sandler, Shane Bergsma, Mostafa Elhoushi et al.)</description>
+  </item>
   <item>
     <title>Microsoft launches MAI Code 2 and Code 2 Flash, in-house coding models that come close to OpenAI's and Anthropic's at a lower cost</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
     <category>AI / Optimization</category>
     <description>Weight decay applied only early in Muon pretraining can look harmful when it is switched off yet give a lower final loss, because it leaves smaller weights and thus larger relative steps. (Md Rifat Arefin, Ravid Shwartz-Ziv, Ernie Chang et al. · Meta, Mila-Quebec AI Institute, Université de Montréal)</description>
-  </item>
-  <item>
-    <title>Interpretable weight-space programming builds transparent transformers and brain encoding models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18114</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18114</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Interpretability</category>
-    <description>An LLM agent writes neural network weights and features by hand, with training forbidden, producing readable transformers and brain-response models that beat classical interpretable baselines. (Yash Mehta, Chandan Singh, Weijia Xu et al.)</description>
-  </item>
-  <item>
-    <title>OpenAI launches ChatGPT Wallet so its Dots agents can buy things for users, with approval for each purchase</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n1</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Product &amp; Features</category>
-    <description>OpenAI's new ChatGPT Wallet lets its Dots agents complete purchases with a tokenized card after the user approves each one biometrically, starting with a limited group of US Pro subscribers. (TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>llama.cpp and ggml reach version 1.0, promising stable interfaces for the local AI software built on them</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2026-11-14-n2</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Open Source</category>
-    <description>The llama.cpp team released its libraries as v1.0.0 and adopted semantic versioning, so future breaking API or ABI changes will come only with major version bumps. (Hugging Face (ggml-org))</description>
-  </item>
-  <item>
-    <title>Unbundling Multimodal Vision Encoding</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17334</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17334</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Multimodal</category>
-    <description>In a compute-matched study trained entirely from scratch, a pretrained vision encoder brings no advantage, but vision-only parameters do, and they work as well placed inside the first layers of the language backbone. (Ellis Brown, Chris Hoang, Shengyi Qian et al. · New York University, Meta FAIR)</description>
-  </item>
-  <item>
-    <title>Back to Pixels: Lifting Latent Video Diffusion into Pixel Space</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17336</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.17336</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>PixVid fine-tunes a pretrained latent video diffusion model to generate every frame directly in pixels, matching its quality while enabling higher resolution, frame-accurate editing and one-frame control latency. (Yanke Song, Shuo Chen, Chris Rockwell et al. · Roblox, University of California, Merced)</description>
-  </item>
-  <item>
-    <title>Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.11962</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.11962</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>Synthetic image datasets train better representations when they cover the full range of likelihood levels real images occupy, and a simple distance over that "energy profile" predicts pretraining quality better than FID. (Ching Lam Choi, Antonio Torralba, Phillip Isola et al. · MIT CSAIL, Technical University of Munich)</description>
-  </item>
-  <item>
-    <title>Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.09382</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-14/2611.09382</guid>
-    <pubDate>Sat, 14 Nov 2026 12:14:45 +0000</pubDate>
-    <category>AI / Interpretability</category>
-    <description>A reasoning model that edits another model's weights directly, without gradients, raised Qwen3.5-0.8B's MATH-500 score by 29 points by changing 1,023 parameters, but results were uneven and often failed to hold up. (Junru Hu, Cheng Tang, Wei Li et al.)</description>
   </item>
 </channel>
 </rss>
