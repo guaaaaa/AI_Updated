@@ -2,8 +2,8 @@
  "week": "2026-W47",
  "start": "2026-11-16",
  "end": "2026-11-21",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [],
  "stories": [
   {
@@ -11,17 +11,11 @@
    "outlets": 3,
    "date": "2026-11-16",
    "covered": null
-  },
-  {
-   "title": "After 49 Years, Voyager 1 Is a Mind-Blowing One Light-Day From Earth",
-   "outlets": 3,
-   "date": "2026-11-18",
-   "covered": "2026-11-18-n1"
   }
  ],
  "featured": {
-  "news": 10,
-  "papers": 12
+  "news": 11,
+  "papers": 14
  },
  "items": [
   {
@@ -155,6 +149,24 @@
    "date": "2026-11-20",
    "type": "paper",
    "title": "Quantum-classical separation in bounded-resource tasks arising from measurement contextuality"
+  },
+  {
+   "id": "2026-11-21-n1",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "EPFL theory predicts the heating power fusion plasmas need to enter high-confinement mode"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11294-w",
+   "date": "2026-11-21",
+   "type": "paper",
+   "title": "Quantum resistance paradox of low-dimensional superfluids"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11268-y",
+   "date": "2026-11-21",
+   "type": "paper",
+   "title": "Analogue simulation of massive relativistic quantum fields in 2 + 1 dimensions"
   }
  ]
 }

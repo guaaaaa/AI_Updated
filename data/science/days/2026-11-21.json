@@ -1,0 +1,158 @@
+{
+ "date": "2026-11-21",
+ "edition": "weekend",
+ "generated_at": "2026-11-21T13:22:40+00:00",
+ "summary": "A theory for when fusion plasmas switch into high confinement, and two cold-atom experiments that test ideas about superfluids and quantum fields.",
+ "news": [
+  {
+   "id": "2026-11-21-n1",
+   "story_key": "epfl-lh-transition-power-threshold-theory",
+   "title": "EPFL theory predicts the heating power fusion plasmas need to enter high-confinement mode",
+   "category": "Energy",
+   "published": "2026-11-20T12:20:00-05:00",
+   "tldr": "Physicists at EPFL's Swiss Plasma Center have a single theory for the power needed to push tokamak plasmas into high-confinement mode, and say ITER has margin while SPARC is close to its limit.",
+   "why_selected": "A physics-based answer to a question open since 1982 that bears directly on whether the next big fusion machines can reach their target operating regime.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Tokamaks hold a plasma of hydrogen fuel at extreme temperatures inside a doughnut-shaped chamber using strong magnetic fields. The plasma is turbulent, and the turbulence carries heat out. In 1982 researchers found that raising the heating power past a threshold causes turbulence near the plasma's edge to drop sharply, so the plasma keeps its energy much better. This jump from low confinement (L-mode) to high confinement (H-mode) is the planned operating state for ITER, the international reactor under construction in France. Yet the threshold power has resisted prediction: it changes with plasma density and with the direction of the magnetic field, and no theory explained both together."
+    },
+    {
+     "heading": "What happened",
+     "body": "A team led by doctoral assistant Brenno De Lucca at EPFL's Swiss Plasma Center reported in Physical Review Letters a theory that covers these effects in one framework. They simulated a tokamak plasma as heating power rose, identified the processes behind the transition, built a mathematical model and compared its predictions with measurements from existing tokamaks. In their picture, turbulence itself drives flows that move at different speeds across the plasma's outer region; these differences help suppress the turbulence and cut heat loss. The magnetic field direction, those flows and particle collisions combine to make the transition easier in one field configuration than the other. The equations also explain why the needed power rises with density in one regime and falls in another, giving a density where heating needs are lowest."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Applied to future machines, the model predicts that ITER needs at least 43 megawatts of heating to reach H-mode, below its planned 73 megawatts. For SPARC, the compact high-field tokamak being built by Commonwealth Fusion Systems, the predicted minimum is 26 megawatts, close to its planned 25, leaving little room for error."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the predictions hold up against new experiments, and whether reactor designers start using the criterion in planning heating systems."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Phys.org (EPFL release)",
+     "url": "https://phys.org/news/2026-11-theory-fusion-plasmas-state-energy.html"
+    },
+    {
+     "name": "arXiv (De Lucca et al.)",
+     "url": "https://arxiv.org/abs/2605.00624"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11294-w",
+   "title": "Quantum resistance paradox of low-dimensional superfluids",
+   "authors": [
+    "Simon Wili",
+    "Meng-Zi Huang",
+    "Tommaso Bonaccorsi",
+    "Michael U. Mühlematter",
+    "Mohsen Talebi",
+    "Yaakov Yudkin",
+    "Alex Gómez-Salvador",
+    "Filip Marijanovic",
+    "Eugene Demler",
+    "Tilman Esslinger"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics",
+    "Condensed matter & materials"
+   ],
+   "tldr": "In a defect-free superfluid of ultracold atoms, widening a narrow channel first lowers its resistance and then, as the channel turns from one- to two-dimensional, raises it again, with a resistance minimum in between.",
+   "why_selected": "A clean answer to an open question about how superfluid and superconducting dissipation changes with geometry, with a direct pointer to lower-loss superconducting devices.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A superfluid or superconductor should flow without resistance, but in very thin wires and films some resistance remains. It comes from fluctuations that relax the quantum phase of the fluid: in one-dimensional wires these are phase slips, in two-dimensional films moving vortices. How resistance changes as a channel widens from one regime into the other has been an open question."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Solid-state experiments on nanowires, rings and films, and cold-atom experiments in various geometries, have studied phase slips and vortices separately. But in real materials, disorder, impurities and imperfect shapes mask the effect of geometry alone, and theory struggles with the crossover because several dissipation processes compete and finite-size effects are strong."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team used an ultracold gas of about 270,000 lithium-6 atoms in a strongly interacting state called a unitary Fermi gas, which forms a superfluid with no defects at all. Laser beams split the cloud into two reservoirs joined by a thin, flat channel. A digital micromirror device, the chip used in projectors, shapes the channel's width anywhere from about 0.9 to 19.8 micrometres. The researchers put more atoms in one reservoir than the other and watched the imbalance drain through the channel, much like applying a voltage across a wire and measuring the current. How quickly the flow is damped reveals the dissipation at each width."
+    },
+    {
+     "heading": "Results",
+     "body": "In narrow, quasi-one-dimensional channels, the dissipation matched the standard phase-slip theory known as LAMH, and widening the channel reproduced the predicted exponential drop of its activation factor over more than ten orders of magnitude. Wide, quasi-two-dimensional channels behaved as a finite-size vortex model predicts. In between, the resistance reached a minimum: there, widening the channel increased its resistance."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The minimum marks a handover between the two dissipation mechanisms, where both phase slips and vortices are suppressed at once. The authors suggest this points to ways of minimising losses in superconducting devices and gives theorists a benchmark for the crossover. The test system is an atomic gas, so how directly it maps onto real devices remains to be shown."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11294-w",
+    "doi": "https://doi.org/10.1038/s41586-026-11294-w"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11268-y",
+   "title": "Analogue simulation of massive relativistic quantum fields in 2 + 1 dimensions",
+   "authors": [
+    "Yansheng Zhang",
+    "Feiyang Wang",
+    "Paul H. C. Wong",
+    "Alexander C. Jenkins",
+    "Yi Jiang",
+    "Konstantinos Konstantinou",
+    "Gehrig Carlse",
+    "Nishant Dogra",
+    "Joseph H. Thywissen",
+    "Christoph Eigen",
+    "Zoran Hadzibabic"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics",
+    "Astrophysics & cosmology"
+   ],
+   "tldr": "A flat cloud of ultracold potassium atoms simulates a massive relativistic quantum field in two dimensions of space, showing a tunable mass gap and topological domain walls, a step toward lab tests of early-universe physics.",
+   "why_selected": "Extends analogue quantum simulation of interacting field theories from one to two spatial dimensions, where calculations become hard and cosmologically relevant effects appear.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Quantum field theories describe systems from particle physics and cosmology to materials. Solving them is hard when interactions are strong and things change over time, especially in more than one spatial dimension, where computers struggle. Physicists would like controllable lab systems that obey the same equations, so they can check predictions and watch the dynamics directly."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Single-component Bose–Einstein condensates, clouds of atoms cooled until they share one quantum state, have simulated massless relativistic fields, such as sound-like fluctuations in the early universe. Mixtures of two coupled components can mimic a field with mass. That route had realised the sine-Gordon model, a standard theory of a massive field, but only in one spatial dimension, where the model is exactly solvable."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team made a uniform, two-dimensional condensate of potassium-39 atoms in an optical box trap, with each atom in a mix of two internal states. A radio-frequency field couples the states. The quantity that acts as the simulated field is the relative phase between the two components at each point. The coupling makes it cost energy for that phase to stray from zero, like a ball sitting at the bottom of a curved bowl, and this gives the field an effective mass. The result obeys the sine-Gordon equation in two dimensions of space plus time. The researchers can image both components directly and tune the coupling strength, which sets the mass."
+    },
+    {
+     "heading": "Results",
+     "body": "In the gentle, perturbative regime, ripples in the field followed a relativistic relation between energy and momentum with a mass gap that could be tuned by the coupling. The team also saw clearly non-perturbative behaviour: topological domain walls, lines across which the relative phase winds through a full turn. In two dimensions these walls are extended objects rather than points."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The platform opens lab studies of phenomena relevant to cosmology, including preheating, the dynamics of topological defects and the decay of a false vacuum. The caveat is that this is an analogue: it reproduces the equations, not the early universe itself, and its quantitative reach depends on how well the mapping holds."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11268-y",
+    "doi": "https://doi.org/10.1038/s41586-026-11268-y"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

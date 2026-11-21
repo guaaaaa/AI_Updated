@@ -1,5 +1,44 @@
 [
  {
+  "id": "2026-11-21-n1",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "EPFL theory predicts the heating power fusion plasmas need to enter high-confinement mode",
+  "tldr": "Physicists at EPFL's Swiss Plasma Center have a single theory for the power needed to push tokamak plasmas into high-confinement mode, and say ITER has margin while SPARC is close to its limit.",
+  "category": "Energy",
+  "byline": "Phys.org (EPFL release), arXiv (De Lucca et al.)"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11294-w",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "Quantum resistance paradox of low-dimensional superfluids",
+  "tldr": "In a defect-free superfluid of ultracold atoms, widening a narrow channel first lowers its resistance and then, as the channel turns from one- to two-dimensional, raises it again, with a resistance minimum in between.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics",
+   "Condensed matter & materials"
+  ],
+  "byline": "Simon Wili, Meng-Zi Huang, Tommaso Bonaccorsi et al.",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11268-y",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "Analogue simulation of massive relativistic quantum fields in 2 + 1 dimensions",
+  "tldr": "A flat cloud of ultracold potassium atoms simulates a massive relativistic quantum field in two dimensions of space, showing a tunable mass gap and topological domain walls, a step toward lab tests of early-universe physics.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics",
+   "Astrophysics & cosmology"
+  ],
+  "byline": "Yansheng Zhang, Feiyang Wang, Paul H. C. Wong et al.",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-20-n1",
   "date": "2026-11-20",
   "type": "news",

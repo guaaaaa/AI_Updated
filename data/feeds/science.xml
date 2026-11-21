@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Fri, 20 Nov 2026 13:22:08 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 13:22:40 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>EPFL theory predicts the heating power fusion plasmas need to enter high-confinement mode</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/2026-11-21-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/2026-11-21-n1</guid>
+    <pubDate>Sat, 21 Nov 2026 13:22:40 +0000</pubDate>
+    <category>Science / Energy</category>
+    <description>Physicists at EPFL's Swiss Plasma Center have a single theory for the power needed to push tokamak plasmas into high-confinement mode, and say ITER has margin while SPARC is close to its limit. (Phys.org (EPFL release), arXiv (De Lucca et al.))</description>
+  </item>
+  <item>
+    <title>Quantum resistance paradox of low-dimensional superfluids</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/doi-10-1038-s41586-026-11294-w</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/doi-10-1038-s41586-026-11294-w</guid>
+    <pubDate>Sat, 21 Nov 2026 13:22:40 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>In a defect-free superfluid of ultracold atoms, widening a narrow channel first lowers its resistance and then, as the channel turns from one- to two-dimensional, raises it again, with a resistance minimum in between. (Simon Wili, Meng-Zi Huang, Tommaso Bonaccorsi et al.)</description>
+  </item>
+  <item>
+    <title>Analogue simulation of massive relativistic quantum fields in 2 + 1 dimensions</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/doi-10-1038-s41586-026-11268-y</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/doi-10-1038-s41586-026-11268-y</guid>
+    <pubDate>Sat, 21 Nov 2026 13:22:40 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>A flat cloud of ultracold potassium atoms simulates a massive relativistic quantum field in two dimensions of space, showing a tunable mass gap and topological domain walls, a step toward lab tests of early-universe physics. (Yansheng Zhang, Feiyang Wang, Paul H. C. Wong et al.)</description>
+  </item>
   <item>
     <title>BepiColombo reaches Mercury after an eight-year voyage and prepares to become the second spacecraft ever to orbit it</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/2026-11-20-n1</link>
@@ -302,30 +326,6 @@
     <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
     <category>Science / Climate &amp; Earth</category>
     <description>Curtin University geologists found that a chemical signature of crust formed about 4 billion years ago appears in rocks worldwide until 2.5 billion years ago, then disappears, marking a shift towards large-scale crustal recycling. (Curtin University, Phys.org)</description>
-  </item>
-  <item>
-    <title>Ultrafast Meissner-levitated microrotor</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1126-sciadv-aee6434</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1126-sciadv-aee6434</guid>
-    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>A 30-micrometre magnet levitated above a superconductor at 4.2 K spins at 2.3 MHz, the fastest magnetically levitated rotor reported, with friction so low it serves as a pressure gauge and a dark-matter probe. (Joel K. Jose, Andrea Marchese, Marion Cromb et al.)</description>
-  </item>
-  <item>
-    <title>Photonic entanglement swapping with remote quantum dots</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1126-sciadv-aeh7797</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1126-sciadv-aeh7797</guid>
-    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>Physicists entangled two photons that never interacted by combining photon pairs from two separate on-demand quantum dots, reaching a swapping fidelity of 0.71, a step toward quantum repeaters built from deterministic light sources. (Mattia Beccaceci, Giuseppe Ronco, Fabrizio Cienzo et al. · Sapienza Università di Roma; Politecnico di Milano; Johannes Kepler University Linz; University of Würzburg; Paderborn University; Karlsruhe Institute of Technology)</description>
-  </item>
-  <item>
-    <title>Modified Newtonian Dynamics and galaxy clusters</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1073-pnas-2630246123</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-11/doi-10-1073-pnas-2630246123</guid>
-    <pubDate>Wed, 11 Nov 2026 13:26:48 +0000</pubDate>
-    <category>Science / Astrophysics &amp; cosmology</category>
-    <description>Applied to 106 X-ray-mapped galaxy clusters, Modified Newtonian Dynamics cuts the needed unseen mass 4 to 10 times, leaving a compact residual that could be dark ordinary matter. (Francoise Combesahttps://ror.org/00cpdar66Observatoire de Paris, Laboratoire d’étude de l’Univers et des phénomènes eXtrêmes, Collège de France et al. · Observatoire de Paris; Collège de France; CNRS)</description>
   </item>
 </channel>
 </rss>
