@@ -1,0 +1,211 @@
+{
+ "date": "2026-11-21",
+ "edition": "weekend",
+ "generated_at": "2026-11-21T11:48:23+00:00",
+ "summary": "Critical F5 BIG-IP flaws get emergency fixes, AI agents find and exploit a zero-day in a Chinese-linked campaign, a UK tribunal confirms the Apple encryption order, and Signal blocks on-screen AI agents.",
+ "news": [
+  {
+   "id": "2026-11-21-n1",
+   "story_key": "f5-big-ip-critical-hotfixes-nov-2026",
+   "title": "F5 issues emergency hotfixes for critical BIG-IP flaws that can crash traffic handling and may allow remote code execution",
+   "category": "Cybersecurity",
+   "published": "2026-11-18T12:00:00-05:00",
+   "tldr": "F5 released out-of-band hotfixes for critical, unauthenticated BIG-IP flaws that can crash its traffic engine and may allow remote code execution; no mitigations exist besides patching.",
+   "why_selected": "Critical flaws in edge appliances used by most of the Fortune Global 500, with a long history of exploitation.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "F5's BIG-IP appliances sit at the edge of many corporate networks, balancing traffic and controlling remote access. The company says it serves more than 23,000 customers, including 80% of the Fortune Global 500. Attackers return to the product line often: the US Cybersecurity and Infrastructure Security Agency (CISA) has flagged seven F5 flaws as actively exploited since November 2021, and in September F5 patched an access-proxy flaw already used in attacks."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 18, F5 released out-of-band engineering hotfixes for critical BIG-IP vulnerabilities. BleepingComputer counts five critical stack-based buffer overflows, a class of memory bug, in the Access Policy Manager (APM) access proxy and in iRules, the product's programmable scripting feature. Unauthenticated attackers can use them to crash the Traffic Management Microkernel (TMM), the process that handles network traffic, and possibly to run code remotely on systems with vulnerable configurations. Canada's Cyber Centre lists six advisories, one for APM and five for iRules, and affected versions across BIG-IP 17.1, 17.5 and 21.1, BIG-IP Next for Kubernetes and BIG-IP CNF. F5 also issued hotfixes for a high-severity APM flaw in its SAML sign-in handling that allows denial of service, and said it has no mitigations other than the hotfixes."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The internet watchdog Shadowserver tracks more than 177,000 BIG-IP instances and over 14,600 IP addresses with APM fingerprints exposed online, though some may be honeypots or already patched. F5 has not flagged any of the new flaws as exploited, but past F5 bugs were used to breach corporate networks, deploy data-wiping malware and steal files, and four of the CISA-listed flaws were used by ransomware gangs. Even the crash path matters: F5 says traffic is disrupted while TMM restarts. The company adds that the issues affect only the data plane, not the management interface."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether CISA adds any of the flaws to its exploited list, and how quickly administrators install the engineering hotfixes, since F5 offers no workaround."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/"
+    },
+    {
+     "name": "Canadian Centre for Cyber Security",
+     "url": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1178"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-n2",
+   "story_key": "amazon-cairn-ai-agents-university-zero-day",
+   "title": "Amazon says suspected Chinese hackers used the AI agent framework Cairn to find and exploit a zero-day at East Asian universities",
+   "category": "Cybersecurity",
+   "published": "2026-11-20T12:30:00-05:00",
+   "tldr": "Amazon found an exposed Cairn server showing AI agents that worked for hours without human direction, then discovered and used an unknown flaw in a medical imaging app to take over university servers.",
+   "why_selected": "A documented case of autonomous agents finding and exploiting a previously unknown flaw in a real intrusion, with fixes now released.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Security agencies and companies have warned in recent weeks about autonomous AI hacking frameworks, which chain several AI agents to scan, attack and adapt with little human direction. The FBI issued an advisory about one such tool, Artex, a week ago. Cairn is an open-source autonomous penetration-testing framework: given a starting point and a goal in plain language, it coordinates multiple agents to complete the task."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 20, CJ Moses, chief information security officer of Amazon Integrated Security, published findings from Amazon Threat Intelligence. On September 10 the team found a publicly hosted Cairn instance whose history revealed a 48-hour campaign, starting September 8, against universities in East Asia, with prompts in Simplified Chinese and timestamps set to China Standard Time. The operator asked the agents to \"obtain shell access\". One attempt ran 148 actions over 16 hours without success; another tested more than 30,000 credential combinations tied to 80 real usernames for over six hours. The agents then found an unpatched path traversal flaw, a bug that lets an attacker reach files outside the intended folder, in MONAI Label, an open-source medical imaging AI application, and used it to take full control of a server. The operator reused the flaw against a second university."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Amazon assesses with high confidence that the flaw was a zero-day, meaning no fix, issue or advisory existed. Moses warned that an agent that finds and exploits such a flaw in minutes finishes faster than many security operations centers can triage an alert, and noted the agents ran for 16 hours without breaks. Gambit Security earlier documented a Chinese operator using Cairn in at least 105 attacks that compromised at least 27 companies, and Google reported this week that Cairn was used in intrusions at US aerospace companies. Amazon concludes the framework is being adopted for both espionage and crime."
+    },
+    {
+     "heading": "What to watch",
+     "body": "MONAI Label's maintainers have released a fix and an advisory. Amazon worked with a government partner to notify the victims, which it did not name."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-n3",
+   "story_key": "ipt-confirms-apple-technical-capability-notice",
+   "title": "UK surveillance tribunal confirms the Home Office served Apple a secret order over encrypted iCloud data",
+   "category": "Tech Policy & Antitrust",
+   "published": "2026-11-19T12:00:00-05:00",
+   "tldr": "The Investigatory Powers Tribunal rejected the Home Office's secrecy argument and confirmed it served Apple a Technical Capability Notice, though the order's content stays secret ahead of a 2027 hearing.",
+   "why_selected": "Ends official silence on the most prominent government demand affecting end-to-end encryption, with a full hearing ahead.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In February 2025 The Washington Post reported that the UK Home Office had served Apple with a Technical Capability Notice (TCN), an order under the Investigatory Powers Act 2016 that compels a company to change its systems to support lawful surveillance. The order has been widely reported as demanding access to end-to-end encrypted iCloud data. Apple withdrew its Advanced Data Protection (ADP) feature for UK users that month, while the government kept its policy of neither confirming nor denying such notices."
+    },
+    {
+     "heading": "What happened",
+     "body": "In an open judgment published this week, the Investigatory Powers Tribunal (IPT), the court that hears complaints about UK surveillance, confirmed that the Home Office served Apple a TCN, rejecting the argument that acknowledging it would damage national security. The three judges, Lady Carmichael, Mr Justice Chamberlain and Mr Justice Johnson, pointed to extensive public reporting, statements by US officials and media briefings they concluded the government had authorized. The judgment covers Apple's second claim, filed in July 2026 after its first was dismissed because of a change of circumstances, and a separate challenge by Liberty, Privacy International and two individuals."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The ruling ends the government's official silence, but not the secrecy over what the order demands. The judges said disclosing all the material, including the notice's content, would damage national security, while not every detail must stay secret; they did not set the boundary. The stakes are concrete: with ADP, only a user's trusted devices hold the keys to backups, photos and notes; without it, Apple holds the keys and can hand content over in response to valid legal demands. The Financial Times reported in October 2025 that the UK had replaced its original notice with one focused on British users. A government spokesperson said the powers have strict safeguards and that it never has direct access to companies' systems."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The parties are working toward a substantive hearing in the first half of 2027, and the tribunal has yet to decide which further details can be made public."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Investigatory Powers Tribunal judgment",
+     "url": "https://www.judiciary.uk/wp-content/uploads/2026/11/OPEN-Judgment-Apple-Inc.-and-Privacy-Int.-Ors.pdf"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/20/spy-court-blasts-uk-secrecy-forces-government-to-admit-apple-backdoor-demand/5311292"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-n4",
+   "story_key": "signal-blocks-os-ai-agents-screenshots",
+   "title": "Signal blocks screenshots by default to keep Siri and Gemini agents from reading private chats",
+   "category": "Software & Platforms",
+   "published": "2026-11-20T15:18:00-05:00",
+   "tldr": "Signal's iOS and Android apps now block screenshots by default so built-in AI agents cannot capture chats, and the company says operating systems give developers no robust way to stop such access.",
+   "why_selected": "A widely used encrypted messenger changes default behavior and exposes a platform-level gap in how phones handle app privacy.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Phone operating systems are adding AI agents that read what is on screen to answer questions and act for users. Apple's Siri and Google's Gemini Intelligence capture screen content and extract text with optical character recognition. Last year Signal, the end-to-end encrypted messaging app, blocked Microsoft's Recall feature on Windows 11 from taking snapshots of chats, and it is now applying the same idea to phones."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 20, Signal said updates to its iOS and Android apps block screenshots by default so built-in AI agents cannot read chats unless the user allows it. On iPhone, a new \"Block Siri AI\" setting is on by default; on Android, Signal uses its existing \"Screen security\" option when an AI assistant tries to read the screen. Users see a prompt offering to switch the protection off. Chief executive Meredith Whittaker wrote that once agents scan the screen, Signal data is captured and made available to those systems, and messages can end up on someone else's server where they are no longer private."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Encryption protects messages in transit, not once they are displayed on a device that feeds them to an AI service. Signal concedes its fix is partial: it does not stop agents reading notifications or files, it cannot protect a chat if the other person has switched protection off, and Signal has no protection at all on macOS. Whittaker said Google, Apple and Microsoft give developers no easy way to restrict AI data access without drastic compromises to the user experience. Engadget cites Reuters reporting that Meta's Muse agent read Signal messages through permissions granted during setup. Apple's macOS 27.3, in public beta, tightens Full Disk Access permissions."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Signal says it is talking with Apple and Google about a standard, system-level way to block AI agents from reading app content."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/20/signal-slams-door-on-prying-ai-agents-to-protect-privacy/5311466"
+    },
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2323574/signal-now-blocks-screenshots-by-default-to-stymie-ai-agents/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.23644",
+   "title": "Polymorph: Operating System Kernel Optimization Through Artificial Intelligence",
+   "authors": [
+    "Dean Sysman",
+    "Georgios Liargkovas",
+    "Tal Zussman",
+    "Hasan Zengin",
+    "Petra Hedesiu",
+    "Hubertus Franke",
+    "Tamar Eilam",
+    "Kostis Kaffes",
+    "Asaf Cidon"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-18T20:00:00-05:00",
+   "primary_tag": "Operating systems & storage",
+   "tags": [
+    "Operating systems & storage"
+   ],
+   "tldr": "Polymorph has an AI agent write one tunable Linux kernel policy, then tunes it live without a language model, beating Linux's defaults for page caching and scheduling at far lower cost than offline search.",
+   "why_selected": "A practical kernel-customization result measured on real workloads against strong baselines, with large scheduler gains.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Linux makes hundreds of policy decisions, such as which cached file pages to evict or which process runs next, and most cannot be changed without rebuilding the kernel. eBPF, a framework for safely running verified custom code inside the kernel, now lets users load new policies through sched_ext for scheduling and cache_ext for the page cache. Picking the right policy is hard, because workloads differ and change while they run."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Evolutionary frameworks such as OpenEvolve generate and test policies against recorded traces offline; the authors find them expensive and poor at generalizing to unseen workloads. Online tuners such as TuxBot adjust kernel parameters live, but can only choose among behaviors that existing policies already implement."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors first show why customization matters: on one Twitter storage trace, the LevelDB key-value store had about 50% higher throughput with the best page cache policy than with the worst, and no single policy won on most workloads. Scheduling shows the same pattern: the best scheduler policy for one workload can be the worst for another. Polymorph therefore uses AI once rather than continuously. An AI agent writes a single generalized, granular eBPF policy that exposes parameters; a tuner running in user mode then adjusts those parameters during runtime as the workload shifts, with no language model in the loop. This combines the expressiveness of newly written code with the adaptability of online tuning."
+    },
+    {
+     "heading": "Results",
+     "body": "For the page cache, Polymorph improves throughput over Linux's least-recently-used (LRU) policy by 8.4% on unseen data, nearly twice the gain of the best existing policy. It costs 16 million tokens once, versus 125 to 240 million tokens per workload for agentic offline search. For the process scheduler, it improves on Linux's default by 2.75 times across six workloads, versus 2.27 times for the best fixed sched_ext policy."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The approach suggests kernels could adapt to each application without per-workload rewrites or constant AI costs. The main caveat is scope: it is a preprint tested on two subsystems and a limited set of traces and workloads."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.23644"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}

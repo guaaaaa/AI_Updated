@@ -1,5 +1,55 @@
 [
  {
+  "id": "2026-11-21-n1",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "F5 issues emergency hotfixes for critical BIG-IP flaws that can crash traffic handling and may allow remote code execution",
+  "tldr": "F5 released out-of-band hotfixes for critical, unauthenticated BIG-IP flaws that can crash its traffic engine and may allow remote code execution; no mitigations exist besides patching.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Canadian Centre for Cyber Security"
+ },
+ {
+  "id": "2026-11-21-n2",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "Amazon says suspected Chinese hackers used the AI agent framework Cairn to find and exploit a zero-day at East Asian universities",
+  "tldr": "Amazon found an exposed Cairn server showing AI agents that worked for hours without human direction, then discovered and used an unknown flaw in a medical imaging app to take over university servers.",
+  "category": "Cybersecurity",
+  "byline": "The Record, The Register"
+ },
+ {
+  "id": "2026-11-21-n3",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "UK surveillance tribunal confirms the Home Office served Apple a secret order over encrypted iCloud data",
+  "tldr": "The Investigatory Powers Tribunal rejected the Home Office's secrecy argument and confirmed it served Apple a Technical Capability Notice, though the order's content stays secret ahead of a 2027 hearing.",
+  "category": "Tech Policy & Antitrust",
+  "byline": "Investigatory Powers Tribunal judgment, The Register"
+ },
+ {
+  "id": "2026-11-21-n4",
+  "date": "2026-11-21",
+  "type": "news",
+  "title": "Signal blocks screenshots by default to keep Siri and Gemini agents from reading private chats",
+  "tldr": "Signal's iOS and Android apps now block screenshots by default so built-in AI agents cannot capture chats, and the company says operating systems give developers no robust way to stop such access.",
+  "category": "Software & Platforms",
+  "byline": "The Register, Engadget"
+ },
+ {
+  "id": "2611.23644",
+  "date": "2026-11-21",
+  "type": "paper",
+  "title": "Polymorph: Operating System Kernel Optimization Through Artificial Intelligence",
+  "tldr": "Polymorph has an AI agent write one tunable Linux kernel policy, then tunes it live without a language model, beating Linux's defaults for page caching and scheduling at far lower cost than offline search.",
+  "primary_tag": "Operating systems & storage",
+  "tags": [
+   "Operating systems & storage"
+  ],
+  "byline": "Dean Sysman, Georgios Liargkovas, Tal Zussman et al.",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-20-n1",
   "date": "2026-11-20",
   "type": "news",

@@ -2,15 +2,15 @@
  "week": "2026-W47",
  "start": "2026-11-16",
  "end": "2026-11-21",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [],
  "stories": [
   {
    "title": "Apple releases iOS 27.3 beta 2 for iPhone",
-   "outlets": 33,
+   "outlets": 39,
    "date": "2026-11-16",
-   "covered": "2026-11-17-n2"
+   "covered": "2026-11-16-n3"
   },
   {
    "title": "California sues OpenAI over rogue AI hacking incidents",
@@ -49,15 +49,15 @@
    "covered": null
   },
   {
-   "title": "Early Black Friday Mattress Deals: Get Up to 55% Off WIRED-Tested Favorites",
+   "title": "Atlas Coffee Club’s Black Friday Deals (2026)",
    "outlets": 3,
    "date": "2026-11-13",
    "covered": null
   }
  ],
  "featured": {
-  "news": 18,
-  "papers": 3
+  "news": 22,
+  "papers": 4
  },
  "items": [
   {
@@ -185,6 +185,36 @@
    "date": "2026-11-20",
    "type": "paper",
    "title": "YUL: Bringing Software Supply Chain Security to Coding Agents"
+  },
+  {
+   "id": "2026-11-21-n1",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "F5 issues emergency hotfixes for critical BIG-IP flaws that can crash traffic handling and may allow remote code execution"
+  },
+  {
+   "id": "2026-11-21-n2",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "Amazon says suspected Chinese hackers used the AI agent framework Cairn to find and exploit a zero-day at East Asian universities"
+  },
+  {
+   "id": "2026-11-21-n3",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "UK surveillance tribunal confirms the Home Office served Apple a secret order over encrypted iCloud data"
+  },
+  {
+   "id": "2026-11-21-n4",
+   "date": "2026-11-21",
+   "type": "news",
+   "title": "Signal blocks screenshots by default to keep Siri and Gemini agents from reading private chats"
+  },
+  {
+   "id": "2611.23644",
+   "date": "2026-11-21",
+   "type": "paper",
+   "title": "Polymorph: Operating System Kernel Optimization Through Artificial Intelligence"
   }
  ]
 }
