@@ -1,0 +1,120 @@
+{
+ "date": "2026-11-23",
+ "edition": "weekday",
+ "generated_at": "2026-11-23T11:47:16+00:00",
+ "summary": "The FBI investigates an apparent breach of the database police check at traffic stops, Microsoft says an Entra monitoring flaw exposed administrator contacts, and the FCC overrides California's landline rules for AT&T.",
+ "news": [
+  {
+   "id": "2026-11-23-n1",
+   "story_key": "fbi-ncic-apparent-breach",
+   "title": "The FBI investigates an apparent breach of NCIC, the database police across the US use to check warrants and stolen property",
+   "category": "Cybersecurity",
+   "published": "2026-11-21T09:26:00-05:00",
+   "tldr": "CNN and the Associated Press report that the FBI is investigating an apparent intrusion into the National Crime Information Center; the bureau has not confirmed it and the scope is unknown.",
+   "why_selected": "A reported intrusion into a system that police across the United States rely on every day, covered by several outlets, with integrity of records as well as secrecy at stake.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The National Crime Information Center (NCIC) is a database run by the FBI that local, state and federal law enforcement agencies use to share records. It holds information on wanted and missing persons, outstanding arrest warrants, stolen vehicles and firearms, protection orders and other criminal justice records. Officers query it routinely during traffic stops, criminal investigations and background checks, which makes it one of the systems that everyday policing in the United States depends on."
+    },
+    {
+     "heading": "What happened",
+     "body": "CNN reported, citing two people briefed on the investigation, that the FBI is looking into an apparent breach of NCIC. The Associated Press also reported the investigation, according to TechCrunch. BleepingComputer, summarising CNN's account, said the intrusion was discovered in recent days, and that it is unclear when it took place, how the attackers got in, or whether any information was taken. The FBI has not publicly confirmed the incident and did not respond to CNN's request for comment; BleepingComputer said its own questions to the bureau went unanswered. President Donald Trump, asked about the reports in a Fox News interview on Saturday, said, \"We just heard about it and I will say that it's not good.\""
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The reports describe the second breach of FBI systems in two months. In September the extortion group ShinyHunters claimed it had broken into a third-party platform associated with the bureau's recruitment site, FBIJobs.gov, by exploiting an unpatched Oracle PeopleSoft vulnerability. BleepingComputer says nothing currently links the NCIC incident to that group or to the earlier attack.\n\nThe stakes here are different in kind. A former FBI official told CNN the concern is not only whether intruders saw sensitive information but whether they could compromise the accuracy of records that officers rely on. A database that decides whether a driver is flagged as wanted, or a firearm as stolen, is only useful if its entries can be trusted. It also remains unclear whether the incident affected the system's availability to police agencies."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the FBI confirms the intrusion, and what it says about how access was gained, whether records were copied or altered, and whether agencies that query NCIC need to take any action."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-n2",
+   "story_key": "microsoft-entra-connect-health-api-exposure",
+   "title": "Microsoft says attackers exploited an Entra Connect Health flaw to read administrator email addresses and tenant details",
+   "category": "Cybersecurity",
+   "published": "2026-11-21T00:12:59-05:00",
+   "tldr": "A flaw in Microsoft's Entra Connect Health API, present from July 23 until a fix on November 19, let outsiders read administrator contacts and tenant metadata; passwords and tokens were not exposed.",
+   "why_selected": "A confirmed, exploited flaw in Microsoft's own identity cloud that stayed open for almost four months; the exposed contact data is useful for targeted phishing of administrators.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Microsoft Entra is the company's cloud identity service, the system that organisations use to sign employees in to Microsoft 365 and other applications. Each customer organisation has a \"tenant\", its own private instance. Entra Connect Health is a cloud monitoring service that lets administrators watch the health, performance and alerts of the identity servers they still run on their own premises, through the Entra admin centre."
+    },
+    {
+     "heading": "What happened",
+     "body": "Microsoft has begun notifying customers that a vulnerability in the Entra Connect Health API was exploited. According to the notification, which administrators shared on Reddit, the flaw was introduced on July 23, 2026 and detected on November 9. Microsoft deployed a server-side fix on November 19 and concluded its investigation on November 20, finding that unauthorised read-only access to tenant-level metadata had occurred. The exposed data included email addresses of tenant technical contacts and administrator accounts, tenant IDs, display names, initial domain names, country codes and regional information, licence tiers, directory synchronisation status and an expired certificate that the API still returned. Microsoft said passwords, password hashes, authentication tokens, valid cryptographic keys and details of on-premises servers were not exposed, and that it found no unauthorised configuration changes. A spokesperson confirmed the fix and the notifications to BleepingComputer."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Nothing taken lets an attacker sign in directly. The risk Microsoft itself points to is targeted phishing and social engineering: a message that names an organisation's tenant, its licence tier and its synchronisation setup, sent to the people who hold administrator accounts, looks far more like a genuine support request than a generic lure. Those accounts control an organisation's entire identity system.\n\nThe disclosure also leaves gaps. Microsoft has not said how many tenants were affected, who was behind the access or when it began. BleepingComputer reported that more than a dozen administrators said they had received the notice, and that some managed service providers, firms that run IT for other companies, received notices for several customer tenants. Only tenants that received a notice in Azure Service Health had confirmed unauthorised access."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Microsoft publishes a count of affected tenants or attributes the activity. No customer patch is needed; Microsoft advises phishing-resistant multifactor authentication for privileged accounts and a review of Entra audit and sign-in logs."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/"
+    },
+    {
+     "name": "Daily CyberSecurity",
+     "url": "https://securityonline.info/microsoft-entra-connect-health-exposure/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-n3",
+   "story_key": "fcc-preempts-california-colr-att",
+   "title": "The FCC overrides California's landline rules, clearing AT&T to drop copper phone service for about 184,000 homes",
+   "category": "Telecom & Internet",
+   "published": "2026-11-20T15:44:37-05:00",
+   "tldr": "The FCC ordered California to stop enforcing its Carrier of Last Resort rules against AT&T, which wants to end basic copper phone service for 184,000 residential and 15,000 business customers in June 2027.",
+   "why_selected": "A federal order that overrides a state's telecom rules, decides what counts as an adequate replacement for landlines, and is likely to be tested in court.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A Carrier of Last Resort (COLR) is a phone company legally required to offer basic telephone service to anyone in its territory who asks. AT&T holds that status in California. Phone companies want to retire their old copper networks, which are costly to maintain and cannot deliver competitive broadband speeds, and AT&T has already been released from COLR obligations in 20 of the 21 states where it runs wireline service. California is the exception."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday, November 20, the Federal Communications Commission released an order barring California from enforcing its COLR rules against AT&T. Broadband Breakfast reported that the order was adopted on a 2-1 vote on November 13. The FCC had earlier approved AT&T's request to discontinue copper service at more than 184,000 locations served by 360 wire centers in the state. According to Ars Technica, AT&T wants to stop offering basic phone service to new customers and to end it for 184,000 residential and 15,000 business customers on June 1, 2027. The replacement is AT&T Phone-Advanced, which runs on the company's wireless or fiber networks; California's regulator has not approved it, and under the order the state must accept it. Chairman Brendan Carr said the state's rules \"were designed for a bygone era\". Commissioner Anna Gomez, the agency's only Democrat, dissented."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The dispute is about who decides when a wireless connection is a good enough substitute for a landline. California's rules permit wireless replacements, but only if the carrier shows they meet the state's basic-service standards, which include flat-rate unlimited calling, discounted Lifeline rates for low-income customers and relay service for deaf and hard-of-hearing users. Ars Technica notes that many homes and businesses losing copper lines would not be offered fiber. Gomez said Californians had told the commission they depend on landlines when natural disasters strike.\n\nThe order applies a position the FCC set out in March, that state rules conflicting with its discontinuance approvals can be preempted. A federal judge rejected AT&T's attempt to override California's rules in court in July."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The California Public Utilities Commission has already sued the FCC over its authority to preempt state copper-retirement rules, and could challenge this order as well. Its own proceeding to modernise the COLR rules is still open."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/tech-policy/2026/11/fcc-orders-california-to-stop-enforcing-phone-service-rules-against-att/"
+    },
+    {
+     "name": "Broadband Breakfast",
+     "url": "https://broadbandbreakfast.com/fcc-preempts-california-copper-retirement-rules/"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T13:53:27+00:00",
+ "updated": "2026-11-23T11:47:17+00:00",
  "domains": [
   {
    "id": "ai",
@@ -67,8 +67,8 @@
    "news": 4,
    "papers": 1,
    "index": "data/tech/index.json",
-   "latest": "2026-11-21",
-   "days": 16,
+   "latest": "2026-11-23",
+   "days": 17,
    "feed": "data/feeds/tech.xml"
   }
  ]

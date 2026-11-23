@@ -1,0 +1,40 @@
+{
+ "week": "2026-W48",
+ "start": "2026-11-23",
+ "end": "2026-11-28",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [
+  {
+   "title": "The Best Pura Deals for Cyber Week (2026)",
+   "outlets": 8,
+   "date": "2026-11-20",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 3,
+  "papers": 0
+ },
+ "items": [
+  {
+   "id": "2026-11-23-n1",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "The FBI investigates an apparent breach of NCIC, the database police across the US use to check warrants and stolen property"
+  },
+  {
+   "id": "2026-11-23-n2",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "Microsoft says attackers exploited an Entra Connect Health flaw to read administrator email addresses and tenant details"
+  },
+  {
+   "id": "2026-11-23-n3",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "The FCC overrides California's landline rules, clearing AT&T to drop copper phone service for about 184,000 homes"
+  }
+ ]
+}

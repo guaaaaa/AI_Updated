@@ -1,5 +1,32 @@
 [
  {
+  "id": "2026-11-23-n1",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "The FBI investigates an apparent breach of NCIC, the database police across the US use to check warrants and stolen property",
+  "tldr": "CNN and the Associated Press report that the FBI is investigating an apparent intrusion into the National Crime Information Center; the bureau has not confirmed it and the scope is unknown.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, TechCrunch"
+ },
+ {
+  "id": "2026-11-23-n2",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "Microsoft says attackers exploited an Entra Connect Health flaw to read administrator email addresses and tenant details",
+  "tldr": "A flaw in Microsoft's Entra Connect Health API, present from July 23 until a fix on November 19, let outsiders read administrator contacts and tenant metadata; passwords and tokens were not exposed.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Daily CyberSecurity"
+ },
+ {
+  "id": "2026-11-23-n3",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "The FCC overrides California's landline rules, clearing AT&T to drop copper phone service for about 184,000 homes",
+  "tldr": "The FCC ordered California to stop enforcing its Carrier of Last Resort rules against AT&T, which wants to end basic copper phone service for 184,000 residential and 15,000 business customers in June 2027.",
+  "category": "Telecom & Internet",
+  "byline": "Ars Technica, Broadband Breakfast"
+ },
+ {
   "id": "2026-11-21-n1",
   "date": "2026-11-21",
   "type": "news",

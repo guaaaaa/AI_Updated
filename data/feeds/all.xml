@@ -5,8 +5,32 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 21 Nov 2026 13:53:27 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 11:47:16 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>The FBI investigates an apparent breach of NCIC, the database police across the US use to check warrants and stolen property</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-23/2026-11-23-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-23/2026-11-23-n1</guid>
+    <pubDate>Mon, 23 Nov 2026 11:47:16 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>CNN and the Associated Press report that the FBI is investigating an apparent intrusion into the National Crime Information Center; the bureau has not confirmed it and the scope is unknown. (BleepingComputer, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Microsoft says attackers exploited an Entra Connect Health flaw to read administrator email addresses and tenant details</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-23/2026-11-23-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-23/2026-11-23-n2</guid>
+    <pubDate>Mon, 23 Nov 2026 11:47:16 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>A flaw in Microsoft's Entra Connect Health API, present from July 23 until a fix on November 19, let outsiders read administrator contacts and tenant metadata; passwords and tokens were not exposed. (BleepingComputer, Daily CyberSecurity)</description>
+  </item>
+  <item>
+    <title>The FCC overrides California's landline rules, clearing AT&amp;T to drop copper phone service for about 184,000 homes</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-23/2026-11-23-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-23/2026-11-23-n3</guid>
+    <pubDate>Mon, 23 Nov 2026 11:47:16 +0000</pubDate>
+    <category>Tech / Telecom &amp; Internet</category>
+    <description>The FCC ordered California to stop enforcing its Carrier of Last Resort rules against AT&amp;T, which wants to end basic copper phone service for 184,000 residential and 15,000 business customers in June 2027. (Ars Technica, Broadband Breakfast)</description>
+  </item>
   <item>
     <title>A blood protein flags advanced CTE in former football players, a small JAMA study finds</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-21/2026-11-21-n1</link>
@@ -462,30 +486,6 @@
     <pubDate>Thu, 19 Nov 2026 13:54:23 +0000</pubDate>
     <category>Biology / Neurology &amp; mental health</category>
     <description>In a 410-person Norwegian trial, a year of the NAD-boosting supplement nicotinamide riboside did not help early Parkinson's disease; symptom scores were slightly worse than with placebo. (NOPARK trial investigators (study director: Charalampos Tzoulis) · Haukeland University Hospital, University of Bergen)</description>
-  </item>
-  <item>
-    <title>Astronomers watch a Sun-like star spiral into a supergiant in Andromeda, with Webb confirming the merger</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-19/2026-11-19-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-19/2026-11-19-n1</guid>
-    <pubDate>Thu, 19 Nov 2026 13:20:51 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>A star of about 0.7 solar masses merged with a supergiant seven times the Sun's mass in Andromeda after only seven orbits, and Webb observed the aftermath 47 days after the outburst peaked. (NASA, Phys.org)</description>
-  </item>
-  <item>
-    <title>Fiji declares a national disaster and Tonga a state of emergency as El Niño drought deepens</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-19/2026-11-19-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-19/2026-11-19-n2</guid>
-    <pubDate>Thu, 19 Nov 2026 13:20:51 +0000</pubDate>
-    <category>Science / Climate &amp; Earth</category>
-    <description>Fiji's cabinet declared a nationwide natural disaster and Tonga a 27-day state of emergency as El Niño-driven drought cuts water supplies, with effects expected to last until at least mid-2027. (Phys.org (AFP), RNZ, NZ Herald)</description>
-  </item>
-  <item>
-    <title>Observation of tunable superradiant frequency combs</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-19/doi-10-1038-s41586-026-11289-7</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-19/doi-10-1038-s41586-026-11289-7</guid>
-    <pubDate>Thu, 19 Nov 2026 13:20:51 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>Billions of ytterbium ions in a crystal synchronise through a shared microwave field and emit regular pulses at microwave and optical frequencies at once, forming a new kind of frequency comb. (Tian Xie, Rikuto Fukumori, Wai-Keong Mok et al. · California Institute of Technology; Stanford University)</description>
   </item>
 </channel>
 </rss>
