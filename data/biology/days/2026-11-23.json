@@ -1,0 +1,317 @@
+{
+ "date": "2026-11-23",
+ "edition": "weekday",
+ "generated_at": "2026-11-23T13:56:04+00:00",
+ "summary": "The FDA rejects Capricor's Duchenne cell therapy a second time over trial data reliability, Virginia reports a child's measles death as US cases reach 5,838, a Merck antibody-drug conjugate extends survival in stomach and oesophageal cancer, and a platform trial picks two 16-week tuberculosis regimens.",
+ "news": [
+  {
+   "id": "2026-11-23-n1",
+   "story_key": "fda-deramiocel-capricor-second-crl-hope-3-data-integrity",
+   "title": "FDA rejects Capricor's Duchenne cell therapy a second time, citing unreliable data from its phase 3 trial",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-20T18:42:00-05:00",
+   "tldr": "The FDA declined again to approve deramiocel for Duchenne muscular dystrophy, saying the phase 3 HOPE-3 trial missed its prespecified goals and that inspection findings made its data unreliable.",
+   "why_selected": "A closely watched regulatory decision for a fatal childhood disease, and an unusual case in which the agency faults the conduct of a pivotal trial, not only its results.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Duchenne muscular dystrophy (DMD) is an inherited disorder, mainly affecting boys, in which the lack of a muscle protein called dystrophin causes progressive weakening of skeletal, breathing and heart muscle. Capricor says it affects about 15,000 people in the United States, and heart failure is the leading cause of death. Capricor's deramiocel consists of donor-derived heart cells, given every three months, that are thought to reduce inflammation and scarring. The FDA first declined to approve it in July 2025, asking for more clinical evidence."
+    },
+    {
+     "heading": "What happened",
+     "body": "Capricor announced on November 20 that the FDA had issued a second complete response letter, the agency's formal notice that it cannot approve an application in its current form. The decision came two days before the November 22 target date. According to reporting on the letter, the FDA found that the evidence did not meet the legal standard of substantial evidence of effectiveness. In materials for a July advisory committee meeting, the agency said the phase 3 HOPE-3 trial, a randomized, double-blind, placebo-controlled study of about 104 patients, did not show statistically significant effects on its prespecified primary endpoint, a score of arm and hand function (p=0.24), or on a key secondary measure of the heart's pumping function (p=0.97). An FDA inspection also reported changes to the statistical analysis plan made after the fact, violations of blinding procedures and other protocol violations."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The FDA concluded that these problems compromised the reliability of the data and could not be corrected retrospectively, so additional analyses could not rescue the application. Capricor had submitted 24-month open-label extension data, in which patients switched from placebo declined 76% more slowly in arm function than in their preceding placebo year, a 1.56-point difference; that comparison was not blinded or placebo-controlled. Capricor disagrees with the agency and says both of its trials met their primary endpoints. For families, the practical result is that deramiocel remains unapproved after two review cycles."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Capricor's response to a separate FDA letter about the inspection findings, and whether the company describes a path that involves new controlled data."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Pharmacally",
+     "url": "https://pharmacally.com/fda-crl-capricor-deramiocel-hope-3-data-integrity/"
+    },
+    {
+     "name": "NeurologyLive",
+     "url": "https://www.neurologylive.com/view/fda-issues-second-complete-response-letter-deramiocel-dmd"
+    },
+    {
+     "name": "Capricor (July 2025 release, background)",
+     "url": "https://www.capricor.com/investors/news-events/press-releases/detail/319/capricor-therapeutics-provides-regulatory-update-on"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-n2",
+   "story_key": "virginia-first-measles-death-2026-us-cases-5838",
+   "title": "Virginia reports its first measles death of 2026, a young child, as confirmed US cases reach 5,838",
+   "category": "Public Health",
+   "published": "2026-11-20T12:00:00-05:00",
+   "tldr": "Virginia health officials reported the death of a child aged four or younger who had measles, the 12th such death reported by US states this year, as the CDC's national count reached 5,838 cases.",
+   "why_selected": "A new death in a fourth state and a national count more than double last year's total show the outbreak is still growing after the US lost its elimination status.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Measles is a highly contagious virus that can cause pneumonia, brain inflammation and death; children under five are among those at highest risk. The United States declared measles eliminated in 2000, meaning the virus no longer spread continuously. Days before this report, the Pan American Health Organization announced that the country had lost that status. The Centers for Disease Control and Prevention (CDC) counted 2,289 confirmed cases in all of 2025."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 20 the Virginia Department of Health said a child aged 0 to 4 who had tested positive for measles had died, the state's first measles-associated death of 2026. It released no further details, citing the family's privacy. ABC News reported that this is the 12th measles-associated death reported by state health departments this year, with others in New York, Pennsylvania and Wisconsin. The CDC itself has confirmed six; the Guardian reports that the gap arose after the agency began using national mortality statistics instead of state figures. The CDC's weekly update the same day listed 5,838 confirmed cases as of November 19, in 47 jurisdictions, with 43 new outbreaks in 2026 and 96% of cases (5,629) tied to outbreaks. Virginia has reported 220 cases, 179 of them in unvaccinated people and two in vaccinated people."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The national count is about two and a half times last year's full-year total, with more than a month of the year left. According to CDC data cited by ABC News, about 96% of this year's cases are in people who are unvaccinated or whose vaccination status is unknown, and about one in six infected children under five has been hospitalized. The CDC says vaccination coverage among kindergartners fell from 95.2% in the 2019-2020 school year to 92.4% in 2025-2026, below the 95% level at which community immunity protects most people."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Virginia's next dashboard update on November 24, weekly CDC counts, and the CDC's work with state epidemiologists on a standard definition of a measles death."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Virginia Department of Health",
+     "url": "https://www.vdh.virginia.gov/news/public-relations-contacts/2026-news-releases/vdh-1st-measles-death-2026/"
+    },
+    {
+     "name": "CDC",
+     "url": "https://www.cdc.gov/measles/data-research/index.html"
+    },
+    {
+     "name": "ABC News",
+     "url": "https://abcnews.com/Health/child-measles-dies-virginia-marking-states-1st-measles/story?id=138330916"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/us-news/2026/nov/21/virginia-child-dies-measles"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-n3",
+   "story_key": "merck-sac-tmt-trofuse-015-gastroesophageal-os-topline",
+   "title": "Merck's antibody-drug conjugate sac-TMT extends survival in heavily pretreated stomach and oesophageal cancer, the company says",
+   "category": "Clinical Research",
+   "published": "2026-11-20T09:57:00-05:00",
+   "tldr": "Merck says its 473-patient phase 3 TroFuse-015 trial of sacituzumab tirumotecan met its overall survival goal in third-line gastroesophageal adenocarcinoma, but missed on progression-free survival and released no numbers.",
+   "why_selected": "A phase 3 survival result in a cancer setting with few options after two lines of therapy; the size of the benefit is still undisclosed.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Gastroesophageal adenocarcinoma is cancer arising in the gland-forming cells of the stomach or the lower oesophagus. Sacituzumab tirumotecan (sac-TMT) is an antibody-drug conjugate: an antibody that binds a protein called TROP2 on tumour cells, linked to a chemotherapy payload that blocks topoisomerase I, an enzyme cells need to copy DNA. Merck licensed it from Kelun-Biotech."
+    },
+    {
+     "heading": "What happened",
+     "body": "Merck announced on November 20 that the phase 3 TroFuse-015 trial met its primary endpoint of overall survival. The randomized, open-label trial enrolled 473 patients with locally advanced unresectable or metastatic disease who had received at least two prior lines of systemic therapy. They received sac-TMT (4 mg/kg on days 1, 15 and 29 of six-week cycles) or their physician's choice of trifluridine-tipiracil, irinotecan, paclitaxel or docetaxel. At the final analysis, Merck said, survival improved to a statistically significant and clinically meaningful degree, with results generally consistent regardless of TROP2 expression. The trial did not meet its secondary endpoint of progression-free survival as judged by blinded independent reviewers. The company reported no new safety signals."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Overall survival is the most direct measure of benefit in cancer trials, and Merck describes this as the first global phase 3 trial of a TROP2-directed conjugate to show a survival gain in this population. But the announcement is a company summary, not peer-reviewed data: it gives no median survival, hazard ratio, confidence interval or side-effect rates, so the size of the benefit cannot yet be judged. The trial also reported a survival gain without a significant gain in progression-free survival, and only the full data can show how the two fit together. It is the second positive phase 3 result in a programme that includes 18 ongoing global phase 3 trials."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Full data at a medical meeting, which Merck has not yet named, and any regulatory filing."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BioPharm International",
+     "url": "https://www.biopharminternational.com/view/merck-sac-tmt-trofuse-015-overall-survival-gastroesophageal-adenocarcinoma"
+    },
+    {
+     "name": "OncoDaily",
+     "url": "https://oncodaily.com/gastrointestinal-oncology/sacituzumab-merck-636456"
+    },
+    {
+     "name": "The Pharma Letter",
+     "url": "https://www.thepharmaletter.com/biotech-news/mercks-sac-tmt-meets-os-endpoint-in-third-line-gastroesophageal-cancer-but-misses-on-pfs"
+    },
+    {
+     "name": "Merck",
+     "url": "https://www.merck.com/media/news/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2611913",
+   "title": "Assessing Multiple Treatment Regimens for Tuberculosis",
+   "authors": [
+    "Hanif Esmail Nicholas I. Paton Jodie A. Schildkraut Ilaria Motta Alexander J. Szubert Suzanne M. Dufault Norbert Heinrich Simon Tiberi Cissy M. Kityo Timothy D. McHugh Fairoez Ryklief Daniela M. Cirillo Rodney Dawson Karen Sanders Stellah Mpagama Lindsay C. Thompson Le Hong Van Dominic Wakerley Elena Tudor Angela M. Crook Patrick P.J. Phillips Guy Thwaites Christoph Lange Martin J. Boeree Gareth Maher-Edwards Natasa Lazarevic Jolanda E. van de Logt Derek J. Sloan David Barros-Aguirre and Michael Hoelscherthe PARADIGM4TB (UNITE4TB-01) Trial Team*"
+   ],
+   "affiliations": [
+    "University College London; Radboud University Medical Center; National University of Singapore; LMU University Hospital Munich; GSK"
+   ],
+   "announced": "2026-11-19T00:00:00-05:00",
+   "primary_tag": "Infectious disease",
+   "tags": [
+    "Infectious disease",
+    "Drug development"
+   ],
+   "tldr": "A platform trial in 401 adults with tuberculosis screened ten new four-drug combinations at once and selected two 16-week regimens, each built around a new drug, for further testing.",
+   "why_selected": "Tuberculosis kills more than a million people a year and standard treatment has barely changed in 40 years; this trial tests a faster way to find shorter regimens.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Tuberculosis (TB) causes more than one million deaths each year. Standard treatment for drug-susceptible disease is a four-drug combination taken for six months, a schedule many people find hard to complete. Shortening it requires new drugs, which must be tested in combinations."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The standard regimen, isoniazid, rifampin, pyrazinamide and ethambutol (HRZE), has been in use for about 40 years. Developing new regimens through traditional trials is slow and costly. Two experimental drugs had shown strong early bacteria-killing activity: ganfeborole, which stops bacterial protein synthesis, and BTZ-043, which blocks an enzyme needed to build the cell wall."
+    },
+    {
+     "heading": "Key idea",
+     "body": "PARADIGM4TB is a platform trial: many regimens share one protocol and one control group, like heats of a race run against the same pacesetter. In this phase 2 stage, adults with rifampin-susceptible lung TB at 14 sites in five countries were randomly assigned to 24 weeks of HRZE, to a 16-week three-drug comparator, or to one of ten new four-drug combinations given for 16 weeks. The new regimens contained ganfeborole, BTZ-043 or both, alongside drugs such as bedaquiline, delamanid, pretomanid and moxifloxacin. The main measure was how quickly, over the first 12 weeks, sputum cultures took longer to turn positive, a sign that live bacteria are declining. Results were used to select regimens, not to prove efficacy."
+    },
+    {
+     "heading": "Results",
+     "body": "Of 401 participants randomized, 371 were in the main analysis. Two regimens were selected: ganfeborole with bedaquiline, pretomanid and moxifloxacin, and BTZ-043 with bedaquiline, delamanid and moxifloxacin. Their rates of change were 0.129 and 0.142 log10 days per week, against 0.118 for HRZE, relative differences of 9.1% (95% credible interval, -8.6 to 29.0) and 20.5% (2.7 to 41.1), with probabilities of superiority of 0.83 and 0.99. Severe adverse events (grade 3 or higher) occurred in 38%, 28% and 24% of participants. A regimen combining BTZ-043 with pyrazinamide was stopped because of liver toxicity."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Two 16-week regimens now move to a stage that tests how short treatment can be. The caveat: this stage measured an early laboratory marker in small groups, and cure rates must be confirmed in phase 3 trials."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2611913",
+    "doi": "https://doi.org/10.1056/NEJMoa2611913"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1016-j-cell-2026-09-027",
+   "title": "Multiscale spatial atlas of human basal ganglia cell types and communities",
+   "authors": [
+    "Bereket Tesfay Berackey",
+    "Zhiqun Tan",
+    "Ginny Wu",
+    "Sujan C. Das",
+    "Ren Li",
+    "Benjamin Esser",
+    "Qiao Ye",
+    "Mahsa Nafisi",
+    "Samuel S. Park",
+    "Pedro Adolfo Sequeira Mendieta",
+    "Jillian Berry",
+    "Firoza Mamdani",
+    "Quan Zhu",
+    "Todd C. Holmes",
+    "Daofeng Li",
+    "Ting Wang",
+    "M. Margarita Behrens",
+    "Bing Ren",
+    "Joseph R. Ecker",
+    "Bogdan Bintu",
+    "Xiangmin Xu"
+   ],
+   "affiliations": [
+    "University of California",
+    "Irvine"
+   ],
+   "announced": "2026-11-12T00:00:00-05:00",
+   "primary_tag": "Neuroscience",
+   "tags": [
+    "Neuroscience",
+    "Genetics & genomics"
+   ],
+   "tldr": "A spatial map of about 7.9 million cells in four human brains resolves 60 cell types in the basal ganglia and shows how they are arranged, part of a 26-study atlas of the region.",
+   "why_selected": "The basal ganglia are central to Parkinson's and Huntington's disease; this is a reference map of where their cell types sit in the human brain.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "The basal ganglia are a set of connected structures deep in the brain that are critical for movement, habit formation, decision making and emotion. They are tied to Parkinson's disease, Huntington's disease, schizophrenia and addiction. Yet which cell types make up the human basal ganglia, and how those cells are arranged in space, had not been comprehensively worked out."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Single-cell sequencing can list the genes active in each cell, but the tissue must first be broken apart, which discards each cell's position. The NIH-funded BRAIN Initiative Cell Atlas Network is building a standard catalogue of brain cell types across humans, macaques and marmosets."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors combined two spatial transcriptomics methods, techniques that read out which genes are active while cells remain in place in a tissue slice. One, MERFISH+, is based on fluorescence imaging of RNA; the other, Stereo-seq, on sequencing. Using both on tissue from four donors without neurological disease, they mapped the caudate, putamen, nucleus accumbens and globus pallidus at a resolution finer than a single cell. It is like moving from a census of a city's occupations to a street map of where each person lives."
+    },
+    {
+     "heading": "Results",
+     "body": "The datasets cover about 7.9 million cells and resolve 60 molecularly distinct cell types. Neurons called spiny projection neurons vary in their molecular make-up by region. The tissue has two compartments, striosomes and matrix; particular subgroups of astrocytes and oligodendrocytes, two non-neuronal cell types, were enriched at the borders between them, while interneuron types that are expanded in primates were confined to the matrix. Comparisons across species found the striosome-matrix layout and a gradient of gene activity running from the upper outer to the lower inner striatum to be conserved, alongside species-specific features."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The atlas gives researchers a spatial reference for asking which cells are affected in basal ganglia disorders. It is one of 26 studies in a package that profiled 25.5 million cells in total. The caveat: it describes four donors without neurological disease, not diseased tissue."
+    }
+   ],
+   "links": {
+    "paper": "https://www.cell.com/cell/fulltext/S0092-8674(26)01129-3?rss=yes",
+    "doi": "https://doi.org/10.1016/j.cell.2026.09.027"
+   },
+   "signals": {
+    "venue": "Cell",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aei0135",
+   "title": "Divergent activation of the RXFP1 relaxin receptor by protein and small-molecule agonists",
+   "authors": [
+    "James Osei-Owusu",
+    "Tristan Girbau",
+    "Xunan Wang",
+    "Jeffrey S. Smith",
+    "Pengxiang Shen",
+    "Sarah C. Erlandson",
+    "Amanda K. Williamson",
+    "Xiaojing Cong",
+    "Mark W. Grinstaff",
+    "Daniel E. Kahne",
+    "Cherine Bechara",
+    "Andrew C. Kruse"
+   ],
+   "affiliations": [
+    "Harvard Medical School"
+   ],
+   "announced": "2026-11-19T00:00:00-05:00",
+   "primary_tag": "Molecular & cell biology",
+   "tags": [
+    "Molecular & cell biology",
+    "Drug development"
+   ],
+   "tldr": "Three cryo-electron microscopy structures show that the hormone relaxin-2 and a small-molecule drug candidate, AZD5462, switch on the same receptor by binding different parts of it and reshaping it differently.",
+   "why_selected": "Drugs acting on the relaxin receptor are in mid-stage heart disease trials; the structures show the small molecule is not a simple mimic of the natural hormone.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Relaxin-2 is a hormone that acts through a receptor called RXFP1, a member of the G protein-coupled receptor family, the large class of cell-surface proteins that relay outside signals into cells. RXFP1 is a drug target because activating it may help in fibrosis (tissue scarring) and heart failure. How the receptor is switched on at the level of atoms was unclear."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Two kinds of activator, or agonist, are in mid-stage clinical trials for forms of heart disease: protein drugs modelled on the hormone and small molecules, including a candidate called AZD5462. RXFP1 is an unusual receptor with a large section outside the cell, called the ectodomain, joined by a linker to the part that spans the membrane, and it was not known whether both kinds of drug activate it the same way."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The researchers used cryo-electron microscopy, which images frozen protein molecules with an electron beam to compute three-dimensional structures. They solved three structures of RXFP1: with nothing bound, bound to relaxin-2, and bound to AZD5462. They added hydrogen-deuterium exchange mass spectrometry, a method that reveals which parts of a protein become more or less exposed to water and so tracks changes in shape. The comparison is like finding that a lock can be opened two ways: the original key works on a mechanism mounted outside the door, while a second tool reaches directly into the bolt."
+    },
+    {
+     "heading": "Results",
+     "body": "Relaxin-2 binds the receptor's ectodomain, outside the cell, whereas AZD5462 binds within the membrane-spanning domain. Relaxin-2 binding reorganizes the linker region into a helix. AZD5462 instead stabilizes an active form of the receptor through a different set of shape changes. The authors conclude that protein and small-molecule agonists activate RXFP1 by divergent mechanisms."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the natural hormone and a small molecule activate the receptor differently, they may not produce identical signals inside cells, which matters for interpreting trials of each. The structures also offer a template for designing new compounds. The caveat: these are structural findings on the receptor, not evidence of benefit in patients."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aei0135",
+    "doi": "https://doi.org/10.1126/science.aei0135"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

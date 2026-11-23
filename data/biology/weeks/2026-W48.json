@@ -1,0 +1,51 @@
+{
+ "week": "2026-W48",
+ "start": "2026-11-23",
+ "end": "2026-11-28",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [],
+ "featured": {
+  "news": 3,
+  "papers": 3
+ },
+ "items": [
+  {
+   "id": "2026-11-23-n1",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "FDA rejects Capricor's Duchenne cell therapy a second time, citing unreliable data from its phase 3 trial"
+  },
+  {
+   "id": "2026-11-23-n2",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "Virginia reports its first measles death of 2026, a young child, as confirmed US cases reach 5,838"
+  },
+  {
+   "id": "2026-11-23-n3",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "Merck's antibody-drug conjugate sac-TMT extends survival in heavily pretreated stomach and oesophageal cancer, the company says"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2611913",
+   "date": "2026-11-23",
+   "type": "paper",
+   "title": "Assessing Multiple Treatment Regimens for Tuberculosis"
+  },
+  {
+   "id": "doi-10-1016-j-cell-2026-09-027",
+   "date": "2026-11-23",
+   "type": "paper",
+   "title": "Multiscale spatial atlas of human basal ganglia cell types and communities"
+  },
+  {
+   "id": "doi-10-1126-science-aei0135",
+   "date": "2026-11-23",
+   "type": "paper",
+   "title": "Divergent activation of the RXFP1 relaxin receptor by protein and small-molecule agonists"
+  }
+ ]
+}
