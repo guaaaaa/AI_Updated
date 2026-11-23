@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 23 Nov 2026 11:47:16 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 12:23:22 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI's chief scientist proposes perplexity as a shared metric for industry limits on AI development, and publishes OpenAI's own numbers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2026-11-23-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2026-11-23-n1</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / Safety &amp; Security</category>
+    <description>Jakub Pachocki argues that held-out perplexity should become a cross-lab measure of progress, discloses OpenAI's internal figures, and proposes limits that labs would not cross until monitoring improves. (OpenAI, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Search From the Start: Search-Native Pretraining for Language Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26809</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26809</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / Pre-training &amp; Data</category>
+    <description>Inserting search queries and retrieved passages into ordinary pretraining text teaches small language models to search and to trust evidence, an advantage that later fine-tuning on search data does not fully reproduce. (Kaustubh Ponkshe, Gyung Hyun Je, Stefan Taga et al. · EPFL, University of Toronto)</description>
+  </item>
+  <item>
+    <title>Composable Soft-Prompt Distillation of RL Experts: Toward Continual Post-Training</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27376</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27376</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>Each RL-trained expert model is distilled into 256 learned input vectors on a frozen base model, and experts combine simply by concatenating those prompts, matching full multi-teacher distillation. (Zhen Zhang, Changyi Yang, Xuehai He et al. · University of California, Santa Barbara, Carnegie Mellon University)</description>
+  </item>
+  <item>
+    <title>Neural Geometry as a Learning Signal</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26832</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26832</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / Interpretability</category>
+    <description>Fine-tuning Llama-3.1-8B only to make an internal representation match its idealized circle or helix, with no loss on outputs, improves task accuracy about as much as ordinary fine-tuning. (Eric Todd, Tal Haklay, Nikhil Prakash et al. · Northeastern University, University of Southern California, University of Amsterdam)</description>
+  </item>
+  <item>
+    <title>BioEmu2: Scalable Emulation of Biomolecular Dynamics</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27924</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27924</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / AI for Science &amp; Health</category>
+    <description>BioEmu2 is one diffusion model that predicts biomolecular structures, samples their equilibrium ensembles and jumps forward in time, covering proteins, nucleic acids, ligands and ions far faster than molecular dynamics. (Michael Gastegger, Adam E. Foster, José Jiménez-Luna et al. · Microsoft)</description>
+  </item>
+  <item>
+    <title>A Plan or an Adversarial Example? A Round-Trip Check for Latent World Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27124</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27124</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / World Models</category>
+    <description>Planning longer with a latent world model can turn working plans into adversarial examples of the model; checking that planned actions can be read back from predicted states largely fixes it. (Huiyuan Tian, Chih-Yung Wen, Shijian Li · Zhejiang University, The Hong Kong Polytechnic University)</description>
+  </item>
   <item>
     <title>The FBI investigates an apparent breach of NCIC, the database police across the US use to check warrants and stolen property</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-23/2026-11-23-n1</link>
@@ -438,54 +486,6 @@
     <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
     <category>Tech / Security &amp; privacy</category>
     <description>YUL checks every software dependency a coding agent declares against the package registry and blocks stale or nonexistent versions, so agents end on the latest release in over 90% of affected runs. (Aman Sharma, Frank Reyes, Martin Monperrus · KTH Royal Institute of Technology)</description>
-  </item>
-  <item>
-    <title>FDA approves venglustat, the first treatment for the neurological symptoms of type 3 Gaucher disease</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/2026-11-19-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/2026-11-19-n1</guid>
-    <pubDate>Thu, 19 Nov 2026 13:54:23 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA approved Sanofi's Infilbray (venglustat), a daily pill that reaches the brain, after a 43-patient randomized trial showed better neurological scores than standard enzyme infusions at one year. (FDA)</description>
-  </item>
-  <item>
-    <title>An off-the-shelf leukemia vaccine extends survival by nine months in a phase 3 trial, its developers report</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/2026-11-19-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/2026-11-19-n2</guid>
-    <pubDate>Thu, 19 Nov 2026 13:54:23 +0000</pubDate>
-    <category>Biology / Clinical Research</category>
-    <description>In the 126-patient REGAL trial, people with acute myeloid leukemia in second remission who got the WT1 peptide vaccine galinpepimut-S lived a median 24.0 months, against 14.7 months on other treatments. (Memorial Sloan Kettering, BioPharm International)</description>
-  </item>
-  <item>
-    <title>Biogen's tau-lowering drug diranersen shows larger effects at two years in early Alzheimer's, in an open-label extension</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/2026-11-19-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/2026-11-19-n3</guid>
-    <pubDate>Thu, 19 Nov 2026 13:54:23 +0000</pubDate>
-    <category>Biology / Neuroscience &amp; Mental Health</category>
-    <description>Biogen says the twice-yearly 60 mg dose of diranersen slowed decline on the CDR-SB dementia scale by 38% at two years, up from 26% at 18 months, though the comparison comes from an open-label extension. (Biogen (GlobeNewswire), ReachMD)</description>
-  </item>
-  <item>
-    <title>Rainforest adaptation in late Homo erectus from southern China</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/doi-10-1038-s41586-026-11155-6</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/doi-10-1038-s41586-026-11155-6</guid>
-    <pubDate>Thu, 19 Nov 2026 13:54:23 +0000</pubDate>
-    <category>Biology / Evolution &amp; ecology</category>
-    <description>Eight Homo erectus teeth from two caves in southern China, dated 324,000 to 184,000 years ago, carry chemical signs of a dense rainforest diet and of long journeys in childhood. (K. E. Westaway, R. Joannes-Boyau, W. Liao et al. · Macquarie University, Southern Cross University, Chinese Academy of Sciences Institute of Vertebrate Palaeontology and Palaeoanthropology)</description>
-  </item>
-  <item>
-    <title>Closest relatives of poxviruses prevail in human and animal guts worldwide</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/doi-10-1038-s41586-026-11283-z</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/doi-10-1038-s41586-026-11283-z</guid>
-    <pubDate>Thu, 19 Nov 2026 13:54:23 +0000</pubDate>
-    <category>Biology / Microbiology</category>
-    <description>Mining 85,123 genetic datasets, researchers found egoviruses, the closest known relatives of poxviruses, in the guts of humans and livestock worldwide, hinting that the smallpox family began in animal guts. (Morgan Gaïa, Ulysse Guyet, Hans-Joachim Ruscheweyh et al. · French National Centre for Scientific Research (CNRS))</description>
-  </item>
-  <item>
-    <title>Nicotinamide Riboside for Patients With Early-Stage Parkinson Disease: The NOPARK Randomized Clinical Trial</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/doi-10-1001-jama-2026-18859</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-19/doi-10-1001-jama-2026-18859</guid>
-    <pubDate>Thu, 19 Nov 2026 13:54:23 +0000</pubDate>
-    <category>Biology / Neurology &amp; mental health</category>
-    <description>In a 410-person Norwegian trial, a year of the NAD-boosting supplement nicotinamide riboside did not help early Parkinson's disease; symptom scores were slightly worse than with placebo. (NOPARK trial investigators (study director: Charalampos Tzoulis) · Haukeland University Hospital, University of Bergen)</description>
   </item>
 </channel>
 </rss>

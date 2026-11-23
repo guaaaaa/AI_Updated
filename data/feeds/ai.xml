@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Sat, 21 Nov 2026 12:17:35 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 12:23:22 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI's chief scientist proposes perplexity as a shared metric for industry limits on AI development, and publishes OpenAI's own numbers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2026-11-23-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2026-11-23-n1</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / Safety &amp; Security</category>
+    <description>Jakub Pachocki argues that held-out perplexity should become a cross-lab measure of progress, discloses OpenAI's internal figures, and proposes limits that labs would not cross until monitoring improves. (OpenAI, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Search From the Start: Search-Native Pretraining for Language Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26809</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26809</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / Pre-training &amp; Data</category>
+    <description>Inserting search queries and retrieved passages into ordinary pretraining text teaches small language models to search and to trust evidence, an advantage that later fine-tuning on search data does not fully reproduce. (Kaustubh Ponkshe, Gyung Hyun Je, Stefan Taga et al. · EPFL, University of Toronto)</description>
+  </item>
+  <item>
+    <title>Composable Soft-Prompt Distillation of RL Experts: Toward Continual Post-Training</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27376</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27376</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>Each RL-trained expert model is distilled into 256 learned input vectors on a frozen base model, and experts combine simply by concatenating those prompts, matching full multi-teacher distillation. (Zhen Zhang, Changyi Yang, Xuehai He et al. · University of California, Santa Barbara, Carnegie Mellon University)</description>
+  </item>
+  <item>
+    <title>Neural Geometry as a Learning Signal</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26832</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26832</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / Interpretability</category>
+    <description>Fine-tuning Llama-3.1-8B only to make an internal representation match its idealized circle or helix, with no loss on outputs, improves task accuracy about as much as ordinary fine-tuning. (Eric Todd, Tal Haklay, Nikhil Prakash et al. · Northeastern University, University of Southern California, University of Amsterdam)</description>
+  </item>
+  <item>
+    <title>BioEmu2: Scalable Emulation of Biomolecular Dynamics</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27924</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27924</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / AI for Science &amp; Health</category>
+    <description>BioEmu2 is one diffusion model that predicts biomolecular structures, samples their equilibrium ensembles and jumps forward in time, covering proteins, nucleic acids, ligands and ions far faster than molecular dynamics. (Michael Gastegger, Adam E. Foster, José Jiménez-Luna et al. · Microsoft)</description>
+  </item>
+  <item>
+    <title>A Plan or an Adversarial Example? A Round-Trip Check for Latent World Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27124</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27124</guid>
+    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
+    <category>AI / World Models</category>
+    <description>Planning longer with a latent world model can turn working plans into adversarial examples of the model; checking that planned actions can be read back from predicted states largely fixes it. (Huiyuan Tian, Chih-Yung Wen, Shijian Li · Zhejiang University, The Hong Kong Polytechnic University)</description>
+  </item>
   <item>
     <title>Anthropic mathematician Levent Alpöge claims a Lean-formalized proof of the Riemann hypothesis, found working with Claude</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n1</link>
@@ -278,54 +326,6 @@
     <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
     <category>AI / LLMs</category>
     <description>Across 2,000 papers, the latest GPT and Claude models draw about half or more of their review criticisms from the appendix, versus 8.4% for human reviewers, and human reviews are now drifting the same way. (Saptarshi Ghosh, Mohammad Saim, Tianyu Jiang · University of Cincinnati)</description>
-  </item>
-  <item>
-    <title>Alibaba launches Qwen4-Max, a 2.4-trillion-parameter flagship that stays closed-weight</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n1</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Alibaba released Qwen4-Max, a 2.4-trillion-parameter multimodal model priced at $1.50/$4.50 per million tokens, and kept its weights closed, unlike many earlier Qwen releases. (TNW, Crypto Briefing, Data Studios)</description>
-  </item>
-  <item>
-    <title>OpenAI signs four outside evaluators to assess its models and safeguards from inside the company</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2026-11-16-n2</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Safety &amp; Security</category>
-    <description>OpenAI signed agreements with Apollo Research, METR, Transluce and Goodfire to run pilot assessments of its models' alignment, safeguards and monitoring using internal resources. (OpenAI, MLQ.ai, Quartz)</description>
-  </item>
-  <item>
-    <title>Training Reasoning Models in Simulation to Natively Use Real Robots</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18562</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.18562</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>An open-weight 27B reasoning model learns to control robots by reinforcement learning in simulation alone, with no demonstrations, and then succeeds in 60% of trials on a real dual-arm robot. (Jiaming Tang, Zhuoyang Zhang, Junxian Guo et al. · MIT, Inco AI, UC Berkeley)</description>
-  </item>
-  <item>
-    <title>Aligning AI Teams</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17820</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17820</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Safety &amp; Alignment</category>
-    <description>Teams of individually aligned LLM agents pick less safe trade-offs than one agent because responsibility diffuses; a designated safety lead plus a shared safety document restores single-agent behavior. (Siddarth Srinivasan, Morgan Jane Matthews, Jascha Sohl-Dickstein et al. · Harvard University, Constellation Institute, Anthropic)</description>
-  </item>
-  <item>
-    <title>Learning Anisotropic Prediction Targets for Flow Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17767</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17767</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>AnisoFlow lets a flow model learn what quantity it should predict, with a separate noise weight per data direction, improving pixel-space ImageNet FID from 1.90 to 1.55 without other changes. (Rayhan Zirvi, Hansheng Chen, Gordon Wetzstein et al. · Stanford University, California Institute of Technology)</description>
-  </item>
-  <item>
-    <title>Delayed Effects of Temporary Weight Decay in Muon Pretraining</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17876</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-16/2611.17876</guid>
-    <pubDate>Mon, 16 Nov 2026 19:33:23 +0000</pubDate>
-    <category>AI / Optimization</category>
-    <description>Weight decay applied only early in Muon pretraining can look harmful when it is switched off yet give a lower final loss, because it leaves smaller weights and thus larger relative steps. (Md Rifat Arefin, Ravid Shwartz-Ziv, Ernie Chang et al. · Meta, Mila-Quebec AI Institute, Université de Montréal)</description>
   </item>
 </channel>
 </rss>

@@ -1,5 +1,89 @@
 [
  {
+  "id": "2026-11-23-n1",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "OpenAI's chief scientist proposes perplexity as a shared metric for industry limits on AI development, and publishes OpenAI's own numbers",
+  "tldr": "Jakub Pachocki argues that held-out perplexity should become a cross-lab measure of progress, discloses OpenAI's internal figures, and proposes limits that labs would not cross until monitoring improves.",
+  "category": "Safety & Security",
+  "byline": "OpenAI, TechCrunch"
+ },
+ {
+  "id": "2611.26809",
+  "date": "2026-11-23",
+  "type": "paper",
+  "title": "Search From the Start: Search-Native Pretraining for Language Models",
+  "tldr": "Inserting search queries and retrieved passages into ordinary pretraining text teaches small language models to search and to trust evidence, an advantage that later fine-tuning on search data does not fully reproduce.",
+  "primary_tag": "Pre-training & Data",
+  "tags": [
+   "Pre-training & Data",
+   "Retrieval & Memory"
+  ],
+  "byline": "Kaustubh Ponkshe, Gyung Hyun Je, Stefan Taga et al. · EPFL, University of Toronto",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.27376",
+  "date": "2026-11-23",
+  "type": "paper",
+  "title": "Composable Soft-Prompt Distillation of RL Experts: Toward Continual Post-Training",
+  "tldr": "Each RL-trained expert model is distilled into 256 learned input vectors on a frozen base model, and experts combine simply by concatenating those prompts, matching full multi-teacher distillation.",
+  "primary_tag": "Post-training",
+  "tags": [
+   "Post-training",
+   "Efficiency"
+  ],
+  "byline": "Zhen Zhang, Changyi Yang, Xuehai He et al. · University of California, Santa Barbara, Carnegie Mellon University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.26832",
+  "date": "2026-11-23",
+  "type": "paper",
+  "title": "Neural Geometry as a Learning Signal",
+  "tldr": "Fine-tuning Llama-3.1-8B only to make an internal representation match its idealized circle or helix, with no loss on outputs, improves task accuracy about as much as ordinary fine-tuning.",
+  "primary_tag": "Interpretability",
+  "tags": [
+   "Interpretability",
+   "Post-training"
+  ],
+  "byline": "Eric Todd, Tal Haklay, Nikhil Prakash et al. · Northeastern University, University of Southern California, University of Amsterdam",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.27924",
+  "date": "2026-11-23",
+  "type": "paper",
+  "title": "BioEmu2: Scalable Emulation of Biomolecular Dynamics",
+  "tldr": "BioEmu2 is one diffusion model that predicts biomolecular structures, samples their equilibrium ensembles and jumps forward in time, covering proteins, nucleic acids, ligands and ions far faster than molecular dynamics.",
+  "primary_tag": "AI for Science & Health",
+  "tags": [
+   "AI for Science & Health",
+   "Generative Models"
+  ],
+  "byline": "Michael Gastegger, Adam E. Foster, José Jiménez-Luna et al. · Microsoft",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.27124",
+  "date": "2026-11-23",
+  "type": "paper",
+  "title": "A Plan or an Adversarial Example? A Round-Trip Check for Latent World Models",
+  "tldr": "Planning longer with a latent world model can turn working plans into adversarial examples of the model; checking that planned actions can be read back from predicted states largely fixes it.",
+  "primary_tag": "World Models",
+  "tags": [
+   "World Models",
+   "Robotics"
+  ],
+  "byline": "Huiyuan Tian, Chih-Yung Wen, Shijian Li · Zhejiang University, The Hong Kong Polytechnic University",
+  "hf": null,
+  "venue": null
+ },
+ {
   "id": "2026-11-21-n1",
   "date": "2026-11-21",
   "type": "news",

@@ -1,0 +1,88 @@
+{
+ "week": "2026-W48",
+ "start": "2026-11-23",
+ "end": "2026-11-28",
+ "complete": false,
+ "digests": 1,
+ "papers": [
+  {
+   "id": "2611.27193",
+   "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+   "hf": 78,
+   "org": "XingChen-AGI",
+   "featured": null
+  },
+  {
+   "id": "2611.27963",
+   "title": "Non-penetrating World Models",
+   "hf": 48,
+   "org": "The Hong Kong Polytechnic University",
+   "featured": null
+  },
+  {
+   "id": "2611.27973",
+   "title": "MemOnce: A Scalable Memory Architecture for Large Language Models",
+   "hf": 12,
+   "org": "Nanjing University",
+   "featured": null
+  },
+  {
+   "id": "2611.27915",
+   "title": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
+   "hf": 6,
+   "org": "xpeng-robotics",
+   "featured": null
+  },
+  {
+   "id": "2611.27229",
+   "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
+   "hf": 3,
+   "org": "City University of Hong Kong",
+   "featured": null
+  },
+  {
+   "id": "2611.27211",
+   "title": "Explicit Style Extraction for Personalized Long-Form Text Generation",
+   "hf": 2,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.27398",
+   "title": "Taking Apart and Putting Together: Tracking Objects Through Physical Transformations",
+   "hf": 1,
+   "org": "Multimedia and Human Understanding Group",
+   "featured": null
+  }
+ ],
+ "stories": [
+  {
+   "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+   "outlets": 11,
+   "date": "2026-11-20",
+   "covered": null
+  },
+  {
+   "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+   "outlets": 5,
+   "date": "2026-11-20",
+   "covered": null
+  },
+  {
+   "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
+   "outlets": 5,
+   "date": "2026-11-20",
+   "covered": null
+  },
+  {
+   "title": "OpenAI Chief Scientist Urges Industry Limits on AI Development",
+   "outlets": 3,
+   "date": "2026-11-22",
+   "covered": "2026-11-23-n1"
+  }
+ ],
+ "featured": {
+  "news": 1,
+  "papers": 5
+ }
+}

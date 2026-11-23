@@ -1,0 +1,380 @@
+{
+ "date": "2026-11-23",
+ "edition": "weekday",
+ "generated_at": "2026-11-23T12:23:22+00:00",
+ "summary": "OpenAI's chief scientist proposes perplexity as a shared yardstick for limiting AI development; papers on teaching search during pretraining, plug-in soft prompts for RL experts, training on representation geometry, biomolecular dynamics and adversarial plans in world models.",
+ "news": [
+  {
+   "id": "2026-11-23-n1",
+   "story_key": "openai-pachocki-perplexity-development-limits",
+   "title": "OpenAI's chief scientist proposes perplexity as a shared metric for industry limits on AI development, and publishes OpenAI's own numbers",
+   "category": "Safety & Security",
+   "published": "2026-11-22T12:00:00-05:00",
+   "tldr": "Jakub Pachocki argues that held-out perplexity should become a cross-lab measure of progress, discloses OpenAI's internal figures, and proposes limits that labs would not cross until monitoring improves.",
+   "why_selected": "The first concrete, measurable proposal from a frontier lab for how a development limit could be defined, with previously private pretraining numbers attached.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Slowing frontier AI development has become a prominent topic among lab leaders. TechCrunch reports that Anthropic chief executive Dario Amodei published a plan to \"pace the frontier\", calling for common safety standards and limits on the rate of unchecked AI progress, and that OpenAI's Sam Altman and SpaceX's Elon Musk seemingly endorsed it."
+    },
+    {
+     "heading": "What happened",
+     "body": "OpenAI published \"Perplexity and Intelligence\", an essay by chief scientist Jakub Pachocki. He argues that the best single indicator of progress is how well a pretrained model predicts held-out data, measured as perplexity or, equivalently, cross-entropy loss. Benchmarks of downstream skills saturate, he writes, while this number stays informative.\n\nHe then discloses OpenAI's internal figures, measured on a fixed held-out snapshot of the company's own codebase. GPT-3.5 sat at a log-perplexity of about 0.99 and GPT-4 at about 0.91; current models are below 0.8. A model at about 0.76 began producing what he calls groundbreaking results on open mathematics problems, and he expects further transformative capabilities in the 0.68 to 0.7 range.\n\nHis proposal is that developers agree on common limits, based on perplexity and other measurements, that they commit not to cross until the ability to understand and monitor AI behavior reaches a concrete milestone, such as a successor to chain-of-thought monitors."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "As TechCrunch puts it, a speed limit on AI development requires agreement on how to measure speed. This proposal names a quantity OpenAI says it has tracked since GPT-3.5, and the company accepted giving competitors a clearer view of where it stands.\n\nPachocki lists the weaknesses himself. Labs use different evaluation sets and training mixtures, so numbers are not directly comparable. Perplexity is not tied to any task. It misses gains made after pretraining; chain-of-thought reasoning raises capability without lowering it. And the floor is unknown. He also warns that AI contributions to pretraining research could produce an avalanche of advances as soon as 2027."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether other frontier labs publish comparable figures, whether a shared evaluation set emerges, and whether anyone names an actual threshold and the monitoring milestone that would unlock it."
+    }
+   ],
+   "sources": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/index/perplexity-and-intelligence"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.26809",
+   "title": "Search From the Start: Search-Native Pretraining for Language Models",
+   "authors": [
+    "Kaustubh Ponkshe",
+    "Gyung Hyun Je",
+    "Stefan Taga",
+    "Colin Raffel",
+    "Martin Jaggi"
+   ],
+   "affiliations": [
+    "EPFL",
+    "University of Toronto"
+   ],
+   "announced": "2026-11-22T20:00:00-05:00",
+   "primary_tag": "Pre-training & Data",
+   "tags": [
+    "Pre-training & Data",
+    "Retrieval & Memory"
+   ],
+   "tldr": "Inserting search queries and retrieved passages into ordinary pretraining text teaches small language models to search and to trust evidence, an advantage that later fine-tuning on search data does not fully reproduce.",
+   "why_selected": "A simple, scalable change to pretraining data with a clear finding: when a skill is taught matters, and post-training did not close the gap.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Language models are now routinely deployed with a search tool, yet they are pretrained as if no such tool existed. Every fact has to be squeezed into the weights, which is especially costly for small models, and stored facts go stale. Search is usually bolted on afterwards with fine-tuning."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Retrieval is typically added at inference or in post-training, after the model has already learned to rely on its parametric memory. Earlier attempts to bring lookups into pretraining placed them only directly before an entity's value and looked values up in a knowledge store rather than through web-style search."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Turn ordinary documents into demonstrations of searching. Think of a reader who pauses mid-sentence to look something up, then reads on. A small annotator model, Gemma 4 E4B fine-tuned on 10,000 Wikipedia documents labelled by a stronger teacher, scores every position in a document in one forward pass for how useful a search would be there, then writes a query using only the text to its left, as a model would at inference. Results come from a local BM25 keyword index over Sphere, a public collection of 134 million web documents, and are kept only if they overlap with the true continuation. The model still does plain next-token prediction; the retrieved text is context and is excluded from the loss. The augmented DCLM-Edu corpus exceeds 100 billion tokens."
+    },
+    {
+     "heading": "Results",
+     "body": "The resulting models, called QueryLM, were trained from 360 million to 3.3 billion parameters. On Wikipedia at 360M, QueryLM with search scores 12.2 on open-domain and 5.7 on multi-hop question answering, against 3.2 and 0.2 for the closed-book baseline, at 1.04 times the compute. A 1.4B QueryLM matches or beats a compute-matched 3.3B baseline on all knowledge-intensive tasks. The gap persists after both are fine-tuned on search-heavy data, especially at small scale. QueryLM also shifts more strongly toward supplied evidence, including counterfactual evidence."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests tool use can be a pretraining objective rather than a post-training patch. Caveats: closed-book performance is worse, general benchmarks show no consistent gain, and the largest model tested is 3.3B, where part of the advantage already shrinks."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.26809",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26809"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 114,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Colin Raffel"
+    ]
+   }
+  },
+  {
+   "id": "2611.27376",
+   "title": "Composable Soft-Prompt Distillation of RL Experts: Toward Continual Post-Training",
+   "authors": [
+    "Zhen Zhang",
+    "Changyi Yang",
+    "Xuehai He",
+    "Chengzhi Liu",
+    "Yutong Yin",
+    "Ziyue Liu",
+    "Zhuoran Yin",
+    "Yangmin Li",
+    "Zhihan Liu",
+    "Jisen Li",
+    "Mingyu Jin",
+    "Chuhan Li",
+    "Zhaotian Weng",
+    "Ruoyu He",
+    "Wenyao Gao",
+    "Jiaxin Deng",
+    "Chenwei Wu",
+    "Hui Shen",
+    "Wenhao Chai",
+    "Chenyang Zhao",
+    "Zhuofan Ying",
+    "Kieran Liu",
+    "Andrew Chen",
+    "Pony Ma",
+    "Zhaoran Wang",
+    "Alkesh Patel",
+    "Zhe Gan",
+    "Xin Eric Wang"
+   ],
+   "affiliations": [
+    "University of California",
+    "Santa Barbara",
+    "Carnegie Mellon University",
+    "Northwestern University",
+    "NVIDIA",
+    "Apple"
+   ],
+   "announced": "2026-11-22T20:00:00-05:00",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Efficiency"
+   ],
+   "tldr": "Each RL-trained expert model is distilled into 256 learned input vectors on a frozen base model, and experts combine simply by concatenating those prompts, matching full multi-teacher distillation.",
+   "why_selected": "A surprisingly strong result that RL post-training gains fit in the input space and compose without joint training, with a mechanistic look at what the prompt encodes.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reinforcement learning (RL) post-training is done one domain at a time, producing separate experts for math, code and so on that must be folded into a single model. New experts keep arriving, so this consolidation never ends, and each round risks damaging what the model could already do."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Weight merging adds experts' parameter updates together, where they can interfere. Multi-teacher on-policy distillation (MOPD) retrains a student against all teachers whenever one is added. Routing needs a full model per expert, and per-request LoRA adapters add computation in every layer."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Keep the pre-RL model frozen and store each expert in the input instead of the weights. For each expert, the authors sample its answers, keep those that pass the domain verifier, and train a soft prompt, 256 free vectors in the embedding space placed in the system message, so that the frozen model reproduces those answers. It works like a plug-in: adding an expert means training one prompt, removing it means deleting one. To combine experts, the prompts are concatenated, with no joint training. One trick makes this work: in half of the training examples a random stretch of text precedes the prompt, so it learns to function whatever comes before it."
+    },
+    {
+     "heading": "Results",
+     "body": "Across 23 math, code and agent settings, a single prompt recovers at least 90% of the teacher's gain in 22 and matches or exceeds the teacher in 15; on SWE-bench Verified one student rises from 24.90% to 45.65%, against 44.05% for its teacher. Composing four independently trained prompts lifts a four-benchmark average from 50.41 to 67.83, against 67.79 for MOPD, and scores 56.6 against 53.5 on six held-out benchmarks. Throughput stays within 1.5% of the bare backbone and is 2.40 times that of rank-4 LoRA with 32 distinct adapters in flight. Written instructions with the same intent close at most 2.1% of the teacher-student KL divergence gap, of which the soft prompt closes 86.8%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It points to post-training as a growing library of small modules on a fixed backbone. Stated caveats: one backbone, four domains and one seed for composition, and context cost that grows with each expert."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.27376",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27376"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 23,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2611.26832",
+   "title": "Neural Geometry as a Learning Signal",
+   "authors": [
+    "Eric Todd",
+    "Tal Haklay",
+    "Nikhil Prakash",
+    "Matthew Finlayson",
+    "Michael Hanna",
+    "Fenil R. Doshi",
+    "Daniel Wurgaft",
+    "Thomas McGrath",
+    "Owen Lewis",
+    "David Bau",
+    "Jack Merullo",
+    "Ekdeep Singh Lubana",
+    "Matthew Kowal",
+    "Thomas Fel",
+    "Atticus Geiger"
+   ],
+   "affiliations": [
+    "Northeastern University",
+    "University of Southern California",
+    "University of Amsterdam",
+    "Harvard University",
+    "Stanford University"
+   ],
+   "announced": "2026-11-22T20:00:00-05:00",
+   "primary_tag": "Interpretability",
+   "tags": [
+    "Interpretability",
+    "Post-training"
+   ],
+   "tldr": "Fine-tuning Llama-3.1-8B only to make an internal representation match its idealized circle or helix, with no loss on outputs, improves task accuracy about as much as ordinary fine-tuning.",
+   "why_selected": "It reverses the usual direction of interpretability, using a mechanistic description as the training signal, and shows this can work on a real 8B model.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Since backpropagation, networks have been trained by specifying the desired outputs and letting internal representations form on their own. Interpretability research can now describe some of those representations precisely. Are such descriptions only explanations, or accurate enough to change what a model does?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Mechanistic studies have found that language models encode numbers with Fourier features, points arranged on circles of several periods, and track position within a line of text along a helix. These accounts are idealizations; the real representations are noisier. Fixing the resulting behavioral errors is still done with standard fine-tuning on outputs."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Supervise the geometry instead of the answer. The authors take two tasks with known mechanisms in Llama-3.1-8B: month arithmetic, such as which month comes four months after June, and predicting where a line break falls in text wrapped to a fixed width. For each they define the ideal target, for example class centroids equally spaced on a circle or helix, inside a low-dimensional readout of the residual stream. A low-rank adapter (LoRA) placed at an early layer is trained with a loss that pulls each value's average representation at an intermediate layer toward its ideal position, plus a term controlling how tightly examples cluster. No output token is ever supervised."
+    },
+    {
+     "heading": "Results",
+     "body": "On month arithmetic with sums up to 96, the base model is perfect when the sum is at most 12 but reaches only 36.3% overall. A standard task LoRA trained on sums up to 24 reaches 71.9%; the geometry-only LoRA trained on the same range reaches 73.3%. On line breaking, where the base model misses by 13.5 characters on average and a task LoRA by 4.6, the authors report geometric supervision performs similarly to the task LoRA. Patching the idealized geometry directly into the original model does not recover the gain, so training changes more than the targeted representation."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It is functional evidence that these mechanistic accounts are right, and a hint of training by specifying internals where output labels are scarce. The limits are plain: two narrow tasks whose geometry was already known, and no method yet for discovering target geometries automatically."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.26832",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.26832"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 136,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "David Bau"
+    ]
+   }
+  },
+  {
+   "id": "2611.27924",
+   "title": "BioEmu2: Scalable Emulation of Biomolecular Dynamics",
+   "authors": [
+    "Michael Gastegger",
+    "Adam E. Foster",
+    "José Jiménez-Luna",
+    "Tim Hempel",
+    "Sarah Lewis",
+    "Yu Xie",
+    "Lixin Sun",
+    "Iryna Zaporozhets",
+    "J. Thorben Frank",
+    "Yaoyi Chen",
+    "Michael Plainer",
+    "Ludwig Winkler",
+    "Pedro B. P. S. Reis",
+    "Sven H. Giese",
+    "Roberto Sordillo",
+    "Victor García Satorras",
+    "Eray Inanc",
+    "Kacper Kapuśniak",
+    "Soojung Yang",
+    "Rishwanth Raghu",
+    "Rachel Kim",
+    "Gabriel Dernbach",
+    "Deniz Gunceler",
+    "Hannes Schulz",
+    "Bonnie Kruft",
+    "Marwin Segler",
+    "Christopher M. Bishop",
+    "Cecilia Clementi",
+    "Ryota Tomioka",
+    "Frank Noé"
+   ],
+   "affiliations": [
+    "Microsoft"
+   ],
+   "announced": "2026-11-22T20:00:00-05:00",
+   "primary_tag": "AI for Science & Health",
+   "tags": [
+    "AI for Science & Health",
+    "Generative Models"
+   ],
+   "tldr": "BioEmu2 is one diffusion model that predicts biomolecular structures, samples their equilibrium ensembles and jumps forward in time, covering proteins, nucleic acids, ligands and ions far faster than molecular dynamics.",
+   "why_selected": "A foundation-model step from predicting one static structure to emulating how biomolecules move and bind, in a single all-atom system.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Structure predictors such as AlphaFold give one shape for a molecule. Function depends on motion: which shapes are populated, how fast they interconvert, and how binding a ligand shifts the balance. Molecular dynamics (MD) simulation, which steps atoms forward under a force field, is too expensive to reach the rare events that matter."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Learned ensemble models, including the first BioEmu, sample conformations from data but are coarse-grained, single-protein models. Methods that learn time jumps exist but, the authors say, do not generalize across a wide range of complex structures. Structure-prediction models handle complexes but produce static answers."
+    },
+    {
+     "heading": "Key idea",
+     "body": "One model, three modes, selected by conditioning. A sequence trunk reads the system, which can include proteins, DNA, RNA, modified residues, ligands and ions, plus evolutionary alignments, and a diffusion module generates heavy-atom coordinates. A learned flag tells the model whether to produce a crisp experimental-style structure or a draw from the room-temperature equilibrium distribution learned from MD data. For dynamics, the diffusion module is additionally given a starting structure and a time lag and is trained to sample where MD would be after that lag, fast-forwarding a simulation in one generative step. Chaining such steps gives long trajectories. Users can also impose residue contacts or steer sampling with bias potentials."
+    },
+    {
+     "heading": "Results",
+     "body": "In structure-prediction mode the authors report accuracy competitive with open-weight models including Boltz-1, OpenFold3 and Protenix on FoldBench and Runs N' Poses. Equilibrium samples reproduce reference MD free-energy surfaces with errors near 1 kcal/mol on tested systems. Splitting the computation across 16 GPUs supports systems of about 16,000 residues; four test complexes of 3,508 to 5,832 residues reach backbone lDDT, a local accuracy score, of 0.80 to 0.94. Supplying a single inter-chain contact for one 4,020-residue complex cuts error from 71.2 to 5.0 angstroms."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fast ensemble and kinetics estimates could make studying mechanism routine for drug-discovery and biophysics groups. The equilibrium and dynamics modes are learned from MD simulations, whose accuracy the authors note is limited by the force field, and they call several capabilities, slow kinetics in particular, experimental and in need of further validation."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.27924",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27924"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 68,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2611.27124",
+   "title": "A Plan or an Adversarial Example? A Round-Trip Check for Latent World Models",
+   "authors": [
+    "Huiyuan Tian",
+    "Chih-Yung Wen",
+    "Shijian Li"
+   ],
+   "affiliations": [
+    "Zhejiang University",
+    "The Hong Kong Polytechnic University"
+   ],
+   "announced": "2026-11-22T20:00:00-05:00",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Robotics"
+   ],
+   "tldr": "Planning longer with a latent world model can turn working plans into adversarial examples of the model; checking that planned actions can be read back from predicted states largely fixes it.",
+   "why_selected": "A clean, general insight that planning against a learned model is an adversarial search, with a measurement and a cheap repair tested on three released world models.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A latent world model predicts, in the feature space of a visual encoder, what a sequence of actions will lead to. A planner then searches for the actions whose predicted outcome is closest to a goal image. This paper asks whether more search finds better plans or inputs that fool the model."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Standard planners such as the cross-entropy method (CEM) and model predictive path integral control (MPPI) keep the candidates with the lowest predicted cost. Benchmarks usually report success with replanning, which hides how often a single search goes wrong."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Optimizing actions against a model's prediction is the procedure that produces adversarial images for a classifier. A candidate can score well because it is good or because the model underestimates its cost, and a longer search collects more of the second kind. The authors measure this by executing the plan after every planning iteration and counting problems solved and later lost, the adversarial rate. The repair exploits a difference from images: a plan comes with its actions. A small inverse-dynamics network looks at each pair of consecutive predicted states and reads back the action that should connect them; plans whose actions disagree are penalized. Because these models predict one state per block of five actions, only the block's summed action is recoverable, so that is what is compared."
+    },
+    {
+     "heading": "Results",
+     "body": "On the Wall task with DINO-WM, CEM's success peaks at 0.56 after 11 iterations and falls to 0.39 after 30 while predicted cost keeps dropping; the final plan fails 52% of problems an earlier plan solved. The check raises Wall success from 0.39 to 0.76 and Cube from 0.64 to 0.79 without replanning, lifts MPPI on JEPA-WM from 0.56 to 0.94, and with replanning takes Cube from 0.70 to 0.81, for 0.2% to 3.1% more planning time."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Anyone planning against a learned dynamics or reward model should test for this. The check brings no significant gain for planners with a low adversarial rate, and all tasks are simulated."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.27124",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.27124"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 66,
+    "alphaxiv_hot_days": 1
+   }
+  }
+ ]
+}
