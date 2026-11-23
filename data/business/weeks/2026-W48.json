@@ -1,0 +1,58 @@
+{
+ "week": "2026-W48",
+ "start": "2026-11-23",
+ "end": "2026-11-28",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [
+  {
+   "title": "Wall Street Strategists See Silver Lining for Stock Market",
+   "outlets": 4,
+   "date": "2026-11-22",
+   "covered": null
+  },
+  {
+   "title": "What Comes Next After Anthropic’s Historic IPO",
+   "outlets": 3,
+   "date": "2026-11-22",
+   "covered": null
+  }
+ ],
+ "featured": {
+  "news": 4,
+  "papers": 1
+ },
+ "items": [
+  {
+   "id": "2026-11-23-n1",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "CrowdStrike agrees to buy Zscaler in an all-stock deal worth about $43.9 billion"
+  },
+  {
+   "id": "2026-11-23-n2",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "Taiwan eases margin-call rules as Asian authorities try to halt an AI-driven stock rout"
+  },
+  {
+   "id": "2026-11-23-n3",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "Trump threatens a \"tremendous tax\" on US companies that build AI data centres abroad"
+  },
+  {
+   "id": "2026-11-23-n4",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "A Missouri judge approves Bayer's $7.25 billion settlement of Roundup cancer claims"
+  },
+  {
+   "id": "nber-w36050",
+   "date": "2026-11-23",
+   "type": "paper",
+   "title": "Past Automation and Future AI: How Weak Links Tame the Growth Explosion"
+  }
+ ]
+}

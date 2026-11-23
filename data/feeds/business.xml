@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/business</link>
   <description>Markets, companies and the economy</description>
   <language>en</language>
-  <lastBuildDate>Sat, 21 Nov 2026 12:46:30 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 12:46:18 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/business.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>CrowdStrike agrees to buy Zscaler in an all-stock deal worth about $43.9 billion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n1</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>CrowdStrike will pay 1.135 of its shares for each Zscaler share, a 34% premium, to add network security to its device-security platform; its own shares fell more than 8% premarket. (Zscaler (joint press release), The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Taiwan eases margin-call rules as Asian authorities try to halt an AI-driven stock rout</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n2</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Markets</category>
+    <description>After the Taiex lost 17.5% in a week, Taiwan cut the margin-maintenance threshold to 120% from 130%, tightened short-selling rules and kept its stabilization fund in the market; the index rebounded 2.16% on Monday. (Focus Taiwan (CNA), Focus Taiwan (CNA), The Globe and Mail (Reuters))</description>
+  </item>
+  <item>
+    <title>Trump threatens a "tremendous tax" on US companies that build AI data centres abroad</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n3</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>President Trump said US firms that build data centres overseas would face a heavy tax, but gave no details and said his staff were hearing the idea for the first time. (BBC, The Globe and Mail (AP))</description>
+  </item>
+  <item>
+    <title>A Missouri judge approves Bayer's $7.25 billion settlement of Roundup cancer claims</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n4</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>A St Louis state court found the deal "fair, reasonable and adequate", potentially ending most of the litigation that has weighed on Bayer since it bought Monsanto in 2018. (The Guardian, Insurance Journal)</description>
+  </item>
+  <item>
+    <title>Past Automation and Future AI: How Weak Links Tame the Growth Explosion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/nber-w36050</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/nber-w36050</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Growth &amp; productivity</category>
+    <description>Jones and Tonetti find that automation explains essentially all US productivity growth since 1950, and that AI should speed growth up, but slowly, because tasks still done by people hold the economy back. (Charles I. Jones, Christopher Tonetti · Stanford GSB, Anthropic, NBER)</description>
+  </item>
   <item>
     <title>An AI sell-off pushes the S&amp;P 500 and the Dow into a correction as Nvidia falls about 14%</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
     <category>Business / Energy &amp; Commodities</category>
     <description>Alberta's new Oil Sands Growth Program guarantees eligible new projects a 10-year royalty schedule starting at 2%, part of Premier Danielle Smith's push to double oil production to eight million barrels a day. (Government of Alberta, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>An arbitrator imposes the first binding union contract for Amazon workers in North America, at a B.C. warehouse</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n4</guid>
-    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
-    <category>Business / Labor &amp; Workplace</category>
-    <description>About 800 workers at Amazon's YVR2 warehouse in Delta, B.C., are now covered by a three-year contract set by an arbitrator, with wages rising to $29 an hour; Amazon says it may go to court. (Unifor, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/nber-w35987</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/nber-w35987</guid>
-    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
-    <category>Business / Labor markets</category>
-    <description>Researchers used system-run interviews with 132 workers to build task lists for six occupations, capturing 79 tasks missing from the O*NET occupational database and shifting estimates of AI exposure. (Jennifer Wang, Andreas Haupt, Isaac Robinson et al.)</description>
-  </item>
-  <item>
-    <title>Jensen Huang resigns as Nvidia's CEO, CFO Colette Kress takes over on an interim basis, and the shares open down more than 13%</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n1</guid>
-    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
-    <category>Business / Earnings &amp; Companies</category>
-    <description>Nvidia's co-founder Jensen Huang resigned as CEO and director with immediate effect; CFO Colette Kress is interim CEO while the board searches for a successor, and Huang has agreed to testify to Congress. (TechCrunch, BBC, TechCrunch)</description>
-  </item>
-  <item>
-    <title>The Fed scraps its October 2027 rate vote and holds no December meeting, so no rate decision is due between mid-November 2027 and late January 2028</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n2</guid>
-    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
-    <category>Business / Central Banks &amp; Rates</category>
-    <description>The Fed's revised 2027 calendar keeps eight meetings but turns October's into a strategy session with no rate decision and drops December, part of Chair Kevin Warsh's plan to meet less often. (Federal Reserve, The New York Times)</description>
-  </item>
-  <item>
-    <title>US existing-home sales fall 5.5% in October to 3.75 million, the lowest pace since August 2010, as mortgage rates climb</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-13/2026-11-13-n3</guid>
-    <pubDate>Fri, 13 Nov 2026 12:45:49 +0000</pubDate>
-    <category>Business / Real Estate</category>
-    <description>Sales of previously owned US homes fell 5.5% in October to an annual pace of 3.75 million, down 8.8% from a year earlier, as 30-year mortgage rates hover near 7.18%. (National Association of Realtors, The Guardian)</description>
   </item>
 </channel>
 </rss>

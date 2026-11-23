@@ -1,0 +1,212 @@
+{
+ "date": "2026-11-23",
+ "edition": "weekday",
+ "generated_at": "2026-11-23T12:46:18+00:00",
+ "summary": "CrowdStrike agrees to buy Zscaler for about $43.9 billion, Asian authorities move to steady chip-heavy markets, Trump threatens a tax on data centres built abroad, and a judge approves Bayer's Roundup settlement.",
+ "news": [
+  {
+   "id": "2026-11-23-n1",
+   "story_key": "crowdstrike-zscaler-acquisition-2026-11",
+   "title": "CrowdStrike agrees to buy Zscaler in an all-stock deal worth about $43.9 billion",
+   "category": "Deals & M&A",
+   "published": "2026-11-23T06:41:00-05:00",
+   "tldr": "CrowdStrike will pay 1.135 of its shares for each Zscaler share, a 34% premium, to add network security to its device-security platform; its own shares fell more than 8% premarket.",
+   "why_selected": "One of the largest cybersecurity deals on record, announced days after a market correction, combining two bellwethers of the sector.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "CrowdStrike is best known for software that protects devices such as laptops and servers. Zscaler sells network security delivered from the cloud: it sits between users and the applications they reach and checks every connection, an approach known as zero trust. The two companies have been partners for years, with more than 2,000 shared customers and 16 product integrations, according to their joint announcement."
+    },
+    {
+     "heading": "What happened",
+     "body": "CrowdStrike said on Monday it will acquire Zscaler in an all-stock transaction that values Zscaler at approximately $43.9 billion. Zscaler shareholders will receive 1.135 CrowdStrike shares for each share they own, which the Globe and Mail reports implies $260.41 per share, a 34% premium to Zscaler's last close. CrowdStrike shareholders will own about 84% of the combined company. The deal is expected to close in the second half of CrowdStrike's fiscal 2028, and the companies will operate separately until then. George Kurtz, CrowdStrike's chief executive, will lead the combined company; Zscaler chief executive Jay Chaudhry will keep running the Zscaler business and join CrowdStrike's board. In premarket trading Zscaler rose more than 13% and CrowdStrike fell over 8%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The deal is a bet that large customers want to buy security from fewer vendors. CrowdStrike says the combined company would begin with more than $10 billion in annual recurring revenue (the yearly value of subscription contracts) and that Zscaler expands its addressable market by more than $185 billion. About 8,000 Zscaler customers are not yet CrowdStrike customers, which is the cross-selling opportunity. Both companies frame the logic around AI: software agents now connect directly to cloud services, and each connection needs checking. The drop in CrowdStrike's shares suggests its investors are less convinced: an all-stock purchase at a 34% premium means issuing a lot of new shares. Both companies also reported results: CrowdStrike forecast fourth-quarter sales of $1.638 billion to $1.644 billion, above the $1.62 billion analysts expected, and Zscaler's first-quarter revenue rose 20% to $949.3 million."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How the two companies' share prices settle once regular trading opens, and whether the long period before closing, during which they must keep operating separately, unsettles customers or staff."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Zscaler (joint press release)",
+     "url": "https://www.zscaler.com/press/crowdstrike-acquire-zscaler-bringing-network-security-and-zero-trust-falcon-platform"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-crowdstrike-to-buy-zscaler-in-439-billion-deal/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-n2",
+   "story_key": "taiwan-margin-rules-asia-market-support-2026-11",
+   "title": "Taiwan eases margin-call rules as Asian authorities try to halt an AI-driven stock rout",
+   "category": "Markets",
+   "published": "2026-11-23T04:37:00-05:00",
+   "tldr": "After the Taiex lost 17.5% in a week, Taiwan cut the margin-maintenance threshold to 120% from 130%, tightened short-selling rules and kept its stabilization fund in the market; the index rebounded 2.16% on Monday.",
+   "why_selected": "A record weekly loss in the market that hosts TSMC, followed by coordinated official support across Asia, shows how far the AI sell-off has spread beyond Wall Street.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Taiwan's stock market is dominated by TSMC, the chipmaker whose products fill AI data centres. When investors began questioning whether the mostly borrowed money spent on those data centres will produce profits large and fast enough to repay lenders, Taiwan was among the hardest-hit markets. Many local investors buy shares with money borrowed from brokers, known as margin trading. If the value of their holdings falls below a set ratio of the loan, the broker issues a margin call: add cash or collateral, or be sold out."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Taiwan Stock Exchange said on Monday that securities firms had agreed to lower the minimum margin maintenance ratio to 120% from 130%, effective Tuesday. Margin calls already issued under the old threshold will be cancelled, and brokers will not liquidate those investors' collateral. The step follows the Taiex's largest weekly point loss on record last week: 7,641.83 points, or 17.5%. From its intraday record on October 6 to Friday's low, the index fell 28.48%. On Saturday the Financial Supervisory Commission banned short-selling of any stock that fell in the previous session, its first such blanket restriction since 2015, and raised the margin requirement for short sales to 150% from 130%. The NT$500 billion (about US$15 billion) National Financial Stabilization Fund has been authorized to intervene since November 6. The Taiex closed up 2.16% on Monday."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Forced selling can turn a correction into a spiral: falling prices trigger margin calls, which trigger more selling. A Goldman Sachs note cited by Reuters put aggregate maintenance ratios at 132%, meaning many accounts sat close to the old threshold. Loosening it is meant to limit forced selling and ease short-term funding pressure on investors. Taiwan is not alone. Chinese exchanges announced similar margin relaxations over the weekend, and South Korea's finance minister repeated plans to stabilize its market if needed. TSMC and Foxconn executives told reporters that demand remains strong."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Monday's rebound holds once the new threshold takes effect on Tuesday, and whether Taiwan enlarges the stabilization fund, which Premier Cho Jung-tai said the government is willing to review."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Focus Taiwan (CNA)",
+     "url": "https://focustaiwan.tw/business/202611230015"
+    },
+    {
+     "name": "Focus Taiwan (CNA)",
+     "url": "https://focustaiwan.tw/business/202611210013"
+    },
+    {
+     "name": "The Globe and Mail (Reuters)",
+     "url": "https://www.theglobeandmail.com/investing/article-taiwan-loosens-margin-call-rules-in-bid-to-steady-market-amid-ai-rout/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-n3",
+   "story_key": "trump-data-centres-abroad-tax-threat-2026-11",
+   "title": "Trump threatens a \"tremendous tax\" on US companies that build AI data centres abroad",
+   "category": "Trade & Policy",
+   "published": "2026-11-20T13:51:00-05:00",
+   "tldr": "President Trump said US firms that build data centres overseas would face a heavy tax, but gave no details and said his staff were hearing the idea for the first time.",
+   "why_selected": "A policy threat aimed at the data-centre build-out behind the AI boom, with direct stakes for Canada and Europe, where US tech firms are building.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Data centres, the warehouse-sized buildings that house the chips behind AI services, have become a political problem inside the United States. About three-quarters of voters in this month's midterm elections said they opposed a new data centre in their community, according to the AP Voter Poll, and concerns about electricity prices and water helped Democratic candidates who promised tougher rules. Large technology companies have also been building elsewhere."
+    },
+    {
+     "heading": "What happened",
+     "body": "Speaking to reporters at the White House on Friday after returning from Asia, President Trump said: \"We're not going to allow companies to build data centres in other countries. If they do that, they can. But we're going to put a tremendous tax on them.\" He argued that otherwise \"China will take all of them\". He gave no detail on how such a measure would work, and said he had not yet told his staff: \"I haven't even said that to my people. But I'm telling them now.\" He singled out Google's project in Finland, where the company announced a €13 billion investment in AI infrastructure in September. He also urged US communities to negotiate with developers rather than block them: \"Make the deal. They have plenty of money. Take it.\""
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This is a remark, not a policy, and it is unclear how it could be enforced. But it lands on very large plans. Economists at UBS estimate the biggest technology firms could spend as much as $1.8 trillion next year on AI, mostly on data centres. Canada has been positioning itself as an alternative site: Meta has broken ground on a data centre in Alberta, and Anthropic has agreed to lease a proposed one in Nova Scotia. A tax on overseas construction would raise the cost of those projects just as opposition at home makes domestic sites harder to secure. The threat also follows new US rules, announced earlier in the week, requiring licences to buy advanced chips."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the administration turns the remark into a formal proposal, and how a Congress with Democratic majorities, expected to regulate data centres more tightly, responds."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko"
+    },
+    {
+     "name": "The Globe and Mail (AP)",
+     "url": "https://www.theglobeandmail.com/world/us-politics/article-trump-threatens-tax-us-tech-companies-build-ai-data-centres-abroad/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-23-n4",
+   "story_key": "bayer-roundup-settlement-final-approval-2026-11",
+   "title": "A Missouri judge approves Bayer's $7.25 billion settlement of Roundup cancer claims",
+   "category": "Earnings & Companies",
+   "published": "2026-11-20T18:36:00-05:00",
+   "tldr": "A St Louis state court found the deal \"fair, reasonable and adequate\", potentially ending most of the litigation that has weighed on Bayer since it bought Monsanto in 2018.",
+   "why_selected": "Final court approval of a $7.25 billion settlement, on litigation that has weighed on Bayer for close to a decade.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Bayer bought Monsanto, the maker of the weedkiller Roundup, for $63 billion in 2018. It then inherited lawsuits from people who said they developed cancer after using the product at home or at work. Bayer has long maintained that Roundup and its active ingredient, glyphosate, are safe. It settled much of the litigation for $10.9 billion in 2020, but could not win court approval of a separate $1.25 billion deal to cover future claims, so the exposure stayed open. Its share price has fallen 46% since the Monsanto purchase."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday, Judge Timothy Boyer of a Missouri state court in St Louis approved a $7.25 billion settlement, announced in February, that aims to resolve nearly all current and future Roundup claims in the United States. Bayer had faced approximately 65,000 claims in state and federal courts. The judge overruled objections that individual payouts would be too low because claimants who settled earlier were paid more. He also said that delay could force victims, including some with terminal cancer, to wait \"an indeterminate number of years\" for payment. Bayer chief executive Bill Anderson called the approval \"a decisive milestone\" in the company's strategy to reduce the risks of pending and future litigation."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For Bayer, the ruling potentially replaces an open-ended liability with a known figure, after litigation that has weighed on the company for close to a decade. For claimants, it brings payment sooner, at amounts some objectors consider inadequate. The bargaining position of plaintiffs had already weakened: five months ago the US Supreme Court, in a 7-2 decision, overturned a $1.25 million jury award and agreed with Bayer that federal pesticide law bars failure-to-warn claims brought under state law. Christopher Seeger, a lawyer for many plaintiffs, said that decision narrowed victims' ability to pursue claims in court."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether objectors appeal, and the roughly 200 cases still being litigated in federal court, which the settlement excludes."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/business/2026/nov/20/bayer-roundup-cancer-litigation"
+    },
+    {
+     "name": "Insurance Journal",
+     "url": "https://www.insurancejournal.com/news/national/2026/11/23/893405.htm"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36050",
+   "title": "Past Automation and Future AI: How Weak Links Tame the Growth Explosion",
+   "authors": [
+    "Charles I. Jones",
+    "Christopher Tonetti"
+   ],
+   "affiliations": [
+    "Stanford GSB",
+    "Anthropic",
+    "NBER"
+   ],
+   "announced": "2026-11-23T00:00:00-05:00",
+   "primary_tag": "Growth & productivity",
+   "tags": [
+    "Growth & productivity",
+    "Innovation & technology"
+   ],
+   "tldr": "Jones and Tonetti find that automation explains essentially all US productivity growth since 1950, and that AI should speed growth up, but slowly, because tasks still done by people hold the economy back.",
+   "why_selected": "Two Stanford economists put numbers on the central question behind this month's market swings: how fast AI can actually raise economic growth.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Forecasts of what AI will do to economic growth range from almost nothing to an explosion within years. Charles Jones and Christopher Tonetti ask a prior, measurable question: how much of past growth came from automation, meaning machines taking over tasks people used to do, and what does that history imply if AI continues the process?"
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Economists model production as a set of tasks, each done by labour or by capital. Earlier work using this approach showed that bottlenecks could limit the gains from automation, or that growth could become explosive if AI fully automates both production and research. What has been missing is measurement of automation's historical contribution."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors assume tasks are \"weak links\": every task is essential, so total output is limited by the scarcest one, however productive the others become. Each task can be done by machines or people. Using US industry accounts, plus estimates from large language models of the labour cost share of the tasks automated each year, they separate how fast machines improve from how fast people do. They then build a model in which automation also speeds up the production of new ideas, and simulate it forward."
+    },
+    {
+     "heading": "Results",
+     "body": "Since 1950, machines have improved at tasks about 4.9 percentage points a year faster than people in the US private business sector. If the set of automated tasks had been frozen in 1950, essentially all productivity growth through 2023 would have vanished. Looking ahead, growth accelerates through a flywheel: automation yields ideas, which yield more automation. If AI continues historical patterns, growth reaches only 4.8% by 2075. Under a far more aggressive scenario calibrated to the computer industry, the acceleration is substantially faster."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Automation has been the engine of growth, so AI's promise is real; but the payoff depends on how quickly the remaining human-performed tasks are automated, not on how good machines become at tasks they already do. The authors call their simulations inherently speculative. One author is employed at Anthropic; the paper says it reflects the authors' personal views."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36050"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}

@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 23 Nov 2026 12:23:22 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 12:46:18 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>CrowdStrike agrees to buy Zscaler in an all-stock deal worth about $43.9 billion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n1</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>CrowdStrike will pay 1.135 of its shares for each Zscaler share, a 34% premium, to add network security to its device-security platform; its own shares fell more than 8% premarket. (Zscaler (joint press release), The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Taiwan eases margin-call rules as Asian authorities try to halt an AI-driven stock rout</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n2</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Markets</category>
+    <description>After the Taiex lost 17.5% in a week, Taiwan cut the margin-maintenance threshold to 120% from 130%, tightened short-selling rules and kept its stabilization fund in the market; the index rebounded 2.16% on Monday. (Focus Taiwan (CNA), Focus Taiwan (CNA), The Globe and Mail (Reuters))</description>
+  </item>
+  <item>
+    <title>Trump threatens a "tremendous tax" on US companies that build AI data centres abroad</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n3</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>President Trump said US firms that build data centres overseas would face a heavy tax, but gave no details and said his staff were hearing the idea for the first time. (BBC, The Globe and Mail (AP))</description>
+  </item>
+  <item>
+    <title>A Missouri judge approves Bayer's $7.25 billion settlement of Roundup cancer claims</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n4</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>A St Louis state court found the deal "fair, reasonable and adequate", potentially ending most of the litigation that has weighed on Bayer since it bought Monsanto in 2018. (The Guardian, Insurance Journal)</description>
+  </item>
+  <item>
+    <title>Past Automation and Future AI: How Weak Links Tame the Growth Explosion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/nber-w36050</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/nber-w36050</guid>
+    <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
+    <category>Business / Growth &amp; productivity</category>
+    <description>Jones and Tonetti find that automation explains essentially all US productivity growth since 1950, and that AI should speed growth up, but slowly, because tasks still done by people hold the economy back. (Charles I. Jones, Christopher Tonetti · Stanford GSB, Anthropic, NBER)</description>
+  </item>
   <item>
     <title>OpenAI's chief scientist proposes perplexity as a shared metric for industry limits on AI development, and publishes OpenAI's own numbers</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2026-11-23-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
     <category>AI / Robotics</category>
     <description>ALOHA Lightning lets operators physically guide a two-armed robot at near-human speed, then trains policies that fold shorts or insert batteries about as fast as people, from 50 demonstrations per task. (John Hua Yao. Qi Wu, Yihuai Gao, Chelsea Finn et al. · Stanford University)</description>
-  </item>
-  <item>
-    <title>Chase, Visa and Mastercard confirm breaches at outside vendors after an extortion gang leaks customer data</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n1</guid>
-    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>JPMorgan Chase, Visa and Mastercard say vendors were breached, exposing customer names and email addresses but no card numbers, after the N0n extortion group posted their data online. (The Register, SecurityWeek)</description>
-  </item>
-  <item>
-    <title>Broadcom patches a vCenter flaw that suspected Chinese state hackers exploited since September</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n2</guid>
-    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Broadcom issued an emergency fix for a 9.8-rated vCenter Server authentication bypass that Mandiant says a suspected Chinese espionage group used as a zero-day to take over virtualized environments. (BleepingComputer, The Register)</description>
-  </item>
-  <item>
-    <title>The European Commission confirms a cyberattack in which hackers used a public AI hacking tool</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n3</guid>
-    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>The European Commission says attackers using a publicly available AI tool disrupted staff payroll, leave and medical reimbursement systems for more than ten days, with no evidence so far of a broad data breach. (The Register, The Record)</description>
-  </item>
-  <item>
-    <title>Congress publishes Nvidia and AMD's China chip licences, showing 879,000 AI chips approved</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2026-11-20-n4</guid>
-    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
-    <category>Tech / Chips &amp; Hardware</category>
-    <description>House committee chair Brian Mast released licence records showing US regulators approved more than 879,000 of 3.4 million requested Nvidia and AMD AI chips for China, including sales to Alibaba and Tencent. (House Foreign Affairs Committee, The Register)</description>
-  </item>
-  <item>
-    <title>YUL: Bringing Software Supply Chain Security to Coding Agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2611.23314</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-20/2611.23314</guid>
-    <pubDate>Fri, 20 Nov 2026 11:47:11 +0000</pubDate>
-    <category>Tech / Security &amp; privacy</category>
-    <description>YUL checks every software dependency a coding agent declares against the package registry and blocks stale or nonexistent versions, so agents end on the latest release in over 90% of affected runs. (Aman Sharma, Frank Reyes, Martin Monperrus · KTH Royal Institute of Technology)</description>
   </item>
 </channel>
 </rss>

@@ -1,5 +1,56 @@
 [
  {
+  "id": "2026-11-23-n1",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "CrowdStrike agrees to buy Zscaler in an all-stock deal worth about $43.9 billion",
+  "tldr": "CrowdStrike will pay 1.135 of its shares for each Zscaler share, a 34% premium, to add network security to its device-security platform; its own shares fell more than 8% premarket.",
+  "category": "Deals & M&A",
+  "byline": "Zscaler (joint press release), The Globe and Mail"
+ },
+ {
+  "id": "2026-11-23-n2",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "Taiwan eases margin-call rules as Asian authorities try to halt an AI-driven stock rout",
+  "tldr": "After the Taiex lost 17.5% in a week, Taiwan cut the margin-maintenance threshold to 120% from 130%, tightened short-selling rules and kept its stabilization fund in the market; the index rebounded 2.16% on Monday.",
+  "category": "Markets",
+  "byline": "Focus Taiwan (CNA), Focus Taiwan (CNA), The Globe and Mail (Reuters)"
+ },
+ {
+  "id": "2026-11-23-n3",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "Trump threatens a \"tremendous tax\" on US companies that build AI data centres abroad",
+  "tldr": "President Trump said US firms that build data centres overseas would face a heavy tax, but gave no details and said his staff were hearing the idea for the first time.",
+  "category": "Trade & Policy",
+  "byline": "BBC, The Globe and Mail (AP)"
+ },
+ {
+  "id": "2026-11-23-n4",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "A Missouri judge approves Bayer's $7.25 billion settlement of Roundup cancer claims",
+  "tldr": "A St Louis state court found the deal \"fair, reasonable and adequate\", potentially ending most of the litigation that has weighed on Bayer since it bought Monsanto in 2018.",
+  "category": "Earnings & Companies",
+  "byline": "The Guardian, Insurance Journal"
+ },
+ {
+  "id": "nber-w36050",
+  "date": "2026-11-23",
+  "type": "paper",
+  "title": "Past Automation and Future AI: How Weak Links Tame the Growth Explosion",
+  "tldr": "Jones and Tonetti find that automation explains essentially all US productivity growth since 1950, and that AI should speed growth up, but slowly, because tasks still done by people hold the economy back.",
+  "primary_tag": "Growth & productivity",
+  "tags": [
+   "Growth & productivity",
+   "Innovation & technology"
+  ],
+  "byline": "Charles I. Jones, Christopher Tonetti · Stanford GSB, Anthropic, NBER",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-21-n1",
   "date": "2026-11-21",
   "type": "news",
