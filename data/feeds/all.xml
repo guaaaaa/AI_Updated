@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Mon, 23 Nov 2026 12:46:18 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 13:21:34 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>COP31 ends without an overall agreement after the EU and island states reject a text that does not name fossil fuels</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/2026-11-23-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/2026-11-23-n1</guid>
+    <pubDate>Mon, 23 Nov 2026 13:21:34 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>The UN climate summit in Antalya closed on Sunday with its main political text unadopted, the first such outcome since 2000, after a dispute over whether to mention fossil fuels. (Phys.org (AFP), Health Policy Watch)</description>
+  </item>
+  <item>
+    <title>Robot dives beside the Challenger Deep recover the deepest explosive volcanic deposits ever documented</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/2026-11-23-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/2026-11-23-n2</guid>
+    <pubDate>Mon, 23 Nov 2026 13:21:34 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>Seven remotely operated dives on the Mariana Trench wall found rocks from explosive eruptions at more than 6,000 metres depth, in a zone where young volcanism is not expected. (Frontiers in Earth Science, Phys.org)</description>
+  </item>
+  <item>
+    <title>Atmospheric organic nitrogen is a major nutrient source to global oceans</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/doi-10-1126-science-aeg4265</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/doi-10-1126-science-aeg4265</guid>
+    <pubDate>Mon, 23 Nov 2026 13:21:34 +0000</pubDate>
+    <category>Science / Climate science</category>
+    <description>Measurements from 21 research cruises and a global chemistry model put atmospheric organic nitrogen falling on the oceans at 12.8 million tonnes a year, about 27% of all nitrogen deposition. (Xu Yu, Yumin Li, Guitao Shi et al. · The Hong Kong University of Science and Technology; Southern University of Science and Technology; Nanjing University of Information Science and Technology; East China Normal University; Ocean University of China; South China University of Technology)</description>
+  </item>
+  <item>
+    <title>Telemetric calorimetry for wireless continuous reaction profiling</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/doi-10-1126-science-aei7840</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/doi-10-1126-science-aei7840</guid>
+    <pubDate>Mon, 23 Nov 2026 13:21:34 +0000</pubDate>
+    <category>Science / Chemistry</category>
+    <description>Chips smaller than a grain of rice sit inside test tubes and wirelessly report the temperature of a chemical reaction every half-second. (Sukwoo Lee, Evan A. Weingarten, Michael F. Reynolds et al. · Stanford University; Cornell University; Emory University; OWiC Technologies)</description>
+  </item>
+  <item>
+    <title>Resolving the black hole sphere of influence in a hyperluminous obscured quasar at redshift 4.6</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/doi-10-1126-sciadv-aek9035</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-23/doi-10-1126-sciadv-aek9035</guid>
+    <pubDate>Mon, 23 Nov 2026 13:21:34 +0000</pubDate>
+    <category>Science / Astrophysics &amp; cosmology</category>
+    <description>Radio observations of gas swirling at the centre of the most luminous known obscured quasar give the first motion-based mass for a supermassive black hole beyond redshift 2. (Mai Liao, Roberto J. Assef, Chao-Wei Tsai et al.)</description>
+  </item>
   <item>
     <title>CrowdStrike agrees to buy Zscaler in an all-stock deal worth about $43.9 billion</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
     <category>AI / Research</category>
     <description>Anthropic says Claude Fable 5.2 agents, working for about six weeks, solved two open quantum-gravity problems: a holographic phase transition and a proven bound on the lightest black holes. (Anthropic)</description>
-  </item>
-  <item>
-    <title>Jeveration: System One Models Now Generate</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.24738</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.24738</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>Jeveration turns a frozen vision-language model into an image generator that outputs a whole 512-pixel image in one forward pass, taking 78 ms, by conditioning all positions on a shared random state. (Yuhe Liu, Qi Li, Shihua Zhang et al. · National University of Singapore)</description>
-  </item>
-  <item>
-    <title>Weight-Space Programming Doesn't Need Transformers</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.22055</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.22055</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Architectures</category>
-    <description>When frontier LLMs write a model's weights by hand instead of training it, they abandon Transformers for sparse fact tables, which beat the Transformers they write with about 1,800 times fewer parameters. (Hyunjong Ok, Jaeho Lee · Pohang University of Science and Technology (POSTECH))</description>
-  </item>
-  <item>
-    <title>Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.23229</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.23229</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Post-training</category>
-    <description>Ambient SFT adds one loss term to fine-tuning, matching the model's high-temperature predictions to those of its frozen pre-trained self, and beats standard SFT on small instruction, domain and reasoning datasets. (Giannis Daras, Marios Papachristou, Adam Klivans et al. · MIT, Arizona State University, University of Texas at Austin)</description>
-  </item>
-  <item>
-    <title>Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.26603</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.26603</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Computer Vision</category>
-    <description>Apple's Depth Pro 2 estimates metric depth from images and video at full resolution, ending the usual trade-off between sharp object edges and depth that stays stable from frame to frame. (Peiyun Hu, Marko Mihajlovic, Lyndon Duong et al. · Apple)</description>
-  </item>
-  <item>
-    <title>ALOHA Lightning: Learning Fast and Precise Manipulation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.21919</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.21919</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>ALOHA Lightning lets operators physically guide a two-armed robot at near-human speed, then trains policies that fold shorts or insert batteries about as fast as people, from 50 demonstrations per task. (John Hua Yao. Qi Wu, Yihuai Gao, Chelsea Finn et al. · Stanford University)</description>
   </item>
 </channel>
 </rss>

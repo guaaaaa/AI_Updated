@@ -1,0 +1,45 @@
+{
+ "week": "2026-W48",
+ "start": "2026-11-23",
+ "end": "2026-11-28",
+ "complete": false,
+ "digests": 1,
+ "papers": [],
+ "stories": [],
+ "featured": {
+  "news": 2,
+  "papers": 3
+ },
+ "items": [
+  {
+   "id": "2026-11-23-n1",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "COP31 ends without an overall agreement after the EU and island states reject a text that does not name fossil fuels"
+  },
+  {
+   "id": "2026-11-23-n2",
+   "date": "2026-11-23",
+   "type": "news",
+   "title": "Robot dives beside the Challenger Deep recover the deepest explosive volcanic deposits ever documented"
+  },
+  {
+   "id": "doi-10-1126-science-aeg4265",
+   "date": "2026-11-23",
+   "type": "paper",
+   "title": "Atmospheric organic nitrogen is a major nutrient source to global oceans"
+  },
+  {
+   "id": "doi-10-1126-science-aei7840",
+   "date": "2026-11-23",
+   "type": "paper",
+   "title": "Telemetric calorimetry for wireless continuous reaction profiling"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aek9035",
+   "date": "2026-11-23",
+   "type": "paper",
+   "title": "Resolving the black hole sphere of influence in a hyperluminous obscured quasar at redshift 4.6"
+  }
+ ]
+}

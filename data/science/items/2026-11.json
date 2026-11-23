@@ -1,5 +1,68 @@
 [
  {
+  "id": "2026-11-23-n1",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "COP31 ends without an overall agreement after the EU and island states reject a text that does not name fossil fuels",
+  "tldr": "The UN climate summit in Antalya closed on Sunday with its main political text unadopted, the first such outcome since 2000, after a dispute over whether to mention fossil fuels.",
+  "category": "Climate & Earth",
+  "byline": "Phys.org (AFP), Health Policy Watch"
+ },
+ {
+  "id": "2026-11-23-n2",
+  "date": "2026-11-23",
+  "type": "news",
+  "title": "Robot dives beside the Challenger Deep recover the deepest explosive volcanic deposits ever documented",
+  "tldr": "Seven remotely operated dives on the Mariana Trench wall found rocks from explosive eruptions at more than 6,000 metres depth, in a zone where young volcanism is not expected.",
+  "category": "Climate & Earth",
+  "byline": "Frontiers in Earth Science, Phys.org"
+ },
+ {
+  "id": "doi-10-1126-science-aeg4265",
+  "date": "2026-11-23",
+  "type": "paper",
+  "title": "Atmospheric organic nitrogen is a major nutrient source to global oceans",
+  "tldr": "Measurements from 21 research cruises and a global chemistry model put atmospheric organic nitrogen falling on the oceans at 12.8 million tonnes a year, about 27% of all nitrogen deposition.",
+  "primary_tag": "Climate science",
+  "tags": [
+   "Climate science",
+   "Earth science",
+   "Chemistry"
+  ],
+  "byline": "Xu Yu, Yumin Li, Guitao Shi et al. · The Hong Kong University of Science and Technology; Southern University of Science and Technology; Nanjing University of Information Science and Technology; East China Normal University; Ocean University of China; South China University of Technology",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-science-aei7840",
+  "date": "2026-11-23",
+  "type": "paper",
+  "title": "Telemetric calorimetry for wireless continuous reaction profiling",
+  "tldr": "Chips smaller than a grain of rice sit inside test tubes and wirelessly report the temperature of a chemical reaction every half-second.",
+  "primary_tag": "Chemistry",
+  "tags": [
+   "Chemistry",
+   "Condensed matter & materials"
+  ],
+  "byline": "Sukwoo Lee, Evan A. Weingarten, Michael F. Reynolds et al. · Stanford University; Cornell University; Emory University; OWiC Technologies",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aek9035",
+  "date": "2026-11-23",
+  "type": "paper",
+  "title": "Resolving the black hole sphere of influence in a hyperluminous obscured quasar at redshift 4.6",
+  "tldr": "Radio observations of gas swirling at the centre of the most luminous known obscured quasar give the first motion-based mass for a supermassive black hole beyond redshift 2.",
+  "primary_tag": "Astrophysics & cosmology",
+  "tags": [
+   "Astrophysics & cosmology"
+  ],
+  "byline": "Mai Liao, Roberto J. Assef, Chao-Wei Tsai et al.",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
   "id": "2026-11-21-n1",
   "date": "2026-11-21",
   "type": "news",
