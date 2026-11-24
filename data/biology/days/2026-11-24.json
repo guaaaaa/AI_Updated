@@ -1,0 +1,234 @@
+{
+ "date": "2026-11-24",
+ "edition": "weekday",
+ "generated_at": "2026-11-24T13:58:45+00:00",
+ "summary": "Two FDA firsts - a new hormone therapy for early breast cancer and the first drug for a limb-girdle muscular dystrophy - plus mid-stage results for an eczema pill, a defibrillator trial guided by heart MRI, and a glucose-powered nerve implant in rats.",
+ "news": [
+  {
+   "id": "2026-11-24-n1",
+   "story_key": "fda-giredestrant-wilserdly-adjuvant-early-breast-cancer-lidera",
+   "title": "FDA approves giredestrant after surgery, the first new hormone therapy for early-stage breast cancer in over 20 years",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-23T10:55:00-05:00",
+   "tldr": "The FDA approved Roche's daily pill Wilserdly for early breast cancer after surgery, on the strength of a 4,170-patient trial in which it cut recurrence or death by 30% against standard hormone therapy.",
+   "why_selected": "A regulatory decision in the most common breast cancer subtype, backed by a large randomized trial against active comparators.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "About 70% of breast cancers are estrogen receptor-positive and HER2-negative. In these tumours the hormone estrogen binds to receptor proteins on the cancer cells and signals them to grow. After surgery, patients take hormone therapy for years - tamoxifen or an aromatase inhibitor such as anastrozole, letrozole or exemestane - to keep the disease from returning. Giredestrant, sold as Wilserdly by Genentech, part of the Roche group, is a once-daily tablet that blocks the estrogen receptor and also causes it to be broken down."
+    },
+    {
+     "heading": "What happened",
+     "body": "On 23 November the FDA approved Wilserdly, used alone after surgery, for adults with stage I, II or III estrogen receptor-positive, HER2-negative breast cancer at intermediate to high risk of recurrence. The evidence comes from the randomized lidERA trial, in which 4,170 adults received Wilserdly or standard hormone therapy for up to five years. Invasive recurrence or death occurred in 140 patients on Wilserdly and 196 on standard therapy, a 30% lower risk. At three years, 92.4% of patients on Wilserdly were alive and free of invasive breast cancer, against 89.6% on standard therapy - about 28 more patients per 1,000. Common side effects include muscle and joint pain, hot flashes, tiredness and nausea. Fierce Pharma reports that 5.3% of patients stopped Wilserdly because of adverse events, against 8.2% on standard therapy."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The FDA describes this as the first new hormone therapy for early-stage breast cancer in more than 20 years, and lidERA as the first phase 3 trial to show a benefit for an oral estrogen receptor antagonist in early disease. The comparison was against drugs already in use, not placebo. Two caveats temper it: the absolute gain at three years is 2.8 percentage points, and whether patients live longer is unknown, with the company required to submit survival results later. As Fierce Pharma notes, the lidERA data so far do not address CDK4/6 inhibitors, a drug class that has reshaped post-surgery treatment since the trial began in 2021."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Survival results from lidERA, a substudy combining Wilserdly with the CDK4/6 inhibitor Verzenio, and early-stage trials of rival oral drugs in the same class."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDA",
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-hormone-therapy-early-stage-breast-cancer-more-20-years"
+    },
+    {
+     "name": "Fierce Pharma",
+     "url": "https://www.fiercepharma.com/pharma/roche-opens-key-early-stage-breast-cancer-market-oral-serds-wilserdly-fda-nod"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n2",
+   "story_key": "fda-welgemda-ribitol-lgmd2i-r9-first-approval",
+   "title": "FDA approves ribitol, the first treatment for any form of limb-girdle muscular dystrophy",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-23T13:34:00-05:00",
+   "tldr": "The FDA approved Welgemda, a twice-daily oral solution, for limb-girdle muscular dystrophy type 2I/R9 after a 112-patient placebo-controlled trial showed gains in walking speed and lung function at 12 months.",
+   "why_selected": "The first approved therapy for a whole family of inherited muscle diseases, based on a randomized, double-blind trial.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Limb-girdle muscular dystrophies are a group of rare inherited diseases that progressively weaken the muscles. Type 2I/R9 is caused by mutations in a gene called FKRP. In healthy muscle the FKRP enzyme attaches sugar molecules to a protein called alpha-dystroglycan, which acts as an anchor connecting muscle cells to the tissue around them. Without those sugars the cells become fragile and break down, causing progressive weakness, difficulty walking and, in many patients, impaired breathing. Symptoms usually appear in childhood or early adulthood. No drug had been approved for any form of the disease."
+    },
+    {
+     "heading": "What happened",
+     "body": "On 23 November the FDA approved Welgemda (ribitol) for adults and children weighing at least 30 kg with genetically confirmed type 2I/R9. It is an oral solution taken twice daily, mixed with water. The approval rests on a randomized, double-blind, placebo-controlled study in 112 patients, assigned to the drug or placebo for up to 36 months. At a planned interim analysis after 12 months, treated patients showed significant improvements over placebo on two measures: walking speed, assessed by a timed 100-metre test, and forced vital capacity, which the FDA describes as an indicator of respiratory muscle health. Levels of sugar-coated alpha-dystroglycan rose significantly as well, indicating the drug reached its target. The most common adverse reactions were gastrointestinal effects and joint pain. The medicine comes from ML Bio Solutions and BridgeBio Pharma."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Welgemda is aimed at the biochemical defect itself rather than only at symptoms, and it is taken as a simple oral liquid. The FDA says the precise mechanism is not fully known but may involve raising levels of matriglycan, the natural sugar chain that lets alpha-dystroglycan do its anchoring work. The evidence has clear limits. The FDA release calls the improvements significant but does not give their size; the analysis is an interim one at 12 months in a disease that unfolds over decades; and the approval covers a single genetic subtype, not the limb-girdle dystrophies caused by other genes."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The trial continues to 36 months, which will show whether the functional gains hold up, and publication of the full data will show how large they are."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDA",
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-limb-girdle-muscular-dystrophy-type-2ir9"
+    },
+    {
+     "name": "STAT",
+     "url": "https://www.statnews.com/2026/11/23/fda-approves-bridgebio-lgmd-drug-welgemda/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n3",
+   "story_key": "kymera-kt-621-broaden2-phase2b-atopic-dermatitis-topline",
+   "title": "Kymera's once-daily eczema pill cuts disease severity by 72% in a 244-patient mid-stage trial, the company reports",
+   "category": "Clinical Research",
+   "published": "2026-11-23T08:00:00-05:00",
+   "tldr": "In a randomized phase 2b trial, an oral drug that destroys the immune signalling protein STAT6 reduced eczema severity scores by 72% against 27% on placebo; the results are company-reported, not yet peer-reviewed.",
+   "why_selected": "A randomized, placebo-controlled result for a new drug mechanism in a common disease whose main advanced treatment is an injection.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Eczema, or atopic dermatitis, is a chronic condition of itchy, inflamed and broken skin, driven by an overactive immune pathway in which two signalling proteins, interleukin-4 and interleukin-13, switch on a protein inside cells called STAT6. The standard advanced treatment, dupilumab, blocks those two signals but must be injected. Kymera Therapeutics' KT-621 is a pill that acts further down the pathway: a degrader, a molecule that marks STAT6 for destruction by the cell's own machinery rather than merely blocking it."
+    },
+    {
+     "heading": "What happened",
+     "body": "On 23 November Kymera announced 16-week results from BROADEN2, a randomized, double-blind, placebo-controlled trial in 244 adults and adolescents with moderate to severe disease, who took a low (61 patients), middle (61) or high (63) dose once daily, or placebo (59). The main measure was the percentage change in the Eczema Area and Severity Index, a standard severity score averaging about 28 at the start. At week 16 it had fallen 72% on the middle dose against 27% on placebo, with reductions of 64% and 61% on the low and high doses. On the middle dose, 62% of patients reached at least a 75% improvement, against 22% on placebo, and the share reporting a clinically meaningful drop in itch was 38 percentage points higher than on placebo, with differences significant from week 1. Of the 244 patients, 234 completed treatment and 230 entered an open-label extension. Conjunctivitis was the only adverse event seen more often than with placebo, according to Dermatology Times; New Scientist reports it was mostly mild."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A daily pill with effects in the range reported for an injected antibody could widen the number of patients who receive advanced treatment. Gayle Ross of the Royal Melbourne Hospital, who was not involved, told New Scientist the drug \"looks like it has similar efficacy to dupilumab\" but cautioned that it is early days with small patient numbers. These are also company-announced results rather than a peer-reviewed paper, no trial has compared the two drugs head to head, the highest dose did not perform best, and 16 weeks says little about long-term safety."
+    },
+    {
+     "heading": "What to watch",
+     "body": "A first phase 3 eczema trial is planned by mid-2027, and a phase 2b asthma trial, in the same immune pathway, should report by late 2027."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Kymera Therapeutics press release (via BioSpace)",
+     "url": "https://www.biospace.com/press-releases/kymera-therapeutics-announces-positive-results-from-broaden2-phase-2b-clinical-trial-of-kt-621-a-first-in-class-oral-stat6-degrader-in-patients-with-moderate-to-severe-atopic-dermatitis"
+    },
+    {
+     "name": "New Scientist",
+     "url": "https://www.newscientist.com/article/2600479-severe-eczema-healed-by-novel-immune-calming-pill-in-clinical-trial/"
+    },
+    {
+     "name": "Dermatology Times",
+     "url": "https://www.dermatologytimes.com/view/oral-stat6-degrader-kt-621-meets-phase-2b-goals-atopic-dermatitis"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1001-jama-2026-17078",
+   "title": "CMR to Guide Defibrillator Implantation for LVEF",
+   "authors": [
+    "Joseph B. Selvanayagam",
+    "et al. (CMR GUIDE Investigators)"
+   ],
+   "affiliations": [
+    "Flinders University and Flinders Medical Centre",
+    "Adelaide"
+   ],
+   "announced": "2026-11-17T00:00:00-05:00",
+   "primary_tag": "Cardiovascular",
+   "tags": [
+    "Cardiovascular",
+    "Devices & diagnostics"
+   ],
+   "tldr": "In a randomized trial of 353 patients with moderately reduced heart function and scarring on cardiac MRI, implanted defibrillators did not significantly reduce sudden cardiac death or serious arrhythmia over 6.3 years.",
+   "why_selected": "The first randomized test of whether MRI-detected scar should widen who receives a defibrillator; the overall answer was neutral.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "An implantable cardioverter-defibrillator (ICD) is a device placed under the skin that shocks the heart out of a lethal rhythm. Guidelines reserve it for patients whose left ventricular ejection fraction - the share of blood the main pumping chamber expels each beat - is 35% or less. Yet many sudden cardiac deaths occur in people whose pumping function is only moderately reduced, and there has been no randomized evidence on how to pick them out."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "One candidate marker is myocardial scar, seen on cardiac magnetic resonance imaging as late gadolinium enhancement after a contrast agent is given. Scarred tissue conducts electrical signals abnormally and can seed dangerous rhythms, so scar was proposed as a way to select patients above the usual threshold. That idea rested on observational data."
+    },
+    {
+     "heading": "Key idea",
+     "body": "CMR GUIDE tested it directly. Between 2015 and 2022, 18 sites in Australia, Germany and the UK enrolled adults with ischaemic or non-ischaemic cardiomyopathy, an ejection fraction of 36% to 50%, scar on cardiac MRI and guideline-directed drug treatment, and randomly assigned them to an ICD (180 patients) or an implantable loop recorder (173) - a monitor that records the heart's rhythm but cannot treat it, so dangerous rhythms would be detected in either group."
+    },
+    {
+     "heading": "Results",
+     "body": "Among 353 patients (median age 65, 18% female, 72% ischaemic), the primary outcome of sudden cardiac death or a haemodynamically significant arrhythmia occurred in 14 (7.8%) with an ICD and 16 (9.2%) with a monitor (hazard ratio 0.76, 95% CI 0.37-1.58) over a median 6.3 years. Sudden cardiac death alone was less frequent with an ICD (3 patients, 1.7%, versus 10, 5.8%; HR 0.26, CI 0.07-0.95), while recorded arrhythmias were more frequent (12 versus 6). Mortality and heart-failure hospitalisation were similar."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result does not support extending defibrillators to everyone with moderate dysfunction and scar. A prespecified subgroup analysis found the primary outcome in 3.3% of under-70s with an ICD versus 10.0% with a monitor (HR 0.28, CI 0.09-0.89), but not in those 70 or older (interaction p = 0.01); the principal investigator, Joseph Selvanayagam, suggested discussing this with younger patients. With only 30 events, the trial cannot exclude a modest benefit, and an editorial by Sana Al-Khatib called for more trials in this group."
+    }
+   ],
+   "links": {
+    "paper": "https://jamanetwork.com/journals/jama/fullarticle/2853395",
+    "doi": "https://doi.org/10.1001/jama.2026.17078"
+   },
+   "signals": {
+    "venue": "JAMA",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11251-7",
+   "title": "A glucose-powered artificial neuroimmune axis for metabolic control",
+   "authors": [
+    "Weijun Xiu",
+    "Qian Wang",
+    "Ling Wan",
+    "Zhuoming Liang",
+    "Michael Raphael Panganiban",
+    "Xiaoye Li",
+    "Ao He",
+    "Yu Zhang",
+    "Heng Dong",
+    "Yu Fu",
+    "Lianhui Wang",
+    "Yuxin Liu"
+   ],
+   "affiliations": [
+    "National University of Singapore"
+   ],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Devices & diagnostics",
+   "tags": [
+    "Devices & diagnostics",
+    "Metabolic & endocrine"
+   ],
+   "tldr": "An implant that runs on the body's own glucose stimulated the vagus nerve whenever its fuel-cell voltage signalled high blood sugar, and lowered blood glucose in diabetic rats over weeks.",
+   "why_selected": "A device that uses its power source as the sensor, tested against an identical implant whose stimulating electrode was disconnected.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Electrical stimulation of the autonomic nerves can influence metabolism, but existing stimulators have no way to measure the body's metabolic state and feed it into the decision to stimulate. They also need batteries or wireless power. A device that sensed blood sugar and acted on it, without a separate sensor or power supply, would close that loop."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Closed-loop systems today pair a separate continuous glucose sensor with a pump or stimulator and a battery, each component adding bulk and ways to fail. Implanted glucose fuel cells, which draw energy from sugar in body fluids, have been explored mainly as power sources, not as measuring devices."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The prototype, called NeuroAxis, merges those two roles. A glucose fuel cell generates electricity from glucose in body fluid and charges a capacitor; because the cell's terminal voltage rises with glucose concentration, that voltage doubles as the sensor reading. The device checks it every 30 minutes, and when five consecutive readings exceed 0.6 volts it delivers three minutes of stimulation to the vagus nerve below the diaphragm, then resets the count. In effect the battery is also the glucose meter."
+    },
+    {
+     "heading": "Results",
+     "body": "On the bench the voltage changed by 0.034 V per 1 millimolar change in glucose, and the circuit stimulated in a 12 mM solution but not a 3 mM one. In rats, device voltage tracked blood glucose closely (correlation 0.96 across 50 measurements). The comparison group carried the same implant with a working fuel cell but the stimulating electrode disconnected, so glucose consumed by power generation was matched. In a chemically induced insulin-deficiency model followed for eight weeks, mean blood glucose on day 56 was 194.4 mg/dL with stimulation active versus 439.0 mg/dL with it inactive, though still above healthy controls; insulin-producing beta-cell mass was also greater."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Using the power source as the sensor removes a component from an implant, and the disconnected-electrode control makes the effect harder to attribute to the device's sugar consumption. The caveats are large: these are rats, the insulin-deficiency model is drug-induced rather than autoimmune and so differs from human type 1 diabetes, groups held five to seven animals, and the authors attribute the effect partly to reduced food intake. Nothing here has been tested in people."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11251-7",
+    "doi": "https://doi.org/10.1038/s41586-026-11251-7"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

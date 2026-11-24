@@ -3,12 +3,25 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
- "stories": [],
+ "stories": [
+  {
+   "title": "FDA to miss deadline on Savara's rare lung disease drug approval",
+   "outlets": 3,
+   "date": "2026-11-20",
+   "covered": null
+  },
+  {
+   "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+   "outlets": 3,
+   "date": "2026-11-21",
+   "covered": null
+  }
+ ],
  "featured": {
-  "news": 3,
-  "papers": 3
+  "news": 6,
+  "papers": 5
  },
  "items": [
   {
@@ -46,6 +59,36 @@
    "date": "2026-11-23",
    "type": "paper",
    "title": "Divergent activation of the RXFP1 relaxin receptor by protein and small-molecule agonists"
+  },
+  {
+   "id": "2026-11-24-n1",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "FDA approves giredestrant after surgery, the first new hormone therapy for early-stage breast cancer in over 20 years"
+  },
+  {
+   "id": "2026-11-24-n2",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "FDA approves ribitol, the first treatment for any form of limb-girdle muscular dystrophy"
+  },
+  {
+   "id": "2026-11-24-n3",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "Kymera's once-daily eczema pill cuts disease severity by 72% in a 244-patient mid-stage trial, the company reports"
+  },
+  {
+   "id": "doi-10-1001-jama-2026-17078",
+   "date": "2026-11-24",
+   "type": "paper",
+   "title": "CMR to Guide Defibrillator Implantation for LVEF"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11251-7",
+   "date": "2026-11-24",
+   "type": "paper",
+   "title": "A glucose-powered artificial neuroimmune axis for metabolic control"
   }
  ]
 }

@@ -1,5 +1,62 @@
 [
  {
+  "id": "2026-11-24-n1",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "FDA approves giredestrant after surgery, the first new hormone therapy for early-stage breast cancer in over 20 years",
+  "tldr": "The FDA approved Roche's daily pill Wilserdly for early breast cancer after surgery, on the strength of a 4,170-patient trial in which it cut recurrence or death by 30% against standard hormone therapy.",
+  "category": "Drugs & Approvals",
+  "byline": "FDA, Fierce Pharma"
+ },
+ {
+  "id": "2026-11-24-n2",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "FDA approves ribitol, the first treatment for any form of limb-girdle muscular dystrophy",
+  "tldr": "The FDA approved Welgemda, a twice-daily oral solution, for limb-girdle muscular dystrophy type 2I/R9 after a 112-patient placebo-controlled trial showed gains in walking speed and lung function at 12 months.",
+  "category": "Drugs & Approvals",
+  "byline": "FDA, STAT"
+ },
+ {
+  "id": "2026-11-24-n3",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "Kymera's once-daily eczema pill cuts disease severity by 72% in a 244-patient mid-stage trial, the company reports",
+  "tldr": "In a randomized phase 2b trial, an oral drug that destroys the immune signalling protein STAT6 reduced eczema severity scores by 72% against 27% on placebo; the results are company-reported, not yet peer-reviewed.",
+  "category": "Clinical Research",
+  "byline": "Kymera Therapeutics press release (via BioSpace), New Scientist, Dermatology Times"
+ },
+ {
+  "id": "doi-10-1001-jama-2026-17078",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "CMR to Guide Defibrillator Implantation for LVEF",
+  "tldr": "In a randomized trial of 353 patients with moderately reduced heart function and scarring on cardiac MRI, implanted defibrillators did not significantly reduce sudden cardiac death or serious arrhythmia over 6.3 years.",
+  "primary_tag": "Cardiovascular",
+  "tags": [
+   "Cardiovascular",
+   "Devices & diagnostics"
+  ],
+  "byline": "Joseph B. Selvanayagam, et al. (CMR GUIDE Investigators) · Flinders University and Flinders Medical Centre, Adelaide",
+  "hf": null,
+  "venue": "JAMA"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11251-7",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "A glucose-powered artificial neuroimmune axis for metabolic control",
+  "tldr": "An implant that runs on the body's own glucose stimulated the vagus nerve whenever its fuel-cell voltage signalled high blood sugar, and lowered blood glucose in diabetic rats over weeks.",
+  "primary_tag": "Devices & diagnostics",
+  "tags": [
+   "Devices & diagnostics",
+   "Metabolic & endocrine"
+  ],
+  "byline": "Weijun Xiu, Qian Wang, Ling Wan et al. · National University of Singapore",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-23-n1",
   "date": "2026-11-23",
   "type": "news",
