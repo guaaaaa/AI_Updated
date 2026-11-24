@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 12:46:55 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 13:22:34 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Euclid finds the most distant quasar yet, a 360-million-solar-mass black hole 630 million years after the Big Bang</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/2026-11-24-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/2026-11-24-n1</guid>
+    <pubDate>Tue, 24 Nov 2026 13:22:34 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>Euclid astronomers confirmed a quasar at redshift 8.13, the first beyond 8, whose slowly feeding 360-million-solar-mass black hole strains models of how early black holes grew. (Euclid Consortium, University of Hamburg, Phys.org)</description>
+  </item>
+  <item>
+    <title>Webb's dust map of Cassiopeia A suggests the star's inner layers merged shortly before it exploded</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/2026-11-24-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/2026-11-24-n2</guid>
+    <pubDate>Tue, 24 Nov 2026 13:22:34 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>Webb resolved the chemistry of individual dust clumps in the Cassiopeia A supernova remnant and found signs that burning shells inside the star mixed, possibly hours before the explosion. (NASA, Phys.org)</description>
+  </item>
+  <item>
+    <title>NASA asks industry to build a 20-kilowatt fission reactor for the Moon, to be ready for launch by 2030</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/2026-11-24-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/2026-11-24-n3</guid>
+    <pubDate>Tue, 24 Nov 2026 13:22:34 +0000</pubDate>
+    <category>Science / Energy</category>
+    <description>NASA issued a request for proposals for Lunar Reactor-1, a 20-kilowatt fission system meant to be launch-ready by 2030 and to run on the Moon for at least five years. (NASA)</description>
+  </item>
+  <item>
+    <title>Quiet within, chaos without: Turbulence shelters drive selective particle capture and release</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/doi-10-1126-science-aee9889</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/doi-10-1126-science-aee9889</guid>
+    <pubDate>Tue, 24 Nov 2026 13:22:34 +0000</pubDate>
+    <category>Science / Condensed matter &amp; materials</category>
+    <description>Hollow capsules with a single hole use the calm they create inside a turbulent fluid to collect particles of one chosen size and release them on demand. (Matteo Sabato, Sarah Chong, Yaocheng Li et al. · University of Chicago; New York University)</description>
+  </item>
+  <item>
+    <title>Hexa-substituted benzene synthesis with non-classical carbocations</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/doi-10-1038-s41586-026-11449-9</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-24/doi-10-1038-s41586-026-11449-9</guid>
+    <pubDate>Tue, 24 Nov 2026 13:22:34 +0000</pubDate>
+    <category>Science / Chemistry</category>
+    <description>Chemists report a modular reaction that assembles benzene rings carrying six different groups, with the position of each one fixed in advance by the choice of starting materials. (Guillaume Mollaert, Hang-Fei Tu, Jacob R. King et al. · ICIQ)</description>
+  </item>
   <item>
     <title>Sanofi agrees to buy lung-disease drugmaker Insmed for about $41 billion in cash</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
     <category>AI / Research</category>
     <description>Anthropic mathematician Levent Alpöge says he and Claude proved the Riemann hypothesis and formalized it in Lean; outside mathematicians report the code compiles, but no human-readable proof exists yet. (Levent Alpöge, The Verge, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Google rolls out Genie 4, its most realistic interactive world model, to Google AI Ultra subscribers</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2026-11-21-n2</guid>
-    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Google DeepMind's Genie 4 world model reaches paying users in Project Genie, letting them edit generated worlds mid-session with text prompts and adding real-time native audio. (Google DeepMind)</description>
-  </item>
-  <item>
-    <title>Posterior Matching Distillation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.26629</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.26629</guid>
-    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>PMD distills diffusion models into four-step generators that keep the teacher's diversity, by matching "tilted" posterior means that each cost a single teacher call at a shifted input. (Hidir Yesiltepe, Julius Berner, Arash Vahdat et al. · Virginia Tech, NVIDIA)</description>
-  </item>
-  <item>
-    <title>Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21250</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21250</guid>
-    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
-    <category>AI / Reasoning</category>
-    <description>Stream of Belief lets several copies of a frozen LLM reason together by exchanging probability-weighted "belief tokens" instead of text, iterating until their joint state stops changing. (Yu Yao, Jiayi Dong, Yilun Du · MIT, UCLA, Harvard)</description>
-  </item>
-  <item>
-    <title>Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.18397</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.18397</guid>
-    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>Gamer is a vision-language-action model that plays complex 3D games in real time from raw screen pixels with keyboard and mouse, trained by continued pre-training, sparse-reasoning fine-tuning and long-horizon RL. (Run Luo, Kuan Zhang, Qi Deng et al. · miHoYo, National University of Singapore, Tsinghua University)</description>
-  </item>
-  <item>
-    <title>On Evaluating User Simulators for Interactive Agents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.24892</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.24892</guid>
-    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
-    <category>AI / Evaluation &amp; Benchmarks</category>
-    <description>By deliberately breaking simulated users and checking whether metrics notice, this paper shows existing user-simulator evaluations miss many failures, and proposes a suite that catches all ten tested. (Hengguang Zhou, I-Hung Hsu, Li Chen et al.)</description>
   </item>
 </channel>
 </rss>

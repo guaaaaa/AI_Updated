@@ -1,5 +1,60 @@
 [
  {
+  "id": "2026-11-24-n1",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "Euclid finds the most distant quasar yet, a 360-million-solar-mass black hole 630 million years after the Big Bang",
+  "tldr": "Euclid astronomers confirmed a quasar at redshift 8.13, the first beyond 8, whose slowly feeding 360-million-solar-mass black hole strains models of how early black holes grew.",
+  "category": "Space & Astronomy",
+  "byline": "Euclid Consortium, University of Hamburg, Phys.org"
+ },
+ {
+  "id": "2026-11-24-n2",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "Webb's dust map of Cassiopeia A suggests the star's inner layers merged shortly before it exploded",
+  "tldr": "Webb resolved the chemistry of individual dust clumps in the Cassiopeia A supernova remnant and found signs that burning shells inside the star mixed, possibly hours before the explosion.",
+  "category": "Space & Astronomy",
+  "byline": "NASA, Phys.org"
+ },
+ {
+  "id": "2026-11-24-n3",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "NASA asks industry to build a 20-kilowatt fission reactor for the Moon, to be ready for launch by 2030",
+  "tldr": "NASA issued a request for proposals for Lunar Reactor-1, a 20-kilowatt fission system meant to be launch-ready by 2030 and to run on the Moon for at least five years.",
+  "category": "Energy",
+  "byline": "NASA"
+ },
+ {
+  "id": "doi-10-1126-science-aee9889",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "Quiet within, chaos without: Turbulence shelters drive selective particle capture and release",
+  "tldr": "Hollow capsules with a single hole use the calm they create inside a turbulent fluid to collect particles of one chosen size and release them on demand.",
+  "primary_tag": "Condensed matter & materials",
+  "tags": [
+   "Condensed matter & materials"
+  ],
+  "byline": "Matteo Sabato, Sarah Chong, Yaocheng Li et al. · University of Chicago; New York University",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11449-9",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "Hexa-substituted benzene synthesis with non-classical carbocations",
+  "tldr": "Chemists report a modular reaction that assembles benzene rings carrying six different groups, with the position of each one fixed in advance by the choice of starting materials.",
+  "primary_tag": "Chemistry",
+  "tags": [
+   "Chemistry"
+  ],
+  "byline": "Guillaume Mollaert, Hang-Fei Tu, Jacob R. King et al. · ICIQ",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-23-n1",
   "date": "2026-11-23",
   "type": "news",

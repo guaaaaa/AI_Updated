@@ -1,0 +1,230 @@
+{
+ "date": "2026-11-24",
+ "edition": "weekday",
+ "generated_at": "2026-11-24T13:22:34+00:00",
+ "summary": "Euclid finds the first quasar beyond redshift 8, Webb reads a star's last hours in Cassiopeia A's dust, and NASA asks industry to build a reactor for the Moon.",
+ "news": [
+  {
+   "id": "2026-11-24-n1",
+   "story_key": "euclid-dun-aonghasa-quasar-z813",
+   "title": "Euclid finds the most distant quasar yet, a 360-million-solar-mass black hole 630 million years after the Big Bang",
+   "category": "Space & Astronomy",
+   "published": "2026-11-24T03:00:01-05:00",
+   "tldr": "Euclid astronomers confirmed a quasar at redshift 8.13, the first beyond 8, whose slowly feeding 360-million-solar-mass black hole strains models of how early black holes grew.",
+   "why_selected": "A record with a published study that directly constrains how the first supermassive black holes formed.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A quasar is the intensely bright core of a galaxy, powered by gas that heats up as it swirls into a supermassive black hole. Because quasars are the most luminous persistent sources in the universe, they can be studied even in the first billion years of cosmic history. Their distance is expressed as redshift, a measure of how much cosmic expansion has stretched their light. The earlier a massive black hole is found, the less time it had to grow, so each record tightens the limits on how such objects formed."
+    },
+    {
+     "heading": "What happened",
+     "body": "A Euclid Consortium team led by Julien Wolf, who did the work at the Max Planck Institute for Astronomy and is now at the European Southern Observatory, reported a quasar at redshift 8.13, seen 630 million years after the Big Bang. Catalogued as J1504+6252 and nicknamed Dún Aonghasa, it was picked out of about 18 months of Euclid Wide Survey data among millions of objects. The Keck Observatory and Hubble gave the first hints, and the Large Binocular Telescope and finally the James Webb Space Telescope fixed the redshift. Webb data put the black hole's mass at about 360 million Suns. The quasar existed 40 million years earlier than the previous record holder, which Euclid itself had found months before, and is the first known beyond redshift 8. The paper appears in Astronomy & Astrophysics."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The black hole is feeding far below the Eddington limit, the rate at which radiation from infalling gas pushes further gas away. Had it always grown this slowly, it would have needed an implausibly massive seed. The team concludes it must have grown much faster earlier, perhaps beyond that limit, and that the data fit a direct-collapse origin, in which a massive gas cloud collapses straight into a black hole."
+    },
+    {
+     "heading": "What to watch",
+     "body": "At redshift 8, at most a few tens of quasars are expected in Euclid's whole survey. The team says still more distant finds would strain even direct collapse and could point to primordial black holes, hypothetical objects formed right after the Big Bang."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Euclid Consortium",
+     "url": "https://euclid-ec.net/science/new-record-quasar/"
+    },
+    {
+     "name": "University of Hamburg",
+     "url": "https://www.qu.uni-hamburg.de/activities/news/2026/11-24-quasar-jt-schindler.html"
+    },
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-11-quasar-tightens-constraints-black-hole.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n2",
+   "story_key": "webb-cas-a-dust-shell-merger",
+   "title": "Webb's dust map of Cassiopeia A suggests the star's inner layers merged shortly before it exploded",
+   "category": "Space & Astronomy",
+   "published": "2026-11-23T10:00:00-05:00",
+   "tldr": "Webb resolved the chemistry of individual dust clumps in the Cassiopeia A supernova remnant and found signs that burning shells inside the star mixed, possibly hours before the explosion.",
+   "why_selected": "A published Webb result that turns supernova dust into a record of a star's interior just before it died.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A massive star ends up layered. As each fuel runs out in the core, the core contracts and heats until a heavier element starts to fuse, while lighter elements keep fusing in the layers around it. The result is a set of nested shells of different elements, with fusion in the core stopping at iron. When the star explodes as a supernova, these elements are thrown into space, and some condense into dust grains that clump together. Cassiopeia A (Cas A) is the expanding cloud of gas and dust left by one such explosion."
+    },
+    {
+     "heading": "What happened",
+     "body": "NASA on Monday released mid-infrared observations of Cas A from the James Webb Space Telescope, with results published the same day in The Astrophysical Journal Letters. The team, led by Tea Temim of Columbia University, used data from the retired Spitzer Space Telescope to choose three regions. Two lie where an inward-moving \"reverse\" shock wave hits debris thrown out by the explosion: one contained mostly silica dust, the other mostly carbon dust. The third, a structure called the Green Monster, was rich in complex magnesium silicates and came from material the star shed before exploding. Building on X-ray observations from Chandra and the JAXA-led XRISM, the team then mapped dust composition across the whole remnant, resolving clumps about the size of a solar system. The pattern points to a shell merger, in which churning material mixes neighbouring layers such as the oxygen- and carbon-burning shells. The observations indicate the merger was under way very shortly before the explosion, and its signatures appear through much of the remnant."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A shell merger changes a star's structure and the mix of elements its explosion releases, which in turn sets what later generations of stars and planets inherit. Co-author Dan Milisavljevic of Purdue University said the dust lets astronomers tie the explosion to the star's makeup hundreds of years afterwards."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The timing is stated cautiously: NASA says the change happened \"possibly just hours\" before the star's death. The team presents dust mapping as a method other astronomers can apply to other remnants."
+    }
+   ],
+   "sources": [
+    {
+     "name": "NASA",
+     "url": "https://science.nasa.gov/missions/webb/nasas-webb-shows-how-supernova-dust-chronicles-star-evolution/"
+    },
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-11-webb-evidence-star-layers-merged.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n3",
+   "story_key": "nasa-lunar-reactor-1-rfp",
+   "title": "NASA asks industry to build a 20-kilowatt fission reactor for the Moon, to be ready for launch by 2030",
+   "category": "Energy",
+   "published": "2026-11-23T12:23:50-05:00",
+   "tldr": "NASA issued a request for proposals for Lunar Reactor-1, a 20-kilowatt fission system meant to be launch-ready by 2030 and to run on the Moon for at least five years.",
+   "why_selected": "A concrete step, with dates and specifications, toward the first nuclear power plant on another world.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Power is a basic constraint on any long stay on the Moon. A lunar night lasts about 14 Earth days, so equipment that relies on solar panels must either store two weeks of energy or shut down, and some locations get little or no sunlight at all. A fission reactor, which produces heat by splitting heavy atomic nuclei and converts it to electricity, runs continuously regardless of sunlight. NASA released a draft of its plan in August and held an industry day in September at the Ohio Aerospace Institute in Cleveland."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday NASA issued its Space Power and Reactor Capabilities Request for Proposals, seeking industry partners to develop and test Lunar Reactor-1 (LR-1). The agency describes it as a small fission power system producing 20 kilowatts of electricity, which it compares to the annual use of about 16 average US households. NASA aims to have a launch-ready system by 2030 and to operate it on the Moon for at least five years after deployment. The reactor must meet Department of Energy safety standards for nuclear operations. Proposals are due by 21 December, and NASA says it may issue further task orders for other space nuclear power systems. LR-1 is managed by NASA's Space Reactors Division in partnership with the Department of Energy."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "NASA says the power could support the habitats, communications, rovers and scientific instruments of its planned Moon Base. The agency also frames the reactor as a path to places where solar power fails: dust storms on Mars can block sunlight for months, and sunlight weakens farther from the Sun. The same division is developing Space Reactor-1 Freedom, scheduled to launch in 2028 to demonstrate nuclear electric propulsion, in which a reactor's electricity drives a spacecraft's engines."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The release names no bidders, budget or launch vehicle. The next markers are the 21 December deadline and any contract award that follows. The 2030 date is a goal for a system that has yet to be designed, built and tested, so the schedule is the main uncertainty."
+    }
+   ],
+   "sources": [
+    {
+     "name": "NASA",
+     "url": "https://www.nasa.gov/directorates/rtmd/nasa-seeks-partners-to-design-first-nuclear-reactor-for-the-moon/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-aee9889",
+   "title": "Quiet within, chaos without: Turbulence shelters drive selective particle capture and release",
+   "authors": [
+    "Matteo Sabato",
+    "Sarah Chong",
+    "Yaocheng Li",
+    "Zhe Xu",
+    "Daqian Gao",
+    "Martin J. Falk",
+    "Stefano Sacanna",
+    "William T. M. Irvine"
+   ],
+   "affiliations": [
+    "University of Chicago; New York University"
+   ],
+   "announced": "2026-11-19T00:00:00-05:00",
+   "primary_tag": "Condensed matter & materials",
+   "tags": [
+    "Condensed matter & materials"
+   ],
+   "tldr": "Hollow capsules with a single hole use the calm they create inside a turbulent fluid to collect particles of one chosen size and release them on demand.",
+   "why_selected": "A simple geometric trick that extracts directed, selective transport from turbulence, with clear experiments across very different sizes.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Turbulence, the swirling motion of a stirred or fast-flowing fluid, is usually treated as a nuisance: it mixes, scatters and wastes energy, and its details cannot be predicted exactly. Moving particles in a chosen direction, or sorting them, normally requires spending energy. The authors asked whether the ambient chaos of a turbulent fluid could do such work by itself."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "According to the University of Chicago's account, the work began seven years ago with an unexplained observation rather than a design goal. While using small capsules for other purposes, the team saw capsules with a single hole collect the particles around them. Early experiments contradicted expectations, and the explanation took years."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The capsule is a hollow shell with one opening. Its walls shelter the interior, so the fluid inside is fairly calm while the fluid outside is strongly agitated. That contrast is a gradient, and gradients drive flows, much as heat leaves a warm house through an open window. Here particles drift into the quiet interior even though no net fluid flows in. The selectivity comes from the structure of turbulence, which consists of eddies that split into ever smaller eddies. Only eddies about the size of the hole can enter, bringing particles of that size with them."
+    },
+    {
+     "heading": "Results",
+     "body": "Capsules placed in a jar of mixed particles picked up only those matching the hole, and could distinguish particles 700 nanometres across from those 900 nanometres across. Changing the wall thickness or the hole's shape changed which particles were collected. The effect held for capsules from five micrometres to two centimetres across, driven only by gently stirring or shaking the jar. Release could be tuned as well: one experiment ran for nine months, letting out a few particles per week, while adding salts emptied capsules in a fraction of a second."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors suggest uses in filtering water and other fluids and in drug delivery, and are working to commercialise the technique. The demonstrations so far are in laboratory jars, so performance in real, messier fluids is untested."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aee9889",
+    "doi": "https://doi.org/10.1126/science.aee9889"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11449-9",
+   "title": "Hexa-substituted benzene synthesis with non-classical carbocations",
+   "authors": [
+    "Guillaume Mollaert",
+    "Hang-Fei Tu",
+    "Jacob R. King",
+    "Mihai V. Popescu",
+    "Zexian Li",
+    "Quan Zhang",
+    "Eric Palomo",
+    "Robert S. Paton",
+    "Marcos G. Suero"
+   ],
+   "affiliations": [
+    "ICIQ"
+   ],
+   "announced": "2026-11-23T00:00:00-05:00",
+   "primary_tag": "Chemistry",
+   "tags": [
+    "Chemistry"
+   ],
+   "tldr": "Chemists report a modular reaction that assembles benzene rings carrying six different groups, with the position of each one fixed in advance by the choice of starting materials.",
+   "why_selected": "It opens a class of drug-like molecules that chemists have largely been unable to make, through an unusual bonding intermediate.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Benzene, a flat ring of six carbon atoms, is the most common ring system in small-molecule drugs. Each of its six carbons can carry an attached group, called a substituent. Yet benzenes with all six positions substituted are notably absent from the libraries of small molecules that drug researchers screen."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The authors attribute the gap to two things: such rings are hard to synthesise, and few suitable aromatic building blocks can be bought. What has been missing, they write, is a process with predictable regiochemical control, meaning the chemist decides which group ends up at which position, together with broad variety in the groups that can be installed."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The reaction is a benzannulation: it constructs the benzene ring from two smaller pieces. One is an aromatic cyclopropenium cation, a positively charged ring of three carbons. The other is a (trialkylsilyl)allene, a chain in which one carbon is double-bonded to two neighbours and which carries a silicon-based group. Because the two pieces together supply all the ring's substituents, the authors describe the platform as programmable, with control over all six positions encoded in the starting materials. Why they join so selectively was examined with density functional theory, a quantum-mechanical computational method. The calculations point to an unusual non-classical carbocation, a positively charged intermediate whose bonding is shared across four atoms by four electrons instead of sitting in ordinary two-atom bonds."
+    },
+    {
+     "heading": "Results",
+     "body": "The abstract, the only part of the paper read for this digest, reports exceptional regioselectivity without giving yields. The reaction let the team install chemical handles for further modification and make previously inaccessible five- and six-substituted analogues of the anticancer drug sonidegib and the blood-pressure drug telmisartan, as well as triphenylene, a polyaromatic hydrocarbon. Starting from single-handed (enantiopure) allenes gave enantioenriched multi-substituted biaryls, products in which one mirror-image form predominates, an effect the authors call memory of chirality."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Medicinal chemists could now explore fully substituted benzenes when optimising drug candidates. The caveat: the text read here reports no biological tests of the new analogues and does not describe the method's limits."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11449-9",
+    "doi": "https://doi.org/10.1038/s41586-026-11449-9"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}
