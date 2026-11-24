@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 12:16:04 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 12:46:55 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Sanofi agrees to buy lung-disease drugmaker Insmed for about $41 billion in cash</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n1</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>Sanofi will pay $175 a share in cash for US drugmaker Insmed, a 46% premium, to add the fast-selling lung drug Brinsupri and reduce its reliance on Dupixent. (BioXconomy, Quartz)</description>
+  </item>
+  <item>
+    <title>New York Fed's Williams says inflation is too high and does not rule out rate increases at consecutive meetings</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n2</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Central Banks &amp; Rates</category>
+    <description>John Williams said restoring 2% inflation is "100 percent essential", expects inflation of about 3.5% this year, and told reporters that raising rates at back-to-back meetings remains possible. (Federal Reserve Bank of New York, The Jakarta Post (Reuters))</description>
+  </item>
+  <item>
+    <title>EU caps hybrid car imports from 1 December, limiting China to about 191,780 vehicles over 200 days</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n3</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>The European Commission has published temporary quotas on hybrid car imports from China, Japan, Turkey, South Korea, the UK and others, aimed mainly at a surge of Chinese hybrids. (The Guardian, electrive)</description>
+  </item>
+  <item>
+    <title>Best Buy raises its annual forecast after comparable sales grow 6.1%, its best quarter in five years</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n4</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Consumer &amp; Retail</category>
+    <description>The electronics retailer beat its own expectations on computing, phones and new categories such as AI glasses, and lifted full-year sales and profit guidance ahead of the holidays. (Best Buy (Business Wire release), Rallies)</description>
+  </item>
+  <item>
+    <title>Five Facts About Stablecoins</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/nber-w36038</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/nber-w36038</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Banking &amp; credit</category>
+    <description>Wallet-level blockchain data from 2020 to 2025 suggest dollar stablecoins are now used as money for payments rather than mainly for crypto speculation, with little sign that they drain bank deposits. (Lin William Cong, Gordon Y. Liao, Eswar S. Prasad et al. · Nanyang Technological University; Circle; Cornell University; Arizona State University)</description>
+  </item>
   <item>
     <title>Anthropic launches Claude Ship, with agents that fix pull requests and approve routine code changes</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
     <category>AI / Evaluation &amp; Benchmarks</category>
     <description>By deliberately breaking simulated users and checking whether metrics notice, this paper shows existing user-simulator evaluations miss many failures, and proposes a suite that catches all ten tested. (Hengguang Zhou, I-Hung Hsu, Li Chen et al.)</description>
-  </item>
-  <item>
-    <title>DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21925</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-21/2611.21925</guid>
-    <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>DNeo, a parallel draft model for speculative decoding, fixes how drafters read the target model's hidden states and remembers rejected drafts, generating up to 1.3 times faster than the previous best. (Jameson Sandler, Shane Bergsma, Mostafa Elhoushi et al.)</description>
-  </item>
-  <item>
-    <title>F5 issues emergency hotfixes for critical BIG-IP flaws that can crash traffic handling and may allow remote code execution</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2026-11-21-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2026-11-21-n1</guid>
-    <pubDate>Sat, 21 Nov 2026 11:48:23 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>F5 released out-of-band hotfixes for critical, unauthenticated BIG-IP flaws that can crash its traffic engine and may allow remote code execution; no mitigations exist besides patching. (BleepingComputer, Canadian Centre for Cyber Security)</description>
-  </item>
-  <item>
-    <title>Amazon says suspected Chinese hackers used the AI agent framework Cairn to find and exploit a zero-day at East Asian universities</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2026-11-21-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2026-11-21-n2</guid>
-    <pubDate>Sat, 21 Nov 2026 11:48:23 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Amazon found an exposed Cairn server showing AI agents that worked for hours without human direction, then discovered and used an unknown flaw in a medical imaging app to take over university servers. (The Record, The Register)</description>
-  </item>
-  <item>
-    <title>UK surveillance tribunal confirms the Home Office served Apple a secret order over encrypted iCloud data</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2026-11-21-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2026-11-21-n3</guid>
-    <pubDate>Sat, 21 Nov 2026 11:48:23 +0000</pubDate>
-    <category>Tech / Tech Policy &amp; Antitrust</category>
-    <description>The Investigatory Powers Tribunal rejected the Home Office's secrecy argument and confirmed it served Apple a Technical Capability Notice, though the order's content stays secret ahead of a 2027 hearing. (Investigatory Powers Tribunal judgment, The Register)</description>
-  </item>
-  <item>
-    <title>Signal blocks screenshots by default to keep Siri and Gemini agents from reading private chats</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2026-11-21-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2026-11-21-n4</guid>
-    <pubDate>Sat, 21 Nov 2026 11:48:23 +0000</pubDate>
-    <category>Tech / Software &amp; Platforms</category>
-    <description>Signal's iOS and Android apps now block screenshots by default so built-in AI agents cannot capture chats, and the company says operating systems give developers no robust way to stop such access. (The Register, Engadget)</description>
   </item>
 </channel>
 </rss>

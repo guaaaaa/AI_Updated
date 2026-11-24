@@ -1,0 +1,209 @@
+{
+ "date": "2026-11-24",
+ "edition": "weekday",
+ "generated_at": "2026-11-24T12:46:55+00:00",
+ "summary": "Sanofi agrees to pay about $41 billion for Insmed, the New York Fed's Williams says more rate increases are needed, the EU caps hybrid car imports, and Best Buy raises its outlook.",
+ "news": [
+  {
+   "id": "2026-11-24-n1",
+   "story_key": "sanofi-insmed-acquisition-2026-11",
+   "title": "Sanofi agrees to buy lung-disease drugmaker Insmed for about $41 billion in cash",
+   "category": "Deals & M&A",
+   "published": "2026-11-24T01:36:00-05:00",
+   "tldr": "Sanofi will pay $175 a share in cash for US drugmaker Insmed, a 46% premium, to add the fast-selling lung drug Brinsupri and reduce its reliance on Dupixent.",
+   "why_selected": "One of the year's largest takeovers, and a clear example of a big drugmaker buying growth ahead of a patent expiry.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Sanofi, the French drugmaker, depends heavily on one product, Dupixent. Daniel Chancellor of the research firm Norstella told BioXconomy that its success has left Sanofi with an imbalanced portfolio, made worse by a sparse period of launches since 2023, with a patent cliff (the loss of sales when patent protection ends) still to manage. Reports of a bid for Insmed, a US respiratory-disease drugmaker, preceded the announcement."
+    },
+    {
+     "heading": "What happened",
+     "body": "Sanofi announced on Tuesday that it has agreed to acquire Insmed for $175 per share in cash, a total equity value of about $41.0 billion (37.6 billion euros). The price is roughly 46% above Insmed's closing share price on November 18, before the deal talk affected the stock. Both boards approved the deal, which is expected to close in the first half of 2027.\n\nSanofi gets two medicines already on sale. Brinsupri, a once-daily pill, is approved in the US, EU, UK and Japan as the first and only treatment for non-cystic fibrosis bronchiectasis, a chronic lung condition; launched in the US in August 2025, it generated $1.09 billion in revenue through September 30, 2026. Arikayce, an inhaled antibacterial therapy, made $433.8 million in 2025, up 19%. Sanofi also gains TPIP, an inhaled treatment in late-stage (Phase 3) testing."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Sanofi is funding the purchase with debt and cash on hand, with committed financing secured, and expects it to add to its business earnings per share by the end of 2028; it said its 2026 guidance is unaffected. Chancellor estimates that Insmed will add around $8.5 billion in annual revenue by 2033, lifting Sanofi's annual sales growth over the period from 2.5% to 4.0%. That is one analyst's projection, not company guidance. He added that Dupixent would still account for about 40% of revenue at its 2030 peak."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The closing timetable, and the US regulator's decision on a wider use for Arikayce, which is under priority review."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BioXconomy",
+     "url": "https://www.bioxconomy.com/partnering/sanofi-goes-all-in-on-respiratory-disease-with-41bn-insmed-acquisition"
+    },
+    {
+     "name": "Quartz",
+     "url": "https://qz.com/sanofi-insmed-acquisition-41-billion-pipeline-112426"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n2",
+   "story_key": "williams-speech-rate-hikes-2026-11-23",
+   "title": "New York Fed's Williams says inflation is too high and does not rule out rate increases at consecutive meetings",
+   "category": "Central Banks & Rates",
+   "published": "2026-11-23T18:38:00-05:00",
+   "tldr": "John Williams said restoring 2% inflation is \"100 percent essential\", expects inflation of about 3.5% this year, and told reporters that raising rates at back-to-back meetings remains possible.",
+   "why_selected": "Williams is one of the Fed's most influential voices, speaking two weeks before a meeting at which markets expect another rate increase.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Federal Reserve is raising interest rates. Its policy rate stands at 3.75% to 4%, it last raised rates in September, and inflation has been above the 2% target for more than five years, Reuters reports. The next policy meeting is on December 8-9. John Williams, president of the New York Fed, spoke on Monday at the University of Mount Saint Vincent in the Bronx, the same day as a sharp stock market rally."
+    },
+    {
+     "heading": "What happened",
+     "body": "Williams said the economy is strong: growth is running at about a 2.75% annual rate this year and layoffs are near historic lows. But inflation is running at about 3.5%, which he called too high. He attributed it to three shocks: higher tariffs, energy and supply disruptions from conflict in the Middle East, and demand tied to the surge in AI investment, which has pushed up prices of goods such as semiconductors.\n\n\"Getting inflation back to 2 percent is 100 percent essential,\" he said. \"There is still work to do to get that done.\" He forecast inflation of about 3.5% this year, just above 2% next year and 2% in 2028. He told reporters he had no particular timing in mind but added: \"I would not exclude, you know, moving at consecutive meetings at all if that was what was needed.\""
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Reuters read the remarks as suggesting Williams favors an increase in December; financial markets broadly expect a quarter-point rise then, with more next year. Some observers had wondered whether the recent stock losses might deter the Fed. Williams said he was not surprised by the volatility and that it had not dimmed his optimism about the economy. He also offered some reassurance: tariff effects on prices have largely faded, wage growth is not adding to inflation, and longer-term inflation expectations remain well anchored."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The December 8-9 decision, and whether other officials echo Fed Governor Christopher Waller, who has signaled he could support a larger half-point increase."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Federal Reserve Bank of New York",
+     "url": "https://www.newyorkfed.org/newsevents/speeches/2026/wil261123"
+    },
+    {
+     "name": "The Jakarta Post (Reuters)",
+     "url": "https://www.thejakartapost.com/business/2026/11/24/feds-williams-says-inflation-still-too-high-signals-more-rate-hikes"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n3",
+   "story_key": "eu-hybrid-import-quotas-2026-11",
+   "title": "EU caps hybrid car imports from 1 December, limiting China to about 191,780 vehicles over 200 days",
+   "category": "Trade & Policy",
+   "published": "2026-11-24T05:59:00-05:00",
+   "tldr": "The European Commission has published temporary quotas on hybrid car imports from China, Japan, Turkey, South Korea, the UK and others, aimed mainly at a surge of Chinese hybrids.",
+   "why_selected": "A concrete new trade barrier in the world's car market that touches every major exporter to Europe, not only China.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "After the EU imposed tariffs on Chinese electric cars in 2024, those imports flattened and there was a clear shift toward hybrids from China, the EU's official journal says. Figures reported by the Guardian show China's worldwide hybrid exports grew from 191,000 vehicles in 2023 to 1.124 million in 2025. The EU opened a safeguard investigation, a World Trade Organization procedure for import surges, on October 30, according to electrive, and reached an agreement with Beijing in October."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Commission published the measure in the official journal on Tuesday. From December 1 the EU will apply provisional quotas for 200 days, until June 18, 2027, while the investigation continues. China's quota is 350,000 hybrids for a full year, which works out to about 191,780 over the 200 days. The Guardian says that is about half the number expected to arrive in the next 12 months.\n\nBecause safeguard measures must apply to all big exporters, other countries also get quotas: on a first-year basis, 310,000 for Japan, 230,000 for Turkey, 190,000 for the UK and 105,000 for South Korea, with Mexico, Morocco, Serbia and the US also covered. Electrive reports that country quotas were set at 2025 import levels plus a little over 15%, that plug-in, full and mild hybrids are covered, and that range-extender vehicles are not.\n\nThe two reports describe the mechanism differently. The Guardian describes the quota as the number of cars that can enter without facing a tariff; electrive quotes the Commission as saying that imports outside the quotas are not allowed."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The official journal cites sufficient evidence that hybrid imports threaten serious injury to EU industry, in a sector it calls strategically important for innovation and employment. For exporters, growth in Europe is now limited by quota. The UK exported 166,000 hybrids to the EU last year, so its allowance leaves modest headroom. South Korea has questioned at the WTO whether the investigation was fair and transparent, and China's commerce ministry said it reserved all rights to safeguard its industries."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the EU adopts definitive measures by next summer, and how China and other affected exporters respond."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/business/2026/nov/24/eu-cap-chinese-hybrid-ev-imports-tariff-uk"
+    },
+    {
+     "name": "electrive",
+     "url": "https://www.electrive.com/2026/11/24/eu-introduces-import-quotas-for-hybrids-from-china-and-other-countries/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n4",
+   "story_key": "best-buy-q3-fy2027-results",
+   "title": "Best Buy raises its annual forecast after comparable sales grow 6.1%, its best quarter in five years",
+   "category": "Consumer & Retail",
+   "published": "2026-11-24T07:00:00-05:00",
+   "tldr": "The electronics retailer beat its own expectations on computing, phones and new categories such as AI glasses, and lifted full-year sales and profit guidance ahead of the holidays.",
+   "why_selected": "A bellwether for spending on big-ticket electronics, reporting just before Black Friday.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Best Buy, the US electronics retailer, is a useful gauge of demand for purchases such as computers and phones, which shoppers can postpone when budgets are tight. Its results arrive days before Black Friday. The key measure is comparable sales: the change in revenue from stores and websites open for at least a year, which strips out the effect of openings and closures."
+    },
+    {
+     "heading": "What happened",
+     "body": "For the 13 weeks ended October 31, Best Buy reported comparable sales growth of 6.1%, which chief executive Jason Bonfig said was ahead of the company's expectations and its highest in five years. Revenue was $10.236 billion, against an analyst estimate of $9.897 billion compiled by IBES, and adjusted earnings per share (which exclude one-off items) rose 16% to $1.62, against an estimate of $1.49.\n\nIn the US, revenue rose 6.1% to $9.4 billion, and online sales grew 10.8% on a comparable basis to $3.1 billion, a third of the domestic total. The biggest contributors were computing, mobile phones and what the company calls emerging categories, such as AI glasses and trading cards. International revenue rose 3.3% to $820 million.\n\nBest Buy raised its full-year guidance: revenue of $43.0 billion to $43.3 billion (previously $42.3 billion to $42.8 billion), comparable sales growth of 3.4% to 4.0% (previously 1.9% to 3.0%) and adjusted earnings per share of $6.90 to $7.05 (previously $6.70 to $6.90)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Bonfig credited a compelling product cycle and market share gains, with growth across nearly all product categories. Newer income streams also helped. The US gross profit rate rose to 24.1% from 23.3%, driven by $41 million of tariff refunds and by growth in Marketplace and the company's advertising business, partly offset by lower product margins.\n\nThe guidance for the current quarter is more cautious: comparable sales growth of 2.0% to 4.0%, slower than the quarter just reported."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Holiday-quarter sales, and whether margins hold up without tariff refunds."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Best Buy (Business Wire release)",
+     "url": "https://www.financialcontent.com/article/bizwire-2026-11-24-best-buy-reports-third-quarter-results"
+    },
+    {
+     "name": "Rallies",
+     "url": "https://rallies.ai/news/best-buy-q3-adjusted-eps-usd-162-vs-estimate-usd-149-78c115d1a5972b89"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36038",
+   "title": "Five Facts About Stablecoins",
+   "authors": [
+    "Lin William Cong",
+    "Gordon Y. Liao",
+    "Eswar S. Prasad",
+    "Tony Zhang"
+   ],
+   "affiliations": [
+    "Nanyang Technological University; Circle; Cornell University; Arizona State University"
+   ],
+   "announced": "2026-11-24T00:00:00-05:00",
+   "primary_tag": "Banking & credit",
+   "tags": [
+    "Banking & credit",
+    "Innovation & technology",
+    "Regulation"
+   ],
+   "tldr": "Wallet-level blockchain data from 2020 to 2025 suggest dollar stablecoins are now used as money for payments rather than mainly for crypto speculation, with little sign that they drain bank deposits.",
+   "why_selected": "The most detailed data-based picture so far of how stablecoins are used, at a time when regulators are writing rules for them; one author works for a stablecoin issuer.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Stablecoins are digital tokens recorded on blockchains and designed to hold a fixed value, usually one US dollar. The two largest, USDT and USDC, had a combined market value above $260 billion in December 2025. Two questions dominate policy debate: whether stablecoins serve any purpose beyond cryptocurrency speculation, and whether money that moves onto blockchains reduces bank deposits and the lending they fund."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier research concentrated on volatile cryptocurrencies, on whether stablecoins hold their peg, and on their vulnerability to runs. The standard way to locate stablecoin activity relies on the exchanges that wallets interact with."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors build what they call the first comprehensive wallet-level analysis of stablecoin use, covering 2020 to 2025. They classify transactions by size and function, locate wallets by adding the timing of each wallet's transactions to the exchange-based approach, fit an established model of cash management to wallet balances, and use balance-sheet accounting to trace what happens to bank deposits when stablecoins are issued."
+    },
+    {
+     "heading": "Results",
+     "body": "First, stablecoins are used for transactions: onchain volume exceeds Bitcoin's despite a much smaller supply, and by 2025, 43% of transactions were below one dollar. Second, activity is spread across the Americas, Asia Pacific, and Europe, the Middle East and Africa, each sending 25% to 42% of wallet-to-wallet volume; 40% to 70% of volume stays within a region. Third, wallets behave like cash holdings: the typical one holds about 10 days of outflow and is topped up about 10 times a year. Fourth, loans on secured onchain lending protocols roughly quadrupled in two years, while the estimated effect on bank deposits is economically negligible. Fifth, in 2025 smart contracts were involved in 35% of Ethereum stablecoin transactions and 69% of transfer volume, almost all of it financial rather than commerce."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For banks, payment firms and regulators applying frameworks such as the US GENIUS Act and the EU's MiCA, the paper argues that stablecoins behave as tokenized money and that fears of deposit flight have little support. Two caveats: one author is chief economist at Circle, which issues USDC, and the working paper has not been peer-reviewed. The authors also note that rule-based lending moves risk into protocol governance and liquidation systems."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36038"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}

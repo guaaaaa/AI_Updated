@@ -3,9 +3,21 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [
+  {
+   "title": "Prediction: Dec. 9 Will Be a Huge Day for the Stock Market",
+   "outlets": 13,
+   "date": "2026-11-22",
+   "covered": null
+  },
+  {
+   "title": "What Comes Next After Anthropic’s Historic IPO",
+   "outlets": 7,
+   "date": "2026-11-22",
+   "covered": null
+  },
   {
    "title": "Wall Street Strategists See Silver Lining for Stock Market",
    "outlets": 4,
@@ -13,15 +25,27 @@
    "covered": null
   },
   {
-   "title": "What Comes Next After Anthropic’s Historic IPO",
+   "title": "Anthropic Stock Trend, Jensen Huang’s Potential Return As Nvidia CEO And Dell’s Q4 Results To Keep Tech Investors Busy This Week",
    "outlets": 3,
-   "date": "2026-11-22",
+   "date": "2026-11-23",
+   "covered": null
+  },
+  {
+   "title": "EU opens antitrust investigation into Coca-Cola bottler CCEP",
+   "outlets": 3,
+   "date": "2026-11-23",
+   "covered": null
+  },
+  {
+   "title": "President Trump wants Jensen Huang back at Nvidia despite widening China spy probe",
+   "outlets": 3,
+   "date": "2026-11-23",
    "covered": null
   }
  ],
  "featured": {
-  "news": 4,
-  "papers": 1
+  "news": 8,
+  "papers": 2
  },
  "items": [
   {
@@ -53,6 +77,36 @@
    "date": "2026-11-23",
    "type": "paper",
    "title": "Past Automation and Future AI: How Weak Links Tame the Growth Explosion"
+  },
+  {
+   "id": "2026-11-24-n1",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "Sanofi agrees to buy lung-disease drugmaker Insmed for about $41 billion in cash"
+  },
+  {
+   "id": "2026-11-24-n2",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "New York Fed's Williams says inflation is too high and does not rule out rate increases at consecutive meetings"
+  },
+  {
+   "id": "2026-11-24-n3",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "EU caps hybrid car imports from 1 December, limiting China to about 191,780 vehicles over 200 days"
+  },
+  {
+   "id": "2026-11-24-n4",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "Best Buy raises its annual forecast after comparable sales grow 6.1%, its best quarter in five years"
+  },
+  {
+   "id": "nber-w36038",
+   "date": "2026-11-24",
+   "type": "paper",
+   "title": "Five Facts About Stablecoins"
   }
  ]
 }

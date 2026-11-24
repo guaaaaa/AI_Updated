@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-24T12:16:05+00:00",
+ "updated": "2026-11-24T12:46:56+00:00",
  "domain": "business",
  "days": [
+  {
+   "date": "2026-11-24",
+   "edition": "weekday",
+   "news": 4,
+   "papers": 1,
+   "backfill": false
+  },
   {
    "date": "2026-11-23",
    "edition": "weekday",
@@ -125,7 +132,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 80
+   "n": 85
   }
  ],
  "tag_groups": {
@@ -157,8 +164,10 @@
   ]
  },
  "tag_counts": {
+  "Banking & credit": 3,
+  "Innovation & technology": 5,
+  "Regulation": 2,
   "Growth & productivity": 2,
-  "Innovation & technology": 4,
   "Households & housing": 2,
   "Asset pricing": 4,
   "Inequality & mobility": 3,
@@ -166,9 +175,7 @@
   "Industrial organization": 4,
   "Monetary policy": 6,
   "Inflation": 3,
-  "Corporate finance": 2,
-  "Banking & credit": 2,
-  "Regulation": 1
+  "Corporate finance": 2
  },
  "news_categories": [
   "Markets",
@@ -186,13 +193,13 @@
   "Real Estate"
  ],
  "category_counts": {
-  "Deals & M&A": 6,
+  "Deals & M&A": 7,
+  "Central Banks & Rates": 7,
+  "Trade & Policy": 9,
+  "Consumer & Retail": 6,
   "Markets": 4,
-  "Trade & Policy": 8,
   "Earnings & Companies": 8,
   "Economy & Data": 15,
-  "Consumer & Retail": 5,
-  "Central Banks & Rates": 6,
   "Tech & AI Business": 3,
   "Banking & Finance": 3,
   "Energy & Commodities": 1,

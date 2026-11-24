@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/business</link>
   <description>Markets, companies and the economy</description>
   <language>en</language>
-  <lastBuildDate>Mon, 23 Nov 2026 12:46:18 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 12:46:55 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/business.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Sanofi agrees to buy lung-disease drugmaker Insmed for about $41 billion in cash</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n1</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Deals &amp; M&amp;A</category>
+    <description>Sanofi will pay $175 a share in cash for US drugmaker Insmed, a 46% premium, to add the fast-selling lung drug Brinsupri and reduce its reliance on Dupixent. (BioXconomy, Quartz)</description>
+  </item>
+  <item>
+    <title>New York Fed's Williams says inflation is too high and does not rule out rate increases at consecutive meetings</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n2</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Central Banks &amp; Rates</category>
+    <description>John Williams said restoring 2% inflation is "100 percent essential", expects inflation of about 3.5% this year, and told reporters that raising rates at back-to-back meetings remains possible. (Federal Reserve Bank of New York, The Jakarta Post (Reuters))</description>
+  </item>
+  <item>
+    <title>EU caps hybrid car imports from 1 December, limiting China to about 191,780 vehicles over 200 days</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n3</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>The European Commission has published temporary quotas on hybrid car imports from China, Japan, Turkey, South Korea, the UK and others, aimed mainly at a surge of Chinese hybrids. (The Guardian, electrive)</description>
+  </item>
+  <item>
+    <title>Best Buy raises its annual forecast after comparable sales grow 6.1%, its best quarter in five years</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n4</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Consumer &amp; Retail</category>
+    <description>The electronics retailer beat its own expectations on computing, phones and new categories such as AI glasses, and lifted full-year sales and profit guidance ahead of the holidays. (Best Buy (Business Wire release), Rallies)</description>
+  </item>
+  <item>
+    <title>Five Facts About Stablecoins</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/nber-w36038</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/nber-w36038</guid>
+    <pubDate>Tue, 24 Nov 2026 12:46:55 +0000</pubDate>
+    <category>Business / Banking &amp; credit</category>
+    <description>Wallet-level blockchain data from 2020 to 2025 suggest dollar stablecoins are now used as money for payments rather than mainly for crypto speculation, with little sign that they drain bank deposits. (Lin William Cong, Gordon Y. Liao, Eswar S. Prasad et al. · Nanyang Technological University; Circle; Cornell University; Arizona State University)</description>
+  </item>
   <item>
     <title>CrowdStrike agrees to buy Zscaler in an all-stock deal worth about $43.9 billion</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-23/2026-11-23-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
     <category>Business / Trade &amp; Policy</category>
     <description>Days before meeting Xi Jinping, Mark Carney said Canada will pursue European, Chinese or Japanese carmakers if a US deal does not leave it a viable auto sector. (The Guardian, Euronews, The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>Telus pulls out of two planned AI data centres in Vancouver after local opposition and a strategy shift</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n4</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Tech &amp; AI Business</category>
-    <description>Telus has dropped out of two Vancouver AI data centre projects announced in May; developer Westbank says it will proceed with a new, unnamed partner. (The Globe and Mail, Daily Hive)</description>
-  </item>
-  <item>
-    <title>Clouds of Credit: Mapping the Financial Web Behind AI Compute</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/nber-w36032</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/nber-w36032</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Corporate finance</category>
-    <description>A model of the contracts linking chipmakers, cloud firms, AI labs and landlords finds the AI buildout is larger than socially optimal, about 59% debt-funded, and exposed to $16.9 trillion of losses if AI disappoints. (Stijn Van Nieuwerburgh, Zijin Su · Columbia University Graduate School of Business; NBER)</description>
-  </item>
-  <item>
-    <title>US producer prices rise 6.5% over the year to October, the biggest annual gain since 2022, as inflation spreads beyond energy</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n1</guid>
-    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>US producer prices rose 0.3% in October, slightly less than forecast, but 6.5% over twelve months, the largest annual gain since November 2022, with food and core goods prices climbing. (The Globe and Mail (Reuters), The Jolt Journal)</description>
-  </item>
-  <item>
-    <title>The Fed's financial stability report finds AI is now the most-cited risk, named by 87% of surveyed market contacts</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n2</guid>
-    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
-    <category>Business / Banking &amp; Finance</category>
-    <description>The Fed's twice-yearly stability report says AI enthusiasm keeps asset prices near historic highs, AI-related debt issuance has passed $680 billion this year, and 87% of surveyed contacts now see AI as a key risk. (Federal Reserve, Yahoo Finance)</description>
-  </item>
-  <item>
-    <title>Alberta cuts royalties on new oil sands projects to 2% for five years in a bid to double crude output</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-14/2026-11-14-n3</guid>
-    <pubDate>Sat, 14 Nov 2026 12:46:28 +0000</pubDate>
-    <category>Business / Energy &amp; Commodities</category>
-    <description>Alberta's new Oil Sands Growth Program guarantees eligible new projects a 10-year royalty schedule starting at 2%, part of Premier Danielle Smith's push to double oil production to eight million barrels a day. (Government of Alberta, The Globe and Mail)</description>
   </item>
 </channel>
 </rss>

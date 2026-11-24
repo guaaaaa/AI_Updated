@@ -1,5 +1,57 @@
 [
  {
+  "id": "2026-11-24-n1",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "Sanofi agrees to buy lung-disease drugmaker Insmed for about $41 billion in cash",
+  "tldr": "Sanofi will pay $175 a share in cash for US drugmaker Insmed, a 46% premium, to add the fast-selling lung drug Brinsupri and reduce its reliance on Dupixent.",
+  "category": "Deals & M&A",
+  "byline": "BioXconomy, Quartz"
+ },
+ {
+  "id": "2026-11-24-n2",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "New York Fed's Williams says inflation is too high and does not rule out rate increases at consecutive meetings",
+  "tldr": "John Williams said restoring 2% inflation is \"100 percent essential\", expects inflation of about 3.5% this year, and told reporters that raising rates at back-to-back meetings remains possible.",
+  "category": "Central Banks & Rates",
+  "byline": "Federal Reserve Bank of New York, The Jakarta Post (Reuters)"
+ },
+ {
+  "id": "2026-11-24-n3",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "EU caps hybrid car imports from 1 December, limiting China to about 191,780 vehicles over 200 days",
+  "tldr": "The European Commission has published temporary quotas on hybrid car imports from China, Japan, Turkey, South Korea, the UK and others, aimed mainly at a surge of Chinese hybrids.",
+  "category": "Trade & Policy",
+  "byline": "The Guardian, electrive"
+ },
+ {
+  "id": "2026-11-24-n4",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "Best Buy raises its annual forecast after comparable sales grow 6.1%, its best quarter in five years",
+  "tldr": "The electronics retailer beat its own expectations on computing, phones and new categories such as AI glasses, and lifted full-year sales and profit guidance ahead of the holidays.",
+  "category": "Consumer & Retail",
+  "byline": "Best Buy (Business Wire release), Rallies"
+ },
+ {
+  "id": "nber-w36038",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "Five Facts About Stablecoins",
+  "tldr": "Wallet-level blockchain data from 2020 to 2025 suggest dollar stablecoins are now used as money for payments rather than mainly for crypto speculation, with little sign that they drain bank deposits.",
+  "primary_tag": "Banking & credit",
+  "tags": [
+   "Banking & credit",
+   "Innovation & technology",
+   "Regulation"
+  ],
+  "byline": "Lin William Cong, Gordon Y. Liao, Eswar S. Prasad et al. · Nanyang Technological University; Circle; Cornell University; Arizona State University",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-23-n1",
   "date": "2026-11-23",
   "type": "news",
