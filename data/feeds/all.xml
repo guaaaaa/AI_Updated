@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 11:48:15 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 12:16:04 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Anthropic launches Claude Ship, with agents that fix pull requests and approve routine code changes</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n1</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Product &amp; Features</category>
+    <description>Anthropic's Claude Ship bundles Code Review with two beta agents: PR Steward, which repairs pull requests, and Claude Approvals, which approves routine changes under a policy the team writes. (The Verge, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Oregon and Virginia sue SpaceX, alleging Grok still generates sexualized deepfakes of real people despite safety claims</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n2</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Policy &amp; Legal</category>
+    <description>The attorneys general of Oregon and Virginia filed the first state lawsuits against SpaceX over Grok, alleging weak image safeguards and misleading safety statements in violation of consumer protection laws. (The Verge, Ars Technica)</description>
+  </item>
+  <item>
+    <title>Language Model Harnesses can be Compositional Generalizers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28298</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28298</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Harnesses that keep context outside the model and call sub-models through code can be trained on short tasks and then solve tasks up to 64 times longer, because every individual call stays familiar. (Alex L. Zhang, Souradip Chakraborty, Omar Khattab · MIT CSAIL)</description>
+  </item>
+  <item>
+    <title>The Temporal Residual: Fast and Effective Retrofitting of Latent Feedback into Pretrained Language Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.29843</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.29843</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>A second residual stream carried from each token to the next turns a pretrained transformer into a recurrent model with 2,752 new parameters, raising competition-math accuracy and enabling reasoning hidden from the text. (Ziyang Cai, Xingyu Zhu, Sanjeev Arora · Princeton University)</description>
+  </item>
+  <item>
+    <title>OWE-Bench: A long-horizon benchmark for measuring real-world engineering</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30017</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30017</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>OWE-Bench gives agents 26 expert-written engineering tasks lasting hours and scores them on hidden cases, where every model does worse than on the cases it could test against, and worse than it predicts. (Jacob Cole, Martin Dimakis, Victor Barres et al.)</description>
+  </item>
+  <item>
+    <title>RoboThink: Let the Agent Think, Let the Policy Act</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30111</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30111</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>RoboThink has a slow reasoning model watch a fast robot policy and pass corrections through a channel the policy is trained to read, recovering from motion drift and misheard requests. (Yunbei Zhang, Zijian Jin, Janet Wang et al. · Tulane University, NYU, Northeastern University)</description>
+  </item>
+  <item>
+    <title>Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28833</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28833</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / RSI</category>
+    <description>A 0.8B-parameter model that edits its own weights raises its GSM8K accuracy from 11.8% to 62.2%, but the authors show it does not understand its edits and random search sometimes does as well. (Guoming Ling, Shanshan Zhong, Kaixuan Zhang et al. · Carnegie Mellon University, MilkThink)</description>
+  </item>
   <item>
     <title>South Korea's power utility KEPCO confirms a breach that exposed data on 1.52 million people, including bank and card numbers</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Sat, 21 Nov 2026 11:48:23 +0000</pubDate>
     <category>Tech / Software &amp; Platforms</category>
     <description>Signal's iOS and Android apps now block screenshots by default so built-in AI agents cannot capture chats, and the company says operating systems give developers no robust way to stop such access. (The Register, Engadget)</description>
-  </item>
-  <item>
-    <title>Polymorph: Operating System Kernel Optimization Through Artificial Intelligence</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2611.23644</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-21/2611.23644</guid>
-    <pubDate>Sat, 21 Nov 2026 11:48:23 +0000</pubDate>
-    <category>Tech / Operating systems &amp; storage</category>
-    <description>Polymorph has an AI agent write one tunable Linux kernel policy, then tunes it live without a language model, beating Linux's defaults for page caching and scheduling at far lower cost than offline search. (Dean Sysman, Georgios Liargkovas, Tal Zussman et al.)</description>
-  </item>
-  <item>
-    <title>A daily KRAS-blocking pill plus chemotherapy stops tumour growth in 90% of patients with advanced pancreatic cancer in an early trial</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/2026-11-20-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/2026-11-20-n1</guid>
-    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
-    <category>Biology / Clinical Research</category>
-    <description>In a 61-patient phase 1/2 trial, daraxonrasib plus standard chemotherapy shrank tumours in just over 60% of people newly diagnosed with metastatic pancreatic cancer; 76.6% were alive at one year. (BBC News, The Guardian)</description>
-  </item>
-  <item>
-    <title>FDA grants accelerated approval to GSK's Nelkarmi for ALK-positive lung cancer that has outgrown earlier drugs</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/2026-11-20-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/2026-11-20-n2</guid>
-    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA cleared neladalkib, a daily pill, for advanced ALK-positive non-small cell lung cancer after earlier ALK inhibitors stop working, based on response rates of 49% and 32% in a 222-patient trial. (pharmaphorum, chemXplore)</description>
-  </item>
-  <item>
-    <title>Retatrutide Once Weekly in Adults with Knee Osteoarthritis Pain and Obesity</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1056-nejmoa2610676</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1056-nejmoa2610676</guid>
-    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
-    <category>Biology / Metabolic &amp; endocrine</category>
-    <description>In two phase 3 trials with 1,019 adults with obesity and painful knee osteoarthritis, weekly retatrutide injections cut pain scores and body weight significantly more than placebo, with more serious side effects. (Thomas J. Schnitzer David J. Hunter Philip G. Conaghan Arya M. Sharma Sue D. Pedersen Kaiyi Chen So Young Park Nune Makarova Kathryn Giblin and Tammy Forresterthe TRIUMPH-4 and TRIUMPH-1-OA Investigators* · Northwestern University Feinberg School of Medicine; University of Sydney; University of Leeds; University of Alberta; University of Calgary; Eli Lilly and Company)</description>
-  </item>
-  <item>
-    <title>A DNA Typewriter records the cell lineage history of a mouse, from zygote to late organogenesis</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1126-science-ael0508</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1126-science-ael0508</guid>
-    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
-    <category>Biology / Development &amp; aging</category>
-    <description>A DNA recorder inserted into a fertilized mouse egg wrote an ordered log of cell divisions into the genome, letting researchers rebuild a mouse embryo's cell family tree from the first division to organ formation. (Qi Yu, Haedong Kim, Sophie Seidel et al. · University of Washington School of Medicine; Howard Hughes Medical Institute; Dartmouth College)</description>
-  </item>
-  <item>
-    <title>Spatial transcriptomics reveals molecular organization of human and nonhuman primate basal ganglia</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1016-j-cell-2026-10-023</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-20/doi-10-1016-j-cell-2026-10-023</guid>
-    <pubDate>Fri, 20 Nov 2026 13:53:30 +0000</pubDate>
-    <category>Biology / Neuroscience</category>
-    <description>Mapping where each cell type sits in the basal ganglia of humans, macaques and marmosets, researchers found a highly stereotyped layout shared across primates and often with mice, with gene gradients laid over discrete compartments. (Madeleine N. Hewitt, Meghan A. Turner, Nelson Johansen et al. · Allen Institute for Brain Science; Princeton Neuroscience Institute; Leiden University Medical Center; Delft University of Technology; The Rockefeller University; Massachusetts Institute of Technology; Washington University in St. Louis; RIKEN; Kyoto University; University of Washington)</description>
-  </item>
-  <item>
-    <title>BepiColombo reaches Mercury after an eight-year voyage and prepares to become the second spacecraft ever to orbit it</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/2026-11-20-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-20/2026-11-20-n1</guid>
-    <pubDate>Fri, 20 Nov 2026 13:22:08 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>The European-Japanese BepiColombo mission has arrived at Mercury after more than eight years and is set to fire its thrusters to enter orbit, with science operations due to begin in April. (The Guardian, BBC News)</description>
   </item>
 </channel>
 </rss>

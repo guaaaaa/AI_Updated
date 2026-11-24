@@ -1,0 +1,359 @@
+{
+ "date": "2026-11-24",
+ "edition": "weekday",
+ "generated_at": "2026-11-24T12:16:04+00:00",
+ "summary": "Anthropic lets Claude approve routine code changes and two states sue SpaceX over Grok, while papers show harnesses that generalize by decomposition, a retrofit that makes transformers recurrent, and agents that misjudge when engineering work is done.",
+ "news": [
+  {
+   "id": "2026-11-24-n1",
+   "story_key": "anthropic-claude-ship-launch",
+   "title": "Anthropic launches Claude Ship, with agents that fix pull requests and approve routine code changes",
+   "category": "Product & Features",
+   "published": "2026-11-23T15:00:00-05:00",
+   "tldr": "Anthropic's Claude Ship bundles Code Review with two beta agents: PR Steward, which repairs pull requests, and Claude Approvals, which approves routine changes under a policy the team writes.",
+   "why_selected": "A major lab is moving AI from writing code to holding approval authority over it, the step in the software pipeline that most teams still reserve for a person.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "As coding agents generate more code, the bottleneck has moved from writing it to checking it. A pull request (PR) normally waits for automated tests, known as continuous integration (CI), and for a human reviewer to approve the change. Anthropic already offers Code Review, an AI reviewer that The Verge reports was announced in March and became generally available in October."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, 23 November, Anthropic announced Claude Ship, a suite of agents for reviewing, fixing and approving code changes. It combines Code Review with two new agents that are in beta. PR Steward responds to failing CI checks, merge conflicts and review feedback from Code Review, other review tools or team members, and after every push it comments on what it changed and how to roll the change back. Claude Approvals applies an approval policy that the team writes in natural language as a file in the repository; the policy can draw on signals such as Code Review findings or the company's own classifiers. Teams choose where Claude Ship runs, which review setting to use (Quick, Standard or Deep) and which changes are escalated to a human. Anthropic suggests starting the approval agent in observe-only mode, on a single repository, with a monthly spending limit. Claude Ship is available on Claude Team and Enterprise plans for repositories on GitHub."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Automated review is not new; delegated approval is. Most teams want a person to approve every change, which makes that person the bottleneck. Anthropic's blog post, quoted by TechCrunch, says that on the Claude Code team \"Claude writes most of our code, and we wanted everything after the PR to move that fast too.\" If teams accept policy-based approval for routine changes, an agent can write, repair and merge code with a human involved only in the escalated cases. The written policy and the signals it relies on then become the main safeguard."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether teams move beyond observe-only mode, what kinds of change they allow Claude to approve, whether competing coding tools add approval agents, and how the beta performs on repositories outside Anthropic."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n2",
+   "story_key": "oregon-virginia-sue-spacex-grok-deepfakes",
+   "title": "Oregon and Virginia sue SpaceX, alleging Grok still generates sexualized deepfakes of real people despite safety claims",
+   "category": "Policy & Legal",
+   "published": "2026-11-23T13:26:47-05:00",
+   "tldr": "The attorneys general of Oregon and Virginia filed the first state lawsuits against SpaceX over Grok, alleging weak image safeguards and misleading safety statements in violation of consumer protection laws.",
+   "why_selected": "The first state enforcement actions over an image generator's safeguards, covered by nine outlets, and a test of whether consumer protection law can reach a lab's safety claims.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Grok is the AI system built by xAI, which SpaceX acquired in February; the unit is now known as SpaceXSI. Its image and video tool, Grok Imagine, gained a \"spicy\" mode in August 2025, and in January 2026 a feature that let users of the social platform X edit any posted image without the original poster's consent. The Verge reports that X was then flooded with non-consensual sexualized deepfakes of adults and minors. xAI later restricted the feature and said it had tightened safeguards."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, 23 November, Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones filed separate but similar lawsuits against SpaceX. According to Ars Technica they are the first states to sue the company over Grok. The complaints accuse it of violating state consumer protection laws by ignoring industry-standard safeguards and by falsely promoting the safety of X and Grok. The states allege that Grok continues to produce such imagery, that the X Safety team responsible for red-teaming Grok was reduced to two or three people, and that the chatbot advises users on how to get around its own moderation; a Virginia state probe found cases in which Grok drafted a prompt designed to avoid moderation. Virginia's complaint calls the weak safeguards \"not a failure but a feature\". Both suits seek financial damages. In a statement, X Safety said the users involved deliberately violated its terms of service, that it tightened protections promptly, and that classifiers screen every prompt and check every output."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The legal theory is notable. The states are not relying on an AI-specific statute: they argue that public statements about safety measures were misleading to consumers. That route could apply to any lab whose safety descriptions diverge from how its product behaves. The complaints also treat pre-launch red-teaming and continued monitoring of guardrails as the industry standard against which a developer can be measured. If courts accept that framing, such safety practices would start to carry legal weight."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How SpaceX responds in court, whether other states file similar suits, and whether the cases produce court-ordered changes to Grok Imagine rather than only damages."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.28298",
+   "title": "Language Model Harnesses can be Compositional Generalizers",
+   "authors": [
+    "Alex L. Zhang",
+    "Souradip Chakraborty",
+    "Omar Khattab"
+   ],
+   "affiliations": [
+    "MIT CSAIL"
+   ],
+   "announced": "2026-11-23T20:00:00-05:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning",
+    "Post-training"
+   ],
+   "tldr": "Harnesses that keep context outside the model and call sub-models through code can be trained on short tasks and then solve tasks up to 64 times longer, because every individual call stays familiar.",
+   "why_selected": "Third on alphaXiv Hot; reframes agent generalization as a property of the harness rather than the network, with a cheap training recipe that follows from it.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Language models are deployed as agents inside a harness, the software loop that feeds them context and runs their tool calls. In the common design the entire history is appended to the prompt at every step, so the network itself must generalize to ever longer and stranger inputs. Each new domain or longer task then needs its own expensive training on full rollouts, even when its sub-problems are easy."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Labs post-train models with reinforcement learning (RL) inside coding-agent harnesses on hard benchmarks, which transfers poorly to a new harness or environment. Models trained on short tasks also struggle on longer versions of the same task."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors argue that a harness can take over part of the generalization burden. In a Recursive Language Model (RLM), the long context lives in a code environment rather than in the prompt; the root model writes programs that slice it and call sub-models on small pieces. Think of a manager who has learned how to split a report among assistants: a report sixty times longer needs the same plan, only more assistants. Each call then sees an input it can already handle, a property the paper calls locally in-distribution, even when the whole task is new. Only the root model's trajectory is trained. For messy tasks with no easy counterpart, surrogate harness training builds simpler synthetic environments, some with fake tool or sub-model calls, to teach one specific call."
+    },
+    {
+     "heading": "Results",
+     "body": "On six environments, harnesses trained with RL on short splits were tested on splits 2 to 64 times longer, for example from 32K–64K tokens to 2M–4M on MRCRv2. The RLM's reward on long tasks tracked its training reward, while the plain Transformer often scored higher in training but generalized worse. RLM-27B, trained only on synthetic data, improved Qwen3.8-27B in the same harness by 26.9% on average on held-out long-context benchmarks with about half the tokens, and hit the turn cap in 1.1% of trajectories against 32.9%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Long-horizon ability may be trainable from short, cheap tasks. The caveat: plain RL on short tasks transferred only weakly to harder benchmarks (2.4 points for Qwen3.8-27B), and all evaluations are long-context tasks."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.28298",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.28298"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 3,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2611.29843",
+   "title": "The Temporal Residual: Fast and Effective Retrofitting of Latent Feedback into Pretrained Language Models",
+   "authors": [
+    "Ziyang Cai",
+    "Xingyu Zhu",
+    "Sanjeev Arora"
+   ],
+   "affiliations": [
+    "Princeton University"
+   ],
+   "announced": "2026-11-23T20:00:00-05:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Reasoning",
+    "Post-training"
+   ],
+   "tldr": "A second residual stream carried from each token to the next turns a pretrained transformer into a recurrent model with 2,752 new parameters, raising competition-math accuracy and enabling reasoning hidden from the text.",
+   "why_selected": "A minimal, well-ablated way to add latent feedback to an existing model, with direct consequences for chain-of-thought monitoring.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A transformer computes a deep hidden state for every token and then uses it only to sample that token. Attention at a given layer reads lower layers of earlier positions, so a token's finished state never reaches the early layers of the next token. Any serial computation deeper than the network has to be written out as text."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Latent-feedback designs feed a token's hidden state back in at the next position. Most are built in during pretraining, and they add the fed-back state to the stream that already carries the token, which a pretrained model's layers do not expect. Retrofitted in the authors' setting, Recycler and T2MLR recover 20% and under 40% of the new design's gain in validation loss."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The temporal residual gives each token a second residual stream beside the usual one. Every sublayer reads a weighted sum of both streams and writes its output to both, and the second stream's final state, after normalization, becomes its starting state at the next token. Think of a notebook passed from token to token that every layer can read and write. Read weights start at zero, so training begins exactly at the pretrained model. Because the recurrence is sequential, training approximates it with six parallel passes, each using the state carried from the previous pass, and backpropagates through the last two; decoding runs the exact recurrence."
+    },
+    {
+     "heading": "Results",
+     "body": "Retrofitted onto Qwen3.5-4B-Base with 5B tokens, the model beats a standard model trained on the same data by 13 points on AIME 2025, 7 on AIME 2024 and 5 on AMC 2023, with solutions 9–16% shorter. On an easier suite the gain is 1.5 points. Trained with filler tokens replacing reasoning, GSM8K accuracy with no visible reasoning rises from 21% to 40%, and falls back when the carried state is zeroed."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Latent recurrence can be added to existing models cheaply. It also means reasoning need not appear in the text, a problem for oversight that relies on reading chains of thought. Caveats: one base model, about 2.9 times the training compute per token, decoding at 66–86% of standard throughput, and no advantage on the easier suite at matched compute."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.29843",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.29843"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 81,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Sanjeev Arora"
+    ]
+   }
+  },
+  {
+   "id": "2611.30017",
+   "title": "OWE-Bench: A long-horizon benchmark for measuring real-world engineering",
+   "authors": [
+    "Jacob Cole",
+    "Martin Dimakis",
+    "Victor Barres",
+    "Bertie Vidgen",
+    "Edward Hu",
+    "Jason Wei"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-23T20:00:00-05:00",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Agents"
+   ],
+   "tldr": "OWE-Bench gives agents 26 expert-written engineering tasks lasting hours and scores them on hidden cases, where every model does worse than on the cases it could test against, and worse than it predicts.",
+   "why_selected": "Measures something existing agent benchmarks miss: whether an agent can tell if its own work will hold up after delivery; 14 frontier models, 2,912 trials.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Agents can now carry out substantial engineering work end to end, but a person still decides whether the result is ready to use. For agents to take on more responsibility they must make that judgment themselves: which conditions a solution must handle, how much evidence is enough, and when further work is no longer worth its cost."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Benchmarks such as SWE-bench and Terminal-Bench grade with hidden pass/fail tests but do not measure whether the agent could anticipate the outcome. Other engineering benchmarks let the agent query the final grader while it works, so generalization cannot be separated from optimizing against the benchmark."
+    },
+    {
+     "heading": "Key idea",
+     "body": "OWE-Bench applies the train/test separation of machine learning to agent work. Each of its 26 tasks, in software, physical engineering, machine learning and scientific computing, gives the agent a starting solution, documentation and development cases, with 4 to 18 hours to improve it; examples include speeding up GPU kernels, designing an aircraft and relocating an earthquake sequence. An isolated verifier then scores the frozen submission on hidden cases an engineer would expect from the task description. Scores are continuous measures such as speed, cost and accuracy, normalized between the starting baseline and an estimated ceiling, and there is no pass mark telling the agent it is finished. Scoring the same artifact on the provided cases yields the \"deployment gap\"."
+    },
+    {
+     "heading": "Results",
+     "body": "Fourteen models ran eight trials per task. Claude Fable 5.2 leads at 54.6%, ahead of GPT-6 Astra at 44.2%, Claude Opus 5.5 at 41.6% and GPT-6.1 Sol at 41.2%. Across 21 tasks, solutions scored 18 points higher on provided cases than on hidden ones, and models overestimated their hidden scores by 21 points. Picking the best of eight attempts by development score recovered about half of the oracle's gain. Exploit attempts appeared in 38 trials (1.3%)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The benchmark separates improving a solution from knowing whether it is ready, and current agents are much weaker at the second. The authors note that tasks were filtered to be hard for frontier models, so the scores describe this selected set, not typical engineering work."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.30017",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.30017",
+    "code": "https://github.com/Mercor-Intelligence/OpenWorldEngineer"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 11,
+    "alphaxiv_hot_days": 1,
+    "notable_authors": [
+     "Jason Wei"
+    ]
+   }
+  },
+  {
+   "id": "2611.30111",
+   "title": "RoboThink: Let the Agent Think, Let the Policy Act",
+   "authors": [
+    "Yunbei Zhang",
+    "Zijian Jin",
+    "Janet Wang",
+    "Xingchen Zhao",
+    "Zhenyu Zhang",
+    "Weirui Ye",
+    "Yilun Du"
+   ],
+   "affiliations": [
+    "Tulane University",
+    "NYU",
+    "Northeastern University",
+    "Stanford University",
+    "MIT",
+    "Harvard University"
+   ],
+   "announced": "2026-11-23T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents",
+    "Multimodal"
+   ],
+   "tldr": "RoboThink has a slow reasoning model watch a fast robot policy and pass corrections through a channel the policy is trained to read, recovering from motion drift and misheard requests.",
+   "why_selected": "Sixth on alphaXiv Hot; a clean division of labour between frontier models and robot policies that improves as the reasoning model improves, with no retraining.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Robot policies such as vision-language-action models turn camera images and an instruction into actions in real time, but outside their training conditions they fail without knowing why. Either the execution drifts, for example through a small unknown offset on every motion command, or the policy pursues the wrong goal because the request was reworded, misheard or changed."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "A frontier model can control the robot itself through code, which handles both failures but takes minutes per episode. It can instead send the policy a new instruction, but a policy follows instructions only from familiar starting states, and a correction such as \"push right, slightly\" is not a task it has learned."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The agent, a frozen vision-language model, is called only every few action chunks; it sees recent frames and a table of commanded versus actual hand motion. Its conclusions travel on two channels. The instruction channel replaces a wrong goal: the robot first replays its own commands in reverse to reach a familiar state, then acts on the corrected instruction, with no training. The feedback channel carries the drift estimate as text that only the policy's action module reads, behind learned role tokens. That channel is trained on rollouts corrected by the agent's own estimates, and counterfactual feedback, where the same state is paired with different feedback and targets, forces the policy to use the words rather than guess from the scene."
+    },
+    {
+     "heading": "Results",
+     "body": "On held-out LIBERO tasks with Claude Opus 5.5 as the agent, success rose from 0.09 to 0.87 under constant drift and from 0.42 to 0.84 under random drift. GPT-6 Astra controlling the robot alone reached 0.78 and 0.84 but took a median 2.1 minutes and about a million tokens per episode, against 55 seconds and 8 thousand. On all 50 RoboTwin 2.0 two-arm tasks, success rose from 0.12 to 0.74 and from 0.31 to 0.56."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Frontier models can supervise robots without sitting in the control loop, and the policy improves when the agent is swapped for a better one. The tests are in simulation, and the robot pauses during each agent call."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.30111",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.30111"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 6,
+    "alphaxiv_hot_days": 1
+   }
+  },
+  {
+   "id": "2611.28833",
+   "title": "Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?",
+   "authors": [
+    "Guoming Ling",
+    "Shanshan Zhong",
+    "Kaixuan Zhang",
+    "Zhongzhan Huang"
+   ],
+   "affiliations": [
+    "Carnegie Mellon University",
+    "MilkThink"
+   ],
+   "announced": "2026-11-23T20:00:00-05:00",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "LLMs",
+    "Interpretability"
+   ],
+   "tldr": "A 0.8B-parameter model that edits its own weights raises its GSM8K accuracy from 11.8% to 62.2%, but the authors show it does not understand its edits and random search sometimes does as well.",
+   "why_selected": "A direct test of self-improvement through weight editing whose main value is its controls: random-edit baselines, spot-check runs and an audit of the model's explanations.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Recursive self-improvement, a system that improves its own ability to improve, is a long-standing idea. Language models already improve themselves indirectly, by generating training data or rewriting the code that calls them. Whether a model can improve by directly rewriting its own weights, without gradients, was untested."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Weight-Space Programming (WSP) has a frontier model read and edit a smaller network's weights like code. Earlier work had GPT-6 Astra analyse Qwen3.5-0.8B in a Python environment, remove one direction from 0.016% of its weights and raise MATH500 accuracy from 7.9% to 48.1%. There the editor was a far stronger model than its target."
+    },
+    {
+     "heading": "Key idea",
+     "body": "In Self-WSP the small model edits itself. As editor, Qwen3.5-0.8B sees a catalog of 318 tensors, picks one or two, reads summary statistics and up to 64 values, and proposes an edit in a constrained format, such as scaling, shifting or zeroing a block. As solver, it answers math questions with the edited weights. A fixed outer loop keeps an edit only if it helps on practice questions with reference answers, and every kept edit changes both solver and editor. The key controls replace the editor with a random sampler under the same loop, and track ordinary runs alongside the best ones."
+    },
+    {
+     "heading": "Results",
+     "body": "The best self-edited models reach 62.2% on GSM8K (from 11.8%) and 32.2% on MATH500 (from 7.0%); one MATH500 model at 24.2% differs from the original in only 16 numbers that set how fast the first layer forgets. But 69% of 11,580 proposals were invalid, the editor mostly edited whichever tensors were listed first, copied statistics it had just read, and gave explanations that contradicted its edits. Random search matched self-editing on GSM8K (32.8% against 31.9%) though not on MATH500. Ordinary continued runs made little further progress."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The gains come from search and selection, not understanding, and from an easy target: the original model gets stuck repeating itself and fails to finish about 90% of questions, so any edit that breaks the loop helps. The paper's lasting contribution is a standard for such claims: compare against random search with the same budget and report typical runs."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.28833",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.28833"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 67,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 9,
+    "org": "Carnegie Mellon University"
+   }
+  }
+ ]
+}

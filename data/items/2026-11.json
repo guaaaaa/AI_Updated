@@ -1,5 +1,102 @@
 [
  {
+  "id": "2026-11-24-n1",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "Anthropic launches Claude Ship, with agents that fix pull requests and approve routine code changes",
+  "tldr": "Anthropic's Claude Ship bundles Code Review with two beta agents: PR Steward, which repairs pull requests, and Claude Approvals, which approves routine changes under a policy the team writes.",
+  "category": "Product & Features",
+  "byline": "The Verge, TechCrunch"
+ },
+ {
+  "id": "2026-11-24-n2",
+  "date": "2026-11-24",
+  "type": "news",
+  "title": "Oregon and Virginia sue SpaceX, alleging Grok still generates sexualized deepfakes of real people despite safety claims",
+  "tldr": "The attorneys general of Oregon and Virginia filed the first state lawsuits against SpaceX over Grok, alleging weak image safeguards and misleading safety statements in violation of consumer protection laws.",
+  "category": "Policy & Legal",
+  "byline": "The Verge, Ars Technica"
+ },
+ {
+  "id": "2611.28298",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "Language Model Harnesses can be Compositional Generalizers",
+  "tldr": "Harnesses that keep context outside the model and call sub-models through code can be trained on short tasks and then solve tasks up to 64 times longer, because every individual call stays familiar.",
+  "primary_tag": "Agents",
+  "tags": [
+   "Agents",
+   "Reinforcement Learning",
+   "Post-training"
+  ],
+  "byline": "Alex L. Zhang, Souradip Chakraborty, Omar Khattab · MIT CSAIL",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.29843",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "The Temporal Residual: Fast and Effective Retrofitting of Latent Feedback into Pretrained Language Models",
+  "tldr": "A second residual stream carried from each token to the next turns a pretrained transformer into a recurrent model with 2,752 new parameters, raising competition-math accuracy and enabling reasoning hidden from the text.",
+  "primary_tag": "Architectures",
+  "tags": [
+   "Architectures",
+   "Reasoning",
+   "Post-training"
+  ],
+  "byline": "Ziyang Cai, Xingyu Zhu, Sanjeev Arora · Princeton University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.30017",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "OWE-Bench: A long-horizon benchmark for measuring real-world engineering",
+  "tldr": "OWE-Bench gives agents 26 expert-written engineering tasks lasting hours and scores them on hidden cases, where every model does worse than on the cases it could test against, and worse than it predicts.",
+  "primary_tag": "Evaluation & Benchmarks",
+  "tags": [
+   "Evaluation & Benchmarks",
+   "Agents"
+  ],
+  "byline": "Jacob Cole, Martin Dimakis, Victor Barres et al.",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.30111",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "RoboThink: Let the Agent Think, Let the Policy Act",
+  "tldr": "RoboThink has a slow reasoning model watch a fast robot policy and pass corrections through a channel the policy is trained to read, recovering from motion drift and misheard requests.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Agents",
+   "Multimodal"
+  ],
+  "byline": "Yunbei Zhang, Zijian Jin, Janet Wang et al. · Tulane University, NYU, Northeastern University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.28833",
+  "date": "2026-11-24",
+  "type": "paper",
+  "title": "Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?",
+  "tldr": "A 0.8B-parameter model that edits its own weights raises its GSM8K accuracy from 11.8% to 62.2%, but the authors show it does not understand its edits and random search sometimes does as well.",
+  "primary_tag": "RSI",
+  "tags": [
+   "RSI",
+   "LLMs",
+   "Interpretability"
+  ],
+  "byline": "Guoming Ling, Shanshan Zhong, Kaixuan Zhang et al. · Carnegie Mellon University, MilkThink",
+  "hf": 9,
+  "venue": null
+ },
+ {
   "id": "2026-11-23-n1",
   "date": "2026-11-23",
   "type": "news",

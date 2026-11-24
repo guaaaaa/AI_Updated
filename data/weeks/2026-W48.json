@@ -3,73 +3,86 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [
+  {
+   "id": "2611.29897",
+   "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
+   "hf": 122,
+   "org": "Peking University",
+   "featured": null
+  },
   {
    "id": "2611.27193",
    "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
-   "hf": 78,
+   "hf": 94,
    "org": "XingChen-AGI",
+   "featured": null
+  },
+  {
+   "id": "2611.31201",
+   "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+   "hf": 83,
+   "org": "MMLab@NTU",
    "featured": null
   },
   {
    "id": "2611.27963",
    "title": "Non-penetrating World Models",
-   "hf": 48,
+   "hf": 57,
    "org": "The Hong Kong Polytechnic University",
    "featured": null
   },
   {
-   "id": "2611.27973",
-   "title": "MemOnce: A Scalable Memory Architecture for Large Language Models",
-   "hf": 12,
-   "org": "Nanjing University",
+   "id": "2611.30662",
+   "title": "WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce",
+   "hf": 52,
+   "org": "Tencent",
    "featured": null
   },
   {
-   "id": "2611.27915",
-   "title": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
-   "hf": 6,
-   "org": "xpeng-robotics",
+   "id": "2611.30013",
+   "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+   "hf": 48,
+   "org": "Peking University",
    "featured": null
   },
   {
-   "id": "2611.27229",
-   "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
-   "hf": 3,
-   "org": "City University of Hong Kong",
+   "id": "2611.26954",
+   "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
+   "hf": 43,
+   "org": "University at Buffalo",
    "featured": null
   },
   {
-   "id": "2611.27211",
-   "title": "Explicit Style Extraction for Personalized Long-Form Text Generation",
-   "hf": 2,
-   "org": null,
-   "featured": null
-  },
-  {
-   "id": "2611.27398",
-   "title": "Taking Apart and Putting Together: Tracking Objects Through Physical Transformations",
-   "hf": 1,
-   "org": "Multimedia and Human Understanding Group",
+   "id": "2611.30989",
+   "title": "WorldLeague: Benchmarking Physical Agency",
+   "hf": 34,
+   "org": "National University of Singapore",
    "featured": null
   }
  ],
  "stories": [
   {
-   "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
-   "outlets": 11,
+   "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
+   "outlets": 17,
    "date": "2026-11-20",
    "covered": null
+  },
+  {
+   "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+   "outlets": 12,
+   "date": "2026-11-20",
+   "covered": null
+  },
+  {
+   "title": "States Sue SpaceX Over Grok Deepfakes",
+   "outlets": 9,
+   "date": "2026-11-23",
+   "covered": "2026-11-24-n2"
   },
   {
    "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-   "outlets": 5,
-   "date": "2026-11-20",
-   "covered": null
-  },
-  {
-   "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
    "outlets": 5,
    "date": "2026-11-20",
    "covered": null
@@ -79,10 +92,16 @@
    "outlets": 3,
    "date": "2026-11-22",
    "covered": "2026-11-23-n1"
+  },
+  {
+   "title": "OpenAI engineer possessed dozens of meeting recordings, say US prosecutors",
+   "outlets": 3,
+   "date": "2026-11-24",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 1,
-  "papers": 5
+  "news": 3,
+  "papers": 10
  }
 }

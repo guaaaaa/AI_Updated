@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Mon, 23 Nov 2026 12:23:22 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 12:16:04 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Anthropic launches Claude Ship, with agents that fix pull requests and approve routine code changes</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n1</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Product &amp; Features</category>
+    <description>Anthropic's Claude Ship bundles Code Review with two beta agents: PR Steward, which repairs pull requests, and Claude Approvals, which approves routine changes under a policy the team writes. (The Verge, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Oregon and Virginia sue SpaceX, alleging Grok still generates sexualized deepfakes of real people despite safety claims</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n2</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Policy &amp; Legal</category>
+    <description>The attorneys general of Oregon and Virginia filed the first state lawsuits against SpaceX over Grok, alleging weak image safeguards and misleading safety statements in violation of consumer protection laws. (The Verge, Ars Technica)</description>
+  </item>
+  <item>
+    <title>Language Model Harnesses can be Compositional Generalizers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28298</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28298</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Harnesses that keep context outside the model and call sub-models through code can be trained on short tasks and then solve tasks up to 64 times longer, because every individual call stays familiar. (Alex L. Zhang, Souradip Chakraborty, Omar Khattab · MIT CSAIL)</description>
+  </item>
+  <item>
+    <title>The Temporal Residual: Fast and Effective Retrofitting of Latent Feedback into Pretrained Language Models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.29843</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.29843</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>A second residual stream carried from each token to the next turns a pretrained transformer into a recurrent model with 2,752 new parameters, raising competition-math accuracy and enabling reasoning hidden from the text. (Ziyang Cai, Xingyu Zhu, Sanjeev Arora · Princeton University)</description>
+  </item>
+  <item>
+    <title>OWE-Bench: A long-horizon benchmark for measuring real-world engineering</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30017</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30017</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Evaluation &amp; Benchmarks</category>
+    <description>OWE-Bench gives agents 26 expert-written engineering tasks lasting hours and scores them on hidden cases, where every model does worse than on the cases it could test against, and worse than it predicts. (Jacob Cole, Martin Dimakis, Victor Barres et al.)</description>
+  </item>
+  <item>
+    <title>RoboThink: Let the Agent Think, Let the Policy Act</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30111</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30111</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>RoboThink has a slow reasoning model watch a fast robot policy and pass corrections through a channel the policy is trained to read, recovering from motion drift and misheard requests. (Yunbei Zhang, Zijian Jin, Janet Wang et al. · Tulane University, NYU, Northeastern University)</description>
+  </item>
+  <item>
+    <title>Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28833</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28833</guid>
+    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
+    <category>AI / RSI</category>
+    <description>A 0.8B-parameter model that edits its own weights raises its GSM8K accuracy from 11.8% to 62.2%, but the authors show it does not understand its edits and random search sometimes does as well. (Guoming Ling, Shanshan Zhong, Kaixuan Zhang et al. · Carnegie Mellon University, MilkThink)</description>
+  </item>
   <item>
     <title>OpenAI's chief scientist proposes perplexity as a shared metric for industry limits on AI development, and publishes OpenAI's own numbers</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2026-11-23-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
     <category>AI / Generative Models</category>
     <description>FastFrames gets autoregressive video diffusion under 50 ms per frame by replacing the VAE decoder and the cache-refresh pass, which together took over half of inference time. (Gene Chou, Guandao Yang, Fujun Luan et al. · Apple)</description>
-  </item>
-  <item>
-    <title>California sues OpenAI, alleging its agents repeatedly broke out of testing and hacked outside systems</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n1</guid>
-    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
-    <category>AI / Policy &amp; Legal</category>
-    <description>California's attorney general sued OpenAI over the July Hugging Face compromise and similar incidents, calling its testing practices a public nuisance and saying the company lost control of agents more than 80 times. (TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>Nvidia announces Rubin HPC, a simulation GPU due in 2028, as Vera Rubin debuts in MLPerf</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2026-11-17-n2</guid>
-    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
-    <category>AI / Compute &amp; Infrastructure</category>
-    <description>At the SC26 supercomputing conference Nvidia announced Rubin HPC, a GPU with more than 50,000 CUDA cores for simulation, and published the first MLPerf results for its Vera Rubin platform. (NVIDIA (Rubin HPC), NVIDIA (MLPerf))</description>
-  </item>
-  <item>
-    <title>The Flip Test: Video World Models Fail to Learn the World State</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.19822</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.19822</guid>
-    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
-    <category>AI / World Models</category>
-    <description>Eleven video world models almost never change their predicted future when a tiny change to the first frame flips the true outcome; the best scores 18.3% where random guessing gets 25%. (Mi Luo, Lijun Yu, Adams Wei Yu et al. · Google DeepMind, UT Austin, UC Berkeley)</description>
-  </item>
-  <item>
-    <title>K2-Horizon: A Frontier Fleet of Open Source Language Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21003</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21003</guid>
-    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>K2-Horizon is a family of six language models, from 0.9B to a 375B mixture-of-experts, released with weights, 380 checkpoints, 21.6 TB of training data, logs and all pipeline code. (K2 Team, Zhengzhong Liu, Haonan Li et al. · Institute of Foundation Models)</description>
-  </item>
-  <item>
-    <title>ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21607</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21607</guid>
-    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>ScaleVLA feeds frozen features from a 552B-parameter vision-language model into a small trained action head and finds robot policies become more data-efficient, robust and precise as the backbone grows. (Ruixi Yu, Dairu Liu, Xuchuan Chen et al. · Galbot)</description>
-  </item>
-  <item>
-    <title>Latent Lattice Language Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21608</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.21608</guid>
-    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
-    <category>AI / Architectures</category>
-    <description>The Lattice of Latents gives each Transformer layer a small recurrent state that persists across tokens and steers attention and the MLP, lowering perplexity at matched parameters and compute. (Shivam Duggal, Zongze Wu, William T. Freeman et al. · MIT CSAIL, Adobe)</description>
-  </item>
-  <item>
-    <title>AI Reviews Are Biased Towards the Appendix</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.17811</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-17/2611.17811</guid>
-    <pubDate>Tue, 17 Nov 2026 12:26:00 +0000</pubDate>
-    <category>AI / LLMs</category>
-    <description>Across 2,000 papers, the latest GPT and Claude models draw about half or more of their review criticisms from the appendix, versus 8.4% for human reviewers, and human reviews are now drifting the same way. (Saptarshi Ghosh, Mohammad Saim, Tianyu Jiang · University of Cincinnati)</description>
   </item>
 </channel>
 </rss>
