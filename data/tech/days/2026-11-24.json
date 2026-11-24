@@ -1,0 +1,214 @@
+{
+ "date": "2026-11-24",
+ "edition": "weekday",
+ "generated_at": "2026-11-24T11:48:15+00:00",
+ "summary": "South Korea's power utility confirms a breach affecting 1.52 million people, Nvidia reinstates Jensen Huang, Amazon buys chip-optimization software, and German media report a possible Russian nuclear satellite launch.",
+ "news": [
+  {
+   "id": "2026-11-24-n1",
+   "story_key": "kepco-data-breach-1-52-million",
+   "title": "South Korea's power utility KEPCO confirms a breach that exposed data on 1.52 million people, including bank and card numbers",
+   "category": "Cybersecurity",
+   "published": "2026-11-22T05:17:00-05:00",
+   "tldr": "Korea Electric Power Corporation says an intruder took personal data on about 1.52 million customers, suppliers and staff from its billing platform and procurement system; the privacy regulator has opened an investigation.",
+   "why_selected": "A breach at a state-controlled operator of critical infrastructure that exposed national ID, bank and card numbers at large scale, confirmed by the company and the regulator.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Korea Electric Power Corporation (KEPCO) is South Korea's main electric power company and is state-controlled. Two of its systems hold large amounts of personal data: KEPCO ON, the platform customers use to view and pay electricity bills, which has 9.2 million users, and SRM, its electronic procurement system."
+    },
+    {
+     "heading": "What happened",
+     "body": "KEPCO said on Sunday, November 22, that it had confirmed two days earlier that personal data had leaked from both systems. From KEPCO ON, records on 650,487 customers were exposed, about 7.1% of the platform's users. They include names, resident or foreign registration numbers, phone numbers, addresses, bank account numbers, card numbers and billing information. From SRM, the data covers 426,827 company representatives (names, registration numbers, email and company addresses) and 442,934 KEPCO and corporate employees (names, affiliations, employee numbers and contact details). Seoul Economic Daily puts the total at 1,520,248 people.\n\nAccording to the Personal Information Protection Commission, KEPCO received an email on November 19 from a hacker claiming to have stolen the data. On November 20 the company confirmed the material had been posted on the dark web, verified sample data, blocked access from external IP addresses and suspended the affected services."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The exposed fields are the kind that enable fraud: national registration numbers combined with bank and card details can be used for impersonation and targeted phishing. There is also a concern beyond personal data. Seoul Economic Daily notes that SRM holds procurement records for power grid construction projects, and an industry official told the paper that a leak of facility locations or equipment details would be serious. KEPCO has not said that such records were taken, and it has given no details of how the intruder got in beyond a reference to \"advanced technologies such as AI\"."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The commission formed a response team on November 23 and began an on-site inspection. It will determine the cause and scale of the breach and whether KEPCO met its legal duties on data safety and breach notification."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Seoul Economic Daily",
+     "url": "https://en.sedaily.com/economy/2026/11/22/kepco-hack-exposes-152-million-records-including-id-and"
+    },
+    {
+     "name": "Seoul Economic Daily (regulator probe)",
+     "url": "https://en.sedaily.com/business/2026/11/23/korea-probes-data-breach-at-kepco-affecting-152-million"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n2",
+   "story_key": "nvidia-reinstates-jensen-huang-ceo",
+   "title": "Nvidia's board reinstates Jensen Huang as chief executive less than two weeks after his resignation",
+   "category": "Chips & Hardware",
+   "published": "2026-11-23T09:21:00-05:00",
+   "tldr": "Nvidia's board voted unanimously to bring Jensen Huang back as CEO and president, saying input from senior US government officials convinced it that his return poses no national security risk.",
+   "why_selected": "A leadership reversal at the world's most valuable chipmaker, covered by six outlets, with direct involvement of the US president.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Jensen Huang co-founded Nvidia, now the world's most valuable chipmaker, in 1993. He left the roles of chief executive and president on November 12. TechCrunch reports that he resigned after admitting to at least two extramarital affairs, one of them with a woman the US government suspects of being a Chinese spy. Chief financial officer Colette Kress became interim CEO, and the board hired the search firm Heidrick & Struggles to find a permanent successor."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, November 23, Nvidia said its board had voted unanimously to reinstate Huang as CEO and president. The company said the decision followed a series of discussions and meetings with Huang, after which directors were \"satisfied with respect to Mr. Huang's candor and ability to lead Nvidia\". It added that the board \"received input from senior levels of the United States government\" and is confident the reinstatement \"poses no national security risk\". Harvey Jones, who became board chair when Huang resigned, keeps that role.\n\nThe Register reports, citing a White House statement to Semafor, that President Trump dialed in to an Nvidia board meeting hours before the decision to argue for Huang's return. Trump wrote on Truth Social that the attorney general had confirmed the government holds no evidence of unlawful conduct by Huang. Nvidia shares opened about 30% higher."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The reversal is abrupt. Only days earlier, on the third-quarter earnings call, Jones had said the board did not intend to reinstate Huang. Nvidia's stock had fallen since his departure, and executives including Elon Musk and Epic Games chief Tim Sweeney signed a petition for his return. The episode also shows how closely the US government is now involved in the affairs of a company it treats as strategically important: by the board's own account, government input shaped a decision about who runs it."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the board says more about how it reached its conclusion, and how the company works with a chair and a CEO who are now different people."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/systems/2026/11/23/nvidia-board-puts-jensen-huang-back-as-boss/5311674"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n3",
+   "story_key": "amazon-decart-optimization-stack-trainium",
+   "title": "Amazon buys Decart's chip-optimization software and hires its founders as it prepares to sell Trainium chips to customers",
+   "category": "Chips & Hardware",
+   "published": "2026-11-23T12:14:00-05:00",
+   "tldr": "Amazon is acquiring the Decart Optimization Stack, software that tunes AI workloads for specific chips, along with Decart's founders and engineers, in a deal Bloomberg values at about $7.5 billion.",
+   "why_selected": "A large deal aimed at the software layer that decides whether Amazon's own accelerator chips can compete with Nvidia's.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "An AI accelerator is only as useful as the software that runs on it. Between a model and a chip sit kernels (the low-level routines that do the arithmetic), compilers and runtimes, and how well these are tuned decides how much of the chip's capacity is actually used. Amazon designs its own accelerator, Trainium, which according to TechCrunch it has so far used in its own data centers."
+    },
+    {
+     "heading": "What happened",
+     "body": "Amazon announced on Monday, November 23, that it will buy the Decart Optimization Stack (DOS) from the Israeli startup Decart, and bring Decart's three founders and their engineering team into the company. An Amazon spokesperson told The Register the transaction is an asset purchase and not an acquisition of the whole company. Neither side disclosed a price; Bloomberg, citing sources, valued the deal at around $7.5 billion.\n\nDOS operates between the model and the chip, optimizing kernels, compilers and runtimes for the underlying hardware. Decart says it supports Nvidia GPUs, Google TPUs and Amazon's Trainium, and claims it reduces latency, raises throughput and lowers the cost of training and inference, the stage at which a trained model answers requests. Decart's other products, the Lucy live video model and the Oasis world model, were not part of the deal."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "TechCrunch reports that Amazon is preparing to start selling Trainium chips to customers as a competitor to Nvidia. Nvidia's hardware has been the standard so far, and Decart's technology could make it easier for customers to run their workloads on Amazon's chips instead. If Bloomberg's figure is right, The Register notes, this would be one of the most expensive deals in Amazon's history. Peter DeSantis, the Amazon senior vice president whose remit includes custom silicon, said that \"more efficient compute means better training ... faster inference, and better models for customers at a lower cost\"."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether DOS continues to support Nvidia and Google hardware under Amazon's ownership, what happens to the rest of Decart, and when Amazon begins selling Trainium chips."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/ai-and-ml/2026/11/23/amazon-scoops-up-ai-accelerator-tech-to-keep-chips-busy-at-all-times/5311754"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-n4",
+   "story_key": "russia-sputnik-s-nuclear-satellite-reports",
+   "title": "German media report that Russia could launch a nuclear-armed anti-satellite weapon into orbit as early as December",
+   "category": "Space Industry",
+   "published": "2026-11-23T14:28:00-05:00",
+   "tldr": "NDR, WDR and Süddeutsche Zeitung report that Western intelligence agencies believe Russia is preparing to launch a nuclear-armed satellite, which would threaten thousands of spacecraft in low Earth orbit; the Kremlin dismisses the claim.",
+   "why_selected": "A reported threat to every satellite operator in low Earth orbit, including commercial networks such as Starlink, with an on-record response from Germany's chancellor.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "US lawmakers first disclosed in early 2024 that Russia aimed to develop a space-based nuclear weapon for use against satellites. US officials said then that Russia had launched a test satellite in 2022 to study radiation effects on space hardware, but had not placed a nuclear weapon in orbit. In October, the US Defense Intelligence Agency said in a public report that Russia \"is developing a satellite designed to carry a nuclear weapon\"."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Monday, November 23, the German public broadcasters NDR and WDR and the newspaper Süddeutsche Zeitung reported that Western intelligence agencies, including Germany's armed forces and foreign intelligence service, believe Russia is preparing to deploy the weapon this year. According to the reports, the satellite is designated Sputnik-S, has been stored in the Moscow area for years, and could be launched as early as December in the assessment of Germany's Space Command.\n\nKremlin spokesperson Dmitry Peskov said the claims, attributed to unspecified sources, \"are hardly worth taking seriously\", and Russia's embassy in Germany said it knew of no such plans. German Chancellor Friedrich Merz said the news \"is not new, but that doesn't make it any less shocking\". The reports rest on intelligence assessments that have not been published."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A nuclear detonation in orbit would be indiscriminate. Ars Technica notes it would threaten thousands of satellites in low Earth orbit, including the Starlink communications network, military surveillance satellites and the International Space Station, as well as Russia's and China's own spacecraft. The Defense Intelligence Agency report says radiation belts left by a detonation could persist for years and damage satellites that at first were only temporarily disrupted. Stephen Whiting, head of US Space Command, has estimated that about one-third of satellites in low Earth orbit could fail within hours or days. A launch would also violate the 1967 Outer Space Treaty, which prohibits placing weapons of mass destruction in orbit and to which Russia is a party."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether any Western government confirms the assessment on the record, and whether a Russian launch in December matches the description in the reports."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/space/2026/11/russia-may-launch-a-nuclear-armed-satellite-far-sooner-than-we-thought/"
+    },
+    {
+     "name": "AeroTime",
+     "url": "https://www.aerotime.aero/articles/russia-nuclear-armed-satellite-launch-warning"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.30713",
+   "title": "Interrupt-Aware Static Detection of Deadlocks in Rust Operating Systems",
+   "authors": [
+    "Yuzhi Li",
+    "Hongliang Tian",
+    "Chengjun Chen",
+    "Jianfeng Jiang",
+    "Hui Xu"
+   ],
+   "affiliations": [
+    "Fudan University; Ant Group"
+   ],
+   "announced": "2026-11-23T20:00:00-05:00",
+   "primary_tag": "Operating systems & storage",
+   "tags": [
+    "Operating systems & storage",
+    "Software engineering"
+   ],
+   "tldr": "A static analysis that tracks both held locks and interrupt state in Rust kernels, paired with an AI agent that audits its reports, found nine maintainer-confirmed deadlock bugs in four Rust operating systems.",
+   "why_selected": "Finds real, confirmed bugs in four open-source Rust kernels and beats both an existing Rust deadlock detector and an agent working alone.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Rust is increasingly used to write operating systems because it rules out many memory errors and data races. It does not rule out deadlocks. One kind is specific to kernels: if a hardware interrupt arrives while code holds a lock, and the interrupt handler tries to take the same lock on the same CPU, the handler waits forever and the original code can never resume to release it."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Static analyzers for C kernels search a lock dependency graph for cycles, and some model interrupts, but they assume explicit lock and unlock calls. Rust instead releases a lock when a \"guard\" object goes out of scope, often implicitly. Existing Rust tools follow guards but ignore interrupts."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The tool analyzes MIR, an intermediate form produced by the Rust compiler, and at every program point tracks which locks may be held and whether interrupts may be enabled. Guards are tied to the specific lock they protect and to their effect on interrupts and these links are followed across function calls, so a callee that briefly re-enables interrupts is seen together with a lock its caller still holds. Because each Rust OS defines its own locking primitives, developers describe them with a few source annotations. The analysis reports cycles in the resulting lock dependency graph. Since many are infeasible, an AI agent reads the source for each report and labels it high or low confidence."
+    },
+    {
+     "heading": "Results",
+     "body": "On Asterinas, DragonOS, Motor-OS and Moros, the static analysis produced 132 candidates, of which 26 were true cases corresponding to nine distinct defects confirmed by maintainers. The agent marked 29 candidates high confidence, including 25 of the 26 true ones: 86.2% precision and 96.2% recall. On the three projects where the existing detector LockBud was compared, none of its 22 reports were true. An agent working without the static reports found 2 true cases; guided auditing used 81.0% fewer input tokens. Each project needed 7 to 27 annotations."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Interrupt deadlocks are hard to reproduce by testing, and memory safety does not prevent them. Caveats: annotations are written by hand, the agent missed one true case, and the evaluation covers four open-source projects."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.30713"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}

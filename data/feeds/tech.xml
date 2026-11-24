@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Mon, 23 Nov 2026 11:47:16 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 11:48:15 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>South Korea's power utility KEPCO confirms a breach that exposed data on 1.52 million people, including bank and card numbers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n1</guid>
+    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Korea Electric Power Corporation says an intruder took personal data on about 1.52 million customers, suppliers and staff from its billing platform and procurement system; the privacy regulator has opened an investigation. (Seoul Economic Daily, Seoul Economic Daily (regulator probe), BleepingComputer)</description>
+  </item>
+  <item>
+    <title>Nvidia's board reinstates Jensen Huang as chief executive less than two weeks after his resignation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n2</guid>
+    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>Nvidia's board voted unanimously to bring Jensen Huang back as CEO and president, saying input from senior US government officials convinced it that his return poses no national security risk. (TechCrunch, The Register)</description>
+  </item>
+  <item>
+    <title>Amazon buys Decart's chip-optimization software and hires its founders as it prepares to sell Trainium chips to customers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n3</guid>
+    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
+    <category>Tech / Chips &amp; Hardware</category>
+    <description>Amazon is acquiring the Decart Optimization Stack, software that tunes AI workloads for specific chips, along with Decart's founders and engineers, in a deal Bloomberg values at about $7.5 billion. (TechCrunch, The Register)</description>
+  </item>
+  <item>
+    <title>German media report that Russia could launch a nuclear-armed anti-satellite weapon into orbit as early as December</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n4</guid>
+    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
+    <category>Tech / Space Industry</category>
+    <description>NDR, WDR and Süddeutsche Zeitung report that Western intelligence agencies believe Russia is preparing to launch a nuclear-armed satellite, which would threaten thousands of spacecraft in low Earth orbit; the Kremlin dismisses the claim. (Ars Technica, AeroTime)</description>
+  </item>
+  <item>
+    <title>Interrupt-Aware Static Detection of Deadlocks in Rust Operating Systems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2611.30713</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2611.30713</guid>
+    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
+    <category>Tech / Operating systems &amp; storage</category>
+    <description>A static analysis that tracks both held locks and interrupt state in Rust kernels, paired with an AI agent that audits its reports, found nine maintainer-confirmed deadlock bugs in four Rust operating systems. (Yuzhi Li, Hongliang Tian, Chengjun Chen et al. · Fudan University; Ant Group)</description>
+  </item>
   <item>
     <title>The FBI investigates an apparent breach of NCIC, the database police across the US use to check warrants and stolen property</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-23/2026-11-23-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Fri, 13 Nov 2026 11:47:25 +0000</pubDate>
     <category>Tech / Software &amp; Platforms</category>
     <description>Microsoft 365 services that depend on Exchange Online failed worldwide from Thursday afternoon, and Microsoft's fixes had not brought sustained recovery more than 12 hours later. (BleepingComputer, The Register)</description>
-  </item>
-  <item>
-    <title>Apache patches a critical HTTP/2 flaw in its web server that could let attackers run code remotely</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2026-11-13-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2026-11-13-n2</guid>
-    <pubDate>Fri, 13 Nov 2026 11:47:25 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Apache HTTP Server 2.4.71 fixes a critical race condition in its HTTP/2 module that could let an unauthenticated attacker run code on servers that have HTTP/2 switched on. (Apache HTTP Server Project, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Police in nine countries seize 235 servers behind the Gootloader, CastleRAT and StealC malware</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2026-11-13-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2026-11-13-n3</guid>
-    <pubDate>Fri, 13 Nov 2026 11:47:25 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>An Operation Endgame action coordinated by Europol took down 235 servers and 257 domains used by three malware families and found about 6.4 million stolen credentials. (BleepingComputer, The Record)</description>
-  </item>
-  <item>
-    <title>Google opens pre-orders for its first Gemini smart glasses, made with Warby Parker, Gentle Monster and Samsung</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2026-11-13-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2026-11-13-n4</guid>
-    <pubDate>Fri, 13 Nov 2026 11:47:25 +0000</pubDate>
-    <category>Tech / Consumer Tech &amp; Devices</category>
-    <description>Google's camera-equipped "intelligent eyewear," starting at $395, is up for pre-order ahead of a December 10 launch, with privacy limits such as a tamper-checked recording light. (Google, Ars Technica)</description>
-  </item>
-  <item>
-    <title>A Universal Fault-Tolerant Quantum Computing Architecture with Globally Driven Atom Arrays</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2611.12098</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-13/2611.12098</guid>
-    <pubDate>Fri, 13 Nov 2026 11:47:25 +0000</pubDate>
-    <category>Tech / Quantum computing</category>
-    <description>A design for neutral-atom quantum computers that picks which qubits to operate on by moving helper atoms, letting simple global laser and microwave pulses run error-corrected computation in simulation. (Zhihao Zhang, Shuaifan Cao, Xinyang Yu et al. · Fudan University)</description>
-  </item>
-  <item>
-    <title>Attackers push rogue remote-access clients to hundreds of PCs through managed service providers' ScreenConnect panels</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-12/2026-11-12-n1</guid>
-    <pubDate>Thu, 12 Nov 2026 11:46:50 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Attackers used cloud-hosted ScreenConnect panels to install rogue remote-access software on at least 288 computers at 48 organizations; ConnectWise disabled five third-party extensions across about 400 partner environments. (BleepingComputer, Huntress)</description>
   </item>
 </channel>
 </rss>

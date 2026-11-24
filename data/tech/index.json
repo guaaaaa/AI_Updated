@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-23T13:56:05+00:00",
+ "updated": "2026-11-24T11:48:16+00:00",
  "domain": "tech",
  "days": [
+  {
+   "date": "2026-11-24",
+   "edition": "weekday",
+   "news": 4,
+   "papers": 1,
+   "backfill": false
+  },
   {
    "date": "2026-11-23",
    "edition": "weekday",
@@ -125,7 +132,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 70
+   "n": 75
   }
  ],
  "tag_groups": {
@@ -148,9 +155,9 @@
   ]
  },
  "tag_counts": {
-  "Operating systems & storage": 1,
+  "Operating systems & storage": 2,
+  "Software engineering": 2,
   "Security & privacy": 4,
-  "Software engineering": 1,
   "Quantum computing": 4,
   "Cryptography": 2,
   "Networking": 1,
@@ -168,12 +175,12 @@
   "Tech Business"
  ],
  "category_counts": {
-  "Cybersecurity": 33,
+  "Cybersecurity": 34,
+  "Chips & Hardware": 7,
+  "Space Industry": 6,
   "Telecom & Internet": 4,
   "Tech Policy & Antitrust": 5,
   "Software & Platforms": 4,
-  "Chips & Hardware": 5,
-  "Space Industry": 5,
   "Consumer Tech & Devices": 1,
   "Quantum Computing": 1,
   "Tech Business": 2

@@ -3,19 +3,43 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 1,
+ "digests": 2,
  "papers": [],
  "stories": [
   {
    "title": "The Best Pura Deals for Cyber Week (2026)",
-   "outlets": 8,
+   "outlets": 9,
    "date": "2026-11-20",
+   "covered": null
+  },
+  {
+   "title": "Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation",
+   "outlets": 5,
+   "date": "2026-11-20",
+   "covered": null
+  },
+  {
+   "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
+   "outlets": 3,
+   "date": "2026-11-23",
+   "covered": null
+  },
+  {
+   "title": "Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing",
+   "outlets": 3,
+   "date": "2026-11-23",
+   "covered": null
+  },
+  {
+   "title": "Apple renews Ted Lasso for season 5",
+   "outlets": 3,
+   "date": "2026-11-23",
    "covered": null
   }
  ],
  "featured": {
-  "news": 3,
-  "papers": 0
+  "news": 7,
+  "papers": 1
  },
  "items": [
   {
@@ -35,6 +59,36 @@
    "date": "2026-11-23",
    "type": "news",
    "title": "The FCC overrides California's landline rules, clearing AT&T to drop copper phone service for about 184,000 homes"
+  },
+  {
+   "id": "2026-11-24-n1",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "South Korea's power utility KEPCO confirms a breach that exposed data on 1.52 million people, including bank and card numbers"
+  },
+  {
+   "id": "2026-11-24-n2",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "Nvidia's board reinstates Jensen Huang as chief executive less than two weeks after his resignation"
+  },
+  {
+   "id": "2026-11-24-n3",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "Amazon buys Decart's chip-optimization software and hires its founders as it prepares to sell Trainium chips to customers"
+  },
+  {
+   "id": "2026-11-24-n4",
+   "date": "2026-11-24",
+   "type": "news",
+   "title": "German media report that Russia could launch a nuclear-armed anti-satellite weapon into orbit as early as December"
+  },
+  {
+   "id": "2611.30713",
+   "date": "2026-11-24",
+   "type": "paper",
+   "title": "Interrupt-Aware Static Detection of Deadlocks in Rust Operating Systems"
   }
  ]
 }
