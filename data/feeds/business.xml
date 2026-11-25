@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/business</link>
   <description>Markets, companies and the economy</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 12:46:55 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 12:46:29 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/business.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Britain's energy price cap will rise 26% in January, taking a typical annual bill to £2,166</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n1</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Energy &amp; Commodities</category>
+    <description>Ofgem will lift the cap on default energy tariffs by 26% from 1 January after wholesale gas prices surged, affecting around 20 million households in England, Scotland and Wales. (Ofgem, BBC)</description>
+  </item>
+  <item>
+    <title>Bank of Canada will stress headline inflation and may raise rates sooner when supply shocks hit</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n2</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Central Banks &amp; Rates</category>
+    <description>Governor Tiff Macklem set out how the renewed 2% inflation framework will work in practice: more weight on headline CPI, new preferred core measures and a readiness to act early on large supply shocks. (Bank of Canada, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Dell's quarterly revenue doubles to $54.9 billion as its AI server backlog reaches $132 billion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n3</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Tech &amp; AI Business</category>
+    <description>Dell reported record third-quarter revenue of $54.9 billion, up 103%, raised its full-year revenue guidance to $202 billion and added $25 billion to its share buyback authorization. (Dell Technologies, BigGo Finance)</description>
+  </item>
+  <item>
+    <title>Subprime used-car dealer America's Car-Mart files for Chapter 11 and agrees to sell itself to a group led by former executives</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n4</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Banking &amp; Finance</category>
+    <description>America's Car-Mart filed a pre-packaged Chapter 11 case in Texas with $60 million of new financing and a deal to sell substantially all its assets to Cardinal Asset Holdings. (Yahoo Finance, Car Dealership Guy News)</description>
+  </item>
+  <item>
+    <title>CFOs Meet LLMs</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/nber-w36057</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/nber-w36057</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Corporate finance</category>
+    <description>An AI model asked to role-play individual chief financial officers predicted their actual survey answers on economic optimism, explaining 27% of the variation across 6,075 responses from 2002 to 2025. (John R. Graham, Campbell R. Harvey, Manish Jha · Duke University; NBER; Georgia State University)</description>
+  </item>
   <item>
     <title>Sanofi agrees to buy lung-disease drugmaker Insmed for about $41 billion in cash</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-24/2026-11-24-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
     <category>Business / Trade &amp; Policy</category>
     <description>China will cut tariffs on about C$400 million of Canadian pork and seafood exports, and Canada will extend and widen tariff refunds on Chinese steel and aluminium it cannot source at home. (The Globe and Mail, Reuters (via TimesLIVE), BNN Bloomberg (The Canadian Press))</description>
-  </item>
-  <item>
-    <title>Home Depot names finance chief Richard McPhail as CEO and reports quarterly sales of $43.4 billion, ahead of estimates</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n5</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/2026-11-17-n5</guid>
-    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
-    <category>Business / Earnings &amp; Companies</category>
-    <description>Home Depot promoted CFO Richard McPhail to chief executive from November 23 and posted third-quarter sales of $43.4 billion, while do-it-yourself spending stays weak. (The Home Depot (PR Newswire), The Globe and Mail)</description>
-  </item>
-  <item>
-    <title>How Does Capital Flow To Poor Countries? Evidence from Venture Capital and Private Equity</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/nber-w36036</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-17/nber-w36036</guid>
-    <pubDate>Tue, 17 Nov 2026 12:49:11 +0000</pubDate>
-    <category>Business / Corporate finance</category>
-    <description>A survey experiment with 1,485 venture capital and private equity investors in 108 countries finds that identical firms attract much less interest when located in poorer countries, especially from non-specialist investors. (Emanuele Colonnelli, Marcio Cruz, Josh Lerner et al.)</description>
-  </item>
-  <item>
-    <title>Japan's economy shrinks at a 0.1% annualized rate in the third quarter, its first contraction in four quarters</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n1</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>Japan's real GDP edged down 0.02% in July-September, a 0.1% annualized fall that missed forecasts of growth, as households cut spending while business investment rose 1.6%. (Cabinet Office of Japan, Xinhua)</description>
-  </item>
-  <item>
-    <title>China's October retail sales grow just 0.4% and investment falls 8.1%, missing forecasts across the board</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n2</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Economy &amp; Data</category>
-    <description>China's retail sales, factory output and fixed-asset investment all came in below expectations in October, with consumer spending nearly flat and property investment down 21.6% so far this year. (National Bureau of Statistics of China, ING Think, Quartz)</description>
-  </item>
-  <item>
-    <title>Carney says Canada could turn to Chinese automakers if US trade talks fail to protect its auto industry</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-16/2026-11-16-n3</guid>
-    <pubDate>Mon, 16 Nov 2026 19:23:07 +0000</pubDate>
-    <category>Business / Trade &amp; Policy</category>
-    <description>Days before meeting Xi Jinping, Mark Carney said Canada will pursue European, Chinese or Japanese carmakers if a US deal does not leave it a viable auto sector. (The Guardian, Euronews, The Globe and Mail)</description>
   </item>
 </channel>
 </rss>

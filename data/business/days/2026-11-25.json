@@ -1,0 +1,208 @@
+{
+ "date": "2026-11-25",
+ "edition": "weekday",
+ "generated_at": "2026-11-25T12:46:29+00:00",
+ "summary": "Britain's energy price cap jumps 26%, the Bank of Canada changes how it reads and answers supply shocks, Dell's revenue doubles on AI servers, and subprime car dealer America's Car-Mart files for Chapter 11.",
+ "news": [
+  {
+   "id": "2026-11-25-n1",
+   "story_key": "uk-energy-price-cap-january-2027",
+   "title": "Britain's energy price cap will rise 26% in January, taking a typical annual bill to £2,166",
+   "category": "Energy & Commodities",
+   "published": "2026-11-24T19:03:00-05:00",
+   "tldr": "Ofgem will lift the cap on default energy tariffs by 26% from 1 January after wholesale gas prices surged, affecting around 20 million households in England, Scotland and Wales.",
+   "why_selected": "The largest rise in British household energy bills since the Ukraine invasion, with direct effects on consumer spending, household debt and inflation.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Ofgem, Britain's energy regulator, sets a price cap every three months. It limits the unit rates and standing charges on default (standard variable) tariffs in England, Scotland and Wales, not the total bill, which depends on usage. The cap follows suppliers' costs, mainly wholesale energy prices measured over a three-month window that ends about six weeks before the new cap begins."
+    },
+    {
+     "heading": "What happened",
+     "body": "Ofgem announced that the cap will rise 26% for 1 January to 31 March 2027. For a typical household paying by direct debit for gas and electricity, the annualised bill goes from £1,723 to £2,166. Ofgem attributed the increase to the continued conflict in the Middle East pushing up international gas prices: it said wholesale gas prices have roughly tripled since the conflict started, driving a 33% rise in gas bills and a 19% rise in electricity bills in the new cap. Average unit rates will be 32.69p per kilowatt-hour for electricity, up from 26.32p, and 10.96p for gas, up from 7.97p, the BBC reported. Around 20 million households on standard variable tariffs are affected; around 10 million on fixed deals are not until those deals end. The government will pay around 20 million households £100 toward bills from January."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The BBC put the increase at about £37 a month for a typical household, possibly closer to £60 in winter. It called the rise the biggest since Russia's invasion of Ukraine, and noted the new gas unit rate is higher than in the wake of that invasion. Charities and suppliers expect energy debt to grow; Ofgem has told suppliers to identify struggling customers early and keep repayment plans affordable. Adjusted for inflation, Ofgem said, the new cap is 31.8% higher than in the same period of 2026."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The April cap. The BBC reported that a fall in international wholesale prices in recent days is not reflected in January's level but will feed into April's."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ofgem",
+     "url": "https://www.ofgem.gov.uk/press-release/energy-price-cap-rise-26-january-2027"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-n2",
+   "story_key": "bank-of-canada-framework-review-supply-shocks-2026-11",
+   "title": "Bank of Canada will stress headline inflation and may raise rates sooner when supply shocks hit",
+   "category": "Central Banks & Rates",
+   "published": "2026-11-24T13:50:57-05:00",
+   "tldr": "Governor Tiff Macklem set out how the renewed 2% inflation framework will work in practice: more weight on headline CPI, new preferred core measures and a readiness to act early on large supply shocks.",
+   "why_selected": "A five-year framework review changes how Canada's central bank reads inflation and reacts to oil and trade shocks, two weeks before a rate decision markets expect to be a hike.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Every five years the Government of Canada and the Bank of Canada review and renew the bank's monetary policy framework. The renewed agreement keeps the inflation target at 2%, the midpoint of a 1% to 3% control range, measured by the 12-month change in the consumer price index (CPI), and runs to December 31, 2031."
+    },
+    {
+     "heading": "What happened",
+     "body": "In a Toronto speech on Tuesday, Governor Tiff Macklem outlined the results of the review, the Globe and Mail reported. The bank will put more emphasis on headline CPI when it communicates, and treat measures of core (underlying) inflation as indicators, not targets. Among core measures it will favour CPI-trim, which drops the most volatile parts of the basket each month, and CPIX, which excludes eight typically volatile items such as gasoline and mortgage interest costs. CPI-median is downgraded to one entry on a broader dashboard. On supply shocks, a bank backgrounder said that for large shocks whose persistence is uncertain, \"it may be prudent to respond\" because acting quickly costs less than having to catch up. Macklem said inflation is likely to be pushed off course \"more frequently and for longer.\""
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Central banks have traditionally \"looked through\" supply shocks such as an oil spike, because raising rates deepens the slowdown the shock causes. The review tilts the bank toward earlier tightening when a shock is large and demand is strong. That matters for Canadian borrowers now: the bank raised its policy rate to 2.5% four weeks ago, its first increase in three years, citing persistently high energy prices. The Globe and Mail reported that markets price roughly an 85% chance of another quarter-point increase on December 9. A KPMG Canada economist quoted by the paper said the bank will \"respond more readily\" to supply-driven inflation, though Macklem's term ends in June 2027."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The December 9 decision. Macklem noted that oil prices have retreated since October and that headline inflation may stay around 3% through year-end instead of rising further as the bank had forecast."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Bank of Canada",
+     "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-bank-of-canada-macklem-inflation-targeting-framework-november-24/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-n3",
+   "story_key": "dell-q3-fy2027-results",
+   "title": "Dell's quarterly revenue doubles to $54.9 billion as its AI server backlog reaches $132 billion",
+   "category": "Tech & AI Business",
+   "published": "2026-11-24T12:00:00-05:00",
+   "tldr": "Dell reported record third-quarter revenue of $54.9 billion, up 103%, raised its full-year revenue guidance to $202 billion and added $25 billion to its share buyback authorization.",
+   "why_selected": "Dell is a bellwether for corporate and cloud spending on AI hardware, and its results arrive in the middle of a market sell-off driven by doubts about that spending.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Dell Technologies sells servers, storage and personal computers. Its Infrastructure Solutions Group (ISG) builds the data centre equipment, including racks of servers designed for artificial intelligence workloads, while the Client Solutions Group (CSG) sells PCs. Because Dell assembles and installs hardware for many AI data centre operators, its orders and backlog are a direct read on how much is actually being spent on AI infrastructure."
+    },
+    {
+     "heading": "What happened",
+     "body": "For its fiscal 2027 third quarter, Dell reported record revenue of $54.9 billion, up 103% from a year earlier. Diluted earnings per share were $8.82, up 287%; on a non-GAAP basis, which excludes certain items, they were $9.45. ISG revenue was $42.0 billion, up 198%, including $22.0 billion from AI-optimized servers (up 291%) and $15.0 billion from traditional servers and networking (up 235%). Storage revenue was $4.9 billion, up 24%. ISG operating income was $7.1 billion. The PC business was almost flat: CSG revenue rose 3% to $12.9 billion and its operating income fell 6% to $704 million. Dell said it booked $60.2 billion of AI orders in the quarter and ended with a record $132.3 billion AI backlog. It guided to full-year revenue of $202.0 billion, up 78%, and the board approved an additional $25.0 billion of share repurchases."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The numbers show AI hardware demand still accelerating at one of its largest suppliers: the AI backlog alone is more than twice the quarter's total revenue. Chief operating officer Jeff Clarke said Dell is \"now a different company,\" with ISG driving the vast majority of profit and growth, and that more than 7,500 customers are deploying its AI systems. Clarke also said each order was vetted for customer quality and access to capital, land and power, an acknowledgment of the main risk in a backlog this large: that buyers cannot finance or power the data centres they have ordered. Meanwhile the PC segment, once the core of the company, is growing slowly with shrinking profit."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How quickly the backlog converts into revenue, whether any large orders are delayed or cancelled, and whether the company's full-year earnings guidance of $28.24 per diluted share holds."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Dell Technologies",
+     "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results"
+    },
+    {
+     "name": "BigGo Finance",
+     "url": "https://finance.biggo.com/news/US_DELL_2026-11-24"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-n4",
+   "story_key": "americas-car-mart-chapter-11-2026-11",
+   "title": "Subprime used-car dealer America's Car-Mart files for Chapter 11 and agrees to sell itself to a group led by former executives",
+   "category": "Banking & Finance",
+   "published": "2026-11-24T13:17:45-05:00",
+   "tldr": "America's Car-Mart filed a pre-packaged Chapter 11 case in Texas with $60 million of new financing and a deal to sell substantially all its assets to Cardinal Asset Holdings.",
+   "why_selected": "The failure of one of the largest US lenders to car buyers with weak credit is a concrete sign of stress among lower-income borrowers.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "America's Car-Mart, based in Arkansas, is one of the largest US \"buy here, pay here\" dealers: it sells used cars and lends the buyer the money itself, mostly to customers with weak credit. The company has been trying to avoid default since the summer, when it won the first of several extensions on a $300 million loan from Silver Point dating from October 2025, Car Dealership Guy News reported."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday the company and certain subsidiaries filed for Chapter 11 protection in the US Bankruptcy Court for the Southern District of Texas. The filing is \"pre-packaged\", meaning the restructuring plan was negotiated before it reached court. Car-Mart agreed to sell substantially all its assets to Cardinal Asset Holdings, an investment group whose leaders include former Car-Mart chief executive and chairman Tilman J. Falgout III. Cardinal is the \"stalking horse\" bidder: its offer sets a floor and rivals may submit higher bids. According to Car Dealership Guy News, Cardinal agreed to pay $10 million in cash plus $13.6 million for real estate and to take on $328 million of debt owed to lenders. Existing lenders committed up to $60 million of financing to keep the business running. Dealerships remain open."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The business shrank fast before the filing. Car-Mart closed or consolidated 60 stores in the past year, going from 154 dealerships to 94; customer accounts fell 18% to 85,753 in its latest reported quarter, and total revenue dropped 57%, the trade publication reported. Under the plan, general unsecured creditors, such as vendors, would be paid in full, subject to court approval. Shareholders would share $2.5 million, and the company cautioned there is no assurance they will receive that or anything at all. The company's securitisation trusts, the separate legal entities that hold customer loans packaged for investors, are not part of the bankruptcy."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether a rival bidder tops Cardinal's offer in the court-supervised sale, and which leased locations Cardinal chooses to keep after closing; the company says it has no closures to announce for now."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/america-car-mart-files-chapter-152118999.html"
+    },
+    {
+     "name": "Car Dealership Guy News",
+     "url": "https://news.dealershipguy.com/p/america-s-car-mart-finds-buyer-files-chapter-11-plan"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36057",
+   "title": "CFOs Meet LLMs",
+   "authors": [
+    "John R. Graham",
+    "Campbell R. Harvey",
+    "Manish Jha"
+   ],
+   "affiliations": [
+    "Duke University; NBER; Georgia State University"
+   ],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Corporate finance",
+   "tags": [
+    "Corporate finance",
+    "Innovation & technology",
+    "Management & organizations"
+   ],
+   "tldr": "An AI model asked to role-play individual chief financial officers predicted their actual survey answers on economic optimism, explaining 27% of the variation across 6,075 responses from 2002 to 2025.",
+   "why_selected": "A credible team behind a long-running CFO survey tests whether AI \"digital twins\" can stand in for slow, costly business sentiment surveys, and reports the limits clearly.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "What chief financial officers expect helps predict what companies do, from investment to hiring. But measuring those expectations is slow and expensive. Surveys reach a limited number of firms, arrive only periodically and cover only executives who choose to answer."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Researchers have begun using large language models (LLMs) as stand-ins for survey respondents. Earlier work mostly checked whether the spread of synthetic answers resembled the human one. A known weakness is that models collapse toward a group's typical view and understate disagreement."
+    },
+    {
+     "heading": "Key idea",
+     "body": "John Graham, Campbell Harvey and Manish Jha ask a stricter question: can a model predict what one specific executive said in one specific quarter? For each of 6,075 responses by public-company CFOs to the Duke–Federal Reserve CFO Survey from 2002 to 2025, they prompted GPT-5.4 to act as that CFO on the survey date. The model received the firm's profile, was told to use only information available before the survey date and, where available, saw up to 12 of that person's earlier scores. It then rated its optimism about the US economy from 0 to 100. Individual answers are never published, so the model could not have memorized them."
+    },
+    {
+     "heading": "Results",
+     "body": "The model's score significantly predicted the matched CFO's answer, explaining 27% of the variation in individual responses, and the link held after controlling for each firm's average and for the CFO's previous answer. Average synthetic optimism was 56.6 against 60.1 for the humans. Accuracy rose with the information supplied; the respondent's own history mattered most. The synthetic panel still disagreed less than real CFOs: its within-quarter dispersion was about 75% of the human figure, falling to 26% for first-time respondents and reaching 90% for those with a history. For the survey taken just before the pandemic, the model showed no drop in optimism, suggesting it did not use later information."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the approach holds up, business sentiment could be gauged faster and for companies no survey reaches. The caveats: the method leans on past human answers, results for expected revenue growth were statistically weaker, and the model predicts what CFOs say, not what will happen."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36057"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}

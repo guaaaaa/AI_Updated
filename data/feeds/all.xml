@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 25 Nov 2026 12:18:03 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 12:46:29 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Britain's energy price cap will rise 26% in January, taking a typical annual bill to £2,166</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n1</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Energy &amp; Commodities</category>
+    <description>Ofgem will lift the cap on default energy tariffs by 26% from 1 January after wholesale gas prices surged, affecting around 20 million households in England, Scotland and Wales. (Ofgem, BBC)</description>
+  </item>
+  <item>
+    <title>Bank of Canada will stress headline inflation and may raise rates sooner when supply shocks hit</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n2</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Central Banks &amp; Rates</category>
+    <description>Governor Tiff Macklem set out how the renewed 2% inflation framework will work in practice: more weight on headline CPI, new preferred core measures and a readiness to act early on large supply shocks. (Bank of Canada, The Globe and Mail)</description>
+  </item>
+  <item>
+    <title>Dell's quarterly revenue doubles to $54.9 billion as its AI server backlog reaches $132 billion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n3</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Tech &amp; AI Business</category>
+    <description>Dell reported record third-quarter revenue of $54.9 billion, up 103%, raised its full-year revenue guidance to $202 billion and added $25 billion to its share buyback authorization. (Dell Technologies, BigGo Finance)</description>
+  </item>
+  <item>
+    <title>Subprime used-car dealer America's Car-Mart files for Chapter 11 and agrees to sell itself to a group led by former executives</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/2026-11-25-n4</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Banking &amp; Finance</category>
+    <description>America's Car-Mart filed a pre-packaged Chapter 11 case in Texas with $60 million of new financing and a deal to sell substantially all its assets to Cardinal Asset Holdings. (Yahoo Finance, Car Dealership Guy News)</description>
+  </item>
+  <item>
+    <title>CFOs Meet LLMs</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/nber-w36057</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-25/nber-w36057</guid>
+    <pubDate>Wed, 25 Nov 2026 12:46:29 +0000</pubDate>
+    <category>Business / Corporate finance</category>
+    <description>An AI model asked to role-play individual chief financial officers predicted their actual survey answers on economic optimism, explaining 27% of the variation across 6,075 responses from 2002 to 2025. (John R. Graham, Campbell R. Harvey, Manish Jha · Duke University; NBER; Georgia State University)</description>
+  </item>
   <item>
     <title>Z.ai releases GLM-5.4, a 750B-scale flagship that runs 28 shared layers twice per forward pass</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2026-11-25-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Mon, 23 Nov 2026 12:46:18 +0000</pubDate>
     <category>Business / Growth &amp; productivity</category>
     <description>Jones and Tonetti find that automation explains essentially all US productivity growth since 1950, and that AI should speed growth up, but slowly, because tasks still done by people hold the economy back. (Charles I. Jones, Christopher Tonetti · Stanford GSB, Anthropic, NBER)</description>
-  </item>
-  <item>
-    <title>OpenAI's chief scientist proposes perplexity as a shared metric for industry limits on AI development, and publishes OpenAI's own numbers</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2026-11-23-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2026-11-23-n1</guid>
-    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
-    <category>AI / Safety &amp; Security</category>
-    <description>Jakub Pachocki argues that held-out perplexity should become a cross-lab measure of progress, discloses OpenAI's internal figures, and proposes limits that labs would not cross until monitoring improves. (OpenAI, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Search From the Start: Search-Native Pretraining for Language Models</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26809</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26809</guid>
-    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>Inserting search queries and retrieved passages into ordinary pretraining text teaches small language models to search and to trust evidence, an advantage that later fine-tuning on search data does not fully reproduce. (Kaustubh Ponkshe, Gyung Hyun Je, Stefan Taga et al. · EPFL, University of Toronto)</description>
-  </item>
-  <item>
-    <title>Composable Soft-Prompt Distillation of RL Experts: Toward Continual Post-Training</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27376</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27376</guid>
-    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
-    <category>AI / Post-training</category>
-    <description>Each RL-trained expert model is distilled into 256 learned input vectors on a frozen base model, and experts combine simply by concatenating those prompts, matching full multi-teacher distillation. (Zhen Zhang, Changyi Yang, Xuehai He et al. · University of California, Santa Barbara, Carnegie Mellon University)</description>
-  </item>
-  <item>
-    <title>Neural Geometry as a Learning Signal</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26832</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.26832</guid>
-    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
-    <category>AI / Interpretability</category>
-    <description>Fine-tuning Llama-3.1-8B only to make an internal representation match its idealized circle or helix, with no loss on outputs, improves task accuracy about as much as ordinary fine-tuning. (Eric Todd, Tal Haklay, Nikhil Prakash et al. · Northeastern University, University of Southern California, University of Amsterdam)</description>
-  </item>
-  <item>
-    <title>BioEmu2: Scalable Emulation of Biomolecular Dynamics</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27924</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-23/2611.27924</guid>
-    <pubDate>Mon, 23 Nov 2026 12:23:22 +0000</pubDate>
-    <category>AI / AI for Science &amp; Health</category>
-    <description>BioEmu2 is one diffusion model that predicts biomolecular structures, samples their equilibrium ensembles and jumps forward in time, covering proteins, nucleic acids, ligands and ions far faster than molecular dynamics. (Michael Gastegger, Adam E. Foster, José Jiménez-Luna et al. · Microsoft)</description>
   </item>
 </channel>
 </rss>

@@ -1,5 +1,57 @@
 [
  {
+  "id": "2026-11-25-n1",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "Britain's energy price cap will rise 26% in January, taking a typical annual bill to £2,166",
+  "tldr": "Ofgem will lift the cap on default energy tariffs by 26% from 1 January after wholesale gas prices surged, affecting around 20 million households in England, Scotland and Wales.",
+  "category": "Energy & Commodities",
+  "byline": "Ofgem, BBC"
+ },
+ {
+  "id": "2026-11-25-n2",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "Bank of Canada will stress headline inflation and may raise rates sooner when supply shocks hit",
+  "tldr": "Governor Tiff Macklem set out how the renewed 2% inflation framework will work in practice: more weight on headline CPI, new preferred core measures and a readiness to act early on large supply shocks.",
+  "category": "Central Banks & Rates",
+  "byline": "Bank of Canada, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-25-n3",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "Dell's quarterly revenue doubles to $54.9 billion as its AI server backlog reaches $132 billion",
+  "tldr": "Dell reported record third-quarter revenue of $54.9 billion, up 103%, raised its full-year revenue guidance to $202 billion and added $25 billion to its share buyback authorization.",
+  "category": "Tech & AI Business",
+  "byline": "Dell Technologies, BigGo Finance"
+ },
+ {
+  "id": "2026-11-25-n4",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "Subprime used-car dealer America's Car-Mart files for Chapter 11 and agrees to sell itself to a group led by former executives",
+  "tldr": "America's Car-Mart filed a pre-packaged Chapter 11 case in Texas with $60 million of new financing and a deal to sell substantially all its assets to Cardinal Asset Holdings.",
+  "category": "Banking & Finance",
+  "byline": "Yahoo Finance, Car Dealership Guy News"
+ },
+ {
+  "id": "nber-w36057",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "CFOs Meet LLMs",
+  "tldr": "An AI model asked to role-play individual chief financial officers predicted their actual survey answers on economic optimism, explaining 27% of the variation across 6,075 responses from 2002 to 2025.",
+  "primary_tag": "Corporate finance",
+  "tags": [
+   "Corporate finance",
+   "Innovation & technology",
+   "Management & organizations"
+  ],
+  "byline": "John R. Graham, Campbell R. Harvey, Manish Jha · Duke University; NBER; Georgia State University",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-24-n1",
   "date": "2026-11-24",
   "type": "news",

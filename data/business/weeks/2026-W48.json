@@ -3,18 +3,18 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
    "title": "Prediction: Dec. 9 Will Be a Huge Day for the Stock Market",
-   "outlets": 13,
+   "outlets": 24,
    "date": "2026-11-22",
-   "covered": null
+   "covered": "2026-11-25-n1"
   },
   {
    "title": "What Comes Next After Anthropic’s Historic IPO",
-   "outlets": 7,
+   "outlets": 9,
    "date": "2026-11-22",
    "covered": null
   },
@@ -41,11 +41,17 @@
    "outlets": 3,
    "date": "2026-11-23",
    "covered": null
+  },
+  {
+   "title": "Speech by Tiff Macklem, Governor of the Bank of Canada",
+   "outlets": 3,
+   "date": "2026-11-23",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 8,
-  "papers": 2
+  "news": 12,
+  "papers": 3
  },
  "items": [
   {
@@ -107,6 +113,36 @@
    "date": "2026-11-24",
    "type": "paper",
    "title": "Five Facts About Stablecoins"
+  },
+  {
+   "id": "2026-11-25-n1",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "Britain's energy price cap will rise 26% in January, taking a typical annual bill to £2,166"
+  },
+  {
+   "id": "2026-11-25-n2",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "Bank of Canada will stress headline inflation and may raise rates sooner when supply shocks hit"
+  },
+  {
+   "id": "2026-11-25-n3",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "Dell's quarterly revenue doubles to $54.9 billion as its AI server backlog reaches $132 billion"
+  },
+  {
+   "id": "2026-11-25-n4",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "Subprime used-car dealer America's Car-Mart files for Chapter 11 and agrees to sell itself to a group led by former executives"
+  },
+  {
+   "id": "nber-w36057",
+   "date": "2026-11-25",
+   "type": "paper",
+   "title": "CFOs Meet LLMs"
   }
  ]
 }
