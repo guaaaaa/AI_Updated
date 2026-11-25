@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 12:16:04 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 12:17:20 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Z.ai releases GLM-5.4, a 750B-scale flagship that runs 28 shared layers twice per forward pass</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2026-11-25-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2026-11-25-n1</guid>
+    <pubDate>Wed, 25 Nov 2026 12:17:20 +0000</pubDate>
+    <category>AI / Model Release</category>
+    <description>Chinese lab Z.ai released GLM-5.4, its first flagship built as a looped transformer, available only in its own products for now, with open weights promised after safety hardening. (Z.ai developer docs, Simon Willison, MarkTechPost)</description>
+  </item>
+  <item>
+    <title>Anthropic shares fall below their $83 IPO price less than a week after the record listing</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2026-11-25-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2026-11-25-n2</guid>
+    <pubDate>Wed, 25 Nov 2026 12:17:20 +0000</pubDate>
+    <category>AI / Earnings &amp; Markets</category>
+    <description>Anthropic's stock dropped below its $83 offer price on Tuesday, trading near $76 at midday, as a broad technology selloff erased the premium from its Nasdaq debut. (The Globe and Mail, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Can Latent Reasoning Drive LLM Outputs Without a Trace?</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.31015</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.31015</guid>
+    <pubDate>Wed, 25 Nov 2026 12:17:20 +0000</pubDate>
+    <category>AI / Safety &amp; Alignment</category>
+    <description>A fine-tuned model can run a multi-step hidden rule entirely in its activations, then write chain-of-thought that justifies the result without mentioning the rule, and a frontier LLM monitor does not flag it. (Tomer Ashuach, Zorik Gekhman, Avi Caciularu et al. · Technion – Israel Institute of Technology, Google Research)</description>
+  </item>
+  <item>
+    <title>Recursive Collective Intelligence: Emergence on an Equal-Budget Ladder in Multi-Agent LLM Systems</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.32606</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.32606</guid>
+    <pubDate>Wed, 25 Nov 2026 12:17:20 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Judged at equal token cost, agent teams beat independent agents only when they move facts no single agent holds, and such teams can train their successors on their own verified work. (Lixuan He, Shengqu Cai, Fang Wu et al.)</description>
+  </item>
+  <item>
+    <title>Rewirable Circuits in Transformers with Loom Attention</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.30634</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.30634</guid>
+    <pubDate>Wed, 25 Nov 2026 12:17:20 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>Loom attention lets each attention head choose, per token, which earlier heads it reads from, and a 2.8B model built this way matches a 12B Pythia baseline for about 2% extra compute. (Da Xiao, Qingye Meng, Shengping Li et al. · Beijing University of Posts and Telecommunications, ColorfulClouds Technology)</description>
+  </item>
+  <item>
+    <title>Verifiable On-Policy Distillation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.30325</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.30325</guid>
+    <pubDate>Wed, 25 Nov 2026 12:17:20 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>VOPD uses the agreement between a verifier and a teacher model on sampled answers to strengthen or reverse the teacher's token-level guidance, giving dense training signal that is tied to checked outcomes. (Juntong Shi, Stefano Ermon, Jure Leskovec et al. · Stanford University, Google DeepMind)</description>
+  </item>
+  <item>
+    <title>Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.31201</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.31201</guid>
+    <pubDate>Wed, 25 Nov 2026 12:17:20 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>A controlled study of how to wrap a frontier multimodal model as a robot policy reaches 83.3% on RoboLab-120 and finds the model succeeds through spatial target estimation, not low-level motion skill. (Xiao-Ming Wu, Kang Liao, Yuexiao Ma et al. · Nanyang Technological University, ACE Robotics, SenseTime Research)</description>
+  </item>
   <item>
     <title>Anthropic launches Claude Ship, with agents that fix pull requests and approve routine code changes</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2026-11-24-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
     <category>AI / Computer Vision</category>
     <description>π⁴ is a 0.5B-parameter feed-forward model that recovers dense geometry, camera poses, metric scale, 2D/3D point tracks and moving-object masks from uncalibrated images or video in a single forward pass. (Yifan Wang, Weiguang Zhao, Ni Yang et al. · Shanghai Artificial Intelligence Laboratory, Shanghai Jiao Tong University, Zhejiang University)</description>
-  </item>
-  <item>
-    <title>Communicate the Change: Efficient Expert Parallelism via Activation Compression</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22215</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22215</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Efficiency</category>
-    <description>EchoMoE retrofits existing mixture-of-experts models to send only a compressed change from an earlier layer's hidden state between GPUs, cutting inter-node traffic 58% and raising serving throughput 22.6%. (Fengyuan Liu, Jay Gala, Siva Reddy et al. · Mila - Quebec AI Institute, McGill University, Periodic Labs)</description>
-  </item>
-  <item>
-    <title>OpenAI releases GPT-6.2 Astra and Sol, cutting Astra's price 20% and crossing its own "High" self-improvement threshold</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2026-11-18-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2026-11-18-n1</guid>
-    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>OpenAI launched GPT-6.2 Astra and Sol, claiming better professional work at lower cost; Astra is its first released model to meet the company's High threshold for AI self-improvement. (OpenAI, SiliconANGLE, 9to5Google, Simon Willison)</description>
-  </item>
-  <item>
-    <title>Do LLM Agents Still Need to Be Told How to Self-Improve?</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23219</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23219</guid>
-    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
-    <category>AI / RSI</category>
-    <description>Given only file-editing tools, a sandbox and a way to watch a copy of itself play games, recent frontier models invent their own self-improvement procedures; older generations do not. (Shobhita Sundaram, Cansu Sancaktar, Phillip Isola · MIT CSAIL, University of Tübingen)</description>
-  </item>
-  <item>
-    <title>The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23068</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23068</guid>
-    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
-    <category>AI / Evaluation &amp; Benchmarks</category>
-    <description>A 1,030-run reproducibility study argues that agent "evolution" stalls because noisy evaluations cannot tell better prompts and skills from worse ones, not because good candidates are missing. (Yuanhao Zeng, Shaocheng Lan, Ao Lu et al. · ShanghaiTech University)</description>
-  </item>
-  <item>
-    <title>How VLMs Plan What's Next</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.21600</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.21600</guid>
-    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
-    <category>AI / Interpretability</category>
-    <description>Causal patching in Qwen3-VL shows how a vision-language model lists items in an image: it keeps a "cursor" marking how far it has got and picks the nearest unwritten region next. (Rohit Gandikota, Arnab Sen Sharma, Adam Belfki et al. · Northeastern University)</description>
-  </item>
-  <item>
-    <title>NVIDIA Kumo Tabular: Pushing the Accuracy$\unicode{8211}$Efficiency Frontier for Tabular Prediction</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23001</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23001</guid>
-    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
-    <category>AI / Pre-training &amp; Data</category>
-    <description>NVIDIA's open Kumo Tabular models, pretrained only on synthetic tables, predict on new tables with no training and rank first on eight tabular benchmarks while running faster than the runners-up. (Jingang Qu, Valter Hudovernik, Martin Jurkovič et al. · NVIDIA, Stanford University, INRIA)</description>
-  </item>
-  <item>
-    <title>FastFrames: Video Generation at Interactive Latency</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23226</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-18/2611.23226</guid>
-    <pubDate>Wed, 18 Nov 2026 12:16:21 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>FastFrames gets autoregressive video diffusion under 50 ms per frame by replacing the VAE decoder and the cache-refresh pass, which together took over half of inference time. (Gene Chou, Guandao Yang, Fujun Luan et al. · Apple)</description>
   </item>
 </channel>
 </rss>

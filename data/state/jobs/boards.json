@@ -1,15 +1,15 @@
 {
 "amazon:amazon": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Amazon",
 "open": {
 "_all|NA": 6000,
-"_tracked|CA": 4557,
-"_tracked|NA": 4557,
-"_tracked|US": 3229,
-"ai-infra|CA": 50,
-"ai-infra|NA": 50,
+"_tracked|CA": 4569,
+"_tracked|NA": 4569,
+"_tracked|US": 3242,
+"ai-infra|CA": 51,
+"ai-infra|NA": 51,
 "ai-infra|US": 43,
 "ai-safety|CA": 20,
 "ai-safety|NA": 20,
@@ -17,74 +17,74 @@
 "cv-perception|CA": 15,
 "cv-perception|NA": 15,
 "cv-perception|US": 10,
-"data-analyst|CA": 24,
-"data-analyst|NA": 24,
-"data-analyst|US": 9,
-"data-engineer|CA": 91,
-"data-engineer|NA": 91,
-"data-engineer|US": 43,
+"data-analyst|CA": 26,
+"data-analyst|NA": 26,
+"data-analyst|US": 10,
+"data-engineer|CA": 94,
+"data-engineer|NA": 94,
+"data-engineer|US": 45,
 "data-scientist|CA": 93,
 "data-scientist|NA": 93,
 "data-scientist|US": 65,
-"eng-manager|CA": 63,
-"eng-manager|NA": 63,
-"eng-manager|US": 44,
-"frontend|CA": 34,
-"frontend|NA": 34,
-"frontend|US": 32,
-"hardware|CA": 427,
-"hardware|NA": 427,
-"hardware|US": 338,
-"ml-engineer|CA": 457,
-"ml-engineer|NA": 457,
-"ml-engineer|US": 332,
+"eng-manager|CA": 59,
+"eng-manager|NA": 59,
+"eng-manager|US": 42,
+"frontend|CA": 36,
+"frontend|NA": 36,
+"frontend|US": 33,
+"hardware|CA": 432,
+"hardware|NA": 432,
+"hardware|US": 344,
+"ml-engineer|CA": 461,
+"ml-engineer|NA": 461,
+"ml-engineer|US": 337,
 "ml-performance|CA": 39,
 "ml-performance|NA": 39,
 "ml-performance|US": 24,
-"product|CA": 682,
-"product|NA": 682,
-"product|US": 555,
+"product|CA": 680,
+"product|NA": 680,
+"product|US": 551,
 "quant|CA": 1,
 "quant|NA": 1,
 "quant|US": 1,
-"research-scientist|CA": 39,
-"research-scientist|NA": 39,
-"research-scientist|US": 36,
-"robotics|CA": 127,
-"robotics|NA": 127,
+"research-scientist|CA": 40,
+"research-scientist|NA": 40,
+"research-scientist|US": 37,
+"robotics|CA": 128,
+"robotics|NA": 128,
 "robotics|US": 119,
-"security|CA": 154,
-"security|NA": 154,
-"security|US": 124,
-"solutions|CA": 566,
-"solutions|NA": 566,
-"solutions|US": 316,
-"sre-devops|CA": 237,
-"sre-devops|NA": 237,
-"sre-devops|US": 145,
-"swe|CA": 1438,
-"swe|NA": 1438,
-"swe|US": 980
+"security|CA": 158,
+"security|NA": 158,
+"security|US": 127,
+"solutions|CA": 555,
+"solutions|NA": 555,
+"solutions|US": 308,
+"sre-devops|CA": 234,
+"sre-devops|NA": 234,
+"sre-devops|US": 147,
+"swe|CA": 1447,
+"swe|NA": 1447,
+"swe|US": 986
 }
 },
 "ashby:1password": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "1Password",
 "open": {
 "_all|NA": 62,
-"_tracked|CA": 30,
-"_tracked|NA": 31,
-"_tracked|US": 31,
+"_tracked|CA": 29,
+"_tracked|NA": 30,
+"_tracked|US": 30,
 "data-analyst|CA": 2,
 "data-analyst|NA": 2,
 "data-analyst|US": 2,
 "eng-manager|CA": 2,
 "eng-manager|NA": 2,
 "eng-manager|US": 2,
-"product|CA": 4,
-"product|NA": 5,
-"product|US": 5,
+"product|CA": 3,
+"product|NA": 4,
+"product|US": 4,
 "security|CA": 4,
 "security|NA": 4,
 "security|US": 4,
@@ -101,7 +101,7 @@
 },
 "ashby:1x": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "1X",
 "open": {
 "_all|NA": 116,
@@ -131,12 +131,12 @@
 },
 "ashby:abridge": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Abridge",
 "open": {
-"_all|NA": 30,
-"_tracked|NA": 8,
-"_tracked|US": 8,
+"_all|NA": 34,
+"_tracked|NA": 9,
+"_tracked|US": 9,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
 "data-scientist|NA": 1,
@@ -147,6 +147,8 @@
 "product|US": 1,
 "research-engineer|NA": 1,
 "research-engineer|US": 1,
+"security|NA": 1,
+"security|US": 1,
 "solutions|NA": 1,
 "solutions|US": 1,
 "sre-devops|NA": 1,
@@ -157,7 +159,7 @@
 },
 "ashby:ambiencehealthcare": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Ambience Healthcare",
 "open": {
 "_all|NA": 18,
@@ -175,7 +177,7 @@
 },
 "ashby:anyscale": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Anyscale",
 "open": {
 "_all|NA": 18,
@@ -201,13 +203,13 @@
 },
 "ashby:baseten": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Baseten",
 "open": {
-"_all|NA": 104,
+"_all|NA": 105,
 "_tracked|CA": 22,
-"_tracked|NA": 60,
-"_tracked|US": 60,
+"_tracked|NA": 62,
+"_tracked|US": 62,
 "ai-infra|CA": 5,
 "ai-infra|NA": 7,
 "ai-infra|US": 7,
@@ -222,8 +224,8 @@
 "hardware|NA": 2,
 "hardware|US": 2,
 "ml-engineer|CA": 1,
-"ml-engineer|NA": 6,
-"ml-engineer|US": 6,
+"ml-engineer|NA": 8,
+"ml-engineer|US": 8,
 "ml-performance|CA": 2,
 "ml-performance|NA": 2,
 "ml-performance|US": 2,
@@ -250,7 +252,7 @@
 },
 "ashby:benevity": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Benevity",
 "open": {
 "_all|NA": 17,
@@ -266,7 +268,7 @@
 },
 "ashby:black-forest-labs": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Black Forest Labs",
 "open": {
 "_all|NA": 8,
@@ -284,10 +286,10 @@
 },
 "ashby:bland": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Bland AI",
 "open": {
-"_all|NA": 14,
+"_all|NA": 13,
 "_tracked|NA": 7,
 "_tracked|US": 7,
 "product|NA": 1,
@@ -320,10 +322,10 @@
 },
 "ashby:cartesia": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Cartesia",
 "open": {
-"_all|NA": 21,
+"_all|NA": 20,
 "_tracked|NA": 11,
 "_tracked|US": 11,
 "eng-manager|NA": 1,
@@ -346,7 +348,7 @@
 },
 "ashby:cerebras": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Cerebras",
 "open": {
 "_all|NA": 127,
@@ -393,7 +395,7 @@
 },
 "ashby:chaidiscovery": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Chai Discovery",
 "open": {
 "_all|NA": 23,
@@ -417,7 +419,7 @@
 },
 "ashby:character": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Character.AI",
 "open": {
 "_all|NA": 13,
@@ -441,7 +443,7 @@
 },
 "ashby:clearco": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Clearco",
 "open": {
 "_all|NA": 5
@@ -449,7 +451,7 @@
 },
 "ashby:cobot": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Collaborative Robotics",
 "open": {
 "_all|NA": 12,
@@ -465,10 +467,10 @@
 },
 "ashby:cognition": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Cognition",
 "open": {
-"_all|NA": 64,
+"_all|NA": 68,
 "_tracked|NA": 19,
 "_tracked|US": 19,
 "ai-safety|NA": 1,
@@ -493,10 +495,10 @@
 },
 "ashby:cohere": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Cohere",
 "open": {
-"_all|NA": 91,
+"_all|NA": 90,
 "_tracked|CA": 50,
 "_tracked|NA": 55,
 "_tracked|US": 43,
@@ -547,16 +549,14 @@
 },
 "ashby:crusoe": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Crusoe",
 "open": {
-"_all|NA": 302,
-"_tracked|NA": 118,
-"_tracked|US": 118,
+"_all|NA": 296,
+"_tracked|NA": 114,
+"_tracked|US": 114,
 "ai-infra|NA": 4,
 "ai-infra|US": 4,
-"ai-safety|NA": 1,
-"ai-safety|US": 1,
 "data-engineer|NA": 1,
 "data-engineer|US": 1,
 "data-scientist|NA": 2,
@@ -571,8 +571,8 @@
 "ml-engineer|US": 2,
 "ml-performance|NA": 2,
 "ml-performance|US": 2,
-"product|NA": 14,
-"product|US": 14,
+"product|NA": 12,
+"product|US": 12,
 "research-engineer|NA": 1,
 "research-engineer|US": 1,
 "research-scientist|NA": 2,
@@ -583,36 +583,36 @@
 "security|US": 2,
 "solutions|NA": 3,
 "solutions|US": 3,
-"sre-devops|NA": 23,
-"sre-devops|US": 23,
-"swe|NA": 35,
-"swe|US": 35
+"sre-devops|NA": 24,
+"sre-devops|US": 24,
+"swe|NA": 33,
+"swe|US": 33
 }
 },
 "ashby:cursor": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Cursor (Anysphere)",
 "open": {
-"_all|NA": 55,
-"_tracked|NA": 16,
-"_tracked|US": 16,
+"_all|NA": 54,
+"_tracked|NA": 15,
+"_tracked|US": 15,
 "ai-infra|NA": 2,
 "ai-infra|US": 2,
 "data-engineer|NA": 1,
 "data-engineer|US": 1,
-"solutions|NA": 12,
-"solutions|US": 12,
+"solutions|NA": 11,
+"solutions|US": 11,
 "swe|NA": 1,
 "swe|US": 1
 }
 },
 "ashby:d-matrix": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "d-Matrix",
 "open": {
-"_all|NA": 36,
+"_all|NA": 35,
 "_tracked|NA": 25,
 "_tracked|US": 25,
 "ai-infra|NA": 5,
@@ -635,12 +635,12 @@
 },
 "ashby:decagon": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Decagon",
 "open": {
-"_all|NA": 93,
-"_tracked|NA": 39,
-"_tracked|US": 39,
+"_all|NA": 87,
+"_tracked|NA": 37,
+"_tracked|US": 37,
 "ai-safety|NA": 2,
 "ai-safety|US": 2,
 "data-engineer|NA": 4,
@@ -649,12 +649,12 @@
 "eng-manager|US": 4,
 "ml-engineer|NA": 4,
 "ml-engineer|US": 4,
-"product|NA": 8,
-"product|US": 8,
+"product|NA": 7,
+"product|US": 7,
 "research-engineer|NA": 4,
 "research-engineer|US": 4,
-"solutions|NA": 3,
-"solutions|US": 3,
+"solutions|NA": 2,
+"solutions|US": 2,
 "sre-devops|NA": 1,
 "sre-devops|US": 1,
 "swe|NA": 9,
@@ -663,10 +663,10 @@
 },
 "ashby:deepgram": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Deepgram",
 "open": {
-"_all|NA": 38,
+"_all|NA": 37,
 "_tracked|CA": 1,
 "_tracked|NA": 22,
 "_tracked|US": 21,
@@ -693,7 +693,7 @@
 },
 "ashby:drata": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Drata",
 "open": {
 "_all|NA": 18,
@@ -709,20 +709,20 @@
 },
 "ashby:elevenlabs": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "ElevenLabs",
 "open": {
-"_all|NA": 46,
-"_tracked|NA": 16,
-"_tracked|US": 16,
+"_all|NA": 45,
+"_tracked|NA": 15,
+"_tracked|US": 15,
 "frontend|NA": 1,
 "frontend|US": 1,
 "product|NA": 1,
 "product|US": 1,
 "research-engineer|NA": 3,
 "research-engineer|US": 3,
-"solutions|NA": 4,
-"solutions|US": 4,
+"solutions|NA": 3,
+"solutions|US": 3,
 "sre-devops|NA": 1,
 "sre-devops|US": 1,
 "swe|NA": 6,
@@ -731,7 +731,7 @@
 },
 "ashby:etched": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Etched",
 "open": {
 "_all|NA": 110,
@@ -751,20 +751,20 @@
 "research-engineer|US": 6,
 "security|NA": 1,
 "security|US": 1,
-"solutions|NA": 2,
-"solutions|US": 2,
-"sre-devops|NA": 8,
-"sre-devops|US": 8,
+"solutions|NA": 1,
+"solutions|US": 1,
+"sre-devops|NA": 9,
+"sre-devops|US": 9,
 "swe|NA": 7,
 "swe|US": 7
 }
 },
 "ashby:factory": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Factory",
 "open": {
-"_all|NA": 66,
+"_all|NA": 65,
 "_tracked|NA": 17,
 "_tracked|US": 17,
 "ml-engineer|NA": 1,
@@ -781,7 +781,7 @@
 },
 "ashby:fireworks": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Fireworks AI",
 "open": {
 "_all|NA": 88,
@@ -813,7 +813,7 @@
 },
 "ashby:float": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Float",
 "open": {
 "_all|NA": 19,
@@ -831,7 +831,7 @@
 },
 "ashby:gamma": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Gamma",
 "open": {
 "_all|NA": 19,
@@ -853,7 +853,7 @@
 },
 "ashby:gecko-robotics": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Gecko Robotics",
 "open": {
 "_all|NA": 22,
@@ -875,7 +875,7 @@
 },
 "ashby:handshake": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Handshake",
 "open": {
 "_all|NA": 54,
@@ -897,13 +897,13 @@
 },
 "ashby:harvey": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Harvey",
 "open": {
 "_all|NA": 282,
 "_tracked|CA": 5,
-"_tracked|NA": 124,
-"_tracked|US": 119,
+"_tracked|NA": 125,
+"_tracked|US": 120,
 "ai-infra|NA": 4,
 "ai-infra|US": 4,
 "data-analyst|NA": 3,
@@ -913,8 +913,8 @@
 "data-scientist|NA": 1,
 "data-scientist|US": 1,
 "eng-manager|CA": 1,
-"eng-manager|NA": 14,
-"eng-manager|US": 13,
+"eng-manager|NA": 15,
+"eng-manager|US": 14,
 "frontend|CA": 1,
 "frontend|NA": 6,
 "frontend|US": 5,
@@ -937,14 +937,14 @@
 },
 "ashby:hex": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Hex",
 "open": {
-"_all|NA": 42,
-"_tracked|NA": 20,
-"_tracked|US": 20,
-"eng-manager|NA": 2,
-"eng-manager|US": 2,
+"_all|NA": 44,
+"_tracked|NA": 21,
+"_tracked|US": 21,
+"eng-manager|NA": 3,
+"eng-manager|US": 3,
 "ml-engineer|NA": 2,
 "ml-engineer|US": 2,
 "product|NA": 2,
@@ -963,7 +963,7 @@
 },
 "ashby:hightouch": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Hightouch",
 "open": {
 "_all|NA": 1,
@@ -975,7 +975,7 @@
 },
 "ashby:hopper": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Hopper",
 "open": {
 "_all|NA": 27,
@@ -998,7 +998,7 @@
 },
 "ashby:ideogram": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Ideogram",
 "open": {
 "_all|NA": 3,
@@ -1010,25 +1010,25 @@
 },
 "ashby:insitro": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Insitro",
 "open": {
-"_all|NA": 14,
-"_tracked|NA": 8,
-"_tracked|US": 8,
+"_all|NA": 12,
+"_tracked|NA": 7,
+"_tracked|US": 7,
 "cv-perception|NA": 1,
 "cv-perception|US": 1,
 "data-scientist|NA": 1,
 "data-scientist|US": 1,
 "research-scientist|NA": 4,
 "research-scientist|US": 4,
-"swe|NA": 2,
-"swe|US": 2
+"swe|NA": 1,
+"swe|US": 1
 }
 },
 "ashby:inworld-ai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Inworld AI",
 "open": {
 "_all|NA": 8,
@@ -1044,10 +1044,10 @@
 },
 "ashby:jobber": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Jobber",
 "open": {
-"_all|NA": 31,
+"_all|NA": 29,
 "_tracked|CA": 14,
 "_tracked|NA": 16,
 "_tracked|US": 4,
@@ -1070,7 +1070,7 @@
 },
 "ashby:klue": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Klue",
 "open": {
 "_all|NA": 6,
@@ -1086,7 +1086,7 @@
 },
 "ashby:koho": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "KOHO",
 "open": {
 "_all|NA": 8,
@@ -1100,13 +1100,13 @@
 },
 "ashby:lambda": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Lambda",
 "open": {
-"_all|NA": 96,
+"_all|NA": 97,
 "_tracked|CA": 1,
-"_tracked|NA": 64,
-"_tracked|US": 63,
+"_tracked|NA": 63,
+"_tracked|US": 62,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
 "data-analyst|NA": 2,
@@ -1117,8 +1117,8 @@
 "hardware|US": 2,
 "ml-engineer|NA": 1,
 "ml-engineer|US": 1,
-"ml-performance|NA": 4,
-"ml-performance|US": 4,
+"ml-performance|NA": 3,
+"ml-performance|US": 3,
 "product|NA": 11,
 "product|US": 11,
 "robotics|NA": 1,
@@ -1136,10 +1136,10 @@
 },
 "ashby:langchain": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "LangChain",
 "open": {
-"_all|NA": 73,
+"_all|NA": 75,
 "_tracked|NA": 20,
 "_tracked|US": 20,
 "ai-infra|NA": 5,
@@ -1156,20 +1156,18 @@
 "security|US": 2,
 "solutions|NA": 1,
 "solutions|US": 1,
-"sre-devops|NA": 3,
-"sre-devops|US": 3,
-"swe|NA": 1,
-"swe|US": 1
+"sre-devops|NA": 4,
+"sre-devops|US": 4
 }
 },
 "ashby:lightspeedhq": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Lightspeed",
 "open": {
-"_all|NA": 88,
-"_tracked|CA": 16,
-"_tracked|NA": 17,
+"_all|NA": 92,
+"_tracked|CA": 17,
+"_tracked|NA": 18,
 "_tracked|US": 1,
 "data-analyst|CA": 4,
 "data-analyst|NA": 4,
@@ -1177,12 +1175,14 @@
 "product|NA": 8,
 "product|US": 1,
 "sre-devops|CA": 5,
-"sre-devops|NA": 5
+"sre-devops|NA": 5,
+"swe|CA": 1,
+"swe|NA": 1
 }
 },
 "ashby:linear": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Linear",
 "open": {
 "_all|NA": 15,
@@ -1205,10 +1205,10 @@
 },
 "ashby:liquid-ai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Liquid AI",
 "open": {
-"_all|NA": 27,
+"_all|NA": 26,
 "_tracked|NA": 16,
 "_tracked|US": 16,
 "hardware|NA": 1,
@@ -1225,7 +1225,7 @@
 },
 "ashby:llamaindex": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "LlamaIndex",
 "open": {
 "_all|NA": 4,
@@ -1239,10 +1239,10 @@
 },
 "ashby:lovable": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Lovable",
 "open": {
-"_all|NA": 16,
+"_all|NA": 15,
 "_tracked|NA": 5,
 "_tracked|US": 5,
 "data-engineer|NA": 1,
@@ -1257,7 +1257,7 @@
 },
 "ashby:lumaai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Luma AI",
 "open": {
 "_all|NA": 5,
@@ -1269,12 +1269,12 @@
 },
 "ashby:machina-labs": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Machina Labs",
 "open": {
-"_all|NA": 28,
-"_tracked|NA": 10,
-"_tracked|US": 10,
+"_all|NA": 29,
+"_tracked|NA": 11,
+"_tracked|US": 11,
 "eng-manager|NA": 1,
 "eng-manager|US": 1,
 "hardware|NA": 2,
@@ -1283,15 +1283,15 @@
 "product|US": 1,
 "robotics|NA": 3,
 "robotics|US": 3,
-"sre-devops|NA": 1,
-"sre-devops|US": 1,
+"sre-devops|NA": 2,
+"sre-devops|US": 2,
 "swe|NA": 2,
 "swe|US": 2
 }
 },
 "ashby:magic": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Magic",
 "open": {
 "_all|NA": 9,
@@ -1305,12 +1305,12 @@
 },
 "ashby:mercor": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Mercor",
 "open": {
-"_all|NA": 107,
-"_tracked|NA": 56,
-"_tracked|US": 56,
+"_all|NA": 106,
+"_tracked|NA": 55,
+"_tracked|US": 55,
 "ai-infra|NA": 4,
 "ai-infra|US": 4,
 "ai-safety|NA": 1,
@@ -1335,13 +1335,13 @@
 "security|US": 2,
 "sre-devops|NA": 2,
 "sre-devops|US": 2,
-"swe|NA": 14,
-"swe|US": 14
+"swe|NA": 13,
+"swe|US": 13
 }
 },
 "ashby:midjourney": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Midjourney",
 "open": {
 "_all|NA": 16,
@@ -1365,7 +1365,7 @@
 },
 "ashby:modal": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Modal",
 "open": {
 "_all|NA": 42,
@@ -1393,10 +1393,10 @@
 },
 "ashby:nabla": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Nabla",
 "open": {
-"_all|NA": 5,
+"_all|NA": 4,
 "_tracked|NA": 1,
 "_tracked|US": 1,
 "product|NA": 1,
@@ -1405,10 +1405,10 @@
 },
 "ashby:neofinancial": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Neo Financial",
 "open": {
-"_all|NA": 56,
+"_all|NA": 57,
 "_tracked|CA": 4,
 "_tracked|NA": 4,
 "data-scientist|CA": 1,
@@ -1423,7 +1423,7 @@
 },
 "ashby:notion": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Notion",
 "open": {
 "_all|NA": 84,
@@ -1455,7 +1455,7 @@
 },
 "ashby:nousresearch": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Nous Research",
 "open": {
 "_all|NA": 14,
@@ -1481,7 +1481,7 @@
 },
 "ashby:ollama": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Ollama",
 "open": {
 "_all|NA": 6,
@@ -1497,15 +1497,15 @@
 },
 "ashby:openai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "OpenAI",
 "open": {
-"_all|NA": 663,
+"_all|NA": 677,
 "_tracked|CA": 3,
-"_tracked|NA": 434,
-"_tracked|US": 431,
-"ai-infra|NA": 8,
-"ai-infra|US": 8,
+"_tracked|NA": 441,
+"_tracked|US": 438,
+"ai-infra|NA": 7,
+"ai-infra|US": 7,
 "ai-safety|NA": 6,
 "ai-safety|US": 6,
 "ai-trainer|NA": 1,
@@ -1527,28 +1527,28 @@
 "ml-engineer|US": 36,
 "ml-performance|NA": 11,
 "ml-performance|US": 11,
-"product|NA": 56,
-"product|US": 56,
+"product|NA": 59,
+"product|US": 59,
 "research-engineer|NA": 37,
 "research-engineer|US": 37,
 "research-scientist|NA": 4,
 "research-scientist|US": 4,
 "robotics|NA": 4,
 "robotics|US": 4,
-"security|NA": 17,
-"security|US": 17,
+"security|NA": 18,
+"security|US": 18,
 "solutions|CA": 1,
-"solutions|NA": 39,
-"solutions|US": 38,
-"sre-devops|NA": 35,
-"sre-devops|US": 35,
-"swe|NA": 103,
-"swe|US": 103
+"solutions|NA": 41,
+"solutions|US": 40,
+"sre-devops|NA": 33,
+"sre-devops|US": 33,
+"swe|NA": 107,
+"swe|US": 107
 }
 },
 "ashby:openrouter": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "OpenRouter",
 "open": {
 "_all|NA": 27,
@@ -1568,7 +1568,7 @@
 },
 "ashby:perplexity": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Perplexity",
 "open": {
 "_all|NA": 129,
@@ -1606,7 +1606,7 @@
 },
 "ashby:physicalintelligence": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Physical Intelligence",
 "open": {
 "_all|NA": 45,
@@ -1632,7 +1632,7 @@
 },
 "ashby:pika": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Pika",
 "open": {
 "_all|NA": 17,
@@ -1656,7 +1656,7 @@
 },
 "ashby:pinecone": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Pinecone",
 "open": {
 "_all|NA": 8,
@@ -1672,10 +1672,10 @@
 },
 "ashby:plaid": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Plaid",
 "open": {
-"_all|NA": 137,
+"_all|NA": 138,
 "_tracked|NA": 67,
 "_tracked|US": 67,
 "ai-safety|NA": 1,
@@ -1706,7 +1706,7 @@
 },
 "ashby:poolside": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Poolside",
 "open": {
 "_all|NA": 0
@@ -1714,10 +1714,10 @@
 },
 "ashby:ramp": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Ramp",
 "open": {
-"_all|NA": 171,
+"_all|NA": 173,
 "_tracked|CA": 9,
 "_tracked|NA": 58,
 "_tracked|US": 58,
@@ -1746,12 +1746,12 @@
 },
 "ashby:reflectionai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Reflection AI",
 "open": {
-"_all|NA": 38,
-"_tracked|NA": 26,
-"_tracked|US": 26,
+"_all|NA": 37,
+"_tracked|NA": 25,
+"_tracked|US": 25,
 "eng-manager|NA": 4,
 "eng-manager|US": 4,
 "product|NA": 3,
@@ -1762,13 +1762,13 @@
 "security|US": 1,
 "solutions|NA": 2,
 "solutions|US": 2,
-"swe|NA": 4,
-"swe|US": 4
+"swe|NA": 3,
+"swe|US": 3
 }
 },
 "ashby:reka": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Reka",
 "open": {
 "_all|NA": 3
@@ -1776,10 +1776,10 @@
 },
 "ashby:replit": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Replit",
 "open": {
-"_all|NA": 34,
+"_all|NA": 33,
 "_tracked|NA": 22,
 "_tracked|US": 22,
 "data-analyst|NA": 1,
@@ -1804,12 +1804,12 @@
 },
 "ashby:runpod": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "RunPod",
 "open": {
-"_all|NA": 17,
-"_tracked|NA": 11,
-"_tracked|US": 11,
+"_all|NA": 16,
+"_tracked|NA": 10,
+"_tracked|US": 10,
 "eng-manager|NA": 1,
 "eng-manager|US": 1,
 "ml-performance|NA": 1,
@@ -1820,13 +1820,13 @@
 "security|US": 1,
 "sre-devops|NA": 2,
 "sre-devops|US": 2,
-"swe|NA": 3,
-"swe|US": 3
+"swe|NA": 2,
+"swe|US": 2
 }
 },
 "ashby:runway": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Runway",
 "open": {
 "_all|NA": 3,
@@ -1846,7 +1846,7 @@
 },
 "ashby:sanctuary": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Sanctuary AI",
 "open": {
 "_all|NA": 1
@@ -1854,12 +1854,12 @@
 },
 "ashby:saronic": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Saronic",
 "open": {
-"_all|NA": 299,
-"_tracked|NA": 91,
-"_tracked|US": 91,
+"_all|NA": 303,
+"_tracked|NA": 87,
+"_tracked|US": 87,
 "cv-perception|NA": 1,
 "cv-perception|US": 1,
 "data-analyst|NA": 2,
@@ -1880,18 +1880,18 @@
 "robotics|US": 5,
 "solutions|NA": 10,
 "solutions|US": 10,
-"sre-devops|NA": 13,
-"sre-devops|US": 13,
+"sre-devops|NA": 9,
+"sre-devops|US": 9,
 "swe|NA": 29,
 "swe|US": 29
 }
 },
 "ashby:serverobotics": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Serve Robotics",
 "open": {
-"_all|NA": 12,
+"_all|NA": 13,
 "_tracked|CA": 4,
 "_tracked|NA": 5,
 "_tracked|US": 5,
@@ -1955,10 +1955,10 @@
 },
 "ashby:sierra": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Sierra",
 "open": {
-"_all|NA": 127,
+"_all|NA": 129,
 "_tracked|CA": 5,
 "_tracked|NA": 61,
 "_tracked|US": 58,
@@ -1986,10 +1986,10 @@
 },
 "ashby:skydio": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Skydio",
 "open": {
-"_all|NA": 162,
+"_all|NA": 163,
 "_tracked|NA": 82,
 "_tracked|US": 82,
 "ai-infra|NA": 2,
@@ -2004,10 +2004,10 @@
 "frontend|US": 12,
 "hardware|NA": 14,
 "hardware|US": 14,
-"product|NA": 12,
-"product|US": 12,
-"robotics|NA": 12,
-"robotics|US": 12,
+"product|NA": 13,
+"product|US": 13,
+"robotics|NA": 11,
+"robotics|US": 11,
 "security|NA": 1,
 "security|US": 1,
 "solutions|NA": 7,
@@ -2020,13 +2020,13 @@
 },
 "ashby:snowflake": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Snowflake",
 "open": {
-"_all|NA": 231,
+"_all|NA": 230,
 "_tracked|CA": 4,
-"_tracked|NA": 133,
-"_tracked|US": 129,
+"_tracked|NA": 132,
+"_tracked|US": 128,
 "ai-infra|NA": 4,
 "ai-infra|US": 4,
 "data-analyst|NA": 1,
@@ -2042,8 +2042,8 @@
 "ml-engineer|US": 9,
 "ml-performance|NA": 1,
 "ml-performance|US": 1,
-"product|NA": 18,
-"product|US": 18,
+"product|NA": 17,
+"product|US": 17,
 "research-engineer|NA": 1,
 "research-engineer|US": 1,
 "research-scientist|NA": 3,
@@ -2062,10 +2062,10 @@
 },
 "ashby:snyk": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Snyk",
 "open": {
-"_all|NA": 19,
+"_all|NA": 18,
 "_tracked|CA": 1,
 "_tracked|NA": 5,
 "_tracked|US": 5,
@@ -2078,7 +2078,7 @@
 },
 "ashby:speak": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Speak",
 "open": {
 "_all|NA": 21,
@@ -2098,7 +2098,7 @@
 },
 "ashby:standardbots": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Standard Bots",
 "open": {
 "_all|NA": 23,
@@ -2122,7 +2122,7 @@
 },
 "ashby:suno": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Suno",
 "open": {
 "_all|NA": 60,
@@ -2154,7 +2154,7 @@
 },
 "ashby:supabase": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Supabase",
 "open": {
 "_all|NA": 7,
@@ -2170,7 +2170,7 @@
 },
 "ashby:surge-ai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Surge AI",
 "open": {
 "_all|NA": 36,
@@ -2196,7 +2196,7 @@
 },
 "ashby:synthesia": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Synthesia",
 "open": {
 "_all|NA": 10,
@@ -2210,13 +2210,13 @@
 },
 "ashby:temporal": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Temporal",
 "open": {
-"_all|NA": 69,
+"_all|NA": 71,
 "_tracked|CA": 7,
-"_tracked|NA": 47,
-"_tracked|US": 47,
+"_tracked|NA": 49,
+"_tracked|US": 49,
 "data-engineer|NA": 1,
 "data-engineer|US": 1,
 "data-scientist|NA": 1,
@@ -2231,18 +2231,18 @@
 "security|CA": 1,
 "security|NA": 2,
 "security|US": 2,
-"solutions|NA": 6,
-"solutions|US": 6,
+"solutions|NA": 7,
+"solutions|US": 7,
 "sre-devops|NA": 3,
 "sre-devops|US": 3,
 "swe|CA": 3,
-"swe|NA": 25,
-"swe|US": 25
+"swe|NA": 26,
+"swe|US": 26
 }
 },
 "ashby:thebotcompany": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "The Bot Company",
 "open": {
 "_all|NA": 7,
@@ -2260,7 +2260,7 @@
 },
 "ashby:thinkific": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Thinkific",
 "open": {
 "_all|NA": 3,
@@ -2274,16 +2274,16 @@
 },
 "ashby:thinkingmachines": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Thinking Machines Lab",
 "open": {
-"_all|NA": 58,
-"_tracked|NA": 35,
-"_tracked|US": 35,
+"_all|NA": 59,
+"_tracked|NA": 36,
+"_tracked|US": 36,
 "ai-infra|NA": 5,
 "ai-infra|US": 5,
-"ai-safety|NA": 1,
-"ai-safety|US": 1,
+"ai-safety|NA": 2,
+"ai-safety|US": 2,
 "data-engineer|NA": 1,
 "data-engineer|US": 1,
 "eng-manager|NA": 1,
@@ -2294,17 +2294,17 @@
 "research-engineer|US": 7,
 "research-scientist|NA": 2,
 "research-scientist|US": 2,
-"security|NA": 1,
-"security|US": 1,
+"security|NA": 2,
+"security|US": 2,
 "sre-devops|NA": 5,
 "sre-devops|US": 5,
-"swe|NA": 8,
-"swe|US": 8
+"swe|NA": 7,
+"swe|US": 7
 }
 },
 "ashby:top-hat": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Top Hat",
 "open": {
 "_all|NA": 9,
@@ -2320,7 +2320,7 @@
 },
 "ashby:trulioo": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Trulioo",
 "open": {
 "_all|NA": 25,
@@ -2343,7 +2343,7 @@
 },
 "ashby:trychroma": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Chroma",
 "open": {
 "_all|NA": 1,
@@ -2355,7 +2355,7 @@
 },
 "ashby:unstructured": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Unstructured",
 "open": {
 "_all|NA": 0
@@ -2363,10 +2363,10 @@
 },
 "ashby:vanta": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Vanta",
 "open": {
-"_all|NA": 39,
+"_all|NA": 38,
 "_tracked|CA": 6,
 "_tracked|NA": 23,
 "_tracked|US": 19,
@@ -2387,7 +2387,7 @@
 },
 "ashby:vapi": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Vapi",
 "open": {
 "_all|NA": 5,
@@ -2401,7 +2401,7 @@
 },
 "ashby:vastai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Vast.ai",
 "open": {
 "_all|NA": 14,
@@ -2425,7 +2425,7 @@
 },
 "ashby:visier": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Visier",
 "open": {
 "_all|NA": 1
@@ -2433,13 +2433,15 @@
 },
 "ashby:wealthsimple": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Wealthsimple",
 "open": {
 "_all|NA": 37,
 "_tracked|CA": 12,
 "_tracked|NA": 12,
 "_tracked|US": 1,
+"ai-infra|CA": 2,
+"ai-infra|NA": 2,
 "data-scientist|CA": 5,
 "data-scientist|NA": 5,
 "product|CA": 1,
@@ -2447,13 +2449,13 @@
 "quant|CA": 1,
 "quant|NA": 1,
 "quant|US": 1,
-"swe|CA": 5,
-"swe|NA": 5
+"swe|CA": 3,
+"swe|NA": 3
 }
 },
 "ashby:weaviate": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Weaviate",
 "open": {
 "_all|NA": 2,
@@ -2465,7 +2467,7 @@
 },
 "ashby:worldlabs": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "World Labs",
 "open": {
 "_all|NA": 8,
@@ -2483,7 +2485,7 @@
 },
 "ashby:writer": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Writer",
 "open": {
 "_all|NA": 33,
@@ -2505,10 +2507,10 @@
 },
 "ashby:zapier": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Zapier",
 "open": {
-"_all|NA": 6,
+"_all|NA": 7,
 "_tracked|NA": 2,
 "_tracked|US": 2,
 "solutions|NA": 1,
@@ -2519,10 +2521,10 @@
 },
 "greenhouse:abnormalsecurity": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Abnormal Security",
 "open": {
-"_all|NA": 46,
+"_all|NA": 45,
 "_tracked|NA": 15,
 "_tracked|US": 15,
 "ai-safety|NA": 6,
@@ -2543,13 +2545,13 @@
 },
 "greenhouse:affirm": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Affirm",
 "open": {
-"_all|NA": 180,
-"_tracked|CA": 67,
-"_tracked|NA": 132,
-"_tracked|US": 65,
+"_all|NA": 179,
+"_tracked|CA": 66,
+"_tracked|NA": 130,
+"_tracked|US": 64,
 "ai-infra|CA": 2,
 "ai-infra|NA": 4,
 "ai-infra|US": 2,
@@ -2580,17 +2582,17 @@
 "sre-devops|CA": 1,
 "sre-devops|NA": 2,
 "sre-devops|US": 1,
-"swe|CA": 33,
-"swe|NA": 67,
-"swe|US": 34
+"swe|CA": 32,
+"swe|NA": 65,
+"swe|US": 33
 }
 },
 "greenhouse:agilityrobotics": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Agility Robotics",
 "open": {
-"_all|NA": 59,
+"_all|NA": 58,
 "_tracked|NA": 35,
 "_tracked|US": 35,
 "ai-infra|NA": 1,
@@ -2611,32 +2613,28 @@
 "robotics|US": 3,
 "solutions|NA": 3,
 "solutions|US": 3,
-"sre-devops|NA": 1,
-"sre-devops|US": 1,
-"swe|NA": 7,
-"swe|US": 7
+"swe|NA": 8,
+"swe|US": 8
 }
 },
 "greenhouse:airbnb": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Airbnb",
 "open": {
-"_all|NA": 104,
-"_tracked|NA": 50,
-"_tracked|US": 50,
+"_all|NA": 105,
+"_tracked|NA": 48,
+"_tracked|US": 48,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
-"data-engineer|NA": 1,
-"data-engineer|US": 1,
 "data-scientist|NA": 2,
 "data-scientist|US": 2,
 "eng-manager|NA": 9,
 "eng-manager|US": 9,
 "frontend|NA": 3,
 "frontend|US": 3,
-"ml-engineer|NA": 12,
-"ml-engineer|US": 12,
+"ml-engineer|NA": 11,
+"ml-engineer|US": 11,
 "product|NA": 9,
 "product|US": 9,
 "sre-devops|NA": 2,
@@ -2647,10 +2645,10 @@
 },
 "greenhouse:airtable": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Airtable",
 "open": {
-"_all|NA": 6,
+"_all|NA": 3,
 "_tracked|NA": 1,
 "_tracked|US": 1,
 "solutions|NA": 1,
@@ -2659,7 +2657,7 @@
 },
 "greenhouse:akunacapital": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Akuna Capital",
 "open": {
 "_all|NA": 21,
@@ -2679,22 +2677,22 @@
 },
 "greenhouse:andurilindustries": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Anduril",
 "open": {
-"_all|NA": 2456,
-"_tracked|NA": 1158,
-"_tracked|US": 1158,
-"ai-infra|NA": 14,
-"ai-infra|US": 14,
+"_all|NA": 2461,
+"_tracked|NA": 1162,
+"_tracked|US": 1162,
+"ai-infra|NA": 12,
+"ai-infra|US": 12,
 "ai-safety|NA": 4,
 "ai-safety|US": 4,
-"cv-perception|NA": 18,
-"cv-perception|US": 18,
-"data-analyst|NA": 6,
-"data-analyst|US": 6,
-"data-engineer|NA": 10,
-"data-engineer|US": 10,
+"cv-perception|NA": 19,
+"cv-perception|US": 19,
+"data-analyst|NA": 7,
+"data-analyst|US": 7,
+"data-engineer|NA": 9,
+"data-engineer|US": 9,
 "eng-manager|NA": 20,
 "eng-manager|US": 20,
 "frontend|NA": 34,
@@ -2709,29 +2707,29 @@
 "product|US": 137,
 "research-engineer|NA": 1,
 "research-engineer|US": 1,
-"research-scientist|NA": 9,
-"research-scientist|US": 9,
-"robotics|NA": 117,
-"robotics|US": 117,
-"security|NA": 34,
-"security|US": 34,
+"research-scientist|NA": 10,
+"research-scientist|US": 10,
+"robotics|NA": 115,
+"robotics|US": 115,
+"security|NA": 36,
+"security|US": 36,
 "solutions|NA": 43,
 "solutions|US": 43,
 "sre-devops|NA": 158,
 "sre-devops|US": 158,
-"swe|NA": 362,
-"swe|US": 362
+"swe|NA": 366,
+"swe|US": 366
 }
 },
 "greenhouse:anthropic": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Anthropic",
 "open": {
-"_all|NA": 495,
+"_all|NA": 499,
 "_tracked|CA": 4,
-"_tracked|NA": 297,
-"_tracked|US": 295,
+"_tracked|NA": 298,
+"_tracked|US": 296,
 "ai-infra|CA": 1,
 "ai-infra|NA": 8,
 "ai-infra|US": 7,
@@ -2744,12 +2742,12 @@
 "data-engineer|US": 6,
 "data-scientist|NA": 6,
 "data-scientist|US": 6,
-"eng-manager|NA": 17,
-"eng-manager|US": 17,
+"eng-manager|NA": 18,
+"eng-manager|US": 18,
 "frontend|NA": 3,
 "frontend|US": 3,
-"hardware|NA": 6,
-"hardware|US": 6,
+"hardware|NA": 5,
+"hardware|US": 5,
 "ml-engineer|NA": 13,
 "ml-engineer|US": 13,
 "ml-performance|CA": 1,
@@ -2770,13 +2768,13 @@
 "sre-devops|CA": 1,
 "sre-devops|NA": 25,
 "sre-devops|US": 24,
-"swe|NA": 69,
-"swe|US": 69
+"swe|NA": 70,
+"swe|US": 70
 }
 },
 "greenhouse:apptronik": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Apptronik",
 "open": {
 "_all|NA": 87,
@@ -2796,10 +2794,8 @@
 "ml-engineer|US": 1,
 "product|NA": 13,
 "product|US": 13,
-"robotics|NA": 7,
-"robotics|US": 7,
-"solutions|NA": 1,
-"solutions|US": 1,
+"robotics|NA": 8,
+"robotics|US": 8,
 "sre-devops|NA": 2,
 "sre-devops|US": 2,
 "swe|NA": 7,
@@ -2808,7 +2804,7 @@
 },
 "greenhouse:arizeai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Arize AI",
 "open": {
 "_all|NA": 13,
@@ -2830,7 +2826,7 @@
 },
 "greenhouse:asana": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Asana",
 "open": {
 "_all|NA": 67,
@@ -2866,27 +2862,31 @@
 },
 "greenhouse:assemblyai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "AssemblyAI",
 "open": {
-"_all|NA": 12,
-"_tracked|NA": 5,
-"_tracked|US": 5,
+"_all|NA": 14,
+"_tracked|NA": 7,
+"_tracked|US": 7,
+"data-engineer|NA": 1,
+"data-engineer|US": 1,
 "ml-engineer|NA": 2,
 "ml-engineer|US": 2,
+"security|NA": 1,
+"security|US": 1,
 "solutions|NA": 3,
 "solutions|US": 3
 }
 },
 "greenhouse:brex": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Brex",
 "open": {
-"_all|NA": 249,
+"_all|NA": 246,
 "_tracked|CA": 13,
-"_tracked|NA": 85,
-"_tracked|US": 72,
+"_tracked|NA": 82,
+"_tracked|US": 69,
 "data-engineer|CA": 1,
 "data-engineer|NA": 4,
 "data-engineer|US": 3,
@@ -2902,8 +2902,8 @@
 "ml-engineer|NA": 2,
 "ml-engineer|US": 2,
 "product|CA": 2,
-"product|NA": 20,
-"product|US": 18,
+"product|NA": 17,
+"product|US": 15,
 "solutions|CA": 1,
 "solutions|NA": 9,
 "solutions|US": 8,
@@ -2914,22 +2914,22 @@
 },
 "greenhouse:chainguard": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Chainguard",
 "open": {
-"_all|NA": 72,
-"_tracked|CA": 6,
-"_tracked|NA": 33,
-"_tracked|US": 30,
+"_all|NA": 71,
+"_tracked|CA": 5,
+"_tracked|NA": 30,
+"_tracked|US": 28,
 "eng-manager|NA": 1,
 "eng-manager|US": 1,
 "product|NA": 3,
 "product|US": 3,
-"security|CA": 3,
-"security|NA": 9,
-"security|US": 6,
-"solutions|NA": 14,
-"solutions|US": 14,
+"security|CA": 2,
+"security|NA": 7,
+"security|US": 5,
+"solutions|NA": 13,
+"solutions|US": 13,
 "swe|CA": 3,
 "swe|NA": 6,
 "swe|US": 6
@@ -2937,18 +2937,18 @@
 },
 "greenhouse:chime": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Chime",
 "open": {
-"_all|NA": 80,
-"_tracked|NA": 47,
-"_tracked|US": 47,
+"_all|NA": 78,
+"_tracked|NA": 45,
+"_tracked|US": 45,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
 "data-engineer|NA": 3,
 "data-engineer|US": 3,
-"data-scientist|NA": 6,
-"data-scientist|US": 6,
+"data-scientist|NA": 5,
+"data-scientist|US": 5,
 "ml-engineer|NA": 7,
 "ml-engineer|US": 7,
 "product|NA": 7,
@@ -2957,13 +2957,13 @@
 "security|US": 2,
 "sre-devops|NA": 3,
 "sre-devops|US": 3,
-"swe|NA": 18,
-"swe|US": 18
+"swe|NA": 17,
+"swe|US": 17
 }
 },
 "greenhouse:cloudflare": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Cloudflare",
 "open": {
 "_all|NA": 0
@@ -2971,10 +2971,10 @@
 },
 "greenhouse:coherehealth": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Cohere Health",
 "open": {
-"_all|NA": 32,
+"_all|NA": 30,
 "_tracked|NA": 12,
 "_tracked|US": 12,
 "data-engineer|NA": 3,
@@ -2995,7 +2995,7 @@
 },
 "greenhouse:coinbase": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Coinbase",
 "open": {
 "_all|NA": 191,
@@ -3015,8 +3015,8 @@
 "frontend|US": 5,
 "ml-engineer|NA": 5,
 "ml-engineer|US": 5,
-"product|NA": 21,
-"product|US": 21,
+"product|NA": 22,
+"product|US": 22,
 "quant|NA": 1,
 "quant|US": 1,
 "research-scientist|NA": 1,
@@ -3028,20 +3028,20 @@
 "sre-devops|NA": 6,
 "sre-devops|US": 6,
 "swe|CA": 5,
-"swe|NA": 49,
-"swe|US": 44
+"swe|NA": 48,
+"swe|US": 43
 }
 },
 "greenhouse:coreweave": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "CoreWeave",
 "open": {
-"_all|NA": 312,
-"_tracked|NA": 162,
-"_tracked|US": 162,
-"ai-infra|NA": 8,
-"ai-infra|US": 8,
+"_all|NA": 310,
+"_tracked|NA": 159,
+"_tracked|US": 159,
+"ai-infra|NA": 7,
+"ai-infra|US": 7,
 "data-analyst|NA": 1,
 "data-analyst|US": 1,
 "data-engineer|NA": 3,
@@ -3056,27 +3056,27 @@
 "ml-engineer|US": 8,
 "ml-performance|NA": 1,
 "ml-performance|US": 1,
-"product|NA": 25,
-"product|US": 25,
+"product|NA": 23,
+"product|US": 23,
 "security|NA": 14,
 "security|US": 14,
 "solutions|NA": 20,
 "solutions|US": 20,
-"sre-devops|NA": 28,
-"sre-devops|US": 28,
-"swe|NA": 36,
-"swe|US": 36
+"sre-devops|NA": 29,
+"sre-devops|US": 29,
+"swe|NA": 35,
+"swe|US": 35
 }
 },
 "greenhouse:cresta": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Cresta",
 "open": {
-"_all|NA": 55,
-"_tracked|CA": 15,
-"_tracked|NA": 29,
-"_tracked|US": 19,
+"_all|NA": 52,
+"_tracked|CA": 14,
+"_tracked|NA": 28,
+"_tracked|US": 18,
 "ai-infra|CA": 1,
 "ai-infra|NA": 1,
 "data-scientist|NA": 1,
@@ -3084,9 +3084,9 @@
 "frontend|CA": 2,
 "frontend|NA": 2,
 "frontend|US": 2,
-"ml-engineer|CA": 5,
-"ml-engineer|NA": 10,
-"ml-engineer|US": 6,
+"ml-engineer|CA": 4,
+"ml-engineer|NA": 9,
+"ml-engineer|US": 5,
 "product|NA": 1,
 "product|US": 1,
 "solutions|CA": 2,
@@ -3102,7 +3102,7 @@
 },
 "greenhouse:d2l": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "D2L",
 "open": {
 "_all|NA": 23,
@@ -3122,20 +3122,20 @@
 },
 "greenhouse:databricks": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Databricks",
 "open": {
-"_all|NA": 495,
+"_all|NA": 497,
 "_tracked|CA": 15,
-"_tracked|NA": 347,
-"_tracked|US": 333,
+"_tracked|NA": 348,
+"_tracked|US": 334,
 "ai-infra|NA": 5,
 "ai-infra|US": 5,
 "data-scientist|NA": 7,
 "data-scientist|US": 7,
 "eng-manager|CA": 1,
-"eng-manager|NA": 18,
-"eng-manager|US": 17,
+"eng-manager|NA": 19,
+"eng-manager|US": 18,
 "frontend|CA": 1,
 "frontend|NA": 2,
 "frontend|US": 1,
@@ -3143,15 +3143,15 @@
 "ml-engineer|US": 10,
 "ml-performance|NA": 1,
 "ml-performance|US": 1,
-"product|NA": 35,
-"product|US": 35,
+"product|NA": 34,
+"product|US": 34,
 "research-scientist|NA": 2,
 "research-scientist|US": 2,
 "security|NA": 5,
 "security|US": 5,
 "solutions|CA": 8,
-"solutions|NA": 173,
-"solutions|US": 165,
+"solutions|NA": 174,
+"solutions|US": 166,
 "sre-devops|NA": 12,
 "sre-devops|US": 12,
 "swe|CA": 5,
@@ -3161,24 +3161,24 @@
 },
 "greenhouse:datadog": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Datadog",
 "open": {
-"_all|NA": 210,
-"_tracked|NA": 62,
-"_tracked|US": 62,
+"_all|NA": 211,
+"_tracked|NA": 64,
+"_tracked|US": 64,
 "data-analyst|NA": 1,
 "data-analyst|US": 1,
 "eng-manager|NA": 4,
 "eng-manager|US": 4,
 "frontend|NA": 1,
 "frontend|US": 1,
-"product|NA": 18,
-"product|US": 18,
+"product|NA": 19,
+"product|US": 19,
 "research-scientist|NA": 3,
 "research-scientist|US": 3,
-"solutions|NA": 28,
-"solutions|US": 28,
+"solutions|NA": 29,
+"solutions|US": 29,
 "sre-devops|NA": 1,
 "sre-devops|US": 1,
 "swe|NA": 6,
@@ -3187,7 +3187,7 @@
 },
 "greenhouse:descript": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Descript",
 "open": {
 "_all|NA": 10,
@@ -3205,7 +3205,7 @@
 },
 "greenhouse:dialpad": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Dialpad",
 "open": {
 "_all|NA": 11,
@@ -3217,7 +3217,7 @@
 },
 "greenhouse:discord": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Discord",
 "open": {
 "_all|NA": 26,
@@ -3243,10 +3243,10 @@
 },
 "greenhouse:doordashusa": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "DoorDash",
 "open": {
-"_all|NA": 407,
+"_all|NA": 399,
 "_tracked|NA": 118,
 "_tracked|US": 118,
 "ai-infra|NA": 8,
@@ -3285,10 +3285,10 @@
 },
 "greenhouse:dropbox": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Dropbox",
 "open": {
-"_all|NA": 34,
+"_all|NA": 30,
 "_tracked|CA": 7,
 "_tracked|NA": 18,
 "_tracked|US": 11,
@@ -3313,16 +3313,16 @@
 },
 "greenhouse:duolingo": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Duolingo",
 "open": {
 "_all|NA": 41,
-"_tracked|NA": 17,
-"_tracked|US": 17,
+"_tracked|NA": 18,
+"_tracked|US": 18,
 "data-analyst|NA": 1,
 "data-analyst|US": 1,
-"data-scientist|NA": 1,
-"data-scientist|US": 1,
+"data-scientist|NA": 2,
+"data-scientist|US": 2,
 "eng-manager|NA": 2,
 "eng-manager|US": 2,
 "frontend|NA": 2,
@@ -3341,13 +3341,13 @@
 },
 "greenhouse:elastic": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Elastic",
 "open": {
-"_all|NA": 142,
+"_all|NA": 147,
 "_tracked|CA": 28,
-"_tracked|NA": 78,
-"_tracked|US": 50,
+"_tracked|NA": 79,
+"_tracked|US": 51,
 "data-analyst|NA": 2,
 "data-analyst|US": 2,
 "data-engineer|NA": 2,
@@ -3364,11 +3364,11 @@
 "security|NA": 2,
 "security|US": 2,
 "solutions|CA": 1,
-"solutions|NA": 6,
-"solutions|US": 5,
+"solutions|NA": 8,
+"solutions|US": 7,
 "sre-devops|CA": 3,
-"sre-devops|NA": 8,
-"sre-devops|US": 5,
+"sre-devops|NA": 7,
+"sre-devops|US": 4,
 "swe|CA": 16,
 "swe|NA": 40,
 "swe|US": 24
@@ -3376,13 +3376,13 @@
 },
 "greenhouse:epicgames": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Epic Games",
 "open": {
-"_all|NA": 76,
-"_tracked|CA": 20,
-"_tracked|NA": 49,
-"_tracked|US": 29,
+"_all|NA": 79,
+"_tracked|CA": 22,
+"_tracked|NA": 53,
+"_tracked|US": 31,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
 "data-scientist|NA": 1,
@@ -3396,16 +3396,16 @@
 "research-engineer|NA": 1,
 "research-engineer|US": 1,
 "security|CA": 1,
-"security|NA": 4,
-"security|US": 3,
-"swe|CA": 15,
-"swe|NA": 30,
-"swe|US": 15
+"security|NA": 5,
+"security|US": 4,
+"swe|CA": 17,
+"swe|NA": 33,
+"swe|US": 16
 }
 },
 "greenhouse:faire": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Faire",
 "open": {
 "_all|NA": 70,
@@ -3436,10 +3436,10 @@
 },
 "greenhouse:figma": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Figma",
 "open": {
-"_all|NA": 95,
+"_all|NA": 96,
 "_tracked|NA": 52,
 "_tracked|US": 52,
 "ai-infra|NA": 1,
@@ -3470,12 +3470,12 @@
 },
 "greenhouse:figureai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Figure AI",
 "open": {
-"_all|NA": 89,
-"_tracked|NA": 42,
-"_tracked|US": 42,
+"_all|NA": 87,
+"_tracked|NA": 41,
+"_tracked|US": 41,
 "ai-infra|NA": 3,
 "ai-infra|US": 3,
 "cv-perception|NA": 1,
@@ -3486,8 +3486,8 @@
 "frontend|US": 1,
 "hardware|NA": 6,
 "hardware|US": 6,
-"ml-engineer|NA": 4,
-"ml-engineer|US": 4,
+"ml-engineer|NA": 3,
+"ml-engineer|US": 3,
 "robotics|NA": 8,
 "robotics|US": 8,
 "security|NA": 4,
@@ -3500,10 +3500,10 @@
 },
 "greenhouse:flyzipline": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Zipline",
 "open": {
-"_all|NA": 280,
+"_all|NA": 276,
 "_tracked|NA": 122,
 "_tracked|US": 122,
 "ai-infra|NA": 3,
@@ -3538,7 +3538,7 @@
 },
 "greenhouse:formic": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Formic",
 "open": {
 "_all|NA": 69,
@@ -3560,41 +3560,41 @@
 },
 "greenhouse:galileo": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Galileo",
 "open": {
-"_all|NA": 12
+"_all|NA": 13
 }
 },
 "greenhouse:generatebiomedicines": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Generate Biomedicines",
 "open": {
-"_all|NA": 18,
-"_tracked|NA": 8,
-"_tracked|US": 8,
+"_all|NA": 17,
+"_tracked|NA": 7,
+"_tracked|US": 7,
 "ml-engineer|NA": 1,
 "ml-engineer|US": 1,
-"research-scientist|NA": 6,
-"research-scientist|US": 6,
+"research-scientist|NA": 5,
+"research-scientist|US": 5,
 "swe|NA": 1,
 "swe|US": 1
 }
 },
 "greenhouse:geotab": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Geotab",
 "open": {
-"_all|NA": 36,
+"_all|NA": 35,
 "_tracked|CA": 2,
-"_tracked|NA": 6,
-"_tracked|US": 4,
+"_tracked|NA": 7,
+"_tracked|US": 5,
 "hardware|NA": 2,
 "hardware|US": 2,
-"security|NA": 1,
-"security|US": 1,
+"security|NA": 2,
+"security|US": 2,
 "swe|CA": 2,
 "swe|NA": 3,
 "swe|US": 1
@@ -3602,12 +3602,12 @@
 },
 "greenhouse:gitlab": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "GitLab",
 "open": {
-"_all|NA": 133,
-"_tracked|CA": 28,
-"_tracked|NA": 48,
+"_all|NA": 130,
+"_tracked|CA": 27,
+"_tracked|NA": 47,
 "_tracked|US": 42,
 "data-scientist|CA": 2,
 "data-scientist|NA": 2,
@@ -3615,8 +3615,8 @@
 "eng-manager|CA": 4,
 "eng-manager|NA": 4,
 "eng-manager|US": 4,
-"ml-engineer|CA": 2,
-"ml-engineer|NA": 3,
+"ml-engineer|CA": 1,
+"ml-engineer|NA": 2,
 "ml-engineer|US": 1,
 "product|CA": 3,
 "product|NA": 9,
@@ -3637,13 +3637,13 @@
 },
 "greenhouse:gleanwork": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Glean",
 "open": {
-"_all|NA": 104,
+"_all|NA": 97,
 "_tracked|CA": 1,
-"_tracked|NA": 50,
-"_tracked|US": 49,
+"_tracked|NA": 51,
+"_tracked|US": 50,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
 "data-scientist|NA": 1,
@@ -3654,8 +3654,8 @@
 "frontend|US": 1,
 "ml-engineer|NA": 7,
 "ml-engineer|US": 7,
-"product|NA": 13,
-"product|US": 13,
+"product|NA": 14,
+"product|US": 14,
 "security|NA": 2,
 "security|US": 2,
 "solutions|CA": 1,
@@ -3669,10 +3669,10 @@
 },
 "greenhouse:gusto": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Gusto",
 "open": {
-"_all|NA": 85,
+"_all|NA": 86,
 "_tracked|NA": 45,
 "_tracked|US": 45,
 "ai-infra|NA": 1,
@@ -3699,7 +3699,7 @@
 },
 "greenhouse:heygen": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "HeyGen",
 "open": {
 "_all|NA": 16,
@@ -3728,21 +3728,19 @@
 },
 "greenhouse:hootsuite": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Hootsuite",
 "open": {
-"_all|NA": 6,
-"_tracked|CA": 3,
-"_tracked|NA": 3,
+"_all|NA": 4,
+"_tracked|CA": 2,
+"_tracked|NA": 2,
 "sre-devops|CA": 2,
-"sre-devops|NA": 2,
-"swe|CA": 1,
-"swe|NA": 1
+"sre-devops|NA": 2
 }
 },
 "greenhouse:humeai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Hume AI",
 "open": {
 "_all|NA": 5,
@@ -3760,7 +3758,7 @@
 },
 "greenhouse:imbue": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Imbue",
 "open": {
 "_all|NA": 2,
@@ -3772,12 +3770,12 @@
 },
 "greenhouse:imc": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "IMC Trading",
 "open": {
-"_all|NA": 61,
-"_tracked|NA": 41,
-"_tracked|US": 41,
+"_all|NA": 60,
+"_tracked|NA": 40,
+"_tracked|US": 40,
 "data-engineer|NA": 2,
 "data-engineer|US": 2,
 "hardware|NA": 5,
@@ -3792,13 +3790,13 @@
 "research-scientist|US": 2,
 "sre-devops|NA": 4,
 "sre-devops|US": 4,
-"swe|NA": 6,
-"swe|US": 6
+"swe|NA": 5,
+"swe|US": 5
 }
 },
 "greenhouse:inflectionai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Inflection AI",
 "open": {
 "_all|NA": 4,
@@ -3814,13 +3812,13 @@
 },
 "greenhouse:instacart": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Instacart",
 "open": {
-"_all|NA": 94,
-"_tracked|CA": 15,
-"_tracked|NA": 35,
-"_tracked|US": 20,
+"_all|NA": 96,
+"_tracked|CA": 17,
+"_tracked|NA": 38,
+"_tracked|US": 21,
 "data-engineer|CA": 1,
 "data-engineer|NA": 2,
 "data-engineer|US": 1,
@@ -3830,8 +3828,8 @@
 "frontend|NA": 3,
 "frontend|US": 1,
 "ml-engineer|CA": 3,
-"ml-engineer|NA": 7,
-"ml-engineer|US": 4,
+"ml-engineer|NA": 8,
+"ml-engineer|US": 5,
 "product|CA": 3,
 "product|NA": 7,
 "product|US": 4,
@@ -3841,32 +3839,32 @@
 "solutions|CA": 2,
 "solutions|NA": 5,
 "solutions|US": 3,
-"swe|CA": 3,
-"swe|NA": 8,
+"swe|CA": 5,
+"swe|NA": 10,
 "swe|US": 5
 }
 },
 "greenhouse:invisibletech": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Invisible Technologies",
 "open": {
-"_all|NA": 19,
-"_tracked|NA": 10,
-"_tracked|US": 10,
+"_all|NA": 18,
+"_tracked|NA": 9,
+"_tracked|US": 9,
 "eng-manager|NA": 1,
 "eng-manager|US": 1,
 "product|NA": 1,
 "product|US": 1,
 "research-engineer|NA": 1,
 "research-engineer|US": 1,
-"solutions|NA": 7,
-"solutions|US": 7
+"solutions|NA": 6,
+"solutions|US": 6
 }
 },
 "greenhouse:janestreet": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Jane Street",
 "open": {
 "_all|NA": 86,
@@ -3902,7 +3900,7 @@
 },
 "greenhouse:jumptrading": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Jump Trading",
 "open": {
 "_all|NA": 29,
@@ -3926,7 +3924,7 @@
 },
 "greenhouse:kodiak": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Kodiak",
 "open": {
 "_all|NA": 52,
@@ -3954,7 +3952,7 @@
 },
 "greenhouse:labelbox": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Labelbox",
 "open": {
 "_all|NA": 12,
@@ -3972,7 +3970,7 @@
 },
 "greenhouse:leagueinc": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "League",
 "open": {
 "_all|NA": 8,
@@ -3986,10 +3984,10 @@
 },
 "greenhouse:lightmatter": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Lightmatter",
 "open": {
-"_all|NA": 86,
+"_all|NA": 88,
 "_tracked|CA": 12,
 "_tracked|NA": 65,
 "_tracked|US": 54,
@@ -3999,8 +3997,8 @@
 "frontend|NA": 5,
 "frontend|US": 4,
 "hardware|CA": 9,
-"hardware|NA": 43,
-"hardware|US": 35,
+"hardware|NA": 42,
+"hardware|US": 34,
 "product|NA": 5,
 "product|US": 5,
 "research-scientist|CA": 1,
@@ -4009,13 +4007,13 @@
 "solutions|NA": 1,
 "solutions|US": 1,
 "swe|CA": 1,
-"swe|NA": 8,
-"swe|US": 7
+"swe|NA": 9,
+"swe|US": 8
 }
 },
 "greenhouse:locusrobotics": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Locus Robotics",
 "open": {
 "_all|NA": 7,
@@ -4031,12 +4029,12 @@
 },
 "greenhouse:lucidmotors": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Lucid Motors",
 "open": {
-"_all|NA": 373,
-"_tracked|NA": 93,
-"_tracked|US": 93,
+"_all|NA": 379,
+"_tracked|NA": 96,
+"_tracked|US": 96,
 "cv-perception|NA": 4,
 "cv-perception|US": 4,
 "data-engineer|NA": 1,
@@ -4049,21 +4047,21 @@
 "hardware|US": 26,
 "ml-engineer|NA": 3,
 "ml-engineer|US": 3,
-"product|NA": 12,
-"product|US": 12,
+"product|NA": 13,
+"product|US": 13,
 "robotics|NA": 8,
 "robotics|US": 8,
 "security|NA": 1,
 "security|US": 1,
 "sre-devops|NA": 7,
 "sre-devops|US": 7,
-"swe|NA": 27,
-"swe|US": 27
+"swe|NA": 29,
+"swe|US": 29
 }
 },
 "greenhouse:lyft": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Lyft",
 "open": {
 "_all|NA": 138,
@@ -4108,7 +4106,7 @@
 },
 "greenhouse:maymobility": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "May Mobility",
 "open": {
 "_all|NA": 33,
@@ -4136,34 +4134,34 @@
 },
 "greenhouse:mercury": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Mercury",
 "open": {
-"_all|NA": 68,
-"_tracked|CA": 29,
-"_tracked|NA": 30,
-"_tracked|US": 30,
+"_all|NA": 70,
+"_tracked|CA": 27,
+"_tracked|NA": 28,
+"_tracked|US": 28,
 "data-analyst|CA": 1,
 "data-analyst|NA": 1,
 "data-analyst|US": 1,
-"data-engineer|CA": 1,
-"data-engineer|NA": 1,
-"data-engineer|US": 1,
 "data-scientist|CA": 3,
 "data-scientist|NA": 3,
 "data-scientist|US": 3,
-"eng-manager|CA": 4,
-"eng-manager|NA": 4,
-"eng-manager|US": 4,
+"eng-manager|CA": 3,
+"eng-manager|NA": 3,
+"eng-manager|US": 3,
 "frontend|CA": 1,
 "frontend|NA": 1,
 "frontend|US": 1,
 "ml-engineer|CA": 2,
 "ml-engineer|NA": 2,
 "ml-engineer|US": 2,
-"product|CA": 9,
-"product|NA": 10,
-"product|US": 10,
+"product|CA": 8,
+"product|NA": 9,
+"product|US": 9,
+"security|CA": 1,
+"security|NA": 1,
+"security|US": 1,
 "sre-devops|CA": 2,
 "sre-devops|NA": 2,
 "sre-devops|US": 2,
@@ -4174,7 +4172,7 @@
 },
 "greenhouse:mongodb": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "MongoDB",
 "open": {
 "_all|NA": 169,
@@ -4195,24 +4193,24 @@
 "security|CA": 1,
 "security|NA": 2,
 "security|US": 1,
-"solutions|CA": 1,
-"solutions|NA": 10,
+"solutions|CA": 2,
+"solutions|NA": 11,
 "solutions|US": 9,
 "sre-devops|NA": 10,
 "sre-devops|US": 10,
-"swe|CA": 5,
-"swe|NA": 29,
+"swe|CA": 4,
+"swe|NA": 28,
 "swe|US": 24
 }
 },
 "greenhouse:motional": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Motional",
 "open": {
-"_all|NA": 67,
-"_tracked|NA": 51,
-"_tracked|US": 51,
+"_all|NA": 66,
+"_tracked|NA": 50,
+"_tracked|US": 50,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
 "ai-safety|NA": 1,
@@ -4231,15 +4229,15 @@
 "product|US": 3,
 "robotics|NA": 10,
 "robotics|US": 10,
-"sre-devops|NA": 7,
-"sre-devops|US": 7,
+"sre-devops|NA": 6,
+"sre-devops|US": 6,
 "swe|NA": 19,
 "swe|US": 19
 }
 },
 "greenhouse:neuralink": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Neuralink",
 "open": {
 "_all|NA": 78,
@@ -4265,12 +4263,12 @@
 },
 "greenhouse:nuro": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Nuro",
 "open": {
 "_all|NA": 108,
-"_tracked|NA": 89,
-"_tracked|US": 89,
+"_tracked|NA": 88,
+"_tracked|US": 88,
 "ai-infra|NA": 12,
 "ai-infra|US": 12,
 "ai-safety|NA": 2,
@@ -4293,18 +4291,18 @@
 "security|US": 1,
 "sre-devops|NA": 9,
 "sre-devops|US": 9,
-"swe|NA": 27,
-"swe|US": 27
+"swe|NA": 26,
+"swe|US": 26
 }
 },
 "greenhouse:okta": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Okta",
 "open": {
-"_all|NA": 204,
-"_tracked|CA": 53,
-"_tracked|NA": 110,
+"_all|NA": 205,
+"_tracked|CA": 56,
+"_tracked|NA": 114,
 "_tracked|US": 62,
 "ai-infra|NA": 3,
 "ai-infra|US": 3,
@@ -4321,30 +4319,30 @@
 "ml-engineer|CA": 5,
 "ml-engineer|NA": 8,
 "ml-engineer|US": 3,
-"product|CA": 7,
-"product|NA": 17,
-"product|US": 14,
+"product|CA": 5,
+"product|NA": 14,
+"product|US": 12,
 "security|CA": 1,
 "security|NA": 2,
 "security|US": 1,
 "solutions|NA": 5,
 "solutions|US": 5,
 "sre-devops|CA": 4,
-"sre-devops|NA": 16,
-"sre-devops|US": 12,
-"swe|CA": 31,
-"swe|NA": 45,
-"swe|US": 15
+"sre-devops|NA": 17,
+"sre-devops|US": 13,
+"swe|CA": 36,
+"swe|NA": 51,
+"swe|US": 16
 }
 },
 "greenhouse:pathrobotics": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Path Robotics",
 "open": {
-"_all|NA": 63,
-"_tracked|NA": 26,
-"_tracked|US": 26,
+"_all|NA": 61,
+"_tracked|NA": 25,
+"_tracked|US": 25,
 "cv-perception|NA": 2,
 "cv-perception|US": 2,
 "data-engineer|NA": 1,
@@ -4361,19 +4359,19 @@
 "solutions|US": 2,
 "sre-devops|NA": 1,
 "sre-devops|US": 1,
-"swe|NA": 4,
-"swe|US": 4
+"swe|NA": 3,
+"swe|US": 3
 }
 },
 "greenhouse:pinterest": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Pinterest",
 "open": {
-"_all|NA": 140,
-"_tracked|CA": 12,
-"_tracked|NA": 103,
-"_tracked|US": 103,
+"_all|NA": 139,
+"_tracked|CA": 10,
+"_tracked|NA": 102,
+"_tracked|US": 102,
 "ai-infra|NA": 5,
 "ai-infra|US": 5,
 "ai-safety|NA": 1,
@@ -4383,7 +4381,7 @@
 "data-scientist|CA": 1,
 "data-scientist|NA": 11,
 "data-scientist|US": 11,
-"eng-manager|CA": 2,
+"eng-manager|CA": 1,
 "eng-manager|NA": 4,
 "eng-manager|US": 4,
 "frontend|CA": 3,
@@ -4404,14 +4402,14 @@
 "solutions|US": 2,
 "sre-devops|NA": 5,
 "sre-devops|US": 5,
-"swe|CA": 3,
-"swe|NA": 17,
-"swe|US": 17
+"swe|CA": 2,
+"swe|NA": 16,
+"swe|US": 16
 }
 },
 "greenhouse:point72": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Point72",
 "open": {
 "_all|NA": 104,
@@ -4447,10 +4445,10 @@
 },
 "greenhouse:prolific": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Prolific",
 "open": {
-"_all|NA": 17,
+"_all|NA": 13,
 "_tracked|CA": 1,
 "_tracked|NA": 2,
 "_tracked|US": 2,
@@ -4463,10 +4461,10 @@
 },
 "greenhouse:recursionpharmaceuticals": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Recursion",
 "open": {
-"_all|NA": 15,
+"_all|NA": 16,
 "_tracked|NA": 5,
 "_tracked|US": 5,
 "research-scientist|NA": 3,
@@ -4479,10 +4477,10 @@
 },
 "greenhouse:reddit": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Reddit",
 "open": {
-"_all|NA": 126,
+"_all|NA": 128,
 "_tracked|CA": 6,
 "_tracked|NA": 97,
 "_tracked|US": 91,
@@ -4515,7 +4513,7 @@
 },
 "greenhouse:ritual": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Ritual",
 "open": {
 "_all|NA": 0
@@ -4523,10 +4521,10 @@
 },
 "greenhouse:robinhood": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Robinhood",
 "open": {
-"_all|NA": 149,
+"_all|NA": 152,
 "_tracked|CA": 13,
 "_tracked|NA": 81,
 "_tracked|US": 68,
@@ -4549,8 +4547,8 @@
 "ml-engineer|NA": 1,
 "ml-engineer|US": 1,
 "product|CA": 2,
-"product|NA": 18,
-"product|US": 16,
+"product|NA": 15,
+"product|US": 13,
 "quant|NA": 3,
 "quant|US": 3,
 "security|NA": 3,
@@ -4559,19 +4557,19 @@
 "sre-devops|NA": 4,
 "sre-devops|US": 2,
 "swe|CA": 6,
-"swe|NA": 24,
-"swe|US": 18
+"swe|NA": 27,
+"swe|US": 21
 }
 },
 "greenhouse:roblox": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Roblox",
 "open": {
 "_all|NA": 233,
 "_tracked|CA": 2,
-"_tracked|NA": 191,
-"_tracked|US": 189,
+"_tracked|NA": 189,
+"_tracked|US": 187,
 "ai-infra|NA": 7,
 "ai-infra|US": 7,
 "data-analyst|NA": 1,
@@ -4580,8 +4578,8 @@
 "data-engineer|US": 3,
 "data-scientist|NA": 10,
 "data-scientist|US": 10,
-"eng-manager|NA": 15,
-"eng-manager|US": 15,
+"eng-manager|NA": 14,
+"eng-manager|US": 14,
 "frontend|NA": 7,
 "frontend|US": 7,
 "hardware|NA": 1,
@@ -4594,8 +4592,8 @@
 "product|US": 10,
 "research-scientist|NA": 1,
 "research-scientist|US": 1,
-"security|NA": 14,
-"security|US": 14,
+"security|NA": 13,
+"security|US": 13,
 "sre-devops|NA": 9,
 "sre-devops|US": 9,
 "swe|CA": 2,
@@ -4605,14 +4603,14 @@
 },
 "greenhouse:sambanovasystems": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "SambaNova",
 "open": {
-"_all|NA": 57,
-"_tracked|NA": 37,
-"_tracked|US": 37,
-"ai-infra|NA": 2,
-"ai-infra|US": 2,
+"_all|NA": 64,
+"_tracked|NA": 39,
+"_tracked|US": 39,
+"ai-infra|NA": 3,
+"ai-infra|US": 3,
 "eng-manager|NA": 1,
 "eng-manager|US": 1,
 "hardware|NA": 11,
@@ -4627,16 +4625,16 @@
 "solutions|US": 4,
 "sre-devops|NA": 4,
 "sre-devops|US": 4,
-"swe|NA": 7,
-"swe|US": 7
+"swe|NA": 8,
+"swe|US": 8
 }
 },
 "greenhouse:samsara": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Samsara",
 "open": {
-"_all|NA": 236,
+"_all|NA": 233,
 "_tracked|CA": 17,
 "_tracked|NA": 83,
 "_tracked|US": 67,
@@ -4674,10 +4672,10 @@
 },
 "greenhouse:scaleai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Scale AI",
 "open": {
-"_all|NA": 125,
+"_all|NA": 123,
 "_tracked|CA": 2,
 "_tracked|NA": 68,
 "_tracked|US": 68,
@@ -4715,10 +4713,10 @@
 },
 "greenhouse:snorkelai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Snorkel AI",
 "open": {
-"_all|NA": 41,
+"_all|NA": 40,
 "_tracked|NA": 22,
 "_tracked|US": 22,
 "ai-infra|NA": 1,
@@ -4731,17 +4729,17 @@
 "ml-engineer|US": 2,
 "product|NA": 2,
 "product|US": 2,
-"research-scientist|NA": 5,
-"research-scientist|US": 5,
+"research-scientist|NA": 4,
+"research-scientist|US": 4,
 "solutions|NA": 3,
 "solutions|US": 3,
-"swe|NA": 5,
-"swe|US": 5
+"swe|NA": 6,
+"swe|US": 6
 }
 },
 "greenhouse:sourcegraph91": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Sourcegraph",
 "open": {
 "_all|NA": 0
@@ -4749,26 +4747,28 @@
 },
 "greenhouse:spacex": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "SpaceX",
 "open": {
-"_all|NA": 2851,
+"_all|NA": 2837,
 "_tracked|NA": 1077,
 "_tracked|US": 1077,
-"ai-infra|NA": 46,
-"ai-infra|US": 46,
-"ai-safety|NA": 56,
-"ai-safety|US": 56,
-"data-analyst|NA": 20,
-"data-analyst|US": 20,
-"data-engineer|NA": 14,
-"data-engineer|US": 14,
+"ai-infra|NA": 47,
+"ai-infra|US": 47,
+"ai-safety|NA": 52,
+"ai-safety|US": 52,
+"cv-perception|NA": 1,
+"cv-perception|US": 1,
+"data-analyst|NA": 15,
+"data-analyst|US": 15,
+"data-engineer|NA": 15,
+"data-engineer|US": 15,
 "eng-manager|NA": 9,
 "eng-manager|US": 9,
 "frontend|NA": 42,
 "frontend|US": 42,
-"hardware|NA": 272,
-"hardware|US": 272,
+"hardware|NA": 273,
+"hardware|US": 273,
 "ml-engineer|NA": 33,
 "ml-engineer|US": 33,
 "ml-performance|NA": 7,
@@ -4777,19 +4777,19 @@
 "quant|US": 2,
 "robotics|NA": 24,
 "robotics|US": 24,
-"security|NA": 64,
-"security|US": 64,
+"security|NA": 69,
+"security|US": 69,
 "solutions|NA": 16,
 "solutions|US": 16,
-"sre-devops|NA": 203,
-"sre-devops|US": 203,
-"swe|NA": 269,
-"swe|US": 269
+"sre-devops|NA": 202,
+"sre-devops|US": 202,
+"swe|NA": 270,
+"swe|US": 270
 }
 },
 "greenhouse:stabilityai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Stability AI",
 "open": {
 "_all|NA": 2
@@ -4797,18 +4797,18 @@
 },
 "greenhouse:stackav": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Stack AV",
 "open": {
-"_all|NA": 15,
-"_tracked|NA": 12,
-"_tracked|US": 12,
+"_all|NA": 14,
+"_tracked|NA": 11,
+"_tracked|US": 11,
 "ai-infra|NA": 4,
 "ai-infra|US": 4,
 "cv-perception|NA": 1,
 "cv-perception|US": 1,
-"hardware|NA": 3,
-"hardware|US": 3,
+"hardware|NA": 2,
+"hardware|US": 2,
 "ml-engineer|NA": 1,
 "ml-engineer|US": 1,
 "robotics|NA": 2,
@@ -4819,7 +4819,7 @@
 },
 "greenhouse:stackblitz": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Bolt (StackBlitz)",
 "open": {
 "_all|NA": 0
@@ -4827,13 +4827,13 @@
 },
 "greenhouse:stripe": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Stripe",
 "open": {
-"_all|NA": 374,
-"_tracked|CA": 40,
+"_all|NA": 375,
+"_tracked|CA": 39,
 "_tracked|NA": 169,
-"_tracked|US": 141,
+"_tracked|US": 142,
 "ai-infra|CA": 1,
 "ai-infra|NA": 4,
 "ai-infra|US": 3,
@@ -4841,39 +4841,39 @@
 "data-analyst|NA": 6,
 "data-analyst|US": 4,
 "data-engineer|CA": 1,
-"data-engineer|NA": 2,
-"data-engineer|US": 1,
+"data-engineer|NA": 3,
+"data-engineer|US": 2,
 "data-scientist|CA": 2,
 "data-scientist|NA": 3,
 "data-scientist|US": 1,
 "eng-manager|CA": 4,
-"eng-manager|NA": 12,
-"eng-manager|US": 8,
-"frontend|CA": 2,
-"frontend|NA": 4,
-"frontend|US": 4,
+"eng-manager|NA": 11,
+"eng-manager|US": 7,
+"frontend|CA": 1,
+"frontend|NA": 3,
+"frontend|US": 3,
 "ml-engineer|CA": 2,
 "ml-engineer|NA": 9,
 "ml-engineer|US": 7,
-"product|CA": 6,
-"product|NA": 54,
-"product|US": 52,
+"product|CA": 7,
+"product|NA": 55,
+"product|US": 53,
 "security|NA": 7,
 "security|US": 7,
 "solutions|CA": 6,
 "solutions|NA": 27,
 "solutions|US": 24,
 "sre-devops|CA": 4,
-"sre-devops|NA": 6,
-"sre-devops|US": 2,
-"swe|CA": 10,
-"swe|NA": 35,
+"sre-devops|NA": 7,
+"sre-devops|US": 3,
+"swe|CA": 9,
+"swe|NA": 34,
 "swe|US": 28
 }
 },
 "greenhouse:tailscale": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Tailscale",
 "open": {
 "_all|NA": 79,
@@ -4902,18 +4902,16 @@
 },
 "greenhouse:tenstorrent": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Tenstorrent",
 "open": {
-"_all|NA": 109,
-"_tracked|CA": 43,
-"_tracked|NA": 73,
-"_tracked|US": 56,
+"_all|NA": 110,
+"_tracked|CA": 42,
+"_tracked|NA": 74,
+"_tracked|US": 58,
 "ai-infra|CA": 3,
 "ai-infra|NA": 3,
 "ai-infra|US": 2,
-"data-analyst|CA": 1,
-"data-analyst|NA": 1,
 "eng-manager|CA": 1,
 "eng-manager|NA": 2,
 "eng-manager|US": 2,
@@ -4921,8 +4919,8 @@
 "frontend|NA": 2,
 "frontend|US": 1,
 "hardware|CA": 13,
-"hardware|NA": 30,
-"hardware|US": 25,
+"hardware|NA": 31,
+"hardware|US": 26,
 "ml-engineer|CA": 2,
 "ml-engineer|NA": 2,
 "ml-engineer|US": 2,
@@ -4938,8 +4936,8 @@
 "security|NA": 3,
 "security|US": 3,
 "sre-devops|CA": 5,
-"sre-devops|NA": 6,
-"sre-devops|US": 4,
+"sre-devops|NA": 7,
+"sre-devops|US": 5,
 "swe|CA": 5,
 "swe|NA": 8,
 "swe|US": 6
@@ -4947,17 +4945,17 @@
 },
 "greenhouse:toast": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Toast",
 "open": {
-"_all|NA": 233,
-"_tracked|CA": 5,
-"_tracked|NA": 34,
-"_tracked|US": 29,
+"_all|NA": 225,
+"_tracked|CA": 7,
+"_tracked|NA": 35,
+"_tracked|US": 28,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
-"eng-manager|NA": 3,
-"eng-manager|US": 3,
+"eng-manager|NA": 2,
+"eng-manager|US": 2,
 "frontend|NA": 2,
 "frontend|US": 2,
 "hardware|NA": 1,
@@ -4971,14 +4969,14 @@
 "solutions|US": 2,
 "sre-devops|NA": 1,
 "sre-devops|US": 1,
-"swe|CA": 4,
-"swe|NA": 15,
+"swe|CA": 6,
+"swe|NA": 17,
 "swe|US": 11
 }
 },
 "greenhouse:togetherai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Together AI",
 "open": {
 "_all|NA": 62,
@@ -5006,7 +5004,7 @@
 },
 "greenhouse:torcrobotics": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Torc Robotics",
 "open": {
 "_all|NA": 49,
@@ -5040,7 +5038,7 @@
 },
 "greenhouse:towerresearchcapital": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Tower Research Capital",
 "open": {
 "_all|NA": 40,
@@ -5071,7 +5069,7 @@
 },
 "greenhouse:turing": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Turing",
 "open": {
 "_all|NA": 22,
@@ -5093,10 +5091,10 @@
 },
 "greenhouse:twilio": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Twilio",
 "open": {
-"_all|NA": 46,
+"_all|NA": 47,
 "_tracked|CA": 2,
 "_tracked|NA": 21,
 "_tracked|US": 19,
@@ -5107,10 +5105,10 @@
 "ml-engineer|CA": 2,
 "ml-engineer|NA": 3,
 "ml-engineer|US": 1,
-"product|NA": 5,
-"product|US": 5,
-"solutions|NA": 2,
-"solutions|US": 2,
+"product|NA": 4,
+"product|US": 4,
+"solutions|NA": 3,
+"solutions|US": 3,
 "sre-devops|NA": 1,
 "sre-devops|US": 1,
 "swe|NA": 7,
@@ -5119,7 +5117,7 @@
 },
 "greenhouse:vannevarlabs": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Vannevar Labs",
 "open": {
 "_all|NA": 17,
@@ -5135,7 +5133,7 @@
 },
 "greenhouse:vercel": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Vercel",
 "open": {
 "_all|NA": 73,
@@ -5159,7 +5157,7 @@
 },
 "greenhouse:virtu": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Virtu Financial",
 "open": {
 "_all|NA": 17,
@@ -5183,18 +5181,18 @@
 },
 "greenhouse:waymo": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Waymo",
 "open": {
-"_all|NA": 288,
+"_all|NA": 290,
 "_tracked|NA": 200,
 "_tracked|US": 200,
 "ai-infra|NA": 6,
 "ai-infra|US": 6,
 "ai-safety|NA": 3,
 "ai-safety|US": 3,
-"cv-perception|NA": 14,
-"cv-perception|US": 14,
+"cv-perception|NA": 13,
+"cv-perception|US": 13,
 "data-analyst|NA": 2,
 "data-analyst|US": 2,
 "data-engineer|NA": 2,
@@ -5203,8 +5201,8 @@
 "data-scientist|US": 6,
 "eng-manager|NA": 2,
 "eng-manager|US": 2,
-"frontend|NA": 4,
-"frontend|US": 4,
+"frontend|NA": 3,
+"frontend|US": 3,
 "hardware|NA": 6,
 "hardware|US": 6,
 "ml-engineer|NA": 45,
@@ -5223,13 +5221,13 @@
 "solutions|US": 2,
 "sre-devops|NA": 8,
 "sre-devops|US": 8,
-"swe|NA": 50,
-"swe|US": 50
+"swe|NA": 52,
+"swe|US": 52
 }
 },
 "greenhouse:wehrtyou": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Hudson River Trading",
 "open": {
 "_all|NA": 64,
@@ -5261,7 +5259,7 @@
 },
 "greenhouse:wizinc": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Wiz",
 "open": {
 "_all|NA": 28,
@@ -5281,12 +5279,12 @@
 },
 "greenhouse:xai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "xAI",
 "open": {
 "_all|NA": 253,
-"_tracked|NA": 101,
-"_tracked|US": 101,
+"_tracked|NA": 103,
+"_tracked|US": 103,
 "ai-infra|NA": 12,
 "ai-infra|US": 12,
 "ai-trainer|NA": 2,
@@ -5305,8 +5303,8 @@
 "ml-performance|US": 4,
 "product|NA": 4,
 "product|US": 4,
-"robotics|NA": 4,
-"robotics|US": 4,
+"robotics|NA": 6,
+"robotics|US": 6,
 "security|NA": 10,
 "security|US": 10,
 "solutions|NA": 1,
@@ -5319,18 +5317,18 @@
 },
 "greenhouse:xairatherapeutics": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Xaira Therapeutics",
 "open": {
 "_all|NA": 25,
-"_tracked|NA": 16,
-"_tracked|US": 16,
+"_tracked|NA": 17,
+"_tracked|US": 17,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
 "research-engineer|NA": 2,
 "research-engineer|US": 2,
-"research-scientist|NA": 10,
-"research-scientist|US": 10,
+"research-scientist|NA": 11,
+"research-scientist|US": 11,
 "robotics|NA": 2,
 "robotics|US": 2,
 "swe|NA": 1,
@@ -5339,10 +5337,10 @@
 },
 "lever:brightmachines": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Bright Machines",
 "open": {
-"_all|NA": 8,
+"_all|NA": 7,
 "_tracked|NA": 1,
 "_tracked|US": 1,
 "ai-infra|NA": 1,
@@ -5351,7 +5349,7 @@
 },
 "lever:dexterity": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Dexterity",
 "open": {
 "_all|NA": 13,
@@ -5373,18 +5371,18 @@
 },
 "lever:field-ai": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Field AI",
 "open": {
-"_all|NA": 76,
-"_tracked|NA": 67,
-"_tracked|US": 67,
+"_all|NA": 67,
+"_tracked|NA": 60,
+"_tracked|US": 60,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
 "cv-perception|NA": 4,
 "cv-perception|US": 4,
-"data-engineer|NA": 4,
-"data-engineer|US": 4,
+"data-engineer|NA": 3,
+"data-engineer|US": 3,
 "hardware|NA": 6,
 "hardware|US": 6,
 "ml-engineer|NA": 1,
@@ -5397,21 +5395,19 @@
 "research-engineer|US": 2,
 "research-scientist|NA": 1,
 "research-scientist|US": 1,
-"robotics|NA": 29,
-"robotics|US": 29,
-"security|NA": 1,
-"security|US": 1,
+"robotics|NA": 28,
+"robotics|US": 28,
 "solutions|NA": 1,
 "solutions|US": 1,
-"sre-devops|NA": 5,
-"sre-devops|US": 5,
+"sre-devops|NA": 1,
+"sre-devops|US": 1,
 "swe|NA": 7,
 "swe|US": 7
 }
 },
 "lever:neon": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Neon",
 "open": {
 "_all|NA": 0
@@ -5419,7 +5415,7 @@
 },
 "lever:palantir": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Palantir",
 "open": {
 "_all|NA": 239,
@@ -5449,13 +5445,13 @@
 },
 "lever:pointclickcare": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "PointClickCare",
 "open": {
 "_all|NA": 88,
-"_tracked|CA": 22,
+"_tracked|CA": 23,
 "_tracked|NA": 36,
-"_tracked|US": 14,
+"_tracked|US": 13,
 "ai-infra|CA": 2,
 "ai-infra|NA": 2,
 "data-engineer|CA": 2,
@@ -5477,9 +5473,9 @@
 "solutions|CA": 1,
 "solutions|NA": 2,
 "solutions|US": 1,
-"sre-devops|CA": 2,
+"sre-devops|CA": 3,
 "sre-devops|NA": 4,
-"sre-devops|US": 2,
+"sre-devops|US": 1,
 "swe|CA": 5,
 "swe|NA": 7,
 "swe|US": 2
@@ -5487,7 +5483,7 @@
 },
 "lever:shakudo": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Shakudo",
 "open": {
 "_all|NA": 10,
@@ -5504,10 +5500,10 @@
 },
 "lever:spotify": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Spotify",
 "open": {
-"_all|NA": 33,
+"_all|NA": 34,
 "_tracked|CA": 3,
 "_tracked|NA": 16,
 "_tracked|US": 15,
@@ -5536,13 +5532,13 @@
 },
 "lever:waabi": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Waabi",
 "open": {
-"_all|NA": 84,
-"_tracked|CA": 40,
-"_tracked|NA": 51,
-"_tracked|US": 50,
+"_all|NA": 85,
+"_tracked|CA": 41,
+"_tracked|NA": 52,
+"_tracked|US": 51,
 "ai-infra|CA": 2,
 "ai-infra|NA": 2,
 "ai-infra|US": 2,
@@ -5576,14 +5572,14 @@
 "sre-devops|CA": 3,
 "sre-devops|NA": 5,
 "sre-devops|US": 5,
-"swe|CA": 8,
-"swe|NA": 10,
-"swe|US": 9
+"swe|CA": 9,
+"swe|NA": 11,
+"swe|US": 10
 }
 },
 "lever:wattpad": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Wattpad",
 "open": {
 "_all|NA": 18,
@@ -5595,30 +5591,32 @@
 },
 "lever:waveapps": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Wave",
 "open": {
-"_all|NA": 9,
-"_tracked|CA": 3,
-"_tracked|NA": 3,
+"_all|NA": 11,
+"_tracked|CA": 5,
+"_tracked|NA": 5,
 "product|CA": 2,
 "product|NA": 2,
-"swe|CA": 1,
-"swe|NA": 1
+"sre-devops|CA": 1,
+"sre-devops|NA": 1,
+"swe|CA": 2,
+"swe|NA": 2
 }
 },
 "lever:zoox": {
 "first_day": "2026-11-04",
-"last_ok": "2026-11-24",
+"last_ok": "2026-11-25",
 "name": "Zoox",
 "open": {
-"_all|NA": 241,
-"_tracked|NA": 167,
-"_tracked|US": 167,
+"_all|NA": 245,
+"_tracked|NA": 170,
+"_tracked|US": 170,
 "ai-infra|NA": 1,
 "ai-infra|US": 1,
-"ai-safety|NA": 2,
-"ai-safety|US": 2,
+"ai-safety|NA": 3,
+"ai-safety|US": 3,
 "cv-perception|NA": 7,
 "cv-perception|US": 7,
 "data-analyst|NA": 1,
@@ -5631,14 +5629,14 @@
 "eng-manager|US": 6,
 "frontend|NA": 1,
 "frontend|US": 1,
-"hardware|NA": 19,
-"hardware|US": 19,
+"hardware|NA": 20,
+"hardware|US": 20,
 "ml-engineer|NA": 16,
 "ml-engineer|US": 16,
 "ml-performance|NA": 3,
 "ml-performance|US": 3,
-"product|NA": 33,
-"product|US": 33,
+"product|NA": 34,
+"product|US": 34,
 "robotics|NA": 16,
 "robotics|US": 16,
 "security|NA": 4,

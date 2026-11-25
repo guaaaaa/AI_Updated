@@ -3,71 +3,71 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [
   {
    "id": "2611.29897",
    "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
-   "hf": 122,
+   "hf": 192,
    "org": "Peking University",
-   "featured": null
-  },
-  {
-   "id": "2611.27193",
-   "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
-   "hf": 94,
-   "org": "XingChen-AGI",
-   "featured": null
-  },
-  {
-   "id": "2611.31201",
-   "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
-   "hf": 83,
-   "org": "MMLab@NTU",
-   "featured": null
-  },
-  {
-   "id": "2611.27963",
-   "title": "Non-penetrating World Models",
-   "hf": 57,
-   "org": "The Hong Kong Polytechnic University",
-   "featured": null
-  },
-  {
-   "id": "2611.30662",
-   "title": "WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce",
-   "hf": 52,
-   "org": "Tencent",
-   "featured": null
-  },
-  {
-   "id": "2611.30013",
-   "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
-   "hf": 48,
-   "org": "Peking University",
-   "featured": null
-  },
-  {
-   "id": "2611.26954",
-   "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
-   "hf": 43,
-   "org": "University at Buffalo",
    "featured": null
   },
   {
    "id": "2611.30989",
    "title": "WorldLeague: Benchmarking Physical Agency",
-   "hf": 34,
+   "hf": 140,
    "org": "National University of Singapore",
+   "featured": null
+  },
+  {
+   "id": "2611.31201",
+   "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+   "hf": 100,
+   "org": "MMLab@NTU",
+   "featured": "2026-11-25"
+  },
+  {
+   "id": "2611.27193",
+   "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+   "hf": 95,
+   "org": "XingChen-AGI",
+   "featured": null
+  },
+  {
+   "id": "2611.30634",
+   "title": "Rewirable Circuits in Transformers with Loom Attention",
+   "hf": 70,
+   "org": null,
+   "featured": "2026-11-25"
+  },
+  {
+   "id": "2611.27963",
+   "title": "Non-penetrating World Models",
+   "hf": 60,
+   "org": "The Hong Kong Polytechnic University",
+   "featured": null
+  },
+  {
+   "id": "2611.30013",
+   "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+   "hf": 60,
+   "org": "Peking University",
+   "featured": null
+  },
+  {
+   "id": "2611.31205",
+   "title": "ACAP: Asynchronous Coding Agents for Efficient Robot Control",
+   "hf": 59,
+   "org": "MMLab@NTU",
    "featured": null
   }
  ],
  "stories": [
   {
    "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
-   "outlets": 17,
+   "outlets": 20,
    "date": "2026-11-20",
-   "covered": null
+   "covered": "2026-11-25-n2"
   },
   {
    "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
@@ -77,7 +77,7 @@
   },
   {
    "title": "States Sue SpaceX Over Grok Deepfakes",
-   "outlets": 9,
+   "outlets": 8,
    "date": "2026-11-23",
    "covered": "2026-11-24-n2"
   },
@@ -88,20 +88,32 @@
    "covered": null
   },
   {
+   "title": "The Saudi engineer accused of bugging OpenAI is set to be released on a $1 million bond",
+   "outlets": 5,
+   "date": "2026-11-24",
+   "covered": null
+  },
+  {
+   "title": "Anthropic shares slide as tech stocks tumble",
+   "outlets": 3,
+   "date": "2026-11-20",
+   "covered": null
+  },
+  {
    "title": "OpenAI Chief Scientist Urges Industry Limits on AI Development",
    "outlets": 3,
    "date": "2026-11-22",
    "covered": "2026-11-23-n1"
   },
   {
-   "title": "OpenAI engineer possessed dozens of meeting recordings, say US prosecutors",
+   "title": "Meta Muse can do your Black Friday shopping at Walmart",
    "outlets": 3,
-   "date": "2026-11-24",
+   "date": "2026-11-23",
    "covered": null
   }
  ],
  "featured": {
-  "news": 3,
-  "papers": 10
+  "news": 5,
+  "papers": 15
  }
 }

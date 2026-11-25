@@ -1,5 +1,103 @@
 [
  {
+  "id": "2026-11-25-n1",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "Z.ai releases GLM-5.4, a 750B-scale flagship that runs 28 shared layers twice per forward pass",
+  "tldr": "Chinese lab Z.ai released GLM-5.4, its first flagship built as a looped transformer, available only in its own products for now, with open weights promised after safety hardening.",
+  "category": "Model Release",
+  "byline": "Z.ai developer docs, Simon Willison, MarkTechPost"
+ },
+ {
+  "id": "2026-11-25-n2",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "Anthropic shares fall below their $83 IPO price less than a week after the record listing",
+  "tldr": "Anthropic's stock dropped below its $83 offer price on Tuesday, trading near $76 at midday, as a broad technology selloff erased the premium from its Nasdaq debut.",
+  "category": "Earnings & Markets",
+  "byline": "The Globe and Mail, TechCrunch"
+ },
+ {
+  "id": "2611.31015",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Can Latent Reasoning Drive LLM Outputs Without a Trace?",
+  "tldr": "A fine-tuned model can run a multi-step hidden rule entirely in its activations, then write chain-of-thought that justifies the result without mentioning the rule, and a frontier LLM monitor does not flag it.",
+  "primary_tag": "Safety & Alignment",
+  "tags": [
+   "Safety & Alignment",
+   "Interpretability",
+   "Reasoning"
+  ],
+  "byline": "Tomer Ashuach, Zorik Gekhman, Avi Caciularu et al. · Technion – Israel Institute of Technology, Google Research",
+  "hf": 14,
+  "venue": null
+ },
+ {
+  "id": "2611.32606",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Recursive Collective Intelligence: Emergence on an Equal-Budget Ladder in Multi-Agent LLM Systems",
+  "tldr": "Judged at equal token cost, agent teams beat independent agents only when they move facts no single agent holds, and such teams can train their successors on their own verified work.",
+  "primary_tag": "Agents",
+  "tags": [
+   "Agents",
+   "Evaluation & Benchmarks",
+   "RSI"
+  ],
+  "byline": "Lixuan He, Shengqu Cai, Fang Wu et al.",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.30634",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Rewirable Circuits in Transformers with Loom Attention",
+  "tldr": "Loom attention lets each attention head choose, per token, which earlier heads it reads from, and a 2.8B model built this way matches a 12B Pythia baseline for about 2% extra compute.",
+  "primary_tag": "Architectures",
+  "tags": [
+   "Architectures",
+   "LLMs",
+   "Interpretability"
+  ],
+  "byline": "Da Xiao, Qingye Meng, Shengping Li et al. · Beijing University of Posts and Telecommunications, ColorfulClouds Technology",
+  "hf": 70,
+  "venue": null
+ },
+ {
+  "id": "2611.30325",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Verifiable On-Policy Distillation",
+  "tldr": "VOPD uses the agreement between a verifier and a teacher model on sampled answers to strengthen or reverse the teacher's token-level guidance, giving dense training signal that is tied to checked outcomes.",
+  "primary_tag": "Post-training",
+  "tags": [
+   "Post-training",
+   "Reinforcement Learning",
+   "Reasoning"
+  ],
+  "byline": "Juntong Shi, Stefano Ermon, Jure Leskovec et al. · Stanford University, Google DeepMind",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.31201",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+  "tldr": "A controlled study of how to wrap a frontier multimodal model as a robot policy reaches 83.3% on RoboLab-120 and finds the model succeeds through spatial target estimation, not low-level motion skill.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Agents",
+   "Multimodal"
+  ],
+  "byline": "Xiao-Ming Wu, Kang Liao, Yuexiao Ma et al. · Nanyang Technological University, ACE Robotics, SenseTime Research",
+  "hf": 100,
+  "venue": null
+ },
+ {
   "id": "2026-11-24-n1",
   "date": "2026-11-24",
   "type": "news",
