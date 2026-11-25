@@ -3,9 +3,15 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
+  {
+   "title": "China launches Shenzhou 24 spacecraft with Pakistani astronaut on crew",
+   "outlets": 5,
+   "date": "2026-11-24",
+   "covered": "2026-11-25-n1"
+  },
   {
    "title": "Will COP31 end with a new global climate deal?",
    "outlets": 4,
@@ -14,8 +20,8 @@
   }
  ],
  "featured": {
-  "news": 5,
-  "papers": 5
+  "news": 7,
+  "papers": 8
  },
  "items": [
   {
@@ -77,6 +83,36 @@
    "date": "2026-11-24",
    "type": "paper",
    "title": "Hexa-substituted benzene synthesis with non-classical carbocations"
+  },
+  {
+   "id": "2026-11-25-n1",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "China launches Shenzhou-24 with a Pakistani astronaut, the first foreigner to fly on a Chinese crewed mission"
+  },
+  {
+   "id": "2026-11-25-n2",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "NOAA closes a hurricane season split by El Niño: one Atlantic hurricane, record activity in the eastern Pacific"
+  },
+  {
+   "id": "doi-10-1126-science-aef9553",
+   "date": "2026-11-25",
+   "type": "paper",
+   "title": "Interpenetrating bottlebrush elastomer for low-loss soft ultrasonic interfaces"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aef7106",
+   "date": "2026-11-25",
+   "type": "paper",
+   "title": "Small and large earthquakes driven by inelastic deformation in weak fault zones"
+  },
+  {
+   "id": "doi-10-1126-sciadv-aej6035",
+   "date": "2026-11-25",
+   "type": "paper",
+   "title": "Hierarchical interfacial anchoring for durable perovskite solar cells"
   }
  ]
 }

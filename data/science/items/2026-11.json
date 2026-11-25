@@ -1,5 +1,69 @@
 [
  {
+  "id": "2026-11-25-n1",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "China launches Shenzhou-24 with a Pakistani astronaut, the first foreigner to fly on a Chinese crewed mission",
+  "tldr": "Shenzhou-24 carried two Chinese astronauts and Pakistan's Muhammad Zeeshan Ali to the Tiangong space station, the first time a foreign crew member has flown in China's crewed programme.",
+  "category": "Space & Astronomy",
+  "byline": "BBC News, Phys.org (Associated Press)"
+ },
+ {
+  "id": "2026-11-25-n2",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "NOAA closes a hurricane season split by El Niño: one Atlantic hurricane, record activity in the eastern Pacific",
+  "tldr": "NOAA's end-of-season summary counts 10 Atlantic named storms and a single hurricane, against 20 named storms and eight major hurricanes in the eastern Pacific, a contrast it attributes to a very strong El Niño.",
+  "category": "Climate & Earth",
+  "byline": "Phys.org (NOAA release), iHeart"
+ },
+ {
+  "id": "doi-10-1126-science-aef9553",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Interpenetrating bottlebrush elastomer for low-loss soft ultrasonic interfaces",
+  "tldr": "A dry, stretchy rubber built entirely from bottlebrush-shaped polymers transmits ultrasound efficiently without any gel and kept a wearable imager working for about nine days.",
+  "primary_tag": "Condensed matter & materials",
+  "tags": [
+   "Condensed matter & materials",
+   "Chemistry"
+  ],
+  "byline": "Shu Wang, Runze Li, Zihan Tang et al. · MIT; Singapore-MIT Alliance for Research and Technology; University of Wisconsin at Madison; National University of Singapore; Nanyang Technological University",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aef7106",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Small and large earthquakes driven by inelastic deformation in weak fault zones",
+  "tldr": "An earthquake-cycle model that lets the rock around a fault deform permanently reproduces both small and large earthquakes, and suggests that fault zones can be mechanically very weak.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science",
+   "Computational science & AI"
+  ],
+  "byline": "Peng Zhai, Yihe Huang, Jean-Paul Ampuero · University of Michigan",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
+  "id": "doi-10-1126-sciadv-aej6035",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Hierarchical interfacial anchoring for durable perovskite solar cells",
+  "tldr": "Pretreating the electrode of a perovskite solar cell so its molecular contact layer bonds at several points gives 27.3% efficiency and 94% retention after 400 cycles between -40 and 85 °C.",
+  "primary_tag": "Energy science",
+  "tags": [
+   "Energy science",
+   "Condensed matter & materials",
+   "Chemistry"
+  ],
+  "byline": "Jiaxin Wu, Hongzhuo Wu, Zuhong Zhang et al.",
+  "hf": null,
+  "venue": "Science Advances"
+ },
+ {
   "id": "2026-11-24-n1",
   "date": "2026-11-24",
   "type": "news",

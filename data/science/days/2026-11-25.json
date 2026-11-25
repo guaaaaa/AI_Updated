@@ -1,0 +1,259 @@
+{
+ "date": "2026-11-25",
+ "edition": "weekday",
+ "generated_at": "2026-11-25T13:23:10+00:00",
+ "summary": "China flies its first foreign astronaut to Tiangong, NOAA closes a hurricane season split in two by El Niño, and a dry rubber replaces ultrasound gel.",
+ "news": [
+  {
+   "id": "2026-11-25-n1",
+   "story_key": "shenzhou-24-first-foreign-astronaut-tiangong",
+   "title": "China launches Shenzhou-24 with a Pakistani astronaut, the first foreigner to fly on a Chinese crewed mission",
+   "category": "Space & Astronomy",
+   "published": "2026-11-24T19:18:00-05:00",
+   "tldr": "Shenzhou-24 carried two Chinese astronauts and Pakistan's Muhammad Zeeshan Ali to the Tiangong space station, the first time a foreign crew member has flown in China's crewed programme.",
+   "why_selected": "A mission milestone covered by five outlets: China's space station receives its first international crew member.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "China's Tiangong space station is looked after by crews of three astronauts who are typically rotated every six months. Until this week every person who had flown in China's crewed programme was Chinese. In February 2025 China and Pakistan signed an agreement for a joint flight. Pakistan has no spacecraft of its own that can carry astronauts."
+    },
+    {
+     "heading": "What happened",
+     "body": "Shenzhou-24 lifted off from the Jiuquan Satellite Launch Center in the Gobi desert at 08:18 local time on Wednesday (00:18 GMT). On board were commander Tang Hongbo, 51, flight engineer Wu Yi, 39, and payload specialist Ali, 40, a former fighter pilot. The spacecraft separated from its rocket and reached its planned orbit, and the crew later entered the station, where three astronauts of the Shenzhou-23 mission were waiting.\n\nTang and Wu will stay for six months together with Zhu Yangzhu of Shenzhou-23, who has been studying how the human body adapts to long periods in space. Ali's stay is short: he will return aboard the Shenzhou-23 spacecraft with the two other members of that crew, who have been on the station since May.\n\nAccording to the state news agency Xinhua, the crew will carry out more than 90 experiments and technology tests, in areas including aerospace medicine, combustion and how the space environment affects ageing. Ali's own programme includes an experiment on photosynthetic cyanobacteria and studies of how radiation and microgravity, the very weak gravity felt in orbit, affect seeds."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The scientific payload is routine for a station crew; the change is institutional. The BBC reports that Beijing wants to show Tiangong can be an international research platform rather than an exclusively Chinese facility, as it positions its programme as an alternative to the US-led one and aims to land astronauts on the Moon by 2030."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The reports do not give a date for Ali's return. Pakistan's planning minister said he hoped the flight would be the start of wider cooperation, and whether other countries are offered seats will show how far China intends to open the station."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/c6x2e0j3kx28o"
+    },
+    {
+     "name": "Phys.org (Associated Press)",
+     "url": "https://phys.org/news/2026-11-china-shenzhou-spacecraft-chinese-pakistani.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-n2",
+   "story_key": "noaa-2026-hurricane-season-wrap-up-el-nino",
+   "title": "NOAA closes a hurricane season split by El Niño: one Atlantic hurricane, record activity in the eastern Pacific",
+   "category": "Climate & Earth",
+   "published": "2026-11-24T12:00:00-05:00",
+   "tldr": "NOAA's end-of-season summary counts 10 Atlantic named storms and a single hurricane, against 20 named storms and eight major hurricanes in the eastern Pacific, a contrast it attributes to a very strong El Niño.",
+   "why_selected": "A natural event with clear scientific significance: a full season of data showing how a very strong El Niño redistributes tropical cyclones between ocean basins.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "El Niño is a recurring pattern marked by warmer-than-average ocean temperatures. It tends to suppress tropical storms in the Atlantic while favouring them in the Pacific. Storms are named once their winds reach 39 mph, become hurricanes at 74 mph and major hurricanes at 111 mph. An average Atlantic season has 14 named storms, seven hurricanes and three major hurricanes; an average eastern Pacific season has 15, eight and four. The season officially ends on 30 November."
+    },
+    {
+     "heading": "What happened",
+     "body": "The US National Oceanic and Atmospheric Administration (NOAA) published its summary of the 2026 season. The Atlantic produced 10 named storms and only one hurricane, Isaias, which peaked as a major hurricane with 120 mph winds and made landfall near Destin, Florida, on 9 October as a Category 2 storm. It was the first hurricane to make landfall on the US mainland since Milton in October 2024.\n\nThe eastern Pacific produced 20 named storms, 10 hurricanes and eight major hurricanes. Its accumulated cyclone energy, an index of overall storm activity, reached 359.5, above the previous record of 318 set in 2018, according to iHeart's report. Hurricane Polo reached a central pressure of 892 millibars, the second lowest on record in the basin after Patricia's 872 in 2015.\n\nThe central Pacific saw eight tropical cyclones against a usual four to five. Hawaii spent 228 hours under a tropical cyclone watch or warning, the most in records going back to 1985, and hurricanes Lala and Lowell each led to a major disaster declaration. Lowell was the first hurricane to affect Kauai directly since Iniki in 1992."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The season is a clean, basin-wide example of El Niño's opposite effects on the two oceans. NOAA says it predicted the very strong El Niño months in advance and that this underpinned its seasonal forecast. The agency also stresses that a quiet season is not a harmless one: a single landfall brought storm surge and damaging winds to the US Southeast."
+    },
+    {
+     "heading": "What to watch",
+     "body": "NOAA will publish detailed Tropical Cyclone Reports for each named storm in the coming months. El Niño is expected to persist through the winter."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Phys.org (NOAA release)",
+     "url": "https://phys.org/news/2026-11-hurricane-season-el-nio-fueled.html"
+    },
+    {
+     "name": "iHeart",
+     "url": "https://www.iheart.com/content/2026-11-24-noaa-concludes-2026-hurricane-season-amid-record-el-nio/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-aef9553",
+   "title": "Interpenetrating bottlebrush elastomer for low-loss soft ultrasonic interfaces",
+   "authors": [
+    "Shu Wang",
+    "Runze Li",
+    "Zihan Tang",
+    "Ying Li",
+    "Chen Gong",
+    "Won Jun Song",
+    "Chwee Teck Lim",
+    "Xiaodong Chen",
+    "Xuanhe Zhao"
+   ],
+   "affiliations": [
+    "MIT; Singapore-MIT Alliance for Research and Technology; University of Wisconsin at Madison; National University of Singapore; Nanyang Technological University"
+   ],
+   "announced": "2026-11-19T00:00:00-05:00",
+   "primary_tag": "Condensed matter & materials",
+   "tags": [
+    "Condensed matter & materials",
+    "Chemistry"
+   ],
+   "tldr": "A dry, stretchy rubber built entirely from bottlebrush-shaped polymers transmits ultrasound efficiently without any gel and kept a wearable imager working for about nine days.",
+   "why_selected": "A Science paper that solves a materials problem, a solid that carries sound like a liquid, with a clear molecular design and a practical demonstration.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Ultrasound imaging needs a medium that fills the tiny gaps between probe and skin so that sound waves pass through efficiently. In clinics that medium is a wet gel. Wearable ultrasound patches have used a layer of hydrogel, a mostly water-based solid, but it dries out within a day or two and stops transmitting sound."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Liquids carry sound well because their small, loosely connected molecules slide past one another with little friction. Ordinary rubbery solids are almost entirely long polymer chains packed into a dense thicket; as a sound wave shifts the tangled chains they rub against each other and the wave loses intensity."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The MIT-led team reduced friction between the chains without adding any liquid or lubricant, by changing the shape of the molecules. They built the material entirely from bottlebrush polymers: a backbone with many short side chains sprouting from it, like the bristles of a pipe cleaner. The bristles do not easily penetrate neighbouring bottlebrushes, so the molecules can move at ultrasound frequencies with little friction.\n\nThe first samples were soft and crumbly \"like tofu\" and broke when picked up. The fix was to chemically fuse it with a second, loosely connected bottlebrush network that holds the first in place without spoiling its low friction. The result is a tough rubber that can be stretched repeatedly without tearing."
+    },
+    {
+     "heading": "Results",
+     "body": "Credit-card-sized samples placed on a phantom, a synthetic model that mimics skin and internal structures, transmitted ultrasound efficiently and kept imaging clearly for around nine days of continuous operation. On a volunteer running for 10 minutes, a comparison silicone rubber became water-logged with sweat while the new material wicked sweat away. A patch about the size of a key fob on a volunteer's neck imaged blood flow continuously through a 30-minute bike ride with steep inclines."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A dry interface whose acoustic properties do not change removes a main limit on long-term wearable ultrasound outside the clinic. The caveats: the human tests described were short sessions with a volunteer, and fabrication still needs to be streamlined."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aef9553",
+    "doi": "https://doi.org/10.1126/science.aef9553"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aef7106",
+   "title": "Small and large earthquakes driven by inelastic deformation in weak fault zones",
+   "authors": [
+    "Peng Zhai",
+    "Yihe Huang",
+    "Jean-Paul Ampuero"
+   ],
+   "affiliations": [
+    "University of Michigan"
+   ],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science",
+    "Computational science & AI"
+   ],
+   "tldr": "An earthquake-cycle model that lets the rock around a fault deform permanently reproduces both small and large earthquakes, and suggests that fault zones can be mechanically very weak.",
+   "why_selected": "One simulation framework explains three general statistical features of earthquakes and supports the long-debated weak-fault-zone hypothesis.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Earthquakes follow a few general patterns. Small ones are far more frequent than large ones. Earthquakes of very different sizes release about the same amount of stress. And the energy needed to rupture a unit area of fault grows with the size of the earthquake."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "According to the University of Michigan team, models used to forecast earthquakes account only for slip along a main fault and treat the surrounding rock as elastic, meaning it springs back fully after being strained. That choice is made because it is simpler to compute. Real faults look different: seen from the air, the San Andreas is a zone of fractured, damaged rock extending hundreds of metres or kilometres from the main fault plane."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The new model includes that damaged zone and allows it to deform inelastically, that is, permanently, so that the rock around the fault absorbs energy during a rupture. It simulates the whole earthquake cycle: the slow build-up of stress, nucleation (the moment the fault starts to slip), the rupture itself, and the way damaged rock settles and heals afterwards.\n\nBecause the off-fault rock can soak up energy from a growing rupture, it can stop a rupture early and so produce a small earthquake where a purely elastic model would let it run on. Senior author Yihe Huang adds that this may help set up a larger earthquake later."
+    },
+    {
+     "heading": "Results",
+     "body": "The release gives no numerical results. The model generates earthquakes of many sizes within one framework and reproduces all three patterns above; the authors say this is the first time the three have been explained in a unified physical framework. The results suggest that the strength of the fault zone can be very low."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result supports the weak-fault-zone hypothesis, a long-standing idea that fault zones have low strength, and it argues that realistic earthquake models need off-fault damage. The main caveat: this is a simulation study, read here only through the university's release, which reports no quantitative tests against particular faults."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aef7106",
+    "doi": "https://doi.org/10.1126/sciadv.aef7106"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  },
+  {
+   "id": "doi-10-1126-sciadv-aej6035",
+   "title": "Hierarchical interfacial anchoring for durable perovskite solar cells",
+   "authors": [
+    "Jiaxin Wu",
+    "Hongzhuo Wu",
+    "Zuhong Zhang",
+    "Xiaoyu Guan",
+    "Jinbo Zhao",
+    "Yuting Guo",
+    "Zhihao Li",
+    "Zirui Li",
+    "Tengyu Ma",
+    "Ying Tang",
+    "Zhe Li",
+    "Weiwei Zuo",
+    "Jorge Pascual",
+    "Bo Hou",
+    "Feng Yang",
+    "Xiaoli Pan",
+    "Yu Wang",
+    "Luyao Wang",
+    "Lin-Long Deng",
+    "Guixiang Li",
+    "Luca Sapienza",
+    "Antonio Abate",
+    "Meng Li"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-18T00:00:00-05:00",
+   "primary_tag": "Energy science",
+   "tags": [
+    "Energy science",
+    "Condensed matter & materials",
+    "Chemistry"
+   ],
+   "tldr": "Pretreating the electrode of a perovskite solar cell so its molecular contact layer bonds at several points gives 27.3% efficiency and 94% retention after 400 cycles between -40 and 85 °C.",
+   "why_selected": "Addresses the durability problem that stands between record-efficiency perovskite cells and outdoor use, with a certified efficiency and a standard thermal-cycling test.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Perovskite solar cells in the so-called inverted layout now reach certified efficiencies close to the limit for a cell with a single light-absorbing layer. What holds back practical use, the authors argue, is mechanical: the buried interfaces inside the cell are fragile under realistic temperature fluctuations."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "In these cells the perovskite sits on a transparent conductive oxide electrode coated with a self-assembled monolayer (SAM), a single layer of molecules that attach themselves to the oxide. The preprint identifies a specific failure mode at this SAM-based buried interface: stress accumulates under repeated heating and cooling until adhesion fails."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team changes the surface that the monolayer attaches to. Before the monolayer is deposited, the oxide is pretreated with a metal halide that the authors call homometallic. This increases the density of hydroxyl groups on the surface and guides the molecules to assemble in an ordered way.\n\nThe result is what the authors call hierarchical multipoint anchoring. The dominant bonds are metal-oxygen coordination bonds, and chloride-induced hydrogen bonds act alongside them. A layer pinned in several places by two kinds of bond tolerates the build-up of thermo-mechanical stress better than one that is held more sparsely, much as a sheet fixed by many fasteners resists peeling better than one fixed by a few."
+    },
+    {
+     "heading": "Results",
+     "body": "Devices reached a power conversion efficiency of 27.3%, with 26.9% certified. They retained 94% of their initial efficiency after 400 temperature cycles between -40 and 85 degrees Celsius under the ISOS-T-3 thermal-cycling protocol."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work shows that efficiency and thermal-cycling durability can be improved together by engineering how the contact layer is anchored, rather than traded against each other. Caveats: only the abstract of the preprint was read for this summary, so cell area, the untreated control's figures and the exact pretreatment compound are not reported here."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/sciadv.aej6035",
+    "doi": "https://doi.org/10.1126/sciadv.aej6035"
+   },
+   "signals": {
+    "venue": "Science Advances",
+    "tier": "major"
+   }
+  }
+ ]
+}
