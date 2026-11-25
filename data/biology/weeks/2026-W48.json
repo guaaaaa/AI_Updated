@@ -3,12 +3,12 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
    "title": "FDA to miss deadline on Savara's rare lung disease drug approval",
-   "outlets": 3,
+   "outlets": 4,
    "date": "2026-11-20",
    "covered": null
   },
@@ -20,8 +20,8 @@
   }
  ],
  "featured": {
-  "news": 6,
-  "papers": 5
+  "news": 9,
+  "papers": 8
  },
  "items": [
   {
@@ -89,6 +89,42 @@
    "date": "2026-11-24",
    "type": "paper",
    "title": "A glucose-powered artificial neuroimmune axis for metabolic control"
+  },
+  {
+   "id": "2026-11-25-n1",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "FDA approves bezuclastinib with sunitinib for gastrointestinal stromal tumours after imatinib"
+  },
+  {
+   "id": "2026-11-25-n2",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "England records 5,258 heat-associated deaths in 2026, the most since monitoring began"
+  },
+  {
+   "id": "2026-11-25-n3",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "Dolphins with larger, more predictable social groups live longer, a 40-year study in Shark Bay finds"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2612922",
+   "date": "2026-11-25",
+   "type": "paper",
+   "title": "Intensive Blood-Pressure Lowering in Patients with Type 2 Diabetes"
+  },
+  {
+   "id": "doi-10-1038-s41593-026-02523-6",
+   "date": "2026-11-25",
+   "type": "paper",
+   "title": "A shared meaning component across languages in the human brain"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11458-8",
+   "date": "2026-11-25",
+   "type": "paper",
+   "title": "Architecture of the poxvirus early-transcription machinery and portal complex"
   }
  ]
 }

@@ -1,5 +1,77 @@
 [
  {
+  "id": "2026-11-25-n1",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "FDA approves bezuclastinib with sunitinib for gastrointestinal stromal tumours after imatinib",
+  "tldr": "The FDA approved Cogent's Ekitna (bezuclastinib) with sunitinib for advanced gastrointestinal stromal tumours after imatinib; in a phase 3 trial the pair held the cancer in check for a median 16.5 months versus 9.2.",
+  "category": "Drugs & Approvals",
+  "byline": "Cogent Biosciences (GlobeNewswire release, via WBOC), Pharmaceutical Technology"
+ },
+ {
+  "id": "2026-11-25-n2",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "England records 5,258 heat-associated deaths in 2026, the most since monitoring began",
+  "tldr": "The UK Health Security Agency estimates 5,258 deaths in England were associated with heat between May and September 2026, far above the previous record of 2,985 in 2022.",
+  "category": "Public Health",
+  "byline": "The Guardian, BBC"
+ },
+ {
+  "id": "2026-11-25-n3",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "Dolphins with larger, more predictable social groups live longer, a 40-year study in Shark Bay finds",
+  "tldr": "Four decades of observations of about 400 wild bottlenose dolphins show that animals that are more sociable and more consistent in the group sizes they keep tend to live longer.",
+  "category": "Evolution & Ecology",
+  "byline": "PLOS Biology, University of Queensland, The Guardian"
+ },
+ {
+  "id": "doi-10-1056-nejmoa2612922",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Intensive Blood-Pressure Lowering in Patients with Type 2 Diabetes",
+  "tldr": "In 9,476 Brazilians with type 2 diabetes, aiming for systolic blood pressure below 120 instead of below 140 mm Hg did not significantly cut cardiovascular events, and kidney-function declines were more frequent.",
+  "primary_tag": "Cardiovascular",
+  "tags": [
+   "Cardiovascular",
+   "Metabolic & endocrine"
+  ],
+  "byline": "Karla Santo Eduardo Martins Gisele S. Silva Patricia O. Guimarães Caio A.M. Tavares João B. Andrade Frederico Monfardini Josué Nieri Silvia R.L. Assis João S. Felício Fábio S. Silveira Marcos S. Silveira Audes D.M. Feitosa Miguel N. Hissa Dario C. Sobral-Filho José F. Vilela-Martin Elizabeth E.S. Cestario Juan C. Yugar-Toledo Marcelo C. Batista Nelson Rassi Marco A.M. Gomes Ricardo R. Bergo Bruno Geloneze José G. Mill Lilia Nigro-Maia Márcio G. Sousa Mauro E. Hernandes Luiz Turatti Andrea A. Brandão Weimar S. Barroso Andrei C. Sposito Luciano F. Drager Luiz A. Bortolotto Marcelo Franken Pedro A. Lemos Raul D. Santos Sandra C. Fuchs Anthony Rodgers Paul K. Whelton Flavio D. Fuchs and Otavio Berwangerthe OPTIMAL-DIABETES Trial Investigators* · Einstein Hospital Israelita, São Paulo; The George Institute for Global Health, Imperial College London",
+  "hf": null,
+  "venue": "The New England Journal of Medicine"
+ },
+ {
+  "id": "doi-10-1038-s41593-026-02523-6",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "A shared meaning component across languages in the human brain",
+  "tldr": "Models trained to predict brain responses to one language also predict responses to languages they never saw, across speakers of 21 languages, pointing to a shared representation of meaning.",
+  "primary_tag": "Neuroscience",
+  "tags": [
+   "Neuroscience",
+   "AI in biology & medicine"
+  ],
+  "byline": "Andrea Gregor de Varda, Saima Malik-Moraleda, Greta Tuckute et al. · McGovern Institute for Brain Research and Department of Brain and Cognitive Sciences, MIT",
+  "hf": null,
+  "venue": "Nature Neuroscience"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11458-8",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Architecture of the poxvirus early-transcription machinery and portal complex",
+  "tldr": "Imaging of intact vaccinia virus cores shows the virus's gene-copying enzymes parked in pairs beside the genome, next to a channel through the core wall suited to exporting RNA.",
+  "primary_tag": "Microbiology",
+  "tags": [
+   "Microbiology",
+   "Molecular & cell biology"
+  ],
+  "byline": "Benoît Arragain, Lukas W. Bauer, Victor-Valentin Hodirnau et al. · Institute of Science and Technology Austria (ISTA)",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-24-n1",
   "date": "2026-11-24",
   "type": "news",

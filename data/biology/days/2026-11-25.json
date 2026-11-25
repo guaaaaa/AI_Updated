@@ -1,0 +1,279 @@
+{
+ "date": "2026-11-25",
+ "edition": "weekday",
+ "generated_at": "2026-11-25T13:54:24+00:00",
+ "summary": "A new drug combination for a digestive-tract cancer, a record toll from England's hottest summer, and what 40 years of dolphin watching says about social lives; plus blood-pressure targets in diabetes, a shared code for meaning in the brain, and the inside of a poxvirus.",
+ "news": [
+  {
+   "id": "2026-11-25-n1",
+   "story_key": "fda-bezuclastinib-ekitna-gist-post-imatinib-approval",
+   "title": "FDA approves bezuclastinib with sunitinib for gastrointestinal stromal tumours after imatinib",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-24T11:54:00-05:00",
+   "tldr": "The FDA approved Cogent's Ekitna (bezuclastinib) with sunitinib for advanced gastrointestinal stromal tumours after imatinib; in a phase 3 trial the pair held the cancer in check for a median 16.5 months versus 9.2.",
+   "why_selected": "A regulatory decision that changes the second-line treatment of a cancer, backed by a randomized phase 3 trial against an active drug rather than placebo.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Gastrointestinal stromal tumours (GIST) are cancers of the digestive tract. The new approval concerns patients with advanced disease who have already been treated with the drug imatinib. For those whose tumours resist imatinib or who cannot tolerate it, Cogent Biosciences describes a second drug, sunitinib, as the current standard of care. The company says no new treatment had been approved in this post-imatinib setting in over 20 years."
+    },
+    {
+     "heading": "What happened",
+     "body": "On 24 November Cogent announced that the US Food and Drug Administration had approved Ekitna (bezuclastinib), in combination with sunitinib, for adults with advanced GIST who have previously received imatinib. Bezuclastinib is a selective tyrosine kinase inhibitor designed to block mutated forms of a protein called KIT.\n\nThe approval rests on PEAK, a global, randomized phase 3 trial comparing the combination with sunitinib alone in patients whose tumours resisted imatinib or who could not tolerate it. At a data cutoff of 30 September 2025, median progression-free survival (the time until the cancer grows or the patient dies), judged by blinded independent reviewers, was 16.5 months with the combination and 9.2 months with sunitinib alone. That is a 50% lower risk of progression or death (hazard ratio 0.50, 95% confidence interval 0.39 to 0.65). Tumours shrank measurably in 46% of patients on the combination versus 26% on sunitinib. The announcement does not give the number of patients enrolled."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The comparison in PEAK was with the existing standard drug, not with placebo, and Cogent describes the result as the first statistically significant progression-free survival benefit over an active comparator in GIST.\n\nThe label carries a boxed warning, and the company highlights liver toxicity: raised liver enzymes occurred in 43% of patients on the combination (8% severe, grade 3) and raised bilirubin in 13%. Other common side effects included diarrhoea, high blood pressure and nausea. These figures come from the company's announcement, whose efficacy summary does not include overall survival."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether longer follow-up of PEAK shows that patients live longer, not only longer without progression. Cogent says the drug is now available by prescription in the US."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Cogent Biosciences (GlobeNewswire release, via WBOC)",
+     "url": "https://www.wboc.com/online_features/press_releases/cogent-biosciences-announces-fda-approval-and-launch-of-ekitna-bezuclastinib-for-the-treatment-of-patients/article_cdb1835a-58fe-5a68-8bf9-134cefb6ce69.html"
+    },
+    {
+     "name": "Pharmaceutical Technology",
+     "url": "https://www.pharmaceutical-technology.com/news/cogent-biosciences-fda-ekitna-combo-gist/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-n2",
+   "story_key": "ukhsa-england-heat-deaths-2026-record-5258",
+   "title": "England records 5,258 heat-associated deaths in 2026, the most since monitoring began",
+   "category": "Public Health",
+   "published": "2026-11-24T07:39:00-05:00",
+   "tldr": "The UK Health Security Agency estimates 5,258 deaths in England were associated with heat between May and September 2026, far above the previous record of 2,985 in 2022.",
+   "why_selected": "An official population-level estimate, reported by two outlets, that puts a number on the health cost of a record-hot summer and shows early-season heat did most of the damage.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The toll of hot weather is reported as an estimate of \"heat-associated\" deaths, not as a count of individual death certificates. The UK Health Security Agency (UKHSA) has kept such records for England since 2016. It tracks \"heat episodes\", which it defines as days when the average Central England Temperature is at least 20C, and estimates the deaths associated with them."
+    },
+    {
+     "heading": "What happened",
+     "body": "UKHSA reported on 24 November that an estimated 5,258 deaths in England were associated with heat between May and September 2026. That is the highest provisional annual total in the ten years of the series. The previous record was 2,985 in 2022; the 2025 total was 1,504.\n\nThe agency counted seven heat episodes lasting 41 days in total, the most episodes and the most heat-episode days since monitoring began. The deadliest was the heatwave of 21 to 28 June, with an estimated 2,401 deaths, when temperatures peaked at 38C and the second red heat-health alert ever issued in England was triggered. More than 3,000 of the deaths came in the season's first two episodes, in May and June. Provisional Met Office data make 2026 the UK's hottest summer on record. The figures are provisional because death registrations for the period are not yet complete."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The total is about 76% above the previous high. The timing is the notable finding: the largest toll came early, not during the year's hottest day in August (38.2C in Gloucestershire). UKHSA said early-summer heat can be particularly dangerous because people and public services may not yet be prepared, and that protective measures should be in place from the start of summer.\n\nRoss Thompson, UKHSA's principal environmental health scientist, said climate change is already affecting health in England and that periods of extreme heat are expected to become longer, more frequent and more intense. UKHSA said adapting homes, neighbourhoods and health and care settings would be increasingly important."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The final figures once death registration is complete, and whether adaptation follows: the health secretary said she has asked the NHS to prepare for summer as seriously as it does for winter."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/environment/2026/nov/24/summer-heat-deaths-record-high-england"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cq2e83egrez3o"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-n3",
+   "story_key": "shark-bay-dolphins-group-size-predictability-longevity-plos-biology",
+   "title": "Dolphins with larger, more predictable social groups live longer, a 40-year study in Shark Bay finds",
+   "category": "Evolution & Ecology",
+   "published": "2026-11-24T12:00:00-05:00",
+   "tldr": "Four decades of observations of about 400 wild bottlenose dolphins show that animals that are more sociable and more consistent in the group sizes they keep tend to live longer.",
+   "why_selected": "A rare multi-decade dataset on a long-lived wild mammal, published in a peer-reviewed journal, that looks at individual consistency in social behaviour and not only averages.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In many animals, including humans, other primates, birds and deer, social life narrows with age: networks shrink and individuals become choosier about company. Most studies describe this with population averages. Averages hide how individuals differ, in sociability and in how variable their behaviour is. The authors say the relationship between ageing and this individual variation in social behaviour remains poorly understood."
+    },
+    {
+     "heading": "What happened",
+     "body": "Researchers led by Kelley Meehan, a PhD candidate at the University of Queensland, analysed 40 years of records on about 400 wild Indo-Pacific bottlenose dolphins in the eastern gulf of Shark Bay, Western Australia, a population in which some animals reached 53 years of age. The dataset holds close to 65,000 observations. The study appeared in PLOS Biology on 24 November.\n\nThe team measured two things for each dolphin across its life: its typical group size, and how predictable that group size was. For the population and for most individuals, average group size rose through youth and early adulthood and declined in later life, more steeply in males. Males were in larger and more predictable groups than females at every life stage. Predictability increased with age across the population. Individuals that were highly sociable were also highly predictable, and both traits appeared correlated with longevity."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result suggests that it is not simply having many companions that goes with a long life, but settling into a stable social pattern. The authors hypothesise that dolphins develop \"social competence\": they refine their choices with experience, becoming more selective in a way that pays off. Co-author Celine Frere said that whatever group size an animal preferred, consistency was what carried a longevity benefit.\n\nThis is an observational study of wild animals, and the paper speaks of correlation, not cause. The decline in group size in old age is also likely to reflect the loss of closely bonded companions, the researchers told the Guardian."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the same link between behavioural predictability and lifespan appears in other long-studied social species."
+    }
+   ],
+   "sources": [
+    {
+     "name": "PLOS Biology",
+     "url": "https://journals.plos.org/plosbiology/article?id=10.1371%2Fjournal.pbio.3004022"
+    },
+    {
+     "name": "University of Queensland",
+     "url": "https://news.uq.edu.au/2026-11-making-and-keeping-friends-could-help-dolphins-live-longer"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/environment/2026/nov/25/dolphins-with-active-social-lives-and-big-friendship-groups-live-longer"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2612922",
+   "title": "Intensive Blood-Pressure Lowering in Patients with Type 2 Diabetes",
+   "authors": [
+    "Karla Santo Eduardo Martins Gisele S. Silva Patricia O. Guimarães Caio A.M. Tavares João B. Andrade Frederico Monfardini Josué Nieri Silvia R.L. Assis João S. Felício Fábio S. Silveira Marcos S. Silveira Audes D.M. Feitosa Miguel N. Hissa Dario C. Sobral-Filho José F. Vilela-Martin Elizabeth E.S. Cestario Juan C. Yugar-Toledo Marcelo C. Batista Nelson Rassi Marco A.M. Gomes Ricardo R. Bergo Bruno Geloneze José G. Mill Lilia Nigro-Maia Márcio G. Sousa Mauro E. Hernandes Luiz Turatti Andrea A. Brandão Weimar S. Barroso Andrei C. Sposito Luciano F. Drager Luiz A. Bortolotto Marcelo Franken Pedro A. Lemos Raul D. Santos Sandra C. Fuchs Anthony Rodgers Paul K. Whelton Flavio D. Fuchs and Otavio Berwangerthe OPTIMAL-DIABETES Trial Investigators*"
+   ],
+   "affiliations": [
+    "Einstein Hospital Israelita",
+    "São Paulo; The George Institute for Global Health",
+    "Imperial College London"
+   ],
+   "announced": "2026-11-07T00:00:00-05:00",
+   "primary_tag": "Cardiovascular",
+   "tags": [
+    "Cardiovascular",
+    "Metabolic & endocrine"
+   ],
+   "tldr": "In 9,476 Brazilians with type 2 diabetes, aiming for systolic blood pressure below 120 instead of below 140 mm Hg did not significantly cut cardiovascular events, and kidney-function declines were more frequent.",
+   "why_selected": "A large randomized trial on an unsettled, everyday question in medicine, with a null primary result and a kidney signal that complicate the push toward lower blood-pressure targets.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "People with type 2 diabetes and high blood pressure face an increased risk of heart attack and stroke. How far to lower their systolic pressure, the top number in a reading, is unsettled. US guidelines from 2025 recommend staying below 130 mm Hg and encourage below 120 for people at increased cardiovascular risk."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier randomized trials of intensive blood-pressure lowering in type 2 diabetes gave conflicting results, and, according to a summary of the paper, they predominantly enrolled Chinese and non-Hispanic White participants. Whether any benefit holds in more ethnically diverse populations was open."
+    },
+    {
+     "heading": "Key idea",
+     "body": "OPTIMAL-DIABETES was an open-label randomized trial at 33 sites in Brazil. It enrolled 9,476 adults aged 50 or older (mean age about 65; 62% women) with type 2 diabetes, systolic pressure between 130 and 180 mm Hg and high cardiovascular risk. Participants were assigned 1:1 to drug treatment aiming for systolic pressure below 120 mm Hg or below 140 mm Hg, and followed for a median of four years. The primary outcome was a composite of cardiovascular death, nonfatal heart attack, nonfatal stroke, or hospitalization for unstable angina or heart failure. Excluding the first three months, mean systolic pressure was 121.8 mm Hg in the intensive group and 135.4 in the standard group."
+    },
+    {
+     "heading": "Results",
+     "body": "A primary-outcome event occurred in 286 patients (6.0%) in the intensive group and 315 (6.7%) in the standard group, a difference that was not statistically significant (hazard ratio 0.90; 95% confidence interval 0.77 to 1.06; P=0.20). A kidney outcome, a sustained halving of filtration rate or end-stage kidney disease, was more frequent with intensive treatment (5.7% versus 3.7%; hazard ratio 1.55). Serious adverse events were similar (14.9% versus 14.6%)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The trial does not show that a target below 120 mm Hg is better for people with diabetes, and it flags a kidney cost. The investigators caution that a modest benefit cannot be ruled out, since the confidence interval allows up to a 23% reduction, and say targets should be set individually. The trial was open-label and run in one country."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2612922",
+    "doi": "https://doi.org/10.1056/NEJMoa2612922"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41593-026-02523-6",
+   "title": "A shared meaning component across languages in the human brain",
+   "authors": [
+    "Andrea Gregor de Varda",
+    "Saima Malik-Moraleda",
+    "Greta Tuckute",
+    "Evelina Fedorenko"
+   ],
+   "affiliations": [
+    "McGovern Institute for Brain Research and Department of Brain and Cognitive Sciences",
+    "MIT"
+   ],
+   "announced": "2026-11-23T00:00:00-05:00",
+   "primary_tag": "Neuroscience",
+   "tags": [
+    "Neuroscience",
+    "AI in biology & medicine"
+   ],
+   "tldr": "Models trained to predict brain responses to one language also predict responses to languages they never saw, across speakers of 21 languages, pointing to a shared representation of meaning.",
+   "why_selected": "A direct test of a long-standing question, whether brains handle very different languages in the same way, using data from 21 languages instead of the usual handful.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "The world's languages differ widely: some use pitch to distinguish words, some depend on strict word order and others allow words to be rearranged freely. All of them engage the same network of regions in the brain's left hemisphere. Whether that network represents them in the same way has been hard to test."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Researchers compare brains with language models using \"encoding models\", which take a language model's internal numerical representation of a sentence and predict the brain activity that sentence evokes. According to MIT's account of the work, such models existed only for a few languages, including English, French and Chinese, so they could say little about what is common across languages."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team at MIT used multilingual language models, single AI systems that process hundreds of languages and so describe sentences from any of them in one shared numerical code. They paired that code with brain imaging data. The lab already had recordings from speakers of 12 languages, among them Afrikaans, Farsi, Lithuanian, Marathi, Tamil, Turkish and Vietnamese, and recruited speakers of nine more, including Hindi, Arabic, Mandarin and Korean, who listened to passages from \"Alice in Wonderland\" in their native language. The decisive test was transfer: train an encoding model on brain responses to one language, then ask it to predict responses in a language it has never seen. That can only work if the brains of both groups represent language in a shared way."
+    },
+    {
+     "heading": "Results",
+     "body": "Encoding models predicted brain responses in all 21 languages, including ones with relatively little data such as Marathi and Lithuanian. Transfer also worked: a model trained on French responses, for example, predicted responses in Vietnamese without any Vietnamese training. When the researchers examined which linguistic features carried the shared signal, the evidence pointed to meaning. The coverage read for this summary did not give numerical accuracy values."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The finding supports the view that beneath their surface differences, languages are handled by a common neural code tied to meaning. The authors note that features that differ between languages must also be represented somewhere, and that remains to be mapped."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41593-026-02523-6",
+    "doi": "https://doi.org/10.1038/s41593-026-02523-6"
+   },
+   "signals": {
+    "venue": "Nature Neuroscience",
+    "tier": "major",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11458-8",
+   "title": "Architecture of the poxvirus early-transcription machinery and portal complex",
+   "authors": [
+    "Benoît Arragain",
+    "Lukas W. Bauer",
+    "Victor-Valentin Hodirnau",
+    "Florian K. M. Schur"
+   ],
+   "affiliations": [
+    "Institute of Science and Technology Austria (ISTA)"
+   ],
+   "announced": "2026-11-23T00:00:00-05:00",
+   "primary_tag": "Microbiology",
+   "tags": [
+    "Microbiology",
+    "Molecular & cell biology"
+   ],
+   "tldr": "Imaging of intact vaccinia virus cores shows the virus's gene-copying enzymes parked in pairs beside the genome, next to a channel through the core wall suited to exporting RNA.",
+   "why_selected": "A first look at the poxvirus transcription machinery in its native place inside the viral core, a structure that had resisted imaging; relevant to the family that includes mpox.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Poxviruses, the family that includes mpox, carry more than a genome. At the centre of the virus particle is the core, a multilayered capsule that holds the DNA together with the machinery needed to start copying genes into messenger RNA as soon as a cell is infected. How that machinery is arranged inside the core has been unknown."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier structural studies examined the components after isolating them from the virus. That produced detailed pictures of individual proteins, but not of how they sit, interact and are positioned inside an intact core."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team at the Institute of Science and Technology Austria purified cores from vaccinia virus, a laboratory model used to study the wider poxvirus family, and flash-froze them to preserve their near-native state. They imaged the frozen cores from many angles by cryo-electron tomography, the microscope equivalent of a CT scan, and then averaged many copies of the same structure found within the tomograms. Averaging cancels noise, in the way stacking many faint photographs of the same object sharpens the picture, and it yielded three-dimensional structures at sub-nanometre resolution. Two systems were examined in place: the viral RNA polymerase that transcribes \"early\" genes, and a portal complex in the core wall thought to export messenger RNA."
+    },
+    {
+     "heading": "Results",
+     "body": "The polymerases were not single units but resting-state pairs with a mass of 1.8 megadaltons, each pair bridged by a fully ordered copy of the viral early transcription factor. Nearly half of the pairs also carried proteins tethering them to viral DNA near the inner core wall. The portal is a rigid assembly built into the wall: a six-part crown of protein E8, a six-part central hub of E6 and a twelve-part basal channel of L3, a shape suited to passing nucleic acid."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The structures suggest a production-and-dispatch arrangement: transcription machinery held dormant close to the genome, with exit routes nearby. That gives specific protein contacts to investigate as antiviral targets. The main caveat is that these are static images of resting cores; how the pairs activate and whether RNA actually leaves through the portal still have to be tested."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11458-8",
+    "doi": "https://doi.org/10.1038/s41586-026-11458-8"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}
