@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 13:58:45 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 11:46:17 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Hackers reportedly breach an unclassified intelligence analysis system used by the CIA and two other US spy agencies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n1</guid>
+    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Unknown attackers reportedly broke into an open-source intelligence system at the CIA, also affecting ODNI and the National Geospatial-Intelligence Agency; a source says no classified networks or data were involved. (BleepingComputer, The Verge, The Record)</description>
+  </item>
+  <item>
+    <title>The US Treasury's financial crimes bureau FinCEN takes systems offline after unauthorized access</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n2</guid>
+    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>FinCEN, the Treasury bureau that receives banks' suspicious-activity reports, says intruders accessed a limited subset of its systems; it took some systems offline and extended filing deadlines. (The Verge, The Record, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>A US jury convicts Huawei on 10 of 12 counts, including conspiracy to steal trade secrets, bank fraud and sanctions violations</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n3</guid>
+    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
+    <category>Tech / Tech Policy &amp; Antitrust</category>
+    <description>A federal jury in New York found Huawei and three subsidiaries guilty of stealing US companies' technology, defrauding banks and violating Iran sanctions, but acquitted it of racketeering; sentencing is set for September 2027. (The Verge, The Register)</description>
+  </item>
+  <item>
+    <title>Microsoft declares an internal "Code Red" after its November email outage and sets a one-hour target for resolving major incidents</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n4</guid>
+    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
+    <category>Tech / Software &amp; Platforms</category>
+    <description>Internal memos reviewed by Reuters show Microsoft has made reliability work on Microsoft 365 its top engineering priority after the November 12 outage, which a senior executive called the worst in Exchange Online's history. (Ars Technica, The Verge)</description>
+  </item>
+  <item>
+    <title>Aftershock: Yesterday's Linux Kernel Bugs, Tomorrow's Android Exploits</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2611.31547</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2611.31547</guid>
+    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
+    <category>Tech / Security &amp; privacy</category>
+    <description>An automated pipeline using an off-the-shelf language model turned public Linux kernel fixes into 17 verified Android privilege-escalation exploits, while the same fixes took a median of 181 days to reach Pixel phones. (Kareem Shehada, Zhiyun Qian · University of California, Riverside)</description>
+  </item>
   <item>
     <title>FDA approves giredestrant after surgery, the first new hormone therapy for early-stage breast cancer in over 20 years</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-24/2026-11-24-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Sat, 21 Nov 2026 13:53:27 +0000</pubDate>
     <category>Biology / Neuroscience</category>
     <description>Recordings from 28 surgical patients show a small spot in Wernicke's area, long seen as a listening region, activates about a quarter-second before each spoken word and is needed for speaking. (Alexander B. Silva, Matthew K. Leonard, Patrick W. Hullett et al. · University of California, San Francisco)</description>
-  </item>
-  <item>
-    <title>Evidence for late Middle Pleistocene Homo erectus in mainland East Asia</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-21/doi-10-1038-s41586-026-11271-3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-21/doi-10-1038-s41586-026-11271-3</guid>
-    <pubDate>Sat, 21 Nov 2026 13:53:27 +0000</pubDate>
-    <category>Biology / Evolution &amp; ecology</category>
-    <description>Teeth from two caves in Guangxi, dated to between about 324,000 and 184,000 years ago, show Homo erectus survived in southern China's rainforests much later than its previously known disappearance from mainland Asia. (Wei Liao, Clément Zanolli, Ragnheiður Diljá Ásmundsdóttir et al.)</description>
-  </item>
-  <item>
-    <title>EPFL theory predicts the heating power fusion plasmas need to enter high-confinement mode</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/2026-11-21-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/2026-11-21-n1</guid>
-    <pubDate>Sat, 21 Nov 2026 13:22:40 +0000</pubDate>
-    <category>Science / Energy</category>
-    <description>Physicists at EPFL's Swiss Plasma Center have a single theory for the power needed to push tokamak plasmas into high-confinement mode, and say ITER has margin while SPARC is close to its limit. (Phys.org (EPFL release), arXiv (De Lucca et al.))</description>
-  </item>
-  <item>
-    <title>Quantum resistance paradox of low-dimensional superfluids</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/doi-10-1038-s41586-026-11294-w</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/doi-10-1038-s41586-026-11294-w</guid>
-    <pubDate>Sat, 21 Nov 2026 13:22:40 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>In a defect-free superfluid of ultracold atoms, widening a narrow channel first lowers its resistance and then, as the channel turns from one- to two-dimensional, raises it again, with a resistance minimum in between. (Simon Wili, Meng-Zi Huang, Tommaso Bonaccorsi et al.)</description>
-  </item>
-  <item>
-    <title>Analogue simulation of massive relativistic quantum fields in 2 + 1 dimensions</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/doi-10-1038-s41586-026-11268-y</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-21/doi-10-1038-s41586-026-11268-y</guid>
-    <pubDate>Sat, 21 Nov 2026 13:22:40 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>A flat cloud of ultracold potassium atoms simulates a massive relativistic quantum field in two dimensions of space, showing a tunable mass gap and topological domain walls, a step toward lab tests of early-universe physics. (Yansheng Zhang, Feiyang Wang, Paul H. C. Wong et al.)</description>
-  </item>
-  <item>
-    <title>An AI sell-off pushes the S&amp;P 500 and the Dow into a correction as Nvidia falls about 14%</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-21/2026-11-21-n1</guid>
-    <pubDate>Sat, 21 Nov 2026 12:46:30 +0000</pubDate>
-    <category>Business / Markets</category>
-    <description>The S&amp;P 500 fell 3.7% and the Nasdaq 5.28% on Friday, pushing the S&amp;P 500 and Dow into a correction and erasing the Nasdaq's gains for the year as AI stocks slumped. (Fox Business, Yahoo Finance, Quartz)</description>
   </item>
 </channel>
 </rss>

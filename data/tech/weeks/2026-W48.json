@@ -3,12 +3,12 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 2,
+ "digests": 3,
  "papers": [],
  "stories": [
   {
    "title": "The Best Pura Deals for Cyber Week (2026)",
-   "outlets": 9,
+   "outlets": 13,
    "date": "2026-11-20",
    "covered": null
   },
@@ -20,6 +20,12 @@
   },
   {
    "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
+   "outlets": 5,
+   "date": "2026-11-23",
+   "covered": null
+  },
+  {
+   "title": "European Commission warns EU Academy users of data leak after AI-driven cyberattack",
    "outlets": 3,
    "date": "2026-11-23",
    "covered": null
@@ -35,11 +41,23 @@
    "outlets": 3,
    "date": "2026-11-23",
    "covered": null
+  },
+  {
+   "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
+   "outlets": 3,
+   "date": "2026-11-24",
+   "covered": null
+  },
+  {
+   "title": "CIA system breached in cyberattack",
+   "outlets": 3,
+   "date": "2026-11-24",
+   "covered": "2026-11-25-n1"
   }
  ],
  "featured": {
-  "news": 7,
-  "papers": 1
+  "news": 11,
+  "papers": 2
  },
  "items": [
   {
@@ -89,6 +107,36 @@
    "date": "2026-11-24",
    "type": "paper",
    "title": "Interrupt-Aware Static Detection of Deadlocks in Rust Operating Systems"
+  },
+  {
+   "id": "2026-11-25-n1",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "Hackers reportedly breach an unclassified intelligence analysis system used by the CIA and two other US spy agencies"
+  },
+  {
+   "id": "2026-11-25-n2",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "The US Treasury's financial crimes bureau FinCEN takes systems offline after unauthorized access"
+  },
+  {
+   "id": "2026-11-25-n3",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "A US jury convicts Huawei on 10 of 12 counts, including conspiracy to steal trade secrets, bank fraud and sanctions violations"
+  },
+  {
+   "id": "2026-11-25-n4",
+   "date": "2026-11-25",
+   "type": "news",
+   "title": "Microsoft declares an internal \"Code Red\" after its November email outage and sets a one-hour target for resolving major incidents"
+  },
+  {
+   "id": "2611.31547",
+   "date": "2026-11-25",
+   "type": "paper",
+   "title": "Aftershock: Yesterday's Linux Kernel Bugs, Tomorrow's Android Exploits"
   }
  ]
 }

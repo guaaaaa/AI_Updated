@@ -1,5 +1,55 @@
 [
  {
+  "id": "2026-11-25-n1",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "Hackers reportedly breach an unclassified intelligence analysis system used by the CIA and two other US spy agencies",
+  "tldr": "Unknown attackers reportedly broke into an open-source intelligence system at the CIA, also affecting ODNI and the National Geospatial-Intelligence Agency; a source says no classified networks or data were involved.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, The Verge, The Record"
+ },
+ {
+  "id": "2026-11-25-n2",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "The US Treasury's financial crimes bureau FinCEN takes systems offline after unauthorized access",
+  "tldr": "FinCEN, the Treasury bureau that receives banks' suspicious-activity reports, says intruders accessed a limited subset of its systems; it took some systems offline and extended filing deadlines.",
+  "category": "Cybersecurity",
+  "byline": "The Verge, The Record, BleepingComputer"
+ },
+ {
+  "id": "2026-11-25-n3",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "A US jury convicts Huawei on 10 of 12 counts, including conspiracy to steal trade secrets, bank fraud and sanctions violations",
+  "tldr": "A federal jury in New York found Huawei and three subsidiaries guilty of stealing US companies' technology, defrauding banks and violating Iran sanctions, but acquitted it of racketeering; sentencing is set for September 2027.",
+  "category": "Tech Policy & Antitrust",
+  "byline": "The Verge, The Register"
+ },
+ {
+  "id": "2026-11-25-n4",
+  "date": "2026-11-25",
+  "type": "news",
+  "title": "Microsoft declares an internal \"Code Red\" after its November email outage and sets a one-hour target for resolving major incidents",
+  "tldr": "Internal memos reviewed by Reuters show Microsoft has made reliability work on Microsoft 365 its top engineering priority after the November 12 outage, which a senior executive called the worst in Exchange Online's history.",
+  "category": "Software & Platforms",
+  "byline": "Ars Technica, The Verge"
+ },
+ {
+  "id": "2611.31547",
+  "date": "2026-11-25",
+  "type": "paper",
+  "title": "Aftershock: Yesterday's Linux Kernel Bugs, Tomorrow's Android Exploits",
+  "tldr": "An automated pipeline using an off-the-shelf language model turned public Linux kernel fixes into 17 verified Android privilege-escalation exploits, while the same fixes took a median of 181 days to reach Pixel phones.",
+  "primary_tag": "Security & privacy",
+  "tags": [
+   "Security & privacy"
+  ],
+  "byline": "Kareem Shehada, Zhiyun Qian · University of California, Riverside",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-24-n1",
   "date": "2026-11-24",
   "type": "news",

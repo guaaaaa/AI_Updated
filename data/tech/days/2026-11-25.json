@@ -1,0 +1,215 @@
+{
+ "date": "2026-11-25",
+ "edition": "weekday",
+ "generated_at": "2026-11-25T11:46:17+00:00",
+ "summary": "US spy agencies and the Treasury's FinCEN report separate intrusions on the same day, a jury convicts Huawei on 10 counts, and Microsoft declares a \"Code Red\" over its November email outage.",
+ "news": [
+  {
+   "id": "2026-11-25-n1",
+   "story_key": "cia-odni-osint-system-breach",
+   "title": "Hackers reportedly breach an unclassified intelligence analysis system used by the CIA and two other US spy agencies",
+   "category": "Cybersecurity",
+   "published": "2026-11-24T14:30:00-05:00",
+   "tldr": "Unknown attackers reportedly broke into an open-source intelligence system at the CIA, also affecting ODNI and the National Geospatial-Intelligence Agency; a source says no classified networks or data were involved.",
+   "why_selected": "A reported intrusion at three US intelligence agencies, covered by several outlets, and the second federal law-enforcement or intelligence breach reported in a few days.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Open-source intelligence, or OSINT, is analysis built on publicly available material rather than secret collection, so the systems that handle it sit outside classified networks. US federal agencies have had a difficult month: over the weekend the FBI was reported to be investigating a breach of the National Crime Information Center, and a week ago the National Security Agency's classified network was down for days, which the agency attributed to scheduled routine maintenance."
+    },
+    {
+     "heading": "What happened",
+     "body": "The New York Times reported on Tuesday that unknown attackers breached an open-source intelligence analysis system at the Central Intelligence Agency, according to BleepingComputer's account of the report. A source familiar with the matter said the intrusion also affected the Office of the Director of National Intelligence and the National Geospatial-Intelligence Agency, which is part of the Department of Defense. The source said the attack was carried out with ARTEX, an AI-powered penetration testing framework. The Record, citing the Times and NextGov, describes Artex as a Chinese-made platform that can take any large language model and automate multiple phases of an intrusion.\n\n\"The hack did not involve our classified networks or classified information, and no other systems are currently at risk,\" the source said. The Verge reports that the information exposed was unclassified. The CIA and ODNI did not immediately respond to requests for comment, and the Department of Defense declined to comment."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Nothing here has been confirmed on the record, and the account so far rests on one source, so the scale of the intrusion is unknown. Even so, it matters for two reasons. First, three intelligence agencies were reportedly reached through one shared system, which shows how a single unclassified platform can connect several organizations. Second, the tool named is a framework that automates intrusion steps with a language model, the kind of tooling that lowers the effort needed to run an attack. The reports do not say who was behind the breach."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the agencies confirm the breach publicly, what unclassified material was taken, and whether investigators connect it to the incident the Treasury's FinCEN disclosed hours later."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident"
+    },
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/treasury-fincen-takes-systems-offline-after-cyber-incident"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-n2",
+   "story_key": "fincen-cybersecurity-incident-systems-offline",
+   "title": "The US Treasury's financial crimes bureau FinCEN takes systems offline after unauthorized access",
+   "category": "Cybersecurity",
+   "published": "2026-11-24T20:00:00-05:00",
+   "tldr": "FinCEN, the Treasury bureau that receives banks' suspicious-activity reports, says intruders accessed a limited subset of its systems; it took some systems offline and extended filing deadlines.",
+   "why_selected": "An official disclosure of unauthorized access at the bureau that holds the US financial system's suspicious-activity reports, confirmed by the agency's own notice.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Financial Crimes Enforcement Network, or FinCEN, is the Treasury Department bureau that works against money laundering and terrorism financing. Under the Bank Secrecy Act, financial institutions file reports of suspicious activity with it, and the bureau keeps that financial transaction data and distributes it to law enforcement."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Tuesday evening FinCEN posted a notice at the top of its Bank Secrecy Act E-Filing System website saying it is \"investigating a cybersecurity incident\" that \"resulted in unauthorized access to a limited subset of its systems.\" The notice continues: \"As a proactive measure, FinCEN has taken some systems offline. The BSA E-Filing website remains operational; however, some services may be temporarily unavailable.\"\n\nThe Verge reported the notice first. The bureau has given no information about the full scope or the source of the breach. According to The Record, FinCEN said it is extending deadlines for filers affected by the outages, and it asked institutions that need to get suspicious activity reports to law enforcement quickly to call its Financial Institutions Hotline, which The Verge says was not affected. The Treasury Department and FinCEN did not respond to The Record's requests for comment, and no group has claimed the attack."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "FinCEN's records are sensitive in a particular way: suspicious activity reports describe transactions that banks consider possibly linked to crime, including the people and companies involved. The bureau has not said which systems were reached or whether any such reports were among them, so the exposure is unknown. The practical effect is already visible, since banks have a legal duty to file and some services are unavailable.\n\nThe disclosure came hours after reports of a breach at US intelligence agencies. The Verge notes it is unclear whether the two are related. The Record adds that Chinese state-backed groups were accused of breaching the Treasury Department several times in 2024 and 2025, but nothing ties those groups to this incident."
+    },
+    {
+     "heading": "What to watch",
+     "body": "A fuller statement from FinCEN on which systems and data were accessed, how long filing services stay limited, and any attribution."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident"
+    },
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/treasury-fincen-takes-systems-offline-after-cyber-incident"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-n3",
+   "story_key": "huawei-guilty-verdict-trade-secrets-edny",
+   "title": "A US jury convicts Huawei on 10 of 12 counts, including conspiracy to steal trade secrets, bank fraud and sanctions violations",
+   "category": "Tech Policy & Antitrust",
+   "published": "2026-11-24T17:23:00-05:00",
+   "tldr": "A federal jury in New York found Huawei and three subsidiaries guilty of stealing US companies' technology, defrauding banks and violating Iran sanctions, but acquitted it of racketeering; sentencing is set for September 2027.",
+   "why_selected": "A criminal verdict against one of the world's largest telecom equipment makers after a years-long case that shaped US policy toward Chinese technology.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Huawei is a Chinese maker of telecom network equipment and consumer devices. The US government blacklisted the company in 2019 over national security concerns. The criminal case against it became widely known after the arrest of its chief financial officer, Wanzhou Meng; the indictment against her was eventually dismissed after she admitted, in a deferred prosecution agreement, to misleading banks about Huawei's operations in Iran."
+    },
+    {
+     "heading": "What happened",
+     "body": "After a trial that The Register says ran for three months in federal court in the Eastern District of New York, a jury on Tuesday found Huawei and three subsidiary companies guilty on 10 of 12 criminal counts. They include conspiracy to steal trade secrets, wire fraud, bank fraud, conspiracy to defraud the United States, violations of the International Emergency Economic Powers Act, the law behind US sanctions, and money laundering conspiracy. The jury acquitted the company of racketeering conspiracy and obstruction of justice.\n\nAccording to the Department of Justice, the evidence included Cisco source code in which Huawei engineers had left Cisco's own notes, and an episode in which Huawei staff who had signed a non-disclosure agreement sent photographs and technical details of a T-Mobile phone-testing robot back to China; one employee carried a part of the robot out of the laboratory in a backpack. Prosecutors also said Huawei lied to banks about its activities in Iran to obtain billions of US dollars and access to dollar clearing.\n\nHuawei said the charges are \"without legal or factual merit\" and that it plans to appeal."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The verdict gives a jury's backing to accusations that have underpinned years of US restrictions on Huawei. Its direct commercial effect in the US is limited, because the company is already shut out of that market. The penalties may be more significant: the Department of Justice says Huawei may face criminal fines, forfeiture and restitution. The Register notes that in 2017 US authorities fined ZTE, another Chinese equipment maker, $900 million for selling to Iran."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Huawei's appeal, and the sentencing set for September 14, 2027."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/legal/2026/11/25/jury-finds-huawei-stole-us-tech-laundered-money-and-broke-sanctions/5312024"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-n4",
+   "story_key": "microsoft-code-red-exchange-online-outage",
+   "title": "Microsoft declares an internal \"Code Red\" after its November email outage and sets a one-hour target for resolving major incidents",
+   "category": "Software & Platforms",
+   "published": "2026-11-24T17:36:00-05:00",
+   "tldr": "Internal memos reviewed by Reuters show Microsoft has made reliability work on Microsoft 365 its top engineering priority after the November 12 outage, which a senior executive called the worst in Exchange Online's history.",
+   "why_selected": "The outage cut off email for millions of customers, and the memos give a rare inside view of why a large cloud provider struggled to recover.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Exchange Online is the cloud email service behind Outlook in Microsoft 365. On November 12 an outage took Exchange Online, Outlook and Teams away from users worldwide; The Verge puts its length at nearly 24 hours and says it took down email for millions of customers. Microsoft's post-incident report, dated November 20, blamed a Windows scalability defect that had gone undetected since July."
+    },
+    {
+     "heading": "What happened",
+     "body": "Reuters reviewed internal memos, which Microsoft has not published, showing that the company has declared a \"Code Red\". Jason Henderson, president of Microsoft 365 Core, described the outage as having the most customer impact in the history of Exchange Online. \"Code Red means that this is the highest priority work for our team,\" he wrote, according to The Verge.\n\nArs Technica reports the technical chain from Microsoft's own report: the defect caused lock contention, where processes wait on one another for a shared resource, in gateway servers. A failover of Teams traffic then added load at a time when maintenance had left nearly 14 percent of gateway capacity offline.\n\nA second memo, from corporate vice president Amanda Silver, says engineers worked through a \"fog of war\": responders exchanged more than 11,000 messages across 11 Teams chats, which scattered diagnostic data. Her memo sets out five workstreams focused on load shedding (deliberately dropping some traffic to protect the rest), geographic traffic partitioning and faster recovery."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The memos show that the difficulty was not only the software defect but also coordination. Microsoft now targets one-hour worldwide resolution of major incidents and a one-hour window for deploying urgent security fixes. Henderson wrote that a recent urgent production fix took five to six days to reach all servers worldwide, adding, \"Needless to say, we aren't here yet.\" Microsoft has said the outage was not caused by a cyberattack and that the defects were not caused by AI tooling. According to Reuters, it plans to use its own AI agents to help engineers read system health data faster."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Microsoft has not said when it expects to meet the one-hour targets."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/gadgets/2026/11/microsofts-historic-cloud-outage-exposed-an-engineering-fog-of-war/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/news/1042025/microsoft-code-red-outlook-outage"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.31547",
+   "title": "Aftershock: Yesterday's Linux Kernel Bugs, Tomorrow's Android Exploits",
+   "authors": [
+    "Kareem Shehada",
+    "Zhiyun Qian"
+   ],
+   "affiliations": [
+    "University of California",
+    "Riverside"
+   ],
+   "announced": "2026-11-24T20:00:00-05:00",
+   "primary_tag": "Security & privacy",
+   "tags": [
+    "Security & privacy"
+   ],
+   "tldr": "An automated pipeline using an off-the-shelf language model turned public Linux kernel fixes into 17 verified Android privilege-escalation exploits, while the same fixes took a median of 181 days to reach Pixel phones.",
+   "why_selected": "A measured, end-to-end study on real devices showing that the delay between a public Linux fix and an Android update is now an exploitation window, not only a patch-management problem.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Android's kernel is built from Linux. A Linux security fix is public at once, but it passes through Linux stable releases, Google's Android Common Kernel branches and vendor firmware before reaching phones. Meanwhile the patch points to the flawed code. A bug that is known and fixed upstream but still present on devices is called an n-day."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier studies measured how long patches take to reach Android devices, often months or years, but not whether the bugs were exploitable there. Benchmarks show language-model agents can exploit real Linux kernel flaws, but Android is harder: an ordinary app runs in a sandbox with restricted kernel access."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors' pipeline takes public upstream patches as input and narrows them in stages. It first screens for memory-safety bugs in parts of the kernel that an ordinary Android app can reach. It then finds which Android kernel branches still contain the bug and tries to trigger it from an untrusted app on a virtual Android device, with no ready-made reproducer supplied. For bugs that reproduce, a language-model agent attempts to build a local privilege escalation, meaning an app that gains elevated system privileges. Each result is then tested independently on a freshly booted system with production defenses enabled and no agent access. The pipeline uses only a publicly available commercial model."
+    },
+    {
+     "heading": "Results",
+     "body": "The study covered 10,301 Linux kernel CVEs disclosed between January 2024 and September 2026. Of 152 candidates that reached runtime testing, 38 were reproduced from the app sandbox and 17 became independently verified exploits. Exploitation took a median of 14.3 agent-hours and $321 in model costs, with 90% median reliability, and 12 of 14 trials succeeded on Pixel 9 and Pixel 10 phones reflashed with unpatched builds. Only 3 of the 17 bugs appear in Android Security Bulletins. For these 17, upstream fixes reached Pixel devices after a median of 181 days."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Attackers can automate in hours what defenders fix over months. Visibility is part of the problem, since most of the exploited bugs never appeared in Android's bulletins. The main caveat is scope: only bugs with CVEs were considered, and most candidates could not be reproduced."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.31547"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}
