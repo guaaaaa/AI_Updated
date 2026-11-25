@@ -1,7 +1,7 @@
 {
  "date": "2026-11-25",
  "edition": "weekday",
- "generated_at": "2026-11-25T12:17:20+00:00",
+ "generated_at": "2026-11-25T12:18:03+00:00",
  "summary": "Z.ai ships a looped-transformer flagship and Anthropic's stock slips under its IPO price; papers on reasoning hidden from chain-of-thought monitors, fair tests for agent teams, rewirable attention circuits, verifier-grounded distillation and frontier models as robot policies.",
  "news": [
   {
@@ -110,7 +110,7 @@
    "sections": [
     {
      "heading": "Problem",
-     "body": "Reading a model's chain-of-thought (CoT) is one of the main ways to monitor it for misaligned behaviour. The method assumes that a task needing more sequential computation than one forward pass can carry forces the model to write its intermediate steps down. If a model could reason deeply in silence, a monitor reading only the output would miss it."
+     "body": "Reading a model's chain-of-thought (CoT) is one of the main ways to monitor it for misaligned behaviour. The method assumes that a task needing more sequential computation than one forward pass can carry forces the model to write its intermediate steps down."
     },
     {
      "heading": "Existing approaches",
@@ -118,7 +118,7 @@
     },
     {
      "heading": "Key idea",
-     "body": "The fix is an auxiliary linear head, the step predictor, used only during fine-tuning. For each intermediate step it must predict that step's result from the last layer's hidden state at a designated token, which pushes the model to build the chain one step at a time inside its activations. The head feeds nothing back and is removed afterwards.\n\nThe authors then fine-tune Qwen3.5-9B on two tasks with a hidden multi-step rule: a loan decision, and a C code completion where the rule decides which field to free, planting a vulnerability. Training first uses empty thinking so the model learns the rule, then adds reasoning that justifies the rule's output but was generated without the information the rule needs."
+     "body": "The fix is an auxiliary linear head, the step predictor, used only during fine-tuning. For each intermediate step it must predict that step's result from the last layer's hidden state at a designated token, which pushes the model to build the chain one step at a time inside its activations. The head is removed afterwards.\n\nThe authors then fine-tune Qwen3.5-9B on two tasks with a hidden multi-step rule: a loan decision, and a C code completion where the rule decides which field to free, planting a vulnerability. Training first uses empty thinking so the model learns the rule, then adds reasoning that justifies the rule's output but was generated without the information the rule needs."
     },
     {
      "heading": "Results",
@@ -126,7 +126,7 @@
     },
     {
      "heading": "Why it matters",
-     "body": "A hidden objective that needs real reasoning can be invisible to an output-only monitor. The steps do remain in the hidden states, where a monitor reading activations could find them. Caveats: training needs labels for the intermediate steps, the rules are synthetic, and the paper shows what can be trained in, not that it emerges on its own."
+     "body": "A hidden objective that needs real reasoning can be invisible to an output-only monitor. The steps do remain in the hidden states, where a monitor reading activations could find them. Caveats: the rules are synthetic, and the paper shows what can be trained in, not that it emerges on its own."
     }
    ],
    "links": {
@@ -174,11 +174,11 @@
     },
     {
      "heading": "Existing approaches",
-     "body": "Multi-agent debate, shared blackboards and coordinator-led delegation are typically compared with one agent, without matching compute. Self-improvement methods rely on external feedback and evaluate models in isolation."
+     "body": "Multi-agent debate, shared blackboards and coordinator-led delegation are typically compared with one agent, without matching compute."
     },
     {
      "heading": "Key idea",
-     "body": "The authors introduce an equal-budget ladder. A group's token spend is converted into the number of independent agents the same tokens would pay for. Level 1 means the group beats a single agent, level 2 means it beats a majority vote of that many independent agents, and level 3 means it beats their pass@n, the probability that at least one of them is right. Because pass@n bounds any rule that merely selects among independent answers, level 3 shows that interaction produced answers selection could not. Think of it as asking whether a meeting beat giving everyone the same hours alone and keeping the best result.\n\nOn this ladder they define recursive collective intelligence: a group whose own output, checked automatically but without labels or a teacher, makes its next generation better at equal cost."
+     "body": "The authors introduce an equal-budget ladder. A group's token spend is converted into the number of independent agents the same tokens would pay for. Level 1 means the group beats a single agent, level 2 means it beats a majority vote of that many independent agents, and level 3 means it beats their pass@n, the probability that at least one of them is right. Because pass@n bounds any rule that merely selects among independent answers, level 3 shows that interaction produced answers selection could not.\n\nOn this ladder they define recursive collective intelligence: a group whose own output, checked automatically but without labels or a teacher, makes its next generation better at equal cost."
     },
     {
      "heading": "Results",
@@ -229,7 +229,7 @@
    "sections": [
     {
      "heading": "Problem",
-     "body": "Transformers compute by composing attention heads into circuits: an earlier head writes a feature into the residual stream and a later head reads it as its query, key or value. Attention makes the flow across tokens depend on the input, but the wiring between heads is fixed by trained weights. A model that needs different circuits for different inputs must keep them all wired at once and let them compete."
+     "body": "Transformers compute by composing attention heads into circuits: an earlier head writes a feature into the residual stream and a later head reads it as its query, key or value. Attention makes the flow across tokens depend on the input, but the wiring between heads is fixed by trained weights. A model that needs different circuits for different inputs must keep them all wired at once."
     },
     {
      "heading": "Existing approaches",
@@ -237,7 +237,7 @@
     },
     {
      "heading": "Key idea",
-     "body": "In loom attention a head picks which earlier heads to read from in the same way it picks which tokens to attend to. Doing this over all earlier head outputs would be expensive, so each token gets a small matrix memory with a fixed number of slots. Every head writes its output into slots chosen by a key and reads its query, key and value from slots chosen by a query, both generated per token. This is linear attention running along depth instead of along the sequence. The resulting LoomFormer has two residual streams: the usual vector stream carries control, deciding which slots and tokens to use, and the matrix stream carries the content that is moved."
+     "body": "In loom attention a head picks which earlier heads to read from in the same way it picks which tokens to attend to. Doing this over all earlier head outputs would be expensive, so each token gets a small matrix memory with a fixed number of slots. Every head writes its output into slots chosen by a key and reads its query, key and value from slots chosen by a query, both generated per token. The resulting LoomFormer has two residual streams: the usual vector stream carries control, deciding which slots and tokens to use, and the matrix stream carries the content that is moved."
     },
     {
      "heading": "Results",
