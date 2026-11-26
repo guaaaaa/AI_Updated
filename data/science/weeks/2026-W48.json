@@ -3,14 +3,20 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
    "title": "China launches Shenzhou 24 spacecraft with Pakistani astronaut on crew",
-   "outlets": 5,
+   "outlets": 6,
    "date": "2026-11-24",
    "covered": "2026-11-25-n1"
+  },
+  {
+   "title": "Hera mission images from asteroid crash show stadium-sized crater",
+   "outlets": 5,
+   "date": "2026-11-25",
+   "covered": "2026-11-26-n1"
   },
   {
    "title": "Will COP31 end with a new global climate deal?",
@@ -20,8 +26,8 @@
   }
  ],
  "featured": {
-  "news": 7,
-  "papers": 8
+  "news": 9,
+  "papers": 10
  },
  "items": [
   {
@@ -113,6 +119,30 @@
    "date": "2026-11-25",
    "type": "paper",
    "title": "Hierarchical interfacial anchoring for durable perovskite solar cells"
+  },
+  {
+   "id": "2026-11-26-n1",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "Hera's first close-ups show DART left a stadium-sized crater and a tumbling asteroid surrounded by boulders"
+  },
+  {
+   "id": "2026-11-26-n2",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "Niobium phosphide wires a few nanometres wide conduct better as they shrink, the opposite of copper"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11339-0",
+   "date": "2026-11-26",
+   "type": "paper",
+   "title": "An enduring climatic burden from past peatland drainage"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11309-6",
+   "date": "2026-11-26",
+   "type": "paper",
+   "title": "Coherent parity oscillations in coupled minimal Kitaev chains"
   }
  ]
 }

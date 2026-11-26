@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Wed, 25 Nov 2026 13:23:10 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 13:21:20 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Hera's first close-ups show DART left a stadium-sized crater and a tumbling asteroid surrounded by boulders</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-26/2026-11-26-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-26/2026-11-26-n1</guid>
+    <pubDate>Thu, 26 Nov 2026 13:21:20 +0000</pubDate>
+    <category>Science / Space &amp; Astronomy</category>
+    <description>ESA's Hera spacecraft has returned the first close images of Dimorphos, showing that NASA's 2022 DART impact carved a crater nearly as wide as the asteroid and left it tumbling. (CNN, Ars Technica)</description>
+  </item>
+  <item>
+    <title>Niobium phosphide wires a few nanometres wide conduct better as they shrink, the opposite of copper</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-26/2026-11-26-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-26/2026-11-26-n2</guid>
+    <pubDate>Thu, 26 Nov 2026 13:21:20 +0000</pubDate>
+    <category>Science / Chemistry &amp; Materials</category>
+    <description>A Stanford-led study in Nature reports that ribbons of the semimetal niobium phosphide only 5 to 6 nanometres wide become less resistive as they narrow, unlike copper chip wiring. (Tech Xplore (Stanford University release), Nature)</description>
+  </item>
+  <item>
+    <title>An enduring climatic burden from past peatland drainage</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-26/doi-10-1038-s41586-026-11339-0</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-26/doi-10-1038-s41586-026-11339-0</guid>
+    <pubDate>Thu, 26 Nov 2026 13:21:20 +0000</pubDate>
+    <category>Science / Climate science</category>
+    <description>Draining peatlands since 1800 accounts for about 2.7% of today's human-caused warming influence, and the effect could nearly double by 2100 even if no more peatland is drained. (Jevan B. Yu, Etienne Fluet-Chouinard, Susan E. Page et al. · Massachusetts Institute of Technology; Pacific Northwest National Laboratory; University of Leicester; UK Centre for Ecology &amp; Hydrology)</description>
+  </item>
+  <item>
+    <title>Coherent parity oscillations in coupled minimal Kitaev chains</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-26/doi-10-1038-s41586-026-11309-6</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-26/doi-10-1038-s41586-026-11309-6</guid>
+    <pubDate>Thu, 26 Nov 2026 13:21:20 +0000</pubDate>
+    <category>Science / Quantum physics</category>
+    <description>Delft physicists coupled two minimal Kitaev chains in a nanowire and observed coherent oscillations of fermion parity, which they describe as the first coherent control of a Majorana qubit. (Francesco Zatelli, Bart Roovers, Nick van Loo et al. · Delft University of Technology)</description>
+  </item>
   <item>
     <title>China launches Shenzhou-24 with a Pakistani astronaut, the first foreigner to fly on a Chinese crewed mission</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-25/2026-11-25-n1</link>
@@ -294,38 +326,6 @@
     <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
     <category>Science / Earth science</category>
     <description>Sonar images taken every second at a Canadian river delta show underwater landslides peeling the seabed back gradually for up to 100 minutes, not collapsing all at once. (Rebecca G. Englert, Matthieu J. B. Cartigny, Megan L. Baker et al. · Durham University)</description>
-  </item>
-  <item>
-    <title>Climate aridity amplifies global riverine nitrate beyond human inputs</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-aeg2366</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-aeg2366</guid>
-    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
-    <category>Science / Earth science</category>
-    <description>A global machine-learning map of about 2.9 million river segments finds that dry climates raise nitrate concentrations in rivers even where there is little farming or urban development. (Kayalvizhi Sadayappan and Li Li · Penn State)</description>
-  </item>
-  <item>
-    <title>Quantitative measurement of viscosity in two-dimensional electron fluids</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-science-adr5469</guid>
-    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>A ring-shaped graphene device lets physicists measure the viscosity of flowing electrons directly, and the result departs from the standard theory of metals. (Yihang Zeng, Haoyu Guo, Olivia M. Ghosh et al.)</description>
-  </item>
-  <item>
-    <title>A primordial heavy water reservoir in the outer solar system</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aeg1602</guid>
-    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
-    <category>Science / Planetary science</category>
-    <description>Twelve dust grains collected in Earth's stratosphere, traced to the Kuiper Belt, carry the oxygen signature of an isotopically heavy water reservoir that stayed separate from the inner solar system. (Lindsay P. Keller, Christopher J. Snead, Ming-Chang Liu et al. · NASA Johnson Space Center)</description>
-  </item>
-  <item>
-    <title>Passive imaging with quantum advantage</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-16/doi-10-1126-sciadv-aei1896</guid>
-    <pubDate>Mon, 16 Nov 2026 19:57:22 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>Splitting the light inside a microscope into separate regions before detecting it recovers fine detail with about five times fewer photons, without any special illumination. (Li Gong, Aonan Zhang, Madhura Ghosh Dastidar et al.)</description>
   </item>
 </channel>
 </rss>

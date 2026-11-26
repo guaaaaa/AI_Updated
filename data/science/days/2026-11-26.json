@@ -1,0 +1,199 @@
+{
+ "date": "2026-11-26",
+ "edition": "weekday",
+ "generated_at": "2026-11-26T13:21:20+00:00",
+ "summary": "Hera's first close views of the asteroid NASA struck in 2022, a semimetal that conducts better as its wires shrink, the warming legacy of drained peatlands, and the first coherently controlled Majorana parity qubit.",
+ "news": [
+  {
+   "id": "2026-11-26-n1",
+   "story_key": "hera-first-images-dimorphos-dart-crater",
+   "title": "Hera's first close-ups show DART left a stadium-sized crater and a tumbling asteroid surrounded by boulders",
+   "category": "Space & Astronomy",
+   "published": "2026-11-25T13:04:00-05:00",
+   "tldr": "ESA's Hera spacecraft has returned the first close images of Dimorphos, showing that NASA's 2022 DART impact carved a crater nearly as wide as the asteroid and left it tumbling.",
+   "why_selected": "First close inspection of the only asteroid-deflection experiment ever performed, with two findings (reshaping and a boulder swarm) that telescopes could not show.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In September 2022 NASA's DART spacecraft deliberately struck Dimorphos, a small asteroid about 151 metres across that orbits a larger one called Didymos, at roughly 6.14 kilometres per second. Telescopes on Earth showed that the impact shortened Dimorphos's roughly 12-hour orbit by about 33 minutes, far more than expected. But DART was destroyed in the collision, so nobody saw the result up close. The European Space Agency (ESA) launched Hera in October 2024 to return to the scene."
+    },
+    {
+     "heading": "What happened",
+     "body": "ESA released Hera's first detailed images on Wednesday at a briefing in Berlin. The spacecraft arrived about three weeks ago and is now about 30 kilometres from the pair. The images show a crater the size of a stadium, almost as large as Dimorphos itself, which flattened one of its previously rounded faces. Elsewhere the boulder fields look as they did in DART's final images. Dimorphos used to keep one face towards Didymos, as the Moon does towards Earth; it is now tumbling, which team member Sabina Raducan compared to a barrel thrown down the stairs. The surprise is company: hundreds of previously unknown boulders circle the two asteroids, more than 100 of them between the size of a football and a washing machine. The team cannot yet say whether they are DART debris or came from Didymos."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Deflecting a real threat requires predicting how a given asteroid responds to a hit. Principal investigator Patrick Michel said the team had expected either a crater or a reshaped body, and found something in between that is not yet understood. Hera's measurements will anchor the computer models used to plan any future deflection."
+    },
+    {
+     "heading": "What to watch",
+     "body": "In December Hera is due to approach to about 13 kilometres for sharper images and to measure Dimorphos's mass, which will show how efficiently DART transferred its momentum. Two small CubeSats are expected to be released in January and to attempt landings; the boulders are a collision risk their engineers must now plan around. Hera will study the system for about six months."
+    }
+   ],
+   "sources": [
+    {
+     "name": "CNN",
+     "url": "https://www.cnn.com/2026/11/25/science/hera-mission-dimorphos-asteroid-arrival-images"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n2",
+   "story_key": "nbp-nanoribbons-resistivity-drops-when-narrower",
+   "title": "Niobium phosphide wires a few nanometres wide conduct better as they shrink, the opposite of copper",
+   "category": "Chemistry & Materials",
+   "published": "2026-11-25T11:00:00-05:00",
+   "tldr": "A Stanford-led study in Nature reports that ribbons of the semimetal niobium phosphide only 5 to 6 nanometres wide become less resistive as they narrow, unlike copper chip wiring.",
+   "why_selected": "A peer-reviewed result on a real bottleneck in chip scaling, shown at room temperature in wire-shaped structures rather than only in films.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A computer chip can contain around 100 kilometres of copper wiring that links its billions of transistors. The thinnest of these wires are more than 1,000 times thinner than a human hair, and at that scale copper has a problem: its resistance rises. Copper carries current mainly through its interior, and as a wire narrows, electrons collide more and more with its surfaces. More resistance means more wasted energy and slower signals, so chipmakers are looking for other materials."
+    },
+    {
+     "heading": "What happened",
+     "body": "A team led by Stanford University reported in Nature on Wednesday that niobium phosphide (NbP) behaves the other way round. NbP is a topological semimetal, a material in which a large share of the current travels along the surfaces rather than through the bulk. The researchers patterned thin NbP films into flat nanoribbons as small as 5 to 6 nanometres wide and about 1.5 nanometres thick, and found that the electrical resistivity fell as the ribbons became narrower. First author Haotian Su explained that at these sizes the surfaces and edges carry proportionally more of the current than the core, and that electrons there are scattered backwards less often. The team also found that this surface and edge conduction was surprisingly insensitive to imperfections from fabrication, such as roughness and oxidation."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The measurements were made at room temperature, and according to Stanford the material can be made with industry-standard fabrication techniques, two conditions any replacement for copper would have to meet. Earlier work had shown promising conduction in ultrathin NbP films; ribbons are closer to the shape of real chip wiring. Senior author Eric Pop described the result with a plumbing analogy: when a pipe shrinks to a straw its walls impede the flow, but NbP's walls are electrically more slippery."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Pop was careful to say the team has not produced a better copper, only a type of material that could work better in nanoscale wires. The group is now studying fabrication compatibility, endurance and behaviour with temperature, and is testing other semimetals that might perform as well or better. Nothing has yet been demonstrated inside a working chip."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Tech Xplore (Stanford University release)",
+     "url": "https://techxplore.com/news/2026-11-tiny-nbp-wires-chips-efficient.html"
+    },
+    {
+     "name": "Nature",
+     "url": "https://www.nature.com/articles/s41586-026-11288-8"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11339-0",
+   "title": "An enduring climatic burden from past peatland drainage",
+   "authors": [
+    "Jevan B. Yu",
+    "Etienne Fluet-Chouinard",
+    "Susan E. Page",
+    "Chris D. Evans",
+    "Charles F. Harvey",
+    "César Terrer"
+   ],
+   "affiliations": [
+    "Massachusetts Institute of Technology; Pacific Northwest National Laboratory; University of Leicester; UK Centre for Ecology & Hydrology"
+   ],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Climate science",
+   "tags": [
+    "Climate science",
+    "Earth science"
+   ],
+   "tldr": "Draining peatlands since 1800 accounts for about 2.7% of today's human-caused warming influence, and the effect could nearly double by 2100 even if no more peatland is drained.",
+   "why_selected": "Puts a first global number, with its history and future, on a land-use source of warming that restoration can directly reduce.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Peatlands, such as bogs and fens, are waterlogged ecosystems where plant matter piles up faster than it decays. They cover only 3 to 4% of the land yet hold about 30% of the world's soil carbon, roughly 600 billion tons. People have long drained them for farming and forestry; how much that has warmed the planet was unclear."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Waterlogged peat lacks oxygen, so it decays slowly and releases some methane. Lowering the water table lets oxygen in: methane emissions fall, but microbes begin turning the stored carbon into carbon dioxide, and keep doing so for centuries. The two opposing effects had not been combined into a global history."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team, led by Jevan Yu at MIT, joined three ingredients. First, a reconstruction of where and when peatlands were drained from 1800 to 2020. Second, an expanded data set of measured emissions, including methane from the drainage ditches themselves. Third, models that give carbon dioxide and methane flows as a function of water-table depth. Running these forward from 1800 yields emissions through time, which the authors express as radiative forcing: the change in Earth's energy balance, in watts per square metre. That lets carbon dioxide's warming and reduced methane's cooling be added directly."
+    },
+    {
+     "heading": "Results",
+     "body": "In 2020 the carbon dioxide released contributed about +83 milliwatts per square metre and the reduced methane about -9, a net of roughly +73. That is 2.7% of the total human-caused change in Earth's energy budget (range 1.8 to 3.6%), from draining about 0.5% of the world's land surface, or 15% of peatland area. More than half of the carbon dioxide came from Europe and almost a quarter from Southeast Asia. If water levels stay as they were in 2020, the forcing nearly doubles to 138 by 2100."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Past drainage commits the world to future emissions, but the process can be slowed: in the model, ambitious rewetting brings the effect slightly below its 2020 level. The main caveat is that the figures rest on reconstructed drainage histories and modelled fluxes, and the uncertainty range is correspondingly wide."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11339-0",
+    "doi": "https://doi.org/10.1038/s41586-026-11339-0"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11309-6",
+   "title": "Coherent parity oscillations in coupled minimal Kitaev chains",
+   "authors": [
+    "Francesco Zatelli",
+    "Bart Roovers",
+    "Nick van Loo",
+    "Antonio Lombardi",
+    "Juan D. Torres Luna",
+    "Sebastian Miles",
+    "Vincent P. M. Sietses",
+    "Florian J. Bennebroek Evertsz’",
+    "Pablo Cova Fariña",
+    "Alberto Bordin",
+    "Ghada Badawy",
+    "Erik P. A. M. Bakkers",
+    "Michael Wimmer",
+    "Leo P. Kouwenhoven"
+   ],
+   "affiliations": [
+    "Delft University of Technology"
+   ],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics",
+    "Condensed matter & materials"
+   ],
+   "tldr": "Delft physicists coupled two minimal Kitaev chains in a nanowire and observed coherent oscillations of fermion parity, which they describe as the first coherent control of a Majorana qubit.",
+   "why_selected": "Moves Majorana research from indirect electrical signatures to a qubit operated in the time domain, with a built-in test of how Majorana-like the states are.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Majorana zero modes are states that appear in pairs at the ends of certain superconducting wires. A pair stores one bit of information non-locally, in whether the wire holds an even or odd number of electrons (its parity), so local noise should struggle to corrupt it. But experiments have mostly inferred such modes from electrical transport measurements; nobody had operated them as a controllable qubit."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Groups build a Kitaev chain, the textbook model that hosts Majoranas, piece by piece from quantum dots (tiny electron traps) linked by superconductor. Even a two-dot chain shows so-called poor man's Majoranas at a finely tuned sweet spot. They have the key Majorana properties but only limited protection."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team placed two two-dot chains on one indium antimonide nanowire with aluminium strips, joined by a central quantum dot acting as an adjustable coupler. The qubit's two states are \"both chains even\" and \"both chains odd\". Bringing the coupler closer to resonance lets one electron's worth of parity swap coherently between the chains, like two pendulums joined by a spring. The team pulsed this coupling on for a set time and then read each chain's parity. A crucial check: for well-separated Majoranas, the same oscillation must occur at the same frequency when total parity is odd."
+    },
+    {
+     "heading": "Results",
+     "body": "Parity oscillated coherently, at a rate set by the coupler. In one measurement the oscillation frequency was about 107 megahertz with a decay time of 26 ± 2 nanoseconds, and leakage out of the even states stayed near 5%. Frequencies in the even and odd sectors typically agreed to about 5%. When the device was configured as an ordinary charge qubit, no coherent oscillations were resolved under the same conditions."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This establishes time-domain control of a parity qubit and a route to longer chains, where protection is predicted to improve exponentially with the number of sites. The caveats: coherence lasts only tens of nanoseconds, two-site chains are weakly protected, and the coupling operation itself is not topologically protected at any chain length. This summary is based on the arXiv version of the paper."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11309-6",
+    "doi": "https://doi.org/10.1038/s41586-026-11309-6"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

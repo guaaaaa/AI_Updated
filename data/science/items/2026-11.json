@@ -1,5 +1,53 @@
 [
  {
+  "id": "2026-11-26-n1",
+  "date": "2026-11-26",
+  "type": "news",
+  "title": "Hera's first close-ups show DART left a stadium-sized crater and a tumbling asteroid surrounded by boulders",
+  "tldr": "ESA's Hera spacecraft has returned the first close images of Dimorphos, showing that NASA's 2022 DART impact carved a crater nearly as wide as the asteroid and left it tumbling.",
+  "category": "Space & Astronomy",
+  "byline": "CNN, Ars Technica"
+ },
+ {
+  "id": "2026-11-26-n2",
+  "date": "2026-11-26",
+  "type": "news",
+  "title": "Niobium phosphide wires a few nanometres wide conduct better as they shrink, the opposite of copper",
+  "tldr": "A Stanford-led study in Nature reports that ribbons of the semimetal niobium phosphide only 5 to 6 nanometres wide become less resistive as they narrow, unlike copper chip wiring.",
+  "category": "Chemistry & Materials",
+  "byline": "Tech Xplore (Stanford University release), Nature"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11339-0",
+  "date": "2026-11-26",
+  "type": "paper",
+  "title": "An enduring climatic burden from past peatland drainage",
+  "tldr": "Draining peatlands since 1800 accounts for about 2.7% of today's human-caused warming influence, and the effect could nearly double by 2100 even if no more peatland is drained.",
+  "primary_tag": "Climate science",
+  "tags": [
+   "Climate science",
+   "Earth science"
+  ],
+  "byline": "Jevan B. Yu, Etienne Fluet-Chouinard, Susan E. Page et al. · Massachusetts Institute of Technology; Pacific Northwest National Laboratory; University of Leicester; UK Centre for Ecology & Hydrology",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11309-6",
+  "date": "2026-11-26",
+  "type": "paper",
+  "title": "Coherent parity oscillations in coupled minimal Kitaev chains",
+  "tldr": "Delft physicists coupled two minimal Kitaev chains in a nanowire and observed coherent oscillations of fermion parity, which they describe as the first coherent control of a Majorana qubit.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics",
+   "Condensed matter & materials"
+  ],
+  "byline": "Francesco Zatelli, Bart Roovers, Nick van Loo et al. · Delft University of Technology",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-25-n1",
   "date": "2026-11-25",
   "type": "news",
