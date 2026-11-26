@@ -1,5 +1,66 @@
 [
  {
+  "id": "2026-11-26-n1",
+  "date": "2026-11-26",
+  "type": "news",
+  "title": "US proposes new Section 301 tariffs on China, the EU and 12 other trading partners over excess factory capacity",
+  "tldr": "The Trump administration proposed new tariffs on 14 economies, including an additional 20% on Chinese goods, to replace import taxes the Supreme Court struck down in February.",
+  "category": "Trade & Policy",
+  "byline": "The Globe and Mail, BBC, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-26-n2",
+  "date": "2026-11-26",
+  "type": "news",
+  "title": "US PCE inflation holds at 3.8% in October and core inflation reaches 3.3%, as real consumer spending slips",
+  "tldr": "The Federal Reserve's preferred price index rose 3.8% in the year to October, and 3.3% excluding food and energy, slightly above the 3.2% core rate economists expected.",
+  "category": "Economy & Data",
+  "byline": "Bureau of Economic Analysis, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-26-n3",
+  "date": "2026-11-26",
+  "type": "news",
+  "title": "US third-quarter GDP growth is revised up to 4.3%, the fastest pace in three years",
+  "tldr": "The US economy grew at a 4.3% annual rate in the third quarter, not 3.4% as first estimated, after upgrades to software investment and consumer spending.",
+  "category": "Economy & Data",
+  "byline": "Bureau of Economic Analysis, The Globe and Mail"
+ },
+ {
+  "id": "2026-11-26-n4",
+  "date": "2026-11-26",
+  "type": "news",
+  "title": "Norse Atlantic suspends its flights and says it will file for bankruptcy unless it finds funding urgently",
+  "tldr": "The Norwegian long-haul budget airline cancelled Thursday's flights a day after its shares fell 85%, and says it is in takeover talks with investors.",
+  "category": "Consumer & Retail",
+  "byline": "RTE, Euronews"
+ },
+ {
+  "id": "2026-11-26-n5",
+  "date": "2026-11-26",
+  "type": "news",
+  "title": "UK discount chain Poundland collapses into administration, putting 11,000 jobs and 600 shops at risk",
+  "tldr": "Poundland's US owner, Gordon Brothers, put the retailer into administration after sale talks failed; shops stay open while administrators AlixPartners seek buyers for all or parts of it.",
+  "category": "Consumer & Retail",
+  "byline": "BBC, Euronews, BBC"
+ },
+ {
+  "id": "nber-w36039",
+  "date": "2026-11-26",
+  "type": "paper",
+  "title": "Democratizing Venture Capital: Tax Incentives and the Geographic Expansion of Startup Investing",
+  "tldr": "Removing federal capital gains tax on qualifying startup stock in 2009–2010 raised the chance that a metro area with no venture capital received its first investment by 8 to 10 percentage points.",
+  "primary_tag": "Public finance",
+  "tags": [
+   "Public finance",
+   "Corporate finance",
+   "Innovation & technology"
+  ],
+  "byline": "Murillo Campello, Guilherme Junqueira",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-25-n1",
   "date": "2026-11-25",
   "type": "news",

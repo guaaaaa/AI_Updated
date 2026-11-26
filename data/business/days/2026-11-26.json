@@ -1,0 +1,250 @@
+{
+ "date": "2026-11-26",
+ "edition": "weekday",
+ "generated_at": "2026-11-26T12:46:41+00:00",
+ "summary": "Washington proposes new tariffs on 14 trading partners, US inflation stays at 3.8% while third-quarter growth is revised up to 4.3%, and Norse Atlantic and Poundland run out of money.",
+ "news": [
+  {
+   "id": "2026-11-26-n1",
+   "story_key": "us-section-301-excess-capacity-tariffs-2026-11",
+   "title": "US proposes new Section 301 tariffs on China, the EU and 12 other trading partners over excess factory capacity",
+   "category": "Trade & Policy",
+   "published": "2026-11-25T08:29:59-05:00",
+   "tldr": "The Trump administration proposed new tariffs on 14 economies, including an additional 20% on Chinese goods, to replace import taxes the Supreme Court struck down in February.",
+   "why_selected": "The broadest US trade action since the Supreme Court ruling, covering economies that analysts say make up roughly half of global output; reported by 11 outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "In February the US Supreme Court ruled that President Donald Trump could not declare an economic emergency to impose across-the-board tariffs without Congress. The White House then opened investigations into other countries' trade practices under Section 301 of the Trade Act of 1974, a law that lets the government retaliate against foreign practices it finds unfair."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday the US Trade Representative, Jamieson Greer, proposed new tariffs on 12 countries, the European Union and Taiwan, saying their industrial policies create excess manufacturing capacity that burdens US commerce. The Globe and Mail reported an additional 20% on Chinese goods, which stacks to 45% on some products, a 20% rate for Vietnam pending trade talks, and 10% to 18% for other partners. The BBC reported headline rates of up to 40% for China and up to 35% for Vietnam, and noted that some rates will be effectively reduced by caps Trump agreed in earlier deals. The duties would not stack on existing Section 232 tariffs on cars, steel and aluminium. The proposals must go through public consultation, and Greer said none would take effect for at least a couple of months."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The plan rebuilds much of the tariff wall on a legal base that has held up before: many Section 301 tariffs from Trump's first term stayed in force under his successor. Analysts cited by The Globe and Mail say the 14 economies account for roughly half of the global economy. Capital Economics' Stephen Brown called the plan \"not as alarming as it looks\" because it largely replaces tariffs announced in the summer, but said it would still give prices a marginal boost. That matters while US inflation is well above the Federal Reserve's 2% target. China called overcapacity a \"false narrative\" and Japan called the move regrettable."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The consultation and any hearings, legal challenges, and the US-China trade truce, which is set to expire on 10 January 2027. Trump plans to host Xi Jinping at the G20 summit in Florida next month."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-us-plans-to-hike-tariffs-on-china-eu-and-other-partners-over/"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-china-us-trading-partners-oppose-donald-trump-new-tariffs/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n2",
+   "story_key": "us-pce-inflation-october-2026",
+   "title": "US PCE inflation holds at 3.8% in October and core inflation reaches 3.3%, as real consumer spending slips",
+   "category": "Economy & Data",
+   "published": "2026-11-25T12:00:00-05:00",
+   "tldr": "The Federal Reserve's preferred price index rose 3.8% in the year to October, and 3.3% excluding food and energy, slightly above the 3.2% core rate economists expected.",
+   "why_selected": "The last reading of the Fed's target inflation measure before its December rate decision, from the primary source.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Federal Reserve aims for 2% annual inflation measured by the Personal Consumption Expenditures (PCE) price index, a broad gauge of what households pay for goods and services. \"Core\" PCE leaves out food and energy, whose prices swing the most, and is seen as a better signal of the trend. The Fed raised interest rates in September, and markets are pricing in three more increases. PCE inflation was 2.3% in March 2025, before tariffs and the war with Iran pushed up import and oil prices."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Bureau of Economic Analysis said on Wednesday that the PCE price index rose 0.3% in October from September and 3.8% from a year earlier. Core prices also rose 0.3% on the month and 3.3% on the year. Economists surveyed before the release had expected 3.8% for the headline rate and 3.2% for core, according to The Globe and Mail. Personal income rose $201.8 billion, or 0.7%, helped by wages and by one-time government payments tied to a Medicare premium rebate. Consumer spending rose $63.8 billion, or 0.3%, in dollar terms, but after adjusting for prices it fell by $5.8 billion, a decline of less than 0.1%. The personal saving rate was 4.1%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Core inflation running a little hotter than forecast supports the Fed officials who argue that price pressure is becoming more broadly rooted, rather than a passing effect of tariffs and oil. Others disagree: an analysis by St. Louis Fed staff attributed about two-thirds of \"excess\" core inflation and 90% of excess headline inflation to supply shocks, and Treasury Secretary Scott Bessent argues the Fed should not raise rates to chase inflation that is likely to fade. Oil has fallen from near $120 a barrel in October to below $90, which should lower later readings. For households, the report shows incomes rising but higher prices absorbing all of October's extra spending."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Fed's rate decision in December, how officials frame the path into next year, and the November income and spending report on 23 December."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Bureau of Economic Analysis",
+     "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-us-pce-inflation-october-2025-federal-reserve-rate-expectations/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n3",
+   "story_key": "us-gdp-q3-2026-second-estimate",
+   "title": "US third-quarter GDP growth is revised up to 4.3%, the fastest pace in three years",
+   "category": "Economy & Data",
+   "published": "2026-11-25T09:40:16-05:00",
+   "tldr": "The US economy grew at a 4.3% annual rate in the third quarter, not 3.4% as first estimated, after upgrades to software investment and consumer spending.",
+   "why_selected": "A large upward revision to the main measure of US output, well above the 3.5% economists expected, at a moment when the Fed is weighing further rate increases.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Gross domestic product (GDP) measures the total output of the economy. The Bureau of Economic Analysis publishes three estimates for each quarter as more complete data arrive, and quotes growth at an annual rate: the pace over a year if the quarter's growth continued. The first estimate for July to September, published last month, showed growth of 3.4%, up from 2.2% in the second quarter."
+    },
+    {
+     "heading": "What happened",
+     "body": "The second estimate, released on Wednesday, put third-quarter growth at 4.3%, a revision of 0.9 percentage point and the fastest pace in three years. Economists polled by Reuters had expected 3.5%. The bureau said the change mainly reflected investment and consumer spending. The investment revision was led by software, and the consumer revision by goods such as pharmaceuticals, with spending on health care services revised down. Consumer spending growth was revised to 4.2% from 3.8%, and business spending on equipment grew at a 21.8% rate, its third straight quarter of double-digit growth. Final sales to private domestic purchasers, a measure of underlying demand that excludes trade, inventories and government, rose 5.8%, the fastest since the second quarter of 2021. Gross domestic income, which measures the economy from the income side, grew 4.4%. Profits from current production rose $206.0 billion, after $384.0 billion in the second quarter."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The figures show demand running hot going into the autumn, which strengthens the case of Federal Reserve officials who see inflation as driven by strong spending rather than only by tariffs and oil. The details also show where the growth comes from. Spending is driven mostly by higher-income households whose wealth was lifted by the stock market before the recent AI-led sell-off, The Globe and Mail reported, while households overall are saving less. Economists warned that the investment boom tied to artificial intelligence could slow as investors scrutinize AI valuations. Both supports therefore depend partly on markets that have since fallen."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The third estimate on 23 December, the Fed's December decision, and whether the stock market sell-off shows up in fourth-quarter spending and investment."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Bureau of Economic Analysis",
+     "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026"
+    },
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-us-gdp-growth-third-quarter-2026/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n4",
+   "story_key": "norse-atlantic-flights-suspended-2026-11",
+   "title": "Norse Atlantic suspends its flights and says it will file for bankruptcy unless it finds funding urgently",
+   "category": "Consumer & Retail",
+   "published": "2026-11-26T02:34:22-05:00",
+   "tldr": "The Norwegian long-haul budget airline cancelled Thursday's flights a day after its shares fell 85%, and says it is in takeover talks with investors.",
+   "why_selected": "The latest airline pushed to the brink by fuel costs since the Iran war began, with transatlantic passengers affected; covered by five outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Norse Atlantic was founded in 2021 by entrepreneur Bjorn Tore Larsen, after Norwegian Air gave up long-haul flying during the pandemic. It set out to revive low-cost transatlantic travel with 12 Boeing 787 Dreamliners. As a pure long-haul airline it had no regional network to feed passengers onto its flights, which analysts said early on could make its planes hard to fill. It later added charter and aircraft-leasing work as scheduled flights alone struggled to make a profit."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday Norse said its financial situation was \"critical\" and that it needed new financing to cover short-term cash needs and operations. Its Oslo-listed shares fell 85%. On Thursday the airline cancelled all of the day's flights while it waits to learn whether financing can be arranged. \"If a short-term financing solution is not secured urgently, it is the board's intention to file for bankruptcy,\" it said in a stock exchange filing, adding that there was no assurance a solution would be found. Norse said it is in discussion with investors about a possible takeover that would include financing, without naming them. Chief executive Eivind Roald told the business daily Finansavisen that all aircraft had returned to bases in Norway, Sweden and Britain. The shares fell a further 10.2% on Thursday morning, a decline of 99.2% this year, RTE reported; Euronews later put the airline's market value at $9.7 million."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Fuel typically makes up about a fifth of an airline's costs. European jet fuel prices more than doubled in March after supply disruptions linked to the US-Israeli war with Iran, and have stayed high and volatile. Norse had already begun a formal sale or merger process in July, and a deal to lease two jets to Pakistan International Airlines was abruptly suspended this week. It is not alone: Latvia's airBaltic entered US Chapter 11 bankruptcy proceedings in September, and Spain's Plus Ultra said on Tuesday that it was ceasing operations."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether a takeover or emergency funding is announced, whether flights resume, and what the airline tells passengers who hold tickets."
+    }
+   ],
+   "sources": [
+    {
+     "name": "RTE",
+     "url": "https://www.rte.ie/news/business/2026/1126/1600721-norse-atlantic-says-financial-situation-critical/"
+    },
+    {
+     "name": "Euronews",
+     "url": "https://www.euronews.com/2026/11/26/norwegian-low-cost-carrier-norse-atlantic-suspends-flights-as-bankruptcy-looms"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n5",
+   "story_key": "poundland-administration-2026-11",
+   "title": "UK discount chain Poundland collapses into administration, putting 11,000 jobs and 600 shops at risk",
+   "category": "Consumer & Retail",
+   "published": "2026-11-25T12:00:00-05:00",
+   "tldr": "Poundland's US owner, Gordon Brothers, put the retailer into administration after sale talks failed; shops stay open while administrators AlixPartners seek buyers for all or parts of it.",
+   "why_selected": "A UK retail failure with 11,000 jobs at risk weeks before Christmas, with a dispute over the role of an owner that is also the main lender.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Poundland is a British discount retailer with 600 shops in the UK and Ireland, where it trades as Dealz. Its former owner, the Polish group Pepco, sold the struggling chain to the US investment firm Gordon Brothers in June last year for £1. Gordon Brothers specialises in buying and restructuring distressed companies. Administration is the UK insolvency process in which outside specialists take control of a company to rescue it or sell its assets for creditors."
+    },
+    {
+     "heading": "What happened",
+     "body": "Poundland entered administration on Wednesday after talks with several bidders ended without a deal. AlixPartners was appointed administrator and said it would consider selling the business whole or in parts. Shops and distribution centres will keep trading for now. Chief executive Barry Williams told staff the board had \"no alternative\": he said Gordon Brothers removed all borrowing facilities and access to the company's bank accounts on 27 October and had not released enough money since to keep it solvent. Gordon Brothers said it had explored every avenue to sell the whole company, had lent £85 million, and that the business remained vulnerable to inflation or any fall in sales. The union Usdaw accused the owner of intending to force an administration, which Gordon Brothers rejected."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "About 11,000 people could lose their jobs weeks before Christmas, and suppliers are exposed too. The BBC reported that this was not a collapse in trading: Poundland went from a £68 million loss to an £18.1 million profit before interest, tax and certain charges over the year to September, and comparable sales were up 7% in its latest quarter. Insolvency specialist Julie Palmer of Begbies Traynor called it \"a funding and ownership problem\". Gordon Brothers is also Poundland's main creditor, so it is first in line to be repaid, and critics say it stands to recover its loans and more through insolvency, a claim it denies. Prime Minister Andy Burnham said the government would work with all parties to protect jobs."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Which bidders come forward for stores, how many shops and jobs survive, and Gordon Brothers' recall before the House of Commons business committee."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o"
+    },
+    {
+     "name": "Euronews",
+     "url": "https://www.euronews.com/business/2026/11/25/uk-discounter-poundland-enters-administration-with-11000-jobs-at-risk"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cm4g10p2r0g9o"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36039",
+   "title": "Democratizing Venture Capital: Tax Incentives and the Geographic Expansion of Startup Investing",
+   "authors": [
+    "Murillo Campello",
+    "Guilherme Junqueira"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-26T00:00:00-05:00",
+   "primary_tag": "Public finance",
+   "tags": [
+    "Public finance",
+    "Corporate finance",
+    "Innovation & technology"
+   ],
+   "tldr": "Removing federal capital gains tax on qualifying startup stock in 2009–2010 raised the chance that a metro area with no venture capital received its first investment by 8 to 10 percentage points.",
+   "why_selected": "A concrete estimate of whether a tax break can spread startup funding beyond a few hubs, a live question for tax and regional policy.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Venture capital (VC), the funding that professional investors put into young, high-risk companies in exchange for ownership stakes, has grown for decades but remains concentrated in a handful of US metropolitan areas. That leaves most of the country with limited access to startup financing. Murillo Campello and Guilherme Junqueira ask whether a tax subsidy can widen the geographic reach of startup investing."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The policy they study is the Qualified Small Business Stock (QSBS) programme, which gives investors a tax break on gains from shares in qualifying startups. The programme sets no requirement on where a startup is located, so whether such a general incentive changes where investors put their money was an open question."
+    },
+    {
+     "heading": "Key idea",
+     "body": "In 2009–2010 the programme was enhanced so that federal capital gains taxes on investments in qualifying startups were eliminated. A higher payoff from success makes riskier bets more attractive, including entering unfamiliar markets, and the authors say this incentive is especially strong for VC funds. They compare metro areas that had no VC investment before the reform with similarly sized metros that already had it, and they use two checks: sectors that the programme excludes, and angel investors (individuals who invest their own money), who receive the same tax benefit."
+    },
+    {
+     "heading": "Results",
+     "body": "Relative to the comparison metros, the reform raised the probability that a previously unserved metro received VC investment in qualifying sectors by 8 to 10 percentage points. There was no comparable increase in excluded sectors, or among angel investors. Startups in the newly served markets performed like those in other markets outside the main hubs. They created high-wage jobs and attracted scientific and technical workers, some from established hubs."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The finding suggests that a sufficiently large subsidy can draw venture capital into places it had long bypassed, even without rules about location. That matters to lawmakers weighing startup tax breaks and to regions trying to build technology employment. The main caveats: this is a working paper, the summary read for this digest does not report what the tax break cost in lost revenue, and the effect is measured relative to metros that already had VC."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36039"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}

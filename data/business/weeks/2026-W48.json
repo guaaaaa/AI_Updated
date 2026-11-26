@@ -3,20 +3,14 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
    "title": "Prediction: Dec. 9 Will Be a Huge Day for the Stock Market",
-   "outlets": 24,
+   "outlets": 29,
    "date": "2026-11-22",
-   "covered": "2026-11-25-n1"
-  },
-  {
-   "title": "What Comes Next After Anthropic’s Historic IPO",
-   "outlets": 9,
-   "date": "2026-11-22",
-   "covered": null
+   "covered": "2026-11-23-n2"
   },
   {
    "title": "Wall Street Strategists See Silver Lining for Stock Market",
@@ -50,8 +44,8 @@
   }
  ],
  "featured": {
-  "news": 12,
-  "papers": 3
+  "news": 17,
+  "papers": 4
  },
  "items": [
   {
@@ -143,6 +137,42 @@
    "date": "2026-11-25",
    "type": "paper",
    "title": "CFOs Meet LLMs"
+  },
+  {
+   "id": "2026-11-26-n1",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "US proposes new Section 301 tariffs on China, the EU and 12 other trading partners over excess factory capacity"
+  },
+  {
+   "id": "2026-11-26-n2",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "US PCE inflation holds at 3.8% in October and core inflation reaches 3.3%, as real consumer spending slips"
+  },
+  {
+   "id": "2026-11-26-n3",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "US third-quarter GDP growth is revised up to 4.3%, the fastest pace in three years"
+  },
+  {
+   "id": "2026-11-26-n4",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "Norse Atlantic suspends its flights and says it will file for bankruptcy unless it finds funding urgently"
+  },
+  {
+   "id": "2026-11-26-n5",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "UK discount chain Poundland collapses into administration, putting 11,000 jobs and 600 shops at risk"
+  },
+  {
+   "id": "nber-w36039",
+   "date": "2026-11-26",
+   "type": "paper",
+   "title": "Democratizing Venture Capital: Tax Incentives and the Geographic Expansion of Startup Investing"
   }
  ]
 }
