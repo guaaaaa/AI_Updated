@@ -1,0 +1,212 @@
+{
+ "date": "2026-11-26",
+ "edition": "weekday",
+ "generated_at": "2026-11-26T11:50:18+00:00",
+ "summary": "1Password discloses a breach that began with an employee's GitHub account, the FCC conditionally clears SpaceX's million-satellite data-center constellation, and attackers exploit flaws in Palo Alto firewalls and Drupal sites.",
+ "news": [
+  {
+   "id": "2026-11-26-n1",
+   "story_key": "1password-github-account-breach",
+   "title": "1Password says an attacker used an employee's GitHub account to steal customer names and emails, but not password vaults",
+   "category": "Cybersecurity",
+   "published": "2026-11-25T13:49:00-05:00",
+   "tldr": "1Password disclosed that an attacker who took over an employee's GitHub account planted code in its backend and downloaded customer account records, while password vaults and their encryption keys stayed out of reach.",
+   "why_selected": "A breach at a password manager used by millions of people and more than 200,000 businesses, confirmed by the company and reported by two outlets.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A password manager stores a person's logins in an encrypted vault. 1Password, based in Toronto, says it has millions of customers and more than 200,000 business customers. The company says it has no access to customers' account passwords or to their Secret Keys, which are used to scramble vault contents so that 1Password cannot see them."
+    },
+    {
+     "heading": "What happened",
+     "body": "In a disclosure published on Wednesday, 1Password said it began investigating on November 19 after detecting signs that an employee's corporate GitHub account had been compromised. The attacker used the account to reach private code repositories and to push malicious code into backend services, which then downloaded customer account records.\n\nThe stolen data includes customer names and email addresses, account and user IDs, account creation and last sign-in times, parameters of the Secure Remote Password login protocol, and tokens from invitation and account-recovery emails. The attacker also took internal source code and reached the company's build and deployment environment, which may have exposed infrastructure credentials. 1Password said vaults and the keys protecting them were not compromised, and that its apps and extensions are unaffected. How the employee account was taken over is not known."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The stolen tokens cannot open an account on their own, 1Password said, because finishing an invitation or recovery also requires single sign-on or a verification code sent by email. As a precaution against guessing, it lengthened those codes from six digits to ten letters and numbers. It also disabled the GitHub account, rotated exposed credentials and hired outside experts to check the cleanup. It reports no evidence of account takeovers.\n\nThe practical risk is phishing. The data is a list of confirmed 1Password users, and attackers could send emails that imitate the company to ask for passwords, Secret Keys or codes."
+    },
+    {
+     "heading": "What to watch",
+     "body": "BleepingComputer reports the company as saying a small number of users were affected and have been notified individually; TechCrunch says it has not given a figure and did not answer questions about any demands from the attacker. Customers are not being asked to change passwords."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/25/1password-said-hackers-broke-into-its-internal-systems-but-customer-passwords-are-safe/"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n2",
+   "story_key": "fcc-spacex-starmind-million-satellites",
+   "title": "The FCC conditionally authorizes SpaceX to deploy up to 1 million Starmind satellites as orbital data centers",
+   "category": "Space Industry",
+   "published": "2026-11-25T13:22:00-05:00",
+   "tldr": "The FCC gave SpaceX conditional approval for a constellation of up to 1 million data-center satellites, with 14 years to deploy it, while withholding a waiver on how retired satellites are disposed of.",
+   "why_selected": "A constellation that would multiply the number of satellites in orbit about 50-fold, covered by nine outlets, with consequences for orbital congestion and astronomy.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "SpaceX wants to put computing hardware in orbit: satellites, called Starmind, that would act as data centers rather than relay internet traffic as its Starlink satellites do. In the United States, the Federal Communications Commission (FCC) licenses satellite operators' use of radio spectrum and sets rules for disposing of satellites at the end of their lives. SpaceX applied to the agency for a constellation of up to 1 million satellites."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday the FCC granted SpaceX conditional authorization for the full constellation. Ars Technica reports that, if fully deployed, it would increase the number of satellites in orbit roughly 50-fold. SpaceX has seven years to put a first operational Starmind satellite in orbit, until November 2035 to deploy 100,000, and until November 2040 to complete the constellation.\n\nThe satellites would fly at altitudes from about 500 to about 1,000 kilometers and talk to each other and to Starlink mainly by laser; the approval covers radio links for keeping control of them from the ground if those primary links fail. The FCC did not grant one request. SpaceX asked to move retired satellites above 600 kilometers into other Earth orbits or into orbit around the Sun instead of burning them up in the atmosphere, and the agency said it had not received enough information to judge that plan."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The order removes a regulatory obstacle but does not show that orbital data centers work technically or economically. TechCrunch lists open problems that include the cost of building and launching the satellites and cooling processors in space.\n\nThe decision also shows how narrowly the FCC now reads its environmental duties. Amazon, Viasat and the American Astronomical Society objected, citing debris, congestion, radio interference and effects on astronomy, and the agency received about 1,500 public comments. It called concerns about pollution from satellites burning up on re-entry speculative, said rocket-launch emissions were outside its purview, and relied on an October policy that space activities generally fall outside its environmental-review obligations."
+    },
+    {
+     "heading": "What to watch",
+     "body": "SpaceX must obtain the disposal waiver before launching any Starmind satellite that would not be removed by atmospheric re-entry."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n3",
+   "story_key": "palo-alto-pan-os-fragnesia-exploitation",
+   "title": "Palo Alto Networks confirms attackers are exploiting the Fragnesia Linux flaw on firewalls with internet-exposed management interfaces",
+   "category": "Cybersecurity",
+   "published": "2026-11-24T19:10:00-05:00",
+   "tldr": "Palo Alto Networks says attackers are chaining a PHP flaw with the Fragnesia Linux kernel flaw against PAN-OS firewalls whose management interface faces the internet, and has released fixes.",
+   "why_selected": "Confirmed in-the-wild exploitation of enterprise firewalls, stated in the vendor's own security bulletin.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "PAN-OS is the operating system on Palo Alto Networks firewalls, devices that sit at the edge of corporate networks. Like most network appliances it is built on open-source components, including the Linux kernel and PHP, a language used for web interfaces. Fragnesia, tracked as CVE-2026-46300, is a Linux kernel flaw that lets an attacker who already has low-privilege access on a machine become root, the all-powerful administrator account. PHP2Shell is the name for two critical PHP flaws that let an attacker with no login run code remotely."
+    },
+    {
+     "heading": "What happened",
+     "body": "In a security bulletin, Palo Alto Networks said exploitation of CVE-2026-46300 has been observed against PAN-OS devices whose management interface is exposed to the internet. BleepingComputer reports that attackers are chaining the two issues: PHP2Shell provides the initial foothold and Fragnesia raises it to root. The US cybersecurity agency CISA warned on October 28 that the pair was being used together against servers, and researchers at Dream Security reported a campaign using the same chain against servers in the United States, Japan, Taiwan and South Korea.\n\nThe company has released Fragnesia fixes for PAN-OS 10.2, 11.1, 11.2, 12.1 and 12.2. It says devices already running a release that fixes PHP2Shell are protected, because that is the only known route to exploiting Fragnesia on its products."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A firewall inspects and controls an organization's traffic, so root access on one gives an intruder a strong position inside the network. The attacks seen so far all depended on a configuration the vendor advises against: a management interface reachable from the public internet. That makes exposure easy for administrators to check.\n\nThe case also shows how flaws in shared open-source components travel. A kernel bug and a PHP bug first used against ordinary servers were reused against a security product built from the same parts."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Palo Alto Networks tells customers with an internet-reachable management interface to upgrade immediately and restrict access to trusted internal IP addresses; others should upgrade at their next maintenance window."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/"
+    },
+    {
+     "name": "Palo Alto Networks",
+     "url": "https://security.paloaltonetworks.com/CVE-2026-46300"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n4",
+   "story_key": "drupal-installer-rce-cve-2026-132165-exploited",
+   "title": "Drupal confirms attackers are exploiting a highly critical installer flaw to take over unpatched websites",
+   "category": "Cybersecurity",
+   "published": "2026-11-25T05:10:00-05:00",
+   "tldr": "Drupal says an installer flaw patched on November 18 has been exploited on live sites since November 19; CISA ordered US federal agencies to fix it by Friday.",
+   "why_selected": "Active exploitation of a widely used content management system, confirmed in the project's own advisory and added to CISA's exploited-vulnerabilities list.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Drupal is an open-source content management system, the software behind a website's pages and logins. BleepingComputer notes that it is commonly used by large organizations, including government bodies, research universities and media companies. On November 18 the Drupal security team published an advisory, rated highly critical, for a flaw in Drupal core tracked as CVE-2026-132165. At the time it was not known to be under attack."
+    },
+    {
+     "heading": "What happened",
+     "body": "The security team has since updated the advisory to say it received a report that the flaw was exploited on live sites as early as 19:00 UTC on November 19, roughly a day after the fix was released. The problem lies in the installer that ships with Drupal: under specific conditions, an attacker who is not logged in can use it to attempt to reinstall the site, which can lead to a site takeover or to remote code execution, meaning the attacker runs their own code on the server. The advisory credits the discovery to Anthropic's OSS Scanner.\n\nFixed versions are Drupal 11.4.13, 11.3.22 and 10.6.22. Older branches are end-of-life and receive no fix. On Tuesday, CISA added the flaw to its Known Exploited Vulnerabilities catalog and ordered federal civilian agencies to secure their systems by Friday, November 27."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The timeline is the notable part: about a day passed between the public patch and the first reported attack. Organizations that apply updates on a weekly or monthly schedule were exposed for most of that period, and a successful attack gives control of the whole site, including whatever data it holds.\n\nThe advisory says some attack paths are blocked when the web server cannot write to the site's settings file, and that sites using Drupal's paid Steward firewall service are protected against known methods. The team still tells everyone to upgrade in case other methods are found."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The advisory does not say how many sites were compromised or who is behind the attacks. BleepingComputer notes that two of the five Drupal flaws CISA has flagged since November 2021 were also used by ransomware groups."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/"
+    },
+    {
+     "name": "Drupal.org",
+     "url": "https://www.drupal.org/sa-core-2026-017"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.31158",
+   "title": "Reducing RSA-2048 Factoring Resources Below One Billion Toffolis via LLM-Driven Verifiable Quantum Compilation",
+   "authors": [
+    "Xiaodi Li",
+    "Yuqing Wang",
+    "Xue Chen",
+    "Yang-Yang Tang",
+    "Linghui Chen",
+    "Tao Zhang"
+   ],
+   "affiliations": [
+    "Intelligent Quantum Inception Co.",
+    "Ltd. ; Tsinghua University"
+   ],
+   "announced": "2026-11-23T20:00:00-05:00",
+   "primary_tag": "Quantum computing",
+   "tags": [
+    "Quantum computing",
+    "Cryptography"
+   ],
+   "tldr": "A redesigned circuit for factoring 2048-bit RSA numbers on a quantum computer needs fewer than one billion Toffoli gates, down from billions, at roughly 1,300 to 2,900 logical qubits.",
+   "why_selected": "A large reduction in the estimated cost of breaking RSA-2048, with verification of the compiled circuits, that drew press coverage.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "RSA-2048 encryption rests on the difficulty of factoring a 2048-bit number. Shor's algorithm could do it on a large error-corrected quantum computer, and researchers track how large by counting logical qubits (error-protected qubits) and Toffoli gates, a three-qubit operation that dominates running cost."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "An earlier design by Gidney and Ekerå needs roughly 6,200 logical qubits and 2.7 billion Toffoli gates. Later work cut the qubit count sharply by doing the arithmetic in a residue number system, which splits one very wide calculation into many small ones modulo thousands of primes. Gidney's 2025 version brought the machine below one million physical qubits, but its gate count rose to between 4.5 and 11 billion Toffolis, because each of roughly twenty thousand primes repeats its own table lookup."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors used a large language model to search for redesigns of the whole four-stage pipeline rather than tuning single subroutines, then built the winning ideas into a deterministic compiler. The largest saving comes from sharing each table lookup across batches of up to 24 primes instead of processing primes one at a time. Making large batches affordable required matching the number formats of adjacent stages, cleaning up temporary qubits locally, and narrowing intermediate registers.\n\nNarrow registers can overflow, with a probability near one in ten billion, which is too rare for random simulation to catch. The team therefore bounds overflow probability mathematically and verifies the compiled gate sequences across all the primes on representative circuits."
+    },
+    {
+     "heading": "Results",
+     "body": "The compiler produces a family of circuits spanning 1,306 to 2,919 logical qubits. Against Gidney's 2025 baseline under the same accounting, the minimum product of qubits and Toffolis falls by 70.1%, and expected Toffolis fall by up to 78.6% at matched precision. The authors say this puts RSA-2048 factoring below one billion Toffolis for the first time."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Lower gate counts mean a shorter computation on any future machine, so the estimated cost of breaking RSA-2048 keeps falling. The caveat is that this is a resource estimate for compiled circuits: the paper reports no run on quantum hardware, and it is a preprint that has not been peer reviewed."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.31158"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 2
+   }
+  }
+ ]
+}

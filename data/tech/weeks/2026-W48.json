@@ -3,14 +3,20 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
    "title": "The Best Pura Deals for Cyber Week (2026)",
-   "outlets": 13,
+   "outlets": 16,
    "date": "2026-11-20",
    "covered": null
+  },
+  {
+   "title": "The FCC has authorized SpaceX to deploy 1 million satellites",
+   "outlets": 9,
+   "date": "2026-11-25",
+   "covered": "2026-11-26-n2"
   },
   {
    "title": "Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation",
@@ -26,7 +32,7 @@
   },
   {
    "title": "European Commission warns EU Academy users of data leak after AI-driven cyberattack",
-   "outlets": 3,
+   "outlets": 4,
    "date": "2026-11-23",
    "covered": null
   },
@@ -47,17 +53,11 @@
    "outlets": 3,
    "date": "2026-11-24",
    "covered": null
-  },
-  {
-   "title": "CIA system breached in cyberattack",
-   "outlets": 3,
-   "date": "2026-11-24",
-   "covered": "2026-11-25-n1"
   }
  ],
  "featured": {
-  "news": 11,
-  "papers": 2
+  "news": 15,
+  "papers": 3
  },
  "items": [
   {
@@ -137,6 +137,36 @@
    "date": "2026-11-25",
    "type": "paper",
    "title": "Aftershock: Yesterday's Linux Kernel Bugs, Tomorrow's Android Exploits"
+  },
+  {
+   "id": "2026-11-26-n1",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "1Password says an attacker used an employee's GitHub account to steal customer names and emails, but not password vaults"
+  },
+  {
+   "id": "2026-11-26-n2",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "The FCC conditionally authorizes SpaceX to deploy up to 1 million Starmind satellites as orbital data centers"
+  },
+  {
+   "id": "2026-11-26-n3",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "Palo Alto Networks confirms attackers are exploiting the Fragnesia Linux flaw on firewalls with internet-exposed management interfaces"
+  },
+  {
+   "id": "2026-11-26-n4",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "Drupal confirms attackers are exploiting a highly critical installer flaw to take over unpatched websites"
+  },
+  {
+   "id": "2611.31158",
+   "date": "2026-11-26",
+   "type": "paper",
+   "title": "Reducing RSA-2048 Factoring Resources Below One Billion Toffolis via LLM-Driven Verifiable Quantum Compilation"
   }
  ]
 }

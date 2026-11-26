@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Wed, 25 Nov 2026 13:54:24 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 11:50:18 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>1Password says an attacker used an employee's GitHub account to steal customer names and emails, but not password vaults</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2026-11-26-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2026-11-26-n1</guid>
+    <pubDate>Thu, 26 Nov 2026 11:50:18 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>1Password disclosed that an attacker who took over an employee's GitHub account planted code in its backend and downloaded customer account records, while password vaults and their encryption keys stayed out of reach. (TechCrunch, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>The FCC conditionally authorizes SpaceX to deploy up to 1 million Starmind satellites as orbital data centers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2026-11-26-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2026-11-26-n2</guid>
+    <pubDate>Thu, 26 Nov 2026 11:50:18 +0000</pubDate>
+    <category>Tech / Space Industry</category>
+    <description>The FCC gave SpaceX conditional approval for a constellation of up to 1 million data-center satellites, with 14 years to deploy it, while withholding a waiver on how retired satellites are disposed of. (Ars Technica, TechCrunch)</description>
+  </item>
+  <item>
+    <title>Palo Alto Networks confirms attackers are exploiting the Fragnesia Linux flaw on firewalls with internet-exposed management interfaces</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2026-11-26-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2026-11-26-n3</guid>
+    <pubDate>Thu, 26 Nov 2026 11:50:18 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Palo Alto Networks says attackers are chaining a PHP flaw with the Fragnesia Linux kernel flaw against PAN-OS firewalls whose management interface faces the internet, and has released fixes. (BleepingComputer, Palo Alto Networks)</description>
+  </item>
+  <item>
+    <title>Drupal confirms attackers are exploiting a highly critical installer flaw to take over unpatched websites</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2026-11-26-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2026-11-26-n4</guid>
+    <pubDate>Thu, 26 Nov 2026 11:50:18 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Drupal says an installer flaw patched on November 18 has been exploited on live sites since November 19; CISA ordered US federal agencies to fix it by Friday. (BleepingComputer, Drupal.org)</description>
+  </item>
+  <item>
+    <title>Reducing RSA-2048 Factoring Resources Below One Billion Toffolis via LLM-Driven Verifiable Quantum Compilation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2611.31158</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2611.31158</guid>
+    <pubDate>Thu, 26 Nov 2026 11:50:18 +0000</pubDate>
+    <category>Tech / Quantum computing</category>
+    <description>A redesigned circuit for factoring 2048-bit RSA numbers on a quantum computer needs fewer than one billion Toffoli gates, down from billions, at roughly 1,300 to 2,900 logical qubits. (Xiaodi Li, Yuqing Wang, Xue Chen et al. · Intelligent Quantum Inception Co., Ltd. ; Tsinghua University)</description>
+  </item>
   <item>
     <title>FDA approves bezuclastinib with sunitinib for gastrointestinal stromal tumours after imatinib</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/2026-11-25-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
     <category>Tech / Operating systems &amp; storage</category>
     <description>A static analysis that tracks both held locks and interrupt state in Rust kernels, paired with an AI agent that audits its reports, found nine maintainer-confirmed deadlock bugs in four Rust operating systems. (Yuzhi Li, Hongliang Tian, Chengjun Chen et al. · Fudan University; Ant Group)</description>
-  </item>
-  <item>
-    <title>FDA rejects Capricor's Duchenne cell therapy a second time, citing unreliable data from its phase 3 trial</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/2026-11-23-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/2026-11-23-n1</guid>
-    <pubDate>Mon, 23 Nov 2026 13:56:04 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA declined again to approve deramiocel for Duchenne muscular dystrophy, saying the phase 3 HOPE-3 trial missed its prespecified goals and that inspection findings made its data unreliable. (Pharmacally, NeurologyLive, Capricor (July 2025 release, background))</description>
-  </item>
-  <item>
-    <title>Virginia reports its first measles death of 2026, a young child, as confirmed US cases reach 5,838</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/2026-11-23-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/2026-11-23-n2</guid>
-    <pubDate>Mon, 23 Nov 2026 13:56:04 +0000</pubDate>
-    <category>Biology / Public Health</category>
-    <description>Virginia health officials reported the death of a child aged four or younger who had measles, the 12th such death reported by US states this year, as the CDC's national count reached 5,838 cases. (Virginia Department of Health, CDC, ABC News, The Guardian)</description>
-  </item>
-  <item>
-    <title>Merck's antibody-drug conjugate sac-TMT extends survival in heavily pretreated stomach and oesophageal cancer, the company says</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/2026-11-23-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/2026-11-23-n3</guid>
-    <pubDate>Mon, 23 Nov 2026 13:56:04 +0000</pubDate>
-    <category>Biology / Clinical Research</category>
-    <description>Merck says its 473-patient phase 3 TroFuse-015 trial of sacituzumab tirumotecan met its overall survival goal in third-line gastroesophageal adenocarcinoma, but missed on progression-free survival and released no numbers. (BioPharm International, OncoDaily, The Pharma Letter, Merck)</description>
-  </item>
-  <item>
-    <title>Assessing Multiple Treatment Regimens for Tuberculosis</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/doi-10-1056-nejmoa2611913</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/doi-10-1056-nejmoa2611913</guid>
-    <pubDate>Mon, 23 Nov 2026 13:56:04 +0000</pubDate>
-    <category>Biology / Infectious disease</category>
-    <description>A platform trial in 401 adults with tuberculosis screened ten new four-drug combinations at once and selected two 16-week regimens, each built around a new drug, for further testing. (Hanif Esmail Nicholas I. Paton Jodie A. Schildkraut Ilaria Motta Alexander J. Szubert Suzanne M. Dufault Norbert Heinrich Simon Tiberi Cissy M. Kityo Timothy D. McHugh Fairoez Ryklief Daniela M. Cirillo Rodney Dawson Karen Sanders Stellah Mpagama Lindsay C. Thompson Le Hong Van Dominic Wakerley Elena Tudor Angela M. Crook Patrick P.J. Phillips Guy Thwaites Christoph Lange Martin J. Boeree Gareth Maher-Edwards Natasa Lazarevic Jolanda E. van de Logt Derek J. Sloan David Barros-Aguirre and Michael Hoelscherthe PARADIGM4TB (UNITE4TB-01) Trial Team* · University College London; Radboud University Medical Center; National University of Singapore; LMU University Hospital Munich; GSK)</description>
-  </item>
-  <item>
-    <title>Multiscale spatial atlas of human basal ganglia cell types and communities</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/doi-10-1016-j-cell-2026-09-027</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-23/doi-10-1016-j-cell-2026-09-027</guid>
-    <pubDate>Mon, 23 Nov 2026 13:56:04 +0000</pubDate>
-    <category>Biology / Neuroscience</category>
-    <description>A spatial map of about 7.9 million cells in four human brains resolves 60 cell types in the basal ganglia and shows how they are arranged, part of a 26-study atlas of the region. (Bereket Tesfay Berackey, Zhiqun Tan, Ginny Wu et al. · University of California, Irvine)</description>
   </item>
 </channel>
 </rss>
