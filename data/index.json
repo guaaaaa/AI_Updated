@@ -1,7 +1,14 @@
 {
- "updated": "2026-11-26T11:50:18+00:00",
+ "updated": "2026-11-26T12:18:00+00:00",
  "domain": "ai",
  "days": [
+  {
+   "date": "2026-11-26",
+   "edition": "weekday",
+   "news": 2,
+   "papers": 5,
+   "backfill": false
+  },
   {
    "date": "2026-11-25",
    "edition": "weekday",
@@ -349,7 +356,7 @@
  "item_months": [
   {
    "month": "2026-11",
-   "n": 149
+   "n": 156
   },
   {
    "month": "2026-10",
@@ -395,21 +402,21 @@
   ]
  },
  "tag_counts": {
+  "Reinforcement Learning": 47,
+  "Post-training": 48,
+  "Architectures": 39,
+  "Efficiency": 63,
+  "Robotics": 41,
+  "Pre-training & Data": 36,
+  "Agents": 95,
+  "Multimodal": 27,
+  "Reasoning": 23,
   "Safety & Alignment": 11,
   "Interpretability": 17,
-  "Reasoning": 22,
-  "Agents": 94,
   "Evaluation & Benchmarks": 35,
   "RSI": 19,
-  "Architectures": 38,
   "LLMs": 17,
-  "Post-training": 47,
-  "Reinforcement Learning": 45,
-  "Robotics": 40,
-  "Multimodal": 26,
-  "Pre-training & Data": 34,
   "Retrieval & Memory": 15,
-  "Efficiency": 62,
   "AI for Science & Health": 11,
   "Generative Models": 39,
   "World Models": 28,
@@ -433,14 +440,14 @@
   "People"
  ],
  "category_counts": {
+  "Compute & Infrastructure": 6,
+  "Policy & Legal": 11,
   "Model Release": 28,
   "Earnings & Markets": 3,
   "Product & Features": 8,
-  "Policy & Legal": 10,
   "Safety & Security": 12,
   "Research": 7,
   "Business & Funding": 12,
-  "Compute & Infrastructure": 5,
   "Open Source": 2
  },
  "summaries": [

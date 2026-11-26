@@ -1,5 +1,99 @@
 [
  {
+  "id": "2026-11-26-n1",
+  "date": "2026-11-26",
+  "type": "news",
+  "title": "Nvidia reportedly halts server shipments to four Southeast Asian countries after new US chip export rule",
+  "tldr": "The Financial Times reports that Nvidia told server makers to stop shipping to Malaysia, Singapore, Thailand and Indonesia after a US rule made advanced-chip exports to those countries subject to licences.",
+  "category": "Compute & Infrastructure",
+  "byline": "The Star (Reuters), Al Jazeera"
+ },
+ {
+  "id": "2026-11-26-n2",
+  "date": "2026-11-26",
+  "type": "news",
+  "title": "42 state attorneys general move to stop bankrupt Character.AI from auctioning users' private chats",
+  "tldr": "A bipartisan coalition of 42 attorneys general is intervening in Character.AI's bankruptcy to block a 1 December auction of chat histories from more than 21 million US accounts.",
+  "category": "Policy & Legal",
+  "byline": "TechCrunch, The Verge"
+ },
+ {
+  "id": "2611.33102",
+  "date": "2026-11-26",
+  "type": "paper",
+  "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
+  "tldr": "Plain supervised fine-tuning on the saved rollouts of a reinforcement learning run, in order and without reward labels, reproduces the run's learning curve, and one late batch can recover its final score.",
+  "primary_tag": "Reinforcement Learning",
+  "tags": [
+   "Reinforcement Learning",
+   "Post-training"
+  ],
+  "byline": "Jiayi Sheng, Jingwen Gu, Guanning Zeng et al. · Carnegie Mellon University, University of Illinois Urbana-Champaign, Harvard University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.34923",
+  "date": "2026-11-26",
+  "type": "paper",
+  "title": "Mixture-of-Loops Transformer",
+  "tldr": "The Mixture-of-Loops Transformer passes attention keys and values between loops instead of only the residual stream, so a looped model can decode each new token in a single pass.",
+  "primary_tag": "Architectures",
+  "tags": [
+   "Architectures",
+   "Efficiency"
+  ],
+  "byline": "Lianghui Zhu, Shijie Wang, Xinggang Wang et al. · Huazhong University of Science & Technology, ByteDance Seed, University of Toronto",
+  "hf": 54,
+  "venue": null
+ },
+ {
+  "id": "2611.33158",
+  "date": "2026-11-26",
+  "type": "paper",
+  "title": "OmniAct: One Policy, One Million Embodiments",
+  "tldr": "OmniAct trains one 400M-parameter manipulation policy on about a million procedurally generated robot arms, feeding it each robot's joint geometry in camera coordinates so it can control bodies it has never seen.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Pre-training & Data"
+  ],
+  "byline": "Xiang Fan, Yuheng Wang, Jiayuan Yan et al. · University of Washington, Allen Institute for Artificial Intelligence, University of North Carolina at Chapel Hill",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.32884",
+  "date": "2026-11-26",
+  "type": "paper",
+  "title": "Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe",
+  "tldr": "Agents often answer while their own stated belief still lists several possibilities; rewarding each step against the simulator's exact posterior teaches them to keep gathering evidence until it settles the answer.",
+  "primary_tag": "Agents",
+  "tags": [
+   "Agents",
+   "Reinforcement Learning"
+  ],
+  "byline": "Richmond Sin Jing Xuan, Peilin Feng, Wenbin Wang et al. · Nanyang Technological University",
+  "hf": 98,
+  "venue": null
+ },
+ {
+  "id": "2611.32183",
+  "date": "2026-11-26",
+  "type": "paper",
+  "title": "ThinkMorph-SSL: Scaling Interleaved Multimodal Reasoning with Pretext Tasks",
+  "tldr": "ThinkMorph-SSL turns classic self-supervised image tasks such as jigsaw and denoising into practice for models that reason by generating intermediate images, raising accuracy by 11.33 points across twelve benchmarks.",
+  "primary_tag": "Multimodal",
+  "tags": [
+   "Multimodal",
+   "Reasoning",
+   "Pre-training & Data"
+  ],
+  "byline": "Jiawei Gu, Linjie Li, Yiming Liu et al. · University of Washington, Tsinghua University, Zhejiang University",
+  "hf": 21,
+  "venue": null
+ },
+ {
   "id": "2026-11-25-n1",
   "date": "2026-11-25",
   "type": "news",

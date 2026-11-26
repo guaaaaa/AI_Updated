@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Thu, 26 Nov 2026 11:50:18 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 12:17:54 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Nvidia reportedly halts server shipments to four Southeast Asian countries after new US chip export rule</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n1</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Compute &amp; Infrastructure</category>
+    <description>The Financial Times reports that Nvidia told server makers to stop shipping to Malaysia, Singapore, Thailand and Indonesia after a US rule made advanced-chip exports to those countries subject to licences. (The Star (Reuters), Al Jazeera)</description>
+  </item>
+  <item>
+    <title>42 state attorneys general move to stop bankrupt Character.AI from auctioning users' private chats</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n2</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Policy &amp; Legal</category>
+    <description>A bipartisan coalition of 42 attorneys general is intervening in Character.AI's bankruptcy to block a 1 December auction of chat histories from more than 21 million US accounts. (TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>Reinforcement Learning Can Be Recovered From Its Own Rollouts</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33102</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33102</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Reinforcement Learning</category>
+    <description>Plain supervised fine-tuning on the saved rollouts of a reinforcement learning run, in order and without reward labels, reproduces the run's learning curve, and one late batch can recover its final score. (Jiayi Sheng, Jingwen Gu, Guanning Zeng et al. · Carnegie Mellon University, University of Illinois Urbana-Champaign, Harvard University)</description>
+  </item>
+  <item>
+    <title>Mixture-of-Loops Transformer</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.34923</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.34923</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>The Mixture-of-Loops Transformer passes attention keys and values between loops instead of only the residual stream, so a looped model can decode each new token in a single pass. (Lianghui Zhu, Shijie Wang, Xinggang Wang et al. · Huazhong University of Science &amp; Technology, ByteDance Seed, University of Toronto)</description>
+  </item>
+  <item>
+    <title>OmniAct: One Policy, One Million Embodiments</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33158</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33158</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>OmniAct trains one 400M-parameter manipulation policy on about a million procedurally generated robot arms, feeding it each robot's joint geometry in camera coordinates so it can control bodies it has never seen. (Xiang Fan, Yuheng Wang, Jiayuan Yan et al. · University of Washington, Allen Institute for Artificial Intelligence, University of North Carolina at Chapel Hill)</description>
+  </item>
+  <item>
+    <title>Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32884</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32884</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Agents often answer while their own stated belief still lists several possibilities; rewarding each step against the simulator's exact posterior teaches them to keep gathering evidence until it settles the answer. (Richmond Sin Jing Xuan, Peilin Feng, Wenbin Wang et al. · Nanyang Technological University)</description>
+  </item>
+  <item>
+    <title>ThinkMorph-SSL: Scaling Interleaved Multimodal Reasoning with Pretext Tasks</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32183</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32183</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Multimodal</category>
+    <description>ThinkMorph-SSL turns classic self-supervised image tasks such as jigsaw and denoising into practice for models that reason by generating intermediate images, raising accuracy by 11.33 points across twelve benchmarks. (Jiawei Gu, Linjie Li, Yiming Liu et al. · University of Washington, Tsinghua University, Zhejiang University)</description>
+  </item>
   <item>
     <title>1Password says an attacker used an employee's GitHub account to steal customer names and emails, but not password vaults</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-26/2026-11-26-n1</link>
@@ -430,62 +486,6 @@
     <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
     <category>AI / Evaluation &amp; Benchmarks</category>
     <description>OWE-Bench gives agents 26 expert-written engineering tasks lasting hours and scores them on hidden cases, where every model does worse than on the cases it could test against, and worse than it predicts. (Jacob Cole, Martin Dimakis, Victor Barres et al.)</description>
-  </item>
-  <item>
-    <title>RoboThink: Let the Agent Think, Let the Policy Act</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30111</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.30111</guid>
-    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>RoboThink has a slow reasoning model watch a fast robot policy and pass corrections through a channel the policy is trained to read, recovering from motion drift and misheard requests. (Yunbei Zhang, Zijian Jin, Janet Wang et al. · Tulane University, NYU, Northeastern University)</description>
-  </item>
-  <item>
-    <title>Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28833</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-24/2611.28833</guid>
-    <pubDate>Tue, 24 Nov 2026 12:16:04 +0000</pubDate>
-    <category>AI / RSI</category>
-    <description>A 0.8B-parameter model that edits its own weights raises its GSM8K accuracy from 11.8% to 62.2%, but the authors show it does not understand its edits and random search sometimes does as well. (Guoming Ling, Shanshan Zhong, Kaixuan Zhang et al. · Carnegie Mellon University, MilkThink)</description>
-  </item>
-  <item>
-    <title>South Korea's power utility KEPCO confirms a breach that exposed data on 1.52 million people, including bank and card numbers</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n1</guid>
-    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Korea Electric Power Corporation says an intruder took personal data on about 1.52 million customers, suppliers and staff from its billing platform and procurement system; the privacy regulator has opened an investigation. (Seoul Economic Daily, Seoul Economic Daily (regulator probe), BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Nvidia's board reinstates Jensen Huang as chief executive less than two weeks after his resignation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n2</guid>
-    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
-    <category>Tech / Chips &amp; Hardware</category>
-    <description>Nvidia's board voted unanimously to bring Jensen Huang back as CEO and president, saying input from senior US government officials convinced it that his return poses no national security risk. (TechCrunch, The Register)</description>
-  </item>
-  <item>
-    <title>Amazon buys Decart's chip-optimization software and hires its founders as it prepares to sell Trainium chips to customers</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n3</guid>
-    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
-    <category>Tech / Chips &amp; Hardware</category>
-    <description>Amazon is acquiring the Decart Optimization Stack, software that tunes AI workloads for specific chips, along with Decart's founders and engineers, in a deal Bloomberg values at about $7.5 billion. (TechCrunch, The Register)</description>
-  </item>
-  <item>
-    <title>German media report that Russia could launch a nuclear-armed anti-satellite weapon into orbit as early as December</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2026-11-24-n4</guid>
-    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
-    <category>Tech / Space Industry</category>
-    <description>NDR, WDR and Süddeutsche Zeitung report that Western intelligence agencies believe Russia is preparing to launch a nuclear-armed satellite, which would threaten thousands of spacecraft in low Earth orbit; the Kremlin dismisses the claim. (Ars Technica, AeroTime)</description>
-  </item>
-  <item>
-    <title>Interrupt-Aware Static Detection of Deadlocks in Rust Operating Systems</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2611.30713</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-24/2611.30713</guid>
-    <pubDate>Tue, 24 Nov 2026 11:48:15 +0000</pubDate>
-    <category>Tech / Operating systems &amp; storage</category>
-    <description>A static analysis that tracks both held locks and interrupt state in Rust kernels, paired with an AI agent that audits its reports, found nine maintainer-confirmed deadlock bugs in four Rust operating systems. (Yuzhi Li, Hongliang Tian, Chengjun Chen et al. · Fudan University; Ant Group)</description>
   </item>
 </channel>
 </rss>

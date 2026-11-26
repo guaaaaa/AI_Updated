@@ -3,12 +3,12 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [
   {
    "id": "2611.29897",
    "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
-   "hf": 192,
+   "hf": 220,
    "org": "Peking University",
    "featured": null
   },
@@ -27,6 +27,20 @@
    "featured": "2026-11-25"
   },
   {
+   "id": "2611.28947",
+   "title": "Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents",
+   "hf": 100,
+   "org": null,
+   "featured": null
+  },
+  {
+   "id": "2611.32884",
+   "title": "Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe",
+   "hf": 98,
+   "org": "Nanyang Technological University",
+   "featured": "2026-11-26"
+  },
+  {
    "id": "2611.27193",
    "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
    "hf": 95,
@@ -34,38 +48,24 @@
    "featured": null
   },
   {
-   "id": "2611.30634",
-   "title": "Rewirable Circuits in Transformers with Loom Attention",
-   "hf": 70,
-   "org": null,
-   "featured": "2026-11-25"
-  },
-  {
-   "id": "2611.27963",
-   "title": "Non-penetrating World Models",
-   "hf": 60,
-   "org": "The Hong Kong Polytechnic University",
+   "id": "2611.34849",
+   "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+   "hf": 83,
+   "org": "PKU-VaLuE-Lab",
    "featured": null
   },
   {
-   "id": "2611.30013",
-   "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
-   "hf": 60,
-   "org": "Peking University",
-   "featured": null
-  },
-  {
-   "id": "2611.31205",
-   "title": "ACAP: Asynchronous Coding Agents for Efficient Robot Control",
-   "hf": 59,
-   "org": "MMLab@NTU",
+   "id": "2611.34575",
+   "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+   "hf": 76,
+   "org": "Shanghai AI Laboratory",
    "featured": null
   }
  ],
  "stories": [
   {
    "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
-   "outlets": 20,
+   "outlets": 23,
    "date": "2026-11-20",
    "covered": "2026-11-25-n2"
   },
@@ -89,7 +89,7 @@
   },
   {
    "title": "The Saudi engineer accused of bugging OpenAI is set to be released on a $1 million bond",
-   "outlets": 5,
+   "outlets": 4,
    "date": "2026-11-24",
    "covered": null
   },
@@ -113,7 +113,7 @@
   }
  ],
  "featured": {
-  "news": 5,
-  "papers": 15
+  "news": 7,
+  "papers": 20
  }
 }

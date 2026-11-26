@@ -5,8 +5,64 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Wed, 25 Nov 2026 12:18:03 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 12:17:54 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Nvidia reportedly halts server shipments to four Southeast Asian countries after new US chip export rule</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n1</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Compute &amp; Infrastructure</category>
+    <description>The Financial Times reports that Nvidia told server makers to stop shipping to Malaysia, Singapore, Thailand and Indonesia after a US rule made advanced-chip exports to those countries subject to licences. (The Star (Reuters), Al Jazeera)</description>
+  </item>
+  <item>
+    <title>42 state attorneys general move to stop bankrupt Character.AI from auctioning users' private chats</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n2</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Policy &amp; Legal</category>
+    <description>A bipartisan coalition of 42 attorneys general is intervening in Character.AI's bankruptcy to block a 1 December auction of chat histories from more than 21 million US accounts. (TechCrunch, The Verge)</description>
+  </item>
+  <item>
+    <title>Reinforcement Learning Can Be Recovered From Its Own Rollouts</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33102</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33102</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Reinforcement Learning</category>
+    <description>Plain supervised fine-tuning on the saved rollouts of a reinforcement learning run, in order and without reward labels, reproduces the run's learning curve, and one late batch can recover its final score. (Jiayi Sheng, Jingwen Gu, Guanning Zeng et al. · Carnegie Mellon University, University of Illinois Urbana-Champaign, Harvard University)</description>
+  </item>
+  <item>
+    <title>Mixture-of-Loops Transformer</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.34923</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.34923</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>The Mixture-of-Loops Transformer passes attention keys and values between loops instead of only the residual stream, so a looped model can decode each new token in a single pass. (Lianghui Zhu, Shijie Wang, Xinggang Wang et al. · Huazhong University of Science &amp; Technology, ByteDance Seed, University of Toronto)</description>
+  </item>
+  <item>
+    <title>OmniAct: One Policy, One Million Embodiments</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33158</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33158</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>OmniAct trains one 400M-parameter manipulation policy on about a million procedurally generated robot arms, feeding it each robot's joint geometry in camera coordinates so it can control bodies it has never seen. (Xiang Fan, Yuheng Wang, Jiayuan Yan et al. · University of Washington, Allen Institute for Artificial Intelligence, University of North Carolina at Chapel Hill)</description>
+  </item>
+  <item>
+    <title>Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32884</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32884</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Agents often answer while their own stated belief still lists several possibilities; rewarding each step against the simulator's exact posterior teaches them to keep gathering evidence until it settles the answer. (Richmond Sin Jing Xuan, Peilin Feng, Wenbin Wang et al. · Nanyang Technological University)</description>
+  </item>
+  <item>
+    <title>ThinkMorph-SSL: Scaling Interleaved Multimodal Reasoning with Pretext Tasks</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32183</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32183</guid>
+    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
+    <category>AI / Multimodal</category>
+    <description>ThinkMorph-SSL turns classic self-supervised image tasks such as jigsaw and denoising into practice for models that reason by generating intermediate images, raising accuracy by 11.33 points across twelve benchmarks. (Jiawei Gu, Linjie Li, Yiming Liu et al. · University of Washington, Tsinghua University, Zhejiang University)</description>
+  </item>
   <item>
     <title>Z.ai releases GLM-5.4, a 750B-scale flagship that runs 28 shared layers twice per forward pass</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2026-11-25-n1</link>
@@ -270,62 +326,6 @@
     <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
     <category>AI / Computer Vision</category>
     <description>Apple's Depth Pro 2 estimates metric depth from images and video at full resolution, ending the usual trade-off between sharp object edges and depth that stays stable from frame to frame. (Peiyun Hu, Marko Mihajlovic, Lyndon Duong et al. · Apple)</description>
-  </item>
-  <item>
-    <title>ALOHA Lightning: Learning Fast and Precise Manipulation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.21919</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.21919</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>ALOHA Lightning lets operators physically guide a two-armed robot at near-human speed, then trains policies that fold shorts or insert batteries about as fast as people, from 50 demonstrations per task. (John Hua Yao. Qi Wu, Yihuai Gao, Chelsea Finn et al. · Stanford University)</description>
-  </item>
-  <item>
-    <title>Google launches Gemini 4 Neon, a fast frontier model priced at $3 per million input tokens</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n1</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>Google released Gemini 4 Neon, which ranks third on the Artificial Analysis Intelligence Index and first on its Coding Agent Index, at $3/$15 per million input/output tokens with a 1-million-token context. (Google)</description>
-  </item>
-  <item>
-    <title>Anthropic prices its IPO at $83 a share, raising $81.3 billion in the largest offering on record</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2026-11-19-n2</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Business &amp; Funding</category>
-    <description>Anthropic sold 980 million shares at $83, above its $70 to $78 range, raising $81.3 billion and valuing the Claude maker at about $1.5 trillion before Nasdaq trading under the ticker ANT. (TechCrunch, WIRED)</description>
-  </item>
-  <item>
-    <title>Counterfactual World Models: JEPAs That Reason About "What If"</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.24778</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.24778</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / World Models</category>
-    <description>Factual world models cannot answer "what if I had acted differently?" on their own, but for force-like disturbances adding the observed residual to the model's predicted action difference gives near-optimal counterfactuals with no retraining. (Randall Balestriero, Yann LeCun, Kerda Varaku · Brown University, New York University, AMI Labs)</description>
-  </item>
-  <item>
-    <title>Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22287</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.22287</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>Adding a linear pixel head to a fine-tuned diffusion transformer removes the latent decoder entirely, matching or improving quality, and the same separate head sets a new ImageNet FID record for pixel flow models. (Hansheng Chen, Shengqu Cai, Jan Ackermann et al. · Luma AI, California Institute of Technology, Stanford University)</description>
-  </item>
-  <item>
-    <title>Regularized Score Centering</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.21791</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.21791</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Regularized Score Centering adds a reverse-KL penalty toward the data-generating policy to score-centered off-policy RL, stabilizing asynchronous LLM agent training and winning on all six agentic benchmarks tested. (Hao Bai, Chenlu Ye, Xuanchang Zhang et al. · UIUC, CMU)</description>
-  </item>
-  <item>
-    <title>$\pi^4$: A Foundation Model for 4D Scene Geometry and Motion</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.23144</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-19/2611.23144</guid>
-    <pubDate>Thu, 19 Nov 2026 12:15:56 +0000</pubDate>
-    <category>AI / Computer Vision</category>
-    <description>π⁴ is a 0.5B-parameter feed-forward model that recovers dense geometry, camera poses, metric scale, 2D/3D point tracks and moving-object masks from uncalibrated images or video in a single forward pass. (Yifan Wang, Weiguang Zhao, Ni Yang et al. · Shanghai Artificial Intelligence Laboratory, Shanghai Jiao Tong University, Zhejiang University)</description>
   </item>
 </channel>
 </rss>

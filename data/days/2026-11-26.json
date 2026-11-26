@@ -1,0 +1,393 @@
+{
+ "date": "2026-11-26",
+ "edition": "weekday",
+ "generated_at": "2026-11-26T12:17:54+00:00",
+ "summary": "Nvidia reportedly pauses server shipments to four Southeast Asian countries under new US chip rules, 42 attorneys general fight the sale of Character.AI chat logs, and papers on replaying RL from its own rollouts, cheaper looped transformers and a policy trained on a million robot bodies.",
+ "news": [
+  {
+   "id": "2026-11-26-n1",
+   "story_key": "nvidia-halts-southeast-asia-server-shipments",
+   "title": "Nvidia reportedly halts server shipments to four Southeast Asian countries after new US chip export rule",
+   "category": "Compute & Infrastructure",
+   "published": "2026-11-26T00:00:00-05:00",
+   "tldr": "The Financial Times reports that Nvidia told server makers to stop shipping to Malaysia, Singapore, Thailand and Indonesia after a US rule made advanced-chip exports to those countries subject to licences.",
+   "why_selected": "A reported region-wide pause by the dominant AI chip supplier is the first concrete effect of the new US licensing rule on where AI compute can be built.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "US export controls bar Chinese firms from importing the most advanced graphics processing units (GPUs), but until this month those firms could legally rent the same computing power from data centres in countries such as Singapore, Malaysia and Thailand. On 16 November the Commerce Department's Bureau of Industry and Security (BIS) announced a rule that designates Indonesia, Malaysia, Singapore, Thailand and Brazil as countries with an \"unacceptable risk of diversion\" and requires anyone shipping advanced chips to them to obtain an export licence."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Financial Times reported on Thursday, citing three people with knowledge of the matter, that Nvidia has told its manufacturing partners to stop shipping servers to four Southeast Asian countries. According to the report, partners such as Dell and Supermicro, which package Nvidia's chips into servers, told buyers in Malaysia, Singapore, Thailand and Indonesia that the chipmaker will not allow their orders to be shipped. Reuters said it could not immediately verify the report; Nvidia, Dell and Supermicro did not immediately respond to its requests for comment. The report added that it is unclear whether the halt is temporary while Nvidia and its partners work out how to comply with the new controls."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If the report is accurate, a licensing requirement has become, for now, a full stop across a whole region. BIS described the rule as a \"logical extension\" of existing licence requirements for China, and its stated aim is to stop Chinese AI developers from reaching restricted chips remotely through third countries. But the pause would hit every data-centre operator in the four countries, whoever its customers are. Singapore, which hosts dozens of data centres, said after the rule was announced that it was engaging affected companies and the US authorities on the measure's scope, and exploring how to facilitate \"trusted access\" for Singapore companies. The rule arrived alongside a US criminal investigation into Megaspeed, a Singapore-based data-centre company."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Nvidia or its partners confirm the halt and say how long it lasts, how quickly BIS processes licence applications, and whether Singapore's talks with Washington produce an approved route for local companies."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Star (Reuters)",
+     "url": "https://www.thestar.com.my/business/business-news/2026/11/26/nvidia-halts-chip-shipments-to-southeast-asia-ft-reports"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n2",
+   "story_key": "character-ai-bankruptcy-chat-data-auction-ags",
+   "title": "42 state attorneys general move to stop bankrupt Character.AI from auctioning users' private chats",
+   "category": "Policy & Legal",
+   "published": "2026-11-25T12:35:00-05:00",
+   "tldr": "A bipartisan coalition of 42 attorneys general is intervening in Character.AI's bankruptcy to block a 1 December auction of chat histories from more than 21 million US accounts.",
+   "why_selected": "It is an early, large test of whether a chatbot company's privacy promises survive bankruptcy when conversation logs are its most saleable asset.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Character.AI, a maker of companion chatbots, filed for Chapter 11 bankruptcy in October. It had lost its co-founders to Google under a licensing deal and faced lawsuits related to child safety. Disney has proposed a $20 million deal to license Character.AI's intellectual property, though not users' chats, and has agreed to hire most of the remaining staff; that deal has not received final court approval."
+    },
+    {
+     "heading": "What happened",
+     "body": "A coalition of 42 state attorneys general is intervening in the bankruptcy proceedings to stop the sale of user data. In near-identical press releases, they say the data set holds private chat histories from more than 21 million US accounts, more than 2.1 million of them registered to minors, along with other personal data such as IP addresses. Only one bidder has been disclosed: Smirks and Pangs Acquisition LLC, a Delaware company set up on 13 November. According to California Attorney General Rob Bonta, Character.AI chose it the next day as the base bid for an auction scheduled for 1 December. The states object that a buyer would not have to honour Character.AI's privacy policy, that users would have no way to delete their data, and that nothing would limit resale. They also note the company had told consumers their personal information would not be sold."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Conversations with a companion chatbot are among the most intimate records a technology company holds, and here millions belong to minors. The case asks whether such records can be treated as an ordinary asset once the company that collected them fails. Bonta argues that bankruptcy \"should not be used to sidestep\" consumer protections. Timing adds pressure: chatbot safety laws in California, Colorado, New York and Connecticut take effect on 1 January 2027, and the attorneys general say a sale could lead to violations of them. Character.AI says users' information remains protected under its privacy policy."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How the bankruptcy court responds before the 1 December auction, and whether other bidders emerge or the buyer's plans become known."
+    }
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
+    },
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.33102",
+   "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
+   "authors": [
+    "Jiayi Sheng",
+    "Jingwen Gu",
+    "Guanning Zeng",
+    "Zhaoyi Zhou",
+    "Stefano Viel",
+    "Qianqian Wang",
+    "Fahim Tajwar",
+    "Andrea Zanette"
+   ],
+   "affiliations": [
+    "Carnegie Mellon University",
+    "University of Illinois Urbana-Champaign",
+    "Harvard University",
+    "Tufa Labs"
+   ],
+   "announced": "2026-11-24T20:00:00-05:00",
+   "primary_tag": "Reinforcement Learning",
+   "tags": [
+    "Reinforcement Learning",
+    "Post-training"
+   ],
+   "tldr": "Plain supervised fine-tuning on the saved rollouts of a reinforcement learning run, in order and without reward labels, reproduces the run's learning curve, and one late batch can recover its final score.",
+   "why_selected": "A simple, surprising result about what RL post-training actually buys, with direct consequences for reusing expensive rollouts across runs and models.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reinforcement learning (RL) post-training improves a language model by having it generate many responses, scoring them, and updating on the result. The responses, called rollouts, are expensive to generate yet normally thrown away after each update. The authors ask how much of what the model learned is still present in that discarded data."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The obvious way to reuse an archive is to replay the original RL updates on the saved rollouts. In the authors' experiments this collapses. Replaying a run of Qwen3-1.7B-Base on its own data, accuracy on MATH-500 first rises and then falls to nearly zero by step 100; with importance-sampling corrections, replay follows the original run until about step 600 and then drops sharply."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The paper traces the collapse to the baseline term in policy-gradient updates. On-policy, that term averages to zero. Once the replayed model drifts slightly from the model that generated the data, it pushes the two further apart, so small differences compound.\n\nThe remedy, maximum likelihood replay, drops the RL update and simply fine-tunes the model to imitate every archived response, correct or incorrect, with no rewards. Think of it as tracing someone's steps instead of re-deriving their route: imitation pulls the student toward the model that produced each batch, so errors are corrected instead of amplified."
+    },
+    {
+     "heading": "Results",
+     "body": "With one update per batch in chronological order, the student tracks online RL over 1,000 steps on four benchmarks, with a mean absolute gap of 0.2 to 1.1 percentage points. Order matters: replaying in reverse lifts MATH-500 pass@1 from about 57% to 70% within 100 updates, then lets it fall back to about 57%. For Qwen3-1.7B-Base, repeated updates on the rollouts of a single late RL step, 0.1% of the distinct rollouts, closely recover the final performance. A smaller Qwen3-0.6B-Base student can also learn from the larger model's archive."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors conclude that much of RL's compute goes into discovering a better sampling distribution, not into learning from it, which makes saved rollouts a reusable asset. The evidence is limited to models of up to 4B parameters on math and logic tasks."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.33102",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.33102"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 4,
+    "alphaxiv_hot_days": 2
+   }
+  },
+  {
+   "id": "2611.34923",
+   "title": "Mixture-of-Loops Transformer",
+   "authors": [
+    "Lianghui Zhu",
+    "Shijie Wang",
+    "Xinggang Wang",
+    "Jinze Bai",
+    "Bo Wang",
+    "Xiang Bai"
+   ],
+   "affiliations": [
+    "Huazhong University of Science & Technology",
+    "ByteDance Seed",
+    "University of Toronto"
+   ],
+   "announced": "2026-11-25T20:00:00-05:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Efficiency"
+   ],
+   "tldr": "The Mixture-of-Loops Transformer passes attention keys and values between loops instead of only the residual stream, so a looped model can decode each new token in a single pass.",
+   "why_selected": "Looped transformers are moving into frontier models, and this paper attacks their main weakness, inference cost, with pretraining evidence up to a 3B mixture-of-experts model.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Looped transformers run the same stack of layers several times, gaining computational depth without extra parameters. The price is efficiency: every loop must be run in sequence for every token."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The standard design hands each loop's final output to the next loop as its input, a scheme the authors call loop residual. They argue it limits the model in two ways. One residual stream dilutes information across layers and loops, and because each token depends on its own output from the previous loop, the loops cannot be skipped or parallelised during decoding."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The Mixture-of-Loops Transformer (MoLT) changes what is passed between loops: attention keys and values (KV), become a memory that later layers and loops can read selectively through Mixture-of-Loops Attention.\n\nIn the efficiency-oriented variant, MoLT-KV, each loop restarts from the token embeddings and reads memory KV that the previous loop produced at strictly earlier positions only. A token therefore never depends on its own previous-loop output. Think of each new token as consulting notes the earlier loop left about the prefix, instead of redoing that loop itself. With a training scheme called loop forcing, each new token traverses the shared stack once while still using multi-loop computation over the prefix. The default variant, U-MoLT, splits the stack into a looped encoder that builds the memory and a separate decoder that reads it to predict the next token."
+    },
+    {
+     "heading": "Results",
+     "body": "Trained on 400B tokens with the OLMo3 recipe, U-MoLT beats the OLMo3 baseline at 700M and 1.5B dense and 3B mixture-of-experts scales. At 700M it reaches the same validation loss with 1.7 times fewer tokens; at 3B it improves perplexity averaged over 10 domains by 0.75 and accuracy over 10 tasks by 2.1 percentage points. In continued pretraining of Qwen3.5-0.8B-Base, it lowers loss on all 11 domains. On roughly 113M-parameter models, its hybrid decoding takes 996.6 ms against 1,000.6 ms for the non-looped baseline."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If looping can be had at close to ordinary inference latency, it becomes a far easier choice for production models. The caveats: the latency comparison uses small models and the largest trained model is 3B."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.34923",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34923",
+    "code": "https://github.com/hustvl/MoLT"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 22,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 54,
+    "org": "ByteDance Seed"
+   }
+  },
+  {
+   "id": "2611.33158",
+   "title": "OmniAct: One Policy, One Million Embodiments",
+   "authors": [
+    "Xiang Fan",
+    "Yuheng Wang",
+    "Jiayuan Yan",
+    "Bohan Fang",
+    "Wisdom Oluchi Ikezogwo",
+    "Ainaz Eftekhar",
+    "Max Argus",
+    "Zhongzheng Ren",
+    "Jiafei Duan",
+    "Ranjay Krishna"
+   ],
+   "affiliations": [
+    "University of Washington",
+    "Allen Institute for Artificial Intelligence",
+    "University of North Carolina at Chapel Hill",
+    "National University of Singapore"
+   ],
+   "announced": "2026-11-24T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Pre-training & Data"
+   ],
+   "tldr": "OmniAct trains one 400M-parameter manipulation policy on about a million procedurally generated robot arms, feeding it each robot's joint geometry in camera coordinates so it can control bodies it has never seen.",
+   "why_selected": "Scaling the number of robot bodies, not just demonstrations, is a new axis for robot learning, and it is tested on held-out embodiments and an unseen real arm.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A policy meant to run on many robots must do more than share task knowledge. Two arms with different reach, joints and grippers may need different grasps and trajectories for the same goal, so the policy has to adapt its behaviour to the body it is controlling."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Generalist vision-language-action models transfer across robots through shared interfaces such as end-effector commands or common action tokens. These capture what robots have in common but not how morphology should change strategy, and policies that read a robot description often encode it separately from the scene."
+    },
+    {
+     "heading": "Key idea",
+     "body": "OmniAct describes each robot as a scene-grounded kinematic graph. Every joint, gripper tip and tool point becomes a token carrying its 3D position, motion axis and joint type, expressed in the coordinate frame of each camera, with connectivity between joints supplied as attention biases. Because the robot's skeleton is given in the same frame as the images, the model can relate what it sees to where its own joints are and which way they move. A flow-matching transformer then predicts relative motion for each joint, so one network handles different numbers of joints.\n\nTo make the policy learn how body shape affects behaviour, the authors procedurally generate robot arms that vary joint configuration, link geometry and topology, then generate simulated trajectories for them. The dataset table lists about 1.03 million trajectories over about 800,000 embodiments."
+    },
+    {
+     "heading": "Results",
+     "body": "On 2,000 held-out episodes with unseen embodiments and scenes, OmniAct succeeds in 63.0% within 500 steps, against 57.9% for the strongest baseline, a multi-camera UMI variant trained on the same data, and 17.8% for pi-0.5. On shared task families it reaches 64.7% against 41.1% for GPT-6 Astra at the same step budget. On a real OpenYAM arm with a gripper unseen in training, it completes 13 of 20 pick-and-place trials; the only baseline to succeed at all, a MolmoAct2 variant trained on that arm, completes 7."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The results suggest that diversity of bodies can be manufactured in simulation, and that telling a policy its own kinematics matters most for robots far from the training distribution. Bimanual arms and humanoids are left open."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.33158",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.33158"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 3,
+    "alphaxiv_hot_days": 2
+   }
+  },
+  {
+   "id": "2611.32884",
+   "title": "Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe",
+   "authors": [
+    "Richmond Sin Jing Xuan",
+    "Peilin Feng",
+    "Wenbin Wang",
+    "Soujanya Poria"
+   ],
+   "affiliations": [
+    "Nanyang Technological University"
+   ],
+   "announced": "2026-11-24T20:00:00-05:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Reinforcement Learning"
+   ],
+   "tldr": "Agents often answer while their own stated belief still lists several possibilities; rewarding each step against the simulator's exact posterior teaches them to keep gathering evidence until it settles the answer.",
+   "why_selected": "It pins down a specific, measurable failure of agentic RL, premature commitment, and offers a judge-free per-step reward that fixes much of it.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "An agent on a long task has to decide when it has seen enough. Current agents often stop early and guess, a behaviour the authors call laziness. In their tests, vision-language models asked to write down which answers remain possible commit on 3 to 68% of the turns where the evidence is insufficient and their own belief line still names several answers."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "RL with verifiable rewards scores only the final answer, so a lucky guess is reinforced as fully as a well-supported answer. Process rewards from an LLM judge credit individual steps, but a judge that knows the true answer rewards true claims even when the evidence does not support them."
+    },
+    {
+     "heading": "Key idea",
+     "body": "In a simulator with known rules, the environment can compute the exact posterior over the hidden answer after every observation: the set of answers still consistent with what the agent has seen. The authors' method, Reinforcement Learning with Verifiable Beliefs (RLVB), uses this posterior as a per-step reward. Taking another evidence-gathering step is rewarded while several answers remain possible; committing is rewarded once the evidence singles one out.\n\nTake their cups example: an object hides under one of four cups and the agent has lifted two empty ones. Guessing now is penalised even if the guess happens to be right, because the reward depends on the evidence, not on where the object turned out to be."
+    },
+    {
+     "heading": "Results",
+     "body": "Across three vision-language models and three benchmarks, the posterior reward beats the outcome reward by 18.1% on average with the same learner. For Qwen3.5-4B on held-out games of the training tasks, accuracy rises from 26.5% to 48.5% and the share of premature answers falls from 80.8% to 34.7%. Trained agents commit against their own belief on only 0.1 to 2.2% of turns."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The models often state what they know but fail to act on it, and training repaired that link. The limits are clear: the method needs tasks whose rules allow an exact posterior, the trained agents do not choose more informative steps, and they remain far below a posterior-following teacher, 32.4% against 100% on one benchmark."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.32884",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.32884",
+    "code": "https://github.com/declare-lab/RLVB"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 35,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 98,
+    "org": "Nanyang Technological University"
+   }
+  },
+  {
+   "id": "2611.32183",
+   "title": "ThinkMorph-SSL: Scaling Interleaved Multimodal Reasoning with Pretext Tasks",
+   "authors": [
+    "Jiawei Gu",
+    "Linjie Li",
+    "Yiming Liu",
+    "Yunzhuo Hao",
+    "Huichen Wang",
+    "Guanzheng Chen",
+    "Zhichao Peng",
+    "Luxin Xu",
+    "Xinyu Zhang",
+    "Li Luo",
+    "Disen Lan",
+    "Zican Hu",
+    "Mingyang Song",
+    "David Valente",
+    "Alex Jinpeng Wang",
+    "Yafu Li",
+    "Ganqu Cui",
+    "Zhengyuan Yang",
+    "Qizhe Xie",
+    "Yejin Choi",
+    "Ranjay Krishna",
+    "Yu Cheng"
+   ],
+   "affiliations": [
+    "University of Washington",
+    "Tsinghua University",
+    "Zhejiang University",
+    "National University of Singapore",
+    "Stanford University"
+   ],
+   "announced": "2026-11-24T20:00:00-05:00",
+   "primary_tag": "Multimodal",
+   "tags": [
+    "Multimodal",
+    "Reasoning",
+    "Pre-training & Data"
+   ],
+   "tldr": "ThinkMorph-SSL turns classic self-supervised image tasks such as jigsaw and denoising into practice for models that reason by generating intermediate images, raising accuracy by 11.33 points across twelve benchmarks.",
+   "why_selected": "It brings the self-supervised pretext-task idea to visual chain-of-thought, removing a data bottleneck for models that think with generated images.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Some problems are easier with a sketch. Unified models that generate both text and images could reason this way, producing an intermediate picture and then reading it. Training them to do so needs traces in which a generated image actually helps answer a question, and those are laborious to build."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Current datasets rely on task-specific pipelines, each designed around one kind of question and visual manipulation, so covering a new task means a new design. Simply asking an untrained unified model to draw before answering does not help: in the authors' test, forcing an intermediate image cost 6.20 points on spatial questions, and substituting a verified ground-truth image won back only 0.80."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The recipe has two stages. The first, pretext reasoning, borrows seven tasks from self-supervised vision: jigsaw, colorization, super-resolution, inpainting, rotation and flip recovery, denoising and deformation recovery. Each corrupted image becomes a short trace: describe what is visible, generate the restored image, then describe the result. No instruction names the corruption, so the model has to work out what is wrong from the image alone. Because the clean original is the target, any image pool yields training data; the authors build 270,896 such traces.\n\nThink of it as drills before coaching. The drills teach the mechanics of producing and reading a picture mid-thought. The second stage then tunes on 180,490 question-driven traces from nine automatic pipelines, which teach when a picture is worth making and how to use it."
+    },
+    {
+     "heading": "Results",
+     "body": "With the instruction-tuning budget held fixed, adding the pretext stage improves accuracy by 6.49 points on average on three benchmarks. The full recipe, built on the BAGEL-7B-MoT backbone, improves on the baseline by 11.33 points on average across twelve benchmarks, with the largest gain, 17.92 points, on tasks that require imagining unseen viewpoints. Nine benchmarks outside the tuning task families gain 9.87 points on average."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Supervision for visual reasoning can come from images themselves, as it long has for visual representations. The authors note open questions: scaling with more pretext data was not measured, interleaved reasoning is costly at inference, and flawed intermediate images go with higher error rates."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.32183",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.32183",
+    "code": "https://github.com/ThinkMorph/ThinkMorph-SSL"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 7,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 21,
+    "notable_authors": [
+     "Yejin Choi"
+    ]
+   }
+  }
+ ]
+}
