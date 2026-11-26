@@ -1,0 +1,293 @@
+{
+ "date": "2026-11-26",
+ "edition": "weekday",
+ "generated_at": "2026-11-26T13:55:47+00:00",
+ "summary": "Generic twice-yearly HIV prevention reaches Africa, Congo's Ebola outbreak passes 12,000 cases, and US newborn hepatitis B vaccination falls; plus blood-pressure drugs across risk levels, generational gains in memory, and puzzling archaic human teeth from China.",
+ "news": [
+  {
+   "id": "2026-11-26-n1",
+   "story_key": "generic-lenacapavir-first-deliveries-zambia-global-fund",
+   "title": "The first generic version of the twice-yearly HIV prevention shot lenacapavir arrives in Zambia, at about $40 a year",
+   "category": "Public Health",
+   "published": "2026-11-25T10:18:00-05:00",
+   "tldr": "The Global Fund says the first generic lenacapavir, a twice-yearly HIV prevention injection expected to cost about $40 per person a year, has reached Zambia, with Uganda next.",
+   "why_selected": "A highly effective prevention drug becomes affordable at scale in the region with the heaviest HIV burden, one year after the branded version arrived.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Lenacapavir is an injectable form of pre-exposure prophylaxis (PrEP), medicine taken by people without HIV to avoid infection. It is given twice a year and works by targeting the protein shell of the virus. In a 2024 trial in more than 5,000 adolescent girls and young women in Uganda and South Africa, none of those who received the injection contracted HIV, the BBC notes. The original product, made by Gilead Sciences, costs about $28,000 a year in the United States."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Global Fund announced on 25 November that the world's first deliveries of generic lenacapavir had arrived in Zambia. A delivery to Uganda is expected in the coming days, and a shipment to Zimbabwe in early 2027. The generic is expected to cost $40 per person per year. According to the Associated Press, it was developed by India-based Dr. Reddy's Laboratories under an agreement brokered by the health agency Unitaid and its partners, and the US Food and Drug Administration approved it earlier this month. Gilead had signed royalty-free licences with six generic manufacturers. After clearance in Zambia, the doses are expected to be used within three weeks."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Sub-Saharan Africa accounts for nearly two-thirds of people living with HIV. Worldwide, 41 million people were living with the virus last year and 570,000 died of HIV-related causes, according to the WHO. Existing prevention pills must be taken every day. So far supply has been the limit: more than 189,000 people in 10 countries have received a first dose, and Unitaid says demand far outstrips supply. The Global Fund and the US government aim to reach at least 3 million people by the end of 2028, and plan to deliver four times as much lenacapavir in 2027 as in 2026. The BBC reports concern that cuts to US foreign aid could undermine HIV programmes that many African countries rely on."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The Uganda delivery, the larger generic shipments promised for the first quarter of 2027, and whether 24 countries have received lenacapavir by the end of this year as the Global Fund expects."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Global Fund",
+     "url": "https://www.theglobalfund.org/en/news/2026/2026-11-25-first-deliveries-generic-lenacapavir-hiv-prevention-arrive/"
+    },
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/cmly7jve72r2o"
+    },
+    {
+     "name": "Associated Press (via Yahoo News)",
+     "url": "https://sg.news.yahoo.com/cheaper-generic-hiv-prevention-drug-095825134.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n2",
+   "story_key": "drc-bundibugyo-ebola-passes-12000-confirmed-cases",
+   "title": "Congo's Ebola outbreak passes 12,000 confirmed cases, with only 15% of new cases among known contacts",
+   "category": "Microbes & Infectious Disease",
+   "published": "2026-11-26T00:29:00-05:00",
+   "tldr": "Government data show more than 12,000 confirmed Ebola cases in the Democratic Republic of the Congo, and most new cases are still appearing outside known chains of transmission.",
+   "why_selected": "A new milestone in the second-largest Ebola outbreak on record, with a contact-tracing figure that shows it is not yet under control.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Democratic Republic of the Congo (DRC) has been fighting an outbreak of Ebola disease caused by Bundibugyo virus, a rare type of Ebola virus, since May. It was declared in Ituri province in the north-east. The US Centers for Disease Control and Prevention (CDC) says it is spreading substantially faster than earlier outbreaks: it passed 1,000 confirmed cases within 40 days of the response starting, compared with about 235 days for the 2018 outbreak in the DRC."
+    },
+    {
+     "heading": "What happened",
+     "body": "Reuters reported on 26 November that confirmed cases in the DRC now exceed 12,000, citing government data. The European Centre for Disease Prevention and Control (ECDC) had counted 11,504 confirmed cases and 5,630 related deaths in data up to 16 November, so at least about 500 cases have been added in the ten days since. The outbreak has reached 8 of the DRC's 26 provinces. It is the second-largest and deadliest on record, behind the 2014 to 2016 West African epidemic, which infected more than 28,600 people and killed more than 11,000. Only 15% of new cases come from contacts already known to health authorities, according to data presented by Africa CDC earlier this month. A Reuters analysis of satellite imagery suggests the official death toll may be largely underestimated in two of the hardest-hit areas."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The contact figure is the clearest sign that the outbreak is not under control: when only 15% of new cases come from people health authorities were already following, many chains of transmission are being missed. The CDC lists the reasons the response is difficult: limited health infrastructure, ongoing conflict that complicates contact tracing, violence against health workers, shortages of protective equipment that leave staff infected, frequent cross-border movement, and mistrust and misinformation. Outside the DRC, the ECDC counts 20 cases in Uganda, nine in Kenya and one in Nigeria. Both the CDC and the ECDC still rate the risk to the public in the United States and Europe as low or very low."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The share of new cases found among known contacts, the weekly case count, and any new spread to neighbouring countries. The ECDC updates its figures every Thursday."
+    }
+   ],
+   "sources": [
+    {
+     "name": "US CDC",
+     "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+    },
+    {
+     "name": "ECDC",
+     "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda"
+    },
+    {
+     "name": "Reuters (via Head Topics)",
+     "url": "https://sg.headtopics.com/news/drc-ebola-cases-surpass-12-000-as-bundibugyo-outbreak-90199326"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-n3",
+   "story_key": "truveta-nejm-evidence-hepatitis-b-birth-dose-decline-2026",
+   "title": "Hepatitis B vaccination at birth falls to 65.6% of US newborns, and slips among babies of infected mothers, a records study finds",
+   "category": "Public Health",
+   "published": "2026-11-24T09:35:00-05:00",
+   "tldr": "An analysis of health records for 1.3 million US infants finds hepatitis B vaccination within a day of birth fell from about 80% in 2022 to 65.6% by June 2026.",
+   "why_selected": "A large published dataset documents a steep fall in a routine newborn vaccination, including in the group at highest risk of infection.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Hepatitis B is an infection that can pass from mother to child during birth. Under a longstanding US recommendation, every newborn was offered a first vaccine dose at birth, partly as a safety net for babies whose mothers do not know they are infected. In December 2025 federal vaccine advisers voted to end the recommendation that every newborn be vaccinated at birth. A federal judge temporarily blocked that decision in March 2026, restoring the earlier recommendation while litigation continues."
+    },
+    {
+     "heading": "What happened",
+     "body": "A study published in NEJM Evidence and announced on 24 November by Truveta, a health-data company owned by US health systems, examined de-identified electronic health records for 1,338,961 infants born to more than one million mothers between January 2018 and June 2026. The share vaccinated within one day of birth fell from about 80% in 2022 to 65.6% by June 2026. The decline began in 2023, before the advisers' vote. Among infants whose mothers had tested positive for hepatitis B, 97% to 98% received the birth dose each year from 2020 to 2025; in the first half of 2026 that fell to 93.9%. About one in ten pregnancies had no recorded hepatitis B test."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The findings describe two gaps at once. Screening is incomplete: applied to roughly 3.6 million US births a year, a one-in-ten gap would mean about 360,000 newborns whose mothers have no recorded test, and the researchers estimate that more than 640 infants a year could be born to mothers with an undetected infection. And the vaccination that was meant to cover that gap is being given less often, including to babies known to be exposed. The study is observational, based on records from health systems that belong to Truveta, and it does not establish why vaccination fell. Its lead author is a Truveta scientist; one co-author, Demetre Daskalakis, formerly directed the CDC's National Center for Immunization and Respiratory Diseases."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Data for the second half of 2026, the outcome of the litigation over the recommendation, and whether infections in infants are reported to rise."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Truveta",
+     "url": "https://www.truveta.com/blog/news/hepatitis-b-vaccine-nejm-evidence/"
+    },
+    {
+     "name": "NEJM Evidence",
+     "url": "https://evidence.nejm.org/doi/full/10.1056/EVIDpha2600326"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1056-nejmoa2607848",
+   "title": "Blood-Pressure–Lowering Treatment across the Cardiovascular Risk Spectrum",
+   "authors": [
+    "Zeinab Bidel Milad Nazarzadeh Borislava Mihaylova Qianqian Yang Johan Sundström Nathalie Conrad Dexter Canoy Guyu Zeng David M. Kent William C. Cushman John Chalmers Koon K. Teo Carl J. Pepine Barry R. Davis Mark Woodward and Kazem Rahimithe Blood Pressure Lowering Treatment Trialists’ Collaboration*"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Cardiovascular",
+   "tags": [
+    "Cardiovascular",
+    "Epidemiology"
+   ],
+   "tldr": "Pooling 51 randomized trials and 357,440 people, blood-pressure drugs cut major cardiovascular events by the same relative amount at every level of predicted risk, but the absolute gain shrinks as risk falls.",
+   "why_selected": "A very large individual-participant analysis in NEJM that addresses a long-running question about who gains from treating blood pressure, with the trade-offs quantified.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Blood-pressure-lowering drugs prevent heart attacks and strokes, but it has been unclear whether the benefit extends to people whose predicted cardiovascular risk is low, and whether the balance between benefit and side effects changes across risk levels."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Decisions to start treatment have largely been tied to blood-pressure levels. Predicted risk is a different yardstick: an estimate of a person's chance of a major cardiovascular event over a set period."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The Blood Pressure Lowering Treatment Trialists' Collaboration combined individual participant data from 51 randomized trials with 357,440 participants. Having each person's data, rather than each trial's summary, let the authors calculate every participant's predicted five-year risk of a major cardiovascular event and sort them into ten groups (deciles), from lowest to highest risk. They then compared treatment with placebo or usual care within each group, over a median of 4.2 years. The logic resembles a discount: the same percentage off saves more on an expensive item than on a cheap one."
+    },
+    {
+     "heading": "Results",
+     "body": "Each 5 mm Hg reduction in systolic blood pressure lowered the risk of a first major cardiovascular event by about 10% (hazard ratio 0.90, 95% confidence interval 0.88 to 0.92), with no variation across deciles. In absolute terms the reduction was 2.6 percentage points in the highest-risk group, so 38 people would need treatment for five years to prevent one event, and 0.4 points in the lowest-risk group, or 255 people. Side effects rose to a similar degree in every group: a 66% relative increase in palpitations, low blood pressure or slow heart rate, 49% for kidney problems such as acute kidney injury and 9% for dizziness and fainting, with no increase in falls or fractures, according to the British Heart Foundation's account of the findings."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Treatment works in low-risk people, but since side effects do not shrink as risk falls, the margin between benefit and harm narrows. The authors say the decision should rest on overall risk and be shared between doctor and patient. This summary relies on an abstract digest and the British Heart Foundation's report, not the full paper."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nejm.org/doi/full/10.1056/NEJMoa2607848",
+    "doi": "https://doi.org/10.1056/NEJMoa2607848"
+   },
+   "signals": {
+    "venue": "The New England Journal of Medicine",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41591-026-04758-z",
+   "title": "Later-born generations have better memory and lose it more slowly",
+   "authors": [
+    "Anders Fjell et al."
+   ],
+   "affiliations": [
+    "University of Oslo"
+   ],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Neurology & mental health",
+   "tags": [
+    "Neurology & mental health",
+    "Epidemiology",
+    "Development & aging"
+   ],
+   "tldr": "Across about 219,000 people in five long-running studies, later-born generations enter old age with better memory and lose it more slowly.",
+   "why_selected": "Repeated testing of the same people over decades separates how well a generation remembers from how fast it declines, which earlier studies could not do cleanly.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "The rate of new dementia cases at a given age has been falling in Europe and the United States, by a reported 13% per decade. It has not been clear whether later-born people simply start old age with better memory, or whether their memory also declines more slowly."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Comparing different people of different ages at one moment cannot separate how well a generation performs from how quickly it declines. A 2025 Nature Medicine study from the same group found that more education went with better memory overall but not with slower decline."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team, led by Anders Fjell of the University of Oslo, pooled five longitudinal studies, in which the same people are tested repeatedly, for a total of about 783,000 memory tests from about 219,000 people followed for as long as 30 years. Repeated measurements of each person make it possible to estimate two things separately for each birth generation: the level of memory on entering old age, and the slope of decline afterwards. Think of two hikers descending a hill: one may start higher, walk down more slowly, or both."
+    },
+    {
+     "heading": "Results",
+     "body": "Later-born generations had both: a higher starting level and a slower decline, which the authors call a \"double dividend\". They also had longer periods of stable memory, fewer cases of clinical impairment and slower shrinkage of the hippocampus, a brain region central to memory. The gains were concentrated among people with the fastest decline, the group most likely to develop dementia. The authors say the two effects together could plausibly account for the reported 13% per-decade fall in dementia incidence. The coverage read for this summary did not give effect sizes or the birth years compared."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result suggests that dementia risk responds to conditions societies can change; the authors point to schooling, nutrition, childhood living conditions and health care as likely contributors but cannot establish the cause. The findings are generational averages from an observational analysis and say nothing about any individual. Fjell cautions that there is no guarantee the trend continues, and total dementia cases can still rise as populations age."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41591-026-04758-z",
+    "doi": "https://doi.org/10.1038/s41591-026-04758-z"
+   },
+   "signals": {
+    "venue": "Nature Medicine",
+    "tier": "major",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11341-6",
+   "title": "Middle–Late Pleistocene Denisovans and unresolved Homo in southern China",
+   "authors": [
+    "Song Xing",
+    "Huiyun Rao",
+    "Guangmao Xie",
+    "Fan Bai",
+    "Junyi Ge",
+    "E. Andrew Bennett",
+    "Zhongyou Wu",
+    "Qingfeng Shao",
+    "Xianglei Li",
+    "Bence Viola",
+    "Qiyahui Sun",
+    "Kai Zhou",
+    "Zitao Li",
+    "Qigao Jiangzuo",
+    "Yuhao Zhao",
+    "Feng Liu",
+    "Yingjie Liu",
+    "Xiaotian Feng",
+    "Qiang Lin",
+    "Qiaomei Fu"
+   ],
+   "affiliations": [
+    "Institute of Vertebrate Paleontology and Paleoanthropology",
+    "Beijing"
+   ],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Evolution & ecology",
+   "tags": [
+    "Evolution & ecology",
+    "Molecular & cell biology"
+   ],
+   "tldr": "Enamel proteins from four teeth found in two caves in Guangxi point to two kinds of archaic human in southern China: one Denisovan-like, one that fits no sampled group.",
+   "why_selected": "Ancient proteins are opening the fossil record of a warm region where DNA rarely survives, and here they show more than one archaic human population.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Southern China has yielded very few fossils of archaic humans from the last few hundred thousand years, and ancient DNA rarely survives in warm, humid caves. Who lived there before modern humans is largely unknown."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Proteins in tooth enamel last far longer than DNA and vary slightly between human groups. Using them, fossils from Harbin, Penghu, Tibet and Laos have been linked to Denisovans, an archaic group named after a cave in Siberia. An earlier paper from the same laboratory reported enamel proteins from Homo erectus teeth at three Chinese sites."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Song Xing, Qiaomei Fu and colleagues studied four isolated teeth from two Guangxi caves: an upper molar and a lower premolar from Longchuandong, and a matching pair of lower premolars from Chuanshandong that probably came from one person. They dated the teeth directly by uranium-series analysis, which measures how much uranium absorbed from groundwater has decayed to thorium. They then etched the enamel of three teeth with acid, recovered a few thousand peptides (protein fragments) from each and read them by mass spectrometry. Single amino-acid differences in these proteins act like spelling variants that mark different lineages."
+    },
+    {
+     "heading": "Results",
+     "body": "Both Longchuandong teeth, dated to about 104,500 and 42,600 years, carry the variant of the enamel protein ameloblastin found in Denisovans, and the molar's shape is closest to a Denisovan molar from Siberia. The authors call them likely members of a Denisovan-affinity lineage. The Chuanshandong premolar, at least 100,800 years old, lacks that variant. It carries one reported so far only in late Homo erectus from China, plus an ancestral form of a second protein shared with Homo antecessor and great apes. In the family-tree analysis it branches off before the common ancestor of Neanderthals, Denisovans and modern humans."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "At roughly the same period, one stretch of southern China seems to have held more than one kind of archaic human. The authors call their tree preliminary: it rests on a few positions in two proteins from one tooth, with no skull, jaw or tools. An outside anthropologist, John Hawks, suggests the unplaced teeth may simply be late Homo erectus."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11341-6",
+    "doi": "https://doi.org/10.1038/s41586-026-11341-6"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

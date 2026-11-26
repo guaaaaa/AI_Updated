@@ -3,7 +3,7 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 3,
+ "digests": 4,
  "papers": [],
  "stories": [
   {
@@ -17,11 +17,23 @@
    "outlets": 3,
    "date": "2026-11-21",
    "covered": null
+  },
+  {
+   "title": "Erectile dysfunction drug could hold promise for Alzheimer’s disease",
+   "outlets": 3,
+   "date": "2026-11-22",
+   "covered": null
+  },
+  {
+   "title": "FDA Approves Bezuclastinib Combo for Advanced GIST",
+   "outlets": 3,
+   "date": "2026-11-24",
+   "covered": null
   }
  ],
  "featured": {
-  "news": 9,
-  "papers": 8
+  "news": 12,
+  "papers": 11
  },
  "items": [
   {
@@ -125,6 +137,42 @@
    "date": "2026-11-25",
    "type": "paper",
    "title": "Architecture of the poxvirus early-transcription machinery and portal complex"
+  },
+  {
+   "id": "2026-11-26-n1",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "The first generic version of the twice-yearly HIV prevention shot lenacapavir arrives in Zambia, at about $40 a year"
+  },
+  {
+   "id": "2026-11-26-n2",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "Congo's Ebola outbreak passes 12,000 confirmed cases, with only 15% of new cases among known contacts"
+  },
+  {
+   "id": "2026-11-26-n3",
+   "date": "2026-11-26",
+   "type": "news",
+   "title": "Hepatitis B vaccination at birth falls to 65.6% of US newborns, and slips among babies of infected mothers, a records study finds"
+  },
+  {
+   "id": "doi-10-1056-nejmoa2607848",
+   "date": "2026-11-26",
+   "type": "paper",
+   "title": "Blood-Pressure–Lowering Treatment across the Cardiovascular Risk Spectrum"
+  },
+  {
+   "id": "doi-10-1038-s41591-026-04758-z",
+   "date": "2026-11-26",
+   "type": "paper",
+   "title": "Later-born generations have better memory and lose it more slowly"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11341-6",
+   "date": "2026-11-26",
+   "type": "paper",
+   "title": "Middle–Late Pleistocene Denisovans and unresolved Homo in southern China"
   }
  ]
 }
