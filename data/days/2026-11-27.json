@@ -1,0 +1,339 @@
+{
+ "date": "2026-11-27",
+ "edition": "weekday",
+ "generated_at": "2026-11-27T12:18:14+00:00",
+ "summary": "OpenAI reports that its general-purpose GPT-6 models can design binding proteins without specialized biology models, and five papers on recurrent-state stability, distillation without chain-of-thought, model-managed context, real-time video memory and a mirror test for robot policies.",
+ "news": [
+  {
+   "id": "2026-11-27-n1",
+   "story_key": "openai-gpt6-intrinsic-protein-design",
+   "title": "OpenAI says its GPT-6 models design binding proteins without specialized biology models",
+   "category": "Research",
+   "published": "2026-11-24T08:00:00-05:00",
+   "tldr": "OpenAI reports that GPT-6 models design protein structures and sequences using reasoning and code alone, with 35 of 322 lab-made minibinders binding their intended targets across five targets.",
+   "why_selected": "A frontier lab claims a general-purpose reasoning model now does work that until now required purpose-built protein models, with wet-lab results attached.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Protein design has been the showcase application of specialized machine learning: diffusion models such as RFdiffusion generate three-dimensional structures, and sequence models such as ProteinMPNN and SolubleMPNN propose the amino acid chains that fold into them. Each tool takes particular inputs, and adapting one to a new requirement usually means retraining or new software."
+    },
+    {
+     "heading": "What happened",
+     "body": "OpenAI published a preprint and summary on Tuesday arguing that its GPT-6 family has intrinsic protein-design capability: the models produce structures and sequences using only reasoning and general-purpose coding tools, without calling specialized biology models. In lab work with its research partner Onava, OpenAI tested 322 small proteins, called minibinders, whose shapes GPT-6.2 had designed for five targets; 35, or 10.9%, showed binding, including 18 for IL-17A, 8 for VEGF-A and 5 for PD-L1. Sequences came from SolubleMPNN and other specialized models helped select candidates. In a second experiment the model wrote the sequences itself for known minibinder structures, with binding seen in 75 of 88 designs for MDM2 (85%), 26 of 42 for VEGF-A (62%) and 8 of 59 for PD-1 (14%). Asked to redesign the binding loops of six small antibodies against IL-4Ra, 128 of 182 designs (70%) still bound. OpenAI notes that predicting a complete protein structure remains a clear weakness, and that RFdiffusion's original study reported higher hit rates."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If a model trained mainly on text and code can reach useful structural biology by writing code and reasoning about physics, the boundary between general and domain-specific models moves. OpenAI's framing is that researchers could eventually specify designs in natural language, as they now prompt image models: in its evaluations it could fix where a binder attaches and how many coils or strands it contains. The caveats are substantial: hit rates depend heavily on filtering before lab testing, specialized models still supplied sequences and candidate selection in the main experiment, and binding evidence is not a useful therapeutic."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether independent groups reproduce the hit rates with their own filtering, how the preprint fares in review, and whether OpenAI gates these capabilities."
+    }
+   ],
+   "sources": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.34051",
+   "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+   "authors": [
+    "Xichong Zhang",
+    "Xixuan Hao",
+    "Zhichen Liu",
+    "Le Zhou",
+    "Zeyu Zhang",
+    "Boyu Chen",
+    "Mingfei Lu",
+    "Zehao Lin",
+    "Bo Tang",
+    "Yonggang Zhang",
+    "Linyun Liu",
+    "Feiyu Xiong",
+    "Jianlin Su",
+    "Zhiyu Li"
+   ],
+   "affiliations": [
+    "MemTensor"
+   ],
+   "announced": "2026-11-25T20:00:00-05:00",
+   "primary_tag": "Architectures",
+   "tags": [
+    "Architectures",
+    "Optimization",
+    "Efficiency"
+   ],
+   "tldr": "The authors trace long-context training crashes in Gated DeltaNet-2 to an asymmetric erase operation that inflates the recurrent state, and fix it by making erasure symmetric.",
+   "why_selected": "A concrete, theoretically grounded diagnosis of why a popular linear-attention variant blows up in long-context training, with a drop-in fix.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Linear attention replaces the growing key-value cache of softmax attention with a fixed-size recurrent state, making long-context work cheap. But that state must be edited in place: old associations erased, new ones written. Gated DeltaNet-2 (GDN-2) gives each channel its own erase and write gate, improving in-context retrieval, then fails outright in long-context training."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "GDN-2's predecessors used a single scalar erase gate, stable but blunt. Existing patches constrain the gate from outside: D-Clip caps the decay factor so each transition is non-expansive, and beta-Guard shrinks channel-wise deviations of the erase gate when a stability condition is violated. Neither explains the failure."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The instability is geometric. GDN-2 reads the content to erase along one direction (the gated key) but applies the modification along another (the raw key). The resulting erase operator is non-normal: like a shear, it stretches some directions even though all its eigenvalues have magnitude at most one. A single step adds energy to the state, and when the stretched output of one step lines up with a stretching input of the next, the gains compound until the state overflows, even with no new writes. The fix is to split the erase gate into two square-root factors and apply one to each key factor, so reading and modification point the same way and erasure can never expand the state. Because that also suppresses writing in strongly erased channels, they add a residual write scaled by the square root of the energy decay has removed, and prove the state grows at most as the square root of sequence length."
+    },
+    {
+     "heading": "Results",
+     "body": "GDN-2 failed in 1 of 4 pretraining runs for a recurrent 1.6B model and 2 of 4 for a hybrid one; the fix trains stably. On RULER at 128K in the recurrent setting it adds 6.80 points on average over GDN-2, whose own RULER average collapses from 15.85 at 32K to 4.82 at 128K; in the hybrid setting it adds 0.62 points of average accuracy across nine common-sense tasks."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Teams adopting delta-rule linear attention can see divergence that looks like a data or learning-rate problem; this gives it a mechanism and a cheap remedy. The evidence is one 1.6B scale and one corpus, so frontier scale is untested."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.34051",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34051"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 10,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 105,
+    "org": "MemTensor"
+   }
+  },
+  {
+   "id": "2611.33148",
+   "title": "CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies",
+   "authors": [
+    "Dawid J. Kopiczko",
+    "Tijmen Blankevoort",
+    "Yuki M. Asano"
+   ],
+   "affiliations": [
+    "University of Technology Nuremberg",
+    "NVIDIA"
+   ],
+   "announced": "2026-11-24T20:00:00-05:00",
+   "primary_tag": "Post-training",
+   "tags": [
+    "Post-training",
+    "Agents",
+    "LLMs"
+   ],
+   "tldr": "A small reasoning model can absorb a stronger teacher's agent policy from the teacher's actions alone, with its own reasoning block left empty during training, and still think at inference.",
+   "why_selected": "It removes the main obstacle to distilling agentic behavior from closed models, whose chain-of-thought is encrypted, and the transfer effect itself is surprising.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Reasoning models are good at single-turn problems and weak as long-horizon agents. Reinforcement learning fixes this but is expensive, so the cheap route is fine-tuning on a stronger teacher's trajectories, which contain a chain-of-thought the strongest teachers do not expose."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The standard recipe supervises the whole teacher turn: reasoning, commentary and action. Providers such as OpenAI return encrypted reasoning items and at most a summary, precisely to block this. Prior work concluded hidden reasoning breaks distillation and proposed alternatives built on reinforcement learning or jointly trained privileged teachers."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Train on the actions and leave the thinking out. Each teacher turn becomes a target in which the think block is prefilled empty and receives no loss, and only the action after it is supervised; earlier turns in the context are rendered the same way, so the teacher's reasoning never leaks in. At inference the student opens its think block and reasons in its own style, yet acts like the teacher, an effect the authors call cross-format transfer. Think of it as copying someone's moves without their inner monologue, then narrating your own. Because fine-tuning risks overwriting the student's existing skills, a KL penalty on a replay buffer of the student's own out-of-domain generations keeps it near its initial weights. A middle option, CoT-proxies, inserts a short summary of the teacher's reasoning after the empty block; the student never reproduces those summaries at test time but benefits from them."
+    },
+    {
+     "heading": "Results",
+     "body": "Distilling Qwen3.6-27B raises Qwen3-4B on AppWorld from 7.3% to 17.9% task success and Qwen3-32B from 11.5% to 25.4%; CoT-proxies take the 4B model to 34.5%, above the 29.2% of full chain-of-thought training. With GPT-5.6 Luna as a closed teacher, using only visible outputs and API reasoning summaries, Qwen3-4B reaches 48.2% on AppWorld and 27.8% on SWE-bench Verified, from 7.3% and 2.7%. Replay keeps AIME25 accuracy at 73.3% against 74.7% initially."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This makes strong closed models usable as agentic teachers for open students, which matters for anyone building small agents and for providers deciding what their APIs reveal. The authors note terms of service may forbid it. Replay data must come from outside the target domain, and gains are measured on two environments only."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.33148",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.33148"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 27,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 17
+   }
+  },
+  {
+   "id": "2611.34147",
+   "title": "Letting Models Manage Their Own Context: Where We Stand",
+   "authors": [
+    "Alessio Devoto",
+    "Avinash Vem",
+    "Tara Safavi",
+    "Sanjay Kariyappa",
+    "Yu-Hsuan Tseng",
+    "Paul Furgale",
+    "Ricardo Silveira Cabral"
+   ],
+   "affiliations": [
+    "NVIDIA"
+   ],
+   "announced": "2026-11-25T20:00:00-05:00",
+   "primary_tag": "Agents",
+   "tags": [
+    "Agents",
+    "Retrieval & Memory",
+    "Efficiency"
+   ],
+   "tldr": "Letting models decide when and what to compact in their own context beats harness-triggered compaction at tight budgets, but only for models that actually use the interface.",
+   "why_selected": "A careful empirical answer to a question every agent builder faces, plus a serving-side result that makes the idea cheaper.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "An agent's history of tool calls and observations grows until it no longer fits the context window, and relevant facts get harder to find well before that. Someone has to decide what to drop, summarize or keep."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Today the harness decides: when usage crosses a threshold, it summarizes the history, keeping the system prompt and the most recent events. The policy is a heuristic that cannot know which earlier evidence the task still needs, and the model only writes the summary."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Hand the decision to the model. In NOOA, NVIDIA's open-source harness, the model gets a context API with two operations, collapsing a range of events into a summary and retrieving an archived event by its original tag, plus a live usage indicator. The authors compare this with harness-driven compaction on document research (OfficeQA Pro v2) and machine learning engineering (MLE-bench Lite) at context budgets from 8K to 512K tokens, shrinking the budget to simulate longer tasks. The second half of the paper addresses a hidden cost: editing the middle of a prompt invalidates the serving engine's key-value cache for everything after the edit, including unchanged text, so a shorter context is not automatically cheaper. They pair the API with a prototype in SGLang that reuses the cache for the unchanged suffix."
+    },
+    {
+     "heading": "Results",
+     "body": "GPT-6.1 Sol nearly triples its OfficeQA Pro v2 score at a 32K budget, from 21% to 56%. Kimi K3 at a 32K budget processes 41% fewer cumulative input tokens (36M against 62M) while scoring slightly higher, 43% against 41%. Usage differs sharply: GPT, Kimi and DeepSeek call the API in 42-53% of tasks, Claude Opus 5.5 in 4%. Suffix cache reuse cut prefill compute 4-15% per request with no measurable accuracy change."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It suggests context management is a model capability to be trained, not only harness plumbing, and that harness and inference engine should be co-designed. Caveats are real: 90 questions and 22 competitions, four models of unknown training, and the explanation for GPT's lead is the authors' conjecture."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.34147",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34147",
+    "code": "https://github.com/nvidia-nemo/labs-OO-Agents"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 34,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 10,
+    "org": "NVIDIA"
+   }
+  },
+  {
+   "id": "2611.34907",
+   "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
+   "authors": [
+    "Shaoteng Liu",
+    "Shuai Yang",
+    "Wei Huang",
+    "Luozhou Wang",
+    "Song Han",
+    "Yukang Chen"
+   ],
+   "affiliations": [
+    "NVIDIA",
+    "MIT",
+    "CUHK"
+   ],
+   "announced": "2026-11-25T20:00:00-05:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Agents",
+    "Retrieval & Memory"
+   ],
+   "tldr": "A memory agent running on separate GPUs prepares text and image memory for the next shot before its prompt arrives, giving a real-time video generator long-term consistency at about 1% extra time.",
+   "why_selected": "It makes agentic memory compatible with hard real-time generation, and the consistency gains on an online benchmark are large.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Autoregressive video generators can stream for minutes and take new prompts mid-stream, but they forget: a character's face, a stained shirt or a room revisited ten shots later drifts, because the only memory is a short key-value window plus the first frames, and the model's own errors get copied forward."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Agent systems do keep such memory for offline multi-shot generation, but they rely on what a live session cannot give them: the whole script up front, time to plan each shot while generation waits, and the option to inspect a bad shot and regenerate it."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Move the agent off the critical path. A memory agent on its own GPUs reads only the prompts revealed so far, never the generated video, and maintains a text state plus evolving images for each person, object and place. From this it composes a global image and a per-shot memory image, and an auxiliary GPU prefills them into the generator's attention sink before the next shot begins, so the video never waits. Because the agent never reads the output, visual errors are not written back. When a prompt arrives, the only live decision is a constrained choice among prepared memories: keep the current location, recall a known one, or treat it as new, plus text cards for every named entity. A small language model, trained with reinforcement learning against an image reward calibrated on downstream video outcomes, decides what to remember before the next prompt is known."
+    },
+    {
+     "heading": "Results",
+     "body": "On LongStory-Online (25 stories, 857 shots, prompts revealed one at a time), persistent-state accuracy rises from 38.2 to 64.5 over base LongLive-2.0, identity from 44.1 to 89.0, location from 68.8 to 98.0 and revisit consistency from 15.0% to 55.4%, at 0.9% extra generation time. The system streams at 34.3 FPS on one eight-GPU B200 node, and identity on RAVEN rises from 61.0% to 98.0%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It shows long-term memory for streaming generation can be an asynchronous service rather than a slower generator, which matters for interactive video, games and world models. The cost is hardware: the agent and prefill worker need extra GPUs, and raters judge per-shot visual quality no better than the base model's."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.34907",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34907",
+    "code": "https://github.com/NVlabs/LongLive"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 4,
+    "alphaxiv_hot_days": 1,
+    "hf_upvotes": 19,
+    "notable_authors": [
+     "Song Han"
+    ],
+    "org": "NVIDIA"
+   }
+  },
+  {
+   "id": "2611.33010",
+   "title": "Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies",
+   "authors": [
+    "Xuanchen Liu",
+    "Hejun Zhang",
+    "Boxuan Dong",
+    "Ying Wu",
+    "Heshuai Li",
+    "Wen Gao",
+    "Yonghong Tian",
+    "Weihao Yu"
+   ],
+   "affiliations": [
+    "Peking University"
+   ],
+   "announced": "2026-11-24T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Evaluation & Benchmarks",
+    "Computer Vision"
+   ],
+   "tldr": "Putting a mirror in the scene cuts success rates of five generalist robot policies by 10.8 to 56.7 percentage points, and most failures happen without the robot ever touching the mirror.",
+   "why_selected": "A cheap, legible perturbation exposes a shared failure mode in policies that look robust on standard benchmarks, with matched controls that rule out the obvious explanation.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Generalist manipulation policies are judged on task success in nominal scenes. Reflective surfaces are everywhere in homes and labs, and they do something no lighting or viewpoint change does: they duplicate task-relevant objects at locations where nothing can be grasped."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Robustness benchmarks perturb viewpoint, lighting, background, clutter and language, or degrade the observation stream. Earlier mirror work asked whether embodied agents recognize themselves. None tests manipulation of external objects when the scene also contains their reflections."
+    },
+    {
+     "heading": "Key idea",
+     "body": "RoboDojo-Mirror keeps RoboDojo's eight tasks, success criteria, checkpoints and inference settings fixed and varies only the scene: no mirror, one vertical mirror, two perpendicular mirrors, or a reflective tabletop, with matched layouts and policy seeds. The crucial control is that a mirror is also a physical obstacle, so for two policies the mirrors are swapped for geometry-matched non-reflective panels. That separates visual confusion from collision, and the authors log contact events, trajectories and gripper behavior rather than success alone, classifying failures as collision, phantom targeting of a reflection, or spatial mislocalization of the real object."
+    },
+    {
+     "heading": "Results",
+     "body": "All five policies score 60.8-72.5% without mirrors; averaged over the three mirror conditions, drops run from 10.8 points for the agentic GPT-6-Astra to 56.7 for Rex-M1 Preview, which falls to 4.2% on a mirrored tabletop. Between 50% and 87.5% of mirror-specific failures occur with no recorded contact in either condition. On the mirrored tabletop VPP2 falls from 97.8% to 4.4% on three grasping tasks while empty close-and-lift events rise from 0% to 95.6%. Real robots show the same trend: pi-0.5 drops from 77.5% to 27.5%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It argues reflection robustness belongs in evaluation suites, and that aggregate success can hide degraded grasping, since Astra's success rate was unchanged on the tabletop while its empty-grasp rate rose. Most evidence is simulation with ten real trials per setting, and differing execution budgets mean the numbers are not a controlled cross-policy ranking."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.33010",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.33010",
+    "code": "https://github.com/iPPLab/robodojo-mirror"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 31,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 33,
+    "org": "intelligence++"
+   }
+  }
+ ]
+}

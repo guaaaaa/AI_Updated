@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/ai</link>
   <description>AI research and industry</description>
   <language>en</language>
-  <lastBuildDate>Thu, 26 Nov 2026 12:17:54 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 12:18:14 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/ai.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI says its GPT-6 models design binding proteins without specialized biology models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2026-11-27-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2026-11-27-n1</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Research</category>
+    <description>OpenAI reports that GPT-6 models design protein structures and sequences using reasoning and code alone, with 35 of 322 lab-made minibinders binding their intended targets across five targets. (OpenAI)</description>
+  </item>
+  <item>
+    <title>Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34051</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34051</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>The authors trace long-context training crashes in Gated DeltaNet-2 to an asymmetric erase operation that inflates the recurrent state, and fix it by making erasure symmetric. (Xichong Zhang, Xixuan Hao, Zhichen Liu et al. · MemTensor)</description>
+  </item>
+  <item>
+    <title>CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.33148</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.33148</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>A small reasoning model can absorb a stronger teacher's agent policy from the teacher's actions alone, with its own reasoning block left empty during training, and still think at inference. (Dawid J. Kopiczko, Tijmen Blankevoort, Yuki M. Asano · University of Technology Nuremberg, NVIDIA)</description>
+  </item>
+  <item>
+    <title>Letting Models Manage Their Own Context: Where We Stand</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34147</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34147</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Letting models decide when and what to compact in their own context beats harness-triggered compaction at tight budgets, but only for models that actually use the interface. (Alessio Devoto, Avinash Vem, Tara Safavi et al. · NVIDIA)</description>
+  </item>
+  <item>
+    <title>Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34907</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34907</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>A memory agent running on separate GPUs prepares text and image memory for the next shot before its prompt arrives, giving a real-time video generator long-term consistency at about 1% extra time. (Shaoteng Liu, Shuai Yang, Wei Huang et al. · NVIDIA, MIT, CUHK)</description>
+  </item>
+  <item>
+    <title>Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.33010</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.33010</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>Putting a mirror in the scene cuts success rates of five generalist robot policies by 10.8 to 56.7 percentage points, and most failures happen without the robot ever touching the mirror. (Xuanchen Liu, Hejun Zhang, Boxuan Dong et al. · Peking University)</description>
+  </item>
   <item>
     <title>Nvidia reportedly halts server shipments to four Southeast Asian countries after new US chip export rule</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n1</link>
@@ -278,54 +326,6 @@
     <pubDate>Sat, 21 Nov 2026 12:17:35 +0000</pubDate>
     <category>AI / Efficiency</category>
     <description>DNeo, a parallel draft model for speculative decoding, fixes how drafters read the target model's hidden states and remembers rejected drafts, generating up to 1.3 times faster than the previous best. (Jameson Sandler, Shane Bergsma, Mostafa Elhoushi et al.)</description>
-  </item>
-  <item>
-    <title>Microsoft launches MAI Code 2 and Code 2 Flash, in-house coding models that come close to OpenAI's and Anthropic's at a lower cost</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n1</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Model Release</category>
-    <description>At Ignite, Microsoft released MAI Code 2 and Code 2 Flash, coding models it says nearly match GPT-6.1 Sol and Claude Opus 5.5 on four coding benchmarks at a fraction of the cost per task. (InfoWorld, The New Stack, Microsoft AI)</description>
-  </item>
-  <item>
-    <title>Anthropic's Claude agents settle two open problems in black-hole physics, with one result checked in the Lean proof assistant</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2026-11-20-n2</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Research</category>
-    <description>Anthropic says Claude Fable 5.2 agents, working for about six weeks, solved two open quantum-gravity problems: a holographic phase transition and a proven bound on the lightest black holes. (Anthropic)</description>
-  </item>
-  <item>
-    <title>Jeveration: System One Models Now Generate</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.24738</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.24738</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Generative Models</category>
-    <description>Jeveration turns a frozen vision-language model into an image generator that outputs a whole 512-pixel image in one forward pass, taking 78 ms, by conditioning all positions on a shared random state. (Yuhe Liu, Qi Li, Shihua Zhang et al. · National University of Singapore)</description>
-  </item>
-  <item>
-    <title>Weight-Space Programming Doesn't Need Transformers</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.22055</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.22055</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Architectures</category>
-    <description>When frontier LLMs write a model's weights by hand instead of training it, they abandon Transformers for sparse fact tables, which beat the Transformers they write with about 1,800 times fewer parameters. (Hyunjong Ok, Jaeho Lee · Pohang University of Science and Technology (POSTECH))</description>
-  </item>
-  <item>
-    <title>Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.23229</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.23229</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Post-training</category>
-    <description>Ambient SFT adds one loss term to fine-tuning, matching the model's high-temperature predictions to those of its frozen pre-trained self, and beats standard SFT on small instruction, domain and reasoning datasets. (Giannis Daras, Marios Papachristou, Adam Klivans et al. · MIT, Arizona State University, University of Texas at Austin)</description>
-  </item>
-  <item>
-    <title>Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.26603</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-20/2611.26603</guid>
-    <pubDate>Fri, 20 Nov 2026 12:29:19 +0000</pubDate>
-    <category>AI / Computer Vision</category>
-    <description>Apple's Depth Pro 2 estimates metric depth from images and video at full resolution, ending the usual trade-off between sharp object edges and depth that stays stable from frame to frame. (Peiyun Hu, Marko Mihajlovic, Lyndon Duong et al. · Apple)</description>
   </item>
 </channel>
 </rss>

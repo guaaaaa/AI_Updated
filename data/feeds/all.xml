@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 27 Nov 2026 11:46:11 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 12:18:14 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>OpenAI says its GPT-6 models design binding proteins without specialized biology models</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2026-11-27-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2026-11-27-n1</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Research</category>
+    <description>OpenAI reports that GPT-6 models design protein structures and sequences using reasoning and code alone, with 35 of 322 lab-made minibinders binding their intended targets across five targets. (OpenAI)</description>
+  </item>
+  <item>
+    <title>Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34051</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34051</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Architectures</category>
+    <description>The authors trace long-context training crashes in Gated DeltaNet-2 to an asymmetric erase operation that inflates the recurrent state, and fix it by making erasure symmetric. (Xichong Zhang, Xixuan Hao, Zhichen Liu et al. · MemTensor)</description>
+  </item>
+  <item>
+    <title>CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.33148</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.33148</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Post-training</category>
+    <description>A small reasoning model can absorb a stronger teacher's agent policy from the teacher's actions alone, with its own reasoning block left empty during training, and still think at inference. (Dawid J. Kopiczko, Tijmen Blankevoort, Yuki M. Asano · University of Technology Nuremberg, NVIDIA)</description>
+  </item>
+  <item>
+    <title>Letting Models Manage Their Own Context: Where We Stand</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34147</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34147</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Agents</category>
+    <description>Letting models decide when and what to compact in their own context beats harness-triggered compaction at tight budgets, but only for models that actually use the interface. (Alessio Devoto, Avinash Vem, Tara Safavi et al. · NVIDIA)</description>
+  </item>
+  <item>
+    <title>Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34907</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.34907</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Generative Models</category>
+    <description>A memory agent running on separate GPUs prepares text and image memory for the next shot before its prompt arrives, giving a real-time video generator long-term consistency at about 1% extra time. (Shaoteng Liu, Shuai Yang, Wei Huang et al. · NVIDIA, MIT, CUHK)</description>
+  </item>
+  <item>
+    <title>Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.33010</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2611.33010</guid>
+    <pubDate>Fri, 27 Nov 2026 12:18:14 +0000</pubDate>
+    <category>AI / Robotics</category>
+    <description>Putting a mirror in the scene cuts success rates of five generalist robot policies by 10.8 to 56.7 percentage points, and most failures happen without the robot ever touching the mirror. (Xuanchen Liu, Hejun Zhang, Boxuan Dong et al. · Peking University)</description>
+  </item>
   <item>
     <title>A 12-year-old flaw in the Linux kernel's NFS file server lets remote attackers gain root without logging in</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n1</link>
@@ -438,54 +486,6 @@
     <pubDate>Wed, 25 Nov 2026 12:18:03 +0000</pubDate>
     <category>AI / Post-training</category>
     <description>VOPD uses the agreement between a verifier and a teacher model on sampled answers to strengthen or reverse the teacher's token-level guidance, giving dense training signal that is tied to checked outcomes. (Juntong Shi, Stefano Ermon, Jure Leskovec et al. · Stanford University, Google DeepMind)</description>
-  </item>
-  <item>
-    <title>Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.31201</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.31201</guid>
-    <pubDate>Wed, 25 Nov 2026 12:18:03 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>A controlled study of how to wrap a frontier multimodal model as a robot policy reaches 83.3% on RoboLab-120 and finds the model succeeds through spatial target estimation, not low-level motion skill. (Xiao-Ming Wu, Kang Liao, Yuexiao Ma et al. · Nanyang Technological University, ACE Robotics, SenseTime Research)</description>
-  </item>
-  <item>
-    <title>Hackers reportedly breach an unclassified intelligence analysis system used by the CIA and two other US spy agencies</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n1</guid>
-    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Unknown attackers reportedly broke into an open-source intelligence system at the CIA, also affecting ODNI and the National Geospatial-Intelligence Agency; a source says no classified networks or data were involved. (BleepingComputer, The Verge, The Record)</description>
-  </item>
-  <item>
-    <title>The US Treasury's financial crimes bureau FinCEN takes systems offline after unauthorized access</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n2</guid>
-    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>FinCEN, the Treasury bureau that receives banks' suspicious-activity reports, says intruders accessed a limited subset of its systems; it took some systems offline and extended filing deadlines. (The Verge, The Record, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>A US jury convicts Huawei on 10 of 12 counts, including conspiracy to steal trade secrets, bank fraud and sanctions violations</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n3</guid>
-    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
-    <category>Tech / Tech Policy &amp; Antitrust</category>
-    <description>A federal jury in New York found Huawei and three subsidiaries guilty of stealing US companies' technology, defrauding banks and violating Iran sanctions, but acquitted it of racketeering; sentencing is set for September 2027. (The Verge, The Register)</description>
-  </item>
-  <item>
-    <title>Microsoft declares an internal "Code Red" after its November email outage and sets a one-hour target for resolving major incidents</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2026-11-25-n4</guid>
-    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
-    <category>Tech / Software &amp; Platforms</category>
-    <description>Internal memos reviewed by Reuters show Microsoft has made reliability work on Microsoft 365 its top engineering priority after the November 12 outage, which a senior executive called the worst in Exchange Online's history. (Ars Technica, The Verge)</description>
-  </item>
-  <item>
-    <title>Aftershock: Yesterday's Linux Kernel Bugs, Tomorrow's Android Exploits</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2611.31547</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-25/2611.31547</guid>
-    <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
-    <category>Tech / Security &amp; privacy</category>
-    <description>An automated pipeline using an off-the-shelf language model turned public Linux kernel fixes into 17 verified Android privilege-escalation exploits, while the same fixes took a median of 181 days to reach Pixel phones. (Kareem Shehada, Zhiyun Qian · University of California, Riverside)</description>
   </item>
 </channel>
 </rss>

@@ -3,7 +3,7 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [
   {
    "id": "2611.29897",
@@ -18,6 +18,13 @@
    "hf": 140,
    "org": "National University of Singapore",
    "featured": null
+  },
+  {
+   "id": "2611.34051",
+   "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+   "hf": 105,
+   "org": "MemTensor",
+   "featured": "2026-11-27"
   },
   {
    "id": "2611.31201",
@@ -41,33 +48,26 @@
    "featured": "2026-11-26"
   },
   {
+   "id": "2611.34232",
+   "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+   "hf": 96,
+   "org": "Touchstone AI",
+   "featured": null
+  },
+  {
    "id": "2611.27193",
    "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
    "hf": 95,
    "org": "XingChen-AGI",
-   "featured": null
-  },
-  {
-   "id": "2611.34849",
-   "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
-   "hf": 83,
-   "org": "PKU-VaLuE-Lab",
-   "featured": null
-  },
-  {
-   "id": "2611.34575",
-   "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
-   "hf": 76,
-   "org": "Shanghai AI Laboratory",
    "featured": null
   }
  ],
  "stories": [
   {
    "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
-   "outlets": 23,
+   "outlets": 24,
    "date": "2026-11-20",
-   "covered": "2026-11-25-n2"
+   "covered": "2026-11-23-n1"
   },
   {
    "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
@@ -113,7 +113,7 @@
   }
  ],
  "featured": {
-  "news": 7,
-  "papers": 20
+  "news": 8,
+  "papers": 25
  }
 }

@@ -1,5 +1,94 @@
 [
  {
+  "id": "2026-11-27-n1",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "OpenAI says its GPT-6 models design binding proteins without specialized biology models",
+  "tldr": "OpenAI reports that GPT-6 models design protein structures and sequences using reasoning and code alone, with 35 of 322 lab-made minibinders binding their intended targets across five targets.",
+  "category": "Research",
+  "byline": "OpenAI"
+ },
+ {
+  "id": "2611.34051",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+  "tldr": "The authors trace long-context training crashes in Gated DeltaNet-2 to an asymmetric erase operation that inflates the recurrent state, and fix it by making erasure symmetric.",
+  "primary_tag": "Architectures",
+  "tags": [
+   "Architectures",
+   "Optimization",
+   "Efficiency"
+  ],
+  "byline": "Xichong Zhang, Xixuan Hao, Zhichen Liu et al. · MemTensor",
+  "hf": 105,
+  "venue": null
+ },
+ {
+  "id": "2611.33148",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies",
+  "tldr": "A small reasoning model can absorb a stronger teacher's agent policy from the teacher's actions alone, with its own reasoning block left empty during training, and still think at inference.",
+  "primary_tag": "Post-training",
+  "tags": [
+   "Post-training",
+   "Agents",
+   "LLMs"
+  ],
+  "byline": "Dawid J. Kopiczko, Tijmen Blankevoort, Yuki M. Asano · University of Technology Nuremberg, NVIDIA",
+  "hf": 17,
+  "venue": null
+ },
+ {
+  "id": "2611.34147",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "Letting Models Manage Their Own Context: Where We Stand",
+  "tldr": "Letting models decide when and what to compact in their own context beats harness-triggered compaction at tight budgets, but only for models that actually use the interface.",
+  "primary_tag": "Agents",
+  "tags": [
+   "Agents",
+   "Retrieval & Memory",
+   "Efficiency"
+  ],
+  "byline": "Alessio Devoto, Avinash Vem, Tara Safavi et al. · NVIDIA",
+  "hf": 10,
+  "venue": null
+ },
+ {
+  "id": "2611.34907",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
+  "tldr": "A memory agent running on separate GPUs prepares text and image memory for the next shot before its prompt arrives, giving a real-time video generator long-term consistency at about 1% extra time.",
+  "primary_tag": "Generative Models",
+  "tags": [
+   "Generative Models",
+   "Agents",
+   "Retrieval & Memory"
+  ],
+  "byline": "Shaoteng Liu, Shuai Yang, Wei Huang et al. · NVIDIA, MIT, CUHK",
+  "hf": 19,
+  "venue": null
+ },
+ {
+  "id": "2611.33010",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies",
+  "tldr": "Putting a mirror in the scene cuts success rates of five generalist robot policies by 10.8 to 56.7 percentage points, and most failures happen without the robot ever touching the mirror.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Evaluation & Benchmarks",
+   "Computer Vision"
+  ],
+  "byline": "Xuanchen Liu, Hejun Zhang, Boxuan Dong et al. · Peking University",
+  "hf": 33,
+  "venue": null
+ },
+ {
   "id": "2026-11-26-n1",
   "date": "2026-11-26",
   "type": "news",
