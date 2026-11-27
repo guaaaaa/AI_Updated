@@ -1,5 +1,68 @@
 [
  {
+  "id": "2026-11-27-n1",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "Health Canada warns of a very rare risk of sudden vision loss with semaglutide drugs",
+  "tldr": "Health Canada's completed safety review found a possible link between prescription semaglutide and NAION, a form of sudden, usually permanent vision loss, and product labels will be updated.",
+  "category": "Drugs & Approvals",
+  "byline": "Health Canada, CBC News via Radio Canada International, Global News"
+ },
+ {
+  "id": "2026-11-27-n2",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "Flu admissions in England jump almost 80% in a week, the highest for late November since before Covid",
+  "tldr": "Hospital admissions for flu in England rose from five to nearly nine per 100,000 people in a week, the highest for this point in November this decade, with vaccination lagging.",
+  "category": "Public Health",
+  "byline": "BBC News, The Guardian"
+ },
+ {
+  "id": "doi-10-1126-science-aei5852",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "An engineered cohesion system reduces errors in aged mammalian eggs",
+  "tldr": "An engineered protein glue called TALhesin held chromosome halves together in aged mouse eggs, raising the share of error-free eggs from 46.7% to 74.1%, close to the level in young mice.",
+  "primary_tag": "Development & aging",
+  "tags": [
+   "Development & aging",
+   "Molecular & cell biology"
+  ],
+  "byline": "Alexandre Webster, Halima Yusuf, Nina Schweizer et al. · Max Planck Institute for Multidisciplinary Sciences, Göttingen; eggs donated via Göttingen Fertility Center, Bourn Hall Fertility Clinic (Cambridgeshire) and Fertility Center Berlin",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11287-9",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "Licensing mechanisms during RNA-guided DNA integration by type I-F3 CAST",
+  "tldr": "Structures of a CRISPR-associated transposase revealed how it locks onto a precise genomic target, and redesigned proteins made it 100 times more active without losing on-target specificity.",
+  "primary_tag": "Genetics & genomics",
+  "tags": [
+   "Genetics & genomics",
+   "Molecular & cell biology"
+  ],
+  "byline": "Shirin Fatma, Shubham Dubey, Vinh H. Truong et al. · St. Jude Children's Research Hospital, Department of Structural Biology",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1016-j-cell-2026-09-059",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "In vivo genome-editing therapy for Duchenne muscular dystrophy: Preclinical studies and first-in-human trial",
+  "tldr": "A single-dose CRISPR therapy delivered by one AAV9 vector produced the first molecular evidence of gene editing in the muscles of boys with Duchenne muscular dystrophy, but one of four participants died.",
+  "primary_tag": "Gene & cell therapy",
+  "tags": [
+   "Gene & cell therapy",
+   "Genetics & genomics"
+  ],
+  "byline": "Guoling Li, Feng Han, Cuijin Wang et al. · HuidaGene Therapeutics (Shanghai), Chinese Academy of Sciences, Shanghai Jiao Tong University",
+  "hf": null,
+  "venue": "Cell"
+ },
+ {
   "id": "2026-11-26-n1",
   "date": "2026-11-26",
   "type": "news",

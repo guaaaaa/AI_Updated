@@ -1,0 +1,278 @@
+{
+ "date": "2026-11-27",
+ "edition": "weekday",
+ "generated_at": "2026-11-27T13:56:15+00:00",
+ "summary": "Canada warns of a very rare optic-nerve risk with semaglutide, England's flu admissions jump before December, and three papers tackle ageing eggs, programmable DNA insertion and the first in-human CRISPR trial for Duchenne.",
+ "news": [
+  {
+   "id": "2026-11-27-n1",
+   "story_key": "health-canada-semaglutide-naion-safety-review-warning",
+   "title": "Health Canada warns of a very rare risk of sudden vision loss with semaglutide drugs",
+   "category": "Drugs & Approvals",
+   "published": "2026-11-25T12:00:00-05:00",
+   "tldr": "Health Canada's completed safety review found a possible link between prescription semaglutide and NAION, a form of sudden, usually permanent vision loss, and product labels will be updated.",
+   "why_selected": "A regulator in a major market has finished reviewing a safety signal that affects millions of people taking the best-known GLP-1 drugs.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Semaglutide belongs to a class of drugs called GLP-1 receptor agonists, which mimic a gut hormone that controls appetite and blood sugar. Sold as Ozempic, Rybelsus and Wegovy, it is prescribed for type 2 diabetes and weight management; CBC reports an estimated three million Canadians take a GLP-1 medicine. Since a 2024 study in JAMA Ophthalmology flagged a possible link to an eye condition that can destroy vision, regulators have been examining the evidence."
+    },
+    {
+     "heading": "What happened",
+     "body": "On 25 November, Health Canada published the result of its safety review: it found a possible link between prescription semaglutide drugs and non-arteritic anterior ischemic optic neuropathy, or NAION. The condition causes sudden, usually painless loss or blurring of vision in one eye because blood flow to the optic nerve drops, and has no treatment. Health Canada describes the risk as very rare and says it is working with manufacturers to add NAION warnings to Canadian product monographs. The notice covers all prescription semaglutide products in Canada, including generics, and the department says it is now assessing the same risk for the other GLP-1 drugs. It tells clinicians to refer patients reporting sudden vision loss for urgent eye examination and to stop the drug if NAION is confirmed. The US Food and Drug Administration recently required a NAION warning on the labels of all GLP-1 drugs, citing an analysis of more than 125 clinical trials in which the condition occurred in roughly six of every 100,000 patients treated for at least a year."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "NAION is the most common optic neuropathy in adults over 50 and a significant cause of permanent vision loss, and it already occurs more often in people with diabetes, high blood pressure and high cholesterol - the same people most likely to be prescribed semaglutide. That overlap is why the wording matters: Health Canada reports a possible link, not proof that the drug causes the condition. Still, these drugs are taken by millions, so even a very rare harm means real numbers of cases, and labelling is how prescribers learn to recognise an early symptom."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Health Canada's assessment of NAION risk across the remaining GLP-1 drugs, and the updated Canadian monographs as manufacturers file them."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Health Canada",
+     "url": "https://recalls-rappels.canada.ca/en/alert-recall/health-canada-warns-very-rare-serious-risk-vision-loss-semaglutide-drugs"
+    },
+    {
+     "name": "CBC News via Radio Canada International",
+     "url": "https://ici.radio-canada.ca/rci/en/news/2303092/health-canada-issues-warning-on-rare-risk-of-vision-loss-with-semaglutide-glp-1-drugs"
+    },
+    {
+     "name": "Global News",
+     "url": "https://globalnews.ca/news/12144337/glp1-vision-loss-warning-fda/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-n2",
+   "story_key": "ukhsa-england-flu-admissions-surge-late-november-2026",
+   "title": "Flu admissions in England jump almost 80% in a week, the highest for late November since before Covid",
+   "category": "Public Health",
+   "published": "2026-11-26T13:27:00-05:00",
+   "tldr": "Hospital admissions for flu in England rose from five to nearly nine per 100,000 people in a week, the highest for this point in November this decade, with vaccination lagging.",
+   "why_selected": "An early influenza surge with hard surveillance numbers, arriving while most people eligible for a vaccine have not had one.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Influenza returns every northern winter, but the timing and size of each wave vary with the strain circulating and how well the season's vaccine matches it. In England the UK Health Security Agency (UKHSA) tracks the rate at which people are admitted to hospital with confirmed flu, a more reliable signal of severity than case counts."
+    },
+    {
+     "heading": "What happened",
+     "body": "UKHSA figures released this week show the flu admission rate in England rose sharply in a single week, from five to almost nine per 100,000 people - an increase of almost 80%, and the highest rate for this point in November this decade. Overall flu activity is still described as only \"moderate\"; Covid and respiratory syncytial virus levels have also risen but remain low. Suzanna McDonald, who leads UKHSA's flu programme, said the H1N1 strain is driving the spread and \"does seem to have picked up a few more changes that we would have expected over the season\", adding that when a drifted strain appeared last year the vaccine still worked well. Vaccination is behind: just under 68% of people aged 65 and over had been vaccinated, below the usual level for the date, and of the roughly 9.5 million people under 65 in clinical risk groups - including those with lung, kidney or liver conditions and diabetes - only 34% had been vaccinated by 22 November, leaving almost 7 million unprotected. Uptake among two- and three-year-olds offered the nasal spray was 39%. Several NHS trusts declared critical incidents."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "UKHSA says some people at increased risk are as much as 48 times more likely to die if they catch flu than the general population, so the gap between who is eligible for a vaccine and who has had one shapes much of the winter's death toll. Sir Jim Mackey, NHS England's outgoing chief executive, said more beds are occupied by flu patients than at this time last year and that hospital bosses should consider asking staff and visitors to wear masks; he expects pressure to build over the next five to ten days."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the admission rate keeps climbing through December, and whether the drifted H1N1 strain blunts vaccine effectiveness."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/cwvg2ndxdjr2o"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/society/2026/nov/26/nhs-hospitals-england-flu-spike-masks"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-aei5852",
+   "title": "An engineered cohesion system reduces errors in aged mammalian eggs",
+   "authors": [
+    "Alexandre Webster",
+    "Halima Yusuf",
+    "Nina Schweizer",
+    "Chloe Charalambous",
+    "Eike Urs Mönnich",
+    "Heike Eckel",
+    "Rüdiger Moltrecht",
+    "Martyn Blayney",
+    "Kay Elder",
+    "Claus Sibold",
+    "Andreas Tandler-Schneider",
+    "Melina Schuh"
+   ],
+   "affiliations": [
+    "Max Planck Institute for Multidisciplinary Sciences",
+    "Göttingen; eggs donated via Göttingen Fertility Center",
+    "Bourn Hall Fertility Clinic (Cambridgeshire) and Fertility Center Berlin"
+   ],
+   "announced": "2026-11-26T00:00:00-05:00",
+   "primary_tag": "Development & aging",
+   "tags": [
+    "Development & aging",
+    "Molecular & cell biology"
+   ],
+   "tldr": "An engineered protein glue called TALhesin held chromosome halves together in aged mouse eggs, raising the share of error-free eggs from 46.7% to 74.1%, close to the level in young mice.",
+   "why_selected": "A mechanistic fix for the single best-understood cause of age-related infertility, with honest limits on how far it has been tested.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Before an egg can be fertilised it must halve its chromosomes, discarding one set. Each chromosome consists of two identical halves, the chromatids, which must stay glued together until the right moment. The glue is a protein complex called cohesin, and the eggs it holds together were formed before birth. It gradually falls off and is not replaced, so in eggs decades old the chromatids drift apart too early and are distributed wrongly, leaving embryos with too many or too few chromosomes, which mostly fail to implant or develop."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Clinics can screen IVF embryos for abnormal chromosome numbers and avoid transferring them, but nothing could restore cohesion in the egg itself, where most of these errors originate."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Melina Schuh's group built a replacement glue, TALhesin. They took a TAL effector - a DNA-binding protein that can be programmed to recognise a chosen sequence - and aimed two of them at a region near the centromere, where natural cohesin holds the chromatids. The two proteins carry chemical coupling sites that bond to each other, clamping the chromatids. Because a glue that never lets go would be as harmful as none, the researchers built in the cleavage site that the enzyme separase uses to cut cohesin, so the egg's own machinery releases the clamp on schedule."
+    },
+    {
+     "heading": "Results",
+     "body": "In young mouse eggs stripped of natural cohesin, chromatids drifted apart within an hour; with TALhesin they stayed together. In aged mice, TALhesin raised the proportion of eggs with no prematurely separated chromosomes from 46.7% to 74.1%, close to the 74.7% seen in young animals. In donated human eggs it bound the intended regions and chromosomes carrying more of it showed smaller distances between chromatids."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "This is the first demonstration that lost chromatid cohesion can be replaced. But the headline figures come from one age group at one of two doses, and in the oldest mice the effect was smaller; no eggs were fertilised and no embryos were made, so fewer abnormal embryos is inferred rather than shown. Commentators also note a narrow dose window - too much protein caused clustered chromosomes and failed separation - and that extensive safety work would precede any clinical use."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aei5852",
+    "doi": "https://doi.org/10.1126/science.aei5852"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11287-9",
+   "title": "Licensing mechanisms during RNA-guided DNA integration by type I-F3 CAST",
+   "authors": [
+    "Shirin Fatma",
+    "Shubham Dubey",
+    "Vinh H. Truong",
+    "Seong Guk Park",
+    "Hailey M. Wallace",
+    "Alfredo Jose Florez Ariza",
+    "Isabella King",
+    "Elizabeth H. Kellogg"
+   ],
+   "affiliations": [
+    "St. Jude Children's Research Hospital",
+    "Department of Structural Biology"
+   ],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Genetics & genomics",
+   "tags": [
+    "Genetics & genomics",
+    "Molecular & cell biology"
+   ],
+   "tldr": "Structures of a CRISPR-associated transposase revealed how it locks onto a precise genomic target, and redesigned proteins made it 100 times more active without losing on-target specificity.",
+   "why_selected": "Gene replacement, rather than single-letter correction, depends on tools that insert whole genes at a chosen site; this shows how one such tool works and how to improve it.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Today's gene editors are good at breaking or correcting a short stretch of DNA, but not at inserting a whole working gene at a chosen place in the genome. For the many diseases in which hundreds of different mutations disable the same gene, a tool that drops in a healthy copy would serve every patient rather than one."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "CRISPR-associated transposases, or CASTs, are bacterial systems that combine a guide RNA with a jumping-gene machine, so in principle they can integrate DNA where the guide points. They have been hard to harness: a CAST typically encodes between five and nine proteins, and how those parts cooperate, and why some systems are far more precise than others, was largely unknown."
+    },
+    {
+     "heading": "Key idea",
+     "body": "A team led by Elizabeth Kellogg at St. Jude Children's Research Hospital studied the type I-F3 CAST, a notably site-specific family member. Lacking a structure to start from, they predicted what the fully assembled complex should look like, used computational protein design to make that assembly more stable, and then imaged it with cryo-electron microscopy, which freezes molecules and reconstructs their shape from many particle images. The resulting structures show the components behaving like puzzle pieces: each subunit changes shape in response to the correct neighbour and locks the complex into its active state only when the assembly is complete. That stepwise licensing, the authors argue, is what keeps integration confined to the intended site."
+    },
+    {
+     "heading": "Results",
+     "body": "The same design approach that stabilised the complex also improved it. The team reports raising the activity of the type I-F3 CAST 100-fold without compromising its on-target specificity, which Kellogg says had not been done before. The structures also resolved why this family is so specific, through conformational changes that hold the proteins in the active state."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The work turns a poorly understood multi-protein machine into a described mechanism, and shows that protein design can improve such systems rather than merely stabilise them for imaging. Kellogg frames the goal as gene-replacement tools that swap a defective gene for a functional copy. The caveat is scope: this is structural work on a bacterial system, not therapeutic editing in patients."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11287-9",
+    "doi": "https://doi.org/10.1038/s41586-026-11287-9"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1016-j-cell-2026-09-059",
+   "title": "In vivo genome-editing therapy for Duchenne muscular dystrophy: Preclinical studies and first-in-human trial",
+   "authors": [
+    "Guoling Li",
+    "Feng Han",
+    "Cuijin Wang",
+    "Ming Jin",
+    "Jiajia Lin",
+    "Hainan Zhang",
+    "Xiudong Yan",
+    "Xing Wang",
+    "Xinyan Sun",
+    "Yiqun Yuan",
+    "Siyuan Zhang",
+    "Shuaishuai Zhang",
+    "Jingyan Zhu",
+    "Yichao Xu",
+    "Yingyan Wang",
+    "Yujiao Deng",
+    "Fangxin Li",
+    "Linyu Shi",
+    "Alvin Luk",
+    "Ning Wang",
+    "Hui Yang",
+    "Jiwen Wang"
+   ],
+   "affiliations": [
+    "HuidaGene Therapeutics (Shanghai)",
+    "Chinese Academy of Sciences",
+    "Shanghai Jiao Tong University",
+    "Fujian Medical University"
+   ],
+   "announced": "2026-10-26T00:00:00-04:00",
+   "primary_tag": "Gene & cell therapy",
+   "tags": [
+    "Gene & cell therapy",
+    "Genetics & genomics"
+   ],
+   "tldr": "A single-dose CRISPR therapy delivered by one AAV9 vector produced the first molecular evidence of gene editing in the muscles of boys with Duchenne muscular dystrophy, but one of four participants died.",
+   "why_selected": "The first in-human evidence that in vivo CRISPR can edit muscle in Duchenne, reported together with a fatal immune reaction that halted the trial.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Duchenne muscular dystrophy is caused by mutations in the DMD gene that disrupt the reading frame for dystrophin, the protein muscle fibres need to withstand use. Without it, muscle is progressively destroyed. Editing the gene inside the body could restore a readable frame, but the standard Cas9 enzyme plus its guides is too large to fit into a single adeno-associated virus (AAV) vector, the usual delivery vehicle."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Attempts to edit the gene in the body have run into a packaging problem: conventional SpCas9, the most widely used CRISPR nuclease, exceeds what a single AAV can carry, so its components must be split across vectors or delivered another way. Reaching muscle throughout the body also requires infusing large amounts of vector."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team used hfCas12Max, a compact high-fidelity nuclease, packaged with three guide-RNA cassettes into one AAV9 vector - a construct named HG302 that targets exon 51 of DMD, aiming to restore the reading frame through small insertions or deletions, or exon skipping. In humanised DMD mice, systemic treatment restored dystrophin and improved muscle function; in cynomolgus monkeys it edited efficiently without dose-limiting toxicity. Four boys aged 4 to 8 then received a single intravenous infusion, two at 5 x 10^13 vector genomes per kilogram and two at 1 x 10^14."
+    },
+    {
+     "heading": "Results",
+     "body": "Muscle biopsies at day 91 from three participants showed 1.0-4.3% on-target DNA editing and dystrophin at 2.3-3.8% of normal controls, with no off-target editing above background at the sites assessed. The fourth participant developed marked complement and cytokine activation and died about 81 hours after the infusion, with acute respiratory distress syndrome identified as the cause, despite preventive immunosuppression. Enrolment stopped."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The trial establishes that a single-vector CRISPR dose can edit the DMD gene in human muscle, which had not been shown before, while also showing how low the resulting dystrophin levels were and how narrow the safety margin is. Functional changes in the two surviving participants remain exploratory: the cohort was tiny, uncontrolled, and the boys were also on corticosteroids."
+    }
+   ],
+   "links": {
+    "paper": "https://www.cell.com/cell/fulltext/S0092-8674(26)01206-7?rss=yes",
+    "doi": "https://doi.org/10.1016/j.cell.2026.09.059"
+   },
+   "signals": {
+    "venue": "Cell",
+    "tier": "flagship",
+    "press": 1
+   }
+  }
+ ]
+}
