@@ -1,5 +1,57 @@
 [
  {
+  "id": "2026-11-27-n1",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "Euro zone countries pick Spain's Pablo Hernández de Cos to succeed Christine Lagarde as ECB president",
+  "tldr": "Pablo Hernández de Cos, a former Bank of Spain governor, was chosen to lead the European Central Bank from February, with inflation at 4% and a December rate rise widely expected.",
+  "category": "Central Banks & Rates",
+  "byline": "The Globe and Mail, CRBC News"
+ },
+ {
+  "id": "2026-11-27-n2",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "Chinese stocks post their biggest gains in two years after Beijing promises a larger role for state-backed buyers",
+  "tldr": "The CSI 300 rose 4.2% and a chip index jumped a record 19% after China's cabinet said state-backed investors would do more to stabilise a market at 17-month lows.",
+  "category": "Markets",
+  "byline": "Reuters (via WIFC), Oninvest"
+ },
+ {
+  "id": "2026-11-27-n3",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "Trump calls pre-election GDP figures \"fake\" and demands an investigation after a routine upward revision",
+  "tldr": "President Trump alleged, without evidence, that officials deliberately understated third-quarter growth before the midterm elections, after a scheduled revision lifted it from 3.4% to 4.3%.",
+  "category": "Economy & Data",
+  "byline": "Fortune, Bloomberg (via The Spokesman-Review), Fox Business"
+ },
+ {
+  "id": "2026-11-27-n4",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "Fed's Beige Book finds slight to moderate growth in eight districts, with wage gains picking up and costs outpacing prices",
+  "tldr": "The Federal Reserve's regional survey shows a slowly growing economy in which consumers are price sensitive, housing and construction are weakening and wage growth has stepped up to a moderate pace.",
+  "category": "Central Banks & Rates",
+  "byline": "Federal Reserve, Federal Reserve"
+ },
+ {
+  "id": "2611.34234",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "AI, Automation, and Fiscal Pressure",
+  "tldr": "A model calibrated to the EU finds that AI-driven automation can widen budget deficits even as it grows the economy, because income shifts from heavily taxed labor to lightly taxed capital.",
+  "primary_tag": "Public finance",
+  "tags": [
+   "Public finance",
+   "Innovation & technology",
+   "Growth & productivity"
+  ],
+  "byline": "Spencer Bastani, Georg Graetz, Bernat Pla et al.",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-26-n1",
   "date": "2026-11-26",
   "type": "news",

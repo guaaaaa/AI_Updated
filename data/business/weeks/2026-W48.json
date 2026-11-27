@@ -3,12 +3,12 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [
   {
    "title": "Prediction: Dec. 9 Will Be a Huge Day for the Stock Market",
-   "outlets": 29,
+   "outlets": 31,
    "date": "2026-11-22",
    "covered": "2026-11-23-n2"
   },
@@ -44,8 +44,8 @@
   }
  ],
  "featured": {
-  "news": 17,
-  "papers": 4
+  "news": 21,
+  "papers": 5
  },
  "items": [
   {
@@ -173,6 +173,36 @@
    "date": "2026-11-26",
    "type": "paper",
    "title": "Democratizing Venture Capital: Tax Incentives and the Geographic Expansion of Startup Investing"
+  },
+  {
+   "id": "2026-11-27-n1",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "Euro zone countries pick Spain's Pablo Hernández de Cos to succeed Christine Lagarde as ECB president"
+  },
+  {
+   "id": "2026-11-27-n2",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "Chinese stocks post their biggest gains in two years after Beijing promises a larger role for state-backed buyers"
+  },
+  {
+   "id": "2026-11-27-n3",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "Trump calls pre-election GDP figures \"fake\" and demands an investigation after a routine upward revision"
+  },
+  {
+   "id": "2026-11-27-n4",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "Fed's Beige Book finds slight to moderate growth in eight districts, with wage gains picking up and costs outpacing prices"
+  },
+  {
+   "id": "2611.34234",
+   "date": "2026-11-27",
+   "type": "paper",
+   "title": "AI, Automation, and Fiscal Pressure"
   }
  ]
 }

@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 27 Nov 2026 12:18:14 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 12:44:30 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Euro zone countries pick Spain's Pablo Hernández de Cos to succeed Christine Lagarde as ECB president</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2026-11-27-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2026-11-27-n1</guid>
+    <pubDate>Fri, 27 Nov 2026 12:44:30 +0000</pubDate>
+    <category>Business / Central Banks &amp; Rates</category>
+    <description>Pablo Hernández de Cos, a former Bank of Spain governor, was chosen to lead the European Central Bank from February, with inflation at 4% and a December rate rise widely expected. (The Globe and Mail, CRBC News)</description>
+  </item>
+  <item>
+    <title>Chinese stocks post their biggest gains in two years after Beijing promises a larger role for state-backed buyers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2026-11-27-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2026-11-27-n2</guid>
+    <pubDate>Fri, 27 Nov 2026 12:44:30 +0000</pubDate>
+    <category>Business / Markets</category>
+    <description>The CSI 300 rose 4.2% and a chip index jumped a record 19% after China's cabinet said state-backed investors would do more to stabilise a market at 17-month lows. (Reuters (via WIFC), Oninvest)</description>
+  </item>
+  <item>
+    <title>Trump calls pre-election GDP figures "fake" and demands an investigation after a routine upward revision</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2026-11-27-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2026-11-27-n3</guid>
+    <pubDate>Fri, 27 Nov 2026 12:44:30 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>President Trump alleged, without evidence, that officials deliberately understated third-quarter growth before the midterm elections, after a scheduled revision lifted it from 3.4% to 4.3%. (Fortune, Bloomberg (via The Spokesman-Review), Fox Business)</description>
+  </item>
+  <item>
+    <title>Fed's Beige Book finds slight to moderate growth in eight districts, with wage gains picking up and costs outpacing prices</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2026-11-27-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2026-11-27-n4</guid>
+    <pubDate>Fri, 27 Nov 2026 12:44:30 +0000</pubDate>
+    <category>Business / Central Banks &amp; Rates</category>
+    <description>The Federal Reserve's regional survey shows a slowly growing economy in which consumers are price sensitive, housing and construction are weakening and wage growth has stepped up to a moderate pace. (Federal Reserve, Federal Reserve)</description>
+  </item>
+  <item>
+    <title>AI, Automation, and Fiscal Pressure</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2611.34234</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-27/2611.34234</guid>
+    <pubDate>Fri, 27 Nov 2026 12:44:30 +0000</pubDate>
+    <category>Business / Public finance</category>
+    <description>A model calibrated to the EU finds that AI-driven automation can widen budget deficits even as it grows the economy, because income shifts from heavily taxed labor to lightly taxed capital. (Spencer Bastani, Georg Graetz, Bernat Pla et al.)</description>
+  </item>
   <item>
     <title>OpenAI says its GPT-6 models design binding proteins without specialized biology models</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-27/2026-11-27-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Wed, 25 Nov 2026 12:18:03 +0000</pubDate>
     <category>AI / Model Release</category>
     <description>Chinese lab Z.ai released GLM-5.4, its first flagship built as a looped transformer, available only in its own products for now, with open weights promised after safety hardening. (Z.ai developer docs, Simon Willison, MarkTechPost)</description>
-  </item>
-  <item>
-    <title>Anthropic shares fall below their $83 IPO price less than a week after the record listing</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2026-11-25-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2026-11-25-n2</guid>
-    <pubDate>Wed, 25 Nov 2026 12:18:03 +0000</pubDate>
-    <category>AI / Earnings &amp; Markets</category>
-    <description>Anthropic's stock dropped below its $83 offer price on Tuesday, trading near $76 at midday, as a broad technology selloff erased the premium from its Nasdaq debut. (The Globe and Mail, TechCrunch)</description>
-  </item>
-  <item>
-    <title>Can Latent Reasoning Drive LLM Outputs Without a Trace?</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.31015</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.31015</guid>
-    <pubDate>Wed, 25 Nov 2026 12:18:03 +0000</pubDate>
-    <category>AI / Safety &amp; Alignment</category>
-    <description>A fine-tuned model can run a multi-step hidden rule entirely in its activations, then write chain-of-thought that justifies the result without mentioning the rule, and a frontier LLM monitor does not flag it. (Tomer Ashuach, Zorik Gekhman, Avi Caciularu et al. · Technion – Israel Institute of Technology, Google Research)</description>
-  </item>
-  <item>
-    <title>Recursive Collective Intelligence: Emergence on an Equal-Budget Ladder in Multi-Agent LLM Systems</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.32606</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.32606</guid>
-    <pubDate>Wed, 25 Nov 2026 12:18:03 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>Judged at equal token cost, agent teams beat independent agents only when they move facts no single agent holds, and such teams can train their successors on their own verified work. (Lixuan He, Shengqu Cai, Fang Wu et al.)</description>
-  </item>
-  <item>
-    <title>Rewirable Circuits in Transformers with Loom Attention</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.30634</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.30634</guid>
-    <pubDate>Wed, 25 Nov 2026 12:18:03 +0000</pubDate>
-    <category>AI / Architectures</category>
-    <description>Loom attention lets each attention head choose, per token, which earlier heads it reads from, and a 2.8B model built this way matches a 12B Pythia baseline for about 2% extra compute. (Da Xiao, Qingye Meng, Shengping Li et al. · Beijing University of Posts and Telecommunications, ColorfulClouds Technology)</description>
-  </item>
-  <item>
-    <title>Verifiable On-Policy Distillation</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.30325</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-25/2611.30325</guid>
-    <pubDate>Wed, 25 Nov 2026 12:18:03 +0000</pubDate>
-    <category>AI / Post-training</category>
-    <description>VOPD uses the agreement between a verifier and a teacher model on sampled answers to strengthen or reverse the teacher's token-level guidance, giving dense training signal that is tied to checked outcomes. (Juntong Shi, Stefano Ermon, Jure Leskovec et al. · Stanford University, Google DeepMind)</description>
   </item>
 </channel>
 </rss>

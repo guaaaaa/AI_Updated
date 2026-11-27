@@ -1,0 +1,212 @@
+{
+ "date": "2026-11-27",
+ "edition": "weekday",
+ "generated_at": "2026-11-27T12:44:30+00:00",
+ "summary": "Europe picks Pablo Hernández de Cos to lead the ECB, Beijing's pledge of state buying lifts Chinese stocks the most in two years, Trump demands a probe of a routine GDP revision, and the Fed's Beige Book shows wage pressure picking up.",
+ "news": [
+  {
+   "id": "2026-11-27-n1",
+   "story_key": "ecb-president-de-cos-selected-2026-11",
+   "title": "Euro zone countries pick Spain's Pablo Hernández de Cos to succeed Christine Lagarde as ECB president",
+   "category": "Central Banks & Rates",
+   "published": "2026-11-26T09:44:19-05:00",
+   "tldr": "Pablo Hernández de Cos, a former Bank of Spain governor, was chosen to lead the European Central Bank from February, with inflation at 4% and a December rate rise widely expected.",
+   "why_selected": "A leadership change at the central bank that sets interest rates for the whole euro zone, decided while inflation is twice its target.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The European Central Bank (ECB) sets interest rates for the countries that use the euro. Its president, Christine Lagarde, is stepping down early, on February 7. Her succession has been part of months of closed-door negotiations over seats on the ECB's six-person board. The change comes as the bank grapples with a resurgence in inflation driven by the Iran war and with worries that political turmoil in France could spread stress to other euro zone countries."
+    },
+    {
+     "heading": "What happened",
+     "body": "Euro zone countries on Thursday picked Pablo Hernández de Cos, 55, as the next ECB president. He was governor of the Bank of Spain from 2018 to 2024 and is now general manager of the Bank for International Settlements. The way cleared when the Netherlands decided to back him, effectively standing down its own candidate, Klaas Knot. He would be the first Spaniard to lead the bank.\n\nEU leaders also nominated France's Laurence Boone and Germany's Markus Brunnermeier to the board. Boone is likely to oversee market operations, and Brunnermeier is expected to become chief economist when Philip Lane steps down on May 31. The candidates still face a confirmation process, described as largely a formality, before leaders give a final go-ahead at their December summit."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The choice suggests continuity. De Cos is an ally of former ECB president Mario Draghi, which reinforces expectations that the bank would ultimately use its firepower to contain any new sovereign debt crisis. Southern European policymakers are often labelled \"doves\", meaning they favour easier monetary policy, but colleagues and ECB watchers describe him as a pragmatic moderate.\n\nHis room to change course is limited in any case. Policy is decided by the 27-member Governing Council, not by the president alone. And at 4%, inflation is twice the ECB's target, so policymakers appear unanimous that a rate rise in December is inevitable. Markets expect just one more increase after that, given the recent retreat in oil prices and an expected decline in inflation from the spring."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The December EU summit, where the appointments should be finalised; the ECB's December rate decision; and March 18, when de Cos is due to chair his first policy meeting."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/business/article-pablo-hernandez-de-cos-nominated-new-european-central-bank-head/"
+    },
+    {
+     "name": "CRBC News",
+     "url": "https://www.crbcnews.com/articles/pablo-hernandez-de-cos-is-chosen-as-next-ecb-president"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-n2",
+   "story_key": "china-stocks-national-team-rally-2026-11-27",
+   "title": "Chinese stocks post their biggest gains in two years after Beijing promises a larger role for state-backed buyers",
+   "category": "Markets",
+   "published": "2026-11-27T03:37:31-05:00",
+   "tldr": "The CSI 300 rose 4.2% and a chip index jumped a record 19% after China's cabinet said state-backed investors would do more to stabilise a market at 17-month lows.",
+   "why_selected": "A large one-day market move with a clear policy cause, and the latest case of a government stepping in to halt an AI-linked sell-off.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Chinese share prices have been sliding since July on worries about weak consumer demand, a prolonged property downturn and the risk that trade tensions hurt exports. Technology shares fell hardest: the STAR 50 and ChiNext indexes had dropped roughly 50% since July. Traders use the name \"national team\" for a loose collection of state investors that tend to buy shares at times of stress."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday, in the middle of the trading session, China's State Council, the country's cabinet, issued a statement of support for the stock market. State news agency Xinhua reported that Central Huijin, a leading member of the national team, would enhance its role as a quasi-stabilisation fund. Beijing also wants companies to pay higher dividends and buy back more of their own shares.\n\nStocks rose from 17-month lows. The Shanghai Composite closed up 3.7% and the blue-chip CSI 300 gained 4.2%, the biggest daily gains for both since October 2024. The STAR 50 surged 15%, and a sub-index of semiconductor shares rose 19%, its largest one-day gain on record. Hong Kong's Hang Seng rose 2.1%. The yuan also gained against the dollar."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A message from the top of government can put a floor under prices, because investors now expect state funds to buy if selling resumes. It is also another sign of authorities intervening to protect bets on the build-out of AI infrastructure; the move followed a relaxation of margin lending rules meant to reduce selling pressure.\n\nWhether it lasts is a separate question. One strategist noted that the statement contained no funding commitments, stated objectives or timelines. Another drew a line between a turning point in policy resolve and one in market fundamentals, saying a policy-induced bounce must become a recovery driven by fundamentals before it can be called a durable bottom. Even after Friday's gain, the CSI 300 is down 12% since the start of 2026."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether state funds visibly buy, how markets trade after the weekend, and the planned tighter rules on share sales by controlling shareholders of listed companies."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Reuters (via WIFC)",
+     "url": "https://wifc.com/2026/11/27/china-stocks-yuan-rally-after-beijing-vows-stronger-market-support/"
+    },
+    {
+     "name": "Oninvest",
+     "url": "https://en.oninvest.com/article/stocks-in-china-soared-following-beijing-s-unexpected-announcement-of-market-support-measures"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-n3",
+   "story_key": "trump-demands-gdp-revision-investigation-2026-11",
+   "title": "Trump calls pre-election GDP figures \"fake\" and demands an investigation after a routine upward revision",
+   "category": "Economy & Data",
+   "published": "2026-11-26T12:00:00-05:00",
+   "tldr": "President Trump alleged, without evidence, that officials deliberately understated third-quarter growth before the midterm elections, after a scheduled revision lifted it from 3.4% to 4.3%.",
+   "why_selected": "A presidential attack on the independence of the agency that produces GDP, which matters to everyone who relies on official US economic data.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Bureau of Economic Analysis (BEA), part of the Commerce Department, publishes three scheduled estimates of each quarter's gross domestic product: an advance, a second and a third reading. The headline number often moves as more complete data arrive. The advance estimate for the third quarter came out on October 29, five days before the November 3 midterm elections, in which Republicans suffered heavy losses."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Wednesday the BEA raised its estimate of annualised third-quarter growth to 4.3% from 3.4%, saying the 0.9 percentage point change mainly reflected upward revisions to investment and consumer spending.\n\nOn Thursday morning, the Thanksgiving holiday, President Trump wrote on Truth Social that the numbers published before the election \"were FAKE\". He asked why the correct number was not issued before the vote and added: \"I am asking for an immediate investigation of this situation. This is not a small error, this is a massive, and purposeful, error.\" He offered no evidence. Commerce Secretary Howard Lutnick, whose department includes the BEA, posted separately about a revival of American manufacturing."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Businesses, investors and the Federal Reserve all rely on official statistics being produced without political direction. The BEA operates with statistical and methodological independence, a safeguard meant to protect the accuracy and impartiality of its figures. An investigation premised on deliberate manipulation would test that safeguard.\n\nThere is a precedent. Last year Trump fired the head of the Bureau of Labor Statistics after a report showed weak job growth, claiming without evidence that the numbers were \"phony\". That episode led many economists and investors to worry about the credibility of US institutions. Analysts also note that revisions are routine: a UBS economist wrote that lower survey response rates and structural change have made them more common, and that the US practice of annualising growth exaggerates the swings."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether any formal investigation is opened and who would run it, any change in leadership at the BEA, and the third estimate of third-quarter GDP, due on December 23."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Fortune",
+     "url": "https://fortune.com/2026/11/27/trump-blasts-bea-growth-data-midterm-election-lutnick/"
+    },
+    {
+     "name": "Bloomberg (via The Spokesman-Review)",
+     "url": "https://www.spokesman.com/stories/2026/nov/26/trump-says-revised-gdp-numbers-fake-calls-for-inve/"
+    },
+    {
+     "name": "Fox Business",
+     "url": "https://www.foxbusiness.com/politics/trump-demands-probe-pre-election-gdp-data-revision"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-n4",
+   "story_key": "fed-beige-book-november-2026",
+   "title": "Fed's Beige Book finds slight to moderate growth in eight districts, with wage gains picking up and costs outpacing prices",
+   "category": "Central Banks & Rates",
+   "published": "2026-11-25T12:00:00-05:00",
+   "tldr": "The Federal Reserve's regional survey shows a slowly growing economy in which consumers are price sensitive, housing and construction are weakening and wage growth has stepped up to a moderate pace.",
+   "why_selected": "The Fed's own on-the-ground read of the economy, and it shows wage and cost pressures persisting while interest-sensitive sectors weaken.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Beige Book is a Federal Reserve report on economic conditions in the central bank's 12 regional districts, published eight times a year. It is mostly qualitative, built from interviews and questionnaires with businesses, community organisations and other contacts, and it is meant to catch trends that are not yet visible in the data. It is not a commentary on the views of Fed officials."
+    },
+    {
+     "heading": "What happened",
+     "body": "In the November edition, eight of the twelve districts reported growth in the slight to moderate range and four reported no change. Consumer spending was little changed, with households price sensitive and increasingly selective about discretionary purchases. Auto sales softened, which contacts attributed to elevated fuel prices and higher interest rates. Residential real estate weakened as affordability problems suppressed demand, and construction declined amid higher borrowing and building costs. Manufacturing grew modestly, with robust demand in several industrial segments offsetting weakness in consumer-facing and housing-related goods. Port volumes were slightly lower, though imports related to data centres rose.\n\nEmployment rose slightly, with many firms hiring mainly to replace workers who left. Wages and benefits rose moderately, an uptick from the modest increases in the previous report. Prices increased moderately, as in the prior period."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The report describes an economy pulled in two directions. Sectors that depend on borrowing, such as housing, autos and construction, are weakening under higher rates. Yet cost pressures remain broad: contacts cited energy, transportation, healthcare, insurance and tariff-related expenses, and expected both costs and prices to keep rising in the coming months.\n\nTwo details matter for companies. Input costs generally grew faster than selling prices, because competition and price-sensitive customers limited how much firms could pass on, which squeezes profit margins. And the wage pick-up was concentrated in hard-to-fill positions and influenced by cost-of-living adjustments and rising benefit costs. For households, the report noted that high costs for housing and other essentials strained budgets and increased demand for social services."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether wage growth keeps rising in the next Beige Book, whether firms regain the ability to pass on costs, and how much further housing and auto demand weakens."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Federal Reserve",
+     "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
+    },
+    {
+     "name": "Federal Reserve",
+     "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202611.htm"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.34234",
+   "title": "AI, Automation, and Fiscal Pressure",
+   "authors": [
+    "Spencer Bastani",
+    "Georg Graetz",
+    "Bernat Pla",
+    "Oskar N. Skans"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-25T20:00:00-05:00",
+   "primary_tag": "Public finance",
+   "tags": [
+    "Public finance",
+    "Innovation & technology",
+    "Growth & productivity"
+   ],
+   "tldr": "A model calibrated to the EU finds that AI-driven automation can widen budget deficits even as it grows the economy, because income shifts from heavily taxed labor to lightly taxed capital.",
+   "why_selected": "It challenges the common assumption that AI-driven growth will ease pressure on public finances, with concrete estimates for the EU.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Public finances in much of the developed world are under pressure from expanding welfare states and slow growth. Faster growth is widely seen as a relief, and AI is expected to be a key engine of it. But growth that comes from automating tasks also changes who earns the income and how costly public services are to produce. The paper asks whether AI-driven automation raises or lowers the government's primary deficit, meaning the deficit before interest payments."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Earlier work on \"Baumol's cost disease\", the tendency of labor-intensive services such as education and hospitals to become relatively more expensive, studied whether tax-funded services stay affordable, but in models without capital. Work on automation and taxation treats taxes in detail but keeps public spending simple."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors build a two-sector model, a market sector and a tax-funded public-service sector, in which technology lets capital take over more tasks. They calibrate it to 2023 national accounts and tax data for the EU-27 and each member state. Two channels matter. Automation lowers labor's share of income, and labor is taxed more heavily than capital. And public services, being more labor intensive, become relatively costlier as wages rise. In the benchmark scenario, each automated task saves 20% of its cost and automation advances twice as fast in the market sector."
+    },
+    {
+     "heading": "Results",
+     "body": "If public services expand in line with household demand, the EU-27 deficit rises by nearly 1 percentage point of value added while output grows 12%. Almost all of that comes from the eroding tax base; the Baumol effect adds less than 0.1 point. The deficit rises in every such scenario, even when the public sector automates as fast as the market sector. The increase is more than three times as large in Slovakia and Greece as in Luxembourg and the Netherlands. If public services are instead held fixed in real terms, the deficit falls by 1.5 points."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For finance ministries, the message is that AI growth does not pay for itself under tax systems that lean on labor. Public services could still grow 7.3% without added pressure, against 11.3% if they follow demand. The main caveats: automation is assumed, not predicted, and the model leaves out unemployment and debt interest."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.34234"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}
