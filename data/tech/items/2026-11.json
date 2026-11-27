@@ -1,5 +1,41 @@
 [
  {
+  "id": "2026-11-27-n1",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "A 12-year-old flaw in the Linux kernel's NFS file server lets remote attackers gain root without logging in",
+  "tldr": "Security firm OpenSec detailed NFS2ROOT, a critical flaw present in Linux's built-in NFS server since 2014 that lets an unauthenticated attacker who can reach port 2049 take full control.",
+  "category": "Cybersecurity",
+  "byline": "OpenSec, BleepingComputer"
+ },
+ {
+  "id": "2026-11-27-n2",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "Britain's Department for Work and Pensions takes online services offline after a cyber incident",
+  "tldr": "The UK department that pays the state pension and benefits said it took some online services offline as a precaution after a cyber incident, and that regular payments are not affected.",
+  "category": "Cybersecurity",
+  "byline": "The Record, The Register"
+ },
+ {
+  "id": "2026-11-27-n3",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "SAP confirms suspicious activity in its systems after Der Spiegel reports attackers altered its source code on GitHub",
+  "tldr": "SAP says it found suspicious activity and sees no evidence that customer business data was accessed; Der Spiegel reports that attackers stole employees' GitHub tokens and copied and modified source code.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, t-online, Security Affairs"
+ },
+ {
+  "id": "2026-11-27-n4",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "Google will publish the phone numbers and addresses of money-making Android developers worldwide from March 2027",
+  "tldr": "To comply with EU and UK rules, Google will show a phone number and address for every Play Store developer classed as a trader, visible to users everywhere and with no PO boxes allowed.",
+  "category": "Tech Policy & Antitrust",
+  "byline": "The Verge, Engadget"
+ },
+ {
   "id": "2026-11-26-n1",
   "date": "2026-11-26",
   "type": "news",

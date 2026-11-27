@@ -5,8 +5,40 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Thu, 26 Nov 2026 13:55:47 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 11:46:11 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>A 12-year-old flaw in the Linux kernel's NFS file server lets remote attackers gain root without logging in</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n1</guid>
+    <pubDate>Fri, 27 Nov 2026 11:46:11 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Security firm OpenSec detailed NFS2ROOT, a critical flaw present in Linux's built-in NFS server since 2014 that lets an unauthenticated attacker who can reach port 2049 take full control. (OpenSec, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>Britain's Department for Work and Pensions takes online services offline after a cyber incident</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n2</guid>
+    <pubDate>Fri, 27 Nov 2026 11:46:11 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>The UK department that pays the state pension and benefits said it took some online services offline as a precaution after a cyber incident, and that regular payments are not affected. (The Record, The Register)</description>
+  </item>
+  <item>
+    <title>SAP confirms suspicious activity in its systems after Der Spiegel reports attackers altered its source code on GitHub</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n3</guid>
+    <pubDate>Fri, 27 Nov 2026 11:46:11 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>SAP says it found suspicious activity and sees no evidence that customer business data was accessed; Der Spiegel reports that attackers stole employees' GitHub tokens and copied and modified source code. (BleepingComputer, t-online, Security Affairs)</description>
+  </item>
+  <item>
+    <title>Google will publish the phone numbers and addresses of money-making Android developers worldwide from March 2027</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n4</guid>
+    <pubDate>Fri, 27 Nov 2026 11:46:11 +0000</pubDate>
+    <category>Tech / Tech Policy &amp; Antitrust</category>
+    <description>To comply with EU and UK rules, Google will show a phone number and address for every Play Store developer classed as a trader, visible to users everywhere and with no PO boxes allowed. (The Verge, Engadget)</description>
+  </item>
   <item>
     <title>The first generic version of the twice-yearly HIV prevention shot lenacapavir arrives in Zambia, at about $40 a year</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-26/2026-11-26-n1</link>
@@ -454,38 +486,6 @@
     <pubDate>Wed, 25 Nov 2026 11:46:17 +0000</pubDate>
     <category>Tech / Security &amp; privacy</category>
     <description>An automated pipeline using an off-the-shelf language model turned public Linux kernel fixes into 17 verified Android privilege-escalation exploits, while the same fixes took a median of 181 days to reach Pixel phones. (Kareem Shehada, Zhiyun Qian · University of California, Riverside)</description>
-  </item>
-  <item>
-    <title>FDA approves giredestrant after surgery, the first new hormone therapy for early-stage breast cancer in over 20 years</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-24/2026-11-24-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-24/2026-11-24-n1</guid>
-    <pubDate>Tue, 24 Nov 2026 13:58:45 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA approved Roche's daily pill Wilserdly for early breast cancer after surgery, on the strength of a 4,170-patient trial in which it cut recurrence or death by 30% against standard hormone therapy. (FDA, Fierce Pharma)</description>
-  </item>
-  <item>
-    <title>FDA approves ribitol, the first treatment for any form of limb-girdle muscular dystrophy</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-24/2026-11-24-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-24/2026-11-24-n2</guid>
-    <pubDate>Tue, 24 Nov 2026 13:58:45 +0000</pubDate>
-    <category>Biology / Drugs &amp; Approvals</category>
-    <description>The FDA approved Welgemda, a twice-daily oral solution, for limb-girdle muscular dystrophy type 2I/R9 after a 112-patient placebo-controlled trial showed gains in walking speed and lung function at 12 months. (FDA, STAT)</description>
-  </item>
-  <item>
-    <title>Kymera's once-daily eczema pill cuts disease severity by 72% in a 244-patient mid-stage trial, the company reports</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-24/2026-11-24-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-24/2026-11-24-n3</guid>
-    <pubDate>Tue, 24 Nov 2026 13:58:45 +0000</pubDate>
-    <category>Biology / Clinical Research</category>
-    <description>In a randomized phase 2b trial, an oral drug that destroys the immune signalling protein STAT6 reduced eczema severity scores by 72% against 27% on placebo; the results are company-reported, not yet peer-reviewed. (Kymera Therapeutics press release (via BioSpace), New Scientist, Dermatology Times)</description>
-  </item>
-  <item>
-    <title>CMR to Guide Defibrillator Implantation for LVEF</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-24/doi-10-1001-jama-2026-17078</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-24/doi-10-1001-jama-2026-17078</guid>
-    <pubDate>Tue, 24 Nov 2026 13:58:45 +0000</pubDate>
-    <category>Biology / Cardiovascular</category>
-    <description>In a randomized trial of 353 patients with moderately reduced heart function and scarring on cardiac MRI, implanted defibrillators did not significantly reduce sudden cardiac death or serious arrhythmia over 6.3 years. (Joseph B. Selvanayagam, et al. (CMR GUIDE Investigators) · Flinders University and Flinders Medical Centre, Adelaide)</description>
   </item>
 </channel>
 </rss>

@@ -1,0 +1,161 @@
+{
+ "date": "2026-11-27",
+ "edition": "weekday",
+ "generated_at": "2026-11-27T11:46:11+00:00",
+ "summary": "A 12-year-old Linux file-server flaw that gives remote root, Britain's benefits department pulls services offline after a cyber incident, SAP confirms suspicious activity after a reported GitHub breach, and Google will publish Android developers' addresses worldwide.",
+ "news": [
+  {
+   "id": "2026-11-27-n1",
+   "story_key": "nfs2root-linux-nfsd-cve-2026-99362",
+   "title": "A 12-year-old flaw in the Linux kernel's NFS file server lets remote attackers gain root without logging in",
+   "category": "Cybersecurity",
+   "published": "2026-11-25T14:52:00-05:00",
+   "tldr": "Security firm OpenSec detailed NFS2ROOT, a critical flaw present in Linux's built-in NFS server since 2014 that lets an unauthenticated attacker who can reach port 2049 take full control.",
+   "why_selected": "A critical, remotely reachable kernel flaw in a file-sharing service that runs on file servers, NAS appliances and Kubernetes storage nodes, with fixes available now.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "NFS, the Network File System, is a long-established way for Linux machines to share folders over a network. The server side, called nfsd, runs inside the kernel, the core of the operating system, and listens on TCP port 2049. Because it handles network input before it knows who is connecting, a mistake in that code can be reached by anyone able to contact the port."
+    },
+    {
+     "heading": "What happened",
+     "body": "Security firm OpenSec published details on 25 November of a flaw it named NFS2ROOT, tracked as CVE-2026-99362 and rated 9.8, critical. It is a heap buffer overflow, meaning the server can be made to write data past the end of a memory area it reserved. According to OpenSec and BleepingComputer, the weakness entered the kernel with version 3.16 in 2014 and affects hosts serving NFS version 4.1 or 4.2, which OpenSec describes as the default. Jérémy Jean of ANSSI sent a fix to kernel developers in August; OpenSec says its automated analysis tool, Antara, independently flagged the same bug in September and built a working attack that ends with root, the highest level of access. The firm is keeping that exploit private. The CVE was published with fixes on 20 November, in kernels 6.12.117, 6.18.61, 7.3.2 and 7.4-rc1."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "BleepingComputer calls it the latest in a long series of Linux privilege flaws disclosed and patched this year. What sets this one apart is that it needs only a network connection: no account on the machine and no user interaction. OpenSec notes that port 2049 is commonly open on file servers, network-attached storage appliances, build farms and Kubernetes storage nodes, systems that often hold large amounts of shared data. BleepingComputer reports no known exploitation so far. Kernel hardening features do not remove the flaw, OpenSec says, so the remedy is to install the distribution's updated kernel and reboot. Until then, administrators can restrict port 2049 to trusted networks or disable the NFS server where it is not needed."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How quickly Linux distributions and makers of storage appliances ship patched kernels, and whether attacks appear now that the flaw's existence and location are public."
+    }
+   ],
+   "sources": [
+    {
+     "name": "OpenSec",
+     "url": "https://opensec.in/blog/nfs2root-cve-2026-99362"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-n2",
+   "story_key": "uk-dwp-cyber-incident-services-offline",
+   "title": "Britain's Department for Work and Pensions takes online services offline after a cyber incident",
+   "category": "Cybersecurity",
+   "published": "2026-11-27T05:01:00-05:00",
+   "tldr": "The UK department that pays the state pension and benefits said it took some online services offline as a precaution after a cyber incident, and that regular payments are not affected.",
+   "why_selected": "An incident at the UK government's largest department by spending, whose payments millions of people rely on for essential bills.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Department for Work and Pensions (DWP) is the British government's largest department by spending. It administers the state pension and a range of other benefits, and millions of people depend on its payments for essential bills. Earlier this year the government acknowledged that its long-standing approach to its own cybersecurity was flawed and said the public sector faced a \"critically high\" cyber risk."
+    },
+    {
+     "heading": "What happened",
+     "body": "The DWP said on Friday morning that it had identified a cyber incident affecting its systems and had taken some online services offline as a precaution. It did not describe the nature of the incident. In its statement the department said regular benefit and pension payments are not affected and will be paid as normal, and that people who find a service unavailable should try again later. It added that it will never message people to ask for bank details or to click on links. The department is working with the National Cyber Security Centre (NCSC) and the Government Cyber Coordination Centre, which coordinates responses to incidents affecting government, to investigate and restore services. The Register reported that the DWP declined to comment beyond the statement, leaving open which services are down, when they will return and whether any data is thought to be compromised."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The department describes the shutdown as a precaution, and nothing published so far shows that data was stolen. What is known is limited to its statement. The stakes are high because of who relies on the DWP: millions of people depend on its payments, and the department has not said which online services they have lost access to. The warning about bank details points to a second risk, that fraudsters use news of an incident to send convincing fake messages. The timing is also notable. The Record reported that the NCSC said days ago it had seen a marked rise since September in cyberattacks assisted by artificial intelligence, and the government has admitted it cannot meet an earlier target of securing all government organizations against known vulnerabilities and attack methods by 2030."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Which services were affected and when they return, and whether the department reports any access to claimants' personal data."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/uk-department-work-pensions-cyber-incident"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/27/british-social-security-system-techies-yank-services-offline-following-cyber-incident/5312522"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-n3",
+   "story_key": "sap-project-granite-github-incident",
+   "title": "SAP confirms suspicious activity in its systems after Der Spiegel reports attackers altered its source code on GitHub",
+   "category": "Cybersecurity",
+   "published": "2026-11-26T12:00:00-05:00",
+   "tldr": "SAP says it found suspicious activity and sees no evidence that customer business data was accessed; Der Spiegel reports that attackers stole employees' GitHub tokens and copied and modified source code.",
+   "why_selected": "SAP's software runs core business processes at companies worldwide, so reported tampering with its source code raises supply-chain questions even though the company has confirmed little.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "SAP, based in Walldorf, Germany, is one of the world's largest makers of enterprise software, best known for programs that run finance, personnel and sales processes. Like many companies it publishes source code for products and open-source projects on GitHub, a platform where developers store and collaborate on code. Access to GitHub is often granted through authentication tokens, digital keys that stand in for a password."
+    },
+    {
+     "heading": "What happened",
+     "body": "Der Spiegel reported on 26 November, citing an internal memo, that SAP is handling a cyberattack under the code name \"Project Granite\". According to accounts of that report by BleepingComputer, t-online and Security Affairs, company insiders said attackers stole authentication tokens from SAP employees and used them to copy and modify SAP source code on GitHub, possibly with help from AI tools. Employees were reportedly told to keep details confidential. The German news agency dpa, citing its own sources, said staff were asked to check whether they needed to take steps such as changing credentials. SAP confirmed only part of this. In statements to BleepingComputer and dpa it said it had identified suspicious activity and promptly taken measures to protect customers, and that its investigation so far has found no evidence of unauthorized access to customer business data."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The gap between what is reported and what is confirmed is the main point. SAP has not said which systems were involved, whether code was copied or changed, which repositories were affected, or how tokens were obtained. The claim about AI tools comes from unnamed insiders and is unverified. If source code was modified, the concern is a supply-chain attack, in which tampered software reaches customers through normal updates. BleepingComputer asked whether customers who download code from SAP's GitHub repositories should take any action, and SAP declined to say more. Security Affairs notes that Der Spiegel's report says SAP management does not believe it needs to inform customers proactively."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether SAP says which repositories were affected and whether any altered code reached released software, and any guidance from Germany's federal security office, the BSI."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/"
+    },
+    {
+     "name": "t-online",
+     "url": "https://www.t-online.de/digital/aktuelles/id_101548548/sap-meldet-it-vorfall-haben-verdaechtige-aktivitaeten-identifiziert-.html"
+    },
+    {
+     "name": "Security Affairs",
+     "url": "https://securityaffairs.com/204121/data-breach/sap-security-incident-stolen-tokens-raise-supply-chain-concerns.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-n4",
+   "story_key": "google-play-trader-address-disclosure-worldwide",
+   "title": "Google will publish the phone numbers and addresses of money-making Android developers worldwide from March 2027",
+   "category": "Tech Policy & Antitrust",
+   "published": "2026-11-26T12:06:00-05:00",
+   "tldr": "To comply with EU and UK rules, Google will show a phone number and address for every Play Store developer classed as a trader, visible to users everywhere and with no PO boxes allowed.",
+   "why_selected": "A platform rule that affects independent Android developers globally and shows two app stores applying the same European regulation in different ways.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The European Union's Digital Services Act (DSA) is a set of rules for online platforms, and Google says a coming change to its Play Store, the main shop for Android apps, is meant to comply with it. Under the DSA and UK law, a developer who earns money from apps can count as a \"trader\". Google, like Apple, now requires developers to declare whether that label applies to them."
+    },
+    {
+     "heading": "What happened",
+     "body": "Google has told Android developers they must declare by 1 February 2027 whether they are a trader, The Verge and Engadget report. Broadly, Google says the definition applies to those who earn revenue from their apps, especially regularly or at high volume; hobby and non-commercial apps are exempt, as are developers who do not publish in the UK or Europe. From 1 March 2027, a trader's phone number and address will be displayed with their apps, and Google says the details will be public worldwide, not only in Europe. Google does not accept PO boxes for these addresses. Developers who do not comply could have app updates blocked and, ultimately, their apps removed from the Play Store in all regions, according to Engadget. The Verge has asked Google why PO boxes are not permitted and why the details are shared globally."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Many independent developers work from home, so the rule can mean publishing a home address online or paying for a registered agent or similar service that supplies a business address. The Elec, cited by both outlets, reported that some developers are considering renting an office solely to comply, and quoted one as calling the disclosure an invasion of privacy. Apple faces the same regulations but applies them more narrowly: it shows developer addresses only in the relevant European countries and accepts PO boxes if the developer provides a receipt or bill linking the box to their regular address. The contrast suggests the worldwide display is Google's choice and not something the law demands."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Google limits the display to Europe or accepts PO boxes before the 1 February deadline, and how it answers the questions put to it."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Verge",
+     "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu"
+    },
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2329389/google-will-soon-share-android-developers-addresses-publicly/"
+    }
+   ]
+  }
+ ],
+ "papers": []
+}

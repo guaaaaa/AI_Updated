@@ -3,18 +3,18 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [
   {
    "title": "The Best Pura Deals for Cyber Week (2026)",
-   "outlets": 16,
+   "outlets": 22,
    "date": "2026-11-20",
-   "covered": null
+   "covered": "2026-11-25-n1"
   },
   {
    "title": "The FCC has authorized SpaceX to deploy 1 million satellites",
-   "outlets": 9,
+   "outlets": 12,
    "date": "2026-11-25",
    "covered": "2026-11-26-n2"
   },
@@ -28,6 +28,12 @@
    "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
    "outlets": 5,
    "date": "2026-11-23",
+   "covered": null
+  },
+  {
+   "title": "FIFA says hackers accessed ‘limited set of personal and business information’",
+   "outlets": 5,
+   "date": "2026-11-25",
    "covered": null
   },
   {
@@ -47,16 +53,10 @@
    "outlets": 3,
    "date": "2026-11-23",
    "covered": null
-  },
-  {
-   "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
-   "outlets": 3,
-   "date": "2026-11-24",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 15,
+  "news": 19,
   "papers": 3
  },
  "items": [
@@ -167,6 +167,30 @@
    "date": "2026-11-26",
    "type": "paper",
    "title": "Reducing RSA-2048 Factoring Resources Below One Billion Toffolis via LLM-Driven Verifiable Quantum Compilation"
+  },
+  {
+   "id": "2026-11-27-n1",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "A 12-year-old flaw in the Linux kernel's NFS file server lets remote attackers gain root without logging in"
+  },
+  {
+   "id": "2026-11-27-n2",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "Britain's Department for Work and Pensions takes online services offline after a cyber incident"
+  },
+  {
+   "id": "2026-11-27-n3",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "SAP confirms suspicious activity in its systems after Der Spiegel reports attackers altered its source code on GitHub"
+  },
+  {
+   "id": "2026-11-27-n4",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "Google will publish the phone numbers and addresses of money-making Android developers worldwide from March 2027"
   }
  ]
 }
