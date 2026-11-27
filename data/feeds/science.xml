@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/science</link>
   <description>Physics, space, chemistry, materials and Earth science</description>
   <language>en</language>
-  <lastBuildDate>Thu, 26 Nov 2026 13:21:20 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 13:22:30 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/science.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Peatlands drained since 1800 account for about 2.7% of human-caused warming, and the effect could nearly double by 2100</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/2026-11-27-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/2026-11-27-n1</guid>
+    <pubDate>Fri, 27 Nov 2026 13:22:30 +0000</pubDate>
+    <category>Science / Climate &amp; Earth</category>
+    <description>An MIT-led study in Nature estimates that draining about 15% of the world's peatlands has caused roughly 2.7% of human-driven warming, with emissions set to continue for centuries. (MIT News, Ars Technica)</description>
+  </item>
+  <item>
+    <title>MIT team reports signatures of paraparticles, a third kind of particle statistics, in a lattice of superconducting qubits</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/2026-11-27-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/2026-11-27-n2</guid>
+    <pubDate>Fri, 27 Nov 2026 13:22:30 +0000</pubDate>
+    <category>Science / Physics</category>
+    <description>Using 16 superconducting qubits, MIT researchers built excitations that pass three tests for paraparticles, objects that follow neither the boson nor the fermion rulebook. (New Scientist, arXiv)</description>
+  </item>
+  <item>
+    <title>A US judge finds a second planned seabed-mining lease sale, off the Northern Mariana Islands, violated the Endangered Species Act</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/2026-11-27-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/2026-11-27-n3</guid>
+    <pubDate>Fri, 27 Nov 2026 13:22:30 +0000</pubDate>
+    <category>Science / Science Policy &amp; Funding</category>
+    <description>A federal judge ruled that the wildlife review behind a 16 December seabed-mining lease sale off the Northern Mariana Islands ignored the mining the leases could eventually allow. (BBC, Earthjustice)</description>
+  </item>
+  <item>
+    <title>Abrupt surface water decline during 2023–2024 record warming</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/doi-10-1126-science-aei2575</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/doi-10-1126-science-aei2575</guid>
+    <pubDate>Fri, 27 Nov 2026 13:22:30 +0000</pubDate>
+    <category>Science / Climate science</category>
+    <description>River flow and lake and reservoir storage fell together worldwide in 2023 and 2024, the largest drop since 1991, with South America responsible for about 70% of the lost streamflow. (Pedro L. B. Chaffe, Georgia Destouni, Francis H. S. Chiew et al.)</description>
+  </item>
+  <item>
+    <title>Rough fracture zone as a gateway to the 2025 Mw 8.8 Kamchatka earthquake</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/doi-10-1126-science-aef2089</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/doi-10-1126-science-aef2089</guid>
+    <pubDate>Fri, 27 Nov 2026 13:22:30 +0000</pubDate>
+    <category>Science / Earth science</category>
+    <description>The magnitude 8.8 Kamchatka earthquake of 2025 appears to have started in a rough part of the fault, a kind of zone usually thought to stop giant ruptures, before breaking into a smoother one. (Haipeng Luo, Fengzhou Tan, Zhangfeng Ma et al.)</description>
+  </item>
+  <item>
+    <title>Sustainable cement production via a liquid-phase pathway</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/doi-10-1038-s41586-026-11313-w</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-27/doi-10-1038-s41586-026-11313-w</guid>
+    <pubDate>Fri, 27 Nov 2026 13:22:30 +0000</pubDate>
+    <category>Science / Chemistry</category>
+    <description>A plasma process melts cement ingredients and forms clinker in seconds instead of hours, using electricity in place of fossil-fuelled kilns. (Qi Zheng, Haiyan Mao, Chengyao Liang et al.)</description>
+  </item>
   <item>
     <title>Hera's first close-ups show DART left a stadium-sized crater and a tumbling asteroid surrounded by boulders</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-26/2026-11-26-n1</link>
@@ -278,54 +326,6 @@
     <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
     <category>Science / Space &amp; Astronomy</category>
     <description>NASA has retired NICER, the X-ray telescope on the International Space Station, after engineers concluded that a failed internal motor left it unable to track targets. (NASA)</description>
-  </item>
-  <item>
-    <title>Nonlinear cooling and control of a mechanical quantum harmonic oscillator</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aee5380</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aee5380</guid>
-    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>Using the natural non-linearity of laser light acting on one trapped ion, physicists cooled its motion directly into Schrödinger's cat states with two to five components. (Matteo Simoni, Ivan Rojkov, Matteo Mazzanti et al.)</description>
-  </item>
-  <item>
-    <title>Fault-tolerant quantum computing with high-rate symplectic double codes</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aec4142</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-18/doi-10-1126-sciadv-aec4142</guid>
-    <pubDate>Wed, 18 Nov 2026 13:29:00 +0000</pubDate>
-    <category>Science / Quantum physics</category>
-    <description>A compact error-correcting code that stores six logical qubits in 30 physical ones now has a fault-tolerant way to prepare its starting states, tested in noise simulations. (Naoyuki Kanomata and Hayato Goto)</description>
-  </item>
-  <item>
-    <title>The largest US data centres use about 1.8% of the country's electricity, a first facility-by-facility tally finds</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n1</guid>
-    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
-    <category>Science / Climate &amp; Earth</category>
-    <description>A study of 403 hyperscale data centres estimates they used 68 to 99 terawatt-hours in a year, about as much as a mid-sized US state, with 54% of it from fossil fuels. (New Scientist, Ars Technica)</description>
-  </item>
-  <item>
-    <title>Japan's Hayabusa2 abandons its final asteroid target after engine trouble and will fly past a different one in 2028</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/2026-11-17-n2</guid>
-    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
-    <category>Science / Space &amp; Astronomy</category>
-    <description>With its ageing main engines malfunctioning repeatedly, JAXA's Hayabusa2 will skip its planned 2031 arrival at asteroid 1998 KY26 and instead attempt a high-speed flyby of the small asteroid 2015 BM510 in April 2028. (Phys.org (AFP), The Japan Times)</description>
-  </item>
-  <item>
-    <title>Giant elastoresistance in magic-angle twisted bilayer graphene</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-adz0597</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-adz0597</guid>
-    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
-    <category>Science / Condensed matter &amp; materials</category>
-    <description>Stretching magic-angle twisted bilayer graphene by a fraction of a percent changes its electrical resistance up to about 400 times more strongly than the same strain would in an ordinary metal. (Xuetao Ma, Zhaoyu Liu, Jiaqi Cai et al.)</description>
-  </item>
-  <item>
-    <title>Direct monitoring of breaching in deltaic submarine landslides</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-aef8444</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/science/day/2026-11-17/doi-10-1126-science-aef8444</guid>
-    <pubDate>Tue, 17 Nov 2026 13:21:05 +0000</pubDate>
-    <category>Science / Earth science</category>
-    <description>Sonar images taken every second at a Canadian river delta show underwater landslides peeling the seabed back gradually for up to 100 minutes, not collapsing all at once. (Rebecca G. Englert, Matthieu J. B. Cartigny, Megan L. Baker et al. · Durham University)</description>
   </item>
 </channel>
 </rss>

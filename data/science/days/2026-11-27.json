@@ -1,0 +1,293 @@
+{
+ "date": "2026-11-27",
+ "edition": "weekday",
+ "generated_at": "2026-11-27T13:22:30+00:00",
+ "summary": "Drained peatlands get a climate bill, paraparticles appear in a qubit lattice, a second US seabed-mining review is struck down, and papers on vanishing surface water, the Kamchatka earthquake and cement made in seconds.",
+ "news": [
+  {
+   "id": "2026-11-27-n1",
+   "story_key": "peatland-drainage-2-7-percent-warming",
+   "title": "Peatlands drained since 1800 account for about 2.7% of human-caused warming, and the effect could nearly double by 2100",
+   "category": "Climate & Earth",
+   "published": "2026-11-25T12:00:00-05:00",
+   "tldr": "An MIT-led study in Nature estimates that draining about 15% of the world's peatlands has caused roughly 2.7% of human-driven warming, with emissions set to continue for centuries.",
+   "why_selected": "First global estimate of the net climate effect of two centuries of peatland drainage, published in Nature, with a clear and actionable implication for land restoration.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Peatlands, such as bogs and fens, are waterlogged, oxygen-poor ecosystems where partially decayed plant matter piles up as peat. They cover only 3 or 4 percent of the planet's land but hold about 30 percent of its soil carbon. Because the ground is saturated, decay is slow, and part of the carbon that does escape leaves as methane, a potent greenhouse gas. When people dig ditches to drain peat for agriculture or forestry, oxygen reaches the peat. Methane emissions fall, but microbes begin turning the stored carbon into carbon dioxide, and they keep doing so for hundreds of years. The net global effect of these two opposing changes had not been pinned down."
+    },
+    {
+     "heading": "What happened",
+     "body": "A study published in Nature on 25 November, led by MIT doctoral student Jevan Yu with César Terrer, reconstructed the timing and extent of peatland drainage from 1800 to 2020 and combined it with a new dataset of emissions from drained peat, including the drainage ditches, and with models of how gas fluxes change with water-table depth. For 2020 it puts the extra heating of the planet at about 83 milliwatts per square metre from carbon dioxide, offset by about 9 from reduced methane, a net of roughly 73. That is 2.7 percent of the total human-caused change in Earth's energy budget, with a range of 1.8 to 3.6 percent. The drained area is about 0.5 percent of the world's land, or about 15 percent of all peatland. Over half of the carbon dioxide came from Europe, almost a quarter from Southeast Asia and 14 percent from North America."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Unlike a felled forest, drained peat keeps emitting. If water levels simply stayed where they were in 2020, the effect would nearly double, to 138 milliwatts per square metre, by 2100, without any new drainage."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether restoration programmes raise water tables. In the model, moderate rewetting slows the growth and ambitious rewetting brings the effect slightly below its 2020 level. The figures are modelled estimates with error bars, not direct measurements."
+    }
+   ],
+   "sources": [
+    {
+     "name": "MIT News",
+     "url": "https://news.mit.edu/2026/draining-peatlands-leaves-long-warming-legacy-1125"
+    },
+    {
+     "name": "Ars Technica",
+     "url": "https://arstechnica.com/science/2026/11/draining-peatlands-is-responsible-for-a-few-percent-of-our-global-warming/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-n2",
+   "story_key": "mit-paraparticle-statistics-qubit-simulator",
+   "title": "MIT team reports signatures of paraparticles, a third kind of particle statistics, in a lattice of superconducting qubits",
+   "category": "Physics",
+   "published": "2026-11-27T04:00:00-05:00",
+   "tldr": "Using 16 superconducting qubits, MIT researchers built excitations that pass three tests for paraparticles, objects that follow neither the boson nor the fermion rulebook.",
+   "why_selected": "A first experimental realisation of a kind of particle statistics long thought unobservable, one year after the theory that said it could be seen; a preprint, so not yet peer reviewed.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Quantum particles are sorted by what happens when two identical ones swap places and by how many can share one quantum state. Bosons can be swapped at no cost and can crowd into the same state in unlimited numbers. Fermions change their quantum state when swapped, and no two can occupy the same state. In the 1950s theorists described further possibilities, called paraparticles, but it seemed impossible to tell them apart from ordinary bosons and fermions in any experiment. In 2025 Kaden Hazzard of Rice University and Zhiyuan Wang argued mathematically that this need not be so and that paraparticles could show measurable signs."
+    },
+    {
+     "heading": "What happened",
+     "body": "Max Hays, Cora Barrett and colleagues at MIT have now reported such signs in a quantum simulator, a device whose controllable quantum parts are arranged to obey the same equations as the system of interest. They used 16 qubits made of tiny superconducting circuits, laid out in a grid and coupled into pairs like the rungs of a ladder; each rung behaves as a paraparticle. Their preprint, posted on arXiv on 2 November, describes three signatures: a 180-degree phase shift when two paraparticles are exchanged; a collision experiment in which the particles avoid ending up together regardless of their internal state; and a distribution of occupations at thermal equilibrium that matches neither the boson nor the fermion formula. The paraparticle emulated obeys a generalised version of the exclusion principle. Barrett told New Scientist the work took a year of careful control and calibration."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "These are emergent paraparticles: collective behaviour of qubits that follows paraparticle mathematics, not a new elementary particle. Even so, Hazzard said the system's dynamics obey exactly the equations a paraparticle should satisfy, which moves the idea from a mathematical possibility to something that can be built and probed."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Peer review of the preprint comes first. The team plans to study paraparticles that interact with each other and more complicated geometries. One outside physicist noted that even the present experiment may be impossible to reproduce faithfully on a conventional computer."
+    }
+   ],
+   "sources": [
+    {
+     "name": "New Scientist",
+     "url": "https://www.newscientist.com/article/2600979-particles-not-seen-before-have-been-observed-in-a-quantum-simulator/"
+    },
+    {
+     "name": "arXiv",
+     "url": "https://arxiv.org/abs/2611.03908"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-n3",
+   "story_key": "cnmi-deep-sea-lease-sale-esa-ruling",
+   "title": "A US judge finds a second planned seabed-mining lease sale, off the Northern Mariana Islands, violated the Endangered Species Act",
+   "category": "Science Policy & Funding",
+   "published": "2026-11-26T13:22:00-05:00",
+   "tldr": "A federal judge ruled that the wildlife review behind a 16 December seabed-mining lease sale off the Northern Mariana Islands ignored the mining the leases could eventually allow.",
+   "why_selected": "A second ruling against the scientific review underpinning US deep-sea mining leases, weeks before the next sale and after the government went ahead with the first one regardless.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Deep-sea mining targets polymetallic nodules, potato-sized rocks lying more than 4,000 metres down that contain nickel, cobalt and manganese, metals used in electronics and batteries. Collecting them means vacuuming them from the sediment, which also removes the corals, sponges and other organisms that grow on them. The US government wants to open its Pacific seabed to mining to secure critical minerals and counter China's position. Before a lease sale, the National Marine Fisheries Service must assess the effect on species protected by the Endangered Species Act. A federal court recently ruled against the government over a proposed sale off American Samoa; the administration did not recognise the ruling and sold two leases covering 13 million hectares."
+    },
+    {
+     "heading": "What happened",
+     "body": "The BBC reported on 26 November that District Judge Jill Aiko Otake has now reached a similar conclusion about the next sale, off the Northern Mariana Islands and planned for 16 December. She found that the fisheries service and the Commerce Secretary, Howard Lutnick, had failed to consider what could follow once leases were issued. The leases would authorise only preliminary surveying, the ruling explained, but might eventually allow the holder to mine the ocean floor, and the biodiversity assessment used to approve the sale did not address that impact. The case was brought by Our Common Wealth 670, PåganWatch, Conservation Council for Hawaiʻi and the Center for Biological Diversity, represented by Earthjustice. Their suit contested the agency's conclusion that the sale was unlikely to harm species such as humpback whales, giant manta rays and sea turtles. The fisheries service declined to comment."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "As reported, the ruling turns on what the review left out, not on a finding that mining would harm wildlife. Two rulings have now gone against the reviews behind these lease sales, on the ground that a sale cannot be assessed as if the mining it may lead to did not exist. That reasoning could bear on any further sales."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the 16 December sale proceeds, as the American Samoa sale did, and the challenge opponents have promised to that earlier sale."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC",
+     "url": "https://www.bbc.co.uk/news/articles/c6y4jyx2m172o"
+    },
+    {
+     "name": "Earthjustice",
+     "url": "https://earthjustice.org/press/2026/lawsuit-challenges-mariana-islands-deep-sea-mining-lease-sale"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-aei2575",
+   "title": "Abrupt surface water decline during 2023–2024 record warming",
+   "authors": [
+    "Pedro L. B. Chaffe",
+    "Georgia Destouni",
+    "Francis H. S. Chiew",
+    "Alexandra M. Murray",
+    "Edwin H. Sutanudjaja",
+    "James McPhee",
+    "Sulagna Mishra",
+    "Murugesu Sivapalan",
+    "Günter Blöschl"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-26T00:00:00-05:00",
+   "primary_tag": "Climate science",
+   "tags": [
+    "Climate science",
+    "Earth science"
+   ],
+   "tldr": "River flow and lake and reservoir storage fell together worldwide in 2023 and 2024, the largest drop since 1991, with South America responsible for about 70% of the lost streamflow.",
+   "why_selected": "A global, observation-based account in Science of how the record-warm years hit surface water, with a specific ocean-atmosphere mechanism and wide relevance for water security.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Climate theory predicts that warming speeds up the water cycle: more evaporation, heavier rain where it is already wet. What that means for the water actually available on land, in rivers, lakes and reservoirs, is uncertain, and observations of drying rivers and soils in many regions do not fit a simple picture of wet places getting wetter."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Climate science has long predicted an intensified water cycle, with heavier rainfall in wet regions and greater evaporation in dry ones. Real-world observations are more complicated: atmospheric drought, declining river flows and widespread loss of soil moisture suggest that water on land is shrinking in many parts of the world, and its availability is becoming harder to predict."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Yongqiang Zhang and colleagues treated the record heat of 2023 and 2024 as a natural experiment. They combined streamflow observations from 150 major river basins with satellite data on more than 1.2 million water bodies, covering 1991 to 2025, and asked how the two record-warm years compare with everything before. Three phases emerged: pronounced swings from 1991 to 2006, relative stability from 2007 to 2022, then an abrupt break in 2023 and 2024 in which river flow and stored surface water fell at the same time across the globe. They then traced the cause in the atmosphere. El Niño, the periodic warming of the tropical Pacific, normally suppresses rainfall over the Amazon. This time the tropical North Atlantic was unusually warm as well, and the combination produced large-scale sinking air and carried moisture away from northern South America, deepening the drought."
+    },
+    {
+     "heading": "Results",
+     "body": "Global river discharge fell by about 5.7 percent and active storage in lakes and reservoirs by 9.5 percent relative to the 1991 to 2020 average, the largest reduction since 1991. South America accounted for 70.4 ± 4.2 percent of the global streamflow decline; its streamflow dropped 17.8 percent and its surface water storage 16.5 percent, even as some areas saw extreme rainfall and flooding. River flows began to recover in 2025."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The losses were concentrated in a humid region, not a dry one, so abundant rainfall in normal years is no protection. The authors suggest warming could make severe El Niño droughts more likely by intensifying Atlantic warming. The caveat: this is one two-year event in a 35-year record."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aei2575",
+    "doi": "https://doi.org/10.1126/science.aei2575"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aef2089",
+   "title": "Rough fracture zone as a gateway to the 2025 Mw 8.8 Kamchatka earthquake",
+   "authors": [
+    "Haipeng Luo",
+    "Fengzhou Tan",
+    "Zhangfeng Ma",
+    "Kejie Chen",
+    "Jian Zhang",
+    "Xin Wang",
+    "Shiqing Xu",
+    "Matías Carvajal",
+    "Hang Xu",
+    "Sang-Ho Yun",
+    "Ling Chen"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-26T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science"
+   ],
+   "tldr": "The magnitude 8.8 Kamchatka earthquake of 2025 appears to have started in a rough part of the fault, a kind of zone usually thought to stop giant ruptures, before breaking into a smoother one.",
+   "why_selected": "A Science paper on one of the largest instrumentally recorded earthquakes that challenges a working assumption used to judge where great ruptures can begin.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "On 29 July 2025 a magnitude 8.8 earthquake struck off Russia's Kamchatka Peninsula, a subduction zone, where one tectonic plate dives beneath another. It ranks as the sixth-largest earthquake recorded by modern instruments. A central question for any such event is where on the fault it began and why the rupture grew so large."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Faults are not uniform. Some stretches are smooth and strongly locked, storing strain until they slip all at once; others are rough and uneven. The usual finding is that rough segments act as barriers: giant earthquakes tend to end when the rupture runs into one. Rough zones have rarely been reported as places that help a giant earthquake get going."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors argue that the Kamchatka earthquake did the opposite of the textbook case. The paper's abstract describes a rupture in two acts. The first was sluggish: for about 50 seconds the fault slipped only a little, yet it sent out strong, scattered high-frequency seismic waves, consistent with a fault failing in many small, localised patches. The rupture then moved southward into a smoother segment, where the behaviour reversed: very large slip, with less intense high-frequency radiation. To characterise the rough zone, which the paper's title identifies as a fracture zone, the team also analysed four magnitude 7 or larger foreshocks and aftershocks, and found that it contains seismic patches of varying size. A useful picture is damp kindling beside a dry log: the kindling catches unevenly in small bursts, but once the flame reaches the log, the fire takes off."
+    },
+    {
+     "heading": "Results",
+     "body": "The early phase lasted roughly 50 seconds with limited slip. The later phase, in the smoother segment, produced more than 20 metres of slip. The authors interpret the rough zone's behaviour as the result of uneven stress or friction, which favours small, localised failures but can foster a giant rupture when the zone is connected to a smooth, locked neighbour."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Hazard assessments that treat rough fault segments only as barriers may miss a scenario the authors call underrecognised: a rough zone as the gateway to a great earthquake. The caveat is that this rests on one event, and this summary draws on the abstract alone, without the underlying data and methods."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aef2089",
+    "doi": "https://doi.org/10.1126/science.aef2089"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11313-w",
+   "title": "Sustainable cement production via a liquid-phase pathway",
+   "authors": [
+    "Qi Zheng",
+    "Haiyan Mao",
+    "Chengyao Liang",
+    "Xinyu Dou",
+    "Stuart McElhany",
+    "Cruz Carlos",
+    "Xiaohong Zhu",
+    "Jiawei Wang",
+    "Yuqi Li",
+    "Xiwen Chi",
+    "Dilworth Parkinson",
+    "Roya Maboudian",
+    "Peter Ercius",
+    "Robert B. Jackson",
+    "Yi Cui",
+    "Paulo J. M. Monteiro"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Chemistry",
+   "tags": [
+    "Chemistry",
+    "Condensed matter & materials",
+    "Energy science"
+   ],
+   "tldr": "A plasma process melts cement ingredients and forms clinker in seconds instead of hours, using electricity in place of fossil-fuelled kilns.",
+   "why_selected": "Cement is among the largest industrial sources of carbon dioxide; a Nature paper showing clinker formed in seconds by electric heating is a potential step-change in how it is made.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Cement production emits over a billion tonnes of carbon dioxide a year, nearly 8 percent of global emissions. Making it means heating limestone, clay and other ingredients to as much as 1,400 degrees Celsius so that they fuse into pebble-sized lumps called clinker, which is then ground into cement powder. A significant share of the emissions comes from burning fossil fuels to heat the kiln."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The recipe has changed little in two centuries. Conventional kilns run at 30 to 40 percent thermal efficiency, with many intermediate steps that lose heat, and the clinker-forming reactions take hours."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The Nature paper, whose first author is Qi Zheng, replaces the kiln with a microwave carbon plasma. A plasma is an ionised gas that electricity can heat to extreme temperatures. Its listing says the route cuts processing time from hours to seconds, and that reactions in the liquid phase promote the mixing of elements and, on solidification, yield reactive clinker phases. The logic resembles dissolving sugar in hot tea instead of pressing two solids together: ingredients mix far more readily in a liquid, so the more of the material that melts, the faster the clinker-forming reactions can run. Zheng, a postdoctoral researcher at Stanford University working with Yi Cui and Paolo Monteiro, described the plasma approach at an American Chemical Society meeting in August, where it was said to reach above 2,400 degrees Celsius, maximising the amount of liquid formed."
+    },
+    {
+     "heading": "Results",
+     "body": "The figures available come from that meeting release, not from the paper itself. Raw materials fused into clinker within seconds, nearly 100 times faster than conventional production. Nearly 80 percent of the heat went into making cement. The product's mechanical properties were comparable to conventional cement, and electron microscopy showed nanoscale defects that dissolve quickly in water and speed setting. Hydrated cement paste from concrete waste could also be turned back into clinker with compressive strength comparable to commercial cement."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If powered by renewable electricity, the heating step would need no fossil fuel, and the process could recycle old concrete. The caveats are scale and feedstock: the team said in August that testing with industry and with variable waste streams still lies ahead."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11313-w",
+    "doi": "https://doi.org/10.1038/s41586-026-11313-w"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

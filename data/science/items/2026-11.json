@@ -1,5 +1,77 @@
 [
  {
+  "id": "2026-11-27-n1",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "Peatlands drained since 1800 account for about 2.7% of human-caused warming, and the effect could nearly double by 2100",
+  "tldr": "An MIT-led study in Nature estimates that draining about 15% of the world's peatlands has caused roughly 2.7% of human-driven warming, with emissions set to continue for centuries.",
+  "category": "Climate & Earth",
+  "byline": "MIT News, Ars Technica"
+ },
+ {
+  "id": "2026-11-27-n2",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "MIT team reports signatures of paraparticles, a third kind of particle statistics, in a lattice of superconducting qubits",
+  "tldr": "Using 16 superconducting qubits, MIT researchers built excitations that pass three tests for paraparticles, objects that follow neither the boson nor the fermion rulebook.",
+  "category": "Physics",
+  "byline": "New Scientist, arXiv"
+ },
+ {
+  "id": "2026-11-27-n3",
+  "date": "2026-11-27",
+  "type": "news",
+  "title": "A US judge finds a second planned seabed-mining lease sale, off the Northern Mariana Islands, violated the Endangered Species Act",
+  "tldr": "A federal judge ruled that the wildlife review behind a 16 December seabed-mining lease sale off the Northern Mariana Islands ignored the mining the leases could eventually allow.",
+  "category": "Science Policy & Funding",
+  "byline": "BBC, Earthjustice"
+ },
+ {
+  "id": "doi-10-1126-science-aei2575",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "Abrupt surface water decline during 2023–2024 record warming",
+  "tldr": "River flow and lake and reservoir storage fell together worldwide in 2023 and 2024, the largest drop since 1991, with South America responsible for about 70% of the lost streamflow.",
+  "primary_tag": "Climate science",
+  "tags": [
+   "Climate science",
+   "Earth science"
+  ],
+  "byline": "Pedro L. B. Chaffe, Georgia Destouni, Francis H. S. Chiew et al.",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1126-science-aef2089",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "Rough fracture zone as a gateway to the 2025 Mw 8.8 Kamchatka earthquake",
+  "tldr": "The magnitude 8.8 Kamchatka earthquake of 2025 appears to have started in a rough part of the fault, a kind of zone usually thought to stop giant ruptures, before breaking into a smoother one.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science"
+  ],
+  "byline": "Haipeng Luo, Fengzhou Tan, Zhangfeng Ma et al.",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11313-w",
+  "date": "2026-11-27",
+  "type": "paper",
+  "title": "Sustainable cement production via a liquid-phase pathway",
+  "tldr": "A plasma process melts cement ingredients and forms clinker in seconds instead of hours, using electricity in place of fossil-fuelled kilns.",
+  "primary_tag": "Chemistry",
+  "tags": [
+   "Chemistry",
+   "Condensed matter & materials",
+   "Energy science"
+  ],
+  "byline": "Qi Zheng, Haiyan Mao, Chengyao Liang et al.",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
   "id": "2026-11-26-n1",
   "date": "2026-11-26",
   "type": "news",

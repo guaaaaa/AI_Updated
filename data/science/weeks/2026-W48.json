@@ -3,7 +3,7 @@
  "start": "2026-11-23",
  "end": "2026-11-28",
  "complete": false,
- "digests": 4,
+ "digests": 5,
  "papers": [],
  "stories": [
   {
@@ -14,7 +14,7 @@
   },
   {
    "title": "Hera mission images from asteroid crash show stadium-sized crater",
-   "outlets": 5,
+   "outlets": 6,
    "date": "2026-11-25",
    "covered": "2026-11-26-n1"
   },
@@ -26,8 +26,8 @@
   }
  ],
  "featured": {
-  "news": 9,
-  "papers": 10
+  "news": 12,
+  "papers": 13
  },
  "items": [
   {
@@ -143,6 +143,42 @@
    "date": "2026-11-26",
    "type": "paper",
    "title": "Coherent parity oscillations in coupled minimal Kitaev chains"
+  },
+  {
+   "id": "2026-11-27-n1",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "Peatlands drained since 1800 account for about 2.7% of human-caused warming, and the effect could nearly double by 2100"
+  },
+  {
+   "id": "2026-11-27-n2",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "MIT team reports signatures of paraparticles, a third kind of particle statistics, in a lattice of superconducting qubits"
+  },
+  {
+   "id": "2026-11-27-n3",
+   "date": "2026-11-27",
+   "type": "news",
+   "title": "A US judge finds a second planned seabed-mining lease sale, off the Northern Mariana Islands, violated the Endangered Species Act"
+  },
+  {
+   "id": "doi-10-1126-science-aei2575",
+   "date": "2026-11-27",
+   "type": "paper",
+   "title": "Abrupt surface water decline during 2023–2024 record warming"
+  },
+  {
+   "id": "doi-10-1126-science-aef2089",
+   "date": "2026-11-27",
+   "type": "paper",
+   "title": "Rough fracture zone as a gateway to the 2025 Mw 8.8 Kamchatka earthquake"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11313-w",
+   "date": "2026-11-27",
+   "type": "paper",
+   "title": "Sustainable cement production via a liquid-phase pathway"
   }
  ]
 }
