@@ -2,8 +2,8 @@
  "week": "2026-W48",
  "start": "2026-11-23",
  "end": "2026-11-28",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [],
  "stories": [
   {
@@ -38,8 +38,8 @@
   }
  ],
  "featured": {
-  "news": 14,
-  "papers": 14
+  "news": 16,
+  "papers": 16
  },
  "items": [
   {
@@ -209,6 +209,30 @@
    "date": "2026-11-27",
    "type": "paper",
    "title": "In vivo genome-editing therapy for Duchenne muscular dystrophy: Preclinical studies and first-in-human trial"
+  },
+  {
+   "id": "2026-11-28-n1",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "Teeth from two caves in southern China point to Denisovans and an unidentified archaic human lineage"
+  },
+  {
+   "id": "2026-11-28-n2",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "A bat virus related to RSV can enter human cells in the lab, but antibodies from past RSV infection block it"
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11345-2",
+   "date": "2026-11-28",
+   "type": "paper",
+   "title": "Rare-variant genetic architecture of height in over 1.4 million individuals"
+  },
+  {
+   "id": "doi-10-1126-science-aee9284",
+   "date": "2026-11-28",
+   "type": "paper",
+   "title": "Nutritional interventions’ impacts on human milk: Three trials in low-resource settings"
   }
  ]
 }

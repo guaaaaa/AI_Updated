@@ -1,0 +1,248 @@
+{
+ "date": "2026-11-28",
+ "edition": "weekend",
+ "generated_at": "2026-11-28T13:58:02+00:00",
+ "summary": "Enamel proteins put Denisovans and an unidentified archaic human lineage in subtropical southern China, a bat relative of RSV enters human cells in the lab but is blocked by existing antibodies, and two large studies map the rare genetics of height and what maternal supplements do to breast milk.",
+ "news": [
+  {
+   "id": "2026-11-28-n1",
+   "story_key": "guangxi-denisovan-unresolved-homo-teeth-nature",
+   "title": "Teeth from two caves in southern China point to Denisovans and an unidentified archaic human lineage",
+   "category": "Evolution & Ecology",
+   "published": "2026-11-25T12:00:00-05:00",
+   "tldr": "Four fossil teeth from Guangxi caves carry enamel proteins that place a Denisovan-affinity population in subtropical southern China and point to a second archaic human group that matches no known lineage.",
+   "why_selected": "A new branch on the human family tree, read from proteins rather than DNA, in a region where ancient DNA does not survive.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Denisovans are an extinct group of archaic humans, first identified in 2010 from a finger bone in Denisova Cave in Siberia. Fossils assigned to them have since appeared on the Tibetan Plateau and elsewhere in China, almost all in northern and central regions, because in the warm, humid south ancient DNA degrades quickly. Proteins in tooth enamel last far longer, and their sequences differ between human groups."
+    },
+    {
+     "heading": "What happened",
+     "body": "A team led by Song Xing of the Institute of Vertebrate Paleontology and Paleoanthropology (IVPP) of the Chinese Academy of Sciences, with Qiaomei Fu of the IVPP, reported four isolated teeth in Nature on 25 November. Surveys begun in 2015 by the IVPP and the Guangxi Institute of Cultural Relics Protection and Archaeology recovered them in 2021 from two karst caves: two premolars at Chuanshandong in Long'an County, possibly from one individual and at least 100,800 years old, and a premolar and a molar at Longchuandong in Luzhai County, dated to 104,500 and 42,600 years ago. Enamel proteins came from three of the four teeth, all from males. The Longchuandong teeth carry an amino-acid variant already seen in remains attributed to Denisovans, and the molar closely resembles a tooth from Denisova Cave. The Chuanshandong premolars match no established East Asian group: they pair complex Homo erectus-like roots with a more symmetrical crown, and their proteins hold an ancestral variant shared with Homo antecessor and other great apes but absent in Neanderthals, Denisovans and living people."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The Longchuandong teeth are the first evidence of Denisovans in Lingnan, the subtropical belt of southern China, extending a range that already spanned Siberian cold and high-altitude Tibet. The Chuanshandong proteins place that individual as a sister group to the common ancestors of Neanderthals, Denisovans and Homo sapiens - evidence, the authors argue, that at least two non-sapiens populations lived in the region during the Middle and Late Pleistocene. The caveat is the thin record: four teeth, no stone tools, and dating complicated because water appears to have washed the teeth deeper into the caves, leaving the surrounding sediments younger than the fossils."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether further fossils and protein data tie the Chuanshandong lineage to Homo erectus or confirm it as a separate population, and whether other southern Chinese sites yield Denisovan-affinity remains."
+    }
+   ],
+   "sources": [
+    {
+     "name": "Phys.org (CENIEH release)",
+     "url": "https://phys.org/news/2026-11-denisovan-unknown-archaic-human-lineage.html"
+    },
+    {
+     "name": "La Brujula Verde",
+     "url": "https://www.labrujulaverde.com/en/2026/11/the-denisovans-were-not-alone-teeth-found-in-china-belonged-to-another-archaic-human-of-an-unknown-species/"
+    },
+    {
+     "name": "Live Science (via Yahoo News)",
+     "url": "https://www.yahoo.com/news/science/articles/100-000-old-tooth-found-160000591.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-n2",
+   "story_key": "bat-orthopneumovirus-zoonotic-potential-rsv-immunity",
+   "title": "A bat virus related to RSV can enter human cells in the lab, but antibodies from past RSV infection block it",
+   "category": "Microbes & Infectious Disease",
+   "published": "2026-11-27T18:20:00-05:00",
+   "tldr": "A virus found in West African fruit bats and related to RSV entered human cells in laboratory tests, less efficiently than human RSV, and was neutralised by antibodies from people previously exposed to RSV.",
+   "why_selected": "A concrete, hedged answer to a question usually left open when a new animal virus is described: could it infect people, and would our immunity help?",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Respiratory syncytial virus (RSV) causes severe respiratory disease and is responsible for numerous deaths each year. People who have been infected carry antibodies against it afterwards. Surveys of wildlife regularly turn up relatives of human viruses, but a genome sequence alone cannot say whether a virus could spread to people: that depends on whether it can enter human cells, evade the body's first-line defences, and escape existing antibodies."
+    },
+    {
+     "heading": "What happened",
+     "body": "Researchers led by Wendy K. Jo and Jan Felix Drexler at Charite - Universitatsmedizin Berlin, with Thomas Pietschmann and Sibylle Haid at TWINCORE in Hanover, all affiliated with the German Center for Infection Research, characterised an orthopneumovirus found in fruit bats and published the work in Science Advances. The team tested 1,778 bats from Ghana and Benin: the virus itself was detected in 1.4% of them, and antibodies against it in 9%. Genomes from two bats showed the virus is genetically distinct and not closely related to human RSV. In laboratory experiments using a system that carries only part of the bat virus's proteins, the bat virus entered human cells, though less efficiently than human RSV, and could suppress the innate immune response, the body's built-in first line of defence. It was, however, neutralised by antibodies from people previously exposed to RSV, and by a broadly acting monoclonal antibody."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result is a worked example of risk assessment that goes beyond sequencing. It suggests this particular virus is poorly placed to start spreading in people, because widespread RSV immunity would blunt it and an existing broad-spectrum antibody works against it. It also supports developing antivirals and antibodies that cover whole virus families rather than single species, so that a spillover does not start from nothing. The limits are important: these were cell experiments with a partial viral system, not whole-virus infections in animals or people, and low detection rates in two countries say little about the virus's full range."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The team's next step is a reverse-genetics system, which would let them build the complete virus and test how genetic changes affect its behaviour, and whether related bat viruses elsewhere behave the same way."
+    }
+   ],
+   "sources": [
+    {
+     "name": "German Center for Infection Research (DZIF)",
+     "url": "https://www.dzif.de/en/dzif-researchers-study-bat-viruses-better-assess-potential-risks-humans"
+    },
+    {
+     "name": "Phys.org",
+     "url": "https://phys.org/news/2026-11-lab-rsv-human-cells-antibodies.html"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1038-s41586-026-11345-2",
+   "title": "Rare-variant genetic architecture of height in over 1.4 million individuals",
+   "authors": [
+    "Jack A. Kosmicki",
+    "Liron Ganel",
+    "Kyoko Watanabe",
+    "Tyler Joseph",
+    "Sheila M. Gaynor",
+    "Michael D. Kessler",
+    "Joshua D. Backman",
+    "Joelle Mbatchou",
+    "Andrey Ziyatdinov",
+    "David Blair",
+    "Jonas Bovijn",
+    "Niek Verweij",
+    "Kathie Y. Sun",
+    "Chuanyi Zhang",
+    "Suganthi Balasubramanian",
+    "Adrián I. Campos",
+    "Alexander W. Charney",
+    "Olle Melander",
+    "Robert Weinreb",
+    "Jason Torres",
+    "Pablo Kuri-Morales",
+    "Roberto Tapia-Conyer",
+    "Jesús Alegre-Díaz",
+    "Jaime Berumen",
+    "Aris Baras",
+    "Luca A. Lotta",
+    "Jonathan Marchini",
+    "Gonçalo R. Abecasis",
+    "Manuel A. R. Ferreira",
+    "Adam E. Locke"
+   ],
+   "affiliations": [
+    "Regeneron Genetics Center and Regeneron Pharmaceuticals",
+    "with cohorts including UK Biobank",
+    "Geisinger DiscovEHR",
+    "Penn Medicine BioBank",
+    "BioMe",
+    "the Mexico City Prospective Study and All of Us"
+   ],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Genetics & genomics",
+   "tags": [
+    "Genetics & genomics",
+    "Epidemiology"
+   ],
+   "tldr": "Sequencing the protein-coding genes of more than 1.4 million people implicates 207 genes in adult height, including 17 where a single rare disabling variant shifts height by up to 17 cm.",
+   "why_selected": "The model trait of human genetics, finally examined at a scale where very rare variants with very large effects become visible.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Adult height is the textbook complex trait: strongly inherited, shaped by many genes, and easy to measure. Studies of common genetic variants have explained a great deal of the variation, with each variant nudging height by a fraction of a centimetre. What rare variants do has been much harder to see, because a variant carried by one person in a million only shows up in a sample of millions."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Genome-wide association studies catalogued thousands of common height-associated variants. Separately, clinical genetics identified genes whose disruption causes Mendelian growth disorders, where a single variant produces unusual stature as part of a syndrome. The two bodies of knowledge sat largely apart, and earlier rare-variant studies were too small to connect them."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors analysed rare protein-altering variants - those that change or truncate the protein a gene makes - in exome sequences from a discovery set of 826,066 people, then tested the results in a further 624,567. Rather than asking which single letters of DNA associate with height, they aggregated rare variants gene by gene, so that many different disabling mutations in one gene count together. They paid particular attention to singletons: variants seen in only one person in the dataset, at frequencies below 0.0001%, which are least likely to have been filtered by natural selection and so most likely to carry large effects."
+    },
+    {
+     "heading": "Results",
+     "body": "The scan implicated 207 height-associated genes, 98% of which replicated in the independent sample. Among singleton putative loss-of-function variants, 17 genes showed large effects, from -17 cm per allele for ACAN to +11 cm for FBN1 - about 52 times the average effect of a common height-associated variant, and comparable to the extreme 1% tails of a score built from common variants. Several genes, including TET1, DTL and IGF2BP2, had effects as large as established Mendelian height genes despite no documented stature or skeletal growth syndrome, an asymmetry most visible among genes where rare variants increase height."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The findings argue that unusual stature is an under-recognised feature of some Mendelian disorders, and that population-scale sequencing can help classify variants of uncertain significance - a practical problem in clinical genetics. The main caveat is that height is an unusually tractable trait, and effects this large may not generalise to disease."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11345-2",
+    "doi": "https://doi.org/10.1038/s41586-026-11345-2"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1126-science-aee9284",
+   "title": "Nutritional interventions’ impacts on human milk: Three trials in low-resource settings",
+   "authors": [
+    "Trenton Dailey-Chwalibóg",
+    "Andrew Mertens",
+    "Kelsey Fehr",
+    "Chi-Hung Shu",
+    "April Jauhal",
+    "Melissa B. Manus",
+    "Lishi Deng",
+    "Laeticia Celine Toe",
+    "Ameer Muhammad",
+    "Aneela Pasha",
+    "Yasir Shafiq",
+    "Naveed Iqbal",
+    "Waqasuddin Khan",
+    "Muhammad Imran Nisar",
+    "Jo-Anna B. Baxter",
+    "Megan R. Beggs",
+    "Niveda Sundararaman",
+    "Jennifer E. Van Eyk",
+    "Lars Bode",
+    "Alan Hubbard",
+    "Kim A. Lagerborg",
+    "Mohit Jain",
+    "Daniela Hampel",
+    "Setareh Shahab-Ferdows",
+    "Lindsay H. Allen",
+    "Carl Lachat",
+    "Mark D. DeBoer",
+    "Fyezah Jehan",
+    "Nima Aghaeepour",
+    "Liat Shenhav"
+   ],
+   "affiliations": [
+    "University of Manitoba; Ghent University Faculty of Bioscience Engineering; AFRICSante",
+    "Burkina Faso; New York University Grossman School of Medicine"
+   ],
+   "announced": "2026-11-26T00:00:00-05:00",
+   "primary_tag": "Maternal & child health",
+   "tags": [
+    "Maternal & child health",
+    "Epidemiology"
+   ],
+   "tldr": "Pooling three maternal nutrition trials in low-resource settings shows that supplements given to mothers change some breast-milk components, including B vitamins, selenium and fats, while leaving many others unmoved.",
+   "why_selected": "Settles, with trial data rather than observation, which parts of breast milk maternal nutrition can actually change.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Breast milk is often described either as a fixed biological gold standard or as a direct readout of what a mother eats. Both pictures matter practically: if milk composition tracks maternal diet, then feeding undernourished mothers is a way to feed their infants, and if it does not, supplements may make little difference to what reaches the baby."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Most evidence came from observational comparisons between women or between regions, where diet is tangled up with income, infection and infant feeding practice. Milk was also usually measured one nutrient at a time, so there was no way to see which components move together and which are held steady by the lactating breast."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The International Milk Composition (IMiC) Consortium, led by the University of Manitoba, reanalysed milk samples collected inside three maternal nutrition trials in low-resource settings, so that the comparison rests on a planned intervention rather than on what mothers happened to eat. Instead of a short nutrient panel, the team profiled milk broadly, treating it as a regulated biological system and asking which parts of that system respond to a maternal intervention. A companion study used the same samples to look for molecular signatures of how the mammary gland itself is functioning, and how those relate to infant growth."
+    },
+    {
+     "heading": "Results",
+     "body": "More than 1,000 mother-infant pairs from Canada, Burkina Faso, Tanzania and Pakistan contributed nearly 2,000 milk samples, analysed for more than 25,000 compounds across the two studies. Supplementation during lactation clearly raised some components - B vitamins, selenium and triglyceride profiles - while many others did not change. The companion analysis found shared patterns in milk that tracked distinct aspects of mammary gland function, including milk synthesis and secretion, the epithelial barrier and tissue remodelling, and immune and repair activity."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The modifiable components give a target list for designing maternal supplements deliberately, with the aim of improving the micronutrients a breastfed infant receives where maternal undernutrition is common; the unmoved components mark the limits of that approach. The caveat is that changing a milk component is not the same as improving infant health: these analyses measured composition, not clinical outcomes in the children."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aee9284",
+    "doi": "https://doi.org/10.1126/science.aee9284"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship"
+   }
+  }
+ ]
+}

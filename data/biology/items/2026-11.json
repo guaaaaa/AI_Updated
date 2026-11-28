@@ -1,5 +1,53 @@
 [
  {
+  "id": "2026-11-28-n1",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "Teeth from two caves in southern China point to Denisovans and an unidentified archaic human lineage",
+  "tldr": "Four fossil teeth from Guangxi caves carry enamel proteins that place a Denisovan-affinity population in subtropical southern China and point to a second archaic human group that matches no known lineage.",
+  "category": "Evolution & Ecology",
+  "byline": "Phys.org (CENIEH release), La Brujula Verde, Live Science (via Yahoo News)"
+ },
+ {
+  "id": "2026-11-28-n2",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "A bat virus related to RSV can enter human cells in the lab, but antibodies from past RSV infection block it",
+  "tldr": "A virus found in West African fruit bats and related to RSV entered human cells in laboratory tests, less efficiently than human RSV, and was neutralised by antibodies from people previously exposed to RSV.",
+  "category": "Microbes & Infectious Disease",
+  "byline": "German Center for Infection Research (DZIF), Phys.org"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11345-2",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "Rare-variant genetic architecture of height in over 1.4 million individuals",
+  "tldr": "Sequencing the protein-coding genes of more than 1.4 million people implicates 207 genes in adult height, including 17 where a single rare disabling variant shifts height by up to 17 cm.",
+  "primary_tag": "Genetics & genomics",
+  "tags": [
+   "Genetics & genomics",
+   "Epidemiology"
+  ],
+  "byline": "Jack A. Kosmicki, Liron Ganel, Kyoko Watanabe et al. · Regeneron Genetics Center and Regeneron Pharmaceuticals, with cohorts including UK Biobank, Geisinger DiscovEHR",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1126-science-aee9284",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "Nutritional interventions’ impacts on human milk: Three trials in low-resource settings",
+  "tldr": "Pooling three maternal nutrition trials in low-resource settings shows that supplements given to mothers change some breast-milk components, including B vitamins, selenium and fats, while leaving many others unmoved.",
+  "primary_tag": "Maternal & child health",
+  "tags": [
+   "Maternal & child health",
+   "Epidemiology"
+  ],
+  "byline": "Trenton Dailey-Chwalibóg, Andrew Mertens, Kelsey Fehr et al. · University of Manitoba; Ghent University Faculty of Bioscience Engineering; AFRICSante, Burkina Faso; New York University Grossman School of Medicine",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
   "id": "2026-11-27-n1",
   "date": "2026-11-27",
   "type": "news",
