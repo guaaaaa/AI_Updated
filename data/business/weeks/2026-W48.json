@@ -2,13 +2,13 @@
  "week": "2026-W48",
  "start": "2026-11-23",
  "end": "2026-11-28",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [],
  "stories": [
   {
    "title": "Prediction: Dec. 9 Will Be a Huge Day for the Stock Market",
-   "outlets": 31,
+   "outlets": 32,
    "date": "2026-11-22",
    "covered": "2026-11-23-n2"
   },
@@ -44,8 +44,8 @@
   }
  ],
  "featured": {
-  "news": 21,
-  "papers": 5
+  "news": 26,
+  "papers": 6
  },
  "items": [
   {
@@ -203,6 +203,42 @@
    "date": "2026-11-27",
    "type": "paper",
    "title": "AI, Automation, and Fiscal Pressure"
+  },
+  {
+   "id": "2026-11-28-n1",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "Regulators close Indiana's United Fidelity Bank, the largest US bank failure since April 2024"
+  },
+  {
+   "id": "2026-11-28-n2",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "Wall Street closes its best week in more than a year as the S&P 500 gains 5.6%"
+  },
+  {
+   "id": "2026-11-28-n3",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "US goods trade deficit widens to $149.5 billion in October as AI equipment lifts imports to a record"
+  },
+  {
+   "id": "2026-11-28-n4",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "Ottawa unveils a first national forestry strategy backed by $6.5 billion to move the industry beyond lumber and pulp"
+  },
+  {
+   "id": "2026-11-28-n5",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "SpaceX and Elon Musk pledge two shares to every active Trump Account, a gift valued at nearly $18 billion"
+  },
+  {
+   "id": "nber-w36058",
+   "date": "2026-11-28",
+   "type": "paper",
+   "title": "Beyond the First Best: Welfare and OPEC Market Power"
   }
  ]
 }

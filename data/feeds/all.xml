@@ -5,8 +5,56 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Sat, 28 Nov 2026 12:15:48 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 12:46:12 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Regulators close Indiana's United Fidelity Bank, the largest US bank failure since April 2024</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n1</guid>
+    <pubDate>Sat, 28 Nov 2026 12:46:12 +0000</pubDate>
+    <category>Business / Banking &amp; Finance</category>
+    <description>The OCC closed United Fidelity Bank, a $5.9 billion lender based in Evansville, Indiana; First Citizens took over most deposits and assets, and the FDIC expects a $1.83 billion cost. (FDIC, FDIC Failed Bank List, Newsweek)</description>
+  </item>
+  <item>
+    <title>Wall Street closes its best week in more than a year as the S&amp;P 500 gains 5.6%</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n2</guid>
+    <pubDate>Sat, 28 Nov 2026 12:46:12 +0000</pubDate>
+    <category>Business / Markets</category>
+    <description>The S&amp;P 500 rose 1.6% on Friday and 5.6% over a holiday-shortened week, its best since April 2025, one week after falling into a correction. (KSL (AP), Global News (AP))</description>
+  </item>
+  <item>
+    <title>US goods trade deficit widens to $149.5 billion in October as AI equipment lifts imports to a record</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n3</guid>
+    <pubDate>Sat, 28 Nov 2026 12:46:12 +0000</pubDate>
+    <category>Business / Economy &amp; Data</category>
+    <description>The US goods deficit jumped 10.7% to $149.5 billion in October as imports reached a record $365.3 billion, led by capital goods tied to the AI buildout. (US Census Bureau, The Globe and Mail (Reuters))</description>
+  </item>
+  <item>
+    <title>Ottawa unveils a first national forestry strategy backed by $6.5 billion to move the industry beyond lumber and pulp</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n4</guid>
+    <pubDate>Sat, 28 Nov 2026 12:46:12 +0000</pubDate>
+    <category>Business / Trade &amp; Policy</category>
+    <description>Canada's government set out a forestry strategy to 2050 with $6.5 billion for new plants, mill upgrades and wood supply, aiming to cut reliance on lumber, pulp and the US market. (The Globe and Mail, BNN Bloomberg (The Canadian Press))</description>
+  </item>
+  <item>
+    <title>SpaceX and Elon Musk pledge two shares to every active Trump Account, a gift valued at nearly $18 billion</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n5</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/2026-11-28-n5</guid>
+    <pubDate>Sat, 28 Nov 2026 12:46:12 +0000</pubDate>
+    <category>Business / Earnings &amp; Companies</category>
+    <description>SpaceX will issue one new share to every active Trump Account and Elon Musk will match it from his own holdings, a pledge worth nearly $18 billion at Wednesday's share price. (The Globe and Mail (Reuters), Fortune)</description>
+  </item>
+  <item>
+    <title>Beyond the First Best: Welfare and OPEC Market Power</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/nber-w36058</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/business/day/2026-11-28/nber-w36058</guid>
+    <pubDate>Sat, 28 Nov 2026 12:46:12 +0000</pubDate>
+    <category>Business / Industrial organization</category>
+    <description>A new framework for measuring cartel harm puts OPEC's cost to the world since 1970 at $2.2 trillion by the usual method, but about $0.7 trillion once other oil-market distortions are accounted for. (John Asker, Allan Collard-Wexler, Charlotte De Cannière et al.)</description>
+  </item>
   <item>
     <title>OpenAI countersues Apple, alleging trade-secret theft and pressure on suppliers of its planned AI devices</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-28/2026-11-28-n1</link>
@@ -438,54 +486,6 @@
     <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
     <category>AI / Compute &amp; Infrastructure</category>
     <description>The Financial Times reports that Nvidia told server makers to stop shipping to Malaysia, Singapore, Thailand and Indonesia after a US rule made advanced-chip exports to those countries subject to licences. (The Star (Reuters), Al Jazeera)</description>
-  </item>
-  <item>
-    <title>42 state attorneys general move to stop bankrupt Character.AI from auctioning users' private chats</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2026-11-26-n2</guid>
-    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
-    <category>AI / Policy &amp; Legal</category>
-    <description>A bipartisan coalition of 42 attorneys general is intervening in Character.AI's bankruptcy to block a 1 December auction of chat histories from more than 21 million US accounts. (TechCrunch, The Verge)</description>
-  </item>
-  <item>
-    <title>Reinforcement Learning Can Be Recovered From Its Own Rollouts</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33102</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33102</guid>
-    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
-    <category>AI / Reinforcement Learning</category>
-    <description>Plain supervised fine-tuning on the saved rollouts of a reinforcement learning run, in order and without reward labels, reproduces the run's learning curve, and one late batch can recover its final score. (Jiayi Sheng, Jingwen Gu, Guanning Zeng et al. · Carnegie Mellon University, University of Illinois Urbana-Champaign, Harvard University)</description>
-  </item>
-  <item>
-    <title>Mixture-of-Loops Transformer</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.34923</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.34923</guid>
-    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
-    <category>AI / Architectures</category>
-    <description>The Mixture-of-Loops Transformer passes attention keys and values between loops instead of only the residual stream, so a looped model can decode each new token in a single pass. (Lianghui Zhu, Shijie Wang, Xinggang Wang et al. · Huazhong University of Science &amp; Technology, ByteDance Seed, University of Toronto)</description>
-  </item>
-  <item>
-    <title>OmniAct: One Policy, One Million Embodiments</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33158</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.33158</guid>
-    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
-    <category>AI / Robotics</category>
-    <description>OmniAct trains one 400M-parameter manipulation policy on about a million procedurally generated robot arms, feeding it each robot's joint geometry in camera coordinates so it can control bodies it has never seen. (Xiang Fan, Yuheng Wang, Jiayuan Yan et al. · University of Washington, Allen Institute for Artificial Intelligence, University of North Carolina at Chapel Hill)</description>
-  </item>
-  <item>
-    <title>Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32884</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32884</guid>
-    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
-    <category>AI / Agents</category>
-    <description>Agents often answer while their own stated belief still lists several possibilities; rewarding each step against the simulator's exact posterior teaches them to keep gathering evidence until it settles the answer. (Richmond Sin Jing Xuan, Peilin Feng, Wenbin Wang et al. · Nanyang Technological University)</description>
-  </item>
-  <item>
-    <title>ThinkMorph-SSL: Scaling Interleaved Multimodal Reasoning with Pretext Tasks</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32183</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/ai/day/2026-11-26/2611.32183</guid>
-    <pubDate>Thu, 26 Nov 2026 12:17:54 +0000</pubDate>
-    <category>AI / Multimodal</category>
-    <description>ThinkMorph-SSL turns classic self-supervised image tasks such as jigsaw and denoising into practice for models that reason by generating intermediate images, raising accuracy by 11.33 points across twelve benchmarks. (Jiawei Gu, Linjie Li, Yiming Liu et al. · University of Washington, Tsinghua University, Zhejiang University)</description>
   </item>
 </channel>
 </rss>

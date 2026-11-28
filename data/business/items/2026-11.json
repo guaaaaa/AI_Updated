@@ -1,5 +1,64 @@
 [
  {
+  "id": "2026-11-28-n1",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "Regulators close Indiana's United Fidelity Bank, the largest US bank failure since April 2024",
+  "tldr": "The OCC closed United Fidelity Bank, a $5.9 billion lender based in Evansville, Indiana; First Citizens took over most deposits and assets, and the FDIC expects a $1.83 billion cost.",
+  "category": "Banking & Finance",
+  "byline": "FDIC, FDIC Failed Bank List, Newsweek"
+ },
+ {
+  "id": "2026-11-28-n2",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "Wall Street closes its best week in more than a year as the S&P 500 gains 5.6%",
+  "tldr": "The S&P 500 rose 1.6% on Friday and 5.6% over a holiday-shortened week, its best since April 2025, one week after falling into a correction.",
+  "category": "Markets",
+  "byline": "KSL (AP), Global News (AP)"
+ },
+ {
+  "id": "2026-11-28-n3",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "US goods trade deficit widens to $149.5 billion in October as AI equipment lifts imports to a record",
+  "tldr": "The US goods deficit jumped 10.7% to $149.5 billion in October as imports reached a record $365.3 billion, led by capital goods tied to the AI buildout.",
+  "category": "Economy & Data",
+  "byline": "US Census Bureau, The Globe and Mail (Reuters)"
+ },
+ {
+  "id": "2026-11-28-n4",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "Ottawa unveils a first national forestry strategy backed by $6.5 billion to move the industry beyond lumber and pulp",
+  "tldr": "Canada's government set out a forestry strategy to 2050 with $6.5 billion for new plants, mill upgrades and wood supply, aiming to cut reliance on lumber, pulp and the US market.",
+  "category": "Trade & Policy",
+  "byline": "The Globe and Mail, BNN Bloomberg (The Canadian Press)"
+ },
+ {
+  "id": "2026-11-28-n5",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "SpaceX and Elon Musk pledge two shares to every active Trump Account, a gift valued at nearly $18 billion",
+  "tldr": "SpaceX will issue one new share to every active Trump Account and Elon Musk will match it from his own holdings, a pledge worth nearly $18 billion at Wednesday's share price.",
+  "category": "Earnings & Companies",
+  "byline": "The Globe and Mail (Reuters), Fortune"
+ },
+ {
+  "id": "nber-w36058",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "Beyond the First Best: Welfare and OPEC Market Power",
+  "tldr": "A new framework for measuring cartel harm puts OPEC's cost to the world since 1970 at $2.2 trillion by the usual method, but about $0.7 trillion once other oil-market distortions are accounted for.",
+  "primary_tag": "Industrial organization",
+  "tags": [
+   "Industrial organization"
+  ],
+  "byline": "John Asker, Allan Collard-Wexler, Charlotte De Cannière et al.",
+  "hf": null,
+  "venue": "NBER Working Paper"
+ },
+ {
   "id": "2026-11-27-n1",
   "date": "2026-11-27",
   "type": "news",

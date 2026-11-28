@@ -1,0 +1,246 @@
+{
+ "date": "2026-11-28",
+ "edition": "weekend",
+ "generated_at": "2026-11-28T12:46:12+00:00",
+ "summary": "US regulators close United Fidelity Bank in the largest failure since 2024, Wall Street ends its best week in more than a year, AI equipment pushes US goods imports to a record, Ottawa backs a forestry overhaul with $6.5 billion, and SpaceX and Elon Musk pledge shares to children's Trump Accounts.",
+ "news": [
+  {
+   "id": "2026-11-28-n1",
+   "story_key": "united-fidelity-bank-failure-2026-11",
+   "title": "Regulators close Indiana's United Fidelity Bank, the largest US bank failure since April 2024",
+   "category": "Banking & Finance",
+   "published": "2026-11-27T21:09:00-05:00",
+   "tldr": "The OCC closed United Fidelity Bank, a $5.9 billion lender based in Evansville, Indiana; First Citizens took over most deposits and assets, and the FDIC expects a $1.83 billion cost.",
+   "why_selected": "The largest US bank failure in more than two years, with an unusually high estimated cost to the deposit insurance fund relative to the bank's size.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "When a US bank can no longer meet its obligations, its chartering regulator closes it and the Federal Deposit Insurance Corporation (FDIC) takes control as receiver, usually selling the deposits and assets to a healthy bank the same day. The FDIC generally insures deposits up to $250,000 per depositor at each bank."
+    },
+    {
+     "heading": "What happened",
+     "body": "The Office of the Comptroller of the Currency closed United Fidelity Bank, fsb, of Evansville, Indiana, on Friday, 27 November, and named the FDIC receiver. According to Newsweek, the regulator found the bank in an \"unsafe or unsound condition\" and likely to be unable to pay its obligations or meet depositors' demands. The bank held $5.9 billion in assets and $5.4 billion in deposits at the end of September and ran 22 branches in Indiana, Illinois, Florida, Colorado and the US Virgin Islands.\n\nFirst-Citizens Bank & Trust of Raleigh, North Carolina, assumed substantially all deposit accounts and assets, excluding certain brokered deposits, which are funds placed through third-party intermediaries. First Citizens said it took on $4.5 billion in deposits; the deal includes $3.1 billion in loans at an asset discount of $2.6 billion. The FDIC estimates the failure will cost its insurance fund $1.83 billion."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It is the largest US failure since Philadelphia's Republic Bank collapsed in April 2024 with about $6 billion in assets. For customers, little changes: accounts, checks, cards and loan terms carry over, branches reopen under First Citizens, and transferred balances stay available. The striking number is the cost. An estimated loss of $1.83 billion is close to a third of the bank's reported assets, an unusually large share. Neither the bank nor the regulator has explained what went wrong, so it is not yet possible to say whether the problem was specific to this lender or signals stress elsewhere."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Any account from regulators of the cause of the losses, how holders of the excluded brokered deposits are treated, and whether other mid-sized lenders come under pressure when markets reopen."
+    }
+   ],
+   "sources": [
+    {
+     "name": "FDIC",
+     "url": "https://www.fdic.gov/bank-failures/failed-bank-list/united-fidelity-bank-fsb"
+    },
+    {
+     "name": "FDIC Failed Bank List",
+     "url": "https://www.fdic.gov/bank-failures/failed-bank-list"
+    },
+    {
+     "name": "Newsweek",
+     "url": "https://www.newsweek.com/united-fidelity-shut-biggest-bank-failure-years-money-safe-12775404"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-n2",
+   "story_key": "us-stocks-best-week-since-april-2025",
+   "title": "Wall Street closes its best week in more than a year as the S&P 500 gains 5.6%",
+   "category": "Markets",
+   "published": "2026-11-27T16:33:00-05:00",
+   "tldr": "The S&P 500 rose 1.6% on Friday and 5.6% over a holiday-shortened week, its best since April 2025, one week after falling into a correction.",
+   "why_selected": "A large, broad market reversal with a clear cause, one week after the AI-led sell-off pushed US stocks into a correction.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A week earlier, a sell-off in artificial intelligence stocks left the S&P 500 more than 10% below the record high it set in October, the usual definition of a correction. Chipmaker Nvidia was at the centre: the Associated Press describes a sudden resignation and then a surprise reinstatement of its chief executive, Jensen Huang, that rattled the market."
+    },
+    {
+     "heading": "What happened",
+     "body": "US stocks rose on Friday, 27 November, to finish a volatile, holiday-shortened week sharply higher. The S&P 500 gained 1.6%, or 114.71 points, to close at 7,297.49. Its 5.6% rise for the week was the largest since April 2025. The Dow Jones Industrial Average added 591.99 points, or 1.2%, to 50,774.94, and the Nasdaq composite rose 2.3% to 24,129.50.\n\nThe week opened with a huge rally on Monday, the market's best day since April 2025; Tuesday and Wednesday brought smaller swings, and markets were closed on Thursday for Thanksgiving. Technology stocks led on Friday, but four of every five stocks in the S&P 500 rose. Broadcom gained 3.8%, Amazon 4% as holiday shopping began, and Nvidia 0.8%. Anthropic rose 11% to $91.88, and remains above its $83 offering price."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The rebound recovers a good part of the previous week's losses, but it also shows how much the market depends on a few very large AI companies. As the AP notes, Nvidia and Broadcom are valuable enough that their moves can decide the direction of the whole index, and investors remain unsure whether heavy AI spending will produce enough profit to justify share prices. The backdrop is not calm. The yield on the 10-year Treasury note rose to 4.94% from 4.85% on Wednesday, inflation worsened in October, and Brent crude, the international oil benchmark, traded near $90 a barrel. Higher yields raise borrowing costs across the economy and make future corporate profits worth less today."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the gains hold in a full trading week, upcoming US jobs data, and how bond yields react to the outlook for interest rates."
+    }
+   ],
+   "sources": [
+    {
+     "name": "KSL (AP)",
+     "url": "https://www.ksl.com/article/51648348/stocks-jump-to-close-out-an-erratic-week-that-was-also-wall-streets-best-in-more-than-a-year"
+    },
+    {
+     "name": "Global News (AP)",
+     "url": "https://globalnews.ca/news/12169002/wall-street-thanksgiving-week/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-n3",
+   "story_key": "us-advance-goods-trade-october-2026",
+   "title": "US goods trade deficit widens to $149.5 billion in October as AI equipment lifts imports to a record",
+   "category": "Economy & Data",
+   "published": "2026-11-27T08:30:00-05:00",
+   "tldr": "The US goods deficit jumped 10.7% to $149.5 billion in October as imports reached a record $365.3 billion, led by capital goods tied to the AI buildout.",
+   "why_selected": "A major data release that shows how AI investment is flowing into imports and weighing on measured US growth, despite higher tariffs.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "The Census Bureau publishes an early estimate of trade in goods each month, ahead of the full report that adds services. The gap between imports and exports matters for growth figures: imports are subtracted when gross domestic product (GDP) is calculated, so a wider deficit lowers measured growth. The administration has raised tariffs partly to shrink that gap."
+    },
+    {
+     "heading": "What happened",
+     "body": "The advance report released on Friday, 27 November, put the October goods deficit at $149.5 billion, up $14.4 billion, or 10.7%, from $135.1 billion in September. Reuters reports that this is the highest level since March 2025 and well above the $133 billion economists had forecast. Imports rose $21.1 billion, or 6.1%, to $365.3 billion, the highest since the series began in 1992. Exports rose $6.7 billion to $215.8 billion.\n\nCapital goods led the import increase, rising 8.5% in the month and 80% from a year earlier, which Reuters links to the buildout of AI infrastructure. Imports of consumer goods rose 2.6%, industrial supplies 6.0% and motor vehicles and parts 4.1%. Wholesale inventories rose 0.9% and retail inventories 0.8%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The figures show that much of the equipment behind the AI investment boom is made abroad. Company spending on data centres counts as investment in GDP, but the imported hardware is subtracted, so the net boost to US output is smaller than spending totals suggest; Goldman Sachs economists made that point in a note cited by Reuters. Trade already took 3.21 percentage points off third-quarter growth, which still reached a 4.3% annual rate because consumer spending and business investment were strong. Goldman lowered its fourth-quarter growth estimate by 0.2 percentage point to 2.2%. The broad rise in imports also suggests that higher tariffs have not reduced Americans' demand for foreign goods."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The full October trade report with services and country detail, whether inventory building offsets the trade drag in fourth-quarter GDP, and the tariff increases proposed this week on 14 trading partners."
+    }
+   ],
+   "sources": [
+    {
+     "name": "US Census Bureau",
+     "url": "https://www.census.gov/econ/indicators/advance_report.pdf"
+    },
+    {
+     "name": "The Globe and Mail (Reuters)",
+     "url": "https://www.theglobeandmail.com/business/article-us-goods-trade-deficit-widens-again-as-ai-led-imports-hit-record-high/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-n4",
+   "story_key": "canada-forest-sector-strategy-2026-11",
+   "title": "Ottawa unveils a first national forestry strategy backed by $6.5 billion to move the industry beyond lumber and pulp",
+   "category": "Trade & Policy",
+   "published": "2026-11-27T12:48:00-05:00",
+   "tldr": "Canada's government set out a forestry strategy to 2050 with $6.5 billion for new plants, mill upgrades and wood supply, aiming to cut reliance on lumber, pulp and the US market.",
+   "why_selected": "The largest federal investment in a Canadian industry that supports almost 300 communities and faces US duties of nearly 35%.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Forestry is one of Canada's oldest export industries and one of its most troubled. It has lost roughly four in 10 jobs since 2004, and its share of the economy has fallen from about 3% to 1%. Between 2004 and 2024, softwood lumber production fell 42% and pulp production 54%, even as global demand for both grew. Most Canadian softwood lumber sent to the United States now faces combined tariffs and duties of nearly 35%, according to Natural Resources Canada."
+    },
+    {
+     "heading": "What happened",
+     "body": "Natural Resources Minister Tim Hodgson presented what the government calls the country's first strategy for the forestry sector on Friday, 27 November, at Tla'amin Nation in British Columbia. It is backed by a $6.5 billion funding plan, which he described as the largest federal investment in the industry's history. The money is split three ways: $4 billion to build large new manufacturing facilities and transform existing mills, $2 billion to modernize operations and raise productivity, and $500 million to secure affordable supplies of wood fibre. All three programs are expected to open by March 2027.\n\nThe strategy runs to 2050. It aims to shift the industry toward higher-value products such as biofuels, biochemicals and advanced wood-based building materials, and calls for simpler regulation and less dependence on the US."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The sector contributed $29.7 billion to the economy in 2025, employs nearly 200,000 people and is the economic base of almost 300 communities, so its decline is concentrated in rural regions with few alternatives. The government argues that without action, investment will move to the US and elsewhere and mills will be left stranded. The plan is a bet that public money can change what the industry makes rather than only keep existing mills running; a parliamentary secretary said the funds could also help reopen shuttered mills. Open questions include whether buyers exist at scale for the new products."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Program details and eligibility ahead of the March 2027 launch, the first large projects funded, and any movement in the softwood lumber dispute with the US."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/canada/article-ottawa-forest-industry-strategy-hodgson-november-27/"
+    },
+    {
+     "name": "BNN Bloomberg (The Canadian Press)",
+     "url": "https://www.bnnbloomberg.ca/business/politics/2026/11/27/ottawa-plots-ambitious-plan-to-reshape-struggling-forest-industry/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-n5",
+   "story_key": "spacex-musk-trump-accounts-share-gift-2026-11",
+   "title": "SpaceX and Elon Musk pledge two shares to every active Trump Account, a gift valued at nearly $18 billion",
+   "category": "Earnings & Companies",
+   "published": "2026-11-25T12:00:00-05:00",
+   "tldr": "SpaceX will issue one new share to every active Trump Account and Elon Musk will match it from his own holdings, a pledge worth nearly $18 billion at Wednesday's share price.",
+   "why_selected": "The largest pledge yet to the children's investment accounts, partly paid for by SpaceX's other shareholders through newly issued stock.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Trump Accounts are tax-advantaged investment accounts for Americans under 18, created by last year's tax and spending law. The White House said in October that nearly 70 million had been opened, most through automatic enrolment. Treasury rules issued in September allow gifts of stock, and several wealthy donors have made pledges, including $6.25 billion from Michael and Susan Dell."
+    },
+    {
+     "heading": "What happened",
+     "body": "SpaceX said on Wednesday, 25 November, that it will contribute one newly issued share of its Class A common stock to every currently active Trump Account, and that Elon Musk will personally match the number of shares. With the stock closing at $127.44 that day, two shares for each of almost 70 million accounts would be worth nearly $18 billion, or about $255 a child. Musk said the company's shares will be transferred in December and his own in June 2027, when the lockup on his stock expires. On Thursday he wrote that he would donate another share to \"all kids in America every year\", without saying how."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The company's half of the gift is paid for by its shareholders. Issuing roughly 70 million new shares without raising money dilutes existing owners by about 0.5%, Fortune calculates from the 13.58 billion shares outstanding. Musk owns roughly 45% of SpaceX, so he bears close to half of that cost as well. Voting control barely changes, because the new shares carry one vote each against 10 for Class B stock. Families cannot sell quickly: donated stock generally must stay in an account for five years or until the account's childhood growth period ends. The final value is uncertain, since SpaceX has not said how many accounts qualify as active, and parents must first claim their child's account. Reuters notes the announcement came hours after SpaceX won US approval for a very large satellite constellation, at a time of public scrutiny of technology companies."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How many accounts receive shares in December, whether unclaimed accounts qualify, and whether SpaceX explains how an annual gift would work."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Globe and Mail (Reuters)",
+     "url": "https://www.theglobeandmail.com/investing/article-musk-pledges-two-spacex-shares-for-every-us-child-in-18-billion-ai/"
+    },
+    {
+     "name": "Fortune",
+     "url": "https://fortune.com/2026/11/28/elon-musk-spacex-shares-trump-accounts-dilution/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "nber-w36058",
+   "title": "Beyond the First Best: Welfare and OPEC Market Power",
+   "authors": [
+    "John Asker",
+    "Allan Collard-Wexler",
+    "Charlotte De Cannière",
+    "Jan De Loecker"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-28T00:00:00-05:00",
+   "primary_tag": "Industrial organization",
+   "tags": [
+    "Industrial organization"
+   ],
+   "tldr": "A new framework for measuring cartel harm puts OPEC's cost to the world since 1970 at $2.2 trillion by the usual method, but about $0.7 trillion once other oil-market distortions are accounted for.",
+   "why_selected": "A timely estimate of what OPEC's market power costs, released ahead of an OPEC+ policy meeting, with a method that applies to market power in other industries.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "The Organization of the Petroleum Exporting Countries (OPEC) coordinates how much oil its members pump. Economists want to know what that market power costs the world. The difficulty is that the oil market has other distortions besides OPEC, so comparing reality with an ideal market may misstate the cartel's share of the losses."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "The standard calculation, which the authors call the naive approach, compares the actual market with a \"first best\" in which every barrel is produced at the lowest possible cost and nothing else is wrong. Any shortfall is attributed to market power, which is accurate only if it is the sole friction."
+    },
+    {
+     "heading": "Key idea",
+     "body": "John Asker, Allan Collard-Wexler, Charlotte De Cannière and Jan De Loecker propose a framework that measures the welfare effect of a cartel while allowing other distortions to exist alongside it. They define two new measures, a marginal and an infra-marginal welfare loss, and apply them to the global crude oil market using detailed cost and production data, splitting the harm into two parts. Deadweight loss is the value lost because less oil is produced and consumed than would be efficient. Productive inefficiency is the extra cost that arises when expensive oil is pumped while cheaper oil stays in the ground."
+    },
+    {
+     "heading": "Results",
+     "body": "From 1970 onward, the naive approach implies that OPEC generated $2.2 trillion of welfare losses. About two-thirds of that comes from productive inefficiency and one-third from deadweight loss. When the authors remove failures to minimize costs among producers outside the cartel, the loss falls to around $0.7 trillion. They read this as evidence that other frictions in the oil market are complementary to OPEC's market power, meaning the distortions compound each other."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For energy and competition policy, the result is that the cost of a cartel depends heavily on what else is wrong in its market, and that, on the standard calculation, more of OPEC's harm comes from producing oil at needlessly high cost than from producing too little. The main caveat: this is a working paper that has not been peer reviewed, and this summary rests on its abstract."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nber.org/papers/w36058"
+   },
+   "signals": {
+    "venue": "NBER Working Paper",
+    "tier": "major"
+   }
+  }
+ ]
+}
