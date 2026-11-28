@@ -1,5 +1,65 @@
 [
  {
+  "id": "2026-11-28-n1",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "Rivers and lakes worldwide lost water abruptly during the record heat of 2023 and 2024, a Science study finds",
+  "tldr": "River flow fell about 5.7% and active lake and reservoir storage 9.5% below the 1991–2020 average in 2023–24, the sharpest joint drop in a 35-year record.",
+  "category": "Climate & Earth",
+  "byline": "EurekAlert (AAAS), Phys.org (TU Wien), Nature World News"
+ },
+ {
+  "id": "2026-11-28-n2",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "Satellite radar shows Lagos and Alexandria sinking faster than sea-level projections assume, raising flood risk in 20 African coastal cities",
+  "tldr": "A Science Advances study maps land motion under 20 African coastal cities and estimates more than 7 million people and about $180 billion in assets at flood risk by 2050.",
+  "category": "Climate & Earth",
+  "byline": "BBC News, Eurasia Review (Virginia Tech release)"
+ },
+ {
+  "id": "doi-10-1126-science-aei0507",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "Millisecond-scale imaging of fragmented earthquake rupture by near-source fiber-optic sensing",
+  "tldr": "A fibre-optic cable beside a California fault recorded a magnitude 2 earthquake breaking in two adjacent patches 42 milliseconds apart, not as one smooth circular rupture.",
+  "primary_tag": "Earth science",
+  "tags": [
+   "Earth science"
+  ],
+  "byline": "Sangwoo Han, YoungHee Kim, Jaewoo Kim et al. · Rice University; Seoul National University; University of Washington",
+  "hf": null,
+  "venue": "Science"
+ },
+ {
+  "id": "doi-10-1038-s41586-026-11353-2",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "Quantum-enhanced sensing with 500 photons via Fock-space confocal focusing",
+  "tldr": "Two \"lenses\" acting on photon number focus a 500-photon microwave state for sensing and then map the signal back near vacuum, giving a 19 dB gain over the standard quantum limit.",
+  "primary_tag": "Quantum physics",
+  "tags": [
+   "Quantum physics"
+  ],
+  "byline": "Ziyue Hua, Chuanlong Ma, Yilong Zhou et al.",
+  "hf": null,
+  "venue": "Nature"
+ },
+ {
+  "id": "doi-10-1038-s41550-026-03017-y",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "Lower central dark matter densities in nearby galaxies than predicted by simulations",
+  "tldr": "Dynamical models of 136 nearby galaxies find central regions with less dark matter than standard simulations predict, and the affected region grows with galaxy mass.",
+  "primary_tag": "Astrophysics & cosmology",
+  "tags": [
+   "Astrophysics & cosmology"
+  ],
+  "byline": "Yu Lei, Ling Zhu, Meng Yang et al.",
+  "hf": null,
+  "venue": "Nature Astronomy"
+ },
+ {
   "id": "2026-11-27-n1",
   "date": "2026-11-27",
   "type": "news",

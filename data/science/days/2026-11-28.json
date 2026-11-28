@@ -1,0 +1,257 @@
+{
+ "date": "2026-11-28",
+ "edition": "weekend",
+ "generated_at": "2026-11-28T13:21:50+00:00",
+ "summary": "Record heat in 2023–24 drained rivers and lakes worldwide; African coastal cities are sinking faster than sea-level projections assume; a magnitude 2 earthquake breaks in two; a 500-photon quantum sensor; galaxies with less central dark matter than simulated.",
+ "news": [
+  {
+   "id": "2026-11-28-n1",
+   "story_key": "surface-water-decline-2023-2024-record-heat",
+   "title": "Rivers and lakes worldwide lost water abruptly during the record heat of 2023 and 2024, a Science study finds",
+   "category": "Climate & Earth",
+   "published": "2026-11-26T14:00:00-05:00",
+   "tldr": "River flow fell about 5.7% and active lake and reservoir storage 9.5% below the 1991–2020 average in 2023–24, the sharpest joint drop in a 35-year record.",
+   "why_selected": "A global, observation-based result in Science that tests a basic expectation about warming and water, with a physical explanation and a clear caveat.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Climate science has long predicted that warming intensifies the water cycle: heavier rain in wet regions, more evaporation in dry ones. A warmer atmosphere can hold more water vapour, which invites the assumption that there will be more water on the ground. Whether that holds depends on where and when rain falls and how much evaporates again. The years 2023 and 2024, marked by record global heat, offered what the authors call a natural experiment."
+    },
+    {
+     "heading": "What happened",
+     "body": "A study published in Science on 26 November, led by Yongqiang Zhang with Günter Blöschl of TU Wien as senior author, reconstructed surface water from 1991 to 2025. The team combined discharge measurements from 150 major river basins with satellite data on more than 1.2 million lakes and reservoirs, using hydrological models and machine learning. They found three phases: pronounced fluctuations from 1991 to 2006, relative stability from 2007 to 2022, and an abrupt disruption in 2023–2024. In those two years global river discharge was about 5.7% below the 1991–2020 average, and active storage in lakes and reservoirs, the part that rises and falls, was down 9.5%. South America was hit hardest, with streamflow down 17.8% and surface storage down 16.5%.\n\nThe authors trace the drop to El Niño in the Pacific coinciding with an unusually warm tropical North Atlantic. Together they changed the large-scale circulation: air sank more strongly over South America and moisture was drawn away from the region."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The decline reached humid regions, including the Amazon, that are usually assumed to have a buffer against drought. Over the study period precipitation increased over the oceans while decreasing over land, so the water cycle can intensify globally even as rivers and lakes hold less."
+    },
+    {
+     "heading": "What to watch",
+     "body": "This was a shock rather than a lasting collapse: by 2025 global river flows had recovered to their long-term average. The authors suggest that Atlantic warming could make severe El Niño-related droughts more likely even if El Niño itself does not strengthen. That is their interpretation of the analysis, not a settled forecast, and river gauges remain sparse in parts of Africa and Asia."
+    }
+   ],
+   "sources": [
+    {
+     "name": "EurekAlert (AAAS)",
+     "url": "https://www.eurekalert.org/news-releases/1152883"
+    },
+    {
+     "name": "Phys.org (TU Wien)",
+     "url": "https://phys.org/news/2026-11-warmer-atmosphere-doesnt-rivers.html"
+    },
+    {
+     "name": "Nature World News",
+     "url": "https://www.natureworldnews.com/articles/74107/20261127/record-heat-drained-worlds-rivers-lakes-2023-2024-new-science-study-finds.htm"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-n2",
+   "story_key": "african-coastal-cities-subsidence-sentinel-1",
+   "title": "Satellite radar shows Lagos and Alexandria sinking faster than sea-level projections assume, raising flood risk in 20 African coastal cities",
+   "category": "Climate & Earth",
+   "published": "2026-11-27T14:00:00-05:00",
+   "tldr": "A Science Advances study maps land motion under 20 African coastal cities and estimates more than 7 million people and about $180 billion in assets at flood risk by 2050.",
+   "why_selected": "The first city-by-city measurements for a region with few ground monitoring stations, and they change local sea-level projections by a large margin.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "What floods a coastal city is relative sea level: the height of the ocean compared with the land. If the ground sinks, a process called subsidence, the sea rises faster locally than the global average. Global projections include an estimate of land motion, but they do not always capture local processes, and Africa has had too few monitoring stations to check them."
+    },
+    {
+     "heading": "What happened",
+     "body": "A Virginia Tech-led study published on 27 November in Science Advances mapped vertical land motion across 20 African coastal cities using thousands of radar observations from the European Space Agency's Sentinel-1 satellites. Timing the radar echo on revisits every six to 12 days reveals ground movement as small as 1 mm per year.\n\nAlexandria in Egypt and Lagos in Nigeria emerged as hotspots, with median sinking rates of about 6 mm and 5 mm per year. Luanda in Angola also showed substantial subsidence, while cities such as Durban were stable or rose slightly. Compared with the land-motion estimates in the Intergovernmental Panel on Climate Change's Sixth Assessment Report, the measured subsidence raised projected relative sea-level rise in Alexandria by about 36% by 2050 under an intermediate-emissions scenario, and the land area exposed to coastal flooding by about 15%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Across the cities, the study estimates that more than 7 million people, 1 million buildings and about $180 billion in assets could be at flood risk by 2050. In Lagos, about 2.6 million residents already lived in areas potentially exposed to extreme coastal water levels in 2020, rising to more than 4 million by 2100 under the study's assumptions. Senior author Manoochehr Shirzaei notes that much subsidence comes from local causes, including groundwater withdrawal, sediment compaction and urban development, so part of the risk can be reduced by local policy."
+    },
+    {
+     "heading": "What to watch",
+     "body": "The exposure figures are projections that assume current sinking rates continue. The causes proposed for individual cities, such as sediment trapped behind the Aswan Dam for Alexandria and land reclamation in Lagos, are suggestions rather than established findings. The authors say the method could be applied to other poorly monitored coasts, such as the Pacific islands."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BBC News",
+     "url": "https://www.bbc.co.uk/news/articles/cq074p95z4llo"
+    },
+    {
+     "name": "Eurasia Review (Virginia Tech release)",
+     "url": "https://www.eurasiareview.com/27112026-africas-coastal-cities-are-sinking/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "doi-10-1126-science-aei0507",
+   "title": "Millisecond-scale imaging of fragmented earthquake rupture by near-source fiber-optic sensing",
+   "authors": [
+    "Sangwoo Han",
+    "YoungHee Kim",
+    "Jaewoo Kim",
+    "Avinash Nayak",
+    "Fu Yin",
+    "Jonathan Ajo-Franklin"
+   ],
+   "affiliations": [
+    "Rice University; Seoul National University; University of Washington"
+   ],
+   "announced": "2026-11-26T00:00:00-05:00",
+   "primary_tag": "Earth science",
+   "tags": [
+    "Earth science"
+   ],
+   "tldr": "A fibre-optic cable beside a California fault recorded a magnitude 2 earthquake breaking in two adjacent patches 42 milliseconds apart, not as one smooth circular rupture.",
+   "why_selected": "Top of the shortlist; it challenges the standard picture of the most common kind of earthquake with a new kind of measurement.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Tens of thousands of small earthquakes are located every year, against about 16 of magnitude 7 or greater. If small events ruptured the way large ones do, they would be a rich source of data on the rare, dangerous ones. But conventional seismometers cannot resolve how such brief ruptures unfold."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Scientists have assumed that most small earthquakes are simple: a small circular rupture in which the rock slips in a single smooth motion and the crack spreads outward from one point, like a ripple in a pond. Fragmented ruptures, where a fault breaks in several places, had been documented in larger earthquakes, which unfold over longer times."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The team used distributed acoustic sensing, a technique that turns an underground fibre-optic cable into a dense line of seismic sensors by taking measurements at many points along its length. Where a seismometer network is like a few microphones spread across a concert hall, the cable is like a continuous row of them along the stage. The researchers recorded faint signals on a 28-kilometre cable laid alongside a fault in California's Brawley Seismic Zone, then combined those data with conventional seismic recordings and computer models to reconstruct when and where slip occurred on the fault."
+    },
+    {
+     "heading": "Results",
+     "body": "Over three hours the cable recorded 16 small earthquakes, the largest of magnitude 2. That event ruptured in two stages at two separate, adjacent places on the fault, 42 milliseconds apart. The data suggest that the first rupture triggered the second, and that the 16 earthquakes may have been linked. The authors describe this as the first time a fragmented rupture has been recorded in such detail in a small earthquake."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "If small earthquakes share the complex rupture behaviour of large ones, the abundant small events could help explain the rare big ones. The main caveat is the sample: the detailed result rests on one magnitude 2 event on one fault, so how common such ruptures are remains open. This account is based on the authors' university release; the paper itself could not be read."
+    }
+   ],
+   "links": {
+    "paper": "https://www.science.org/doi/abs/10.1126/science.aei0507",
+    "doi": "https://doi.org/10.1126/science.aei0507"
+   },
+   "signals": {
+    "venue": "Science",
+    "tier": "flagship",
+    "press": 1
+   }
+  },
+  {
+   "id": "doi-10-1038-s41586-026-11353-2",
+   "title": "Quantum-enhanced sensing with 500 photons via Fock-space confocal focusing",
+   "authors": [
+    "Ziyue Hua",
+    "Chuanlong Ma",
+    "Yilong Zhou",
+    "Yifang Xu",
+    "Zi-Jie Chen",
+    "Weizhou Cai",
+    "Jiajun Chen",
+    "Lintao Xiao",
+    "Hongwei Huang",
+    "Weiting Wang",
+    "Hekang Li",
+    "Haohua Wang",
+    "Ming Li",
+    "Chang-Ling Zou",
+    "Luyan Sun"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-25T00:00:00-05:00",
+   "primary_tag": "Quantum physics",
+   "tags": [
+    "Quantum physics"
+   ],
+   "tldr": "Two \"lenses\" acting on photon number focus a 500-photon microwave state for sensing and then map the signal back near vacuum, giving a 19 dB gain over the standard quantum limit.",
+   "why_selected": "A Nature paper that removes two bottlenecks of quantum-enhanced sensing at once, with a record gain and an idea that carries over to other platforms.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Quantum metrology promises measurements more precise than the standard quantum limit, the best that ordinary, classical-like states can do. The advantage grows with the number of excitations, N, in the probe. Two obstacles stand in the way: large non-classical probe states are hard to prepare, and the information they pick up is hard to read out."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "In a bosonic mode, such as microwave light in a cavity, states built by photon injection or engineered pulses need circuits that grow more complex with N. Probabilistic methods based on measuring a helper qubit have reached 100 photons, but succeed ever more rarely as N grows."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors exploit a mathematical equivalence between a light beam spreading in space and a quantum state spreading across photon numbers (Fock space). An easily made coherent state resembles a wide collimated beam. A \"Fock-space lens\", a quadratic phase followed by a weak drive, focuses it into a state with a sharply defined photon number. As in a confocal microscope, where a second lens re-collimates light from the focus, a second identical lens converts the state back, and a reverse displacement brings it close to vacuum. A tiny disturbance applied at the focus then shows up as a simple change near the empty state. The number of steps stays constant as N grows."
+    },
+    {
+     "heading": "Results",
+     "body": "According to the preprint, on a superconducting circuit the team prepared focused states with a mean of up to 500 photons, compressing photon-number uncertainty by 21.5 ± 1.1 dB relative to a coherent state (10 dB is a factor of ten). Displacement sensitivity scaled as N to the power −0.416, approaching the Heisenberg scaling of −0.5. The gain over the standard quantum limit was 19.06 ± 0.13 dB, which the authors call a record, with information extraction efficiency above 90%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A constant-depth, deterministic recipe makes large quantum probes more practical, and the authors say it extends to other bosonic platforms. The caveat: this is a laboratory demonstration, not a deployed sensor. Figures here come from the arXiv preprint; the published version may differ."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41586-026-11353-2",
+    "doi": "https://doi.org/10.1038/s41586-026-11353-2"
+   },
+   "signals": {
+    "venue": "Nature",
+    "tier": "flagship"
+   }
+  },
+  {
+   "id": "doi-10-1038-s41550-026-03017-y",
+   "title": "Lower central dark matter densities in nearby galaxies than predicted by simulations",
+   "authors": [
+    "Yu Lei",
+    "Ling Zhu",
+    "Meng Yang",
+    "Giulia Despali",
+    "Zheng Zheng",
+    "Ran Li",
+    "Dandan Xu",
+    "Niankun Yu",
+    "Jesús Falcón-Barroso",
+    "Fangzhou Jiang",
+    "Glenn van de Ven",
+    "Jie Wang"
+   ],
+   "affiliations": [],
+   "announced": "2026-11-26T00:00:00-05:00",
+   "primary_tag": "Astrophysics & cosmology",
+   "tags": [
+    "Astrophysics & cosmology"
+   ],
+   "tldr": "Dynamical models of 136 nearby galaxies find central regions with less dark matter than standard simulations predict, and the affected region grows with galaxy mass.",
+   "why_selected": "A uniform observational benchmark across a wide range of galaxy masses that current cosmological simulations do not match.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "The standard cosmological model, ΛCDM, predicts how dark matter should be distributed inside galaxies, a key test of the model and of galaxy formation theories. A representative sample of galaxies with dark matter measured consistently from the centre to the outskirts has been missing."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "In dwarf galaxies, observed dark matter is less centrally concentrated than simple theory predicts (the core–cusp problem); simulations ease this through energy released by stars. But ordinary matter sinking to the centre can also drag dark matter inward, a process called adiabatic contraction, and widely used simulations such as TNG, EAGLE and SIMBA produce very dense dark matter centres in Milky Way-like and more massive galaxies. Surveys of stellar motions cover only the inner few kiloparsecs, and outer tracers exist only for restricted galaxy types."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Dark matter is weighed through gravity: faster-moving stars and gas imply more mass. The authors combine two cheap, complementary tracers for every galaxy. Maps of stellar motions from the MaNGA and CALIFA surveys pin down the inner regions; a single integrated radio spectrum of hydrogen gas, from the HI-MaNGA survey or the FAST telescope, constrains the outskirts. A dynamical model fits both at once to recover the total gravitational potential, then separates stars from dark matter. Because converting starlight to stellar mass depends on an assumed mix of stellar masses that can shift the answer by a factor of two or more, the model leaves that scaling free."
+    },
+    {
+     "heading": "Results",
+     "body": "The sample is 136 nearby galaxies of diverse types with stellar masses from 10^9 to 10^11.5 solar masses, measured out to 20–50 kiloparsecs. The authors identify central regions with lower dark matter densities than ΛCDM simulations expect. The extent of these regions grows from about 10 kiloparsecs to more than 50 as stellar mass rises from 10^10 to 10^11.5 solar masses."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The authors present the result as a benchmark for future simulations that explore alternative dark matter models and feedback processes, and state that the physical origin remains unclear. This account relies on the preprint's abstract and introduction, so modelling uncertainties could not be assessed here."
+    }
+   ],
+   "links": {
+    "paper": "https://www.nature.com/articles/s41550-026-03017-y",
+    "doi": "https://doi.org/10.1038/s41550-026-03017-y"
+   },
+   "signals": {
+    "venue": "Nature Astronomy",
+    "tier": "major",
+    "press": 1
+   }
+  }
+ ]
+}
