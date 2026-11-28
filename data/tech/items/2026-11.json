@@ -1,5 +1,55 @@
 [
  {
+  "id": "2026-11-28-n1",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "Hackers reportedly breach Cloud One, the US Air Force's main cloud platform, halting updates and migrations",
+  "tldr": "Reuters reports that hackers exploited a software flaw to reach the control layer of Cloud One, the Air Force's cloud platform; the attackers and any data loss are unknown.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, Engadget"
+ },
+ {
+  "id": "2026-11-28-n2",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "An unpatched flaw in the Cacti network monitoring tool is published with working attack code and no warning to developers",
+  "tldr": "A researcher published a working exploit for an unpatched Cacti flaw that lets outsiders run commands when guest access is on; administrators should disable the guest account.",
+  "category": "Cybersecurity",
+  "byline": "BleepingComputer, The Hacker News"
+ },
+ {
+  "id": "2026-11-28-n3",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "FIFA confirms a cyberattack exposed personal and business information after a new group claimed to leak 12 GB of files",
+  "tldr": "FIFA says hackers accessed a \"limited set of personal and business information\"; a group called the Handsome Boy Hacking Club claims it took more than 12 GB of internal files.",
+  "category": "Cybersecurity",
+  "byline": "SecurityWeek (AP), Infosecurity Magazine"
+ },
+ {
+  "id": "2026-11-28-n4",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "Microsoft issues an emergency fix after its November no-restart update crashes some Windows Server 2025 machines",
+  "tldr": "Microsoft released an out-of-band update, KB5138318, for Windows Server 2025 machines that could crash when an IPv6 route expired after November's hotpatch.",
+  "category": "Software & Platforms",
+  "byline": "The Register, BleepingComputer"
+ },
+ {
+  "id": "2611.27174",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "\"More Than You Expect!\": Leakage-Abuse Attacks on Encrypted Vector Search",
+  "tldr": "Encrypted vector databases that reveal which records are returned together leak the records' topics: an attack called SAGE recovers category labels with up to 84.3% accuracy.",
+  "primary_tag": "Security & privacy",
+  "tags": [
+   "Security & privacy"
+  ],
+  "byline": "Yang Zhang, Ruiqi He, Xiaoqian Sun et al. · Nankai University",
+  "hf": null,
+  "venue": "arXiv"
+ },
+ {
   "id": "2026-11-27-n1",
   "date": "2026-11-27",
   "type": "news",

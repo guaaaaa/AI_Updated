@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/</link>
   <description>Daily news and research, explained: every tab</description>
   <language>en</language>
-  <lastBuildDate>Fri, 27 Nov 2026 13:56:15 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 11:47:06 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/all.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Hackers reportedly breach Cloud One, the US Air Force's main cloud platform, halting updates and migrations</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n1</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Reuters reports that hackers exploited a software flaw to reach the control layer of Cloud One, the Air Force's cloud platform; the attackers and any data loss are unknown. (BleepingComputer, Engadget)</description>
+  </item>
+  <item>
+    <title>An unpatched flaw in the Cacti network monitoring tool is published with working attack code and no warning to developers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n2</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>A researcher published a working exploit for an unpatched Cacti flaw that lets outsiders run commands when guest access is on; administrators should disable the guest account. (BleepingComputer, The Hacker News)</description>
+  </item>
+  <item>
+    <title>FIFA confirms a cyberattack exposed personal and business information after a new group claimed to leak 12 GB of files</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n3</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>FIFA says hackers accessed a "limited set of personal and business information"; a group called the Handsome Boy Hacking Club claims it took more than 12 GB of internal files. (SecurityWeek (AP), Infosecurity Magazine)</description>
+  </item>
+  <item>
+    <title>Microsoft issues an emergency fix after its November no-restart update crashes some Windows Server 2025 machines</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n4</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Software &amp; Platforms</category>
+    <description>Microsoft released an out-of-band update, KB5138318, for Windows Server 2025 machines that could crash when an IPv6 route expired after November's hotpatch. (The Register, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>"More Than You Expect!": Leakage-Abuse Attacks on Encrypted Vector Search</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2611.27174</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2611.27174</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Security &amp; privacy</category>
+    <description>Encrypted vector databases that reveal which records are returned together leak the records' topics: an attack called SAGE recovers category labels with up to 84.3% accuracy. (Yang Zhang, Ruiqi He, Xiaoqian Sun et al. · Nankai University)</description>
+  </item>
   <item>
     <title>Health Canada warns of a very rare risk of sudden vision loss with semaglutide drugs</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-27/2026-11-27-n1</link>
@@ -446,46 +486,6 @@
     <pubDate>Wed, 25 Nov 2026 13:54:24 +0000</pubDate>
     <category>Biology / Drugs &amp; Approvals</category>
     <description>The FDA approved Cogent's Ekitna (bezuclastinib) with sunitinib for advanced gastrointestinal stromal tumours after imatinib; in a phase 3 trial the pair held the cancer in check for a median 16.5 months versus 9.2. (Cogent Biosciences (GlobeNewswire release, via WBOC), Pharmaceutical Technology)</description>
-  </item>
-  <item>
-    <title>England records 5,258 heat-associated deaths in 2026, the most since monitoring began</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/2026-11-25-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/2026-11-25-n2</guid>
-    <pubDate>Wed, 25 Nov 2026 13:54:24 +0000</pubDate>
-    <category>Biology / Public Health</category>
-    <description>The UK Health Security Agency estimates 5,258 deaths in England were associated with heat between May and September 2026, far above the previous record of 2,985 in 2022. (The Guardian, BBC)</description>
-  </item>
-  <item>
-    <title>Dolphins with larger, more predictable social groups live longer, a 40-year study in Shark Bay finds</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/2026-11-25-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/2026-11-25-n3</guid>
-    <pubDate>Wed, 25 Nov 2026 13:54:24 +0000</pubDate>
-    <category>Biology / Evolution &amp; Ecology</category>
-    <description>Four decades of observations of about 400 wild bottlenose dolphins show that animals that are more sociable and more consistent in the group sizes they keep tend to live longer. (PLOS Biology, University of Queensland, The Guardian)</description>
-  </item>
-  <item>
-    <title>Intensive Blood-Pressure Lowering in Patients with Type 2 Diabetes</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/doi-10-1056-nejmoa2612922</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/doi-10-1056-nejmoa2612922</guid>
-    <pubDate>Wed, 25 Nov 2026 13:54:24 +0000</pubDate>
-    <category>Biology / Cardiovascular</category>
-    <description>In 9,476 Brazilians with type 2 diabetes, aiming for systolic blood pressure below 120 instead of below 140 mm Hg did not significantly cut cardiovascular events, and kidney-function declines were more frequent. (Karla Santo Eduardo Martins Gisele S. Silva Patricia O. Guimarães Caio A.M. Tavares João B. Andrade Frederico Monfardini Josué Nieri Silvia R.L. Assis João S. Felício Fábio S. Silveira Marcos S. Silveira Audes D.M. Feitosa Miguel N. Hissa Dario C. Sobral-Filho José F. Vilela-Martin Elizabeth E.S. Cestario Juan C. Yugar-Toledo Marcelo C. Batista Nelson Rassi Marco A.M. Gomes Ricardo R. Bergo Bruno Geloneze José G. Mill Lilia Nigro-Maia Márcio G. Sousa Mauro E. Hernandes Luiz Turatti Andrea A. Brandão Weimar S. Barroso Andrei C. Sposito Luciano F. Drager Luiz A. Bortolotto Marcelo Franken Pedro A. Lemos Raul D. Santos Sandra C. Fuchs Anthony Rodgers Paul K. Whelton Flavio D. Fuchs and Otavio Berwangerthe OPTIMAL-DIABETES Trial Investigators* · Einstein Hospital Israelita, São Paulo; The George Institute for Global Health, Imperial College London)</description>
-  </item>
-  <item>
-    <title>A shared meaning component across languages in the human brain</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/doi-10-1038-s41593-026-02523-6</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/doi-10-1038-s41593-026-02523-6</guid>
-    <pubDate>Wed, 25 Nov 2026 13:54:24 +0000</pubDate>
-    <category>Biology / Neuroscience</category>
-    <description>Models trained to predict brain responses to one language also predict responses to languages they never saw, across speakers of 21 languages, pointing to a shared representation of meaning. (Andrea Gregor de Varda, Saima Malik-Moraleda, Greta Tuckute et al. · McGovern Institute for Brain Research and Department of Brain and Cognitive Sciences, MIT)</description>
-  </item>
-  <item>
-    <title>Architecture of the poxvirus early-transcription machinery and portal complex</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/doi-10-1038-s41586-026-11458-8</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/biology/day/2026-11-25/doi-10-1038-s41586-026-11458-8</guid>
-    <pubDate>Wed, 25 Nov 2026 13:54:24 +0000</pubDate>
-    <category>Biology / Microbiology</category>
-    <description>Imaging of intact vaccinia virus cores shows the virus's gene-copying enzymes parked in pairs beside the genome, next to a channel through the core wall suited to exporting RNA. (Benoît Arragain, Lukas W. Bauer, Victor-Valentin Hodirnau et al. · Institute of Science and Technology Austria (ISTA))</description>
   </item>
 </channel>
 </rss>

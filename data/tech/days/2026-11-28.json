@@ -1,0 +1,209 @@
+{
+ "date": "2026-11-28",
+ "edition": "weekend",
+ "generated_at": "2026-11-28T11:47:06+00:00",
+ "summary": "Hackers reportedly reach the US Air Force's main cloud platform, an unpatched flaw in the Cacti monitoring tool is published with working attack code, FIFA confirms a breach, and Microsoft repairs a Windows Server update that crashed servers.",
+ "news": [
+  {
+   "id": "2026-11-28-n1",
+   "story_key": "us-air-force-cloud-one-breach",
+   "title": "Hackers reportedly breach Cloud One, the US Air Force's main cloud platform, halting updates and migrations",
+   "category": "Cybersecurity",
+   "published": "2026-11-27T06:01:00-05:00",
+   "tldr": "Reuters reports that hackers exploited a software flaw to reach the control layer of Cloud One, the Air Force's cloud platform; the attackers and any data loss are unknown.",
+   "why_selected": "A reported intrusion into the platform that hosts US military logistics and personnel applications, the latest in a run of reported federal breaches.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Cloud One is the US Air Force's enterprise cloud platform. Launched in 2017, it lets Department of Defense organizations host applications for military operations, personnel management, logistics and maintenance. According to Engadget, it runs on Amazon Web Services, Google Cloud, Oracle Cloud Infrastructure and Microsoft Azure, and hosts systems ranging from payroll to the Theater Integrated Combat Munitions System, which tracks bombs and missiles across more than 200 Air Force locations."
+    },
+    {
+     "heading": "What happened",
+     "body": "Reuters reported on Friday that hackers had breached Cloud One. According to its sources, the intrusion was discovered within the past month, during upgrade work on the platform. One person familiar with the matter said the attackers exploited an unidentified software vulnerability to reach the control plane, the management layer that governs everything running on a cloud platform, and compared that access to a universal remote that could in principle show the status of aircraft or the movement of spare parts. It is not known whether the attackers did so.\n\nThe discovery put projects on hold, including an effort to move more mission applications to Cloud One. Some users' administrator rights were reportedly revoked, and updates to applications already on the platform were prohibited. US Cyber Command has reportedly been brought in to assess the impact. The Air Force said it does not comment on the security or operational status of specific systems and that it continuously takes measures to protect them."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "A control plane is a high-value target because it sits above every application on the platform. Even without confirmed data theft, the response has a cost: with updates frozen, staff cannot apply fixes to running applications. The report follows three other federal incidents covered in the past week, at the FBI's National Crime Information Center, at an intelligence analysis system used by the CIA, and at the Treasury's FinCEN. BleepingComputer notes that it is unclear whether any of these breaches are connected."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether the Air Force or Cyber Command confirms the breach, identifies the attackers, or says data was taken, and how long the freeze on updates and migrations lasts."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/"
+    },
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2329586/hackers-reportedly-infiltrated-the-air-force-cloud-systems/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-n2",
+   "story_key": "cacti-4http2shell-zero-day",
+   "title": "An unpatched flaw in the Cacti network monitoring tool is published with working attack code and no warning to developers",
+   "category": "Cybersecurity",
+   "published": "2026-11-27T00:48:00-05:00",
+   "tldr": "A researcher published a working exploit for an unpatched Cacti flaw that lets outsiders run commands when guest access is on; administrators should disable the guest account.",
+   "why_selected": "A zero-day with public attack code in a widely deployed monitoring tool that stores credentials for other network devices, with no patch available.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Cacti is an open-source tool that monitors and graphs the performance of servers, routers, switches, firewalls and other network equipment. To collect its data it often stores credentials and connection details for the devices it watches, so a compromised Cacti server can become a stepping stone into the rest of a network. A zero-day is a flaw made public or exploited before the software's maintainers have a fix."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thanksgiving Day, a researcher using the alias ek0ms savi0r published a technical write-up, a proof-of-concept exploit and a demonstration video for a Cacti flaw, tracked as 4HTTP2SHELL. The researcher says it leads from an unauthenticated web session to running commands on the server in four requests. In a post announcing the release, the researcher said the flaw had not been reported to the Cacti project first.\n\nThe problem stems from weak input validation in display settings available to guest users, which allows database commands to be injected and, through them, the commands that Cacti's data collector runs to be changed. The attack needs no valid credentials, but it works only if the guest account is enabled; The Hacker News notes that the guest account is disabled by default. The exploit was tested against Cacti Core 1.2.31, the latest version, and the flaw has no CVE identifier yet. The security firm watchTowr says the access gained depends on the account that runs Cacti, which in many deployments is a low-privileged web server account, not root."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Publishing working attack code before a patch exists removes the usual head start defenders get. The risk is concentrated in installations that enabled guest access and expose the web interface to the internet. Because Cacti holds access details for other equipment, a successful attack can reach beyond the monitoring server itself, or be used to suppress alerts. As of November 27 there were no reports of exploitation in attacks."
+    },
+    {
+     "heading": "What to watch",
+     "body": "A fix from the Cacti project. Until then, administrators are advised to disable the guest account, restrict the web interface to trusted networks, and review poller configurations for unexpected commands."
+    }
+   ],
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-n3",
+   "story_key": "fifa-cyberattack-hbhc-data-leak",
+   "title": "FIFA confirms a cyberattack exposed personal and business information after a new group claimed to leak 12 GB of files",
+   "category": "Cybersecurity",
+   "published": "2026-11-26T05:41:00-05:00",
+   "tldr": "FIFA says hackers accessed a \"limited set of personal and business information\"; a group called the Handsome Boy Hacking Club claims it took more than 12 GB of internal files.",
+   "why_selected": "A confirmed breach at world football's governing body, widely covered, with personal data reportedly already published.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "FIFA is the world governing body of football, and football organizations have been a recent target for data thieves: Infosecurity Magazine notes that Spain's top professional league, LaLiga, disclosed a breach of fans' personal data only days earlier."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Thursday, November 26, FIFA told the Associated Press that it had been the victim of a cyberattack in which hackers gained access to a \"limited set of personal and business information\". It said it is working closely with the relevant authorities, including law enforcement, and that it \"condemns in the strongest possible terms the unlawful acquisition and publication of information, particularly personal data\". FIFA did not say when the attack took place or what exactly was taken.\n\nThe statement followed claims by a group calling itself the Handsome Boy Hacking Club. On November 20 the group said it had stolen more than 12 GB of data from FIFA and was trying to extort the organization, and posted a screenshot of what it said were FIFA files. It claimed the files came from FIFA's Microsoft environment and internal governance systems and include identity and immigration documents, executive information, financial records and legal documents. On November 21 the data was reportedly published on a cybercriminal forum. FIFA has not confirmed any of the group's claims."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "FIFA's own wording, which condemns the publication of personal data, indicates that at least some stolen material is already circulating. Identity and immigration documents, if the group's claims are accurate, are the kind of records that enable fraud against the individuals named in them. The group is new: Infosecurity Magazine reports that it listed its first victim on its leak site on November 19, one day before the FIFA claim. The breach also lands at a sensitive time for the organization, whose president Gianni Infantino faces an election on March 18."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether FIFA says how many people are affected and notifies them, how the attackers got in, and whether the leaked files are verified as authentic."
+    }
+   ],
+   "sources": [
+    {
+     "name": "SecurityWeek (AP)",
+     "url": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/"
+    },
+    {
+     "name": "Infosecurity Magazine",
+     "url": "https://www.infosecurity-magazine.com/news/fifa-confirms-cyberattack/"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-n4",
+   "story_key": "windows-server-2025-hotpatch-ipv6-crash-fix",
+   "title": "Microsoft issues an emergency fix after its November no-restart update crashes some Windows Server 2025 machines",
+   "category": "Software & Platforms",
+   "published": "2026-11-25T12:00:00-05:00",
+   "tldr": "Microsoft released an out-of-band update, KB5138318, for Windows Server 2025 machines that could crash when an IPv6 route expired after November's hotpatch.",
+   "why_selected": "A security update designed to avoid downtime caused server crashes, the third month running in which Windows Server needed an emergency fix.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "A hotpatch is a Windows security update that takes effect without restarting the machine. Microsoft promotes it as a way to install fixes faster with less disruption to workloads, which matters most on servers where every restart is planned downtime. An out-of-band update is one released outside the regular monthly schedule, usually to repair an urgent problem."
+    },
+    {
+     "heading": "What happened",
+     "body": "On November 25, Microsoft released an out-of-band hotpatch, KB5138318, to repair a bug introduced by this month's Windows Server 2025 security hotpatch, KB5131077. Microsoft said the issue affects \"a limited number of Windows Servers with Router Advertisement (RA) enabled that receive time-bound IPv6 routes\". Router Advertisement is the mechanism by which IPv6 routers announce themselves and their routes to machines on a network; such routes can carry an expiry time. When a route timer expired, affected servers could halt with stop error 0x139, KERNEL_SECURITY_CHECK_FAILURE, which means the kernel detected corruption of a critical data structure and stopped the system.\n\nThe corrective update is a non-security fix that downloads and installs automatically on Windows Server 2025 devices enrolled in hotpatching through Windows Update, and takes effect without a restart. Microsoft has identified route-timer expiry as the trigger but has not explained the underlying fault."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The appeal of hotpatching is avoiding planned restarts, and an update that causes unplanned crashes undercuts that. The Register notes that Microsoft has issued out-of-band Windows Server updates in September, October and November. The exposure is bounded: the asset-management firm Lansweeper puts Windows Server 2025 at 7 percent of the servers it monitors, and only machines with the affected hotpatch and network configuration are implicated. BleepingComputer reports that November's hotpatch updates are also causing application installation, launch and printing problems for some Windows 11 users. Microsoft said in March that it would turn hotpatch security updates on by default for eligible managed Windows devices, so the reliability of these updates affects a growing number of machines."
+    },
+    {
+     "heading": "What to watch",
+     "body": "Whether Microsoft explains the root cause, and whether December's updates arrive without another emergency repair."
+    }
+   ],
+   "sources": [
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/os-platforms/2026/11/26/microsoft-hotpatches-hotpatch-that-could-crash-windows-server-2025/5312301"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.27174",
+   "title": "\"More Than You Expect!\": Leakage-Abuse Attacks on Encrypted Vector Search",
+   "authors": [
+    "Yang Zhang",
+    "Ruiqi He",
+    "Xiaoqian Sun",
+    "Siyi Lv",
+    "Zheli Liu"
+   ],
+   "affiliations": [
+    "Nankai University"
+   ],
+   "announced": "2026-11-22T20:00:00-05:00",
+   "primary_tag": "Security & privacy",
+   "tags": [
+    "Security & privacy"
+   ],
+   "tldr": "Encrypted vector databases that reveal which records are returned together leak the records' topics: an attack called SAGE recovers category labels with up to 84.3% accuracy.",
+   "why_selected": "A measured attack on encrypted vector search, the privacy layer proposed for the databases behind semantic search and retrieval-augmented generation, including a test on a real implementation.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Vector databases store embeddings, numerical representations of text or images, and answer a query by returning the stored records whose embeddings lie closest to it. They underpin semantic search and retrieval-augmented generation. The embeddings, queries and record labels can be sensitive: the paper's running example is clinical records labelled with diagnoses."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Encrypted vector search lets an untrusted server run these lookups on protected data. Some schemes also hide which records each query touches, using private information retrieval or oblivious computation, at extra cost in computation and communication. Others favour speed and leave stable record identifiers visible to the server. Earlier leakage-abuse attacks, which infer secrets from such visible patterns, targeted keyword and SQL search."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The authors identify what they call semantic neighborhood leakage. The server cannot read anything, but it sees which record identifiers come back for each query. Because similarity search returns records that are close in meaning, two records that keep appearing in the same result sets probably belong to the same topic. Their passive attack, SAGE, builds a graph whose nodes are records and whose edge weights count how often two records were retrieved together, then splits the graph into groups of related records.\n\nTwo variants turn these groups into labels. SAGE-Known assumes the attacker knows the true labels of a few records and spreads them through the graph. SAGE-Dist assumes only an estimate of how common each category is."
+    },
+    {
+     "heading": "Results",
+     "body": "The attack was evaluated on four datasets covering text and images. With 1% of record labels known, SAGE-Known reached up to 84.3% mean record-label accuracy and beat the strongest baselines on all four. With class proportions alone, SAGE-Dist reached 66.9% record-label accuracy and 68.1% query-category accuracy on the AG News dataset, 21.8 and 41.9 percentage points above the strongest baselines. The leakage persisted in tests with a real implementation of distance-comparison-preserving encryption."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Encrypting a vector database does not hide what its records are about if the server sees which ones are fetched together. Caveats: the attacker needs some outside knowledge, the label-free variant's effectiveness varies across datasets, and the attack recovers categories, not contents."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.27174"
+   },
+   "signals": {
+    "venue": "arXiv",
+    "tier": "preprint",
+    "press": 1
+   }
+  }
+ ]
+}

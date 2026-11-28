@@ -5,8 +5,48 @@
   <link>https://guaaaaa.github.io/AI_Updated/#/tech</link>
   <description>Chips, software, security, devices and space (beyond AI)</description>
   <language>en</language>
-  <lastBuildDate>Fri, 27 Nov 2026 11:46:11 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 11:47:06 +0000</lastBuildDate>
   <atom:link href="https://guaaaaa.github.io/AI_Updated/data/feeds/tech.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Hackers reportedly breach Cloud One, the US Air Force's main cloud platform, halting updates and migrations</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n1</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n1</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>Reuters reports that hackers exploited a software flaw to reach the control layer of Cloud One, the Air Force's cloud platform; the attackers and any data loss are unknown. (BleepingComputer, Engadget)</description>
+  </item>
+  <item>
+    <title>An unpatched flaw in the Cacti network monitoring tool is published with working attack code and no warning to developers</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n2</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n2</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>A researcher published a working exploit for an unpatched Cacti flaw that lets outsiders run commands when guest access is on; administrators should disable the guest account. (BleepingComputer, The Hacker News)</description>
+  </item>
+  <item>
+    <title>FIFA confirms a cyberattack exposed personal and business information after a new group claimed to leak 12 GB of files</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n3</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n3</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Cybersecurity</category>
+    <description>FIFA says hackers accessed a "limited set of personal and business information"; a group called the Handsome Boy Hacking Club claims it took more than 12 GB of internal files. (SecurityWeek (AP), Infosecurity Magazine)</description>
+  </item>
+  <item>
+    <title>Microsoft issues an emergency fix after its November no-restart update crashes some Windows Server 2025 machines</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n4</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2026-11-28-n4</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Software &amp; Platforms</category>
+    <description>Microsoft released an out-of-band update, KB5138318, for Windows Server 2025 machines that could crash when an IPv6 route expired after November's hotpatch. (The Register, BleepingComputer)</description>
+  </item>
+  <item>
+    <title>"More Than You Expect!": Leakage-Abuse Attacks on Encrypted Vector Search</title>
+    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2611.27174</link>
+    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-28/2611.27174</guid>
+    <pubDate>Sat, 28 Nov 2026 11:47:06 +0000</pubDate>
+    <category>Tech / Security &amp; privacy</category>
+    <description>Encrypted vector databases that reveal which records are returned together leak the records' topics: an attack called SAGE recovers category labels with up to 84.3% accuracy. (Yang Zhang, Ruiqi He, Xiaoqian Sun et al. · Nankai University)</description>
+  </item>
   <item>
     <title>A 12-year-old flaw in the Linux kernel's NFS file server lets remote attackers gain root without logging in</title>
     <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-27/2026-11-27-n1</link>
@@ -286,46 +326,6 @@
     <pubDate>Thu, 19 Nov 2026 11:49:48 +0000</pubDate>
     <category>Tech / Software &amp; Platforms</category>
     <description>Windows Server 2028's public preview turns on hundreds of security settings from first boot, including Kerberos over NTLM and hybrid post-quantum TLS, and Microsoft warns that some older software may break. (BleepingComputer, Ars Technica)</description>
-  </item>
-  <item>
-    <title>A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2611.17265</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-19/2611.17265</guid>
-    <pubDate>Thu, 19 Nov 2026 11:49:48 +0000</pubDate>
-    <category>Tech / Quantum computing</category>
-    <description>A Slovak quantum key distribution network links four cities over ordinary telecom fiber, runs all links at once and delivers finished keys to applications in real time, with honest post-processed key rates. (Gilberto Borges, Saeid Salari, Ekta Panwar et al. · Institute of Physics, Slovak Academy of Sciences)</description>
-  </item>
-  <item>
-    <title>Oracle patches Java4Shell, a Java runtime flaw that lets attackers take over widely used server software</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n1</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n1</guid>
-    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>Oracle fixed a memory-corruption flaw in OpenJDK's Base64 decoder that researchers used to run code on Jira, Confluence, Jenkins and Keycloak without logging in, and CISA urged immediate patching. (BleepingComputer, The Register, The Record)</description>
-  </item>
-  <item>
-    <title>Apple says an internal update, not a cyberattack, knocked out iCloud sign-in, the App Store and other services</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n2</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n2</guid>
-    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
-    <category>Tech / Telecom &amp; Internet</category>
-    <description>Apple's iCloud sign-in, App Store, Apple Music, iCloud Mail and school tools failed for hours on Tuesday; Apple blamed an internal update and its status page showed everything restored by 6 PM ET. (TechCrunch, BleepingComputer)</description>
-  </item>
-  <item>
-    <title>Japan's Fugaku supercomputer is taken offline after an intruder steals user details and login keys</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n3</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n3</guid>
-    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
-    <category>Tech / Cybersecurity</category>
-    <description>RIKEN shut down Fugaku on November 14 after an intruder got into internal servers between November 10 and 13 and took details of 4,222 users plus stored login keys. (BleepingComputer, News On Japan, SDxCentral, RIKEN Center for Computational Science)</description>
-  </item>
-  <item>
-    <title>California bars Waymo's driverless cars from freeways, and the company halts freeway rides in every market</title>
-    <link>https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n4</link>
-    <guid isPermaLink="true">https://guaaaaa.github.io/AI_Updated/#/tech/day/2026-11-18/2026-11-18-n4</guid>
-    <pubDate>Wed, 18 Nov 2026 11:46:56 +0000</pubDate>
-    <category>Tech / Tech Policy &amp; Antitrust</category>
-    <description>California's DMV called Waymo's driverless freeway driving an imminent hazard after robotaxis entered an active construction closure, and Waymo stopped freeway rides across all 15 of its US markets. (TechCrunch, WIRED)</description>
   </item>
 </channel>
 </rss>

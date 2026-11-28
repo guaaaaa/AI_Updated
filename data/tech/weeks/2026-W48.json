@@ -2,19 +2,19 @@
  "week": "2026-W48",
  "start": "2026-11-23",
  "end": "2026-11-28",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [],
  "stories": [
   {
    "title": "The Best Pura Deals for Cyber Week (2026)",
-   "outlets": 22,
+   "outlets": 28,
    "date": "2026-11-20",
-   "covered": "2026-11-25-n1"
+   "covered": "2026-11-24-n1"
   },
   {
    "title": "The FCC has authorized SpaceX to deploy 1 million satellites",
-   "outlets": 12,
+   "outlets": 13,
    "date": "2026-11-25",
    "covered": "2026-11-26-n2"
   },
@@ -22,6 +22,12 @@
    "title": "Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation",
    "outlets": 5,
    "date": "2026-11-20",
+   "covered": null
+  },
+  {
+   "title": "European Commission warns EU Academy users of data leak after AI-driven cyberattack",
+   "outlets": 5,
+   "date": "2026-11-23",
    "covered": null
   },
   {
@@ -34,12 +40,12 @@
    "title": "FIFA says hackers accessed ‘limited set of personal and business information’",
    "outlets": 5,
    "date": "2026-11-25",
-   "covered": null
+   "covered": "2026-11-28-n3"
   },
   {
-   "title": "European Commission warns EU Academy users of data leak after AI-driven cyberattack",
+   "title": "Huawei found guilty of stealing trade secrets",
    "outlets": 4,
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "covered": null
   },
   {
@@ -47,17 +53,11 @@
    "outlets": 3,
    "date": "2026-11-23",
    "covered": null
-  },
-  {
-   "title": "Apple renews Ted Lasso for season 5",
-   "outlets": 3,
-   "date": "2026-11-23",
-   "covered": null
   }
  ],
  "featured": {
-  "news": 19,
-  "papers": 3
+  "news": 23,
+  "papers": 4
  },
  "items": [
   {
@@ -191,6 +191,36 @@
    "date": "2026-11-27",
    "type": "news",
    "title": "Google will publish the phone numbers and addresses of money-making Android developers worldwide from March 2027"
+  },
+  {
+   "id": "2026-11-28-n1",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "Hackers reportedly breach Cloud One, the US Air Force's main cloud platform, halting updates and migrations"
+  },
+  {
+   "id": "2026-11-28-n2",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "An unpatched flaw in the Cacti network monitoring tool is published with working attack code and no warning to developers"
+  },
+  {
+   "id": "2026-11-28-n3",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "FIFA confirms a cyberattack exposed personal and business information after a new group claimed to leak 12 GB of files"
+  },
+  {
+   "id": "2026-11-28-n4",
+   "date": "2026-11-28",
+   "type": "news",
+   "title": "Microsoft issues an emergency fix after its November no-restart update crashes some Windows Server 2025 machines"
+  },
+  {
+   "id": "2611.27174",
+   "date": "2026-11-28",
+   "type": "paper",
+   "title": "\"More Than You Expect!\": Leakage-Abuse Attacks on Encrypted Vector Search"
   }
  ]
 }
