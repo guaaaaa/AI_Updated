@@ -2,13 +2,13 @@
  "week": "2026-W48",
  "start": "2026-11-23",
  "end": "2026-11-28",
- "complete": false,
- "digests": 5,
+ "complete": true,
+ "digests": 6,
  "papers": [
   {
    "id": "2611.29897",
    "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
-   "hf": 220,
+   "hf": 229,
    "org": "Peking University",
    "featured": null
   },
@@ -17,6 +17,13 @@
    "title": "WorldLeague: Benchmarking Physical Agency",
    "hf": 140,
    "org": "National University of Singapore",
+   "featured": null
+  },
+  {
+   "id": "2611.34232",
+   "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+   "hf": 110,
+   "org": "Touchstone AI",
    "featured": null
   },
   {
@@ -48,13 +55,6 @@
    "featured": "2026-11-26"
   },
   {
-   "id": "2611.34232",
-   "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-   "hf": 96,
-   "org": "Touchstone AI",
-   "featured": null
-  },
-  {
    "id": "2611.27193",
    "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
    "hf": 95,
@@ -65,7 +65,7 @@
  "stories": [
   {
    "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
-   "outlets": 24,
+   "outlets": 25,
    "date": "2026-11-20",
    "covered": "2026-11-23-n1"
   },
@@ -113,7 +113,7 @@
   }
  ],
  "featured": {
-  "news": 8,
-  "papers": 25
+  "news": 9,
+  "papers": 30
  }
 }

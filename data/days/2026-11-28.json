@@ -1,0 +1,374 @@
+{
+ "date": "2026-11-28",
+ "edition": "weekend",
+ "generated_at": "2026-11-28T12:15:48+00:00",
+ "summary": "Weekend edition: OpenAI countersues Apple over AI hardware, and the week's best papers on test-time self-improvement, coding agents as visual reasoners and as robot controllers, cheaper world-action models, and video editing learned from images.",
+ "news": [
+  {
+   "id": "2026-11-28-n1",
+   "story_key": "openai-countersues-apple-trade-secrets",
+   "title": "OpenAI countersues Apple, alleging trade-secret theft and pressure on suppliers of its planned AI devices",
+   "category": "Policy & Legal",
+   "published": "2026-11-27T14:58:31-05:00",
+   "tldr": "OpenAI filed counterclaims against Apple in California federal court, accusing it of taking OpenAI hardware secrets through a rehired employee and of pressuring suppliers not to work on OpenAI's devices.",
+   "why_selected": "The two companies' fight over who builds the personal AI device moved from defense to offense, with seven outlets covering the filing and a trial date already set.",
+   "sections": [
+    {
+     "heading": "Context",
+     "body": "Apple sued OpenAI in July, together with former Apple employees Tang Tan and Chang Liu, alleging they took trade secrets to help OpenAI's move into consumer hardware. Tan helped launch the device startup io Products, which OpenAI acquired in 2025. OpenAI and the employees deny the claims. In October, according to AppleInsider, the judge said the court was \"highly likely\" to grant Apple an injunction, and OpenAI swore it would not use the secrets at issue."
+    },
+    {
+     "heading": "What happened",
+     "body": "On Friday OpenAI filed counterclaims in federal court in Northern California, accusing Apple of \"unlawful, tortious, and unfair business practices\". Reuters reports three main allegations. First, that Apple obtained confidential information by rehiring an employee who had worked at OpenAI for six months and had access to details of a new device and OpenAI's hardware roadmap. Second, that Apple discouraged hardware suppliers from working on OpenAI devices; AppleInsider quotes the filing as saying Apple was \"coercing and threatening\" suppliers. Third, that Apple encourages staff to keep work files on personal iCloud accounts and makes people leaving for a competitor exit the same day, creating what the complaint calls \"trapdoors\" for later theft accusations. OpenAI said 400 employees have left Apple for OpenAI. Apple called the counterclaims \"a transparent attempt to distract from the substance of Apple's lawsuit\" and denied using the rehired employee to obtain OpenAI information."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The case is no longer only about whether two engineers kept files. OpenAI is now asking a court to examine how the largest consumer hardware company manages its supply chain and its departing staff, at the moment several AI companies are trying to build devices of their own. The supplier allegations bear on whether a model developer can get a product manufactured at scale when its suppliers also work for Apple. The employment claims matter to the wider talent market: movement of hardware engineers between the two companies is at the centre of both sides' accusations."
+    },
+    {
+     "heading": "What to watch",
+     "body": "How Apple formally answers the counterclaims and whether any supplier is named. Both companies have requested a jury; AppleInsider reports the trial is set for July 19, 2027."
+    }
+   ],
+   "sources": [
+    {
+     "name": "CNN",
+     "url": "https://www.cnn.com/2026/11/27/tech/openai-apple-countersuit"
+    },
+    {
+     "name": "Reuters (via KFGO)",
+     "url": "https://kfgo.com/2026/11/27/openai-countersues-apple-for-stealing-trade-secrets-ft-reports/"
+    },
+    {
+     "name": "AppleInsider",
+     "url": "https://appleinsider.com/articles/26/11/27/openai-counter-sues-apple-over-trade-secret-theft"
+    }
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "2611.30965",
+   "title": "Beyond Self-Consistency: Recursive Self-Improvement at Test Time",
+   "authors": [
+    "Jianyu Wu",
+    "Yizhou Wang",
+    "Encheng Su",
+    "Jinouwen Zhang",
+    "Pengze Li",
+    "Lintao Wang",
+    "Chen Tang",
+    "Aoran Wang",
+    "Wanli Ouyang",
+    "Shixiang Tang"
+   ],
+   "affiliations": [
+    "Shanghai Jiao Tong University",
+    "Shanghai Artificial Intelligence Laboratory"
+   ],
+   "announced": "2026-11-23T20:00:00-05:00",
+   "primary_tag": "RSI",
+   "tags": [
+    "RSI",
+    "Reasoning",
+    "Post-training"
+   ],
+   "tldr": "TT-RSI lets a model re-solve unlabeled test questions with its own previous solution in view, then distills those refinements into its weights, beating majority-vote self-training on competition mathematics.",
+   "why_selected": "A simple, well-ablated loop between test-time compute and test-time training that stayed on alphaXiv's Hot list for five days.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A deployed language model meets new questions with no labels. Two ways to do better exist: spend more inference compute per question, or update the weights on the unlabeled questions themselves. Ideally the two would feed each other; in practice the loop stalls."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Both families lean on self-consistency: sample many independent solutions and take a majority vote, either as the final answer or as the training target. Each sample starts from scratch, and when the most common answer is wrong, training on it reinforces the error."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Replace voting with an improvement step. The model solves a question, then solves it again with its full previous solution shown as \"a previous attempt\", with no hint about whether it was right and an instruction to solve the problem independently. It can keep steps that hold, rework doubtful ones, or start over. Repeating this gives a chain of attempts (In-Context RSI). Think of a student redoing a problem with yesterday's scratch work on the desk instead of polling classmates.\n\nThe training half (In-Weight RSI) needs only the first two attempts of a chain. A frozen copy of the initial model that sees attempt one teaches the student's first answer, and the same teacher seeing attempt two teaches the student's refinement, token by token on the student's own rollouts. Because the updated model generates better chains, repeating this compounds: the authors prove the first attempt moves toward the limit of infinitely many refinements."
+    },
+    {
+     "heading": "Results",
+     "body": "On Qwen3 models of 1.7B, 4B and 8B parameters and five competition mathematics benchmarks (AIME, HMMT, BRUMO), the full method raises average accuracy by 13.89 points over the base model and by 4.79 points over the strongest voting-based method, TTPO with self-consistency, at the same test-time budget. Training alone adds 5.79 points. In-Context RSI surpasses self-consistency while generating 68.6% fewer tokens. Showing only the previous final answer costs 4.28 points and roughly doubles the rate of breaking correct answers."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Inference-time refinement and weight updates can reinforce each other without labels, and how a prior attempt is presented matters. The caveat is scope: only mathematics and only small Qwen3 models."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.30965",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.30965",
+    "code": "https://github.com/uanu2002/TT-RSI"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 14,
+    "alphaxiv_hot_days": 5,
+    "hf_upvotes": 16,
+    "org": "Shanghai AI Laboratory"
+   }
+  },
+  {
+   "id": "2611.34813",
+   "title": "Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models",
+   "authors": [
+    "Dezhi Luo",
+    "Fengyuan Yu",
+    "Haotian Zhang",
+    "Zehong Zhao",
+    "Ran Ji",
+    "Siyuan An",
+    "Huayi Qin",
+    "Qingying Gao",
+    "Zhongang Cai",
+    "Lei Yang",
+    "Ziqi Huang",
+    "Ruisi Wang",
+    "Maijunxian Wang",
+    "Hokin Deng"
+   ],
+   "affiliations": [
+    "University College London",
+    "Nanyang Technological University",
+    "Carnegie Mellon University",
+    "University of California San Diego",
+    "University of Southern California",
+    "Johns Hopkins University",
+    "Chinese University of Hong Kong",
+    "University of California Berkeley"
+   ],
+   "announced": "2026-11-25T20:00:00-05:00",
+   "primary_tag": "Evaluation & Benchmarks",
+   "tags": [
+    "Evaluation & Benchmarks",
+    "Agents",
+    "Reasoning",
+    "Generative Models"
+   ],
+   "tldr": "On a benchmark built to test video generators as visual reasoners, coding agents that write a program to render the answer video score about 0.9 against 0.67 for the best video model.",
+   "why_selected": "A controlled change of medium that questions the claim that reasoning in pixels is the natural route to visual reasoning, with honest limits stated.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Video generation models are increasingly tested as visual reasoners: give the model a first frame and an instruction, and ask it to produce the video in which the task is carried out. Whether reasoning in pixels beats a symbolic route under identical conditions had not been tested."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "VBVR-Pro-Bench scores generated videos against symbolic ground truth with rule-based evaluators, across 100 task families of five instances each in five categories (abstraction, perception, spatiality, transformation, knowledge). Video models remain well below its ceiling, even one trained with reinforcement learning on the benchmark's own task families using the evaluator as reward."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Keep everything fixed except the medium of the answer. A coding agent receives the same first frame and prompt plus the required video format, and writes a program that renders the answer video. It gets no ground truth or metadata, may not call any image or video generator, runs in a CPU sandbox for at most 30 minutes, and has one attempt; a missing video scores zero. The intuition is that for most of these tasks the right output is a deterministic function of the frame and prompt, which code can state explicitly while a denoiser must recover it implicitly.\n\nThe authors also sort the programs into two kinds. Depictive programs measure the image when they run and would work on other instances of the task; propositional programs just render an answer the agent worked out in its session and hard-coded."
+    },
+    {
+     "heading": "Results",
+     "body": "Codex with gpt-6-astra scores 0.923, Claude Code with Fable 5.1 0.894 and Gemini CLI with Gemini 3.1 Pro 0.893, against 0.670 for the RL-trained video model and 0.562 for the next one. Among 23 open-weight models, GLM-5 is best at 0.572; the weakest mostly fail to deliver any video, and score tracks videos delivered (Spearman 0.93)."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "For tasks computable from a frame and a prompt, program synthesis is currently the more reliable visual reasoner. The authors stress the caveats: the scenes are code-rendered with flat colours and exact geometry, which suits programs, and agents get tools and iteration while video models produce one sample."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.34813",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34813"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 23,
+    "alphaxiv_hot_days": 2,
+    "hf_upvotes": 61,
+    "org": "Carnegie Mellon University"
+   }
+  },
+  {
+   "id": "2611.33141",
+   "title": "iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction",
+   "authors": [
+    "Vansh Kapoor",
+    "Max Sobol Mark",
+    "Sreyas Venkataraman",
+    "Max Simchowitz",
+    "Aviral Kumar"
+   ],
+   "affiliations": [
+    "Carnegie Mellon University"
+   ],
+   "announced": "2026-11-24T20:00:00-05:00",
+   "primary_tag": "World Models",
+   "tags": [
+    "World Models",
+    "Robotics",
+    "Efficiency"
+   ],
+   "tldr": "iWAM conditions a robot policy on features from a single pass of a video model instead of a fully generated future, keeping the generalization of world-action models at much lower inference cost.",
+   "why_selected": "Identifies why skipping future generation hurts generalization, then recovers the benefit with one forward pass, tested on real robots.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "World-action models (WAMs) build robot policies on pretrained video generators, on the premise that imagining how a scene will evolve helps decide how to act. Generating a future video at every control step is too slow for real-time control."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Inverse dynamics models (IDMs) generate a future and feed it to an action network. FastWAM-style methods drop the future at inference and read actions from video-model features of the current observation alone. The authors show this shortcut is costly outside the training distribution: trained on the DROID dataset and tested on unseen tasks, FastWAM succeeds in 9.2% of simulated trials against 96.7% for an IDM, and 13.3% against 80.0% on a real robot."
+    },
+    {
+     "heading": "Key idea",
+     "body": "The policy does not need a rendered future, only enough information to tell which future is being imagined. In a flow-matching video model each noise vector corresponds to exactly one generated future, so a noise vector is a compact name for a future. Sampling random noise during training fails, because the features then describe a different future from the demonstrated one.\n\niWAM fixes this alignment. It trains a bidirectional flow map, a model that jumps between noise and clean video in one step in either direction. In training, one clean-to-noise evaluation maps the demonstrated future to its noise vector, and one noise-to-clean evaluation from that vector produces the intermediate features that condition the action expert. At test time the noise is sampled from the prior and a single video-backbone pass replaces the eight denoising steps the IDM baseline uses."
+    },
+    {
+     "heading": "Results",
+     "body": "With the same Wan2.2-5B backbone and 1B-parameter action expert, iWAM reaches 93.3% average success on three unseen simulated DROID tasks (IDM 96.7%, FastWAM 9.2%, the official DROID-finetuned pi-0.5 checkpoint 65.0%). On three real-world tasks over 20 trials each, an iWAM variant averages 85.0% against 80.0% for IDM and 13.3% for FastWAM."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "The result suggests the generalization of video-based policies comes from the computation of committing to a specific future, and that this can be amortized in training. Caveats: few tasks, 20 trials each, and a small remaining gap to IDM in simulation."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.33141",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.33141"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 16,
+    "alphaxiv_hot_days": 4,
+    "notable_authors": [
+     "Aviral Kumar"
+    ]
+   }
+  },
+  {
+   "id": "2611.31002",
+   "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+   "authors": [
+    "Jinkun Liu",
+    "Yingze Wang",
+    "Situ Wang",
+    "Deyao Hong",
+    "Mingju Gao",
+    "Wenyi Li",
+    "Yizhe Chi",
+    "Youjie Zheng",
+    "Kaisen Yang",
+    "Xiangyang Wang",
+    "Bingxiang He",
+    "Yuxin Zuo",
+    "Boyuan Chen",
+    "Yue Chen",
+    "Cheng Qian",
+    "Tianxing Chen",
+    "Huichi Zhou",
+    "Huaxiu Yao",
+    "Hao Tang",
+    "Hao Zhou",
+    "Ya-Qin Zhang",
+    "Calvin Xiao",
+    "Tiga Altman",
+    "Huan-ang Gao"
+   ],
+   "affiliations": [
+    "Tsinghua University"
+   ],
+   "announced": "2026-11-23T20:00:00-05:00",
+   "primary_tag": "Robotics",
+   "tags": [
+    "Robotics",
+    "Agents",
+    "Evaluation & Benchmarks"
+   ],
+   "tldr": "RoboUniverse-10K turns real robot videos into 10,807 verifiable simulation tasks for coding agents that control robots, and shows a split between frontier models near 86% and most others under 10%.",
+   "why_selected": "Brings the SWE-bench recipe of mass-produced, automatically graded environments to robot control; five days on alphaXiv's Hot list, peaking at rank 4.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "A growing line of work has language models control robots by writing and running code that calls perception and control interfaces, rather than through an end-to-end policy. Coding agents for software improved quickly because hundreds of thousands of executable, automatically graded tasks could be mined from repositories. Robotics has nothing comparable."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Simulation suites such as LIBERO, RoboCasa and RoboTwin are authored by hand, with success checks written per task, which keeps them at tens to a few hundred tasks. Systems are then often trained and tested on the same task distributions, which says little about generalization."
+    },
+    {
+     "heading": "Key idea",
+     "body": "Build environments from video automatically. For each real robot video (DROID is the main single-arm source), a coding agent writes a task specification and constructs an Isaac Sim scene, a reference controller and a verifier, followed by a quality-assurance pass. The result is 10,807 environments: 4,132 single-arm Franka tasks and 6,675 dual-arm tasks in eight families. Each is packaged like a terminal-agent benchmark task. The agent sees only camera images and joint readings, sends joint targets through five tools, gets one attempt, and never sees object poses, progress signals or the grader, so it must judge from its sensors when it is done. 500 tasks, checked by 10 human experts, are held out as RoboUniverse-Verified."
+    },
+    {
+     "heading": "Results",
+     "body": "On the held-out set GPT-6.2 Astra reaches 85.8% and Claude Opus 5.5 76.8%; GPT-6 Astra and GPT-6.1 Sol reach 54.6% and 49.4%; the other seven models stay at or below 10.0%, with none between 10% and 49%. Weak models fail mainly at grasping and collapse on dual-arm tasks. Fine-tuning Qwen3.6-35B-A3B on about 17,000 GPT-6 Astra trajectories (0.79B tokens, roughly 1,500 H100 GPU-hours) lifts it from 0.8% to 21.2%, but dual-arm success only reaches 8.3%."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "It supplies the missing ingredient for reinforcement learning with verifiable rewards in robot control, and the environments and model are released. The caveats are plain in the paper: scenes are simplified, articulated objects such as a microwave door are poorly modelled, tasks are short atomic skills, and the fine-tuned model imitates a teacher rather than learning from reward."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.31002",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.31002"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 4,
+    "alphaxiv_hot_days": 5
+   }
+  },
+  {
+   "id": "2611.34941",
+   "title": "Improving and Expanding Video Editing Capabilities Without Videos",
+   "authors": [
+    "Ji Xie",
+    "Yanhao Jia",
+    "Xiangpeng Yang",
+    "Martin Q. Ma",
+    "Sihan Xu",
+    "Erik Cambria",
+    "Louis-Philippe Morency"
+   ],
+   "affiliations": [
+    "Carnegie Mellon University",
+    "Nanyang Technological University",
+    "University of Technology Sydney",
+    "University of Michigan"
+   ],
+   "announced": "2026-11-25T20:00:00-05:00",
+   "primary_tag": "Generative Models",
+   "tags": [
+    "Generative Models",
+    "Post-training",
+    "Computer Vision"
+   ],
+   "tldr": "I2VT teaches video editors new kinds of edits using only single images, by having the video model edit one-frame videos while an image editor corrects every denoising step.",
+   "why_selected": "A cheap way around the paired-video data bottleneck: 200 LoRA steps on images transfer action and expression edits to whole clips.",
+   "sections": [
+    {
+     "heading": "Problem",
+     "body": "Image editing models now follow detailed instructions, while video editors remain mediocre even at basic edits such as removing an object, and struggle with changing a person's action, expression or body movement. The main obstacle is data: a training pair needs an edited video that follows the instruction across the whole clip and leaves everything else untouched, and current pipelines rarely produce that for complex edits."
+    },
+    {
+     "heading": "Existing approaches",
+     "body": "Video editors are fine-tuned on synthetic source, instruction and target triplets that concentrate on basic edit types. The obvious way to borrow from image editors is offline distillation: have the image editor produce edited images and fine-tune the video model on those pairs as if they were one-frame videos."
+    },
+    {
+     "heading": "Key idea",
+     "body": "An image is a one-frame video, so let the video editor role-play as an image editor and be coached while it works. The student starts from noise and runs its own ten-step denoising rollout on a single source image. At every step the current noisy latent is handed to a frozen image editor, which says which direction it would move, and the student's predicted velocity is trained to match. This works because the models share a latent space, so the teacher can read the student's intermediate states. Supervising the student on states it actually visits, rather than on noised teacher outputs, is the difference from offline distillation."
+    },
+    {
+     "heading": "Results",
+     "body": "With 200 low-rank adaptation steps (about 20 A100 GPU-hours for the 1.3B model), basic-edit scores on OpenVE-Bench rise from 3.10 to 3.48, 2.29 to 3.19 and 3.33 to 3.68 for three editors, as rated by Gemini 2.5 Pro. On the authors' new OpenVE++ benchmark of 207 clips, scores on action, expression and body-movement edits rise from 1.66 to 2.99 for Bernini-R-1.3B and from 1.17 to 3.33 for VideoCoF. Matched offline distillation reaches 3.08 to 3.19 on basic edits against 3.48."
+    },
+    {
+     "heading": "Why it matters",
+     "body": "Capabilities learned on still images carried over to whole clips, which suggests image supervision can substitute for scarce paired video. Caveats: scores come from a language-model judge, the method relies on teacher and student sharing a latent space, and one model lost some fidelity on an outside benchmark."
+    }
+   ],
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2611.34941",
+    "alphaxiv": "https://www.alphaxiv.org/abs/2611.34941",
+    "code": "https://github.com/HorizonWind2004/i2v-transfer"
+   },
+   "signals": {
+    "alphaxiv_hot_rank": 61,
+    "alphaxiv_hot_days": 3,
+    "hf_upvotes": 47,
+    "org": "Carnegie Mellon University School of Computer Science"
+   }
+  }
+ ]
+}

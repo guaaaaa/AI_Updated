@@ -1,5 +1,95 @@
 [
  {
+  "id": "2026-11-28-n1",
+  "date": "2026-11-28",
+  "type": "news",
+  "title": "OpenAI countersues Apple, alleging trade-secret theft and pressure on suppliers of its planned AI devices",
+  "tldr": "OpenAI filed counterclaims against Apple in California federal court, accusing it of taking OpenAI hardware secrets through a rehired employee and of pressuring suppliers not to work on OpenAI's devices.",
+  "category": "Policy & Legal",
+  "byline": "CNN, Reuters (via KFGO), AppleInsider"
+ },
+ {
+  "id": "2611.30965",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "Beyond Self-Consistency: Recursive Self-Improvement at Test Time",
+  "tldr": "TT-RSI lets a model re-solve unlabeled test questions with its own previous solution in view, then distills those refinements into its weights, beating majority-vote self-training on competition mathematics.",
+  "primary_tag": "RSI",
+  "tags": [
+   "RSI",
+   "Reasoning",
+   "Post-training"
+  ],
+  "byline": "Jianyu Wu, Yizhou Wang, Encheng Su et al. · Shanghai Jiao Tong University, Shanghai Artificial Intelligence Laboratory",
+  "hf": 16,
+  "venue": null
+ },
+ {
+  "id": "2611.34813",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models",
+  "tldr": "On a benchmark built to test video generators as visual reasoners, coding agents that write a program to render the answer video score about 0.9 against 0.67 for the best video model.",
+  "primary_tag": "Evaluation & Benchmarks",
+  "tags": [
+   "Evaluation & Benchmarks",
+   "Agents",
+   "Reasoning",
+   "Generative Models"
+  ],
+  "byline": "Dezhi Luo, Fengyuan Yu, Haotian Zhang et al. · University College London, Nanyang Technological University, Carnegie Mellon University",
+  "hf": 61,
+  "venue": null
+ },
+ {
+  "id": "2611.33141",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction",
+  "tldr": "iWAM conditions a robot policy on features from a single pass of a video model instead of a fully generated future, keeping the generalization of world-action models at much lower inference cost.",
+  "primary_tag": "World Models",
+  "tags": [
+   "World Models",
+   "Robotics",
+   "Efficiency"
+  ],
+  "byline": "Vansh Kapoor, Max Sobol Mark, Sreyas Venkataraman et al. · Carnegie Mellon University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.31002",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+  "tldr": "RoboUniverse-10K turns real robot videos into 10,807 verifiable simulation tasks for coding agents that control robots, and shows a split between frontier models near 86% and most others under 10%.",
+  "primary_tag": "Robotics",
+  "tags": [
+   "Robotics",
+   "Agents",
+   "Evaluation & Benchmarks"
+  ],
+  "byline": "Jinkun Liu, Yingze Wang, Situ Wang et al. · Tsinghua University",
+  "hf": null,
+  "venue": null
+ },
+ {
+  "id": "2611.34941",
+  "date": "2026-11-28",
+  "type": "paper",
+  "title": "Improving and Expanding Video Editing Capabilities Without Videos",
+  "tldr": "I2VT teaches video editors new kinds of edits using only single images, by having the video model edit one-frame videos while an image editor corrects every denoising step.",
+  "primary_tag": "Generative Models",
+  "tags": [
+   "Generative Models",
+   "Post-training",
+   "Computer Vision"
+  ],
+  "byline": "Ji Xie, Yanhao Jia, Xiangpeng Yang et al. · Carnegie Mellon University, Nanyang Technological University, University of Technology Sydney",
+  "hf": 47,
+  "venue": null
+ },
+ {
   "id": "2026-11-27-n1",
   "date": "2026-11-27",
   "type": "news",
